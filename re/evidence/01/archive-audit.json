@@ -1,0 +1,204 @@
+{
+  "archive_bytes": 78546961,
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "beatmap_paths": [],
+  "config": {
+    "_ReleaseStream": "Stable40",
+    "_UpdateFailCount": "0",
+    "h_Microsoft.Ink.dll": "82d4ee89f4a39c764fa6297a95ebb10e",
+    "h_OpenTK.dll": "b4d949571134fc3ec6c28f1af7a75e49",
+    "h_avcodec-51.dll": "b66478cc0f9ec50810489a039ced642b",
+    "h_avformat-52.dll": "c00b30289cc427caff97af5aa3d43e03",
+    "h_avutil-49.dll": "47c83b958951331ba409d6b80316250c",
+    "h_bass.dll": "7623474a8b9bec1e3ffca813cdf93bc3",
+    "h_bass_fx.dll": "3ad3c0fd4dca001a2f9e707b74544919",
+    "h_d3dcompiler_47.dll": "c5b362bce86bb0ad3149c4540201331d",
+    "h_libEGL.dll": "9f7f22cef980ec272a9b73bf317500e4",
+    "h_libGLESv2.dll": "a4dfddff62d1e917ebb0688cf8d96be7",
+    "h_osu!.exe": "0beb5a2f026f5a579c2046ab73fece16",
+    "h_osu!auth.dll": "c2d76f1da2e31b6c39b22625482800e1",
+    "h_osu!gameplay.dll": "4cb98d63f1b2b9dc38e10e9901ec52d8",
+    "h_osu!seasonal.dll": "d21d49248a8bc1b881ae21e6d78e62ce",
+    "h_osu!ui.dll": "6448b4b0a3ec3a875f850a502fd29213",
+    "h_pthreadGC2.dll": "00678eb6be3b52d562b66218c93e21a8"
+  },
+  "config_hash_count": 16,
+  "config_matches": 16,
+  "crc_test": "PASS",
+  "entry_count": 18,
+  "exe_metadata": {
+    "assemblies": [
+      {
+        "name": "osu!",
+        "version": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "authenticode_verification": "NOT RUN; directory presence does not prove validity",
+    "certificate_table_bytes": 15648,
+    "certificate_table_file_offset": 4526080,
+    "clr_flags": 3,
+    "clr_metadata_version": "v4.0.30319",
+    "machine": "0x14c",
+    "optional_header_magic": "0x10b",
+    "version_resource": {
+      "Assembly Version": "0",
+      "Comments": "rhythm just a *click* away!",
+      "CompanyName": "ppy",
+      "FileDescription": "osu!",
+      "FileVersion": "1.3.3.8",
+      "InternalName": "osu!.exe",
+      "LegalCopyright": "ppy 2007-2019",
+      "OriginalFilename": "osu!.exe",
+      "ProductName": "osu!",
+      "ProductVersion": "1.3.3.8"
+    }
+  },
+  "files": [
+    {
+      "bytes": 728800,
+      "config_md5": "c00b30289cc427caff97af5aa3d43e03",
+      "config_md5_matches": true,
+      "md5": "c00b30289cc427caff97af5aa3d43e03",
+      "path": "avformat-52.dll",
+      "sha256": "b155e2bfce3adbbc45d01ec991160ab4fab7e8d33a0ab835463da860d3693867"
+    },
+    {
+      "bytes": 79616,
+      "config_md5": "47c83b958951331ba409d6b80316250c",
+      "config_md5_matches": true,
+      "md5": "47c83b958951331ba409d6b80316250c",
+      "path": "avutil-49.dll",
+      "sha256": "e51523f179a8ab8101eaa3e587c5e1dfe6c19636ecfa582896833f06d2e79064"
+    },
+    {
+      "bytes": 128181,
+      "config_md5": "7623474a8b9bec1e3ffca813cdf93bc3",
+      "config_md5_matches": true,
+      "md5": "7623474a8b9bec1e3ffca813cdf93bc3",
+      "path": "bass.dll",
+      "sha256": "67766e574baa86eb8317623acc2957e8e28944bb801a8c10a0fa9d29fdb4cfd3"
+    },
+    {
+      "bytes": 51512,
+      "config_md5": "3ad3c0fd4dca001a2f9e707b74544919",
+      "config_md5_matches": true,
+      "md5": "3ad3c0fd4dca001a2f9e707b74544919",
+      "path": "bass_fx.dll",
+      "sha256": "81111a1cb6f8f362cf232e21098c563fe1409160300f2a254f2a1762e5d4db04"
+    },
+    {
+      "bytes": 3466856,
+      "config_md5": "c5b362bce86bb0ad3149c4540201331d",
+      "config_md5_matches": true,
+      "md5": "c5b362bce86bb0ad3149c4540201331d",
+      "path": "d3dcompiler_47.dll",
+      "sha256": "efbdbbcd0d954f8fdc53467de5d89ad525e4e4a9cfff8a15d07c6fdb350c407f"
+    },
+    {
+      "bytes": 150240,
+      "config_md5": "9f7f22cef980ec272a9b73bf317500e4",
+      "config_md5_matches": true,
+      "md5": "9f7f22cef980ec272a9b73bf317500e4",
+      "path": "libEGL.dll",
+      "sha256": "041a631d114e45a11c43efe3b7712a10ce8052cf4b313c7f4577a5b9adb78072"
+    },
+    {
+      "bytes": 3368160,
+      "config_md5": "a4dfddff62d1e917ebb0688cf8d96be7",
+      "config_md5_matches": true,
+      "md5": "a4dfddff62d1e917ebb0688cf8d96be7",
+      "path": "libGLESv2.dll",
+      "sha256": "cbfc536b80405da7b5c37c97fceaf2310daf58d78c806140367b8f513352342f"
+    },
+    {
+      "bytes": 467712,
+      "config_md5": "82d4ee89f4a39c764fa6297a95ebb10e",
+      "config_md5_matches": true,
+      "md5": "82d4ee89f4a39c764fa6297a95ebb10e",
+      "path": "Microsoft.Ink.dll",
+      "sha256": "1081255de41aafd51bc8f4e4404ef02209e59625ae65fa926657df5690716c5d"
+    },
+    {
+      "bytes": 4368096,
+      "config_md5": "b4d949571134fc3ec6c28f1af7a75e49",
+      "config_md5_matches": true,
+      "md5": "b4d949571134fc3ec6c28f1af7a75e49",
+      "path": "OpenTK.dll",
+      "sha256": "b415f3e061d9758316074dcbf31d6dba48cb0b89405254db94ead0e43ed88511"
+    },
+    {
+      "bytes": 878,
+      "md5": "102b8c5da86a1120be2e139322aaed7b",
+      "path": "osu!.cfg",
+      "sha256": "b6be86a1d8c1c860432a19ab8654f864c7f24c3b9f58999f89c0011adcf39624"
+    },
+    {
+      "bytes": 4541728,
+      "config_md5": "0beb5a2f026f5a579c2046ab73fece16",
+      "config_md5_matches": true,
+      "md5": "0beb5a2f026f5a579c2046ab73fece16",
+      "path": "osu!.exe",
+      "sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d"
+    },
+    {
+      "bytes": 15951136,
+      "config_md5": "c2d76f1da2e31b6c39b22625482800e1",
+      "config_md5_matches": true,
+      "md5": "c2d76f1da2e31b6c39b22625482800e1",
+      "path": "osu!auth.dll",
+      "sha256": "d30b1d334a8b2d9e833e48a657ff1647a74f96b49d296522a4979428db1bdc22"
+    },
+    {
+      "bytes": 31854304,
+      "config_md5": "4cb98d63f1b2b9dc38e10e9901ec52d8",
+      "config_md5_matches": true,
+      "md5": "4cb98d63f1b2b9dc38e10e9901ec52d8",
+      "path": "osu!gameplay.dll",
+      "sha256": "ba3467a8db908d81a0729f78fdc5c8f1d1595d3da4e5a9a34be9a16e06da9f87"
+    },
+    {
+      "bytes": 3714520,
+      "config_md5": "d21d49248a8bc1b881ae21e6d78e62ce",
+      "config_md5_matches": true,
+      "md5": "d21d49248a8bc1b881ae21e6d78e62ce",
+      "path": "osu!seasonal.dll",
+      "sha256": "27decc7e0c959078325eb800b04626d6b9498b33cf118850c0e7b78dea470500"
+    },
+    {
+      "bytes": 26019104,
+      "config_md5": "6448b4b0a3ec3a875f850a502fd29213",
+      "config_md5_matches": true,
+      "md5": "6448b4b0a3ec3a875f850a502fd29213",
+      "path": "osu!ui.dll",
+      "sha256": "22e041674931161e2c2c15241fb6c5f3125f8d57e4660ef7c0b7fb64449253c7"
+    },
+    {
+      "bytes": 77400,
+      "config_md5": "00678eb6be3b52d562b66218c93e21a8",
+      "config_md5_matches": true,
+      "md5": "00678eb6be3b52d562b66218c93e21a8",
+      "path": "pthreadGC2.dll",
+      "sha256": "b18c8437663002e4a4f06c4c1b7bec71fe13e5e6bbb927c68a273de02a5c690f"
+    },
+    {
+      "bytes": 597,
+      "md5": "9a7c49aa7974cd2dbed0a158c8741267",
+      "path": "repair osu!.lnk",
+      "sha256": "f969ed7182f3727d6bea2479b88111c33dcde5bce5577dca56825777f9592005"
+    },
+    {
+      "bytes": 4426976,
+      "config_md5": "b66478cc0f9ec50810489a039ced642b",
+      "config_md5_matches": true,
+      "md5": "b66478cc0f9ec50810489a039ced642b",
+      "path": "avcodec-51.dll",
+      "sha256": "e512fe71775f767285cfb3310d8f1ac042639ab3d1a02ca3675b82cfd3cbc702"
+    }
+  ],
+  "replay_paths": []
+}

@@ -1,0 +1,10 @@
+{
+  "entry-control.osu": {
+    "bytes": 707,
+    "sha256": "dc4112acfcb0e7f345c6350a0cf1640d74f7acdc6eb2ae77047023b09e330541"
+  },
+  "silence.wav": {
+    "bytes": 529244,
+    "sha256": "c263760de082d12fd4a983296b361d1c29c0567f354b01a44149fe24e9609977"
+  }
+}
