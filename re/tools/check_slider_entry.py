@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+"""E15 original-instruction assertions only; no input/judgement/tracking engine."""
+import json
+import sys
+from pathlib import Path
+j=json.loads(Path(sys.argv[1]).read_text());m=j['methods']
+assert j['expedition']==15 and len(m)==54
+assert j['archive_sha256']=='7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738'
+assert j['exe_sha256']=='6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d'
+assert j['scan']=={'decoded_bodies':19659,'zero_rva':1739,'decode_errors':0}
+assert j['held_mask_type']['namespace']=='System.Windows.Forms'and j['held_mask_type']['name']=='MouseButtons'
+def row(r):return m[hex(0x6000000+r)]
+def site(r,o,op,t):assert [o,op,hex(t)]in row(r)['token_sites'],(hex(r),hex(o),op,hex(t))
+def branch(r,o,op,d):assert [o,op,[d]]in row(r)['branches'],(hex(r),hex(o),op,hex(d))
+def const(r,o,op,v=None):assert [o,op,v]in row(r)['constants'],(hex(r),hex(o),op,v)
+def ar(r,o,op):assert [o,op]in row(r)['arithmetic_sites'],(hex(r),hex(o),op)
+def slot(root,s,expected):
+ a=j['ordinary_dispatch'][hex(0x2000000+root)]['slots'][hex(0x6000000+s)]
+ assert {r['method']for r in a}=={hex(0x6000000+x)for x in expected},(root,s)
+def writes(f):return {(k,o)for k,ss in j['entry_field_sites'].items()for o,p,t in ss if p in ['stfld','stsfld']and t==hex(0x4000000+f)}
+slot(0x2af,0x24c7,[0x24c7]);slot(0x2af,0x24a9,[0x24a9,0x1465])
+slot(0x2af,0x24c3,[0x24c3,0x146f]);slot(0x2af,0x24b2,[0x24b2,0x1449])
+slot(0x6f6,0x24a9,[0x24a9,0x1884,0x351d]);slot(0x253,0xac5,[0xac5])
+slot(0xe8,0x28e3,[0x28e3,0x653]);slot(0xe8,0x28e4,[0x28e4,0x654])
+# Exact ordinary factory, parent-only registration and embedded head construction.
+site(0x48e0,0x17,'newobj',0x600142d);site(0x28f0,4,'callvirt',0x60028d2)
+const(0x142d,0x191,'ldc.i4.2');site(0x142d,0x192,'stfld',0x4002525)
+site(0x142d,0x1b5,'callvirt',0x600143a);site(0x143a,0x54,'newobj',0x600351a)
+site(0x143a,0x59,'stfld',0x4000bdf)
+assert all(s[2]!='0x60028d2'for r in [0x142d,0x143a,0x351a,0x45eb,0x45ec]for s in row(r)['token_sites'])
+assert row(0x1464)['virtual']and row(0x1464)['new_slot']
+# Parent selection, broad admission and distinct head-return versus stored raw result.
+site(0x2295,0xbb,'callvirt',0x60028c8);site(0x28c9,0x3b,'callvirt',0x60024c7)
+branch(0x24c7,0x54,'ble.s',0x70);site(0x24c7,0x47,'ldfld',0x400252c)
+site(0x2295,0xe0,'callvirt',0x6000ad9);branch(0xad9,7,'brfalse.s',0x70)
+site(0x2295,0x199,'callvirt',0x6001463);site(0x1463,6,'ldfld',0x4001527)
+site(0x2295,0x1a2,'callvirt',0x6001464);site(0x1464,0x30,'stfld',0x4000bf0)
+site(0x1464,0x3b,'callvirt',0x60024a9)
+site(0x351d,1,'call',0x6001884);branch(0x351d,9,'ble.s',0xd)
+const(0x351d,0xd,'ldc.i4',-262144)
+assert not any(s[1]in ['stfld','stsfld']for s in row(0x351d)['token_sites'])
+site(0x1884,2,'stfld',0x4001527);site(0x1884,7,'ldsfld',0x4002358)
+for o,op,d in [(0x25,'bge.s',0x34),(0x40,'bge.s',0x4f),(0x5b,'bge.s',0x6a)]:branch(0x1884,o,op,d)
+site(0x2295,0x1ac,'stfld',0x4001380);const(0x2295,0x1b7,'ldc.i4.s',64)
+site(0x2295,0x1ba,'callvirt',0x6000ad2);const(0x2295,0x20a,'ldc.i4',-262144)
+site(0x2295,0x210,'callvirt',0x6000ad2)
+# Candidate-derived current reference chosen BEFORE refresh; actual tracking is optional work.
+site(0x226b,0x94e,'call',0x6002275);site(0x2275,0xe,'ldfld',0x40017fd)
+site(0x2275,0x21,'ldftn',0x60022c5);site(0x2275,0x3a,'stfld',0x4001380)
+branch(0x22c5,0xc,'beq.s',0x34);branch(0x22c5,0x19,'bgt.s',0x34)
+branch(0x22c5,0x26,'bge.s',0x32)
+site(0x226b,0x959,'callvirt',0x60028e2);site(0x226b,0x9be,'callvirt',0x6000ac5)
+branch(0x226b,0x972,'brfalse.s',0x9c9);branch(0x226b,0x9a6,'brfalse.s',0x9c9)
+site(0x226b,0x9cf,'callvirt',0x60028e3)
+site(0xac5,0x47,'ldsfld',0x4002a5c);site(0xac5,0x4c,'callvirt',0x60024c3)
+site(0xac5,0x5c,'callvirt',0x6000ad2)
+assert writes(0x1380)=={('0x6002275',0x3a),('0x6002295',0x1ac)}
+# Held latch/current and change-history masks; release is sampled before component callback.
+for o,f in [(0x3ce,0xa7c),(0x3d8,0xa7b),(0x3de,0xa80),(0x3f6,0xa80),(0x418,0xa80),(0x54a,0xa7a),(0x6d0,0xa7a)]:site(0x43a0,o,'stsfld',0x4000000+f)
+const(0x43a0,0x3f0,'ldc.i4',1048576);const(0x43a0,0x412,'ldc.i4',2097152)
+assert writes(0xa7a)=={('0x60043a0',0x54a),('0x60043a0',0x6d0)}
+site(0x43a0,0x790,'callvirt',0x6003350)
+# Tracking: no embedded-head read/requirement; start gate, held policy and strict radius.
+branch(0x146f,6,'brtrue.s',0x15);branch(0x146f,0x13,'bge.s',0x17)
+assert not any(s[2]=='0x4000bdf'for s in row(0x146f)['token_sites'])
+for o,f in [(0x1c,0xa7a),(0x23,0xa7b),(0x2f,0xa7c),(0x34,0xa80),(0x4e,0xbf0)]:site(0x146f,o,'ldsfld'if f!=0xbf0 else'ldfld',0x4000000+f)
+const(0x146f,0x28,'ldc.i4',3145728);site(0x146f,0x8b,'stfld',0x4000bf0)
+site(0x146f,0xa9,'stfld',0x4000bf0);site(0x146f,0xb1,'ldsfld',0x400137b)
+site(0x146f,0xd4,'ldfld',0x4000ada);const(0x146f,0xe6,'ldc.r4',2.4000000953674316)
+site(0x146f,0xf0,'ldsfld',0x4002358);site(0x146f,0xfa,'isinst',0x2000170)
+site(0x146f,0x110,'call',0x6003df6);ar(0x146f,0x115,'sub')
+site(0x146f,0x133,'callvirt',0xa0004ba);site(0x146f,0x128,'ldftn',0x6001478)
+branch(0x1478,0xc,'bgt.s',0x20);ar(0x1478,0x1a,'clt')
+branch(0x146f,0x16a,'ble.s',0x18f);branch(0x146f,0x1d4,'brfalse.s',0x250)
+ar(0x146f,0x217,'sub');ar(0x146f,0x218,'conv.r4');ar(0x146f,0x225,'sub')
+ar(0x146f,0x226,'conv.r4');ar(0x146f,0x227,'div');ar(0x146f,0x228,'sub')
+site(0x146f,0x23b,'callvirt',0x6000ff1);site(0x146f,0x242,'call',0x6004ecd)
+ar(0x146f,0x24b,'mul');ar(0x146f,0x24c,'clt')
+assert [0xe6,'ldc.r4','9a991940']in row(0x146f)['float_constant_bits']
+# Path -> Move records made in loading, not substituted with generic time-position query.
+site(0x144a,0xe95,'newobj',0x6002996);site(0x144a,0xeaf,'ldfld',0x4000bd2)
+site(0x144a,0xebb,'callvirt',0xa0002c8)
+for o,f in [(0xf,0x1867),(0x16,0x186b),(0x25,0x186e),(0x2d,0x186f)]:site(0x2996,o,'stfld',0x4000000+f)
+assert j['enums']['0x200021a']['values']['Movement']==1
+# First entry before deferred component decisions; leave after their pending-count condition.
+site(0x146f,0x25d,'call',0x600146d);site(0x146d,6,'stfld',0x4000bf2)
+site(0x146d,0x20d,'stfld',0x4000bf3);site(0x146e,0xfb,'stfld',0x4000bf3)
+assert writes(0xbf3)=={('0x600146d',0x20d),('0x600146e',0xfb)}
+assert writes(0xbf2)=={('0x600146d',6)}
+branch(0x146f,0x29b,'bge',0x355);branch(0x146f,0x379,'bge.s',0x381)
+site(0x146f,0x2b4,'ldfld',0x4000bf2);branch(0x146f,0x2c6,'bgt.s',0x315)
+site(0x146f,0x37c,'call',0x600146e)
+site(0x28e3,0x17,'callvirt',0x60024b2);site(0x28e3,0x1e,'callvirt',0x60028e4)
+site(0x28e4,0x41,'callvirt',0x6001463);site(0x28e4,0x52,'ldfld',0x4000bdf)
+site(0x28e4,0x57,'callvirt',0x60028d3);branch(0x28e4,0x3e,'bge.s',0x5d)
+shared=0
+for f in sorted((Path(__file__).parents[1]/'evidence').glob('*/*.json')):
+ if f.parent.name=='15':continue
+ old=json.loads(f.read_text()).get('methods',{})
+ for t,r in m.items():
+  if t in old and 'body_sha256'in r and 'body_sha256'in old[t]:
+   assert r['body_sha256']==old[t]['body_sha256'],(str(f),t)
+   shared+=1
+print(f'PASS: 54 methods; parent/head dispatch, current-object ordering, held masks, Move-position/strict hysteresis, entry/leave and timeout boundary; {shared} historical body hashes; no tracking/game execution')
