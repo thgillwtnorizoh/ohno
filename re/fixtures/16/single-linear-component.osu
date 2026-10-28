@@ -1,0 +1,38 @@
+osu file format v14
+
+[General]
+AudioFilename: silence.wav
+AudioLeadIn: 0
+PreviewTime: -1
+Countdown: 0
+SampleSet: Normal
+StackLeniency: 0.7
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 0
+
+[Metadata]
+Title:Scheduled Component Control
+Artist:Project Original Fixture
+Creator:Work 1
+Version:One Linear Slider - Unvalidated
+Source:
+Tags:original research fixture expedition16
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+
+[Events]
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+128,192,2000,2,0,L|428:192,1,300
