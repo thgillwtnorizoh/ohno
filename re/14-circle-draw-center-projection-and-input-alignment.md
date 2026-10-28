@@ -10,6 +10,8 @@ Read the complete standing contract and identical attachment, cumulative context
 
 Verified requested remote parent `db5aa384c248e232681428332672f9e0368af50d`, tree `d0c7cc5b01664114de5201346bef5e622cab331f`. Dedicated remote branch `work1/expedition-14-circle-projection` was created directly from that parent. Local mirror `b4957c5` has the same tree and a different commit identity; publication explicitly uses the requested remote parent. All 58 baseline files were fingerprinted before research edits; preserve the other 57 files and exact journal prefix. Final handoff supplies the verified publication commit.
 
+The initial E14 publication `9fe7e49b8e36ce21535e199c59f13812b52ef438` is directly parented by E13. A subsequent additive commit clarifies M451a ordering and adds checker assertions; it preserves that publication and all prior history. The journal clarification is appended, not substituted for its earlier wording.
+
 | Pinned input | SHA-256 |
 |---|---|
 | osubackup.zip, 18 entries | 7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738 |
@@ -293,8 +295,10 @@ bounds = (L.X,L.Y, r4(logicalWidth)*Abs(K.X),
 retain original clipping/source/callback/status work
 
 RECONSTRUCTED — M451a / M2929, reached only through original resource guards
+retain original resource multiplier adjustment of K/source/o first
 P = (bounds.X+anchorOffset.X, bounds.Y+anchorOffset.Y)
-retain resource multiplier and receiver/cache/filter selection
+    // F2b8f anchorOffset remains as composed by M4518, not Dtex-adjusted here.
+retain receiver/cache/filter selection
 receiver.M31f5(P,o,colour,K,rotation,source,batch)
 texture receiver, if ready:
     h = r4(source.Height)*Abs(K.Y)
