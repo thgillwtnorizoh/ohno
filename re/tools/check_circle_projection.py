@@ -1,0 +1,99 @@
+#!/usr/bin/env python3
+"""E14 static evidence assertions only; no renderer/projection numerical model."""
+import json
+import sys
+from pathlib import Path
+j=json.loads(Path(sys.argv[1]).read_text());m=j['methods']
+assert j['expedition']==14 and len(m)==57
+assert j['archive_sha256']=='7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738'
+assert j['exe_sha256']=='6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d'
+assert j['scan']=={'decoded_bodies':19659,'zero_rva':1739,'decode_errors':0}
+def row(r):return m[hex(0x6000000+r)]
+def site(r,o,op,t):assert [o,op,hex(t)]in row(r)['token_sites'],(hex(r),hex(o),op,hex(t))
+def branch(r,o,op,d):assert [o,op,[d]]in row(r)['branches'],(hex(r),hex(o),op,hex(d))
+def const(r,o,op,v=None):assert [o,op,v]in row(r)['constants'],(hex(r),hex(o),op,v)
+def ar(r,o,op):assert [o,op]in row(r)['arithmetic_sites'],(hex(r),hex(o),op)
+def writes(f):return {(k,o)for k,ss in j['projection_field_sites'].items()for o,p,t in ss if p in ['stfld','stsfld']and t==hex(0x4000000+f)}
+# Separate object and drawable positions, original virtual setter continuation.
+site(0x45ec,9,'stfld',0x400252c);site(0x45ec,0x23d,'ldfld',0x400252c)
+site(0x45ec,0x252,'newobj',0x6004510);site(0x45ec,0x25e,'stfld',0x4002bf9)
+for o in [0x239,0x23a,0x23b]:const(0x45ec,o,'ldc.i4.1')
+site(0x4510,0x34,'stfld',0x4002cf6);site(0x4510,0x40,'stfld',0x4002cec)
+assert row(0x45f2)['virtual']and not row(0x45f2)['new_slot']
+assert {'method':'0x60045f2','owner':'0x200094c','new_slot':False}in j['circle_position_slot']
+site(0x45f2,3,'call',0x60024b0);site(0x24b0,2,'stfld',0x400252c)
+site(0x45f2,0x1e,'stfld',0x4002cf6)
+site(0x4728,0x11,'stfld',0x4002cf8)
+# Ordinary coordinate mode1 -> forward map; separate scale and stored-position fields.
+site(0x4518,0x3c8,'ldfld',0x4002cf6);site(0x4518,0x3cd,'stfld',0x4002b6e)
+assert [0x639,'switch',[0x9d9,0x9c1,0x9f1,0xa89,0xb55,0x68f,0x6af,0x6e6,0x71f,0x76f,0x7c8,0x81b,0x854,0x8ac,0x9a1,0x8fe,0x906,0x927,0x961]]in row(0x4518)['branches']
+site(0x4518,0x9e4,'callvirt',0x6000ff5)
+site(0xff5,2,'call',0x6000fea);site(0xff5,8,'call',0x6004ef5)
+site(0xff5,0x15,'call',0x6000fe6);site(0xff5,0x1a,'call',0x6004eee)
+for r,o,op in [(0x4ef5,8,'mul'),(0x4ef5,0x16,'mul'),(0x4eee,0xe,'add'),(0x4eee,0x22,'add')]:ar(r,o,op)
+site(0xff1,7,'call',0x6004efe);site(0xff1,0x12,'call',0x6004f03)
+const(0xfea,6,'ldc.r4',384.0);ar(0xfea,0xb,'div')
+site(0x28be,0x1c6,'stfld',0x40017f0);site(0x28be,0x1df,'stfld',0x4001a60)
+const(0x289b,0x33,'ldc.i4',128);site(0x4518,0x609,'ldfld',0x4001a60)
+site(0x4518,0xcbe,'stfld',0x4002b8d)
+branch(0x4518,0xcce,'beq.s',0xd0e);site(0x4518,0xcf2,'stfld',0x4002b8d)
+site(0x4518,0xd09,'stfld',0x4002b6e);branch(0x4518,0xd10,'brfalse.s',0xd46)
+# Origin/bounds compensation and optional top-left rounding, not unconditional center snap.
+site(0x4518,0x3d9,'stfld',0x4002b8c);site(0x4518,0xdea,'stfld',0x4002b8f)
+site(0x4518,0xd48,'stfld',0x4002b6f)
+site(0x4518,0xd4e,'ldflda',0x4002b77);site(0x4518,0xd66,'stfld',0x4002b6f)
+branch(0x4518,0xd7d,'bne.un.s',0xdac);branch(0x4518,0xd8f,'bne.un.s',0xdac)
+site(0x4518,0xd99,'call',0x6004ecd)
+const(0x4518,0xd9e,'ldc.r4',1.401298464324817e-45)
+branch(0x4518,0xda3,'bge.un.s',0xdac)
+ar(0x4518,0xdc8,'mul');ar(0x4518,0xde4,'mul')
+site(0x4518,0xdfb,'call',0x6004efe);branch(0x4518,0xe08,'brfalse.s',0xe34)
+site(0x4518,0xe14,'call',0xa000398);site(0x4518,0xe29,'call',0xa000398)
+ar(0x4518,0xe19,'conv.r4');ar(0x4518,0xe2e,'conv.r4')
+site(0x4518,0xe78,'stfld',0x4002b81)
+assert writes(0x2b81)=={('0x6004518',0xe78)}and writes(0x2b8f)=={('0x6004518',0xdea)}
+site(0x451a,0xc7,'ldflda',0x4002b81);site(0x451a,0xd2,'ldflda',0x4002b8f)
+site(0x451a,0x172,'callvirt',0x60031f5)
+site(0x2929,0x12f,'call',0x6004efd)
+# Viewport/scissor/projection are distinct state, not a guessed global transform.
+site(0x1e45,0x13,'stsfld',0x4001175);site(0x1e45,0xba,'call',0xa000eb4)
+site(0x1e45,0x186,'stsfld',0x4001175);site(0x1e45,0x1b3,'call',0xa000eb4)
+site(0x1e45,0x1c1,'call',0x6001e46);site(0x1e45,0x1d0,'call',0x6001e44)
+site(0x1e44,0xee,'call',0xa000eb0)
+assert writes(0x1175)=={('0x6001e45',0x13),('0x6001e45',0x186)}
+site(0x1e46,0x2f,'stsfld',0x4001176)
+for o,t in [(0x39,0xa000eb2),(0x44,0xa000ebb),(0x4f,0xa000ebc),(0x5a,0xa000eb3)]:site(0x1e46,o,'call',t)
+const(0x1e46,0x60,'ldc.r4',-1.0);const(0x1e46,0x65,'ldc.r4',1.0)
+site(0x1e46,0x6a,'call',0xa000540);site(0x1e46,0x6f,'stsfld',0x400116e)
+site(0x1e46,0x88,'call',0x6004b1a);assert writes(0x116e)=={('0x6001e46',0x6f)}
+site(0x4695,0x19,'call',0xa000ebc);ar(0x4695,0x1e,'sub')
+# Matrix publication and guarded uniform consumer; exact shader/offset names unresolved.
+site(0x4b1a,7,'callvirt',0xa0003f5);site(0x4b1a,0x3a,'callvirt',0x6003235)
+site(0x4b18,0x18,'call',0xa001963);site(0x4b18,0x39,'callvirt',0x6003236)
+site(0x3235,0x66,'stfld',0x40012fa);site(0x3235,0x79,'callvirt',0x6002161)
+site(0x3236,0x26,'callvirt',0x6002161)
+const(0x2161,0x141,'ldc.i4.0');site(0x2161,0x144,'call',0xa000f3b)
+site(0x46a6,0x78,'callvirt',0x6004b18);site(0x1e41,0x118,'call',0x6004442)
+site(0x1e41,0x11d,'stsfld',0x400116f)
+assert j['enums']['0x200071b']['values']['Texture2D']==0
+assert j['enums']['0x2000502']['values']['Texture']==0
+site(0x4441,0x22,'call',0xa00051c);site(0x4441,0x31,'callvirt',0xa00051d)
+site(0x52c8,0x14,'call',0xa0019ea);site(0x3e28,0x51,'call',0xa00169e)
+for o in [0x18,0x2f,0x46]:site(0x52ca,o,'call',0xa0019ed)
+const(0x52ca,7,'ldc.i4.2');const(0x52ca,0x1e,'ldc.i4.4');const(0x52ca,0x35,'ldc.i4.2')
+site(0x3e33,0x26,'call',0xa0016a7)
+q=j['opentk'];assert q['sha256']=='b415f3e061d9758316074dcbf31d6dba48cb0b89405254db94ead0e43ed88511'
+assert [0xa,'call','0x600092c']in q['methods']['0x600092d']['token_sites']
+for o,op in [(0x13,'sub'),(0x14,'div'),(0x1d,'sub'),(0x1e,'div'),(0x81,'neg')]:assert [o,op]in q['methods']['0x600092c']['arithmetic_sites']
+# Preserve E12's corrected update order alongside E05's documented ordinary route.
+site(0x226b,0x959,'callvirt',0x60028e2);branch(0x226b,0x972,'brfalse.s',0x9c9)
+branch(0x226b,0x9a6,'brfalse.s',0x9c9);site(0x226b,0x9cf,'callvirt',0x60028e3)
+shared=0
+for f in sorted((Path(__file__).parents[1]/'evidence').glob('*/*.json')):
+ if f.parent.name=='14':continue
+ old=json.loads(f.read_text()).get('methods',{})
+ for t,r in m.items():
+  if t in old and 'body_sha256'in r and 'body_sha256'in old[t]:
+   assert r['body_sha256']==old[t]['body_sha256'],(str(f),t)
+   shared+=1
+print(f'PASS: 57 EXE methods + 2 OpenTK matrix methods; position/origin/rounding, matrix/viewport/uniform/attribute boundaries; {shared} historical body hashes; no projection or game execution')
