@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""E18 read-only original metadata/CIL evidence, not a combo or break simulator.
+Requires pinned dnfile/pefile/dncil; reuses unchanged E04/E05/E15 collectors.
+"""
+import json
+import sys
+import zipfile
+import dnfile
+from dncil.cil.body.reader import read_method_body_from_bytes
+import slider_entry_evidence as collector
+
+METHODS=[0x113e,0x1141,0x651,0x652,0x48de,0x48e0,0x142d,0x143a,0x351a,
+ 0x351d,0x1884,0x2295,0x1464,0x146f,0x146d,0x146e,0x144a,0x145c,0xac5,
+ 0x114a,0xad2,0xad0,0xacf,0xaaf,0xabc,0x40ef,0x40f0,0x40f1,0x40f2,0x40f3,
+ 0x40f4,0x40f8,0x40fc,0xab1,0x19f5,0x4924,0x22a8,0x226c,0x2282,0x226b,
+ 0x2275,0x28e2,0x28e3,0x1465,0x28d3,0x229c,0x3b31,0x3b14]
+FIELDS={0x4000000+n for n in [0x5f2,0x2674,0x2673,0x198a,0x1975,0x5fa,
+ 0x5f6,0x5f3,0x5f7,0x13ea,0x153d,0x153b,0x252e,0x1527,0x152a,0xbf1,
+ 0xbf2,0xbf3,0xbf5,0xbf6,0xbf8,0x1380,0x137b,0x137c,0x1970,0x1971,
+ 0x198e,0x13bb,0x2c48,0x2c4c,0x3ea,0xed5,0x23b2,0x2351,0x234b]}
+
+def extract(path):
+    collector.METHODS=METHODS;collector.FIELDS=FIELDS
+    collector.CALLS={0x6000000+n for n in [0x146f,0x146e,0x24c3,0xad2,0xad0,
+      0x40f0,0x40f1,0xabc,0x19f5,0x3b31]}
+    collector.CHAINS={0x2af:[0x24c3],0x253:[0xac5,0xad2,0xad0,0xabc,0xab1],
+      0x892:[0x40f0,0x40f1,0x40f3],0x2ac:[0x19f5],0x2e9:[0x19f5],0x9d0:[0x19f5]}
+    out=collector.extract(path);out['expedition']=18
+    out['limits']=[x for x in out['limits']if not x.startswith('First tracking predicate')]
+    out['limits'].extend(['Interior checkpoint break/combo boundary only; full score/HP/effects/audio/observer UI unresolved',
+      'No original Windows, surrogate combo engine, field-probe or sound playback execution'])
+    with zipfile.ZipFile(path)as z:p=dnfile.dnPE(data=z.read('osu!.exe'))
+    ts=p.net.mdtables
+    out['semantic_field_names']={hex(0x4000000+rid):str(ts.Field.rows[rid-1].Name)
+      for rid in [0x36ab,0x36ac,0x36b5]}
+    for rid in METHODS:
+        r=ts.MethodDef.rows[rid-1]
+        if not r.Rva:continue
+        b=read_method_body_from_bytes(p.get_data(r.Rva))
+        out['methods'][hex(0x6000000+rid)]['array_sites']=[
+          [i.offset-b.header_size,i.opcode.name]for i in b.instructions
+          if i.opcode.name.startswith(('ldelem','stelem'))]
+    p.close();return out
+
+if __name__=='__main__':print(json.dumps(extract(sys.argv[1]),sort_keys=True,allow_nan=False))
