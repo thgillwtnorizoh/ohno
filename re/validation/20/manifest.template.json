@@ -1,0 +1,386 @@
+{
+  "artifacts": [],
+  "case_results": [
+    {
+      "actual_observations": null,
+      "case_id": "P1-IMPORT",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Import fails/changes data versus produces the predicted original object graph",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E05/E06/E15/E16: T02af/T06f6; S2000/E3500; predicted deadlines2500,3000,3464, verified only against actual import.",
+      "fixture": "slider",
+      "hypothesis": "Original loading naturally constructs ordinary parent/head, Movement and mixed component schedule",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "import"
+      ],
+      "procedure": "Open original copied map; stop if parser/import or resource failure. Inspect construction after loading, never insert objects.",
+      "required_observations": "parsed values, runtime types/IDs, head ref, duration, segments, Movement order/endpoints/times, F0bf8, readiness",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P1-ENTRY",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Process starts but gameplay never becomes ready versus visible original gameplay entry",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E01/E10: readiness/clock dependencies remain runtime inputs; no assumed startup duration.",
+      "fixture": "slider",
+      "hypothesis": "The imported map enters ordinary gameplay through its real readiness path",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "clock",
+        "order"
+      ],
+      "procedure": "Record original Play selection/loading route, labels and errors; capture entry with process/module hashes.",
+      "required_observations": "actual entry/capture, active ordinary ruleset/manager, readiness and actual source-clock receiver",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P2-HIT",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Input consumes published clock versus another timestamp; selection fails versus natural hit",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E10-E14: fresh F2358 reads, mapping/radius, M1884 strict comparisons and evaluated/raw fields; use measured widths.",
+      "fixture": "circle",
+      "hypothesis": "A visible circle can be naturally selected and judged on the recovered route",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "clock",
+        "circle"
+      ],
+      "procedure": "Fresh circle; place cursor on visible center, press configured Z or X once near start. Log actual consumed operands.",
+      "required_observations": "poll/dispatch ordering, cursor/layout/mapped values, radius and distance squared, start/error/widths/evaluated/raw, manager handoff",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P2-WIDER",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "First strict window is the whole range versus wider classification",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E12: strict comparisons against F0ade/F0add/F0adc; returned/stored raw and manager result separate.",
+      "fixture": "circle",
+      "hypothesis": "A naturally reached input can fall outside the best window but inside a later width",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "circle"
+      ],
+      "procedure": "Fresh run; deliberately early/late press; categorize only after reading actual comparison operands. Exact equality not presumed.",
+      "required_observations": "actual clock/error/three prepared widths, branch path, evaluated/raw/result event",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P2-SPATIAL",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Raw desktop pointer versus mapped coordinates; visible border versus hit radius",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E13/E14: mapped=(providerLocal-offset)*reciprocal(height/384f); ordered squared comparison accepts equality, no pixel-border proof.",
+      "fixture": "circle",
+      "hypothesis": "Selection uses mapped pointer and prepared radius, separate from timing",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "circle"
+      ],
+      "procedure": "Fresh runs at visible center then outside the circle with timing comparable; log original spatial operands and rejection.",
+      "required_observations": "provider/layout snapshots, F252c, F0ada, original distance/radius squares, spatial/time gate results",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P2-EXPIRE",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Visual disappearance versus actual evaluated timeout",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E12: separate fresh time/end/width comparison; candidate membership is not miss judgement.",
+      "fixture": "circle",
+      "hypothesis": "A never-pressed circle is evaluated by the original late update path",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "circle",
+        "order"
+      ],
+      "procedure": "Fresh run; no hit press. Trace manager timeout and first result event; retain candidate/readiness evidence.",
+      "required_observations": "no input record, timeout operands, F1527/F152a before/after, manager result",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P3-A",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Head success guarantees tracking versus separate held/cursor state",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E15/E16: parent selected, embedded head evaluated; strict state-dependent follow distance and entry<=deadline.",
+      "fixture": "slider",
+      "hypothesis": "Successful head and uninterrupted valid following produce natural checkpoint outcomes",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "tracking"
+      ],
+      "procedure": "Hit head; hold a real configured key and follow the original slider ball throughout one traversal.",
+      "required_observations": "parent/head IDs/results, held histories, mapped cursor/Movement/required point, radius squares, F0bf2/F0bf3, counters/outcomes/return",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P3-B",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Tracking loss alone causes result versus a due checkpoint failure",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E16/E18: one outstanding item per invocation; first interior raw8 versus\u2212262144 depends on real predicates.",
+      "fixture": "slider",
+      "hypothesis": "A genuine missed interior checkpoint returns its negative component result",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "tracking",
+        "combo_completion"
+      ],
+      "procedure": "Hit head successfully, release or leave the follow area across an actual imported interior deadline.",
+      "required_observations": "all P3-A operands plus due index/count, false outcome, guarded leave order and negative return",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P3-C",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Missed head vetoes later tracking versus independent states",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E15/E16: no positive-head prerequisite for tracking; record reached selection and timing gates.",
+      "fixture": "slider",
+      "hypothesis": "An unsuccessful head can coexist with subsequent valid tracking/checkpoint success",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "tracking"
+      ],
+      "procedure": "Fresh run; deliberately fail/omit head, then genuinely hold/follow before a later interior deadline if naturally reachable.",
+      "required_observations": "negative/unjudged head state separately from parent tracking and natural later outcome; blocker if unreachable",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P3-D",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Current followOK alone versus entry-time history",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E16: followOK plus F0bf2<=selected timestamp; late re-entry can fail while F0bf3true.",
+      "fixture": "slider",
+      "hypothesis": "Release/re-entry before or after a deadline changes component eligibility",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "tracking"
+      ],
+      "procedure": "Fresh runs with genuine release/re-entry around imported deadline; log consumed times, not intended input times.",
+      "required_observations": "held changes, old/new entry timestamp, active flag, deadline, comparison and return",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P4-COMBO",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "F153d is combo versus independent current count",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E18: first interior raw8 increments F2674;\u2212262144 sets0; F153d10/0 is separate.",
+      "fixture": "slider",
+      "hypothesis": "Matched success/failure produce different original combo setter writes",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "combo_completion"
+      ],
+      "procedure": "Pair P3-A/P3-B with matched prior combo/config; observe original M40f1 rather than writing raw results.",
+      "required_observations": "raw enum, object ID, F153d write, F2674 getter/setter, F1975/F198a, tracking and feedback/observer branches",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P4-COMPLETE",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "All checkpoints must drain versus completion at end using existing count",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E17: end<=fresh time; pending list need not drain; aggregate numerator/head contribution, Count+1 denominator, ratio and policy.",
+      "fixture": "slider",
+      "hypothesis": "Parent completion consumes actual head/component state independently of checkpoint returns",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "combo_completion",
+        "circle",
+        "order"
+      ],
+      "procedure": "Continue no-SD slider runs through original end; log final tracking call and manager completion. Do not create backlog by field injection.",
+      "required_observations": "end/time/evaluated, pending index/counters/slots, head raw, q operands, returned parent raw versus F152a and manager conversion/decorations",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P4-POLICY",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Assumed null/default versus actual optional-policy configuration",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E17: null reference policy differs from nonnullF198e head-quality constraints; actual setting unresolved.",
+      "fixture": "slider",
+      "hypothesis": "The real F13c3/F198e presence and runtime type determine which aggregate branch is selected",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "combo_completion"
+      ],
+      "procedure": "At completion inspect actual original refs/types and branch operands; never infer it solely from displayed score.",
+      "required_observations": "global record and optional-policy IDs/types/null status, each head raw read, policy branch and returned result",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P5-NO-SD",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Every failed tick ends play versus separate target/gates",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E19: no forced zero at12c3; actual delta then M226c consumes fresh F1857.",
+      "fixture": "slider",
+      "hypothesis": "No-SD genuine first-interior failure reaches measured adjustment and fail/continue check",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "failure",
+        "combo_completion"
+      ],
+      "procedure": "Fresh run through original configuration with SD absent; reproduce P3-B and log consumer target/gates.",
+      "required_observations": "record refs/converted bits, combo, target/accumulator/presentation/delta, M226c gates/recovery and actual continuation",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P5-SD",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Bit32 directly shows game over versus setter then gated decision",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E19: after reset bit32 can call M2979(0); delta intervenes before M226c; M0acb may recover or latch F136a.",
+      "fixture": "slider",
+      "hypothesis": "Original configured SuddenDeath changes the reached negative checkpoint path",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "failure",
+        "combo_completion"
+      ],
+      "procedure": "Use original configuration interface to enable SD; repeat same failure. If unavailable, record blocker; forced flag probe separate.",
+      "required_observations": "M2979 receiver/argument and before/after fields, M297a/b call, all gates, F05f8, M227d/M0acb, F136a/F136b, queued action versus capture",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P5-PAIR",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Unmatched prior state versus a bit32-specific consequence",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E19: record/global reads are separate; do not equate combo break, targetzero, latch, queued action and visible failure.",
+      "fixture": "slider",
+      "hypothesis": "No-SD/SD comparison is meaningful only under logged comparable configuration/state",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "failure"
+      ],
+      "procedure": "Review P5-NO-SD/P5-SD identities/input intent, schedules, head results, prior combo/target and changed settings; explain unavoidable differences.",
+      "required_observations": "paired run IDs, hashes, settings delta, real event refs and comparison with confounds/blockers",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    },
+    {
+      "actual_observations": null,
+      "case_id": "P0-OVERHEAD",
+      "comparison": "NOT_RUN",
+      "competing_alternatives": "Debugger-induced misses/backlog versus normal cadence",
+      "evidence_ids": [],
+      "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+      "expected_static_prediction": "E10-E19: no managed trace alone proves input latency, frame presentation or sound synchronization.",
+      "fixture": "both",
+      "hypothesis": "Tracing overhead must be measured before interpreting timing-sensitive comparisons",
+      "observation_mode": null,
+      "overhead": null,
+      "probe_groups": [
+        "clock",
+        "order"
+      ],
+      "procedure": "Repeat untraced visible runs then method-group traced runs (target three each if practical); record QPC hook duration, update cadence and drop counts. Separate paused debugger probes.",
+      "required_observations": "traced/untraced IDs, recorder/tracer versions/hashes, actual samples/counts/drops/median/max durations and limitations",
+      "runtime_configuration_changes": null,
+      "smallest_followup": "Run this case on the pinned authorized isolated Windows host; preserve actual operands or the real blocker."
+    }
+  ],
+  "environment": {
+    "architecture": null,
+    "clr_actual": null,
+    "display_gpu_dpi_refresh": null,
+    "game_settings_skin": null,
+    "input_devices": null,
+    "isolation_offline_snapshot": null,
+    "os": null,
+    "process_architecture": null,
+    "qpc_frequency": null,
+    "settings_hashes": null,
+    "sound_active_endpoint": null
+  },
+  "execution_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+  "gameplay_validation_completed": false,
+  "input_hashes": null,
+  "instrumentation": {
+    "binding_artifact_id": null,
+    "dropped_events": null,
+    "mode": null,
+    "overhead_measurements": null,
+    "tool_version_hashes": null
+  },
+  "kind": "ORIGINAL_REFERENCE_PILOT",
+  "limitations": [
+    "Prepared template only; all actual observations empty. Structural checking cannot certify runtime behavior."
+  ],
+  "reference": null,
+  "research_parent": "49726ef54767804f45784fae092c8ad70b23f7b5",
+  "run_id": null,
+  "schema_version": 1,
+  "windows_original_execution_attested": false
+}

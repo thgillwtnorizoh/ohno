@@ -1,0 +1,25 @@
+{
+  "authorized_windows_endpoint_provided": false,
+  "commands": {
+    "dotnet": null,
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "powershell": null,
+    "pwsh": null,
+    "qemu-system-x86_64": null,
+    "virsh": null,
+    "wine": null,
+    "wine64": null
+  },
+  "conclusion": "RUNTIME VALIDATION BLOCKED",
+  "date": "2026-10-29",
+  "dev_dri": false,
+  "dev_kvm": false,
+  "display_present": false,
+  "host_platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "limits": "Inventory of this session only; no remote-host discovery, credentials probing, VM boot or original execution attempted.",
+  "machine": "x86_64",
+  "os_name": "posix",
+  "runtime_test_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+  "timezone": "Asia/Bangkok",
+  "windows_execution_tool_exposed": false
+}

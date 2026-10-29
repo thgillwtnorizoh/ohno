@@ -1,0 +1,16 @@
+{
+  "active_sound_device_driver_latency_settings": null,
+  "actual_process_bits_and_clr": null,
+  "actual_windows_version": null,
+  "capture_tool_version_hash_fps_scaling_clock": null,
+  "frame_limiter_compatibility_offsets_dim_video_storyboard": null,
+  "gpu_driver_backend": null,
+  "isolated_disposable_offline_attestation": null,
+  "keyboard_mouse_devices_bindings": null,
+  "monitor_resolution_dpi_scaling_refresh": null,
+  "original_configuration_route_and_actual_mods": null,
+  "skin_identity_hashes": null,
+  "tracer_debugger_version_binary_hash_mode": null,
+  "unknown_fields_and_blockers": [],
+  "window_mode_client_bounds_viewport": null
+}

@@ -1,0 +1,39 @@
+{
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "audio": {
+    "channels": 1,
+    "filename": "silence.wav",
+    "frames": 264600,
+    "sample_rate": 44100,
+    "sample_width_bytes": 2,
+    "sha256": "c263760de082d12fd4a983296b361d1c29c0567f354b01a44149fe24e9609977"
+  },
+  "exe_module_mvid": "0ec6eb3a-4adc-4b54-1f45-8b4ed40b33b1",
+  "exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "files": {
+    "audio_generator": {
+      "repo_path": "re/tools/make_entry_control.py",
+      "sha256": "f1fa00bcbbfad0d00c29db85a7ee4360dac74737ae51413fe82ea16b3f940beb"
+    },
+    "circle": {
+      "repo_path": "re/validation/20/fixtures/circle-control.osu",
+      "sha256": "682d600f7a76436c9ec17f1b2ccf52afc968ebf5ef81c3e74b282161c5d0aa0d"
+    },
+    "slider": {
+      "repo_path": "re/fixtures/16/single-linear-component.osu",
+      "sha256": "f57e2231d7bd3f376632992eed4fced5e6bc57a885c9375a7c1fbf0e71483a84"
+    }
+  },
+  "identity": "Self-declared Stable40/file-version1.3.3.8; official dated authenticity/modification status UNRESOLVED",
+  "original_import_status": "NOT RUN \u2014 WINDOWS HOST REQUIRED",
+  "research_parent": "49726ef54767804f45784fae092c8ad70b23f7b5",
+  "slider_predictions_only": {
+    "component_times": [
+      2500,
+      3000,
+      3464
+    ],
+    "end": 3500,
+    "start": 2000
+  }
+}

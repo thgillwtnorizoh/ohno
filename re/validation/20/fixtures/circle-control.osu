@@ -1,0 +1,38 @@
+osu file format v14
+
+[General]
+AudioFilename: silence.wav
+AudioLeadIn: 0
+PreviewTime: -1
+Countdown: 0
+SampleSet: Normal
+StackLeniency: 0.7
+Mode: 0
+LetterboxInBreaks: 0
+WidescreenStoryboard: 0
+
+[Metadata]
+Title:Windows Pilot Circle Control
+Artist:Project Original Fixture
+Creator:Work 1
+Version:One Circle - Unvalidated
+Source:
+Tags:original research fixture expedition20
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+
+[Events]
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+256,192,2000,1,0,0:0:0:0:

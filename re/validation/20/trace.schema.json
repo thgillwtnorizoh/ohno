@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "binding_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "branch": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "cil_offset": {
+      "pattern": "^0x[0-9a-fA-F]+$",
+      "type": "string"
+    },
+    "exception": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method_token": {
+      "pattern": "^0x060[0-9a-fA-F]{5}$",
+      "type": "string"
+    },
+    "observation_mode": {
+      "enum": [
+        "natural_low_overhead",
+        "natural_debugger_paused",
+        "forced_probe",
+        "collector_selftest"
+      ]
+    },
+    "probe_id": {
+      "type": "string"
+    },
+    "qpc_ticks": {
+      "pattern": "^[0-9]+$",
+      "type": "string"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "seq": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "stage": {
+      "enum": [
+        "entry",
+        "instruction",
+        "return",
+        "exception",
+        "queue",
+        "capture_marker"
+      ]
+    },
+    "thread_id": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "thread_seq": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "values": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bits_hex": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "capture_kind": {
+            "enum": [
+              "consumed_operand",
+              "field_snapshot",
+              "argument",
+              "return",
+              "branch_result",
+              "unavailable"
+            ]
+          },
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "reference_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "unavailable_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value_type": {
+            "enum": [
+              "Int32",
+              "UInt16",
+              "Single",
+              "Double",
+              "Boolean",
+              "EnumInt32",
+              "Reference",
+              "Int32List",
+              "BooleanArray",
+              "Unknown"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "value_type",
+          "capture_kind",
+          "text",
+          "bits_hex",
+          "reference_id",
+          "unavailable_reason"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "case_id",
+    "seq",
+    "thread_id",
+    "thread_seq",
+    "qpc_ticks",
+    "probe_id",
+    "method_token",
+    "cil_offset",
+    "binding_id",
+    "stage",
+    "observation_mode",
+    "values",
+    "branch",
+    "exception"
+  ],
+  "title": "E20 observation record; schema compliance is not original-runtime proof",
+  "type": "object"
+}
