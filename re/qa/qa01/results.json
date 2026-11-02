@@ -1,0 +1,180 @@
+{
+  "category": "STATIC_SOURCE_AND_ORIGINAL_BYTES",
+  "headless_csharp_execution": {
+    "dotnet_on_path": false,
+    "reason": ".NET SDK unavailable in this QA host",
+    "status": "NOT RUN",
+    "tests_executed": 0
+  },
+  "limitations": [
+    "No R02 C# method executed by these tests",
+    "Bounded source checks are not a general C# compiler or behavioral test substitute",
+    "Headless C# behavioral suite provided separately; do not infer it passed",
+    "No desktop, OS input, GUI application, capture or original executable operation"
+  ],
+  "original_runtime": "NOT RUN; E20 remains incomplete",
+  "physical_input_gameplay": "UNVERIFIED \u2014 owner operation only",
+  "qa": "QA01",
+  "summary": {
+    "errors": 0,
+    "failed": 2,
+    "passed": 35,
+    "run": 37,
+    "skipped": 0
+  },
+  "target_commit": "140f2db00a513221dde4d00cd9897663635375c1",
+  "tests": [
+    {
+      "status": "PASS",
+      "test": "test_static.OriginalBytes.test_33_archive_executable_hashes"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.OriginalBytes.test_34_selected_original_body_hashes"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.OriginalBytes.test_35_strict_classification_original_bge"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.OriginalBytes.test_36_ordered_spatial_original_ble"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.OriginalBytes.test_37_original_circle_timeout_equality_skip"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_01_pinned_work2_sources"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_02_window_anchors"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_03_strict_classification_order"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_04_absolute_integer_error"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_05_expiration_is_strict"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_06_evaluated_exclusion"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_07_selection_includes_both_time_equalities"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_08_first_passing_circle_returns"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_09_admission_strict_400_and_earlier_three"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_10_approach_and_truncation"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_11_separate_radius_preparation"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_12_squared_geometry_preserves_finite_equality"
+    },
+    {
+      "detail": "False is not true : QA01-D01: bare distanceSquared > radiusSquared rejection accepts NaN; original M24c7:0054 requires ordered <=. No C# runtime observation claimed.",
+      "status": "FAIL",
+      "test": "test_static.SourceContracts.test_13_QA01_D01_reject_unordered_distance"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_14_forward_and_inverse_layout"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_15_surface_maps_stored_time_without_refresh"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_16_input_repeat_and_held_key_policy"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_17_key_release_and_deactivation"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_18_paused_input_is_guarded_before_mouse_sample"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_19_no_mouse_click_judgement"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_20_fresh_per_session_circle_states"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_21_map_load_waits_and_pauses"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_22_parse_before_replacing_session"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_23_result_and_finished_guards"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_24_header_and_explicit_standard_mode"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_25_required_finite_difficulty"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_26_finite_coordinates_clamp_then_truncate"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_27_type_and_object_time_validation"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_28_reject_empty_and_equal_time_maps"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_29_sort_readonly_and_size_limits"
+    },
+    {
+      "detail": "False is not true : QA01-D02: required fifth hit-object field is never read/validated; malformed hitsound fixture is admitted by the reviewed source path.",
+      "status": "FAIL",
+      "test": "test_static.SourceContracts.test_30_QA01_D02_validate_required_hitsound_column"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_31_no_gui_source_linked_into_headless_suite"
+    },
+    {
+      "status": "PASS",
+      "test": "test_static.SourceContracts.test_32_bundled_fixture_identity"
+    }
+  ],
+  "visual_presentation": "UNVERIFIED \u2014 no owner capture supplied",
+  "windows_launch": "UNVERIFIED \u2014 owner operation only"
+}

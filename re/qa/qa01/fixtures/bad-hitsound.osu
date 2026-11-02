@@ -1,0 +1,15 @@
+osu file format v14
+
+[General]
+Mode: 0
+
+[Metadata]
+Title: QA01 malformed required hitSound field
+
+[Difficulty]
+CircleSize: 5
+OverallDifficulty: 5
+ApproachRate: 5
+
+[HitObjects]
+256,192,2000,1,not-a-number

@@ -1,0 +1,95 @@
+{
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "date": "2026-11-02",
+  "exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "human_interaction": "No application operation authorized or performed",
+  "original_execution": "NOT RUN",
+  "original_methods": {
+    "M0ad9": {
+      "body_bytes": 276,
+      "body_sha256": "26cebc0ec147e65ffb53f57e58322149b59d11f1230ce21cfc1707269aa86752",
+      "evidence": "re/evidence/11/circle-input.json",
+      "file_offset": 242644,
+      "header_bytes": 12,
+      "token": "0x6000ad9"
+    },
+    "M0ff1": {
+      "body_bytes": 25,
+      "body_sha256": "42b40b9120db5d1ba484cbb7fe9b5ab99a4b0b2fdfe27421363de4bf5d1c7115",
+      "evidence": "re/evidence/13/cursor-radius.json",
+      "file_offset": 401888,
+      "header_bytes": 1,
+      "token": "0x6000ff1"
+    },
+    "M1884": {
+      "body_bytes": 166,
+      "body_sha256": "e1ec885ada0f20d49a2ecebf8cf979b8effee6d17d4f0053d4bc80ac22aa9338",
+      "evidence": "re/evidence/12/circle-judgement.json",
+      "file_offset": 625192,
+      "header_bytes": 12,
+      "token": "0x6001884"
+    },
+    "M24c7": {
+      "body_bytes": 128,
+      "body_sha256": "c3182e7e44e9561db762772ee8e7988118695cbeb4b1819004af14db7f1a2104",
+      "evidence": "re/evidence/11/circle-input.json",
+      "file_offset": 947740,
+      "header_bytes": 12,
+      "token": "0x60024c7"
+    },
+    "M28b3": {
+      "body_bytes": 123,
+      "body_sha256": "a079801591b1eb452d313e80f481453f828e161bb4605785e999e11a0fac675f",
+      "evidence": "re/evidence/07/candidate-windows.json",
+      "file_offset": 1071620,
+      "header_bytes": 12,
+      "token": "0x60028b3"
+    },
+    "M28be": {
+      "body_bytes": 525,
+      "body_sha256": "f9e1de22a60ae85deecb2bd1647972fc2fa5219e48e45cc50ac7479ccf326357",
+      "evidence": "re/evidence/13/cursor-radius.json",
+      "file_offset": 1072100,
+      "header_bytes": 12,
+      "token": "0x60028be"
+    },
+    "M28e4": {
+      "body_bytes": 227,
+      "body_sha256": "bb57be9a4658f4470bb0cf1e14ae44cf9572dff521e04da01a9fade2a23c34ac",
+      "evidence": "re/evidence/12/circle-judgement.json",
+      "file_offset": 1079800,
+      "header_bytes": 12,
+      "token": "0x60028e4"
+    }
+  },
+  "qa": "QA01",
+  "research_report_sha256": {
+    "re/07-gameplay-candidate-windows-and-eligibility.md": "03a63683751d1b0daee78606f2019c195b9e3107c6cdd71c699d27f3974b6bd2",
+    "re/08-circle-and-slider-head-visual-states.md": "1004bc061f7f2a8f9f8747e44fa1b05237d44fec5e1122838741d3ffde980f35",
+    "re/09-circle-drawing-receiver-and-batch-boundary.md": "420354598837a64a9c15b77ddd81df6c3d70a14febe4c8147623b60602b8db8d",
+    "re/10-gameplay-clock-source-and-update-order.md": "414d2c6e7167b7be46cd4d09ae149f0b787d1ea631763ddc16bcb99a41a9ffcb",
+    "re/11-circle-input-timestamp-and-first-hit-window.md": "c58a5da97fc33d9897f935ef3838fdb10011f0b216d8aa096280129660b9058b",
+    "re/12-circle-judgement-classification-and-expiration.md": "116305d9abf1ee58b3f2bac580bbf15f4dce489c85787aa5ecd97721479f5b41",
+    "re/13-cursor-mapping-and-circle-hit-radius.md": "cce4c854dcbb8ee639ec1c4af684b4211bb3d506a5c7c54c2da5d7df1716cffd",
+    "re/14-circle-draw-center-projection-and-input-alignment.md": "8408a6a7ae964223a685ed285f2eeb18fe00cedce3a5647ba02b67a95359df25"
+  },
+  "target_commit": "140f2db00a513221dde4d00cd9897663635375c1",
+  "target_tree": "3a49a831d82e854bd9e8f8ae09fe2df8c1ae6d6d",
+  "timezone": "Asia/Bangkok",
+  "work2_behavior_execution": "NOT RUN \u2014 .NET SDK unavailable",
+  "work2_sha256": {
+    "reconstructed/CircleGame/.gitignore": "6c5082c7e6de3e350189c67a1aacf757485ecc26e0a3cf96683528565f3e5f12",
+    "reconstructed/CircleGame/Fixtures/first-circles.osu": "3575ede9a893669af76585b9dcca2a5132bf37e206f02d98f049293f9bc0f2a2",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "9713c7c8a098c096fc0e13ac4cc0f3b99c57f3d3b4329faaec209ff52bef8e4c",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "92742e87cf402585487485277340f0c3512837085275354dcc500331f2206f4a",
+    "reconstructed/CircleGame/Ohno.CircleGame.csproj": "12263c47efa80fad6df2767676415d75192df30b5c3f293cd8aee8d9c44ed8f8",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "791a9a68b015f0dd41e00488b93a3d31e048743d0eb6b60b780b66bf17c42e2d",
+    "reconstructed/CircleGame/Program.cs": "a87492d94b9b7ea114bb6d9a8abe761718e1535b0b02de4822929fa734481894",
+    "reconstructed/CircleGame/README.md": "f2e9d3bead33edbb37c9d4bb9d58d8497a797433c75138da38de305a4495c5c0",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "cf440743a55ed0ccf3cf7c7a90edc031552d4fe9e107f6dcb24cb0c6ff21db19",
+    "reconstructed/CircleGame/Start-CircleGame.cmd": "f0916092a0916ddcfda3180537ec4fde8aeef5d533b37e1ae84dff9345751744",
+    "reconstructed/R02-first-circle.md": "728e998b6490cd140188ea27133912c0bbe1bd79097bf4d70133a29600fe322b",
+    "reconstructed/contexts.md": "747033e9cf53229bc1162fa82dad7abccea8038ee8cfdacab48164fc5fd6b6e9"
+  }
+}

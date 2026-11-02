@@ -1,0 +1,340 @@
+{
+  "application_operations": 0,
+  "git_fsck": {
+    "exit_code": 0,
+    "output": "dangling tree b2d95b257a7733b2b10fee626a2937127ed0468d\ndangling commit 08fa26515647154e68772dca3939cc58553bd13a",
+    "stderr": ""
+  },
+  "original_execution": false,
+  "python_in_memory_compile": {
+    "files": 67,
+    "status": "PASS"
+  },
+  "r01_tests": {
+    "exit_code": 0,
+    "output": "test_adjacent_float_thresholds (test_transition_progress.TransitionProgressTests.test_adjacent_float_thresholds) ... ok\ntest_callback_error_propagation_is_api_policy (test_transition_progress.TransitionProgressTests.test_callback_error_propagation_is_api_policy) ... ok\ntest_callback_receives_final_result_once (test_transition_progress.TransitionProgressTests.test_callback_receives_final_result_once) ... ok\ntest_input_types_are_api_policy (test_transition_progress.TransitionProgressTests.test_input_types_are_api_policy) ... ok\ntest_no_callback_is_required (test_transition_progress.TransitionProgressTests.test_no_callback_is_required) ... ok\ntest_nonfinite_inputs_are_rejected_without_callback (test_transition_progress.TransitionProgressTests.test_nonfinite_inputs_are_rejected_without_callback) ... ok\ntest_overflow_policy (test_transition_progress.TransitionProgressTests.test_overflow_policy) ... ok\ntest_static_contract_cases (test_transition_progress.TransitionProgressTests.test_static_contract_cases) ... ok\ntest_thresholds_precede_arithmetic (test_transition_progress.TransitionProgressTests.test_thresholds_precede_arithmetic) ... ok\ntest_two_invocation_sequences (test_transition_progress.TransitionProgressTests.test_two_invocation_sequences) ... ok\ntest_unsupported_phases_are_rejected_without_callback (test_transition_progress.TransitionProgressTests.test_unsupported_phases_are_rejected_without_callback) ... ok\ntest_unused_rate_does_not_change_arithmetic (test_transition_progress.TransitionProgressTests.test_unused_rate_does_not_change_arithmetic) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK"
+  },
+  "r02_csharp_cases_executed": 0,
+  "research_checkers": [
+    {
+      "command": [
+        "python",
+        "re/tools/check_static_control_flow.py",
+        "re/evidence/02/static-control-flow.json"
+      ],
+      "exit_code": 0,
+      "expedition": 2,
+      "stderr": "",
+      "stdout": "PASS: pinned input, entry edge, enum, Play switch, four constructors, registration order, callers and scan coverage"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_request_guards.py",
+        "re/evidence/03/request-guards.json"
+      ],
+      "exit_code": 0,
+      "expedition": 3,
+      "stderr": "",
+      "stdout": "PASS: method identity, CFG/return coverage, 34 branch mappings, switch, ordered side-effect sites and replay callback"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_beatmap_init.py",
+        "re/evidence/04/initialization.json"
+      ],
+      "exit_code": 0,
+      "expedition": 4,
+      "stderr": "",
+      "stdout": "PASS: pinned input, 66 methods, selected-map flow, callback wiring, factory slots, object constructors, registration and initial fields"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_timing.py",
+        "re/evidence/05/slider-timing.json"
+      ],
+      "exit_code": 0,
+      "expedition": 5,
+      "stderr": "",
+      "stdout": "PASS: 57 methods, ruleset correction, virtual slots, timing/length/arithmetic sites, versions, separate writer; 19 E04 body hashes agree"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_linear_geometry.py",
+        "re/evidence/06/linear-geometry.json"
+      ],
+      "exit_code": 0,
+      "expedition": 6,
+      "stderr": "",
+      "stdout": "PASS: 43 methods, Linear switch/pairs, coordinate conversions, tail guards, storage, duration and external consumer; 19 E05 hashes agree; full field scan 19659 bodies"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_candidate_windows.py",
+        "re/evidence/07/candidate-windows.json"
+      ],
+      "exit_code": 0,
+      "expedition": 7,
+      "stderr": "",
+      "stdout": "PASS: 49 methods; candidate search/scan/storage, comparison mismatch, circle/slider gates, readiness/dispatch; 17 E06 hashes agree; 19659 decoded bodies"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_visual_states.py",
+        "re/evidence/08/visual-states.json"
+      ],
+      "exit_code": 0,
+      "expedition": 8,
+      "stderr": "",
+      "stdout": "PASS: 59 original methods; component/queue/transform/draw sites; 28 historical body hashes; 19659 decoded bodies, 0 errors; no runtime/pixel tests"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_circle_drawing.py",
+        "re/evidence/09/circle-drawing.json"
+      ],
+      "exit_code": 0,
+      "expedition": 9,
+      "stderr": "",
+      "stdout": "PASS: 72 EXE methods + 2 OpenTK methods; receiver hierarchy/writers, argument/guard/vertex sites, generic batch/flush/native boundary; 14 historical hashes; no runtime/pixel execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_gameplay_clock.py",
+        "re/evidence/10/gameplay-clock.json"
+      ],
+      "exit_code": 0,
+      "expedition": 10,
+      "stderr": "",
+      "stdout": "PASS: 103 methods; seven direct writer methods, clock branches/conversions, source dispatch/native imports, seek/rate/loading, host update/draw/timing ordering; 17 historical body-hash comparisons; no clock execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_circle_input.py",
+        "re/evidence/11/circle-input.json"
+      ],
+      "exit_code": 0,
+      "expedition": 11,
+      "stderr": "",
+      "stdout": "PASS: 76 methods; keyboard polling/mouse latch convergence, timestamp-free dispatch, clock/input/refresh order, Play/selection/admission and first strict circle comparison; 351 historical body-hash comparisons; no input/judge execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_circle_judgement.py",
+        "re/evidence/12/circle-judgement.json"
+      ],
+      "exit_code": 0,
+      "expedition": 12,
+      "stderr": "",
+      "stdout": "PASS: 48 methods; strict classification/widths, ordinary update slots/timeout, manager conversion/bookkeeping/result event; 312 historical body-hash comparisons; no judgement execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_cursor_radius.py",
+        "re/evidence/13/cursor-radius.json"
+      ],
+      "exit_code": 0,
+      "expedition": 13,
+      "stderr": "",
+      "stdout": "PASS: 68 methods; provider boundary/client origin, offset/reciprocal mapping, layout/radius preparation, strict ordinary slot identity and ordered spatial comparison; 237 historical hashes; no coordinate/judge execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_circle_projection.py",
+        "re/evidence/14/circle-projection.json"
+      ],
+      "exit_code": 0,
+      "expedition": 14,
+      "stderr": "",
+      "stdout": "PASS: 57 EXE methods + 2 OpenTK matrix methods; position/origin/rounding, matrix/viewport/uniform/attribute boundaries; 108 historical body hashes; no projection or game execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_entry.py",
+        "re/evidence/15/slider-entry.json"
+      ],
+      "exit_code": 0,
+      "expedition": 15,
+      "stderr": "",
+      "stdout": "PASS: 54 methods; parent/head dispatch, current-object ordering, held masks, Move-position/strict hysteresis, entry/leave and timeout boundary; 435 historical body hashes; no tracking/game execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_components.py",
+        "re/evidence/16/slider-components.json"
+      ],
+      "exit_code": 0,
+      "expedition": 16,
+      "stderr": "",
+      "stdout": "PASS: 70 methods; mixed schedule producer, due-prefix/one-item decision, counters/array/raw returns, ordinary consumer and ordering; 487 historical body hashes; no original or substitute gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_completion.py",
+        "re/evidence/17/slider-completion.json"
+      ],
+      "exit_code": 0,
+      "expedition": 17,
+      "stderr": "",
+      "stdout": "PASS: 60 methods; inclusive parent completion, no pending drain, aggregate ratio/head branch, return-versus-field distinction, manager handoff/order; 413 historical body hashes; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_break.py",
+        "re/evidence/18/slider-break.json"
+      ],
+      "exit_code": 0,
+      "expedition": 18,
+      "stderr": "",
+      "stdout": "PASS: 48 methods; checkpoint provenance/leave ordering, direct combo increment/reset, independent feedback gate and optional observer; 310 historical body hashes; no original or surrogate combo execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_play_failure.py",
+        "re/evidence/19/play-failure.json"
+      ],
+      "exit_code": 0,
+      "expedition": 19,
+      "stderr": "",
+      "stdout": "PASS: 52 methods; bit32 provenance, absolute two-field setter, intervening delta and first fail/continue/latch/recovery boundaries; 247 historical hashes; no original or surrogate failure execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_repeat.py",
+        "re/evidence/21/first-repeat.json"
+      ],
+      "exit_code": 0,
+      "expedition": 21,
+      "stderr": "",
+      "stdout": "PASS: 35 original methods, reversal/carry/Movement/query/checkpoint/consumer sites; 274 historical body hashes; fixture 8c5573d0d4fbc84e2898170273c31747b3f8eca232290ee01af65954633e2154; no gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_slider_terminal.py",
+        "re/evidence/22/terminal-checkpoint.json"
+      ],
+      "exit_code": 0,
+      "expedition": 22,
+      "stderr": "",
+      "stdout": "PASS: 48 original methods; final due/result/Boolean/combo/consumer and parent ordering; 330 historical hashes; E21 fixture unchanged; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_aggregate_policy.py",
+        "re/evidence/23/aggregate-policy.json"
+      ],
+      "exit_code": 0,
+      "expedition": 23,
+      "stderr": "",
+      "stdout": "PASS: 47 original methods; exact four F198e stores, metadata, factory/source/restore/consumer gates; 44 historical body hashes; static only, E20 NOT RUN"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_spinner_entry.py",
+        "re/evidence/24/spinner-entry.json"
+      ],
+      "exit_code": 0,
+      "expedition": 24,
+      "stderr": "",
+      "stdout": "PASS:61 original methods; ordinary spinner slots/input/wrap/motion/progress/order; 211 historical body hashes; fixture hashed, not imported; all runtime cases NOT RUN"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_spinner_result.py",
+        "re/evidence/25/spinner-result.json"
+      ],
+      "exit_code": 0,
+      "expedition": 25,
+      "stderr": "",
+      "stdout": "PASS:51 original methods; integer/counter/cache/result/ordinary dispatch/combo bypass/order; 216 historical body hashes; E24 fixture unchanged; no original or surrogate execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_spinner_completion.py",
+        "re/evidence/26/spinner-completion.json"
+      ],
+      "exit_code": 0,
+      "expedition": 26,
+      "stderr": "",
+      "stdout": "PASS:62 original methods; spinner completion/thresholds/prefix/manager/event/final combo/order; 288 historical body hashes; fixture unchanged; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_gameplay_completion.py",
+        "re/evidence/27/gameplay-completion.json"
+      ],
+      "exit_code": 0,
+      "expedition": 27,
+      "stderr": "",
+      "stdout": "PASS:66 original methods; completion/finalization/end thresholds/record/Rank request/guards/conditional commit/order; 156 historical body hashes; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_pause_resume.py",
+        "re/evidence/28/pause-resume.json"
+      ],
+      "exit_code": 0,
+      "expedition": 28,
+      "stderr": "",
+      "stdout": "PASS:119 original methods; pause/pending/resume/clock/update/recovery/finalization/dispatch and bounded focus sites; 210 historical body hashes; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_seek_restore.py",
+        "re/evidence/29/seek-restore.json"
+      ],
+      "exit_code": 0,
+      "expedition": 29,
+      "stderr": "",
+      "stdout": "PASS:98 original methods; seek/hold/initialization/partial reset/record/frame retention and update order; 376 historical body hashes; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_control_provider.py",
+        "re/evidence/30/control-provider.json"
+      ],
+      "exit_code": 0,
+      "expedition": 30,
+      "stderr": "",
+      "stdout": "PASS:124 original methods; control/provider/frame/admission and first-update boundaries; 333 historical body hashes; no original or surrogate gameplay execution"
+    },
+    {
+      "command": [
+        "python",
+        "re/tools/check_provider_departure.py",
+        "re/evidence/31/provider-departure.json"
+      ],
+      "exit_code": 0,
+      "expedition": 31,
+      "stderr": "",
+      "stdout": "PASS:111 original methods;25 selector caller sites;departure/history/event7 boundaries;276 historical body hashes;no original or surrogate input execution"
+    }
+  ],
+  "target_commit": "140f2db00a513221dde4d00cd9897663635375c1"
+}
