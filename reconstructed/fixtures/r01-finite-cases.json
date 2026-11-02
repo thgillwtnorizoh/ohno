@@ -1,0 +1,337 @@
+{
+  "research_commit": "586ed1d668d535533cd5822cf0fdd6790b61d5d0",
+  "source": "re/02-static-gameplay-initialization-and-control-flow.md",
+  "oracle": "Work 2 cases derived from Work 1 static finite projection; NOT original execution measurements",
+  "cases": [
+    {
+      "id": "outgoing-cross",
+      "input": {
+        "phase": 0,
+        "progress": 99,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 100,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-threshold",
+      "input": {
+        "phase": 0,
+        "progress": 100,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 3,
+        "progress": 100,
+        "completion": "outgoing"
+      }
+    },
+    {
+      "id": "incoming-cross",
+      "input": {
+        "phase": 1,
+        "progress": 1,
+        "outgoing_rate": 0,
+        "incoming_rate": 10,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": -1,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-threshold",
+      "input": {
+        "phase": 1,
+        "progress": -1,
+        "outgoing_rate": 0,
+        "incoming_rate": 10,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 2,
+        "progress": -1,
+        "completion": "incoming"
+      }
+    },
+    {
+      "id": "incoming-zero",
+      "input": {
+        "phase": 1,
+        "progress": 0,
+        "outgoing_rate": 0,
+        "incoming_rate": 10,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 2,
+        "progress": 0,
+        "completion": "incoming"
+      }
+    },
+    {
+      "id": "outgoing-above",
+      "input": {
+        "phase": 0,
+        "progress": 120,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 3,
+        "progress": 120,
+        "completion": "outgoing"
+      }
+    },
+    {
+      "id": "incoming-below",
+      "input": {
+        "phase": 1,
+        "progress": -4,
+        "outgoing_rate": 0,
+        "incoming_rate": 10,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 2,
+        "progress": -4,
+        "completion": "incoming"
+      }
+    },
+    {
+      "id": "outgoing-fractional",
+      "input": {
+        "phase": 0,
+        "progress": 20,
+        "outgoing_rate": 2.5,
+        "incoming_rate": 999,
+        "update_scale": 0.5
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 21.25,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-fractional",
+      "input": {
+        "phase": 1,
+        "progress": 20,
+        "outgoing_rate": 999,
+        "incoming_rate": 2.5,
+        "update_scale": 0.5
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 18.75,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-zero-scale",
+      "input": {
+        "phase": 0,
+        "progress": 50,
+        "outgoing_rate": 10,
+        "incoming_rate": 20,
+        "update_scale": 0
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 50,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-zero-scale",
+      "input": {
+        "phase": 1,
+        "progress": 50,
+        "outgoing_rate": 10,
+        "incoming_rate": 20,
+        "update_scale": 0
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 50,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-zero-rate",
+      "input": {
+        "phase": 0,
+        "progress": 50,
+        "outgoing_rate": 0,
+        "incoming_rate": 20,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 50,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-zero-rate",
+      "input": {
+        "phase": 1,
+        "progress": 50,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 50,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-no-lower-clamp",
+      "input": {
+        "phase": 0,
+        "progress": -5,
+        "outgoing_rate": -10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 0,
+        "progress": -15,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-no-upper-clamp",
+      "input": {
+        "phase": 1,
+        "progress": 105,
+        "outgoing_rate": 0,
+        "incoming_rate": -10,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 115,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-negative-scale",
+      "input": {
+        "phase": 0,
+        "progress": 50,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": -2
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 30,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-negative-scale",
+      "input": {
+        "phase": 1,
+        "progress": 50,
+        "outgoing_rate": 0,
+        "incoming_rate": 10,
+        "update_scale": -2
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 70,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-exact-arrival",
+      "input": {
+        "phase": 0,
+        "progress": 90,
+        "outgoing_rate": 10,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 100,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-exact-arrival",
+      "input": {
+        "phase": 1,
+        "progress": 1,
+        "outgoing_rate": 0,
+        "incoming_rate": 1,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": 0,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-between-zero-and-sentinel",
+      "input": {
+        "phase": 1,
+        "progress": 0.5,
+        "outgoing_rate": 0,
+        "incoming_rate": 1,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": -0.5,
+        "completion": null
+      }
+    },
+    {
+      "id": "outgoing-large-clamp",
+      "input": {
+        "phase": 0,
+        "progress": 99,
+        "outgoing_rate": 10000,
+        "incoming_rate": 0,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 0,
+        "progress": 100,
+        "completion": null
+      }
+    },
+    {
+      "id": "incoming-large-clamp",
+      "input": {
+        "phase": 1,
+        "progress": 1,
+        "outgoing_rate": 0,
+        "incoming_rate": 10000,
+        "update_scale": 1
+      },
+      "expected": {
+        "phase": 1,
+        "progress": -1,
+        "completion": null
+      }
+    }
+  ]
+}
