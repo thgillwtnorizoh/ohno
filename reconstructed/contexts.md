@@ -47,3 +47,43 @@ side-effect ordering, plus original-run reference traces before host integration
 User scope explicitly places R01 documentation in `reconstructed/` and prohibits
 editing `re/`; therefore no shared research journal update or new numbered
 reverse-engineering mark is made. No other contract exception is used.
+
+## R02 — First Human-Playable Circle
+
+Date: 2026-11-02 (Asia/Bangkok). Work 2. Started current `origin/main` at
+`38dee7561569210f25c49f9eb6810bc0a06f634b`; canonical publication to `main`, no
+milestone branch. Read AGENTS.md/full contract/journal/R01 and relevant E04,
+E07–E14, E20, E27 material, preserving the ordinary/Taiko correction and E20's
+preparation-only status. No original archive/binary inspection, research tooling,
+original-game experiment, OBS or CDB.
+
+Implemented `CircleGame/`: .NET 8 WPF Windows application, independent circle
+fixture, local narrow `.osu` reader, separate gameplay/layout/clock/input/render
+responsibilities, real mouse and Z/X key-down edges, approach timing/size/radius,
+strict judgement windows, expiration, visible feedback/combo/accuracy, results and
+restart. Added Windows launcher/run instructions and `R02-first-circle.md` with
+source-to-research mapping, exact limits and handoff. R01 files/tests retained.
+
+Actual checks: Linux .NET SDK8.0.427 Release build and explicit framework-dependent
+`win-x64` Release build both SUCCEEDED with 0 warnings/0 errors. Windows GUI PE32+
+apphost generated and fixture copied. Launch attempt via dotnet returned150 before
+window creation: Microsoft.WindowsDesktop.App unavailable on Linux; no graphical
+Windows session or Wine. **Windows launch, physical input, visible judgement and
+restart are UNVERIFIED**, not a proven playable build. No automated tests/QA
+harness/corpus were created or run; independent QA belongs to Work 1.
+
+Research-derived finite circle rules are separated from slice policies:
+Stopwatch silent clock, WPF primitives/DIP letterbox, full-list catch-up scan,
+simplified admission, immediate judged-object removal, practice counters,
+focus/pause/restart and local last-circle+3000 result overlay. No stable score,
+complete candidate/record/transition pipeline, audio sync, mods or pixel identity
+claim. Source remains complete and Windows-buildable; original runtime fidelity
+and actual Windows usability need separate evidence. See R02 report for details.
+
+The user's R02 assignment explicitly authorizes actual application development,
+removes routine original-runtime experiments as a prerequisite, assigns QA/tests
+to Work 1, and requires main-only publication and implementation-only records.
+It supersedes historical suspension/branch instructions. All changes stay under
+`reconstructed/`; no shared research journal edit or additional RE number, and no
+other contract exception. Final handoff records actual remote publication and
+preservation checks. Stop after R02; Work 1 performs subsequent independent QA.
