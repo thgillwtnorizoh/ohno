@@ -1,0 +1,32 @@
+osu file format v14
+
+[General]
+AudioFilename: practice-beat.wav
+Mode: 0
+
+[Metadata]
+Title:Audible Circles — R03
+Artist:Project ohno synthetic tones
+Creator:Work 2
+Version:Generated audio practice
+
+[Difficulty]
+HPDrainRate:0
+CircleSize:4
+OverallDifficulty:4
+ApproachRate:4
+SliderMultiplier:1
+SliderTickRate:1
+
+[TimingPoints]
+0,1000,4,1,0,100,1,0
+
+[HitObjects]
+256,192,3000,5,0,0:0:0:0:
+128,128,4500,1,0,0:0:0:0:
+384,128,6000,1,0,0:0:0:0:
+384,288,7500,1,0,0:0:0:0:
+128,288,9000,1,0,0:0:0:0:
+256,192,10500,5,0,0:0:0:0:
+192,128,12000,1,0,0:0:0:0:
+320,256,13500,1,0,0:0:0:0:

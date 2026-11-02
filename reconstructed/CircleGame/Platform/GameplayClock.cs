@@ -2,7 +2,7 @@ using System.Diagnostics;
 
 namespace Ohno.CircleGame.Platform;
 
-// Independent silent-fixture clock. Does NOT reconstruct E10's BASS clock.
+// Practice clock authority for both silent and audible maps, not E10's BASS clock.
 public sealed class GameplayClock
 {
     private readonly Stopwatch stopwatch = new();

@@ -11,6 +11,7 @@ namespace Ohno.CircleGame.Rendering;
 public sealed class PlayfieldView : FrameworkElement, IDisposable
 {
     private readonly GameplayClock clock = new();
+    private BeatmapAudio? audio;
     private static readonly Brush Back = Brush("#0C1324"), Stage = Brush("#101D32"), Accent = Brush("#58E0D3");
     private static readonly Typeface Font = new("Segoe UI");
     private bool started;
@@ -18,6 +19,8 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public CircleSession? Session { get; private set; }
     public int CurrentTime { get; private set; }
     public bool Running => clock.Running;
+    public string AudioStatus => audio?.Failure is { } failure ? failure + " Reload the map or choose silent practice." :
+        audio is null || audio.Silent ? "Silent practice" : audio.Ended ? "Audio ended · timeline continues" : "Local beatmap audio";
     public event Action? FrameUpdated;
 
     public PlayfieldView()
@@ -29,12 +32,20 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         MouseDown += (_, _) => Focus(); // Mouse positioning only; clicks never judge.
     }
 
-    public void Load(Beatmap map)
+    // Ownership transfers only after the replacement is fully prepared.
+    public void Load(Beatmap map, BeatmapAudio preparedAudio)
     {
+        preparedAudio.RequireReady();
+        var replacement = new CircleSession(map);
         clock.Pause();
-        Session = new(map);
+        BeatmapAudio? previousAudio = audio;
+        if (previousAudio is not null) previousAudio.StateChanged -= AudioChanged;
+        audio = preparedAudio;
+        audio.StateChanged += AudioChanged;
+        Session = replacement;
         CurrentTime = 0;
         started = false;
+        previousAudio?.Dispose();
         InvalidateVisual();
         FrameUpdated?.Invoke();
     }
@@ -42,7 +53,10 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void Restart()
     {
         if (Session is null) return;
-        Session = new(Session.Map);
+        Pause();
+        var replacement = new CircleSession(Session.Map);
+        if (audio?.Restart() == false) { AudioChanged(); return; }
+        Session = replacement;
         started = true;
         CurrentTime = 0;
         clock.Restart();
@@ -54,7 +68,8 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         if (Session is null) return;
         if (!started || Session.Finished) { Restart(); return; }
-        if (Running) clock.Pause(); else clock.Resume();
+        if (Running) Pause();
+        else if (audio?.Resume() != false) clock.Resume();
         Focus();
         InvalidateVisual();
     }
@@ -62,7 +77,15 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void Pause()
     {
         clock.Pause();
+        audio?.Pause();
         InvalidateVisual();
+    }
+
+    private void AudioChanged()
+    {
+        if (audio?.Failure is not null) clock.Pause();
+        InvalidateVisual();
+        FrameUpdated?.Invoke();
     }
 
     public void Press()
@@ -83,7 +106,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         if (disposed || !Running || Session is null) return;
         CurrentTime = clock.Time;
         Session.Advance(CurrentTime);
-        if (Session.Finished) clock.Pause();
+        if (Session.Finished) Pause();
         InvalidateVisual();
         FrameUpdated?.Invoke();
     }
@@ -130,7 +153,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             Brush color = feedback.Result == Judgement.Miss ? Brush("#FF8498") : Brushes.White;
             Text(dc, feedback.Text, new Point(p.X, p.Y - radius - 24), 22, color, true);
         }
-        // R02 cue: visible ms countdown to the next pending object (no audio).
+        // Visible timing cue remains available with or without audio.
         CircleState? next = game.Circles.FirstOrDefault(c => c.Result == Judgement.Pending);
         if (next is not null && started && !game.Finished)
             Text(dc, $"NEXT  {Math.Max(0, next.Definition.StartTime - CurrentTime)} ms", new Point(ActualWidth / 2, 24), 15, Accent, true);
@@ -144,8 +167,9 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             Message(dc, "Practice complete", $"300: {n300}   100: {n100}   50: {n50}   Miss: {misses}\n" +
                 $"Accuracy: {game.Accuracy:F2}%    Max combo: {game.MaxCombo}\nR / Enter to play again");
         }
-        else if (!started) Message(dc, "First circles", "Move the mouse. Press Z or X when the rings meet.\nSpace or Start to begin · Silent practice");
-        else if (!Running) Message(dc, "Paused", "Space to resume · R to restart");
+        else if (!started) Message(dc, "Circle practice", "Move the mouse. Press Z or X when the rings meet.\nSpace or Start to begin · " + AudioStatus);
+        else if (!Running) Message(dc, audio?.Failure is null ? "Paused" : "Audio unavailable",
+            audio?.Failure is null ? "Space to resume · R to restart" : "Reload the map or choose Silent fixture above.");
     }
 
     private void Message(DrawingContext dc, string title, string subtitle)
@@ -175,6 +199,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         disposed = true;
         clock.Pause();
+        if (audio is not null) { audio.StateChanged -= AudioChanged; audio.Dispose(); audio = null; }
         CompositionTarget.Rendering -= Frame;
     }
 }

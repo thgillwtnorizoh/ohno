@@ -5,6 +5,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using Microsoft.Win32;
 using Ohno.CircleGame.Gameplay;
+using Ohno.CircleGame.Platform;
 using Ohno.CircleGame.Rendering;
 
 namespace Ohno.CircleGame;
@@ -25,11 +26,19 @@ public sealed class GameWindow : Window
     private readonly TextBlock hud = new() { Foreground = Brushes.White, FontSize = 16, VerticalAlignment = VerticalAlignment.Center };
     private readonly TextBlock mapLabel = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(16, 0, 0, 0), VerticalAlignment = VerticalAlignment.Center };
     private readonly Button playButton;
+    private readonly Button restartButton;
+    private readonly TextBlock mediaStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
+    private readonly List<Button> buttons = [];
     private readonly HashSet<Key> heldKeys = [];
+    private CancellationTokenSource? loadCancellation;
+    private BeatmapAudio? pendingAudio;
+    private PracticeFixture? audibleFixture;
+    private bool loading;
+    private bool closing;
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R02 Circle Practice";
+        Title = "ohno · R03 Audible Circle Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -37,68 +46,130 @@ public sealed class GameWindow : Window
         root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
         root.RowDefinitions.Add(new RowDefinition());
         root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-        var tools = new StackPanel { Orientation = Orientation.Horizontal, Margin = new Thickness(16, 12, 16, 12) };
+        var tools = new WrapPanel { Margin = new Thickness(16, 12, 16, 12) };
         tools.Children.Add(Button("Open .osu", OpenMap));
         playButton = Button("Start / Pause", () => surface.TogglePause());
         tools.Children.Add(playButton);
-        tools.Children.Add(Button("Restart (R)", () => surface.Restart()));
+        restartButton = Button("Restart (R)", () => surface.Restart());
+        tools.Children.Add(restartButton);
+        tools.Children.Add(Button("Audible fixture", OpenAudibleFixture));
+        tools.Children.Add(Button("Silent fixture", () => _ = LoadMapAsync(BundledSilentMap)));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
-        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit: Z / X   Pause: Space   Restart: R / Enter   •   Silent, no mods, circles only",
+        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit: Z / X   Pause: Space   Restart: R / Enter   •   No mods, circles only",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
+        footer.Children.Add(mediaStatus);
         Grid.SetRow(footer, 2); root.Children.Add(footer);
         Content = root;
         surface.FrameUpdated += UpdateHud;
         PreviewKeyDown += KeyPressed;
         PreviewKeyUp += (_, e) => heldKeys.Remove(e.Key);
         Deactivated += (_, _) => { heldKeys.Clear(); surface.Pause(); UpdateHud(); };
-        Closed += (_, _) => surface.Dispose();
-        Loaded += (_, _) =>
+        Closed += (_, _) =>
         {
-            string path = mapPath ?? Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-circles.osu");
-            LoadMap(path);
-            surface.Focus();
+            closing = true;
+            loadCancellation?.Cancel();
+            pendingAudio?.Dispose(); // Synchronous release, even if an await cannot resume at shutdown.
+            surface.Dispose();
+            audibleFixture?.Dispose();
+        };
+        Loaded += async (_, _) =>
+        {
+            await LoadMapAsync(mapPath ?? BundledSilentMap);
+            if (!closing) surface.Focus();
         };
     }
+
+    private static string BundledSilentMap => Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-circles.osu");
 
     private Button Button(string text, Action click)
     {
         var button = new Button { Content = text, Padding = new Thickness(14, 7, 14, 7),
-            Margin = new Thickness(0, 0, 8, 0), FontSize = 14 };
+            Margin = new Thickness(0, 0, 8, 6), FontSize = 14 };
         button.Click += (_, _) => { click(); surface.Focus(); UpdateHud(); };
+        buttons.Add(button);
         return button;
     }
 
-    private void OpenMap()
+    private async void OpenMap()
     {
         surface.Pause();
         var dialog = new OpenFileDialog { Filter = "osu! beatmap (*.osu)|*.osu", Title = "Open a circle-only osu!standard beatmap" };
-        if (dialog.ShowDialog(this) == true) LoadMap(dialog.FileName);
+        if (dialog.ShowDialog(this) == true) await LoadMapAsync(dialog.FileName);
     }
 
-    private void LoadMap(string path)
+    private async void OpenAudibleFixture()
     {
+        surface.Pause();
         try
         {
-            Beatmap map = Beatmap.Load(path); // Parse fully before replacing a session.
-            surface.Load(map);
+            audibleFixture ??= new PracticeFixture();
+            await LoadMapAsync(audibleFixture.MapPath);
+        }
+        catch (Exception error)
+        {
+            if (!closing) MessageBox.Show(this, error.Message, "Could not create audible fixture", MessageBoxButton.OK, MessageBoxImage.Warning);
+        }
+        if (!closing) UpdateHud();
+    }
+
+    private async Task LoadMapAsync(string path)
+    {
+        if (closing) return;
+        loadCancellation?.Cancel();
+        pendingAudio?.Dispose();
+        var request = new CancellationTokenSource();
+        loadCancellation = request;
+        BeatmapAudio? candidateAudio = null;
+        loading = true;
+        heldKeys.Clear();
+        surface.Pause();
+        UpdateHud();
+        try
+        {
+            Beatmap map = Beatmap.Load(path); // Parse before replacing any active state.
+            candidateAudio = new BeatmapAudio(map.AudioPath);
+            pendingAudio = candidateAudio;
+            await candidateAudio.PrepareAsync(request.Token);
+            if (closing || request.IsCancellationRequested || !ReferenceEquals(loadCancellation, request)) return;
+            surface.Load(map, candidateAudio);
+            candidateAudio = null; // Surface now owns this prepared player.
+            pendingAudio = null;
             mapLabel.Text = map.Title.Length <= 38 ? map.Title : map.Title[..35] + "…";
             mapLabel.ToolTip = $"{map.Title}\n{path}";
         }
-        catch (Exception error) when (error is IOException or InvalidDataException or UnauthorizedAccessException or ArgumentException or NotSupportedException)
+        catch (OperationCanceledException) when (request.IsCancellationRequested || closing) { }
+        catch (Exception error)
         {
-            MessageBox.Show(this, error.Message, "Could not load beatmap", MessageBoxButton.OK, MessageBoxImage.Warning);
+            // Includes native decoder/format/IO failures; keep the old session paused.
+            if (!closing && ReferenceEquals(loadCancellation, request))
+                MessageBox.Show(this, error.Message + (surface.Session is null ?
+                    "\n\nChoose another map or one of the practice fixtures." :
+                    "\n\nThe previous map and progress have been retained. Space resumes it."),
+                    "Could not load beatmap/audio", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
-        UpdateHud();
+        finally
+        {
+            candidateAudio?.Dispose();
+            if (ReferenceEquals(loadCancellation, request))
+            {
+                pendingAudio = null;
+                loadCancellation = null;
+                loading = false;
+                if (!closing) UpdateHud();
+            }
+            request.Dispose();
+        }
     }
 
     private void KeyPressed(object sender, KeyEventArgs e)
     {
         if (e.Key is not (Key.Z or Key.X or Key.Space or Key.R or Key.Enter)) return;
         e.Handled = true;
+        if (loading || closing) return;
         if (e.IsRepeat || !heldKeys.Add(e.Key)) return;
         switch (e.Key)
         {
@@ -111,6 +182,10 @@ public sealed class GameWindow : Window
 
     private void UpdateHud()
     {
+        foreach (Button button in buttons) button.IsEnabled = !loading && !closing;
+        playButton.IsEnabled &= surface.Session is not null;
+        restartButton.IsEnabled &= surface.Session is not null;
+        mediaStatus.Text = loading ? "Loading local beatmap audio… previous session paused (15-second timeout)." : surface.AudioStatus;
         if (surface.Session is not { } game) { hud.Text = "No map loaded"; return; }
         hud.Text = $"{game.JudgedCount}/{game.Circles.Count} circles     Combo {game.Combo}×     Best {game.MaxCombo}×     " +
             $"Accuracy {game.Accuracy:F2}%     {surface.CurrentTime / 1000.0:F2}s";

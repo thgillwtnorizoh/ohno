@@ -87,3 +87,46 @@ It supersedes historical suspension/branch instructions. All changes stay under
 `reconstructed/`; no shared research journal edit or additional RE number, and no
 other contract exception. Final handoff records actual remote publication and
 preservation checks. Stop after R02; Work 1 performs subsequent independent QA.
+
+## R03 — Audible Circle Practice
+
+Date: 2026-11-02 (Asia/Ho_Chi_Minh). Work 2. Started latest `origin/main` at
+`2c569937fde3e258dd703ead043daa05e78e4b52`. Read canonical rules/contract/journal,
+QA01 README and headless source, and corresponding application code. No RE
+expedition, original binary/tool execution, interactive window operation,
+simulated OS input, OBS, CDB, VM or desktop provisioning.
+
+Source-confirmed fixes: QA01-D01 now requires ordered distanceSquared<=radius²
+and retains finite inclusive equality; QA01-D02 parses mandatory hitSound column5
+as invariant Int32, rejects malformed/empty input and adds no sound-bit mask.
+CircleSession timing/admission/classification/expiration are otherwise unchanged.
+Work 1 QA tests/results/provenance remain untouched; no passing QA run is claimed.
+
+Implemented optional local AudioFilename resolution; UI-thread-owned WPF
+MediaPlayer async preparation with15-second timeout; staged candidate replacement
+retaining the old paused session on load error; start/pause/resume/zero-seek
+restart; short-track/end/results policy; close/dispose on replacement/exit and
+playback-error pause. Silent fixture remains default. Added independent audible
+map template and C# PCM tone generator, invoked by human through an Audible
+fixture button; no commercial/original assets. Active README updated and
+`R03-audible-circles.md` added; journal append only. All changes are reconstructed/.
+
+Clock remains Stopwatch/latest WPF frame time, not audio/BASS position. Media
+startup/seek/device latency, stalls and drift are uncorrected; no offsets,
+calibration or original equivalence claimed. Short media ends into silence while
+the map timeline continues; restart rewinds, results pause longer media. Failed
+candidate loads preserve the prior session; a later post-commit decoder failure
+pauses the current session rather than resurrecting the previous disposed map.
+
+Actual validation: source review and repository hygiene only. SDK absent from
+PATH and historical temp path; automatic approval review rejected an SDK download
+as conflicting with the existing-SDK/environment-repair limit. No bypass or
+further environment repair. **R03 build NOT RUN; QA01 headless C# suite NOT RUN;
+Windows GUI/audio/physical input and generator execution NOT RUN/UNVERIFIED.**
+R02's old build result does not certify R03. No dedicated QA campaign was created.
+Final handoff records diff/preservation and actual main publication verification.
+
+R03's current authorization supersedes historical Work 2 suspension and permanent
+milestone branches; all interaction remains exclusively human-controlled. No
+research-journal edit or additional numbered expedition; no other contract
+exception. Stop after R03. Work 1 owns subsequent independent QA.

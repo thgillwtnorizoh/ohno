@@ -71,7 +71,8 @@ public sealed class CircleSession
         {
             int start = circle.Definition.StartTime;
             if (circle.Result != Judgement.Pending || time < start - Approach || time > start + Window50) continue;
-            if (Vector2.DistanceSquared(pointer, circle.Definition.Position) > HitRadius * HitRadius) continue;
+            // QA01-D01: ordered acceptance rejects NaN while retaining finite equality.
+            if (!(Vector2.DistanceSquared(pointer, circle.Definition.Position) <= HitRadius * HitRadius)) continue;
             // E11 earlier unevaluated-object admission gate, ordinary distinct times.
             bool blocked = Circles.TakeWhile(c => !ReferenceEquals(c, circle)).Any(c =>
                 c.Result == Judgement.Pending && c.Definition.StartTime + 3 < start);

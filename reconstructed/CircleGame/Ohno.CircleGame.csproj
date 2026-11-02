@@ -12,5 +12,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Fixtures\first-circles.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\audible-circles.osu" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
