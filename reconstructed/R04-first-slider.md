@@ -12,9 +12,27 @@ Primitive body/ball/follow-ring rendering remains after head judgement. A new
 Slider fixture button loads independently authored `Fixtures/first-slider.osu`.
 The earlier silent/audible controls, audio backend and practice clock remain.
 
-CI state at initial source publication: **PENDING**, not a pass. The final R04
-entry will record the actual run/job/commit, compiler output and unchanged 90-case
-suite result after hosted execution. No local SDK installation or game launch.
+**Windows CI PASS**, executed 2026-11-02 16:41–16:42 UTC on source commit
+`922d64b80e4c3c4f7ac886c791f7c49379071df1`:
+[run41483942160 / job125409196900](https://github.com/thgillwtnorizoh/ohno/actions/runs/41483942160/job/125409196900).
+Windows2022, preinstalled SDK8.0.427. Release WPF win-x64 build succeeded with
+**0 compiler warnings / 0 errors**. The unchanged QA01 headless suite reported
+**90 passed, 0 failed, 90 executed**. Both commands exited successfully. No local
+SDK installation or game launch. The runner emitted an actions/checkout Node20
+deprecation notice; this is separate from compiler output.
+
+Commands actually executed by hosted CI (repository root):
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+The final publication adds this outcome to the report and appends the journal;
+application/fixture/workflow content remains identical to the tested source
+commit. Windows build/run instructions are in `CircleGame/README.md`; a human
+can select **Slider fixture**, Start, then aim/press/hold Z/X and follow the ball.
+These are instructions for later human use, not an executed gameplay check.
 
 The existing QA02 workflow triggers only on changes to its own file. It and all
 Work 1 QA assets are preserved. The small companion `.github/workflows/r04-build.yml`

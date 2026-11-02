@@ -161,3 +161,16 @@ are explicit; precise original equivalence and successful human play are not
 claimed. Current user authorization supersedes historical Work 2 suspension and
 milestone branches. CI infrastructure enables the specifically requested gate;
 no research journal edit or additional RE number. Stop after R04.
+
+R04 hosted verification outcome (append after execution): source commit
+`922d64b80e4c3c4f7ac886c791f7c49379071df1`, run41483942160,
+job125409196900, https://github.com/thgillwtnorizoh/ohno/actions/runs/41483942160 .
+2026-11-02 16:41–16:42 UTC; Windows2022 / preinstalled SDK8.0.427.
+Release WPF win-x64 build PASS, 0 compiler warnings / 0 errors. Unchanged QA01
+suite: 90 passed, 0 failed, 90 executed; job SUCCESS. Runner checkout emitted a
+Node20 deprecation notice, separate from compiler warnings. No new slider tests,
+game launch, input operation or audio playback; human slider play UNVERIFIED.
+Research tree unchanged, historical journal preserved as a byte prefix, original
+fixtures/audio/clock/R01 and Work 1 QA assets preserved. Final documentation-only
+publication records this outcome with application content identical to the tested
+source commit. R04 stops here; Work 1 owns the subsequent dedicated slider QA.
