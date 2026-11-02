@@ -1,0 +1,116 @@
+8.0.133 [C:\Program Files\dotnet\sdk]
+8.0.206 [C:\Program Files\dotnet\sdk]
+8.0.319 [C:\Program Files\dotnet\sdk]
+8.0.427 [C:\Program Files\dotnet\sdk]
+9.0.123 [C:\Program Files\dotnet\sdk]
+9.0.205 [C:\Program Files\dotnet\sdk]
+9.0.320 [C:\Program Files\dotnet\sdk]
+10.0.114 [C:\Program Files\dotnet\sdk]
+10.0.204 [C:\Program Files\dotnet\sdk]
+10.0.303 [C:\Program Files\dotnet\sdk]
+10.0.403 [C:\Program Files\dotnet\sdk]
+8.0.427
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+exit $LASTEXITCODE
+  Determining projects to restore...
+  Restored D:\a\ohno\ohno\reconstructed\CircleGame\Ohno.CircleGame.csproj (in 188 ms).
+  Ohno.CircleGame -> D:\a\ohno\ohno\reconstructed\CircleGame\bin\Release\net8.0-windows\win-x64\Ohno.CircleGame.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:14.91
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+exit $LASTEXITCODE
+PASS timing OD5 delta=0
+PASS timing OD5 delta=-49
+PASS timing OD5 delta=49
+PASS timing OD5 delta=-50
+PASS timing OD5 delta=50
+PASS timing OD5 delta=-51
+PASS timing OD5 delta=51
+PASS timing OD5 delta=-99
+PASS timing OD5 delta=99
+PASS timing OD5 delta=-100
+PASS timing OD5 delta=100
+PASS timing OD5 delta=-101
+PASS timing OD5 delta=101
+PASS timing OD5 delta=-149
+PASS timing OD5 delta=149
+PASS timing OD5 delta=-150
+PASS timing OD5 delta=150
+PASS timing OD5 delta=-151
+PASS timing OD5 delta=151
+PASS prepared operands OD/AR=0
+PASS prepared operands OD/AR=4
+PASS prepared operands OD/AR=5
+PASS prepared operands OD/AR=5.25
+PASS prepared operands OD/AR=10
+PASS R02 fixture OD4 error=55 sign=-1
+PASS R02 fixture OD4 error=55 sign=1
+PASS R02 fixture OD4 error=56 sign=-1
+PASS R02 fixture OD4 error=56 sign=1
+PASS R02 fixture OD4 error=57 sign=-1
+PASS R02 fixture OD4 error=57 sign=1
+PASS R02 fixture OD4 error=107 sign=-1
+PASS R02 fixture OD4 error=107 sign=1
+PASS R02 fixture OD4 error=108 sign=-1
+PASS R02 fixture OD4 error=108 sign=1
+PASS R02 fixture OD4 error=109 sign=-1
+PASS R02 fixture OD4 error=109 sign=1
+PASS R02 fixture OD4 error=159 sign=-1
+PASS R02 fixture OD4 error=159 sign=1
+PASS R02 fixture OD4 error=160 sign=-1
+PASS R02 fixture OD4 error=160 sign=1
+PASS expiration equality and next millisecond
+PASS already evaluated exclusion
+PASS selection/admission early time=799
+PASS selection/admission early time=800
+PASS selection/admission early time=1600
+PASS selection/admission early time=1601
+PASS ordered earlier object blocking
+PASS first passing object is not nearest
+PASS scale-one radius scalar
+PASS geometry center
+PASS geometry inside
+PASS geometry boundary
+PASS geometry outside
+PASS geometry diagonal-inside
+PASS geometry diagonal-outside
+PASS geometry sign symmetry <16, 0>
+PASS geometry sign symmetry <-16, 0>
+PASS geometry sign symmetry <0, 16>
+PASS geometry sign symmetry <0, -16>
+PASS geometry sign symmetry <-22, 22>
+PASS geometry sign symmetry <22, -22>
+PASS QA01-D01 reject NaN X
+PASS QA01-D01 reject NaN Y
+PASS reject infinite pointer
+PASS layout controlled center scale1
+PASS layout controlled doubled scale
+PASS layout letterbox translation
+PASS new session state isolation
+PASS finished session ignores later component calls
+PASS bundled practice parser
+PASS parser clamp and truncate both axes
+PASS parser sorts unsorted input
+PASS parser reject mode
+PASS parser reject version
+PASS parser reject missing AR
+PASS parser reject NaN difficulty
+PASS parser reject range difficulty
+PASS parser reject empty
+PASS parser reject slider
+PASS parser reject spinner
+PASS parser reject mixed type
+PASS parser reject equal times
+PASS parser reject negative time
+PASS parser reject large time
+PASS parser reject nonfinite position
+PASS parser reject short row
+PASS parser object count limit
+PASS parser byte size limit
+PASS QA01-D02 reject malformed hitSound
+PASS QA01-D02 reject empty hitSound
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
