@@ -130,3 +130,34 @@ R03's current authorization supersedes historical Work 2 suspension and permanen
 milestone branches; all interaction remains exclusively human-controlled. No
 research-journal edit or additional numbered expedition; no other contract
 exception. Stop after R03. Work 1 owns subsequent independent QA.
+
+## R04 — First Human-Playable Slider
+
+Date: 2026-11-02 (Asia/Bangkok). Work 2. Started latest origin/main at
+`9ab59fbe4c7b6f68875cb755f50959f00f308187`. Read canonical contract/journal/R02/R03
+and relevant E05–E06/E11–E18/E21–E23. No original-code investigation or runtime.
+
+Implemented the bounded mixed circle/straight-slider client: parse Linear L|x:y,
+one span, requested length and timing/SV; prepare geometry and rate-derived end;
+reject generated interior ticks, unsupported curves/counts and overlapping slider
+intervals. Separate head/tracking/terminal/parent state, real held Z/X and mouse
+sampling, strict follow radius with history/remembered-side policy, entry/loss/
+re-entry, adjusted terminal checkpoint, legacy aggregate grade and practice combo.
+Slider path/ball persist after head judgement. Added independent mixed fixture and
+Slider fixture button. Audio backend/clock and earlier controls remain unchanged.
+
+Application changes/docs/fixture remain reconstructed/. The only new CI path is
+.github/workflows/r04-build.yml, a companion using the established Windows2022
+preinstalled .NET8 gate and unchanged QA01 90-case suite. Existing QA02 workflow,
+all research/QA assets, R01 and historical reports are preserved. No new QA tests
+or independent campaign. R04 report records mechanisms, known deviations and
+source-derived fixture arithmetic. Initial CI state PENDING, not a claimed pass;
+actual hosted result will be appended after execution. No game/GUI operation,
+simulated OS input, recording, OBS, CDB, virtualization or SDK installation.
+
+Scope remains head + terminal, no interior ticks/repeats/curves/full score/HP/mods.
+Full-list attention, WPF cadence/primitives, practice counters and legacy policy
+are explicit; precise original equivalence and successful human play are not
+claimed. Current user authorization supersedes historical Work 2 suspension and
+milestone branches. CI infrastructure enables the specifically requested gate;
+no research journal edit or additional RE number. Stop after R04.

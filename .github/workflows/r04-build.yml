@@ -1,0 +1,55 @@
+name: R04 Windows build and existing circle regressions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - reconstructed/CircleGame/**
+      - .github/workflows/r04-build.yml
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-regression:
+    runs-on: windows-2022
+    timeout-minutes: 12
+    steps:
+      - name: Checkout exact R04 commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Select an already installed .NET 8 SDK
+        id: sdk
+        shell: pwsh
+        run: |
+          git rev-parse HEAD
+          $installed = dotnet --list-sdks
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $installed | Write-Output
+          $versions = @($installed | ForEach-Object {
+            if ($_ -match '^(8\.0\.\d+)\s') { [version]$Matches[1] }
+          } | Sort-Object -Descending)
+          if ($versions.Count -eq 0) {
+            Write-Error 'R04 BLOCKED: no preinstalled .NET 8 SDK; no installation attempted.'
+            exit 1
+          }
+          @{ sdk = @{ version = $versions[0].ToString(); rollForward = 'disable'; allowPrerelease = $false } } |
+            ConvertTo-Json -Depth 3 | Set-Content -Encoding utf8 global.json
+          dotnet --version
+          exit $LASTEXITCODE
+
+      - name: Compile R04 WPF Windows x64
+        id: build
+        shell: pwsh
+        run: |
+          dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+          exit $LASTEXITCODE
+
+      - name: Execute unchanged QA01 headless suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE

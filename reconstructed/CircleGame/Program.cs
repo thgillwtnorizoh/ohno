@@ -38,7 +38,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R03 Audible Circle Practice";
+        Title = "ohno · R04 Circle and Slider Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -54,20 +54,21 @@ public sealed class GameWindow : Window
         tools.Children.Add(restartButton);
         tools.Children.Add(Button("Audible fixture", OpenAudibleFixture));
         tools.Children.Add(Button("Silent fixture", () => _ = LoadMapAsync(BundledSilentMap)));
+        tools.Children.Add(Button("Slider fixture", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-slider.osu"))));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
-        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit: Z / X   Pause: Space   Restart: R / Enter   •   No mods, circles only",
+        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Circles + single-span Linear sliders",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
         Grid.SetRow(footer, 2); root.Children.Add(footer);
         Content = root;
         surface.FrameUpdated += UpdateHud;
         PreviewKeyDown += KeyPressed;
-        PreviewKeyUp += (_, e) => heldKeys.Remove(e.Key);
-        Deactivated += (_, _) => { heldKeys.Clear(); surface.Pause(); UpdateHud(); };
+        PreviewKeyUp += (_, e) => { heldKeys.Remove(e.Key); PublishHeldKeys(); };
+        Deactivated += (_, _) => { heldKeys.Clear(); PublishHeldKeys(); surface.Pause(); UpdateHud(); };
         Closed += (_, _) =>
         {
             closing = true;
@@ -84,6 +85,7 @@ public sealed class GameWindow : Window
     }
 
     private static string BundledSilentMap => Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-circles.osu");
+    private void PublishHeldKeys() => surface.SetHeldButtons((heldKeys.Contains(Key.Z) ? 1 : 0) | (heldKeys.Contains(Key.X) ? 2 : 0));
 
     private Button Button(string text, Action click)
     {
@@ -97,7 +99,7 @@ public sealed class GameWindow : Window
     private async void OpenMap()
     {
         surface.Pause();
-        var dialog = new OpenFileDialog { Filter = "osu! beatmap (*.osu)|*.osu", Title = "Open a circle-only osu!standard beatmap" };
+        var dialog = new OpenFileDialog { Filter = "osu! beatmap (*.osu)|*.osu", Title = "Open a supported osu!standard beatmap" };
         if (dialog.ShowDialog(this) == true) await LoadMapAsync(dialog.FileName);
     }
 
@@ -126,6 +128,7 @@ public sealed class GameWindow : Window
         BeatmapAudio? candidateAudio = null;
         loading = true;
         heldKeys.Clear();
+        PublishHeldKeys();
         surface.Pause();
         UpdateHud();
         try
@@ -171,9 +174,10 @@ public sealed class GameWindow : Window
         e.Handled = true;
         if (loading || closing) return;
         if (e.IsRepeat || !heldKeys.Add(e.Key)) return;
+        PublishHeldKeys();
         switch (e.Key)
         {
-            case Key.Z: case Key.X: surface.Press(); break;
+            case Key.Z: case Key.X: surface.Press(e.Key == Key.Z ? 1 : 2); break;
             case Key.Space: surface.TogglePause(); break;
             case Key.R: case Key.Enter: surface.Restart(); break;
         }
@@ -187,7 +191,7 @@ public sealed class GameWindow : Window
         restartButton.IsEnabled &= surface.Session is not null;
         mediaStatus.Text = loading ? "Loading local beatmap audio… previous session paused (15-second timeout)." : surface.AudioStatus;
         if (surface.Session is not { } game) { hud.Text = "No map loaded"; return; }
-        hud.Text = $"{game.JudgedCount}/{game.Circles.Count} circles     Combo {game.Combo}×     Best {game.MaxCombo}×     " +
+        hud.Text = $"{game.JudgedCount}/{game.ObjectCount} objects     Combo {game.Combo}×     Best {game.MaxCombo}×     " +
             $"Accuracy {game.Accuracy:F2}%     {surface.CurrentTime / 1000.0:F2}s";
         playButton.Content = surface.Running ? "Pause (Space)" : game.Finished ? "Play again" : "Start / Resume";
     }

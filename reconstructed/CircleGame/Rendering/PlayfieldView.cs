@@ -88,7 +88,9 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         FrameUpdated?.Invoke();
     }
 
-    public void Press()
+    public void SetHeldButtons(int buttons) => Session?.SetHeldButtons(buttons);
+
+    public void Press(int side = 1)
     {
         if (!Running || Session is null || ActualWidth <= 0 || ActualHeight <= 0) return;
         Point mouse = Mouse.GetPosition(this); // Actual OS/WPF mouse, no synthetic input.
@@ -96,7 +98,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         if (mouse.X < layout.StageX || mouse.Y < layout.StageY ||
             mouse.X > layout.StageX + layout.Width || mouse.Y > layout.StageY + layout.Height) return;
         // E11 uses stored gameplay time at consumption, not a key-event timestamp.
-        Session.Press(layout.ToMap(new Vector2((float)mouse.X, (float)mouse.Y)), CurrentTime);
+        Session.Press(layout.ToMap(new Vector2((float)mouse.X, (float)mouse.Y)), CurrentTime, side);
         InvalidateVisual();
         FrameUpdated?.Invoke();
     }
@@ -105,7 +107,14 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         if (disposed || !Running || Session is null) return;
         CurrentTime = clock.Time;
-        Session.Advance(CurrentTime);
+        // Real held-key and mouse samples; no synthetic gameplay events.
+        int buttons = (Keyboard.IsKeyDown(Key.Z) ? 1 : 0) | (Keyboard.IsKeyDown(Key.X) ? 2 : 0);
+        Point mouse = Mouse.GetPosition(this);
+        PlayfieldLayout layout = PlayfieldLayout.Fit(ActualWidth, ActualHeight);
+        bool inside = mouse.X >= layout.StageX && mouse.Y >= layout.StageY &&
+            mouse.X <= layout.StageX + layout.Width && mouse.Y <= layout.StageY + layout.Height;
+        Vector2 pointer = inside ? layout.ToMap(new((float)mouse.X, (float)mouse.Y)) : new(float.NaN, float.NaN);
+        Session.Advance(CurrentTime, pointer, buttons);
         if (Session.Finished) Pause();
         InvalidateVisual();
         FrameUpdated?.Invoke();
@@ -122,9 +131,33 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         dc.DrawRectangle(null, new Pen(Brush("#293D56"), 1), new Rect(origin.X, origin.Y, 512 * l.Scale, 384 * l.Scale));
         if (Session is not { } game) { Message(dc, "Load an ordinary-circle .osu map", "Open .osu above to begin"); return; }
         double radius = game.DiameterAtScaleOne * l.Scale / 2;
-        for (int i = game.Circles.Count - 1; i >= 0; i--)
+        foreach (SliderState slider in game.Sliders)
         {
-            CircleState circle = game.Circles[i];
+            SliderDefinition definition = slider.Definition;
+            if (slider.Result != Judgement.Pending || CurrentTime < definition.Head.StartTime - game.Approach) continue;
+            Vector2 head = l.ToScreen(definition.Head.Position), tail = l.ToScreen(definition.Tail);
+            double alpha = Math.Clamp((CurrentTime - (definition.Head.StartTime - game.Approach)) / 400.0, 0, 1);
+            dc.PushOpacity(alpha);
+            var outline = new Pen(Accent, radius * 2 + 4) { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round };
+            var body = new Pen(Brush("#253D58"), radius * 2) { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round };
+            dc.DrawLine(outline, new(head.X, head.Y), new(tail.X, tail.Y));
+            dc.DrawLine(body, new(head.X, head.Y), new(tail.X, tail.Y));
+            dc.DrawEllipse(null, new Pen(Accent, 2), new(tail.X, tail.Y), radius * 0.45, radius * 0.45);
+            if (CurrentTime >= definition.Head.StartTime)
+            {
+                Vector2 ball = l.ToScreen(definition.BallPosition(CurrentTime));
+                Brush followColor = slider.FollowEligible ? Accent : Brush("#FFB37F");
+                double followRadius = game.HitRadius * l.Scale * (slider.Tracking ? 2.4000000953674316f : 1f);
+                dc.DrawEllipse(null, new Pen(followColor, 2), new(ball.X, ball.Y), followRadius, followRadius);
+                dc.DrawEllipse(followColor, new Pen(Brushes.White, 2), new(ball.X, ball.Y), radius * 0.65, radius * 0.65);
+                Text(dc, slider.TerminalSucceeded is null ? "HOLD Z / X" : "TAIL CHECKED",
+                    new(ball.X, ball.Y + followRadius + 18), 14, Brushes.White, true);
+            }
+            dc.Pop();
+        }
+        for (int i = game.Heads.Count - 1; i >= 0; i--)
+        {
+            CircleState circle = game.Heads[i];
             int start = circle.Definition.StartTime;
             if (circle.Result != Judgement.Pending || CurrentTime < start - game.Approach || CurrentTime > start + game.Window50) continue;
             Vector2 p = l.ToScreen(circle.Definition.Position);
@@ -154,20 +187,20 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             Text(dc, feedback.Text, new Point(p.X, p.Y - radius - 24), 22, color, true);
         }
         // Visible timing cue remains available with or without audio.
-        CircleState? next = game.Circles.FirstOrDefault(c => c.Result == Judgement.Pending);
+        CircleState? next = game.Heads.FirstOrDefault(c => c.Result == Judgement.Pending);
         if (next is not null && started && !game.Finished)
             Text(dc, $"NEXT  {Math.Max(0, next.Definition.StartTime - CurrentTime)} ms", new Point(ActualWidth / 2, 24), 15, Accent, true);
 
         if (game.Finished)
         {
-            int n300 = game.Circles.Count(c => c.Result == Judgement.Hit300);
-            int n100 = game.Circles.Count(c => c.Result == Judgement.Hit100);
-            int n50 = game.Circles.Count(c => c.Result == Judgement.Hit50);
-            int misses = game.Circles.Count(c => c.Result == Judgement.Miss);
+            int n300 = game.ObjectResults.Count(r => r == Judgement.Hit300);
+            int n100 = game.ObjectResults.Count(r => r == Judgement.Hit100);
+            int n50 = game.ObjectResults.Count(r => r == Judgement.Hit50);
+            int misses = game.ObjectResults.Count(r => r == Judgement.Miss);
             Message(dc, "Practice complete", $"300: {n300}   100: {n100}   50: {n50}   Miss: {misses}\n" +
                 $"Accuracy: {game.Accuracy:F2}%    Max combo: {game.MaxCombo}\nR / Enter to play again");
         }
-        else if (!started) Message(dc, "Circle practice", "Move the mouse. Press Z or X when the rings meet.\nSpace or Start to begin · " + AudioStatus);
+        else if (!started) Message(dc, "Circle / slider practice", "Aim and press Z / X; hold and follow slider balls.\nSpace or Start to begin · " + AudioStatus);
         else if (!Running) Message(dc, audio?.Failure is null ? "Paused" : "Audio unavailable",
             audio?.Failure is null ? "Space to resume · R to restart" : "Reload the map or choose Silent fixture above.");
     }
