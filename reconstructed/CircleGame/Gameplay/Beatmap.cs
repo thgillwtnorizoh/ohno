@@ -6,13 +6,33 @@ namespace Ohno.CircleGame.Gameplay;
 
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
 
-public sealed record SliderDefinition(CircleDefinition Head, Vector2 Tail,
-    int EndTime, int TerminalTime, double TravelRate, double PixelLength,
-    IReadOnlyList<Vector2> ControlPoints)
+public sealed record SliderMovement(Vector2 From, Vector2 To, int StartTime, int EndTime)
 {
-    // E15's one Movement record; its late fallback extrapolates, not clamps.
-    public Vector2 RequiredPosition(int time) => Head.Position + (Tail - Head.Position) *
-        (1f - (float)(EndTime - time) / (EndTime - Head.StartTime));
+    // E15/E21: inclusive interval, Single interpolation, zero-duration endpoint.
+    public Vector2 Position(int time) => EndTime == StartTime ? To : From + (To - From) *
+        (1f - (float)(EndTime - time) / (EndTime - StartTime));
+}
+
+// Producer identity is UI metadata; original judgement selects raw codes from k/N/R.
+public enum SliderCheckpointKind { Interior, Repeat, Final }
+public sealed record SliderCheckpoint(int Time, SliderCheckpointKind Kind, int Traversal, Vector2 Position);
+
+public sealed record SliderDefinition(CircleDefinition Head, Vector2 Tail,
+    int EndTime, double TravelRate, double PixelLength, IReadOnlyList<Vector2> ControlPoints,
+    int Traversals, IReadOnlyList<SliderMovement> Movements, IReadOnlyList<SliderCheckpoint> Checkpoints)
+{
+    public int TerminalTime => Checkpoints[^1].Time;
+    public Vector2 EndPosition => Movements[^1].To;
+
+    // First match wins at the shared endpoint. Late queries retain extrapolation.
+    // Before-start fallback is for this client's ready-screen rendering only.
+    public int MovementIndex(int time)
+    {
+        for (int i = 0; i < Movements.Count; i++)
+            if (Movements[i].StartTime <= time && time <= Movements[i].EndTime) return i;
+        return time < Movements[0].StartTime ? 0 : Movements.Count - 1;
+    }
+    public Vector2 RequiredPosition(int time) => Movements[MovementIndex(time)].Position(time);
     public Vector2 BallPosition(int time) => RequiredPosition(Math.Clamp(time, Head.StartTime, EndTime));
 }
 
@@ -34,11 +54,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         string? header = lines.FirstOrDefault(l => !string.IsNullOrWhiteSpace(l))?.Trim('\uFEFF', ' ', '\t');
         if (header is null || !header.StartsWith("osu file format v", StringComparison.Ordinal) ||
             !int.TryParse(header[17..], out int version) || version < 5 || version > 14)
-            throw new InvalidDataException("Use an osu file format v5–v14 ordinary-circle map.");
+            throw new InvalidDataException("Use an osu file format v5–v14 supported circle/Linear-slider map.");
 
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
         var circles = new List<CircleDefinition>();
-        var sliderRows = new List<(CircleDefinition Head, Vector2 Tail, double Length)>();
+        var sliderRows = new List<(CircleDefinition Head, Vector2 Tail, double Length, int Traversals)>();
         var timing = new List<TimingPoint>();
         string section = "";
         for (int lineNumber = 0; lineNumber < lines.Length; lineNumber++)
@@ -67,15 +87,15 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
                     string[] pathPoints = row[5].Split('|');
                     if (pathPoints.Length != 2 || pathPoints[0] != "L")
-                        throw new InvalidDataException("R04 supports only L|x:y (one straight segment); curves and multi-point paths are not implemented.");
+                        throw new InvalidDataException("R05 supports only L|x:y (one straight segment); curves and multi-point paths are not implemented.");
                     string[] endpoint = pathPoints[1].Split(':');
                     if (endpoint.Length != 2) throw new InvalidDataException("Invalid slider endpoint; expected x:y.");
-                    if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans != 1)
-                        throw new InvalidDataException("R04 supports exactly one slider span; repeats are not implemented.");
+                    if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans < 1 || spans > 16)
+                        throw new InvalidDataException("R05 supports 1–16 slider traversals (span count includes the first traversal).");
                     double length = DoubleNumber(row[7], "slider pixel length");
                     if (length <= 0.0001 || length > 4096)
-                        throw new InvalidDataException("R04 slider length must be greater than 0.0001 and at most 4096 pixels.");
-                    sliderRows.Add((head, new(Number(endpoint[0], "slider endpoint X"), Number(endpoint[1], "slider endpoint Y")), length));
+                        throw new InvalidDataException("R05 slider length must be greater than 0.0001 and at most 4096 pixels.");
+                    sliderRows.Add((head, new(Number(endpoint[0], "slider endpoint X"), Number(endpoint[1], "slider endpoint Y")), length, spans));
                 }
                 if (circles.Count + sliderRows.Count > 10000) throw new InvalidDataException("R04 accepts at most 10000 objects.");
             }
@@ -110,11 +130,17 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         {
             double multiplier = SliderSetting("SliderMultiplier", 0.4, 3.6);
             double tickRate = SliderSetting("SliderTickRate", 0.5, 8);
+            int totalCheckpoints = 0;
             foreach (var slider in sliderRows.OrderBy(s => s.Head.StartTime))
-                sliders.Add(PrepareSlider(slider.Head, slider.Tail, slider.Length, version, multiplier, tickRate, timing));
+            {
+                var prepared = PrepareSlider(slider.Head, slider.Tail, slider.Length, slider.Traversals, version, multiplier, tickRate, timing);
+                totalCheckpoints += prepared.Checkpoints.Count;
+                if (totalCheckpoints > 100_000) throw new InvalidDataException("R05 accepts at most 100000 scheduled checkpoints per map.");
+                sliders.Add(prepared);
+            }
             for (int i = 1; i < sliders.Count; i++)
                 if (sliders[i].Head.StartTime <= sliders[i - 1].EndTime)
-                    throw new InvalidDataException("R04 does not support overlapping slider intervals.");
+                    throw new InvalidDataException("R05 does not support overlapping slider intervals.");
         }
         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
         string? audioPath = null;
@@ -167,7 +193,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     }
 
     private static SliderDefinition PrepareSlider(CircleDefinition head, Vector2 suppliedTail, double length,
-        int version, double multiplier, double tickRate, List<TimingPoint> timing)
+        int traversals, int version, double multiplier, double tickRate, List<TimingPoint> timing)
     {
         // E05: list order is significant; rate uses truncated time, spacing raw time.
         double effectiveBeat = 0, spacingFactor = 1;
@@ -190,7 +216,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         double velocity = effectiveBeat > 0 ? (spacing * tickRate) * (1000.0 / effectiveBeat) : spacing * tickRate;
         float geometricLength = Vector2.Distance(head.Position, suppliedTail);
         if (!float.IsFinite(geometricLength) || geometricLength <= 0)
-            throw new InvalidDataException("R04 requires a nondegenerate finite slider segment.");
+            throw new InvalidDataException("R05 requires a nondegenerate finite slider segment.");
         // E06's one-segment trailing trim/extension. Unsupported degeneracy is explicit.
         float excess = (float)(geometricLength - length);
         if (geometricLength <= geometricLength - length + 0.0001)
@@ -202,20 +228,61 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
         double q = Math.Min(version < 8 ? spacing : spacing / spacingFactor, length);
         if (!double.IsFinite(q) || q <= 0) throw new InvalidDataException("Unsupported slider checkpoint spacing.");
-        // E16: detect an interior Add, rather than silently dropping ticks. For one
-        // segment, if the first spacing candidate survives suppression, reject it.
-        if (preparedLength >= q && geometricLength - q > 0.01 * velocity)
-            throw new InvalidDataException("This slider generates interior tick checkpoints; R04 supports head + terminal only.");
-        double absoluteEnd = head.StartTime + (double)(1000f * preparedLength) / velocity;
-        if (!double.IsFinite(absoluteEnd) || absoluteEnd > 3_600_000 || absoluteEnd < head.StartTime + 1)
-            throw new InvalidDataException("R04 requires slider duration >= 1 ms and end <= 3600000 ms.");
-        int end = (int)absoluteEnd;
-        double phase = 0, carry = preparedLength;
-        if (carry >= q) { phase += q; carry -= q; } // Surviving interior Add was rejected above.
-        phase += carry;
-        int originalTerminal = (int)(head.StartTime + ((double)(float)phase / velocity) * 1000.0);
-        int terminal = Math.Max(head.StartTime + (end - head.StartTime) / 2, originalTerminal - 36);
-        return new(head, tail, end, terminal, velocity, length, Array.AsReadOnly(new[] { head.Position, suppliedTail }));
+        // E16/E21: movement time and checkpoint distance phase are separate clocks.
+        var moves = new List<SliderMovement>();
+        var components = new List<SliderCheckpoint>();
+        double absoluteTime = head.StartTime, phase = 0, carry = 0;
+        double dt = (double)(1000f * preparedLength) / velocity;
+        if (!double.IsFinite(dt) || dt < 1 || absoluteTime + dt * traversals > 3_600_000)
+            throw new InvalidDataException("R05 requires each traversal >= 1 ms and parent end <= 3600000 ms.");
+        for (int traversal = 0; traversal < traversals; traversal++)
+        {
+            bool reverse = traversal % 2 == 1;
+            var move = new SliderMovement(reverse ? tail : head.Position, reverse ? head.Position : tail,
+                (int)absoluteTime, (int)(absoluteTime + dt));
+            moves.Add(move);
+            absoluteTime += dt;
+            double remaining = geometricLength; // Unadjusted sum, NOT requested/prepared L.
+            bool suppressed = false;
+            carry += preparedLength;
+            while (carry >= q && !suppressed)
+            {
+                phase += q; carry -= q; remaining -= q;
+                suppressed = remaining <= 0.01 * velocity;
+                if (suppressed) break;
+                AddCheckpoint(Stamp(phase), SliderCheckpointKind.Interior, traversal);
+            }
+            phase += carry;
+            AddCheckpoint(Stamp(phase), traversal == traversals - 1 ? SliderCheckpointKind.Final : SliderCheckpointKind.Repeat, traversal);
+            if (suppressed) carry = 0;
+            else { phase -= q - carry; carry = q - carry; }
+        }
+        int end = (int)absoluteTime;
+        // E22: adjust ONLY the final stored item. Do not sort or repair the list.
+        components[^1] = components[^1] with { Time = Math.Max(head.StartTime + (end - head.StartTime) / 2, components[^1].Time - 36) };
+        var definition = new SliderDefinition(head, tail, end, velocity, length,
+            Array.AsReadOnly(new[] { head.Position, suppliedTail }), traversals, moves.AsReadOnly(), components.AsReadOnly());
+        for (int i = 0; i < components.Count; i++)
+        {
+            var c = components[i];
+            // Independent display markers; these positions do not select results.
+            components[i] = c with { Position = c.Kind == SliderCheckpointKind.Interior ?
+                definition.RequiredPosition(c.Time) : moves[c.Traversal].To };
+        }
+        return definition;
+
+        int Stamp(double distance)
+        {
+            double t = head.StartTime + ((double)(float)distance / velocity) * 1000.0;
+            if (!double.IsFinite(t) || t < 0 || t > int.MaxValue)
+                throw new InvalidDataException("Checkpoint time is outside R05's finite supported range.");
+            return (int)t;
+        }
+        void AddCheckpoint(int time, SliderCheckpointKind kind, int traversal)
+        {
+            if (components.Count >= 4096) throw new InvalidDataException("R05 accepts at most 4096 checkpoints per slider.");
+            components.Add(new(time, kind, traversal, default));
+        }
     }
 
     private static double InverseSv(double beatLength) => beatLength < 0 ? Math.Clamp((float)-beatLength, 10f, 1000f) / 100f : 1;

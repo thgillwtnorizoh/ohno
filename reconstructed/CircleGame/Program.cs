@@ -38,7 +38,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R04 Circle and Slider Practice";
+        Title = "ohno · R05 Repeating Slider Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -55,12 +55,15 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Audible fixture", OpenAudibleFixture));
         tools.Children.Add(Button("Silent fixture", () => _ = LoadMapAsync(BundledSilentMap)));
         tools.Children.Add(Button("Slider fixture", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-slider.osu"))));
+        tools.Children.Add(Button("Tick fixture", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "slider-ticks.osu"))));
+        tools.Children.Add(Button("Repeat fixture", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "slider-repeat.osu"))));
+        tools.Children.Add(Button("Mixed R05", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "mixed-sliders.osu"))));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
-        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Circles + single-span Linear sliders",
+        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Follow through TURN markers",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
         Grid.SetRow(footer, 2); root.Children.Add(footer);

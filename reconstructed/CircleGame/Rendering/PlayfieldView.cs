@@ -129,7 +129,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         dc.DrawRoundedRectangle(Stage, null, new Rect(l.StageX, l.StageY, l.Width, l.Height), 12, 12);
         Vector2 origin = l.ToScreen(Vector2.Zero);
         dc.DrawRectangle(null, new Pen(Brush("#293D56"), 1), new Rect(origin.X, origin.Y, 512 * l.Scale, 384 * l.Scale));
-        if (Session is not { } game) { Message(dc, "Load an ordinary-circle .osu map", "Open .osu above to begin"); return; }
+        if (Session is not { } game) { Message(dc, "Load a supported .osu map", "Open .osu above to begin"); return; }
         double radius = game.DiameterAtScaleOne * l.Scale / 2;
         foreach (SliderState slider in game.Sliders)
         {
@@ -142,7 +142,32 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             var body = new Pen(Brush("#253D58"), radius * 2) { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round };
             dc.DrawLine(outline, new(head.X, head.Y), new(tail.X, tail.Y));
             dc.DrawLine(body, new(head.X, head.Y), new(tail.X, tail.Y));
-            dc.DrawEllipse(null, new Pen(Accent, 2), new(tail.X, tail.Y), radius * 0.45, radius * 0.45);
+            int traversal = definition.MovementIndex(CurrentTime);
+            SliderMovement movement = definition.Movements[traversal];
+            Vector2 endpoint = l.ToScreen(movement.To);
+            dc.DrawEllipse(null, new Pen(Accent, 2), new(endpoint.X, endpoint.Y), radius * 0.45, radius * 0.45);
+            // Producer metadata drives independent markers, never judgement codes.
+            foreach (var checkpoint in slider.Checkpoints)
+            {
+                if (checkpoint.Definition.Kind != SliderCheckpointKind.Interior || checkpoint.Definition.Traversal != traversal) continue;
+                Vector2 tick = l.ToScreen(checkpoint.Definition.Position);
+                Brush color = checkpoint.Succeeded switch { true => Accent, false => Brush("#FF8498"), _ => Brush("#FFDB83") };
+                double tickRadius = Math.Max(3, 4 * l.Scale);
+                dc.DrawEllipse(color, new Pen(Brushes.White, 1), new(tick.X, tick.Y), tickRadius, tickRadius);
+            }
+            if (traversal < definition.Traversals - 1)
+            {
+                Vector2 direction = Vector2.Normalize(movement.From - movement.To);
+                Vector2 normal = new(-direction.Y, direction.X);
+                float size = (float)Math.Max(8, radius * 0.45);
+                Vector2 tip = endpoint + direction * size * 0.5f;
+                Vector2 a = endpoint - direction * size * 0.5f + normal * size;
+                Vector2 b = endpoint - direction * size * 0.5f - normal * size;
+                var arrow = new Pen(Brush("#FFDB83"), 3);
+                dc.DrawLine(arrow, new(a.X, a.Y), new(tip.X, tip.Y));
+                dc.DrawLine(arrow, new(b.X, b.Y), new(tip.X, tip.Y));
+                Text(dc, "TURN", new(endpoint.X, endpoint.Y - radius - 16), 13, Brushes.White, true);
+            }
             if (CurrentTime >= definition.Head.StartTime)
             {
                 Vector2 ball = l.ToScreen(definition.BallPosition(CurrentTime));
@@ -150,8 +175,11 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
                 double followRadius = game.HitRadius * l.Scale * (slider.Tracking ? 2.4000000953674316f : 1f);
                 dc.DrawEllipse(null, new Pen(followColor, 2), new(ball.X, ball.Y), followRadius, followRadius);
                 dc.DrawEllipse(followColor, new Pen(Brushes.White, 2), new(ball.X, ball.Y), radius * 0.65, radius * 0.65);
-                Text(dc, slider.TerminalSucceeded is null ? "HOLD Z / X" : "TAIL CHECKED",
+                Text(dc, $"SPAN {traversal + 1}/{definition.Traversals} · " +
+                    (slider.ProcessedCheckpoints < slider.Checkpoints.Count ? "HOLD Z / X" : "TAIL CHECKED"),
                     new(ball.X, ball.Y + followRadius + 18), 14, Brushes.White, true);
+                Text(dc, $"CHECKPOINTS {slider.ProcessedCheckpoints}/{slider.Checkpoints.Count} · HIT {slider.SuccessfulCheckpoints}",
+                    new Point(ActualWidth / 2, ActualHeight - 22), 14, Accent, true);
             }
             dc.Pop();
         }

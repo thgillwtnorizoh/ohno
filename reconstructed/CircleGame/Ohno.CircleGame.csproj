@@ -14,5 +14,8 @@
     <Content Include="Fixtures\first-circles.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\audible-circles.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\first-slider.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\slider-ticks.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\slider-repeat.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\mixed-sliders.osu" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

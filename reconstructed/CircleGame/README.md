@@ -1,12 +1,14 @@
-# R04 — First Slider Practice for Windows
+# R05 — Repeating Slider Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
 simulated input, network service, original assets or original-game execution.
 
-**R04 status:** see `../R04-first-slider.md` for Windows CI build and existing
-90-case regression outcomes. Human gameplay, visuals, input and playback remain
-unverified by Work. No game window is operated by an agent.
+**R05 status:** see `../R05-repeating-sliders.md` for actual Windows CI build and
+existing 90-case regression outcomes. The owner reported that the tested R04
+slider interaction/scoring matched the original at the user-observable level;
+this is scope-limited human feedback, not universal equivalence or R05 validation.
+No game window is operated by an agent. Historical R04 conclusions are preserved.
 
 R02's implementation/build status is recorded in `../R02-first-circle.md`.
 A successful build does not mean a Windows window or physical input has been
@@ -27,13 +29,15 @@ dotnet run --project reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release
 
 1. The original silent eight-circle fixture loads into a ready screen.
    For audio, click **Audible fixture** and wait for its local media to load.
-   For the mixed circle/slider control, choose **Slider fixture** instead.
+   **Slider fixture** retains the R04 control. For R05, choose **Tick fixture**,
+   **Repeat fixture**, or **Mixed R05**.
 2. Click **Start** or press **Space**. The first circle is due at 3 seconds.
 3. Aim at the circle with the mouse. When its shrinking ring reaches the circle,
    press **Z** or **X** once. Holding a key does not repeatedly hit objects.
    For sliders, press at the head, keep Z or X held, and move with the ball.
 4. Read the 300 / 100 / 50 / MISS feedback and the combo/accuracy HUD.
-5. After the last circle, the result overlay appears at 16.5 seconds.
+5. Results appear 3 seconds after the final object ends (16.5 seconds for the
+   original circle fixture; see below for the new maps).
 6. Press **R** or **Enter**, or click **Restart**, to play again immediately.
 
 **Space** pauses/resumes. Losing window focus pauses without automatically
@@ -60,7 +64,7 @@ and records a new entry time. Re-entry before/on the terminal deadline can succe
 Acquiring only after that deadline cannot rescue it. There are no interior ticks
 in R04, so a gap in the middle is not automatically a failed whole slider.
 
-R04 explicitly uses the recovered **legacy, no-ScoreV2** aggregate: positive head
+The original R04 fixture retains the recovered **legacy, no-ScoreV2** aggregate: positive head
 and successful terminal →300; exactly one successful component →100; neither
 →MISS. A 50-quality positive head can therefore still yield300 with a successful
 terminal. Head and terminal feedback remain separate. Head success increments
@@ -68,6 +72,45 @@ practice combo and head failure resets it; terminal success increments combo,
 while terminal failure follows E22's no-reset branch. Aggregate display does not
 award a duplicate combo increment. Accuracy counts one completed parent object,
 not head+tail as separate circles. This is not stable's complete scoring pipeline.
+
+## Ticks and repeating sliders
+
+Keep Z or X held and move with the ball through each **TURN** chevron; do not
+release merely because the ball reaches an endpoint. The complete path remains
+visible until the final traversal ends. Span progress and checkpoint/hit counts
+appear during tracking. Yellow dots identify interior checkpoints for the current
+span; processed dots become teal for success or pink for failure. Turn chevrons,
+markers and labels are independent visual aids, not original skin reconstruction.
+
+| Button / fixture | Contents | Derived schedule / results time |
+|---|---|---|
+| Tick fixture / `slider-ticks.osu` | One 300-pixel span, head at3000 | Ticks4000/5000, terminal5964, end6000; results9000 ms |
+| Repeat fixture / `slider-repeat.osu` | Same line out and back, head at3000 | Ticks4000/5000, repeat6000, ticks7000/8000, terminal8964, end9000; results12000 ms |
+| Mixed R05 / `mixed-sliders.osu` | Circles plus one-, two- and three-span sliders | Final circle30500; results33500 ms |
+
+These independently authored silent maps use multiplier1, tick rate1 and base
+beat1000 ms (travel rate100 pixels/second). The schedules are source-derived
+predictions, not original-runtime or human-play measurements. New maps contain
+no original assets; R03 audio loading and its generated audible fixture remain.
+
+At a shared endpoint the first inclusive Movement record wins. The next record
+then moves in the opposite direction; a turn does not reset held/tracking state.
+Each reached frame processes **at most one** outstanding checkpoint from the
+leading due prefix, in producer order. Deadlines are not sorted after the final
+adjustment. Late/stalled frames can therefore leave a backlog at parent end;
+completion uses current successes without draining or repairing pending entries.
+
+A checkpoint succeeds only while follow-eligible and with entry time at/before
+its own deadline. Head success is not required. A failed interior or repeat
+resets practice combo; failure of the final scheduled entry does not. Successful
+components increment combo. The recovered raw success selector uses the due
+prefix count, not producer identity, so a delayed tick can carry a repeat/terminal
+raw code. Display labels retain producer roles separately.
+
+Legacy parent grading uses `(successful checkpoints + positive head)/(N+1)`:
+exactly1 gives300; at least.5 gives100; any smaller positive ratio gives50; zero
+givesMISS. Whole-object accuracy and feedback remain practice counters, with no
+extra aggregate combo point. Full stable score/health/ScoreV2 are not implemented.
 
 ## Local beatmap audio
 
@@ -147,7 +190,7 @@ For an optional standalone distribution (copy the **entire output folder**):
 dotnet publish reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained true -o reconstructed/CircleGame/bin/standalone
 ```
 
-Run/publish commands are human Windows instructions. R04 uses noninteractive
+Run/publish commands are human Windows instructions. R05 uses noninteractive
 Windows CI for compilation and the unchanged component suite; see the report.
 No original osu! installation is required. If a launch fails, run the command in
 PowerShell to retain the error output. Source, fixture and Windows instructions
@@ -157,16 +200,19 @@ are committed; build outputs are intentionally ignored.
 
 - `.osu` format v5–v14; explicit `Mode: 0`, CircleSize, OverallDifficulty and
   ApproachRate, with finite difficulty values in [0,10].
-- Ordinary circles and `L|x:y,1,length` straight sliders, at distinct integer start
-  times in [0,3600000] ms. Normal/NewCombo/colour-skip bits are accepted. Repeats,
-  multi-point paths, other curves, interior ticks, overlapping slider intervals,
+- Ordinary circles and `L|x:y,spans,length` straight sliders with 1–16 traversals,
+  at distinct integer start times in [0,3600000] ms. The count includes the first
+  traversal (2 means out-and-back). Normal/NewCombo/colour-skip bits are accepted.
+  Multi-point paths, other curves, overlapping slider intervals,
   spinners, holds, equal times and malformed/empty maps are explicitly rejected.
 - Slider maps require explicit SliderMultiplier and SliderTickRate, clamped to
   E05's [.4,3.6] / [.5,8] ranges. Timing points are retained in file order; base
   and inherited selection at slider start drive travel rate and spacing. Missing
   timing uses E05's rate fallback. Changes during a slider do not change its rate.
-- Nondegenerate slider length must be >.0001 and <=4096 pixels; duration >=1 ms,
-  end <=3600000 ms. Maximum 2 MB / 10000 objects. These are slice input limits.
+- Nondegenerate slider length must be >.0001 and <=4096 pixels; each traversal
+  >=1 ms, parent end <=3600000 ms. Maximum 2 MB / 10000 objects, 4096 scheduled
+  checkpoints per slider and100000 per map. These are explicit engineering limits,
+  not original format restrictions. Exceeding them rejects the candidate map.
 - The included map is the intended control: separated, unstacked, no mods or
   timing/coordinate tricks. General dense/overlapping maps are not certified.
 - Mandatory hitSound column 5 must parse as an Int32 (negative/unusual bit values
@@ -183,13 +229,16 @@ are committed; build outputs are intentionally ignored.
 | `Platform/GameplayClock.cs` | Practice clock authority for both silent and audible maps |
 | `Platform/BeatmapAudio.cs` | Asynchronous local-media loading and native playback lifetime |
 | `Platform/PracticeFixture.cs` | Independent reproducible PCM tone generator |
-| `Gameplay/Beatmap.cs` | Narrow circle/slider reader, timing and prepared straight geometry |
-| `Gameplay/CircleSession.cs` | Separate circle/head/slider state, held-side history, tracking, terminal and aggregate feedback |
+| `Gameplay/Beatmap.cs` | Narrow reader, timing, prepared line, directed Movement records and checkpoint producer |
+| `Gameplay/CircleSession.cs` | Separate head/parent/checkpoint outcomes, held history, tracking, one-entry due processing and aggregate feedback |
 | `Rendering/PlayfieldLayout.cs` | Forward/inverse layout relation inside a 4:3 stage |
 | `Rendering/PlayfieldView.cs` | Primitive drawing, frame callback, actual mouse sampling |
 | `Fixtures/first-circles.osu` | Independently authored eight-circle practice input |
 | `Fixtures/audible-circles.osu` | Separate template paired with generated tones |
 | `Fixtures/first-slider.osu` | Independent mixed circle/slider control, no interior ticks |
+| `Fixtures/slider-ticks.osu` | Independent interior-tick slider |
+| `Fixtures/slider-repeat.osu` | Independent two-traversal out-and-back slider |
+| `Fixtures/mixed-sliders.osu` | Independent circles and one-/two-/three-traversal sliders |
 
 The gameplay layer has no WPF dependency. Rendering consumes session state;
 platform input supplies a mapped pointer and stored gameplay time. R01's Python

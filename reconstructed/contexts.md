@@ -174,3 +174,48 @@ Research tree unchanged, historical journal preserved as a byte prefix, original
 fixtures/audio/clock/R01 and Work 1 QA assets preserved. Final documentation-only
 publication records this outcome with application content identical to the tested
 source commit. R04 stops here; Work 1 owns the subsequent dedicated slider QA.
+
+## R05 — Repeating Sliders & Scheduled Checkpoints
+
+2026-11-03 (Asia/Bangkok), Work 2. Started current origin/main at
+`b18867ea23607ead66d5daba9599d7255eb1d6a1`, clean local main. Read AGENTS, full
+standing contract, implementation journal/sources and E05–E06/E15–E18/E21–E23.
+Scope: extend playable straight-line sliders to repeats and scheduled checkpoints;
+no new original-software expedition, curved paths, full score/HP/ScoreV2 or QA
+campaign. Existing static findings retain their confidence/runtime limitations.
+
+Owner-reported R04 observation from this assignment: the human owner reports
+that the tested slider interaction and scoring match the original at the
+user-observable level. This is limited to the owner's tested R04 interaction;
+map/build/settings/trace details were not supplied here. It is not universal
+equivalence, independent Work observation or R05 validation. Historical R04
+report/journal conclusions are preserved.
+
+RECONSTRUCTED implementation: 1–16 directed one-line traversals with inclusive
+first-Movement selection at shared endpoints; persistent tracking across turns;
+distance-phase/carry checkpoint production with original near-end suppression,
+separate Single-distance timestamps and final-only adjustment; unsorted leading
+due-prefix processing of at most one outstanding item per reached update; timely
+entry equality, independent head, raw k/N/R success selector and processed-count
+negative selector. Separate null/pending outcomes, success/failure counters and
+producer UI roles. Ordinary failure resets combo; final negative does not; parent
+legacy grade uses (successes+positiveHead)/(N+1), no aggregate combo or drain.
+
+Changed implementation under reconstructed/ only: Beatmap/CircleSession,
+PlayfieldView, Program, project/README, three independent playable fixtures,
+R05 report and this append. Tick dots, TURN chevrons, span/checkpoint counts and
+feedback are independent WPF aids. Existing R02–R04 fixtures, input/audio/clock,
+R01, historical records and Work 1 research/QA preserved. Engineering limits:
+16 traversals, 4096 checkpoints/slider,100000/map and existing bounded parser;
+unsupported constructions explicitly rejected. Host snapshot cadence and legacy
+practice counters remain limitations, not new stable claims.
+
+Initial verification: source/diff review and whitespace checks only; no local
+dotnet executable. Hosted Windows compilation and unchanged90 QA01 cases PENDING
+at initial source publication; actual run/commit/outcome will be appended after
+execution using existing R04-named workflow, with no workflow edits/new tests.
+No game launch, physical/synthetic input, recording, OBS, debugger, original-game
+execution, binary inspection, virtualization or SDK installation. All interactive
+operation stays exclusively with the owner. Current R05 authorization supersedes
+historical Work 2 suspension/branch rules; no research journal or RE number edit.
+Stop after R05; Work 1 owns dedicated subsequent repeat/tick QA.

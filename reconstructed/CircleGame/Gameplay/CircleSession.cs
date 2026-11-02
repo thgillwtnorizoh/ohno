@@ -13,6 +13,14 @@ public sealed class CircleState(CircleDefinition definition)
 
 public sealed record HitFeedback(Vector2 Position, string Text, int Time, Judgement Result);
 
+public sealed class SliderCheckpointState(SliderCheckpoint definition)
+{
+    public SliderCheckpoint Definition { get; } = definition;
+    public bool? Succeeded { get; internal set; } // null is pending, distinct from failure.
+    public int RawResult { get; internal set; }
+    public int? JudgedAt { get; internal set; }
+}
+
 public sealed class SliderState(SliderDefinition definition)
 {
     public SliderDefinition Definition { get; } = definition;
@@ -21,7 +29,11 @@ public sealed class SliderState(SliderDefinition definition)
     public bool Tracking { get; internal set; }
     public bool FollowEligible { get; internal set; }
     public int EntryTime { get; internal set; }
-    public bool? TerminalSucceeded { get; internal set; }
+    public IReadOnlyList<SliderCheckpointState> Checkpoints { get; } = definition.Checkpoints.Select(c => new SliderCheckpointState(c)).ToArray();
+    public int SuccessfulCheckpoints { get; internal set; }
+    public int FailedCheckpoints { get; internal set; }
+    public int ProcessedCheckpoints => SuccessfulCheckpoints + FailedCheckpoints;
+    public bool? TerminalSucceeded => Checkpoints[^1].Succeeded;
     internal int RememberedMask;
 }
 
@@ -121,13 +133,13 @@ public sealed class CircleSession
             // E17: tracking/component decision precedes inclusive parent completion.
             if (slider.Result == Judgement.Pending && time >= slider.Definition.EndTime)
             {
-                int successes = (Positive(slider.Head.Result) ? 1 : 0) + (slider.TerminalSucceeded == true ? 1 : 0);
-                double ratio = successes / 2.0;
+                int successes = (Positive(slider.Head.Result) ? 1 : 0) + slider.SuccessfulCheckpoints;
+                double ratio = successes / (double)(slider.Checkpoints.Count + 1);
                 // E17/E23 legacy policy (no ScoreV2/mods), not head-sensitive grading.
                 slider.Result = ratio == 1 ? Judgement.Hit300 : ratio >= 0.5 ? Judgement.Hit100 :
                     ratio > 0 ? Judgement.Hit50 : Judgement.Miss;
                 RecordResult(slider.Result, false); // Whole-object accuracy, no duplicate combo award.
-                Feedback = new(slider.Definition.Tail, "SLIDER " + Label(slider.Result), time, slider.Result);
+                Feedback = new(slider.Definition.EndPosition, "SLIDER " + Label(slider.Result), time, slider.Result);
             }
         }
         input.ConsumeEdges();
@@ -209,16 +221,38 @@ public sealed class CircleSession
         bool follow = input.For(slider) && Vector2.DistanceSquared(pointer, slider.Definition.RequiredPosition(time)) < radius * radius;
         slider.FollowEligible = follow;
         if (follow && !slider.Tracking) { slider.EntryTime = time; slider.Tracking = true; }
-        // E16/E22: one scheduled terminal, inclusive deadline; entry must be timely.
-        if (slider.TerminalSucceeded is null && time >= slider.Definition.TerminalTime)
+        // E16/E21: leading due-prefix only, in original producer order. The final
+        // adjustment can be nonmonotone. One reached call processes at most ONE.
+        int raw = 0, k = 0, count = slider.Checkpoints.Count;
+        while (k < count && slider.Checkpoints[k].Definition.Time <= time) k++;
+        if (slider.ProcessedCheckpoints < k)
         {
-            slider.TerminalSucceeded = follow && slider.EntryTime <= slider.Definition.TerminalTime;
-            if (slider.TerminalSucceeded == true) AddCombo();
-            // E22 terminal failure (-524288) has comboEnabled=false; no reset here.
-            Feedback = new(slider.Definition.Tail, slider.TerminalSucceeded == true ? "TAIL HIT" : "TAIL MISSED", time,
-                slider.TerminalSucceeded == true ? Judgement.Hit300 : Judgement.Miss);
+            var checkpoint = slider.Checkpoints[slider.ProcessedCheckpoints];
+            bool success = follow && slider.EntryTime <= checkpoint.Definition.Time;
+            if (success)
+            {
+                slider.SuccessfulCheckpoints++;
+                // k, NOT the processed index or producer role, selects success code.
+                raw = k == count ? 128 : k % (count / slider.Definition.Traversals) == 0 ? 64 : 8;
+            }
+            else
+            {
+                slider.FailedCheckpoints++;
+                raw = slider.ProcessedCheckpoints == count ? -524288 : -262144;
+            }
+            checkpoint.Succeeded = success;
+            checkpoint.RawResult = raw;
+            checkpoint.JudgedAt = time;
+            string role = checkpoint.Definition.Kind switch
+            { SliderCheckpointKind.Interior => "TICK", SliderCheckpointKind.Repeat => "REPEAT", _ => "TAIL" };
+            Feedback = new(checkpoint.Definition.Position, role + (success ? " HIT" : " MISSED"), time,
+                success ? Judgement.Hit300 : Judgement.Miss);
         }
-        if (!follow && slider.Tracking && slider.TerminalSucceeded is null) slider.Tracking = false;
+        if (!follow && slider.Tracking && slider.ProcessedCheckpoints < count) slider.Tracking = false;
+        // E18/E21/E22: leave precedes the immediate combo consumer. Positive
+        // component increments; ordinary negative resets; final negative does not.
+        // No full score/HP consumer or original helper exceptions are reproduced.
+        if (raw > 0) AddCombo(); else if (raw == -262144) Combo = 0;
     }
 
     private void AddCombo() { Combo++; MaxCombo = Math.Max(MaxCombo, Combo); }
