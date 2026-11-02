@@ -20,12 +20,29 @@ copy entries. Updated `Gameplay/Beatmap.cs`, `Gameplay/CircleSession.cs`,
 `CircleGame/README.md`. Silent/audible/R04 fixtures, audio backend/clock, R01,
 historical reports, research and Work 1 QA are preserved.
 
-CI at initial source publication: **PENDING**, not a pass. The existing
-`.github/workflows/r04-build.yml` automatically runs on CircleGame changes;
-its historical name does not identify the source under test. The final outcome
-will record the actual R05 source SHA, run/job, Windows build and unchanged QA01
-90-case results. No workflow edits, SDK installation or new gameplay tests.
-The development host has no dotnet executable; no local compilation was run.
+**Windows CI PASS** on R05 source commit
+`2583c550d63142b2c07134126b35c3593d4772ac`:
+[run41489134446 / job125427203516](https://github.com/thgillwtnorizoh/ohno/actions/runs/41489134446/job/125427203516).
+Executed 2026-11-03 00:13–00:14 Asia/Bangkok (2026-11-02 17:13–17:14 UTC),
+Windows2022 / preinstalled SDK8.0.427. Release WPF win-x64 build succeeded with
+**0 compiler warnings / 0 errors**; unchanged QA01 suite reported **90 passed,
+0 failed, 90 executed**. Both steps and the job succeeded. The runner's checkout
+Node20 deprecation notice is separate from compiler output.
+
+Commands actually executed at repository root:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+The unchanged `.github/workflows/r04-build.yml` triggered on CircleGame changes;
+its historical R04 name does not identify the source under test. The checkout and
+logs explicitly identify the R05 source SHA above. No workflow edits, SDK
+installation or new gameplay tests. The development host has no dotnet executable;
+no local compilation was run. The final documentation-only publication records
+this result with application/fixture/workflow content identical to that tested
+source commit. Source/preservation/whitespace review passed; no game was launched.
 
 **Owner-reported R04 validation:** the R05 assignment states that the human
 owner's tested slider interaction and scoring matched original gameplay at the
