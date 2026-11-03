@@ -30,7 +30,6 @@ public sealed class GameWindow : Window
     private readonly TextBlock mediaStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
     private readonly List<Button> buttons = [];
     private readonly HashSet<Key> heldKeys = [];
-    private readonly ScoreConfiguration scoring = ScoreConfiguration.EngineeringPractice;
     private readonly TextBlock scoringStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
     private CancellationTokenSource? loadCancellation;
     private BeatmapAudio? pendingAudio;
@@ -147,6 +146,7 @@ public sealed class GameWindow : Window
         try
         {
             Beatmap map = Beatmap.Load(path); // Parse before replacing any active state.
+            ScoreConfiguration scoring = ScoreConfiguration.FromBeatmap(map); // No fallback preset on error.
             candidateAudio = new BeatmapAudio(map.AudioPath);
             pendingAudio = candidateAudio;
             await candidateAudio.PrepareAsync(request.Token);

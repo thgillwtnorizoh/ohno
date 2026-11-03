@@ -478,3 +478,36 @@ R06 4 targets/4 loads,R07 8 groups,R08 13 groups,C01 4 groups PASS. All job step
 succeeded; checkout Node20 advisory only. Report links actual logs. No human game
 or original-runtime observation. C01 app/checks/workflow unchanged in final docs
 publication. C02 now authorized to proceed from this published and verified base.
+
+## R08-C02 — Automatic legacy score multiplier integration
+
+2026-11-03 Asia/Bangkok, Work2. Started published/verified C01 main
+761431c31acbf11b26ea324c011fa65a177c7136 after its passing Windows gate, with E034
+4c61be63265d54b19b257fb3f1c632760c9e7773. Owner dependency resolution authorizes
+sequential C01 then C02 with independent reports/commits. Read AGENTS/full contract,
+journal/R08/C01 and E033/E034 in full. No original binary/new expedition/E20,
+game/window/input/debugger/recording or QA06.
+
+RECONSTRUCTED E034 fresh metadata N per raw row (independent UInt16 type counts),
+first-before-type and last-recognized row starts, separate last end, unchecked raw
+numeric-event2 break sum, two signed subtractions /1000; fresh Single5 HP/OD/CS,
+modern Single clamp or older Byte parse. Single N/T*8 clamp, ordered HP+OD+CS+density,
+/38*5 then Double Math.Round/to-even and finite Int32 D; no-modDouble K=D*1.
+Positive N/T0 infinity clamps16; 0/0 and exceptional conversion reject explicitly.
+UI FromBeatmap prepares config from same captured file lines before replacement;
+no fallback K. Historical singlearg session compatibility stays ENGINEERING K1;
+explicit config overrides retained. HUD/results show AUTO E034 N/T/B provenance.
+E33 ledger/event/judgement/combo/accuracy and C01 drawing unchanged. All fixture
+bytes preserved, particularly Joined HP0/CS4/OD4. Conditional MixedK2/2392 vsK1/2236;
+JoinedK3/534 vsK1/438. Owner582 remains unresolved, not fitted withK4 or edited HP.
+
+Changed reconstructed/ Beatmap metadata/helper, ScoreConfiguration factory, app
+load/README, bounded C02 checks/report and this append; minimal CI step/path only.
+Fourteen dev groups use real components, including hashes, spans/breaks/rounding/
+zero denominators/overflow/difficulty and conditional event streams. Initial
+Windows gate PENDING; exact tested SHA/run/output will append. No local SDK/build.
+Fresh-parser/error boundaries are engineering rejection, not emulation of original
+partial mutations/cache/reused identity/runtime precision. Historical research/QA/
+reports/fixtures/C01 source and journal prefix preserved. Stop after C02; no R09,
+lazer or framework migration. Current main implementation scope supersedes old
+branch/RE defaults; no research journal or original test required/attempted.

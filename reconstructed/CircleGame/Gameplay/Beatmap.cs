@@ -182,9 +182,117 @@ public sealed record SliderDefinition(CircleDefinition Head, Vector2 Tail,
 
 public sealed record TimingPoint(double Time, double BeatLength, bool IsBase);
 
+// E034 fresh-file metadata, deliberately independent of sorted gameplay objects,
+// prepared slider ends and the ledger's component/whole-result counters.
+public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int FirstStart, int LastStart,
+    int LastEnd, int BreakMilliseconds, int WholeSeconds, ushort Circles, ushort Sliders, ushort Spinners,
+    float Hp, float Od, float Cs)
+{
+    public LegacyScoreMultiplier Prepare()
+    {
+        if (!float.IsFinite(Hp) || !float.IsFinite(Od) || !float.IsFinite(Cs) ||
+            Hp < 0 || Hp > 10 || Od < 0 || Od > 10 || Cs < 0 || Cs > 10)
+            throw new InvalidDataException("Automatic legacy multiplier requires finite prepared HP/OD/CS within 0–10.");
+        // M1bc4: preserve Single operations; positive N/0 is supported infinity.
+        float density = (float)RowCount / (float)WholeSeconds;
+        density *= 8f;
+        // M2d7d finite bounds: infinities clamp, NaN propagates.
+        if (density > 16f) density = 16f;
+        else if (density < 0f) density = 0f;
+        float u = Hp + Od;
+        u += Cs;
+        u += density;
+        u /= 38f;
+        u *= 5f;
+        double rounded = Math.Round((double)u); // Original Double overload, midpoint-to-even.
+        if (!double.IsFinite(rounded) || rounded < int.MinValue || rounded >= 2147483648.0)
+            throw new InvalidDataException("Automatic legacy multiplier is unsupported: nonfinite/out-of-range E034 conversion (including 0/0).");
+        return new(this, density, u, (int)rounded);
+    }
+
+    // Only a fresh file; no cache restore, reused difficulty or partial-error recovery.
+    // Malformed metadata rejects explicitly instead of fabricating an original result.
+    public static LegacyScoreMetadata ReadFresh(IEnumerable<string> lines, int version)
+    {
+        if (version < 5 || version > 14) throw new InvalidDataException("Unsupported metadata format version.");
+        int count = 0, first = -1, breaks = 0;
+        ushort circles = 0, sliders = 0, spinners = 0;
+        float hp = 5, od = 5, cs = 5; // M1387 fresh object defaults, not cached reuse.
+        string section = "", lastStart = "", lastEnd = "";
+        foreach (string source in lines)
+        {
+            string line = source.Trim();
+            if (line.Length == 0 || line.StartsWith("//")) continue;
+            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            if (section == "[HitObjects]")
+            {
+                string[] row = line.Split(',', 7);
+                if (row.Length < 4) throw new InvalidDataException("Invalid automatic score metadata hit-object row.");
+                if (first == -1) first = Stamp(row[2]); // Before type dispatch, raw order.
+                int type = Integer(row[3]) & 139;
+                switch (type)
+                {
+                    case 1: circles = unchecked((ushort)(circles + 1)); lastStart = lastEnd = row[2]; break;
+                    case 2: sliders = unchecked((ushort)(sliders + 1)); lastStart = lastEnd = row[2]; break;
+                    case 8:
+                        if (row.Length < 6) throw new InvalidDataException("Spinner metadata needs an end field.");
+                        spinners = unchecked((ushort)(spinners + 1)); lastStart = row[2]; lastEnd = row[5]; break;
+                    case 128:
+                        if (row.Length < 6) throw new InvalidDataException("Hold metadata needs an end field.");
+                        sliders = unchecked((ushort)(sliders + 1)); lastStart = lastEnd = row[5].Split(':')[0]; break;
+                }
+                count = unchecked(count + 1); // Includes unrecognized masked types, NOT count sum.
+            }
+            else if (section == "[Events]" && line[0] == '2')
+            {
+                string[] row = line.Split(',');
+                if (row.Length < 3) throw new InvalidDataException("Numeric event2 needs start/end break fields.");
+                int duration = unchecked(Integer(row[2]) - Integer(row[1]));
+                breaks = unchecked(breaks + duration); // No clipping, positivity or overlap union.
+            }
+            else if (section == "[Difficulty]")
+            {
+                int colon = line.IndexOf(':');
+                if (colon < 0) continue;
+                string key = line[..colon].Trim(), value = line[(colon + 1)..].Trim();
+                if (key is not ("HPDrainRate" or "OverallDifficulty" or "CircleSize")) continue;
+                float difficulty;
+                if (version < 13)
+                {
+                    if (!byte.TryParse(value, NumberStyles.Integer, CultureInfo.InvariantCulture, out byte b))
+                        throw new InvalidDataException("Pre-v13 score difficulty requires Byte syntax.");
+                    difficulty = b;
+                }
+                else if (!float.TryParse(value, NumberStyles.Float, CultureInfo.InvariantCulture, out difficulty) || !float.IsFinite(difficulty))
+                    throw new InvalidDataException("Automatic score difficulty must be finite Single syntax.");
+                difficulty = Math.Clamp(difficulty, 0f, 10f);
+                switch (key) { case "HPDrainRate": hp = difficulty; break; case "OverallDifficulty": od = difficulty; break; case "CircleSize": cs = difficulty; break; }
+            }
+        }
+        int last = lastStart.Length == 0 ? -1 : Stamp(lastStart);
+        int end = lastEnd.Length == 0 ? -1 : Stamp(lastEnd);
+        int seconds = unchecked(unchecked(last - first) - breaks) / 1000;
+        return new(version, count, first, last, end, breaks, seconds, circles, sliders, spinners, hp, od, cs);
+
+        static int Integer(string text) => int.TryParse(text, NumberStyles.Integer, CultureInfo.InvariantCulture, out int n) ? n :
+            throw new InvalidDataException("Invalid Int32 score metadata operand.");
+        static int Stamp(string text)
+        {
+            if (!double.TryParse(text, NumberStyles.Float, CultureInfo.InvariantCulture, out double n) ||
+                !double.IsFinite(n) || n < int.MinValue || n > int.MaxValue)
+                throw new InvalidDataException("Unsupported finite Double-to-Int32 score metadata time.");
+            return (int)n;
+        }
+    }
+}
+
+public sealed record LegacyScoreMultiplier(LegacyScoreMetadata Metadata, float DensityTerm, float BeforeRounding, int K);
+
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
+    public LegacyScoreMetadata? ScoreMetadata { get; init; }
+
     // Optional local media reference; the gameplay model remains independent of WPF.
     public string? AudioPath { get; init; }
     public IReadOnlyList<SliderDefinition> Sliders { get; init; } = Array.Empty<SliderDefinition>();
@@ -344,7 +452,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         return new(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
-                Spinners = spinners.OrderBy(s => s.StartTime).ToArray() };
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version) };
 
         double SliderSetting(string name, double lower, double upper)
         {

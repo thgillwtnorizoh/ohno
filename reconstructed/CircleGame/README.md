@@ -1,10 +1,10 @@
-# R08 — Legacy Score Practice for Windows
+# R08-C02 — Automatic Legacy Score Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
 simulated input, network service, original assets or original-game execution.
 
-**R08 status:** see `../R08-legacy-accounting.md` for Windows build,255 unchanged
+**R08 baseline:** see `../R08-legacy-accounting.md` for its Windows build,255 unchanged
 QA cases and bounded ledger checks. R08 human score/visual equivalence remains
 unverified. Historical reports and scoped R04/R06/R07 owner feedback are preserved;
 they do not validate R08 scores. The R05 report records its Windows build and
@@ -50,47 +50,62 @@ the old session paused. A rejected file leaves the old map, audio and progress
 intact. A newly loaded map waits for Start. **Silent fixture** restores the
 original silent control. All interactive operation remains human-controlled.
 
-## Legacy score and results (R08)
+## Legacy score and results (R08 / R08-C02)
 
-Start any existing fixture or load a supported local map as before. The HUD now
-shows **legacy score, accuracy, current combo and maximum combo** from one ledger.
-Its next line identifies **Plain legacy · K=1 (ENGINEERING preset)**. Completion
-shows final score, four whole-result counts, accuracy, maximum combo, completed
-objects and policy/K provenance. Timing, Space pause/resume and R/Enter restart
-are unchanged. Restart/map replacement creates a fresh record and keeps the
-explicit scoring configuration. No rank letters, online records or persistence.
+Start any existing fixture or load a supported local map as before. The HUD shows
+legacy score, accuracy, current combo and maximum combo from the E33 ledger.
+Completion shows final score, four whole-result counts, accuracy, maximum combo,
+completed objects and policy/K provenance. No official ranks or online records.
 
-K=1 is a documented engineering practice preset. Original automatic chart-density
-metadata and its actual map multiplier remain unresolved. The code accepts an
-explicit finite K0–10; this is a safety range, not an original rule. UI/session
-construction passes the preset explicitly. Future recovered map preparation can
-supply K through `ScoreConfiguration` without changing judgement or ledger logic.
-The historical one-argument component constructor uses the same named preset.
+The human application's default is now **automatic E034 fresh-file K**. The policy
+line identifies e.g. `Plain legacy · K=2 (AUTO E034 fresh .osu N4/T12s/B0ms)` for
+Mixed R07. N counts raw hit-object rows, T is signed/truncated whole seconds between
+first/last recognized row starts minus summed numeric-event2 break durations; B is
+the raw break sum. Slider/spinner ends, audio length, tick count and judgement
+counts do not supply this denominator. HP/OD/CS retain their fresh-file metadata
+values/defaults. Difficulty, density and rounding preserve the recovered Single /
+Double operation order and midpoint-to-even behavior. Positive count with T=0 is
+a supported infinity-to16 clamp, including the sole Joined Bézier slider.
 
-Whole positive scores use the E33 pre-result combo operand: base b plus
-`trunc(max(0,oldCombo-1) * IntDiv(b,25) * K)`. First and second circle300s total600;
-a subsequent100 makes704 with K1. Components use their actual raw result: slider
-head/repeat-coded/terminal-coded successes add30, interior-coded success adds10;
-spinner4096/8192/16384 adds0/100/1100. These are bounded numeric additions, without
-native bonus effects or full scoring policy reconstruction. A delayed tick can
-carry a different raw code, so producer labels do not determine score amounts.
+**Mixed R07** automatically prepares K2. With E034's matched conditional events it
+predicts2392, versus2236 with an explicit engineering K1. **Joined Bézier** prepares
+K3 and conditionally predicts534, versus438 at K1. The owner's reported original582
+remains unresolved. Fixture difficulty and E33 ledger arithmetic are unchanged.
+These are finite predictions, not newly observed human gameplay or proof that the
+owner's original chart/settings/events match these fixture bytes.
 
-Only whole circle, slider aggregate and spinner final judgements update the
-UInt16 300/100/50/MISS counts. Accuracy is the E33 Single fraction, displayed as
-percentage; empty accuracy is100%. Components add no accuracy hits. Positive
-slider aggregates add no duplicate combo, while a parent MISS resets combo.
-Terminal component failure preserves combo, spinner components bypass combo.
-`HitValueTotal` is a compatibility weighted-hit getter, not legacy numeric score.
+For controlled component comparisons, explicitly construct
+`new CircleSession(map, ScoreConfiguration.EngineeringPractice)` or supply
+`new ScoreConfiguration(k, ScorePolicy.PlainLegacy, "ENGINEERING test override")`.
+Finite K0–10 remains an engineering safety bound. Normal app loading instead calls
+`ScoreConfiguration.FromBeatmap(map)` before replacing the session/audio. The
+historical one-argument CircleSession API retains its named engineering K1 preset
+for compatibility with existing QA/synthetic callers; it is not used by the UI.
+There is no automatic-to-engineering fallback. Malformed/unsupported automatic
+metadata is rejected explicitly, preserving the prior paused valid session.
+Synthetic maps without fresh metadata must use explicit configuration.
 
-For the original eight-circle fixture, all300s with uninterrupted combo predict
-score2652 at this K1 preset. This is a conditional ledger prediction; original-map
-K and general cross-map score equivalence remain unverified. The audible fixture,
-Linear/Bézier/repeat controls and spinner fixtures remain available unchanged.
+Fresh file preparation uses the same in-memory bytes as gameplay loading. No
+cached/reused original record or database format is emulated. Metadata parsing is
+separate from sorted gameplay objects; existing gameplay admission restrictions
+remain. Direct metadata controls can describe unordered/overlapping/unknown/hold
+rows without admitting those as playable objects. NaN/nonfinite conversion, bad
+break fields and unsupported metadata formats fail explicitly rather than receiving
+a guessed multiplier. Fresh missing HP defaults5; reused original difficulty/cache
+state and original x86 marginal precision remain unverified.
 
-Only the plain, ordinary, null-ScoreV2 event table is supported. Incoming decorated
-or unsupported policy/provenance values mark the ledger unavailable; the UI hides
-its supported-prefix numbers as final metrics. No flag stripping, guessed density
-formula, ScoreV2, modifier scoring, HP, leaderboards or Rank recreation is included.
+E33's score formula, whole-result-only Single accuracy, component amounts,
+pre-result combo bonus and once-only lifecycle emission are unchanged. Positive
+slider aggregates add no duplicate combo; parent MISS resets combo, terminal
+component failure preserves combo and spinner components bypass combo. Pause
+retains the ledger. Restart creates fresh score state with the same prepared K;
+map replacement prepares that map's K. Only the plain ordinary null-ScoreV2 table
+is supported; modifiers/decorations/ScoreV2 and complete native record selection
+remain unsupported. No fitted scores or metadata changes are used.
+
+See `../R08-C02-automatic-score-multiplier.md` for exact CI source/outcomes and
+bounded metadata controls. Windows launch command and all13 fixture buttons remain
+unchanged. All interactive operation belongs to the human owner.
 
 ## First slider
 

@@ -9,6 +9,16 @@ public sealed record ScoreConfiguration(double K, ScorePolicy Policy, string Mul
 {
     // ENGINEERING chart preset, not recovered automatic density preparation.
     public static ScoreConfiguration EngineeringPractice { get; } = new(1.0, ScorePolicy.PlainLegacy, "ENGINEERING preset");
+
+    public static ScoreConfiguration FromBeatmap(Beatmap map)
+    {
+        LegacyScoreMetadata metadata = map.ScoreMetadata ?? throw new System.IO.InvalidDataException(
+            "Automatic scoring requires fresh .osu metadata; synthetic maps must supply an explicit engineering configuration.");
+        LegacyScoreMultiplier prepared = metadata.Prepare();
+        // E034 ordinary no-mod factor is1.0; do not infer modifiers/cache state.
+        return new((double)prepared.K * 1.0, ScorePolicy.PlainLegacy,
+            $"AUTO E034 fresh .osu N{metadata.RowCount}/T{metadata.WholeSeconds}s/B{metadata.BreakMilliseconds}ms");
+    }
 }
 public enum ScoreObjectKind { Circle, Slider, Spinner }
 public enum ScoreEventKind { CircleWhole, SliderHead, SliderInterior, SliderRepeatOrTerminal, SliderAggregate, SpinnerProgress, SpinnerFinal }

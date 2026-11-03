@@ -9,6 +9,7 @@ on:
       - reconstructed/R07DevelopmentChecks/**
       - reconstructed/R08DevelopmentChecks/**
       - reconstructed/R08C01DevelopmentChecks/**
+      - reconstructed/R08C02DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -108,4 +109,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R08C01DevelopmentChecks/R08C01DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R08-C02 automatic chart score multiplier
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R08C02DevelopmentChecks/R08C02DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
