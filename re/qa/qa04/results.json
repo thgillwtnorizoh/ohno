@@ -1,0 +1,924 @@
+{
+  "target_commit": "c4957dfdafc1ba8cda1e88c8a90192fe95177ef1",
+  "gate_commit": "b3f490c92e57ed36e5582b3ee5f586763b1f38f3",
+  "run_id": 41569363959,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41569363959",
+  "job_id": 125698424456,
+  "attempt": 1,
+  "conclusion": "success",
+  "run_started_at": "2026-11-03T02:58:33Z",
+  "environment": {
+    "os": "Windows Server2022 Datacenter10.0.20348",
+    "image": "windows-2022",
+    "image_version": "20261025.346.1",
+    "preinstalled_sdk": "8.0.427",
+    "sdk_installed_by_task": false
+  },
+  "build": {
+    "result": "success",
+    "warnings": 0,
+    "errors": 0
+  },
+  "suites": {
+    "qa01": {
+      "executed": 90,
+      "passed": 90,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "timing OD5 delta=0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-49",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=49",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-50",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=50",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-51",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=51",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-99",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=99",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-100",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=100",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-101",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=101",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-149",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=149",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-150",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=150",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-151",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=151",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=4",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=5.25",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=10",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=55 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=55 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=56 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=56 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=57 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=57 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=107 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=107 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=108 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=108 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=109 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=109 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=159 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=159 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=160 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=160 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "expiration equality and next millisecond",
+          "outcome": "PASS"
+        },
+        {
+          "name": "already evaluated exclusion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=799",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=800",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=1600",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=1601",
+          "outcome": "PASS"
+        },
+        {
+          "name": "ordered earlier object blocking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "first passing object is not nearest",
+          "outcome": "PASS"
+        },
+        {
+          "name": "scale-one radius scalar",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry center",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry inside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry outside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry diagonal-inside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry diagonal-outside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <16, 0>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <-16, 0>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <0, 16>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <0, -16>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <-22, 22>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <22, -22>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D01 reject NaN X",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D01 reject NaN Y",
+          "outcome": "PASS"
+        },
+        {
+          "name": "reject infinite pointer",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout controlled center scale1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout controlled doubled scale",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout letterbox translation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "new session state isolation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "finished session ignores later component calls",
+          "outcome": "PASS"
+        },
+        {
+          "name": "bundled practice parser",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser clamp and truncate both axes",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser sorts unsorted input",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject mode",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject version",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject missing AR",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject NaN difficulty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject range difficulty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject empty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject slider",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject spinner",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject mixed type",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject equal times",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject negative time",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject large time",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject nonfinite position",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject short row",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser object count limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser byte size limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D02 reject malformed hitSound",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D02 reject empty hitSound",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "qa03": {
+      "executed": 56,
+      "passed": 56,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "A01 tick fixture schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 repeat fixture schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 three-span carry schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 producer roles retain ordered traversal identity",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 directed movement endpoints and intervals",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 three spans preserve nonzero carry and alternate endpoints",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 forward literal geometry before reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 exact reversal selects first inclusive record",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 reverse immediately after boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 reverse returns to initial endpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 third traversal continues forward",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B06 reversal alone preserves active entry and held side",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 no component before due and inclusive equality",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 one outstanding component per invocation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 identical-time calls can drain prefix then stop",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 delayed interior gets repeat code from due prefix",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 delayed repeat can get interior code",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 all-due prefix gives earlier item terminal success code",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 failed and pending slots remain distinct",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 missed head permits later checkpoint success",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 entry equality succeeds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 late entry fails while tracking remains active",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 held input alone is insufficient",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 cursor alone is insufficient",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D05 entry radius equality rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D06 just inside entry radius accepted",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D07 active radius equality rejects and leaves",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 active hysteresis accepts outside entry disk",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D09 release and timely re-entry renew entry",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D10 release and late re-entry cannot rescue deadline",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D11 both held retains remembered side and no synthetic edge needed",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D12 replacing logical side follows original history branch",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D13 history veto differs from any-held shortcut",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D14 NaN follow coordinates reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E01 head and components credit combo without parent duplicate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E02 ordinary interior failure resets positive combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E03 repeat success increments combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E04 repeat failure uses ordinary negative reset",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E05 sequential final success increments combo before completion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E06 final failure preserves combo and guarded active flag",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E08 terminal entry equality after previous failures succeeds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E09 terminal entry after deadline fails while active",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E07 all due failure is nonterminal until processed count reaches N",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 inclusive parent end distinct from terminal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 delayed parent completion leaves backlog untouched",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 evaluated parent suppresses later component processing",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 terminal failure still permits positive parent aggregate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 legacy full successes with low positive head still best",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 missing head and all components successful gives middle",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 all failed including head gives miss",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 below half and above half use recorded successes",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 pending versus failed equal numerator but different histories",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-01 unchanged single-span fixture preparation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-02 head and terminal independently produce best legacy grade",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-03 head only exactly half grades middle",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-04 timely release and re-entry preserves terminal",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "r06": {
+      "executed": 4,
+      "passed": 4,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "quadratic raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "cubic raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "joined raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "final-pair guard and preserved controls",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "qa04": {
+      "executed": 43,
+      "passed": 43,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "A01 E32 quadratic exact raw vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 E32 cubic weighted vertices rather than uniform t",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 exact squared flatness equality accepts leaf",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 just above flatness boundary subdivides",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 flatness is second difference not chord distance",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 asymmetric half split preserves polygon order",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A07 source controls are not mutated",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A08 singleton retains duplicate final endpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 repeated control joins two quadratic ranges",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 final equal pair is not a separator",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 two-control subcurve is a marked straight piece",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 leading duplicate retained as zero raw piece",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 head insertion and no second head insertion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 unadjusted raw length uses E32 Single lengths",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 shorten last piece without changing raw snapshot",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 remove trailing piece at exact requested boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 removal tolerance can erase tiny requested remainder",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 extend nonzero tail direction",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 zero final direction blocks requested extension",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 entirely erased path rejected by engineering policy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 cumulative lengths recomputed from adjusted endpoints",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 joined bend forward and reverse segment times",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 inclusive first matching segment and reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 path follows pieces instead of whole-curve chord",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 true quadratic uses individual segment time conversions",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E01 checkpoint carry across pieces and reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E02 one outstanding entry per delayed call",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E03 curved segment boundary preserves held tracking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E04 reversal alone preserves entry and tracking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E05 loss and timely re-entry across pieces",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E06 independent head miss then valid later checkpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E07 parent end separate from checkpoint and no duplicate combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E08 late re-entry cannot rescue due checkpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 v13 Bezier rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 unsupported Perfect and Catmull types rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 malformed control rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 nonfinite control rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 degenerate geometry rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 control boundary accepts64 rejects65",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 parser normalized controls limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 empty nonfinite and overflow flatness defensive checks",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 declared segment and work limits retained",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F10 parser truncates Double controls before Single storage",
+          "outcome": "PASS"
+        }
+      ]
+    }
+  },
+  "fixture_loads": [
+    "LOAD bezier-quadratic: circles=0, sliders=1, segments=64, movements=64",
+    "LOAD bezier-cubic: circles=0, sliders=1, segments=96, movements=96",
+    "LOAD bezier-joined: circles=0, sliders=1, segments=128, movements=128",
+    "LOAD bezier-mixed: circles=3, sliders=4, segments=284, movements=375"
+  ],
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3
+    },
+    {
+      "name": "Compile R06 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17
+    }
+  ],
+  "commands": [
+    "dotnet --list-sdks",
+    "dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo",
+    "dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\""
+  ],
+  "evidence": {
+    "full_retrieved_utf8_log_sha256": "86799301cc47842857ed6c660a0e052e426fc2e585af1a598947c74cb7fece44",
+    "gate_output_sha256": "d3ab81f63dcf27fc1c9a14ff0edb28a6a9c550f8d130af849827c0df131e42f1"
+  },
+  "confirmed_defects": [],
+  "classification": {
+    "original_contract": "CONFIRMED STATIC: existing E32/E06 and related research; no new binary inspection",
+    "qa04": "VERIFIED COMPONENT: 43 actual linked C# component cases",
+    "owner_feedback": "OWNER-REPORTED: launches and gameplay close to original in tested scenarios; no universal equivalence",
+    "unverified": [
+      "Original runtime/precision",
+      "Complete cross-map equivalence",
+      "Pixels, audio synchronization and physical input",
+      "8192-output / 50000-node exhaustion not dynamically stressed",
+      "All17 E20 original-runtime cases NOT RUN"
+    ]
+  },
+  "preservation": {
+    "baseline_blob_count": 206,
+    "unchanged_baseline_blobs_and_modes": 205,
+    "only_modified_baseline_path": ".github/workflows/r04-build.yml",
+    "additions": "re/qa/qa04/",
+    "implementation_previous_qa_journals_e20": "unchanged"
+  }
+}

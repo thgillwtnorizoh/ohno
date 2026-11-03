@@ -2,7 +2,20 @@
 
 QA04 — R06 Bézier geometry and integration, Work1, 2026-11-03 (Asia/Bangkok).
 Target/current origin/main `c4957dfdafc1ba8cda1e88c8a90192fe95177ef1`.
-Initial status: **HOSTED EXECUTION PENDING**; tests below are not yet passes.
+**PASS — genuine execution:** WPF win-x64 build0 warnings/0 errors; unchanged
+QA01 **90/90**, QA03 **56/56**; R06 **4/4** preparation checks and **4** fixture
+loads; independent QA04 **43/43**. Thus189 QA component cases plus four development
+checks and four parser loads. One gate execution; no rerun.
+
+[Run41569363959 / job125698424456](https://github.com/thgillwtnorizoh/ohno/actions/runs/41569363959/job/125698424456),
+attempt1, success. Tested checkout `b3f490c92e57ed36e5582b3ee5f586763b1f38f3`,
+direct child of the R06 target. Windows Server2022 Datacenter10.0.20348,
+image20261025.346.1, preinstalled SDK8.0.427. `results.json` records all named
+outcomes, commands, step status, source target and log hashes; `gate-output.txt`
+preserves selected actual output. Full retrieved log hash is recorded without
+publishing checkout/auth details. Checkout's Node20 advisory is separate from
+compiler diagnostics. Results-only publication preserves all tested code and
+does not trigger another gate.
 
 43 focused cases link actual production Beatmap/geometry and CircleSession source.
 No copied flattener, scheduler or gameplay model is executed. Expected raw vertices
@@ -96,9 +109,23 @@ pathological subdivision campaign. No full-map maximum-allocation test is claime
 
 ## Classification and disposition
 
-**VERIFIED COMPONENT** status will be assigned only from actual CI output.
-Failures will be retained with expected/actual diagnostics, source location and
-correction ownership; production code will not be modified or expectations weakened.
+**VERIFIED COMPONENT:** all43 independent assertions passed, including exact E32
+vertices, flatness equality, joined ranges, length adjustment and multi-segment
+integration. **No confirmed defect; no correction required for the tested finite
+cases.** Expectations and production code were not changed after execution.
+
+Source inspection cross-checks: Beatmap.cs:23–39 normalization/ranges;43–64 raw
+sum/suffix/cumulative output;98–118 bounded flatness/subdivision/weighted output;
+393–427 per-piece Movement/carry/final adjustment. Production CircleSession is
+unchanged from the passing R05/QA03 baseline. The unchanged90+56 regressions pass
+against current R06 sources. This supports the finite contract and does not
+certify untested algorithms or interactions.
+
+All206 baseline paths remain present;205 blobs/modes outside the existing workflow
+are retained exactly. Only the minimal shared gate and new QA04 artifacts change.
+All prior QA/research/E20/implementation/fixtures/journals are unchanged. Reviewed
+identities are pinned in provenance.json; publication verifies remote ancestry,
+changed scope and full tracked tree. No historical expedition checks are rerun.
 
 **OWNER-REPORTED:** the current assignment says R06 launches and gameplay is close
 to original stable in the owner's tested scenarios. No map/build/settings/capture
