@@ -28,8 +28,38 @@ Initial source `b615a41717903ec6d77921a42cbc46ef3c687b9c` passed WPF0 warnings/e
 The new C02 step stopped before its first group at a hash assertion: Windows Git
 checkout used CRLF while E034 pinned LF repository bytes. Corrected only the
 check's hash normalization (CRLF to LF), with no fixture/app changes. This is an
-engineering verification fix, not a multiplier discrepancy. Full re-run PENDING;
-actual final source/run/log evidence follows. No local SDK install or build.
+engineering verification fix, not a multiplier discrepancy. Full re-run passed on source
+`ab1a6a6f7ad34a8f0d45a66f75be42b1083de461`:
+[run41636528239/job125919009472](https://github.com/thgillwtnorizoh/ohno/actions/runs/41636528239/job/125919009472),
+2026-11-03 12:32–12:33 UTC (19:32–19:33 Asia/Bangkok), Windows2022,
+preinstalled .NET8.0.427. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+```
+
+All steps succeeded; only checkout Node20 advisory, distinct from compiler
+warnings. The established `.github/workflows/r04-build.yml` executes the same
+build/QA/R06/R07/R08 commands recorded in the R08 report, then:
+
+```powershell
+dotnet run --project reconstructed/R08C01DevelopmentChecks/R08C01DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R08C02DevelopmentChecks/R08C02DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+Final publication updates only this report and appends the journal after that
+passing source. App/checks/workflow stay byte-identical to the tested version.
+No local SDK install or build.
 Windows commands and old fixture selection remain in CircleGame/README.md.
 
 # 2. What they found

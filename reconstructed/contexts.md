@@ -519,3 +519,17 @@ from E034 LF repository blob. Changed only new check's hash canonicalization
 CRLF->LF; all fixture bytes/app arithmetic preserved. Full source re-run required;
 no passed new multiplier checks claimed yet. This is verification portability,
 not an original-game discrepancy or evidence for fitted K.
+
+C02 final actual verification: sourceab1a6a6f7ad34a8f0d45a66f75be42b1083de461,
+run41636528239/job125919009472, 2026-11-03 12:32–12:33 UTC /19:32–19:33 Bangkok.
+Windows2022/preinstalled .NET8.0.427: WPF win-x64 0 warnings/0 errors; QA01 90/90,
+QA03 56/56,QA04 43/43,QA05 66/66 (255 total,0 failed); R06 4 targets/4 loads,
+R07 8 groups,R08 13 groups,C01 4 groups,C02 14 groups PASS. Actual executed checks
+confirm canonical fixture hashes, automatic MixedK2/2392 and JoinedK3/534 versus
+explicit K1/2236 and438; original582 unresolved. All steps/job passed; checkout
+Node20 advisory separate from compilation. Exact command/output/source/job in
+R08-C02 report. Final docs-only publication leaves tested app/checks/workflow
+unchanged. E33 ledger/all session mechanics, C01 renderer/report/checks, prior
+fixtures/research/QA/E20/historical records preserved and old journal byte prefix
+verified. No human/game/window/input/original observations claimed. Stop after
+C02; no QA06/R09/lazer/framework migration or new original expedition.
