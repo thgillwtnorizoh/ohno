@@ -1,4 +1,4 @@
-# R08-C02 — Automatic Legacy Score Practice for Windows
+# R10 — NewCombo and Calibrated Health Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
@@ -432,17 +432,42 @@ passive drain consumes the previous eligibility flag after judgement processing.
 Zero/negative consumed deltas retain the recovered arithmetic. Pause does not run
 health updates; restart/map replacement create fresh independent health state.
 
-**Automatic HP has explicit admission limits.** Existing source evidence leaves
-circle/slider factory M2902's additional NewCombo operand unresolved. A following
-circle/slider without explicit file bit4 can therefore make calibration unavailable.
-The original silent circle fixture is such a case. It remains playable/scored and
-the footer explains why HP is unavailable; there is no guessed r or B/G fallback.
-The new fixture, Mixed R07 and supported single-object controls have sufficient
-bounded grouping inputs. Prepared objects must be ordered/nonoverlapping; breaks
-must be ordered, positive and contained in inter-object gaps. Unsupported grouping,
-identity/count, timing/break structure or calibration safety exhaustion disables
-HP explicitly while preserving normal gameplay/scoring. Missing metadata on
-synthetic component maps also disables automatic HP.
+**R10 automatic HP uses E036 fresh ordinary NewCombo preparation.** The application
+loads and restarts through `CircleSession.CreateFreshOrdinary(map, scoring)`.
+The first circle/slider infers NewCombo from the fresh null last-registration
+reference; subsequent ordinary circles/sliders infer false, unless the previous
+registered object is a spinner. Explicit file bit4 is ORed after helper evaluation.
+Spinners themselves use only their file bit4. A separate postparse pass forces
+NewCombo when the next pending break ends strictly before the object's start;
+equality remains pending. Final flags feed the existing E035 private calibration.
+
+The unchanged silent eight-circle fixture now prepares health when the remaining
+bounds pass. No fixture data or HP arithmetic was changed to enable it. Prepared
+objects must still have strictly increasing source starts and nonoverlapping
+intervals; breaks must be ordered, positive and contained in inter-object gaps.
+No sorting repairs ambiguous registration. Unsupported identity/count, time-domain,
+manager reuse/clone/editor/alternate factory, break structure or calibration safety
+exhaustion disables HP with a precise status, preserving normal gameplay/scoring.
+There is no guessed r/B/G fallback. The fresh parser's exact map ownership is an
+engineering safeguard, not an emulation of every original manager lifecycle.
+
+**Versioned API compatibility (owner approved):** historical `new CircleSession(...)`
+constructors and `HealthChart.FromMap(map, approach)` retain R09's former unknown-
+M2902 contract for unchanged QA07 I04/I08 and historical development assertions.
+They may report HP unavailable for unmarked sequences. For the R10 application
+contract use `CircleSession.CreateFreshOrdinary(map, scoring)` or explicitly select
+`HealthPreparationPolicy.E036FreshOrdinary` in the extended APIs. Existing513 QA
+cases therefore verify historical/component regressions; the separate R10 checks
+exercise the new fresh path. No test-suite detection or hidden switch is used.
+Missing parser metadata on synthetic maps also disables automatic HP.
+
+Diagnostics are available on `Health.Chart.NewComboProvenance`: original raw type,
+file bit4/colour skip, exact registered definition identity, prior runtime category,
+helper result, factory argument, constructor/parser flags, expired-break count and
+final flag. Retained T081f/alternate objects are not admitted as ordinary rows.
+The health status distinguishes E036 fresh grouping from historical R09 grouping.
+See `../R10-original-newcombo-health-preparation.md` for static provenance, bounded
+controls, compatibility scope and actual Windows verification.
 
 Calibration engineering guards:10000 trials,2000000 object/component operations,
 10000 objects and4096 breaks. Original M1150 has no fixed retry limit. The live

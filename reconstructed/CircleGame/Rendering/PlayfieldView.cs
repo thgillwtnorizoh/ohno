@@ -40,7 +40,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void Load(Beatmap map, BeatmapAudio preparedAudio, ScoreConfiguration scoring)
     {
         preparedAudio.RequireReady();
-        var replacement = new CircleSession(map, scoring);
+        var replacement = CircleSession.CreateFreshOrdinary(map, scoring);
         var preparedPaths = map.Sliders.ToDictionary(s => s, s => BuildPath(s.Geometry));
         clock.Pause();
         BeatmapAudio? previousAudio = audio;
@@ -61,7 +61,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         if (Session is null) return;
         Pause();
-        var replacement = new CircleSession(Session.Map, Session.Scoring);
+        var replacement = CircleSession.CreateFreshOrdinary(Session.Map, Session.Scoring);
         if (audio?.Restart() == false) { AudioChanged(); return; }
         Session = replacement;
         started = true;

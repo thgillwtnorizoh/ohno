@@ -11,6 +11,7 @@ on:
       - reconstructed/R08C01DevelopmentChecks/**
       - reconstructed/R08C02DevelopmentChecks/**
       - reconstructed/R09DevelopmentChecks/**
+      - reconstructed/R10DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -140,4 +141,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project re/qa/qa07/Headless/QA07.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R10 fresh ordinary NewCombo preparation
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R10DevelopmentChecks/R10DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

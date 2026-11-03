@@ -635,3 +635,45 @@ tested production/checks/workflow; original R09 report, all Work1 research/QA/lo
 fixtures/other code, prior assertions and journal byte prefix preserved. Historical
 red gate/results are not rewritten. No original game/window/input/native playback
 or human equivalence observed. Stop after R09-C01, no R10 or further feature work.
+
+## R10 — Original NewCombo Preparation & Expanded Health Calibration
+
+Work2, 2026-11-03 UTC /2026-11-04 Asia/Bangkok. Base verified origin/main
+2e060a69f3aca94afdd6747629bd72ede84a7297 (E036). Read full standing contract,
+canonical AGENTS, journal, E035/E036, relevant E004/E012/E021, R09/C01 and QA07;
+inspected parser/source/chart/calibration/session/renderer/CI. Implementation-only
+assignment; no original archive/binary/tools/game/window/OS input/debugger/OBS/E20.
+E036 CONFIRMED STATIC instructions support reconstructed fresh NewCombo: M2902
+null/spinner-base/T081f predicate before circle/slider file-bit OR; spinner parser
+file-bit overwrite without helper; last-registration update; strict pending-break
+postpass in actual prepared order; final next-property into private1024/1028 trials.
+Pure preparation retains raw/file/helper/factory/constructor/parser/final/type /
+reference identity provenance. Exact fresh parsed-map owner is an ENGINEERING
+safeguard; rejects cloned/retained/editor/alternate identity, ambiguous order or
+unknown time-domain state rather than assuming null after clear. Existing HP
+validation/calibration/rates/coefficient arithmetic, live H/A/V, drain/smoothing,
+C01 H<160 recovery guard, judgement/input/audio, E033/E034 formulas unchanged.
+
+Owner-authorized decision after concrete contract conflict: QA07 I04/I08 and a
+historical R09 development assertion expect unmarked maps' HP to remain unavailable
+because M2902 was unresolved. User selected Versioned compatibility API. Old public
+constructors/2arg FromMap retain HistoricalR09. App Load/Restart and new checks use
+explicit CreateFreshOrdinary/E036FreshOrdinary; no test/assembly detection or QA
+modification. Existing513 cases cover historical/component regressions, not an
+independent validation of the new path. New R10 checks separately cover E036 finite
+N01–N22 derivations, flags/identity/order/type/reuse/break boundaries, private group
+rewards221/235, changed r/B/G balance retries, original eight-circle eligibility
+and an independent three-circle control, restart/replacement and per-update score /
+accuracy/combo/judgement invariance. No fixture edits; supplied original silent file
+has eight circles, no distinct tracked three-circle file found. All historical
+research/QA/logs/reports/checks and journal byte prefix preserved.
+
+Changes only reconstructed parser/session/title/Load+Restart/current README,
+new R10DevelopmentChecks/report, append-only journal and minimal CI path/step.
+New report R10-original-newcombo-health-preparation.md contains exact provenance,
+API choice, finite controls, engineering bounds and remaining native limitations.
+Local static diff/whitespace/preservation checks; no local SDK. Windows full gate
+PENDING at source publication; actual tested SHA/run/outputs append after execution.
+No original runtime or physical gameplay claim. Main expected-head publication,
+no permanent branch/force/history rewrite. Stop after R10; no R11/QA08/E037,
+score-discrepancy investigation, framework migration or lazer extensions.

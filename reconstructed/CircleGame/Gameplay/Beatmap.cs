@@ -291,7 +291,98 @@ public sealed record LegacyScoreMultiplier(LegacyScoreMetadata Metadata, float D
 // R09 preserves parser provenance for E035; this is not inferred from judgements.
 public sealed record HealthObjectSource(int Start, int RawType);
 public sealed record HealthBreak(int Start, int End);
-public sealed record HealthMapSource(int Version, IReadOnlyList<HealthObjectSource> Rows, IReadOnlyList<HealthBreak> Breaks);
+public sealed record HealthMapSource(int Version, IReadOnlyList<HealthObjectSource> Rows, IReadOnlyList<HealthBreak> Breaks)
+{
+    // ENGINEERING ownership proof for the exact fresh parsed map. A record clone
+    // must not silently inherit a claim of fresh original registration identity.
+    private WeakReference<Beatmap>? freshOwner;
+    internal void BindFreshOwner(Beatmap map) => freshOwner = new(map);
+    public bool IsFreshFor(Beatmap map) => freshOwner is not null && freshOwner.TryGetTarget(out Beatmap? owner) &&
+        ReferenceEquals(owner, map) && ReferenceEquals(map.HealthSource, this);
+}
+
+public enum HealthPreparationPolicy { HistoricalR09, E036FreshOrdinary }
+public enum OriginalRegisteredType { Null, Circle, Slider, SpinnerBase, AssignableT081f, Unknown }
+public enum NewComboOrigin { FreshOrdinaryText, RetainedManager, CloneOrEditor, AlternateFactory, Unknown }
+public readonly record struct NewComboContext(NewComboOrigin Origin, OriginalRegisteredType InitialLast, bool SharedTimeDomain)
+{
+    // Current parser's explicit zero-shift domain for both objects and breaks.
+    public static NewComboContext FreshZeroShift => new(NewComboOrigin.FreshOrdinaryText, OriginalRegisteredType.Null, true);
+}
+public sealed record NewComboInput(object Identity, int Start, int RawType, OriginalRegisteredType RuntimeType);
+public sealed record PreparedNewCombo(int SourceIndex, object Identity, int Start, int RawType,
+    OriginalRegisteredType RuntimeType, OriginalRegisteredType LastRegisteredBefore, bool FileBit4,
+    bool? Inferred, bool? FactoryArgument, bool ConstructorFlag, bool ParserFlag,
+    int ExpiredBreaksConsumed, bool FinalFlag)
+{
+    public int FileColourSkip => (RawType >> 4) & 7;
+}
+
+// E036 M2902 / M28f7 / M28d2 / M28db. This pure projection has no game or score state.
+public static class NewComboPreparation
+{
+    public static bool Infer(OriginalRegisteredType last) => last switch
+    {
+        OriginalRegisteredType.Null or OriginalRegisteredType.SpinnerBase or OriginalRegisteredType.AssignableT081f => true,
+        OriginalRegisteredType.Circle or OriginalRegisteredType.Slider => false,
+        _ => throw Unsupported("Unknown last registered runtime identity.")
+    };
+    public static IReadOnlyList<PreparedNewCombo> Prepare(IReadOnlyList<NewComboInput> registeredSource,
+        IReadOnlyList<HealthBreak> preparedBreaks, int format, NewComboContext context)
+    {
+        if (context.Origin != NewComboOrigin.FreshOrdinaryText || context.InitialLast != OriginalRegisteredType.Null || !context.SharedTimeDomain)
+            throw Unsupported("R10 requires proven fresh ordinary text registration and shared adjusted time domain; retained/clone/editor/alternate state is unavailable.");
+        if (registeredSource.Count == 0 || registeredSource.Count > 10000 || format < 5 || format > 14)
+            throw Unsupported("Unsupported finite NewCombo source count/format.");
+        var seen = new HashSet<object>(ReferenceEqualityComparer.Instance);
+        var prepared = new List<PreparedNewCombo>();
+        OriginalRegisteredType last = context.InitialLast;
+        for (int i = 0; i < registeredSource.Count; i++)
+        {
+            NewComboInput row = registeredSource[i];
+            if (row.Identity is null || !seen.Add(row.Identity)) throw Unsupported("Missing/duplicate registered object identity.");
+            if (i > 0 && row.Start <= registeredSource[i - 1].Start)
+                throw Unsupported("R10 requires strictly increasing source/registered starts; no sorting or equal-start inference.");
+            int masked = row.RawType & -113;
+            OriginalRegisteredType expected = (masked & ~4) switch
+            {
+                1 => OriginalRegisteredType.Circle, 2 => OriginalRegisteredType.Slider, 8 => OriginalRegisteredType.SpinnerBase,
+                _ => throw Unsupported("Unsupported ordinary registered type/factory.")
+            };
+            if (row.RuntimeType != expected) throw Unsupported("Original runtime type is inconsistent/alternate, not an ordinary row category.");
+            bool fileBit = (masked & 4) > 0;
+            bool? inferred = null, argument = null;
+            bool constructor, parser;
+            if (row.RuntimeType == OriginalRegisteredType.SpinnerBase)
+            {
+                constructor = format <= 8;
+                parser = fileBit; // M3e57 overwrites constructor flag; no M2902 call.
+            }
+            else
+            {
+                inferred = Infer(last); // Always reached BEFORE OR, even when fileBit is true.
+                argument = inferred.Value | fileBit;
+                constructor = parser = argument.Value;
+            }
+            prepared.Add(new(i, row.Identity, row.Start, row.RawType, row.RuntimeType, last, fileBit,
+                inferred, argument, constructor, parser, 0, parser));
+            last = row.RuntimeType; // Only after this object's successful bounded registration.
+        }
+        int consumed = -1;
+        for (int i = 0; i < prepared.Count; i++)
+        {
+            int count = 0;
+            while (consumed + 1 < preparedBreaks.Count && preparedBreaks[consumed + 1].End < prepared[i].Start)
+            {
+                consumed++; count++;
+            }
+            prepared[i] = prepared[i] with { ExpiredBreaksConsumed = count, FinalFlag = prepared[i].ParserFlag || count > 0 };
+        }
+        return prepared.AsReadOnly();
+    }
+    private static InvalidDataException Unsupported(string reason) => new("Health unavailable: " + reason);
+}
+
 
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
@@ -467,10 +558,12 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             if (!audioPath.StartsWith(prefix, OperatingSystem.IsWindows() ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal))
                 throw new InvalidDataException("AudioFilename must stay within the beatmap folder.");
         }
-        return new(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
+        var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
                 Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()) };
+        map.HealthSource!.BindFreshOwner(map);
+        return map;
 
         double SliderSetting(string name, double lower, double upper)
         {

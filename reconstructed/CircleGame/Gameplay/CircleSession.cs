@@ -351,6 +351,7 @@ public sealed class CircleSession
     public OrdinaryHealth? Health { get; }
     public string HealthStatus { get; }
     public HealthCalibrationResult? HealthPreparation => Health?.Calibration;
+    public HealthPreparationPolicy HealthPolicy { get; }
     private int previousUpdateTime, previousQualifyingInputTime;
     private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
@@ -375,9 +376,17 @@ public sealed class CircleSession
 
     public CircleSession(Beatmap map, ScoreConfiguration scoring) : this(map, scoring, true) { }
 
+    // Historical R09 entry points are retained by explicit owner choice for old QA contracts.
     public CircleSession(Beatmap map, ScoreConfiguration scoring, bool enableHealth)
+        : this(map, scoring, enableHealth, HealthPreparationPolicy.HistoricalR09) { }
+
+    public static CircleSession CreateFreshOrdinary(Beatmap map, ScoreConfiguration scoring, bool enableHealth = true) =>
+        new(map, scoring, enableHealth, HealthPreparationPolicy.E036FreshOrdinary);
+
+    public CircleSession(Beatmap map, ScoreConfiguration scoring, bool enableHealth, HealthPreparationPolicy healthPolicy)
     {
         Map = map;
+        HealthPolicy = healthPolicy;
         Ledger = new ScoreLedger(scoring);
         Circles = map.Circles.Select(c => new CircleState(c)).ToArray();
         Sliders = map.Sliders.Select(s => new SliderState(s)).ToArray();
@@ -405,11 +414,12 @@ public sealed class CircleSession
         {
             try
             {
-                HealthChart chart = HealthChart.FromMap(map, Approach);
+                HealthChart chart = HealthChart.FromMap(map, Approach, healthPolicy);
                 Health = new(chart, new HealthCalibration().Run(chart), fillOffset: 0);
-                HealthStatus = "E035 calibrated · bounded host · fill offset0 ENGINEERING";
+                HealthStatus = (healthPolicy == HealthPreparationPolicy.E036FreshOrdinary ? "E036 fresh grouping" : "Historical R09 grouping") +
+                    " · E035 calibrated · bounded host · fill offset0 ENGINEERING";
             }
-            catch (System.IO.InvalidDataException error) { HealthStatus = error.Message; }
+            catch (System.IO.InvalidDataException error) { HealthStatus = $"{healthPolicy}: {error.Message}"; }
         }
         else HealthStatus = "Health unavailable: explicitly disabled or unsupported score policy.";
     }
@@ -708,10 +718,19 @@ public sealed record PreparedHealthObject(int Start, int End, ScoreObjectKind Ki
 public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyList<PreparedHealthObject> Objects,
     IReadOnlyList<HealthBreak> Breaks)
 {
-    public static HealthChart FromMap(Beatmap map, int approach)
+    public IReadOnlyList<PreparedNewCombo> NewComboProvenance { get; init; } = Array.Empty<PreparedNewCombo>();
+    public HealthPreparationPolicy PreparationPolicy { get; init; } = HealthPreparationPolicy.HistoricalR09;
+
+    public static HealthChart FromMap(Beatmap map, int approach) => FromMap(map, approach, HealthPreparationPolicy.HistoricalR09);
+
+    public static HealthChart FromMap(Beatmap map, int approach, HealthPreparationPolicy policy)
     {
+        if (policy is not (HealthPreparationPolicy.HistoricalR09 or HealthPreparationPolicy.E036FreshOrdinary))
+            throw Unsupported("Unknown health grouping policy.");
         HealthMapSource source = map.HealthSource ?? throw Unsupported("Missing fresh parser identity/group/break metadata.");
         LegacyScoreMetadata metadata = map.ScoreMetadata ?? throw Unsupported("Missing fresh HP metadata.");
+        if (policy == HealthPreparationPolicy.E036FreshOrdinary && !source.IsFreshFor(map))
+            throw Unsupported("R10 requires exact fresh parsed map ownership; retained/clone/editor provenance is unavailable.");
         int count = map.Circles.Count + map.Sliders.Count + map.Spinners.Count;
         if (source.Rows.Count != count || metadata.RowCount != count) throw Unsupported("Prepared count differs from raw source; no inferred identities.");
         var objects = new List<PreparedHealthObject>();
@@ -719,7 +738,8 @@ public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyL
         {
             ScoreObjectKind kind = (row.RawType & 8) != 0 ? ScoreObjectKind.Spinner :
                 (row.RawType & 2) != 0 ? ScoreObjectKind.Slider : ScoreObjectKind.Circle;
-            // E04 M2902 OR file bit: false circle/slider file bits do NOT prove false.
+            // Historical R09 projection retained only for its compatibility policy.
+            // E036 mode replaces these values from the proven fresh pipeline below.
             bool? combo = (row.RawType & 4) != 0 || (kind == ScoreObjectKind.Spinner && source.Version <= 8) ? true :
                 kind == ScoreObjectKind.Spinner ? false : null;
             if (kind == ScoreObjectKind.Circle)
@@ -740,7 +760,24 @@ public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyL
                 objects.Add(new(s.StartTime, s.EndTime, kind, combo, SpinnerRequirement: new SpinnerState(s, map.OverallDifficulty).Required));
             }
         }
-        var chart = new HealthChart(metadata.Hp, approach, source.Version, objects.AsReadOnly(), source.Breaks);
+        IReadOnlyList<PreparedNewCombo> provenance = Array.Empty<PreparedNewCombo>();
+        if (policy == HealthPreparationPolicy.E036FreshOrdinary)
+        {
+            var inputs = objects.Select((o, i) => new NewComboInput(o.Kind switch
+            {
+                ScoreObjectKind.Circle => map.Circles.Single(c => c.StartTime == o.Start),
+                ScoreObjectKind.Slider => (object)map.Sliders.Single(c => c.Head.StartTime == o.Start),
+                _ => map.Spinners.Single(c => c.StartTime == o.Start)
+            }, o.Start, source.Rows[i].RawType, o.Kind switch
+            {
+                ScoreObjectKind.Circle => OriginalRegisteredType.Circle, ScoreObjectKind.Slider => OriginalRegisteredType.Slider,
+                _ => OriginalRegisteredType.SpinnerBase
+            })).ToArray();
+            provenance = NewComboPreparation.Prepare(inputs, source.Breaks, source.Version, NewComboContext.FreshZeroShift);
+            for (int i = 0; i < objects.Count; i++) objects[i] = objects[i] with { NewCombo = provenance[i].FinalFlag };
+        }
+        var chart = new HealthChart(metadata.Hp, approach, source.Version, objects.AsReadOnly(), source.Breaks)
+            { PreparationPolicy = policy, NewComboProvenance = provenance };
         chart.Validate();
         return chart;
     }
