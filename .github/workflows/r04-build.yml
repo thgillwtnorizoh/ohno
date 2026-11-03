@@ -1,4 +1,4 @@
-name: R06 build and QA04 geometry regression
+name: R07 build and QA05 spinner regression
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
       - reconstructed/R07DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
+      - re/qa/qa05/Headless/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -44,7 +45,7 @@ jobs:
           dotnet --version
           exit $LASTEXITCODE
 
-      - name: Compile R06 WPF Windows x64
+      - name: Compile R07 WPF Windows x64
         id: build
         shell: pwsh
         run: |
@@ -84,4 +85,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA05 spinner suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa05/Headless/QA05.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

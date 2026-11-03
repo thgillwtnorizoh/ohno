@@ -1,0 +1,133 @@
+{
+  "target_commit": "c63d1d36641abea7ac096e63b0468e9552e1f4f8",
+  "case_names": [
+    "A01 atan2 Y X with translated supplied center",
+    "A02 modern first sample establishes reference only",
+    "A03 opposite signed motions give opposite targets",
+    "A04 wrap in negative angular crossing",
+    "A05 wrap in positive angular crossing",
+    "A06 exact positive antipode rejected but reference advances",
+    "A07 exact negative antipode rejected",
+    "A08 just inside antipodal magnitude accepted",
+    "A09 plus pi to minus pi is zero wrapped motion",
+    "A10 radius does not scale angular target",
+    "A11 center atan2 has no invented dead zone",
+    "A12 released movement zeros target and updates reference",
+    "A13 stationary first decay then zero despite release and late time",
+    "A14 sample at exact start and end is eligible",
+    "A15 movement outside live interval updates only reference target zero",
+    "A16 negative sample interval leaves sample history unchanged",
+    "B01 EMA first and second samples use real supplied interval",
+    "B02 zero interval keeps EMA and selects fixed divisor",
+    "B03 adaptive divisor uses sample interval after EMA threshold",
+    "B04 adaptive zero divisor yields zero target",
+    "B05 acceleration and Single progress conversion",
+    "B06 both motion clamps and per-update progress cap",
+    "B07 direction reversal decelerates without resetting progress",
+    "B08 strict integration start end and positive interval",
+    "B09 released target still permits residual progress",
+    "B10 sufficient deceleration can stop immediately",
+    "C01 fractional progress leaves integer cache unchanged",
+    "C02 first exact integer change has no component result",
+    "C03 skipped integers count as one observed event",
+    "C04 ordinary changed observations alternate raw identities",
+    "C05 bonus predicate begins only at qualifying even offset",
+    "C06 unchanged integer never repeats event",
+    "C07 inequality includes artificial downward integer observation",
+    "D01 OD5 duration3000 prepares N15 and acceleration",
+    "D02 OD endpoints prepare distinct truncated requirements",
+    "D03 N15 count 0 threshold",
+    "D03 N15 count 2 threshold",
+    "D03 N15 count 3 threshold",
+    "D03 N15 count 13 threshold",
+    "D03 N15 count 14 threshold",
+    "D03 N15 count 15 threshold",
+    "D03 N15 count 16 threshold",
+    "D04 zero requirement special and small N division",
+    "D05 exact end does not complete and later completion is once",
+    "D06 accepted progress can finish before last observation",
+    "D07 explicit last sample changes C then final grade",
+    "D08 high P with one observation grades from C not P",
+    "D09 evaluated spinner stops later integration",
+    "E01 spinner collection excluded from heads and head press",
+    "E02 live session components do not add combo",
+    "E03 final success increments combo and accuracy only once",
+    "E04 failure resets earlier circle combo",
+    "E05 fresh sessions do not share observation or motion state",
+    "E06 nominal input qualification is separate from integration",
+    "E07 supplied mapped spinner pointer separate from head pointer",
+    "E08 mixed circle slider spinner sequence counted once",
+    "F01 all three R07 fixtures load under current parser",
+    "F02 valid optional hit sample retained",
+    "F03 malformed and empty hitSound reject",
+    "F04 malformed and absent end reject",
+    "F05 spinner unsupported versions reject",
+    "F06 zero negative and overlong durations reject",
+    "F07 duration1 and duration60000 accepted",
+    "F08 maximum end bound equality and rejection",
+    "F09 overlapping and shared endpoint objects reject",
+    "F10 old circle slider fixtures remain admitted"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ffcc2644d5c47a01d529e31d81d631747e6014a93f1aa6cb82d87d73e5c1d2fc",
+      "blob": "d21878df479ff9e44de1048e0ee4d79f7123dbba"
+    },
+    {
+      "path": "re/Instruction.md",
+      "sha256": "bf9952eec9d375a8e2fb661142390c2feff6570214f4ce09aa8063d6f34274f9",
+      "blob": "1400e53dafcc489d9881baa3b24319b9e832adb6"
+    },
+    {
+      "path": "reconstructed/R07-first-spinner.md",
+      "sha256": "e9c1e7149d963c01773e42a01f35ed7ed9c78c07e0b4bbf9d47472b321be8ffb",
+      "blob": "ab93361c3e16f74e12e4834711ee7e0a2f9d44f8"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "sha256": "b5d4d0772754e5905208fad546bc591c1dfb87cb7505ee050b2d28a47e8b912e",
+      "blob": "f40eb28511e358c331faa279f54a7c02c4ebbdaa"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+      "sha256": "2440d7ff9fff267bf511c3a0e1b19ec8ce29e0258797b238b9780642669c9e2d",
+      "blob": "ac4364faf65f8593632a9c2650c51b8a74dc6f0f"
+    },
+    {
+      "path": "reconstructed/R07DevelopmentChecks/Program.cs",
+      "sha256": "1c9433c3bdc38de08da52c0df71e66d4c526935645229eaa9583a69768e54461",
+      "blob": "95262a4f0d6870e8da5fd833d70c33cacd0729eb"
+    },
+    {
+      "path": "re/24-spinner-input-and-rotation-entry.md",
+      "sha256": "ec0a30418c9a6cbf80d79cb7ee2581ea03c6b7db29bc5feb11a6dc8cc182eeb4",
+      "blob": "64e5990e364acde9a1f7c9d9497f8b0dfa2ca636"
+    },
+    {
+      "path": "re/25-spinner-integer-progress-and-first-result.md",
+      "sha256": "42481bf82947f332baf8981d384bba1a94902ca7d0fdab21ec729805978ff57c",
+      "blob": "05ee88757d2a68fba06200966045dd6fb8c99106"
+    },
+    {
+      "path": "re/26-spinner-completion-and-final-judgement.md",
+      "sha256": "32a524d83cca7179ac38f86c9ade5d10bcde9194de53950c03488e7e28b46835",
+      "blob": "89c6461fdca52b7fd90d7261b8cb0ab01a87c7e7"
+    },
+    {
+      "path": "re/qa/qa01/Headless/CoreTests.cs",
+      "sha256": "0a319182cb59bc3a39cffc8ef074c5d2ed7bbef43c5977e42e0af95ffb1f1942",
+      "blob": "7ce067a8e373b49fad515406a7237f219895234c"
+    },
+    {
+      "path": "re/qa/qa03/Headless/SliderTests.cs",
+      "sha256": "4d1a7c958798ecc0128c42696e2c7a658127c17eaac59d7203919d634dd1fba3",
+      "blob": "846614053d45749f4d36c7ecee9e0109daaec01f"
+    },
+    {
+      "path": "re/qa/qa04/Headless/GeometryTests.cs",
+      "sha256": "2ecba73b8cbd30f1b4f22696c9a56d0099bf1863fb9fb16732d53986fce4edb8",
+      "blob": "92802a1ec4e64c1951a6eb7eede4cd1afbabd4da"
+    }
+  ]
+}
