@@ -1,0 +1,115 @@
+{
+  "target_commit": "c4957dfdafc1ba8cda1e88c8a90192fe95177ef1",
+  "case_names": [
+    "A01 E32 quadratic exact raw vertices",
+    "A02 E32 cubic weighted vertices rather than uniform t",
+    "A03 exact squared flatness equality accepts leaf",
+    "A04 just above flatness boundary subdivides",
+    "A05 flatness is second difference not chord distance",
+    "A06 asymmetric half split preserves polygon order",
+    "A07 source controls are not mutated",
+    "A08 singleton retains duplicate final endpoint",
+    "B01 repeated control joins two quadratic ranges",
+    "B02 final equal pair is not a separator",
+    "B03 two-control subcurve is a marked straight piece",
+    "B04 leading duplicate retained as zero raw piece",
+    "B05 head insertion and no second head insertion",
+    "C01 unadjusted raw length uses E32 Single lengths",
+    "C02 shorten last piece without changing raw snapshot",
+    "C03 remove trailing piece at exact requested boundary",
+    "C04 removal tolerance can erase tiny requested remainder",
+    "C05 extend nonzero tail direction",
+    "C06 zero final direction blocks requested extension",
+    "C07 entirely erased path rejected by engineering policy",
+    "C08 cumulative lengths recomputed from adjusted endpoints",
+    "D01 joined bend forward and reverse segment times",
+    "D02 inclusive first matching segment and reversal",
+    "D03 path follows pieces instead of whole-curve chord",
+    "D04 true quadratic uses individual segment time conversions",
+    "E01 checkpoint carry across pieces and reversal",
+    "E02 one outstanding entry per delayed call",
+    "E03 curved segment boundary preserves held tracking",
+    "E04 reversal alone preserves entry and tracking",
+    "E05 loss and timely re-entry across pieces",
+    "E06 independent head miss then valid later checkpoint",
+    "E07 parent end separate from checkpoint and no duplicate combo",
+    "E08 late re-entry cannot rescue due checkpoint",
+    "F01 v13 Bezier rejected",
+    "F02 unsupported Perfect and Catmull types rejected",
+    "F03 malformed control rejected",
+    "F04 nonfinite control rejected",
+    "F05 degenerate geometry rejected",
+    "F06 control boundary accepts64 rejects65",
+    "F07 parser normalized controls limit",
+    "F08 empty nonfinite and overflow flatness defensive checks",
+    "F09 declared segment and work limits retained",
+    "F10 parser truncates Double controls before Single storage"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ffcc2644d5c47a01d529e31d81d631747e6014a93f1aa6cb82d87d73e5c1d2fc",
+      "blob": "d21878df479ff9e44de1048e0ee4d79f7123dbba"
+    },
+    {
+      "path": "re/Instruction.md",
+      "sha256": "bf9952eec9d375a8e2fb661142390c2feff6570214f4ce09aa8063d6f34274f9",
+      "blob": "1400e53dafcc489d9881baa3b24319b9e832adb6"
+    },
+    {
+      "path": "re/32-bezier-slider-geometry.md",
+      "sha256": "e82e2d816060aa0d2a08ed93b16d9104202536d247d635875fd820a939b048c1",
+      "blob": "32458fa49a45156da7cdb5c9c3cb8ec9c0320899"
+    },
+    {
+      "path": "re/evidence/32/bezier-geometry.json",
+      "sha256": "0cc2c992eb398809cdb076dcfecfe9b9aafe96d644e895fd3ecffedb877dfe38",
+      "blob": "36b89124045c2e0d63c55b8520ed262b4fd70d2a"
+    },
+    {
+      "path": "re/06-linear-slider-geometry-and-consumers.md",
+      "sha256": "5758425724dd584826a427b244585ce0d4f0cc93d5dc0fa47d6328df15b3acaa",
+      "blob": "79d1c5893e90a636c996a637b36c732bf14c03f1"
+    },
+    {
+      "path": "reconstructed/R06-bezier-sliders.md",
+      "sha256": "b023849883d126d8d39ecc37a59a7b5146b56ce851b2067bca9c0320c975a497",
+      "blob": "71efa795d98b74b8c20e0766f979f3c0d2ce7716"
+    },
+    {
+      "path": "reconstructed/R05-repeating-sliders.md",
+      "sha256": "a145637eeb90cbfed04ead68116595410764b469a419ca13a817569ff996e3de",
+      "blob": "6737b6b27c3487e52f20c0cb46fb78291f60cd20"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "sha256": "48ec5fea4ec12f89ed6ebf508a254b0020e4b6044bc7f7121b3b230712ed683d",
+      "blob": "04c3db0209e2057ad9a5d37620f4f1779488123c"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+      "sha256": "2a7887fd41243e5cc8a4c2f08174f4c1cf5c56e6ba695fe1e4a74085107cca39",
+      "blob": "0e0bade70599970e0224d3ec0599fa839e8e81f2"
+    },
+    {
+      "path": "reconstructed/R06PreparationChecks/Program.cs",
+      "sha256": "8257195eb11cd08a42212be1b05694792b9dca700049ca371c0eb37a9f97827a",
+      "blob": "45d1e9dd6d961f71a97f9309d5e9bcc897559dfd"
+    },
+    {
+      "path": "reconstructed/R06PreparationChecks/R06PreparationChecks.csproj",
+      "sha256": "fa4b0a6abc6b3a8e009c62f5bd18d21fde6a419e29672f6b11c47b7d4393a6cc",
+      "blob": "134a0e157b79e91c6d863d87a00333dd7a384286"
+    },
+    {
+      "path": "re/qa/qa01/Headless/CoreTests.cs",
+      "sha256": "0a319182cb59bc3a39cffc8ef074c5d2ed7bbef43c5977e42e0af95ffb1f1942",
+      "blob": "7ce067a8e373b49fad515406a7237f219895234c"
+    },
+    {
+      "path": "re/qa/qa03/Headless/SliderTests.cs",
+      "sha256": "4d1a7c958798ecc0128c42696e2c7a658127c17eaac59d7203919d634dd1fba3",
+      "blob": "846614053d45749f4d36c7ecee9e0109daaec01f"
+    }
+  ]
+}

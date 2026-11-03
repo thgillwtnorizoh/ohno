@@ -1,4 +1,4 @@
-name: R05 build, existing regressions and QA03 sliders
+name: R06 build and QA04 geometry regression
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
       - re/qa/qa03/Headless/**
+      - re/qa/qa04/Headless/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -42,7 +43,7 @@ jobs:
           dotnet --version
           exit $LASTEXITCODE
 
-      - name: Compile R05 WPF Windows x64
+      - name: Compile R06 WPF Windows x64
         id: build
         shell: pwsh
         run: |
@@ -68,4 +69,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA04 geometry and integration suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
