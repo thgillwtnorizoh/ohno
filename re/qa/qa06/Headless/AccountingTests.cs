@@ -88,9 +88,12 @@ public static class AccountingTests
         });
         foreach(var pair in new[]{("4.99999",2),("5",2),("5.00001",3)})
             Add("A27 midpoint neighborhood HP"+pair.Item1,()=>Eq(Meta("0,0,1000,1,0\n0,0,5000,1,0",$"HPDrainRate:{pair.Item1}\nOverallDifficulty:5\nCircleSize:5").Prepare().K,pair.Item2));
-        Add("A28 Single rounding before Double differs from Double reassociation",()=>{
+        Add("A28 corrected binary32 vector retains every Single operation",()=>{
             var p=Meta("0,0,3000,1,0\n0,0,1000,1,0","HPDrainRate:5\nOverallDifficulty:6.4\nCircleSize:0").Prepare();
-            Eq(p.DensityTerm,0f);Eq(p.BeforeRounding,1.5f);Eq(p.K,2);Yes(Math.Round((double)(5f+6.4f)/38.0*5.0)!=2,"control failed to distinguish Double reassociation");
+            Eq(p.DensityTerm,0f);Eq(BitConverter.SingleToInt32Bits(p.BeforeRounding),0x3fbfffff);Eq(p.K,1);
+            // Independent binary32 proof in README: sum41366666 /38 ->3e999999, *5 ->3fbfffff.
+            // Late Single conversion after Double division/multiplication instead gives3fc00000.
+            Eq(BitConverter.SingleToInt32Bits((float)((double)(5f+6.4f)/38.0*5.0)),0x3fc00000);
         });
         Add("A29 empty zero-over-zero explicitly unsupported",()=>{var m=Meta("");Eq(m.RowCount,0);Eq(m.WholeSeconds,0);Reject<InvalidDataException>(()=>m.Prepare());});
         Add("A30 malformed nonfinite metadata explicitly rejects",()=>{
@@ -104,6 +107,14 @@ public static class AccountingTests
         });
         Add("A33 timing metadata and spinner duration do not set seconds",()=>{
             string rows="0,0,1000,1,0\n0,0,4000,8,0,7000";var a=Map(rows);var b=Meta(rows+"\n[TimingPoints]\n0,60,4,1,0,100,1,0");Eq(a.ScoreMetadata!.WholeSeconds,3);Eq(b.WholeSeconds,3);Eq(a.ScoreMetadata.Prepare().K,b.Prepare().K);
+        });
+        Add("A35 binary32 4.5 tie differs from Double continuation",()=>{
+            string rows=string.Join('\n',Enumerable.Range(0,21).Select(i=>$"0,0,{1000+i*2000},1,0"));
+            var p=Meta(rows,"HPDrainRate:10\nOverallDifficulty:10\nCircleSize:10").Prepare();
+            Eq(p.Metadata.WholeSeconds,40);Eq(BitConverter.SingleToInt32Bits(p.DensityTerm),0x40866666);
+            Eq(BitConverter.SingleToInt32Bits(p.BeforeRounding),0x40900000);Eq(p.K,4);
+            // 34.20000076293945 is the independently derived Single sum (bits4208cccd).
+            Eq(Math.Round((double)BitConverter.Int32BitsToSingle(0x4208cccd)/38.0*5.0),5.0);
         });
         Add("A34 missing source fails automatic configuration without silent K1",()=>{
             var synthetic=new Beatmap("synthetic",5,5,5,[new(new(0,0),1000)]);Reject<InvalidDataException>(()=>ScoreConfiguration.FromBeatmap(synthetic));Eq(new CircleSession(synthetic,ScoreConfiguration.EngineeringPractice).Scoring.K,1.0);
