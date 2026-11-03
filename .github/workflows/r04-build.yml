@@ -1,4 +1,4 @@
-name: R08 build and QA06 accounting regression
+name: R09 build and QA07 health regression
 
 on:
   push:
@@ -15,6 +15,7 @@ on:
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
       - re/qa/qa06/Headless/**
+      - re/qa/qa07/Headless/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -132,4 +133,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R09DevelopmentChecks/R09DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA07 health calibration drain and failure suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa07/Headless/QA07.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
