@@ -20,9 +20,9 @@ path trigger in the established Windows gate; all Work 1 research/QA unchanged.
 No permanent branch, force push, QA05 or new automated gameplay framework.
 
 **Windows CI PASS** on R07 source commit
-`a0a058c12a365f7f6d8b922fa3240dd0bfded006`:
-[run41571969274 / job125706717861](https://github.com/thgillwtnorizoh/ohno/actions/runs/41571969274/job/125706717861).
-Actual execution2026-11-03 10:24 Asia/Bangkok (03:24 UTC), Windows2022,
+`52cf7f0a928228e2877b08839b7b15f866d9cc04`:
+[run41572775844 / job125709298355](https://github.com/thgillwtnorizoh/ohno/actions/runs/41572775844/job/125709298355).
+Actual execution2026-11-03 10:32 Asia/Bangkok (03:32 UTC), Windows2022,
 preinstalled SDK8.0.427. Release WPF win-x64 compilation succeeded with **0 warnings
 /0 errors**; QA01 **90 passed/0 failed**, QA03 **56/0**, QA04 **43/0** (189 existing
 QA cases). R06 **4 preparation targets passed/4 fixture loads completed**.
@@ -42,12 +42,18 @@ dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- "$en
 dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
 ```
 
-The workflow/build-step label retains historical R06 wording; its checkout and
-logs identify the initial R07 SHA above. A subsequent source-review refinement
-adds nominal angular-sample qualification, with an explicit component check;
-that changed source is **PENDING reverification** at its publication. The final
-baseline will identify its actual run/outcome separately. Windows instructions
-remain in CircleGame/README.md. Source/whitespace/preservation checks passed.
+The workflow/build-step label retains historical R06 wording; checkout/logs identify
+the R07 source SHA above. Initial source `a0a058c12a365f7f6d8b922fa3240dd0bfded006`
+also passed [run41571969274](https://github.com/thgillwtnorizoh/ohno/actions/runs/41571969274)
+at10:24. Source review then identified that sampling every high-Hz render callback
+could weaken motion with E24's nominal divisor. The explicit nominal qualification
+gate and3000/3008/3017 component control were added and reverified in the final run
+above. This is an engineering cadence refinement, not observed frame-rate fidelity.
+
+Final publication changes only this report and the append-only journal. Application,
+fixtures, development checks and workflow exactly match the final passing source.
+Windows instructions remain in CircleGame/README.md. Source/whitespace and protected
+file/journal preservation checks passed. No further testing/campaign is started.
 
 No game window, OS input, playback/recording, OBS, original debugger, E20 run,
 virtualization or supervised gameplay. Human R07 play remains **UNVERIFIED**.
@@ -140,7 +146,8 @@ circle15000, results18000. Timing/requirements are source-derived predictions,
 not imported original values or successful human plays. No autoplay assistance.
 
 R07DevelopmentChecks links actual components and supplies explicit finite inputs:
-three fixture imports/preparation; atan2/first-angle/negative d; signed wraps and
+three fixture imports/preparation; atan2/first-angle/negative d/adaptive divisor
+and nominal input qualification; signed wraps and
 antipodal equality; stationary/held rules; acceleration/clamp/contribution cap/
 strict integration/residual U; one-change observation/cache/raw values; final
 thresholds/strict end/no drain/fresh session/no head press; malformed sound/end,

@@ -365,3 +365,16 @@ refinement; published history is retained. Added explicit3000/3008/3017 componen
 samples to the existing bounded development group and updated current instructions/
 report. Reverification of the changed source will be recorded below. No OS input,
 gameplay, original investigation, additional milestone or QA05 is initiated.
+
+R07 final refined-source verification: `52cf7f0a928228e2877b08839b7b15f866d9cc04`,
+run41572775844/job125709298355,
+https://github.com/thgillwtnorizoh/ohno/actions/runs/41572775844 .
+2026-11-03 10:32 Asia/Bangkok (03:32 UTC), Windows2022/preinstalled SDK8.0.427.
+Actual WPF win-x64 build0 warnings/0 errors; QA01 90/0,QA03 56/0,QA04 43/0;
+R06 four preparation targets/four fixture loads; R07 eight development groups,
+including nominal sample qualification and all prior finite controls, PASS.
+All steps/job succeeded; only checkout Node20 advisory, separate from compiler
+diagnostics. No human gameplay or frame-rate equivalence was observed. Final
+documentation-only commit now preserves this exact tested app/fixtures/checks/
+workflow, with protected historical files and journal prefix preserved. Source
+review refinement/reverification remains R07 only; stop, no QA05 or expedition.
