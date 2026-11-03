@@ -13,8 +13,14 @@ appears at its stored start and remains visible pending its completion decision.
 This is an ENGINEERING presentation correction, not a recovered native fade rule.
 No arbitrary early-appearance constant, input interception or gameplay/scoring
 change. Source inspection plus four bounded component groups examine visibility
-and preceding-slider continuity. Windows CI status initially PENDING; actual
-source/run/output will be recorded after execution. No local dotnet SDK.
+and preceding-slider continuity. Actual tested source `b9f89745f4310a115dfeab70f3b093b8eecad99f` passed
+[Windows run41635206573/job125914546857](https://github.com/thgillwtnorizoh/ohno/actions/runs/41635206573/job/125914546857).
+WPF win-x64 0 warnings/0 errors; QA01 90/90, QA03 56/56, QA04 43/43,
+QA05 66/66; R06 four targets/four loads; R07 eight, R08 thirteen and C01 four
+development groups passed. Commands are the unchanged established gate plus
+`dotnet run --project reconstructed/R08C01DevelopmentChecks/R08C01DevelopmentChecks.csproj -c Release -- <repo-root>`.
+Only checkout Node20 advisory, not a compiler warning. No local dotnet SDK.
+Final C01 documentation-only commit retains this tested app/checks/workflow.
 
 Changed only reconstructed/ renderer/helper, bounded C01 checks, active README,
 this report and appended journal, plus minimal existing CI step/path trigger.

@@ -470,3 +470,11 @@ minimal existing CI step/path. Historical research/QA/fixtures preserved. Gate
 PENDING until actual Windows build/255 QA/R06/R07/R08/C01 outcomes append. Current
 user authorization main implementation/implementation-only records supersedes
 historical branch/investigation defaults. C02 only after C01 publication and gate.
+
+R08-C01 actual hosted outcome: sourceb9f89745f4310a115dfeab70f3b093b8eecad99f,
+run41635206573/job125914546857, Windows2022/preinstalled SDK8.0.427. WPF win-x64
+0 warnings/0 errors; QA01 90/90,QA03 56/56,QA04 43/43,QA05 66/66 (255/255);
+R06 4 targets/4 loads,R07 8 groups,R08 13 groups,C01 4 groups PASS. All job steps
+succeeded; checkout Node20 advisory only. Report links actual logs. No human game
+or original-runtime observation. C01 app/checks/workflow unchanged in final docs
+publication. C02 now authorized to proceed from this published and verified base.
