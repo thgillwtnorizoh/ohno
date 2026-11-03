@@ -23,10 +23,39 @@ fixtures remain. New14 bounded development groups and one minimal existing Windo
 CI step/path. All historical reports, research, independent QA01–QA06 and E20 are
 preserved. Journal is append-only; no permanent branch or force update.
 
-Initial actual checks: source/diff/whitespace inspection only; no local dotnet SDK.
-Windows WPF/354 independent QA cases and retained R06/R07/R08/C01/C02 plus R09
-controls PENDING until actual hosted execution; exact source/run/output will be
-recorded below. Source-derived numbers are not human/original-runtime observations.
+Actual tested source: `ebb00b6a91df976271923f6bda3c495336af5678`.
+[Windows run41668909283/job126031648587](https://github.com/thgillwtnorizoh/ohno/actions/runs/41668909283/job/126031648587)
+passed on2026-11-03 15:55–15:56 UTC /22:55–22:56 Asia/Bangkok,
+Windows2022/preinstalled .NET8.0.427. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 14 passed (E035 finite component controls; no original runtime or physical gameplay)
+```
+
+All job steps succeeded; checkout Node20 advisory is distinct from compiler
+warnings. No prior assertion was changed or weakened, no failed gate hidden.
+The retained workflow runs the existing build/QA/R06–C02 commands and adds:
+
+```powershell
+dotnet run --project reconstructed/R09DevelopmentChecks/R09DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+Final documentation-only publication updates this report and appends the journal
+over the tested source; application/checks/workflow remain byte-identical. Source/
+diff/whitespace and preservation checks passed. No local dotnet SDK/install/build.
+These are executed component results, not human/original-runtime observations.
 Current assignment authorizes implementation-only records/main integration, not an
 original expedition or shared research edit. Stop after R09, no R10 or QA07.
 
@@ -36,6 +65,24 @@ original expedition or shared research edit. Stop after R09, no R10 or QA07.
 
 E035's static instruction evidence is CONFIRMED STATIC; these independent finite
 components are RECONSTRUCTED. Engineering substitutions and limits are distinct.
+
+| Original-static authority | Operation sites (hex CIL-relative; E035/E019/E027) |
+|---|---|
+| M297d |H000a, A0019, V0028 selective reset |
+| M2979 / M297a / M297b |H/A001e/0025; subtract A/H002d/0049; add A/H001f/0049 |
+| M1150 |thresholds003a/0064/008e/00b8; gap01d3; safety0217; components026c–0313; snapshots03ec; end0409–044d; mean0452–0474; balance0479–04b4 |
+| M1146 / M226b |r/clock/spinner inputs0030–003b; subtract0052; wrapper09da before late eligibility0f0b |
+| M0ad2 |HP dispatch12df, add12f2/subtract1301, legacy write1394–13a2, fail call1404 |
+| M2972 |V/H reads01ee/01f4; fill0248/024f; rise02ab–02e3; fall02fa–0337 |
+| M226c / M0acb / M0acc |H check0029; recovery before latch0060; recovery addition0025/fill slope0045 |
+| M2243 / M2271 / M226f |selected end queue017f; active marker000d/dequeue007c/reset00a8; inclusive queue compare001f |
+
+Original selected-body SHA256 pins from Work1: M1150
+`389f0e15e00771308e8191e65444c89c55c571137ede52c5d60bcd25a7671039`,
+M1146 `4b560e5164207973fcf773a1a50326f2799895b2e0fb2f4cc3758dbe11138e9f`,
+M2972 `a82b8964101ca24825347eddb2ea4dabab1d708868bcddcdb33c0b5b2defd72e`.
+No new binary extraction/checker was run by Work2.
+
 
 - HealthState retains separate Double H(F1857), V(F1856), A(F1858), r(F1855), B/G
   (F0603/04), fill/from/slope. Fresh component H/V/A default0, filltrue/slope.02.

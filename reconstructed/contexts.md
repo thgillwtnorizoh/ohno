@@ -578,3 +578,21 @@ Current user scope authorizes main implementation/implementation-only records ov
 historical suspension/branch/RE defaults; no research journal or expedition edit.
 Original runtime/native precision/partial helpers/record swaps/full group decorations/
 physical play andgeneral map equivalence unverified. Stop after R09, no R10/QA07.
+
+R09 actual hosted outcome: sourceebb00b6a91df976271923f6bda3c495336af5678,
+run41668909283/job126031648587, 2026-11-03 15:55–15:56 UTC /22:55–22:56 Bangkok.
+Windows2022/preinstalled .NET8.0.427: WPF Release win-x64 0 warnings/0 errors;
+QA01 90/90,QA03 56/56,QA04 43/43,QA05 66/66,QA06 99/99 (354/354);
+R06 4 preparation targets/4 fixture loads; R07 8 groups,R08 13,C01 4,C02 14,
+R09 14 groups PASS. Exact output/command/source/job and static-site provenance
+recorded in R09 report. All steps/job succeeded; checkout Node20 advisory separate
+from compilation. New controls passed independent62-trial/61-reduction HP0 case,
+all retry branches/retained coefficients, signed/quarter/previous-eligible drain,
+break/queue/pause/smoothing, result HP/failure/recovery and ledger invariance.
+No failed gate or modified independent QA. Final documentation-only commit leaves
+tested application/fixture/checks/workflow identical. Historical research/QA/E20,
+old fixtures/reports/development checks and prior journal byte prefix preserved.
+Unsupported automatic grouping (opaque M2902), overlapping/order/identity/break
+metadata and engineering calibration guard exhaustion remain explicitly unavailable,
+not guessed rates. Full original host/candidate/F1374/F0fc4/native lifecycle/physical
+play remain unverified; no game/window/OS input occurred. R09 ends; no R10/QA07.
