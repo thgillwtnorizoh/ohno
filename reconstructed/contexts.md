@@ -620,3 +620,18 @@ actual source/run/outcomes append after execution. No original game/binary/tool,
 window/OS input/debugger/recording/E20 or new expedition. Native playback/lifecycle
 and general original equivalence unverified. Targeted R09 authorization/main records
 supersede historical branch/RE defaults. Stop after R09-C01; no R10 or scoring work.
+
+R09-C01 actual hosted verification: sourceb14d98ef7a6787621ab65369d3c0daa0e3130504,
+run41673876722/job126049132491, 2026-11-03 16:24–16:25 UTC /23:24–23:25 Bangkok.
+Windows2022/preinstalled .NET8.0.427: WPF Release win-x64 0 warnings/0 errors;
+QA01 90/90,QA03 56/56,QA04 43/43,QA05 66/66,QA06 99/99,QA07 159/159
+(513 independent cases/0 failed). Both F13 H160/H200 now PASS. R06 4 preparation
+checks/4 fixture loads; R07 8,R08 13,C01 4,C02 14 development groups; R09 15
+(previous14 plus focused C01 group/20 combinations) PASS. All steps/job succeeded;
+checkout Node20 advisory separate from compiler diagnostics. QA07-D01 disposition:
+corrected and VERIFIED COMPONENT for scoped finite recovery entries. Exact output,
+commands and tested SHA in new R09-C01 report. Final docs-only publication retains
+tested production/checks/workflow; original R09 report, all Work1 research/QA/logs,
+fixtures/other code, prior assertions and journal byte prefix preserved. Historical
+red gate/results are not rewritten. No original game/window/input/native playback
+or human equivalence observed. Stop after R09-C01, no R10 or further feature work.

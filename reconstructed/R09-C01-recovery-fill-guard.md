@@ -18,10 +18,46 @@ all earlier suites/checks. All original R09 assertions are retained; no Work1
 research/QA assertion/results/log, fixture, original R09 report, score/calibration/
 drain/smoothing/routing/UI code or E034 multiplier is changed.
 
-Initial verification: inspected diff/whitespace and hash-verified preserved QA07
-failure logs. No local dotnet SDK/build. Full Windows gate PENDING until actual
-execution; tested source SHA/run/output will be recorded here. QA07-D01 is
-source-corrected, with component-verification disposition pending the159-case gate.
+**QA07-D01 corrected and VERIFIED COMPONENT for the tested finite scope.**
+Actual tested source: `b14d98ef7a6787621ab65369d3c0daa0e3130504`.
+[Windows run41673876722/job126049132491](https://github.com/thgillwtnorizoh/ohno/actions/runs/41673876722/job/126049132491)
+passed on2026-11-03 16:24–16:25 UTC /23:24–23:25 Asia/Bangkok,
+Windows2022/preinstalled .NET8.0.427. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+PASS F13 original recovery guard retains fill at H160
+PASS F13 original recovery guard retains fill at H200
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+```
+
+All513 independent QA cases and retained development checks pass. Original14 R09
+groups plus one focused C01 group (20 combinations) give15 development groups;
+these are not extra independent QA07 cases. Every job step succeeded. Checkout's
+Node20 advisory is distinct from compiler diagnostics. No local dotnet SDK/build.
+The unchanged workflow executes the existing full matrix, including:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project reconstructed/R09DevelopmentChecks/R09DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa07/Headless/QA07.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+Final publication updates only this new report and appends the journal after the
+passing source, preserving tested application/checks/workflow exactly. Diff,
+whitespace, historical-file/journal-prefix and QA07 failure-log checks passed.
 Publication uses main/expected-head checks, no permanent branch/force/history
 rewrite. Scope is targeted R09 correction only; no R10 or original expedition.
 
@@ -66,7 +102,7 @@ These are finite component controls, not human gameplay or a new QA campaign.
 initial-gate-output.txt SHA256ad7ecfdd2eb04dedbe2d579ed6d86e391249fd6c4ca59b9cec15efacf6db52ae
 and gate-output.txt SHA2563e0c0f6057e3235dbcd1be8ec5b68b694a0a46e2273841221a1f5a09681a2585
 were checked unchanged. Existing results.json remains a historical red-run record;
-the correction's green gate will be recorded separately, not written over it.
+the correction's green gate is recorded separately above, not written over it.
 
 **RECONSTRUCTED:** the corrected bounded branch. **VERIFIED COMPONENT:** only the
 actual Windows executions recorded in Result. **ENGINEERING/UNVERIFIED:** explicit
