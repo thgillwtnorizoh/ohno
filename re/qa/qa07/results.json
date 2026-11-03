@@ -1,0 +1,891 @@
+{
+  "assignment": "QA07",
+  "date": "2026-11-03",
+  "timezone": "Asia/Bangkok",
+  "production_target": "03aceee58438d4a5d394314fc2cd53cc37c85f8c",
+  "gate_commit": "8185478d4a1e064a3e74dbee82c8dbc8907b9187",
+  "run_id": 41671715769,
+  "job_id": 126041531509,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41671715769",
+  "job_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41671715769/job/126041531509",
+  "conclusion": "failure",
+  "run_started_at": "2026-11-03T16:12:04Z",
+  "run_updated_at": "2026-11-03T16:13:12Z",
+  "attempt": 1,
+  "environment": {
+    "os": "Windows Server 2022 Datacenter",
+    "image": "windows-2022",
+    "preinstalled_sdk": "8.0.427",
+    "sdk_installed_by_task": false
+  },
+  "build": {
+    "outcome": "success",
+    "warnings": 0,
+    "errors": 0,
+    "target": "WPF win-x64 Release framework-dependent"
+  },
+  "suites": {
+    "qa01": {
+      "passed": 90,
+      "failed": 0,
+      "executed": 90,
+      "unchanged": true
+    },
+    "qa03": {
+      "passed": 56,
+      "failed": 0,
+      "executed": 56,
+      "unchanged": true
+    },
+    "qa04": {
+      "passed": 43,
+      "failed": 0,
+      "executed": 43,
+      "unchanged": true
+    },
+    "qa05": {
+      "passed": 66,
+      "failed": 0,
+      "executed": 66,
+      "unchanged": true
+    },
+    "qa06": {
+      "passed": 99,
+      "failed": 0,
+      "executed": 99,
+      "unchanged": true
+    },
+    "qa07": {
+      "passed": 157,
+      "failed": 2,
+      "executed": 159,
+      "cases": [
+        {
+          "name": "H01 managed defaults versus live reset",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H02 selective reset retains coefficients and fill operands",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H03 absolute argument -1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H03 absolute argument 0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H03 absolute argument 200",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H03 absolute argument 250",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H04 uncapped balance and separately capped target",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H05 negative subtraction has no upper cap",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H06 subtraction floors balance independently",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H07 addition lower clamp does not floor balance",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H08 zero subtraction fill guard False",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H08 zero subtraction fill guard True",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H09 V-only setter does not replace target",
+          "outcome": "PASS"
+        },
+        {
+          "name": "H10 finite extrema assign without normalization",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 initial rate and independent HP0 acceptance anchor",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 accepted calibration reset is not accepted balance",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 pre-threshold equality HP0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 pre-threshold equality HP2.5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 pre-threshold equality HP5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 pre-threshold equality HP7.5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 pre-threshold equality HP10",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 HP5 approach consumed before any group",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 HP10 balance retry independent arithmetic",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 slider subset versus schedule counts",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 spinner prepared N notifications not live observed C",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 next prepared NewCombo selects1028 False",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 next prepared NewCombo selects1028 True",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C09 duration overflow safety occurs after components",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C10 final target retry retains completed snapshot",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C11 third nonconsecutive low group retains rate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C12 break leading-gap treatment format7",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C12 break leading-gap treatment format8",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C12 break leading-gap treatment format14",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C13 two breaks in one gap are not unioned",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C14 gap measured from preceding end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C15 rejected unordered objects are not sorted",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C16 explicit retry guard does not assign fallback",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C17 malformed counts and empty chart rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C19 final-target boundary duration960",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C19 final-target boundary duration961",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C20 group equality excludes first low occurrence duration2960",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C20 group equality excludes first low occurrence duration2961",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C21 balance equality approach400",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C21 balance equality approach401",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C18 calibrator cannot silently replace its prepared chart",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw1024 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw1024 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw1024 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw512 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw512 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw512 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw256 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw256 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw256 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-131072 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-131072 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-131072 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw64 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw64 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw64 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw128 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw128 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw128 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-262144 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-262144 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-262144 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-524288 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-524288 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw-524288 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw4096 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw4096 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw4096 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8192 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8192 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw8192 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw16384 HP0 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw16384 HP5 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J01 raw16384 HP10 independent HP table",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J02 intermediate HP2.5 whole losses and gains",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J03 calibration1028 uses independent B and G",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J04 calibration plain1024 excludes B",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J05 raw0 does not clear fill or emit HP event",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J06 unsupported live decoration explicitly rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J07 score suppression does not suppress HP hook",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J08 terminal versus interior miss combo separation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J09 spinner components and final rewards are separate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "J10 HP exception leaves earlier combo but prevents score continuation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 consumed T1010 prev1000 spinnerFalse",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 consumed T1010 prev1000 spinnerTrue",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 consumed T1000 prev1000 spinnerFalse",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 consumed T900 prev1000 spinnerFalse",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 consumed T100000 prev1000 spinnerFalse",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 signed subtraction wraps before Double conversion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 late eligibility is not retroactive",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 repeated reached pass does not consume delta marker",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D05 zero dt still clears fill on eligible subtract",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D06 pause suppresses drain smoothing and late state writes",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D07 gameplay and host operands remain separate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility lower before",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility lower equal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility upper equal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility upper after",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility queue equal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility queue after",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility old queue after",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility marker zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility clock zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility clock two",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility special equality",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility special after",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility recorded equality",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 eligibility recorded before",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D09 inclusive break marker and candidate equality",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D10 break entry consumes prior eligible then disables next drain",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V01 ordinary rise independent of milliseconds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V02 fall clears fill and uses sixth",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V03 fill timestamp equality then normal source",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V04 clock guard versus recovery host elapsed",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V05 exponential rise overshoots target",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V06 fall overshoots target but lower clamps zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V07 fill can overshoot H but caps200",
+          "outcome": "PASS"
+        },
+        {
+          "name": "V08 equality does not clear fill",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 target zero fails while V positive",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 positive target ignores zero V",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 suppression HealthFailureGates { NoFail = True, Relax = False, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 suppression HealthFailureGates { NoFail = False, Relax = True, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = True, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = False, Recorded = True, RecordedContinuation = False, Special = False, Suppress = True }",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = True, Suppress = True }",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 recorded continuation explicitly permits failure",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 result heal before failure read",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 result loss before failure read",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 passive zero does not invent eager failure",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 recovery precedes already-failed gate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 recovery adds160 rather than assigns160",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F10 recovery release uses strict V target margin",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F11 state reset does not reset separate failure latch",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F13 original recovery guard retains fill at H160",
+          "outcome": "FAIL"
+        },
+        {
+          "name": "F13 original recovery guard retains fill at H200",
+          "outcome": "FAIL"
+        },
+        {
+          "name": "F12 recovery count and missing count reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I01 fresh supported map calibration creates no ledger events",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I02 parser-derived slider counts and spinner requirement",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I03 supported first unknown group does not require M2902",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I04 following unresolved NewCombo stays playable and scorable",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I05 unavailable and disabled health preserve identical events",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I06 explicit groups establish different supported admission",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I07 fresh restart isolates HP failure progress and ledger",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I08 supported-unavailable-supported replacement isolates state",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I09 missing health metadata is explicit not fallback",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I10 break metadata and original input order remain separate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I11 private trials preserve prepared gameplay state",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I12 once-only slider terminal HP without duplicate combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I13 full mixed fixture HP enable does not change scoring or judgements",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I14 judgement HP survives caps but never duplicates a press",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I15 unavailable calibration rejects unknown groups directly",
+          "outcome": "PASS"
+        },
+        {
+          "name": "I16 supported calibration validates break domain without repair",
+          "outcome": "PASS"
+        }
+      ]
+    }
+  },
+  "historical_independent_total": 354,
+  "development": {
+    "r06_preparation": 4,
+    "r06_fixture_loads": 4,
+    "r07_groups": 8,
+    "r08_groups": 13,
+    "c01_groups": 4,
+    "c02_groups": 14,
+    "r09_groups": 14,
+    "all_passed": true
+  },
+  "initial_gate": {
+    "id": 41671435814,
+    "head_sha": "ed2516b2ce7f1282d8dc9fabb8b68f3409680872",
+    "html_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41671435814",
+    "run_started_at": "2026-11-03T16:10:27Z",
+    "updated_at": "2026-11-03T16:11:36Z",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "job_id": 126040543938,
+    "qa07_passed": 157,
+    "qa07_failed": 0,
+    "qa07_executed": 157,
+    "reason_for_expansion": "Existing E035 M0acc guard directly contradicted production fill writes at H>=160; added two discriminating cases. No weakened assertion or production change."
+  },
+  "defects": [
+    {
+      "id": "QA07-D01",
+      "cases": [
+        "F13 original recovery guard retains fill at H160",
+        "F13 original recovery guard retains fill at H200"
+      ],
+      "component": "OrdinaryHealth.BeginRecovery",
+      "source": "reconstructed/CircleGame/Gameplay/CircleSession.cs:952",
+      "expected": {
+        "fill": false,
+        "fill_rate": 0.03
+      },
+      "actual": {
+        "fill": true,
+        "fill_rate": 0.07999999821186066
+      },
+      "scope": "Explicit direct finite recovery API probes at H>=160; not naturally reached via positive-H CheckFailure. No-mod UI recovery count0. No claim of normal human-play failure.",
+      "authority": "E035 MethodDef06000acc:0014 bge.un.s006a skips F1852:0031 and F1854:0045",
+      "recommendation": "Guard ConfigureFill together with Add under H<160; Work2 owns correction."
+    }
+  ],
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10
+    },
+    {
+      "name": "Check R08 bounded legacy ledger controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11
+    },
+    {
+      "name": "Check R08-C01 spinner presentation and input continuity",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12
+    },
+    {
+      "name": "Check R08-C02 automatic chart score multiplier",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13
+    },
+    {
+      "name": "Execute independent QA06 ledger multiplier and presentation suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14
+    },
+    {
+      "name": "Check R09 bounded health calibration and integration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15
+    },
+    {
+      "name": "Execute independent QA07 health calibration drain and failure suite",
+      "status": "completed",
+      "conclusion": "failure",
+      "number": 16
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 32
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 33
+    }
+  ],
+  "sha256_canonical_repository_LF": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "4ae0172d4597c1876640d03bbfa229fe40e89230eaa3df1992fa63fad5084fab",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "42eda4043f4b1eb955b481f3d3bfa61e482ce063989c647e731571f0dccbf03a",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "6fcdc3f84c7fb3b7961c35f3e73593d48c7bd2e3478d2f06f7ff7afd69b2dca6",
+    "reconstructed/R09-original-health-system.md": "460ab5a9576470dc0d022d8fd6d01a9ae660632e842613a542ce2ebc8888d51a",
+    "re/evidence/35/health-state.json": "ce876493b80f6a396d3d8bac051a3484caf93cd25ccbdd0d00042bc2a14f9687",
+    "re/qa/qa07/Headless/HealthTests.cs": "c391b025c0e373de07dc2b404248b1ecb8c60996b4f7b450ff8740e61667addd",
+    "re/qa/qa07/Headless/QA07.Headless.csproj": "ec342a17b42172cd6e1103d011f37aabe016d4c7c80584ae6a284b40a7784a7f",
+    ".github/workflows/r04-build.yml": "a4fdfb0c1c50527d5c41bacf4fa1561d58e733174a0e41908b03e1b380e1823f"
+  },
+  "evidence": {
+    "initial_selected_log": "initial-gate-output.txt",
+    "final_selected_log": "gate-output.txt",
+    "original_guard": "original-recovery-guard.json",
+    "initial_full_private_log_sha256": "37b6c4bded6c36f5d0700f3b792599e851b410127e2fbaa3e82b38fcb2835dac",
+    "final_full_private_log_sha256": "a34e894618bb6245495bc31633b0f56e0ec5454f283e551d61a0173ec47df991",
+    "initial_selected_log_sha256": "ad7ecfdd2eb04dedbe2d579ed6d86e391249fd6c4ca59b9cec15efacf6db52ae",
+    "final_selected_log_sha256": "3e0c0f6057e3235dbcd1be8ec5b68b694a0a46e2273841221a1f5a09681a2585"
+  },
+  "original_runtime": "NOT RUN; E20 incomplete all17 cases unchanged",
+  "limitations": [
+    "No original runtime or human gameplay testing",
+    "Native BASS/host callback and exact clock scheduling unverified",
+    "M2902 unresolved: explicit unavailable health supported, no invented fallback",
+    "Live result decorations, mods and native failure lifecycle unsupported",
+    "Prior owner score discrepancies deferred; E33/E34 unchanged"
+  ],
+  "commands": [
+    "dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo",
+    "dotnet run --project re/qa/qa07/Headless/QA07.Headless.csproj -c Release -- <repository-root>"
+  ]
+}

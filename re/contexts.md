@@ -1002,3 +1002,72 @@ Results preserve commands, named outcomes, source canonical-LF SHA256, full retr
 **Deliverables/tests:** Added re/35-ordinary-health-drain-and-judgement-hp.md, re/evidence/35/health-state.json, re/tools/health_state_evidence.py/check_health_state.py and this append.61 selected methods,9 additional store-holder hashes; targeted15 fields/17 helpers,19659 decoded/1739 zeroRVA/0errors. Final evidence211192 bytes, SHA256ce876493b80f6a396d3d8bac051a3484caf93cd25ccbdd0d00042bc2a14f9687. Two independent final extractions byte-identical/public comparison PASS. Focused checker PASS61 methods/three sole state writers/rate and calibration/drain/break/delta/recovery sites/140 historical body hashes. Nine unchanged relevant checks PASS:E10,E17,E19,E24,E25,E26,E27,E28,E29. Both new Python tools compile in memory; three-section report and57 ordered NOT RUN cases validated. Historical blobs/modes/complete journal prefix, all implementation/QA06/E20/fixtures and exact five-path scope verified for publication; remote expected-parent/tree/all blobs/modes verified at handoff. No broad historical or gameplay campaign.
 
 **RECONSTRUCTED handoff/limits:** Report supplies independent non-executable calibration/live/mutation pseudocode and finite cases. Inputs require actual prepared objects/order/count/approach/group tests/breaks/format/spinner requirement, calibrated rate/gains, target/balance/smoothed flags, distinct clock reads, current selector, prior/late eligibility, actual raw result and record/manager references. Runtime imports/configuration/native precision/callbacks/alternative state writers and visible/audio health remain UNRESOLVED. The score discrepancy stays deferred and QA06's tested finite score conclusions are preserved. Minimal future E20 observation addition lives only in the new report: calibration fields/iterations/reset, V/H/A, time operands, eligibility/break/queue/marker, judgement delta/setter, failure/recovery and callback order/overhead. All runtime cases remain NOT RUN. Smallest dependency is one authorized original calibration/drain/judgement trace with break/pause controls; no owner attendance is requested now. Stop after E035.
+
+
+## QA07 — Independent ordinary health calibration, drain and failure verification
+
+2026-11-03 (Asia/Bangkok), Work1 verification only, intake/current origin/main
+03aceee58438d4a5d394314fc2cd53cc37c85f8c. Read standing contract/AGENTS, relevant
+journals, complete E035/R09 and E019/E028/component/scoring/QA boundaries. Actual
+production health/chart/session and rendering host interfaces inspected. No new
+original-binary expedition, game/window/OS input/OBS/debugger/owner supervision,
+SDK installation or E20 execution. All17 E20 runtime cases remain NOT RUN; packet
+and fixtures unchanged. Prior owner scoring discrepancies remain explicitly
+deferred, no E033/E034 revision or production correction.
+
+Added re/qa/qa07/Headless production-linked .NET8 harness (159 independent finite
+cases), README, results.json, selected first/final gate outputs and a minimal
+existing-E035 recovery-guard evidence excerpt. Existing CI receives only QA07
+path/step and updated title. No copied health/gameplay engine: literal HP vectors
+and independent finite calibration arithmetic supply expectations; explicit
+production method arguments exercise mutation/order and actual parsed sessions.
+H/A/V distinct state/reset/clamps; 62-trial HP0 anchor including r/B/G/mean/snapshot;
+five HP threshold anchors, component counts/group1028, all retry classes and
+nonconsecutive lows; E/U/W equalities; one-break modern/old treatment; all plain
+judgement classes with gains/difficulty; suppressed accounting still reached HP;
+terminal/interior combo distinction; signed/unchecked dt and quarter drain; prior
+eligibility then late update; pause/host sources/queue/marker boundaries;
+smoothing/overshoot; failure target versus display, gates/recovery; M2902 explicit
+unavailable health and supported/restart/map replacement; matched health-enabled
+versus disabled score/accuracy/combo/judgement/event sequences covered.
+
+Initial hosted sourceed2516b2ce7f1282d8dc9fabb8b68f3409680872,
+run41671435814/job126040543938, passed157 new cases plus all historical/development
+checks. Existing E035 M0acc guard review identified a specific missing production
+condition, justifying two added cases. Expanded source8185478d4a1e064a3e74dbee82c8dbc8907b9187,
+run41671715769/job126041531509, 16:12–16:13 UTC: Windows2022/preinstalled.NET8.0.427,
+WPF Release win-x64 PASS0warnings/0errors; QA01 90,QA03 56,QA04 43,QA05 66,QA06 99
+all PASS354; R06 4preparation/4fixture loads, R07 8/R08 13/C01 4/C02 14/R09 14
+development groups PASS. QA07 executed159:157PASS/2FAIL. Only QA07 step fails; its
+red result is preserved intentionally. Counts are unique case coverage, not sums
+across repeated gates. No failed assertion was weakened or oracle silently fixed.
+
+QA07-D01 confirmed component discrepancy, two F13 direct API probes H160/H200:
+OrdinaryHealth.BeginRecovery line953 always sets Filltrue/slope.07999999821186066,
+while original M0acc:0014 bge.un->006a skips addition0025 AND fill0031/slope0045
+when H>=160. Expected prior Fillfalse/slope.03 retained; actual true/new slope,
+H/A unchanged, recovery/count still advance. Original method body hash
+ a4e4cbd7c8f1050a3fa5bdd984e8a781042b9d728b4058ef7f3f26c369a3e523
+and existing evidence source hash pinned. This is an explicit artificial finite
+component-entry boundary, not debugger execution or proof of naturally reached
+positive-H recovery. CheckFailure returns for positive H and ordinary no-mod UI
+count0, so no normal-play impact is established. Minimal Work2 correction: guard
+ConfigureFill together with Add under H<160, retain subsequent activation/count.
+Work1 production code unchanged. Stop for owner-coordinated correction; no E036/R10.
+
+CONFIRMED STATIC/RECONSTRUCTED authority remains E035; VERIFIED COMPONENT only
+covered executed production cases. ENGINEERING Stopwatch/WPF candidate/selected-
+spinner/host timing, private calibration/limits and practice failure continuation
+remain explicit. Live decorations/mods/native failure lifecycle unsupported;
+M2902 unresolved and no universal fallback coefficients invented. Original native
+clock/callbacks/imported calibration/visual/audio/physical play/full-map equivalence
+remain UNVERIFIED. Original failure latch is not a rendered failure screen.
+
+Publication on canonical main uses expected-head lease, no force/permanent branch.
+Historical baseline blob/modes and complete journal prefix, all production/prior
+QA/development/fixtures/E20 preserved; source/results hashes and case/log counts,
+whitespace/diff scope checked. Final documentation-only commit retains tested
+harness/workflow bytes; actual final remote parent/tree/alltracked blob integrity
+verified at handoff. Next is targeted Work2 D01 correction and preserved regression.
+Smallest original-Windows dependency remains an authorized calibration/judgement/
+drain/failure operand trace, using existing E20 protocol, not initiated here.

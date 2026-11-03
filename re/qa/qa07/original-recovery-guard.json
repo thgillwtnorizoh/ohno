@@ -1,0 +1,25 @@
+{
+  "authority": "Existing E035 retained evidence; no new binary analysis or execution",
+  "source": "re/evidence/35/health-state.json",
+  "source_sha256": "ce876493b80f6a396d3d8bac051a3484caf93cd25ccbdd0d00042bc2a14f9687",
+  "method": "0x06000acc",
+  "owner": "0x02000186",
+  "signature": "20010102",
+  "body_sha256": "a4e4cbd7c8f1050a3fa5bdd984e8a781042b9d728b4058ef7f3f26c369a3e523",
+  "offset_basis": "hexadecimal CIL-relative, excluding method header",
+  "guard": {
+    "offset": "0014",
+    "opcode": "bge.un.s",
+    "target": "006a"
+  },
+  "guarded_sites": {
+    "0025": "callvirt M297b",
+    "0031": "stfld F1852 fill",
+    "0045": "stfld F1854 fillRate"
+  },
+  "later_sites": {
+    "006e": "stsfld F1376 recovery",
+    "00a1": "stfld F05f8 remaining count"
+  },
+  "prediction": "For finite H>=160 the fill flag and fillRate are retained; recovery(false) and count consumption still follow."
+}
