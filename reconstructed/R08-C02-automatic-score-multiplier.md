@@ -22,8 +22,14 @@ append-only. No permanent branch or force update.
 Conditional controls: Mixed K2 /2392 versus engineering K1 /2236; Joined K3 /534
 versus engineering K1 /438. Original owner-reported582 remains unresolved, never
 fitted by selecting K4 or changing HP/CS/OD. New14 bounded development groups;
-Windows build/255 QA/R06/R07/R08/C01 and multiplier gate initially PENDING. No local
-SDK install or build; final actual source/run/log evidence follows after CI.
+Initial source `b615a41717903ec6d77921a42cbc46ef3c687b9c` passed WPF0 warnings/errors,
+255 QA cases and retained R06/R07/R08/C01 controls in
+[run41636269428/job125918152607](https://github.com/thgillwtnorizoh/ohno/actions/runs/41636269428/job/125918152607).
+The new C02 step stopped before its first group at a hash assertion: Windows Git
+checkout used CRLF while E034 pinned LF repository bytes. Corrected only the
+check's hash normalization (CRLF to LF), with no fixture/app changes. This is an
+engineering verification fix, not a multiplier discrepancy. Full re-run PENDING;
+actual final source/run/log evidence follows. No local SDK install or build.
 Windows commands and old fixture selection remain in CircleGame/README.md.
 
 # 2. What they found

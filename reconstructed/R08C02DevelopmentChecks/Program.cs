@@ -1,7 +1,6 @@
 // Bounded E034 preparation targets and explicit conditional event sequences.
 // No gameplay automation, window, original binary, QA06 framework or fitted scores.
-using System.Globalization;
-using System.Numerics;
+using System.Text;
 using System.Security.Cryptography;
 using Ohno.CircleGame.Gameplay;
 
@@ -112,7 +111,9 @@ LegacyScoreMetadata Read(IEnumerable<int> starts, string difficulty = "", string
     Raw(string.Join('\n', starts.Select(t => $"0,0,{t},1,0")), difficulty, events);
 LegacyScoreMetadata Raw(string rows, string difficulty = "", string events = "", int version = 14, string extra = "") =>
     LegacyScoreMetadata.ReadFresh(($"[Difficulty]\n{difficulty}\n[Events]\n{events}\n{extra}\n[HitObjects]\n{rows}").Split('\n'), version);
-string Hash(string file) => Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(Path.Combine(fixtures, file)))).ToLowerInvariant();
+// Git's Windows checkout may use CRLF; E034 hashes the unchanged LF repository blobs.
+string Hash(string file) => Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(
+    File.ReadAllText(Path.Combine(fixtures, file)).Replace("\r\n", "\n")))).ToLowerInvariant();
 ScoreLedger MixedScore(ScoreConfiguration config)
 {
     var l = new ScoreLedger(config); Emit(l, 0, ScoreEventKind.CircleWhole, 1024);

@@ -511,3 +511,11 @@ partial mutations/cache/reused identity/runtime precision. Historical research/Q
 reports/fixtures/C01 source and journal prefix preserved. Stop after C02; no R09,
 lazer or framework migration. Current main implementation scope supersedes old
 branch/RE defaults; no research journal or original test required/attempted.
+
+C02 initial gate sourceb615a41717903ec6d77921a42cbc46ef3c687b9c,
+run41636269428/job125918152607: WPF0 warnings/errors,255 QA,R06/R07/R08/C01 passed.
+C02 step FAILED before first group at fixture hash: Windows CRLF checkout differs
+from E034 LF repository blob. Changed only new check's hash canonicalization
+CRLF->LF; all fixture bytes/app arithmetic preserved. Full source re-run required;
+no passed new multiplier checks claimed yet. This is verification portability,
+not an original-game discrepancy or evidence for fitted K.
