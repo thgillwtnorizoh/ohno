@@ -1,0 +1,163 @@
+QA03 selected actual CI console output
+Run: https://github.com/thgillwtnorizoh/ohno/actions/runs/41554492241
+Job: 125649939016; attempt 1; success
+Checkout: d1b562bad01fdfac60b92c330ab3a069162120c0
+Windows Server 2022 Datacenter 10.0.20348; image windows-2022 20261025.346.1
+Timestamp/ANSI and checkout/auth/cleanup details omitted. Full retrieved UTF-8 log hash is in results.json.
+
+8.0.133 [C:\Program Files\dotnet\sdk]
+8.0.206 [C:\Program Files\dotnet\sdk]
+8.0.319 [C:\Program Files\dotnet\sdk]
+8.0.427 [C:\Program Files\dotnet\sdk]
+8.0.427
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+PASS timing OD5 delta=0
+PASS timing OD5 delta=-49
+PASS timing OD5 delta=49
+PASS timing OD5 delta=-50
+PASS timing OD5 delta=50
+PASS timing OD5 delta=-51
+PASS timing OD5 delta=51
+PASS timing OD5 delta=-99
+PASS timing OD5 delta=99
+PASS timing OD5 delta=-100
+PASS timing OD5 delta=100
+PASS timing OD5 delta=-101
+PASS timing OD5 delta=101
+PASS timing OD5 delta=-149
+PASS timing OD5 delta=149
+PASS timing OD5 delta=-150
+PASS timing OD5 delta=150
+PASS timing OD5 delta=-151
+PASS timing OD5 delta=151
+PASS prepared operands OD/AR=0
+PASS prepared operands OD/AR=4
+PASS prepared operands OD/AR=5
+PASS prepared operands OD/AR=5.25
+PASS prepared operands OD/AR=10
+PASS R02 fixture OD4 error=55 sign=-1
+PASS R02 fixture OD4 error=55 sign=1
+PASS R02 fixture OD4 error=56 sign=-1
+PASS R02 fixture OD4 error=56 sign=1
+PASS R02 fixture OD4 error=57 sign=-1
+PASS R02 fixture OD4 error=57 sign=1
+PASS R02 fixture OD4 error=107 sign=-1
+PASS R02 fixture OD4 error=107 sign=1
+PASS R02 fixture OD4 error=108 sign=-1
+PASS R02 fixture OD4 error=108 sign=1
+PASS R02 fixture OD4 error=109 sign=-1
+PASS R02 fixture OD4 error=109 sign=1
+PASS R02 fixture OD4 error=159 sign=-1
+PASS R02 fixture OD4 error=159 sign=1
+PASS R02 fixture OD4 error=160 sign=-1
+PASS R02 fixture OD4 error=160 sign=1
+PASS expiration equality and next millisecond
+PASS already evaluated exclusion
+PASS selection/admission early time=799
+PASS selection/admission early time=800
+PASS selection/admission early time=1600
+PASS selection/admission early time=1601
+PASS ordered earlier object blocking
+PASS first passing object is not nearest
+PASS scale-one radius scalar
+PASS geometry center
+PASS geometry inside
+PASS geometry boundary
+PASS geometry outside
+PASS geometry diagonal-inside
+PASS geometry diagonal-outside
+PASS geometry sign symmetry <16, 0>
+PASS geometry sign symmetry <-16, 0>
+PASS geometry sign symmetry <0, 16>
+PASS geometry sign symmetry <0, -16>
+PASS geometry sign symmetry <-22, 22>
+PASS geometry sign symmetry <22, -22>
+PASS QA01-D01 reject NaN X
+PASS QA01-D01 reject NaN Y
+PASS reject infinite pointer
+PASS layout controlled center scale1
+PASS layout controlled doubled scale
+PASS layout letterbox translation
+PASS new session state isolation
+PASS finished session ignores later component calls
+PASS bundled practice parser
+PASS parser clamp and truncate both axes
+PASS parser sorts unsorted input
+PASS parser reject mode
+PASS parser reject version
+PASS parser reject missing AR
+PASS parser reject NaN difficulty
+PASS parser reject range difficulty
+PASS parser reject empty
+PASS parser reject slider
+PASS parser reject spinner
+PASS parser reject mixed type
+PASS parser reject equal times
+PASS parser reject negative time
+PASS parser reject large time
+PASS parser reject nonfinite position
+PASS parser reject short row
+PASS parser object count limit
+PASS parser byte size limit
+PASS QA01-D02 reject malformed hitSound
+PASS QA01-D02 reject empty hitSound
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+PASS A01 tick fixture schedule and end
+PASS A02 repeat fixture schedule and end
+PASS A03 three-span carry schedule and end
+PASS A04 producer roles retain ordered traversal identity
+PASS A05 directed movement endpoints and intervals
+PASS A06 three spans preserve nonzero carry and alternate endpoints
+PASS B01 forward literal geometry before reversal
+PASS B02 exact reversal selects first inclusive record
+PASS B03 reverse immediately after boundary
+PASS B04 reverse returns to initial endpoint
+PASS B05 third traversal continues forward
+PASS B06 reversal alone preserves active entry and held side
+PASS C01 no component before due and inclusive equality
+PASS C02 one outstanding component per invocation
+PASS C03 identical-time calls can drain prefix then stop
+PASS C04 delayed interior gets repeat code from due prefix
+PASS C05 delayed repeat can get interior code
+PASS C06 all-due prefix gives earlier item terminal success code
+PASS C07 failed and pending slots remain distinct
+PASS C08 missed head permits later checkpoint success
+PASS D01 entry equality succeeds
+PASS D02 late entry fails while tracking remains active
+PASS D03 held input alone is insufficient
+PASS D04 cursor alone is insufficient
+PASS D05 entry radius equality rejected
+PASS D06 just inside entry radius accepted
+PASS D07 active radius equality rejects and leaves
+PASS D08 active hysteresis accepts outside entry disk
+PASS D09 release and timely re-entry renew entry
+PASS D10 release and late re-entry cannot rescue deadline
+PASS D11 both held retains remembered side and no synthetic edge needed
+PASS D12 replacing logical side follows original history branch
+PASS D13 history veto differs from any-held shortcut
+PASS D14 NaN follow coordinates reject
+PASS E01 head and components credit combo without parent duplicate
+PASS E02 ordinary interior failure resets positive combo
+PASS E03 repeat success increments combo
+PASS E04 repeat failure uses ordinary negative reset
+PASS E05 sequential final success increments combo before completion
+PASS E06 final failure preserves combo and guarded active flag
+PASS E08 terminal entry equality after previous failures succeeds
+PASS E09 terminal entry after deadline fails while active
+PASS E07 all due failure is nonterminal until processed count reaches N
+PASS F01 inclusive parent end distinct from terminal
+PASS F02 delayed parent completion leaves backlog untouched
+PASS F03 evaluated parent suppresses later component processing
+PASS F04 terminal failure still permits positive parent aggregate
+PASS F05 legacy full successes with low positive head still best
+PASS F06 missing head and all components successful gives middle
+PASS F07 all failed including head gives miss
+PASS F08 below half and above half use recorded successes
+PASS F09 pending versus failed equal numerator but different histories
+PASS R04-01 unchanged single-span fixture preparation
+PASS R04-02 head and terminal independently produce best legacy grade
+PASS R04-03 head only exactly half grades middle
+PASS R04-04 timely release and re-entry preserves terminal
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed

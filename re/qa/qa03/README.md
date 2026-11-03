@@ -4,10 +4,22 @@ QA03 — independent R05 slider checkpoint/repeat regression, Work 1,
 2026-11-03. Target: `06cfaee3e9ade203852d494a26e003ca2da61174`, verified
 as `origin/main` before editing. This is bounded QA, not an expedition.
 
-Execution status: **PENDING HOSTED GATE**. No local .NET SDK is available;
-no SDK is installed. Final executed results will be recorded in `results.json`
-and `gate-output.txt`, with exact run/job/source identities. A prepared test is
-not an executed pass. All implementation and previous QA files are unchanged.
+**PASS — actual hosted execution:** WPF Windows x64 compilation succeeded with
+**0 warnings / 0 errors**; existing QA01 **90/90 passed**; new QA03 **56/56
+passed** (146 total component cases, no failures). One gate execution, no rerun.
+No local .NET SDK is available; none was installed.
+
+[Run41554492241 / job125649939016](https://github.com/thgillwtnorizoh/ohno/actions/runs/41554492241/job/125649939016),
+attempt1, completed success on Windows Server2022 Datacenter10.0.20348,
+image20261025.346.1, preinstalled SDK8.0.427. Gate checkout:
+`d1b562bad01fdfac60b92c330ab3a069162120c0`, direct child of the R05 target.
+`results.json` records all146 named outcomes, commands, step status and log hashes;
+`gate-output.txt` preserves selected actual console output. The full retrieved
+log hash is retained without publishing checkout/auth details. Checkout's
+Node20/Node24 deprecation advisory is separate from the zero compiler warnings.
+Application and previous QA files are unchanged from the R05 target.
+The later results-only publication preserves the exact tested application,
+test and workflow content and does not trigger another gate.
 
 `Headless/QA03.Headless.csproj` links the actual R05 `Gameplay/Beatmap.cs` and
 `Gameplay/CircleSession.cs`. It excludes the application entry point, WPF,
@@ -101,8 +113,19 @@ is added. R01, QA01 and all historical evidence remain preserved.
 
 ## Defect disposition and follow-up
 
-Final passing/failing behavior and actionable defects, if any, will be filled
-from the actual gate, without changing Work 2 code or weakening expectations.
+**No confirmed implementation defect in the selected 56 cases.** All asserted
+schedules, literal reversal geometry, due-prefix classification, strict radius
+boundaries, history veto/continuity, deadline-entry equality, late-entry failure,
+terminal combo distinction, legacy thresholds and completion/backlog cases passed.
+No Work 2 correction is requested for these cases; retain this baseline for the
+next implementation change. This is not blanket R05 or future curved-path approval.
+
+All189 baseline tracked paths remain present. The188 baseline blobs/modes outside
+the existing workflow are unchanged, including complete `re/contexts.md`, E20,
+R01, QA01/02 and all implementation/fixture/report files. Only the existing gate
+is modified and QA03 files added. Source/report/fixture Git/SHA256 identities
+are in `provenance.json`; remote ancestry, changed-file scope and complete tree
+are verified at publication. No historical checker or R02 fingerprint is rerun.
 The smallest runtime dependency remains an owner-operated, identified R05
 reversal/checkpoint control; original comparisons require the unchanged E20
 packet and authorized instrumentation. No such evidence has been supplied here.
