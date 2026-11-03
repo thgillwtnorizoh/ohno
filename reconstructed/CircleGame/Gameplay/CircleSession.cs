@@ -117,11 +117,14 @@ public sealed class ScoreLedger
             }
             else { CurrentCombo = 0; ComboSnapshot = 0; } // Includes parent whole MISS.
         }
-        int appliedDelta = e.AccountingEnabled ? delta : 0;
-        if (e.AccountingEnabled) Score = unchecked(Score + delta);
+        // E33 A: late admission is distinct from the captured counter flag.
+        // Supported negative identities also carry this bit and admit a zero write.
+        bool recordAdmitted = e.AccountingEnabled || (e.Raw & 8388608) > 0;
+        int appliedDelta = recordAdmitted ? delta : 0;
+        if (recordAdmitted) Score = unchecked(Score + delta);
         EventCount++;
         LastEvent = e;
-        LastOutcome = new(e.AccountingEnabled ? ScoreAccountingStatus.Applied : ScoreAccountingStatus.RecordSuppressed,
+        LastOutcome = new(recordAdmitted ? ScoreAccountingStatus.Applied : ScoreAccountingStatus.RecordSuppressed,
             b, delta, appliedDelta, oldCombo);
         return LastOutcome;
 

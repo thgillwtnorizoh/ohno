@@ -426,3 +426,14 @@ until actual hosted execution; source/run/job/outcomes will be appended. Compone
 controls are E33 static predictions, not original game or human verification.
 Current R08 scope continues main implementation over historical suspension/branch
 rules. Stop after R08, no QA06 or original-software expedition.
+
+R08 initial hosted gate: source `b17c32cdc0eb1700c4686023e29ccbee3908f533`,
+run41592125988/job125771010001. Actual Windows2022/SDK8.0.427 WPF build0 warnings/
+0 errors, QA01 90/0,QA03 56/0,QA04 43/0,QA05 66/0, R06 four targets/four loads,
+R07 eight groups, R08 thirteen groups PASS. Source review then corrected a narrow
+admission detail before final handoff: E33-A's late record gate is captured flag
+OR signed-positive(raw &8388608), separate from hit counts. Supported negative
+enums contain the bit and admit zero writes even with captured flagfalse; positive
+flagfalse cases stay suppressed. Added that finite assertion to an existing group.
+Main fixture numbers are unchanged; tests/research remain untouched. This current
+R08 refinement will be reverified; no new expedition/QA06 or original observation.

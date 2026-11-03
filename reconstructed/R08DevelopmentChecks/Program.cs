@@ -58,6 +58,9 @@ Eq(ticks.Score, 70); Eq(ticks.CurrentCombo, 3); Eq(ticks.TotalWholeResults, 0);
 var suppression = Fresh(); suppression.Apply(Event(ScoreEventKind.CircleWhole, 1024, ScoreObjectKind.Circle) with { AccountingEnabled = false });
 Eq(suppression.Score, 0); Eq(suppression.TotalWholeResults, 0); Eq(suppression.CurrentCombo, 1);
 Eq(suppression.LastOutcome.Status, ScoreAccountingStatus.RecordSuppressed);
+suppression.Apply(Event(ScoreEventKind.CircleWhole, -131072, ScoreObjectKind.Circle) with { AccountingEnabled = false });
+Eq(suppression.NMiss, (ushort)0); Eq(suppression.CurrentCombo, 0); Eq(suppression.Score, 0);
+Eq(suppression.LastOutcome.Status, ScoreAccountingStatus.Applied); // Raw signed mask admits zero legacy write, not hit counter.
 Pass("component base table, terminal bypass and conditional record admission vs combo");
 
 Eq(Fresh().AccuracyPercent, 100f);

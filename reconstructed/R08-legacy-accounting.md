@@ -29,9 +29,13 @@ in the established Windows gate. Work1 research/QA01–05/E20 and historical rep
 journal content are preserved. No new fixture is necessary; all existing no-mod
 circle/slider/spinner controls exercise the record. Windows run commands unchanged.
 
-Initial CI status **PENDING**: WPF win-x64,255 existing QA cases, R06/R07 development
-checks and13 bounded R08 groups. Actual source/run/job/outcomes will be recorded
-after execution. No local dotnet executable, SDK install or local compilation.
+Initial gate [run41592125988/job125771010001](https://github.com/thgillwtnorizoh/ohno/actions/runs/41592125988/job/125771010001)
+on source `b17c32cdc0eb1700c4686023e29ccbee3908f533` passed: WPF0 warnings/errors,
+all255 existing QA cases, retained R06/R07 checks and13 R08 groups. Source review
+then separated E33's captured hit-counter flag from its exact late admission OR
+predicate, adding the supported negative/disabled-flag control. Changed-source
+reverification is **PENDING** at this publication; final results will identify
+its actual SHA/run/job. No local dotnet executable, SDK install or compilation.
 No game launch, OS input, gameplay, OBS/recording, original debugger, E20 experiment
 or routine supervised testing. Earlier owner feedback is positive scoped evidence
 for R04/R06/R07; R08 score numbers and visuals remain **UNVERIFIED human/runtime**.
@@ -68,11 +72,13 @@ score/combo operations retain unchecked Int32 behavior. Maximum combo never supp
 the bonus operand. Integer b/25 precedes Double multiplication. No bonus applies
 to components, even spinner8192's base100.
 
-AccountingEnabled=false suppresses whole counters and legacy score write but
-does not silently suppress known combo work. This models the bounded F153b gate,
-not a generic ignored-event promise. Gameplay emits true for its fresh ordinary
+AccountingEnabled=false suppresses whole counters but does not silently suppress
+known combo work. The late write separately admits `flag || (raw &8388608)>0` per
+E33-A. Supported negative raw identities carry that bit and admit a zero-delta
+legacy write even with flagfalse; they do not gain hit counts. Positive plain
+flagfalse results skip that write. Gameplay emits true for its fresh ordinary
 objects (E33 M249b default); the public event contract carries the flag explicitly
-for component controls/future recovered sources. High-flag admission alternatives
+for component controls/future recovered sources. Additional decorated identities
 are unsupported, not guessed. No HP/auxiliary accumulator/native observer effects.
 
 Positive circle/final spinner/head/component increments current/max/snapshot;
