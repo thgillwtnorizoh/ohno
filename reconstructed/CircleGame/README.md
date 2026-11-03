@@ -1,13 +1,13 @@
-# R07 — Spinner Practice for Windows
+# R08 — Legacy Score Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
 simulated input, network service, original assets or original-game execution.
 
-**R07 status:** see `../R07-first-spinner.md` for actual Windows CI compilation,
-QA01/QA03/QA04 and bounded spinner development results. R07 human play remains
-unverified by Work. Historical R06 results and QA04's scoped owner feedback are
-preserved; they do not validate R07. The R05 report records its Windows build and
+**R08 status:** see `../R08-legacy-accounting.md` for Windows build,255 unchanged
+QA cases and bounded ledger checks. R08 human score/visual equivalence remains
+unverified. Historical reports and scoped R04/R06/R07 owner feedback are preserved;
+they do not validate R08 scores. The R05 report records its Windows build and
 existing 90-case regression outcomes. The owner reported that the tested R04
 slider interaction/scoring matched the original at the user-observable level;
 this is scope-limited human feedback, not universal equivalence or R05 validation.
@@ -49,6 +49,48 @@ not score. **Open .osu** pauses and opens a local file picker; cancellation leav
 the old session paused. A rejected file leaves the old map, audio and progress
 intact. A newly loaded map waits for Start. **Silent fixture** restores the
 original silent control. All interactive operation remains human-controlled.
+
+## Legacy score and results (R08)
+
+Start any existing fixture or load a supported local map as before. The HUD now
+shows **legacy score, accuracy, current combo and maximum combo** from one ledger.
+Its next line identifies **Plain legacy · K=1 (ENGINEERING preset)**. Completion
+shows final score, four whole-result counts, accuracy, maximum combo, completed
+objects and policy/K provenance. Timing, Space pause/resume and R/Enter restart
+are unchanged. Restart/map replacement creates a fresh record and keeps the
+explicit scoring configuration. No rank letters, online records or persistence.
+
+K=1 is a documented engineering practice preset. Original automatic chart-density
+metadata and its actual map multiplier remain unresolved. The code accepts an
+explicit finite K0–10; this is a safety range, not an original rule. UI/session
+construction passes the preset explicitly. Future recovered map preparation can
+supply K through `ScoreConfiguration` without changing judgement or ledger logic.
+The historical one-argument component constructor uses the same named preset.
+
+Whole positive scores use the E33 pre-result combo operand: base b plus
+`trunc(max(0,oldCombo-1) * IntDiv(b,25) * K)`. First and second circle300s total600;
+a subsequent100 makes704 with K1. Components use their actual raw result: slider
+head/repeat-coded/terminal-coded successes add30, interior-coded success adds10;
+spinner4096/8192/16384 adds0/100/1100. These are bounded numeric additions, without
+native bonus effects or full scoring policy reconstruction. A delayed tick can
+carry a different raw code, so producer labels do not determine score amounts.
+
+Only whole circle, slider aggregate and spinner final judgements update the
+UInt16 300/100/50/MISS counts. Accuracy is the E33 Single fraction, displayed as
+percentage; empty accuracy is100%. Components add no accuracy hits. Positive
+slider aggregates add no duplicate combo, while a parent MISS resets combo.
+Terminal component failure preserves combo, spinner components bypass combo.
+`HitValueTotal` is a compatibility weighted-hit getter, not legacy numeric score.
+
+For the original eight-circle fixture, all300s with uninterrupted combo predict
+score2652 at this K1 preset. This is a conditional ledger prediction; original-map
+K and general cross-map score equivalence remain unverified. The audible fixture,
+Linear/Bézier/repeat controls and spinner fixtures remain available unchanged.
+
+Only the plain, ordinary, null-ScoreV2 event table is supported. Incoming decorated
+or unsupported policy/provenance values mark the ledger unavailable; the UI hides
+its supported-prefix numbers as final metrics. No flag stripping, guessed density
+formula, ScoreV2, modifier scoring, HP, leaderboards or Rank recreation is included.
 
 ## First slider
 
@@ -334,6 +376,10 @@ are committed; build outputs are intentionally ignored.
 | `Fixtures/mixed-sliders.osu` | Independent circles and one-/two-/three-traversal sliders |
 | `Fixtures/bezier-*.osu` | Independent quadratic/cubic/joined/mixed R06 controls |
 | `Fixtures/spinner-practice.osu`, `circle-spinner.osu`, `mixed-r07.osu` | Independent R07 spinner controls |
+
+`ScoreLedger`, `ScoreConfiguration` and provenance-bearing `ScoreEvent` are separate
+gameplay components in `Gameplay/CircleSession.cs`, preserving existing QA source
+links unchanged. The UI consumes the ledger; it does not recalculate score/counts.
 
 The gameplay layer has no WPF dependency. Rendering consumes session state;
 platform input supplies a mapped pointer and stored gameplay time. R01's Python

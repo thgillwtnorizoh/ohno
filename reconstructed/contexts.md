@@ -378,3 +378,51 @@ diagnostics. No human gameplay or frame-rate equivalence was observed. Final
 documentation-only commit now preserves this exact tested app/fixtures/checks/
 workflow, with protected historical files and journal prefix preserved. Source
 review refinement/reverification remains R07 only; stop, no QA05 or expedition.
+
+## R08 — Legacy Score, Accuracy & Results Accounting
+
+2026-11-03 (Asia/Ho_Chi_Minh), Work2. Clean latest origin/main at
+`37e35c0ca214aa0fc7f5de1da80f50ec26b62b23`. Read AGENTS/standing contract,
+journal/R07, E33 in full, shared component/completion policies and QA01–QA05.
+No original binary inspection, new expedition, game/window/input, OBS/debugger,
+E20, supervised play or original runtime work. Prior owner feedback remains
+positive scoped evidence, not advance validation of R08 numeric scores.
+
+RECONSTRUCTED E33 ledger: separate public ScoreLedger/ScoreConfiguration and
+provenance-bearing ScoreSource/ScoreEvent classes in linked Gameplay/CircleSession
+source (unchanged QA project links). Int32 score/current/max, UInt16 snapshot and
+whole300/100/50/miss counts, Single derived accuracy and explicit K. Record flag
+gates counters/score independently of combo. Old-combo bonus retains Int32 b/25
+before Double multiplications/truncation. Mutation order counters/base/delta/combo/
+score; unchecked integer fields. Components use actual raw amounts, producer roles
+retained separately; raw0 is no event. Terminal failure/spinner components bypass
+combo; positive slider aggregate bypasses duplicate credit, parent MISS resets.
+The latter corrects R07's broad aggregate bypass per authoritative E33; a parsed
+short-slider control checks reset before separate late head timeout. Historical
+QA tests/results are not edited. Any actual test conflict must be disclosed.
+
+Session ledger is authoritative for combo/max/accuracy; old HitValueTotal becomes
+a weighted-hit getter, not numeric score. JudgedCount remains lifecycle completion.
+Every actual circle/head/checkpoint/parent/spinner observation/final reaches its
+typed accounting sink once; no backlog fabrication or stale spinner raw replay.
+UI HUD/results show ledger values, whole counts and completion/policy/K metadata.
+Restart/replacement use fresh ledgers with supplied config; audio/clock/geometry/
+input/movement/judgement unchanged apart from required accounting integration.
+
+ENGINEERING explicit UI K1 preset, finite K0–10/provenance label; automatic map
+density operands F0ff2/F0fe5 unresolved. No guessed map preparation or ScoreV2/high
+flags. Unsupported event/policy/provenance marks unavailable and freezes supported
+prefix, hidden as a final metric; outside-domain bonus conversion is not assigned
+target-CLR behavior. One session-owned record, no native callbacks/global-handler
+swaps, full score/HP/mod/Rank/PP/network/replay persistence or graphics/audio overhaul.
+
+Changes under reconstructed/: ledger/session, renderer/Program/README, bounded
+R08DevelopmentChecks, report and this append. All prior fixtures/buttons retained;
+no new fixture needed. Minimal authorized CI change: one step/path trigger in the
+existing Windows gate. Work1 research/QA01–QA05/E20 and historical reports/journal
+preserved. Source/diff/whitespace checks only initially; no local dotnet executable.
+Windows build/255 existing QA cases, R06/R07 checks and13 bounded R08 groups PENDING
+until actual hosted execution; source/run/job/outcomes will be appended. Component
+controls are E33 static predictions, not original game or human verification.
+Current R08 scope continues main implementation over historical suspension/branch
+rules. Stop after R08, no QA06 or original-software expedition.

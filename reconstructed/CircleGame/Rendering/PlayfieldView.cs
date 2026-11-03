@@ -36,10 +36,10 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     }
 
     // Ownership transfers only after the replacement is fully prepared.
-    public void Load(Beatmap map, BeatmapAudio preparedAudio)
+    public void Load(Beatmap map, BeatmapAudio preparedAudio, ScoreConfiguration scoring)
     {
         preparedAudio.RequireReady();
-        var replacement = new CircleSession(map);
+        var replacement = new CircleSession(map, scoring);
         var preparedPaths = map.Sliders.ToDictionary(s => s, s => BuildPath(s.Geometry));
         clock.Pause();
         BeatmapAudio? previousAudio = audio;
@@ -59,7 +59,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         if (Session is null) return;
         Pause();
-        var replacement = new CircleSession(Session.Map);
+        var replacement = new CircleSession(Session.Map, Session.Scoring);
         if (audio?.Restart() == false) { AudioChanged(); return; }
         Session = replacement;
         started = true;
@@ -266,24 +266,25 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
 
         if (game.Finished)
         {
-            int n300 = game.ObjectResults.Count(r => r == Judgement.Hit300);
-            int n100 = game.ObjectResults.Count(r => r == Judgement.Hit100);
-            int n50 = game.ObjectResults.Count(r => r == Judgement.Hit50);
-            int misses = game.ObjectResults.Count(r => r == Judgement.Miss);
-            Message(dc, "Practice complete", $"300: {n300}   100: {n100}   50: {n50}   Miss: {misses}\n" +
-                $"Accuracy: {game.Accuracy:F2}%    Max combo: {game.MaxCombo}\nR / Enter to play again");
+            ScoreLedger ledger = game.Ledger;
+            string record = ledger.IsSupported ? $"Legacy score: {ledger.Score:N0}    Accuracy: {ledger.AccuracyPercent:F2}%\n" +
+                $"300: {ledger.N300}   100: {ledger.N100}   50: {ledger.N50}   MISS: {ledger.NMiss}\n" +
+                $"Max combo: {ledger.MaximumCombo}    Admitted results: {ledger.TotalWholeResults}" :
+                "Legacy accounting unavailable\n" + ledger.UnsupportedReason;
+            Message(dc, "Practice complete", record + $"\nCompleted objects: {game.JudgedCount}/{game.ObjectCount}\n" +
+                ledger.PolicyLabel + "\nR / Enter to play again", 280);
         }
         else if (!started) Message(dc, "Gameplay practice", "Aim Z/X · Hold and follow sliders · Hold and rotate for spinners\nSpace or Start to begin · " + AudioStatus);
         else if (!Running) Message(dc, audio?.Failure is null ? "Paused" : "Audio unavailable",
             audio?.Failure is null ? "Space to resume · R to restart" : "Reload the map or choose Silent fixture above.");
     }
 
-    private void Message(DrawingContext dc, string title, string subtitle)
+    private void Message(DrawingContext dc, string title, string subtitle, double height = 210)
     {
-        double w = Math.Min(560, ActualWidth - 32), h = 210;
+        double w = Math.Min(height > 210 ? 640 : 560, ActualWidth - 32), h = height;
         dc.DrawRoundedRectangle(Brush("#EE0B1324"), new Pen(Brush("#425B75"), 1),
             new Rect((ActualWidth - w) / 2, (ActualHeight - h) / 2, w, h), 16, 16);
-        Text(dc, title, new Point(ActualWidth / 2, ActualHeight / 2 - 48), 30, Brushes.White, true);
+        Text(dc, title, new Point(ActualWidth / 2, ActualHeight / 2 - (h / 2 - 57)), 30, Brushes.White, true);
         Text(dc, subtitle, new Point(ActualWidth / 2, ActualHeight / 2 + 20), 16, Brush("#C2D5E5"), true);
     }
 

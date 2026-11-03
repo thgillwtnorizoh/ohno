@@ -4,6 +4,137 @@ namespace Ohno.CircleGame.Gameplay;
 
 public enum Judgement { Pending, Hit300, Hit100, Hit50, Miss }
 
+public enum ScorePolicy { PlainLegacy, ScoreV2 }
+public sealed record ScoreConfiguration(double K, ScorePolicy Policy, string MultiplierProvenance)
+{
+    // ENGINEERING chart preset, not recovered automatic density preparation.
+    public static ScoreConfiguration EngineeringPractice { get; } = new(1.0, ScorePolicy.PlainLegacy, "ENGINEERING preset");
+}
+public enum ScoreObjectKind { Circle, Slider, Spinner }
+public enum ScoreEventKind { CircleWhole, SliderHead, SliderInterior, SliderRepeatOrTerminal, SliderAggregate, SpinnerProgress, SpinnerFinal }
+public readonly record struct ScoreSource(int ObjectId, ScoreObjectKind Kind, int StartTime, int EndTime);
+public readonly record struct ScoreEvent(ScoreSource Source, int Sequence, ScoreEventKind Kind, int Raw,
+    bool AccountingEnabled, bool ObjectHasSliderType, ScorePolicy Policy, SliderCheckpointKind? ProducerRole = null);
+public enum ScoreAccountingStatus { Applied, RecordSuppressed, NoEvent, Unsupported }
+public readonly record struct ScoreAccountingOutcome(ScoreAccountingStatus Status, int BaseAmount, int CalculatedDelta,
+    int AppliedDelta, int ComboBefore);
+
+// Dedicated E33 ledger component, independent of session/UI. Kept in this linked
+// gameplay source so unchanged QA01–QA05 projects compile the actual dependency.
+public sealed class ScoreLedger
+{
+    public ScoreConfiguration Configuration { get; }
+    public int Score { get; private set; }
+    public int CurrentCombo { get; private set; }
+    public int MaximumCombo { get; private set; }
+    public ushort ComboSnapshot { get; private set; }
+    public ushort N300 { get; private set; }
+    public ushort N100 { get; private set; }
+    public ushort N50 { get; private set; }
+    public ushort NMiss { get; private set; }
+    public int EventCount { get; private set; } // ENGINEERING audit count, not original score.
+    public ScoreEvent? LastEvent { get; private set; }
+    public ScoreAccountingOutcome LastOutcome { get; private set; } = new(ScoreAccountingStatus.NoEvent, 0, 0, 0, 0);
+    public int LastBaseAmount { get; private set; }
+    public string? UnsupportedReason { get; private set; }
+    public bool IsSupported => UnsupportedReason is null;
+    public int TotalWholeResults => unchecked(N50 + N100 + N300 + NMiss);
+    public int WeightedHitTotal => unchecked(50 * N50 + 100 * N100 + 300 * N300);
+    public float AccuracyFraction => TotalWholeResults <= 0 ? 1f : (float)WeightedHitTotal / (float)unchecked(300 * TotalWholeResults);
+    public float AccuracyPercent => AccuracyFraction * 100f;
+    public string PolicyLabel => $"{(Configuration.Policy == ScorePolicy.PlainLegacy ? "Plain legacy" : "Unsupported policy")} · K={Configuration.K:G} ({Configuration.MultiplierProvenance})";
+
+    public ScoreLedger(ScoreConfiguration configuration)
+    {
+        ArgumentNullException.ThrowIfNull(configuration);
+        if (!double.IsFinite(configuration.K) || configuration.K < 0 || configuration.K > 10 ||
+            string.IsNullOrWhiteSpace(configuration.MultiplierProvenance))
+            throw new ArgumentOutOfRangeException(nameof(configuration), "R08 requires finite K0–10 and explicit provenance.");
+        Configuration = configuration;
+        if (configuration.Policy != ScorePolicy.PlainLegacy) UnsupportedReason = "Only the plain null-ScoreV2 legacy policy is implemented.";
+    }
+
+    public ScoreAccountingOutcome Apply(ScoreEvent e)
+    {
+        if (e.Raw == 0) return new(ScoreAccountingStatus.NoEvent, 0, 0, 0, CurrentCombo);
+        if (!IsSupported) return new(ScoreAccountingStatus.Unsupported, 0, 0, 0, CurrentCombo);
+        bool whole = e.Kind is ScoreEventKind.CircleWhole or ScoreEventKind.SliderAggregate or ScoreEventKind.SpinnerFinal;
+        ScoreObjectKind expectedSource = e.Kind switch
+        {
+            ScoreEventKind.CircleWhole => ScoreObjectKind.Circle,
+            ScoreEventKind.SpinnerProgress or ScoreEventKind.SpinnerFinal => ScoreObjectKind.Spinner,
+            _ => ScoreObjectKind.Slider
+        };
+        bool validRaw = e.Kind switch
+        {
+            ScoreEventKind.CircleWhole or ScoreEventKind.SliderAggregate or ScoreEventKind.SpinnerFinal => e.Raw is 1024 or 512 or 256 or -131072,
+            ScoreEventKind.SliderHead => e.Raw is 64 or -262144,
+            ScoreEventKind.SliderInterior or ScoreEventKind.SliderRepeatOrTerminal => e.Raw is 8 or 64 or 128 or -262144 or -524288,
+            ScoreEventKind.SpinnerProgress => e.Raw is 4096 or 8192 or 16384,
+            _ => false
+        };
+        bool validRole = e.Kind switch
+        {
+            ScoreEventKind.SliderInterior => e.ProducerRole == SliderCheckpointKind.Interior,
+            ScoreEventKind.SliderRepeatOrTerminal => e.ProducerRole is SliderCheckpointKind.Repeat or SliderCheckpointKind.Final,
+            _ => e.ProducerRole is null
+        };
+        if (e.Policy != ScorePolicy.PlainLegacy || !validRaw || !validRole || e.Source.Kind != expectedSource ||
+            e.ObjectHasSliderType != (expectedSource == ScoreObjectKind.Slider) || e.Source.ObjectId < 0 || e.Sequence < 0)
+            return Unsupported("Unsupported policy, raw/decorated result or provenance/flags.");
+
+        int b = e.Raw switch { 1024 => 300, 512 => 100, 256 => 50, 64 or 128 => 30, 8 => 10, 8192 => 100, 16384 => 1100, _ => 0 };
+        bool scaled = whole && e.Raw > 0;
+        int oldCombo = CurrentCombo;
+        // E33 order: captured flag gates counters, then object-local base amount,
+        // old-combo delta, combo/max/snapshot, and finally admitted legacy score.
+        if (whole && e.AccountingEnabled)
+        {
+            switch (e.Raw)
+            {
+                case 1024: N300 = unchecked((ushort)(N300 + 1)); break;
+                case 512: N100 = unchecked((ushort)(N100 + 1)); break;
+                case 256: N50 = unchecked((ushort)(N50 + 1)); break;
+                case -131072: NMiss = unchecked((ushort)(NMiss + 1)); break;
+            }
+        }
+        LastBaseAmount = b;
+        double bonus = scaled ? (double)Math.Max(0, unchecked(oldCombo - 1)) * (double)(b / 25) * Configuration.K : 0;
+        // Outside this finite contract, earlier count/base mutations can remain.
+        // Do not invent target-CLR overflow conversion output or saturate it.
+        if (!double.IsFinite(bonus) || bonus < int.MinValue || bonus >= 2147483648.0)
+            return Unsupported("Combo bonus is outside the supported finite Int32 conversion domain.");
+        int delta = unchecked(b + (scaled ? (int)bonus : 0));
+        bool comboEnabled = e.Kind != ScoreEventKind.SpinnerProgress && e.Raw != -524288 &&
+            !(e.Kind == ScoreEventKind.SliderAggregate && e.Raw > 0);
+        if (comboEnabled)
+        {
+            if (e.Raw > 0)
+            {
+                CurrentCombo = unchecked(CurrentCombo + 1);
+                MaximumCombo = Math.Max(MaximumCombo, CurrentCombo);
+                ComboSnapshot = unchecked((ushort)CurrentCombo);
+            }
+            else { CurrentCombo = 0; ComboSnapshot = 0; } // Includes parent whole MISS.
+        }
+        int appliedDelta = e.AccountingEnabled ? delta : 0;
+        if (e.AccountingEnabled) Score = unchecked(Score + delta);
+        EventCount++;
+        LastEvent = e;
+        LastOutcome = new(e.AccountingEnabled ? ScoreAccountingStatus.Applied : ScoreAccountingStatus.RecordSuppressed,
+            b, delta, appliedDelta, oldCombo);
+        return LastOutcome;
+
+        ScoreAccountingOutcome Unsupported(string reason)
+        {
+            UnsupportedReason = reason;
+            LastEvent = e;
+            LastOutcome = new(ScoreAccountingStatus.Unsupported, 0, 0, 0, CurrentCombo);
+            return LastOutcome; // ENGINEERING: preserve supported prefix; hide it as a final score.
+        }
+    }
+}
+
 public sealed class CircleState(CircleDefinition definition)
 {
     public CircleDefinition Definition { get; } = definition;
@@ -198,6 +329,9 @@ public sealed class CircleSession
     public IReadOnlyList<CircleState> Heads { get; }
     private readonly List<(CircleState Head, SliderState? Slider)> targets;
     private readonly HeldInput input = new();
+    private readonly Dictionary<object, ScoreSource> scoreSources = new(ReferenceEqualityComparer.Instance);
+    public ScoreLedger Ledger { get; }
+    public ScoreConfiguration Scoring => Ledger.Configuration;
     private int previousUpdateTime, previousQualifyingInputTime;
     private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
@@ -208,17 +342,22 @@ public sealed class CircleSession
     public int Window50 { get; }
     public float DiameterAtScaleOne { get; }
     public float HitRadius { get; }
-    public int Combo { get; private set; }
-    public int MaxCombo { get; private set; }
+    public int Combo => Ledger.CurrentCombo;
+    public int MaxCombo => Ledger.MaximumCombo;
     public int JudgedCount { get; private set; }
-    public int HitValueTotal { get; private set; }
+    public int HitValueTotal => Ledger.WeightedHitTotal; // Compatibility view, NOT legacy numeric score.
     public HitFeedback? Feedback { get; private set; }
     public bool Finished { get; private set; }
-    public double Accuracy => JudgedCount == 0 ? 100 : 100.0 * HitValueTotal / (JudgedCount * 300);
+    public double Accuracy => Ledger.AccuracyPercent;
 
-    public CircleSession(Beatmap map)
+    // Historical component API uses the documented ENGINEERING preset. The UI
+    // and scoring callers explicitly supply configuration through the overload.
+    public CircleSession(Beatmap map) : this(map, ScoreConfiguration.EngineeringPractice) { }
+
+    public CircleSession(Beatmap map, ScoreConfiguration scoring)
     {
         Map = map;
+        Ledger = new ScoreLedger(scoring);
         Circles = map.Circles.Select(c => new CircleState(c)).ToArray();
         Sliders = map.Sliders.Select(s => new SliderState(s)).ToArray();
         Spinners = map.Spinners.Select(s => new SpinnerState(s, map.OverallDifficulty)).ToArray();
@@ -226,6 +365,12 @@ public sealed class CircleSession
             .Concat(Sliders.Select(s => (Head: s.Head, Slider: (SliderState?)s)))
             .OrderBy(t => t.Head.Definition.StartTime).ToList();
         Heads = targets.Select(t => t.Head).ToArray();
+        var sources = Circles.Select(c => (State: (object)c, Kind: ScoreObjectKind.Circle, Start: c.Definition.StartTime, End: c.Definition.StartTime))
+            .Concat(Sliders.Select(s => (State: (object)s, Kind: ScoreObjectKind.Slider, Start: s.Definition.Head.StartTime, End: s.Definition.EndTime)))
+            .Concat(Spinners.Select(s => (State: (object)s, Kind: ScoreObjectKind.Spinner, Start: s.Definition.StartTime, End: s.Definition.EndTime)))
+            .OrderBy(s => s.Start).ToArray();
+        for (int i = 0; i < sources.Length; i++)
+            scoreSources.Add(sources[i].State, new(i, sources[i].Kind, sources[i].Start, sources[i].End));
         // E07 M28be/M28b3: no-mod finite approach mapping, truncation toward zero.
         Approach = MapDifficulty(map.ApproachRate, 1800, 1200, 450);
         // E12 M28be widths, read in 300/100/50 classification order below.
@@ -260,11 +405,15 @@ public sealed class CircleSession
         {
             if (spinner.Result != Judgement.Pending || time < spinner.Definition.StartTime) continue;
             if (qualifyInput && float.IsFinite(spinPointer.X) && float.IsFinite(spinPointer.Y))
-                spinner.SampleCursor(spinPointer, SpinnerState.DisplayCenter, time, sampleInterval, (buttons & 3) != 0);
+            {
+                int raw = spinner.SampleCursor(spinPointer, SpinnerState.DisplayCenter, time, sampleInterval, (buttons & 3) != 0);
+                // Only this actual observation returns an event; never replay LastComponentRaw on other frames.
+                Emit(spinner, ScoreEventKind.SpinnerProgress, raw, spinner.Observation.Count);
+            }
             spinner.Integrate(time, updateInterval);
             if (spinner.Complete(time))
             {
-                RecordResult(spinner.Result, true);
+                RecordWholeResult(spinner, ScoreEventKind.SpinnerFinal, spinner.Result, spinner.FinalRaw);
                 Feedback = new(SpinnerState.DisplayCenter, "SPINNER " + Label(spinner.Result), time, spinner.Result);
             }
         }
@@ -287,7 +436,7 @@ public sealed class CircleSession
                 // E17/E23 legacy policy (no ScoreV2/mods), not head-sensitive grading.
                 slider.Result = ratio == 1 ? Judgement.Hit300 : ratio >= 0.5 ? Judgement.Hit100 :
                     ratio > 0 ? Judgement.Hit50 : Judgement.Miss;
-                RecordResult(slider.Result, false); // Whole-object accuracy, no duplicate combo award.
+                RecordWholeResult(slider, ScoreEventKind.SliderAggregate, slider.Result);
                 Feedback = new(slider.Definition.EndPosition, "SLIDER " + Label(slider.Result), time, slider.Result);
             }
         }
@@ -342,7 +491,7 @@ public sealed class CircleSession
     {
         circle.Result = Classify(time - circle.Definition.StartTime);
         circle.JudgedAt = time;
-        RecordResult(circle.Result, true);
+        RecordWholeResult(circle, ScoreEventKind.CircleWhole, circle.Result);
         Feedback = new(circle.Definition.Position, Label(circle.Result), time, circle.Result);
     }
 
@@ -362,7 +511,7 @@ public sealed class CircleSession
     {
         slider.Head.Result = Classify(time - slider.Definition.Head.StartTime);
         slider.Head.JudgedAt = time;
-        if (Positive(slider.Head.Result)) AddCombo(); else Combo = 0;
+        Emit(slider, ScoreEventKind.SliderHead, Positive(slider.Head.Result) ? 64 : -262144);
         Feedback = new(slider.Definition.Head.Position, "HEAD " + Label(slider.Head.Result), time, slider.Head.Result);
         // Head evaluation does not finish the parent and does not enter tracking.
     }
@@ -375,11 +524,14 @@ public sealed class CircleSession
         if (follow && !slider.Tracking) { slider.EntryTime = time; slider.Tracking = true; }
         // E16/E21: leading due-prefix only, in original producer order. The final
         // adjustment can be nonmonotone. One reached call processes at most ONE.
-        int raw = 0, k = 0, count = slider.Checkpoints.Count;
+        int raw = 0, k = 0, count = slider.Checkpoints.Count, sequence = -1;
+        SliderCheckpointState? processed = null;
         while (k < count && slider.Checkpoints[k].Definition.Time <= time) k++;
         if (slider.ProcessedCheckpoints < k)
         {
-            var checkpoint = slider.Checkpoints[slider.ProcessedCheckpoints];
+            sequence = slider.ProcessedCheckpoints;
+            var checkpoint = slider.Checkpoints[sequence];
+            processed = checkpoint;
             bool success = follow && slider.EntryTime <= checkpoint.Definition.Time;
             if (success)
             {
@@ -401,20 +553,25 @@ public sealed class CircleSession
                 success ? Judgement.Hit300 : Judgement.Miss);
         }
         if (!follow && slider.Tracking && slider.ProcessedCheckpoints < count) slider.Tracking = false;
-        // E18/E21/E22: leave precedes the immediate combo consumer. Positive
-        // component increments; ordinary negative resets; final negative does not.
-        // No full score/HP consumer or original helper exceptions are reproduced.
-        if (raw > 0) AddCombo(); else if (raw == -262144) Combo = 0;
+        // Leave precedes E33 accounting. Role is producer metadata; actual raw
+        // still comes from the unchanged due-prefix selector above.
+        if (processed is not null)
+            Emit(slider, processed.Definition.Kind == SliderCheckpointKind.Interior ? ScoreEventKind.SliderInterior :
+                ScoreEventKind.SliderRepeatOrTerminal, raw, sequence, processed.Definition.Kind);
     }
 
-    private void AddCombo() { Combo++; MaxCombo = Math.Max(MaxCombo, Combo); }
-
-    private void RecordResult(Judgement result, bool updateCombo)
+    private void RecordWholeResult(object source, ScoreEventKind kind, Judgement result, int? raw = null)
     {
         JudgedCount++;
-        int value = result switch { Judgement.Hit300 => 300, Judgement.Hit100 => 100, Judgement.Hit50 => 50, _ => 0 };
-        // Deliberately simple R02 feedback counters, NOT stable's score/HP formula.
-        HitValueTotal += value;
-        if (updateCombo) { if (value == 0) Combo = 0; else AddCombo(); }
+        int code = raw ?? (result switch { Judgement.Hit300 => 1024, Judgement.Hit100 => 512, Judgement.Hit50 => 256, _ => -131072 });
+        Emit(source, kind, code);
+    }
+
+    private void Emit(object source, ScoreEventKind kind, int raw, int sequence = 0, SliderCheckpointKind? role = null)
+    {
+        if (raw == 0) return; // E33: not an accounting event (C1 can still advance observation state).
+        ScoreSource identity = scoreSources[source];
+        Ledger.Apply(new(identity, sequence, kind, raw, AccountingEnabled: true,
+            ObjectHasSliderType: identity.Kind == ScoreObjectKind.Slider, Policy: Scoring.Policy, ProducerRole: role));
     }
 }

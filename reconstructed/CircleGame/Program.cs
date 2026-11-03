@@ -30,6 +30,8 @@ public sealed class GameWindow : Window
     private readonly TextBlock mediaStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
     private readonly List<Button> buttons = [];
     private readonly HashSet<Key> heldKeys = [];
+    private readonly ScoreConfiguration scoring = ScoreConfiguration.EngineeringPractice;
+    private readonly TextBlock scoringStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
     private CancellationTokenSource? loadCancellation;
     private BeatmapAudio? pendingAudio;
     private PracticeFixture? audibleFixture;
@@ -38,7 +40,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R07 Spinner Practice";
+        Title = "ohno · R08 Legacy Score Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -70,6 +72,7 @@ public sealed class GameWindow : Window
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
+        footer.Children.Add(scoringStatus);
         footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Spinner: hold and rotate around center",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
@@ -148,7 +151,7 @@ public sealed class GameWindow : Window
             pendingAudio = candidateAudio;
             await candidateAudio.PrepareAsync(request.Token);
             if (closing || request.IsCancellationRequested || !ReferenceEquals(loadCancellation, request)) return;
-            surface.Load(map, candidateAudio);
+            surface.Load(map, candidateAudio, scoring);
             candidateAudio = null; // Surface now owns this prepared player.
             pendingAudio = null;
             mapLabel.Text = map.Title.Length <= 38 ? map.Title : map.Title[..35] + "…";
@@ -201,8 +204,11 @@ public sealed class GameWindow : Window
         restartButton.IsEnabled &= surface.Session is not null;
         mediaStatus.Text = loading ? "Loading local beatmap audio… previous session paused (15-second timeout)." : surface.AudioStatus;
         if (surface.Session is not { } game) { hud.Text = "No map loaded"; return; }
-        hud.Text = $"{game.JudgedCount}/{game.ObjectCount} objects     Combo {game.Combo}×     Best {game.MaxCombo}×     " +
-            $"Accuracy {game.Accuracy:F2}%     {surface.CurrentTime / 1000.0:F2}s";
+        ScoreLedger ledger = game.Ledger;
+        hud.Text = ledger.IsSupported ? $"Score {ledger.Score:N0}   Accuracy {ledger.AccuracyPercent:F2}%   " +
+            $"Combo {ledger.CurrentCombo}×   Best {ledger.MaximumCombo}×   {game.JudgedCount}/{game.ObjectCount} objects   {surface.CurrentTime / 1000.0:F2}s" :
+            $"Accounting unsupported · {game.JudgedCount}/{game.ObjectCount} objects";
+        scoringStatus.Text = ledger.PolicyLabel + (ledger.IsSupported ? "" : " · " + ledger.UnsupportedReason);
         playButton.Content = surface.Running ? "Pause (Space)" : game.Finished ? "Play again" : "Start / Resume";
     }
 }

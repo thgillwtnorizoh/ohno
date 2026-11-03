@@ -7,6 +7,7 @@ on:
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
       - reconstructed/R07DevelopmentChecks/**
+      - reconstructed/R08DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -92,4 +93,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project re/qa/qa05/Headless/QA05.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R08 bounded legacy ledger controls
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R08DevelopmentChecks/R08DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
