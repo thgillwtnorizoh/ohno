@@ -64,7 +64,9 @@ public sealed class ScoreLedger
         if (configuration.Policy != ScorePolicy.PlainLegacy) UnsupportedReason = "Only the plain null-ScoreV2 legacy policy is implemented.";
     }
 
-    public ScoreAccountingOutcome Apply(ScoreEvent e)
+    public ScoreAccountingOutcome Apply(ScoreEvent e) => Apply(e, null);
+
+    public ScoreAccountingOutcome Apply(ScoreEvent e, Action? beforeLegacyWrite)
     {
         if (e.Raw == 0) return new(ScoreAccountingStatus.NoEvent, 0, 0, 0, CurrentCombo);
         if (!IsSupported) return new(ScoreAccountingStatus.Unsupported, 0, 0, 0, CurrentCombo);
@@ -127,6 +129,7 @@ public sealed class ScoreLedger
             }
             else { CurrentCombo = 0; ComboSnapshot = 0; } // Includes parent whole MISS.
         }
+        beforeLegacyWrite?.Invoke(); // E035 HP site after combo, before late record write; no arithmetic change.
         // E33 A: late admission is distinct from the captured counter flag.
         // Supported negative identities also carry this bit and admit a zero write.
         bool recordAdmitted = e.AccountingEnabled || (e.Raw & 8388608) > 0;
@@ -345,6 +348,9 @@ public sealed class CircleSession
     private readonly Dictionary<object, ScoreSource> scoreSources = new(ReferenceEqualityComparer.Instance);
     public ScoreLedger Ledger { get; }
     public ScoreConfiguration Scoring => Ledger.Configuration;
+    public OrdinaryHealth? Health { get; }
+    public string HealthStatus { get; }
+    public HealthCalibrationResult? HealthPreparation => Health?.Calibration;
     private int previousUpdateTime, previousQualifyingInputTime;
     private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
@@ -367,7 +373,9 @@ public sealed class CircleSession
     // and scoring callers explicitly supply configuration through the overload.
     public CircleSession(Beatmap map) : this(map, ScoreConfiguration.EngineeringPractice) { }
 
-    public CircleSession(Beatmap map, ScoreConfiguration scoring)
+    public CircleSession(Beatmap map, ScoreConfiguration scoring) : this(map, scoring, true) { }
+
+    public CircleSession(Beatmap map, ScoreConfiguration scoring, bool enableHealth)
     {
         Map = map;
         Ledger = new ScoreLedger(scoring);
@@ -393,6 +401,17 @@ public sealed class CircleSession
         // E13 M28be at a supplied scale-one playfield W=512, s=1.
         DiameterAtScaleOne = (float)(64.0 * (1 - 0.699999988079071 * ((map.CircleSize - 5.0) / 5.0)));
         HitRadius = (DiameterAtScaleOne / 2f) * 1.0004099607467651f;
+        if (enableHealth && scoring.Policy == ScorePolicy.PlainLegacy)
+        {
+            try
+            {
+                HealthChart chart = HealthChart.FromMap(map, Approach);
+                Health = new(chart, new HealthCalibration().Run(chart), fillOffset: 0);
+                HealthStatus = "E035 calibrated · bounded host · fill offset0 ENGINEERING";
+            }
+            catch (System.IO.InvalidDataException error) { HealthStatus = error.Message; }
+        }
+        else HealthStatus = "Health unavailable: explicitly disabled or unsupported score policy.";
     }
 
     private static int MapDifficulty(double d, double a, double b, double c) =>
@@ -403,10 +422,14 @@ public sealed class CircleSession
     // Existing headless/circle API: no supplied live input means no held tracking.
     public void Advance(int time) => Advance(time, new Vector2(float.NaN, float.NaN), 0);
 
-    public void Advance(int time, Vector2 pointer, int buttons, Vector2? spinnerPointer = null)
+    public void Advance(int time, Vector2 pointer, int buttons, Vector2? spinnerPointer = null, HealthHostTiming? healthTiming = null)
     {
         if (Finished) return;
         input.Publish(buttons);
+        // ENGINEERING current-object substitute: capture before object evaluation.
+        // The original uses its old candidate selection, not this interval proxy.
+        bool healthSpinner = Spinners.Any(s => s.Result == Judgement.Pending && time >= s.Definition.StartTime && time <= s.Definition.EndTime);
+        int healthPreviousTime = previousUpdateTime;
         int updateInterval = unchecked(time - previousUpdateTime);
         double sampleInterval = previousQualifyingInputTime > 0 ? (double)unchecked(time - previousQualifyingInputTime) : SpinnerState.InitialInterval;
         // E24 has a nominal 16.666... timing-tail qualification gate. This UI
@@ -421,12 +444,12 @@ public sealed class CircleSession
             {
                 int raw = spinner.SampleCursor(spinPointer, SpinnerState.DisplayCenter, time, sampleInterval, (buttons & 3) != 0);
                 // Only this actual observation returns an event; never replay LastComponentRaw on other frames.
-                Emit(spinner, ScoreEventKind.SpinnerProgress, raw, spinner.Observation.Count);
+                Emit(spinner, ScoreEventKind.SpinnerProgress, raw, time, spinner.Observation.Count);
             }
             spinner.Integrate(time, updateInterval);
             if (spinner.Complete(time))
             {
-                RecordWholeResult(spinner, ScoreEventKind.SpinnerFinal, spinner.Result, spinner.FinalRaw);
+                RecordWholeResult(spinner, ScoreEventKind.SpinnerFinal, spinner.Result, time, spinner.FinalRaw);
                 Feedback = new(SpinnerState.DisplayCenter, "SPINNER " + Label(spinner.Result), time, spinner.Result);
             }
         }
@@ -449,7 +472,7 @@ public sealed class CircleSession
                 // E17/E23 legacy policy (no ScoreV2/mods), not head-sensitive grading.
                 slider.Result = ratio == 1 ? Judgement.Hit300 : ratio >= 0.5 ? Judgement.Hit100 :
                     ratio > 0 ? Judgement.Hit50 : Judgement.Miss;
-                RecordWholeResult(slider, ScoreEventKind.SliderAggregate, slider.Result);
+                RecordWholeResult(slider, ScoreEventKind.SliderAggregate, slider.Result, time);
                 Feedback = new(slider.Definition.EndPosition, "SLIDER " + Label(slider.Result), time, slider.Result);
             }
         }
@@ -459,6 +482,17 @@ public sealed class CircleSession
             // E12 M28e4: strict > at timeout, not >=.
             if (circle.Result == Judgement.Pending && time > circle.Definition.StartTime + Window50)
                 Judge(circle, time);
+        }
+        if (Health is { } hp)
+        {
+            // Candidate proxy is the stable prepared list (including evaluated objects),
+            // NOT a claim to reproduce F17fd attention. Break/queue arithmetic is separate.
+            var eligibility = new HealthEligibility(time, healthPreviousTime, hp.Chart.Objects[0].Start,
+                hp.Chart.Objects[^1].End, Approach, hp.Marker, 1, hp.Chart.Format, hp.QueueHead);
+            double hostElapsed = healthTiming?.ElapsedMilliseconds ?? updateInterval;
+            double hostScale = healthTiming?.Scale ?? updateInterval / (1000.0 / 60.0);
+            hp.FrameWithPreparedCandidates(new(time, healthPreviousTime, updateInterval, hostElapsed, hostScale, 1,
+                ClearFill: true, SelectedSpinner: healthSpinner, Paused: false, eligibility));
         }
         // R02's own result overlay uses E27's B+3000 horizon, not its mode machine.
         int lastEnd = targets.Select(t => t.Slider?.Definition.EndTime ?? t.Head.Definition.StartTime)
@@ -504,7 +538,7 @@ public sealed class CircleSession
     {
         circle.Result = Classify(time - circle.Definition.StartTime);
         circle.JudgedAt = time;
-        RecordWholeResult(circle, ScoreEventKind.CircleWhole, circle.Result);
+        RecordWholeResult(circle, ScoreEventKind.CircleWhole, circle.Result, time);
         Feedback = new(circle.Definition.Position, Label(circle.Result), time, circle.Result);
     }
 
@@ -524,7 +558,7 @@ public sealed class CircleSession
     {
         slider.Head.Result = Classify(time - slider.Definition.Head.StartTime);
         slider.Head.JudgedAt = time;
-        Emit(slider, ScoreEventKind.SliderHead, Positive(slider.Head.Result) ? 64 : -262144);
+        Emit(slider, ScoreEventKind.SliderHead, Positive(slider.Head.Result) ? 64 : -262144, time);
         Feedback = new(slider.Definition.Head.Position, "HEAD " + Label(slider.Head.Result), time, slider.Head.Result);
         // Head evaluation does not finish the parent and does not enter tracking.
     }
@@ -570,21 +604,391 @@ public sealed class CircleSession
         // still comes from the unchanged due-prefix selector above.
         if (processed is not null)
             Emit(slider, processed.Definition.Kind == SliderCheckpointKind.Interior ? ScoreEventKind.SliderInterior :
-                ScoreEventKind.SliderRepeatOrTerminal, raw, sequence, processed.Definition.Kind);
+                ScoreEventKind.SliderRepeatOrTerminal, raw, time, sequence, processed.Definition.Kind);
     }
 
-    private void RecordWholeResult(object source, ScoreEventKind kind, Judgement result, int? raw = null)
+    private void RecordWholeResult(object source, ScoreEventKind kind, Judgement result, int time, int? raw = null)
     {
         JudgedCount++;
         int code = raw ?? (result switch { Judgement.Hit300 => 1024, Judgement.Hit100 => 512, Judgement.Hit50 => 256, _ => -131072 });
-        Emit(source, kind, code);
+        Emit(source, kind, code, time);
     }
 
-    private void Emit(object source, ScoreEventKind kind, int raw, int sequence = 0, SliderCheckpointKind? role = null)
+    private void Emit(object source, ScoreEventKind kind, int raw, int time, int sequence = 0, SliderCheckpointKind? role = null)
     {
         if (raw == 0) return; // E33: not an accounting event (C1 can still advance observation state).
         ScoreSource identity = scoreSources[source];
-        Ledger.Apply(new(identity, sequence, kind, raw, AccountingEnabled: true,
-            ObjectHasSliderType: identity.Kind == ScoreObjectKind.Slider, Policy: Scoring.Policy, ProducerRole: role));
+        var e = new ScoreEvent(identity, sequence, kind, raw, AccountingEnabled: true,
+            ObjectHasSliderType: identity.Kind == ScoreObjectKind.Slider, Policy: Scoring.Policy, ProducerRole: role);
+        bool hpReached = false;
+        Ledger.Apply(e, Health is null ? null : () => { Health.ApplyResultHp(raw, clearFill: true); hpReached = true; });
+        // E035/E019: after HP mutation AND record continuation, only on a reached result.
+        // No-mod app supplies no suppression/recoveries; latch is diagnostic, no invented departure.
+        if (hpReached) Health!.CheckFailure(time);
+    }
+}
+// E035 finite ordinary health components. Independent of WPF and score arithmetic.
+// Kept in this historically linked source so Work1 QA projects stay untouched.
+public sealed class HealthState
+{
+    public double H { get; private set; }
+    public double V { get; private set; }
+    public double A { get; private set; }
+    public double Rate { get; }
+    public double B { get; }
+    public double G { get; }
+    public bool Fill { get; private set; } = true;
+    public int FillFrom { get; private set; }
+    public double FillRate { get; private set; } = .02;
+
+    public HealthState(double rate = 0, double b = 1, double g = 1) { Rate = rate; B = b; G = g; }
+    public void Reset() { H = 200; A = 200; V = 0; } // M297d: no other resets.
+    public void Assign(double value) { H = Math.Max(0, Math.Min(200, value)); A = value; }
+    public void SetPresentation(double value) => V = value;
+    public void ConfigureFill(int from, double slope, bool enabled) { FillFrom = from; FillRate = slope; Fill = enabled; }
+    public void Subtract(double amount, bool clearFill = false)
+    {
+        if (clearFill && Fill) Fill = false;
+        A = Math.Max(0, A - amount);
+        H = Math.Max(0, H - amount); // Deliberately NO upper clamp for negative subtraction.
+    }
+    public void Add(double amount, bool clearFill = false)
+    {
+        if (clearFill && Fill) Fill = false;
+        A += amount;
+        H = Math.Max(0, Math.Min(200, H + amount));
+    }
+    public static double Phi(double hp, double a, double b, double c) => hp > 5 ?
+        b + (c - b) * (hp - 5) / 5 : hp < 5 ? b - (b - a) * (5 - hp) / 5 : b;
+    public double PlainDelta(int raw, double hp) => raw switch
+    {
+        1024 => 6 * G, 512 => G * Phi(hp, 17.6, 2.2, 2.2), 256 => G * Phi(hp, 3.2, .4, .4),
+        -131072 => Phi(hp, -6, -25, -40), 64 or 128 => 4 * G, 8 => 3 * G,
+        -262144 or -524288 => Phi(hp, -4, -15, -28), 4096 or 8192 => 1.7 * G,
+        16384 => 2 * G, 0 => 0,
+        _ => throw new System.IO.InvalidDataException("Unsupported plain health result; decorations/mods are not inferred.")
+    };
+    public bool ApplyPlain(int raw, double hp, bool clearFill = false)
+    {
+        if (raw == 0) return false;
+        ApplyDelta(PlainDelta(raw, hp), clearFill);
+        return true;
+    }
+    public void ApplyCalibration(int raw, double hp)
+    {
+        // Separate sink: this explicit trial1028 never enters the live ledger.
+        double delta = raw == 1028 ? 14 * B + 6 * G : PlainDelta(raw, hp);
+        ApplyDelta(delta, false);
+    }
+    private void ApplyDelta(double delta, bool clearFill)
+    {
+        if (delta > 0) Add(delta, clearFill); else Subtract(-delta, clearFill);
+    }
+    public void Smooth(int time, double correctedDelta, double hostElapsed, double hostScale, int clockState, bool recovering)
+    {
+        if (V < H)
+        {
+            if (Fill)
+            {
+                if (FillFrom < time && (recovering || clockState == 1))
+                    V = Math.Min(200, V + FillRate * (recovering ? hostElapsed : correctedDelta));
+            }
+            else V = Math.Min(200, V + Math.Abs(H - V) / 4 * hostScale);
+        }
+        else if (V > H)
+        {
+            Fill = false;
+            V = Math.Max(0, V - Math.Abs(V - H) / 6 * hostScale);
+        }
+    }
+}
+
+public sealed record PreparedHealthObject(int Start, int End, ScoreObjectKind Kind, bool? NewCombo,
+    int RepeatSubsetCount = 0, int ScheduleCount = 0, int SpinnerRequirement = 0);
+public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyList<PreparedHealthObject> Objects,
+    IReadOnlyList<HealthBreak> Breaks)
+{
+    public static HealthChart FromMap(Beatmap map, int approach)
+    {
+        HealthMapSource source = map.HealthSource ?? throw Unsupported("Missing fresh parser identity/group/break metadata.");
+        LegacyScoreMetadata metadata = map.ScoreMetadata ?? throw Unsupported("Missing fresh HP metadata.");
+        int count = map.Circles.Count + map.Sliders.Count + map.Spinners.Count;
+        if (source.Rows.Count != count || metadata.RowCount != count) throw Unsupported("Prepared count differs from raw source; no inferred identities.");
+        var objects = new List<PreparedHealthObject>();
+        foreach (HealthObjectSource row in source.Rows)
+        {
+            ScoreObjectKind kind = (row.RawType & 8) != 0 ? ScoreObjectKind.Spinner :
+                (row.RawType & 2) != 0 ? ScoreObjectKind.Slider : ScoreObjectKind.Circle;
+            // E04 M2902 OR file bit: false circle/slider file bits do NOT prove false.
+            bool? combo = (row.RawType & 4) != 0 || (kind == ScoreObjectKind.Spinner && source.Version <= 8) ? true :
+                kind == ScoreObjectKind.Spinner ? false : null;
+            if (kind == ScoreObjectKind.Circle)
+            {
+                if (!map.Circles.Any(c => c.StartTime == row.Start)) throw Unsupported("Circle identity missing.");
+                objects.Add(new(row.Start, row.Start, kind, combo));
+            }
+            else if (kind == ScoreObjectKind.Slider)
+            {
+                SliderDefinition s = map.Sliders.Single(s => s.Head.StartTime == row.Start);
+                int n = s.Checkpoints.Count, h = n / s.Traversals, subset = 0;
+                for (int i = 0; i < n - 1 && h > 0; i++) if ((i + 1) % h == 0) subset++; // E21 F0bf7, not producer labels.
+                objects.Add(new(row.Start, s.EndTime, kind, combo, subset, n));
+            }
+            else
+            {
+                SpinnerDefinition s = map.Spinners.Single(s => s.StartTime == row.Start);
+                objects.Add(new(s.StartTime, s.EndTime, kind, combo, SpinnerRequirement: new SpinnerState(s, map.OverallDifficulty).Required));
+            }
+        }
+        var chart = new HealthChart(metadata.Hp, approach, source.Version, objects.AsReadOnly(), source.Breaks);
+        chart.Validate();
+        return chart;
+    }
+    public void Validate()
+    {
+        if (Objects.Count == 0 || Objects.Count > 10000 || Breaks.Count > 4096 || Format < 5 || Format > 14 || !double.IsFinite(Hp) || Hp < 0 || Hp > 10 || Approach < 0)
+            throw Unsupported("Health calibration needs nonempty finite prepared inputs.");
+        for (int i = 0; i < Objects.Count; i++)
+        {
+            var o = Objects[i];
+            if (o.End < o.Start || (i > 0 && o.Start <= Objects[i - 1].End))
+                throw Unsupported("R09 needs ordered nonoverlapping prepared objects; no sorting/repair.");
+            if (i > 0 && o.NewCombo is null) throw Unsupported("Original M2902 NewCombo input is unresolved for a following circle/slider without explicit bit4.");
+            if (o.RepeatSubsetCount < 0 || o.ScheduleCount < o.RepeatSubsetCount + (o.Kind == ScoreObjectKind.Slider ? 1 : 0) || o.SpinnerRequirement < 0)
+                throw Unsupported("Inconsistent prepared component counts.");
+        }
+        int previousBreakEnd = int.MinValue;
+        foreach (var b in Breaks)
+        {
+            if (b.End <= b.Start || b.Start < previousBreakEnd ||
+                !Enumerable.Range(1, Objects.Count - 1).Any(i => b.Start >= Objects[i - 1].End && b.End <= Objects[i].Start))
+                throw Unsupported("R09 supports ordered positive breaks contained in prepared inter-object gaps only.");
+            previousBreakEnd = b.End;
+        }
+    }
+    private static System.IO.InvalidDataException Unsupported(string reason) => new("Health unavailable: " + reason);
+}
+
+public enum HealthRetry { None, PreObject, DurationOverflow, ThirdLowGroup, FinalTarget, Balance }
+public sealed record HealthCalibrationResult(double Rate, double B, double G, int Trials,
+    IReadOnlyList<double> Snapshots, int PreRetries, int GroupRetries, int EndRetries, int BalanceRetries);
+public sealed class HealthCalibration
+{
+    public const int MaxTrials = 10000, MaxWork = 2000000; // ENGINEERING safety, NOT original limits.
+    public double Rate { get; private set; } = .05;
+    public double B { get; private set; } = 1;
+    public double G { get; private set; } = 1;
+    public int Trials { get; private set; }
+    public double LastH { get; private set; }
+    public double LastA { get; private set; }
+    public double LastMean { get; private set; }
+    public HealthRetry LastRetry { get; private set; }
+    public double LastGapLoss { get; private set; }
+    public int LastExcludedGap { get; private set; }
+    public int LastBreaksConsumed { get; private set; }
+    public IReadOnlyList<double> Snapshots => Array.AsReadOnly(snapshots);
+    private double[] snapshots = [];
+    private HealthChart? activeChart;
+    private int work, preRetries, groupRetries, endRetries, balanceRetries;
+    public HealthRetry Trial(HealthChart chart)
+    {
+        chart.Validate();
+        if (activeChart is not null && !ReferenceEquals(activeChart, chart)) throw new System.IO.InvalidDataException("Reuse calibration only for the same prepared chart.");
+        if (activeChart is null) { activeChart = chart; snapshots = Enumerable.Repeat(double.NaN, chart.Objects.Count).ToArray(); }
+        Trials++;
+        var state = new HealthState(Rate, B, G); state.Reset();
+        double l = HealthState.Phi(chart.Hp, 195, 160, 60), u = HealthState.Phi(chart.Hp, 198, 170, 80);
+        double e = HealthState.Phi(chart.Hp, 198, 180, 80), w = HealthState.Phi(chart.Hp, 8, 4, 0);
+        int previousEnd = unchecked(chart.Objects[0].Start - chart.Approach), breakIndex = 0, low = 0;
+        HealthRetry retry = HealthRetry.None;
+        for (int i = 0; i < chart.Objects.Count; i++)
+        {
+            Work(); var o = chart.Objects[i]; int excluded = 0;
+            if (breakIndex < chart.Breaks.Count)
+            {
+                var b = chart.Breaks[breakIndex];
+                if (b.Start >= previousEnd && b.End <= o.Start)
+                {
+                    excluded = chart.Format >= 8 ? unchecked(b.End - previousEnd) : unchecked(b.End - b.Start);
+                    breakIndex++; // At most ONE, including multiple breaks in the gap.
+                }
+            }
+            LastExcludedGap = excluded; LastBreaksConsumed = breakIndex;
+            LastGapLoss = Rate * (double)unchecked(unchecked(o.Start - previousEnd) - excluded);
+            state.Subtract(LastGapLoss);
+            previousEnd = o.End;
+            if (state.H <= l) { Rate *= .96; preRetries++; retry = HealthRetry.PreObject; break; }
+            double d = Rate * (double)unchecked(o.End - o.Start), overflow = Math.Max(0, d - state.H);
+            state.Subtract(d);
+            if (o.Kind == ScoreObjectKind.Slider)
+            {
+                for (int k = 0; k < o.RepeatSubsetCount + 2; k++) { Work(); state.ApplyCalibration(64, chart.Hp); }
+                for (int k = 0; k < o.ScheduleCount - o.RepeatSubsetCount - 1; k++) { Work(); state.ApplyCalibration(8, chart.Hp); }
+            }
+            else if (o.Kind == ScoreObjectKind.Spinner)
+                for (int k = 0; k < o.SpinnerRequirement; k++) { Work(); state.ApplyCalibration(8192, chart.Hp); }
+            if (overflow > 0 && state.H - overflow <= l) { Rate *= .96; preRetries++; retry = HealthRetry.DurationOverflow; break; }
+            bool boundary = i == chart.Objects.Count - 1 || chart.Objects[i + 1].NewCombo == true;
+            state.ApplyCalibration(boundary ? 1028 : 1024, chart.Hp);
+            if (boundary && state.H < u && ++low > 2)
+            {
+                B *= 1.07; G *= 1.03; groupRetries++; retry = HealthRetry.ThirdLowGroup; break;
+            }
+            snapshots[i] = state.H; // Preserve old untouched suffix across retries, like F1529.
+        }
+        if (retry == HealthRetry.None && state.H < e)
+        {
+            Rate *= .94; B *= 1.01; G *= 1.01; endRetries++; retry = HealthRetry.FinalTarget;
+        }
+        LastMean = (state.A - 200) / (double)chart.Objects.Count; // Still computed on retry.
+        if (retry == HealthRetry.None && LastMean < w)
+        {
+            Rate *= .96; B *= 1.02; G *= 1.01; balanceRetries++; retry = HealthRetry.Balance;
+        }
+        LastH = state.H; LastA = state.A; LastRetry = retry;
+        if (!double.IsFinite(Rate) || !double.IsFinite(B) || !double.IsFinite(G) || Rate <= 0)
+            throw new System.IO.InvalidDataException("Health calibration left finite supported domain.");
+        return retry;
+    }
+    public HealthCalibrationResult Run(HealthChart chart, int trialLimit = MaxTrials)
+    {
+        for (int n = 0; n < trialLimit; n++)
+            if (Trial(chart) == HealthRetry.None)
+                return new(Rate, B, G, Trials, Array.AsReadOnly((double[])snapshots.Clone()), preRetries, groupRetries, endRetries, balanceRetries);
+        throw new System.IO.InvalidDataException("Health calibration exceeded ENGINEERING trial guard; no fallback rate/gains.");
+    }
+    private void Work()
+    {
+        if (++work > MaxWork) throw new System.IO.InvalidDataException("Health calibration exceeded ENGINEERING work guard; no fallback.");
+    }
+}
+
+public readonly record struct HealthEligibility(int Time, int PreviousTime, int FirstStart, int LastEnd, int Approach,
+    int Marker, int ClockState, int Format, int? QueueHead = null, bool Special = false, int SpecialUntil = 0,
+    bool Recorded = false, int RecordedUntil = 0)
+{
+    public bool Evaluate()
+    {
+        if (Special && PreviousTime <= SpecialUntil) return false;
+        if (Recorded && RecordedUntil >= PreviousTime) return false;
+        if (Time < unchecked(FirstStart - Approach)) return false;
+        if (Time > LastEnd) return false;
+        if (Marker >= 0 || ClockState == 0) return false;
+        return QueueHead is null || Time <= QueueHead.Value || Format < 8;
+    }
+}
+public enum HealthFailure { NotChecked, Healthy, Suppressed, Recovery, Latched, AlreadyLatched }
+public readonly record struct HealthFailureGates(bool NoFail = false, bool Relax = false, bool Relax2 = false,
+    bool Recorded = false, bool RecordedContinuation = false, bool Special = false)
+{
+    public bool Suppress => NoFail || Relax || Relax2 || (Recorded && !RecordedContinuation) || Special;
+}
+public readonly record struct HealthFrame(int Time, int PreviousTime, double CorrectedDelta, double HostElapsed,
+    double HostScale, int ClockState, bool ClearFill, bool SelectedSpinner, bool Paused, HealthEligibility LateEligibility);
+public readonly record struct HealthHostTiming(double ElapsedMilliseconds, double Scale);
+
+public sealed class OrdinaryHealth
+{
+    public HealthState State { get; }
+    public HealthCalibrationResult Calibration { get; }
+    public HealthChart Chart { get; }
+    public bool Eligible { get; private set; }
+    public bool Failed { get; private set; }
+    public int? FailureTime { get; private set; }
+    public bool Recovering { get; private set; }
+    public int RecoveryCount { get; private set; }
+    public HealthFailure LastFailure { get; private set; }
+    public int ResultEvents { get; private set; }
+    public double LastPassiveLoss { get; private set; }
+    public int Marker { get; private set; } = -1;
+    public int? QueueHead => queue.Count == 0 ? null : queue.Peek();
+    private readonly Queue<int> queue = new();
+    public OrdinaryHealth(HealthChart chart, HealthCalibrationResult calibration, int fillOffset = 0)
+    {
+        Chart = chart; Calibration = calibration;
+        State = new(calibration.Rate, calibration.B, calibration.G);
+        int first = chart.Objects[0].Start, from = fillOffset > 0 ? -fillOffset : 0;
+        double slope = .02;
+        if (first * slope < 200)
+        {
+            int denominator = unchecked(first + fillOffset);
+            if (denominator <= 0) throw new System.IO.InvalidDataException("Unsupported finite initial fill operand; F0fc4 must be supplied explicitly.");
+            slope = 200 / (double)denominator;
+        }
+        else if (first > 10000) from = unchecked(first - 10000);
+        State.ConfigureFill(from, slope, true); State.Reset(); // Reset retains prepared coefficients/fill.
+        int[] ends = chart.Objects.Select(o => o.End).ToArray();
+        foreach (var b in chart.Breaks)
+        {
+            int midpoint = unchecked(b.Start + unchecked(b.End - b.Start) / 2);
+            int index = Array.BinarySearch(ends, midpoint); if (index < 0) index = ~index;
+            index--;
+            if (index < 0) throw new System.IO.InvalidDataException("Unsupported original break predecessor index; no repair.");
+            queue.Enqueue(ends[index]);
+        }
+    }
+    public void ApplyResultHp(int raw, bool clearFill)
+    {
+        if (State.ApplyPlain(raw, Chart.Hp, clearFill)) ResultEvents++;
+    }
+    public HealthFailure CheckFailure(int time, HealthFailureGates gates = default)
+    {
+        if (State.H > 0 || double.IsNaN(State.H)) return LastFailure = HealthFailure.Healthy;
+        if (gates.Suppress) return LastFailure = HealthFailure.Suppressed;
+        if (RecoveryCount > 0) { BeginRecovery(); return LastFailure = HealthFailure.Recovery; }
+        if (Failed) return LastFailure = HealthFailure.AlreadyLatched;
+        // Supported state boundary only: original candidate cleanup/departure is NOT emulated.
+        Failed = true; FailureTime = time;
+        return LastFailure = HealthFailure.Latched;
+    }
+    public void SupplyRecoveryCount(int count)
+    {
+        if (count < 0) throw new ArgumentOutOfRangeException(nameof(count));
+        RecoveryCount = count; // Explicit component input; ordinary no-mod app uses zero.
+    }
+    public void BeginRecovery()
+    {
+        if (RecoveryCount <= 0) throw new InvalidOperationException("No supplied recovery count.");
+        if (State.H < 160) State.Add(160, true);
+        State.ConfigureFill(State.FillFrom, .07999999821186066, true);
+        Recovering = true; RecoveryCount--;
+        // Native playback toggle is an unresolved boundary, not a clock rewrite here.
+    }
+    public void Frame(HealthFrame frame)
+    {
+        if (frame.Paused) return;
+        AdvanceState(frame);
+        Eligible = frame.LateEligibility.Evaluate();
+    }
+    public void FrameWithPreparedCandidates(HealthFrame frame)
+    {
+        if (frame.Paused) return;
+        AdvanceState(frame);
+        UpdateBreakState(frame.Time, Chart.Objects.Select(o => o.Start));
+        Eligible = (frame.LateEligibility with { Marker = Marker, QueueHead = QueueHead }).Evaluate();
+    }
+    private void AdvanceState(HealthFrame frame)
+    {
+        LastPassiveLoss = 0;
+        if (Eligible)
+        {
+            LastPassiveLoss = (State.Rate / 1.0) * (double)unchecked(frame.Time - frame.PreviousTime);
+            LastPassiveLoss *= frame.SelectedSpinner ? (double).25f : (double)1f;
+            State.Subtract(LastPassiveLoss, frame.ClearFill);
+        }
+        State.Smooth(frame.Time, frame.CorrectedDelta, frame.HostElapsed, frame.HostScale, frame.ClockState, Recovering);
+        if (Recovering && State.V > State.H - 5) Recovering = false;
+        // No passive-drain failure callback. Only reached result completion invokes it.
+    }
+    public void UpdateBreakState(int time, IEnumerable<int> candidateStarts)
+    {
+        bool active = Chart.Breaks.Any(b => b.Start <= time && time <= b.End);
+        if (active)
+        {
+            Marker = time;
+            // E27 supplies the guard omitted from a standalone queue shorthand: only while active.
+            while (queue.Count > 0 && queue.Peek() < time) queue.Dequeue();
+        }
+        if (Marker >= 0 && candidateStarts.Any(s => s <= time && s >= Marker)) Marker = -1;
     }
 }

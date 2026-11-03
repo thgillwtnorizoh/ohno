@@ -288,10 +288,16 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
 
 public sealed record LegacyScoreMultiplier(LegacyScoreMetadata Metadata, float DensityTerm, float BeforeRounding, int K);
 
+// R09 preserves parser provenance for E035; this is not inferred from judgements.
+public sealed record HealthObjectSource(int Start, int RawType);
+public sealed record HealthBreak(int Start, int End);
+public sealed record HealthMapSource(int Version, IReadOnlyList<HealthObjectSource> Rows, IReadOnlyList<HealthBreak> Breaks);
+
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
     public LegacyScoreMetadata? ScoreMetadata { get; init; }
+    public HealthMapSource? HealthSource { get; init; }
 
     // Optional local media reference; the gameplay model remains independent of WPF.
     public string? AudioPath { get; init; }
@@ -314,6 +320,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var spinners = new List<SpinnerDefinition>();
         var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals)>();
         var timing = new List<TimingPoint>();
+        var healthRows = new List<HealthObjectSource>();
+        var healthBreaks = new List<HealthBreak>();
         string section = "";
         for (int lineNumber = 0; lineNumber < lines.Length; lineNumber++)
         {
@@ -327,6 +335,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     !int.TryParse(row[3], NumberStyles.Integer, CultureInfo.InvariantCulture, out int type) ||
                     (type & ~(4 | 112)) is not (1 or 2 or 8))
                     throw new InvalidDataException($"Line {lineNumber + 1}: use supported circles, sliders or format-v14 spinners.");
+                healthRows.Add(new(time, type));
                 // QA01-D02: validate syntax only; no invented sound-bit restrictions.
                 if (!int.TryParse(row[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out int hitSound))
                     throw new InvalidDataException($"Line {lineNumber + 1}: hitSound (column 5) must be an integer, not empty or malformed.");
@@ -373,6 +382,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     sliderRows.Add((head, controls.ToArray(), isBezier, length, spans));
                 }
                 if (circles.Count + sliderRows.Count + spinners.Count > 10000) throw new InvalidDataException("R07 accepts at most 10000 objects.");
+            }
+            else if (section == "[Events]" && line[0] == '2')
+            {
+                string[] row = line.Split(',');
+                if (row.Length < 3 || !int.TryParse(row[1], NumberStyles.Integer, CultureInfo.InvariantCulture, out int a) ||
+                    !int.TryParse(row[2], NumberStyles.Integer, CultureInfo.InvariantCulture, out int b))
+                    throw new InvalidDataException("Numeric event2 needs Int32 start/end fields.");
+                healthBreaks.Add(new(a, b));
             }
             else if (section == "[TimingPoints]")
             {
@@ -452,7 +469,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         return new(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
-                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version) };
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
+                HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()) };
 
         double SliderSetting(string name, double lower, double upper)
         {

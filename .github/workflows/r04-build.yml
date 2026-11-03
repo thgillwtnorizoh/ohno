@@ -10,6 +10,7 @@ on:
       - reconstructed/R08DevelopmentChecks/**
       - reconstructed/R08C01DevelopmentChecks/**
       - reconstructed/R08C02DevelopmentChecks/**
+      - reconstructed/R09DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -124,4 +125,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project re/qa/qa06/Headless/QA06.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R09 bounded health calibration and integration
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R09DevelopmentChecks/R09DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

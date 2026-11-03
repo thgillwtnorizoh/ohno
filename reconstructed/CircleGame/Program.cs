@@ -31,6 +31,7 @@ public sealed class GameWindow : Window
     private readonly List<Button> buttons = [];
     private readonly HashSet<Key> heldKeys = [];
     private readonly TextBlock scoringStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, TextWrapping = TextWrapping.Wrap };
+    private readonly TextBlock healthStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 12, TextWrapping = TextWrapping.Wrap };
     private CancellationTokenSource? loadCancellation;
     private BeatmapAudio? pendingAudio;
     private PracticeFixture? audibleFixture;
@@ -39,7 +40,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R08 Legacy Score Practice";
+        Title = "ohno · R09 Health Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -66,12 +67,14 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Spinner Practice", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "spinner-practice.osu"))));
         tools.Children.Add(Button("Circle + Spinner", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "circle-spinner.osu"))));
         tools.Children.Add(Button("Mixed R07", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "mixed-r07.osu"))));
+        tools.Children.Add(Button("Health R09", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "health-r09.osu"))));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
         footer.Children.Add(scoringStatus);
+        footer.Children.Add(healthStatus);
         footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Spinner: hold and rotate around center",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
@@ -209,6 +212,10 @@ public sealed class GameWindow : Window
             $"Combo {ledger.CurrentCombo}×   Best {ledger.MaximumCombo}×   {game.JudgedCount}/{game.ObjectCount} objects   {surface.CurrentTime / 1000.0:F2}s" :
             $"Accounting unsupported · {game.JudgedCount}/{game.ObjectCount} objects";
         scoringStatus.Text = ledger.PolicyLabel + (ledger.IsSupported ? "" : " · " + ledger.UnsupportedReason);
+        healthStatus.Text = game.Health is { } hp ?
+            $"{game.HealthStatus} · H {hp.State.H:F2} / V {hp.State.V:F2} / A {hp.State.A:F2} · " +
+            $"r {hp.State.Rate:G6}, B {hp.State.B:G5}, G {hp.State.G:G5}, trials {hp.Calibration.Trials}" +
+            (hp.Failed ? " · failure latched; departure unimplemented, practice continues" : "") : game.HealthStatus;
         playButton.Content = surface.Running ? "Pause (Space)" : game.Finished ? "Play again" : "Start / Resume";
     }
 }

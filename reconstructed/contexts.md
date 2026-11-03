@@ -533,3 +533,48 @@ unchanged. E33 ledger/all session mechanics, C01 renderer/report/checks, prior
 fixtures/research/QA/E20/historical records preserved and old journal byte prefix
 verified. No human/game/window/input/original observations claimed. Stop after
 C02; no QA06/R09/lazer/framework migration or new original expedition.
+
+## R09 — First Original-Derived Health System
+
+2026-11-03 Asia/Bangkok, Work2, verified latest main64bec143982ef7ceadb211db9208e1324074e2fa.
+Read AGENTS/full contract (attachment/repo identical), journal/R07/R08/C01/C02,
+QA06, E035 full and relevant E019/E024–029/E033–034 boundaries. No original binary/
+research tool/game/window/OS input/debugger/recording/E20 or deferred score work.
+
+Separate WPF-free HealthState/HealthChart/HealthCalibration/HealthEligibility/
+OrdinaryHealth components in existing linked source keep independent QA unchanged.
+E035 H/V/A, selective200/200/0 reset, exact helper clamp/accumulator differences,
+plain HP table, private trial1028 and chart-calibrated r/B/G with snapshot retention.
+Prepared order/count/type/break provenance captured independently of score metadata.
+E21 subsetCount uses N/R/index rule, not UI repeat labels. Original M2902 NewCombo
+is unresolved: following circle/slider without explicitbit4 rejects automatic HP;
+first-circle fixture remains playable/scored but visibly HP-unavailable. No guessed
+rate/B/G. New independent Health R09 map has sufficient explicit groups and break.
+
+Original-derived post-combo/pre-record HP hook and post-record failure check preserve
+E33 arithmetic/order and once-only raw event boundaries. Passive drain after object
+judgements consumes prior eligibility/signed dt/selected-spinner quarter, then V
+smoothing and late eligibility. E027 supplies active-break guard for queue dequeue;
+E035 midpoint/end queue and inclusive marker/time endpoints preserved in ordered
+nonoverlap domain. Original no fixed calibration cap; engineering guards10000
+trials/2M work,10k objects/4096 breaks reject, nofallback. First independent HP0
+circle2000/approach1200 control predicts61 reductions/62 trials,B/G1.
+
+ENGINEERING WPF host: Stopwatch gameplay, rendering-delta/nominal60Hz hostscale,
+normalclock1/running F1374 proxy, interval-selected spinner instead of oldcandidate
+selection, full prepared starts for marker clearing, explicit F0fc4 filloperand0.
+Failure suppression/recovery inputs isolated; no-mod UI count0, first latch/time
+visible with practice continuation, no native departure or fail/retry UI invented.
+Recovery+160/fill/release boundary supported by direct input; native playback/clock
+holds not implemented. Vbar/Hmarker +H/V/A/r/B/G/trials/status inHUD. Old audio/input/
+geometry/scoring and fixtures remain. New Health R09 fixture/button/project copy.
+
+Changes reconstructed/ only plus minimal existing CI step/path: parser/session/
+health classes, primitive HUD/host timing, README/fixture/report,14 bounded devgroups
+and this append. Work1 research/QA01–QA06/E20, historical reports/journal preserved.
+No local dotnet/installation/build; source/diff checks only initially. Windows
+build/354 QA/R06/R07/R08/C01/C02/R09 gate PENDING; actual source/run/output appends.
+Current user scope authorizes main implementation/implementation-only records over
+historical suspension/branch/RE defaults; no research journal or expedition edit.
+Original runtime/native precision/partial helpers/record swaps/full group decorations/
+physical play andgeneral map equivalence unverified. Stop after R09, no R10/QA07.

@@ -1,0 +1,27 @@
+osu file format v14
+
+// Independently authored health practice; explicit NewCombo boundaries.
+[General]
+Mode:0
+[Metadata]
+Title:Health Practice — R09
+Artist:Project ohno
+Creator:Work 2
+Version:Explicit Groups and Break
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:0.5
+[Events]
+2,8500,9500
+[TimingPoints]
+0,1000,4,1,0,100,1,0
+[HitObjects]
+256,112,3000,5,0
+128,192,4500,5,0
+160,256,6500,6,0,L|320:256,1,160
+256,192,10000,8,0,13000
+384,192,15000,5,0

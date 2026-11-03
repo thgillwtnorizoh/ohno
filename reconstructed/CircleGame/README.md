@@ -412,3 +412,55 @@ preview. They remain visible until completion is evaluated. This is an engineeri
 presentation policy; native spinner fade timing is unrecovered. Earlier sliders
 retain their physical held-input/tracking path. No scoring/input formula changed.
 See `../R08-C01-spinner-presentation.md` for checks and remaining runtime limits.
+
+## Original-derived health (R09)
+
+Choose **Health R09** for the new independent silent practice map: circles at3000 /
+4500, a straight slider6500–8100, break8500–9500, spinner10000–13000 and circle15000.
+Use the same mouse, Z/X, Space and R/Enter controls. All older fixtures stay intact.
+The bar fills using **V**; the white target marker and diagnostics identify **H**.
+The footer also shows uncapped calibration balance **A**, prepared drain **r**,
+gains **B/G** and calibration trial count. These are independent WPF primitives,
+not original skin/fade/pixel fidelity. E33/E034 scores and accuracy are unchanged.
+
+Health uses E035 chart calibration rather than a universal rate. Private trials
+use prepared object order, original slider subset/schedule counts, spinner N,
+combo-group boundaries and ordered breaks. Trial notifications never enter your
+live score. Live reset is H200/A200/V0 while retaining calibrated coefficients.
+Supported plain judgement HP applies once at the original-derived event boundary;
+passive drain consumes the previous eligibility flag after judgement processing.
+Zero/negative consumed deltas retain the recovered arithmetic. Pause does not run
+health updates; restart/map replacement create fresh independent health state.
+
+**Automatic HP has explicit admission limits.** Existing source evidence leaves
+circle/slider factory M2902's additional NewCombo operand unresolved. A following
+circle/slider without explicit file bit4 can therefore make calibration unavailable.
+The original silent circle fixture is such a case. It remains playable/scored and
+the footer explains why HP is unavailable; there is no guessed r or B/G fallback.
+The new fixture, Mixed R07 and supported single-object controls have sufficient
+bounded grouping inputs. Prepared objects must be ordered/nonoverlapping; breaks
+must be ordered, positive and contained in inter-object gaps. Unsupported grouping,
+identity/count, timing/break structure or calibration safety exhaustion disables
+HP explicitly while preserving normal gameplay/scoring. Missing metadata on
+synthetic component maps also disables automatic HP.
+
+Calibration engineering guards:10000 trials,2000000 object/component operations,
+10000 objects and4096 breaks. Original M1150 has no fixed retry limit. The live
+host supplies fill offset0 explicitly because original F0fc4's wider setting is
+unrecovered. WPF uses rendering elapsed /nominal60Hz for host scale and Stopwatch
+for gameplay milliseconds, a running-state proxy for F1374, full prepared starts
+for break candidate clearing, and a pre-evaluation active-spinner interval proxy
+for the original old-candidate selected-spinner flag. These substitutions are
+visible in the health status; native scheduler/BASS/provider identity is unverified.
+Break queue midpoint/end selection and inclusive markers are recovered operations
+inside this bounded ordered domain, not general overlapping-map support.
+
+Failure is a **state boundary**, not a new fail screen. A reached nonzero result
+checks H after its mutation/record continuation. Passive drain alone does not call
+failure; a positive result can revive a zero target before that check. No-mod
+practice has zero recoveries. A first failed latch is shown while practice continues
+because native cleanup/departure is unimplemented. Explicit component recovery
+inputs support the recovered +160/fill/release boundary, without native playback
+or mod behavior. Full fail/retry UI, HP restoration/seek, high-result decorations
+and native effects remain excluded. See `../R09-original-health-system.md` for
+source provenance, unsupported cases and actual Windows gate results.

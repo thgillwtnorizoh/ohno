@@ -18,6 +18,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     private static readonly Pen SpinnerOutline = FrozenPen(Accent, 3), SpinnerRotor = FrozenPen(Brushes.White, 4);
     private static readonly Brush SpinnerIdle = Brush("#FFB37F");
     private bool started;
+    private TimeSpan? previousHealthRender;
     private bool disposed;
     public CircleSession? Session { get; private set; }
     public int CurrentTime { get; private set; }
@@ -49,6 +50,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         Session = replacement;
         paths = preparedPaths;
         CurrentTime = 0;
+        previousHealthRender = null;
         started = false;
         previousAudio?.Dispose();
         InvalidateVisual();
@@ -82,6 +84,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void Pause()
     {
         clock.Pause();
+        previousHealthRender = null;
         audio?.Pause();
         InvalidateVisual();
     }
@@ -122,7 +125,13 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         // Spinner angular sampling uses the same display projection but no stage
         // admission/radial gate; sliders retain their prior outside-stage policy.
         Vector2 spinnerPointer = layout.ToMap(new((float)mouse.X, (float)mouse.Y));
-        Session.Advance(CurrentTime, pointer, buttons, spinnerPointer);
+        TimeSpan renderingTime = ((RenderingEventArgs)args).RenderingTime;
+        double hostElapsed = previousHealthRender is { } previous ? (renderingTime - previous).TotalMilliseconds : 0;
+        previousHealthRender = renderingTime;
+        // ENGINEERING projection of distinct host elapsed/scale inputs; Stopwatch
+        // remains gameplay authority. No original F2c22 scale or BASS identity claimed.
+        Session.Advance(CurrentTime, pointer, buttons, spinnerPointer,
+            new HealthHostTiming(hostElapsed, hostElapsed / (1000.0 / 60.0)));
         if (Session.Finished) Pause();
         InvalidateVisual();
         FrameUpdated?.Invoke();
@@ -138,6 +147,18 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         Vector2 origin = l.ToScreen(Vector2.Zero);
         dc.DrawRectangle(null, new Pen(Brush("#293D56"), 1), new Rect(origin.X, origin.Y, 512 * l.Scale, 384 * l.Scale));
         if (Session is not { } game) { Message(dc, "Load a supported .osu map", "Open .osu above to begin"); return; }
+        if (game.Health is { } hp)
+        {
+            double width = Math.Min(240, ActualWidth - 32);
+            Rect bar = new(16, 16, width, 10);
+            dc.DrawRectangle(Brush("#33445B"), null, bar);
+            dc.DrawRectangle(hp.Failed ? Brush("#FF8498") : Accent, null,
+                new Rect(bar.X, bar.Y, width * Math.Clamp(hp.State.V / 200, 0, 1), bar.Height));
+            double targetX = bar.X + width * Math.Clamp(hp.State.H / 200, 0, 1);
+            dc.DrawLine(SpinnerRotor, new(targetX, bar.Y - 2), new(targetX, bar.Bottom + 2));
+            Text(dc, $"H {hp.State.H:F1} · V {hp.State.V:F1}" + (hp.Failed ? " · FAIL BOUNDARY" : ""),
+                new Point(16, 43), 13, Brushes.White, false);
+        }
         double radius = game.DiameterAtScaleOne * l.Scale / 2;
         foreach (SpinnerState spinner in game.Spinners)
         {
