@@ -194,10 +194,12 @@ display center is the independent UI center(256,192).
 
 The mouse and displayed center use the same map/display projection, including
 positions outside the stage. Original E24 instead reads a presentation-prepared
-native center with different layout/update history. WPF runs one sample and one
-integration opportunity per rendering callback using Stopwatch time; it does not
-reproduce original timing-tail gates, provider cadence, repeated clock reads or
-up to31 original host passes. Separate interval histories persist through pause
+native center with different layout/update history. WPF offers one integration
+per running rendering callback and qualifies angular input only after the recovered
+nominal16.666… ms period. This explicit engineering gate avoids feeding every
+high-Hz render sample into the nominal divisor; it is not native scheduling
+equivalence. It does not reproduce all timing-tail markers, provider cadence,
+repeated clock reads or up to31 original host passes. Separate histories persist through pause
 and reset with a new session. No Replay/legacy source policy, Relax/Auto, bonus
 payout, native spinner effects, full score/HP or audio redesign is included.
 

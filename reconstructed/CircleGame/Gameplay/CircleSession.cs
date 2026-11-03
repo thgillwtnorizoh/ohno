@@ -199,6 +199,7 @@ public sealed class CircleSession
     private readonly List<(CircleState Head, SliderState? Slider)> targets;
     private readonly HeldInput input = new();
     private int previousUpdateTime, previousQualifyingInputTime;
+    private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
     public IEnumerable<Judgement> ObjectResults => Circles.Select(c => c.Result).Concat(Sliders.Select(s => s.Result)).Concat(Spinners.Select(s => s.Result));
     public int Approach { get; }
@@ -250,13 +251,15 @@ public sealed class CircleSession
         input.Publish(buttons);
         int updateInterval = unchecked(time - previousUpdateTime);
         double sampleInterval = previousQualifyingInputTime > 0 ? (double)unchecked(time - previousQualifyingInputTime) : SpinnerState.InitialInterval;
+        // E24 has a nominal 16.666... timing-tail qualification gate. This UI
+        // approximation prevents applying its nominal divisor to every high-Hz
+        // rendering sample; it is not the original marker/record/provider scheduler.
+        bool qualifyInput = !hasQualifyingInputTime || unchecked(time - previousQualifyingInputTime) >= SpinnerState.InitialInterval;
         Vector2 spinPointer = spinnerPointer ?? pointer;
         foreach (SpinnerState spinner in Spinners)
         {
             if (spinner.Result != Judgement.Pending || time < spinner.Definition.StartTime) continue;
-            // ENGINEERING: every running UI callback is a qualifying sample. The
-            // two interval histories remain distinct; original timing-tail gates are not reproduced.
-            if (float.IsFinite(spinPointer.X) && float.IsFinite(spinPointer.Y))
+            if (qualifyInput && float.IsFinite(spinPointer.X) && float.IsFinite(spinPointer.Y))
                 spinner.SampleCursor(spinPointer, SpinnerState.DisplayCenter, time, sampleInterval, (buttons & 3) != 0);
             spinner.Integrate(time, updateInterval);
             if (spinner.Complete(time))
@@ -266,7 +269,11 @@ public sealed class CircleSession
             }
         }
         previousUpdateTime = time;
-        previousQualifyingInputTime = time; // Global frame history, including passes before spinner activation.
+        if (qualifyInput)
+        {
+            previousQualifyingInputTime = time; // Global history, including passes before spinner activation.
+            hasQualifyingInputTime = true;
+        }
         foreach (SliderState slider in Sliders)
         {
             if (slider.Result == Judgement.Pending && time >= slider.Definition.Head.StartTime) Track(slider, pointer, time);

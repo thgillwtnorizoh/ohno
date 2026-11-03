@@ -336,3 +336,32 @@ OBS/debugger/E20 experiments, VM or supervised routine testing. All interaction
 stays human-controlled; R07 usability/fidelity remains UNVERIFIED. Current R07
 scope authorizes main implementation over historical suspension/branch rules;
 no research journal/numbered RE mark change. Stop after R07; QA05 belongs to Work 1.
+
+R07 hosted verification outcome (append after execution): source commit
+`a0a058c12a365f7f6d8b922fa3240dd0bfded006`, run41571969274,
+job125706717861, https://github.com/thgillwtnorizoh/ohno/actions/runs/41571969274 .
+2026-11-03 10:24 Asia/Bangkok (03:24 UTC), Windows2022/preinstalled SDK8.0.427.
+WPF Release win-x64 PASS:0 warnings/0 errors. Unchanged QA01:90/0, QA03:56/0,
+QA04:43/0 (189 existing cases). Existing R06:4 preparation targets PASS/4 loads
+completed. R07:8 bounded development groups PASS, including three fixture imports,
+atan2/first-angle/wrap/EMA/held rules, acceleration/clamp/cap/residual U, integer
+observation/cache and first raw0/second8192, modern thresholds/strict completion/
+no drain/session isolation and parser rejection. All steps/job succeeded; runner
+checkout Node20 advisory is separate from compiler diagnostics. Historical R06
+gate labels executed this R07 SHA. No new human/original runtime observations.
+Final documentation-only publication preserves exact tested app/fixtures/checks/
+workflow; research/QA01–04/E20, old fixtures/reports, audio/clock, slider mechanisms
+and historical journal prefix remain unchanged. No QA05 or further implementation.
+R07 stops here.
+
+R07 source-review follow-up before final handoff: the first gate passed, then a
+host-sampling usability concern was identified. Applying E24's nominal divisor
+to every high-Hz rendering sample could weaken progress. Added an explicit
+ENGINEERING qualification gate using E24's recovered16.666666666666668 ms period;
+integration remains per running frame, with separate global histories. This does
+not reproduce full original timing-tail/marker/provider scheduling. The prior
+"final documentation-only" intention above is superseded by this small R07 host
+refinement; published history is retained. Added explicit3000/3008/3017 component
+samples to the existing bounded development group and updated current instructions/
+report. Reverification of the changed source will be recorded below. No OS input,
+gameplay, original investigation, additional milestone or QA05 is initiated.

@@ -18,6 +18,10 @@ Near(angle.PreviousAngle!.Value, Math.PI / 2); Near(angle.TargetMotion, 0);
 angle.SampleAngle(0, 3010, -1, true); Near(angle.PreviousAngle.Value, Math.PI / 2);
 var adaptive = Fresh(); adaptive.SampleAngle(0, 3000, 100, true); adaptive.SampleAngle(.5, 3100, 100, true);
 Near(adaptive.TargetMotion, .005);
+var cadence = new CircleSession(practice);
+cadence.Advance(3000, new(300,192), 1);
+cadence.Advance(3008, new(256,236), 1); Near(cadence.Spinners[0].PreviousAngle!.Value, 0);
+cadence.Advance(3017, new(256,236), 1); Near(cadence.Spinners[0].PreviousAngle!.Value, Math.PI / 2);
 Pass("atan2 projection, nonlegacy first angle, negative interval and adaptive divisor");
 
 var wrap = Fresh(); wrap.SampleAngle(3, 3000, 16, true); wrap.SampleAngle(-3, 3016, 16, true);

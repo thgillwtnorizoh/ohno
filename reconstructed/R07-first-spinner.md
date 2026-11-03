@@ -19,11 +19,35 @@ this report and appended journal. Minimal authorized CI change: one step and its
 path trigger in the established Windows gate; all Work 1 research/QA unchanged.
 No permanent branch, force push, QA05 or new automated gameplay framework.
 
-Initial hosted verification **PENDING**, not a pass: WPF win-x64 build,
-QA01/90,QA03/56,QA04/43, existing R06 checks/loads and8 bounded spinner development
-groups. Actual source SHA/run/job/outcomes will be recorded after execution.
-No local dotnet executable; no installation or local compilation was attempted.
-Windows build/run instructions remain in CircleGame/README.md.
+**Windows CI PASS** on R07 source commit
+`a0a058c12a365f7f6d8b922fa3240dd0bfded006`:
+[run41571969274 / job125706717861](https://github.com/thgillwtnorizoh/ohno/actions/runs/41571969274/job/125706717861).
+Actual execution2026-11-03 10:24 Asia/Bangkok (03:24 UTC), Windows2022,
+preinstalled SDK8.0.427. Release WPF win-x64 compilation succeeded with **0 warnings
+/0 errors**; QA01 **90 passed/0 failed**, QA03 **56/0**, QA04 **43/0** (189 existing
+QA cases). R06 **4 preparation targets passed/4 fixture loads completed**.
+R07 **8 bounded development groups passed**, including three spinner fixture
+imports, finite arithmetic/observation, strict completion and parser rejection.
+Every step and the job succeeded. Checkout's Node20 advisory is separate from
+compiler diagnostics. No local dotnet executable, installation or compilation.
+
+Commands actually run at repository root by the established gate:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+The workflow/build-step label retains historical R06 wording; its checkout and
+logs identify the initial R07 SHA above. A subsequent source-review refinement
+adds nominal angular-sample qualification, with an explicit component check;
+that changed source is **PENDING reverification** at its publication. The final
+baseline will identify its actual run/outcome separately. Windows instructions
+remain in CircleGame/README.md. Source/whitespace/preservation checks passed.
 
 No game window, OS input, playback/recording, OBS, original debugger, E20 run,
 virtualization or supervised gameplay. Human R07 play remains **UNVERIFIED**.
@@ -79,9 +103,12 @@ the original source-record predicate. No Relax/Auto/mod behavior is inserted.
 - `Advance` maintains separate previous-update and previous-qualifying-sample
   histories globally, including callbacks before spinner activation. Sample d
   uses prior qualifying time when positive, otherwise the recovered fallback;
-  integration gets the separate signed update interval. One WPF callback is
-  treated as qualifying. Original timing-tail/current-candidate/recorded-input
-  gates, repeated clock reads and up to31 host passes are not reproduced.
+  integration gets the separate signed update interval. Angular input qualifies
+  only after the recovered nominal16.666666666666668 ms period. This is an explicit
+  ENGINEERING approximation of E24's timing-tail gate, avoiding use of the nominal
+  divisor on every high-Hz render sample. Integration still runs per frame. Original
+  markers/current-candidate/recorded-input gates, repeated clock reads and up to31
+  host passes are not reproduced; refresh-rate equivalence remains unverified.
 - The actual mouse maps through the same layout as the displayed center(256,192),
   including coordinates outside the stage; the slider pointer retains its prior
   stage policy. E24 reads original F02a3.F2b6e presentation-prepared state, with
@@ -160,6 +187,7 @@ later completion:
         record one final practice result; positive combo++, miss resets
 ```
 
-**ENGINEERING:** WPF mapped displayed center, one callback snapshot, rotor/bar,
+**ENGINEERING:** WPF mapped displayed center, nominal sample qualification and
+one integration opportunity per callback, rotor/bar,
 finite validation, session pause/restart/replacement and practice counters.
 **UNVERIFIED:** physical gameplay and original-runtime/pixel/audio equivalence.
