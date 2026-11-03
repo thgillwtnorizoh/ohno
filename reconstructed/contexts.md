@@ -275,3 +275,20 @@ No game launch, OS input, gameplay operation, recording/OBS/debugger/original ga
 supervised play or virtualization. All interactive play stays with owner. User
 R06 continues implementation/main publication over historical suspension/branches;
 no research journal/RE number edit. Stop after R06; QA04 belongs to Work 1.
+
+R06 hosted verification outcome (append after execution): source commit
+`0cf4030f3a0dbb7dddf6e8d5b98bfa5c2683d36d`, run41567855352,
+job125693599596, https://github.com/thgillwtnorizoh/ohno/actions/runs/41567855352 .
+2026-11-03 09:43–09:44 Asia/Bangkok (02:43–02:44 UTC), Windows2022,
+preinstalled SDK8.0.427. WPF Release win-x64 build PASS:0 warnings/0 errors;
+unchanged QA01:90 passed/0 failed; unchanged QA03:56 passed/0 failed. Four finite
+preparation targets PASS (exact E32 raw quadratic/cubic/joined vertices and final-
+pair guard), four fixture loads completed. Actual adjusted segments/Movements:
+quadratic64/64,cubic96/96,joined128/128,mixed284/375. All steps/job succeeded.
+Checkout Node20 advisory is separate from compiler warnings. These are actual
+noninteractive implementation results, not original observations or human play.
+Final documentation-only publication preserves the exact tested application,
+fixtures/checks/workflow content; research/QA/journal prefix and prior assets/
+reports/audio/clock/held-judgement code remain preserved. No QA04, additional
+expedition, gameplay operation or claim of original runtime/pixel equivalence.
+R06 stops here.

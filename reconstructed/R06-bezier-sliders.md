@@ -22,10 +22,40 @@ one preparation-check step and its path trigger in the established workflow;
 QA01/QA03 test files and research are untouched. This enables the requested
 bounded noninteractive checks without starting QA04 or another test framework.
 
-CI at initial source publication: **PENDING**, not a pass. The final record will
-identify actual source SHA/run/job, WPF win-x64 compilation,90 QA01 cases,
-56 QA03 cases and four bounded preparation targets/four fixture loads. No local
-dotnet executable is available; no SDK installation or local compilation.
+**Windows CI PASS** on source commit
+`0cf4030f3a0dbb7dddf6e8d5b98bfa5c2683d36d`:
+[run41567855352 / job125693599596](https://github.com/thgillwtnorizoh/ohno/actions/runs/41567855352/job/125693599596).
+Actual execution:2026-11-03 09:43–09:44 Asia/Bangkok (02:43–02:44 UTC),
+Windows2022 / preinstalled SDK8.0.427. Release WPF win-x64 compilation succeeded
+with **0 warnings / 0 errors**; unchanged QA01 **90 passed,0 failed**; unchanged
+QA03 **56 passed,0 failed**. Four finite preparation targets passed and four
+fixture loads completed. All steps and the job succeeded. The checkout Node20
+deprecation advisory is separate from compiler warnings. No local dotnet
+executable is available; no SDK installation or local compilation.
+
+Commands actually executed by the established gate at repository root:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+The workflow retains its historical R05 display label; checkout/log SHA identifies
+this R06 source. Preparation stdout reports exact quadratic/cubic/joined raw E32
+targets and final-pair guard PASS. Actual fixture preparation counts:
+
+| Fixture | Circles / sliders | Adjusted segments / Movement records |
+|---|---|---|
+| Quadratic |0 /1|64 /64|
+| Cubic |0 /1|96 /96|
+| Joined |0 /1|128 /128|
+| Mixed |3 /4|284 /375|
+
+These are implementation outputs, not original geometry observations. Final
+publication changes only this report and the appended journal; application,
+fixtures, preparation checks and workflow content match the passing source.
 
 No gameplay window, OS input operation, recording/OBS, debugger, original-game
 execution or routine supervised gameplay. Human R06 operation is UNVERIFIED.
