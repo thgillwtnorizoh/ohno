@@ -164,6 +164,8 @@ public static class HealthTests
         Add("F09 recovery adds160 rather than assigns160",()=>{var h=Live();h.State.Assign(100);h.SupplyRecoveryCount(2);h.BeginRecovery();Eq(h.State.H,200.0);Eq(h.State.A,260.0);Eq(h.RecoveryCount,1);Eq(h.Recovering,true);});
         Add("F10 recovery release uses strict V target margin",()=>{var h=Live();h.State.Assign(0);h.SupplyRecoveryCount(1);h.CheckFailure(1);h.State.SetPresentation(155);h.Frame(Frame(1,1));Eq(h.Recovering,true);h.State.SetPresentation(156);h.Frame(Frame(1,1));Eq(h.Recovering,false);});
         Add("F11 state reset does not reset separate failure latch",()=>{var h=Live();h.State.Assign(0);h.CheckFailure(1);h.State.Reset();Eq(h.Failed,true);Eq(h.State.H,200.0);Eq(h.CheckFailure(2),HealthFailure.Healthy);Eq(h.FailureTime,(int?)1);});
+        foreach(double target in new[]{160.0,200.0})
+            Add($"F13 original recovery guard retains fill at H{target}",()=>{var h=Live();h.State.Assign(target);h.State.ConfigureFill(123,.03,false);h.SupplyRecoveryCount(1);h.BeginRecovery();Console.WriteLine($"OBS recovery H={h.State.H:R} A={h.State.A:R} fill={h.State.Fill} slope={h.State.FillRate:R} from={h.State.FillFrom} recovering={h.Recovering} count={h.RecoveryCount}");Eq(h.State.H,target);Eq(h.State.A,target);Eq(h.State.Fill,false);Eq(h.State.FillRate,.03);Eq(h.State.FillFrom,123);Eq(h.Recovering,true);Eq(h.RecoveryCount,0);});
         Add("F12 recovery count and missing count reject",()=>{var h=Live();Reject<ArgumentOutOfRangeException>(()=>h.SupplyRecoveryCount(-1));Reject<InvalidOperationException>(()=>h.BeginRecovery());});
     }
     private static void IntegrationCases()
