@@ -21,5 +21,8 @@
     <Content Include="Fixtures\bezier-cubic.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\bezier-joined.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\bezier-mixed.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\spinner-practice.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\circle-spinner.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\mixed-r07.osu" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

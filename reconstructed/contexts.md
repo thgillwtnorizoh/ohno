@@ -292,3 +292,47 @@ fixtures/checks/workflow content; research/QA/journal prefix and prior assets/
 reports/audio/clock/held-judgement code remain preserved. No QA04, additional
 expedition, gameplay operation or claim of original runtime/pixel equivalence.
 R06 stops here.
+
+## R07 — First Human-Playable Spinner
+
+2026-11-03 (Asia/Bangkok), Work 2. Started clean latest origin/main
+`a3f414e1ab220a5d7c62d1bacf4aa7b4850e5985`. Read AGENTS/full standing contract,
+journal/R05–R06, E24–E26, relevant E10–E13/E27 and QA01/03/04 contracts.
+No original-binary inspection, debugger or new expedition. QA04/189 baseline
+passes and its scoped owner-reported R06 feedback are preserved, not R07 evidence.
+
+RECONSTRUCTED finite modern spinner: separate definition/state, atan2 relative
+to an ENGINEERING mapped displayed center; modern first reference, strict wraps/
+antipodal rejection, previous-angle update, interval EMA, stationary decay before
+held/time checks; signed target then coefficient-limited U/clamp±.05, strict
+S<T<E positive-interval Single progress capped1/update. Separate old-P integer
+observation increments C once per inequality, selects raw0/4096/8192/16384 then
+updates cache; no bonus payout or component combo. Required N preserves Single/
+Double/int OD3/5/7.5 preparation (3000ms/OD5→15). Completion strictly T>E, modern
+thresholds from C/N, no unread-progress drain; final positive combo increment or
+failure reset and one practice accuracy object. Slider mechanisms preserved.
+
+ENGINEERING host: one qualifying WPF frame sample, two global interval histories,
+same projection for actual mouse and displayed center, no radial gate. Original
+native prepared center/timing-tail/candidate/helper/repeated-clock behavior is
+not reproduced. Pause retains state; restart/replacement create fresh state.
+Finite v14 spinner duration1–60000/end<=3600000; disjoint stored object intervals,
+including endpoints; sound Int32 and optional raw sample metadata, no sound-mask
+or playback invention. Separate spinner lifecycle/body/rotor/progress/held/final
+feedback, no circle-head admission while active. Old fixtures/buttons/audio/clock
+remain. No mods/Replay/Relax/Auto/full score/HP/native effects or BASS redesign.
+
+Changed under reconstructed/: parser/model/session, renderer/UI/project/README,
+three independently authored silent fixtures, bounded R07DevelopmentChecks,
+R07 report and this append. Only authorized CI infrastructure edit is a step/path
+trigger in existing Windows gate; research/QA01–04/E20/historical records intact.
+Initial source/diff/whitespace review; no local dotnet executable/SDK install.
+Windows build,189 QA cases, R06 checks and8 spinner development groups PENDING;
+actual source/run/job/outcomes will be appended after execution. These finite
+component checks are not original runtime or independent QA05.
+
+No reconstruction/original launch, OS mouse/keyboard input, playback/recording,
+OBS/debugger/E20 experiments, VM or supervised routine testing. All interaction
+stays human-controlled; R07 usability/fidelity remains UNVERIFIED. Current R07
+scope authorizes main implementation over historical suspension/branch rules;
+no research journal/numbered RE mark change. Stop after R07; QA05 belongs to Work 1.

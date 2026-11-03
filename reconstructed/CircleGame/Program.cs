@@ -38,7 +38,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R06 Bézier Slider Practice";
+        Title = "ohno · R07 Spinner Practice";
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -62,12 +62,15 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Cubic", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "bezier-cubic.osu"))));
         tools.Children.Add(Button("Joined Bézier", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "bezier-joined.osu"))));
         tools.Children.Add(Button("Mixed R06", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "bezier-mixed.osu"))));
+        tools.Children.Add(Button("Spinner Practice", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "spinner-practice.osu"))));
+        tools.Children.Add(Button("Circle + Spinner", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "circle-spinner.osu"))));
+        tools.Children.Add(Button("Mixed R07", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "mixed-r07.osu"))));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
-        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Follow through TURN markers",
+        footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Spinner: hold and rotate around center",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
         Grid.SetRow(footer, 2); root.Children.Add(footer);

@@ -6,6 +6,7 @@ on:
     paths:
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
+      - reconstructed/R07DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - .github/workflows/r04-build.yml
@@ -76,4 +77,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R07 bounded spinner components
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

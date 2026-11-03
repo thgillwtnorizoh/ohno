@@ -1,12 +1,13 @@
-# R06 — Bézier Slider Practice for Windows
+# R07 — Spinner Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
 simulated input, network service, original assets or original-game execution.
 
-**R06 status:** see `../R06-bezier-sliders.md` for Windows CI compilation,
-QA01/QA03 and bounded E32 preparation-check results. Human R06 play is unverified
-by Work. The historical R05 report records its own actual Windows CI build and
+**R07 status:** see `../R07-first-spinner.md` for actual Windows CI compilation,
+QA01/QA03/QA04 and bounded spinner development results. R07 human play remains
+unverified by Work. Historical R06 results and QA04's scoped owner feedback are
+preserved; they do not validate R07. The R05 report records its Windows build and
 existing 90-case regression outcomes. The owner reported that the tested R04
 slider interaction/scoring matched the original at the user-observable level;
 this is scope-limited human feedback, not universal equivalence or R05 validation.
@@ -155,6 +156,51 @@ inclusive matches at shared boundaries. Repeat cues use the **traversal** end,
 not each tiny segment end. Held input, entry deadlines, one-component due handling
 and legacy grading are unchanged; audio remains Stopwatch-controlled as below.
 
+## Spinner practice (R07)
+
+Choose **Spinner Practice**, **Circle + Spinner**, or **Mixed R07**, then
+Start/Space. Hold **Z or X** and move the real mouse in circles around the marked
+center. Holding without moving does not generate new angular motion. The rotor
+and progress bar show motion and progress; filling the best-target bar earns300
+under the supported finite policy. Keep moving through the playable interval.
+Space pauses/resumes; R/Enter starts a fresh session. All old fixture buttons,
+audio loading, pause/restart and results remain available.
+
+| Fixture | Contents / timing |
+|---|---|
+| `spinner-practice.osu` | One spinner3000–6000 ms, OD5; prepared N15, best needs C>15; results9000 ms |
+| `circle-spinner.osu` | Circle3000, spinner5000–8000, circle10000; results13000 ms |
+| `mixed-r07.osu` | Circle3000, quadratic slider5000, spinner10000–13000, circle15000; results18000 ms |
+
+These are independent silent v14 practice inputs, with no original assets. Their
+requirements/timing are source-derived; they have not been played by Work. The
+displayed progress is an observed-integer-change counter, **not a literal number
+of full physical revolutions**. Under modern N15 grading, C0–2 misses,3–13 gives50,
+14–15 gives100,16+ gives300. Other durations/OD derive N from the recovered formula;
+N0 has its separate best-grade special case.
+
+Spinner components are distinct from the final grade and award no practice combo
+points. Final positive judgement adds one combo; final failure resets it. Progress
+integrates strictly inside start/end; completion is strictly after end, with no
+unread-progress drain. Releasing a key changes normal target generation but does
+not directly zero smoothed motion. No radial-distance threshold is imposed.
+
+R07 accepts v14 positive-duration spinners up to60000 ms, end<=3600000 ms, with
+stored intervals disjoint from every other object (circles are point intervals;
+shared endpoints reject). This is a bounded parser policy, not stable's complete
+overlap/candidate rules. Sound column5 must be an Int32; optional hit-sample text
+is retained without sound playback. Spinner coordinates are parsed but their
+display center is the independent UI center(256,192).
+
+The mouse and displayed center use the same map/display projection, including
+positions outside the stage. Original E24 instead reads a presentation-prepared
+native center with different layout/update history. WPF runs one sample and one
+integration opportunity per rendering callback using Stopwatch time; it does not
+reproduce original timing-tail gates, provider cadence, repeated clock reads or
+up to31 original host passes. Separate interval histories persist through pause
+and reset with a new session. No Replay/legacy source policy, Relax/Auto, bonus
+payout, native spinner effects, full score/HP or audio redesign is included.
+
 ## Local beatmap audio
 
 `[General] AudioFilename` is resolved relative to the selected `.osu` file's
@@ -248,7 +294,8 @@ are committed; build outputs are intentionally ignored.
   at distinct integer start times in [0,3600000] ms. The count includes the first
   traversal (2 means out-and-back). Normal/NewCombo/colour-skip bits are accepted.
   Multi-point Linear paths, other curve types, older Bézier formats, overlapping slider intervals,
-  spinners, holds, equal times and malformed/empty maps are explicitly rejected.
+  holds, equal times and malformed/empty maps are explicitly rejected. Ordinary
+  v14 Spinner8 is supported under the separate bounds above.
 - Slider maps require explicit SliderMultiplier and SliderTickRate, clamped to
   E05's [.4,3.6] / [.5,8] ranges. Timing points are retained in file order; base
   and inherited selection at slider start drive travel rate and spacing. Missing
@@ -274,7 +321,7 @@ are committed; build outputs are intentionally ignored.
 | `Platform/BeatmapAudio.cs` | Asynchronous local-media loading and native playback lifetime |
 | `Platform/PracticeFixture.cs` | Independent reproducible PCM tone generator |
 | `Gameplay/Beatmap.cs` | Reader, E32 flattening/shared prepared segments, timing, per-segment Movement and checkpoint producer |
-| `Gameplay/CircleSession.cs` | Separate head/parent/checkpoint outcomes, held history, tracking, one-entry due processing and aggregate feedback |
+| `Gameplay/CircleSession.cs` | Circle/slider state plus separate spinner angular, motion, observation and final-grade components |
 | `Rendering/PlayfieldLayout.cs` | Forward/inverse layout relation inside a 4:3 stage |
 | `Rendering/PlayfieldView.cs` | Primitive drawing, frame callback, actual mouse sampling |
 | `Fixtures/first-circles.osu` | Independently authored eight-circle practice input |
@@ -284,6 +331,7 @@ are committed; build outputs are intentionally ignored.
 | `Fixtures/slider-repeat.osu` | Independent two-traversal out-and-back slider |
 | `Fixtures/mixed-sliders.osu` | Independent circles and one-/two-/three-traversal sliders |
 | `Fixtures/bezier-*.osu` | Independent quadratic/cubic/joined/mixed R06 controls |
+| `Fixtures/spinner-practice.osu`, `circle-spinner.osu`, `mixed-r07.osu` | Independent R07 spinner controls |
 
 The gameplay layer has no WPF dependency. Rendering consumes session state;
 platform input supplies a mapped pointer and stored gameplay time. R01's Python

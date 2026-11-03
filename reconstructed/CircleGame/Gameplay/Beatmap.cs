@@ -5,6 +5,7 @@ using System.Numerics;
 namespace Ohno.CircleGame.Gameplay;
 
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
+public sealed record SpinnerDefinition(int StartTime, int EndTime, int HitSound, string? HitSample);
 
 public sealed record SliderSegment(Vector2 From, Vector2 To, bool IsSubcurveEnd, bool IsLinear);
 
@@ -187,6 +188,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     // Optional local media reference; the gameplay model remains independent of WPF.
     public string? AudioPath { get; init; }
     public IReadOnlyList<SliderDefinition> Sliders { get; init; } = Array.Empty<SliderDefinition>();
+    public IReadOnlyList<SpinnerDefinition> Spinners { get; init; } = Array.Empty<SpinnerDefinition>();
 
     // Deliberately narrow .osu reader, NOT stable's complete parser (E04/E05).
     public static Beatmap Load(string path)
@@ -201,6 +203,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
         var circles = new List<CircleDefinition>();
+        var spinners = new List<SpinnerDefinition>();
         var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals)>();
         var timing = new List<TimingPoint>();
         string section = "";
@@ -214,10 +217,10 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 string[] row = line.Split(',');
                 if (row.Length < 5 || !int.TryParse(row[2], NumberStyles.Integer, CultureInfo.InvariantCulture, out int time) ||
                     !int.TryParse(row[3], NumberStyles.Integer, CultureInfo.InvariantCulture, out int type) ||
-                    (type & ~(4 | 112)) is not (1 or 2))
-                    throw new InvalidDataException($"Line {lineNumber + 1}: only ordinary circles and supported Linear/v14 Bézier sliders are accepted.");
+                    (type & ~(4 | 112)) is not (1 or 2 or 8))
+                    throw new InvalidDataException($"Line {lineNumber + 1}: use supported circles, sliders or format-v14 spinners.");
                 // QA01-D02: validate syntax only; no invented sound-bit restrictions.
-                if (!int.TryParse(row[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out _))
+                if (!int.TryParse(row[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out int hitSound))
                     throw new InvalidDataException($"Line {lineNumber + 1}: hitSound (column 5) must be an integer, not empty or malformed.");
                 bool isBezier = (type & 2) != 0 && row.Length >= 6 && row[5].StartsWith("B|", StringComparison.Ordinal);
                 float x = isBezier ? (float)(int)Math.Clamp(DoubleNumber(row[0], "head X"), 0, 512) : Number(row[0], "circle X");
@@ -226,7 +229,15 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     throw new InvalidDataException("R02 requires object times between 0 and 3600000 ms.");
                 // E04 parser bounds both axes to 512, then truncates. No mods/offsets.
                 var head = new CircleDefinition(new((int)Math.Clamp(x, 0, 512), (int)Math.Clamp(y, 0, 512)), time);
-                if ((type & 2) == 0) circles.Add(head);
+                if ((type & 8) != 0)
+                {
+                    if (version != 14) throw new InvalidDataException("R07 supports only modern-policy, format-v14 spinners.");
+                    if (row.Length < 6 || !int.TryParse(row[5], NumberStyles.Integer, CultureInfo.InvariantCulture, out int end) ||
+                        end <= time || end > 3_600_000 || end - time > 60_000)
+                        throw new InvalidDataException($"Line {lineNumber + 1}: spinner end must follow start, duration <=60000 ms, end <=3600000 ms.");
+                    spinners.Add(new(time, end, hitSound, row.Length > 6 ? row[6] : null));
+                }
+                else if ((type & 2) == 0) circles.Add(head);
                 else
                 {
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
@@ -253,7 +264,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                         throw new InvalidDataException("R05 slider length must be greater than 0.0001 and at most 4096 pixels.");
                     sliderRows.Add((head, controls.ToArray(), isBezier, length, spans));
                 }
-                if (circles.Count + sliderRows.Count > 10000) throw new InvalidDataException("R04 accepts at most 10000 objects.");
+                if (circles.Count + sliderRows.Count + spinners.Count > 10000) throw new InvalidDataException("R07 accepts at most 10000 objects.");
             }
             else if (section == "[TimingPoints]")
             {
@@ -275,9 +286,10 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         if (!fields.TryGetValue("[General]Mode", out string? mode) || mode != "0")
             throw new InvalidDataException("R02 requires explicit Mode: 0 (osu!standard).");
-        if (circles.Count + sliderRows.Count == 0) throw new InvalidDataException("No playable objects found.");
+        if (circles.Count + sliderRows.Count + spinners.Count == 0) throw new InvalidDataException("No playable objects found.");
         circles.Sort((a, b) => a.StartTime.CompareTo(b.StartTime));
-        var starts = circles.Select(c => c.StartTime).Concat(sliderRows.Select(s => s.Head.StartTime)).Order().ToArray();
+        var starts = circles.Select(c => c.StartTime).Concat(sliderRows.Select(s => s.Head.StartTime))
+            .Concat(spinners.Select(s => s.StartTime)).Order().ToArray();
         for (int i = 1; i < starts.Length; i++)
             if (starts[i] == starts[i - 1])
                 throw new InvalidDataException("R02 does not yet support equal-time objects/stacking.");
@@ -301,6 +313,19 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 if (sliders[i].Head.StartTime <= sliders[i - 1].EndTime)
                     throw new InvalidDataException("R05 does not support overlapping slider intervals.");
         }
+        // Bounded R07 admission: spinner stored intervals cannot intersect any
+        // other object's stored interval (circles are point intervals).
+        int maximumEnd = int.MinValue, spinnerEnd = int.MinValue;
+        var intervals = circles.Select(c => (Start: c.StartTime, End: c.StartTime, Spinner: false))
+            .Concat(sliders.Select(s => (Start: s.Head.StartTime, End: s.EndTime, Spinner: false)))
+            .Concat(spinners.Select(s => (Start: s.StartTime, End: s.EndTime, Spinner: true))).OrderBy(v => v.Start);
+        foreach (var interval in intervals)
+        {
+            if ((interval.Spinner && interval.Start <= maximumEnd) || interval.Start <= spinnerEnd)
+                throw new InvalidDataException("R07 spinner intervals must be separate from all other objects, including shared endpoints.");
+            maximumEnd = Math.Max(maximumEnd, interval.End);
+            if (interval.Spinner) spinnerEnd = interval.End;
+        }
         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
         string? audioPath = null;
         if (fields.TryGetValue("[General]AudioFilename", out string? audioName) && !string.IsNullOrWhiteSpace(audioName))
@@ -318,7 +343,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 throw new InvalidDataException("AudioFilename must stay within the beatmap folder.");
         }
         return new(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
-            Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly() };
+            Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray() };
 
         double SliderSetting(string name, double lower, double upper)
         {

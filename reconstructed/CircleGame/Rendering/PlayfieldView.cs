@@ -15,6 +15,8 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     private Dictionary<SliderDefinition, StreamGeometry> paths = new();
     private static readonly Brush Back = Brush("#0C1324"), Stage = Brush("#101D32"), Accent = Brush("#58E0D3");
     private static readonly Typeface Font = new("Segoe UI");
+    private static readonly Pen SpinnerOutline = FrozenPen(Accent, 3), SpinnerRotor = FrozenPen(Brushes.White, 4);
+    private static readonly Brush SpinnerIdle = Brush("#FFB37F");
     private bool started;
     private bool disposed;
     public CircleSession? Session { get; private set; }
@@ -117,7 +119,10 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         bool inside = mouse.X >= layout.StageX && mouse.Y >= layout.StageY &&
             mouse.X <= layout.StageX + layout.Width && mouse.Y <= layout.StageY + layout.Height;
         Vector2 pointer = inside ? layout.ToMap(new((float)mouse.X, (float)mouse.Y)) : new(float.NaN, float.NaN);
-        Session.Advance(CurrentTime, pointer, buttons);
+        // Spinner angular sampling uses the same display projection but no stage
+        // admission/radial gate; sliders retain their prior outside-stage policy.
+        Vector2 spinnerPointer = layout.ToMap(new((float)mouse.X, (float)mouse.Y));
+        Session.Advance(CurrentTime, pointer, buttons, spinnerPointer);
         if (Session.Finished) Pause();
         InvalidateVisual();
         FrameUpdated?.Invoke();
@@ -134,6 +139,36 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         dc.DrawRectangle(null, new Pen(Brush("#293D56"), 1), new Rect(origin.X, origin.Y, 512 * l.Scale, 384 * l.Scale));
         if (Session is not { } game) { Message(dc, "Load a supported .osu map", "Open .osu above to begin"); return; }
         double radius = game.DiameterAtScaleOne * l.Scale / 2;
+        foreach (SpinnerState spinner in game.Spinners)
+        {
+            if (spinner.Result != Judgement.Pending || CurrentTime < spinner.Definition.StartTime - game.Approach) continue;
+            Vector2 mapped = l.ToScreen(SpinnerState.DisplayCenter);
+            Point center = new(mapped.X, mapped.Y);
+            double spinRadius = 112 * l.Scale;
+            dc.DrawEllipse(Stage, SpinnerOutline, center, spinRadius, spinRadius);
+            dc.DrawEllipse(null, SpinnerRotor, center, spinRadius * 0.35, spinRadius * 0.35);
+            for (int arm = 0; arm < 4; arm++)
+            {
+                double angle = spinner.VisualRotation + arm * Math.PI / 2;
+                dc.DrawLine(SpinnerRotor,
+                    new(center.X + Math.Cos(angle) * spinRadius * .45, center.Y + Math.Sin(angle) * spinRadius * .45),
+                    new(center.X + Math.Cos(angle) * spinRadius * .9, center.Y + Math.Sin(angle) * spinRadius * .9));
+            }
+            dc.DrawEllipse(spinner.InputHeld ? Accent : SpinnerIdle, null, center, 5, 5);
+            int bestTarget = spinner.Required == 0 ? 0 : spinner.Required + 1;
+            double fraction = bestTarget == 0 ? 1 : Math.Clamp(spinner.Observation.Count / (double)bestTarget, 0, 1);
+            double barWidth = spinRadius * 2;
+            Rect bar = new(center.X - spinRadius, center.Y + spinRadius + 18, barWidth, 12);
+            dc.DrawRectangle(SpinnerIdle, null, bar);
+            dc.DrawRectangle(Accent, null, new Rect(bar.X, bar.Y, barWidth * fraction, bar.Height));
+            Text(dc, "SPIN", new(center.X, center.Y - spinRadius - 24), 25, Brushes.White, true);
+            Text(dc, CurrentTime < spinner.Definition.StartTime ? "Hold Z / X and rotate around the center" :
+                spinner.InputHeld ? "INPUT HELD · KEEP ROTATING" : "HOLD Z / X", new(center.X, bar.Bottom + 22), 15,
+                spinner.InputHeld ? Accent : SpinnerIdle, true);
+            Text(dc, $"Progress {spinner.Observation.Count} / {bestTarget} for 300 · " +
+                $"{Math.Max(0, spinner.Definition.EndTime - CurrentTime) / 1000.0:F1}s",
+                new(center.X, bar.Bottom + 46), 15, Brushes.White, true);
+        }
         foreach (SliderState slider in game.Sliders)
         {
             SliderDefinition definition = slider.Definition;
@@ -226,7 +261,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         }
         // Visible timing cue remains available with or without audio.
         CircleState? next = game.Heads.FirstOrDefault(c => c.Result == Judgement.Pending);
-        if (next is not null && started && !game.Finished)
+        if (next is not null && started && !game.Finished && !game.Spinners.Any(s => s.Result == Judgement.Pending && CurrentTime >= s.Definition.StartTime))
             Text(dc, $"NEXT  {Math.Max(0, next.Definition.StartTime - CurrentTime)} ms", new Point(ActualWidth / 2, 24), 15, Accent, true);
 
         if (game.Finished)
@@ -238,7 +273,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             Message(dc, "Practice complete", $"300: {n300}   100: {n100}   50: {n50}   Miss: {misses}\n" +
                 $"Accuracy: {game.Accuracy:F2}%    Max combo: {game.MaxCombo}\nR / Enter to play again");
         }
-        else if (!started) Message(dc, "Circle / slider practice", "Aim and press Z / X; hold and follow slider balls.\nSpace or Start to begin · " + AudioStatus);
+        else if (!started) Message(dc, "Gameplay practice", "Aim Z/X · Hold and follow sliders · Hold and rotate for spinners\nSpace or Start to begin · " + AudioStatus);
         else if (!Running) Message(dc, audio?.Failure is null ? "Paused" : "Audio unavailable",
             audio?.Failure is null ? "Space to resume · R to restart" : "Reload the map or choose Silent fixture above.");
     }
@@ -281,6 +316,13 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         var brush = (SolidColorBrush)new BrushConverter().ConvertFromString(color)!;
         brush.Freeze();
         return brush;
+    }
+
+    private static Pen FrozenPen(Brush brush, double thickness)
+    {
+        var pen = new Pen(brush, thickness);
+        pen.Freeze();
+        return pen;
     }
 
     public void Dispose()
