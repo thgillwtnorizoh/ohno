@@ -141,7 +141,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         double radius = game.DiameterAtScaleOne * l.Scale / 2;
         foreach (SpinnerState spinner in game.Spinners)
         {
-            if (spinner.Result != Judgement.Pending || CurrentTime < spinner.Definition.StartTime - game.Approach) continue;
+            if (!SpinnerPresentation.IsVisible(spinner, CurrentTime)) continue;
             Vector2 mapped = l.ToScreen(SpinnerState.DisplayCenter);
             Point center = new(mapped.X, mapped.Y);
             double spinRadius = 112 * l.Scale;

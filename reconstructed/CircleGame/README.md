@@ -389,3 +389,11 @@ The implementation report separates research-derived rules from deliberate
 slice policies and records unresolved original-equivalence dependencies.
 
 API reference: [Microsoft WPF MediaPlayer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.mediaplayer?view=windowsdesktop-8.0).
+
+## Spinner presentation correction (R08-C01)
+
+Spinners appear at their stored start, rather than borrowing a circle's approach
+preview. They remain visible until completion is evaluated. This is an engineering
+presentation policy; native spinner fade timing is unrecovered. Earlier sliders
+retain their physical held-input/tracking path. No scoring/input formula changed.
+See `../R08-C01-spinner-presentation.md` for checks and remaining runtime limits.

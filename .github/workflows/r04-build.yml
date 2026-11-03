@@ -8,6 +8,7 @@ on:
       - reconstructed/R06PreparationChecks/**
       - reconstructed/R07DevelopmentChecks/**
       - reconstructed/R08DevelopmentChecks/**
+      - reconstructed/R08C01DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -100,4 +101,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R08DevelopmentChecks/R08DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R08-C01 spinner presentation and input continuity
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R08C01DevelopmentChecks/R08C01DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

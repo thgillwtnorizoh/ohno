@@ -452,3 +452,21 @@ remain identical. Journal historical byte prefix and research/QA/E20/old fixture
 reports were checked preserved. No game/window/input or human score comparison.
 Original automatic K, record/decorated policy fidelity and cross-map numeric
 identity remain unresolved. R08 ends here; no QA06 or original expedition.
+
+## R08-C01 — Spinner presentation and preceding-slider continuity
+
+2026-11-03 Asia/Bangkok, Work2. Verified main4c61be63265d54b19b257fb3f1c632760c9e7773
+included E034 but no C01. Owner explicitly authorized C01 before C02, independently
+published/gated. Read contract/AGENTS/journal/R08/E033/E034 and relevant source.
+Corrected renderer's borrowed circle-approach spinner preview with read-only stored-
+start/pending-result visibility. ENGINEERING, no native opacity schedule claimed.
+Source inspection found no pre-start spinner input gate in slider Track/frame path;
+no speculative input/scoring patch. Owner interruption remains scope-limited report,
+actual cause/runtime focus/input unverified. Four bounded checks: visibility
+boundaries, held preceding-slider through old preview/tail (300/combo2/K1score372),
+head inside old preview, read-only presentation. No game/window/OS events or RE.
+Changes under reconstructed/ helper/renderer/checks/README/report/journal plus one
+minimal existing CI step/path. Historical research/QA/fixtures preserved. Gate
+PENDING until actual Windows build/255 QA/R06/R07/R08/C01 outcomes append. Current
+user authorization main implementation/implementation-only records supersedes
+historical branch/investigation defaults. C02 only after C01 publication and gate.
