@@ -234,3 +234,44 @@ journal outcomes; application/fixtures/workflow are identical to tested source.
 Verified only reconstructed/ changed, research/QA/workflows and previous fixtures/
 audio/clock/historical reports preserved, old journal kept as an exact byte prefix.
 No new expedition or further implementation/QA. Stop after R05.
+
+## R06 — Human-Playable Bézier Sliders
+
+2026-11-03 (Asia/Bangkok), Work 2. Clean latest origin/main:
+`8a92b88c32e11a5d6d513f732a47f540e5fd772a`. Read AGENTS/full contract (attachment
+and repo identical), journal/R05, E32 and relevant shared slider/QA01/QA03 contracts.
+No original-binary investigation, original-runtime work or new expedition.
+
+RECONSTRUCTED E32 v14 preparation: exact forward-adjacent separator/final-pair
+guard; Double→Int32→Single B controls; normalized head/order/duplicates; Single
+second-difference².25 flatness, half subdivision left-first and weighted leaf
+output, endpoint only at traversal end. Shared geometry records preserve raw
+segments/boundary flags/G, requested L, post-adjustment segments and Double
+cumulative lengths. E06 suffix removal tolerance/zero-direction guard and actual
+recomputed totals feed per-piece forward/reverse Movement/checkpoint loops.
+CircleSession judgement/held input unchanged. No generic curve library/sampler.
+
+Cached frozen WPF prepared path at load, same layout mapping, current Movement
+ball/ticks/follow feedback and traversal-end repeat indicators. Added four silent
+independent v14 fixtures with Quadratic/Cubic/Joined Bézier/Mixed R06 buttons;
+all old buttons/fixtures/audio/Stopwatch/R01/historical records preserved.
+Engineering bounds:64 normalized controls,8192 raw pieces/50000 subdivision nodes
+per slider,100000 prepared pieces/250000 Movements per map, existing R05 bounds.
+No fixed original depth or universal fidelity is claimed. Unsupported types and
+old Bézier formats explicitly reject; no Catmull/PerfectCurve/stacking/mods/full
+scoring or audio redesign. Historical owner R04 feedback is not R06 validation.
+
+Changes under reconstructed/: model/parser/preparation, cached rendering, UI/
+project, four fixtures, README/report, bounded R06PreparationChecks and this append.
+Only shared infrastructure edit: one preparation-check step/path trigger in the
+existing Windows gate, enabling the requested finite checks; Work 1 research/QA
+files and old reports/journals remain untouched. Four preparation targets plus
+four fixture loads are bounded development checks against static E32 predictions,
+not a QA04 framework or original behavior evidence. Hosted build/90 QA01/56 QA03/
+preparation execution PENDING initially; actual outcome will be appended. No local
+dotnet executable; no SDK installation. Source/diff and whitespace review only.
+
+No game launch, OS input, gameplay operation, recording/OBS/debugger/original game,
+supervised play or virtualization. All interactive play stays with owner. User
+R06 continues implementation/main publication over historical suspension/branches;
+no research journal/RE number edit. Stop after R06; QA04 belongs to Work 1.

@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - reconstructed/CircleGame/**
+      - reconstructed/R06PreparationChecks/**
       - re/qa/qa03/Headless/**
       - .github/workflows/r04-build.yml
 
@@ -60,4 +61,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R06 finite preparation targets and fixture loading
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

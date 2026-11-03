@@ -1,10 +1,12 @@
-# R05 — Repeating Slider Practice for Windows
+# R06 — Bézier Slider Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
 simulated input, network service, original assets or original-game execution.
 
-**R05 status:** see `../R05-repeating-sliders.md` for actual Windows CI build and
+**R06 status:** see `../R06-bezier-sliders.md` for Windows CI compilation,
+QA01/QA03 and bounded E32 preparation-check results. Human R06 play is unverified
+by Work. The historical R05 report records its own actual Windows CI build and
 existing 90-case regression outcomes. The owner reported that the tested R04
 slider interaction/scoring matched the original at the user-observable level;
 this is scope-limited human feedback, not universal equivalence or R05 validation.
@@ -112,6 +114,47 @@ exactly1 gives300; at least.5 gives100; any smaller positive ratio gives50; zero
 givesMISS. Whole-object accuracy and feedback remain practice counters, with no
 extra aggregate combo point. Full stable score/health/ScoreV2 are not implemented.
 
+## Bézier practice (R06)
+
+Choose **Quadratic**, **Cubic**, **Joined Bézier**, or **Mixed R06** in the toolbar,
+then Start/Space. Aim and press Z/X at the head, hold and follow the ball through
+the curved body and TURN marker. R/Enter restarts; Space pauses/resumes. All older
+fixture buttons remain. These instructions are for human operation; no agent has
+operated gameplay or observed successful R06 play.
+
+| Fixture | Contents |
+|---|---|
+| `bezier-quadratic.osu` | One quadratic arc starting at3000 ms |
+| `bezier-cubic.osu` | One cubic arch starting at3000 ms |
+| `bezier-joined.osu` | Two joined quadratic subcurves with an intentional repeated control |
+| `bezier-mixed.osu` | Circles, Linear, quadratic, joined curve and a two-traversal cubic with ticks |
+
+All are independently authored, silent format-v14 maps. They use base beat1000 ms,
+multiplier1.4/tickRate1. Duration/checkpoints use the **prepared segments** after
+requested-length adjustment, rather than analytic Bézier parameter steps. Results
+appear3 seconds after the final object ends (30500 ms on Mixed R06).
+
+`B|` is supported only in v14. Exact adjacent duplicate controls split subcurves
+with E32's final-pair guard; controls are not globally deduplicated. Bézier control
+coordinates parse Double→Int32→Single, without a new control clamp. Raw flattening
+and length-adjusted geometry are distinct. The engine uses E32's .25f squared
+second-difference test, half subdivision and weighted leaf points. The cached WPF
+polyline is primitive presentation, not original meshes/skins/pixels.
+
+Engineering limits:64 normalized controls,8192 raw segments and50000 subdivision
+nodes per slider;100000 prepared segments /250000 Movement records per map.
+There is no claimed original fixed subdivision-depth cap. Work-limit violations,
+nonfinite results or paths erased by trimming reject the candidate map, retaining
+the previous session. Existing 1–16 traversals and checkpoint/parser bounds remain.
+Only single-segment `L|x:y` and v14 `B|` are supported; Catmull-Rom, PerfectCurve,
+older Bézier formats, stacking/mods/storyboards/full score remain outside R06.
+
+No adaptive subdivision or requested-length adjustment runs in the drawing loop.
+Forward/reverse Movement consumes every prepared piece in order, preserving first
+inclusive matches at shared boundaries. Repeat cues use the **traversal** end,
+not each tiny segment end. Held input, entry deadlines, one-component due handling
+and legacy grading are unchanged; audio remains Stopwatch-controlled as below.
+
 ## Local beatmap audio
 
 `[General] AudioFilename` is resolved relative to the selected `.osu` file's
@@ -200,10 +243,11 @@ are committed; build outputs are intentionally ignored.
 
 - `.osu` format v5–v14; explicit `Mode: 0`, CircleSize, OverallDifficulty and
   ApproachRate, with finite difficulty values in [0,10].
-- Ordinary circles and `L|x:y,spans,length` straight sliders with 1–16 traversals,
+- Ordinary circles, `L|x:y,spans,length` straight sliders and format-v14
+  `B|x:y|...,spans,length` Bézier sliders with 1–16 traversals,
   at distinct integer start times in [0,3600000] ms. The count includes the first
   traversal (2 means out-and-back). Normal/NewCombo/colour-skip bits are accepted.
-  Multi-point paths, other curves, overlapping slider intervals,
+  Multi-point Linear paths, other curve types, older Bézier formats, overlapping slider intervals,
   spinners, holds, equal times and malformed/empty maps are explicitly rejected.
 - Slider maps require explicit SliderMultiplier and SliderTickRate, clamped to
   E05's [.4,3.6] / [.5,8] ranges. Timing points are retained in file order; base
@@ -229,7 +273,7 @@ are committed; build outputs are intentionally ignored.
 | `Platform/GameplayClock.cs` | Practice clock authority for both silent and audible maps |
 | `Platform/BeatmapAudio.cs` | Asynchronous local-media loading and native playback lifetime |
 | `Platform/PracticeFixture.cs` | Independent reproducible PCM tone generator |
-| `Gameplay/Beatmap.cs` | Narrow reader, timing, prepared line, directed Movement records and checkpoint producer |
+| `Gameplay/Beatmap.cs` | Reader, E32 flattening/shared prepared segments, timing, per-segment Movement and checkpoint producer |
 | `Gameplay/CircleSession.cs` | Separate head/parent/checkpoint outcomes, held history, tracking, one-entry due processing and aggregate feedback |
 | `Rendering/PlayfieldLayout.cs` | Forward/inverse layout relation inside a 4:3 stage |
 | `Rendering/PlayfieldView.cs` | Primitive drawing, frame callback, actual mouse sampling |
@@ -239,6 +283,7 @@ are committed; build outputs are intentionally ignored.
 | `Fixtures/slider-ticks.osu` | Independent interior-tick slider |
 | `Fixtures/slider-repeat.osu` | Independent two-traversal out-and-back slider |
 | `Fixtures/mixed-sliders.osu` | Independent circles and one-/two-/three-traversal sliders |
+| `Fixtures/bezier-*.osu` | Independent quadratic/cubic/joined/mixed R06 controls |
 
 The gameplay layer has no WPF dependency. Rendering consumes session state;
 platform input supplies a mapped pointer and stored gameplay time. R01's Python

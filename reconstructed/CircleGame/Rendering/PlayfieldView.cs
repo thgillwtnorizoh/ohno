@@ -12,6 +12,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
 {
     private readonly GameplayClock clock = new();
     private BeatmapAudio? audio;
+    private Dictionary<SliderDefinition, StreamGeometry> paths = new();
     private static readonly Brush Back = Brush("#0C1324"), Stage = Brush("#101D32"), Accent = Brush("#58E0D3");
     private static readonly Typeface Font = new("Segoe UI");
     private bool started;
@@ -37,12 +38,14 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     {
         preparedAudio.RequireReady();
         var replacement = new CircleSession(map);
+        var preparedPaths = map.Sliders.ToDictionary(s => s, s => BuildPath(s.Geometry));
         clock.Pause();
         BeatmapAudio? previousAudio = audio;
         if (previousAudio is not null) previousAudio.StateChanged -= AudioChanged;
         audio = preparedAudio;
         audio.StateChanged += AudioChanged;
         Session = replacement;
+        paths = preparedPaths;
         CurrentTime = 0;
         started = false;
         previousAudio?.Dispose();
@@ -135,15 +138,19 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         {
             SliderDefinition definition = slider.Definition;
             if (slider.Result != Judgement.Pending || CurrentTime < definition.Head.StartTime - game.Approach) continue;
-            Vector2 head = l.ToScreen(definition.Head.Position), tail = l.ToScreen(definition.Tail);
             double alpha = Math.Clamp((CurrentTime - (definition.Head.StartTime - game.Approach)) / 400.0, 0, 1);
             dc.PushOpacity(alpha);
-            var outline = new Pen(Accent, radius * 2 + 4) { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round };
-            var body = new Pen(Brush("#253D58"), radius * 2) { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round };
-            dc.DrawLine(outline, new(head.X, head.Y), new(tail.X, tail.Y));
-            dc.DrawLine(body, new(head.X, head.Y), new(tail.X, tail.Y));
-            int traversal = definition.MovementIndex(CurrentTime);
-            SliderMovement movement = definition.Movements[traversal];
+            // Immutable map-space path built once on Load; only layout changes per frame.
+            dc.PushTransform(new MatrixTransform(l.Scale, 0, 0, l.Scale, origin.X, origin.Y));
+            var outline = new Pen(Accent, (radius * 2 + 4) / l.Scale)
+                { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round, LineJoin = PenLineJoin.Round };
+            var body = new Pen(Brush("#253D58"), radius * 2 / l.Scale)
+                { StartLineCap = PenLineCap.Round, EndLineCap = PenLineCap.Round, LineJoin = PenLineJoin.Round };
+            dc.DrawGeometry(null, outline, paths[definition]);
+            dc.DrawGeometry(null, body, paths[definition]);
+            dc.Pop();
+            int traversal = definition.TraversalIndex(CurrentTime);
+            SliderMovement movement = definition.TraversalEndMovement(traversal);
             Vector2 endpoint = l.ToScreen(movement.To);
             dc.DrawEllipse(null, new Pen(Accent, 2), new(endpoint.X, endpoint.Y), radius * 0.45, radius * 0.45);
             // Producer metadata drives independent markers, never judgement codes.
@@ -157,7 +164,10 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             }
             if (traversal < definition.Traversals - 1)
             {
-                Vector2 direction = Vector2.Normalize(movement.From - movement.To);
+                Vector2 difference = movement.From - movement.To;
+                // A researched zero final direction may remain. The TURN label still
+                // identifies the endpoint; omit its chevron rather than normalize zero.
+                Vector2 direction = difference == Vector2.Zero ? Vector2.Zero : Vector2.Normalize(difference);
                 Vector2 normal = new(-direction.Y, direction.X);
                 float size = (float)Math.Max(8, radius * 0.45);
                 Vector2 tip = endpoint + direction * size * 0.5f;
@@ -242,6 +252,23 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         Text(dc, subtitle, new Point(ActualWidth / 2, ActualHeight / 2 + 20), 16, Brush("#C2D5E5"), true);
     }
 
+    private static StreamGeometry BuildPath(SliderGeometry source)
+    {
+        var geometry = new StreamGeometry();
+        using (StreamGeometryContext context = geometry.Open())
+        {
+            Vector2? previous = null;
+            foreach (var s in source.Segments)
+            {
+                if (previous is null || previous.Value != s.From) context.BeginFigure(new(s.From.X, s.From.Y), false, false);
+                context.LineTo(new(s.To.X, s.To.Y), true, false);
+                previous = s.To;
+            }
+        }
+        geometry.Freeze();
+        return geometry;
+    }
+
     private void Text(DrawingContext dc, string text, Point position, double size, Brush brush, bool centered)
     {
         var formatted = new FormattedText(text, CultureInfo.InvariantCulture, FlowDirection.LeftToRight,
@@ -262,5 +289,6 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         clock.Pause();
         if (audio is not null) { audio.StateChanged -= AudioChanged; audio.Dispose(); audio = null; }
         CompositionTarget.Rendering -= Frame;
+        paths.Clear();
     }
 }

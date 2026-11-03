@@ -17,5 +17,9 @@
     <Content Include="Fixtures\slider-ticks.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\slider-repeat.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\mixed-sliders.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\bezier-quadratic.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\bezier-cubic.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\bezier-joined.osu" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fixtures\bezier-mixed.osu" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

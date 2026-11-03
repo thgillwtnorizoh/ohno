@@ -1,0 +1,25 @@
+osu file format v14
+
+// Independently authored Project ohno input; duplicate control is intentional.
+[General]
+Mode: 0
+
+[Metadata]
+Title:Joined Waves — R06
+Artist:Project ohno
+Creator:Work 2
+Version:Two Quadratic Subcurves
+
+[Difficulty]
+HPDrainRate:0
+CircleSize:4
+OverallDifficulty:4
+ApproachRate:4
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[TimingPoints]
+0,1000,4,1,0,100,1,0
+
+[HitObjects]
+64,192,3000,6,0,B|128:64|256:192|256:192|384:320|448:192,1,500

@@ -6,6 +6,146 @@ namespace Ohno.CircleGame.Gameplay;
 
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
 
+public sealed record SliderSegment(Vector2 From, Vector2 To, bool IsSubcurveEnd, bool IsLinear);
+
+public sealed record SliderGeometry(IReadOnlyList<Vector2> Controls, IReadOnlyList<SliderSegment> RawSegments,
+    IReadOnlyList<SliderSegment> Segments, IReadOnlyList<double> CumulativeLengths,
+    double UnadjustedLength, double RequestedLength);
+
+// E32 finite v14 M144a -> M2d62 -> M2d93. Kept with the shared model so the
+// existing QA projects continue linking the actual implementation unchanged.
+public static class SliderGeometryPreparation
+{
+    public const int MaxControls = 64, MaxSegments = 8192, MaxSubdivisionWork = 50000;
+
+    public static SliderGeometry Prepare(Vector2 head, IReadOnlyList<Vector2> supplied, bool bezier, double requested)
+    {
+        var controls = supplied.ToList();
+        if (controls.Count == 0 || controls[0] != head) controls.Insert(0, head);
+        if (controls.Count > MaxControls) throw new InvalidDataException("R06 allows at most 64 normalized controls per slider.");
+        var raw = new List<SliderSegment>();
+        int work = 0;
+        if (!bezier) Emit(controls, true);
+        else
+        {
+            // Modern forward-adjacent equality; the final equal pair is NOT a separator.
+            int start = 0;
+            for (int i = 0; i < controls.Count; i++)
+            {
+                bool separator = i < controls.Count - 2 && controls[i] == controls[i + 1];
+                if (!separator && i != controls.Count - 1) continue;
+                var range = controls.GetRange(start, i - start + 1);
+                Emit(range.Count == 2 ? range : Flatten(range, ref work), range.Count == 2);
+                start = ++i; // Second duplicate starts the next range; no global deduplication.
+            }
+        }
+        double originalLength = 0;
+        foreach (var s in raw) originalLength += Length(s);
+        if (!double.IsFinite(originalLength) || originalLength <= 0)
+            throw new InvalidDataException("R06 requires a finite nonzero raw slider path.");
+        var prepared = raw.ToList();
+        double excess = originalLength - requested;
+        while (prepared.Count > 0)
+        {
+            var s = prepared[^1];
+            float d = Length(s);
+            if (d <= excess + 0.0001)
+            {
+                prepared.RemoveAt(prepared.Count - 1); excess -= d; continue;
+            }
+            // E06: a zero-direction final piece blocks extension; do not skip it.
+            if (s.To != s.From)
+                prepared[^1] = s with { To = s.From + Vector2.Normalize(s.To - s.From) * (d - (float)excess) };
+            break;
+        }
+        if (prepared.Count == 0) throw new InvalidDataException("Slider geometry vanished during requested-length adjustment.");
+        var cumulative = new List<double>();
+        double total = 0;
+        foreach (var s in prepared) { total += Length(s); cumulative.Add(total); }
+        if (!double.IsFinite(total) || total <= 0) throw new InvalidDataException("Unsupported adjusted slider geometry.");
+        return new(controls.AsReadOnly(), raw.AsReadOnly(), prepared.AsReadOnly(), cumulative.AsReadOnly(), originalLength, requested);
+
+        void Emit(IReadOnlyList<Vector2> points, bool linear)
+        {
+            for (int j = 1; j < points.Count; j++)
+            {
+                if (raw.Count >= MaxSegments) throw new InvalidDataException("R06 allows at most 8192 raw segments per slider.");
+                Vector2 a = points[j - 1], b = points[j];
+                raw.Add(linear ? new(a + (b - a) * 0f, a + (b - a) * 1f, j == points.Count - 1, true) :
+                    new(a, b, j == points.Count - 1, false));
+            }
+        }
+    }
+
+    // Raw flattener exposed for the two E32 finite preparation targets, not gameplay.
+    public static IReadOnlyList<Vector2> FlattenBezier(IReadOnlyList<Vector2> source)
+    {
+        int work = 0;
+        return Flatten(source, ref work).AsReadOnly();
+    }
+
+    private static List<Vector2> Flatten(IReadOnlyList<Vector2> source, ref int work)
+    {
+        if (source.Count == 0 || source.Count > MaxControls)
+            throw new InvalidDataException("R06 flattener requires 1–64 finite controls.");
+        if (source.Any(p => !float.IsFinite(p.X) || !float.IsFinite(p.Y)))
+            throw new InvalidDataException("Bézier controls must be finite.");
+        var output = new List<Vector2>();
+        var pending = new Stack<Vector2[]>();
+        pending.Push(source.ToArray());
+        while (pending.Count > 0)
+        {
+            if (++work > MaxSubdivisionWork) throw new InvalidDataException("R06 Bézier subdivision work limit (50000) exceeded.");
+            Vector2[] p = pending.Pop();
+            bool flat = true;
+            for (int i = 1; i < p.Length - 1; i++)
+            {
+                Vector2 d = (p[i - 1] - p[i] * 2f) + p[i + 1];
+                float squared = d.X * d.X + d.Y * d.Y;
+                if (!float.IsFinite(squared)) throw new InvalidDataException("Nonfinite Bézier flatness operand.");
+                if (squared > 0.25f) { flat = false; break; }
+            }
+            var (left, right) = Split(p);
+            if (!flat) { pending.Push(right); pending.Push(left); continue; }
+            // M2d92: left + right[1..], then the weighted approximation, NOT uniform t.
+            var buffer = new Vector2[2 * p.Length - 1];
+            Array.Copy(left, buffer, p.Length);
+            Array.Copy(right, 1, buffer, p.Length, p.Length - 1);
+            Append(p[0]);
+            for (int i = 1; i < p.Length - 1; i++)
+                Append(((buffer[2 * i - 1] + buffer[2 * i] * 2f) + buffer[2 * i + 1]) * 0.25f);
+        }
+        Append(source[^1]); // Only the traversal appends the source endpoint.
+        return output;
+
+        void Append(Vector2 p)
+        {
+            if (!float.IsFinite(p.X) || !float.IsFinite(p.Y) || output.Count >= MaxSegments + 1)
+                throw new InvalidDataException("R06 Bézier output exceeds finite geometry/8192-segment bounds.");
+            output.Add(p);
+        }
+    }
+
+    private static (Vector2[] Left, Vector2[] Right) Split(Vector2[] source)
+    {
+        var scratch = (Vector2[])source.Clone();
+        var left = new Vector2[source.Length];
+        var right = new Vector2[source.Length];
+        for (int level = 0; level < source.Length; level++)
+        {
+            left[level] = scratch[0]; right[source.Length - level - 1] = scratch[source.Length - level - 1];
+            for (int j = 0; j < source.Length - level - 1; j++) scratch[j] = (scratch[j] + scratch[j + 1]) * (1f / 2f);
+        }
+        return (left, right);
+    }
+
+    public static float Length(SliderSegment s)
+    {
+        Vector2 d = s.To - s.From;
+        return (float)Math.Sqrt((double)(d.X * d.X + d.Y * d.Y));
+    }
+}
+
 public sealed record SliderMovement(Vector2 From, Vector2 To, int StartTime, int EndTime)
 {
     // E15/E21: inclusive interval, Single interpolation, zero-duration endpoint.
@@ -21,8 +161,11 @@ public sealed record SliderDefinition(CircleDefinition Head, Vector2 Tail,
     int EndTime, double TravelRate, double PixelLength, IReadOnlyList<Vector2> ControlPoints,
     int Traversals, IReadOnlyList<SliderMovement> Movements, IReadOnlyList<SliderCheckpoint> Checkpoints)
 {
+    public SliderGeometry Geometry { get; init; } = null!; // Always supplied by the parser.
     public int TerminalTime => Checkpoints[^1].Time;
     public Vector2 EndPosition => Movements[^1].To;
+    public int TraversalIndex(int time) => MovementIndex(time) / Geometry.Segments.Count;
+    public SliderMovement TraversalEndMovement(int traversal) => Movements[(traversal + 1) * Geometry.Segments.Count - 1];
 
     // First match wins at the shared endpoint. Late queries retain extrapolation.
     // Before-start fallback is for this client's ready-screen rendering only.
@@ -58,7 +201,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
         var circles = new List<CircleDefinition>();
-        var sliderRows = new List<(CircleDefinition Head, Vector2 Tail, double Length, int Traversals)>();
+        var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals)>();
         var timing = new List<TimingPoint>();
         string section = "";
         for (int lineNumber = 0; lineNumber < lines.Length; lineNumber++)
@@ -72,11 +215,13 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 if (row.Length < 5 || !int.TryParse(row[2], NumberStyles.Integer, CultureInfo.InvariantCulture, out int time) ||
                     !int.TryParse(row[3], NumberStyles.Integer, CultureInfo.InvariantCulture, out int type) ||
                     (type & ~(4 | 112)) is not (1 or 2))
-                    throw new InvalidDataException($"Line {lineNumber + 1}: only ordinary circles and supported Linear sliders are accepted.");
+                    throw new InvalidDataException($"Line {lineNumber + 1}: only ordinary circles and supported Linear/v14 Bézier sliders are accepted.");
                 // QA01-D02: validate syntax only; no invented sound-bit restrictions.
                 if (!int.TryParse(row[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out _))
                     throw new InvalidDataException($"Line {lineNumber + 1}: hitSound (column 5) must be an integer, not empty or malformed.");
-                float x = Number(row[0], "circle X"), y = Number(row[1], "circle Y");
+                bool isBezier = (type & 2) != 0 && row.Length >= 6 && row[5].StartsWith("B|", StringComparison.Ordinal);
+                float x = isBezier ? (float)(int)Math.Clamp(DoubleNumber(row[0], "head X"), 0, 512) : Number(row[0], "circle X");
+                float y = isBezier ? (float)(int)Math.Clamp(DoubleNumber(row[1], "head Y"), 0, 512) : Number(row[1], "circle Y");
                 if (time < 0 || time > 3_600_000)
                     throw new InvalidDataException("R02 requires object times between 0 and 3600000 ms.");
                 // E04 parser bounds both axes to 512, then truncates. No mods/offsets.
@@ -86,16 +231,27 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 {
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
                     string[] pathPoints = row[5].Split('|');
-                    if (pathPoints.Length != 2 || pathPoints[0] != "L")
-                        throw new InvalidDataException("R05 supports only L|x:y (one straight segment); curves and multi-point paths are not implemented.");
-                    string[] endpoint = pathPoints[1].Split(':');
-                    if (endpoint.Length != 2) throw new InvalidDataException("Invalid slider endpoint; expected x:y.");
+                    if (isBezier && version != 14) throw new InvalidDataException("R06 Bézier preparation supports only format v14.");
+                    if ((!isBezier && (pathPoints.Length != 2 || pathPoints[0] != "L")) || pathPoints.Length < 2)
+                        throw new InvalidDataException("Use L|x:y (one straight segment) or format-v14 B| controls. Other curve types are not implemented.");
+                    if (pathPoints.Length - 1 > SliderGeometryPreparation.MaxControls)
+                        throw new InvalidDataException("R06 allows at most 64 normalized controls per slider.");
+                    var controls = new List<Vector2>();
+                    foreach (string point in pathPoints.Skip(1))
+                    {
+                        string[] xy = point.Split(':');
+                        if (xy.Length != 2) throw new InvalidDataException("Invalid slider control; expected x:y.");
+                        controls.Add(isBezier ? new(ControlCoordinate(xy[0]), ControlCoordinate(xy[1])) :
+                            new(Number(xy[0], "slider endpoint X"), Number(xy[1], "slider endpoint Y")));
+                    }
+                    // Constructor normalization is exact and preserves duplicate controls.
+                    if (controls.Count == 0 || controls[0] != head.Position) controls.Insert(0, head.Position);
                     if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans < 1 || spans > 16)
                         throw new InvalidDataException("R05 supports 1–16 slider traversals (span count includes the first traversal).");
                     double length = DoubleNumber(row[7], "slider pixel length");
                     if (length <= 0.0001 || length > 4096)
                         throw new InvalidDataException("R05 slider length must be greater than 0.0001 and at most 4096 pixels.");
-                    sliderRows.Add((head, new(Number(endpoint[0], "slider endpoint X"), Number(endpoint[1], "slider endpoint Y")), length, spans));
+                    sliderRows.Add((head, controls.ToArray(), isBezier, length, spans));
                 }
                 if (circles.Count + sliderRows.Count > 10000) throw new InvalidDataException("R04 accepts at most 10000 objects.");
             }
@@ -130,12 +286,15 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         {
             double multiplier = SliderSetting("SliderMultiplier", 0.4, 3.6);
             double tickRate = SliderSetting("SliderTickRate", 0.5, 8);
-            int totalCheckpoints = 0;
+            int totalCheckpoints = 0, totalSegments = 0, totalMovements = 0;
             foreach (var slider in sliderRows.OrderBy(s => s.Head.StartTime))
             {
-                var prepared = PrepareSlider(slider.Head, slider.Tail, slider.Length, slider.Traversals, version, multiplier, tickRate, timing);
+                var prepared = PrepareSlider(slider.Head, slider.Controls, slider.Bezier, slider.Length, slider.Traversals, version, multiplier, tickRate, timing);
                 totalCheckpoints += prepared.Checkpoints.Count;
                 if (totalCheckpoints > 100_000) throw new InvalidDataException("R05 accepts at most 100000 scheduled checkpoints per map.");
+                totalSegments += prepared.Geometry.Segments.Count; totalMovements += prepared.Movements.Count;
+                if (totalSegments > 100_000 || totalMovements > 250_000)
+                    throw new InvalidDataException("R06 map geometry exceeds 100000 prepared segments / 250000 Movement records.");
                 sliders.Add(prepared);
             }
             for (int i = 1; i < sliders.Count; i++)
@@ -192,7 +351,15 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         return value;
     }
 
-    private static SliderDefinition PrepareSlider(CircleDefinition head, Vector2 suppliedTail, double length,
+    private static float ControlCoordinate(string text)
+    {
+        double value = DoubleNumber(text, "Bézier control coordinate");
+        if (value < int.MinValue || value > int.MaxValue)
+            throw new InvalidDataException("R06 Bézier controls must fit finite Int32 coordinates.");
+        return (float)(int)value; // E32: Double -> Int32 (truncate) -> Single, no control clamp.
+    }
+
+    private static SliderDefinition PrepareSlider(CircleDefinition head, Vector2[] controls, bool bezier, double length,
         int traversals, int version, double multiplier, double tickRate, List<TimingPoint> timing)
     {
         // E05: list order is significant; rate uses truncated time, spacing raw time.
@@ -214,16 +381,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         double spacing = (100.0 * multiplier) / tickRate;
         double velocity = effectiveBeat > 0 ? (spacing * tickRate) * (1000.0 / effectiveBeat) : spacing * tickRate;
-        float geometricLength = Vector2.Distance(head.Position, suppliedTail);
-        if (!float.IsFinite(geometricLength) || geometricLength <= 0)
-            throw new InvalidDataException("R05 requires a nondegenerate finite slider segment.");
-        // E06's one-segment trailing trim/extension. Unsupported degeneracy is explicit.
-        float excess = (float)(geometricLength - length);
-        if (geometricLength <= geometricLength - length + 0.0001)
-            throw new InvalidDataException("Slider geometry vanished during length preparation.");
-        Vector2 tail = head.Position + Vector2.Normalize(suppliedTail - head.Position) * (geometricLength - excess);
-        float preparedLength = Vector2.Distance(head.Position, tail);
-        if (!float.IsFinite(preparedLength) || preparedLength <= 0 || !double.IsFinite(velocity) || velocity <= 0)
+        SliderGeometry geometry = SliderGeometryPreparation.Prepare(head.Position, controls, bezier, length);
+        if (!double.IsFinite(velocity) || velocity <= 0)
             throw new InvalidDataException("Unsupported slider geometry or travel rate.");
 
         double q = Math.Min(version < 8 ? spacing : spacing / spacingFactor, length);
@@ -232,25 +391,31 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var moves = new List<SliderMovement>();
         var components = new List<SliderCheckpoint>();
         double absoluteTime = head.StartTime, phase = 0, carry = 0;
-        double dt = (double)(1000f * preparedLength) / velocity;
-        if (!double.IsFinite(dt) || dt < 1 || absoluteTime + dt * traversals > 3_600_000)
+        float[] distances = geometry.CumulativeLengths.Select((v, i) => (float)(v - (i == 0 ? 0 : geometry.CumulativeLengths[i - 1]))).ToArray();
+        double duration = distances.Sum(d => (double)(1000f * d) / velocity);
+        if (!double.IsFinite(duration) || duration < 1 || absoluteTime + duration * traversals > 3_600_000)
             throw new InvalidDataException("R05 requires each traversal >= 1 ms and parent end <= 3600000 ms.");
         for (int traversal = 0; traversal < traversals; traversal++)
         {
             bool reverse = traversal % 2 == 1;
-            var move = new SliderMovement(reverse ? tail : head.Position, reverse ? head.Position : tail,
-                (int)absoluteTime, (int)(absoluteTime + dt));
-            moves.Add(move);
-            absoluteTime += dt;
-            double remaining = geometricLength; // Unadjusted sum, NOT requested/prepared L.
+            double remaining = geometry.UnadjustedLength; // NOT requested/prepared L.
             bool suppressed = false;
-            carry += preparedLength;
-            while (carry >= q && !suppressed)
+            for (int step = 0; step < geometry.Segments.Count; step++)
             {
-                phase += q; carry -= q; remaining -= q;
-                suppressed = remaining <= 0.01 * velocity;
-                if (suppressed) break;
-                AddCheckpoint(Stamp(phase), SliderCheckpointKind.Interior, traversal);
+                int index = reverse ? geometry.Segments.Count - 1 - step : step;
+                SliderSegment segment = geometry.Segments[index];
+                double dt = (double)(1000f * distances[index]) / velocity;
+                moves.Add(new(reverse ? segment.To : segment.From, reverse ? segment.From : segment.To,
+                    (int)absoluteTime, (int)(absoluteTime + dt)));
+                absoluteTime += dt;
+                carry += distances[index];
+                while (carry >= q && !suppressed)
+                {
+                    phase += q; carry -= q; remaining -= q;
+                    suppressed = remaining <= 0.01 * velocity;
+                    if (suppressed) break;
+                    AddCheckpoint(Stamp(phase), SliderCheckpointKind.Interior, traversal);
+                }
             }
             phase += carry;
             AddCheckpoint(Stamp(phase), traversal == traversals - 1 ? SliderCheckpointKind.Final : SliderCheckpointKind.Repeat, traversal);
@@ -260,14 +425,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         int end = (int)absoluteTime;
         // E22: adjust ONLY the final stored item. Do not sort or repair the list.
         components[^1] = components[^1] with { Time = Math.Max(head.StartTime + (end - head.StartTime) / 2, components[^1].Time - 36) };
-        var definition = new SliderDefinition(head, tail, end, velocity, length,
-            Array.AsReadOnly(new[] { head.Position, suppliedTail }), traversals, moves.AsReadOnly(), components.AsReadOnly());
+        var definition = new SliderDefinition(head, geometry.Segments[^1].To, end, velocity, length,
+            geometry.Controls, traversals, moves.AsReadOnly(), components.AsReadOnly()) { Geometry = geometry };
         for (int i = 0; i < components.Count; i++)
         {
             var c = components[i];
             // Independent display markers; these positions do not select results.
             components[i] = c with { Position = c.Kind == SliderCheckpointKind.Interior ?
-                definition.RequiredPosition(c.Time) : moves[c.Traversal].To };
+                definition.RequiredPosition(c.Time) : definition.TraversalEndMovement(c.Traversal).To };
         }
         return definition;
 
