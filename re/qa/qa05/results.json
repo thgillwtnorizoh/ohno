@@ -1,0 +1,1249 @@
+{
+  "target_commit": "c63d1d36641abea7ac096e63b0468e9552e1f4f8",
+  "gate_commit": "8549954ec9126baa4040479a607e85db2bb19e23",
+  "run_id": 41575975587,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41575975587",
+  "job_id": 125719451573,
+  "attempt": 1,
+  "conclusion": "success",
+  "run_started_at": "2026-11-03T04:04:56Z",
+  "environment": {
+    "os": "Windows Server2022 Datacenter10.0.20348",
+    "image": "windows-2022",
+    "image_version": "20261025.346.1",
+    "preinstalled_sdk": "8.0.427",
+    "sdk_installed_by_task": false
+  },
+  "build": {
+    "outcome": "success",
+    "warnings": 0,
+    "errors": 0
+  },
+  "suites": {
+    "qa01": {
+      "executed": 90,
+      "passed": 90,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "timing OD5 delta=0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-49",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=49",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-50",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=50",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-51",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=51",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-99",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=99",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-100",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=100",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-101",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=101",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-149",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=149",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-150",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=150",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=-151",
+          "outcome": "PASS"
+        },
+        {
+          "name": "timing OD5 delta=151",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=4",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=5.25",
+          "outcome": "PASS"
+        },
+        {
+          "name": "prepared operands OD/AR=10",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=55 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=55 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=56 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=56 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=57 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=57 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=107 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=107 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=108 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=108 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=109 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=109 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=159 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=159 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=160 sign=-1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R02 fixture OD4 error=160 sign=1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "expiration equality and next millisecond",
+          "outcome": "PASS"
+        },
+        {
+          "name": "already evaluated exclusion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=799",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=800",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=1600",
+          "outcome": "PASS"
+        },
+        {
+          "name": "selection/admission early time=1601",
+          "outcome": "PASS"
+        },
+        {
+          "name": "ordered earlier object blocking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "first passing object is not nearest",
+          "outcome": "PASS"
+        },
+        {
+          "name": "scale-one radius scalar",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry center",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry inside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry outside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry diagonal-inside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry diagonal-outside",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <16, 0>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <-16, 0>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <0, 16>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <0, -16>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <-22, 22>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "geometry sign symmetry <22, -22>",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D01 reject NaN X",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D01 reject NaN Y",
+          "outcome": "PASS"
+        },
+        {
+          "name": "reject infinite pointer",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout controlled center scale1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout controlled doubled scale",
+          "outcome": "PASS"
+        },
+        {
+          "name": "layout letterbox translation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "new session state isolation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "finished session ignores later component calls",
+          "outcome": "PASS"
+        },
+        {
+          "name": "bundled practice parser",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser clamp and truncate both axes",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser sorts unsorted input",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject mode",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject version",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject missing AR",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject NaN difficulty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject range difficulty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject empty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject slider",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject spinner",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject mixed type",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject equal times",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject negative time",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject large time",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject nonfinite position",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser reject short row",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser object count limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "parser byte size limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D02 reject malformed hitSound",
+          "outcome": "PASS"
+        },
+        {
+          "name": "QA01-D02 reject empty hitSound",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "qa03": {
+      "executed": 56,
+      "passed": 56,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "A01 tick fixture schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 repeat fixture schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 three-span carry schedule and end",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 producer roles retain ordered traversal identity",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 directed movement endpoints and intervals",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 three spans preserve nonzero carry and alternate endpoints",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 forward literal geometry before reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 exact reversal selects first inclusive record",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 reverse immediately after boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 reverse returns to initial endpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 third traversal continues forward",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B06 reversal alone preserves active entry and held side",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 no component before due and inclusive equality",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 one outstanding component per invocation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 identical-time calls can drain prefix then stop",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 delayed interior gets repeat code from due prefix",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 delayed repeat can get interior code",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 all-due prefix gives earlier item terminal success code",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 failed and pending slots remain distinct",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 missed head permits later checkpoint success",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 entry equality succeeds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 late entry fails while tracking remains active",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 held input alone is insufficient",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 cursor alone is insufficient",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D05 entry radius equality rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D06 just inside entry radius accepted",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D07 active radius equality rejects and leaves",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 active hysteresis accepts outside entry disk",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D09 release and timely re-entry renew entry",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D10 release and late re-entry cannot rescue deadline",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D11 both held retains remembered side and no synthetic edge needed",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D12 replacing logical side follows original history branch",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D13 history veto differs from any-held shortcut",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D14 NaN follow coordinates reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E01 head and components credit combo without parent duplicate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E02 ordinary interior failure resets positive combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E03 repeat success increments combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E04 repeat failure uses ordinary negative reset",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E05 sequential final success increments combo before completion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E06 final failure preserves combo and guarded active flag",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E08 terminal entry equality after previous failures succeeds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E09 terminal entry after deadline fails while active",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E07 all due failure is nonterminal until processed count reaches N",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 inclusive parent end distinct from terminal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 delayed parent completion leaves backlog untouched",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 evaluated parent suppresses later component processing",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 terminal failure still permits positive parent aggregate",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 legacy full successes with low positive head still best",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 missing head and all components successful gives middle",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 all failed including head gives miss",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 below half and above half use recorded successes",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 pending versus failed equal numerator but different histories",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-01 unchanged single-span fixture preparation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-02 head and terminal independently produce best legacy grade",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-03 head only exactly half grades middle",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R04-04 timely release and re-entry preserves terminal",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "r06": {
+      "executed": 4,
+      "passed": 4,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "quadratic raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "cubic raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "joined raw E32 vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "final-pair guard and preserved controls",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "qa04": {
+      "executed": 43,
+      "passed": 43,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "A01 E32 quadratic exact raw vertices",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 E32 cubic weighted vertices rather than uniform t",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 exact squared flatness equality accepts leaf",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 just above flatness boundary subdivides",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 flatness is second difference not chord distance",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 asymmetric half split preserves polygon order",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A07 source controls are not mutated",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A08 singleton retains duplicate final endpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 repeated control joins two quadratic ranges",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 final equal pair is not a separator",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 two-control subcurve is a marked straight piece",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 leading duplicate retained as zero raw piece",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 head insertion and no second head insertion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 unadjusted raw length uses E32 Single lengths",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 shorten last piece without changing raw snapshot",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 remove trailing piece at exact requested boundary",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 removal tolerance can erase tiny requested remainder",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 extend nonzero tail direction",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 zero final direction blocks requested extension",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 entirely erased path rejected by engineering policy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 cumulative lengths recomputed from adjusted endpoints",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 joined bend forward and reverse segment times",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 inclusive first matching segment and reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 path follows pieces instead of whole-curve chord",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 true quadratic uses individual segment time conversions",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E01 checkpoint carry across pieces and reversal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E02 one outstanding entry per delayed call",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E03 curved segment boundary preserves held tracking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E04 reversal alone preserves entry and tracking",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E05 loss and timely re-entry across pieces",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E06 independent head miss then valid later checkpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E07 parent end separate from checkpoint and no duplicate combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E08 late re-entry cannot rescue due checkpoint",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 v13 Bezier rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 unsupported Perfect and Catmull types rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 malformed control rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 nonfinite control rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 degenerate geometry rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 control boundary accepts64 rejects65",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 parser normalized controls limit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 empty nonfinite and overflow flatness defensive checks",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 declared segment and work limits retained",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F10 parser truncates Double controls before Single storage",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "r07": {
+      "executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "R07 parsing, metadata, three fixtures and OD5 preparation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 atan2 projection, nonlegacy first angle, negative interval and adaptive divisor",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 signed wrapping and exact antipodal rejection with previous-angle update",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 stationary decay before hold gate and released angular reference",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 strict integration interval, acceleration, clamp, contribution cap and residual motion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 Single integer truncation, one-change accounting, first zero/second8192 and cache",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 modern final thresholds, strict completion, no drain, no head press and fresh session",
+          "outcome": "PASS"
+        },
+        {
+          "name": "R07 parser rejection of malformed sound, invalid duration, old format and overlap",
+          "outcome": "PASS"
+        }
+      ]
+    },
+    "qa05": {
+      "executed": 66,
+      "passed": 66,
+      "failed": 0,
+      "cases": [
+        {
+          "name": "A01 atan2 Y X with translated supplied center",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 modern first sample establishes reference only",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 opposite signed motions give opposite targets",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 wrap in negative angular crossing",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 wrap in positive angular crossing",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 exact positive antipode rejected but reference advances",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A07 exact negative antipode rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A08 just inside antipodal magnitude accepted",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A09 plus pi to minus pi is zero wrapped motion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A10 radius does not scale angular target",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A11 center atan2 has no invented dead zone",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A12 released movement zeros target and updates reference",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A13 stationary first decay then zero despite release and late time",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A14 sample at exact start and end is eligible",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A15 movement outside live interval updates only reference target zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A16 negative sample interval leaves sample history unchanged",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 EMA first and second samples use real supplied interval",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 zero interval keeps EMA and selects fixed divisor",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 adaptive divisor uses sample interval after EMA threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 adaptive zero divisor yields zero target",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 acceleration and Single progress conversion",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B06 both motion clamps and per-update progress cap",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B07 direction reversal decelerates without resetting progress",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B08 strict integration start end and positive interval",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B09 released target still permits residual progress",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B10 sufficient deceleration can stop immediately",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 fractional progress leaves integer cache unchanged",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 first exact integer change has no component result",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 skipped integers count as one observed event",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 ordinary changed observations alternate raw identities",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 bonus predicate begins only at qualifying even offset",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 unchanged integer never repeats event",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 inequality includes artificial downward integer observation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 OD5 duration3000 prepares N15 and acceleration",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 OD endpoints prepare distinct truncated requirements",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 0 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 2 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 3 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 13 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 14 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 15 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 N15 count 16 threshold",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 zero requirement special and small N division",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D05 exact end does not complete and later completion is once",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D06 accepted progress can finish before last observation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D07 explicit last sample changes C then final grade",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D08 high P with one observation grades from C not P",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D09 evaluated spinner stops later integration",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E01 spinner collection excluded from heads and head press",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E02 live session components do not add combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E03 final success increments combo and accuracy only once",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E04 failure resets earlier circle combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E05 fresh sessions do not share observation or motion state",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E06 nominal input qualification is separate from integration",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E07 supplied mapped spinner pointer separate from head pointer",
+          "outcome": "PASS"
+        },
+        {
+          "name": "E08 mixed circle slider spinner sequence counted once",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F01 all three R07 fixtures load under current parser",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F02 valid optional hit sample retained",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F03 malformed and empty hitSound reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F04 malformed and absent end reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F05 spinner unsupported versions reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F06 zero negative and overlong durations reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F07 duration1 and duration60000 accepted",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F08 maximum end bound equality and rejection",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F09 overlapping and shared endpoint objects reject",
+          "outcome": "PASS"
+        },
+        {
+          "name": "F10 old circle slider fixtures remain admitted",
+          "outcome": "PASS"
+        }
+      ]
+    }
+  },
+  "r06_fixture_loads": [
+    "LOAD bezier-quadratic: circles=0, sliders=1, segments=64, movements=64",
+    "LOAD bezier-cubic: circles=0, sliders=1, segments=96, movements=96",
+    "LOAD bezier-joined: circles=0, sliders=1, segments=128, movements=128",
+    "LOAD bezier-mixed: circles=3, sliders=4, segments=284, movements=375"
+  ],
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 20
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 21
+    }
+  ],
+  "commands": [
+    "dotnet --list-sdks",
+    "dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo",
+    "dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa05/Headless/QA05.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\""
+  ],
+  "evidence": {
+    "full_retrieved_utf8_log_sha256": "42748244086127a58fe2a4af19352b913a2e44bdc7433bbbc509b4d5206dc417",
+    "gate_output_sha256": "663dd24dfc5e089c7d8fb93320526e777f8e5d31447b52d6b02de903ec9bcce5"
+  },
+  "confirmed_defects": [],
+  "classification": {
+    "CONFIRMED STATIC": "Existing E24-E26 instructions, no new binary inspection",
+    "VERIFIED COMPONENT": "66 QA05 production-linked cases; old suites/development kept separate",
+    "OWNER-REPORTED": "R07 launches and spinner behavior close to original in tested scenarios",
+    "ENGINEERING": "Displayed center, nominal sampling qualification, practical limits, serial callbacks and practice scoring",
+    "UNVERIFIED": [
+      "Original native scheduling/operands/precision",
+      "Complete score/bonus/HP",
+      "Pixel/audio fidelity",
+      "General cross-map equivalence",
+      "All17 E20 original-runtime cases NOT RUN"
+    ]
+  },
+  "preservation": {
+    "baseline_blob_count": 218,
+    "unchanged_baseline_blobs_modes": 217,
+    "only_modified_baseline_path": ".github/workflows/r04-build.yml",
+    "additions": "re/qa/qa05/",
+    "implementation_history_previous_qa_e20": "unchanged"
+  }
+}

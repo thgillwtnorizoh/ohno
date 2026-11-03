@@ -3,7 +3,20 @@
 QA05 — independent R07 spinner mechanics/integration regression, Work1,
 2026-11-03 (Asia/Bangkok). Target/current origin/main:
 `c63d1d36641abea7ac096e63b0468e9552e1f4f8`.
-Initial status: **HOSTED EXECUTION PENDING**. Prepared cases are not passes.
+**PASS — genuine hosted execution:** WPF win-x64 build **0 warnings/0 errors**;
+QA01 **90/90**, QA03 **56/56**, QA04 **43/43**, independent QA05 **66/66**.
+Total255 QA cases, no failures. R06 **4 preparation targets/4 fixture loads**;
+R07 **8 development groups** passed, kept separate from independent coverage.
+One gate execution, no rerun.
+
+[Run41575975587 / job125719451573](https://github.com/thgillwtnorizoh/ohno/actions/runs/41575975587/job/125719451573),
+attempt1, success; checkout `8549954ec9126baa4040479a607e85db2bb19e23`, direct
+child of the target. Windows Server2022 Datacenter10.0.20348,
+image20261025.346.1, preinstalled SDK8.0.427. results.json records named outcomes,
+commands, steps, source SHA and log hashes; gate-output.txt preserves selected
+actual output. Full retrieved log hash retained without checkout/auth details.
+The checkout Node20 advisory is separate from compiler warnings. Results-only
+publication keeps all tested code/workflow unchanged and does not rerun CI.
 
 66 focused cases link production Beatmap.cs/CircleSession.cs, including actual
 SpinnerState/SpinnerProgressObservation. They exclude WPF, entry points, audio,
@@ -81,9 +94,23 @@ component credit from duplicate final accuracy/combo.
 
 ## Classification, engineering and limitations
 
-**VERIFIED COMPONENT:** assigned from actual CI output only. Until then assertions
-are proposed expectations. Any confirmed discrepancy remains a failing case with
-expected/actual output and a Work2 correction recommendation.
+**VERIFIED COMPONENT:** all66 QA05 cases passed. No confirmed implementation
+defect and **no correction required for the tested finite cases**. Angular input,
+smoothing, progress/cache/count separation, raw selectors, modern final thresholds,
+combo/accuracy and mixed-object behavior satisfy the bounded assertions. No
+production code or test expectation changed after execution.
+
+Source cross-checks in CircleSession.cs:21–33 observed-change/cache/raw selector;
+57–65 preparation;74–106 angular/EMA/held processing;109–115 motion/progress;
+119–132 modern grading and once-only completion;248–275 session qualification,
+integration and final practice handoff. Existing189 QA cases remain unchanged
+and pass on current R07 sources. This does not certify untested native helpers.
+
+All218 baseline paths remain present;217 blobs/modes outside the existing shared
+workflow are unchanged. Source identities match provenance.json. QA01–QA04,
+research journals, E20, all Work2 files and fixtures are preserved exactly.
+Remote commit ancestry, exact changed-file scope and complete tracked tree are
+verified at publication. No historical research campaign is rerun.
 
 **OWNER-REPORTED:** the owner confirms R07 launches and spinner behavior is close
 to original in tested scenarios. No identified build/map/settings/trace capture
