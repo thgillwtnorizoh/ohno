@@ -1,0 +1,180 @@
+{
+  "target_commit": "06cfaee3e9ade203852d494a26e003ca2da61174",
+  "target_tree": "0be8b68269f46bce706404dbda6d2ec20aadc882",
+  "reviewed_files": [
+    {
+      "path": "AGENTS.md",
+      "git_blob": "d21878df479ff9e44de1048e0ee4d79f7123dbba",
+      "sha256": "ffcc2644d5c47a01d529e31d81d631747e6014a93f1aa6cb82d87d73e5c1d2fc"
+    },
+    {
+      "path": "re/Instruction.md",
+      "git_blob": "1400e53dafcc489d9881baa3b24319b9e832adb6",
+      "sha256": "bf9952eec9d375a8e2fb661142390c2feff6570214f4ce09aa8063d6f34274f9"
+    },
+    {
+      "path": "reconstructed/R04-first-slider.md",
+      "git_blob": "a363ba576a4ef031da64c4dd3601ee759d2066a0",
+      "sha256": "3cf4bfc6513239bdb27b07a41304278b2b17021546d4f727b706642e4b6c8717"
+    },
+    {
+      "path": "reconstructed/R05-repeating-sliders.md",
+      "git_blob": "6737b6b27c3487e52f20c0cb46fb78291f60cd20",
+      "sha256": "a145637eeb90cbfed04ead68116595410764b469a419ca13a817569ff996e3de"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "git_blob": "3ecc0726bf0f5991b23413d6ee3a50dcb1a3b5dd",
+      "sha256": "60d739b848a9ff58daea337c3be4495c929b06e2be6260dd7d1767b3b9c75e87"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+      "git_blob": "0e0bade70599970e0224d3ec0599fa839e8e81f2",
+      "sha256": "2a7887fd41243e5cc8a4c2f08174f4c1cf5c56e6ba695fe1e4a74085107cca39"
+    },
+    {
+      "path": "re/qa/qa01/Headless/CoreTests.cs",
+      "git_blob": "7ce067a8e373b49fad515406a7237f219895234c",
+      "sha256": "0a319182cb59bc3a39cffc8ef074c5d2ed7bbef43c5977e42e0af95ffb1f1942"
+    },
+    {
+      "path": "re/qa/qa01/Headless/QA01.Headless.csproj",
+      "git_blob": "8b015e7d5ec42a7ee6b5c0aa12667bc48561d4e3",
+      "sha256": "24012443d0b3c5c0ffc7c0bd6883c2a1357bd69663c4d209c50178ba2d2ef92d"
+    },
+    {
+      "path": "re/qa/qa01/README.md",
+      "git_blob": "50142d34b7df02886bea1247bd3f4e78159c833a",
+      "sha256": "b2ed96261a322cff2714d53ca6875ba82dd875b9c095b239901662e800ee1b80"
+    },
+    {
+      "path": "re/qa/qa02/README.md",
+      "git_blob": "41b8fda0d8aa15ad20e304127b7fc7d6a3f1df1d",
+      "sha256": "8fb46f2c9a2a0432bd5e4949e61cd2f163059c4ee8503f92b95c17d1cc0c6721"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/audible-circles.osu",
+      "git_blob": "38b9abe2d2f392fcf6f1830d6aa25c1b13369bdd",
+      "sha256": "0a09c8b541fa3e8476e60e04aa67683a5dbc6ee2a3dc30c5cb0bedcf89f96ceb"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/first-circles.osu",
+      "git_blob": "c7a778ac403d7f68b99373a4e9a19311ce033829",
+      "sha256": "3575ede9a893669af76585b9dcca2a5132bf37e206f02d98f049293f9bc0f2a2"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/first-slider.osu",
+      "git_blob": "2a60a838a2990550d409139ec3a668939cabec42",
+      "sha256": "c4238fa5faf81e9febc826adbc5a7f6dd2501eb25409359f1a49287537e518d3"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/mixed-sliders.osu",
+      "git_blob": "7b9527a54f63dcb5e840f2457d2755bcba6b6998",
+      "sha256": "297c7d79314e7c7d9ee4ada903f04145971b87b60e27ba54b16f3301478a79ce"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/slider-repeat.osu",
+      "git_blob": "595106e29574c2bca26456a945c4025989877df4",
+      "sha256": "d89ea49468cdac88aa015aa754f3b1420020aa6b288d658c65fa839e389ce1b1"
+    },
+    {
+      "path": "reconstructed/CircleGame/Fixtures/slider-ticks.osu",
+      "git_blob": "06a2ccd70296e2b83df24fc475c6d3b6cae9dfa9",
+      "sha256": "f296dc28f650aaadb63db11ecf5a463065954aa554dc1c7253623b617e1aa8d6"
+    },
+    {
+      "path": "re/15-slider-head-input-and-tracking-entry.md",
+      "git_blob": "71364f3e8bf21d80d695cdb105b07b2c62b1dae3",
+      "sha256": "26138801d75224bd4e1e1b36db27ff63621baf280787a744747f77259a6f959a"
+    },
+    {
+      "path": "re/16-slider-scheduled-component-judgement.md",
+      "git_blob": "72185240925e7fb266af4435e8b452b15632c16a",
+      "sha256": "4ea026650418b8d89535f3cf1632ab57738870337b08483d26ede8044bef17e1"
+    },
+    {
+      "path": "re/17-slider-parent-completion-and-aggregate-judgement.md",
+      "git_blob": "0018168e785fcfc3d4d8489e781b010342fa1593",
+      "sha256": "9066df1819459b20905dfc0163d214586732ad8d226c8fb6a12c3115d370e6d9"
+    },
+    {
+      "path": "re/18-slider-checkpoint-break-and-combo-boundary.md",
+      "git_blob": "ba044cc577a52c152e31bf840e40e77337f18928",
+      "sha256": "6c879b38a66cd2ba6b976ebd1ba84b96c090c0fbf4b9f2f712c26a4120c131c5"
+    },
+    {
+      "path": "re/21-slider-first-repeat-boundary.md",
+      "git_blob": "f391d2cee56ff0576414156c0d6f531964c584a6",
+      "sha256": "c835c496abcc5413e3644f3554c026c47cdfafba3113d5c0295372ce8e444840"
+    },
+    {
+      "path": "re/22-slider-final-checkpoint-and-completion-ordering.md",
+      "git_blob": "5d64617c4a133deea68d30598a5c4d519f43db71",
+      "sha256": "fccc1f41947e9161717cc46c8ccf30a848be0e402882046815548ee6b5b32d60"
+    },
+    {
+      "path": "re/23-slider-aggregate-policy-reference-origin.md",
+      "git_blob": "72c19c6bfd4ee9fa06956cd9abdc73780842d17b",
+      "sha256": "abc17edbb090152a710391653f0c31a54b9dcb30cc7d675fb1782c794cf575b8"
+    }
+  ],
+  "qa03_case_names": [
+    "A01 tick fixture schedule and end",
+    "A02 repeat fixture schedule and end",
+    "A03 three-span carry schedule and end",
+    "A04 producer roles retain ordered traversal identity",
+    "A05 directed movement endpoints and intervals",
+    "A06 three spans preserve nonzero carry and alternate endpoints",
+    "B01 forward literal geometry before reversal",
+    "B02 exact reversal selects first inclusive record",
+    "B03 reverse immediately after boundary",
+    "B04 reverse returns to initial endpoint",
+    "B05 third traversal continues forward",
+    "B06 reversal alone preserves active entry and held side",
+    "C01 no component before due and inclusive equality",
+    "C02 one outstanding component per invocation",
+    "C03 identical-time calls can drain prefix then stop",
+    "C04 delayed interior gets repeat code from due prefix",
+    "C05 delayed repeat can get interior code",
+    "C06 all-due prefix gives earlier item terminal success code",
+    "C07 failed and pending slots remain distinct",
+    "C08 missed head permits later checkpoint success",
+    "D01 entry equality succeeds",
+    "D02 late entry fails while tracking remains active",
+    "D03 held input alone is insufficient",
+    "D04 cursor alone is insufficient",
+    "D05 entry radius equality rejected",
+    "D06 just inside entry radius accepted",
+    "D07 active radius equality rejects and leaves",
+    "D08 active hysteresis accepts outside entry disk",
+    "D09 release and timely re-entry renew entry",
+    "D10 release and late re-entry cannot rescue deadline",
+    "D11 both held retains remembered side and no synthetic edge needed",
+    "D12 replacing logical side follows original history branch",
+    "D13 history veto differs from any-held shortcut",
+    "D14 NaN follow coordinates reject",
+    "E01 head and components credit combo without parent duplicate",
+    "E02 ordinary interior failure resets positive combo",
+    "E03 repeat success increments combo",
+    "E04 repeat failure uses ordinary negative reset",
+    "E05 sequential final success increments combo before completion",
+    "E06 final failure preserves combo and guarded active flag",
+    "E08 terminal entry equality after previous failures succeeds",
+    "E09 terminal entry after deadline fails while active",
+    "E07 all due failure is nonterminal until processed count reaches N",
+    "F01 inclusive parent end distinct from terminal",
+    "F02 delayed parent completion leaves backlog untouched",
+    "F03 evaluated parent suppresses later component processing",
+    "F04 terminal failure still permits positive parent aggregate",
+    "F05 legacy full successes with low positive head still best",
+    "F06 missing head and all components successful gives middle",
+    "F07 all failed including head gives miss",
+    "F08 below half and above half use recorded successes",
+    "F09 pending versus failed equal numerator but different histories",
+    "R04-01 unchanged single-span fixture preparation",
+    "R04-02 head and terminal independently produce best legacy grade",
+    "R04-03 head only exactly half grades middle",
+    "R04-04 timely release and re-entry preserves terminal"
+  ],
+  "scope": "Actual linked R05 component calls; original-runtime and human gameplay not tested. Existing QA01 static fingerprints remain historical R02 checks."
+}
