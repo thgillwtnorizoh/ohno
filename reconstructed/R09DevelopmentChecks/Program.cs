@@ -174,6 +174,39 @@ componentLedger.Apply(headEvent with { Sequence = 2, Kind = ScoreEventKind.Slide
     () => componentHp.ApplyPlain(-262144, 5));
 Eq(componentLedger.CurrentCombo, 0); Eq(componentHp.H, 74.0); Eq(componentLedger.NMiss, (ushort)0);
 Pass("HP site after combo/before record, record-enable independence and terminal versus interior failure");
+// R09-C01 / QA07-D01: explicit positive-H recovery calls remain supported probes.
+foreach (var (initial, expectedH, expectedA) in new[] { (0.0, 160.0, 160.0), (100.0, 200.0, 260.0),
+    (159.999, 200.0, 319.999), (160.0, 160.0, 160.0), (200.0, 200.0, 200.0) })
+foreach (bool oldFill in new[] { false, true })
+foreach (bool latched in new[] { false, true })
+{
+    var recoverySession = new CircleSession(map, session.Scoring);
+    var h = recoverySession.Health!;
+    recoverySession.Ledger.Apply(new(new(0, ScoreObjectKind.Circle, 3000, 3000), 0,
+        ScoreEventKind.CircleWhole, 1024, true, false, ScorePolicy.PlainLegacy));
+    if (latched) { h.State.Assign(0); Eq(h.CheckFailure(77), HealthFailure.Latched); }
+    h.State.Assign(initial); h.State.SetPresentation(27); h.State.ConfigureFill(123, .03, oldFill);
+    h.SupplyRecoveryCount(1);
+    var ledger = recoverySession.Ledger;
+    var beforeLedger = (ledger.Score, ledger.CurrentCombo, ledger.MaximumCombo, ledger.ComboSnapshot,
+        ledger.N300, ledger.N100, ledger.N50, ledger.NMiss, ledger.AccuracyFraction, ledger.EventCount, ledger.LastEvent);
+    var beforeFailure = (h.Failed, h.FailureTime, h.LastFailure);
+    var coefficients = (h.State.Rate, h.State.B, h.State.G);
+    h.BeginRecovery();
+    Eq(h.State.H, expectedH); Near(h.State.A, expectedA); Eq(h.State.V, 27.0); Eq(h.State.FillFrom, 123);
+    Eq(h.State.Fill, initial < 160 ? true : oldFill);
+    Eq(h.State.FillRate, initial < 160 ? .07999999821186066 : .03);
+    Eq(h.Recovering, true); Eq(h.RecoveryCount, 0); Eq(h.ResultEvents, 0);
+    Eq((h.Failed, h.FailureTime, h.LastFailure), beforeFailure);
+    Eq((h.State.Rate, h.State.B, h.State.G), coefficients);
+    Eq((ledger.Score, ledger.CurrentCombo, ledger.MaximumCombo, ledger.ComboSnapshot,
+        ledger.N300, ledger.N100, ledger.N50, ledger.NMiss, ledger.AccuracyFraction, ledger.EventCount, ledger.LastEvent), beforeLedger);
+    Eq(recoverySession.JudgedCount, 0);
+    bool rejected = false;
+    try { h.BeginRecovery(); } catch (InvalidOperationException) { rejected = true; }
+    Check(rejected); Eq(h.RecoveryCount, 0); Eq(h.State.H, expectedH); Near(h.State.A, expectedA);
+}
+Pass("R09-C01 recovery threshold0/100/159.999/160/200 preserves guarded fill, count, latch and ledger");
 Console.WriteLine($"R09 HEALTH CHECKS: {groups} passed (E035 finite component controls; no original runtime or physical gameplay)");
 
 static PreparedHealthObject Circle(int t) => new(t, t, ScoreObjectKind.Circle, true);

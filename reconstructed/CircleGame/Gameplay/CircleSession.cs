@@ -949,8 +949,11 @@ public sealed class OrdinaryHealth
     public void BeginRecovery()
     {
         if (RecoveryCount <= 0) throw new InvalidOperationException("No supplied recovery count.");
-        if (State.H < 160) State.Add(160, true);
-        State.ConfigureFill(State.FillFrom, .07999999821186066, true);
+        if (State.H < 160)
+        {
+            State.Add(160, true);
+            State.ConfigureFill(State.FillFrom, .07999999821186066, true);
+        }
         Recovering = true; RecoveryCount--;
         // Native playback toggle is an unresolved boundary, not a clock rewrite here.
     }

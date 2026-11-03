@@ -596,3 +596,27 @@ Unsupported automatic grouping (opaque M2902), overlapping/order/identity/break
 metadata and engineering calibration guard exhaustion remain explicitly unavailable,
 not guessed rates. Full original host/candidate/F1374/F0fc4/native lifecycle/physical
 play remain unverified; no game/window/OS input occurred. R09 ends; no R10/QA07.
+
+## R09-C01 — Recovery Fill Threshold Correction (QA07-D01)
+
+2026-11-03 Asia/Bangkok, Work2. Latest verified main34249b9895f0d0ebabbeb6436d3ab37960c88857.
+Read AGENTS/standing contract (attachment/repo hash agree), journal/R09/E035 and
+QA07 README/results/guard/failure logs. QA07 red source8185478d4a1e064a3e74dbee82c8dbc8907b9187,
+run41671715769/job126041531509 records157/159 with F13 H160/H200 failing. Failure
+log hashes checked and preserved; no Work1 files/assertions/results overwritten.
+
+Minimal confirmed correction: BeginRecovery's Add160 AND ConfigureFill are guarded
+by H<160, following original M0acc0014→006a; guarded0025/0031/0045, later recovery006e
+and count00a1. Recovery activation/count consumption remain outside; original missing-
+count precondition/native playback boundary unchanged. No scoring, multiplier,
+calibration, drain, smoothing/routing or UI changes. Original R09 report preserved.
+One added Work2 R09 check group covers0/100/159.999/160/200, both fill flags/latch
+states (20 combinations), retained HVA/fillFrom/coefficient/failure state, count,
+no seeded-ledger mutation and repeated missing-count rejection. Old14 groups intact;
+existing CI already runs new15-group program plus QA01–QA07, so no workflow change.
+Only production guard, Work2 checks/new report and this append changed. Source/diff/
+whitespace checks only initially, no local SDK/build; Windows full gate PENDING,
+actual source/run/outcomes append after execution. No original game/binary/tool,
+window/OS input/debugger/recording/E20 or new expedition. Native playback/lifecycle
+and general original equivalence unverified. Targeted R09 authorization/main records
+supersede historical branch/RE defaults. Stop after R09-C01; no R10 or scoring work.
