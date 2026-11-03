@@ -1,0 +1,411 @@
+2026-11-03T13:03:25.9908667Z Build succeeded.
+2026-11-03T13:03:25.9909275Z     0 Warning(s)
+2026-11-03T13:03:25.9909674Z     0 Error(s)
+2026-11-03T13:03:28.0093603Z PASS timing OD5 delta=0
+2026-11-03T13:03:28.0094629Z PASS timing OD5 delta=-49
+2026-11-03T13:03:28.0096125Z PASS timing OD5 delta=49
+2026-11-03T13:03:28.0096763Z PASS timing OD5 delta=-50
+2026-11-03T13:03:28.0097291Z PASS timing OD5 delta=50
+2026-11-03T13:03:28.0097844Z PASS timing OD5 delta=-51
+2026-11-03T13:03:28.0098348Z PASS timing OD5 delta=51
+2026-11-03T13:03:28.0098833Z PASS timing OD5 delta=-99
+2026-11-03T13:03:28.0099337Z PASS timing OD5 delta=99
+2026-11-03T13:03:28.0100087Z PASS timing OD5 delta=-100
+2026-11-03T13:03:28.0100952Z PASS timing OD5 delta=100
+2026-11-03T13:03:28.0101395Z PASS timing OD5 delta=-101
+2026-11-03T13:03:28.0101935Z PASS timing OD5 delta=101
+2026-11-03T13:03:28.0102392Z PASS timing OD5 delta=-149
+2026-11-03T13:03:28.0102829Z PASS timing OD5 delta=149
+2026-11-03T13:03:28.0103327Z PASS timing OD5 delta=-150
+2026-11-03T13:03:28.0103785Z PASS timing OD5 delta=150
+2026-11-03T13:03:28.0104315Z PASS timing OD5 delta=-151
+2026-11-03T13:03:28.0104865Z PASS timing OD5 delta=151
+2026-11-03T13:03:28.0105250Z PASS prepared operands OD/AR=0
+2026-11-03T13:03:28.0105875Z PASS prepared operands OD/AR=4
+2026-11-03T13:03:28.0106437Z PASS prepared operands OD/AR=5
+2026-11-03T13:03:28.0106993Z PASS prepared operands OD/AR=5.25
+2026-11-03T13:03:28.0107609Z PASS prepared operands OD/AR=10
+2026-11-03T13:03:28.0108181Z PASS R02 fixture OD4 error=55 sign=-1
+2026-11-03T13:03:28.0109588Z PASS R02 fixture OD4 error=55 sign=1
+2026-11-03T13:03:28.0110241Z PASS R02 fixture OD4 error=56 sign=-1
+2026-11-03T13:03:28.0110904Z PASS R02 fixture OD4 error=56 sign=1
+2026-11-03T13:03:28.0111567Z PASS R02 fixture OD4 error=57 sign=-1
+2026-11-03T13:03:28.0112215Z PASS R02 fixture OD4 error=57 sign=1
+2026-11-03T13:03:28.0112829Z PASS R02 fixture OD4 error=107 sign=-1
+2026-11-03T13:03:28.0113565Z PASS R02 fixture OD4 error=107 sign=1
+2026-11-03T13:03:28.0114143Z PASS R02 fixture OD4 error=108 sign=-1
+2026-11-03T13:03:28.0115091Z PASS R02 fixture OD4 error=108 sign=1
+2026-11-03T13:03:28.0115738Z PASS R02 fixture OD4 error=109 sign=-1
+2026-11-03T13:03:28.0116314Z PASS R02 fixture OD4 error=109 sign=1
+2026-11-03T13:03:28.0116863Z PASS R02 fixture OD4 error=159 sign=-1
+2026-11-03T13:03:28.0117451Z PASS R02 fixture OD4 error=159 sign=1
+2026-11-03T13:03:28.0117976Z PASS R02 fixture OD4 error=160 sign=-1
+2026-11-03T13:03:28.0118465Z PASS R02 fixture OD4 error=160 sign=1
+2026-11-03T13:03:28.0157069Z PASS expiration equality and next millisecond
+2026-11-03T13:03:28.0158474Z PASS already evaluated exclusion
+2026-11-03T13:03:28.0161802Z PASS selection/admission early time=799
+2026-11-03T13:03:28.0162416Z PASS selection/admission early time=800
+2026-11-03T13:03:28.0162938Z PASS selection/admission early time=1600
+2026-11-03T13:03:28.0163499Z PASS selection/admission early time=1601
+2026-11-03T13:03:28.0170453Z PASS ordered earlier object blocking
+2026-11-03T13:03:28.0172228Z PASS first passing object is not nearest
+2026-11-03T13:03:28.0187207Z PASS scale-one radius scalar
+2026-11-03T13:03:28.0189635Z PASS geometry center
+2026-11-03T13:03:28.0190146Z PASS geometry inside
+2026-11-03T13:03:28.0190958Z PASS geometry boundary
+2026-11-03T13:03:28.0191546Z PASS geometry outside
+2026-11-03T13:03:28.0192050Z PASS geometry diagonal-inside
+2026-11-03T13:03:28.0192496Z PASS geometry diagonal-outside
+2026-11-03T13:03:28.0192982Z PASS geometry sign symmetry <16, 0>
+2026-11-03T13:03:28.0194052Z PASS geometry sign symmetry <-16, 0>
+2026-11-03T13:03:28.0194540Z PASS geometry sign symmetry <0, 16>
+2026-11-03T13:03:28.0197405Z PASS geometry sign symmetry <0, -16>
+2026-11-03T13:03:28.0198039Z PASS geometry sign symmetry <-22, 22>
+2026-11-03T13:03:28.0198519Z PASS geometry sign symmetry <22, -22>
+2026-11-03T13:03:28.0199018Z PASS QA01-D01 reject NaN X
+2026-11-03T13:03:28.0199447Z PASS QA01-D01 reject NaN Y
+2026-11-03T13:03:28.0199901Z PASS reject infinite pointer
+2026-11-03T13:03:28.0203540Z PASS layout controlled center scale1
+2026-11-03T13:03:28.0204063Z PASS layout controlled doubled scale
+2026-11-03T13:03:28.0204670Z PASS layout letterbox translation
+2026-11-03T13:03:28.0222373Z PASS new session state isolation
+2026-11-03T13:03:28.0223214Z PASS finished session ignores later component calls
+2026-11-03T13:03:28.0429044Z PASS bundled practice parser
+2026-11-03T13:03:28.0441185Z PASS parser clamp and truncate both axes
+2026-11-03T13:03:28.0446027Z PASS parser sorts unsorted input
+2026-11-03T13:03:28.0452635Z PASS parser reject mode
+2026-11-03T13:03:28.0456049Z PASS parser reject version
+2026-11-03T13:03:28.0505162Z PASS parser reject missing AR
+2026-11-03T13:03:28.0510007Z PASS parser reject NaN difficulty
+2026-11-03T13:03:28.0514099Z PASS parser reject range difficulty
+2026-11-03T13:03:28.0517104Z PASS parser reject empty
+2026-11-03T13:03:28.0520437Z PASS parser reject slider
+2026-11-03T13:03:28.0524249Z PASS parser reject spinner
+2026-11-03T13:03:28.0527617Z PASS parser reject mixed type
+2026-11-03T13:03:28.0530466Z PASS parser reject equal times
+2026-11-03T13:03:28.0533638Z PASS parser reject negative time
+2026-11-03T13:03:28.0536857Z PASS parser reject large time
+2026-11-03T13:03:28.0540305Z PASS parser reject nonfinite position
+2026-11-03T13:03:28.0543449Z PASS parser reject short row
+2026-11-03T13:03:28.0790838Z PASS parser object count limit
+2026-11-03T13:03:28.0867815Z PASS parser byte size limit
+2026-11-03T13:03:28.0871018Z PASS QA01-D02 reject malformed hitSound
+2026-11-03T13:03:28.0877056Z PASS QA01-D02 reject empty hitSound
+2026-11-03T13:03:28.0877770Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-03T13:03:30.1820704Z PASS A01 tick fixture schedule and end
+2026-11-03T13:03:30.1826362Z PASS A02 repeat fixture schedule and end
+2026-11-03T13:03:30.1834537Z PASS A03 three-span carry schedule and end
+2026-11-03T13:03:30.1879933Z PASS A04 producer roles retain ordered traversal identity
+2026-11-03T13:03:30.1889425Z PASS A05 directed movement endpoints and intervals
+2026-11-03T13:03:30.1893913Z PASS A06 three spans preserve nonzero carry and alternate endpoints
+2026-11-03T13:03:30.1897978Z PASS B01 forward literal geometry before reversal
+2026-11-03T13:03:30.1900079Z PASS B02 exact reversal selects first inclusive record
+2026-11-03T13:03:30.1903204Z PASS B03 reverse immediately after boundary
+2026-11-03T13:03:30.1905697Z PASS B04 reverse returns to initial endpoint
+2026-11-03T13:03:30.1908457Z PASS B05 third traversal continues forward
+2026-11-03T13:03:30.1993302Z PASS B06 reversal alone preserves active entry and held side
+2026-11-03T13:03:30.1997998Z PASS C01 no component before due and inclusive equality
+2026-11-03T13:03:30.2003022Z PASS C02 one outstanding component per invocation
+2026-11-03T13:03:30.2005590Z PASS C03 identical-time calls can drain prefix then stop
+2026-11-03T13:03:30.2011552Z PASS C04 delayed interior gets repeat code from due prefix
+2026-11-03T13:03:30.2013978Z PASS C05 delayed repeat can get interior code
+2026-11-03T13:03:30.2019932Z PASS C06 all-due prefix gives earlier item terminal success code
+2026-11-03T13:03:30.2023910Z PASS C07 failed and pending slots remain distinct
+2026-11-03T13:03:30.2026911Z PASS C08 missed head permits later checkpoint success
+2026-11-03T13:03:30.2029303Z PASS D01 entry equality succeeds
+2026-11-03T13:03:30.2031866Z PASS D02 late entry fails while tracking remains active
+2026-11-03T13:03:30.2034851Z PASS D03 held input alone is insufficient
+2026-11-03T13:03:30.2037081Z PASS D04 cursor alone is insufficient
+2026-11-03T13:03:30.2053396Z PASS D05 entry radius equality rejected
+2026-11-03T13:03:30.2059818Z PASS D06 just inside entry radius accepted
+2026-11-03T13:03:30.2065660Z PASS D07 active radius equality rejects and leaves
+2026-11-03T13:03:30.2071192Z PASS D08 active hysteresis accepts outside entry disk
+2026-11-03T13:03:30.2076703Z PASS D09 release and timely re-entry renew entry
+2026-11-03T13:03:30.2080333Z PASS D10 release and late re-entry cannot rescue deadline
+2026-11-03T13:03:30.2083686Z PASS D11 both held retains remembered side and no synthetic edge needed
+2026-11-03T13:03:30.2087231Z PASS D12 replacing logical side follows original history branch
+2026-11-03T13:03:30.2091907Z PASS D13 history veto differs from any-held shortcut
+2026-11-03T13:03:30.2095863Z PASS D14 NaN follow coordinates reject
+2026-11-03T13:03:30.2104333Z PASS E01 head and components credit combo without parent duplicate
+2026-11-03T13:03:30.2108200Z PASS E02 ordinary interior failure resets positive combo
+2026-11-03T13:03:30.2111385Z PASS E03 repeat success increments combo
+2026-11-03T13:03:30.2114620Z PASS E04 repeat failure uses ordinary negative reset
+2026-11-03T13:03:30.2118065Z PASS E05 sequential final success increments combo before completion
+2026-11-03T13:03:30.2123656Z PASS E06 final failure preserves combo and guarded active flag
+2026-11-03T13:03:30.2128434Z PASS E08 terminal entry equality after previous failures succeeds
+2026-11-03T13:03:30.2132926Z PASS E09 terminal entry after deadline fails while active
+2026-11-03T13:03:30.2137298Z PASS E07 all due failure is nonterminal until processed count reaches N
+2026-11-03T13:03:30.2141804Z PASS F01 inclusive parent end distinct from terminal
+2026-11-03T13:03:30.2145979Z PASS F02 delayed parent completion leaves backlog untouched
+2026-11-03T13:03:30.2149271Z PASS F03 evaluated parent suppresses later component processing
+2026-11-03T13:03:30.2154149Z PASS F04 terminal failure still permits positive parent aggregate
+2026-11-03T13:03:30.2158141Z PASS F05 legacy full successes with low positive head still best
+2026-11-03T13:03:30.2161133Z PASS F06 missing head and all components successful gives middle
+2026-11-03T13:03:30.2164569Z PASS F07 all failed including head gives miss
+2026-11-03T13:03:30.2171336Z PASS F08 below half and above half use recorded successes
+2026-11-03T13:03:30.2178976Z PASS F09 pending versus failed equal numerator but different histories
+2026-11-03T13:03:30.2183386Z PASS R04-01 unchanged single-span fixture preparation
+2026-11-03T13:03:30.2187467Z PASS R04-02 head and terminal independently produce best legacy grade
+2026-11-03T13:03:30.2190898Z PASS R04-03 head only exactly half grades middle
+2026-11-03T13:03:30.2194401Z PASS R04-04 timely release and re-entry preserves terminal
+2026-11-03T13:03:30.2194950Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-03T13:03:32.1619238Z PASS quadratic raw E32 vertices
+2026-11-03T13:03:32.1619845Z PASS cubic raw E32 vertices
+2026-11-03T13:03:32.1688974Z PASS joined raw E32 vertices
+2026-11-03T13:03:32.1689633Z PASS final-pair guard and preserved controls
+2026-11-03T13:03:32.1690333Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-03T13:03:32.2155212Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-03T13:03:34.2404522Z PASS A01 E32 quadratic exact raw vertices
+2026-11-03T13:03:34.2408000Z PASS A02 E32 cubic weighted vertices rather than uniform t
+2026-11-03T13:03:34.2414119Z PASS A03 exact squared flatness equality accepts leaf
+2026-11-03T13:03:34.2417063Z PASS A04 just above flatness boundary subdivides
+2026-11-03T13:03:34.2417760Z PASS A05 flatness is second difference not chord distance
+2026-11-03T13:03:34.2419604Z PASS A06 asymmetric half split preserves polygon order
+2026-11-03T13:03:34.2427371Z PASS A07 source controls are not mutated
+2026-11-03T13:03:34.2446356Z PASS A08 singleton retains duplicate final endpoint
+2026-11-03T13:03:34.2510345Z PASS B01 repeated control joins two quadratic ranges
+2026-11-03T13:03:34.2512091Z PASS B02 final equal pair is not a separator
+2026-11-03T13:03:34.2518093Z PASS B03 two-control subcurve is a marked straight piece
+2026-11-03T13:03:34.2518992Z PASS B04 leading duplicate retained as zero raw piece
+2026-11-03T13:03:34.2522149Z PASS B05 head insertion and no second head insertion
+2026-11-03T13:03:34.2537748Z PASS C01 unadjusted raw length uses E32 Single lengths
+2026-11-03T13:03:34.2541075Z PASS C02 shorten last piece without changing raw snapshot
+2026-11-03T13:03:34.2541931Z PASS C03 remove trailing piece at exact requested boundary
+2026-11-03T13:03:34.2543959Z PASS C04 removal tolerance can erase tiny requested remainder
+2026-11-03T13:03:34.2548968Z PASS C05 extend nonzero tail direction
+2026-11-03T13:03:34.2551706Z PASS C06 zero final direction blocks requested extension
+2026-11-03T13:03:34.2554699Z PASS C07 entirely erased path rejected by engineering policy
+2026-11-03T13:03:34.2557491Z PASS C08 cumulative lengths recomputed from adjusted endpoints
+2026-11-03T13:03:34.2929341Z PASS D01 joined bend forward and reverse segment times
+2026-11-03T13:03:34.2938615Z PASS D02 inclusive first matching segment and reversal
+2026-11-03T13:03:34.2944374Z PASS D03 path follows pieces instead of whole-curve chord
+2026-11-03T13:03:34.2952086Z PASS D04 true quadratic uses individual segment time conversions
+2026-11-03T13:03:34.2974234Z PASS E01 checkpoint carry across pieces and reversal
+2026-11-03T13:03:34.3267951Z PASS E02 one outstanding entry per delayed call
+2026-11-03T13:03:34.3276642Z PASS E03 curved segment boundary preserves held tracking
+2026-11-03T13:03:34.3283457Z PASS E04 reversal alone preserves entry and tracking
+2026-11-03T13:03:34.3294744Z PASS E05 loss and timely re-entry across pieces
+2026-11-03T13:03:34.3302316Z PASS E06 independent head miss then valid later checkpoint
+2026-11-03T13:03:34.3311656Z PASS E07 parent end separate from checkpoint and no duplicate combo
+2026-11-03T13:03:34.3318524Z PASS E08 late re-entry cannot rescue due checkpoint
+2026-11-03T13:03:34.3323742Z PASS F01 v13 Bezier rejected
+2026-11-03T13:03:34.3332592Z PASS F02 unsupported Perfect and Catmull types rejected
+2026-11-03T13:03:34.3336791Z PASS F03 malformed control rejected
+2026-11-03T13:03:34.3345516Z PASS F04 nonfinite control rejected
+2026-11-03T13:03:34.3390032Z PASS F05 degenerate geometry rejected
+2026-11-03T13:03:34.3404643Z PASS F06 control boundary accepts64 rejects65
+2026-11-03T13:03:34.3418564Z PASS F07 parser normalized controls limit
+2026-11-03T13:03:34.3422716Z PASS F08 empty nonfinite and overflow flatness defensive checks
+2026-11-03T13:03:34.3423469Z PASS F09 declared segment and work limits retained
+2026-11-03T13:03:34.3428967Z PASS F10 parser truncates Double controls before Single storage
+2026-11-03T13:03:34.3432017Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-03T13:03:36.3528074Z PASS R07 parsing, metadata, three fixtures and OD5 preparation
+2026-11-03T13:03:36.3748273Z PASS R07 atan2 projection, nonlegacy first angle, negative interval and adaptive divisor
+2026-11-03T13:03:36.3749455Z PASS R07 signed wrapping and exact antipodal rejection with previous-angle update
+2026-11-03T13:03:36.3750455Z PASS R07 stationary decay before hold gate and released angular reference
+2026-11-03T13:03:36.3752573Z PASS R07 strict integration interval, acceleration, clamp, contribution cap and residual motion
+2026-11-03T13:03:36.3753692Z PASS R07 Single integer truncation, one-change accounting, first zero/second8192 and cache
+2026-11-03T13:03:36.3788611Z PASS R07 modern final thresholds, strict completion, no drain, no head press and fresh session
+2026-11-03T13:03:36.3855240Z PASS R07 parser rejection of malformed sound, invalid duration, old format and overlap
+2026-11-03T13:03:36.3856395Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-03T13:03:38.2959257Z PASS A01 atan2 Y X with translated supplied center
+2026-11-03T13:03:38.2979142Z PASS A02 modern first sample establishes reference only
+2026-11-03T13:03:38.2980019Z PASS A03 opposite signed motions give opposite targets
+2026-11-03T13:03:38.2980734Z PASS A04 wrap in negative angular crossing
+2026-11-03T13:03:38.2981344Z PASS A05 wrap in positive angular crossing
+2026-11-03T13:03:38.2982054Z PASS A06 exact positive antipode rejected but reference advances
+2026-11-03T13:03:38.2983207Z PASS A07 exact negative antipode rejected
+2026-11-03T13:03:38.2983870Z PASS A08 just inside antipodal magnitude accepted
+2026-11-03T13:03:38.2984549Z PASS A09 plus pi to minus pi is zero wrapped motion
+2026-11-03T13:03:38.2985371Z PASS A10 radius does not scale angular target
+2026-11-03T13:03:38.2986876Z PASS A11 center atan2 has no invented dead zone
+2026-11-03T13:03:38.2987934Z PASS A12 released movement zeros target and updates reference
+2026-11-03T13:03:38.2988726Z PASS A13 stationary first decay then zero despite release and late time
+2026-11-03T13:03:38.2989456Z PASS A14 sample at exact start and end is eligible
+2026-11-03T13:03:38.2990189Z PASS A15 movement outside live interval updates only reference target zero
+2026-11-03T13:03:38.2991025Z PASS A16 negative sample interval leaves sample history unchanged
+2026-11-03T13:03:38.2991846Z PASS B01 EMA first and second samples use real supplied interval
+2026-11-03T13:03:38.2992552Z PASS B02 zero interval keeps EMA and selects fixed divisor
+2026-11-03T13:03:38.2993276Z PASS B03 adaptive divisor uses sample interval after EMA threshold
+2026-11-03T13:03:38.2993987Z PASS B04 adaptive zero divisor yields zero target
+2026-11-03T13:03:38.2997426Z PASS B05 acceleration and Single progress conversion
+2026-11-03T13:03:38.2998110Z PASS B06 both motion clamps and per-update progress cap
+2026-11-03T13:03:38.2998895Z PASS B07 direction reversal decelerates without resetting progress
+2026-11-03T13:03:38.3001813Z PASS B08 strict integration start end and positive interval
+2026-11-03T13:03:38.3002592Z PASS B09 released target still permits residual progress
+2026-11-03T13:03:38.3003277Z PASS B10 sufficient deceleration can stop immediately
+2026-11-03T13:03:38.3004208Z PASS C01 fractional progress leaves integer cache unchanged
+2026-11-03T13:03:38.3004978Z PASS C02 first exact integer change has no component result
+2026-11-03T13:03:38.3005693Z PASS C03 skipped integers count as one observed event
+2026-11-03T13:03:38.3006757Z PASS C04 ordinary changed observations alternate raw identities
+2026-11-03T13:03:38.3007733Z PASS C05 bonus predicate begins only at qualifying even offset
+2026-11-03T13:03:38.3008426Z PASS C06 unchanged integer never repeats event
+2026-11-03T13:03:38.3009538Z PASS C07 inequality includes artificial downward integer observation
+2026-11-03T13:03:38.3010306Z PASS D01 OD5 duration3000 prepares N15 and acceleration
+2026-11-03T13:03:38.3011027Z PASS D02 OD endpoints prepare distinct truncated requirements
+2026-11-03T13:03:38.3011707Z PASS D03 N15 count 0 threshold
+2026-11-03T13:03:38.3012150Z PASS D03 N15 count 2 threshold
+2026-11-03T13:03:38.3012639Z PASS D03 N15 count 3 threshold
+2026-11-03T13:03:38.3013083Z PASS D03 N15 count 13 threshold
+2026-11-03T13:03:38.3013538Z PASS D03 N15 count 14 threshold
+2026-11-03T13:03:38.3013985Z PASS D03 N15 count 15 threshold
+2026-11-03T13:03:38.3014397Z PASS D03 N15 count 16 threshold
+2026-11-03T13:03:38.3014954Z PASS D04 zero requirement special and small N division
+2026-11-03T13:03:38.3024255Z PASS D05 exact end does not complete and later completion is once
+2026-11-03T13:03:38.3025209Z PASS D06 accepted progress can finish before last observation
+2026-11-03T13:03:38.3025860Z PASS D07 explicit last sample changes C then final grade
+2026-11-03T13:03:38.3026508Z PASS D08 high P with one observation grades from C not P
+2026-11-03T13:03:38.3027131Z PASS D09 evaluated spinner stops later integration
+2026-11-03T13:03:38.3512095Z PASS E01 spinner collection excluded from heads and head press
+2026-11-03T13:03:38.3576743Z PASS E02 live session components do not add combo
+2026-11-03T13:03:38.3587592Z PASS E03 final success increments combo and accuracy only once
+2026-11-03T13:03:38.3629942Z PASS E04 failure resets earlier circle combo
+2026-11-03T13:03:38.3636766Z PASS E05 fresh sessions do not share observation or motion state
+2026-11-03T13:03:38.3682814Z PASS E06 nominal input qualification is separate from integration
+2026-11-03T13:03:38.3689569Z PASS E07 supplied mapped spinner pointer separate from head pointer
+2026-11-03T13:03:38.3852417Z PASS E08 mixed circle slider spinner sequence counted once
+2026-11-03T13:03:38.3878331Z PASS F01 all three R07 fixtures load under current parser
+2026-11-03T13:03:38.3890508Z PASS F02 valid optional hit sample retained
+2026-11-03T13:03:38.3900472Z PASS F03 malformed and empty hitSound reject
+2026-11-03T13:03:38.3912444Z PASS F04 malformed and absent end reject
+2026-11-03T13:03:38.3923924Z PASS F05 spinner unsupported versions reject
+2026-11-03T13:03:38.3946991Z PASS F06 zero negative and overlong durations reject
+2026-11-03T13:03:38.3963600Z PASS F07 duration1 and duration60000 accepted
+2026-11-03T13:03:38.3980511Z PASS F08 maximum end bound equality and rejection
+2026-11-03T13:03:38.4005382Z PASS F09 overlapping and shared endpoint objects reject
+2026-11-03T13:03:38.4011691Z PASS F10 old circle slider fixtures remain admitted
+2026-11-03T13:03:38.4012249Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-03T13:03:40.2471721Z PASS R08 two circle300s ->600
+2026-11-03T13:03:40.2472416Z PASS R08 circle300/100 ->400 and Single accuracy
+2026-11-03T13:03:40.2473197Z PASS R08 old-combo bonus, explicit K, truncation and 50/100 integer factors
+2026-11-03T13:03:40.2473917Z PASS R08 circle300/miss ->300 and combo reset
+2026-11-03T13:03:40.2475828Z PASS R08 slider64/128/parent300 with bonus and no duplicate combo/accuracy
+2026-11-03T13:03:40.2476774Z PASS R08 slider head/failure/terminal/parent100 ->160
+2026-11-03T13:03:40.2478830Z PASS R08 actual C1..16 selector + spinner final ->1100; bonus-associated amount isolated
+2026-11-03T13:03:40.2482226Z PASS R08 component base table, terminal bypass and conditional record admission vs combo
+2026-11-03T13:03:40.2486385Z PASS R08 empty accuracy, old vs maximum combo, raw0, bounded K and unsupported flags/policy
+2026-11-03T13:03:40.3059947Z PASS R08 actual slider lifecycle once-only accounting and fresh restart/replacement state
+2026-11-03T13:03:40.3078422Z PASS R08 due-prefix raw64 on interior provenance; repeated-time distinct slots, no manufactured backlog score
+2026-11-03T13:03:40.3106587Z PASS R08 spinner emits only actual nonzero observation, never replays stored raw on other frames
+2026-11-03T13:03:40.3141398Z PASS R08 circle deduplication and E33 parent-miss reset before late head timeout
+2026-11-03T13:03:40.3142196Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-03T13:03:42.1500968Z PASS C01 visibility at start, exact end, pending decision and completed removal
+2026-11-03T13:03:42.2092682Z PASS C01 held preceding slider survives old spinner preview boundary with unchanged ledger
+2026-11-03T13:03:42.2102174Z PASS C01 future spinner does not block physical-input component contract at preceding head
+2026-11-03T13:03:42.2108169Z PASS C01 presentation queries have no input, motion, combo or score side effects
+2026-11-03T13:03:42.2109486Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-03T13:03:44.1198482Z PASS C02 pinned unchanged fixture metadata: Mixed K2, Joined K3 including positive-count zero seconds
+2026-11-03T13:03:44.1218385Z PASS C02 Mixed conditional matched event sequence:2392 automatic vs2236 engineering
+2026-11-03T13:03:44.1220288Z PASS C02 Joined conditional events:534 automatic vs438 engineering; reported582 remains unresolved
+2026-11-03T13:03:44.1239133Z PASS C02 ordinary multi-object sparse and density-saturated spans
+2026-11-03T13:03:44.1240429Z PASS C02 Single arithmetic, exact midpoint-to-even, neighboring boundary and HP variation
+2026-11-03T13:03:44.1242179Z PASS C02 zero-second transitions and spinner end excluded from denominator
+2026-11-03T13:03:44.1243210Z PASS C02 break sum without clipping/union/positivity repair; negative denominator clamps density
+2026-11-03T13:03:44.1244397Z PASS C02 raw row ordering, type mask, unknown row count and separate hold metadata branch (not gameplay admission)
+2026-11-03T13:03:44.1256161Z PASS C02 Double time truncation, fresh5 defaults, modern Single clamping and older Byte boundary
+2026-11-03T13:03:44.1648608Z PASS C02 unchecked Int32 break/span arithmetic and independent UInt16 recognized-count wrap
+2026-11-03T13:03:44.1677021Z PASS C02 explicit exceptional/nonfinite/missing-metadata status without engineering fallback
+2026-11-03T13:03:44.1678103Z PASS C02 timing/SV/path/repeats do not replace metadata row-start denominator
+2026-11-03T13:03:44.1850245Z PASS C02 all13 old fixtures prepare; fresh sessions retain config and map replacement recomputes K
+2026-11-03T13:03:44.1927217Z PASS C02 automatic config consumed by unchanged actual slider lifecycle without duplicate events
+2026-11-03T13:03:44.1928457Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-03T13:03:46.0558785Z PASS A01 single object zero seconds
+2026-11-03T13:03:46.0559586Z PASS A02 sparse hundred second span
+2026-11-03T13:03:46.0560176Z PASS A03 positive subsecond span truncates to zero
+2026-11-03T13:03:46.0560764Z PASS A04 exact one second span
+2026-11-03T13:03:46.0561108Z PASS A05 two second span
+2026-11-03T13:03:46.0561496Z PASS A06 unsorted raw first and last are not extrema
+2026-11-03T13:03:46.0561971Z PASS A07 equal starts metadata-only
+2026-11-03T13:03:46.0562559Z PASS A08 first unknown sets first before type dispatch
+2026-11-03T13:03:46.0563054Z PASS A09 last unknown increments N without changing last
+2026-11-03T13:03:46.0563569Z PASS A10 numeric break subtracts from row-start span
+2026-11-03T13:03:46.0564040Z PASS A11 overlapping breaks both count without union
+2026-11-03T13:03:46.0564538Z PASS A12 negative break duration is signed
+2026-11-03T13:03:46.0565131Z PASS A13 out-of-range break not clipped
+2026-11-03T13:03:46.0565606Z PASS A14 negative fractional second truncates toward zero
+2026-11-03T13:03:46.0566162Z PASS A15 fractional time converts before elapsed division
+2026-11-03T13:03:46.0566617Z PASS A16 exact even midpoint 2.5
+2026-11-03T13:03:46.0567301Z PASS A17 dense density caps at sixteen
+2026-11-03T13:03:46.0567823Z PASS A18 unchecked elapsed subtraction overflow
+2026-11-03T13:03:46.0568441Z PASS A19 unchecked break duration overflow
+2026-11-03T13:03:46.0568996Z PASS A20 spinner end independent from start density
+2026-11-03T13:03:46.0569651Z PASS A21 masked new combo bits and independent recognized counts
+2026-11-03T13:03:46.0707396Z PASS A22 hold metadata separate from ordinary gameplay admission
+2026-11-03T13:03:46.0711396Z PASS A23 modern fractional explicit difficulty
+2026-11-03T13:03:46.0712221Z PASS A24 fresh defaults reset independently of previous metadata
+2026-11-03T13:03:46.0812162Z PASS A25 modern clamp vs engineering gameplay rejection
+2026-11-03T13:03:46.0822083Z PASS A26 older format Byte accepted but fractional syntax rejected
+2026-11-03T13:03:46.0822809Z PASS A27 midpoint neighborhood HP4.99999
+2026-11-03T13:03:46.0823429Z PASS A27 midpoint neighborhood HP5
+2026-11-03T13:03:46.0823994Z PASS A27 midpoint neighborhood HP5.00001
+2026-11-03T13:03:46.0824644Z PASS A28 corrected binary32 vector retains every Single operation
+2026-11-03T13:03:46.0825475Z PASS A29 empty zero-over-zero explicitly unsupported
+2026-11-03T13:03:46.0829315Z PASS A30 malformed nonfinite metadata explicitly rejects
+2026-11-03T13:03:46.0852042Z PASS A31 raw metadata order distinct from sorted admitted objects
+2026-11-03T13:03:46.0915868Z PASS A32 equal and unknown types metadata accepted gameplay rejected
+2026-11-03T13:03:46.0924602Z PASS A33 timing metadata and spinner duration do not set seconds
+2026-11-03T13:03:46.0927516Z PASS A35 binary32 4.5 tie differs from Double continuation
+2026-11-03T13:03:46.1056325Z PASS A34 missing source fails automatic configuration without silent K1
+2026-11-03T13:03:46.1066614Z PASS B01 base table circle300
+2026-11-03T13:03:46.1067257Z PASS B01 base table circle100
+2026-11-03T13:03:46.1067686Z PASS B01 base table circle50
+2026-11-03T13:03:46.1068152Z PASS B01 base table wholeMISS
+2026-11-03T13:03:46.1069035Z PASS B01 base table sliderHead
+2026-11-03T13:03:46.1069467Z PASS B01 base table headFail
+2026-11-03T13:03:46.1069900Z PASS B01 base table interior
+2026-11-03T13:03:46.1070316Z PASS B01 base table repeat
+2026-11-03T13:03:46.1070739Z PASS B01 base table terminal
+2026-11-03T13:03:46.1071192Z PASS B01 base table terminalFail
+2026-11-03T13:03:46.1074697Z PASS B01 base table spinner4096
+2026-11-03T13:03:46.1075331Z PASS B01 base table spinner8192
+2026-11-03T13:03:46.1075772Z PASS B01 base table spinner16384
+2026-11-03T13:03:46.1076555Z PASS B02 four quality counters exclusively determine Single accuracy
+2026-11-03T13:03:46.1077324Z PASS B03 previous combo not incremented combo supplies bonus
+2026-11-03T13:03:46.1077952Z PASS B04 maximum combo is not bonus operand after MISS
+2026-11-03T13:03:46.1078503Z PASS B05 integer b25 quotient raw1024
+2026-11-03T13:03:46.1078996Z PASS B05 integer b25 quotient raw512
+2026-11-03T13:03:46.1079510Z PASS B05 integer b25 quotient raw256
+2026-11-03T13:03:46.1080053Z PASS B06 fractional bonus truncates rather than rounds
+2026-11-03T13:03:46.1080629Z PASS B07 zero K retains base scoring and combo
+2026-11-03T13:03:46.1081267Z PASS B08 positive slider parent scales score without duplicate combo
+2026-11-03T13:03:46.1081936Z PASS B09 positive combo resets on parent whole MISS
+2026-11-03T13:03:46.1082608Z PASS B10 terminal failure preserves combo interior failure resets
+2026-11-03T13:03:46.1083272Z PASS B11 positive parent after failed tick counts once
+2026-11-03T13:03:46.1083923Z PASS B12 spinner amounts never scale or change existing combo
+2026-11-03T13:03:46.1084657Z PASS B13 spinner final separately scales and increments combo
+2026-11-03T13:03:46.1089236Z PASS B14 disabled positive accounting still mutates combo
+2026-11-03T13:03:46.1089934Z PASS B15 disabled negative admits zero write not hit counter
+2026-11-03T13:03:46.1105922Z PASS B16 raw zero is no event no mutation
+2026-11-03T13:03:46.1178371Z PASS B17 UInt16 hit counts wrap and empty accuracy getter returns one
+2026-11-03T13:03:46.1190920Z PASS B18 unchecked Int32 score addition wraps finite bonuses
+2026-11-03T13:03:46.1192504Z PASS B19 ScoreV2 unavailable preserves explicit unsupported status
+2026-11-03T13:03:46.1194467Z PASS B20 reject unsupported event 1028/CircleWhole/False/PlainLegacy
+2026-11-03T13:03:46.1195466Z PASS B20 reject unsupported event 1024/CircleWhole/True/PlainLegacy
+2026-11-03T13:03:46.1196459Z PASS B20 reject unsupported event 8/SliderInterior/True/PlainLegacy
+2026-11-03T13:03:46.1197346Z PASS B20 reject unsupported event 1024/CircleWhole/False/ScoreV2
+2026-11-03T13:03:46.1198774Z PASS B21 engineering K and provenance bounds explicit
+2026-11-03T13:03:46.1203676Z PASS B22 overdue interior raw128 scores raw amount with producer preserved
+2026-11-03T13:03:46.1350116Z PASS C01 fresh production factory mixed-r07
+2026-11-03T13:03:46.1355261Z PASS C01 fresh production factory bezier-joined
+2026-11-03T13:03:46.1362114Z PASS C02 explicit Mixed event contract K1
+2026-11-03T13:03:46.1364190Z PASS C02 explicit Mixed event contract K2
+2026-11-03T13:03:46.1369848Z PASS C03 explicit Joined event contract K1
+2026-11-03T13:03:46.1372188Z PASS C03 explicit Joined event contract K3
+2026-11-03T13:03:46.1452383Z PASS C04 Joined actual session events reach automatic ledger once
+2026-11-03T13:03:46.1470985Z PASS C05 Mixed actual lifecycle with explicitly seeded spinner observations
+2026-11-03T13:03:46.1480962Z PASS C06 restart and map replacement own independent K and ledgers
+2026-11-03T13:03:46.1488969Z PASS C07 failed new metadata cannot mutate prior configured session
+2026-11-03T13:03:46.1503610Z PASS C08 delayed slider completion does not fabricate backlog score
+2026-11-03T13:03:46.1504633Z PASS D01 pending presentation at 0
+2026-11-03T13:03:46.1505396Z PASS D01 pending presentation at 1999
+2026-11-03T13:03:46.1506012Z PASS D01 pending presentation at 2000
+2026-11-03T13:03:46.1506564Z PASS D01 pending presentation at 3500
+2026-11-03T13:03:46.1507475Z PASS D01 pending presentation at 5000
+2026-11-03T13:03:46.1508109Z PASS D01 pending presentation at 5001
+2026-11-03T13:03:46.1508715Z PASS D02 completed spinner no longer presented
+2026-11-03T13:03:46.2365844Z PASS D03 queries preserve motion progress input observation and scoring
+2026-11-03T13:03:46.2379258Z PASS D04 prestart spinner never blocks preceding head during old preview
+2026-11-03T13:03:46.2417767Z PASS D05 held slider checkpoints survive old preview with read-only queries
+2026-11-03T13:03:46.2424853Z PASS D06 queries cannot consume pending held-button admission
+2026-11-03T13:03:46.2430780Z PASS D07 presentation does not change strict spinner gameplay boundaries
+2026-11-03T13:03:46.2431596Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed

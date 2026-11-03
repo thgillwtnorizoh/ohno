@@ -1,0 +1,667 @@
+{
+  "assignment": "QA06",
+  "date": "2026-11-03",
+  "timezone": "Asia/Bangkok",
+  "production_target": "ae0b35c6aa0f3dbda815559f844c9678cde8f7d6",
+  "gate_commit": "767d36a5b868d241d2fefc4020d8bf05be613fe8",
+  "run_id": 41640870103,
+  "job_id": 125933753872,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41640870103",
+  "attempt": 1,
+  "conclusion": "success",
+  "run_started_at": "2026-11-03T13:02:59Z",
+  "run_updated_at": "2026-11-03T13:03:49Z",
+  "environment": {
+    "os": "Microsoft Windows Server 2022 Datacenter 10.0.20348",
+    "image": "windows-2022",
+    "image_version": "20261025.346.1",
+    "preinstalled_sdk": "8.0.427",
+    "sdk_installed_by_task": false
+  },
+  "build": {
+    "outcome": "success",
+    "warnings": 0,
+    "errors": 0,
+    "target": "WPF win-x64 Release, framework dependent"
+  },
+  "suites": {
+    "qa01": {
+      "passed": 90,
+      "failed": 0,
+      "executed": 90,
+      "unchanged": true
+    },
+    "qa03": {
+      "passed": 56,
+      "failed": 0,
+      "executed": 56,
+      "unchanged": true
+    },
+    "qa04": {
+      "passed": 43,
+      "failed": 0,
+      "executed": 43,
+      "unchanged": true
+    },
+    "qa05": {
+      "passed": 66,
+      "failed": 0,
+      "executed": 66,
+      "unchanged": true
+    },
+    "qa06": {
+      "passed": 99,
+      "failed": 0,
+      "executed": 99,
+      "cases": [
+        {
+          "name": "A01 single object zero seconds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A02 sparse hundred second span",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A03 positive subsecond span truncates to zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A04 exact one second span",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A05 two second span",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A06 unsorted raw first and last are not extrema",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A07 equal starts metadata-only",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A08 first unknown sets first before type dispatch",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A09 last unknown increments N without changing last",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A10 numeric break subtracts from row-start span",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A11 overlapping breaks both count without union",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A12 negative break duration is signed",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A13 out-of-range break not clipped",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A14 negative fractional second truncates toward zero",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A15 fractional time converts before elapsed division",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A16 exact even midpoint 2.5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A17 dense density caps at sixteen",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A18 unchecked elapsed subtraction overflow",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A19 unchecked break duration overflow",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A20 spinner end independent from start density",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A21 masked new combo bits and independent recognized counts",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A22 hold metadata separate from ordinary gameplay admission",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A23 modern fractional explicit difficulty",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A24 fresh defaults reset independently of previous metadata",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A25 modern clamp vs engineering gameplay rejection",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A26 older format Byte accepted but fractional syntax rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A27 midpoint neighborhood HP4.99999",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A27 midpoint neighborhood HP5",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A27 midpoint neighborhood HP5.00001",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A28 corrected binary32 vector retains every Single operation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A29 empty zero-over-zero explicitly unsupported",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A30 malformed nonfinite metadata explicitly rejects",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A31 raw metadata order distinct from sorted admitted objects",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A32 equal and unknown types metadata accepted gameplay rejected",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A33 timing metadata and spinner duration do not set seconds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A35 binary32 4.5 tie differs from Double continuation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "A34 missing source fails automatic configuration without silent K1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table circle300",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table circle100",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table circle50",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table wholeMISS",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table sliderHead",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table headFail",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table interior",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table repeat",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table terminal",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table terminalFail",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table spinner4096",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table spinner8192",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B01 base table spinner16384",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B02 four quality counters exclusively determine Single accuracy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B03 previous combo not incremented combo supplies bonus",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B04 maximum combo is not bonus operand after MISS",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 integer b25 quotient raw1024",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 integer b25 quotient raw512",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B05 integer b25 quotient raw256",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B06 fractional bonus truncates rather than rounds",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B07 zero K retains base scoring and combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B08 positive slider parent scales score without duplicate combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B09 positive combo resets on parent whole MISS",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B10 terminal failure preserves combo interior failure resets",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B11 positive parent after failed tick counts once",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B12 spinner amounts never scale or change existing combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B13 spinner final separately scales and increments combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B14 disabled positive accounting still mutates combo",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B15 disabled negative admits zero write not hit counter",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B16 raw zero is no event no mutation",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B17 UInt16 hit counts wrap and empty accuracy getter returns one",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B18 unchecked Int32 score addition wraps finite bonuses",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B19 ScoreV2 unavailable preserves explicit unsupported status",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B20 reject unsupported event 1028/CircleWhole/False/PlainLegacy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B20 reject unsupported event 1024/CircleWhole/True/PlainLegacy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B20 reject unsupported event 8/SliderInterior/True/PlainLegacy",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B20 reject unsupported event 1024/CircleWhole/False/ScoreV2",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B21 engineering K and provenance bounds explicit",
+          "outcome": "PASS"
+        },
+        {
+          "name": "B22 overdue interior raw128 scores raw amount with producer preserved",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 fresh production factory mixed-r07",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C01 fresh production factory bezier-joined",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 explicit Mixed event contract K1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C02 explicit Mixed event contract K2",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 explicit Joined event contract K1",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C03 explicit Joined event contract K3",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C04 Joined actual session events reach automatic ledger once",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C05 Mixed actual lifecycle with explicitly seeded spinner observations",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C06 restart and map replacement own independent K and ledgers",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C07 failed new metadata cannot mutate prior configured session",
+          "outcome": "PASS"
+        },
+        {
+          "name": "C08 delayed slider completion does not fabricate backlog score",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 0",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 1999",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 2000",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 3500",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 5000",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D01 pending presentation at 5001",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D02 completed spinner no longer presented",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D03 queries preserve motion progress input observation and scoring",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D04 prestart spinner never blocks preceding head during old preview",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D05 held slider checkpoints survive old preview with read-only queries",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D06 queries cannot consume pending held-button admission",
+          "outcome": "PASS"
+        },
+        {
+          "name": "D07 presentation does not change strict spinner gameplay boundaries",
+          "outcome": "PASS"
+        }
+      ],
+      "families": {
+        "A": 37,
+        "B": 39,
+        "C": 11,
+        "D": 12
+      }
+    }
+  },
+  "independent_qa_total": 354,
+  "development": {
+    "r06": {
+      "passed_groups": 4,
+      "unchanged": true
+    },
+    "r07": {
+      "passed_groups": 8,
+      "unchanged": true
+    },
+    "r08": {
+      "passed_groups": 13,
+      "unchanged": true
+    },
+    "r08-c01": {
+      "passed_groups": 4,
+      "unchanged": true
+    },
+    "r08-c02": {
+      "passed_groups": 14,
+      "unchanged": true
+    }
+  },
+  "r06_fixture_loads": 4,
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10
+    },
+    {
+      "name": "Check R08 bounded legacy ledger controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11
+    },
+    {
+      "name": "Check R08-C01 spinner presentation and input continuity",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12
+    },
+    {
+      "name": "Check R08-C02 automatic chart score multiplier",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13
+    },
+    {
+      "name": "Execute independent QA06 ledger multiplier and presentation suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 28
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 29
+    }
+  ],
+  "commands": [
+    "dotnet --version",
+    "dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo",
+    "dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa05/Headless/QA05.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R08DevelopmentChecks/R08DevelopmentChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R08C01DevelopmentChecks/R08C01DevelopmentChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project reconstructed/R08C02DevelopmentChecks/R08C02DevelopmentChecks.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet run --project re/qa/qa06/Headless/QA06.Headless.csproj -c Release -- \"$env:GITHUB_WORKSPACE\"",
+    "dotnet --list-sdks"
+  ],
+  "evidence": {
+    "full_retrieved_utf8_log_sha256": "c91a24102f9b47b4555ad58fbbdaa280b33a379175fa8c84882ba2c9eec3aede",
+    "selected_gate_output_sha256": "7315744441e854b2b9e2d264ad3851293a7ce2a7c230244b176b7270962a2bf9",
+    "source_sha256_basis": "canonical repository LF bytes; not a claim of raw Windows CRLF working-file hashes",
+    "canonical_source_sha256": {
+      "re/33-ordinary-score-and-accuracy.md": "2856abe9ddebca1689265aa1efec288e701f7a9e55dba9c689a88a46277e5adb",
+      "re/34-chart-derived-score-multiplier.md": "0237501825d00912499bd6ef94c3313b174d92a6799438cd91e36a9c1a23fe70",
+      "reconstructed/CircleGame/Gameplay/Beatmap.cs": "887c90dec39078c301ec10ea6bd13314390905a4a02c6bf0e2056cfbb0d8c707",
+      "reconstructed/CircleGame/Gameplay/CircleSession.cs": "997536b5ea8b00c7b40235c6b77a13d605c8c740c47d6dd8767416e832603bf5",
+      "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+      "reconstructed/CircleGame/Program.cs": "4454fcf7ffbf32861e591e08fce977f51d10da6f6d3bb793816dcb0c3ac5ccc3",
+      "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "020fdff4de339e71bcbe8bee6640bc1b04099b986b4ceffc7adf4a3f25e0b1ca",
+      "reconstructed/CircleGame/Fixtures/mixed-r07.osu": "2d76f1c3e7f7fd76e65987f01dc4dc6651610214d543d0b6ac814fecbcbae4cf",
+      "reconstructed/CircleGame/Fixtures/bezier-joined.osu": "2d844b472e2fd138e638dedac6a1fe2ce9e94164131ad258be0b97f162bde85b",
+      "re/qa/qa06/Headless/AccountingTests.cs": "e7b2022f4c85644a031f84af416fab9d550bf1a96c84bc7f4831a22eb2c283b3",
+      "re/qa/qa06/Headless/OracleVectors.cs": "449bdd32d6a299d3e987295554f3b66e2f200da9b011f93da1d92cc8886c81f3",
+      "re/qa/qa06/Headless/QA06.Headless.csproj": "aa7ba447e8ad3890be88743aade0dfce209dae5af30c0eb104bbf86a88742061",
+      ".github/workflows/r04-build.yml": "3a986f759cd8c862df3d78030fac076965d730faaec2593540c632fdb09bd745"
+    }
+  },
+  "initial_gate": {
+    "run_id": 41640348883,
+    "job_id": 125932009558,
+    "gate_commit": "1efda537090421a25499ef4aac80ddb25376b88c",
+    "conclusion": "failure",
+    "qa06": {
+      "passed": 97,
+      "failed": 1,
+      "executed": 98
+    },
+    "failing_case": {
+      "name": "A28 Single rounding before Double differs from Double reassociation",
+      "outcome": "FAIL",
+      "diagnostic": "FAIL A28 Single rounding before Double differs from Double reassociation: System.InvalidOperationException: expected=1.5; actual=1.4999999"
+    },
+    "failed_input": "[Difficulty]\nHPDrainRate:5\nOverallDifficulty:6.4\nCircleSize:0\n[Events]\n\n[HitObjects]\n0,0,3000,1,0\n0,0,1000,1,0",
+    "classification": "QA oracle author arithmetic error. Independent binary32 proof supports production; no Work2 code correction. Same input retained with exact bit assertions plus added A35 discriminator.",
+    "source_location": "initial gate AccountingTests.cs:93 (assert helper:17)",
+    "full_retrieved_utf8_log_sha256": "8d12d4274214b1485213cd8244bf4d5c0a9968facd0d5e2a6d000869d01b5391",
+    "selected_output": "initial-gate-output.txt",
+    "selected_output_sha256": "738f99592a83cce36d48da24ea4a02845764f6867e38800883807cd4582f6fc6"
+  },
+  "confirmed_implementation_defects": [],
+  "classification": {
+    "CONFIRMED STATIC": "Existing E33/E34 and preserved component evidence; no new original binary investigation.",
+    "VERIFIED COMPONENT": "99 independent QA06 finite cases plus255 unchanged prior QA cases; separate development controls.",
+    "OWNER-REPORTED": "Original score comparisons2392/582 remain scoped reports; no original map identity inferred.",
+    "ENGINEERING": "C01 presentation predicate, nominal sampling/projection, parser safety and unsupported-state policies, explicit artificial event/observer controls.",
+    "UNVERIFIED": [
+      "Original runtime numerical equivalence across arbitrary maps",
+      "Original test2/test3 chart bytes/settings/cache/decorated events",
+      "Physical input continuity, WPF visual presentation and audio synchronization",
+      "Native scheduling/precision, callbacks, ScoreV2/modifiers/full bonus payout",
+      "All17 E20 cases remain NOT RUN — WINDOWS HOST REQUIRED"
+    ]
+  },
+  "preservation": {
+    "baseline_blob_count": 242,
+    "unchanged_baseline_blobs_modes": 240,
+    "modified_baseline_paths": [
+      ".github/workflows/r04-build.yml",
+      "re/contexts.md (append only)"
+    ],
+    "previous_context_bytes": 345905,
+    "previous_context_sha256": "55408056790cf7e7ef0122ea9e2ba58074c3f286293d72f19ec021a9c086118a",
+    "implementation_previous_qa_e20_fixtures": "unchanged",
+    "final_publication": "README/results/selected output/journal only beyond tested gate; harness/workflow/production unchanged"
+  }
+}

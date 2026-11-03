@@ -2,12 +2,30 @@
 
 QA06 — independent R08/R08-C01/R08-C02 verification, Work1, 2026-11-03
 (Asia/Bangkok). Production target `ae0b35c6aa0f3dbda815559f844c9678cde8f7d6`.
-Initial Windows gate ran on1efda537090421a25499ef4aac80ddb25376b88c:
-WPF compiled0 warnings/errors; all255 previous QA cases and every development
-suite passed. QA06 executed98 cases:97 passed/1 failed. The failure was an authored
-oracle arithmetic error, not evidence of a production defect. The corrected
-binary32 assertion and an additional discriminator require a new gate; no final
-passing outcome is claimed yet.
+**PASS — genuine Windows headless execution.** WPF win-x64 Release compiled with
+0 warnings/0 errors. Independent QA06 **99/99**; unchanged QA01 **90/90**, QA03
+**56/56**, QA04 **43/43**, QA05 **66/66**. Total **354 independent QA cases**, no
+final failures. R06 four preparation targets/four fixture loads; unchanged R07
+8, R08 13, C01 4 and C02 14 development groups passed separately.
+
+[Passing run41640870103/job125933753872](https://github.com/thgillwtnorizoh/ohno/actions/runs/41640870103/job/125933753872),
+attempt1, checkout **767d36a5b868d241d2fefc4020d8bf05be613fe8**, 2026-11-03
+13:02:59–13:03:49 UTC /20:02:59–20:03:49 Asia/Bangkok. Windows Server2022
+Datacenter10.0.20348/image20261025.346.1, preinstalled SDK8.0.427. results.json
+records exact named QA06 outcomes, prior suite counts, all step conclusions,
+commands, source hashes and both retrieved-log hashes. gate-output.txt contains
+selected actual output; no private/authentication details or full runner logs.
+Only checkout's Node20 advisory, distinct from compiler diagnostics.
+
+Two executions: the initial gate's97/98 result exposed one authored oracle
+arithmetic error. Its input/output and failed run are preserved in
+initial-gate-output.txt and results.json. Independent binary32 verification
+corrected that assertion and added A35; production was unchanged. This is not a
+hidden implementation failure, weakened assertion or original-research correction.
+The passing gate reran the entire required matrix. No further successful gate
+was redundantly rerun. Final publication changes only results/report/journal over
+the tested source; harness, workflow and all production code remain identical.
+
 No local .NET SDK is available; no SDK installation or desktop provisioning.
 
 The new net8.0 headless project links actual production Beatmap.cs,
@@ -61,7 +79,83 @@ controls do not imply those maps are accepted for playable sessions.
 Read AGENTS/standing contract, research/reconstruction journals, E33/E34, R08/C01/
 C02 and QA01–QA05 contracts/interfaces. No prior assertion or fixture changes.
 Publication uses canonical main and expected-head leases, no permanent branch or
-force update. Actual run/diagnostics/results will be recorded after execution.
+force update. Actual runs, diagnostics and results are recorded here and in results.json.
+
+
+
+## Disposition and preservation
+
+**VERIFIED COMPONENT:** the99 independent cases satisfy their bounded assertions.
+**No confirmed implementation defect and no Work2 correction required for the
+tested finite cases.** Both supplied fixture totals match the independently
+specified E34 controls; no test uses582 as the Joined fixture expectation.
+C01's pure visibility predicate preserves component state and preceding-slider
+head/held/checkpoint/parent accounting in the selected supported scenarios.
+It does not prove that a Windows physical-input interruption was resolved.
+
+Source inspection confirms b/25 before Double multiplication and the explicit
+accounting/provenance boundaries; it does not establish untested callback effects.
+E33 M0ad2 F153d store100c, old-combo score arithmetic10e7–110b, combo writes11c7/
+11d3/11ea and admitted score write1394–13a2 remain the original authority.
+E34 M1bc1 F0ff2 store0f81 and F0fe5 store1098, M1bc4 Single→Double0045/Round0046,
+and M0ab7 F0605 store0074 supply the finite preparation contract.
+No original executable inspection or new E035 finding was needed.
+
+All242 baseline paths remain.240 blobs/modes outside the authorized workflow and
+append-only journal are unchanged. The journal preserves its entire345905-byte
+prefix. Work2 implementation/reports/journal, QA01–QA05 assertions/results, original
+research, E20 and all historical fixtures are retained. Remote expected-head,
+ancestry and complete tree/blob/mode verification are performed for final handoff.
+Published commits preserve both QA runs. No force push or permanent QA branch.
+
+## Bounded coverage map
+
+| Cases | Independent finite discriminator |
+|---|---|
+| A01–A35 (37 cases including midpoint variants) | Literal N/first/last/break/T/K vectors; zero/subsecond/equal/unsorted/unknown rows; numeric breaks/overlap/signed and unchecked duration; spinner end independence; counts/type mask; modern fractional/default/clamped difficulty versus older Byte syntax; exact/near ties and Single-to-Double boundaries; malformed/nonfinite/empty rejection; strict gameplay admission versus metadata-only controls; missing source |
+| B01–B22 (39 cases including raw/quality/policy variants) | E33 literal base table; whole counters/Single accuracy; old rather than incremented/maximum combo; b/25 quotients and fractional bonus truncation; zero K; parent scaling/bypass/MISS; terminal/interior distinction; spinner amounts/final; disabled admission versus counters; raw0; UInt16 count/snapshot wrap; finite unchecked Int32 score wrap; explicit unsupported policies/provenance/decorations/K; due-prefix raw128 on interior producer |
+| C01–C08 (11 cases including fixtures/K controls) | Automatic production config; exact E034 Mixed2392/2236 and Joined534/438 streams; real Joined session emissions; Mixed lifecycle with explicitly seeded spinner observations; fresh restart/replacement; failed new metadata leaves independent prior session intact; delayed parent with pending backlog |
+| D01–D07 (12 cases including six time boundaries) | Pre-start/start/interior/end/post-end-pending/evaluated presentation; state snapshot invariance; head admission inside old preview; held slider7000–9900 through8000/9000/9864 checkpoints; unchanged held-button behavior; strict spinner progress/end completion retained |
+
+A28/A35 arithmetic proof is below. A18/A19 use metadata-only Int32 boundary
+operands; they do not claim a playable negative-time map. B17 uses65536 supported
+zero-K events, the smallest count wrap; B18 uses8000 same300 events with K10 and
+the independent closed form300*n+60*(n-2)*(n-1) before Int32 wrap. This is a bounded
+arithmetic boundary test, not random generation, a performance test or complete
+score simulation. Each individual bonus stays within the admitted conversion
+range. Current-combo Int32 overflow and invalid floating-to-int results are not
+forced or assigned original behavior.
+
+C02/C03 intentionally send explicit events to a normally configured session's
+ledger while JudgedCount remains0; they are not natural object evaluations. C04
+instead drives actual production slider head/checkpoint/parent methods. C05 drives
+real circle/slider/final dispatch but explicitly calls the public spinner observer
+and supplies its component results; it does not fake a physical spin. No private
+field rewrite, OS input or wall-clock scheduling is used.
+
+D05 derives linear slider7000–9900 independently: V100/Q100, deadlines8000,9000,
+9864 and endpoint390. Metadata row starts7000/10000 give T3/N2/K2. Head30+two10+
+terminal30 plus parent300+72 gives452, combo4, one whole result. D04 independently
+uses slider9000–9800 with K3: head30+terminal30+parent336=396. Both are supported
+nonoverlapping intervals and remain before spinner10000. Repeated presentation
+queries are compared against state and a query-free held-button control.
+
+Source inspection confirms Program map loading prepares FromBeatmap before
+replacing the active session; restart constructs a new ledger with retained
+configuration. PlayfieldView calls SpinnerPresentation only from drawing and
+separately samples buttons/pointer. CircleSession.Press excludes pending spinners
+from their start, not start-minus-approach; Track remains a separate path.
+These are source/component findings, not evidence about native focus, WPF
+presentation, asynchronous audio replacement or physical input interruption.
+
+**ENGINEERING boundaries:** full Beatmap.Load rejects unsupported types/equal
+starts/overlapping spinner intervals/malformed inputs; ReadFresh exposes narrower
+metadata-only behavior. Missing metadata, nonfinite conversion, K0–10, unsupported
+policies and event provenance fail explicitly. Older Byte syntax is tested only
+within supported0–10 difficulty, not as certification of every historical parser
+branch or cached difficulty reuse. Original partial-error recovery is not modeled.
+The one-argument historical session constructor remains an explicit engineering
+K1 compatibility path; the normal app uses the tested automatic factory.
 
 ## Preserved initial oracle error (not a production correction)
 
