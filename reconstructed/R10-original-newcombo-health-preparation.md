@@ -35,18 +35,47 @@ README, new R10DevelopmentChecks project/program, this report, appended journal
 and one existing workflow path/step. No Work1 research/QA, historical report,
 fixture, previous development program or HP/score arithmetic is modified.
 
-**Verification at source publication: PENDING Windows CI.** Local source/diff /
-whitespace/preservation checks are performed, but no local .NET SDK is available.
-No build or component execution is claimed before the actual hosted gate. The
-established Windows workflow retains WPF Release win-x64, all513 independent
-QA01/03/04/05/06/07 cases and R06/R07/R08/C01/C02/R09 development checks, adding:
+**Actual Windows verification: PASS.** Tested source:
+`33ae9c18ed1c5837d77321f022dcdf13144eb883`.
+[Run41681640363/job126076528314](https://github.com/thgillwtnorizoh/ohno/actions/runs/41681640363/job/126076528314),
+2026-11-03 17:10:36–17:11:42 UTC /2026-11-04 00:10:36–00:11:42 Asia/Bangkok.
+Windows2022, preinstalled .NET8.0.427. Every job step succeeded. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+```
+
+Independent QA total513/513; all retained development groups and the separate23
+R10 groups pass. QA07 F13 H160/H200 recovery guard cases explicitly PASS. Checkout's
+Node20 deprecation advisory is separate from compiler warnings. No assertion was
+weakened or test file changed. No local SDK/build/install or original-runtime test.
+The established Windows workflow retains all prior commands and adds one step:
 
 ```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
 dotnet run --project reconstructed/R10DevelopmentChecks/R10DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
 ```
 
-Exact tested source, hosted run, outputs and publication disposition will be
-recorded here after execution. No application window or human gameplay is tested.
+Final documentation-only publication records this passing source and appends actual
+journal outcomes. Application, checks and workflow remain byte-identical to the
+executed source. Source/diff/whitespace, unchanged research/QA/reports/fixtures /
+prior checks and journal-prefix preservation checks passed. Publication uses
+expected-head non-force main updates; no permanent branch or history rewrite.
+No application window or human gameplay is tested.
 Windows build/run instructions and all existing fixture buttons remain in
 `CircleGame/README.md`; launch remains `Start-CircleGame.cmd` or
 `dotnet run --project reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release`.
@@ -57,7 +86,7 @@ All interactive use belongs exclusively to the human owner.
 **CONFIRMED STATIC authority:** E036's published original CIL evidence, consumed
 without new extraction. M2902 (T0556, RVA10ebe4,38 bytes) body SHA256
 `3d34c695021f9f3e85f3614df524072bde01394675edb95e030d44de9b0df46b`.
-M2902:0006/0011/0023 tests the last registered reference F1805 for null / T067f
+M2902:0006/0013/0023 tests the last registered reference F1805 for null / T067f
 spinner base / assignable T081f. It has no confirmed mutation. Ordinary circle /
 slider categories fail both type tests; T081f is a native runtime-type predicate,
 not a new standard-object category. The pure predicate can represent that type
@@ -97,9 +126,14 @@ only the first flag leaves A221 because grouping reads the next flag. A two-brea
 gap consumes both flags in E036 but only one exclusion in E035. A five-circle
 HP0/AR5 control with starts2000–2400 compares explicit separate groups to unmarked
 one-group preparation: the marked control predicts62 trials/B=G1; the unmarked
-control must exercise balance retries and change r/B/G. Actual values will be
-reported after execution. Trial preparation must leave score/counts/combo at zero
-and E034 K identical. A matched direct-component lifecycle compares health enabled
+control must exercise balance retries and change r/B/G. Executed production output:
+
+```text
+R10 CALIBRATION control unmarked r=0.0035204659802861625,B=1.08243216,G=1.04060401,trials=66; marked r=0.004144911095285019,B=1,G=1,trials=62
+```
+
+Both private calibrations leave score/event/whole-result counters at zero and E034
+K identical, as checked by direct calls. A matched direct-component lifecycle compares health enabled
 and disabled score/accuracy/combo/judgements at every update; these are finite
 software checks, not automated physical gameplay or independent QA08.
 
@@ -115,10 +149,10 @@ and10000-trial/2000000-work bounds are engineering limits, not original limits.
 The pure break-order probe can inspect an artificial unsorted list, but the
 application's existing HealthChart validation still rejects invalid ordering.
 
-The unchanged bundled silent practice file contains **eight** circles (not three).
-A separately generated three-unmarked-circle component control and the original
-eight-circle fixture are both checked for eligibility without altering fixture
-bytes; no exact tracked three-circle fixture was found. First slider, tick/repeat,
+The unchanged bundled `CircleGame/Fixtures/first-circles.osu` contains **eight**
+circles. A separately generated three-unmarked-circle component control and this
+original eight-circle fixture both successfully prepare health without altering
+fixture bytes. First slider, tick/repeat,
 Mixed R07 and Health R09 controls also exercise the fresh path. Eligibility still
 depends on every existing guard, not just NewCombo propagation.
 

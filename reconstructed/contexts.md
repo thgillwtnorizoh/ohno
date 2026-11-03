@@ -677,3 +677,29 @@ PENDING at source publication; actual tested SHA/run/outputs append after execut
 No original runtime or physical gameplay claim. Main expected-head publication,
 no permanent branch/force/history rewrite. Stop after R10; no R11/QA08/E037,
 score-discrepancy investigation, framework migration or lazer extensions.
+
+R10 actual hosted verification: tested source33ae9c18ed1c5837d77321f022dcdf13144eb883,
+run41681640363/job126076528314,2026-11-03 17:10:36–17:11:42 UTC /2026-11-04
+00:10:36–00:11:42 Bangkok. Windows2022/preinstalled .NET8.0.427: WPF Release
+win-x64 0 warnings/0 errors; QA01 90,QA03 56,QA04 43,QA05 66,QA06 99,QA07 159
+passed (513/513 independent cases,0 failed), all job steps succeeded. QA07 F13
+H160/H200 remain PASS. R06 targets4/fixture loads4; R07 8,R08 13,C01 4,C02 14,
+R09 15 development groups passed. New R10 23 groups passed separately. The older
+QA entry points remain historical R09 by the explicit owner-approved API decision;
+those513 do not independently establish new fresh E036 integration. R10 checks
+execute that path directly, including private group balance221/235, break while
+versus one-exclusion separation, source order/identity guards and fixture health.
+Executed five-circle finite control: unmarked r0.0035204659802861625,
+B1.08243216,G1.04060401,66 trials; all separate groups r0.004144911095285019,
+B1,G1,62 trials. Matched E034 K/zero trial score and per-update actual-component
+score/accuracy/combo/judgement invariance passed. Three-unmarked-circle temporary
+control and unchanged bundled eight-circle fixture prepare health; no fixture was
+modified/force-enabled. Restart/replacement/clone/retained-domain checks passed.
+Exact output/commands/link in R10 report. Checkout Node20 advisory separate from
+compiler diagnostics. No local SDK/GUI/original runtime/physical gameplay, no E20
+execution or QA08. Final docs-only record update preserves tested production,
+checks/workflow, all Work1 research/QA/logs, prior reports/checks/fixture bytes and
+journal prefix. Health/score/calibration/drain/smoothing/recovery arithmetic exact
+source-preservation checks passed. Native timing/manager ties/reuse/alternate
+factories and general equivalence remain unresolved; unsupported HP stays explicit.
+Stop after R10, no R11/E037/framework migration or deferred score investigation.
