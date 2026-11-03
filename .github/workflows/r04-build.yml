@@ -1,4 +1,4 @@
-name: R07 build and QA05 spinner regression
+name: R08 build and QA06 accounting regression
 
 on:
   push:
@@ -13,6 +13,7 @@ on:
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
+      - re/qa/qa06/Headless/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -116,4 +117,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R08C02DevelopmentChecks/R08C02DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA06 ledger multiplier and presentation suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa06/Headless/QA06.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
