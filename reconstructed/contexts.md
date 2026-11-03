@@ -437,3 +437,18 @@ enums contain the bit and admit zero writes even with captured flagfalse; positi
 flagfalse cases stay suppressed. Added that finite assertion to an existing group.
 Main fixture numbers are unchanged; tests/research remain untouched. This current
 R08 refinement will be reverified; no new expedition/QA06 or original observation.
+
+R08 final hosted verification: source `d09906f5689b78cfd2ebc5ab9aea8ef9dc371fd3`,
+run41592942636/job125773612554, 2026-11-03 06:55–06:56 UTC /13:55–13:56 Vietnam.
+Windows2022, preinstalled .NET8.0.427: WPF win-x64 build0 warnings/0 errors;
+QA01 90/90,QA03 56/56,QA04 43/43,QA05 66/66 (255 total,0 failed);
+R06 four finite preparation targets/four fixture loads, R07 eight development
+groups, R08 thirteen groups including corrected late-admission assertion PASS.
+All job steps succeeded. Checkout Node20 advisory is separate from compilation.
+No historical QA assertion conflicts with E33 parent-MISS combo reset. Actual
+command/output and tested SHA are retained in R08-legacy-accounting.md. Final
+handoff updates only report/journal over this tested source; app/checks/workflow
+remain identical. Journal historical byte prefix and research/QA/E20/old fixtures/
+reports were checked preserved. No game/window/input or human score comparison.
+Original automatic K, record/decorated policy fidelity and cross-map numeric
+identity remain unresolved. R08 ends here; no QA06 or original expedition.

@@ -33,9 +33,44 @@ Initial gate [run41592125988/job125771010001](https://github.com/thgillwtnorizoh
 on source `b17c32cdc0eb1700c4686023e29ccbee3908f533` passed: WPF0 warnings/errors,
 all255 existing QA cases, retained R06/R07 checks and13 R08 groups. Source review
 then separated E33's captured hit-counter flag from its exact late admission OR
-predicate, adding the supported negative/disabled-flag control. Changed-source
-reverification is **PENDING** at this publication; final results will identify
-its actual SHA/run/job. No local dotnet executable, SDK install or compilation.
+predicate, adding the supported negative/disabled-flag control.
+
+Final tested source: `d09906f5689b78cfd2ebc5ab9aea8ef9dc371fd3`.
+[Run41592942636/job125773612554](https://github.com/thgillwtnorizoh/ohno/actions/runs/41592942636/job/125773612554)
+completed successfully on Windows2022 using preinstalled SDK8.0.427, on
+2026-11-03 at06:55–06:56 UTC (13:55–13:56 Asia/Ho_Chi_Minh). Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+```
+
+The established workflow executed these commands in order (PowerShell repo root;
+`$env:GITHUB_WORKSPACE` is the checkout directory):
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project re/qa/qa01/Headless/QA01.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa03/Headless/QA03.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R07DevelopmentChecks/R07DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project re/qa/qa05/Headless/QA05.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+dotnet run --project reconstructed/R08DevelopmentChecks/R08DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+```
+
+All steps succeeded. Checkout emitted a Node20 deprecation advisory, separate from
+compiler diagnostics. No historical assertion conflicted with the E33 parent-miss
+reset. Final publication changes only this report and the appended journal after
+the tested source; application, checks and CI remain byte-identical to that source.
+No local dotnet executable, SDK install or compilation.
 No game launch, OS input, gameplay, OBS/recording, original debugger, E20 experiment
 or routine supervised testing. Earlier owner feedback is positive scoped evidence
 for R04/R06/R07; R08 score numbers and visuals remain **UNVERIFIED human/runtime**.
