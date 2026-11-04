@@ -352,6 +352,9 @@ public sealed class CircleSession
     public string HealthStatus { get; }
     public HealthCalibrationResult? HealthPreparation => Health?.Calibration;
     public HealthPreparationPolicy HealthPolicy { get; }
+    // E012/E037 positive ordinary circle hook before completion/result accounting.
+    public event Action<CircleDefinition>? PositiveCircleSound;
+    public string? CircleSoundError { get; private set; }
     private int previousUpdateTime, previousQualifyingInputTime;
     private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
@@ -547,6 +550,12 @@ public sealed class CircleSession
     private void Judge(CircleState circle, int time)
     {
         circle.Result = Classify(time - circle.Definition.StartTime);
+        if (circle.Result is Judgement.Hit300 or Judgement.Hit100 or Judgement.Hit50)
+        {
+            try { PositiveCircleSound?.Invoke(circle.Definition); }
+            catch (Exception error) { CircleSoundError = "Hitsound sink failed: " + error.Message; }
+            // ENGINEERING containment: an optional effects failure cannot corrupt play.
+        }
         circle.JudgedAt = time;
         RecordWholeResult(circle, ScoreEventKind.CircleWhole, circle.Result, time);
         Feedback = new(circle.Definition.Position, Label(circle.Result), time, circle.Result);

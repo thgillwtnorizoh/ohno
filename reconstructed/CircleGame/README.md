@@ -489,3 +489,109 @@ inputs support the recovered +160/fill/release boundary, without native playback
 or mod behavior. Full fail/retry UI, HP restoration/seek, high-result decorations
 and native effects remain excluded. See `../R09-original-health-system.md` for
 source provenance, unsupported cases and actual Windows gate results.
+
+## Circle HitSounds (R11)
+
+Positive ordinary circles now select E037/E038 samples before score accounting.
+Slider/spinner/head/tick audio is still outside this feature. Song MediaPlayer and
+Stopwatch controls remain as before. **No original hitsound samples are bundled.**
+Without optional assets, gameplay works and the footer reports missing effects.
+The **Circle HitSounds** checkbox enables/disables effects. **Effects setup** shows
+the settings-file location. All playing/listening is exclusively human-controlled.
+
+Create `hitsounds.json` beside `Ohno.CircleGame.exe` (for `dotnet run`, in the
+project's `bin/Release/net8.0-windows/` output directory), then relaunch:
+
+```json
+{
+  "Enabled": true,
+  "LayeredHitSounds": true,
+  "SkinSamples": true,
+  "SkinName": "Default",
+  "SkinDirectory": null,
+  "DefaultPackDirectory": "C:\\MyIndependentSamples",
+  "VolumeEffect": 80,
+  "VolumeUniversal": 100
+}
+```
+
+These are explicit **ENGINEERING practice settings**, not the owner's installed
+osu! configuration. Volumes are integer0–100; global gain uses the recovered
+integer product followed by Single division. Layered Normal needs the applicable
+skin/map/mode predicate; mask0 always gains Normal. The supplied ordinary context
+has a matching selected map, an independent default skin descriptor, mode0,
+map suppression/process gates false and song rate100/no rate-match adjustment.
+`SkinName: "Default"` skips loose-skin lookup. To admit your own skin directory,
+set its explicit local path and a non-Default SkinName; SkinSamples must be true.
+Settings/asset-root changes require relaunch; restart only resets playback/session.
+Invalid configuration is reported and effects remain unavailable until corrected.
+
+There are three supported sources:
+
+- **Map directory:** standard bank-layer names with optional indexes, e.g.
+  `normal-hitnormal.wav`, `soft-hitwhistle2.mp3`, `drum-hitclap7.ogg`.
+  Standard search is WAV→MP3→OGG. Index0 skips the map provider; index1 is
+  unsuffixed; index2 and greater append their decimal number.
+- **Explicit skin directory:** unsuffixed standard names, WAV→MP3→OGG, admitted
+  only under the settings above. Map resources take precedence.
+- **Independent default pack:** twelve PCM WAV files, exactly
+  `{normal,soft,drum}-{hitnormal,hitfinish,hitwhistle,hitclap}.wav`.
+  This is an engineering file adapter for extensionless default resource keys,
+  not a claim that original embedded resources were loose WAVs. No original DLL
+  is loaded or extracted. The pack follows admitted map and skin resources.
+
+For an optional original, copyright-free practice pack, run at repository root:
+
+```powershell
+./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory C:\MyIndependentSamples
+```
+
+The script writes twelve independently synthesized120ms tones and prints suitable
+JSON; it does not play audio. Copy that JSON to the output settings file above.
+These tones demonstrate the interface and make no original sound-quality claim.
+Use **Silent fixture**, Start/Space, real mouse and Z/X to hear circle effects;
+its omitted/zero selectors inherit its timing sample record. All old fixtures and
+controls remain. WAV is the most portable first choice; MP3/OGG map/skin/custom
+files depend on Windows media codecs and may fail explicitly. Exact custom
+filenames are supported; if absent, fallback is WAV→OGG→MP3, distinct from the
+standard order. A declared existing custom file that cannot be read does not
+trigger the extension loop. Non-audio formats/playlists are not supported.
+
+Circle metadata keeps raw sounds and constructor bits2/4/8, sample-set/addition /
+index/volume/filename overrides. Zero overrides inherit; volume0 is not explicit
+mute. Timing lookup scans the supplied prepared order at **stored start+5**,
+independent of hit time and inherited flag. The supported long timing rows include
+an explicit volume (six fields minimum), set0→Soft2; shorter timing defaults need
+unreconstructed original map/global operands and disable effects explicitly.
+Malformed sample payloads remain labeled unavailable instead of being silently
+coerced to zero. Gameplay remains usable; this is an engineering error-containment
+policy rather than original parser exception equivalence. Existing slider timing
+lookup and gameplay definitions are untouched. Shared custom/index resource
+preparation includes registered object metadata; only circles emit playback.
+
+Assets are prepared off the judgement path, then WPF asynchronously opens two
+independent voices per resource before session replacement. Each positive circle
+queues prepared requests in Normal→Finish→Whistle→Clap order. No judgement-time
+file read/decoder open or song-clock seek occurs. Effects use gain/Balance /
+SpeedRatio; current no-mod factor is1. A busy two-voice pool drops the extra voice
+with a diagnostic. MediaPlayer/dispatcher latency, codec/device behavior and
+native BASS equivalence are unverified. Opening/compilation does not prove sound.
+
+Pause stops active effects and discards queued work; resume does not replay it.
+Restart stops voices, detaches the old session and starts fresh judgement state
+while reusing prepared assets. Replacement/exit close voices and map samples;
+skin/default caches persist within the configured library until exit. Model APIs
+expose separate map/skin/all invalidation and per-key eviction; cached misses are
+not automatically rediscovered. Relaunch refreshes assets/configuration. Private
+health calibration never emits sounds. Optional sink errors are contained so
+score, combo, accuracy, judgement and HP proceed.
+
+Local safeguards: relative candidate names within admitted roots, no network /
+absolute custom paths, traversal or symlink/reparse-point paths;8MiB/file,
+64 loaded resources/64MiB and64 dynamic indexes. Limits are engineering choices.
+Native map-byte SampleCreate for inputs<1024 bytes is unsupported and represented
+as logical invalid handle0 with a diagnostic, without invented sample bytes.
+No `.osz2`, full skin manager, complete native cache/concurrency/scheduler/device
+semantics or acoustic fidelity is claimed. Footer shows enablement, decoded and
+unresolved selections, default-pack configuration, volume policy and errors.
+See `../R11-original-circle-hitsounds.md` for actual Windows verification.

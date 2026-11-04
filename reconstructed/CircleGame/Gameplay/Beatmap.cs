@@ -384,11 +384,47 @@ public static class NewComboPreparation
 }
 
 
+// R11 additive metadata. Definitions/positional constructors remain unchanged.
+public sealed record CircleSampleMetadata(CircleDefinition Object, int RawSound, int StoredMask,
+    int BaseSet, int AdditionSet, int Index, int Volume, string Filename, string? RawPayload, string? Error)
+{
+    public static CircleSampleMetadata Parse(CircleDefinition circle, int raw, string? payload)
+    {
+        int baseSet = 0, addition = 0, index = 0, volume = 0; string filename = "";
+        string? error = null;
+        if (!string.IsNullOrEmpty(payload))
+        {
+            try
+            {
+                string[] parts = payload.Split(':');
+                if (parts.Length < 2) throw new FormatException("Sample payload needs base and addition selectors.");
+                baseSet = Convert.ToInt32(parts[0], CultureInfo.InvariantCulture);
+                addition = Convert.ToInt32(parts[1], CultureInfo.InvariantCulture);
+                if (parts.Length > 2) index = Convert.ToInt32(parts[2], CultureInfo.InvariantCulture);
+                if (parts.Length > 3) volume = Math.Clamp(Convert.ToInt32(parts[3], CultureInfo.InvariantCulture), 0, 100);
+                if (parts.Length > 4) filename = parts[4];
+            }
+            catch (Exception e) when (e is FormatException or OverflowException)
+            { error = "Malformed circle sample metadata: " + e.Message; }
+        }
+        return new(circle, raw, raw & 14, baseSet, addition, index, volume, filename, payload, error);
+    }
+}
+public sealed record SampleTiming(double Time, int Set, int Index, int Volume, bool Uninherited, int SourceOrder);
+public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Index, string Filename, string? Error);
+public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<CircleSampleMetadata> Circles,
+    IReadOnlyList<SampleTiming> Timing, string? TimingError)
+{
+    // Shared resource preloading only. No slider/spinner playback hook is added.
+    public IReadOnlyList<SamplePreparationOperand> RegisteredOverrides { get; init; } = Array.Empty<SamplePreparationOperand>();
+}
+
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
     public LegacyScoreMetadata? ScoreMetadata { get; init; }
     public HealthMapSource? HealthSource { get; init; }
+    public CircleSoundMap? CircleSounds { get; init; }
 
     // Optional local media reference; the gameplay model remains independent of WPF.
     public string? AudioPath { get; init; }
@@ -413,6 +449,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var timing = new List<TimingPoint>();
         var healthRows = new List<HealthObjectSource>();
         var healthBreaks = new List<HealthBreak>();
+        var circleSamples = new List<CircleSampleMetadata>();
+        var sampleOperands = new List<SamplePreparationOperand>();
+        var sampleTiming = new List<SampleTiming>();
+        string? sampleTimingError = null;
+        int timingSourceOrder = 0;
         string section = "";
         for (int lineNumber = 0; lineNumber < lines.Length; lineNumber++)
         {
@@ -437,6 +478,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     throw new InvalidDataException("R02 requires object times between 0 and 3600000 ms.");
                 // E04 parser bounds both axes to 512, then truncates. No mods/offsets.
                 var head = new CircleDefinition(new((int)Math.Clamp(x, 0, 512), (int)Math.Clamp(y, 0, 512)), time);
+                int sampleColumn = (type & 8) != 0 ? 6 : (type & 2) != 0 ? 10 : 5;
+                var sample = CircleSampleMetadata.Parse(head, hitSound, row.Length > sampleColumn ? row[sampleColumn] : null);
+                sampleOperands.Add(new((type & (2 | 8)) == 0 ? head : null, sample.Index, sample.Filename, sample.Error));
                 if ((type & 8) != 0)
                 {
                     if (version != 14) throw new InvalidDataException("R07 supports only modern-policy, format-v14 spinners.");
@@ -445,7 +489,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                         throw new InvalidDataException($"Line {lineNumber + 1}: spinner end must follow start, duration <=60000 ms, end <=3600000 ms.");
                     spinners.Add(new(time, end, hitSound, row.Length > 6 ? row[6] : null));
                 }
-                else if ((type & 2) == 0) circles.Add(head);
+                else if ((type & 2) == 0)
+                {
+                    circles.Add(head);
+                    circleSamples.Add(sample);
+                }
                 else
                 {
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
@@ -493,6 +541,19 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 if (isBase && beat <= 0) throw new InvalidDataException("R04 requires positive base beat lengths.");
                 // E05 M0b75 normalization for an inherited nonnegative value.
                 timing.Add(new(t, !isBase && beat >= 0 ? -100 : beat, isBase));
+                // E037 long timing rows: explicit volume avoids guessing the caller's
+                // default or M3b3c's old/global sample-set dependency. Slider selection is untouched.
+                try
+                {
+                    if (row.Length < 6) throw new FormatException("Short timing sample defaults need unreconstructed global operands; supply six or more fields.");
+                    int set = Convert.ToInt32(row[3], CultureInfo.InvariantCulture);
+                    int index = Convert.ToInt32(row[4], CultureInfo.InvariantCulture);
+                    int volume = Math.Clamp(Convert.ToInt32(row[5], CultureInfo.InvariantCulture), 0, 100);
+                    sampleTiming.Add(new(t, set == 0 ? 2 : set, index, volume, isBase, timingSourceOrder));
+                }
+                catch (Exception e) when (e is FormatException or OverflowException)
+                { sampleTimingError ??= "Hitsounds unavailable: " + e.Message; }
+                timingSourceOrder++;
             }
             else if (section is "[General]" or "[Metadata]" or "[Difficulty]")
             {
@@ -561,7 +622,10 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
                 Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
-                HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()) };
+                HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
+                CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
+                    circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
+                    { RegisteredOverrides = sampleOperands.AsReadOnly() } };
         map.HealthSource!.BindFreshOwner(map);
         return map;
 

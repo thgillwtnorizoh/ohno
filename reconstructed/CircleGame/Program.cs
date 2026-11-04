@@ -37,10 +37,26 @@ public sealed class GameWindow : Window
     private PracticeFixture? audibleFixture;
     private bool loading;
     private bool closing;
+    private readonly HitSoundLibrary effectsLibrary;
+    private WindowsCircleEffects? pendingEffects;
+    private readonly TextBlock effectsStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 12, TextWrapping = TextWrapping.Wrap };
+    private readonly CheckBox effectsEnabled = new() { Content = "Circle HitSounds", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
+    private string? effectsConfigurationError;
+    private static string EffectsConfigurationPath => Path.Combine(AppContext.BaseDirectory, "hitsounds.json");
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R10 NewCombo Health Practice";
+        Title = "ohno · R11 Circle HitSounds Practice";
+        try { effectsLibrary = new(HitSoundSettings.Read(EffectsConfigurationPath)); }
+        catch (Exception e)
+        {
+            effectsConfigurationError = "Effects settings unavailable: " + e.Message;
+            effectsLibrary = new(new HitSoundSettings { Enabled = false });
+        }
+        effectsEnabled.IsChecked = effectsLibrary.Settings.Enabled;
+        surface.EffectsEnabled = effectsLibrary.Settings.Enabled;
+        effectsEnabled.Checked += (_, _) => { surface.EffectsEnabled = true; UpdateHud(); };
+        effectsEnabled.Unchecked += (_, _) => { surface.EffectsEnabled = false; UpdateHud(); };
         Width = 1120; Height = 860; MinWidth = 800; MinHeight = 640;
         Background = new SolidColorBrush(Color.FromRgb(12, 19, 36));
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -68,6 +84,11 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Circle + Spinner", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "circle-spinner.osu"))));
         tools.Children.Add(Button("Mixed R07", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "mixed-r07.osu"))));
         tools.Children.Add(Button("Health R09", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "health-r09.osu"))));
+        tools.Children.Add(effectsEnabled);
+        tools.Children.Add(Button("Effects setup", () => MessageBox.Show(this,
+            "Configure hitsounds.json beside the built executable, then relaunch.\n" + EffectsConfigurationPath +
+            "\n\nOptional SkinDirectory and DefaultPackDirectory admit local roots. The independent pack uses twelve exact key.wav files. " +
+            "See CircleGame/README.md for the JSON schema and independent sample generator. No original samples are supplied.", "Circle HitSounds setup")));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
@@ -78,6 +99,7 @@ public sealed class GameWindow : Window
         footer.Children.Add(new TextBlock { Text = "Aim: mouse   Hit / hold: Z / X   Pause: Space   Restart: R / Enter   •   Spinner: hold and rotate around center",
             Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(0, 7, 0, 0) });
         footer.Children.Add(mediaStatus);
+        footer.Children.Add(effectsStatus);
         Grid.SetRow(footer, 2); root.Children.Add(footer);
         Content = root;
         surface.FrameUpdated += UpdateHud;
@@ -89,7 +111,9 @@ public sealed class GameWindow : Window
             closing = true;
             loadCancellation?.Cancel();
             pendingAudio?.Dispose(); // Synchronous release, even if an await cannot resume at shutdown.
+            pendingEffects?.Dispose();
             surface.Dispose();
+            effectsLibrary.Dispose();
             audibleFixture?.Dispose();
         };
         Loaded += async (_, _) =>
@@ -138,9 +162,11 @@ public sealed class GameWindow : Window
         if (closing) return;
         loadCancellation?.Cancel();
         pendingAudio?.Dispose();
+        pendingEffects?.Dispose();
         var request = new CancellationTokenSource();
         loadCancellation = request;
         BeatmapAudio? candidateAudio = null;
+        WindowsCircleEffects? candidateEffects = null;
         loading = true;
         heldKeys.Clear();
         PublishHeldKeys();
@@ -154,7 +180,20 @@ public sealed class GameWindow : Window
             pendingAudio = candidateAudio;
             await candidateAudio.PrepareAsync(request.Token);
             if (closing || request.IsCancellationRequested || !ReferenceEquals(loadCancellation, request)) return;
-            surface.Load(map, candidateAudio, scoring);
+            surface.EffectsNote = effectsConfigurationError ?? "preparing optional assets";
+            if (effectsConfigurationError is null)
+            {
+                try
+                {
+                    candidateEffects = await WindowsCircleEffects.PrepareAsync(map, effectsLibrary, Dispatcher, request.Token,
+                        effect => pendingEffects = effect);
+                }
+                catch (OperationCanceledException) when (request.IsCancellationRequested || closing) { throw; }
+                catch (Exception e) { surface.EffectsNote = "Resource preparation failed: " + e.Message; }
+            }
+            if (closing || request.IsCancellationRequested || !ReferenceEquals(loadCancellation, request)) return;
+            surface.Load(map, candidateAudio, scoring, candidateEffects);
+            candidateEffects = null; pendingEffects = null;
             candidateAudio = null; // Surface now owns this prepared player.
             pendingAudio = null;
             mapLabel.Text = map.Title.Length <= 38 ? map.Title : map.Title[..35] + "…";
@@ -173,9 +212,11 @@ public sealed class GameWindow : Window
         finally
         {
             candidateAudio?.Dispose();
+            candidateEffects?.Dispose();
             if (ReferenceEquals(loadCancellation, request))
             {
                 pendingAudio = null;
+                pendingEffects = null;
                 loadCancellation = null;
                 loading = false;
                 if (!closing) UpdateHud();
@@ -205,6 +246,8 @@ public sealed class GameWindow : Window
         foreach (Button button in buttons) button.IsEnabled = !loading && !closing;
         playButton.IsEnabled &= surface.Session is not null;
         restartButton.IsEnabled &= surface.Session is not null;
+        effectsEnabled.IsEnabled = !loading && !closing;
+        effectsStatus.Text = loading ? "Preparing optional effects off the judgement path…" : surface.EffectsStatus;
         mediaStatus.Text = loading ? "Loading local beatmap audio… previous session paused (15-second timeout)." : surface.AudioStatus;
         if (surface.Session is not { } game) { hud.Text = "No map loaded"; return; }
         ScoreLedger ledger = game.Ledger;

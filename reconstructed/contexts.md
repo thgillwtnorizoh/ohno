@@ -703,3 +703,48 @@ journal prefix. Health/score/calibration/drain/smoothing/recovery arithmetic exa
 source-preservation checks passed. Native timing/manager ties/reuse/alternate
 factories and general equivalence remain unresolved; unsupported HP stays explicit.
 Stop after R10, no R11/E037/framework migration or deferred score investigation.
+
+## R11 — First Original-Derived Audible Circle HitSounds
+
+Work2,2026-11-04 Asia/Bangkok. Started verified latest origin/main
+8ae7b44aa12de46a15f2043847b70add3c5454a2. Read canonical contract/AGENTS/journal,
+full E037/E038 reports and parsed JSON evidence, E004/E005 correction, E010/E012 /
+E026 boundaries, R10/QA08 and current parser/session/audio/UI/workflow. No RTK.md
+is present/current AGENTS directs re/Instruction. No original binary/archive /
+asset extraction or RE tools, original or reconstructed window/input, audio
+listening, debugger/OBS/E020. This is authorized R11 implementation only; no
+shared research or historical report/QA assertion/fixture changed.
+
+CONFIRMED STATIC E037/E038 authority supplies reconstructed metadata, ordered
+stored-start+5 timing selection, override inheritance, conditional Normal layering,
+custom handle versus1/4/2/8 layer requests and exact volume/pan/rate operands;
+decoded resource keys, distinct standard/custom extension order, provider gates,
+map/skin/default cache/sentinel identities, dynamic preloading and36 prepared cells.
+Added pure Gameplay/CircleHitSounds, additive Beatmap sidecars, ordinary-positive
+pre-accounting hook, local-root/resource library and WindowsCircleEffects adapter.
+Shared object custom/index preloads do not introduce slider/spinner sound hooks.
+Optional playback failures are ENGINEERING-contained; judgement/scoring/HP continue.
+Exact E033/E034, HP/calibration/drain/smoothing/recovery/C01 arithmetic and explicit
+HistoricalR09/E036FreshOrdinary API choice retained. No trial calibration sounds.
+
+ENGINEERING settings in output hitsounds.json: optional local skin/default pack,
+layering, effect/global volume, enable/status controls; no guessed original assets.
+Independent PowerShell tone generator supplies optional original practice PCM WAVs
+without playback. No sample bytes committed/extracted. Windows adapter preopens
+2 voices/resource asynchronously, queues no-I/O judgement requests, discards paused/
+stale queued work and stops/releases on restart/replacement/exit. Song MediaPlayer
+and Stopwatch unchanged. Managed IDs/codec failures/threads are not BASS semantics.
+Original pause/worker timing/native device precision and acoustic equivalence remain
+UNVERIFIED. Local path/size/index/resource guards are engineering limits; short native
+SampleCreate and short timing global defaults remain explicit unsupported boundaries.
+
+New R11DevelopmentChecks use actual linked production with injected providers and
+recording sinks: H/K quality/order/once-only/metadata/timing/layers/volume/custom /
+resource-cache/fallback/invalid-sentinel/local path/lifecycle/failure/HP-score controls.
+Current README/new R11 report and minimal established Windows workflow path/step
+updated; retain628 independent QA cases and all prior development groups. Source /
+diff/preservation review only initially; no local SDK. Windows full gate PENDING
+at source publication, actual source/run/results append after execution. No human
+playback claim or new independent QA campaign. Expected-head non-force main
+publication only, no permanent branch/rewrite. Stop after R11; no QA09/R12/E039,
+framework/lazer work or deferred scoring-discrepancy investigation.

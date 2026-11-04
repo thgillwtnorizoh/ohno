@@ -12,6 +12,7 @@ on:
       - reconstructed/R08C02DevelopmentChecks/**
       - reconstructed/R09DevelopmentChecks/**
       - reconstructed/R10DevelopmentChecks/**
+      - reconstructed/R11DevelopmentChecks/**
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -158,3 +159,23 @@ jobs:
         run: |
           dotnet run --project re/qa/qa08/Headless/QA08.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
+
+      - name: Check R11 circle hitsound selection resources and lifecycle
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R11DevelopmentChecks/R11DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $packPath = Join-Path $env:RUNNER_TEMP 'ohno-r11-independent-tones'
+          & ./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory $packPath
+          $samples = @(Get-ChildItem $packPath -Filter '*.wav')
+          if ($samples.Count -ne 12) { throw 'Expected twelve independent sample files.' }
+          foreach ($sample in $samples) {
+            $bytes = [IO.File]::ReadAllBytes($sample.FullName)
+            if ($bytes.Length -ne 10628 -or [Text.Encoding]::ASCII.GetString($bytes, 0, 4) -ne 'RIFF') {
+              throw 'Independent generator PCM header/length mismatch.'
+            }
+          }
+          Write-Output 'R11 INDEPENDENT PACK: 12 PCM WAV files generated and headers checked; no playback'
+          Remove-Item $packPath -Recurse
+          exit 0

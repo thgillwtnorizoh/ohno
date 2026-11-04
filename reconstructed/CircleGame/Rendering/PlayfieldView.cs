@@ -12,6 +12,15 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
 {
     private readonly GameplayClock clock = new();
     private BeatmapAudio? audio;
+    private WindowsCircleEffects? effects;
+    private bool effectsEnabled = true;
+    public string EffectsNote { get; set; } = "";
+    public string EffectsStatus => effects?.Status ?? ("HitSounds unavailable · " + EffectsNote);
+    public bool EffectsEnabled
+    {
+        get => effectsEnabled;
+        set { effectsEnabled = value; if (effects is null) return; effects.Enabled = value; if (value && Running) effects.Resume(); }
+    }
     private Dictionary<SliderDefinition, StreamGeometry> paths = new();
     private static readonly Brush Back = Brush("#0C1324"), Stage = Brush("#101D32"), Accent = Brush("#58E0D3");
     private static readonly Typeface Font = new("Segoe UI");
@@ -37,7 +46,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     }
 
     // Ownership transfers only after the replacement is fully prepared.
-    public void Load(Beatmap map, BeatmapAudio preparedAudio, ScoreConfiguration scoring)
+    public void Load(Beatmap map, BeatmapAudio preparedAudio, ScoreConfiguration scoring, WindowsCircleEffects? preparedEffects = null)
     {
         preparedAudio.RequireReady();
         var replacement = CircleSession.CreateFreshOrdinary(map, scoring);
@@ -47,6 +56,8 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         if (previousAudio is not null) previousAudio.StateChanged -= AudioChanged;
         audio = preparedAudio;
         audio.StateChanged += AudioChanged;
+        effects?.Dispose(); effects = preparedEffects;
+        if (effects is not null) { effects.Enabled = effectsEnabled; effects.Attach(replacement); }
         Session = replacement;
         paths = preparedPaths;
         CurrentTime = 0;
@@ -64,6 +75,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         var replacement = CircleSession.CreateFreshOrdinary(Session.Map, Session.Scoring);
         if (audio?.Restart() == false) { AudioChanged(); return; }
         Session = replacement;
+        effects?.Restart(replacement);
         started = true;
         CurrentTime = 0;
         clock.Restart();
@@ -76,7 +88,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         if (Session is null) return;
         if (!started || Session.Finished) { Restart(); return; }
         if (Running) Pause();
-        else if (audio?.Resume() != false) clock.Resume();
+        else if (audio?.Resume() != false) { effects?.Resume(); clock.Resume(); }
         Focus();
         InvalidateVisual();
     }
@@ -86,12 +98,13 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         clock.Pause();
         previousHealthRender = null;
         audio?.Pause();
+        effects?.Pause();
         InvalidateVisual();
     }
 
     private void AudioChanged()
     {
-        if (audio?.Failure is not null) clock.Pause();
+        if (audio?.Failure is not null) { clock.Pause(); effects?.Pause(); }
         InvalidateVisual();
         FrameUpdated?.Invoke();
     }
@@ -353,6 +366,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         clock.Pause();
         if (audio is not null) { audio.StateChanged -= AudioChanged; audio.Dispose(); audio = null; }
         CompositionTarget.Rendering -= Frame;
+        effects?.Dispose(); effects = null;
         paths.Clear();
     }
 }
