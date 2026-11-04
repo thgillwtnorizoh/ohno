@@ -1,0 +1,26 @@
+R12 initial development-harness build failure (preserved, no production change)
+Source: 27c2fde21676869b851ac4755a2d6392251dc9fc
+Run: https://github.com/thgillwtnorizoh/ohno/actions/runs/41877100114/job/126739350436
+R12 assertion execution: NOT RUN; harness compilation failed.
+Selected raw hosted log lines:
+2026-11-04T17:23:56.1939336Z Build succeeded.
+2026-11-04T17:23:56.1939901Z     0 Warning(s)
+2026-11-04T17:23:56.1940079Z     0 Error(s)
+2026-11-04T17:23:57.8573103Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-04T17:23:59.4901580Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-04T17:24:02.8483177Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-04T17:24:04.5044459Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-04T17:24:06.0785740Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-04T17:24:07.6082006Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-04T17:24:09.1111908Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-04T17:24:10.6499568Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-04T17:24:12.3029033Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-04T17:24:13.7822768Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-04T17:24:15.3189697Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-04T17:24:16.7245969Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-04T17:24:18.2324339Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-04T17:24:19.8494076Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-04T17:24:23.7049054Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-04T17:24:24.2957220Z R12 INDEPENDENT TICKS: 3 PCM WAV files generated and headers checked; old 12 names retained; no playback
+2026-11-04T17:24:25.1935710Z D:\a\ohno\ohno\reconstructed\R12DevelopmentChecks\Program.cs(207,37): error CS8602: Dereference of a possibly null reference. [D:\a\ohno\ohno\reconstructed\R12DevelopmentChecks\R12DevelopmentChecks.csproj]
+

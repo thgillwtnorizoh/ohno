@@ -204,7 +204,7 @@ try
     Throws<ArgumentOutOfRangeException>(()=>panSession.PublishSliderPresentationX(def,float.NaN));
     Pass("ENGINEERING last-published ball pan is distinct from head/current pointer/new required position");
     var customMap=Map(2,14,"2|4|8","1:2|2:3|3:1","3:1:9:90:parent.wav");
-    File.WriteAllBytes(Path.Combine(customMap.CircleSounds.Directory,"parent.wav"),File.ReadAllBytes(Path.Combine(args[1],"normal-hitnormal.wav")));
+    File.WriteAllBytes(Path.Combine(customMap.CircleSounds!.Directory,"parent.wav"),File.ReadAllBytes(Path.Combine(args[1],"normal-hitnormal.wav")));
     using(var library=new HitSoundLibrary(new(){DefaultPackDirectory=args[1],LayeredHitSounds=false}))
     using(var assets=await library.PrepareAsync(customMap,CancellationToken.None))
     {

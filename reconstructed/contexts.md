@@ -829,3 +829,14 @@ publication; actual SHA/run/counts append after execution. No human-audible resu
 full48 original cases or continuous S44–S47 execution claimed. Main expected-head
 non-force publication, no permanent branch or history rewrite. Stop after R12;
 no QA10/R13/E040/spinner audio/framework/lazer or deferred scoring investigation.
+
+R12 first hosted run41877100114/job126739350436, source27c2fde21676869b851ac4755a2d6392251dc9fc:
+actual retrieved logs show WPF zero warnings/errors, all862 independent QA and all
+historical development groups passed;3 tick files generated/header-checked. R12
+harness compilation failed with CS8602 at Program.cs207 (nullable CircleSounds
+access in test setup); no R12 assertions executed. Corrected only that test's
+known parser metadata access with null-forgiving annotation. Production unchanged.
+Preserved compiler/suite output in R12DevelopmentChecks/verification/initial-build-failure.txt
+and linked original CI. Status endpoints had reported queued while retrieved logs
+show execution17:23–17:24 UTC; no actual runner-outage cause is claimed. A new full
+gate is required; no test assertion was weakened or finite failure hidden.
