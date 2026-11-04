@@ -840,3 +840,31 @@ Preserved compiler/suite output in R12DevelopmentChecks/verification/initial-bui
 and linked original CI. Status endpoints had reported queued while retrieved logs
 show execution17:23–17:24 UTC; no actual runner-outage cause is claimed. A new full
 gate is required; no test assertion was weakened or finite failure hidden.
+
+R12 final hosted verification: sourcead8cf337ee332259955cf99c820cf4f51b0553d8,
+run41879777131/job126748948361. Actual runner logs2026-11-04 17:43–17:44 UTC /
+2026-11-05 00:43–00:44 Asia/Bangkok; completed/success metadata confirmed17:48:05 UTC.
+Windows2022/preinstalled .NET8.0.427: WPF Release win-x64 zero warnings/errors;
+QA01 90,QA03 56,QA04 43,QA05 66,QA06 99,QA07 159,QA08 115,QA09 234 PASS
+(862/862 independent cases). R06 targets4/fixture loads4; R07 8,R08 13,C01 4,
+C02 14,R09 15,R10 23,R11 32 development groups PASS. Separate R12 40 groups PASS.
+New3 independent tick PCM files generated/header-checked alongside unchanged12
+circle names, with no playback; artifact counts not added to independent QA.
+C01 F13 H160/H200 remains PASS. Checkout Node20 advisory separate from compiler
+warnings. No local SDK/build/install, original/runtime/native/listening/window test.
+
+Final pass follows one test-harness-only CS8602 correction. The first failed
+compiler output/source/run is preserved; no R12 assertion had executed then, and
+no production formula or expected assertion was weakened. APIs initially showed
+queued while logs recorded execution; later completed/success confirmed. No actual
+runner-outage cause is claimed. Report contains full summary/commands/CI links.
+Final docs-only update preserves tested application/checks/generator/new fixture /
+workflow and all research/QA/historical report/fixture/checks/journal prefixes.
+Parent pan remains last-WPF-published ball X, host state1/attention a bounded
+engineering projection; native same-update identity not established. No mode2
+continuous table/shared-channel playback is implemented; parent custom loop flags
+are load metadata, not voice looping. Source-confirmed/compiled discrete circle /
+head/tick/repeat/positive-aggregate delivery remains human-audible/native-unverified.
+Expected-head non-force canonical main publication, no permanent branch/history
+rewrite. Stop after R12; no QA10/R13/E040/spinner hitsounds/framework/lazer work or
+deferred cross-beatmap scoring investigation.

@@ -16,15 +16,69 @@ pan bridge; independent tick-only generator; new mixed fixture/button; separate
 R12 checks and minimal existing CI integration. No continuing slider loops or
 spinner sounds. Existing circle API/default preparation remains compatible.
 
-**Initial source publication: Windows verification PENDING.** No local SDK/build
-is claimed. Source/diff/preservation checks precede publication. The established
-Windows2022/preinstalled .NET8 gate retains862 independent QA cases, every R06–R11
-development check including R11's32 groups and original twelve generated-circle
-checks. The new step separately generates three independent tick files, verifies
-the15-file pack/header bounds, and runs actual production component calls through
-R12DevelopmentChecks. Exact tested source, CI and actual counts will be recorded
-following execution. No MediaPlayer opening, audio device, listening or physical
-play is exercised by component checks.
+**Actual Windows verification: PASS.** Tested source:
+`ad8cf337ee332259955cf99c820cf4f51b0553d8`.
+[Run41879777131/job126748948361](https://github.com/thgillwtnorizoh/ohno/actions/runs/41879777131/job/126748948361).
+Runner logs2026-11-04 17:43–17:44 UTC /2026-11-05 00:43–00:44 Asia/Bangkok;
+run metadata confirmed completed/success at17:48:05 UTC /00:48:05 Bangkok.
+Windows2022/preinstalled .NET8.0.427. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+R12 INDEPENDENT TICKS: 3 PCM WAV files generated and headers checked; old 12 names retained; no playback
+R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+```
+
+Independent total862/862; all historical development checks including R11's32
+pass. New R12's40 groups are separate from independent QA and from the3 generated
+tick artifacts. The old12-file generator controls remain unchanged and pass;
+QA07 F13 H160/H200 correction cases explicitly PASS. No MediaPlayer opening,
+listening/device/native/original/gameplay-window execution is claimed. Checkout's
+Node20 advisory is separate from compiler warnings. No local SDK/install/build.
+
+Commands retained in the established Windows gate include:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory <runner-temporary-pack>
+./reconstructed/GenerateIndependentSliderTicks.ps1 -PackDirectory <same-pack>
+dotnet run --project reconstructed/R12DevelopmentChecks/R12DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" <same-pack>
+```
+
+**Preserved initial failure:** source `27c2fde21676869b851ac4755a2d6392251dc9fc`,
+[run41877100114/job126739350436](https://github.com/thgillwtnorizoh/ohno/actions/runs/41877100114/job/126739350436).
+WPF and862 historical cases passed, but the new harness failed compilation with
+CS8602 at Program.cs207 (nullable metadata access in test setup). **Zero R12
+assertions executed in that attempt.** Only the test access was annotated with
+`!`; no production code or assertion/expected value was changed. Selected raw
+compiler/suite output remains in
+`R12DevelopmentChecks/verification/initial-build-failure.txt`. Status metadata
+initially reported queued despite retrieved logs showing execution; no confirmed
+runner outage is asserted. Final logs and completed/success metadata are distinct
+verified evidence. No failed finite assertion or original behavior claim is hidden.
+
+Final documentation-only publication changes this report and appends the journal;
+tested production, harness, generator, fixture and workflow bytes are retained.
+Diff/whitespace, research/QA/historical fixture/report/check preservation and
+journal byte-prefix checks pass. Exact ledger, multiplier, NewCombo, HP/calibration/
+drain/smoothing/recovery and slider geometry/timing algorithms are unchanged.
 
 Scope: reconstruction parser/session/selection/resources/Windows event wiring,
 renderer publication/title/status, new fixture/copy/button, companion generator,
@@ -104,7 +158,8 @@ No original method was decoded or executed by Work2.
 - Tick preparation is opt-in for slider maps; existing R11 Prepare default remains
   the36 circle cells. R12 adds a separate3×3 tick table and dynamic family keys,
   reusing map→skin→default/extension/sentinel/cache lifetime. Mode1 ignores the
-  parent sound row. No continuing-family resource or channel is prepared/played.
+  parent sound row. No mode2 continuing table or channel is prepared; user-named parent custom
+  preloads remain only cache/metadata inputs and never start a continuing voice.
 
 **ENGINEERING integration and limits:** slider events carry parent/head identity,
 family/index/mixed index/update time plus stored pan input. Shared playback requests
@@ -119,6 +174,9 @@ that stored operand, independently of pointer/new target/edge endpoint. It can l
 a native same-update presentation value by a rendered frame. Numeric audio state1
 is an explicit running-host projection, not a decoded enum name. All source-time
 reads are stable per reached engineering update rather than repeated native clocks.
+The existing host updates pending sliders during running Advance calls; completed
+objects leave its practice update/render path. This is a bounded candidate/lifecycle
+projection, not full original post-completion attention or replay/seek restoration.
 Existing practice continuation/error containment differs from original helper
 exceptions and native callbacks, without changing score or HP formulas.
 
