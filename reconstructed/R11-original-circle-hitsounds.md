@@ -22,13 +22,60 @@ No research, independent QA01–QA08, fixture, historical report or previous che
 assertion is modified. HistoricalR09/E036FreshOrdinary separation and C01 recovery
 correction remain intact. E033/E034 and all HP/calibration arithmetic are preserved.
 
-**Initial source publication: Windows gate PENDING.** No local .NET SDK is
-available; source/diff/preservation checks alone do not establish compilation.
-The Windows2022/preinstalled .NET8 workflow retains628 independent cases and all
-prior development checks, adding a separately reported R11 component program and
-bounded file-only verification of the twelve generated PCM headers. No game or
-WPF/audio application is launched by any check. Tested source SHA, CI link and
-actual outputs will be recorded after execution; no audible result is claimed.
+**Actual Windows verification: PASS.** Tested source
+`c21aed0d3a5c1bc749d5472ccd1006f99ef43832`.
+[Run41792584386/job126449168289](https://github.com/thgillwtnorizoh/ohno/actions/runs/41792584386/job/126449168289),
+2026-11-04 07:29:09–07:30:13 UTC /14:29:09–14:30:13 Asia/Bangkok.
+Windows2022/preinstalled .NET8.0.427. Actual output:
+
+```text
+Build succeeded. 0 Warning(s), 0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+R11 INDEPENDENT PACK: 12 PCM WAV files generated and headers checked; no playback
+```
+
+All628 independent cases pass; R11's32 groups and twelve generated-file controls
+are separate development checks, not independent QA09. All job steps succeeded;
+QA07 H160/H200 guard cases explicitly PASS. Checkout Node20 advisory is separate
+from compiler warnings. No local SDK/build/install or listening/device test.
+The workflow retains every previous command and adds one bounded step:
+
+```powershell
+dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+dotnet run --project reconstructed/R11DevelopmentChecks/R11DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory <runner-temporary-directory>
+# Assert12 WAV files,10628 bytes each and RIFF header; remove temporary pack.
+```
+
+The first source `5c07743ffdd37ed65120ec77f79fa39931c2d06f` also passed
+[run41792253987/job126448087167](https://github.com/thgillwtnorizoh/ohno/actions/runs/41792253987/job/126448087167).
+Subsequent static review corrected the named SampleSet All−1 dynamic key spelling
+from numeric to `all` and added literal All/None/unknown-numeric checks within the
+existing naming group. The final full run above covers that change. No failure
+or historical assertion was concealed/rewritten. No new original investigation.
+
+Final documentation-only publication changes this report and appends the journal;
+application, development checks, generator and CI remain byte-identical to the
+passing source. Diff/whitespace, historical report/fixture/check/research/QA and
+journal-prefix preservation checks pass. Exact ledger and HP/calibration/drain /
+smoothing/recovery source sections remain unchanged. Main publication uses an
+expected-head lease without force or permanent branch. No new audible or visual
+verification is claimed by this passing noninteractive gate.
 
 Files: Gameplay/Beatmap.cs and CircleSession.cs; new Gameplay/CircleHitSounds.cs;
 new Platform/LocalHitSoundAssets.cs and WindowsCircleEffects.cs; Program.cs /

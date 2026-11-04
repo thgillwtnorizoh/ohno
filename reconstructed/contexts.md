@@ -758,3 +758,30 @@ Corrected that pure naming arm and added literal All/None/unknown-numeric checks
 inside the existing naming group; no broader admission/scoring behavior changed.
 A second full gate is required for this final source. First passing run is retained
 as evidence, not replaced. No listening/native/gameplay-window execution.
+
+R11 final Windows source c21aed0d3a5c1bc749d5472ccd1006f99ef43832 passed
+run41792584386/job126449168289,2026-11-04 07:29:09–07:30:13 UTC /14:29:09–
+14:30:13 Asia/Bangkok,Windows2022/preinstalled .NET8.0.427. WPF Release win-x64
+0 warnings/0 errors; QA01 90,QA03 56,QA04 43,QA05 66,QA06 99,QA07 159,
+QA08 115 PASS (628/628 independent cases). R06 targets4/fixture loads4;
+R07 8,R08 13,C01 4,C02 14,R09 15,R10 23 groups PASS. Separate R11 32 development
+groups PASS, including named All/None/numeric resource strings; independent tone
+generator produced12 PCM WAV files with expected10628-byte/RIFF headers, never
+played. All steps/job succeeded; recovery F13 H160/H200 PASS. Checkout Node20
+advisory separate from compiler diagnostics. First successful source/run retained
+in the report; final run covers the small subsequent enum-naming correction.
+Actual output, commands, tested SHA and CI links recorded in R11 report.
+
+Final docs-only publication updates new R11 report and appends this journal,
+retaining tested application/checks/generator/workflow bytes. Historical journals,
+reports, fixtures, original research/QA01–QA08/logs and all prior assertions
+preserved. Exact ledger, health-state/calibration/drain/smoothing/recovery blocks
+verified unchanged. Fresh/Historical health APIs unchanged. No original archive/
+binary/audio extraction, game/window/OS input/OBS/debugger/E020, listening/native
+playback, QA09 or R12/E039. R11 delivers source-confirmed/compiled Windows local
+effects and executed finite selection/resource/lifecycle controls; actual media
+onset/overlap/codec/device behavior and human-audible/native BASS equivalence remain
+UNVERIFIED. Optional independent pack/loose-map/skin setup and engineering inputs/
+limits/unsupported short timing/native short-create states documented in README.
+Expected-head non-force main publication, no permanent branch or history rewrite.
+Stop after R11; no new milestone/research/QA or deferred scoring investigation.
