@@ -1,0 +1,194 @@
+{
+  "id": 126551035601,
+  "run_id": 41823138601,
+  "head_sha": "bd082124e7b69daa2f242ca38559d5b8aaa5098d",
+  "status": "completed",
+  "conclusion": "success",
+  "started_at": "2026-11-04T11:42:46Z",
+  "completed_at": "2026-11-04T11:43:57Z",
+  "name": "build-and-regression",
+  "html_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41823138601/job/126551035601",
+  "runner_name": "GitHub Actions 1000000744",
+  "runner_group_name": "GitHub Actions",
+  "labels": [
+    "windows-2022"
+  ],
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-04T11:42:47Z",
+      "completed_at": "2026-11-04T11:42:48Z"
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-04T11:42:48Z",
+      "completed_at": "2026-11-04T11:42:55Z"
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-04T11:42:55Z",
+      "completed_at": "2026-11-04T11:42:58Z"
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4,
+      "started_at": "2026-11-04T11:42:58Z",
+      "completed_at": "2026-11-04T11:43:15Z"
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-11-04T11:43:15Z",
+      "completed_at": "2026-11-04T11:43:17Z"
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6,
+      "started_at": "2026-11-04T11:43:17Z",
+      "completed_at": "2026-11-04T11:43:20Z"
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7,
+      "started_at": "2026-11-04T11:43:20Z",
+      "completed_at": "2026-11-04T11:43:22Z"
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-11-04T11:43:22Z",
+      "completed_at": "2026-11-04T11:43:25Z"
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-11-04T11:43:25Z",
+      "completed_at": "2026-11-04T11:43:27Z"
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10,
+      "started_at": "2026-11-04T11:43:27Z",
+      "completed_at": "2026-11-04T11:43:29Z"
+    },
+    {
+      "name": "Check R08 bounded legacy ledger controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11,
+      "started_at": "2026-11-04T11:43:29Z",
+      "completed_at": "2026-11-04T11:43:31Z"
+    },
+    {
+      "name": "Check R08-C01 spinner presentation and input continuity",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-04T11:43:31Z",
+      "completed_at": "2026-11-04T11:43:34Z"
+    },
+    {
+      "name": "Check R08-C02 automatic chart score multiplier",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-04T11:43:34Z",
+      "completed_at": "2026-11-04T11:43:36Z"
+    },
+    {
+      "name": "Execute independent QA06 ledger multiplier and presentation suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14,
+      "started_at": "2026-11-04T11:43:36Z",
+      "completed_at": "2026-11-04T11:43:38Z"
+    },
+    {
+      "name": "Check R09 bounded health calibration and integration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15,
+      "started_at": "2026-11-04T11:43:38Z",
+      "completed_at": "2026-11-04T11:43:40Z"
+    },
+    {
+      "name": "Execute independent QA07 health calibration drain and failure suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16,
+      "started_at": "2026-11-04T11:43:40Z",
+      "completed_at": "2026-11-04T11:43:42Z"
+    },
+    {
+      "name": "Check R10 fresh ordinary NewCombo preparation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17,
+      "started_at": "2026-11-04T11:43:42Z",
+      "completed_at": "2026-11-04T11:43:44Z"
+    },
+    {
+      "name": "Execute independent QA08 NewCombo and fresh health integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 18,
+      "started_at": "2026-11-04T11:43:44Z",
+      "completed_at": "2026-11-04T11:43:47Z"
+    },
+    {
+      "name": "Check R11 circle hitsound selection resources and lifecycle",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 19,
+      "started_at": "2026-11-04T11:43:47Z",
+      "completed_at": "2026-11-04T11:43:49Z"
+    },
+    {
+      "name": "Execute independent QA09 circle hitsound suite without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 20,
+      "started_at": "2026-11-04T11:43:49Z",
+      "completed_at": "2026-11-04T11:43:53Z"
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 40,
+      "started_at": "2026-11-04T11:43:53Z",
+      "completed_at": "2026-11-04T11:43:55Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 41,
+      "started_at": "2026-11-04T11:43:55Z",
+      "completed_at": "2026-11-04T11:43:55Z"
+    }
+  ]
+}

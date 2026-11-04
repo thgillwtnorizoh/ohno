@@ -1,0 +1,190 @@
+{
+  "testedSource": "bd082124e7b69daa2f242ca38559d5b8aaa5098d",
+  "authority": "Actual W01/W03 Windows gate observations; no audio contents",
+  "expectedMetadataSha256": "8c29126fb0989b7ad68c778b5d43fe463112867003de38368ce3da44625a4e83",
+  "files": [
+    {
+      "Name": "drum-hitclap.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "0a4859054144255cee8573ebe9f95fdf5b47a82f61b2e772258efff03d74eec9"
+    },
+    {
+      "Name": "drum-hitfinish.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "3fe42ab21b475b7c3e09f1d08be514aaac5d91635ea1e81da24448c750c71243"
+    },
+    {
+      "Name": "drum-hitnormal.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "16f82181b854bd0ee1f375ac02981b95f3c709854b03255b84ee7d9e3fb1343c"
+    },
+    {
+      "Name": "drum-hitwhistle.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb"
+    },
+    {
+      "Name": "normal-hitclap.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "dd9e50c243e4c99958be66b23d1fd5185318f08101e382223d4e849044d16c81"
+    },
+    {
+      "Name": "normal-hitfinish.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "20940506785ee6ef2b9a497aab0113bc6f5eba2aa26da5b3adb3ca46a4547ba0"
+    },
+    {
+      "Name": "normal-hitnormal.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "9d4b3a565c07db4857460064dea5ffc9dffb525035af2c67ff515ff996cc1b90"
+    },
+    {
+      "Name": "normal-hitwhistle.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "df18a9b3abd1df0c2b5bde1bd3a3e8d5be4f5ace4da7e84407999bdda8018308"
+    },
+    {
+      "Name": "soft-hitclap.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "20b1d7cef2cb743472ce36530fca2f46fdff7a22b593fb75aa54181f12f882f7"
+    },
+    {
+      "Name": "soft-hitfinish.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb"
+    },
+    {
+      "Name": "soft-hitnormal.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "d5d9fa1febdc50a0c3a627a14827f3ba70c1fbd5ed92c1ef5c8fcaef59720e4d"
+    },
+    {
+      "Name": "soft-hitwhistle.wav",
+      "FileBytes": 10628,
+      "Rate": 44100,
+      "Channels": 1,
+      "Bits": 16,
+      "DataOffset": 44,
+      "DataBytes": 10584,
+      "Sha256": "106b4f398216b0207c7df15b40097bd530e38c0aa6c3843a7c3e8ae507b2f299"
+    }
+  ],
+  "controlledRepetition": [
+    {
+      "name": "drum-hitclap.wav",
+      "packA": "0a4859054144255cee8573ebe9f95fdf5b47a82f61b2e772258efff03d74eec9",
+      "packB": "0a4859054144255cee8573ebe9f95fdf5b47a82f61b2e772258efff03d74eec9"
+    },
+    {
+      "name": "drum-hitfinish.wav",
+      "packA": "3fe42ab21b475b7c3e09f1d08be514aaac5d91635ea1e81da24448c750c71243",
+      "packB": "3fe42ab21b475b7c3e09f1d08be514aaac5d91635ea1e81da24448c750c71243"
+    },
+    {
+      "name": "drum-hitnormal.wav",
+      "packA": "16f82181b854bd0ee1f375ac02981b95f3c709854b03255b84ee7d9e3fb1343c",
+      "packB": "16f82181b854bd0ee1f375ac02981b95f3c709854b03255b84ee7d9e3fb1343c"
+    },
+    {
+      "name": "drum-hitwhistle.wav",
+      "packA": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb",
+      "packB": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb"
+    },
+    {
+      "name": "normal-hitclap.wav",
+      "packA": "dd9e50c243e4c99958be66b23d1fd5185318f08101e382223d4e849044d16c81",
+      "packB": "dd9e50c243e4c99958be66b23d1fd5185318f08101e382223d4e849044d16c81"
+    },
+    {
+      "name": "normal-hitfinish.wav",
+      "packA": "20940506785ee6ef2b9a497aab0113bc6f5eba2aa26da5b3adb3ca46a4547ba0",
+      "packB": "20940506785ee6ef2b9a497aab0113bc6f5eba2aa26da5b3adb3ca46a4547ba0"
+    },
+    {
+      "name": "normal-hitnormal.wav",
+      "packA": "9d4b3a565c07db4857460064dea5ffc9dffb525035af2c67ff515ff996cc1b90",
+      "packB": "9d4b3a565c07db4857460064dea5ffc9dffb525035af2c67ff515ff996cc1b90"
+    },
+    {
+      "name": "normal-hitwhistle.wav",
+      "packA": "df18a9b3abd1df0c2b5bde1bd3a3e8d5be4f5ace4da7e84407999bdda8018308",
+      "packB": "df18a9b3abd1df0c2b5bde1bd3a3e8d5be4f5ace4da7e84407999bdda8018308"
+    },
+    {
+      "name": "soft-hitclap.wav",
+      "packA": "20b1d7cef2cb743472ce36530fca2f46fdff7a22b593fb75aa54181f12f882f7",
+      "packB": "20b1d7cef2cb743472ce36530fca2f46fdff7a22b593fb75aa54181f12f882f7"
+    },
+    {
+      "name": "soft-hitfinish.wav",
+      "packA": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb",
+      "packB": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb"
+    },
+    {
+      "name": "soft-hitnormal.wav",
+      "packA": "d5d9fa1febdc50a0c3a627a14827f3ba70c1fbd5ed92c1ef5c8fcaef59720e4d",
+      "packB": "d5d9fa1febdc50a0c3a627a14827f3ba70c1fbd5ed92c1ef5c8fcaef59720e4d"
+    },
+    {
+      "name": "soft-hitwhistle.wav",
+      "packA": "106b4f398216b0207c7df15b40097bd530e38c0aa6c3843a7c3e8ae507b2f299",
+      "packB": "106b4f398216b0207c7df15b40097bd530e38c0aa6c3843a7c3e8ae507b2f299"
+    }
+  ],
+  "limits": "No playback/codec/driver/audio-quality test; same-host/runtime repeat only"
+}

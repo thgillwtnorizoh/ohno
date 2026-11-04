@@ -1,0 +1,25 @@
+8.0.427
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+PASS F13 original recovery guard retains fill at H160
+PASS F13 original recovery guard retains fill at H200
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+R11 INDEPENDENT PACK: 12 PCM WAV files generated and headers checked; no playback
+QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+QA09 RESULTS SHA256 529a36aaf960fc7cef7e52708182e32ff35466f82338b1f4060438a38d9b01c8

@@ -6,11 +6,26 @@ Intake/latest verified R11 source `e1b207e7067d8424f82e9cc4e4f7230c7b797c45`.
 Verification only; no production correction or new original-binary expedition.
 No authorised exception.
 
-**Windows .NET8 gate PENDING at source publication.** Local preliminary execution
-using already installed .NET10.0.402 SDK/runtime10.0.13 passes **234/234** named
-checks. An earlier226-case local run also passed; repetitions are not added to the
-independent count. The committed project targets net8.0, and the final gate uses
-the existing Windows runner's already installed .NET8 SDK. No new SDK/OS is installed.
+**PASS — hosted Windows2022, preinstalled SDK8.0.427/runtime8.0.33.** Tested source
+`bd082124e7b69daa2f242ca38559d5b8aaa5098d`.
+[Run41823138601/job126551035601](https://github.com/thgillwtnorizoh/ohno/actions/runs/41823138601/job/126551035601),
+2026-11-04 11:42:46–11:43:57 UTC /18:42:46–18:43:57 Asia/Bangkok.
+QA09 **234 PASS/0 FAIL/234 executed**. Historical baseline **628/628**.
+WPF Release win-x64 build **0 warnings/0 errors**. Every job step succeeded;
+all retained development checks and R11's32 groups remain green. No confirmed
+production discrepancy in the covered finite scope. No repair was made.
+
+| Hosted suite | Actual outcome |
+|---|---|
+|QA01/03/04/05/06/07/08|90/56/43/66/99/159/115 PASS =628 historical cases|
+|QA09 independent named checks|234 PASS,0 FAIL; separate from historical/development counts|
+|R06 targets /fixture loads|4 PASS /4 completed|
+|R07/R08/C01/C02/R09/R10/R11 development groups|8/13/4/14/15/23/32 PASS|
+|R11 generator development control|12 files checked; separate from QA09 cases|
+
+Local preliminary execution with already installed SDK10.0.402/runtime10.0.13
+also passed234/234 after an earlier226/226 run. Repetitions are not added to the
+independent count. The committed project targets net8.0; no SDK/OS was installed.
 
 Created `Headless/QA09.Headless.csproj`, five independently authored test files,
 `Inputs/ordinary-samples.osu`, `Inputs/generated-pack-expectations.json`,
@@ -32,6 +47,23 @@ plays media. Structured JSON contains exact generated `.osu` inputs, provider
 traces, opaque load results, expected/actual comparisons, request fields, session
 snapshots, all case outcomes, source hashes and generated-file fingerprints.
 Compressed/chunked console evidence preserves it through CI without audio bytes.
+`results.json` is the exact285916-byte JSON recovered from the six logged gzip /
+base64 chunks, verified against the harness's printed SHA256
+`529a36aaf960fc7cef7e52708182e32ff35466f82338b1f4060438a38d9b01c8`.
+`ci-job.json` retains API source/time/step provenance; `ci-job.log` preserves the
+connector-decoded job output with CRLF normalized to LF (SHA256
+`f5d326480fa188c6953a900ac8139cbdac4497acd527ed4ee09e190a5211b7dd`).
+`gate-output.txt` is a labelled selection of actual suite/build output;
+`generated-assets.json` separates actual PCM fingerprints from the independent
+expected metadata. No audio data is included.
+
+**Byte provenance:** the hosted Windows checkout converted text from canonical
+LF to CRLF. The actual runner file hashes are preserved unchanged in results.
+`checkout-byte-provenance.json` independently reproduces **all15** of them by
+exact LF→CRLF conversion of the corresponding canonical bytes, including the
+research JSON. This explains differing raw hashes without changing source or
+weakening an assertion. Canonical Git SHA and canonical research fingerprints
+below remain distinct from runner checkout-byte fingerprints.
 
 234 is the independent **named-check** count:226 executed component/asset/input
 controls plus8 explicitly labelled source-binding checks A01–A08. Twelve WAV
@@ -93,8 +125,10 @@ R11 development expected values are not imported or called as the oracle.
   map keys can collide. Skin/default handles can be shared across table planes.
 
 No finite generated case is described as original-runtime observation.
-**VERIFIED COMPONENT** classification is reserved for actual completed execution
-in the final required Windows gate; source-binding observations are separate.
+**VERIFIED COMPONENT** now applies to the226 executed finite component/asset/input
+controls in the passing Windows gate. The8 source-binding assertions remain
+**SOURCE INSPECTION**, even though their file assertions executed successfully.
+Neither category establishes universal original behavior or WPF/native audio.
 
 ## Coverage and observation boundaries
 
@@ -122,6 +156,9 @@ audio. A/B fingerprints establish same-host/runtime reproducibility only.
 All12 differ from E038's original twelve fingerprints. The generator source uses
 mathematical synthesis and no original-asset read; no proprietary samples enter
 the test. WPF decoding/audibility does not follow from these checks.
+Two named tones (drum-hitwhistle and soft-hitfinish) share the generator's760Hz
+formula and therefore the same bytes. Twelve required names do not imply twelve
+distinct waveforms; no incorrect uniqueness oracle was introduced.
 
 **Actual production headless lifecycle:** CircleSoundPlayback accepts an injected
 recording play action/dispatcher/stop action. L checks execute its real generation,
@@ -172,12 +209,23 @@ Dispose method implied IDisposable). No cases executed in those build attempts;
 no production or historical assertion changed. Windows PowerShell5's script
 authorization/module environment refused generator invocation. The already
 bundled PowerShell7 executed it normally; no execution policy was changed.
-The two subsequent local component runs pass226 and234 respectively. Final
-Windows outcomes, exact source/job, artifacts and preserved failures, if any,
-are recorded after gate execution.
+The two subsequent local component runs pass226 and234 respectively. The final
+Windows run passes234. There is no failed finite assertion or oracle correction
+to preserve, and no production-defect packet is claimed. Initial setup/compiler
+errors above are not disguised as original behavior or production defects.
+`setup-attempts.json` preserves selected diagnostics, exact commands/zero-case
+status and initial harness fingerprints. It is not represented as a raw log.
+The retained CI log has three literal trailing spaces (two timestamp-only lines
+and the empty-payload case label); source/docs whitespace checks exclude this
+immutable execution-text artifact rather than altering its recorded output.
 
 Historical journal prefix, prior research/QA/fixtures/production/development
-bytes and all existing workflow commands must remain unchanged. This campaign
+bytes and all existing workflow commands were preserved. Final publication adds
+results/provenance and updates this report/manifest/journal only over the tested
+source; harness, inputs, wrapper, workflow and production remain byte-identical
+to that commit. No redundant successful gate rerun is claimed. Exact publication
+SHA and verified remote head are supplied in the handoff. Checkout's existing
+Node20 advisory is separate from compiler warnings. This campaign
 does not revisit deferred score discrepancies or start E039/R12. No game,
 physical input, OBS/microphone/loopback, debugger, original executable or human
 listening test is performed.

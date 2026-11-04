@@ -1,0 +1,81 @@
+{
+  "testedSource": "bd082124e7b69daa2f242ca38559d5b8aaa5098d",
+  "explanation": "GitHub Windows checkout converted the canonical LF text files to CRLF. Actual runner byte hashes are retained in results.json; every recorded runner hash is independently reproduced by exact LF-to-CRLF conversion of the corresponding canonical source bytes. No production content changed.",
+  "files": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": {
+      "canonicalLfSha256": "aa16c760a3de8ca645cab6ab059acf93dbac33d71da0a9edc364d344cec08f68",
+      "runnerCrlfSha256": "15ce11709c558988c7be85c08b5f604f34bd30d3d0dd9325ffc20edb1b842eea",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": {
+      "canonicalLfSha256": "f4e3ee982c1fb6641e1eb72a8be2788449b7c88d7d0bc33e9f021aa5905683fb",
+      "runnerCrlfSha256": "1ad1155c7a94915dc7e6a003e6238880fadfa1477b6da8359deee3e6d62ef2ce",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": {
+      "canonicalLfSha256": "b39d2ad78fdf32f1fb096763b0621cadc1867294341d080ceaad3ac8714d178c",
+      "runnerCrlfSha256": "63eac731ecb2db9660fdc403d40f0e03a17958ea9b649178c1b6e7087b559fb9",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": {
+      "canonicalLfSha256": "bbfa1d80ac524cd81ee774b9b0b5fc3606078f9c3ab0e1f28319d331274115a2",
+      "runnerCrlfSha256": "be93e73b5d5b90d46fd41380a9861f7d0c86520e18cc64fee53e59c9d5193524",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": {
+      "canonicalLfSha256": "9ac2c970114ca27e4882272d94af69bd703c0aca61908222a5879b40cd2fb0c1",
+      "runnerCrlfSha256": "2ef47485db2b16343c67d3b64590e3d6ac8edabcca9dc92442f534bd826a2fb5",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Program.cs": {
+      "canonicalLfSha256": "30352a22e21bb0f4308692722b746cc76a94f300af1818ca671d0a66578ad397",
+      "runnerCrlfSha256": "eea99a41e40ceaaee6b47d95d7ea8d14c2d88235edf87b98df065c8fc7d3bf80",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": {
+      "canonicalLfSha256": "8fa51755bf0d0e118fa222bb28f163ef5e3a5c36536011a19c187146cdf50350",
+      "runnerCrlfSha256": "9d4aaccd2186fd7d0fd60ea92e677bca716696d63e9326cf71727341466dc661",
+      "verifiedExactCrlfConversion": true
+    },
+    "reconstructed/GenerateIndependentHitSounds.ps1": {
+      "canonicalLfSha256": "9feead1f9a56e8d058a7020da0a503191d130d2fde40157e3e86ff83761c8172",
+      "runnerCrlfSha256": "c9b36413a6d1451bda3bcf9f739ba0bb8ccc575114fb171ea19d18044e7db6eb",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/evidence/37/circle-hitsound.json": {
+      "canonicalLfSha256": "7fc63d473be5f30bb39714b0b726f449abb9765a8fe25adbcea3282f71ce536c",
+      "runnerCrlfSha256": "6570fec176d5bd0eb156e2d27f264df96b80be756410b46ca4c3e51a75742789",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/evidence/38/hitsound-resources.json": {
+      "canonicalLfSha256": "f61b5e16baa403731488953301085e1a456b3bceceb8db7d86bd9c9f3b1fd659",
+      "runnerCrlfSha256": "ed361f8ed1c126c9b8074ce95f4f419a9ba8bd7f051a505be196e1b4bbdff3bb",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/qa/qa09/Headless/AssetsSource.cs": {
+      "canonicalLfSha256": "af176900c380c4a8b1d5e15b9632b0eac0be00dc969ebb182d37f39a1a735a8c",
+      "runnerCrlfSha256": "4808db6a6af83ee4d77541cd6e549835c130722ebfa7597d193898e37a7cdda0",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/qa/qa09/Headless/Harness.cs": {
+      "canonicalLfSha256": "220824e75fe96ab53e31e725a6b6f1170881075c87db768b1aaafed912e7ccbf",
+      "runnerCrlfSha256": "58e92671c0e51e59bfa932d7e9ea778db16dc5549d22e918dd9cb02122d96c4f",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/qa/qa09/Headless/LifecycleIntegration.cs": {
+      "canonicalLfSha256": "9a217dcda5d885bc6b089ceefb9db5be95cdcced6dbc56cbf9b168b328e0e46b",
+      "runnerCrlfSha256": "7bebfe82bc475a265b0fcf75b867f95c865a8a3b9eabc22ad357861d93220dbd",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/qa/qa09/Headless/MetadataSelection.cs": {
+      "canonicalLfSha256": "66567a5eee2984282fe012af5a384b7d1d39a9ffa775544ba9ea56e7ae808292",
+      "runnerCrlfSha256": "6d96f70070d74f117624a32074e5c1267c16baa1a86dec2f315c441ad6f02133",
+      "verifiedExactCrlfConversion": true
+    },
+    "re/qa/qa09/Headless/Resources.cs": {
+      "canonicalLfSha256": "c4677f060b711cae4c6db88a922179c2532926f5cd48936dfd8cb9106ca19c1e",
+      "runnerCrlfSha256": "a939bbda3a36b8f9d308d9fc2ffd0774ad0e207196d0fbc7e3b731697ada4269",
+      "verifiedExactCrlfConversion": true
+    }
+  }
+}

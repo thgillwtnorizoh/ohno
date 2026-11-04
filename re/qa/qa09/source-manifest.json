@@ -164,7 +164,8 @@
     "reconstructed/tests/test_transition_progress.py": "fdd123f93f32fd6e19c786370944b8b83e31de94d7eaa4faa99f90029d3512c3",
     "reconstructed/transition_progress.py": "e1943c8399d2339f2ee690ad6fa334edb61112d3d8f8cda7c6d9e84db201ad31"
   },
-  "qa09Sources": {
+  "workflowSha256": "fa27304fa14ead69dde145e7df086bc2f43692d6a86127f0d29e58e06a5a74e7",
+  "initialQa09PublicationFiles": {
     "re/qa/qa09/Headless/.gitignore": "6c5082c7e6de3e350189c67a1aacf757485ecc26e0a3cf96683528565f3e5f12",
     "re/qa/qa09/Headless/AssetsSource.cs": "af176900c380c4a8b1d5e15b9632b0eac0be00dc969ebb182d37f39a1a735a8c",
     "re/qa/qa09/Headless/Harness.cs": "220824e75fe96ab53e31e725a6b6f1170881075c87db768b1aaafed912e7ccbf",
@@ -178,5 +179,47 @@
     "re/qa/qa09/README.md": "867f884adceb76daca3ce72b911eb4855ade722a0d2bbe7da2b6bfc5bc549be1",
     "re/qa/qa09/Run-QA09.ps1": "c15b981e2eae4923b66ea67897c455913bb29309016b16aa826cd8383383207e"
   },
-  "workflowSha256": "fa27304fa14ead69dde145e7df086bc2f43692d6a86127f0d29e58e06a5a74e7"
+  "testedSource": "bd082124e7b69daa2f242ca38559d5b8aaa5098d",
+  "ci": {
+    "runId": 41823138601,
+    "jobId": 126551035601,
+    "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/41823138601/job/126551035601",
+    "sdk": "8.0.427",
+    "runtime": ".NET 8.0.33",
+    "QA09": {
+      "passed": 234,
+      "failed": 0
+    },
+    "historicalIndependentPassed": 628,
+    "productionDefects": 0,
+    "buildWarnings": 0,
+    "buildErrors": 0
+  },
+  "finalUnchangedTestedHarnessInputsWrapperWorkflow": {
+    "re/qa/qa09/Headless/.gitignore": "6c5082c7e6de3e350189c67a1aacf757485ecc26e0a3cf96683528565f3e5f12",
+    "re/qa/qa09/Headless/AssetsSource.cs": "af176900c380c4a8b1d5e15b9632b0eac0be00dc969ebb182d37f39a1a735a8c",
+    "re/qa/qa09/Headless/Harness.cs": "220824e75fe96ab53e31e725a6b6f1170881075c87db768b1aaafed912e7ccbf",
+    "re/qa/qa09/Headless/LifecycleIntegration.cs": "9a217dcda5d885bc6b089ceefb9db5be95cdcced6dbc56cbf9b168b328e0e46b",
+    "re/qa/qa09/Headless/MetadataSelection.cs": "66567a5eee2984282fe012af5a384b7d1d39a9ffa775544ba9ea56e7ae808292",
+    "re/qa/qa09/Headless/QA09.Headless.csproj": "61e2772fe57f9f1b91536a5f3f8f10dd7a3be3da95d8caf7fc2debb78ab9ce58",
+    "re/qa/qa09/Headless/Resources.cs": "c4677f060b711cae4c6db88a922179c2532926f5cd48936dfd8cb9106ca19c1e",
+    "re/qa/qa09/Inputs/generated-pack-expectations.json": "8c29126fb0989b7ad68c778b5d43fe463112867003de38368ce3da44625a4e83",
+    "re/qa/qa09/Inputs/ordinary-samples.osu": "672e9c204f7c4310a4a563aa83544240b635b132335723ab7153686f76b26bf0",
+    "re/qa/qa09/Run-QA09.ps1": "c15b981e2eae4923b66ea67897c455913bb29309016b16aa826cd8383383207e",
+    ".github/workflows/r04-build.yml": "fa27304fa14ead69dde145e7df086bc2f43692d6a86127f0d29e58e06a5a74e7"
+  },
+  "executionEvidence": {
+    "checkout-byte-provenance.json": "f8b748f31e851532f30833801374f7d852be925fe38d1345ab437804e4fa6e06",
+    "ci-job.json": "75d21f32adc75696ae27fc2853aae5eab83dfe8007c8740c5ef32a07f5fb4bc2",
+    "ci-job.log": "f5d326480fa188c6953a900ac8139cbdac4497acd527ed4ee09e190a5211b7dd",
+    "gate-output.txt": "7b3ac01c9cccad44e5d4d5decc4ca5c4a228383ad0969503320cb01c2bfcb341",
+    "generated-assets.json": "8f85e4af4bbf5652c07bbe6a29229ea6d6217768c2c50aa732f267d13dccfe88",
+    "local-preflight-summary.json": "363a3db2e6ab503c3b4d77225f7db385c44c510ceea4e4498d6a376f60d38ae4",
+    "README.md": "2292859f4a151f0ede2ebeafcce35bd30e4979920d1f325088e59c205867fca9",
+    "results.json": "529a36aaf960fc7cef7e52708182e32ff35466f82338b1f4060438a38d9b01c8",
+    "Run-QA09.ps1": "c15b981e2eae4923b66ea67897c455913bb29309016b16aa826cd8383383207e",
+    "setup-attempts.json": "99988cef01e59f36cebc32fd0799599585e14af754f028074ca757661848b7c7"
+  },
+  "logNormalization": "ci-job.log is connector-decoded text with CRLF normalized to LF; raw results.json bytes match the logged SHA256. Actual source checkout CRLF hashes independently verified; see checkout-byte-provenance.json.",
+  "preservationVerified": "All160 protected sources; complete initial QA09 pending journal prefix; all earlier tracked files except authorized workflow/journal; tested harness/inputs/wrapper/workflow unchanged."
 }

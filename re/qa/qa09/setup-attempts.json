@@ -1,0 +1,44 @@
+{
+  "scope": "Local setup failures before finite cases executed; selected actual diagnostics, not a raw transcript. No production defect or finite assertion failed.",
+  "sdk": "10.0.402; committed target remains net8.0",
+  "attempts": [
+    {
+      "command": "dotnet build re/qa/qa09/Headless/QA09.Headless.csproj -c Release -p:TargetFramework=net10.0 -p:NuGetAudit=false --no-restore --nologo",
+      "exitCode": 1,
+      "executedCases": 0,
+      "diagnostics": [
+        "Harness.cs(97,56): CS1002 ; expected",
+        "Harness.cs(97,56): CS1519 invalid token comma in member declaration",
+        "Harness.cs(97,59): CS1001 identifier expected"
+      ],
+      "correction": "Separate U and G property declarations in new QA09 harness only."
+    },
+    {
+      "command": "same build after property correction",
+      "exitCode": 1,
+      "executedCases": 0,
+      "diagnostics": [
+        "CS1674 CircleSoundPlayback used in using statement must implement System.IDisposable; 10 sites in LifecycleIntegration.cs"
+      ],
+      "correction": "Use actual public queue API without assuming IDisposable. Production source untouched."
+    },
+    {
+      "command": "powershell -NoProfile -Command invoke GenerateIndependentHitSounds.ps1 for two own directories",
+      "exitCode": 1,
+      "executedCases": 0,
+      "diagnostics": [
+        "AuthorizationManager check failed.",
+        "Get-ExecutionPolicy later could not load Microsoft.PowerShell.Security module."
+      ],
+      "correction": "Already bundled pwsh executed the generator normally; no execution policy changed."
+    }
+  ],
+  "initialHarnessSha256": {
+    "AssetsSource.cs": "1dd9adddb061d996f3084c82bd1e49b28524bd0e74f10cbe058a61dec2fb89ec",
+    "Harness.cs": "1ef535e6ca8696f892ae0ddfd1853a827fd68d5d07baf0e4b2872643ce374019",
+    "LifecycleIntegration.cs": "10208d898dd600e90573562ba984e22dc38174fe64adf6b661546deece27cbe5",
+    "MetadataSelection.cs": "fa5eda7f33750cfec401cd3daea3d230902ecdbfa33930e7fa186ee94a6ec846",
+    "Resources.cs": "aa40276231c283c8e23d96d43ccd7bf75ac448dde891aef8850402f5966a9c2c"
+  },
+  "laterOutcomes": "Local226/226 and234/234; hosted .NET8 234/234. No QA09 oracle correction."
+}
