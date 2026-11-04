@@ -5,11 +5,30 @@ Work 1, 2026-11-04 Asia/Bangkok. Intake canonical main:
 `7ce5b86282f601f405af74883d9b34a8a965276f`. Verification only; no production edits,
 original-binary excavation or original-runtime experiment.
 
-The .NET8 Windows gate is **PENDING at harness publication**. The final report and
-results will record its exact tested commit, run/job URL, case outcomes and source
-hashes after execution. A preliminary local net10 run using the already installed
-SDK10.0.402 passes115/115 after the independently justified oracle correction
-below. That preliminary run does not satisfy the required net8 gate.
+**PASS — hosted Windows2022, preinstalled .NET8.0.427.** Tested source
+`7db056008de7a031904decac87b1effc88f9dc70`.
+[Run41749274573/job126310001038](https://github.com/thgillwtnorizoh/ohno/actions/runs/41749274573/job/126310001038),
+2026-11-04 00:46:05–00:47:23 UTC /07:46:05–07:47:23 Asia/Bangkok.
+QA08 **115 PASS/0 FAIL/115 executed**; historical baseline **513/513**;
+combined628 independent cases. WPF Release win-x64 compiled with0 warnings/0 errors.
+All job steps succeeded. No confirmed implementation defect in the covered scope.
+`results.json` retains every case, generated input, selected intermediate state,
+job step and evidence hash; `gate-output.txt` retains selected actual output.
+
+| Hosted suite | Actual outcome |
+|---|---|
+|QA01/QA03/QA04/QA05/QA06/QA07|90/56/43/66/99/159 PASS =513 historical cases |
+|QA08|115 PASS,0 FAIL, reported separately |
+|R06 targets / fixture loads|4 PASS /4 completed |
+|R07/R08/C01/C02/R09/R10 development groups|8/13/4/14/15/23 PASS, separate from independent QA |
+
+A preliminary local net10 run using already installed SDK10.0.402 passed115/115
+after the independently justified oracle correction below; the earlier112/113
+failure is preserved. Those repetitions are not added to the unique case count.
+Final result publication changes report/results/manifest/journal only over the
+tested source; harness, input, workflow and production remain identical. No
+redundant successful gate rerun is claimed. Exact final publication SHA is supplied
+in the handoff. Checkout's Node20 advisory is separate from compiler diagnostics.
 
 New `Headless/QA08.Headless.csproj` links actual production `Beatmap.cs` and
 `CircleSession.cs`, with no replacement parser/preparer/calibrator/session engine.
@@ -171,8 +190,8 @@ than0; it is not greater thanN or N−2 either, so raw256/50 follows. Therefore
 three whole judgements comprise two misses and one50. I07 now asserts all these
 specific intermediate/result values. Added R00 controls distinguish C0/N2→256
 from C0/N4→−131072. `oracle-correction.md` documents the exact changed assertion.
-The subsequent preliminary local run passes115/115; only the hosted net8 run
-will be used for the final required Windows gate outcome.
+The subsequent preliminary local run passes115/115; the hosted net8 run also
+passes115/115 and supplies the final required Windows gate outcome.
 
 Local build setup initially encountered NU1900 vulnerability-feed access and a
 net10 override asset-target mismatch before any cases executed. Explicit restore
@@ -182,7 +201,7 @@ was changed: committed project remains net8.0 and hosted gate uses installed8.
 
 ## Limitations and disposition
 
-Covered behaviors will be classified VERIFIED COMPONENT after the hosted gate;
+Covered finite behaviors are VERIFIED COMPONENT in the passing hosted gate;
 no universal osu!stable equivalence follows. Physical input, WPF/audio lifecycle,
 native clocks/JIT interleavings, old spinner gameplay, original manager reuse/ties,
 editor/alternate factories, live decorations and complete mod policy remain

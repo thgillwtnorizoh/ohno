@@ -6,5 +6,12 @@
     "reconstructed/CircleGame/Gameplay/CircleSession.cs": "89714f2acf412d51282fb6d3ffd8e560338bc61f3e78ea6827dc27adb001b013",
     "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "c66f694d66480d7b582f7bd28e62555684605fe9782319a5cf91a470605b6e5b",
     "reconstructed/CircleGame/Fixtures/first-circles.osu": "3575ede9a893669af76585b9dcca2a5132bf37e206f02d98f049293f9bc0f2a2"
+  },
+  "tested_source": "7db056008de7a031904decac87b1effc88f9dc70",
+  "tested_blob_sha256": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "6067e2d076e4607b93e2a7047aa516445759872197e376f1100d858dece2d28f",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "89714f2acf412d51282fb6d3ffd8e560338bc61f3e78ea6827dc27adb001b013",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "c66f694d66480d7b582f7bd28e62555684605fe9782319a5cf91a470605b6e5b",
+    "reconstructed/CircleGame/Fixtures/first-circles.osu": "3575ede9a893669af76585b9dcca2a5132bf37e206f02d98f049293f9bc0f2a2"
   }
 }
