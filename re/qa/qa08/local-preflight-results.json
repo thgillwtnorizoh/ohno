@@ -1,0 +1,949 @@
+{
+  "runtime": "local preliminary net10.0 using preinstalled SDK10.0.402; not required Windows net8 gate",
+  "result": {
+    "passed": 112,
+    "failed": 1,
+    "executed": 113,
+    "cases": [
+      {
+        "Name": "P01 M2902 operand Null (T081f artificial)",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P01 M2902 operand Circle (T081f artificial)",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P01 M2902 operand Slider (T081f artificial)",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P01 M2902 operand SpinnerBase (T081f artificial)",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P01 M2902 operand AssignableT081f (T081f artificial)",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P02 unknown runtime identity Unknown",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P02 unknown runtime identity 999",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N01 first circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 first slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N02 explicit following circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N03 circles",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N04 circle-slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N05 explicit slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N06 slider-circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N07 sliders",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N08 alternating",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N09 unmarked spinner adjacency",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N10 marked spinner adjacency",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 N11 consecutive spinners",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 spinner then circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 spinner then slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 marked spinner then circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P03 marked spinner then slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v5 type8 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v5 type12 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v8 type8 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v8 type12 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v9 type8 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v9 type12 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v14 type8 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P04 constructor/parser spinner v14 type12 pure diagnostic",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P05 explicit bit still records helper result raw5",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P05 explicit bit still records helper result raw6",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "P06 first marked row still evaluates null helper",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B01 strict break end 2999",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B01 strict break end 3000",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B01 strict break end 3001",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B02 N17 multiple expired breaks force one object",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B03 preserve explicit true without break",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B04 supplied break order unexpired head blocks later expired entry",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B05 reversed supplied break order changes forcing",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B06 N16 spinner flag can be forced in postpass",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B07 every expired break forces independently",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "B08 E036 while differs from E035 one-break gap exclusion",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:10\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n2,2100,2200\n2,2300,2400\n[HitObjects]\n128,192,2000,1,0\n128,192,3000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G01 unsupported context RetainedManager",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G01 unsupported context CloneOrEditor",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G01 unsupported context AlternateFactory",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G01 unsupported context Unknown",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G02 retained initial reference Circle",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G02 retained initial reference Slider",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G02 retained initial reference SpinnerBase",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G02 retained initial reference AssignableT081f",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G02 retained initial reference Unknown",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G03 timestamp domain unknown",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G04 source order rejects second 2000",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G04 source order rejects second 1999",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G05 duplicate exact identity rejected",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G06 missing identity rejected",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G07 circle raw with alternate runtime AssignableT081f",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G07 circle raw with alternate runtime Unknown",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G07 circle raw with alternate runtime SpinnerBase",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G08 unsupported mixed/hold raw 3",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G08 unsupported mixed/hold raw 9",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G08 unsupported mixed/hold raw 128",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G08 unsupported mixed/hold raw 0",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G09 all provenance operands and exact identity",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G10 structurally equal distinct identities stay distinct",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G11 parser chart identities correspond C/L/P/C",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,2,0,L|228:192,1,100\n128,192,6000,8,0,6500\n128,192,8000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G12 clone map rejected even same property references",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G13 manually assembled with captured metadata rejected",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G14 manual map without provenance remains playable",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "G15 out of order parser cannot silently repair fresh HP",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,4000,1,0\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G16 equal-start parser rejects without stable sort",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,2000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G17 unsorted break pure control does not grant app admission",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n2,4000,5000\n2,2500,3000\n[HitObjects]\n128,192,2000,1,0\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "G18 older spinner pure preparation does not grant gameplay",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v8\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,8,0,2500\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A01 historical constructors retain old admission",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A02 two-argument FromMap retains historical unknown group rejection",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A03 historical explicit-group map remains supported",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,5,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A04 fresh factory selects E036 and preserves metadata into HP",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A05 unsupported fresh ownership never falls back to historical",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,5,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "A06 production application Load calls fresh factory",
+        "passed": true,
+        "inputs": [],
+        "observations": [
+          {
+            "method": "Load",
+            "call": "CircleSession.CreateFreshOrdinary(map, scoring)",
+            "classification": "SOURCE BINDING; WPF entry not executed"
+          }
+        ]
+      },
+      {
+        "Name": "A07 production application Restart calls fresh factory",
+        "passed": true,
+        "inputs": [],
+        "observations": [
+          {
+            "method": "Restart",
+            "call": "CircleSession.CreateFreshOrdinary(Session.Map, Session.Scoring)",
+            "classification": "SOURCE BINDING; WPF entry not executed"
+          }
+        ]
+      },
+      {
+        "Name": "C01 next-property firstFalse nextFalse",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C01 next-property firstFalse nextTrue",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C01 next-property firstTrue nextFalse",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C01 next-property firstTrue nextTrue",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C02 last object always group firstFalse",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C02 last object always group firstTrue",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "C03 explicit bit affects preceding object balance",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:10\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,1,0\n"
+          },
+          {
+            "name": "input-001.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:10\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,5,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "C04 break forcing affects preceding object before calibration",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:10\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n2,2010,2020\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "C05 break-end equality excludes gap but does not force NewCombo",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:10\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n2,2010,2100\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "C06 five-circle unmarked closed balance oracle",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,1,0\n128,192,2200,1,0\n128,192,2300,1,0\n128,192,2400,1,0\n"
+          }
+        ],
+        "observations": [
+          {
+            "trial": 62,
+            "rate": 0.004144911095285019,
+            "b": 1,
+            "g": 1,
+            "expectedA": 237.36814224754397,
+            "actualA": 237.36814224754391,
+            "retry": "Balance"
+          },
+          {
+            "trial": 63,
+            "rate": 0.003979114651473618,
+            "b": 1.02,
+            "g": 1.01,
+            "expectedA": 238.21341655764223,
+            "actualA": 238.21341655764223,
+            "retry": "Balance"
+          },
+          {
+            "trial": 64,
+            "rate": 0.003819950065414673,
+            "b": 1.0404,
+            "g": 1.0201,
+            "expectedA": 239.05667989533652,
+            "actualA": 239.05667989533646,
+            "retry": "Balance"
+          },
+          {
+            "trial": 65,
+            "rate": 0.003667152062798086,
+            "b": 1.061208,
+            "g": 1.030301,
+            "expectedA": 239.89849869952306,
+            "actualA": 239.89849869952297,
+            "retry": "Balance"
+          },
+          {
+            "trial": 66,
+            "rate": 0.0035204659802861625,
+            "b": 1.08243216,
+            "g": 1.04060401,
+            "expectedA": 240.73942497154212,
+            "actualA": 240.73942497154218,
+            "retry": "None"
+          }
+        ]
+      },
+      {
+        "Name": "C07 five-circle explicit groups closed balance oracle",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,5,0\n128,192,2100,5,0\n128,192,2200,5,0\n128,192,2300,5,0\n128,192,2400,5,0\n"
+          }
+        ],
+        "observations": [
+          {
+            "trial": 62,
+            "rate": 0.004144911095285019,
+            "b": 1,
+            "g": 1,
+            "expectedA": 293.368142247544,
+            "actualA": 293.3681422475439,
+            "retry": "None"
+          }
+        ]
+      },
+      {
+        "Name": "I01 fresh parsed kinds 1-1-1",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I01 fresh parsed kinds 1-2-1",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,2,0,L|228:192,1,100\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I01 fresh parsed kinds 2-1-2",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,2,0,L|228:192,1,100\n128,192,4000,1,0\n128,192,6000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I01 fresh parsed kinds 1-8-1",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,8,0,4500\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I01 fresh parsed kinds 2-12-2",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,2,0,L|228:192,1,100\n128,192,4000,12,0,4500\n128,192,6000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I02 unchanged bundled eight-circle fixture health eligible",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "I03 separately tracked three-circle input eligible",
+        "passed": true,
+        "inputs": [],
+        "observations": []
+      },
+      {
+        "Name": "I04 supported break chart final group propagation",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n2,2500,3000\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n128,192,6000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I05 restart creates fresh projection after final slider",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I06 replacement supported-unavailable-supported isolates state",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          },
+          {
+            "name": "input-001.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,2,0,L|228:192,1,100\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "I07 unsupported fresh clone keeps slider and spinner scoring",
+        "passed": false,
+        "error": "System.Exception: expected=3; actual=2\r\n   at Ohno.QA08.NewComboTests.Eq[T](T actual, T expected) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa08\\Headless\\NewComboTests.cs:line 17\r\n   at Ohno.QA08.NewComboTests.<>c.<Integration>b__29_5() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa08\\Headless\\NewComboTests.cs:line 284\r\n   at Ohno.QA08.NewComboTests.Main(String[] args) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa08\\Headless\\NewComboTests.cs:line 55",
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,2,0,L|228:192,1,100\n128,192,4000,8,0,4500\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R01 enabled-disabled component sequence 1-1-1",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n128,192,6000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R01 enabled-disabled component sequence 1-2-8-1",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,2,0,L|228:192,1,100\n128,192,6000,8,0,6500\n128,192,8000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R01 enabled-disabled component sequence 2-12-2",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,2,0,L|228:192,1,100\n128,192,4000,12,0,4500\n128,192,6000,2,0,L|228:192,1,100\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R02 explicit groups change HP coefficients without changing E034 K",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,2100,1,0\n128,192,2200,1,0\n128,192,2300,1,0\n128,192,2400,1,0\n"
+          },
+          {
+            "name": "input-001.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,5,0\n128,192,2100,5,0\n128,192,2200,5,0\n128,192,2300,5,0\n128,192,2400,5,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R03 R09-C01 recovery threshold H159.999",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R03 R09-C01 recovery threshold H160",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R03 R09-C01 recovery threshold H200",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R04 E035 fresh HP delta unchanged",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n"
+          }
+        ],
+        "observations": []
+      },
+      {
+        "Name": "R05 E035 prior eligibility drain and smoothing",
+        "passed": true,
+        "inputs": [
+          {
+            "name": "input-000.osu",
+            "text": "osu file format v14\n[General]\nMode:0\n[Metadata]\nTitle:QA08 finite control\n[Difficulty]\nHPDrainRate:0\nCircleSize:5\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,0,100,1,0\n[Events]\n\n[HitObjects]\n128,192,2000,1,0\n128,192,4000,1,0\n"
+          }
+        ],
+        "observations": []
+      }
+    ]
+  }
+}

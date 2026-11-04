@@ -1,0 +1,10 @@
+{
+  "baseline": "7ce5b86282f601f405af74883d9b34a8a965276f",
+  "baseline_tree": "238d2f21e0f6a871803bf0f97ffe6572413e5101",
+  "production_sha256": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "6067e2d076e4607b93e2a7047aa516445759872197e376f1100d858dece2d28f",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "89714f2acf412d51282fb6d3ffd8e560338bc61f3e78ea6827dc27adb001b013",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "c66f694d66480d7b582f7bd28e62555684605fe9782319a5cf91a470605b6e5b",
+    "reconstructed/CircleGame/Fixtures/first-circles.osu": "3575ede9a893669af76585b9dcca2a5132bf37e206f02d98f049293f9bc0f2a2"
+  }
+}

@@ -17,6 +17,8 @@ on:
       - re/qa/qa05/Headless/**
       - re/qa/qa06/Headless/**
       - re/qa/qa07/Headless/**
+      - re/qa/qa08/Headless/**
+      - re/qa/qa08/Inputs/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -148,4 +150,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R10DevelopmentChecks/R10DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA08 NewCombo and fresh health integration suite
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/qa/qa08/Headless/QA08.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

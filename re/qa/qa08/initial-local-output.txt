@@ -1,0 +1,117 @@
+PASS P01 M2902 operand Null (T081f artificial)
+PASS P01 M2902 operand Circle (T081f artificial)
+PASS P01 M2902 operand Slider (T081f artificial)
+PASS P01 M2902 operand SpinnerBase (T081f artificial)
+PASS P01 M2902 operand AssignableT081f (T081f artificial)
+PASS P02 unknown runtime identity Unknown
+PASS P02 unknown runtime identity 999
+PASS P03 N01 first circle
+PASS P03 first slider
+PASS P03 N02 explicit following circle
+PASS P03 N03 circles
+PASS P03 N04 circle-slider
+PASS P03 N05 explicit slider
+PASS P03 N06 slider-circle
+PASS P03 N07 sliders
+PASS P03 N08 alternating
+PASS P03 N09 unmarked spinner adjacency
+PASS P03 N10 marked spinner adjacency
+PASS P03 N11 consecutive spinners
+PASS P03 spinner then circle
+PASS P03 spinner then slider
+PASS P03 marked spinner then circle
+PASS P03 marked spinner then slider
+PASS P04 constructor/parser spinner v5 type8 pure diagnostic
+PASS P04 constructor/parser spinner v5 type12 pure diagnostic
+PASS P04 constructor/parser spinner v8 type8 pure diagnostic
+PASS P04 constructor/parser spinner v8 type12 pure diagnostic
+PASS P04 constructor/parser spinner v9 type8 pure diagnostic
+PASS P04 constructor/parser spinner v9 type12 pure diagnostic
+PASS P04 constructor/parser spinner v14 type8 pure diagnostic
+PASS P04 constructor/parser spinner v14 type12 pure diagnostic
+PASS P05 explicit bit still records helper result raw5
+PASS P05 explicit bit still records helper result raw6
+PASS P06 first marked row still evaluates null helper
+PASS B01 strict break end 2999
+PASS B01 strict break end 3000
+PASS B01 strict break end 3001
+PASS B02 N17 multiple expired breaks force one object
+PASS B03 preserve explicit true without break
+PASS B04 supplied break order unexpired head blocks later expired entry
+PASS B05 reversed supplied break order changes forcing
+PASS B06 N16 spinner flag can be forced in postpass
+PASS B07 every expired break forces independently
+PASS B08 E036 while differs from E035 one-break gap exclusion
+PASS G01 unsupported context RetainedManager
+PASS G01 unsupported context CloneOrEditor
+PASS G01 unsupported context AlternateFactory
+PASS G01 unsupported context Unknown
+PASS G02 retained initial reference Circle
+PASS G02 retained initial reference Slider
+PASS G02 retained initial reference SpinnerBase
+PASS G02 retained initial reference AssignableT081f
+PASS G02 retained initial reference Unknown
+PASS G03 timestamp domain unknown
+PASS G04 source order rejects second 2000
+PASS G04 source order rejects second 1999
+PASS G05 duplicate exact identity rejected
+PASS G06 missing identity rejected
+PASS G07 circle raw with alternate runtime AssignableT081f
+PASS G07 circle raw with alternate runtime Unknown
+PASS G07 circle raw with alternate runtime SpinnerBase
+PASS G08 unsupported mixed/hold raw 3
+PASS G08 unsupported mixed/hold raw 9
+PASS G08 unsupported mixed/hold raw 128
+PASS G08 unsupported mixed/hold raw 0
+PASS G09 all provenance operands and exact identity
+PASS G10 structurally equal distinct identities stay distinct
+PASS G11 parser chart identities correspond C/L/P/C
+PASS G12 clone map rejected even same property references
+PASS G13 manually assembled with captured metadata rejected
+PASS G14 manual map without provenance remains playable
+PASS G15 out of order parser cannot silently repair fresh HP
+PASS G16 equal-start parser rejects without stable sort
+PASS G17 unsorted break pure control does not grant app admission
+PASS G18 older spinner pure preparation does not grant gameplay
+PASS A01 historical constructors retain old admission
+PASS A02 two-argument FromMap retains historical unknown group rejection
+PASS A03 historical explicit-group map remains supported
+PASS A04 fresh factory selects E036 and preserves metadata into HP
+PASS A05 unsupported fresh ownership never falls back to historical
+PASS A06 production application Load calls fresh factory
+PASS A07 production application Restart calls fresh factory
+PASS C01 next-property firstFalse nextFalse
+PASS C01 next-property firstFalse nextTrue
+PASS C01 next-property firstTrue nextFalse
+PASS C01 next-property firstTrue nextTrue
+PASS C02 last object always group firstFalse
+PASS C02 last object always group firstTrue
+PASS C03 explicit bit affects preceding object balance
+PASS C04 break forcing affects preceding object before calibration
+PASS C05 break-end equality excludes gap but does not force NewCombo
+PASS C06 five-circle unmarked closed balance oracle
+PASS C07 five-circle explicit groups closed balance oracle
+PASS I01 fresh parsed kinds 1-1-1
+PASS I01 fresh parsed kinds 1-2-1
+PASS I01 fresh parsed kinds 2-1-2
+PASS I01 fresh parsed kinds 1-8-1
+PASS I01 fresh parsed kinds 2-12-2
+PASS I02 unchanged bundled eight-circle fixture health eligible
+PASS I03 separately tracked three-circle input eligible
+PASS I04 supported break chart final group propagation
+PASS I05 restart creates fresh projection after final slider
+PASS I06 replacement supported-unavailable-supported isolates state
+FAIL I07 unsupported fresh clone keeps slider and spinner scoring: System.Exception: expected=3; actual=2
+   at Ohno.QA08.NewComboTests.Eq[T](T actual, T expected) in C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa08\Headless\NewComboTests.cs:line 17
+   at Ohno.QA08.NewComboTests.<>c.<Integration>b__29_5() in C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa08\Headless\NewComboTests.cs:line 284
+   at Ohno.QA08.NewComboTests.Main(String[] args) in C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa08\Headless\NewComboTests.cs:line 55
+PASS R01 enabled-disabled component sequence 1-1-1
+PASS R01 enabled-disabled component sequence 1-2-8-1
+PASS R01 enabled-disabled component sequence 2-12-2
+PASS R02 explicit groups change HP coefficients without changing E034 K
+PASS R03 R09-C01 recovery threshold H159.999
+PASS R03 R09-C01 recovery threshold H160
+PASS R03 R09-C01 recovery threshold H200
+PASS R04 E035 fresh HP delta unchanged
+PASS R05 E035 prior eligibility drain and smoothing
+QA08 NEWCOMBO TESTS: 112 passed, 1 failed, 113 executed

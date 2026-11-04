@@ -1,0 +1,14 @@
+osu file format v14
+[General]
+Mode:0
+[Metadata]
+Title:QA08 three unmarked circles
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+[HitObjects]
+128,192,2000,1,0
+256,192,3000,1,0
+384,192,4000,1,0
