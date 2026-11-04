@@ -20,6 +20,9 @@ on:
       - re/qa/qa07/Headless/**
       - re/qa/qa08/Headless/**
       - re/qa/qa08/Inputs/**
+      - re/qa/qa09/Headless/**
+      - re/qa/qa09/Inputs/**
+      - re/qa/qa09/Run-QA09.ps1
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -179,3 +182,10 @@ jobs:
           Write-Output 'R11 INDEPENDENT PACK: 12 PCM WAV files generated and headers checked; no playback'
           Remove-Item $packPath -Recurse
           exit 0
+
+      - name: Execute independent QA09 circle hitsound suite without playback
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa09/Run-QA09.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa09-results.json')
+          exit $LASTEXITCODE

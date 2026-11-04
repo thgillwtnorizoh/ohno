@@ -1,0 +1,977 @@
+{
+  "schema": "QA09.v1",
+  "runtime": ".NET 10.0.13",
+  "os": "Microsoft Windows 10.0.26200",
+  "process": "X64",
+  "passed": 234,
+  "failed": 0,
+  "executed": 234,
+  "sourceHashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "aa16c760a3de8ca645cab6ab059acf93dbac33d71da0a9edc364d344cec08f68",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "f4e3ee982c1fb6641e1eb72a8be2788449b7c88d7d0bc33e9f021aa5905683fb",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "b39d2ad78fdf32f1fb096763b0621cadc1867294341d080ceaad3ac8714d178c",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "bbfa1d80ac524cd81ee774b9b0b5fc3606078f9c3ab0e1f28319d331274115a2",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "9ac2c970114ca27e4882272d94af69bd703c0aca61908222a5879b40cd2fb0c1",
+    "reconstructed/CircleGame/Program.cs": "30352a22e21bb0f4308692722b746cc76a94f300af1818ca671d0a66578ad397",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "8fa51755bf0d0e118fa222bb28f163ef5e3a5c36536011a19c187146cdf50350",
+    "reconstructed/GenerateIndependentHitSounds.ps1": "9feead1f9a56e8d058a7020da0a503191d130d2fde40157e3e86ff83761c8172",
+    "re/evidence/37/circle-hitsound.json": "7fc63d473be5f30bb39714b0b726f449abb9765a8fe25adbcea3282f71ce536c",
+    "re/evidence/38/hitsound-resources.json": "f61b5e16baa403731488953301085e1a456b3bceceb8db7d86bd9c9f3b1fd659",
+    "re/qa/qa09/Headless/AssetsSource.cs": "af176900c380c4a8b1d5e15b9632b0eac0be00dc969ebb182d37f39a1a735a8c",
+    "re/qa/qa09/Headless/Harness.cs": "220824e75fe96ab53e31e725a6b6f1170881075c87db768b1aaafed912e7ccbf",
+    "re/qa/qa09/Headless/LifecycleIntegration.cs": "9a217dcda5d885bc6b089ceefb9db5be95cdcced6dbc56cbf9b168b328e0e46b",
+    "re/qa/qa09/Headless/MetadataSelection.cs": "66567a5eee2984282fe012af5a384b7d1d39a9ffa775544ba9ea56e7ae808292",
+    "re/qa/qa09/Headless/Resources.cs": "c4677f060b711cae4c6db88a922179c2532926f5cd48936dfd8cb9106ca19c1e"
+  },
+  "limits": "Finite linked components only. No game/MediaPlayer/native/listening execution. WPF lifecycle binding source-inspected, not dynamically executed.",
+  "sourceBase": "e1b207e7067d8424f82e9cc4e4f7230c7b797c45",
+  "fullResultSha256": "2343ced9bb2a93118907389f8e14d2b7258ccbd60de06e36c87fa17077941629",
+  "families": {
+    "M": 31,
+    "S": 44,
+    "R": 85,
+    "L": 12,
+    "P": 30,
+    "I": 17,
+    "W": 6,
+    "A": 9
+  },
+  "caseOutcomes": [
+    {
+      "name": "M01 raw sound 0 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 1 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 2 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 4 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 8 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 14 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 15 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound 31 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound -1 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M01 raw sound -2147483648 versus constructor bits",
+      "passed": true
+    },
+    {
+      "name": "M02 payload ABSENT",
+      "passed": true
+    },
+    {
+      "name": "M02 payload ",
+      "passed": true
+    },
+    {
+      "name": "M02 payload 0:0",
+      "passed": true
+    },
+    {
+      "name": "M02 payload 2:3:0:0",
+      "passed": true
+    },
+    {
+      "name": "M02 payload 1:0:2:100:a.wav",
+      "passed": true
+    },
+    {
+      "name": "M02 payload 3:1:-1:-10",
+      "passed": true
+    },
+    {
+      "name": "M02 payload 2:0:3:101",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload 1",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload :0",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload x:1",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload 1:0:",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload 1:0:1:",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload 1:0:2147483648",
+      "passed": true
+    },
+    {
+      "name": "M03 malformed payload 1:0:0:2147483648",
+      "passed": true
+    },
+    {
+      "name": "M04 timing source order set-zero normalization and volume clamp",
+      "passed": true
+    },
+    {
+      "name": "M05 unavailable sample timing 0,500",
+      "passed": true
+    },
+    {
+      "name": "M05 unavailable sample timing 0,500,4,1,0",
+      "passed": true
+    },
+    {
+      "name": "M05 unavailable sample timing 0,500,4,x,0,100,1,0",
+      "passed": true
+    },
+    {
+      "name": "M05 unavailable sample timing 0,500,4,1,0,bad,1,0",
+      "passed": true
+    },
+    {
+      "name": "M06 unsorted circle source keeps exact identities",
+      "passed": true
+    },
+    {
+      "name": "M07 no sample metadata changes slider duration or R10 flags",
+      "passed": true
+    },
+    {
+      "name": "S01 null and empty timing",
+      "passed": true
+    },
+    {
+      "name": "S02 query start+5 record 2004",
+      "passed": true
+    },
+    {
+      "name": "S02 query start+5 record 2005",
+      "passed": true
+    },
+    {
+      "name": "S02 query start+5 record 2006",
+      "passed": true
+    },
+    {
+      "name": "S03 first supplied when none qualify",
+      "passed": true
+    },
+    {
+      "name": "S04 supplied-order last qualifying",
+      "passed": true
+    },
+    {
+      "name": "S05 unchecked start+5 overflow artificial operand",
+      "passed": true
+    },
+    {
+      "name": "S06 zero inheritance versus explicit selectors",
+      "passed": true
+    },
+    {
+      "name": "S07 zero selected base discards addition artificial",
+      "passed": true
+    },
+    {
+      "name": "S08 nonzero mask gate all true",
+      "passed": true
+    },
+    {
+      "name": "S08 nonzero mask gate no skin",
+      "passed": true
+    },
+    {
+      "name": "S08 nonzero mask gate layer off",
+      "passed": true
+    },
+    {
+      "name": "S08 nonzero mask gate no selected map",
+      "passed": true
+    },
+    {
+      "name": "S08 nonzero mask gate mode3",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 0 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 2 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 4 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 8 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 14 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S09 normalized mask 15 ordered layers",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 0",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 1",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 7",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 8",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 9",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 10",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 19",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 99",
+      "passed": true
+    },
+    {
+      "name": "S10 standard finite volume 100",
+      "passed": true
+    },
+    {
+      "name": "S11 custom handle 0 bypasses floor/layers",
+      "passed": true
+    },
+    {
+      "name": "S11 custom handle 777 bypasses floor/layers",
+      "passed": true
+    },
+    {
+      "name": "S12 custom -1 returns standard layers",
+      "passed": true
+    },
+    {
+      "name": "S13 circle X pan 0",
+      "passed": true
+    },
+    {
+      "name": "S13 circle X pan 64",
+      "passed": true
+    },
+    {
+      "name": "S13 circle X pan 256",
+      "passed": true
+    },
+    {
+      "name": "S13 circle X pan 448",
+      "passed": true
+    },
+    {
+      "name": "S13 circle X pan 512",
+      "passed": true
+    },
+    {
+      "name": "S14 factor 75 flagTrue",
+      "passed": true
+    },
+    {
+      "name": "S14 factor 100 flagTrue",
+      "passed": true
+    },
+    {
+      "name": "S14 factor 150 flagTrue",
+      "passed": true
+    },
+    {
+      "name": "S14 factor 150 flagFalse",
+      "passed": true
+    },
+    {
+      "name": "S15 gain integer global product then Single divisions",
+      "passed": true
+    },
+    {
+      "name": "S16 observer before submit; prepared lookup has no provider I/O",
+      "passed": true
+    },
+    {
+      "name": "S17 distinct base/addition banks versus addition-zero inheritance",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitnormal/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitnormal/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitnormal/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitwhistle/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitwhistle/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitwhistle/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitfinish/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitfinish/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitfinish/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitclap/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitclap/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key normal/hitclap/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitnormal/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitnormal/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitnormal/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitwhistle/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitwhistle/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitwhistle/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitfinish/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitfinish/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitfinish/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitclap/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitclap/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key soft/hitclap/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitnormal/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitnormal/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitnormal/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitwhistle/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitwhistle/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitwhistle/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitfinish/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitfinish/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitfinish/7",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitclap/1",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitclap/2",
+      "passed": true
+    },
+    {
+      "name": "R01 key drum/hitclap/7",
+      "passed": true
+    },
+    {
+      "name": "R02 index0 skips map and selects UI before gameplay",
+      "passed": true
+    },
+    {
+      "name": "R03 index1 map suffix and first format",
+      "passed": true
+    },
+    {
+      "name": "R03 index2 map suffix and first format",
+      "passed": true
+    },
+    {
+      "name": "R03 index9 map suffix and first format",
+      "passed": true
+    },
+    {
+      "name": "R04 standard precedence wav then mp3 before ogg",
+      "passed": true
+    },
+    {
+      "name": "R05 first nonnull map bytes loader-1",
+      "passed": true
+    },
+    {
+      "name": "R05 first nonnull map bytes loader0",
+      "passed": true
+    },
+    {
+      "name": "R05 first nonnull map bytes loader301",
+      "passed": true
+    },
+    {
+      "name": "R06 byte threshold 0",
+      "passed": true
+    },
+    {
+      "name": "R06 byte threshold 1023",
+      "passed": true
+    },
+    {
+      "name": "R06 byte threshold 1024",
+      "passed": true
+    },
+    {
+      "name": "R07 version4 per-extension unprefixed fallback",
+      "passed": true
+    },
+    {
+      "name": "R08 version5 skips unprefixed fallback",
+      "passed": true
+    },
+    {
+      "name": "R09 map missing then skin existing mp3",
+      "passed": true
+    },
+    {
+      "name": "R10 map suppressed and skin disabled use gameplay default",
+      "passed": true
+    },
+    {
+      "name": "R11 Default named skin bypassed",
+      "passed": true
+    },
+    {
+      "name": "R12 absent selected map bypasses map stage",
+      "passed": true
+    },
+    {
+      "name": "R13 early process gate returns before resource work",
+      "passed": true
+    },
+    {
+      "name": "R14 missing permitted skin falls through to default",
+      "passed": true
+    },
+    {
+      "name": "R15 null permitted skin is explicit unsupported receiver",
+      "passed": true
+    },
+    {
+      "name": "R16 embedded handle normalization 0",
+      "passed": true
+    },
+    {
+      "name": "R16 embedded handle normalization -1",
+      "passed": true
+    },
+    {
+      "name": "R16 embedded handle normalization 700",
+      "passed": true
+    },
+    {
+      "name": "R17 skin first existing decoder result 0",
+      "passed": true
+    },
+    {
+      "name": "R17 skin first existing decoder result -1",
+      "passed": true
+    },
+    {
+      "name": "R17 skin first existing decoder result 700",
+      "passed": true
+    },
+    {
+      "name": "R18 missing resource cached without repeated lookup",
+      "passed": true
+    },
+    {
+      "name": "R19 shared fallback handles across planes",
+      "passed": true
+    },
+    {
+      "name": "R20 dynamic preparation and dictionary-only fallback",
+      "passed": true
+    },
+    {
+      "name": "R21 timing then registered indexes are distinct preloads",
+      "passed": true
+    },
+    {
+      "name": "R22 cached dynamic zero not plane0 fallback",
+      "passed": true
+    },
+    {
+      "name": "R23 custom exact file branch",
+      "passed": true
+    },
+    {
+      "name": "R24 custom fallback wav then ogg before mp3",
+      "passed": true
+    },
+    {
+      "name": "R25 missing exact file strips stem and probes",
+      "passed": true
+    },
+    {
+      "name": "R26 exact exists but unreadable never probes extensions",
+      "passed": true
+    },
+    {
+      "name": "R27 custom collisions preserve first stem cache result",
+      "passed": true
+    },
+    {
+      "name": "R28 custom cached miss needs explicit eviction",
+      "passed": true
+    },
+    {
+      "name": "R29 custom force replaces and frees previous handle",
+      "passed": true
+    },
+    {
+      "name": "R30 custom load opaque handle -1",
+      "passed": true
+    },
+    {
+      "name": "R30 custom load opaque handle 0",
+      "passed": true
+    },
+    {
+      "name": "R30 custom load opaque handle 900",
+      "passed": true
+    },
+    {
+      "name": "R31 leading dot probes rather than exact read",
+      "passed": true
+    },
+    {
+      "name": "R32 custom rejection gates perform no lookup",
+      "passed": true
+    },
+    {
+      "name": "R33 shared custom/standard map cache alias",
+      "passed": true
+    },
+    {
+      "name": "R34 cache clear scopes and opaque frees",
+      "passed": true
+    },
+    {
+      "name": "R35 map replacement new map cache retains shared skin/default",
+      "passed": true
+    },
+    {
+      "name": "R36 all36 prepared cells discriminate map planes/banks/rows",
+      "passed": true
+    },
+    {
+      "name": "R37 artificial All None numeric key identities",
+      "passed": true
+    },
+    {
+      "name": "R38 nonnull map load failure falls to default not next format",
+      "passed": true
+    },
+    {
+      "name": "L01 fresh paused queue then active consecutive requests",
+      "passed": true
+    },
+    {
+      "name": "L02 four simultaneous logical layers retain distinct requests",
+      "passed": true
+    },
+    {
+      "name": "L03 pause invalidates queued and stops; resume does not replay",
+      "passed": true
+    },
+    {
+      "name": "L04 restart generation rejects old queued work",
+      "passed": true
+    },
+    {
+      "name": "L05 disposal and repeated disposal reject pending/future work",
+      "passed": true
+    },
+    {
+      "name": "L06 invalid queued handle -1",
+      "passed": true
+    },
+    {
+      "name": "L06 invalid queued handle 0",
+      "passed": true
+    },
+    {
+      "name": "L07 disabled sink drops enqueue and queued dispatch",
+      "passed": true
+    },
+    {
+      "name": "L08 dispatch submission failure contained",
+      "passed": true
+    },
+    {
+      "name": "L09 backend request failure contained",
+      "passed": true
+    },
+    {
+      "name": "L10 stop failure contained across pause/disposal",
+      "passed": true
+    },
+    {
+      "name": "L11 replacement old callbacks cannot act on new generation",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected ../x.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected a/../x.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected a/./x.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected /root.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected C:\\x.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected \\\\server\\x.wav",
+      "passed": true
+    },
+    {
+      "name": "P01 local resource path rejected https://x.test/x.wav",
+      "passed": true
+    },
+    {
+      "name": "P02 local missing versus readable bytes",
+      "passed": true
+    },
+    {
+      "name": "P03 size guard refuses larger than8MiB",
+      "passed": true
+    },
+    {
+      "name": "P04 native short sample creation is logical0 with diagnostic",
+      "passed": true
+    },
+    {
+      "name": "P05 catalog ID mapping and unsupported extension",
+      "passed": true
+    },
+    {
+      "name": "P06 catalog64-resource cap",
+      "passed": true
+    },
+    {
+      "name": "P07 missing settings is explicit practice configuration",
+      "passed": true
+    },
+    {
+      "name": "P08 malformed settings {",
+      "passed": true
+    },
+    {
+      "name": "P08 malformed settings null",
+      "passed": true
+    },
+    {
+      "name": "P08 malformed settings {\"VolumeEffect\":101}",
+      "passed": true
+    },
+    {
+      "name": "P08 malformed settings {\"VolumeUniversal\":-1}",
+      "passed": true
+    },
+    {
+      "name": "P08 malformed settings {\"SkinName\":\" \"}",
+      "passed": true
+    },
+    {
+      "name": "P09 explicit disabled settings differ from missing/malformed",
+      "passed": true
+    },
+    {
+      "name": "P10 oversized settings rejected",
+      "passed": true
+    },
+    {
+      "name": "P11 library no independent pack remains playable silence",
+      "passed": true
+    },
+    {
+      "name": "P12 library independent pack actual preparation",
+      "passed": true
+    },
+    {
+      "name": "P13 library native-short custom preserves zero bypass",
+      "passed": true
+    },
+    {
+      "name": "P14 library dynamic indexes loaded before requests",
+      "passed": true
+    },
+    {
+      "name": "P15 map replacement invalidates map IDs retains default IDs",
+      "passed": true
+    },
+    {
+      "name": "P16 canceled and disposed library preparation",
+      "passed": true
+    },
+    {
+      "name": "P17 unsupported timing and malformed registered metadata explicit",
+      "passed": true
+    },
+    {
+      "name": "P18 dynamic-index bound before resource work",
+      "passed": true
+    },
+    {
+      "name": "P19 catalog64MiB budget and release",
+      "passed": true
+    },
+    {
+      "name": "P20 configured but empty independent pack remains explicit missing",
+      "passed": true
+    },
+    {
+      "name": "I01 circle result offset0 positive hook order",
+      "passed": true
+    },
+    {
+      "name": "I01 circle result offset50 positive hook order",
+      "passed": true
+    },
+    {
+      "name": "I01 circle result offset100 positive hook order",
+      "passed": true
+    },
+    {
+      "name": "I01 circle result offset150 positive hook order",
+      "passed": true
+    },
+    {
+      "name": "I02 late hit selects stored start+5 not judgement timestamp",
+      "passed": true
+    },
+    {
+      "name": "I03 consecutive circles use own sidecar metadata",
+      "passed": true
+    },
+    {
+      "name": "I04 missing samples never change valid judgement",
+      "passed": true
+    },
+    {
+      "name": "I05 optional sink exception cannot become MISS",
+      "passed": true
+    },
+    {
+      "name": "I06 calibration private notifications have no sound or score",
+      "passed": true
+    },
+    {
+      "name": "I07 enabled versus disabled matched circle event stream",
+      "passed": true
+    },
+    {
+      "name": "I08 mixed slider spinner gameplay produces circle hooks only",
+      "passed": true
+    },
+    {
+      "name": "I09 C01 recovery threshold H159",
+      "passed": true
+    },
+    {
+      "name": "I09 C01 recovery threshold H160",
+      "passed": true
+    },
+    {
+      "name": "I09 C01 recovery threshold H200",
+      "passed": true
+    },
+    {
+      "name": "I10 HistoricalR09 versus E036FreshOrdinary split unchanged",
+      "passed": true
+    },
+    {
+      "name": "I11 restart fresh session allows one new hook",
+      "passed": true
+    },
+    {
+      "name": "I12 independent parsed fixture reaches original-derived requests",
+      "passed": true
+    },
+    {
+      "name": "W01 twelve generated names and independent RIFF/PCM structure",
+      "passed": true
+    },
+    {
+      "name": "W02 bounded PCM sample data independent of header claims",
+      "passed": true
+    },
+    {
+      "name": "W03 controlled two-run generator byte reproducibility",
+      "passed": true
+    },
+    {
+      "name": "W04 generated pack all banks/layers integrate as defaults",
+      "passed": true
+    },
+    {
+      "name": "W05 generated files differ from all twelve original fingerprints",
+      "passed": true
+    },
+    {
+      "name": "W06 generator refuses overwrite without Force",
+      "passed": true
+    },
+    {
+      "name": "A01 source binding positive hook pre-completion/accounting",
+      "passed": true
+    },
+    {
+      "name": "A02 Windows OnCircle uses prepared lookup no resource I/O",
+      "passed": true
+    },
+    {
+      "name": "A03 Windows async opens before Play boundary",
+      "passed": true
+    },
+    {
+      "name": "A04 Windows attach restart disposal bind production queue",
+      "passed": true
+    },
+    {
+      "name": "A05 application config placement malformed handling optional effects",
+      "passed": true
+    },
+    {
+      "name": "A06 actual host fresh Load Restart Pause effects binding",
+      "passed": true
+    },
+    {
+      "name": "A07 no slider spinner sound shortcut or native middleware claim",
+      "passed": true
+    },
+    {
+      "name": "A08 independent generator source has synthesis not asset reads",
+      "passed": true
+    },
+    {
+      "name": "A09 unavailable archive input cannot replace valid component session",
+      "passed": true
+    }
+  ]
+}

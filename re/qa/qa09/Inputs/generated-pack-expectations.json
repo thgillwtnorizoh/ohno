@@ -1,0 +1,21 @@
+{
+  "authority": "Independent QA09 PCM interpretation of the documented generated pack; no original audio bytes",
+  "encoding": "PCM",
+  "formatCode": 1,
+  "sampleRate": 44100,
+  "channels": 1,
+  "bitsPerSample": 16,
+  "blockAlign": 2,
+  "bytesPerSecond": 88200,
+  "sampleCount": 5292,
+  "dataBytes": 10584,
+  "riffSize": 10620,
+  "fileBytes": 10628,
+  "chunks": ["fmt ", "data"],
+  "files": [
+    "drum-hitclap.wav", "drum-hitfinish.wav", "drum-hitnormal.wav", "drum-hitwhistle.wav",
+    "normal-hitclap.wav", "normal-hitfinish.wav", "normal-hitnormal.wav", "normal-hitwhistle.wav",
+    "soft-hitclap.wav", "soft-hitfinish.wav", "soft-hitnormal.wav", "soft-hitwhistle.wav"
+  ],
+  "runtimeLimit": "A/B byte reproducibility is checked on the same generator host/runtime; acoustic decoding/output is unverified."
+}
