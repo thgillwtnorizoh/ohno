@@ -162,6 +162,7 @@ public sealed record SliderDefinition(CircleDefinition Head, Vector2 Tail,
     int EndTime, double TravelRate, double PixelLength, IReadOnlyList<Vector2> ControlPoints,
     int Traversals, IReadOnlyList<SliderMovement> Movements, IReadOnlyList<SliderCheckpoint> Checkpoints)
 {
+    public SliderSoundMetadata? Samples { get; init; }
     public SliderGeometry Geometry { get; init; } = null!; // Always supplied by the parser.
     public int TerminalTime => Checkpoints[^1].Time;
     public Vector2 EndPosition => Movements[^1].To;
@@ -410,8 +411,70 @@ public sealed record CircleSampleMetadata(CircleDefinition Object, int RawSound,
         return new(circle, raw, raw & 14, baseSet, addition, index, volume, filename, payload, error);
     }
 }
+// E039 parent fields remain distinct from circle-normalized embedded-head fields.
+public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int EffectiveTraversals,
+    int Format, int SourceOrder, string? RawEdgeSounds, string? RawEdgeSets, string? RawPayload,
+    bool Simple, IReadOnlyList<int> EdgeSounds, IReadOnlyList<int> Bases, IReadOnlyList<int> Additions,
+    int BaseSet, int AdditionSet, int Index, int Volume, string Filename, string? Error)
+{
+    public IReadOnlyList<int> Schedule { get; init; } = Array.Empty<int>();
+    public IReadOnlyList<int> EdgeSubset { get; init; } = Array.Empty<int>();
+    public bool CustomLoopFlag => Filename.IndexOf("slider") > 0 && Filename.IndexOf("tick") == -1;
+    public static SliderSoundMetadata Parse(int sound, int rawTraversals, int format, int sourceOrder,
+        string? edgeSounds, string? edgeSets, string? payload)
+    {
+        if (rawTraversals is < 1 or > 16) throw new InvalidDataException("R12 retains the ENGINEERING 1–16 traversal admission bound.");
+        var sounds = new List<int>(); var bases = new List<int>(); var additions = new List<int>();
+        int baseSet = 0, addition = 0, index = 0, volume = 0; string filename = ""; string? error = null;
+        bool simple = string.IsNullOrEmpty(edgeSounds);
+        try
+        {
+            if (!simple)
+            {
+                foreach (string field in edgeSounds!.Split('|').Take(rawTraversals + 1))
+                { int.TryParse(field, out int parsed); sounds.Add(parsed); } // Ignored TryParse return is original.
+                while (sounds.Count < rawTraversals + 1) sounds.Add(sound);
+            }
+            if (!string.IsNullOrEmpty(edgeSets))
+                foreach (string field in edgeSets.Split('|'))
+                {
+                    string[] parts = field.Split(':');
+                    bases.Add(Convert.ToInt32(parts[0])); additions.Add(Convert.ToInt32(parts[1]));
+                }
+            if (!simple)
+            {
+                if (bases.Count > rawTraversals + 1) bases.RemoveRange(rawTraversals + 1, bases.Count - rawTraversals - 1);
+                if (additions.Count > rawTraversals + 1) additions.RemoveRange(rawTraversals + 1, additions.Count - rawTraversals - 1);
+                while (bases.Count < rawTraversals + 1) bases.Add(0);
+                while (additions.Count < rawTraversals + 1) additions.Add(0);
+            }
+            if (payload is not null)
+            {
+                string[] parts = payload.Split(':');
+                baseSet = Convert.ToInt32(parts[0]); addition = Convert.ToInt32(parts[1]);
+                if (parts.Length > 2) index = Convert.ToInt32(parts[2]);
+                if (parts.Length > 3) volume = Math.Clamp(Convert.ToInt32(parts[3]), 0, 100);
+                if (parts.Length > 4) filename = parts[4];
+            }
+        }
+        catch (Exception e) when (e is FormatException or OverflowException or IndexOutOfRangeException)
+        { error = "Slider samples unavailable: malformed edge/payload metadata: " + e.Message; }
+        return new(sound, rawTraversals, Math.Max(1, rawTraversals), format, sourceOrder, edgeSounds, edgeSets, payload,
+            simple, sounds.AsReadOnly(), bases.AsReadOnly(), additions.AsReadOnly(), baseSet, addition, index, volume, filename, error);
+    }
+    public SliderSoundMetadata Prepare(SliderDefinition slider)
+    {
+        int count = slider.Checkpoints.Count, h = count / slider.Traversals;
+        if (h <= 0) throw new InvalidDataException("Unsupported slider sound schedule divisor.");
+        return this with { Schedule = slider.Checkpoints.Select(c => c.Time).ToArray(),
+            EdgeSubset = slider.Checkpoints.Take(count - 1).Where((_, i) => (i + 1) % h == 0).Select(c => c.Time).ToArray() };
+    }
+}
 public sealed record SampleTiming(double Time, int Set, int Index, int Volume, bool Uninherited, int SourceOrder);
-public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Index, string Filename, string? Error);
+public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Index, string Filename, string? Error)
+{
+    public SliderDefinition? Slider { get; init; }
+}
 public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<CircleSampleMetadata> Circles,
     IReadOnlyList<SampleTiming> Timing, string? TimingError)
 {
@@ -445,7 +508,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
         var circles = new List<CircleDefinition>();
         var spinners = new List<SpinnerDefinition>();
-        var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals)>();
+        var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals, SliderSoundMetadata Samples)>();
         var timing = new List<TimingPoint>();
         var healthRows = new List<HealthObjectSource>();
         var healthBreaks = new List<HealthBreak>();
@@ -518,7 +581,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     double length = DoubleNumber(row[7], "slider pixel length");
                     if (length <= 0.0001 || length > 4096)
                         throw new InvalidDataException("R05 slider length must be greater than 0.0001 and at most 4096 pixels.");
-                    sliderRows.Add((head, controls.ToArray(), isBezier, length, spans));
+                    var sliderSamples = SliderSoundMetadata.Parse(hitSound, spans, version, healthRows.Count - 1,
+                        row.Length > 8 ? row[8] : null, row.Length > 9 ? row[9] : null, row.Length > 10 ? row[10] : null);
+                    sliderRows.Add((head, controls.ToArray(), isBezier, length, spans, sliderSamples));
                 }
                 if (circles.Count + sliderRows.Count + spinners.Count > 10000) throw new InvalidDataException("R07 accepts at most 10000 objects.");
             }
@@ -579,6 +644,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             foreach (var slider in sliderRows.OrderBy(s => s.Head.StartTime))
             {
                 var prepared = PrepareSlider(slider.Head, slider.Controls, slider.Bezier, slider.Length, slider.Traversals, version, multiplier, tickRate, timing);
+                prepared = prepared with { Samples = slider.Samples.Prepare(prepared) };
+                int sourceIndex = slider.Samples.SourceOrder;
+                sampleOperands[sourceIndex] = new(null, slider.Samples.Index, slider.Samples.Filename, slider.Samples.Error) { Slider = prepared };
                 totalCheckpoints += prepared.Checkpoints.Count;
                 if (totalCheckpoints > 100_000) throw new InvalidDataException("R05 accepts at most 100000 scheduled checkpoints per map.");
                 totalSegments += prepared.Geometry.Segments.Count; totalMovements += prepared.Movements.Count;

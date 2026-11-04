@@ -40,13 +40,13 @@ public sealed class GameWindow : Window
     private readonly HitSoundLibrary effectsLibrary;
     private WindowsCircleEffects? pendingEffects;
     private readonly TextBlock effectsStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 12, TextWrapping = TextWrapping.Wrap };
-    private readonly CheckBox effectsEnabled = new() { Content = "Circle HitSounds", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
+    private readonly CheckBox effectsEnabled = new() { Content = "Discrete HitSounds", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
     private string? effectsConfigurationError;
     private static string EffectsConfigurationPath => Path.Combine(AppContext.BaseDirectory, "hitsounds.json");
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R11 Circle HitSounds Practice";
+        Title = "ohno · R12 Discrete Slider HitSounds Practice";
         try { effectsLibrary = new(HitSoundSettings.Read(EffectsConfigurationPath)); }
         catch (Exception e)
         {
@@ -84,11 +84,12 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Circle + Spinner", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "circle-spinner.osu"))));
         tools.Children.Add(Button("Mixed R07", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "mixed-r07.osu"))));
         tools.Children.Add(Button("Health R09", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "health-r09.osu"))));
+        tools.Children.Add(Button("Discrete R12", () => _ = LoadMapAsync(Path.Combine(AppContext.BaseDirectory, "Fixtures", "discrete-slider-r12.osu"))));
         tools.Children.Add(effectsEnabled);
         tools.Children.Add(Button("Effects setup", () => MessageBox.Show(this,
             "Configure hitsounds.json beside the built executable, then relaunch.\n" + EffectsConfigurationPath +
             "\n\nOptional SkinDirectory and DefaultPackDirectory admit local roots. The independent pack uses twelve exact key.wav files. " +
-            "See CircleGame/README.md for the JSON schema and independent sample generator. No original samples are supplied.", "Circle HitSounds setup")));
+            "Add the optional three slidertick files for R12. See CircleGame/README.md for the JSON schema and independent sample generators. No original samples are supplied.", "Circle HitSounds setup")));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);

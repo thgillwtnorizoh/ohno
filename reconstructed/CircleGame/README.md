@@ -1,4 +1,4 @@
-# R10 — NewCombo and Calibrated Health Practice for Windows
+# R12 — Discrete HitSound Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
@@ -496,7 +496,7 @@ Positive ordinary circles now select E037/E038 samples before score accounting.
 Slider/spinner/head/tick audio is still outside this feature. Song MediaPlayer and
 Stopwatch controls remain as before. **No original hitsound samples are bundled.**
 Without optional assets, gameplay works and the footer reports missing effects.
-The **Circle HitSounds** checkbox enables/disables effects. **Effects setup** shows
+The **Discrete HitSounds** checkbox enables/disables effects. **Effects setup** shows
 the settings-file location. All playing/listening is exclusively human-controlled.
 
 Create `hitsounds.json` beside `Ohno.CircleGame.exe` (for `dotnet run`, in the
@@ -595,3 +595,72 @@ No `.osz2`, full skin manager, complete native cache/concurrency/scheduler/devic
 semantics or acoustic fidelity is claimed. Footer shows enablement, decoded and
 unresolved selections, default-pack configuration, volume policy and errors.
 See `../R11-original-circle-hitsounds.md` for actual Windows verification.
+
+## Discrete slider HitSounds (R12)
+
+Choose **Discrete R12** for the new mixed circle/out-and-back control, or use the
+existing Tick/Repeat/Bézier fixtures. Start/Space, aim and press Z/X at the head,
+then hold and follow the ball as before. The **Discrete HitSounds** checkbox now
+controls ordinary circles plus embedded slider heads, interior ticks, repeat
+edges and positive parent-aggregate edges. Continuous slider slide/whistle loops
+and spinner sounds remain unavailable. All playing/listening is human-controlled.
+
+For a fresh independent default pack, run both file-only generators:
+
+```powershell
+./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory C:\MyIndependentSamples
+./reconstructed/GenerateIndependentSliderTicks.ps1 -PackDirectory C:\MyIndependentSamples
+```
+
+If you already generated the twelve R11 circle WAVs, run only the second command.
+It adds `normal-slidertick.wav`, `soft-slidertick.wav` and `drum-slidertick.wav`
+without changing existing circle files. Both scripts refuse overwrites unless
+explicitly forced. Point the same output `hitsounds.json` DefaultPackDirectory to
+that directory and relaunch. The existing twelve-file pack remains valid for
+circle/head/edge layers; missing ticks are reported rather than synthesized at
+runtime. These original practice tones are independent of osu!stable assets.
+
+Tick map/skin lookup uses the dedicated slidertick key, WAV→MP3→OGG and the same
+provider hierarchy. Index0 skips map;1 is unsuffixed,2+ use decimal suffixes.
+A dynamic miss/−1 falls back to the tick plane0; invalid0 remains distinct.
+No circle Whistle/Finish/Clap expansion or minimum-volume floor applies to ticks.
+They query timing at their selected mixed-schedule timestamp+2 and use its index /
+volume. Edges query their recovered head/subset/end timestamp+5, use timing index /
+volume and the existing standard layer order/floor. Parent index/volume/custom
+fields are preserved but do not directly select tick/edge playback. Head receives
+only selected edge0 base/addition, keeping its own zero index/volume and absent
+custom handle. Explicit head base0 uses the format13/14 compatibility distinction.
+
+The Discrete R12 fixture contains circle3000, two-traversal linear slider5000–8000
+and circle10000. Its explicit edges select Whistle at head, Finish at reversal and
+Clap at positive aggregate completion, with separate normal/soft/drum base/addition
+banks. Interior deadlines5500/6000/7000/7500 select ticks; reversal6500 selects
+edge1; final checkpoint7964 itself does not request an edge. These are finite
+source-derived expectations, not observed audio. Results remain13000ms.
+
+Audio progression is independent of checkpoint success/failure counts: one reached
+update consumes only the latest due prefix entry before the final schedule item.
+Tracking loss consumes without replay on reentry. Final edge comes from positive
+aggregate, including failed terminal or pending-component cases. A fresh/reset
+audio index is0; a reached pre-start update sets−1. Normal UI playback supplies
+pre-start frames; direct component calls without that history can skip index0.
+No scoring or judgement is rescheduled to align sounds.
+
+Parent pan uses the **last ball X published by WPF drawing**, initialized at head X.
+This engineering bridge deliberately does not substitute the pointer or a fresh
+required-position query. It can lag the native same-update presentation operand
+and is not original panning/update-order equivalence. The running host supplies
+numeric audio state1 explicitly. R11 pause/disable/generation cancellation and
+optional-failure containment remain; slider events carry separate identities.
+
+Malformed EdgeSets/payload retain explicit unsupported-audio metadata while geometry
+and gameplay stay usable (an engineering error-containment boundary). Invalid
+EdgeSounds elements become0 through ignored TryParse, as recovered. Existing1–16
+traversals, geometry, ordering, path/asset and clock safeguards remain. Slider sound
+preparation requires fresh parser identity and strictly increasing registered
+starts; no sorting fixes ambiguous registration. Parent custom stems colliding with
+standard discrete keys or other custom stems explicitly disable preparation.
+The parent loader loop flag is retained as metadata; no continuous voice is started.
+Native continuing helpers, global shared channels, archive providers, BASS/codec /
+device/onset precision and human-audible fidelity remain unverified or excluded.
+See `../R12-original-discrete-slider-hitsounds.md` for actual CI evidence and scope.

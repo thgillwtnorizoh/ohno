@@ -11,6 +11,7 @@
     <RootNamespace>Ohno.CircleGame</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Fixtures\discrete-slider-r12.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\health-r09.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\first-circles.osu" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fixtures\audible-circles.osu" CopyToOutputDirectory="PreserveNewest" />

@@ -118,6 +118,8 @@ public sealed class PreparedCircleEffects : IDisposable
     public required IReadOnlyDictionary<int, SampleBytes> Samples { get; init; }
     public string? Error { get; init; }
     public int MissingLayers { get; init; }
+    public IReadOnlyDictionary<SliderDefinition, PreparedSliderSamples> Sliders { get; init; } =
+        new Dictionary<SliderDefinition, PreparedSliderSamples>(ReferenceEqualityComparer.Instance);
     public void Dispose() => Resources.ClearMap();
 }
 // One library per settings configuration. Shared skin/default cache persists
@@ -146,6 +148,17 @@ public sealed class HitSoundLibrary : IDisposable
     private PreparedCircleEffects Prepare(Beatmap map, CancellationToken token)
     {
         var source = map.CircleSounds ?? throw new InvalidDataException("Hitsounds need fresh parser sample metadata.");
+        // Bounded fresh registered-index order. R10 health already guards this;
+        // discrete sound preparation must not silently repair an ambiguous source.
+        if (map.Sliders.Count > 0 && (map.HealthSource is null || !map.HealthSource.IsFreshFor(map) ||
+            map.HealthSource.Rows.Zip(map.HealthSource.Rows.Skip(1)).Any(p => p.First.Start >= p.Second.Start)))
+            throw new InvalidDataException("Slider sounds require proven fresh, strictly increasing registered source order.");
+        foreach (var operand in source.RegisteredOverrides.Where(o => o.Slider is not null && !string.IsNullOrEmpty(o.Filename)))
+        {
+            string stem = CustomStem(operand.Filename);
+            if (IsStandardStem(stem) || source.RegisteredOverrides.Count(o => !string.IsNullOrEmpty(o.Filename) && CustomStem(o.Filename) == stem) > 1)
+                throw new InvalidDataException("Unsupported parent custom-cache collision: " + stem);
+        }
         var resources = new CircleSampleResources(new LocalSampleFiles(source.Directory, catalog.Errors.Add), skin, defaults, catalog,
             new(source.Format, false, false, true, true, Settings.SkinName, Settings.SkinSamples, System.Globalization.CultureInfo.CurrentCulture),
             new SampleCaches(shared.Skin, shared.Embedded));
@@ -160,19 +173,29 @@ public sealed class HitSoundLibrary : IDisposable
                 token.ThrowIfCancellationRequested();
                 if (operand.Error is not null) { operandError ??= operand.Error; continue; }
                 int handle;
-                try { handle = resources.Custom(operand.Filename); }
+                try { handle = resources.Custom(operand.Filename, loop: operand.Slider?.Samples?.CustomLoopFlag == true); }
                 catch (Exception e) when (e is IOException or UnauthorizedAccessException or ArgumentException or NotSupportedException)
                 { operandError ??= "Hitsound custom resource rejected: " + e.Message; handle = -1; }
                 if (operand.Circle is not null) custom.Add(operand.Circle, handle);
             }
+            var parentHandles = new Dictionary<SliderDefinition, int>(ReferenceEqualityComparer.Instance);
+            // Parent handles were resolved in original registration order above.
+            foreach (var operand in source.RegisteredOverrides.Where(o => o.Slider is not null))
+            {
+                string key = CustomStem(operand.Filename);
+                parentHandles[operand.Slider!] = string.IsNullOrEmpty(operand.Filename) ? -1 : resources.Caches.Map.GetValueOrDefault(key, -1);
+            }
             foreach (var sample in source.Circles)
                 circles.Add(sample.Object, (sample, custom.GetValueOrDefault(sample.Object, -1)));
-            resources.Prepare(source.Timing.Select(t => t.Index), source.RegisteredOverrides.Select(c => c.Index));
+            var selectionPolicy = new CircleSoundPolicy(true, Settings.LayeredHitSounds, true, 0, 100, false, Settings.VolumeEffect, Settings.VolumeUniversal);
+            var sliders = new Dictionary<SliderDefinition, PreparedSliderSamples>(ReferenceEqualityComparer.Instance);
+            foreach (var slider in map.Sliders)
+                sliders.Add(slider, PreparedSliderSamples.Create(slider, source.Timing, selectionPolicy, parentHandles.GetValueOrDefault(slider, -1)));
+            resources.Prepare(source.Timing.Select(t => t.Index), source.RegisteredOverrides.Select(c => c.Index), includeTicks: map.Sliders.Count > 0);
             token.ThrowIfCancellationRequested();
             var handles = resources.Caches.Map.Values.Concat(resources.Caches.Skin.Values).Concat(resources.Caches.Embedded.Values).Where(h => h > 0).Distinct();
             var samples = catalog.Snapshot(handles);
             int missing = 0;
-            var selectionPolicy = new CircleSoundPolicy(true, Settings.LayeredHitSounds, true, 0, 100, false, Settings.VolumeEffect, Settings.VolumeUniversal);
             foreach (var sample in circles.Values)
             {
                 var point = CircleSampleSelection.Timing(source.Timing, sample.Item1.Object.StartTime);
@@ -184,11 +207,15 @@ public sealed class HitSoundLibrary : IDisposable
                         missing++;
             }
             string[] errors = circles.Values.Select(c => c.Item1.Error).Where(e => e is not null).Cast<string>().Concat(catalog.Errors.Skip(errorStart)).Distinct().ToArray();
-            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing,
+            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders,
                 Error = source.TimingError ?? operandError ?? (errors.Length > 0 ? string.Join("; ", errors.Take(3)) : null) };
         }
         catch { resources.ClearMap(); throw; }
     }
+    private static string CustomStem(string name) => name.IndexOf('.') > 0 ? name[..name.LastIndexOf('.')] : name;
+    private static bool IsStandardStem(string stem) => System.Text.RegularExpressions.Regex.IsMatch(stem,
+        @"^(normal|soft|drum|none|all|[+-]?\d+)-(hitnormal|hitfinish|hitwhistle|hitclap|slidertick)\d*$",
+        System.Text.RegularExpressions.RegexOptions.CultureInvariant);
     public void Dispose()
     {
         if (disposed) return;

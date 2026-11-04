@@ -13,6 +13,8 @@ on:
       - reconstructed/R09DevelopmentChecks/**
       - reconstructed/R10DevelopmentChecks/**
       - reconstructed/R11DevelopmentChecks/**
+      - reconstructed/R12DevelopmentChecks/**
+      - reconstructed/GenerateIndependentSliderTicks.ps1
       - re/qa/qa03/Headless/**
       - re/qa/qa04/Headless/**
       - re/qa/qa05/Headless/**
@@ -189,3 +191,21 @@ jobs:
         run: |
           & ./re/qa/qa09/Run-QA09.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa09-results.json')
           exit $LASTEXITCODE
+
+      - name: Check R12 discrete slider hitsounds without playback
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          $packPath = Join-Path $env:RUNNER_TEMP 'ohno-r12-independent-tones'
+          & ./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory $packPath
+          & ./reconstructed/GenerateIndependentSliderTicks.ps1 -PackDirectory $packPath
+          if (@(Get-ChildItem $packPath -Filter '*.wav').Count -ne 15) { throw 'Expected twelve circle plus three tick samples.' }
+          foreach ($sample in @(Get-ChildItem $packPath -Filter '*-slidertick.wav')) {
+            $bytes = [IO.File]::ReadAllBytes($sample.FullName)
+            if ($bytes.Length -ne 10628 -or [Text.Encoding]::ASCII.GetString($bytes, 0, 4) -ne 'RIFF') { throw 'R12 PCM header/length mismatch.' }
+          }
+          Write-Output 'R12 INDEPENDENT TICKS: 3 PCM WAV files generated and headers checked; old 12 names retained; no playback'
+          dotnet run --project reconstructed/R12DevelopmentChecks/R12DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" $packPath
+          $resultCode = $LASTEXITCODE
+          Remove-Item $packPath -Recurse
+          exit $resultCode

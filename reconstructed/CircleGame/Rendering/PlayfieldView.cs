@@ -249,7 +249,9 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
             }
             if (CurrentTime >= definition.Head.StartTime)
             {
-                Vector2 ball = l.ToScreen(definition.BallPosition(CurrentTime));
+                Vector2 ballMap = definition.BallPosition(CurrentTime);
+                game.PublishSliderPresentationX(definition, ballMap.X); // ENGINEERING last-drawn pan operand for next update.
+                Vector2 ball = l.ToScreen(ballMap);
                 Brush followColor = slider.FollowEligible ? Accent : Brush("#FFB37F");
                 double followRadius = game.HitRadius * l.Scale * (slider.Tracking ? 2.4000000953674316f : 1f);
                 dc.DrawEllipse(null, new Pen(followColor, 2), new(ball.X, ball.Y), followRadius, followRadius);

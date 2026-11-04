@@ -288,9 +288,43 @@ public sealed class SliderCheckpointState(SliderCheckpoint definition)
     public int? JudgedAt { get; internal set; }
 }
 
+public enum SliderSoundKind { Head, Tick, RepeatEdge, AggregateEdge }
+public sealed record SliderSoundEvent(SliderDefinition Parent, SliderSoundKind Kind, int Index,
+    int ScheduleIndex, int Time, float PresentationX);
+public sealed record SliderAudioSelection(SliderSoundKind Kind, int Index, int ScheduleIndex);
+// E039 F0bf4 projection: independent from gameplay checkpoint successes/failures.
+public sealed class SliderAudioProgress
+{
+    public int Index { get; private set; } // Fresh CLR0. Do not universally initialize to -1.
+    public void Reset() => Index = 0; // M1431 explicit store.
+    public SliderAudioSelection? Advance(SliderDefinition slider, int time, bool tracking, int numericAudioState)
+    {
+        int latest = -1, count = slider.Checkpoints.Count;
+        for (int i = 0; i < count - 1; i++)
+        {
+            if (slider.Checkpoints[i].Time > time) break;
+            latest = i;
+        }
+        if (time < slider.Head.StartTime || time > slider.EndTime || numericAudioState != 1) { Index = -1; return null; }
+        if (!tracking) { Index = latest; return null; }
+        // Original continuing helpers are deliberately omitted; no loop ownership is invented.
+        if (latest <= Index) return null;
+        Index = latest; // Before selection/dispatch, even if optional audio later fails.
+        int h = count / slider.Traversals;
+        if (h <= 0) throw new System.IO.InvalidDataException("Unsupported finite slider audio divisor.");
+        return unchecked(latest + 1) % h > 0 ? new(SliderSoundKind.Tick, latest, latest) :
+            new(SliderSoundKind.RepeatEdge, unchecked(latest + 1) / h, latest);
+    }
+    public static int AggregateEdge(int start, int end, int soundCount, int time) =>
+        time > unchecked(start + unchecked(end - start) / 2) ? unchecked(soundCount - 1) : 0;
+}
+
 public sealed class SliderState(SliderDefinition definition)
 {
     public SliderDefinition Definition { get; } = definition;
+    public SliderAudioProgress Audio { get; } = new();
+    public float PresentationBallX { get; internal set; } = definition.Head.Position.X;
+    public bool CompletionStarted { get; internal set; }
     public CircleState Head { get; } = new(definition.Head);
     public Judgement Result { get; internal set; }
     public bool Tracking { get; internal set; }
@@ -355,6 +389,21 @@ public sealed class CircleSession
     // E012/E037 positive ordinary circle hook before completion/result accounting.
     public event Action<CircleDefinition>? PositiveCircleSound;
     public string? CircleSoundError { get; private set; }
+    public event Action<SliderSoundEvent>? SliderSound;
+    public string? SliderSoundError { get; private set; }
+    // ENGINEERING host operand1 while running. This is not a decoded name for F2368.
+    public int NumericSliderAudioState { get; set; } = 1;
+    public void PublishSliderPresentationX(SliderDefinition definition, float x)
+    {
+        if (!float.IsFinite(x)) throw new ArgumentOutOfRangeException(nameof(x));
+        SliderState state = Sliders.Single(s => ReferenceEquals(s.Definition, definition));
+        state.PresentationBallX = x; // Last WPF-published presentation position, not pointer/target.
+    }
+    private void RequestSliderSound(SliderState state, SliderSoundKind kind, int index, int scheduleIndex, int time)
+    {
+        try { SliderSound?.Invoke(new(state.Definition, kind, index, scheduleIndex, time, state.PresentationBallX)); }
+        catch (Exception e) { SliderSoundError = "Slider effect sink failed: " + e.Message; }
+    }
     private int previousUpdateTime, previousQualifyingInputTime;
     private bool hasQualifyingInputTime;
     public int ObjectCount => Circles.Count + Sliders.Count + Spinners.Count;
@@ -475,13 +524,20 @@ public sealed class CircleSession
         foreach (SliderState slider in Sliders)
         {
             if (slider.Result == Judgement.Pending && time >= slider.Definition.Head.StartTime) Track(slider, pointer, time);
+            if (slider.Result == Judgement.Pending && slider.Audio.Advance(slider.Definition, time, slider.Tracking, NumericSliderAudioState) is { } sound)
+                RequestSliderSound(slider, sound.Kind, sound.Index, sound.ScheduleIndex, time);
             if (slider.Head.Result == Judgement.Pending && time > slider.Definition.Head.StartTime + Window50)
                 JudgeHead(slider, time);
             // E17: tracking/component decision precedes inclusive parent completion.
-            if (slider.Result == Judgement.Pending && time >= slider.Definition.EndTime)
+            if (slider.Result == Judgement.Pending && !slider.CompletionStarted && time >= slider.Definition.EndTime)
             {
+                slider.CompletionStarted = true; // Evaluated/cleanup boundary; no continuing audio implementation.
                 int successes = (Positive(slider.Head.Result) ? 1 : 0) + slider.SuccessfulCheckpoints;
                 double ratio = successes / (double)(slider.Checkpoints.Count + 1);
+                if (ratio > 0)
+                    RequestSliderSound(slider, SliderSoundKind.AggregateEdge,
+                        SliderAudioProgress.AggregateEdge(slider.Definition.Head.StartTime, slider.Definition.EndTime,
+                            slider.Definition.Samples?.EdgeSounds.Count ?? 0, time), -1, time);
                 // E17/E23 legacy policy (no ScoreV2/mods), not head-sensitive grading.
                 slider.Result = ratio == 1 ? Judgement.Hit300 : ratio >= 0.5 ? Judgement.Hit100 :
                     ratio > 0 ? Judgement.Hit50 : Judgement.Miss;
@@ -576,6 +632,7 @@ public sealed class CircleSession
     private void JudgeHead(SliderState slider, int time)
     {
         slider.Head.Result = Classify(time - slider.Definition.Head.StartTime);
+        if (Positive(slider.Head.Result)) RequestSliderSound(slider, SliderSoundKind.Head, 0, -1, time);
         slider.Head.JudgedAt = time;
         Emit(slider, ScoreEventKind.SliderHead, Positive(slider.Head.Result) ? 64 : -262144, time);
         Feedback = new(slider.Definition.Head.Position, "HEAD " + Label(slider.Head.Result), time, slider.Head.Result);

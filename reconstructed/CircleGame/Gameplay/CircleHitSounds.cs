@@ -6,7 +6,10 @@ namespace Ohno.CircleGame.Gameplay;
 // E037/E038 finite ordinary circle projection. No Windows, clock, scoring or HP dependency.
 public enum SampleOrigin { Map, Skin, Default }
 public enum SampleLoadMode { MapShortCreate, MapBytes, SkinFile, EmbeddedBytes }
-public sealed record SampleBytes(string Name, byte[] Bytes, SampleOrigin Origin, SampleLoadMode Mode);
+public sealed record SampleBytes(string Name, byte[] Bytes, SampleOrigin Origin, SampleLoadMode Mode)
+{
+    public bool Loop { get; init; } // Original load flag only; never a discrete voice loop command.
+}
 public interface ISampleFiles
 {
     bool Exists(string name);
@@ -43,6 +46,7 @@ public sealed class CircleSampleResources
     private readonly ISampleLoader loader;
     private readonly SampleResourcePolicy policy;
     public SampleCaches Caches { get; }
+    private readonly int[,] tickTable = new int[3, 3];
     private readonly int[,,] table = new int[4, 3, 3]; // Original fresh cells0, not prepared missing -1.
     public CircleSampleResources(ISampleFiles map, ISampleFiles? skin, IDefaultSamples defaults,
         ISampleLoader loader, SampleResourcePolicy policy, SampleCaches? caches = null)
@@ -54,10 +58,13 @@ public sealed class CircleSampleResources
     private static int Row(int bit) => bit switch { 1 => 0, 2 => 1, 4 => 2, 8 => 3, _ => throw new ArgumentOutOfRangeException(nameof(bit)) };
     private static int Bank(int set) => set is 0 or 2 ? 1 : set == 3 ? 2 : 0;
 
-    public int Standard(int bit, int set, int index, int stages = 7)
+    public int Standard(int bit, int set, int index, int stages = 7) => LoadStandard(LayerName(bit), set, index, stages);
+    public string TickKey(int set, int index = 1) => SetName(set) + "-slidertick" + (index > 1 ? index.ToString(policy.Culture) : "");
+    public int StandardTick(int set, int index, int stages = 7) => LoadStandard("slidertick", set, index, stages);
+    private int LoadStandard(string family, int set, int index, int stages)
     {
         if (policy.EarlyProcessGate) return -1;
-        string baseKey = Key(bit, set), mapKey = Key(bit, set, index);
+        string baseKey = SetName(set) + "-" + family, mapKey = baseKey + (index > 1 ? index.ToString(policy.Culture) : "");
         int handle;
         if ((stages & 4) != 0 && !policy.MapSuppressed && policy.HasSelectedMap && index != 0)
         {
@@ -67,7 +74,7 @@ public sealed class CircleSampleResources
                 foreach (string ext in StandardExtensions)
                 {
                     byte[]? bytes = map.Read(mapKey + ext);
-                    if (bytes is null && policy.Format < 5) bytes = map.Read(LayerName(bit) + ext);
+                    if (bytes is null && policy.Format < 5) bytes = map.Read(family + ext);
                     if (bytes is null) continue;
                     handle = MapLoad(mapKey + ext, bytes); break; // Stop on bytes, even load -1/0.
                 }
@@ -101,9 +108,9 @@ public sealed class CircleSampleResources
         Caches.Embedded[baseKey] = handle;
         return handle;
     }
-    private int MapLoad(string name, byte[] bytes) => loader.Load(new(name, bytes, SampleOrigin.Map,
-        bytes.Length < 1024 ? SampleLoadMode.MapShortCreate : SampleLoadMode.MapBytes));
-    public int Custom(string name, bool acceptingSetter = true, bool force = false)
+    private int MapLoad(string name, byte[] bytes, bool loop = false) => loader.Load(new(name, bytes, SampleOrigin.Map,
+        bytes.Length < 1024 ? SampleLoadMode.MapShortCreate : SampleLoadMode.MapBytes) { Loop = loop });
+    public int Custom(string name, bool acceptingSetter = true, bool force = false, bool loop = false)
     {
         if (!acceptingSetter || string.IsNullOrEmpty(name) || policy.MapSuppressed) return -1;
         bool hasExtension = name.IndexOf('.') > 0;
@@ -124,26 +131,38 @@ public sealed class CircleSampleResources
             bytes = map.Read(name);
             if (bytes is null && policy.Format < 5) bytes = map.Read(name);
         }
-        int handle = bytes is null ? -1 : MapLoad(selected, bytes);
+        int handle = bytes is null ? -1 : MapLoad(selected, bytes, loop);
         if (Caches.Map.TryGetValue(stem, out int previous) && previous != -1) loader.Free(previous);
         Caches.Map[stem] = handle; return handle;
     }
-    public void Prepare(IEnumerable<int> timingIndexes, IEnumerable<int> registeredIndexes)
+    public void Prepare(IEnumerable<int> timingIndexes, IEnumerable<int> registeredIndexes, bool includeTicks = false)
     {
         int[] indexes = timingIndexes.Concat(registeredIndexes).Where(i => i > 2).Distinct().ToArray();
         if (indexes.Length > 64) throw new InvalidDataException("Effects exceed ENGINEERING 64 dynamic-index preparation limit.");
         foreach (int index in indexes)
             foreach (int set in new[] { 1, 2, 3 })
+            {
                 foreach (int bit in LayerOrder) Standard(bit, set, index);
+                if (includeTicks) StandardTick(set, index);
+            }
         for (int plane = 0; plane < 3; plane++)
             foreach (int set in new[] { 1, 2, 3 })
+            {
                 foreach (int bit in LayerOrder) table[Row(bit), Bank(set), plane] = Standard(bit, set, plane);
+                if (includeTicks) tickTable[Bank(set), plane] = StandardTick(set, plane);
+            }
     }
     public int Resolve(int bit, int set, int suppliedIndex)
     {
         int index = Math.Max(suppliedIndex, 0);
         if (index <= 2) return table[Row(bit), Bank(set), index];
         return Caches.Map.TryGetValue(Key(bit, set, index), out int handle) && handle != -1 ? handle : table[Row(bit), Bank(set), 0];
+    }
+    public int ResolveTick(int set, int suppliedIndex)
+    {
+        int index = Math.Max(suppliedIndex, 0);
+        if (index <= 2) return tickTable[Bank(set), index];
+        return Caches.Map.TryGetValue(TickKey(set, index), out int handle) && handle != -1 ? handle : tickTable[Bank(set), 0];
     }
     public void EvictMap(string key)
     {
@@ -154,33 +173,40 @@ public sealed class CircleSampleResources
     { foreach (int handle in cache.Values) loader.Free(handle); cache.Clear(); }
     public void ClearMap() => Clear(Caches.Map);
     public void ClearSkin() => Clear(Caches.Skin);
-    public void ClearAll() { ClearMap(); ClearSkin(); Clear(Caches.Embedded); Array.Clear(table); }
+    public void ClearAll() { ClearMap(); ClearSkin(); Clear(Caches.Embedded); Array.Clear(table); Array.Clear(tickTable); }
 }
 
 public sealed record CircleSoundPolicy(bool HasSkin, bool LayeredHitSounds, bool HasSelectedMap,
     int SelectedMode, int SongRate, bool RateMatching, int VolumeEffect, int VolumeUniversal);
 public sealed record SelectedCircleSample(int Mask, int BaseSet, int AdditionSet, int Index, int Volume);
+public enum SoundEventKind { Circle, SliderHead, SliderTick, SliderRepeatEdge, SliderAggregateEdge }
+public sealed record SoundEventIdentity(SoundEventKind Kind, SliderDefinition Parent, int Index, int ScheduleIndex, int UpdateTime);
 public sealed record SamplePlaybackRequest(CircleDefinition Source, int Handle, int Layer, int Volume,
-    float Pan, float Factor, float Gain);
+    float Pan, float Factor, float Gain)
+{
+    public SoundEventIdentity? Event { get; init; }
+    public SoundEventKind Kind => Event?.Kind ?? SoundEventKind.Circle;
+}
 public interface ISamplePlaybackSink { void Enqueue(SamplePlaybackRequest request); }
 public static class CircleSampleSelection
 {
-    public static SampleTiming? Timing(IReadOnlyList<SampleTiming>? list, int storedStart)
+    public static SampleTiming? Timing(IReadOnlyList<SampleTiming>? list, int storedStart) => At(list, unchecked(storedStart + 5));
+    public static SampleTiming? At(IReadOnlyList<SampleTiming>? list, int query)
     {
         if (list is null || list.Count == 0) return null;
-        double query = unchecked(storedStart + 5);
         SampleTiming? selected = null;
-        foreach (var point in list) if (point.Time <= query) selected = point;
+        foreach (var point in list) if (point.Time <= (double)query) selected = point;
         return selected ?? list[0];
     }
+    public static int Augment(int mask, CircleSoundPolicy policy) =>
+        mask == 0 || (policy.HasSkin && policy.LayeredHitSounds && policy.HasSelectedMap && policy.SelectedMode != 3) ? mask | 1 : mask;
     public static SelectedCircleSample Select(CircleSampleMetadata circle, SampleTiming timing, CircleSoundPolicy policy)
     {
         int set = circle.BaseSet != 0 ? circle.BaseSet : timing.Set;
         int index = circle.Index != 0 ? circle.Index : timing.Index;
         int volume = circle.Volume != 0 ? circle.Volume : timing.Volume;
         int addition = set != 0 ? circle.AdditionSet : set;
-        int mask = circle.StoredMask;
-        if (mask == 0 || (policy.HasSkin && policy.LayeredHitSounds && policy.HasSelectedMap && policy.SelectedMode != 3)) mask |= 1;
+        int mask = Augment(circle.StoredMask, policy);
         return new(mask, set, addition, index, volume);
     }
     public static void Request(CircleSampleMetadata circle, IReadOnlyList<SampleTiming>? timing,
@@ -192,22 +218,28 @@ public static class CircleSampleSelection
         if (point is null) return;
         SelectedCircleSample info = Select(circle, point, policy); observer?.Invoke(info);
         float pan = Math.Clamp((circle.Object.Position.X / 512f - .5f) * .800000011920929f, -1f, 1f);
+        if (customHandle != -1) { Submit(circle.Object, customHandle, 0, info.Volume, pan, policy, sink); return; }
+        Standard(circle.Object, info, pan, resources, policy, sink);
+    }
+    public static void Submit(CircleDefinition source, int handle, int layer, int volume, float pan,
+        CircleSoundPolicy policy, ISamplePlaybackSink sink)
+    {
+        if (handle == -1) return; // Zero is still queued, worker validity is separate.
         float factor = policy.SongRate != 100 && policy.RateMatching ? 1f + ((float)policy.SongRate - 100f) / 100f : 1f;
-        void Submit(int handle, int layer, int volume)
-        {
-            if (handle == -1) return; // M3b31; zero still queues, worker validity is separate.
-            float global = (float)unchecked(policy.VolumeEffect * policy.VolumeUniversal) / 100f;
-            float gain = (volume / 100f) * global / 100f;
-            sink.Enqueue(new(circle.Object, handle, layer, volume, pan, factor, gain));
-        }
-        if (customHandle != -1) { Submit(customHandle, 0, info.Volume); return; }
+        float global = (float)unchecked(policy.VolumeEffect * policy.VolumeUniversal) / 100f;
+        float gain = (volume / 100f) * global / 100f;
+        sink.Enqueue(new(source, handle, layer, volume, Math.Clamp(pan, -1f, 1f), factor, gain));
+    }
+    public static void Standard(CircleDefinition source, SelectedCircleSample info, float pan,
+        CircleSampleResources resources, CircleSoundPolicy policy, ISamplePlaybackSink sink)
+    {
         int selectedVolume = Math.Max(8, info.Volume);
         foreach (int bit in CircleSampleResources.LayerOrder)
         {
             if ((info.Mask & bit) == 0) continue;
             int set = bit == 1 ? info.BaseSet : info.AdditionSet != 0 ? info.AdditionSet : info.BaseSet;
             int volume = bit == 1 ? (int)(selectedVolume * .8) : bit == 4 ? selectedVolume : (int)(selectedVolume * .85);
-            Submit(resources.Resolve(bit, set, info.Index), bit, volume);
+            Submit(source, resources.Resolve(bit, set, info.Index), bit, volume, pan, policy, sink);
         }
     }
 }
@@ -239,4 +271,92 @@ public sealed class CircleSoundPlayback : ISamplePlaybackSink
     public void Restart() { Pause(); Resume(); }
     private void Stop() { try { stop(); } catch (Exception e) { Error = e.Message; } }
     public void Dispose() { if (Disposed) return; Pause(); Disposed = true; }
+}
+
+// E039 finite discrete slider selection. Continuing M146b/channel helpers are
+// intentionally omitted; their errors/interleavings are not emulated.
+public sealed record PreparedSliderSamples(SliderDefinition Parent, SliderSoundMetadata Metadata,
+    CircleSampleMetadata Head, int ParentCustomHandle)
+{
+    public static PreparedSliderSamples Create(SliderDefinition parent, IReadOnlyList<SampleTiming>? timing,
+        CircleSoundPolicy policy, int customHandle)
+    {
+        var metadata = parent.Samples ?? throw new InvalidDataException("Slider sample provenance unavailable.");
+        int initial = metadata.Simple ? metadata.RawSound : metadata.EdgeSounds[0];
+        var head = new CircleSampleMetadata(parent.Head, initial, initial & 14, 0, 0, 0, 0, "", null, metadata.Error);
+        if (metadata.Error is null)
+        {
+            var edge = SliderSampleSelection.Edge(parent, metadata, timing, policy, 0);
+            head = head with { BaseSet = edge.BaseSet, AdditionSet = edge.AdditionSet };
+        }
+        // Parent index/volume/custom handle/filename are deliberately NOT copied.
+        return new(parent, metadata, head, customHandle);
+    }
+}
+public static class SliderSampleSelection
+{
+    public static SelectedCircleSample Edge(SliderDefinition parent, SliderSoundMetadata data,
+        IReadOnlyList<SampleTiming>? timing, CircleSoundPolicy policy, int edge)
+    {
+        if (data.Error is not null) throw new InvalidDataException(data.Error);
+        int query = edge == 0 ? unchecked(parent.Head.StartTime + 5) : edge >= parent.Traversals || edge == -1 ?
+            unchecked(parent.EndTime + 5) : unchecked(data.EdgeSubset[edge - 1] + 5);
+        SampleTiming? point = CircleSampleSelection.At(timing, query);
+        int mask = data.RawSound, set = data.BaseSet, addition = data.AdditionSet;
+        if (!data.Simple)
+        {
+            if (edge == 0)
+            {
+                mask = data.EdgeSounds.Count == 0 ? mask : data.EdgeSounds[0];
+                set = data.Bases.Count == 0 || (data.Format < 14 && data.Bases[0] == 0) ? set : data.Bases[0];
+                addition = data.Additions.Count == 0 ? addition : data.Additions[0];
+            }
+            else
+            {
+                mask = edge >= data.EdgeSounds.Count ? mask : data.EdgeSounds[edge];
+                set = edge >= data.Bases.Count ? set : data.Bases[edge];
+                addition = edge >= data.Additions.Count ? addition : data.Additions[edge];
+            }
+        }
+        if (set == 0) set = point?.Set ?? 1;
+        if (addition == 0) addition = set;
+        return new(CircleSampleSelection.Augment(mask, policy), set, addition, point?.Index ?? 0, point?.Volume ?? 100);
+    }
+    public static SelectedCircleSample Tick(SliderSoundMetadata data, IReadOnlyList<SampleTiming>? timing, int index)
+    {
+        if (data.Error is not null) throw new InvalidDataException(data.Error);
+        SampleTiming point = CircleSampleSelection.At(timing, unchecked(data.Schedule[index] + 2)) ??
+            throw new InvalidDataException("Slider tick requires a selected timing sample record; no edge defaults apply.");
+        int set = data.BaseSet != 0 ? data.BaseSet : point.Set;
+        return new(data.RawSound, set, data.AdditionSet != 0 ? data.AdditionSet : set, point.Index, point.Volume);
+    }
+    public static void Request(SliderSoundEvent e, PreparedSliderSamples prepared, IReadOnlyList<SampleTiming>? timing,
+        CircleSampleResources resources, CircleSoundPolicy policy, ISamplePlaybackSink sink,
+        Action<SelectedCircleSample>? observer = null)
+    {
+        if (!ReferenceEquals(e.Parent, prepared.Parent)) throw new InvalidDataException("Slider sound source identity mismatch.");
+        SoundEventKind kind = e.Kind switch { SliderSoundKind.Head => SoundEventKind.SliderHead, SliderSoundKind.Tick => SoundEventKind.SliderTick,
+            SliderSoundKind.RepeatEdge => SoundEventKind.SliderRepeatEdge, _ => SoundEventKind.SliderAggregateEdge };
+        var tagged = new Tagged(sink, new(kind, e.Parent, e.Index, e.ScheduleIndex, e.Time));
+        if (e.Kind == SliderSoundKind.Head)
+        {
+            CircleSampleSelection.Request(prepared.Head, timing, -1, resources, policy, tagged, observer);
+            return;
+        }
+        float pan = (e.PresentationX / 512f - .5f) * .800000011920929f;
+        if (e.Kind == SliderSoundKind.Tick)
+        {
+            var info = Tick(prepared.Metadata, timing, e.Index);
+            CircleSampleSelection.Submit(e.Parent.Head, resources.ResolveTick(info.BaseSet, info.Index), 0,
+                info.Volume, pan, policy, tagged); // Dedicated mode1, no observer/floor/layers.
+        }
+        else
+        {
+            var info = Edge(e.Parent, prepared.Metadata, timing, policy, e.Index);
+            observer?.Invoke(info);
+            CircleSampleSelection.Standard(e.Parent.Head, info, pan, resources, policy, tagged);
+        }
+    }
+    private sealed class Tagged(ISamplePlaybackSink sink, SoundEventIdentity identity) : ISamplePlaybackSink
+    { public void Enqueue(SamplePlaybackRequest request) => sink.Enqueue(request with { Event = identity }); }
 }

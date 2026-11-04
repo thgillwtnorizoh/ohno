@@ -26,7 +26,7 @@ public sealed class WindowsCircleEffects : IDisposable
     private string? Failure => failure ?? prepared.Error ?? playback.Error;
     private bool disposed;
     public bool Enabled { get => playback.Enabled; set { if (!value) playback.Pause(); playback.Enabled = value; } }
-    public string Status => $"HitSounds {(Enabled ? "ON" : "OFF")} · {voices.Count}/{prepared.Samples.Count} resources decoded · {prepared.MissingLayers} unresolved circle layers · " +
+    public string Status => $"HitSounds {(Enabled ? "ON" : "OFF")} · {voices.Count}/{prepared.Samples.Count} resources decoded · {prepared.MissingLayers} unresolved circle layers · {prepared.Sliders.Count} discrete sliders (loops unavailable) · " +
         (settings.DefaultPackDirectory is null ? "no independent default pack" : "independent default pack configured") +
         $" · effect {settings.VolumeEffect}% / global {settings.VolumeUniversal}% · layered {settings.LayeredHitSounds} (explicit policy)" +
         (Failure is { } error ? " · " + error : "") +
@@ -103,8 +103,8 @@ public sealed class WindowsCircleEffects : IDisposable
     }
     public void Attach(CircleSession replacement)
     {
-        if (session is not null) session.PositiveCircleSound -= OnCircle;
-        session = replacement; session.PositiveCircleSound += OnCircle;
+        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; }
+        session = replacement; session.PositiveCircleSound += OnCircle; session.SliderSound += OnSlider;
     }
     private void OnCircle(CircleDefinition circle)
     {
@@ -125,6 +125,29 @@ public sealed class WindowsCircleEffects : IDisposable
         voice.Player.SpeedRatio = request.Factor; // Ordinary no-mod practice factor1; not native frequency equivalence.
         voice.Busy = true; voice.Player.Play();
     }
+    private void OnSlider(SliderSoundEvent sound)
+    {
+        if (disposed || prepared.Source.TimingError is not null) return;
+        if (!prepared.Sliders.TryGetValue(sound.Parent, out var data)) { failure = "Unprepared slider sound identity."; return; }
+        try
+        {
+            var sink = new SliderSink(playback, message => failure = message);
+            SliderSampleSelection.Request(sound, data, prepared.Source.Timing, prepared.Resources,
+                new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), sink);
+            if (sink.Requests == 0) failure = "Slider " + sound.Kind + " effect unavailable: missing resource or timing sample.";
+        }
+        catch (Exception e) { failure = "Slider effect unavailable: " + e.Message; }
+    }
+    private sealed class SliderSink(ISamplePlaybackSink next, Action<string> report) : ISamplePlaybackSink
+    {
+        public int Requests { get; private set; }
+        public void Enqueue(SamplePlaybackRequest request)
+        {
+            Requests++;
+            if (request.Handle == 0) report("Slider effect handle0 is invalid; no playback.");
+            next.Enqueue(request);
+        }
+    }
     private void StopVoices()
     {
         foreach (var pool in voices.Values) foreach (var voice in pool)
@@ -138,7 +161,7 @@ public sealed class WindowsCircleEffects : IDisposable
     {
         if (disposed) return;
         disposed = true;
-        if (session is not null) session.PositiveCircleSound -= OnCircle;
+        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; }
         session = null; playback.Dispose();
         foreach (var pool in voices.Values) foreach (var voice in pool) Close(voice);
         voices.Clear();

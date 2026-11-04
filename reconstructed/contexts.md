@@ -785,3 +785,47 @@ UNVERIFIED. Optional independent pack/loose-map/skin setup and engineering input
 limits/unsupported short timing/native short-create states documented in README.
 Expected-head non-force main publication, no permanent branch or history rewrite.
 Stop after R11; no new milestone/research/QA or deferred scoring investigation.
+
+## R12 — Original-Derived Discrete Slider HitSounds
+
+Work2,2026-11-04 Asia/Bangkok. Base verified latest origin/main
+3c263ec1258e15b78ed993a47508cbfebaf4b300. Read canonical AGENTS/standing contract,
+both journals, E039 report/full parsed JSON (1258274 bytes/SHA2562a45c9a2d6565246cfe9a627f6ef96929f7c36cd81fd4c9780e8d5375ad58a6e),
+E015–E018/E021–E023 and E037/E038 published research/evidence, R11/QA09, actual
+parser/session/resource/Windows/renderer/generator/CI. No physical RTK.md present.
+No original archive/binary/sample extraction, original checker/RE tool, original
+or reconstructed game/window/OS input, debugger/OBS/listening/E020 execution.
+
+CONFIRMED STATIC E039 consumes reconstructed raw parent/edge metadata; independent
+head base/addition copy (own index/volume/custom defaults); positive head sound
+before64; separate latest-prefix audio index; dedicated tick mode1/deadline+2;
+edge subset/end+5/version/null/list selection; positive aggregate final edge before
+grading/accounting. Fresh/reset audio index0 and reached pre-start−1 retained.
+No checkpoint result/label is used as audio progress. E033/E034/E035/E036 arithmetic,
+C01 recovery and HistoricalR09/E036FreshOrdinary split unchanged. Calibration silent.
+New event provenance separates circle/head/tick/repeat/aggregate requests. R11
+standard provider/cache/volume/rate/generation components reused; tick table opt-in
+keeps legacy circle-only Prepare behavior. Parent custom loader flag retained as
+metadata, no direct parent custom request or continuous voice. Ambiguous custom
+cache collisions and unsupported fresh/registered identity explicitly excluded.
+
+ENGINEERING parent pan uses renderer's last-published actual drawn ball X (initial
+head X), not new target/pointer/endpoint; native same-update identity/order unverified.
+Running host numeric state1 explicit. Omitted continuing M146b/M146c helpers and
+native shared-channel effects/errors are a documented boundary, not fake loops.
+ExistingWPF async voices/pause/generation/error containment/song clock preserved.
+Malformed sound metadata unavailable while geometry/gameplay remain playable;
+1–16 traversal/local-root/resource/count safety limits retained. Short original
+sample-create/timing globals, archive/editor/reuse/native/audio precision unsupported.
+
+New Discrete R12 independently authored mixed fixture/button and companion tick-only
+generator (3 resources) preserve old fixtures and unchanged12-circle generator.
+New separate R12DevelopmentChecks exercise actual production with injected providers/
+recording sinks, conditional S controls and score/HP/lifecycle preservation. Current
+README/new R12 report and minimal existing Windows CI path/step updated; preserve
+all862 independent QA and all R06–R11 development groups. Source/diff/preservation
+checks only initially, no local SDK/build claim. Windows gate PENDING at source
+publication; actual SHA/run/counts append after execution. No human-audible result,
+full48 original cases or continuous S44–S47 execution claimed. Main expected-head
+non-force publication, no permanent branch or history rewrite. Stop after R12;
+no QA10/R13/E040/spinner audio/framework/lazer or deferred scoring investigation.
