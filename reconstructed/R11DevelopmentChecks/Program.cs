@@ -87,7 +87,8 @@ try
     Pass("ENGINEERING optional hook failure containment preserves result/accounting");
     foreach (int set in new[] { 1,2,3 }) foreach (int bit in new[] { 1,2,4,8 }) foreach (int index in new[] { 0,1,2 })
         Eq(r.Key(bit,set,index), (set==1?"normal":set==2?"soft":"drum")+"-"+CircleSampleResources.LayerName(bit)+(index==2?"2":""));
-    Pass("K07–K12 36 standard naming controls, index1 unsuffixed and index2 suffix2");
+    Eq(r.Key(1,-1,7),"all-hitnormal7"); Eq(r.Key(1,0,7),"none-hitnormal7"); Eq(r.Key(1,17,7),"17-hitnormal7");
+    Pass("K07–K12 36 standard naming controls, named All/None and numeric enum keys, index1 unsuffixed and index2 suffix2");
     var a = Resources(); a.Map.Data["normal-hitnormal.wav"] = Bytes(); Eq(a.R.Standard(1,1,0),-1); Eq(a.Map.Reads.Count,0);
     a.Map.Data["normal-hitnormal.mp3"] = Bytes(); a.Map.Data["normal-hitnormal.ogg"] = Bytes(); Check(a.R.Standard(1,1,1)>0); Eq(string.Join(',',a.Map.Reads),"normal-hitnormal.wav");
     Pass("K10/K11/K27 index0 skips map; standard first nonnull wav stops probing");

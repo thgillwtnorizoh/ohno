@@ -748,3 +748,13 @@ at source publication, actual source/run/results append after execution. No huma
 playback claim or new independent QA campaign. Expected-head non-force main
 publication only, no permanent branch/rewrite. Stop after R11; no QA09/R12/E039,
 framework/lazer work or deferred scoring-discrepancy investigation.
+
+R11 first source5c07743ffdd37ed65120ec77f79fa39931c2d06f passed Windows
+run41792253987/job126448087167: WPF zero warnings/errors; all628 independent QA,
+all historical groups, new R11 32 groups and twelve independent generated WAV
+headers passed. Subsequent bounded static review noticed E037's named SampleSet
+All−1 needed `all` rather than the generic numeric enum string in dynamic keys.
+Corrected that pure naming arm and added literal All/None/unknown-numeric checks
+inside the existing naming group; no broader admission/scoring behavior changed.
+A second full gate is required for this final source. First passing run is retained
+as evidence, not replaced. No listening/native/gameplay-window execution.

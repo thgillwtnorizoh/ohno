@@ -49,7 +49,7 @@ public sealed class CircleSampleResources
     { this.map = map; this.skin = skin; this.defaults = defaults; this.loader = loader; this.policy = policy; Caches = caches ?? new(); }
     public static string LayerName(int bit) => bit switch
     { 1 => "hitnormal", 4 => "hitfinish", 2 => "hitwhistle", 8 => "hitclap", _ => throw new ArgumentOutOfRangeException(nameof(bit)) };
-    private string SetName(int set) => (set switch { 0 => "None", 1 => "Normal", 2 => "Soft", 3 => "Drum", _ => set.ToString(policy.Culture) }).ToLower(policy.Culture);
+    private string SetName(int set) => (set switch { -1 => "All", 0 => "None", 1 => "Normal", 2 => "Soft", 3 => "Drum", _ => set.ToString(policy.Culture) }).ToLower(policy.Culture);
     public string Key(int bit, int set, int index = 1) => SetName(set) + "-" + LayerName(bit) + (index > 1 ? index.ToString(policy.Culture) : "");
     private static int Row(int bit) => bit switch { 1 => 0, 2 => 1, 4 => 2, 8 => 3, _ => throw new ArgumentOutOfRangeException(nameof(bit)) };
     private static int Bank(int set) => set is 0 or 2 ? 1 : set == 3 ? 2 : 0;
