@@ -1,0 +1,1085 @@
+{
+  "authority_sha256": "2a45c9a2d6565246cfe9a627f6ef96929f7c36cd81fd4c9780e8d5375ad58a6e",
+  "limits": "E039 cases remain static predictions; no original-runtime observations. Mapping is finite analogue coverage, not assertion of all48 execution.",
+  "cases": [
+    {
+      "original": {
+        "conditional_request_sequence": "tick(0,query2502), tick(1,query3002); final schedule item2 is not scanned",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S01",
+        "initial_conditions": "E016 one-span S2000 E3500 times2500/3000/3464, tracking true, audio state1; reached updates2500,3000",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M14 independently derived schedule R1",
+        "M14 independently derived schedule R2",
+        "M14 independently derived schedule R3",
+        "A04 inclusive range/due time4000",
+        "A04 inclusive range/due time4499",
+        "A04 inclusive range/due time4500",
+        "A04 inclusive range/due time4501",
+        "A04 inclusive range/due time5000",
+        "A04 inclusive range/due time5464",
+        "A04 inclusive range/due time5500",
+        "A04 inclusive range/due time5501"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "one inherited circle hook each, before raw64 parent handoff; own start+5 timing",
+        "evidence": [
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba"
+        ],
+        "id": "S02",
+        "initial_conditions": "Positive embedded head raw1024/512/256 in separate fresh controls",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "H01 request uses own head X despite parent pan512",
+        "H02 stored head start+5 despite late hit time",
+        "I01 head quality delta0",
+        "I01 head quality delta50",
+        "I01 head quality delta100",
+        "I01 head quality delta150",
+        "I01 head quality delta-50",
+        "I01 head quality delta-100",
+        "I01 head quality delta-150"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "no M1884 positive sound hook; later tracking audio is independent",
+        "evidence": [
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba"
+        ],
+        "id": "S03",
+        "initial_conditions": "Embedded head stored raw-131072, wrapper returns-262144",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I01 head quality delta0",
+        "I01 head quality delta50",
+        "I01 head quality delta100",
+        "I01 head quality delta150",
+        "I01 head quality delta-50",
+        "I01 head quality delta-100",
+        "I01 head quality delta-150",
+        "I11 missed head positive components aggregate",
+        "I12 zero aggregate no final sound"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "component raw8 first; later tick0; neither call is the other producer",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S04",
+        "initial_conditions": "E016 gameplay success j0 at2500, tracking true, eligible M1449",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I02 actual first component then sound order"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "raw-262144 can precede tick0 at query2502",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S05",
+        "initial_conditions": "E016 late entry2501 fails old deadline2500 but leaves tracking true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I03 late entry failure still emits tick"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "later M1449 tracking false suppresses discrete request and records due index",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S06",
+        "initial_conditions": "Due checkpoint, follow false and pending count<N causes successful leave",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A08 tracking false consumes then reentry silent",
+        "I07 lost repeat consumed no replay on reentry"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "tick0 can be requested with no component consumption on that continuation",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S07",
+        "initial_conditions": "Tracking dispatch skipped; retained tracking true; M1449 reached at2500",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I05 audio progression without gameplay consumption",
+        "I06 gameplay consumption with audio state0"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "only tick1/query3002; tick0 skipped; audio index1",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S08",
+        "initial_conditions": "E016 jump to3100 with audio index-1, tracking true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A07 latest due skips earlier sounds",
+        "I08 latest-only jump independent from one gameplay entry"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "loop continuation remains reached; no new discrete request",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S09",
+        "initial_conditions": "Repeat reached3100 without another due entry",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A06 same-time no duplicate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed",
+      "partial_limit": "Only absence of repeated discrete request; loop continuation omitted."
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "edge1/query3505; independent of whether component raw64 describes current item",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S10",
+        "initial_conditions": "E021 two spans times2500/3000/3500/4000/4500/4964; timely tracking at3500",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A14 two spans reversal quotient",
+        "I09 terminalFalse and separate aggregate",
+        "I09 terminalTrue and separate aggregate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "edge1 can still be requested by M1449",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S11",
+        "initial_conditions": "E021 late entry3501; repeat component fails but tracking remains true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I04 audio repeat despite failed interior result"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "no edge request; audio index2 consumed; reentry3501 does not replay edge1",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S12",
+        "initial_conditions": "E021 released at3500, tracking false by M1449",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A16 reversal consumed while tracking lost",
+        "I07 lost repeat consumed no replay on reentry"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "only edge1, not earlier ticks0/1",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S13",
+        "initial_conditions": "E021 jump3500 from audio-1 while tracking true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A14 two spans reversal quotient"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "only tick3/query4002, not missed repeat edge1",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S14",
+        "initial_conditions": "E021 jump4000 from audio-1 while tracking true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A15 jump across reversal picks later tick",
+        "I08 latest-only jump independent from one gameplay entry"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "no new discrete M1449 sound; scan latest index4; gameplay128/-524288 is not an audio identity",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S15",
+        "initial_conditions": "E021 stable4964 before parent end5000, audio index already4; final component succeeds or fails",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A13 only final list entry never produces audio",
+        "I09 terminalFalse and separate aggregate",
+        "I09 terminalTrue and separate aggregate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "cleanup queue then M1466(false edge2)/query5005, observer then standard layers",
+        "evidence": [
+          "M28e4:005d-0079",
+          "M1465:0000-0052",
+          "M1466:0000-0028",
+          "M146a:00d7-01e9"
+        ],
+        "id": "S16",
+        "initial_conditions": "Parent aggregation reached5000, q>0, edgeSounds length3",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I09 terminalFalse and separate aggregate",
+        "I09 terminalTrue and separate aggregate",
+        "I11 missed head positive components aggregate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "cleanup reached, positive edge hook skipped; no aggregate edge request",
+        "evidence": [
+          "M28e4:005d-0079",
+          "M1465:0000-0052",
+          "M1466:0000-0028",
+          "M146a:00d7-01e9"
+        ],
+        "id": "S17",
+        "initial_conditions": "Parent aggregation q0 with head miss and no successes",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I12 zero aggregate no final sound"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "aggregate edge request still reached; pending components are not drained",
+        "evidence": [
+          "M28e4:005d-0079",
+          "M1465:0000-0052",
+          "M1466:0000-0028",
+          "M146a:00d7-01e9"
+        ],
+        "id": "S18",
+        "initial_conditions": "Parent q>0 from successful head alone, all components pending at end",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I10 positive aggregate with pending entries no drain"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "aggregate edge request can still occur despite final failure",
+        "evidence": [
+          "M28e4:005d-0079",
+          "M1465:0000-0052",
+          "M1466:0000-0028",
+          "M146a:00d7-01e9"
+        ],
+        "id": "S19",
+        "initial_conditions": "Final component fails but aggregate q>0",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "I09 terminalFalse and separate aggregate",
+        "I09 terminalTrue and separate aggregate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "times2500/3000/3500/4000/4500/5000/5500/6000/6464; tick0,tick1,edge1,tick3,tick4,edge2,tick6,tick7; aggregate edge3 at6500",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S20",
+        "initial_conditions": "Three spans, E016 finite length300/rate200/spacing100; timely tracked updates at each nonfinal deadline and completion6500",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A17 three span complete discrete sequence",
+        "I00 three traversal production sequence and aggregate"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "head stored2/base1/add2; edge1 mask4/base2/add3; aggregate edge2 mask8/base3/add1",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S21",
+        "initial_conditions": "R2 edgeSounds supplied[2,4,8], parent sound0, edgeSets1:2|2:3|3:1, version14",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M13 format13 edge0 inheritance and head fields",
+        "M13 format14 edge0 inheritance and head fields",
+        "E01 distinct edge metadata0",
+        "E01 distinct edge metadata1",
+        "E01 distinct edge metadata2"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "simple mode true; parent sound/base/add are used; edge-set lists not selected",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S22",
+        "initial_conditions": "Missing or empty EdgeSounds; supplied EdgeSets otherwise valid",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M02 missing EdgeSounds simple",
+        "M02 empty EdgeSounds simple",
+        "M08 EdgeSets without sounds retained but ignored",
+        "M09 empty sounds with EdgeSets stays simple"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "parser pads to[4,2,2]; short EdgeSets padded with0; excess EdgeSets trimmed",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S23",
+        "initial_conditions": "R2 nonempty short EdgeSounds[4] with parent sound2",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M03 explicit list raw+1 padding R1",
+        "M03 explicit list raw+1 padding R2",
+        "M03 explicit list raw+1 padding R3",
+        "M04 excess arrays truncated independently",
+        "M07 missing EdgeSets padded zero"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "TryParse result discarded; element0; constructor head normalizes bits2/4/8",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S24",
+        "initial_conditions": "Malformed EdgeSounds element bad, otherwise nonempty R2 list",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M05 EdgeSounds TryParse bad|4|8",
+        "M05 EdgeSounds TryParse |4|8",
+        "M05 EdgeSounds TryParse 2147483648|4|8",
+        "M05 EdgeSounds TryParse -2|0|31"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "original index/conversion exception; row catch continues only when parser arg3 true; otherwise rethrows",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S25",
+        "initial_conditions": "EdgeSets entry lacks colon second item, or non-Int32 selector",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M06 invalid EdgeSets retained unavailable 1",
+        "M06 invalid EdgeSets retained unavailable a:2",
+        "M06 invalid EdgeSets retained unavailable 1:b",
+        "M06 invalid EdgeSets retained unavailable 2147483648:0",
+        "M06 invalid EdgeSets retained unavailable 1:2|"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "version13 head chooses parent3; version14 chooses timing2; nonhead base0 inherits timing in both",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S26",
+        "initial_conditions": "Explicit edge mode, head edge base0, parent base3, timing base2",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "M13 format13 edge0 inheritance and head fields",
+        "M13 format14 edge0 inheritance and head fields"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "edge info index7 volume25; parent override fields are not read by M146a",
+        "evidence": [
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9"
+        ],
+        "id": "S27",
+        "initial_conditions": "Edge1 with timing index7 volume25, parent index9 volume90",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "T05 explicit base/add versus timing index/volume",
+        "E02 separate prepared edge timing0",
+        "E02 separate prepared edge timing1",
+        "E02 separate prepared edge timing2",
+        "E02 separate prepared edge timing-1"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "slidertick Soft index7 volume0; no layer expansion, observer or standard floor",
+        "evidence": [
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e"
+        ],
+        "id": "S28",
+        "initial_conditions": "Tick j0/querytimes0+2, base override0/addition3, timing base2 index7 volume0",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "T01 dedicated tick volume0",
+        "T01 dedicated tick volume1",
+        "T01 dedicated tick volume7",
+        "T01 dedicated tick volume8",
+        "T01 dedicated tick volume23",
+        "T01 dedicated tick volume99",
+        "T01 dedicated tick volume100",
+        "T05 explicit base/add versus timing index/volume",
+        "T06 zero selectors inherit tick point"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "base defaults Normal1 if zero, index0 volume100; then M44a2/observer/standard",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls",
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9",
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e",
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba"
+        ],
+        "id": "S29",
+        "initial_conditions": "No timing record; reached edge selector",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "E03 null timing edge defaults distinct from head"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "unguarded timing dereference can throw; no guaranteed discrete submission",
+        "evidence": [
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e"
+        ],
+        "id": "S30",
+        "initial_conditions": "No timing record; reached tick selector",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "T07 no timing explicitly unsupported"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "each query uses own prepared timestamp; full supplied-order timing rule applies; not hit timestamp",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls",
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9",
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e",
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba"
+        ],
+        "id": "S31",
+        "initial_conditions": "Timing change at tick deadline+2 versus edge boundary+5",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "T03 timing deadline+1",
+        "T03 timing deadline+2",
+        "T03 timing deadline+3",
+        "T04 timing source order not maximum-time search",
+        "E02 separate prepared edge timing0",
+        "E02 separate prepared edge timing1",
+        "E02 separate prepared edge timing2",
+        "E02 separate prepared edge timing-1",
+        "H02 stored head start+5 despite late hit time"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "parent custom field stored; head no filename/index/volume copy; parent discrete paths do not branch on custom handle",
+        "evidence": [
+          "M24b9:0000-006d",
+          "M3b15 (E038)",
+          "M3b31:0000-00c9",
+          "M3b36:01c1-021e",
+          "E038 provider/cache contract"
+        ],
+        "id": "S32",
+        "initial_conditions": "Parent custom filename accepted, resource returns valid handle or0",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "R17 no direct parent custom branch",
+        "L13 parent custom loaded separately from discrete samples"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "same direct standard/tick selectors; cache collision/provider/native effects remain conditional",
+        "evidence": [
+          "M24b9:0000-006d",
+          "M3b15 (E038)",
+          "M3b31:0000-00c9",
+          "M3b36:01c1-021e",
+          "E038 provider/cache contract"
+        ],
+        "id": "S33",
+        "initial_conditions": "Same preparation with custom lookup-1/missing",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "R17 no direct parent custom branch"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "M24b9 passes loop=true to M3b15; starts-at0 or tick substring fails this special loop predicate",
+        "evidence": [
+          "M24b9:0000-006d",
+          "M3b15 (E038)",
+          "M3b31:0000-00c9",
+          "M3b36:01c1-021e",
+          "E038 provider/cache contract"
+        ],
+        "id": "S34",
+        "initial_conditions": "Parent custom name with IndexOf(slider)>0 and IndexOf(tick)==-1",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "L13 parent custom loaded separately from discrete samples"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed",
+      "partial_limit": "Reached positive custom-loop-flag example only; no loop producer or all filename predicate boundaries claimed."
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "parent discrete pan-.4/0/.4; loop pan those values*.4; head pan-.2; native output unobserved",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls",
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9",
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e",
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba",
+          "M1467:0000-0022",
+          "M146b:0039-0049",
+          "M24bd (E037)"
+        ],
+        "id": "S35",
+        "initial_conditions": "Artificial parent ball X0/256/512; head own X128",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "E10 stored parent pan X0",
+        "E10 stored parent pan X64",
+        "E10 stored parent pan X256",
+        "E10 stored parent pan X448",
+        "E10 stored parent pan X512",
+        "H01 request uses own head X despite parent pan512",
+        "I13 presentation publication beats new target/pointer",
+        "B03 renderer publishes map ball before screen conversion"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed",
+      "partial_limit": "Stored parent/head pan operands; loop pan omitted; renderer binding source-only."
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "-1/miss falls back F2375[row0,bank1,plane0];0/valid retained",
+        "evidence": [
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e"
+        ],
+        "id": "S36",
+        "initial_conditions": "Dynamic tick key soft-slidertick7 cached-1 versus0 versus valid",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "R02 dynamic tick bank1",
+        "R02 dynamic tick bank2",
+        "R02 dynamic tick bank3",
+        "R03 dynamic cache handle-1",
+        "R03 dynamic cache handle0",
+        "R03 dynamic cache handle8765",
+        "R04 absent dynamic fallback no file I/O"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "M3b31 returnsnull; no queued player; audio index was already advanced",
+        "evidence": [
+          "M24b9:0000-006d",
+          "M3b15 (E038)",
+          "M3b31:0000-00c9",
+          "M3b36:01c1-021e",
+          "E038 provider/cache contract"
+        ],
+        "id": "S37",
+        "initial_conditions": "Eligible tracking update, standard/tick selected handle-1",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "R15 entirely unavailable tick missing",
+        "L07 prepared requests perform no provider I/O"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "player request can queue; later sample validity fails; do not equate0 with absent selection",
+        "evidence": [
+          "M24b9:0000-006d",
+          "M3b15 (E038)",
+          "M3b31:0000-00c9",
+          "M3b36:01c1-021e",
+          "E038 provider/cache contract",
+          "M140b/M1407 (E037 sample validity)"
+        ],
+        "id": "S38",
+        "initial_conditions": "Same with selected handle0",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "R16 handle0 submitted with tag",
+        "L04 invalid backend handle0",
+        "L04 invalid backend handle-1"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "index can remain advanced without a completed request; no local rollback",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S39",
+        "initial_conditions": "Native/observer/resource/scheduler helper throws after audio index store0131",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "E09 observer before edge requests",
+        "I15 callback failure retains progressed index and gameplay"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed",
+      "partial_limit": "Controlled managed callback exception and index persistence; native/helper exception equivalence not claimed."
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "audio index set-1; discrete and loop-start branch skipped; upstream pause may prevent whole update",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S40",
+        "initial_conditions": "M1449 outside [start,end] or numeric audio state!=1",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A04 inclusive range/due time4000",
+        "A04 inclusive range/due time4499",
+        "A04 inclusive range/due time4500",
+        "A04 inclusive range/due time4501",
+        "A04 inclusive range/due time5000",
+        "A04 inclusive range/due time5464",
+        "A04 inclusive range/due time5500",
+        "A04 inclusive range/due time5501",
+        "A05 numeric audio state-1",
+        "A05 numeric audio state0",
+        "A05 numeric audio state2",
+        "I06 gameplay consumption with audio state0"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "no discrete replay; loop continuation can resume independently",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S41",
+        "initial_conditions": "Tracking false update consumes latest due index then reentry without new deadline",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A08 tracking false consumes then reentry silent",
+        "A09 false latest consumes multiple deadlines",
+        "A16 reversal consumed while tracking lost",
+        "I07 lost repeat consumed no replay on reentry"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "audio index0, not-1; direct first-index0 update does not pass latest>old gate",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls",
+          "M1431:0018-001e",
+          "M142d fresh field defaults"
+        ],
+        "id": "S42",
+        "initial_conditions": "Fresh constructor or M1431 reset, no pre-start update",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A01 fresh0 and first due skip",
+        "A02 explicit Reset0"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "outside writes-1 and may allow repeated due sound; not proof of full native restart behavior",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls"
+        ],
+        "id": "S43",
+        "initial_conditions": "Rewind outside range then return into due range; update reached",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "A10 outside rewind permits repeat"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "M146b->M3b33 reached even with no discrete event; uses global loop channels",
+        "evidence": [
+          "M146b:0000-004e",
+          "M3b33:0000-00c0",
+          "M3b20:0000-0149",
+          "M3b9c/M3ba1/M3ba2/M3ba8",
+          "M0653:0000-0019"
+        ],
+        "id": "S44",
+        "initial_conditions": "Tracking true in eligible range before next deadline",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [],
+      "coverage": "UNSUPPORTED CONTINUOUS SUBSYSTEM"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "newer forwards parent sets; older forwards zeros; current global bank/index and LayeredHitSounds still apply",
+        "evidence": [
+          "M146b:0000-004e",
+          "M3b33:0000-00c0",
+          "M3b20:0000-0149",
+          "M3b9c/M3ba1/M3ba2/M3ba8",
+          "M0653:0000-0019"
+        ],
+        "id": "S45",
+        "initial_conditions": "Version>=14 loop base/add overrides versus version<14",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [],
+      "coverage": "UNSUPPORTED CONTINUOUS SUBSYSTEM"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "M3b53 queues M3ba8 native ChannelPause on global2354/2355; later eligible call can schedule starts again",
+        "evidence": [
+          "M146b:0000-004e",
+          "M3b33:0000-00c0",
+          "M3b20:0000-0149",
+          "M3b9c/M3ba1/M3ba2/M3ba8",
+          "M0653:0000-0019"
+        ],
+        "id": "S46",
+        "initial_conditions": "Completion cleanup or inactive M1449 branch invokes M146c",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [],
+      "coverage": "UNSUPPORTED CONTINUOUS SUBSYSTEM"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "M0653 queues stop after candidate updates; callback/native timing unobserved",
+        "evidence": [
+          "M146b:0000-004e",
+          "M3b33:0000-00c0",
+          "M3b20:0000-0149",
+          "M3b9c/M3ba1/M3ba2/M3ba8",
+          "M0653:0000-0019"
+        ],
+        "id": "S47",
+        "initial_conditions": "Ordinary manager update, F136e false and native loop state1",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [],
+      "coverage": "UNSUPPORTED CONTINUOUS SUBSYSTEM"
+    },
+    {
+      "original": {
+        "conditional_request_sequence": "disabled Finish100,Whistle85,Clap85; enabled Normal80 then same three layers; shared E037 request order",
+        "evidence": [
+          "M1449:00b8-0180,0216-022b",
+          "M146f:0262-0382",
+          "E016/E021/E022 producer controls",
+          "M28f7:166f-1688,17cd-1aa4,1cfa-1d03",
+          "M142d:009e-00a0,0131-0171",
+          "M48e0:001c-0082",
+          "M146a:0000-01e9",
+          "M1469:0013-0081",
+          "M3b35:0000-002b",
+          "M3b36:0004-0006,0082-008f,0133-015d,01c1-021e",
+          "M143a:0032-0059",
+          "M48e0:0055-0082",
+          "M351d:0001-0012",
+          "M1884:0076-0099",
+          "M2295:01a2-01ba",
+          "M44a2/M3b32 (E037 exact augmentation and layer order/volumes)"
+        ],
+        "id": "S48",
+        "initial_conditions": "Standard edge mask14 at volume100, layering augmentation disabled/enabled with other gates satisfied",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Reached original gates; provider/native/scheduler/helper return and interleavings; no audible result"
+      },
+      "qa10_cases": [
+        "E07 mask0 layeringFalse",
+        "E07 mask1 layeringFalse",
+        "E07 mask2 layeringFalse",
+        "E07 mask4 layeringFalse",
+        "E07 mask8 layeringFalse",
+        "E07 mask14 layeringFalse",
+        "E07 mask15 layeringFalse",
+        "E07 mask32 layeringFalse",
+        "E07 mask0 layeringTrue",
+        "E07 mask1 layeringTrue",
+        "E07 mask2 layeringTrue",
+        "E07 mask4 layeringTrue",
+        "E07 mask8 layeringTrue",
+        "E07 mask14 layeringTrue",
+        "E07 mask15 layeringTrue",
+        "E07 mask32 layeringTrue",
+        "E08 standard edge volume0",
+        "E08 standard edge volume1",
+        "E08 standard edge volume9",
+        "E08 standard edge volume23",
+        "E08 standard edge volume99"
+      ],
+      "coverage": "FINITE COMPONENT ANALOGUE; original-runtime and native operands not executed"
+    }
+  ]
+}

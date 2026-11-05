@@ -1,0 +1,27 @@
+Created 12 independent PCM WAV practice tones in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\AC\Temp\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\a. No audio was played.
+{
+  "SkinSamples": true,
+  "SkinDirectory": null,
+  "VolumeEffect": 80,
+  "Enabled": true,
+  "LayeredHitSounds": true,
+  "VolumeUniversal": 100,
+  "SkinName": "Default",
+  "DefaultPackDirectory": "C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Packages\\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\\AC\\Temp\\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\\a"
+}
+R12 tick pack: 3 independent PCM WAV files written in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\AC\Temp\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\a; no playback.
+Created 12 independent PCM WAV practice tones in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\AC\Temp\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\b. No audio was played.
+{
+  "SkinSamples": true,
+  "SkinDirectory": null,
+  "VolumeEffect": 80,
+  "Enabled": true,
+  "LayeredHitSounds": true,
+  "VolumeUniversal": 100,
+  "SkinName": "Default",
+  "DefaultPackDirectory": "C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Packages\\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\\AC\\Temp\\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\\b"
+}
+R12 tick pack: 3 independent PCM WAV files written in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{0e080b5c-b84b-4aa7-aa55-e08624eae227}\AC\Temp\ohno-qa10-packs-445631b8539c4f2fa6bd7470b26fc9f6\b; no playback.
+C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa10\Headless\AssetsBindings.cs(20,130): error CS8600: Converting null literal or possible null value to non-nullable type. [C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa10\Headless\QA10.Headless.csproj]
+
+The build failed. Fix the build errors and run again.

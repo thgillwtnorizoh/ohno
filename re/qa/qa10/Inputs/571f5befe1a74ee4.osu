@@ -1,0 +1,20 @@
+osu file format v14
+[General]
+Mode:0
+[Metadata]
+Title:QA10 independent input
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[TimingPoints]
+0,500,4,1,1,80,1,0
+4005,500,4,2,7,23,0,0
+4100,500,4,3,9,90,0,0
+[Events]
+
+[HitObjects]
+64,192,4000,2,0,L|364:192,2,300,2|4|8,0:0|0:0|0:0,3:1:9:91:private.wav

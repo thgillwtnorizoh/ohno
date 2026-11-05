@@ -1,0 +1,5 @@
+# Preserve exact input, failed-run, executed-result and source-snapshot bytes.
+Inputs/*.osu -text
+verification/*.log -text
+verification/*.json -text
+verification/initial-harness/* -text

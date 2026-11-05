@@ -1,0 +1,27 @@
+Created 12 independent PCM WAV practice tones in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\AC\Temp\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\a. No audio was played.
+{
+  "VolumeEffect": 80,
+  "SkinDirectory": null,
+  "VolumeUniversal": 100,
+  "LayeredHitSounds": true,
+  "Enabled": true,
+  "DefaultPackDirectory": "C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Packages\\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\\AC\\Temp\\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\\a",
+  "SkinSamples": true,
+  "SkinName": "Default"
+}
+R12 tick pack: 3 independent PCM WAV files written in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\AC\Temp\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\a; no playback.
+Created 12 independent PCM WAV practice tones in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\AC\Temp\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\b. No audio was played.
+{
+  "VolumeEffect": 80,
+  "SkinDirectory": null,
+  "VolumeUniversal": 100,
+  "LayeredHitSounds": true,
+  "Enabled": true,
+  "DefaultPackDirectory": "C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Packages\\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\\AC\\Temp\\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\\b",
+  "SkinSamples": true,
+  "SkinName": "Default"
+}
+R12 tick pack: 3 independent PCM WAV files written in C:\Users\Hjuiujerrjj\AppData\Local\Packages\sandbox.{1432e833-7f23-409d-a377-1716ff04ae46}\AC\Temp\ohno-qa10-packs-713fb5821a7c437b83dfcbd821418756\b; no playback.
+C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\qa\qa10\Headless\QA10.Headless.csproj : error NU1900: Warning As Error: Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.
+
+The build failed. Fix the build errors and run again.

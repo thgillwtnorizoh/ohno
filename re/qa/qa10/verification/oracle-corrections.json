@@ -1,0 +1,15 @@
+{
+  "initial_execution": "local-third.json",
+  "initial_sha256": "2f136419b036d804d0ab8c332602ccf59b19e516253140cb2fca03a24a85defc",
+  "initial_result": {"executed":227,"passed":224,"failed":3},
+  "production_changed": false,
+  "corrections": [
+    {"case":"E02 separate prepared edge timing-1","incorrect":"Explicit edge mode e=-1 assumed an end-timing result without list access failure.","authority":"E039 section D M146a:00d7-0121 selects end timing;0141-01ac has no negative-index repair.","correct":"Assert explicit-list ArgumentOutOfRangeException; separately use simple mode e=-1 to verify end+5 timing."},
+    {"case":"I15 callback failure retains progressed index and gameplay","incorrect":"Last ledger event after Advance assumed checkpoint raw8.","authority":"E039 S04/M146f precedes later update; production Advance performs checkpoint, audio, then overdue head timeout. Missing head was never evaluated in this input.","correct":"Inside tick callback assert raw8 and stored audio index before controlled throw. After Advance assert checkpoint RawResult8 and later SliderHead raw-262144. Successful checkpoint count remains1."},
+    {"case":"B03 renderer publishes map ball before screen conversion","incorrect":"Literal audit searched for var ballMap; source declares Vector2 ballMap.","authority":"PlayfieldView.cs lines252-254 at pinned source; source-only audit.","correct":"Search actual typed declaration and require declaration < PublishSliderPresentationX < ToScreen. No renderer execution is claimed."}
+  ],
+  "setup_attempts": [
+    {"log":"local-first.log","assertions_executed":0,"cause":"NU1900 unavailable NuGet audit endpoint; harness has no external packages; disable audit only in new QA10 project."},
+    {"log":"local-second.log","assertions_executed":0,"cause":"CS8600 in new QA10 asset loop; Path.GetFileName nullability corrected. Production unchanged."}
+  ]
+}
