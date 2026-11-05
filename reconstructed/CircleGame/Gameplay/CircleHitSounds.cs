@@ -46,6 +46,7 @@ public sealed class CircleSampleResources
     private readonly ISampleLoader loader;
     private readonly SampleResourcePolicy policy;
     public SampleCaches Caches { get; }
+    private readonly int[,,] loopTable = new int[2, 3, 3];
     private readonly int[,] tickTable = new int[3, 3];
     private readonly int[,,] table = new int[4, 3, 3]; // Original fresh cells0, not prepared missing -1.
     public CircleSampleResources(ISampleFiles map, ISampleFiles? skin, IDefaultSamples defaults,
@@ -61,7 +62,7 @@ public sealed class CircleSampleResources
     public int Standard(int bit, int set, int index, int stages = 7) => LoadStandard(LayerName(bit), set, index, stages);
     public string TickKey(int set, int index = 1) => SetName(set) + "-slidertick" + (index > 1 ? index.ToString(policy.Culture) : "");
     public int StandardTick(int set, int index, int stages = 7) => LoadStandard("slidertick", set, index, stages);
-    private int LoadStandard(string family, int set, int index, int stages)
+    private int LoadStandard(string family, int set, int index, int stages, bool loop = false)
     {
         if (policy.EarlyProcessGate) return -1;
         string baseKey = SetName(set) + "-" + family, mapKey = baseKey + (index > 1 ? index.ToString(policy.Culture) : "");
@@ -76,7 +77,7 @@ public sealed class CircleSampleResources
                     byte[]? bytes = map.Read(mapKey + ext);
                     if (bytes is null && policy.Format < 5) bytes = map.Read(family + ext);
                     if (bytes is null) continue;
-                    handle = MapLoad(mapKey + ext, bytes); break; // Stop on bytes, even load -1/0.
+                    handle = MapLoad(mapKey + ext, bytes, loop); break; // Stop on bytes, even load -1/0.
                 }
                 Caches.Map[mapKey] = handle;
             }
@@ -93,7 +94,7 @@ public sealed class CircleSampleResources
                     string name = baseKey + ext;
                     if (!skin.Exists(name)) continue;
                     byte[]? bytes = skin.Read(name);
-                    handle = bytes is null ? -1 : loader.Load(new(name, bytes, SampleOrigin.Skin, SampleLoadMode.SkinFile));
+                    handle = bytes is null ? -1 : loader.Load(new(name, bytes, SampleOrigin.Skin, SampleLoadMode.SkinFile) { Loop = loop });
                     break; // First existing path ends this provider, even decoder/load failure.
                 }
                 Caches.Skin[baseKey] = handle;
@@ -103,7 +104,7 @@ public sealed class CircleSampleResources
         if ((stages & 1) == 0) return -1;
         if (Caches.Embedded.TryGetValue(baseKey, out handle)) return handle;
         byte[]? embedded = defaults.Ui(baseKey) ?? defaults.Gameplay(baseKey);
-        handle = embedded is null ? -1 : loader.Load(new(baseKey, embedded, SampleOrigin.Default, SampleLoadMode.EmbeddedBytes));
+        handle = embedded is null ? -1 : loader.Load(new(baseKey, embedded, SampleOrigin.Default, SampleLoadMode.EmbeddedBytes) { Loop = loop });
         if (handle == 0) handle = -1; // Embedded-only normalization.
         Caches.Embedded[baseKey] = handle;
         return handle;
@@ -164,6 +165,24 @@ public sealed class CircleSampleResources
         if (index <= 2) return tickTable[Bank(set), index];
         return Caches.Map.TryGetValue(TickKey(set, index), out int handle) && handle != -1 ? handle : tickTable[Bank(set), 0];
     }
+    public string ContinuingKey(int row, int set, int index = 1) => SetName(set) + "-" + LoopFamily(row) + (index > 1 ? index.ToString(policy.Culture) : "");
+    private static string LoopFamily(int row) => row switch { 0 => "sliderslide", 1 => "sliderwhistle", _ => throw new ArgumentOutOfRangeException(nameof(row)) };
+    public void PrepareContinuing(IEnumerable<int> indexes)
+    {
+        int[] dynamicIndexes = indexes.Where(i => i > 2).Distinct().ToArray();
+        if (dynamicIndexes.Length > 64) throw new InvalidDataException("Too many continuing sample indexes.");
+        foreach (int index in dynamicIndexes)
+            for (int set = 1; set <= 3; set++) for (int row = 0; row < 2; row++)
+                LoadStandard(LoopFamily(row), set, index, 7, true);
+        for (int plane = 0; plane < 3; plane++) for (int set = 1; set <= 3; set++) for (int row = 0; row < 2; row++)
+            loopTable[row, Bank(set), plane] = LoadStandard(LoopFamily(row), set, plane, 7, true);
+    }
+    public int ResolveContinuing(int row, int set, int suppliedIndex)
+    {
+        int index = Math.Max(0, suppliedIndex);
+        if (index <= 2) return loopTable[row, Bank(set), index];
+        return Caches.Map.TryGetValue(ContinuingKey(row, set, index), out int h) && h != -1 ? h : loopTable[row, Bank(set), 0];
+    }
     public void EvictMap(string key)
     {
         if (!Caches.Map.Remove(key, out int handle)) return;
@@ -173,7 +192,7 @@ public sealed class CircleSampleResources
     { foreach (int handle in cache.Values) loader.Free(handle); cache.Clear(); }
     public void ClearMap() => Clear(Caches.Map);
     public void ClearSkin() => Clear(Caches.Skin);
-    public void ClearAll() { ClearMap(); ClearSkin(); Clear(Caches.Embedded); Array.Clear(table); Array.Clear(tickTable); }
+    public void ClearAll() { ClearMap(); ClearSkin(); Clear(Caches.Embedded); Array.Clear(table); Array.Clear(tickTable); Array.Clear(loopTable); }
 }
 
 public sealed record CircleSoundPolicy(bool HasSkin, bool LayeredHitSounds, bool HasSelectedMap,
@@ -359,4 +378,161 @@ public static class SliderSampleSelection
     }
     private sealed class Tagged(ISamplePlaybackSink sink, SoundEventIdentity identity) : ISamplePlaybackSink
     { public void Enqueue(SamplePlaybackRequest request) => sink.Enqueue(request with { Event = identity }); }
+}
+
+// R13/E040: explicit global state, separate from M1be6 and discrete progression.
+public sealed class GlobalSampleTiming
+{
+    private readonly List<SampleTiming> points;
+    public IReadOnlyList<SampleTiming> Points => points;
+    public int BaseCursor { get; private set; } = -1;
+    public int AllCursor { get; private set; } = -1;
+    public int Sentinel { get; private set; } = -999;
+    public SampleTiming? Current => AllCursor >= 0 && AllCursor < points.Count ? points[AllCursor] : null;
+    public GlobalSampleTiming(IEnumerable<SampleTiming> timing)
+    {
+        points = timing.ToList();
+        if (points.Any(p => !double.IsFinite(p.Time) || p.Set is < 0 or > 3 || p.Index < 0 || p.Volume is < 0 or > 100))
+            throw new InvalidDataException("Unsupported continuing timing operands.");
+    }
+    public void Reset() { BaseCursor = AllCursor = -1; Sentinel = -999; }
+    public void Advance(int time, bool rescan = false, int audioState = 1)
+    {
+        int query = unchecked(time + 5);
+        if (points.Count == 0) { Reset(); return; }
+        if (rescan) points.Sort((a, b) => a.Time != b.Time ? a.Time.CompareTo(b.Time) : b.Uninherited.CompareTo(a.Uninherited));
+        if (rescan || BaseCursor < 0 || audioState != 1)
+        {
+            BaseCursor = Math.Max(0, points.FindLastIndex(p => p.Uninherited && p.Time < (double)query));
+            int old = AllCursor;
+            AllCursor = Math.Max(0, points.FindLastIndex(p => p.Time < (double)query));
+            if (old != AllCursor) Sentinel = -999;
+            return;
+        }
+        for (int i = unchecked(AllCursor + 1); i < points.Count; i++)
+        {
+            if (points[i].Time > (double)query) return;
+            AllCursor = i;
+            if (points[i].Uninherited) BaseCursor = i;
+        }
+    }
+}
+public interface IPersistentSampleChannels : IDisposable
+{
+    int Acquire(int sample, bool onlyNew);
+    int Activity(int channel);
+    void Attribute(int channel, int attribute, float value);
+    void Play(int channel, bool restart);
+    void Pause(int channel);
+    void Stop(int channel);
+}
+public sealed record ChannelOperation(string Name, int Channel, int Attribute = 0, float Value = 0);
+// Recording implementation: activity is an injected native operand, never an inferred pending flag.
+public sealed class RecordingSampleChannels : IPersistentSampleChannels
+{
+    public List<ChannelOperation> Operations { get; } = [];
+    public Dictionary<int, int> States { get; } = [];
+    public Func<int, bool, int> GetChannel { get; set; } = (sample, _) => sample;
+    public Action<ChannelOperation>? OnOperation { get; set; }
+    private void Record(ChannelOperation op) { Operations.Add(op); OnOperation?.Invoke(op); }
+    public int Acquire(int sample, bool onlyNew) { Record(new("Acquire", sample, 0, onlyNew ? 1 : 0)); return GetChannel(sample, onlyNew); }
+    public int Activity(int channel) { Record(new("Activity", channel)); return States.GetValueOrDefault(channel); }
+    public void Attribute(int channel, int attribute, float value) => Record(new("Attribute", channel, attribute, value));
+    public void Play(int channel, bool restart) => Record(new("Play", channel, 0, restart ? 1 : 0));
+    public void Pause(int channel) => Record(new("Pause", channel));
+    public void Stop(int channel) => Record(new("Stop", channel));
+    public void Dispose() => Record(new("Dispose", 0));
+}
+public sealed class SharedSliderChannels
+{
+    private readonly IPersistentSampleChannels backend;
+    private readonly Func<int, int, int, int> resolve;
+    private readonly Queue<Action> actions = new();
+    public GlobalSampleTiming Timing { get; }
+    public int Channel0 { get; set; }
+    public int Channel1 { get; set; }
+    public int CurrentIndex { get; private set; }
+    public int CurrentBase { get; private set; }
+    public int LastIndex { get; private set; }
+    public int LastBase { get; private set; }
+    public int LastAddition { get; private set; }
+    public int ApplicationState { get; set; } = 1;
+    public int SelectedFormat { get; set; } = 14;
+    public int SongFormat { get; set; } = 14;
+    public bool HasSelectedMap { get; set; } = true;
+    public bool HasSongMap { get; set; } = true;
+    public bool SameMapIdentity { get; set; } = true;
+    public int FallbackIndex { get; set; }
+    public int FallbackVolume { get; set; } = 100;
+    public int EffectVolume { get; set; } = 80;
+    public int UniversalVolume { get; set; } = 100;
+    public int Pending => actions.Count;
+    public SharedSliderChannels(GlobalSampleTiming timing, IPersistentSampleChannels backend, Func<int, int, int, int> resolve)
+    { Timing = timing; this.backend = backend; this.resolve = resolve; }
+    private int SampleIndex => HasSongMap && SongFormat > 3 && Timing.Current is { } p ? p.Index : FallbackIndex;
+    private int Volume => !HasSongMap ? 100 : Timing.Current is { } p ? Math.Max(8, p.Volume) : FallbackVolume;
+    private float GlobalGain => (float)unchecked(EffectVolume * UniversalVolume) / 100f;
+    private float ReplacementGain => ((GlobalGain / 100f) * (float)Volume) / 100f;
+    private float StartGain => ((float)Volume * GlobalGain) / 100f / 100f;
+    public void Clock(int time, bool rescan = false, int audioState = 1)
+    {
+        Timing.Advance(time, rescan, audioState);
+        if (Timing.Current is { } p && HasSelectedMap && SelectedFormat > 3) Refresh(p.Set, false);
+    }
+    public void Refresh(int selectedBase, bool force)
+    {
+        if (!force && ((selectedBase == CurrentBase && SampleIndex == CurrentIndex) || ApplicationState is not (1 or 2))) return;
+        CurrentBase = selectedBase == 0 ? 1 : selectedBase;
+        CurrentIndex = SampleIndex;
+        if (force || LastBase == 0) PreparePair(CurrentBase, CurrentBase, force);
+    }
+    public void PreparePair(int selectedBase, int addition, bool force = false)
+    {
+        if (selectedBase == 0) selectedBase = CurrentBase;
+        if (addition == 0) addition = selectedBase;
+        bool change0 = CurrentIndex != LastIndex || selectedBase != LastBase;
+        bool change1 = CurrentIndex != LastIndex || addition != LastAddition;
+        if (!force && (!(change0 || change1) || ApplicationState is not (1 or 2))) return;
+        LastIndex = CurrentIndex; // Original partial mutation survives subsequent exceptions.
+        if (change0)
+        {
+            if (Channel0 != 0 && backend.Activity(Channel0) == 1) backend.Stop(Channel0);
+            LastBase = selectedBase;
+            Channel0 = backend.Acquire(resolve(0, LastBase, CurrentIndex), false);
+        }
+        if (change1)
+        {
+            if (Channel1 != 0 && backend.Activity(Channel1) == 1) backend.Stop(Channel1);
+            LastAddition = addition;
+            Channel1 = backend.Acquire(resolve(1, LastAddition, CurrentIndex), false);
+        }
+        float gain = ReplacementGain;
+        backend.Attribute(Channel0, 11, 1f); backend.Attribute(Channel0, 2, gain);
+        backend.Attribute(Channel1, 2, gain); backend.Attribute(Channel1, 11, 1f);
+    }
+    public void Submit(int mask, int selectedBase, int addition, bool layered, float? presentationX)
+    {
+        PreparePair(selectedBase, addition);
+        if ((layered || (mask & 2) == 0) && backend.Activity(Channel0) != 1) actions.Enqueue(() =>
+        { int target = Channel0; float gain = StartGain; backend.Attribute(target, 2, gain); backend.Play(Channel0, true); });
+        if ((mask & 2) != 0 && backend.Activity(Channel1) != 1) actions.Enqueue(() =>
+        { int target = Channel1; float gain = StartGain; backend.Attribute(target, 2, gain); backend.Play(Channel1, true); });
+        if (presentationX is { } x)
+        {
+            float pan = (x / 512f - .5f) * .800000011920929f * .4000000059604645f;
+            actions.Enqueue(() => { backend.Attribute(Channel0, 3, pan); backend.Attribute(Channel1, 3, pan); });
+        }
+    }
+    public void QueuePause() => actions.Enqueue(() => { backend.Pause(Channel0); backend.Pause(Channel1); });
+    public void ManagerTail(bool currentSlider)
+    { if (!currentSlider && (backend.Activity(Channel1) == 1 || backend.Activity(Channel0) == 1)) QueuePause(); }
+    public void SettingsChanged(int effect, int universal)
+    {
+        EffectVolume = effect; UniversalVolume = universal;
+        backend.Attribute(Channel0, 2, ReplacementGain); backend.Attribute(Channel1, 2, ReplacementGain);
+    }
+    public void ExecuteNext() { if (actions.TryDequeue(out var action)) action(); }
+    public void Drain() { while (actions.Count > 0) ExecuteNext(); }
+    // ENGINEERING cancellation discards stale work; original callbacks have no generation veto.
+    public void Cancel() => actions.Clear();
 }

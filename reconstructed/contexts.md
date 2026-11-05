@@ -868,3 +868,26 @@ head/tick/repeat/positive-aggregate delivery remains human-audible/native-unveri
 Expected-head non-force canonical main publication, no permanent branch/history
 rewrite. Stop after R12; no QA10/R13/E040/spinner hitsounds/framework/lazer work or
 deferred cross-beatmap scoring investigation.
+
+## R13 — Continuous slider shared channel foundation — 2026-11-05
+
+Work2 authorized R13 only, from main37ceaeaf96a6ee6c13fd3807ec95057cdba677aa.
+Read standing contract/AGENTS, both journals, E040 report/evidence and supporting
+E010/E015–E018/E021–E023/E037–E039, R11/R12 and QA09/QA10, current parser,
+session, selection, local library, Windows media/presentation, generators and CI.
+No original binary/sample extraction or execution, game windows, listening or
+physical/graphical automation. E020 remains NOT RUN. No authorized exception.
+
+Added original-derived separate global timing cursors and sample selectors,
+mode2 continuing preparation/resolution with loop flags, shared channel pair,
+injected recording backend and controlled queue preserving deferred current-field
+reads, gain/pan, selector Stop and cleanup Pause. R12 live hooks preserve the
+discrete progression/accounting boundaries. Added persistent Windows loop players,
+optional independent six-file generator, R13 checks, minimal README/CI updates
+and R13-original-continuous-slider-audio.md. Report documents engineering
+FIFO/cancellation/current-object proxy, last-rendered ball X, format14/single
+producer admission and unsupported state, codec and native-runtime boundaries.
+No prior reports/research/independent QA/source fixtures or journal prefix changed;
+scoring/HP/NewCombo arithmetic preserved. Windows exact-source verification pending;
+no local SDK available. Stop after R13; no QA11/R14/E041. Verification result will
+be appended, not substituted for historical failure evidence if any.

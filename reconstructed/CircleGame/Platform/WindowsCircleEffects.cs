@@ -21,19 +21,27 @@ public sealed class WindowsCircleEffects : IDisposable
     private readonly CircleSoundPlayback playback;
     private readonly string cache = Path.Combine(Path.GetTempPath(), "ohno-effects-" + Guid.NewGuid().ToString("N"));
     private CircleSession? session;
+    private readonly WindowsSliderLoops loops = new();
+    private SharedSliderChannels? continuing;
+    private readonly Dispatcher dispatcher;
+    private bool loopsPaused = true;
+    private int loopGeneration;
     private string? failure;
     private readonly List<Voice> opening = new();
     private string? Failure => failure ?? prepared.Error ?? playback.Error;
     private bool disposed;
-    public bool Enabled { get => playback.Enabled; set { if (!value) playback.Pause(); playback.Enabled = value; } }
-    public string Status => $"HitSounds {(Enabled ? "ON" : "OFF")} · {voices.Count}/{prepared.Samples.Count} resources decoded · {prepared.MissingLayers} unresolved circle layers · {prepared.Sliders.Count} discrete sliders (loops unavailable) · " +
+    public bool Enabled { get => playback.Enabled; set { if (!value) playback.Pause(); if (!value) PauseLoops(); playback.Enabled = value; } }
+    public string Status => $"HitSounds {(Enabled ? "ON" : "OFF")} · {voices.Count}/{prepared.Samples.Count} resources decoded · {prepared.MissingLayers} unresolved circle layers · {prepared.Sliders.Count} discrete sliders · {loops.Ready} loop resources · " +
         (settings.DefaultPackDirectory is null ? "no independent default pack" : "independent default pack configured") +
         $" · effect {settings.VolumeEffect}% / global {settings.VolumeUniversal}% · layered {settings.LayeredHitSounds} (explicit policy)" +
+        (prepared.ContinuousLimitation is { } limitation ? " · continuous unavailable: " + limitation : "") +
+        (prepared.Sliders.Count > 0 && loops.Ready == 0 ? " · continuous unavailable: no decoded loop resources" : "") +
+        (loops.Error is { } loopError ? " · " + loopError : "") +
         (Failure is { } error ? " · " + error : "") +
         (voices.Count == 0 ? " · no playable effects; supply local map/skin samples or a default pack" : "");
     private WindowsCircleEffects(PreparedCircleEffects prepared, HitSoundSettings settings, Dispatcher dispatcher)
     {
-        this.prepared = prepared; this.settings = settings;
+        this.prepared = prepared; this.settings = settings; this.dispatcher = dispatcher;
         playback = new(Play, action => dispatcher.BeginInvoke(action, DispatcherPriority.Normal), StopVoices) { Enabled = settings.Enabled };
     }
     public static async Task<WindowsCircleEffects> PrepareAsync(Beatmap map, HitSoundLibrary library,
@@ -56,7 +64,7 @@ public sealed class WindowsCircleEffects : IDisposable
             }, token);
             // Independent two-voice pool per resource, all opens asynchronous.
             // ENGINEERING cap comes from the64-resource catalog, not BASS max8.
-            await Task.WhenAll(data.Samples.Select(async pair =>
+            await Task.WhenAll(data.Samples.Where(p => !p.Value.Loop).Select(async pair =>
             {
                 string ext = pair.Value.Origin == SampleOrigin.Default ? ".wav" : Path.GetExtension(pair.Value.Name).ToLowerInvariant();
                 string file = Path.Combine(result.cache, pair.Key + ext);
@@ -77,6 +85,11 @@ public sealed class WindowsCircleEffects : IDisposable
                 catch (Exception e)
                 { foreach (var v in pool) Close(v); result.failure = "Decoder unavailable: " + pair.Value.Name + " — " + e.Message; }
             }));
+            await result.loops.PrepareAsync(data.Samples, result.cache, token);
+            if (data.ContinuousLimitation is null)
+                result.continuing = new(new GlobalSampleTiming(data.Source.Timing), result.loops, data.Resources.ResolveContinuing)
+                { SelectedFormat = data.Source.Format, SongFormat = data.Source.Format,
+                  EffectVolume = library.Settings.VolumeEffect, UniversalVolume = library.Settings.VolumeUniversal };
             token.ThrowIfCancellationRequested();
             return result;
         }
@@ -103,9 +116,40 @@ public sealed class WindowsCircleEffects : IDisposable
     }
     public void Attach(CircleSession replacement)
     {
-        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; }
+        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; DetachLoops(session); }
+        if (continuing is not null) continuing.SameMapIdentity = ReferenceEquals(replacement.Map, prepared.PreparedMap);
         session = replacement; session.PositiveCircleSound += OnCircle; session.SliderSound += OnSlider;
+        session.GlobalSoundTiming += OnGlobalTiming; session.ContinuingSound += OnContinuing; session.ContinuingManagerTail += OnManager;
     }
+    private void DetachLoops(CircleSession old)
+    { old.GlobalSoundTiming -= OnGlobalTiming; old.ContinuingSound -= OnContinuing; old.ContinuingManagerTail -= OnManager; }
+    private void OnGlobalTiming(int time)
+    { if (LoopsEligible) GuardLoops(() => continuing!.Clock(time)); }
+    private bool LoopsEligible => !disposed && !loopsPaused && Enabled && continuing is { SameMapIdentity: true };
+    private void GuardLoops(Action action)
+    {
+        try { action(); }
+        catch (Exception e) { failure = "Continuous effect unavailable: " + e.Message; continuing?.Cancel(); loops.PauseAll(); }
+    }
+    private void FlushLoops()
+    {
+        int epoch = loopGeneration;
+        dispatcher.BeginInvoke(new Action(() =>
+        { if (epoch == loopGeneration && LoopsEligible) GuardLoops(() => continuing!.Drain()); }), DispatcherPriority.Normal);
+    }
+    private void OnContinuing(SliderState slider, int time, bool active)
+    {
+        if (!LoopsEligible) return;
+        GuardLoops(() =>
+        {
+            if (!active) continuing!.QueuePause();
+            else if (slider.Definition.Samples is { } data)
+                continuing!.Submit(data.RawSound, data.BaseSet, data.AdditionSet, settings.LayeredHitSounds, slider.PresentationBallX);
+            FlushLoops();
+        });
+    }
+    private void OnManager(bool current)
+    { if (LoopsEligible) GuardLoops(() => { continuing!.ManagerTail(current); FlushLoops(); }); }
     private void OnCircle(CircleDefinition circle)
     {
         if (disposed || prepared.Source.TimingError is not null) return;
@@ -153,15 +197,19 @@ public sealed class WindowsCircleEffects : IDisposable
         foreach (var pool in voices.Values) foreach (var voice in pool)
         { try { voice.Player.Stop(); } catch (Exception e) { failure = e.Message; } voice.Busy = false; }
     }
-    public void Pause() => playback.Pause();
-    public void Resume() => playback.Resume();
-    public void Restart(CircleSession replacement) { playback.Restart(); Attach(replacement); }
+    private void PauseLoops() { loopsPaused = true; loopGeneration++; continuing?.Cancel(); loops.PauseAll(); }
+    public void Pause()
+    { playback.Pause(); PauseLoops(); }
+    public void Resume() { playback.Resume(); loopsPaused = false; }
+    public void Restart(CircleSession replacement)
+    { Pause(); continuing?.Timing.Reset(); playback.Restart(); Attach(replacement); Resume(); }
     private static void Close(Voice voice) { try { voice.Player.Close(); } catch (Exception e) { System.Diagnostics.Debug.WriteLine(e); } }
     public void Dispose()
     {
         if (disposed) return;
         disposed = true;
-        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; }
+        if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; DetachLoops(session); }
+        loopGeneration++; continuing?.Cancel(); loops.Dispose();
         session = null; playback.Dispose();
         foreach (var pool in voices.Values) foreach (var voice in pool) Close(voice);
         voices.Clear();

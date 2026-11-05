@@ -116,6 +116,8 @@ public sealed class PreparedCircleEffects : IDisposable
     public required CircleSampleResources Resources { get; init; }
     public required IReadOnlyDictionary<CircleDefinition, (CircleSampleMetadata Metadata, int Custom)> Circles { get; init; }
     public required IReadOnlyDictionary<int, SampleBytes> Samples { get; init; }
+    public Beatmap? PreparedMap { get; init; }
+    public string? ContinuousLimitation { get; init; }
     public string? Error { get; init; }
     public int MissingLayers { get; init; }
     public IReadOnlyDictionary<SliderDefinition, PreparedSliderSamples> Sliders { get; init; } =
@@ -192,6 +194,12 @@ public sealed class HitSoundLibrary : IDisposable
             foreach (var slider in map.Sliders)
                 sliders.Add(slider, PreparedSliderSamples.Create(slider, source.Timing, selectionPolicy, parentHandles.GetValueOrDefault(slider, -1)));
             resources.Prepare(source.Timing.Select(t => t.Index), source.RegisteredOverrides.Select(c => c.Index), includeTicks: map.Sliders.Count > 0);
+            string? continuousLimitation = ContinuousAdmission(map);
+            if (continuousLimitation is null && map.Sliders.Count > 0)
+            {
+                try { resources.PrepareContinuing(source.Timing.Select(t => t.Index)); }
+                catch (Exception e) { continuousLimitation = "Loop preparation failed: " + e.Message; }
+            }
             token.ThrowIfCancellationRequested();
             var handles = resources.Caches.Map.Values.Concat(resources.Caches.Skin.Values).Concat(resources.Caches.Embedded.Values).Where(h => h > 0).Distinct();
             var samples = catalog.Snapshot(handles);
@@ -207,10 +215,25 @@ public sealed class HitSoundLibrary : IDisposable
                         missing++;
             }
             string[] errors = circles.Values.Select(c => c.Item1.Error).Where(e => e is not null).Cast<string>().Concat(catalog.Errors.Skip(errorStart)).Distinct().ToArray();
-            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders,
+            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders, PreparedMap = map, ContinuousLimitation = continuousLimitation,
                 Error = source.TimingError ?? operandError ?? (errors.Length > 0 ? string.Join("; ", errors.Take(3)) : null) };
         }
         catch { resources.ClearMap(); throw; }
+    }
+    public static string? ContinuousAdmission(Beatmap map)
+    {
+        var source = map.CircleSounds;
+        if (source is null || source.Format < 14) return "continuing audio requires fresh format14+ metadata";
+        if (source.TimingError is not null) return source.TimingError;
+        if (source.Timing.Count == 0) return "continuing audio requires timing records";
+        if (source.Timing.Any(t => !double.IsFinite(t.Time) || t.Set is < 0 or > 3 || t.Index < 0 || t.Volume is < 0 or > 100)) return "unsupported continuing timing operands";
+        if (source.Timing.Zip(source.Timing.Skip(1)).Any(p => p.First.Time > p.Second.Time)) return "out-of-order continuing timing (model supports conditional controls only)";
+        if (source.RegisteredOverrides.Any(o => System.Text.RegularExpressions.Regex.IsMatch(CustomStem(o.Filename),
+            @"^(normal|soft|drum)-(sliderslide|sliderwhistle)\d*$"))) return "ambiguous continuing/custom cache collision";
+        var sliders = map.Sliders.OrderBy(s => s.Head.StartTime).ToArray();
+        if (sliders.Zip(sliders.Skip(1)).Any(p => p.First.EndTime >= p.Second.Head.StartTime)) return "overlapping continuous producers unsupported";
+        if (sliders.Any(s => s.Samples is null || s.Samples.Error is not null || s.Samples.BaseSet is < 0 or > 3 || s.Samples.AdditionSet is < 0 or > 3)) return "unsupported parent continuing selectors";
+        return null;
     }
     private static string CustomStem(string name) => name.IndexOf('.') > 0 ? name[..name.LastIndexOf('.')] : name;
     private static bool IsStandardStem(string stem) => System.Text.RegularExpressions.Regex.IsMatch(stem,

@@ -1,0 +1,70 @@
+using Ohno.CircleGame.Gameplay;
+using Ohno.CircleGame.Platform;
+using System.Globalization;
+using System.Numerics;
+using System.Text;
+
+int groups = 0;
+void Check(bool value) { if (!value) throw new Exception("Assertion failed in group " + (groups + 1)); }
+void Pass(string name) { Console.WriteLine("PASS " + ++groups + " " + name); }
+void Eq<T>(T a, T b) => Check(EqualityComparer<T>.Default.Equals(a,b));
+void Near(float a,float b) => Check(Math.Abs(a-b)<.000001f);
+var points = new[] { new SampleTiming(0,1,1,25,true,0),new SampleTiming(2505,2,7,9,false,1),new SampleTiming(3000,3,2,0,true,2) };
+var timing = new GlobalSampleTiming(points); Eq(timing.BaseCursor,-1); Eq(timing.AllCursor,-1); timing.Advance(2500); Eq(timing.AllCursor,0); Eq(timing.BaseCursor,0); Pass("L45 strict full rescan and cursor initialization");
+timing.Advance(2500); Eq(timing.AllCursor,1); Eq(timing.BaseCursor,0); Pass("L46 inclusive forward equality and inherited cursor separation");
+timing.Advance(2995); Eq(timing.AllCursor,2); Eq(timing.BaseCursor,2); timing.Reset(); Eq(timing.AllCursor,-1); Eq(timing.Sentinel,-999); Pass("base advance and reset");
+var unordered = new GlobalSampleTiming(new[]{points[0],points[2],points[1]}); unordered.Advance(0); unordered.Advance(2500); Eq(unordered.AllCursor,0); unordered.Advance(2500,true); Eq(unordered.AllCursor,0); Check(unordered.Points[1].Time==2505); Pass("L47/L48 future prefix blocks unsorted entries; explicit rescan sorts");
+var ties=new GlobalSampleTiming(new[]{points[1],points[0] with { Time=2505 }}); ties.Advance(2501,true); Check(ties.Points[0].Uninherited); Pass("L48 comparator base before inherited at equal time");
+var empty=new GlobalSampleTiming([]); empty.Advance(10); Eq(empty.AllCursor,-1); bool rejected=false;try{new GlobalSampleTiming([points[0] with {Time=double.NaN}]);}catch(InvalidDataException){rejected=true;}Check(rejected); Pass("ENGINEERING empty and nonfinite timing admission");
+var b=new RecordingSampleChannels(); var m=new SharedSliderChannels(new(points),b,(row,set,index)=>100+row*10+set+index); m.Clock(0); Eq(m.CurrentIndex,1); Eq(m.CurrentBase,1); int ch0=m.Channel0,ch1=m.Channel1; Check(ch0!=0&&ch1!=0); Pass("global sample index differs from timing cursor");
+m.Clock(2500,true); Eq(m.CurrentIndex,1);m.Clock(2500);Eq(m.CurrentIndex,7);Eq(m.CurrentBase,2);Eq(m.LastBase,1);Pass("L14 inherited global refresh defers pair until continuing helper");
+b.States[ch0]=b.States[ch1]=1;b.Operations.Clear();m.PreparePair(3,2);Check(b.Operations.Count(o=>o.Name=="Stop")==2);Eq(m.LastBase,3);Eq(m.LastAddition,2);Eq(m.LastIndex,7);Pass("L14/L15 index and independent bank replacement stop active1");
+b.Operations.Clear();m.PreparePair(3,2);Eq(b.Operations.Count,0);Pass("L18 unchanged pair returns");
+m.PreparePair(3,2,true);Eq(b.Operations.Count(o=>o.Name=="Acquire"),0);Check(b.Operations.Where(o=>o.Name=="Attribute").Select(o=>o.Attribute).SequenceEqual(new[]{11,2,2,11}));Pass("L19 force writes attributes without unconditional acquisition");
+b.Operations.Clear();m.ApplicationState=9;m.PreparePair(1,1);Eq(b.Operations.Count,0);m.ApplicationState=1;Pass("application gate");
+b.States[m.Channel0]=3;b.States[m.Channel1]=0;b.Operations.Clear();m.PreparePair(2,3);Eq(b.Operations.Count(o=>o.Name=="Stop"),0);Check(b.Operations.Where(o=>o.Name=="Acquire").All(o=>o.Value==0));Pass("L16 numeric non1 skips Stop; GetChannel false");
+m.Cancel();b.Operations.Clear();m.Submit(2,2,3,false,256);Eq(m.Pending,2);m.Drain();Eq(b.Operations.Count(o=>o.Name=="Play"),1);Eq(b.Operations.Single(o=>o.Name=="Play").Channel,m.Channel1);Pass("L07 whistle only row1");
+m.Submit(2,2,3,true,null);Eq(m.Pending,2);m.Cancel();Pass("L08 layered whistle selects both rows");
+foreach(int mask in new[]{0,1,4,8,12}) {m.Submit(mask,2,3,false,null);Eq(m.Pending,1);m.Cancel();}Pass("L09 Finish and Clap add no loop rows");
+m.Submit(14,2,3,false,null);Eq(m.Pending,1);m.Cancel();m.Submit(14,2,3,true,null);Eq(m.Pending,2);m.Cancel();Pass("combined masks and explicit layering");
+b.States[m.Channel0]=1;b.States[m.Channel1]=1;b.Operations.Clear();m.Submit(2,2,3,false,512);Eq(m.Pending,1);m.Drain();Check(!b.Operations.Any(o=>o.Name is "Stop" or "Pause" or "Play"));Near(b.Operations.Last().Value,.16f);Pass("L10/L30 no implicit row off; active pair only pan");
+b.States.Clear();m.Submit(0,2,3,false,null);m.Submit(0,2,3,false,null);Eq(m.Pending,2);m.Cancel();Pass("L03 repeated pending starts without invented flag");
+m.Submit(0,2,3,false,0);m.Channel0=501;m.Channel1=502;b.Operations.Clear();m.Drain();Eq(b.Operations.First(o=>o.Name=="Play").Channel,501);Check(b.Operations.Where(o=>o.Attribute==3).Select(o=>o.Channel).SequenceEqual(new[]{501,502}));Near(b.Operations.Last().Value,-.16f);Pass("L31/L33 captured pan and fresh execution targets");
+m.Submit(0,2,3,false,null);b.OnOperation=o=>{if(o.Name=="Attribute"&&o.Attribute==2)m.Channel0=601;};m.Drain();Eq(b.Operations.Last().Channel,601);b.OnOperation=null;Pass("L33 start reads channel again after gain assignment");
+m.QueuePause();m.Channel0=701;m.Channel1=702;b.Operations.Clear();m.Drain();Check(b.Operations.Select(o=>o.Channel).SequenceEqual(new[]{701,702}));Check(b.Operations.All(o=>o.Name=="Pause"));Pass("L34 pause targets current fields; Pause distinct from Stop");
+m.QueuePause();m.Submit(0,2,3,false,null);b.Operations.Clear();m.Drain();Check(b.Operations.First().Name=="Pause");Check(b.Operations.Last().Name=="Play");Pass("L35 deterministic ENGINEERING pause then start queue");
+b.States[m.Channel0]=1;b.States[m.Channel1]=1;m.QueuePause();m.Submit(0,2,3,false,null);Eq(m.Pending,1);m.Cancel();Pass("L36 pending pause does not force new start when observed active1");
+b.Operations.Clear();m.ManagerTail(true);Eq(m.Pending,0);m.ManagerTail(false);Eq(m.Pending,1);m.Cancel();Pass("L41/L42 manager gate and active state");
+var gb=new RecordingSampleChannels();var gain=new SharedSliderChannels(new([points[0]]),gb,(_,_,_)=>7){EffectVolume=80,UniversalVolume=50};gain.Clock(0);Near(gb.Operations.Last(o=>o.Attribute==2).Value,.1f);gain.Submit(0,0,0,false,null);gb.Operations.Clear();gain.Drain();Near(gb.Operations.First().Value,.1f);Pass("L29 replacement and start Single gain formulas");
+foreach(int v in new[]{0,7,8,9}){var vb=new RecordingSampleChannels();var vm=new SharedSliderChannels(new([points[0] with {Volume=v}]),vb,(_,_,_)=>1){EffectVolume=100,UniversalVolume=100};vm.Clock(0);Near(vb.Operations.Last(o=>o.Attribute==2).Value,Math.Max(8,v)/100f);}Pass("L26 global point floor8 without circle attenuation");
+var fall=new SharedSliderChannels(new([]),gb,(_,_,_)=>1){FallbackVolume=0,EffectVolume=100,UniversalVolume=100};gb.Operations.Clear();fall.Refresh(1,true);Near(gb.Operations.Last(o=>o.Attribute==2).Value,0);fall.HasSongMap=false;fall.SettingsChanged(100,100);Near(gb.Operations.Last().Value,1);Pass("L27/L28 fallback no floor versus no song100");
+gb.States[gain.Channel0]=gb.States[gain.Channel1]=1;gb.Operations.Clear();gain.Submit(0,0,0,false,256);gain.Drain();Check(gb.Operations.All(o=>o.Name!="Attribute"||o.Attribute==3));gain.SettingsChanged(50,50);Eq(gb.Operations.Count(o=>o.Attribute==2),2);Pass("L30/L55 volume refresh occurs on reached setting write only");
+m.Cancel();m.QueuePause();m.Cancel();Eq(m.Pending,0);Pass("ENGINEERING stale generation cancellation");
+var fail=new SharedSliderChannels(new(points),new RecordingSampleChannels(),(_,_,_)=>throw new IOException("injected"));try{fail.Clock(0);}catch(IOException){}Eq(fail.CurrentIndex,1);Eq(fail.LastIndex,1);Eq(fail.LastBase,1);Pass("L56 original partial mutation retained on resource exception");
+var zeroBackend=new RecordingSampleChannels();var zero=new SharedSliderChannels(new(points),zeroBackend,(_,_,_)=>0);zero.Clock(0);Check(zeroBackend.Operations.Any(o=>o.Name=="Acquire"&&o.Channel==0));Pass("L22 handle0 remains distinct from missing in pure channel model");
+var files=new Files();var loader=new Loader();var resources=new CircleSampleResources(files,null,new Defaults(),loader,new(14,false,false,true,true,"Default",true,CultureInfo.InvariantCulture));resources.PrepareContinuing([7]);Eq(loader.Samples.Count,24);Check(loader.Samples.All(s=>s.Loop));Pass("L24 all18 cells plus6 dynamic loads loop enabled");
+var ids=new HashSet<int>();for(int row=0;row<2;row++)for(int set=1;set<=3;set++)for(int i=0;i<=2;i++)ids.Add(resources.ResolveContinuing(row,set,i));Eq(ids.Count,18);Pass("L23 mode2 rows banks and three index planes");
+for(int row=0;row<2;row++)for(int set=1;set<=3;set++)Check(resources.ResolveContinuing(row,set,7)>0);Pass("L20 dynamic continuing key lookup");
+string key=resources.ContinuingKey(0,2,7);resources.Caches.Map[key]=0;Eq(resources.ResolveContinuing(0,2,7),0);resources.Caches.Map[key]=-1;Eq(resources.ResolveContinuing(0,2,7),resources.ResolveContinuing(0,2,0));Pass("L21 dynamic0 versus minus1 plane0 fallback");
+resources.ClearAll();Eq(resources.ResolveContinuing(0,1,0),0);Pass("cache invalidation resets independent continuing table");
+var missing=new CircleSampleResources(new Missing(),null,new MissingDefaults(),loader,new(14,false,false,true,true,"Default",true,CultureInfo.InvariantCulture));missing.PrepareContinuing([]);Eq(missing.ResolveContinuing(0,1,0),-1);Pass("missing continuing assets explicit minus1");
+string temp=Path.Combine(Path.GetTempPath(),"r13-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(temp);
+try{
+string path=Path.Combine(temp,"map.osu");File.WriteAllText(path,"osu file format v14\n[General]\nMode:0\n[Difficulty]\nCircleSize:4\nOverallDifficulty:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,1,25,1,0\n[HitObjects]\n64,192,2000,2,2,L|364:192,1,300\n");
+var map=Beatmap.Load(path);Check(HitSoundLibrary.ContinuousAdmission(map)==null);var def=map.Sliders.Single();var session=CircleSession.CreateFreshOrdinary(map,ScoreConfiguration.EngineeringPractice);var order=new List<string>();session.ContinuingSound+=(_,_,active)=>order.Add(active?"continue":"pause");session.SliderSound+=e=>order.Add(e.Kind.ToString());session.Advance(1999);session.Press(def.Head.Position,2000);session.Advance(2000,def.Head.Position,1);Check(order.Contains("continue"));Pass("production session continuous update without new deadline");
+order.Clear();session.Advance(2500,def.BallPosition(2500),1);Check(order.Count(s=>s=="continue")==2);Check(order.Last()=="Tick");Pass("L02 due tick double helper before discrete request");
+order.Clear();session.Advance(2600,new Vector2(999,999),0);Check(order.Contains("pause"));Pass("L04 tracking false cleanup before consumption");
+order.Clear();session.Advance(def.EndTime,def.EndPosition,1);int pause=order.LastIndexOf("pause");int edge=order.IndexOf("AggregateEdge");Check(pause>=0&&edge>pause&&order.Skip(pause+1).Contains("continue"));Pass("L37 exact end aggregate pause then continuing then positive edge");
+var baseline=CircleSession.CreateFreshOrdinary(map,ScoreConfiguration.EngineeringPractice);var throwing=CircleSession.CreateFreshOrdinary(map,ScoreConfiguration.EngineeringPractice);throwing.ContinuingSound+=(_,_,_)=>throw new IOException("injected");foreach(var s in new[]{baseline,throwing}){s.Press(def.Head.Position,2000);s.Advance(def.EndTime+1);}Eq(baseline.Ledger.Score,throwing.Ledger.Score);Eq(baseline.Ledger.EventCount,throwing.Ledger.EventCount);Eq(baseline.Sliders[0].Result,throwing.Sliders[0].Result);Pass("score judgement isolation with throwing optional loop backend");
+int count=0;session.ContinuingSound+=(_,_,_)=>count++;CircleSession.CreateFreshOrdinary(map,ScoreConfiguration.EngineeringPractice);Eq(count,0);Pass("private health preparation silent");
+var after=CircleSession.CreateFreshOrdinary(map,ScoreConfiguration.EngineeringPractice);after.Press(def.Head.Position,2000);int extra=0;after.ContinuingSound+=(_,_,active)=>{if(active)extra++;};after.Advance(def.EndTime+1);Eq(extra,0);Pass("L38 after end aggregate no fresh continuation");
+}finally{Directory.Delete(temp,true);}
+string root=args[0];string windows=File.ReadAllText(Path.Combine(root,"reconstructed/CircleGame/Platform/WindowsCircleEffects.cs"));Check(windows.Contains("epoch == loopGeneration")&&windows.Contains("loops.Dispose()")&&windows.Contains("continuing?.Cancel()"));Pass("SOURCE INSPECTED Windows generation map restart pause disposal boundaries");
+string backend=File.ReadAllText(Path.Combine(root,"reconstructed/CircleGame/Platform/WindowsSliderLoops.cs"));Check(backend.Contains("MediaEnded")&&backend.Contains("c.Player.Pause()")&&backend.Contains("c.Player.Stop()")&&backend.Contains("MediaOpened"));Pass("SOURCE INSPECTED persistent Windows preparation and lifecycle, no playback executed");
+if(args.Length>1){foreach(string bank in new[]{"normal","soft","drum"})foreach(string family in new[]{"sliderslide","sliderwhistle"}){byte[] data=File.ReadAllBytes(Path.Combine(args[1],bank+"-"+family+".wav"));Eq(data.Length,44144);Eq(Encoding.ASCII.GetString(data,0,4),"RIFF");Eq(BitConverter.ToInt32(data,40),44100);Check(data.Skip(44).Any(v=>v!=0));}Pass("six independent PCM loop structures (not decoder or audibility proof)");}
+Console.WriteLine($"R13 CONTINUING CHECKS: {groups} passed; two explicitly source-inspected groups; no audio/window/original runtime");
+sealed class Files:ISampleFiles {public bool Exists(string n)=>true;public byte[]? Read(string n)=>new byte[1024];}
+sealed class Missing:ISampleFiles {public bool Exists(string n)=>false;public byte[]? Read(string n)=>null;}
+sealed class Defaults:IDefaultSamples {public byte[]? Ui(string k)=>null;public byte[]? Gameplay(string k)=>Encoding.ASCII.GetBytes(k);}
+sealed class MissingDefaults:IDefaultSamples {public byte[]? Ui(string k)=>null;public byte[]? Gameplay(string k)=>null;}
+sealed class Loader:ISampleLoader {public List<SampleBytes> Samples {get;}=[];public int Load(SampleBytes b){Samples.Add(b);return Samples.Count;}public void Free(int h){}}

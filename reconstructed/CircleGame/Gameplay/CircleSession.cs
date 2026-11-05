@@ -297,7 +297,7 @@ public sealed class SliderAudioProgress
 {
     public int Index { get; private set; } // Fresh CLR0. Do not universally initialize to -1.
     public void Reset() => Index = 0; // M1431 explicit store.
-    public SliderAudioSelection? Advance(SliderDefinition slider, int time, bool tracking, int numericAudioState)
+    public SliderAudioSelection? Advance(SliderDefinition slider, int time, bool tracking, int numericAudioState, Action? continuing = null, Action? cleanup = null)
     {
         int latest = -1, count = slider.Checkpoints.Count;
         for (int i = 0; i < count - 1; i++)
@@ -306,8 +306,8 @@ public sealed class SliderAudioProgress
             latest = i;
         }
         if (time < slider.Head.StartTime || time > slider.EndTime || numericAudioState != 1) { Index = -1; return null; }
-        if (!tracking) { Index = latest; return null; }
-        // Original continuing helpers are deliberately omitted; no loop ownership is invented.
+        if (!tracking) { cleanup?.Invoke(); Index = latest; return null; }
+        continuing?.Invoke(); // E040 before latest-index comparison.
         if (latest <= Index) return null;
         Index = latest; // Before selection/dispatch, even if optional audio later fails.
         int h = count / slider.Traversals;
@@ -390,6 +390,14 @@ public sealed class CircleSession
     public event Action<CircleDefinition>? PositiveCircleSound;
     public string? CircleSoundError { get; private set; }
     public event Action<SliderSoundEvent>? SliderSound;
+    public event Action<int>? GlobalSoundTiming;
+    public event Action<SliderState, int, bool>? ContinuingSound; // true=continue, false=queued cleanup
+    public event Action<bool>? ContinuingManagerTail; // ENGINEERING current-object proxy
+    private void Continuing(SliderState slider, int time, bool active)
+    {
+        try { ContinuingSound?.Invoke(slider, time, active); }
+        catch (Exception e) { SliderSoundError = "Continuing effect failed: " + e.Message; }
+    }
     public string? SliderSoundError { get; private set; }
     // ENGINEERING host operand1 while running. This is not a decoded name for F2368.
     public int NumericSliderAudioState { get; set; } = 1;
@@ -401,6 +409,7 @@ public sealed class CircleSession
     }
     private void RequestSliderSound(SliderState state, SliderSoundKind kind, int index, int scheduleIndex, int time)
     {
+        if (kind != SliderSoundKind.Head && time <= state.Definition.EndTime) Continuing(state, time, true);
         try { SliderSound?.Invoke(new(state.Definition, kind, index, scheduleIndex, time, state.PresentationBallX)); }
         catch (Exception e) { SliderSoundError = "Slider effect sink failed: " + e.Message; }
     }
@@ -486,6 +495,7 @@ public sealed class CircleSession
 
     public void Advance(int time, Vector2 pointer, int buttons, Vector2? spinnerPointer = null, HealthHostTiming? healthTiming = null)
     {
+        try { GlobalSoundTiming?.Invoke(time); } catch (Exception e) { SliderSoundError = e.Message; }
         if (Finished) return;
         input.Publish(buttons);
         // ENGINEERING current-object substitute: capture before object evaluation.
@@ -524,14 +534,15 @@ public sealed class CircleSession
         foreach (SliderState slider in Sliders)
         {
             if (slider.Result == Judgement.Pending && time >= slider.Definition.Head.StartTime) Track(slider, pointer, time);
-            if (slider.Result == Judgement.Pending && slider.Audio.Advance(slider.Definition, time, slider.Tracking, NumericSliderAudioState) is { } sound)
+            if (slider.Result == Judgement.Pending && slider.Audio.Advance(slider.Definition, time, slider.Tracking, NumericSliderAudioState, () => Continuing(slider, time, true), () => Continuing(slider, time, false)) is { } sound)
                 RequestSliderSound(slider, sound.Kind, sound.Index, sound.ScheduleIndex, time);
             if (slider.Head.Result == Judgement.Pending && time > slider.Definition.Head.StartTime + Window50)
                 JudgeHead(slider, time);
             // E17: tracking/component decision precedes inclusive parent completion.
             if (slider.Result == Judgement.Pending && !slider.CompletionStarted && time >= slider.Definition.EndTime)
             {
-                slider.CompletionStarted = true; // Evaluated/cleanup boundary; no continuing audio implementation.
+                slider.CompletionStarted = true;
+                Continuing(slider, time, false); // Cleanup precedes aggregate ratio and positive sound.
                 int successes = (Positive(slider.Head.Result) ? 1 : 0) + slider.SuccessfulCheckpoints;
                 double ratio = successes / (double)(slider.Checkpoints.Count + 1);
                 if (ratio > 0)
@@ -545,6 +556,9 @@ public sealed class CircleSession
                 Feedback = new(slider.Definition.EndPosition, "SLIDER " + Label(slider.Result), time, slider.Result);
             }
         }
+        try { ContinuingManagerTail?.Invoke(Sliders.Any(s => s.Definition.Head.StartTime != s.Definition.EndTime &&
+            ((s.Definition.Head.StartTime <= time && s.Definition.EndTime >= time) || s.Result == Judgement.Pending))); }
+        catch (Exception e) { SliderSoundError = e.Message; }
         input.ConsumeEdges();
         foreach (CircleState circle in Circles)
         {

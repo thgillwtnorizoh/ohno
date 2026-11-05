@@ -664,3 +664,32 @@ The parent loader loop flag is retained as metadata; no continuous voice is star
 Native continuing helpers, global shared channels, archive providers, BASS/codec /
 device/onset precision and human-audible fidelity remain unverified or excluded.
 See `../R12-original-discrete-slider-hitsounds.md` for actual CI evidence and scope.
+
+### Continuous slider audio (R13)
+
+Optional loops use the same hitsounds.json enabled/layering/effect/global settings.
+After the existing circle and tick generators, add six independent loop tones:
+
+```powershell
+./reconstructed/GenerateIndependentSliderLoops.ps1 -PackDirectory C:\MyIndependentPack
+```
+
+Set DefaultPackDirectory to that local directory in hitsounds.json beside the app.
+The generator preserves the other15 files and writes normal/soft/drum-sliderslide.wav
+and normal/soft/drum-sliderwhistle.wav. User map/skin WAV→MP3→OGG resources and
+indexed variants follow the existing hierarchy; codec availability is platform
+specific. No original sample pack is supplied or required. Missing or rejected
+loops leave gameplay and discrete effects available with continuous status.
+
+R13 admits fresh format14+ finite supported timing and one continuous producer at
+a time. Overlaps, ambiguous loop/custom cache stems, out-of-order timing and
+unsupported selectors disable continuing effects. One shared logical channel pair
+uses persistent preopened MediaPlayers, separate from one-shot voices. Gain/pan
+are supported; no pitch or native scheduling claim. MediaEnded restarts the stream,
+so gapless looping is not guaranteed. Pause, disable, restart and map replacement
+cancel queued generations; resume needs a later eligible slider update. Parent pan
+uses R12's last published ball X and may lag the native presentation state.
+
+Compilation, headless recording checks and PCM headers do not prove playback,
+loop quality or native BASS fidelity. The owner alone opens/plays/listens to the app.
+See ../R13-original-continuous-slider-audio.md for exact-source CI and coverage.
