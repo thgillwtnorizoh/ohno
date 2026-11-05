@@ -1,0 +1,73 @@
+{
+  "baseline": "13d2bb58000f65c5526ce7cd81800c8fdc9b47bd",
+  "original_r13_tested_source": "221c6e1d55a488489155acdadd6e8ed32243a014",
+  "tested_source": "8336074d08e3a4eadf0af0b9585a7eb5740194b3",
+  "run_id": 42020483267,
+  "job_id": 127221700444,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42020483267",
+  "verification_ref": "ci/verification",
+  "main_advanced_after_success": true,
+  "build": {
+    "warnings": 0,
+    "errors": 0,
+    "configuration": "Release win-x64"
+  },
+  "qa_historical": 1091,
+  "qa11": {
+    "components": 234,
+    "source_audits": 9,
+    "assets": 4,
+    "windows_empty": 6,
+    "total": 253
+  },
+  "independent_named_total": 1344,
+  "c01_development": 6,
+  "retained_development": {
+    "r06_targets": 4,
+    "r06_fixtures": 4,
+    "r07": 8,
+    "r08": 13,
+    "r08_c01": 4,
+    "r08_c02": 14,
+    "r09": 15,
+    "r10": 23,
+    "r11": 32,
+    "r12": 40,
+    "r13": 54,
+    "r13_windows_empty": 1
+  },
+  "g08": {
+    "passed": true,
+    "expected": [
+      0.1,
+      0.1
+    ],
+    "actual": [
+      0.10000000149011612,
+      0.10000000149011612
+    ],
+    "single_bits": [
+      "0x3dcccccd",
+      "0x3dcccccd"
+    ]
+  },
+  "retained_failed_run": 42018275697,
+  "source_preserved": [
+    "re/qa/qa01-qa11",
+    "re/evidence/37-40",
+    "reconstructed/R13-original-continuous-slider-audio.md"
+  ],
+  "files": {
+    "qa11-results.json.gz": "525afc7ae784904fb6d97cdd59fcf1f4b316e4a29ed67c75c8aa1a34caad06ef",
+    "qa11-windows-results.json.gz": "7d714deeb3a324cab82efca3b3393b889478dd2c0b319201adcfc949bb765567",
+    "qa11-g08.json": "fa92778e1c3a7498a2754503c3a4de5a1215422b0ba656fbb3ae5ef152c36f2e",
+    "windows-summary.log": "266c838806098713002be149098b08e32c3a1cef47b0675e16b3b6a38bfcf343"
+  },
+  "uncompressed_sha256": {
+    "qa11-results.json": "b82bf2fbd6a2ba2ed7f00622b308bbd6b9a22835c189d692a2cfd0aad9f6f66a",
+    "qa11-windows-results.json": "8afb1a70de58a2539d5f6e4b38f219a36c3b38f269b6386f65c231d53727eb21"
+  },
+  "media_opened": false,
+  "game_window_opened": false,
+  "original_runtime_executed": false
+}

@@ -1,0 +1,135 @@
+{
+  "Name": "G08 settings gain captured once across backend callback",
+  "Authority": "E040 M3b11:0018 stloc0 then001f/002c ldloc0;artificial controlled interleaving",
+  "Classification": "EXECUTED COMPONENT",
+  "passed": true,
+  "inputs": [],
+  "observations": [
+    {
+      "resolve": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": {
+        "Name": "Acquire",
+        "Handle": 10101,
+        "Attribute": 0,
+        "Value": 0,
+        "Flag": false
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Acquire",
+        "Handle": 10101,
+        "Attribute": 0,
+        "Value": 0,
+        "Flag": false
+      },
+      "status": "returned",
+      "result": 101
+    },
+    {
+      "resolve": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": {
+        "Name": "Acquire",
+        "Handle": 11101,
+        "Attribute": 0,
+        "Value": 0,
+        "Flag": false
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Acquire",
+        "Handle": 11101,
+        "Attribute": 0,
+        "Value": 0,
+        "Flag": false
+      },
+      "status": "returned",
+      "result": 202
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 101,
+        "Attribute": 11,
+        "Value": 1,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 101,
+        "Attribute": 2,
+        "Value": 0.25,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 202,
+        "Attribute": 2,
+        "Value": 0.25,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 202,
+        "Attribute": 11,
+        "Value": 1,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 101,
+        "Attribute": 2,
+        "Value": 0.1,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "operation": {
+        "Name": "Attribute",
+        "Handle": 202,
+        "Attribute": 2,
+        "Value": 0.1,
+        "Flag": null
+      },
+      "status": "attempted"
+    },
+    {
+      "expected": 0.1,
+      "actual": 0.10000000149011612,
+      "tolerance": 1e-07
+    },
+    {
+      "expected": 0.1,
+      "actual": 0.10000000149011612,
+      "tolerance": 1e-07
+    }
+  ]
+}

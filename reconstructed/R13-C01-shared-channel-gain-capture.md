@@ -19,9 +19,37 @@ current production, R13 harness and workflow. No RTK.md is present. No original
 binary re-extraction/research, original or reconstructed game/window operation,
 physical input, media opening, audio playback/listening or E020 experiment.
 
-Windows verification pending. The unchanged QA11 gate must pass253 named checks,
-including the exact retained G08, together with1091 historical checks and all
-prior development groups. R13-C01 controls are development, not independent QA.
+**Windows verification: PASS.** Tested source
+`8336074d08e3a4eadf0af0b9585a7eb5740194b3`.
+[Run42020483267/job127221700444](https://github.com/thgillwtnorizoh/ohno/actions/runs/42020483267/job/127221700444),
+Windows2022/preinstalled SDK8.0.427/runtime8.0.33, completed2026-11-05.
+Verification ran on ci/verification before the canonical main ref was advanced
+to that exact source. Final report/evidence publication changes no tested code.
+
+| Gate | Actual result |
+|---|---:|
+|WPF Release win-x64|0 warnings,0 errors|
+|Historical independent QA01/03/04/05/06/07/08/09/10|1091/1091|
+|QA11 component controls|234/234|
+|QA11 source audits|9/9|
+|QA11 asset controls|4/4|
+|QA11 Windows empty-resource controls|6/6|
+|QA11 total|253/253|
+|Combined named independent checks|1344/1344|
+|R13-C01 development controls|6/6|
+
+All retained development checks passed: R06 targets4/fixture loads4; R07 8;
+R08 13; C01 4; C02 14; R09 15; R10 23; R11 32; R12 40; R13 54;
+separate R13 Windows empty-resource group1. Generator files and these development
+groups are excluded from the independent QA count. No media/window/device opened.
+
+Exact unchanged QA11 G08: **PASS**. Both expected values0.1; actual values
+0.10000000149011612 /0.10000000149011612 (Single0x3dcccccd, round-trip0.1/0.1).
+Full runner-emitted headless247-case and separate Windows6-case JSON were recovered
+from ordered gzip/base64 log payloads and matched the emitted SHA256 hashes.
+Compressed originals, extracted G08 observations, summary log and hash provenance
+are under R13C01DevelopmentChecks/verification. R13-C01 controls remain development,
+not independent QA.
 Failed QA11 run42018275697 and its published artifacts remain unchanged.
 
 # 2. What they found
@@ -56,11 +84,11 @@ the harness does not reproduce an alternative gain algorithm. Exact independent
 G08 remains in the unchanged QA11 suite. Baseline observed0.1/0.2 versus expected
 0.1/0.1 is a conditional model discrepancy, not a measured audible imbalance.
 
-**VERIFIED COMPONENT:** pending exact-source Windows gate. No local SDK is
-available. CI will execute unchanged historical1091, full QA11 (234 components,
-9 source audits,4 asset controls,6 empty-Windows controls =253), all prior
-R06–R13 development groups, separate R13 Windows empty-resource group, and the
-six new development controls separately. Named independent total1344 includes
+**VERIFIED COMPONENT:** the exact-source Windows gate executed unchanged
+historical1091, full QA11 (234 components,9 source audits,4 asset controls,
+6 empty-Windows controls =253), all prior R06–R13 development groups, separate
+R13 Windows empty-resource group, and six new development controls. No local SDK
+was available; no local .NET execution is claimed. Named independent total1344 includes
 source audits; it is not1344 original-runtime experiments.
 
 **ENGINEERING:** original model exception propagation/partial mutation and the

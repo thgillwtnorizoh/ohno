@@ -936,3 +936,19 @@ no score/HP/backend/resource/timing/discrete/ownership redesign. Windows verific
 pending: expected1344 named independent checks and all development checks. No
 local SDK. Stop after R13-C01; do not begin R14/E041/QA12. Final verification will
 be appended after the gate; historical R13 report/journal prefixes stay intact.
+
+R13-C01 final exact-source Windows verification: source8336074d08e3a4eadf0af0b9585a7eb5740194b3,
+run42020483267/job127221700444 on ci/verification passed before canonical main
+advanced to that exact commit. Windows2022, installed SDK8.0.427/runtime8.0.33.
+WPF Release win-x64 zero warnings/errors. Historical1091/1091 plus QA11 253/253
+(234 components,9 source audits,4 asset controls,6 empty-Windows) =1344/1344
+named independent checks. Unchanged G08 passes: both expected0.1; both actual
+Single0x3dcccccd (0.10000000149011612, round-trip0.1). R13-C01 development6/6,
+all retained R06–R13 groups including R11 32/R12 40/R13 54 plus separate Windows1
+pass. Full headless/Windows JSON recovered from ordered compressed CI log payloads
+and verified against runner hashes; compressed originals, G08 observations and
+summary/provenance saved under R13C01DevelopmentChecks/verification. Original
+QA11 failing run42018275697, seven corrected-oracle records, all research/QA/prior
+reports/journal prefixes unchanged. Final report/evidence-only publication changes
+no tested production/harness/workflow. No media/window/listening/original runtime.
+Stopping after R13-C01; R14/E041/QA12 and deferred score work remain unstarted.
