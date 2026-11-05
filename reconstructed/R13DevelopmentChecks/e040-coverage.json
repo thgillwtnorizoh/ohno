@@ -1,22 +1,22 @@
 [
   {
     "case": "L01",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L02",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L03",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L04",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "case": "L10",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -66,17 +66,17 @@
   },
   {
     "case": "L14",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L15",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L16",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "case": "L18",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "case": "L23",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "case": "L30",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "case": "L33",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -171,22 +171,22 @@
   },
   {
     "case": "L35",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L36",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L37",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L38",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -201,17 +201,17 @@
   },
   {
     "case": "L41",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L42",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L43",
-    "status": "partially covered",
+    "status": "unsupported",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -231,12 +231,12 @@
   },
   {
     "case": "L47",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
     "case": "L48",
-    "status": "executed finite production controls",
+    "status": "partially covered",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "case": "L52",
-    "status": "partially covered",
+    "status": "unsupported",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "case": "L54",
-    "status": "partially covered",
+    "status": "unsupported",
     "limit": "Injected/conditional managed state only; no native or acoustic execution. See named harness groups; unsupported subconditions remain original-static only."
   },
   {

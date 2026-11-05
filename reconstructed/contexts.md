@@ -891,3 +891,10 @@ No prior reports/research/independent QA/source fixtures or journal prefix chang
 scoring/HP/NewCombo arithmetic preserved. Windows exact-source verification pending;
 no local SDK available. Stop after R13; no QA11/R14/E041. Verification result will
 be appended, not substituted for historical failure evidence if any.
+
+R13 initial Windows run42009465622, source c4d7e81dbde807dcb60d18b05f861b6f8849b87c:
+WPF clean; historical1091 and all prior development checks passed. R13 passed38
+groups then its new fixture lacked mandatory ApproachRate and parser admission
+failed. Preserve verification/initial-r13-failure.log; add fixture field, do not
+weaken parser or historical tests. Add Windows-only empty-resource lifecycle
+harness (no decoder/player/window opened). Final exact-source gate pending.

@@ -12,7 +12,12 @@ persistent pair and recording backend, queued start/pan/pause and synchronous
 selector-change Stop, bounded Windows persistent players, R12 lifecycle hooks,
 independent six-loop generator, R13 development harness and existing CI extension.
 Historical research/QA/fixtures/reports and journal prefixes remain unchanged.
-Windows verification is pending; no local .NET SDK is available in this host.
+Initial Windows run42009465622 on source c4d7e81dbde807dcb60d18b05f861b6f8849b87c
+built cleanly and passed all1091 historical QA checks and prior development groups.
+R13 passed38 groups then its new fixture failed parser admission: missing mandatory
+ApproachRate. The failure excerpt is preserved under R13DevelopmentChecks/verification.
+The fixture is corrected; final Windows verification is pending. No local .NET SDK
+is available in this host.
 This report must not be read as completion before successful exact-source CI.
 
 # 2. What they found
@@ -91,9 +96,10 @@ Existing twelve circle and three tick files remain unchanged. Map/skin resources
 and supported indexed variants use the established local-root policy. WAV header
 checks establish structure only, not decoding, seamless looping or acoustic output.
 
-**VERIFIED COMPONENT:** pending Windows gate. R13 checks link actual production
+**VERIFIED COMPONENT:** first38 groups executed successfully; final gate pending. R13 checks link actual production
 sources with injected recording channels/resources/session events. Two labelled
-source inspections cover Windows lifecycle wiring; they are not executed Windows
+source inspections cover Windows lifecycle wiring; a separate Windows-only harness
+executes empty-resource backend lifecycle without opening a decoder, player or window; they are not executed Windows
 media operation tests. Existing independent gate remains1091 named checks,
 including QA10's225 executed components and4 source audits, not1091 runtime cases.
 Coverage mapping for E040 L01–L56 is tracked separately; no full56 execution claim.

@@ -1,0 +1,76 @@
+2026-11-05T10:18:45.2139831Z [36;1mdotnet run --project reconstructed/R13DevelopmentChecks/R13DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" $packPath[0m
+2026-11-05T10:18:45.2140470Z [36;1m$resultCode = $LASTEXITCODE[0m
+2026-11-05T10:18:45.2140731Z [36;1mRemove-Item $packPath -Recurse[0m
+2026-11-05T10:18:45.2140987Z [36;1mexit $resultCode[0m
+2026-11-05T10:18:45.2178889Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-11-05T10:18:45.2179258Z ##[endgroup]
+2026-11-05T10:18:45.8652809Z Created 12 independent PCM WAV practice tones in D:\a\_temp\ohno-r13-independent-tones. No audio was played.
+2026-11-05T10:18:45.8716049Z {
+2026-11-05T10:18:45.8716816Z   "DefaultPackDirectory": "D:\\a\\_temp\\ohno-r13-independent-tones",
+2026-11-05T10:18:45.8717390Z   "VolumeUniversal": 100,
+2026-11-05T10:18:45.8717707Z   "SkinDirectory": null,
+2026-11-05T10:18:45.8718335Z   "SkinName": "Default",
+2026-11-05T10:18:45.8718585Z   "VolumeEffect": 80,
+2026-11-05T10:18:45.8718835Z   "LayeredHitSounds": true,
+2026-11-05T10:18:45.8719095Z   "SkinSamples": true,
+2026-11-05T10:18:45.8719323Z   "Enabled": true
+2026-11-05T10:18:45.8719528Z }
+2026-11-05T10:18:45.9322443Z R12 tick pack: 3 independent PCM WAV files written in D:\a\_temp\ohno-r13-independent-tones; no playback.
+2026-11-05T10:18:46.2471475Z R13: six independent 0.5-second PCM loops generated; no playback.
+2026-11-05T10:18:48.0134701Z PASS 1 L45 strict full rescan and cursor initialization
+2026-11-05T10:18:48.0135208Z PASS 2 L46 inclusive forward equality and inherited cursor separation
+2026-11-05T10:18:48.0135588Z PASS 3 base advance and reset
+2026-11-05T10:18:48.0137058Z PASS 4 L47/L48 future prefix blocks unsorted entries; explicit rescan sorts
+2026-11-05T10:18:48.0138581Z PASS 5 L48 comparator base before inherited at equal time
+2026-11-05T10:18:48.0141478Z PASS 6 ENGINEERING empty and nonfinite timing admission
+2026-11-05T10:18:48.0156204Z PASS 7 global sample index differs from timing cursor
+2026-11-05T10:18:48.0156731Z PASS 8 L14 inherited global refresh defers pair until continuing helper
+2026-11-05T10:18:48.0161135Z PASS 9 L14/L15 index and independent bank replacement stop active1
+2026-11-05T10:18:48.0161587Z PASS 10 L18 unchanged pair returns
+2026-11-05T10:18:48.0182741Z PASS 11 L19 force writes attributes without unconditional acquisition
+2026-11-05T10:18:48.0183211Z PASS 12 application gate
+2026-11-05T10:18:48.0185061Z PASS 13 L16 numeric non1 skips Stop; GetChannel false
+2026-11-05T10:18:48.0191818Z PASS 14 L07 whistle only row1
+2026-11-05T10:18:48.0192235Z PASS 15 L08 layered whistle selects both rows
+2026-11-05T10:18:48.0192570Z PASS 16 L09 Finish and Clap add no loop rows
+2026-11-05T10:18:48.0192866Z PASS 17 combined masks and explicit layering
+2026-11-05T10:18:48.0194543Z PASS 18 L10/L30 no implicit row off; active pair only pan
+2026-11-05T10:18:48.0198657Z PASS 19 L03 repeated pending starts without invented flag
+2026-11-05T10:18:48.0199439Z PASS 20 L31/L33 captured pan and fresh execution targets
+2026-11-05T10:18:48.0200102Z PASS 21 L33 start reads channel again after gain assignment
+2026-11-05T10:18:48.0208736Z PASS 22 L34 pause targets current fields; Pause distinct from Stop
+2026-11-05T10:18:48.0209346Z PASS 23 L35 deterministic ENGINEERING pause then start queue
+2026-11-05T10:18:48.0210087Z PASS 24 L36 pending pause does not force new start when observed active1
+2026-11-05T10:18:48.0210568Z PASS 25 L41/L42 manager gate and active state
+2026-11-05T10:18:48.0213301Z PASS 26 L29 replacement and start Single gain formulas
+2026-11-05T10:18:48.0214553Z PASS 27 L26 global point floor8 without circle attenuation
+2026-11-05T10:18:48.0216474Z PASS 28 L27/L28 fallback no floor versus no song100
+2026-11-05T10:18:48.0217749Z PASS 29 L30/L55 volume refresh occurs on reached setting write only
+2026-11-05T10:18:48.0218361Z PASS 30 ENGINEERING stale generation cancellation
+2026-11-05T10:18:48.0219030Z PASS 31 L56 original partial mutation retained on resource exception
+2026-11-05T10:18:48.0219739Z PASS 32 L22 handle0 remains distinct from missing in pure channel model
+2026-11-05T10:18:48.0352194Z PASS 33 L24 all18 cells plus6 dynamic loads loop enabled
+2026-11-05T10:18:48.0355415Z PASS 34 L23 mode2 rows banks and three index planes
+2026-11-05T10:18:48.0356695Z PASS 35 L20 dynamic continuing key lookup
+2026-11-05T10:18:48.0357312Z PASS 36 L21 dynamic0 versus minus1 plane0 fallback
+2026-11-05T10:18:48.0361226Z PASS 37 cache invalidation resets independent continuing table
+2026-11-05T10:18:48.0364203Z PASS 38 missing continuing assets explicit minus1
+2026-11-05T10:18:48.1246030Z Unhandled exception. System.IO.InvalidDataException: R02 requires explicit ApproachRate.
+2026-11-05T10:18:48.1247629Z    at Ohno.CircleGame.Gameplay.Beatmap.<Load>g__Difficulty|47_10(String name, <>c__DisplayClass47_0&) in D:\a\ohno\ohno\reconstructed\CircleGame\Gameplay\Beatmap.cs:line 710
+2026-11-05T10:18:48.1249222Z    at Ohno.CircleGame.Gameplay.Beatmap.Load(String path) in D:\a\ohno\ohno\reconstructed\CircleGame\Gameplay\Beatmap.cs:line 500
+2026-11-05T10:18:48.1249994Z    at Program.<Main>$(String[] args) in D:\a\ohno\ohno\reconstructed\R13DevelopmentChecks\Program.cs:line 54
+2026-11-05T10:18:48.2082527Z ##[error]Process completed with exit code 1.
+2026-11-05T10:18:48.2296561Z Post job cleanup.
+2026-11-05T10:18:48.4099716Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-11-05T10:18:48.4367034Z git version 2.56.0.windows.4
+2026-11-05T10:18:48.4433424Z Temporarily overriding HOME='D:\a\_temp\90cb731e-0068-4076-a511-5bd093f5af8d' before making global git config changes
+2026-11-05T10:18:48.4434669Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-05T10:18:48.4446322Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\ohno\ohno
+2026-11-05T10:18:48.4749449Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-11-05T10:18:48.5031806Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-05T10:18:48.9972883Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-05T10:18:49.0255921Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-05T10:18:49.5199067Z Cleaning up orphan processes
+2026-11-05T10:18:49.5481281Z Terminate orphan process: pid (572) (dotnet)
+2026-11-05T10:18:49.5696500Z Terminate orphan process: pid (6352) (conhost)
+2026-11-05T10:18:49.6343461Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

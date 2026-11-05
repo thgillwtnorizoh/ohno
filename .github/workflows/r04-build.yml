@@ -15,6 +15,7 @@ on:
       - reconstructed/R11DevelopmentChecks/**
       - reconstructed/R12DevelopmentChecks/**
       - reconstructed/R13DevelopmentChecks/**
+      - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
       - reconstructed/GenerateIndependentSliderTicks.ps1
       - re/qa/qa03/Headless/**
@@ -238,3 +239,10 @@ jobs:
           $resultCode = $LASTEXITCODE
           Remove-Item $packPath -Recurse
           exit $resultCode
+
+      - name: Check R13 Windows empty-resource lifecycle without opening media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R13WindowsChecks/R13WindowsChecks.csproj -c Release
+          exit $LASTEXITCODE
