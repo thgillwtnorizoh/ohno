@@ -38,7 +38,7 @@ public sealed class WindowsCircleEffects : IDisposable
         (prepared.Sliders.Count > 0 && loops.Ready == 0 ? " · continuous unavailable: no decoded loop resources" : "") +
         (loops.Error is { } loopError ? " · " + loopError : "") +
         (Failure is { } error ? " · " + error : "") +
-        (voices.Count == 0 ? " · no playable effects; supply local map/skin samples or a default pack" : "");
+        (voices.Count == 0 && loops.Ready == 0 ? " · no playable effects; supply local map/skin samples or a default pack" : "");
     private WindowsCircleEffects(PreparedCircleEffects prepared, HitSoundSettings settings, Dispatcher dispatcher)
     {
         this.prepared = prepared; this.settings = settings; this.dispatcher = dispatcher;
