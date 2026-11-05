@@ -898,3 +898,17 @@ groups then its new fixture lacked mandatory ApproachRate and parser admission
 failed. Preserve verification/initial-r13-failure.log; add fixture field, do not
 weaken parser or historical tests. Add Windows-only empty-resource lifecycle
 harness (no decoder/player/window opened). Final exact-source gate pending.
+
+R13 final verification — source221c6e1d55a488489155acdadd6e8ed32243a014,
+Windows run42010372847/job127187559676: PASS. WPF Release win-x64 zero warnings/
+errors; historical independent1091/1091 named checks (QA10 includes4 source-only);
+all retained R06–R12 groups pass; R13 54/54 groups (51 managed component,2 source
+inspection,1 six-file structural group), separate Windows empty-resource lifecycle
+1/1. No audio resource was opened/played by that lifecycle test. Six generated
+loop structures checked, previous15 generated asset hashes retained. Intermediate
+runs42009817763/42010084278 passed48/53 groups. Final review corrected no-song
+cursor clearing and its new control passed. Initial38-group fixture failure is
+preserved, not reclassified as a production defect. Final report/README/evidence
+publication changes no tested production/harness/workflow/generator bytes. Owner
+audible qualification and original-runtime/native scheduling remain unverified.
+No R14/E041/QA11 begun. All historical records/journal prefixes preserved.

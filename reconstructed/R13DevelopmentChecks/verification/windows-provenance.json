@@ -1,0 +1,28 @@
+{
+  "tested_source": "221c6e1d55a488489155acdadd6e8ed32243a014",
+  "run_id": 42010372847,
+  "job_id": 127187559676,
+  "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42010372847",
+  "conclusion": "success",
+  "qa_named_checks": 1091,
+  "qa10_source_audits_included": 4,
+  "r13_groups": 54,
+  "r13_component_groups": 51,
+  "r13_source_inspections": 2,
+  "r13_asset_structure_groups": 1,
+  "windows_empty_resource_groups": 1,
+  "loop_files": 6,
+  "previous_generated_files_hash_preserved": 15,
+  "audio_played": false,
+  "window_opened": false,
+  "initial_failure": {
+    "source": "c4d7e81dbde807dcb60d18b05f861b6f8849b87c",
+    "run_id": 42009465622,
+    "passed_groups_before_fixture_failure": 38,
+    "reason": "New fixture omitted mandatory ApproachRate; no production parser change"
+  },
+  "files": {
+    "initial-r13-failure.log": "1888c29a0015be3cad931aa5e4d71785d08ad0185f6180e790bbd5b8efdab73f",
+    "windows-summary.log": "a34db7476a433d9f273c3796da858c9cbbdf50c1366990553db2a455f43e4677"
+  }
+}

@@ -16,9 +16,30 @@ Initial Windows run42009465622 on source c4d7e81dbde807dcb60d18b05f861b6f8849b87
 built cleanly and passed all1091 historical QA checks and prior development groups.
 R13 passed38 groups then its new fixture failed parser admission: missing mandatory
 ApproachRate. The failure excerpt is preserved under R13DevelopmentChecks/verification.
-The fixture is corrected; final Windows verification is pending. No local .NET SDK
-is available in this host.
-This report must not be read as completion before successful exact-source CI.
+The fixture was corrected without parser or historical assertion changes.
+
+**Final Windows verification: PASS**, tested source
+`221c6e1d55a488489155acdadd6e8ed32243a014`.
+[Run42010372847/job127187559676](https://github.com/thgillwtnorizoh/ohno/actions/runs/42010372847/job/127187559676),
+Windows2022/preinstalled .NET8, 2026-11-05, completed successfully.
+WPF Release win-x64: **0 warnings, 0 errors**. Independent historical gate:
+QA01 90, QA03 56, QA04 43, QA05 66, QA06 99, QA07 159, QA08 115,
+QA09 234, QA10 229 = **1091/1091 named checks**. QA10 includes225 executed
+component cases and4 source-only audits. All prior development checks pass:
+R06 targets4/fixtures4, R07 8, R08 13, C01 4, C02 14, R09 15, R10 23,
+R11 32, R12 40. New R13: **54/54 groups**, including51 executed managed
+component groups,2 explicit source inspections and1 six-file structural asset group.
+Separate Windows backend: **1/1 empty-resource lifecycle group**, no media opened.
+Six independent loop WAVs validated; all15 previous generated WAV hashes preserved.
+Generator counts are not independent QA counts. No local .NET SDK was available;
+the exact-source Windows gate is the executed build/test authority.
+
+Intermediate run42009817763 on ab2fa0ab62fcbd132c119a72583e82f7e2108a68
+passed48 R13 groups and the Windows empty-resource group; expanded run42010084278
+on f8d7370a7110b063fd8e70b5b0af14efa560cb30 passed53 groups. Final review then
+corrected absent-song cursor clearing and added its control before the final gate.
+Initial failure and subsequent source history remain published. Final publication
+adds only report/journal/README and verification evidence to the tested source.
 
 # 2. What they found
 
@@ -54,7 +75,11 @@ sample metadata and loop/custom collisions disable continuous support without
 changing slider admission, discrete selection or accounting. The original model
 still permits controlled out-of-order/shared-producer cases for deterministic tests.
 The original non-slider cache refresh and timing delegate side effects are outside
-this bounded model. Global readiness maps to the running WPF update state.
+this bounded model. Global readiness maps to the running WPF update state. The timing model constructor
+chooses the post-song-load M3b65 reset state (-1 cursors), not raw CLR type-zero
+initialization or the timing-list setter's zero cursors. Those alternate lifecycle
+entries remain partial/unsupported. No-song Clock resets cursors without inventing
+a current point or sample refresh; selector fields survive that reset.
 
 Session hooks preserve head-before64, tracking before audio, continuing before
 latest-index comparison, second helper on a new discrete producer at time<=end,
@@ -96,13 +121,16 @@ Existing twelve circle and three tick files remain unchanged. Map/skin resources
 and supported indexed variants use the established local-root policy. WAV header
 checks establish structure only, not decoding, seamless looping or acoustic output.
 
-**VERIFIED COMPONENT:** first38 groups executed successfully; final gate pending. R13 checks link actual production
+**VERIFIED COMPONENT:** final54 groups and separate Windows empty-resource lifecycle passed as reported above. R13 checks link actual production
 sources with injected recording channels/resources/session events. Two labelled
 source inspections cover Windows lifecycle wiring; a separate Windows-only harness
 executes empty-resource backend lifecycle without opening a decoder, player or window; they are not executed Windows
 media operation tests. Existing independent gate remains1091 named checks,
 including QA10's225 executed components and4 source audits, not1091 runtime cases.
-Coverage mapping for E040 L01–L56 is tracked separately; no full56 execution claim.
+Coverage mapping for E040 L01–L56 is tracked separately:18 have executed finite
+controls,35 are partial and3 unsupported. These are conditional-component coverage
+labels, not56 original-runtime tests. Full native lifecycle/null/device paths are
+not asserted. The log excerpt and provenance are under R13DevelopmentChecks/verification.
 
 **UNVERIFIED ORIGINAL-RUNTIME:** native BASS success, worker interleavings,
 audible fidelity, actual Windows playback/device/onset, seamless loops and owner

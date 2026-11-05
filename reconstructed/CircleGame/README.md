@@ -693,3 +693,8 @@ uses R12's last published ball X and may lag the native presentation state.
 Compilation, headless recording checks and PCM headers do not prove playback,
 loop quality or native BASS fidelity. The owner alone opens/plays/listens to the app.
 See ../R13-original-continuous-slider-audio.md for exact-source CI and coverage.
+
+Settings are read at application startup. Restart after changing hitsounds.json or
+adding previously missing skin/default-pack resources: those shared resource-cache
+identities persist across map replacement. Map-specific resources are released
+with their prepared map; no file watcher or native device reinitialization is claimed.

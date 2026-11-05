@@ -1,0 +1,80 @@
+2026-11-05T10:24:28.3519996Z Build succeeded.
+2026-11-05T10:24:28.3521100Z     0 Warning(s)
+2026-11-05T10:24:28.3521424Z     0 Error(s)
+2026-11-05T10:24:30.9047246Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-05T10:24:33.5241642Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-05T10:24:35.6533678Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-05T10:24:35.7012390Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-05T10:24:38.1760114Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-05T10:24:40.4841337Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-05T10:24:42.8094774Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-05T10:24:45.0473032Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-05T10:24:47.2199723Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-05T10:24:49.4295993Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-05T10:24:51.7786612Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-05T10:24:53.8708685Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-05T10:24:55.9000139Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-05T10:24:57.9605610Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-05T10:25:00.1029569Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-05T10:25:02.4353625Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-05T10:25:02.9724736Z R11 INDEPENDENT PACK: 12 PCM WAV files generated and headers checked; no playback
+2026-11-05T10:25:07.1224316Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-05T10:25:07.9241373Z R12 INDEPENDENT TICKS: 3 PCM WAV files generated and headers checked; old 12 names retained; no playback
+2026-11-05T10:25:10.0172016Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-05T10:25:13.9044109Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-05T10:25:16.7855155Z PASS 1 L45 strict full rescan and cursor initialization
+2026-11-05T10:25:16.7855806Z PASS 2 L46 inclusive forward equality and inherited cursor separation
+2026-11-05T10:25:16.7856336Z PASS 3 base advance and reset
+2026-11-05T10:25:16.7857257Z PASS 4 L47/L48 future prefix blocks unsorted entries; explicit rescan sorts
+2026-11-05T10:25:16.7858937Z PASS 5 L48 comparator base before inherited at equal time
+2026-11-05T10:25:16.7861784Z PASS 6 ENGINEERING empty and nonfinite timing admission
+2026-11-05T10:25:16.7876887Z PASS 7 global sample index differs from timing cursor
+2026-11-05T10:25:16.7877534Z PASS 8 L14 inherited global refresh defers pair until continuing helper
+2026-11-05T10:25:16.7881705Z PASS 9 L14/L15 index and independent bank replacement stop active1
+2026-11-05T10:25:16.7882255Z PASS 10 L18 unchanged pair returns
+2026-11-05T10:25:16.7903368Z PASS 11 L19 force writes attributes without unconditional acquisition
+2026-11-05T10:25:16.7903952Z PASS 12 application gate
+2026-11-05T10:25:16.7905639Z PASS 13 L16 numeric non1 skips Stop; GetChannel false
+2026-11-05T10:25:16.7912147Z PASS 14 L07 whistle only row1
+2026-11-05T10:25:16.7912596Z PASS 15 L08 layered whistle selects both rows
+2026-11-05T10:25:16.7913000Z PASS 16 L09 Finish and Clap add no loop rows
+2026-11-05T10:25:16.7913395Z PASS 17 combined masks and explicit layering
+2026-11-05T10:25:16.7914874Z PASS 18 L10/L30 no implicit row off; active pair only pan
+2026-11-05T10:25:16.7917943Z PASS 19 L03 repeated pending starts without invented flag
+2026-11-05T10:25:16.7918665Z PASS 20 L31/L33 captured pan and fresh execution targets
+2026-11-05T10:25:16.7919398Z PASS 21 L33 start reads channel again after gain assignment
+2026-11-05T10:25:16.7928466Z PASS 22 L34 pause targets current fields; Pause distinct from Stop
+2026-11-05T10:25:16.7929117Z PASS 23 L35 deterministic ENGINEERING pause then start queue
+2026-11-05T10:25:16.7929891Z PASS 24 L36 pending pause does not force new start when observed active1
+2026-11-05T10:25:16.7930426Z PASS 25 L41/L42 manager gate and active state
+2026-11-05T10:25:16.7932793Z PASS 26 L29 replacement and start Single gain formulas
+2026-11-05T10:25:16.7934185Z PASS 27 L26 global point floor8 without circle attenuation
+2026-11-05T10:25:16.7936164Z PASS 28 L27/L28 fallback no floor versus no song100
+2026-11-05T10:25:16.7937527Z PASS 29 L30/L55 volume refresh occurs on reached setting write only
+2026-11-05T10:25:16.7938210Z PASS 30 ENGINEERING stale generation cancellation
+2026-11-05T10:25:16.7938951Z PASS 31 L56 original partial mutation retained on resource exception
+2026-11-05T10:25:16.7939703Z PASS 32 L22 handle0 remains distinct from missing in pure channel model
+2026-11-05T10:25:16.8073631Z PASS 33 L24 all18 cells plus6 dynamic loads loop enabled
+2026-11-05T10:25:16.8076744Z PASS 34 L23 mode2 rows banks and three index planes
+2026-11-05T10:25:16.8077721Z PASS 35 L20 dynamic continuing key lookup
+2026-11-05T10:25:16.8078247Z PASS 36 L21 dynamic0 versus minus1 plane0 fallback
+2026-11-05T10:25:16.8082329Z PASS 37 cache invalidation resets independent continuing table
+2026-11-05T10:25:16.8085156Z PASS 38 missing continuing assets explicit minus1
+2026-11-05T10:25:16.8085872Z PASS 39 L15 base-only replacement preserves row1
+2026-11-05T10:25:16.8086456Z PASS 40 addition-only replacement preserves row0
+2026-11-05T10:25:16.8087237Z PASS 41 forced refresh bypasses application gate
+2026-11-05T10:25:16.8087798Z PASS 42 sample set0 converts to selected Normal default
+2026-11-05T10:25:16.8088789Z PASS 43 selected-map and version gates do not replace selectors
+2026-11-05T10:25:16.8089429Z PASS 44 absent song map resets timing without fabricating current sample refresh
+2026-11-05T10:25:16.8919345Z PASS 45 production session continuous update without new deadline
+2026-11-05T10:25:16.8922935Z PASS 46 L02 due tick double helper before discrete request
+2026-11-05T10:25:16.8923590Z PASS 47 L04 tracking false cleanup before consumption
+2026-11-05T10:25:16.8928369Z PASS 48 L37 exact end aggregate pause then continuing then positive edge
+2026-11-05T10:25:16.8935683Z PASS 49 score judgement isolation with throwing optional loop backend
+2026-11-05T10:25:16.8938600Z PASS 50 private health preparation silent
+2026-11-05T10:25:16.8940260Z PASS 51 L38 after end aggregate no fresh continuation
+2026-11-05T10:25:16.8949449Z PASS 52 SOURCE INSPECTED Windows generation map restart pause disposal boundaries
+2026-11-05T10:25:16.8950542Z PASS 53 SOURCE INSPECTED persistent Windows preparation and lifecycle, no playback executed
+2026-11-05T10:25:16.8961798Z PASS 54 six independent PCM loop structures (not decoder or audibility proof)
+2026-11-05T10:25:16.8962935Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-05T10:25:19.3310149Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
