@@ -912,3 +912,27 @@ preserved, not reclassified as a production defect. Final report/README/evidence
 publication changes no tested production/harness/workflow/generator bytes. Owner
 audible qualification and original-runtime/native scheduling remain unverified.
 No R14/E041/QA11 begun. All historical records/journal prefixes preserved.
+
+## R13-C01 — Shared channel settings gain capture — 2026-11-05
+
+Work2 correction authorized for QA11-D01 only. Baseline main
+13d2bb58000f65c5526ce7cd81800c8fdc9b47bd; R13 production221c6e1d55a488489155acdadd6e8ed32243a014.
+Read AGENTS/standing contract, both journals, E040 report and full parsed evidence,
+QA11 README/discrepancy/TimingChannels, original R13 report and production/harness/
+workflow. Original M3b11 body81b56cede5a835a944737fcdcd34c15ff744d821dffd406bbfdaff8f1d5f4dc3
+captures gain at0018 and reuses local at001f/002c while rereading channel targets.
+
+Minimal SettingsChanged correction captures ReplacementGain once, retains settings
+assignment order, Single arithmetic and fresh current target reads. Added six
+separate development controls (ordinary refresh, controlled setting mutation,
+fresh second target, literal Single/overflow bits, partial exceptions, other gain/
+pan/pause/stop/activity paths). Existing Windows workflow retains every historical
+command and adds the bounded controls; reusable ci/verification ref permits exact
+Windows verification before advancing canonical main, as this mission requires.
+No permanent expedition/milestone branch. Report R13-C01-shared-channel-gain-capture.md.
+QA11 sources/oracles/evidence/G08 and failed run42018275697 remain immutable.
+No original research/binary/game/media/window/input/listening/E020 execution;
+no score/HP/backend/resource/timing/discrete/ownership redesign. Windows verification
+pending: expected1344 named independent checks and all development checks. No
+local SDK. Stop after R13-C01; do not begin R14/E041/QA12. Final verification will
+be appended after the gate; historical R13 report/journal prefixes stay intact.

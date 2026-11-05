@@ -2,7 +2,7 @@ name: R09 build and QA07 health regression
 
 on:
   push:
-    branches: [main]
+    branches: [main, ci/verification]
     paths:
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
@@ -15,6 +15,7 @@ on:
       - reconstructed/R11DevelopmentChecks/**
       - reconstructed/R12DevelopmentChecks/**
       - reconstructed/R13DevelopmentChecks/**
+      - reconstructed/R13C01DevelopmentChecks/**
       - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
       - reconstructed/GenerateIndependentSliderTicks.ps1
@@ -256,4 +257,11 @@ jobs:
         shell: pwsh
         run: |
           & ./re/qa/qa11/Run-QA11.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa11-results.json')
+          exit $LASTEXITCODE
+
+      - name: Check R13-C01 captured settings gain without playback
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R13C01DevelopmentChecks/R13C01DevelopmentChecks.csproj -c Release
           exit $LASTEXITCODE

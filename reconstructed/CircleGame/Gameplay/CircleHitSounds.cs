@@ -530,7 +530,9 @@ public sealed class SharedSliderChannels
     public void SettingsChanged(int effect, int universal)
     {
         EffectVolume = effect; UniversalVolume = universal;
-        backend.Attribute(Channel0, 2, ReplacementGain); backend.Attribute(Channel1, 2, ReplacementGain);
+        float gain = ReplacementGain;
+        backend.Attribute(Channel0, 2, gain);
+        backend.Attribute(Channel1, 2, gain);
     }
     public void ExecuteNext() { if (actions.TryDequeue(out var action)) action(); }
     public void Drain() { while (actions.Count > 0) ExecuteNext(); }
