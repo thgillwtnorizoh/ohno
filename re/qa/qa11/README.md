@@ -3,8 +3,9 @@
 QA11 — Work1 independent continuous slider audio verification, 2026-11-05.
 Authorized baseline `8bd0433528cbceb0bffcaa4bf29119776deaf0e9`.
 R13 production source `221c6e1d55a488489155acdadd6e8ed32243a014`; its production
-files are unchanged at the baseline. Publication and Windows execution provenance
-are finalized in `verification/windows-provenance.json` after the gate completes.
+files are unchanged at the baseline. Tested QA11 gate source:
+`3cc9dddb7591f43103d36d52537e3bfe0385eb28`.
+Windows execution provenance is in `verification/windows-provenance.json`.
 
 **One conditional production-model discrepancy: QA11-D01.**
 `SharedSliderChannels.SettingsChanged` recomputes the gain for the second channel,
@@ -19,12 +20,39 @@ Local supplemental run: **247 named headless checks,246 pass/1 fail**:
 nine source audits (nine pass). Separate actual Windows empty-resource adapter:
 **6/6**. Total new named checks **253**,252 pass/1 discrepancy. Files, repeated
 runs, E040 matrix rows and R13 development groups are not additional QA cases.
-Local execution uses the installed .NET10 runtime with the net8 target and explicit
-roll-forward; it is supplemental to the established Windows .NET8 gate.
+Local execution uses SDK10.0.402 with the net8 target and the installed
+.NET8.0.17 runtime (also for the empty Windows checks). The roll-forward setting
+was supplied but no major runtime roll-forward occurred. This is supplemental
+to the established Windows SDK8 gate.
 
-Windows .NET8 historical/build/development outcomes and exact source SHA are
-recorded below after execution. A failing QA11 gate is intentional while D01
-remains unfixed; this report does not declare complete R13 verification.
+Windows gate [42018275697](https://github.com/thgillwtnorizoh/ohno/actions/runs/42018275697),
+job127214195946, used preinstalled SDK8.0.427/runtime8.0.33 on Windows2022.
+It reproduced **246/247 headless plus6/6 empty Windows checks**, with G08 the
+only failure. WPF Release win-x64: **0 compiler warnings,0 errors**.
+Historical QA: **1091/1091**. Every prior development suite passed, including
+R13 **54/54** and separate Windows empty-resource **1/1**.
+The overall workflow is red because the independently correct discrepancy
+assertion remains failing. No complete R13 verification is declared.
+
+| Historical independent suite | Rerun |
+|---|---:|
+|QA01|90/90|
+|QA03|56/56|
+|QA04|43/43|
+|QA05|66/66|
+|QA06|99/99|
+|QA07|159/159|
+|QA08|115/115|
+|QA09|234/234|
+|QA10|229/229|
+|Total|1091/1091|
+
+Development results remain separately counted: R06 four preparation targets/four
+fixture controls; R07 eight; R08 thirteen; C01 four; C02 fourteen; R09 fifteen;
+R10 twenty-three; R11 thirty-two; R12 forty; R13 fifty-four plus its separate
+one empty-resource Windows group. The final evidence/report publication is a
+descendant of the tested gate, with executable harness/workflow/production
+unchanged; exact final publication SHA is supplied in the verified handoff.
 
 Preserved first run:236 checks,228 pass/eight fail. Seven were corrected QA11
 expectation/setup errors, with exact first artifacts and independent reasoning in
@@ -59,6 +87,12 @@ The QA11 result manifest hashes actual linked sources, E037–E040 evidence,
 generators, R13 historical failure/provenance files and QA11 harness sources.
 Sixteen byte-preserved `.osu` files in `Inputs/` capture fifty case-input references;
 the same text is generated independently by the harness and retained per outcome.
+The full fetched Windows job log is preserved with SHA256
+`316ce6279018fbecdd834fe0fb037de680415b1bfa8c6c52772a7dea3152b70e`.
+Emitted SHA256 values independently match both decompressed QA11 result payloads.
+Seventeen source/research/history Git blob comparisons prove baseline bytes are
+unchanged at the tested source. The evidence consistency checker also compares
+both generated packs against all fifteen QA10 historical asset fingerprints.
 `verification/initial/manifest.json` pins the first harness. Results retain expected
 and actual values, event snapshots and backend operation attempts/failures.
 
@@ -196,6 +230,9 @@ runs headless checks, then empty Windows checks even when G08 fails. It exits1
 while any discrepancy remains. The minimal CI addition retains every earlier
 command and adds QA11 filters/one final step. Compressed exact results and SHA256
 are emitted into the existing job log for deterministic evidence recovery.
+`check_published_evidence.py` checks preserved first-run hashes, fixtures, the
+56-control matrix, named results and historical/generated fingerprints using
+published files only. It adds no named QA case and never opens original binaries.
 
 Owner-only qualification still requires separately authorized media/driver/device
 and human listening checks. BASS scheduling/equivalence, original native activity,

@@ -1,0 +1,173 @@
+{
+  "schema": "QA11.windows.provenance.v1",
+  "repository": "https://github.com/thgillwtnorizoh/ohno",
+  "authorized_baseline": "8bd0433528cbceb0bffcaa4bf29119776deaf0e9",
+  "production_implementation_source": "221c6e1d55a488489155acdadd6e8ed32243a014",
+  "tested_gate_source": "3cc9dddb7591f43103d36d52537e3bfe0385eb28",
+  "run": 42018275697,
+  "job": 127214195946,
+  "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42018275697",
+  "conclusion": "failure: retained QA11-D01 only; historical/build/development all success",
+  "runtime": ".NET 8.0.33",
+  "os": "Microsoft Windows 10.0.20348",
+  "historical_qa": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229
+  },
+  "historical_total": 1091,
+  "new_qa11": {
+    "headless_component": {
+      "executed": 234,
+      "passed": 233,
+      "failed": 1
+    },
+    "asset_controls": {
+      "executed": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "source_audits": {
+      "executed": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "windows_empty_components": {
+      "executed": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "total_named": 253,
+    "passed": 252,
+    "failed": 1
+  },
+  "wpf": "Release win-x64:0 compiler warnings/0 errors",
+  "development": {
+    "R06": "4 target +4 fixture controls",
+    "R07": 8,
+    "R08": 13,
+    "C01": 4,
+    "C02": 14,
+    "R09": 15,
+    "R10": 23,
+    "R11": 32,
+    "R12": 40,
+    "R13": 54,
+    "R13_windows_empty": 1
+  },
+  "artifact_hashes": {
+    "windows-job.log": "316ce6279018fbecdd834fe0fb037de680415b1bfa8c6c52772a7dea3152b70e",
+    "windows-results.json": "562ea698a83eee055afa5d11c3d9ed75e75a3f788a95cbb1a93e3c2c97bdaa61",
+    "windows-empty-results.json": "c37a7dd9edb83bf43d404c3b483cd1c16bf48b3b7fbf69926726ca5a6958978f",
+    "windows-summary.log": "b173538192ae7b5ae930d8792e34c4c83700fae0cf89dcd075b6daf242d8abdc"
+  },
+  "unchanged_source_and_historical_blob_checks": [
+    {
+      "path": "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "baseline_and_tested_git_blob": "0e1ee8137b12b37129219cf7daf278ed7ec64740",
+      "windows_worktree_sha256": "c3dcfe78752fc6a3e2faac2cf60e19544d80096ae1c3dccc5e20cc33c8fd294e"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+      "baseline_and_tested_git_blob": "f955bdc49d392bda0d2a9d017d3361a780e9cd60",
+      "windows_worktree_sha256": "cb3a335e65d58a929ba83169334445e5fd064d72c09a03dd630cf4f30c71c618"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+      "baseline_and_tested_git_blob": "750e65d5a4bf795d729ed851a96846d688539f54",
+      "windows_worktree_sha256": "d776835dc131a7fd20c0161d9cda917146be4132d45b15c9b6cf624d32ffe6c0"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs",
+      "baseline_and_tested_git_blob": "0d6bcf41e48cf9654b925eec6f1a862da925556a",
+      "windows_worktree_sha256": "f5de3d7320978268bbe9d56ea160724c2153fceda8c81851a95195949329a15b"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs",
+      "baseline_and_tested_git_blob": "21e0d89e3f0768a5a304c3f64277b9298626d73c",
+      "windows_worktree_sha256": "55df5b3cfac431afb1e87b74e5201977b75aae2ae70d2059702f88b7e35a1e48"
+    },
+    {
+      "path": "reconstructed/CircleGame/Rendering/PlayfieldView.cs",
+      "baseline_and_tested_git_blob": "1975a4d33639961ff15c6e79ee81dffa4ad8ff83",
+      "windows_worktree_sha256": "7e6e6ac7238a35efa55c8e270e7ba8f63a21a61b976aa7764399c0366cb107d8"
+    },
+    {
+      "path": "reconstructed/CircleGame/Program.cs",
+      "baseline_and_tested_git_blob": "e15c0001f53a92435eb7db586f66d743b935c442",
+      "windows_worktree_sha256": "266b713b45529a24adcc5c8d60a71b569bb97414e09549fc680bbd13e311d89f"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentSliderTicks.ps1",
+      "baseline_and_tested_git_blob": "d4a19502da4cc0497b357c2be367c90204c903ee",
+      "windows_worktree_sha256": "774470651e713ef2f4f25136cda4c8aa07d309234107a85cbc5d72b50d7a06fd"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentHitSounds.ps1",
+      "baseline_and_tested_git_blob": "298886c8ccf2bb7a6631665648b8cc4f5c7470b4",
+      "windows_worktree_sha256": "c9b36413a6d1451bda3bcf9f739ba0bb8ccc575114fb171ea19d18044e7db6eb"
+    },
+    {
+      "path": "re/evidence/39/slider-hitsounds.json",
+      "baseline_and_tested_git_blob": "49bb04c0814481a507ac02e53942290a3348d123",
+      "windows_worktree_sha256": "c765a4312587462fb6e980ba761f6699dceaa4f419a6193fad940ac7381c6f0d"
+    },
+    {
+      "path": "re/evidence/37/circle-hitsound.json",
+      "baseline_and_tested_git_blob": "817c16e2ceff3e8853997f83e3da30a3b41b0df0",
+      "windows_worktree_sha256": "6570fec176d5bd0eb156e2d27f264df96b80be756410b46ca4c3e51a75742789"
+    },
+    {
+      "path": "re/evidence/38/hitsound-resources.json",
+      "baseline_and_tested_git_blob": "c9b87498539e75e658f88e5bd7a3db54ed855b18",
+      "windows_worktree_sha256": "ed361f8ed1c126c9b8074ce95f4f419a9ba8bd7f051a505be196e1b4bbdff3bb"
+    },
+    {
+      "path": "reconstructed/R13DevelopmentChecks/verification/initial-r13-failure.log",
+      "baseline_and_tested_git_blob": "d511bddb7cf2aed76c05adee9b0b6f3822859c51",
+      "windows_worktree_sha256": "1888c29a0015be3cad931aa5e4d71785d08ad0185f6180e790bbd5b8efdab73f"
+    },
+    {
+      "path": "reconstructed/R13DevelopmentChecks/verification/windows-provenance.json",
+      "baseline_and_tested_git_blob": "2626f865b8694ed8f33cce4aa0e6f11da2e2a4fb",
+      "windows_worktree_sha256": "395927f971450db6bdafad959ecefe12bde9b7b55e22a3809acab823bfcb6cbb"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs",
+      "baseline_and_tested_git_blob": "70ed503778d69cea84c9557d7b83b23506c32b54",
+      "windows_worktree_sha256": "5660ffa4b47c97c1a46dde13cf1ad984a1d04616a0e1f23f421ab2c2eedc4014"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentSliderLoops.ps1",
+      "baseline_and_tested_git_blob": "7811811e45df52ed43606bae6c5327e7bcfa993f",
+      "windows_worktree_sha256": "29dca3a764b26a0aec09ccde4b9a9f6b89c6547d8e83eaeeef891f6358eed1b7"
+    },
+    {
+      "path": "re/evidence/40/slider-continuous-audio.json",
+      "baseline_and_tested_git_blob": "9282b3cdcb99af3dea797d58facdd6ed549f9aee",
+      "windows_worktree_sha256": "63370f979a46e5e1cb374b838c86281f4c15609eacecfce0b389c3e16ffba474"
+    }
+  ],
+  "publication": "Final evidence/report commit is a descendant of tested_gate_source and does not change executable harness, workflow or production. Exact final SHA provided by verified publication handoff.",
+  "limits": "Logical recording backend/empty-resource Windows only. No player/decoder/game/native/original binary/audio device opened; source-only Windows nonempty paths. Expected red QA11-D01 preserved. Local run actually used .NET8.0.17 runtime with SDK10.0.402; initial journal runtime inference corrected by final append.",
+  "sdk": "8.0.427 (preinstalled; no installation)",
+  "execution_harness_git_blobs": {
+    ".github/workflows/r04-build.yml": "90f2e6f7b604646e642e0256b2ebfaa9402c2194",
+    "re/qa/qa11/Headless/AdditionalControls.cs": "b837739736600fc7a1511aac0643bc2fd7d2f7de",
+    "re/qa/qa11/Headless/AssetsBindings.cs": "0473ab4ca91f89abadd6cede03edbf73669216b0",
+    "re/qa/qa11/Headless/Harness.cs": "2c348a7ce7995344218a237c263b224e2d3afe96",
+    "re/qa/qa11/Headless/QA11.Headless.csproj": "f8188b0267bc8b688e4ed6a880a94b1594069ffd",
+    "re/qa/qa11/Headless/ResourcesAdmission.cs": "37e3a8287b700f5b8e125e3b71adb1370971124f",
+    "re/qa/qa11/Headless/Sessions.cs": "64928f5d5b772e4db64275a99a61a12064f4449e",
+    "re/qa/qa11/Headless/TimingChannels.cs": "98692ec9b8ad116fe9ded171ced2f7de7808c79a",
+    "re/qa/qa11/Run-QA11.ps1": "4537866d455a8386bfce59b917596f628722c5a1",
+    "re/qa/qa11/Windows/Program.cs": "c96b798f8723a67dfa75a81b55d022ac8207bd9e",
+    "re/qa/qa11/Windows/QA11.Windows.csproj": "31a7d061bf310dd9b9f8e21ca807496fbb1958f3"
+  }
+}

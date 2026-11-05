@@ -1,0 +1,130 @@
+{
+  "schema": "QA11.assets.v1",
+  "source_result": "verification/windows-results.json",
+  "source_result_sha256": "562ea698a83eee055afa5d11c3d9ed75e75a3f788a95cbb1a93e3c2c97bdaa61",
+  "expected": {
+    "encoding": "PCM16LE",
+    "channels": 1,
+    "sample_rate": 44100,
+    "frames": 22050,
+    "seconds": 0.5,
+    "file_bytes": 44144,
+    "riff_size": 44136,
+    "data_size": 44100,
+    "chunks": {
+      "fmt ": 12,
+      "data": 36
+    }
+  },
+  "actual_loops": [
+    {
+      "file": "drum-sliderslide.wav",
+      "length": 44144,
+      "sha256": "72bd755f43e554cf94d8766090ce764b098b75f1f5a9966179d73a2cbf720113"
+    },
+    {
+      "file": "drum-sliderwhistle.wav",
+      "length": 44144,
+      "sha256": "473ea26396b1c7c00340d3cc9cec24e8ce04ab16114a2280dd289b15b145d89a"
+    },
+    {
+      "file": "normal-sliderslide.wav",
+      "length": 44144,
+      "sha256": "26cdb8171ad5294b635f19a05c2adab8747150f7b6b9241be595383335ba63c2"
+    },
+    {
+      "file": "normal-sliderwhistle.wav",
+      "length": 44144,
+      "sha256": "72bd755f43e554cf94d8766090ce764b098b75f1f5a9966179d73a2cbf720113"
+    },
+    {
+      "file": "soft-sliderslide.wav",
+      "length": 44144,
+      "sha256": "435ee283bd2643f5a74baa607d3dc2adf03cf4067970654e2218d46feecb36da"
+    },
+    {
+      "file": "soft-sliderwhistle.wav",
+      "length": 44144,
+      "sha256": "a6e020598fb537ab041bf324c54dd344eb722829ecefb966105af381cfaaa698"
+    }
+  ],
+  "previous_fifteen": [
+    {
+      "file": "drum-slidertick.wav",
+      "sha256": "59f7d3b531d218a95dfe90a3d6c43ea7c8b6bcf37e018f1d2b0c29d676a4efe9",
+      "length": 10628
+    },
+    {
+      "file": "normal-slidertick.wav",
+      "sha256": "907b009062633f4d5911eb97a9f036688e166e7c36604830cd71b9eee86a04ff",
+      "length": 10628
+    },
+    {
+      "file": "soft-slidertick.wav",
+      "sha256": "1fd5bfaeb19d68b2b716f88a5affd5273e379531a87d70259d279275a6725863",
+      "length": 10628
+    },
+    {
+      "file": "drum-hitclap.wav",
+      "sha256": "0a4859054144255cee8573ebe9f95fdf5b47a82f61b2e772258efff03d74eec9",
+      "length": 10628
+    },
+    {
+      "file": "drum-hitfinish.wav",
+      "sha256": "3fe42ab21b475b7c3e09f1d08be514aaac5d91635ea1e81da24448c750c71243",
+      "length": 10628
+    },
+    {
+      "file": "drum-hitnormal.wav",
+      "sha256": "16f82181b854bd0ee1f375ac02981b95f3c709854b03255b84ee7d9e3fb1343c",
+      "length": 10628
+    },
+    {
+      "file": "drum-hitwhistle.wav",
+      "sha256": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb",
+      "length": 10628
+    },
+    {
+      "file": "normal-hitclap.wav",
+      "sha256": "dd9e50c243e4c99958be66b23d1fd5185318f08101e382223d4e849044d16c81",
+      "length": 10628
+    },
+    {
+      "file": "normal-hitfinish.wav",
+      "sha256": "20940506785ee6ef2b9a497aab0113bc6f5eba2aa26da5b3adb3ca46a4547ba0",
+      "length": 10628
+    },
+    {
+      "file": "normal-hitnormal.wav",
+      "sha256": "9d4b3a565c07db4857460064dea5ffc9dffb525035af2c67ff515ff996cc1b90",
+      "length": 10628
+    },
+    {
+      "file": "normal-hitwhistle.wav",
+      "sha256": "df18a9b3abd1df0c2b5bde1bd3a3e8d5be4f5ace4da7e84407999bdda8018308",
+      "length": 10628
+    },
+    {
+      "file": "soft-hitclap.wav",
+      "sha256": "20b1d7cef2cb743472ce36530fca2f46fdff7a22b593fb75aa54181f12f882f7",
+      "length": 10628
+    },
+    {
+      "file": "soft-hitfinish.wav",
+      "sha256": "36f3da9b407e5d688a6ad0a13de24f125e1b02ee93a9fc395bc789802274d5fb",
+      "length": 10628
+    },
+    {
+      "file": "soft-hitnormal.wav",
+      "sha256": "d5d9fa1febdc50a0c3a627a14827f3ba70c1fbd5ed92c1ef5c8fcaef59720e4d",
+      "length": 10628
+    },
+    {
+      "file": "soft-hitwhistle.wav",
+      "sha256": "106b4f398216b0207c7df15b40097bd530e38c0aa6c3843a7c3e8ae507b2f299",
+      "length": 10628
+    }
+  ],
+  "historical_fingerprint_comparison": "PASS; both packs match QA10 historical hash multiset, including intentional duplicate waveforms",
+  "limits": "Independent generated resources only; no asset byte distribution, decoder, gapless or audible claim. This consistency check adds no named QA case."
+}

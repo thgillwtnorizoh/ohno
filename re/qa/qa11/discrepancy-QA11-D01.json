@@ -418,5 +418,147 @@
       }
     ]
   },
-  "repair_scope": "Work2 targeted SettingsChanged local capture; no QA11 production repair. Preserve live target rereads and existing exception behavior."
+  "repair_scope": "Work2 targeted SettingsChanged local capture; no QA11 production repair. Preserve live target rereads and existing exception behavior.",
+  "windows_confirmation": {
+    "gate_source": "3cc9dddb7591f43103d36d52537e3bfe0385eb28",
+    "runtime": ".NET 8.0.33",
+    "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42018275697",
+    "result_sha256": "562ea698a83eee055afa5d11c3d9ed75e75a3f788a95cbb1a93e3c2c97bdaa61",
+    "actual": {
+      "Name": "G08 settings gain captured once across backend callback",
+      "Authority": "E040 M3b11:0018 stloc0 then001f/002c ldloc0;artificial controlled interleaving",
+      "Classification": "EXECUTED COMPONENT",
+      "passed": false,
+      "error": "System.Exception: expected=0.1; actual=0.20000000298023224\r\n   at Ohno.QA11.Tests.Near(Double actual, Double expected, Double tolerance) in D:\\a\\ohno\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 28\r\n   at Ohno.QA11.Tests.<>c.<ChannelCases>b__61_27() in D:\\a\\ohno\\ohno\\re\\qa\\qa11\\Headless\\TimingChannels.cs:line 103\r\n   at Ohno.QA11.Tests.<>c__DisplayClass16_0.<Add>b__0() in D:\\a\\ohno\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 22\r\n   at Ohno.QA11.Tests.Main(String[] args) in D:\\a\\ohno\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 76",
+      "inputs": [],
+      "observations": [
+        {
+          "resolve": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": {
+            "Name": "Acquire",
+            "Handle": 10101,
+            "Attribute": 0,
+            "Value": 0,
+            "Flag": false
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Acquire",
+            "Handle": 10101,
+            "Attribute": 0,
+            "Value": 0,
+            "Flag": false
+          },
+          "status": "returned",
+          "result": 101
+        },
+        {
+          "resolve": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": {
+            "Name": "Acquire",
+            "Handle": 11101,
+            "Attribute": 0,
+            "Value": 0,
+            "Flag": false
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Acquire",
+            "Handle": 11101,
+            "Attribute": 0,
+            "Value": 0,
+            "Flag": false
+          },
+          "status": "returned",
+          "result": 202
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 101,
+            "Attribute": 11,
+            "Value": 1,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 101,
+            "Attribute": 2,
+            "Value": 0.25,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 202,
+            "Attribute": 2,
+            "Value": 0.25,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 202,
+            "Attribute": 11,
+            "Value": 1,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 101,
+            "Attribute": 2,
+            "Value": 0.1,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "operation": {
+            "Name": "Attribute",
+            "Handle": 202,
+            "Attribute": 2,
+            "Value": 0.2,
+            "Flag": null
+          },
+          "status": "attempted"
+        },
+        {
+          "expected": 0.1,
+          "actual": 0.10000000149011612,
+          "tolerance": 1e-07
+        },
+        {
+          "expected": 0.1,
+          "actual": 0.20000000298023224,
+          "tolerance": 1e-07
+        }
+      ]
+    }
+  }
 }

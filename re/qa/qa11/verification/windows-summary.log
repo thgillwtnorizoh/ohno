@@ -1,0 +1,35 @@
+2026-11-05T11:21:25.2096100Z 8.0.427 [C:\Program Files\dotnet\sdk]
+2026-11-05T11:21:27.9488093Z 8.0.427
+2026-11-05T11:21:46.3902224Z     0 Warning(s)
+2026-11-05T11:21:46.3902535Z     0 Error(s)
+2026-11-05T11:21:49.2154153Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-05T11:21:52.0953873Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-05T11:21:52.1767882Z ##[group]Run dotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+2026-11-05T11:21:52.1769010Z [36;1mdotnet run --project reconstructed/R06PreparationChecks/R06PreparationChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"[0m
+2026-11-05T11:21:54.4236644Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-05T11:21:54.4803146Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-05T11:21:57.2669845Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-05T11:21:59.6807146Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-05T11:22:02.1828085Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-05T11:22:04.5632164Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-05T11:22:06.8612010Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-05T11:22:09.2903024Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-05T11:22:11.6696490Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-05T11:22:13.7794703Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-05T11:22:15.9424147Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-05T11:22:18.1530061Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-05T11:22:20.3797214Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-05T11:22:22.7352442Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-05T11:22:26.5745740Z PASS R06 byte threshold 0
+2026-11-05T11:22:26.5746195Z PASS R06 byte threshold 1023
+2026-11-05T11:22:26.5746705Z PASS R06 byte threshold 1024
+2026-11-05T11:22:28.0435127Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-05T11:22:31.2608827Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-05T11:22:34.6750988Z PASS R06 legacy Prepare leaves tick cells0
+2026-11-05T11:22:35.3193645Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-05T11:22:38.5102382Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-05T11:22:41.2568401Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-05T11:22:45.3343154Z FAIL G08 settings gain captured once across backend callback: System.Exception: expected=0.1; actual=0.20000000298023224
+2026-11-05T11:22:45.3620004Z PASS R06 unprepared continuing table zero
+2026-11-05T11:22:46.4327326Z QA11 CONTINUOUS TESTS: 246 passed, 1 failed, 247 executed
+2026-11-05T11:22:48.4289811Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
