@@ -1,0 +1,6 @@
+Inputs/*.osu -text
+verification/*.json -text
+verification/*.log -text
+verification/initial-harness/* -text
+
+verification/** -text

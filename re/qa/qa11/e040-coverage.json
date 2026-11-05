@@ -1,0 +1,2513 @@
+{
+  "schema": "QA11.E040.coverage.v1",
+  "authority_sha256": "c4f5219a5f3ab36ec184335135fa9f233f7bc3b340905aeef2f4e555344b387b",
+  "summary": {
+    "CONFIRMED_CONDITIONAL_DISCREPANCY": 1,
+    "FINITE_MANAGED_VARIANT": 44,
+    "PARTIAL_EXECUTED": 7,
+    "SOURCE_INSPECTION_ONLY": 1,
+    "UNSUPPORTED_ORIGINAL_PATH": 3
+  },
+  "controls": [
+    {
+      "id": "L01",
+      "original_static_prediction": {
+        "conditional_native_calls": "No new Play; deferred attribute3 on both execution-time handles.",
+        "conditional_native_operands": "101/202 state1",
+        "enqueued_actions": "QPan(0) only",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M1449:0113-0131"
+        ],
+        "id": "L01",
+        "initial_managed_overrides": "tracking true before first due tick",
+        "ordered_managed_mutations": "No bank/index/channel change; audio index can remain unchanged.",
+        "reached_path": "M1449->M146b->M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "P02 active session before tick only pan submitted"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "P02 active session before tick only pan submitted",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L02",
+      "original_static_prediction": {
+        "conditional_native_calls": "Continuing pan twice; discrete tick remains E039 mode1.",
+        "conditional_native_operands": "101/202 state1",
+        "enqueued_actions": "QPan(0),QPan(0), then separate discrete tick action if sample branch succeeds",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M1449:011e-015c",
+          "M1469:0000-0013"
+        ],
+        "id": "L02",
+        "initial_managed_overrides": "reached first due tick2500, audio index-1",
+        "ordered_managed_mutations": "First continuing call precedes audio index store; second follows it.",
+        "reached_path": "M1449->M146b; store0; M1469(true,0)->M146b; dedicated tick",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "I03 timely tick has two continuing calls",
+        "P03 active session due tick submits pan twice"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "I03 timely tick has two continuing calls",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "P03 active session due tick submits pan twice",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L03",
+      "original_static_prediction": {
+        "conditional_native_calls": "Each Q0 if executed sets attribute2 then Play(actual F2354,true).",
+        "conditional_native_operands": "101 state0;202 state1; prior Q0 not executed",
+        "enqueued_actions": "Q0,QPan on each reached call",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L03",
+        "initial_managed_overrides": "repeat reached2500, F0bf4=0 (no new due index)",
+        "ordered_managed_mutations": "No channel replacement; no pending-start flag is stored.",
+        "reached_path": "M1449->M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C15 repeated submissions do not invent pending-active state",
+        "I04 same-time update continues without discrete duplicate"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C15 repeated submissions do not invent pending-active state",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "I04 same-time update continues without discrete duplicate",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L04",
+      "original_static_prediction": {
+        "conditional_native_calls": "At execution Pause(F2354), then separately Pause(F2355).",
+        "conditional_native_operands": "both state1",
+        "enqueued_actions": "QPause",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M1449:0216-021e"
+        ],
+        "id": "L04",
+        "initial_managed_overrides": "tracking false with latest due0",
+        "ordered_managed_mutations": "Queue cleanup before store audio index0; no channel fields cleared.",
+        "reached_path": "M1449 false arm->M146c",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "I05 tracking loss consumes audio before reentry"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "I05 tracking loss consumes audio before reentry",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L05",
+      "original_static_prediction": {
+        "conditional_native_calls": "Pause(0) then Pause(0), results discarded; not evidence of success.",
+        "conditional_native_operands": "native returns opaque",
+        "enqueued_actions": "QPause",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L05",
+        "initial_managed_overrides": "tracking false; channels0/0",
+        "ordered_managed_mutations": "No validity or activity guard in cleanup.",
+        "reached_path": "M1449->M146c",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "P04 tracking false zero pair still queues Pause"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "P04 tracking false zero pair still queues Pause",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L06",
+      "original_static_prediction": {
+        "conditional_native_calls": "Play(global0,true) after live gain computation.",
+        "conditional_native_operands": "101/202 state!=1",
+        "enqueued_actions": "Q0,QPan (mask0); Q1 only if Whistle bit set",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L06",
+        "initial_managed_overrides": "reentry after QPause executed; audio index unchanged",
+        "ordered_managed_mutations": "No discrete replay required for continuing start.",
+        "reached_path": "M1449->M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "I05 tracking loss consumes audio before reentry",
+        "P05 completed cleanup then reentry can start"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "I05 tracking loss consumes audio before reentry",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "P05 completed cleanup then reentry can start",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L07",
+      "original_static_prediction": {
+        "conditional_native_calls": "Play global2355; pan writes both channels.",
+        "conditional_native_operands": "both state0",
+        "enqueued_actions": "Q1,QPan",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L07",
+        "initial_managed_overrides": "mask2, layeredfalse",
+        "ordered_managed_mutations": "No row0 request, no row0 stop or pause.",
+        "reached_path": "M3b33 after unchanged M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C14 mask2 layeredFalse"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C14 mask2 layeredFalse",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L08",
+      "original_static_prediction": {
+        "conditional_native_calls": "Two independent Play(channel,true) actions, not native-overlap observation.",
+        "conditional_native_operands": "both state0",
+        "enqueued_actions": "Q0,Q1,QPan",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L08",
+        "initial_managed_overrides": "mask2, layeredtrue",
+        "ordered_managed_mutations": "Both rows eligible; neither channels owner nor pending flag stored.",
+        "reached_path": "M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C14 mask2 layeredTrue"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C14 mask2 layeredTrue",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L09",
+      "original_static_prediction": {
+        "conditional_native_calls": "No Finish/Clap continuing resource is selected.",
+        "conditional_native_operands": "both state0",
+        "enqueued_actions": "Q0,QPan",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L09",
+        "initial_managed_overrides": "mask4 or8, layeredfalse",
+        "ordered_managed_mutations": "Lack of Whistle2 selects row0 even without Normal1 bit.",
+        "reached_path": "M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C14 mask4 layeredFalse",
+        "C14 mask4 layeredTrue",
+        "C14 mask8 layeredFalse",
+        "C14 mask8 layeredTrue"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C14 mask4 layeredFalse",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C14 mask4 layeredTrue",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C14 mask8 layeredFalse",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C14 mask8 layeredTrue",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L10",
+      "original_static_prediction": {
+        "conditional_native_calls": "Previous row0 is not explicitly stopped by the new mask.",
+        "conditional_native_operands": "both state1",
+        "enqueued_actions": "QPan only",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L10",
+        "initial_managed_overrides": "mask changes0->2 while unchanged channels both active1",
+        "ordered_managed_mutations": "No replacement and no per-row off operation.",
+        "reached_path": "M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C16 active mask exclusion does not Stop old row"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C16 active mask exclusion does not Stop old row",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L11",
+      "original_static_prediction": {
+        "conditional_native_calls": "No forced replacement just because ignored parent overrides differ.",
+        "conditional_native_operands": "old channels state1;new GetChannel returns301/402 if needed",
+        "enqueued_actions": "QPan if unchanged; eligibility still mask dependent",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L11",
+        "initial_managed_overrides": "parent format13, base3/addition2, globalbank1",
+        "ordered_managed_mutations": "Passes base0/addition0, resolving to global1/base1; parent sets ignored.",
+        "reached_path": "M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "UNSUPPORTED_ORIGINAL_PATH",
+      "independent_case_names": [
+        "A01 bounded admission format13"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "A01 bounded admission format13",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Production format13 continuous path is explicitly rejected. Direct pair tests cannot establish original legacy M146b inheritance."
+    },
+    {
+      "id": "L12",
+      "original_static_prediction": {
+        "conditional_native_calls": "Resolve Normal1/Drum/index1/mode2 then Whistle2/Drum/index1/mode2; GetChannel(sample,false).",
+        "conditional_native_operands": "old101/202 state1; GetChannel returns301/402",
+        "enqueued_actions": "QPan only if new channels report1; otherwise eligible starts precede it",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L12",
+        "initial_managed_overrides": "parent format14, base3/addition0",
+        "ordered_managed_mutations": "base3,addition3; changed both; set F2362=1; Stop101; bank3;channel301;Stop202;addition3;channel402.",
+        "reached_path": "M146b->M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "C03 row0-only change preserves row1",
+        "C10 base0/addition0 inherit global bank"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C03 row0-only change preserves row1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C10 base0/addition0 inherit global bank",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Direct pair base3/addition0 covered through inheritance/general row controls, session parent fields source-wired; original metadata population retained as E039 authority."
+    },
+    {
+      "id": "L13",
+      "original_static_prediction": {
+        "conditional_native_calls": "Stop each nonzero old handle only if its fresh active result==1.",
+        "conditional_native_operands": "old state1; GetChannel301/402",
+        "enqueued_actions": "None in M3b20 itself",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L13",
+        "initial_managed_overrides": "base0,addition3; globalbank2; old selected banks1/1",
+        "ordered_managed_mutations": "Resolve base2/addition3; retain separate changed flags, replace both.",
+        "reached_path": "M3b20(0,3,false)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "C04 row1-only change preserves row0",
+        "C10 base0/addition0 inherit global bank"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C04 row1-only change preserves row0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C10 base0/addition0 inherit global bank",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Independent row/addition/global inheritance controls; exact original common state is a conditional variant."
+    },
+    {
+      "id": "L14",
+      "original_static_prediction": {
+        "conditional_native_calls": "Resolve two mode2 dynamic keys; replace both regardless eventual mask.",
+        "conditional_native_operands": "GetChannel301/402",
+        "enqueued_actions": "None until caller resumes",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L14",
+        "initial_managed_overrides": "F2360=7,F2362=1; bank values unchanged",
+        "ordered_managed_mutations": "Both changed flags true from index; F2362=7 before row replacement.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C05 sample-index change replaces both rows"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C05 sample-index change replaces both rows",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L15",
+      "original_static_prediction": {
+        "conditional_native_calls": "GetChannel(newSample,false); attributes11/2 still applied to both channels after gate.",
+        "conditional_native_operands": "row0 old state2; GetChannel301",
+        "enqueued_actions": "None in helper",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L15",
+        "initial_managed_overrides": "only base bank differs; addition fixed1; index unchanged",
+        "ordered_managed_mutations": "Replace row0, preserve row1; old non-state1 row0 not explicitly stopped.",
+        "reached_path": "M3b20(3,1,false)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C03 row0-only change preserves row1"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C03 row0-only change preserves row1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L16",
+      "original_static_prediction": {
+        "conditional_native_calls": "No Stop(0) in replacement; later unconditional attribute writes remain.",
+        "conditional_native_operands": "native Active0 not requested in replacement guard; GetChannel301",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L16",
+        "initial_managed_overrides": "changed bank; old channel0",
+        "ordered_managed_mutations": "Skip old nonzero guard then assign new bank/channel.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C06 zero old handle skips activity and Stop"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C06 zero old handle skips activity and Stop",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L17",
+      "original_static_prediction": {
+        "conditional_native_calls": "No native gain refresh from helper in unchanged case.",
+        "conditional_native_operands": "both state1",
+        "enqueued_actions": "None from helper; caller may still QPan",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L17",
+        "initial_managed_overrides": "identical selectors, forcefalse; application2",
+        "ordered_managed_mutations": "Return before F2362 store, replacement or attribute update.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C08 unchanged pair early return"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C08 unchanged pair early return",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L18",
+      "original_static_prediction": {
+        "conditional_native_calls": "Do not treat helper return as caller return.",
+        "conditional_native_operands": "native unused",
+        "enqueued_actions": "M3b33 can still queue eligible starts/pan on old channels",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L18",
+        "initial_managed_overrides": "changed selectors; application0; forcefalse",
+        "ordered_managed_mutations": "Return without storing new selectors/channels.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C07 pair application gate0",
+        "C07 pair application gate9"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C07 pair application gate0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C07 pair application gate9",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L19",
+      "original_static_prediction": {
+        "conditional_native_calls": "SetAttribute pair11=1 and2=current gain.",
+        "conditional_native_operands": "native opaque",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L19",
+        "initial_managed_overrides": "identical selectors; forcetrue (artificial direct helper)",
+        "ordered_managed_mutations": "Store F2362 and write attributes despite no bank change; do not GetChannel when both changed flags false.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C09 force unchanged pair attributes without Acquire"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C09 force unchanged pair attributes without Acquire",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L20",
+      "original_static_prediction": {
+        "conditional_native_calls": "Return707; whistle key is soft-sliderwhistle7, not hitwhistle7.",
+        "conditional_native_operands": "native no lookup required",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L20",
+        "initial_managed_overrides": "mode2 set2/index7; map cache soft-sliderslide7=707",
+        "ordered_managed_mutations": "No mutation or file load.",
+        "reached_path": "M3b36(Normal1,Soft2,7,2)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "R02 dynamic row0 bank1",
+        "R02 dynamic row0 bank2",
+        "R02 dynamic row0 bank3",
+        "R02 dynamic row1 bank1",
+        "R02 dynamic row1 bank2",
+        "R02 dynamic row1 bank3"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R02 dynamic row0 bank1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row0 bank2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row0 bank3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L21",
+      "original_static_prediction": {
+        "conditional_native_calls": "Return corresponding F2376[row,bank,0]=17.",
+        "conditional_native_operands": "native unused",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L21",
+        "initial_managed_overrides": "mode2 dynamic key missing or cached-1; plane0 handle17",
+        "ordered_managed_mutations": "No dynamic cache insertion at request time.",
+        "reached_path": "M3b36",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "R03 dynamic cache-1",
+        "R04 missing dynamic entry cache-only fallback"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R03 dynamic cache-1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R04 missing dynamic entry cache-only fallback",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L22",
+      "original_static_prediction": {
+        "conditional_native_calls": "SetAttribute/Play0 can be reached; opaque native success.",
+        "conditional_native_operands": "GetChannel(0,false) supplied return0",
+        "enqueued_actions": "M3b33 may Q0 if Active0!=1",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038",
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L22",
+        "initial_managed_overrides": "mode2 dynamic key cached0; plane0 handle17",
+        "ordered_managed_mutations": "Keep0, assign channel0; no M3b31 validity gate.",
+        "reached_path": "M3b36->M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "R03 dynamic cache0"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R03 dynamic cache0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L23",
+      "original_static_prediction": {
+        "conditional_native_calls": "Native GetChannel(-1,false) reached; unlike M3b31 sample-1 early return.",
+        "conditional_native_operands": "GetChannel(-1,false) supplied return0",
+        "enqueued_actions": "Conditional eligible start/pan",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L23",
+        "initial_managed_overrides": "mode2 selected sample-1 (plane0 or fallback)",
+        "ordered_managed_mutations": "Store returned0, not an absent-player managed branch.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C12 unresolved resource sample-1 still acquired",
+        "R16 no resources prepared minus1"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C12 unresolved resource sample-1 still acquired",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R16 no resources prepared minus1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L24",
+      "original_static_prediction": {
+        "conditional_native_calls": "M3b14 flags131072|4; standard hierarchy; index0 map suppression;1 unsuffixed;2 suffix2.",
+        "conditional_native_operands": "native loader returns symbolic handles",
+        "enqueued_actions": "None specific to loops",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L24",
+        "initial_managed_overrides": "prepare planes0/1/2 and banks1/2/3",
+        "ordered_managed_mutations": "Store F2376[0,bank,plane] then[1,bank,plane]; loop true; reset selected index/last banks at tail; do not clear channel pair.",
+        "reached_path": "M3b19",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "R01 mode2 row0 bank1 plane0",
+        "R01 mode2 row0 bank1 plane1",
+        "R01 mode2 row0 bank1 plane2",
+        "R01 mode2 row0 bank2 plane0",
+        "R01 mode2 row0 bank2 plane1",
+        "R01 mode2 row0 bank2 plane2",
+        "R01 mode2 row0 bank3 plane0",
+        "R01 mode2 row0 bank3 plane1",
+        "R01 mode2 row0 bank3 plane2",
+        "R01 mode2 row1 bank1 plane0",
+        "R01 mode2 row1 bank1 plane1",
+        "R01 mode2 row1 bank1 plane2",
+        "R01 mode2 row1 bank2 plane0",
+        "R01 mode2 row1 bank2 plane1",
+        "R01 mode2 row1 bank2 plane2",
+        "R01 mode2 row1 bank3 plane0",
+        "R01 mode2 row1 bank3 plane1",
+        "R01 mode2 row1 bank3 plane2"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R01 mode2 row0 bank1 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank1 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank1 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank2 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank2 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank2 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank3 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank3 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row0 bank3 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank1 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank1 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank1 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank2 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank2 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank2 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank3 plane0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank3 plane1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R01 mode2 row1 bank3 plane2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L25",
+      "original_static_prediction": {
+        "conditional_native_calls": "Map WAV->MP3->OGG; caches may stop lookup before load; loop flag not part of cache key.",
+        "conditional_native_operands": "native load opaque",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038"
+        ],
+        "id": "L25",
+        "initial_managed_overrides": "preload dynamic index7",
+        "ordered_managed_mutations": "F2360=7; cycle F2361=1,2,3; calls for sliderslide/sliderwhistle with looptrue.",
+        "reached_path": "M3b18(7)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "R02 dynamic row0 bank1",
+        "R02 dynamic row0 bank2",
+        "R02 dynamic row0 bank3",
+        "R02 dynamic row1 bank1",
+        "R02 dynamic row1 bank2",
+        "R02 dynamic row1 bank3"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R02 dynamic row0 bank1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row0 bank2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row0 bank3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank2",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R02 dynamic row1 bank3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L26",
+      "original_static_prediction": {
+        "conditional_native_calls": "Start attribute2 respectively approximately.08,.08,.08,.09 with original Single order; no .8/.85 attenuation.",
+        "conditional_native_operands": "all helpers normal",
+        "enqueued_actions": "As pre-existing Q0 or Q1 executes",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M3b40/M3b41/M3b42"
+        ],
+        "id": "L26",
+        "initial_managed_overrides": "global current point volume0,7,8,9 (separate finite controls)",
+        "ordered_managed_mutations": "Selected V respectively8,8,8,9; settings100/100.",
+        "reached_path": "M3b42->M3b41; start callback",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "G01 point minimum volume0",
+        "G01 point minimum volume1",
+        "G01 point minimum volume7",
+        "G01 point minimum volume8",
+        "G01 point minimum volume9",
+        "G01 point minimum volume17",
+        "G01 point minimum volume23",
+        "G01 point minimum volume100"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G01 point minimum volume0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume7",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume8",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume9",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume17",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume23",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G01 point minimum volume100",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L27",
+      "original_static_prediction": {
+        "conditional_native_calls": "Gain consumers can use100; does not establish the whole slider path is reachable with null map.",
+        "conditional_native_operands": "native opaque",
+        "enqueued_actions": "None by getter",
+        "evidence": [
+          "M3b0e",
+          "M3b42:0000-0009"
+        ],
+        "id": "L27",
+        "initial_managed_overrides": "no song receiver/map",
+        "ordered_managed_mutations": "Return100 immediately; no timing read.",
+        "reached_path": "M3b42",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "G04 no song volume100"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G04 no song volume100",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L28",
+      "original_static_prediction": {
+        "conditional_native_calls": "Gain can be0, not repaired to floor8.",
+        "conditional_native_operands": "native opaque",
+        "enqueued_actions": "None by getter",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb",
+          "M3b42:0010-002a"
+        ],
+        "id": "L28",
+        "initial_managed_overrides": "song map exists; F238f=-1; map.F1000=0 artificial",
+        "ordered_managed_mutations": "Current point null; return map fallback0 with no Max8 on fallback.",
+        "reached_path": "M3b68->M47cb then M3b42",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "G03 absent current point fallback0",
+        "G03 absent current point fallback1",
+        "G03 absent current point fallback7",
+        "G03 absent current point fallback23"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G03 absent current point fallback0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G03 absent current point fallback1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G03 absent current point fallback7",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G03 absent current point fallback23",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L29",
+      "original_static_prediction": {
+        "conditional_native_calls": "SetAttribute(F2354,2,.1), rereadF2354,Play(handle,true).",
+        "conditional_native_operands": "native setters normal",
+        "enqueued_actions": "Existing Q0 only",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L29",
+        "initial_managed_overrides": "effect80,universal50,current volume25",
+        "ordered_managed_mutations": "Integer product4000; G40; M3b41=10; final attribute2=.1 under stated finite operands.",
+        "reached_path": "M3b40/M3b41->Q0",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "G02 distinct Single operation orders literal ULP",
+        "G07 settings refresh both current targets"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G02 distinct Single operation orders literal ULP",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G07 settings refresh both current targets",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L30",
+      "original_static_prediction": {
+        "conditional_native_calls": "No fresh gain write through these calls; later start or settings event reads new volume.",
+        "conditional_native_operands": "native state1",
+        "enqueued_actions": "QPan only from reached slider",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb",
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L30",
+        "initial_managed_overrides": "only current timing volume changes40->80; same banks/index; channelsstate1",
+        "ordered_managed_mutations": "Current point advances; no selector change; both refresh helpers return; no new start.",
+        "reached_path": "M3b61->M3b1f;M146b->M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "G06 volume-only change leaves active gain untouched"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G06 volume-only change leaves active gain untouched",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L31",
+      "original_static_prediction": {
+        "conditional_native_calls": "Attribute3 on both execution-time globals; no clamp in this continuing path.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "QPan(captured operand)",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L31",
+        "initial_managed_overrides": "pan parentX0/256/512; format14",
+        "ordered_managed_mutations": "Parent pan approximately-.4/0/.4; captured continuing operand approximately-.16/0/.16.",
+        "reached_path": "M1467->M146b->M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D11 stored presentation pan0",
+        "D11 stored presentation pan64",
+        "D11 stored presentation pan256",
+        "D11 stored presentation pan448",
+        "D11 stored presentation pan512",
+        "D11 stored presentation pan768",
+        "I13 stored presentation operand is consumed"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D11 stored presentation pan0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D11 stored presentation pan64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D11 stored presentation pan256",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D11 stored presentation pan448",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D11 stored presentation pan512",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D11 stored presentation pan768",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "I13 stored presentation operand is consumed",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L32",
+      "original_static_prediction": {
+        "conditional_native_calls": "No attribute3 from this call.",
+        "conditional_native_operands": "both state1",
+        "enqueued_actions": "No pan action; eligible starts still independent",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L32",
+        "initial_managed_overrides": "nullable pan absent, artificial direct M3b33",
+        "ordered_managed_mutations": "No channel change.",
+        "reached_path": "M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D12 no pan action when absent"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D12 no pan action when absent",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L33",
+      "original_static_prediction": {
+        "conditional_native_calls": "Attribute2 target301/gain.8; separately reread301 for Play(true).",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "Previously queued Q0",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L33",
+        "initial_managed_overrides": "queuedQ0, then F2354 changes101->301 and timingV40->80 before execution",
+        "ordered_managed_mutations": "Callback carries no parent/channel/volume snapshot.",
+        "reached_path": "M3ba1",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D01 start targets fresh channel and gain",
+        "D02 second channel read after Attribute"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D01 start targets fresh channel and gain",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D02 second channel read after Attribute",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L34",
+      "original_static_prediction": {
+        "conditional_native_calls": "Pause301 then402; not the submitted-time pair.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "Previously queued QPause",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L34",
+        "initial_managed_overrides": "queuedQPause when101/202, then globals301/402",
+        "ordered_managed_mutations": "No captured target handles; no fields cleared.",
+        "reached_path": "M3ba8",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D04 Pause submitted101/202 executes301/402",
+        "D05 Pause second target reread"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D04 Pause submitted101/202 executes301/402",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D05 Pause second target reread",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L35",
+      "original_static_prediction": {
+        "conditional_native_calls": "If callbacks execute in that order on stable pair: Pause both then Play row0(true). Actual execution order remains external.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "QPause,Q0,QPan; row1 additionally ifmask2",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L35",
+        "initial_managed_overrides": "trackingfalse cleanup submitted, then reentry; native still!=1 at start check",
+        "ordered_managed_mutations": "Original submission order pause then eligible start; no cancellation token.",
+        "reached_path": "M146c;M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D08 pause then start controlled order"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D08 pause then start controlled order",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L36",
+      "original_static_prediction": {
+        "conditional_native_calls": "Later pause can take effect without a matching queued restart; next reached eligible update may retry.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "QPause,QPan; no Q0 while native==1",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L36",
+        "initial_managed_overrides": "same submissions but native state1 at reentry eligibility test",
+        "ordered_managed_mutations": "Pending pause is not consulted by start policy.",
+        "reached_path": "M146c;M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D09 pending pause with active1 suppresses new start"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D09 pending pause with active1 suppresses new start",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L37",
+      "original_static_prediction": {
+        "conditional_native_calls": "No pending component drain; later helper can interrupt edge submission.",
+        "conditional_native_operands": "native states and queue execution supplied",
+        "enqueued_actions": "QPause, then conditional Q0/Q1/QPan, then separate edge-layer requests",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M1465:0000-0052",
+          "M1469:0000-0013"
+        ],
+        "id": "L37",
+        "initial_managed_overrides": "positive aggregate at exactend with pending components",
+        "ordered_managed_mutations": "Queue cleanup; ratio positive; fresh time<=end reaches continuing helper again before discrete edge.",
+        "reached_path": "M1465 cleanup->M1466->M1469(false,edge)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "I07 positive pending aggregate at7440",
+        "I08 final componentFalse retains positive aggregate cleanup",
+        "I08 final componentTrue retains positive aggregate cleanup"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "I07 positive pending aggregate at7440",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "I08 final componentFalse retains positive aggregate cleanup",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "I08 final componentTrue retains positive aggregate cleanup",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L38",
+      "original_static_prediction": {
+        "conditional_native_calls": "No prediction of audible terminal result.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "QPause then discrete edge requests; no new continuing action from M1469",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M1469:0000-0013"
+        ],
+        "id": "L38",
+        "initial_managed_overrides": "same aggregate afterend; fresh T=3501",
+        "ordered_managed_mutations": "Skip its continuing helper; edge selector still reached.",
+        "reached_path": "M1469 fresh T>end",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "I07 positive pending aggregate at7441"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "I07 positive pending aggregate at7441",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L39",
+      "original_static_prediction": {
+        "conditional_native_calls": "Both write same current pair; outcome depends on execution order.",
+        "conditional_native_operands": "both active1",
+        "enqueued_actions": "QPan(.1),QPan(-.1)",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L39",
+        "initial_managed_overrides": "two slider producers A/B, unchanged banks/index, panA=.1/panB=-.1",
+        "ordered_managed_mutations": "Neither stores an object owner.",
+        "reached_path": "A.M146b;B.M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "P06 two artificial same-bank producers have no owner"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "P06 two artificial same-bank producers have no owner",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Artificial same-pair producers only. Supported overlapping gameplay is rejected; no audible overlap claim."
+    },
+    {
+      "id": "L40",
+      "original_static_prediction": {
+        "conditional_native_calls": "Stop old active pair at replacement; callbacks may address B-created pair.",
+        "conditional_native_operands": "GetChannel301/402;old active1",
+        "enqueued_actions": "Conditional A/B starts/pans; later A QPause targets current pair",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L40",
+        "initial_managed_overrides": "A usesbank1; B usesbank3 with sameindex",
+        "ordered_managed_mutations": "B replaces pair globally; A cleanup or queued callback has no ownership check.",
+        "reached_path": "A.M146b;B.M146b",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D15 artificial producers share one pair"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D15 artificial producers share one pair",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Artificial shared-field replacement only, not supported overlapping map playback."
+    },
+    {
+      "id": "L41",
+      "original_static_prediction": {
+        "conditional_native_calls": "Cleanup callback uses then-current channels.",
+        "conditional_native_operands": "M3b09 sees either global native state1",
+        "enqueued_actions": "QPause",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L41",
+        "initial_managed_overrides": "manager F136e=false after candidate updates",
+        "ordered_managed_mutations": "Base M28e3 completes first; no owner comparison.",
+        "reached_path": "M0653",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D13 manager currentFalse active0",
+        "D13 manager currentFalse active1",
+        "D13 manager currentFalse active3",
+        "D14 manager activity short-circuits row1"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D13 manager currentFalse active0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentFalse active1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentFalse active3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D14 manager activity short-circuits row1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L42",
+      "original_static_prediction": {
+        "conditional_native_calls": "No universal post-update Stop; E039 S47 producer is queued Pause.",
+        "conditional_native_operands": "native as stated",
+        "enqueued_actions": "None from manager tail",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M3b09"
+        ],
+        "id": "L42",
+        "initial_managed_overrides": "manager F136e=true, or both native states!=1",
+        "ordered_managed_mutations": "No guard-induced cleanup; false guard queries2355 first and short-circuits on1.",
+        "reached_path": "M0653",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "D13 manager currentFalse active0",
+        "D13 manager currentFalse active1",
+        "D13 manager currentFalse active3",
+        "D13 manager currentTrue active0",
+        "D13 manager currentTrue active1",
+        "D13 manager currentTrue active3"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "D13 manager currentFalse active0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentFalse active1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentFalse active3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentTrue active0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentTrue active1",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D13 manager currentTrue active3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L43",
+      "original_static_prediction": {
+        "conditional_native_calls": "No channel ownership assignment; candidate order/other gameplay gates remain external.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "None directly",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M2275:0000-0056",
+          "M22c5"
+        ],
+        "id": "L43",
+        "initial_managed_overrides": "ordinary M2275 selects first passing slider",
+        "ordered_managed_mutations": "F1380 selected from prior candidates; F136e=(selected!=null&&typecontainsSlider2); F136atrue substitutesnull.",
+        "reached_path": "M2275->Find(M22c5)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "UNSUPPORTED_ORIGINAL_PATH",
+      "independent_case_names": [
+        "B08 manager proxy and effect exception containment labelled"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "B08 manager proxy and effect exception containment labelled",
+          "classification": "SOURCE INSPECTION",
+          "passed": true
+        }
+      ],
+      "limits": "Original candidate M2275/F136e is absent from reconstruction. Current-object interval/pending proxy source-audited, not declared original-equivalent."
+    },
+    {
+      "id": "L44",
+      "original_static_prediction": {
+        "conditional_native_calls": "Reset callback may target later replacement handles.",
+        "conditional_native_operands": "native opaque",
+        "enqueued_actions": "Reset QPause",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49",
+          "M3b08"
+        ],
+        "id": "L44",
+        "initial_managed_overrides": "fresh type initialization versus slider reset",
+        "ordered_managed_mutations": "Type init: channels CLR0, timing indexes-1, selected banks0. Slider reset queuescleanup before head reset/audioIndex0; does not zero globals.",
+        "reached_path": "M3b08; separately M1431",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "T01 supported post-song-load initial state",
+        "T13 reset returns minus1 not raw CLRzero",
+        "I14 restart model and session isolation"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T01 supported post-song-load initial state",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T13 reset returns minus1 not raw CLRzero",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "I14 restart model and session isolation",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Post-song-load reset and new session are exercised. Raw CLR-zero/list-setter and original slider reset call graph not provided by bounded API."
+    },
+    {
+      "id": "L45",
+      "original_static_prediction": {
+        "conditional_native_calls": "M3b61 then reads point0 sample bank/index.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "None itself (subscriber may act)",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb"
+        ],
+        "id": "L45",
+        "initial_managed_overrides": "F238e<0, q1, list[time0 U, time2505 inherited], T2500",
+        "ordered_managed_mutations": "query2505; strict predicates exclude equality; F238e=0,F238f=0; changed events only.",
+        "reached_path": "M3b66(false) full rescan",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "T04 strict rescan at start+4",
+        "T04 strict rescan at start+5",
+        "T04 strict rescan at start+6",
+        "T05 same timestamp changes on forward equality"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T04 strict rescan at start+4",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T04 strict rescan at start+5",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T04 strict rescan at start+6",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T05 same timestamp changes on forward equality",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L46",
+      "original_static_prediction": {
+        "conditional_native_calls": "Later M3b61 consumes inherited record bank/index; volume getter sees its volume.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "Timing delegate event can run; no automatic sound queue in timing method",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb"
+        ],
+        "id": "L46",
+        "initial_managed_overrides": "same list/T but initialized indexes0/0,q1",
+        "ordered_managed_mutations": "entry2505 not greater than query: F238f=1; F238e stays0 for inherited point.",
+        "reached_path": "M3b66(false) forward arm",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "T05 same timestamp changes on forward equality"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T05 same timestamp changes on forward equality",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L47",
+      "original_static_prediction": {
+        "conditional_native_calls": "Not per-request scan-all selection.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "None unless earlier delegate",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb"
+        ],
+        "id": "L47",
+        "initial_managed_overrides": "list suppliedunsorted [time0,time3000,time2000], current indexes0/0,T2500",
+        "ordered_managed_mutations": "Forward arm stops at first future3000; never inspects later2000.",
+        "reached_path": "M3b66(false)",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "T08 first future blocks later expired entry"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T08 first future blocks later expired entry",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L48",
+      "original_static_prediction": {
+        "conditional_native_calls": "Framework sort behavior not replaced with stable sort.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "Changed-index delegate events as reached",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb",
+          "M0b7e"
+        ],
+        "id": "L48",
+        "initial_managed_overrides": "M3b66(true), suppliedunsorted times or equal timestamps",
+        "ordered_managed_mutations": "Calls original Sort before full FindLastIndex; CompareTo orders by Double time then timing flag. Equal same-flag ordering not invented.",
+        "reached_path": "M3b66",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "T09 explicit rescan sorts before strict search",
+        "T10 equal-time base before inherited"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T09 explicit rescan sorts before strict search",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T10 equal-time base before inherited",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    },
+    {
+      "id": "L49",
+      "original_static_prediction": {
+        "conditional_native_calls": "Sample index/bank/channel fields are not reset by M3b65.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "Any earlier actions remain queued",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb"
+        ],
+        "id": "L49",
+        "initial_managed_overrides": "no timing list, empty list, or subscriber/helper throws inside timing try",
+        "ordered_managed_mutations": "Reset both timing indexes-1 and F238b=-999. Earlier sort/field writes/subscriber mutations not rolled back.",
+        "reached_path": "M3b66",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "T02 empty list resets",
+        "T03 null enumerable explicit API rejection"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T02 empty list resets",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T03 null enumerable explicit API rejection",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Empty list and null-enumerable admission exercised; original subscriber delegates/catch/reset partial side effects unavailable."
+    },
+    {
+      "id": "L50",
+      "original_static_prediction": {
+        "conditional_native_calls": "M3b69 separately falls back to index0; M3b3c falls backF236b.",
+        "conditional_native_operands": "native irrelevant",
+        "enqueued_actions": "None",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb"
+        ],
+        "id": "L50",
+        "initial_managed_overrides": "separate fresh timing reads F238f=-1 or1 for listCount1, or F2367=null",
+        "ordered_managed_mutations": "Null list returnsnull; negative/outofrange index returns defaultnull. No last/first fallback in getter.",
+        "reached_path": "M3b68->M3b6a->M47cb/M47ca",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "T01 supported post-song-load initial state",
+        "T22 cursor reset retains selected fields and channels"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T01 supported post-song-load initial state",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T22 cursor reset retains selected fields and channels",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Invalid initial cursor and no-song reset exercised. Original nullable receiver/list-getter graph and external mutations not reproduced."
+    },
+    {
+      "id": "L51",
+      "original_static_prediction": {
+        "conditional_native_calls": "No guessed modern timing defaults.",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "Conditional later slider actions use existing globalstate",
+        "evidence": [
+          "M3b65:0000-000c",
+          "M3b66:0006-0134",
+          "M3b89/M3b8a",
+          "M3b61:0000-002f",
+          "M3b1f:0000-0123",
+          "M3b3c",
+          "M47ca/M47cb",
+          "M1bc1:0015-001b,021f-0230,0702-0718"
+        ],
+        "id": "L51",
+        "initial_managed_overrides": "format<=3 or current point absent; F236b=1 supplied",
+        "ordered_managed_mutations": "Sample index getter returnsF236b; modern selected-map gate can skip bank refresh entirely.",
+        "reached_path": "M3b3c;M3b61",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "T21 external gate no selected",
+        "T21 external gate format3",
+        "T21 external gate format4",
+        "T21 external gate no song",
+        "T21 external gate identity",
+        "T23 song format3 sample-index gate",
+        "T23 song format4 sample-index gate"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "T21 external gate no selected",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T21 external gate format3",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T21 external gate format4",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T21 external gate no song",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T21 external gate identity",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T23 song format3 sample-index gate",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "T23 song format4 sample-index gate",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Explicit fallback/gates exercised in model; selected/song identity guard belongs to Windows adapter source audit."
+    },
+    {
+      "id": "L52",
+      "original_static_prediction": {
+        "conditional_native_calls": "Native failures returningfalse are popped; managed exceptions remain distinct.",
+        "conditional_native_operands": "native not guaranteed reached",
+        "enqueued_actions": "Earlier submitted actions remain possible; later discrete call may not be reached",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M1449:011e,0131",
+          "M1469:000e"
+        ],
+        "id": "L52",
+        "initial_managed_overrides": "null manager/map/skin/presentation or scheduler; reached dereference",
+        "ordered_managed_mutations": "No local catch/rollback in continuing helpers; already stored index/bank can persist.",
+        "reached_path": "M146b/M3b20/M3b33",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "UNSUPPORTED_ORIGINAL_PATH",
+      "independent_case_names": [],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [],
+      "limits": "Null manager/map/skin/presentation/scheduler original dereference graph is outside bounded production API; no dynamic pass claimed."
+    },
+    {
+      "id": "L53",
+      "original_static_prediction": {
+        "conditional_native_calls": "No synchronous loop Pause at M2262 enqueue site; resume does not directly Play loop pair.",
+        "conditional_native_operands": "native opaque",
+        "enqueued_actions": "OneQPause per reached slider plus distinct song/player actions",
+        "evidence": [
+          "M146c/M1431/M1465",
+          "M3b53/M3ba8",
+          "M0653/M2275",
+          "M2262:00bf-00ec,01bf-0211",
+          "M3b49"
+        ],
+        "id": "L53",
+        "initial_managed_overrides": "actual pause-on branch reached after M2262 gates",
+        "ordered_managed_mutations": "Each candidate virtualcleanup; ordinary slider queuespause. Then optional song toggle; M3b56 concerns scheduled-player collection, not direct channel pair.",
+        "reached_path": "M2262 togglesF1373 true; enumerates current candidates",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "SOURCE_INSPECTION_ONLY",
+      "independent_case_names": [
+        "B02 Windows cancellation and pause policy",
+        "B05 native substitutions remain explicit logical operations"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "B02 Windows cancellation and pause policy",
+          "classification": "SOURCE INSPECTION",
+          "passed": true
+        },
+        {
+          "name": "B05 native substitutions remain explicit logical operations",
+          "classification": "SOURCE INSPECTION",
+          "passed": true
+        }
+      ],
+      "limits": "Windows pause/generation policy source-inspected, plus pure QueuePause. Actual original pause transition and nonempty MediaPlayer path not executed."
+    },
+    {
+      "id": "L54",
+      "original_static_prediction": {
+        "conditional_native_calls": "Later callbacks can reread stale/replaced native handles; full shutdown/device lifecycle remains external.",
+        "conditional_native_operands": "native SampleFree/BASS_Free results opaque",
+        "enqueued_actions": "Existing queued actions carry no map generation",
+        "evidence": [
+          "M3b18:0067-008c",
+          "M3b19:00dd-0116,0281-02a4",
+          "M3b36:0034-009d,015f-021e",
+          "M3b14/E038",
+          "M3b1b/M3b1c/M3b1d",
+          "M3b5e:00c1-00db,0263-0297"
+        ],
+        "id": "L54",
+        "initial_managed_overrides": "map resource reload or device reset branch reached",
+        "ordered_managed_mutations": "Free dictionary sample handles and clear caches; device arm also BASS_Free; no zero assignment to F2354/F2355. M3b19 resets selectors but not channels.",
+        "reached_path": "M28f6->M3b1d; or M3b5e:F238a arm",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "PARTIAL_EXECUTED",
+      "independent_case_names": [
+        "R18 ClearMap removes dynamic cache but retains prepared cells",
+        "R19 ClearAll clears three tables",
+        "A04 prepared map replacement dynamic cache isolation",
+        "B02 Windows cancellation and pause policy"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "R18 ClearMap removes dynamic cache but retains prepared cells",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "R19 ClearAll clears three tables",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "A04 prepared map replacement dynamic cache isolation",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "B02 Windows cancellation and pause policy",
+          "classification": "SOURCE INSPECTION",
+          "passed": true
+        }
+      ],
+      "limits": "Managed map cache invalidation/replacement and engineering cancellation audited. Original device teardown/native resource lifetime not implemented or measured."
+    },
+    {
+      "id": "L55",
+      "original_static_prediction": {
+        "conditional_native_calls": "Synchronous attribute2 on2354 then2355 (and separate2356/player updates).",
+        "conditional_native_operands": "native normal",
+        "enqueued_actions": "No queue in this handler",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e",
+          "M3b11:0000-003f",
+          "M3b21:003b-008c"
+        ],
+        "id": "L55",
+        "initial_managed_overrides": "settings event while channelsactive1",
+        "ordered_managed_mutations": "Recompute gain using current timing and live settings without bank/index replacement.",
+        "reached_path": "M3b11",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "CONFIRMED_CONDITIONAL_DISCREPANCY",
+      "independent_case_names": [
+        "G07 settings refresh both current targets",
+        "G08 settings gain captured once across backend callback",
+        "P01 published M3b11 stores one gain before both writes"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "G07 settings refresh both current targets",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "G08 settings gain captured once across backend callback",
+          "classification": "EXECUTED COMPONENT",
+          "passed": false
+        },
+        {
+          "name": "P01 published M3b11 stores one gain before both writes",
+          "classification": "SOURCE INSPECTION",
+          "passed": true
+        }
+      ],
+      "limits": "Normal refresh passes; G08 demonstrates second-gain recomputation under controlled backend interleaving, violating one captured original local. Published as conditional production-model discrepancy."
+    },
+    {
+      "id": "L56",
+      "original_static_prediction": {
+        "conditional_native_calls": "Next retry depends on surviving comparison fields, not assumed transactional repair.",
+        "conditional_native_operands": "native/helper throws before GetChannel returns",
+        "enqueued_actions": "No later starts/pan from interruptedM3b33",
+        "evidence": [
+          "M3b20:0000-0149",
+          "M3b33:0000-00c0",
+          "M3ba1/M3ba2/M3b9c",
+          "M146b:0000-004e"
+        ],
+        "id": "L56",
+        "initial_managed_overrides": "channel replacement helper throws after F2362 store or bank store",
+        "ordered_managed_mutations": "F2362 and possibly F2363 updated first; old handle may already be stopped; no rollback/clear guaranteed.",
+        "reached_path": "M3b20",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Original scheduler/native results/interleavings, installed resources and audible outcome. COMMON prerequisites apply; artificial changes are not natural observations."
+      },
+      "assessment": "FINITE_MANAGED_VARIANT",
+      "independent_case_names": [
+        "C13 partial mutation at Activity",
+        "C13 partial mutation at Stop",
+        "C13 partial mutation at resolve0",
+        "C13 partial mutation at Acquire",
+        "C13 partial mutation at Attribute",
+        "D16 callback failure Play",
+        "D16 callback failure Attribute",
+        "D16 callback failure Pause"
+      ],
+      "production_expected_actual_locator": "verification/windows-results.json cases[] by Name (local preflight in local-corrected.json)",
+      "actual_summary": [
+        {
+          "name": "C13 partial mutation at Activity",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C13 partial mutation at Stop",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C13 partial mutation at resolve0",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C13 partial mutation at Acquire",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "C13 partial mutation at Attribute",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D16 callback failure Play",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D16 callback failure Attribute",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        },
+        {
+          "name": "D16 callback failure Pause",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true
+        }
+      ],
+      "limits": "Finite production operands may be shifted in time or marker identities. Expected operations derive from the published E040 instructions. Managed checks never establish native execution, original scheduler, or audible output."
+    }
+  ]
+}

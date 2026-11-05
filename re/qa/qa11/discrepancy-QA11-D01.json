@@ -1,0 +1,422 @@
+{
+  "id": "QA11-D01",
+  "scope": "Conditional production model settings refresh under artificial synchronous backend interleaving; ordinary WPF reachability/audibility UNVERIFIED",
+  "implementation": "SharedSliderChannels.SettingsChanged in reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+  "production_source": "221c6e1d55a488489155acdadd6e8ed32243a014 unchanged at 8bd0433528cbceb0bffcaa4bf29119776deaf0e9",
+  "authority": {
+    "abstract": false,
+    "argument_local_sites": [
+      [
+        24,
+        "stloc.0",
+        null
+      ],
+      [
+        31,
+        "ldloc.0",
+        null
+      ],
+      [
+        44,
+        "ldloc.0",
+        null
+      ],
+      [
+        57,
+        "ldloc.0",
+        null
+      ],
+      [
+        69,
+        "stloc.1",
+        null
+      ],
+      [
+        71,
+        "stloc.2",
+        null
+      ],
+      [
+        72,
+        "ldloc.1",
+        null
+      ],
+      [
+        73,
+        "ldloca.s",
+        2
+      ],
+      [
+        123,
+        "ldloc.2",
+        null
+      ],
+      [
+        126,
+        "ldloc.1",
+        null
+      ]
+    ],
+    "array_integer_sites": [
+      [
+        10,
+        "div",
+        null
+      ],
+      [
+        23,
+        "div",
+        null
+      ]
+    ],
+    "body_bytes": 164,
+    "body_sha256": "81b56cede5a835a944737fcdcd34c15ff744d821dffd406bbfdaff8f1d5f4dc3",
+    "branches": [
+      [
+        91,
+        "brtrue.s",
+        [
+          116
+        ]
+      ],
+      [
+        121,
+        "leave.s",
+        [
+          133
+        ]
+      ],
+      [
+        124,
+        "brfalse.s",
+        [
+          132
+        ]
+      ]
+    ],
+    "code_bytes": 134,
+    "comparison_sites": [],
+    "constants": [
+      [
+        5,
+        "ldc.r4",
+        100.0
+      ],
+      [
+        18,
+        "ldc.r4",
+        100.0
+      ],
+      [
+        30,
+        "ldc.i4.2",
+        null
+      ],
+      [
+        43,
+        "ldc.i4.2",
+        null
+      ],
+      [
+        56,
+        "ldc.i4.2",
+        null
+      ],
+      [
+        70,
+        "ldc.i4.0",
+        null
+      ]
+    ],
+    "exception_regions": [
+      {
+        "handler_end": 133,
+        "handler_start": 123,
+        "kind": 2,
+        "try_end": 123,
+        "try_start": 72
+      }
+    ],
+    "file_offset": 1565356,
+    "header_bytes": 12,
+    "name": "#=zTo_KM1KTxasu",
+    "new_slot": false,
+    "operations": [
+      [
+        10,
+        "div"
+      ],
+      [
+        16,
+        "conv.r4"
+      ],
+      [
+        17,
+        "mul"
+      ],
+      [
+        23,
+        "div"
+      ]
+    ],
+    "owner": "0x20007b9",
+    "returns": [
+      133
+    ],
+    "rva": "0x1800ac",
+    "signature": "0002011c1285a9",
+    "token_sites": [
+      [
+        0,
+        "call",
+        "0x6003b40"
+      ],
+      [
+        11,
+        "call",
+        "0x6003b42"
+      ],
+      [
+        25,
+        "ldsfld",
+        "0x4002354"
+      ],
+      [
+        32,
+        "call",
+        "0x6003146"
+      ],
+      [
+        38,
+        "ldsfld",
+        "0x4002355"
+      ],
+      [
+        45,
+        "call",
+        "0x6003146"
+      ],
+      [
+        51,
+        "ldsfld",
+        "0x4002356"
+      ],
+      [
+        58,
+        "call",
+        "0x6003146"
+      ],
+      [
+        64,
+        "ldsfld",
+        "0x4002351"
+      ],
+      [
+        75,
+        "call",
+        "0xa00011e"
+      ],
+      [
+        80,
+        "ldsfld",
+        "0x4002351"
+      ],
+      [
+        85,
+        "ldsfld",
+        "0x400239d"
+      ],
+      [
+        94,
+        "ldsfld",
+        "0x400239c"
+      ],
+      [
+        99,
+        "ldftn",
+        "0x6003b9f"
+      ],
+      [
+        105,
+        "newobj",
+        "0xa001611"
+      ],
+      [
+        111,
+        "stsfld",
+        "0x400239d"
+      ],
+      [
+        116,
+        "callvirt",
+        "0xa001612"
+      ],
+      [
+        127,
+        "call",
+        "0xa0000b4"
+      ]
+    ],
+    "virtual": false
+  },
+  "input": {
+    "point_volume": 25,
+    "effect": 80,
+    "universal_initial": 50,
+    "channels": [
+      101,
+      202
+    ],
+    "interleaving": "First Attribute(channel101,2,gain) changes UniversalVolume to100 before returning."
+  },
+  "expected": {
+    "attribute2": [
+      {
+        "channel": 101,
+        "value": 0.1
+      },
+      {
+        "channel": 202,
+        "value": 0.1
+      }
+    ],
+    "reason": "M3b11:0018 stloc.0;001f/002c ldloc.0. Gain computed once, targets freshly read."
+  },
+  "actual": {
+    "Name": "G08 settings gain captured once across backend callback",
+    "Authority": "E040 M3b11:0018 stloc0 then001f/002c ldloc0;artificial controlled interleaving",
+    "Classification": "EXECUTED COMPONENT",
+    "passed": false,
+    "error": "System.Exception: expected=0.1; actual=0.20000000298023224\r\n   at Ohno.QA11.Tests.Near(Double actual, Double expected, Double tolerance) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 28\r\n   at Ohno.QA11.Tests.<>c.<ChannelCases>b__61_27() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa11\\Headless\\TimingChannels.cs:line 103\r\n   at Ohno.QA11.Tests.<>c__DisplayClass16_0.<Add>b__0() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 22\r\n   at Ohno.QA11.Tests.Main(String[] args) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa11\\Headless\\Harness.cs:line 76",
+    "inputs": [],
+    "observations": [
+      {
+        "resolve": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "operation": {
+          "Name": "Acquire",
+          "Handle": 10101,
+          "Attribute": 0,
+          "Value": 0,
+          "Flag": false
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Acquire",
+          "Handle": 10101,
+          "Attribute": 0,
+          "Value": 0,
+          "Flag": false
+        },
+        "status": "returned",
+        "result": 101
+      },
+      {
+        "resolve": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "operation": {
+          "Name": "Acquire",
+          "Handle": 11101,
+          "Attribute": 0,
+          "Value": 0,
+          "Flag": false
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Acquire",
+          "Handle": 11101,
+          "Attribute": 0,
+          "Value": 0,
+          "Flag": false
+        },
+        "status": "returned",
+        "result": 202
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 101,
+          "Attribute": 11,
+          "Value": 1,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 101,
+          "Attribute": 2,
+          "Value": 0.25,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 202,
+          "Attribute": 2,
+          "Value": 0.25,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 202,
+          "Attribute": 11,
+          "Value": 1,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 101,
+          "Attribute": 2,
+          "Value": 0.1,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "operation": {
+          "Name": "Attribute",
+          "Handle": 202,
+          "Attribute": 2,
+          "Value": 0.2,
+          "Flag": null
+        },
+        "status": "attempted"
+      },
+      {
+        "expected": 0.1,
+        "actual": 0.10000000149011612,
+        "tolerance": 1e-07
+      },
+      {
+        "expected": 0.1,
+        "actual": 0.20000000298023224,
+        "tolerance": 1e-07
+      }
+    ]
+  },
+  "repair_scope": "Work2 targeted SettingsChanged local capture; no QA11 production repair. Preserve live target rereads and existing exception behavior."
+}

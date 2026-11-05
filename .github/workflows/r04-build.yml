@@ -31,6 +31,10 @@ on:
       - re/qa/qa10/Headless/**
       - re/qa/qa10/Inputs/**
       - re/qa/qa10/Run-QA10.ps1
+      - re/qa/qa11/Headless/**
+      - re/qa/qa11/Windows/**
+      - re/qa/qa11/Inputs/**
+      - re/qa/qa11/Run-QA11.ps1
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -245,4 +249,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R13WindowsChecks/R13WindowsChecks.csproj -c Release
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA11 shared channels without playback
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa11/Run-QA11.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa11-results.json')
           exit $LASTEXITCODE

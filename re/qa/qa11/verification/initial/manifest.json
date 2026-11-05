@@ -1,0 +1,9 @@
+{
+  "re/qa/qa11/Headless/AssetsBindings.cs": "a2532e0c4deac489c452a26507ff432b5fedc91016c33f74c46f80a74d3fcee7",
+  "re/qa/qa11/Headless/Harness.cs": "a35e0a5b0b4880bb1e5e456efc08cf83d197c5d85d63728bf8a4fa0fb3b8f20d",
+  "re/qa/qa11/Headless/ResourcesAdmission.cs": "f8c9d0033d81f9f73f706772c2f6a3149479c48f1cb09e41e0245202eb584644",
+  "re/qa/qa11/Headless/Sessions.cs": "8a64515d87fbbc36d173f8206350441582b78fe4db99f127d1330832500d499b",
+  "re/qa/qa11/Headless/TimingChannels.cs": "7106e7f44bea3e46ca323da4a3a2c2f78fd3d8f55ec866e6295ff0dca7789180",
+  "re/qa/qa11/Headless/QA11.Headless.csproj": "2dbae875c0a2119ac71ea5e93801850cf979a5d27efc9fb692be1e31bdb72e15",
+  "re/qa/qa11/Run-QA11.ps1": "fc748ba6fd0f77e52993e6d9f8988e8bbc25976f7eb473eb8a1401d5be53c864"
+}

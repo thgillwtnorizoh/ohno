@@ -1,0 +1,252 @@
+[
+  {
+    "case": "A01 bounded admission overlap",
+    "file": "8364c47cceaae8f90ae23915ced025b447d3b7bbf12a5e258aebc8dd41052526.osu",
+    "sha256": "8364c47cceaae8f90ae23915ced025b447d3b7bbf12a5e258aebc8dd41052526"
+  },
+  {
+    "case": "A01 bounded admission touching",
+    "file": "1f38da88a30218590c15a72136ff73d773beb791fcf189031c6c16a23777f49c.osu",
+    "sha256": "1f38da88a30218590c15a72136ff73d773beb791fcf189031c6c16a23777f49c"
+  },
+  {
+    "case": "A01 bounded admission format13",
+    "file": "036c410f463964e9cbcd376713f98ec992bb6a4581fe1023dc9c4749e19883fd.osu",
+    "sha256": "036c410f463964e9cbcd376713f98ec992bb6a4581fe1023dc9c4749e19883fd"
+  },
+  {
+    "case": "A01 bounded admission unsorted",
+    "file": "0c42f7d985cc20446775d6b428ceb4fb7a8dc56bc444a062ffdf2597f2bee628.osu",
+    "sha256": "0c42f7d985cc20446775d6b428ceb4fb7a8dc56bc444a062ffdf2597f2bee628"
+  },
+  {
+    "case": "A01 bounded admission bad set",
+    "file": "0cd0e16560410542281c5ea824d6801998a698cc5d1f2f533a637b70746748a5.osu",
+    "sha256": "0cd0e16560410542281c5ea824d6801998a698cc5d1f2f533a637b70746748a5"
+  },
+  {
+    "case": "A01 bounded admission bad payload",
+    "file": "2c0b5bc9a15324f59308088ba145c8478324a00fb1314279724e027d399d4023.osu",
+    "sha256": "2c0b5bc9a15324f59308088ba145c8478324a00fb1314279724e027d399d4023"
+  },
+  {
+    "case": "A01 bounded admission cache collision",
+    "file": "ea24eccc65072196fcdcdd575981b928002acb5c0833cdad49fe540457d73602.osu",
+    "sha256": "ea24eccc65072196fcdcdd575981b928002acb5c0833cdad49fe540457d73602"
+  },
+  {
+    "case": "A02 valid production library prepares six loop families",
+    "file": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3.osu",
+    "sha256": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3"
+  },
+  {
+    "case": "A03 fresh identity clone and synthetic reject",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "A04 prepared map replacement dynamic cache isolation",
+    "file": "0a6c6e8876a52f8f1e0b7285561e70c0378b182dab139d3086abcc44abf3c51e.osu",
+    "sha256": "0a6c6e8876a52f8f1e0b7285561e70c0378b182dab139d3086abcc44abf3c51e"
+  },
+  {
+    "case": "A04 prepared map replacement dynamic cache isolation",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "A05 missing independent loop pack remains explicit",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I01 independent geometry spans1",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I01 independent geometry spans2",
+    "file": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3.osu",
+    "sha256": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3"
+  },
+  {
+    "case": "I01 independent geometry spans3",
+    "file": "006cac63df351df8c791f3edc9bc7961299db137c4dcb2f4fdd71b710ff1760b.osu",
+    "sha256": "006cac63df351df8c791f3edc9bc7961299db137c4dcb2f4fdd71b710ff1760b"
+  },
+  {
+    "case": "I02 tracking before first tick requests continuing only",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I03 timely tick has two continuing calls",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I04 same-time update continues without discrete duplicate",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I05 tracking loss consumes audio before reentry",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I06 repeat audio separate from failed component",
+    "file": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3.osu",
+    "sha256": "dad109f13f98e249c5ef9bd322d94429bb049e7b22e2abb44d91ad5d827cd2b3"
+  },
+  {
+    "case": "I07 positive pending aggregate at7440",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I07 positive pending aggregate at7441",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I08 final componentFalse retains positive aggregate cleanup",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I08 final componentTrue retains positive aggregate cleanup",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I09 missed head later components produce positive final",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I10 zero aggregate cleanup with no final sound",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I11 global selection differs from head tick and parent overrides",
+    "file": "ebba520b5ce0205e983e4a80ee7585c639e6025b74ee54bff3a380c631327110.osu",
+    "sha256": "ebba520b5ce0205e983e4a80ee7585c639e6025b74ee54bff3a380c631327110"
+  },
+  {
+    "case": "I12 head order quality0",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I12 head order quality50",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I12 head order quality100",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I12 head order quality150",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I13 stored presentation operand is consumed",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I14 restart model and session isolation",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I15 matched gameplay snapshots enabled",
+    "file": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce.osu",
+    "sha256": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce"
+  },
+  {
+    "case": "I15 matched gameplay snapshots disabled",
+    "file": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce.osu",
+    "sha256": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce"
+  },
+  {
+    "case": "I15 matched gameplay snapshots missing",
+    "file": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce.osu",
+    "sha256": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce"
+  },
+  {
+    "case": "I15 matched gameplay snapshots failing",
+    "file": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce.osu",
+    "sha256": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce"
+  },
+  {
+    "case": "I15 matched gameplay snapshots callback failure",
+    "file": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce.osu",
+    "sha256": "b8d878f79c604642b64381e78af357bef6c600b49862abd39afa2d90cee2a7ce"
+  },
+  {
+    "case": "I16 recovery threshold no channel or private calibration events",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "I17 direct continuing exception precedes index store",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P02 active session before tick only pan submitted",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P03 active session due tick submits pan twice",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P07 artificial overlap admission touchingFalse",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P07 artificial overlap admission touchingFalse",
+    "file": "ca8c481ad269e237cff6f399b53618b551dc17be8e477491fd7cb8de424a956b.osu",
+    "sha256": "ca8c481ad269e237cff6f399b53618b551dc17be8e477491fd7cb8de424a956b"
+  },
+  {
+    "case": "P07 artificial overlap admission touchingTrue",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P07 artificial overlap admission touchingTrue",
+    "file": "d485efe4c9446afba6e0bebd05c19059fcf6d31234f6cd297c14f6bc8bc03893.osu",
+    "sha256": "d485efe4c9446afba6e0bebd05c19059fcf6d31234f6cd297c14f6bc8bc03893"
+  },
+  {
+    "case": "P09 cancellation and disposed resource library",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P09 cancellation and disposed resource library",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  },
+  {
+    "case": "P10 three traversals discrete sequence preserved",
+    "file": "c003c876e7e2ef87cd054c1728e1dfa5afae79e82470d7308eaeb610dae2aec2.osu",
+    "sha256": "c003c876e7e2ef87cd054c1728e1dfa5afae79e82470d7308eaeb610dae2aec2"
+  },
+  {
+    "case": "W05 actual provider uses independent loop bytes",
+    "file": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d.osu",
+    "sha256": "e2cb50f53ec1b2aef7472f168753aefc4c55971d0867207d3b760a2cef110d5d"
+  }
+]
