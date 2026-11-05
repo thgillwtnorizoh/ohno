@@ -53,6 +53,7 @@ int retained0=rowModel.Channel0;rowBackend.Operations.Clear();rowModel.PreparePa
 rowModel.ApplicationState=0;rowBackend.Operations.Clear();rowModel.PreparePair(1,1,true);Check(rowBackend.Operations.Any(o=>o.Name=="Acquire"));Pass("forced refresh bypasses application gate");
 rowModel.ApplicationState=1;rowModel.Refresh(0,false);Eq(rowModel.CurrentBase,1);Pass("sample set0 converts to selected Normal default");
 rowModel.HasSelectedMap=false;int unchanged=rowModel.CurrentIndex;rowModel.Clock(99999);Eq(rowModel.CurrentIndex,unchanged);rowModel.HasSelectedMap=true;rowModel.SelectedFormat=3;rowModel.Clock(99999);Eq(rowModel.CurrentIndex,unchanged);Pass("selected-map and version gates do not replace selectors");
+rowModel.HasSongMap=false;rowModel.Clock(99999);Eq(rowModel.Timing.AllCursor,-1);Eq(rowModel.CurrentIndex,unchanged);Pass("absent song map resets timing without fabricating current sample refresh");
 string temp=Path.Combine(Path.GetTempPath(),"r13-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(temp);
 try{
 string path=Path.Combine(temp,"map.osu");File.WriteAllText(path,"osu file format v14\n[General]\nMode:0\n[Difficulty]\nCircleSize:4\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\n[TimingPoints]\n0,500,4,1,1,25,1,0\n[HitObjects]\n64,192,2000,2,2,L|364:192,1,300\n");

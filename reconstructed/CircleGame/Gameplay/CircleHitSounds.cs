@@ -476,6 +476,7 @@ public sealed class SharedSliderChannels
     private float StartGain => ((float)Volume * GlobalGain) / 100f / 100f;
     public void Clock(int time, bool rescan = false, int audioState = 1)
     {
+        if (!HasSongMap) { Timing.Reset(); return; }
         Timing.Advance(time, rescan, audioState);
         if (Timing.Current is { } p && HasSelectedMap && SelectedFormat > 3) Refresh(p.Set, false);
     }
