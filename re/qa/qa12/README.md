@@ -45,6 +45,8 @@ Unchanged QA11 G08 passes. Both exact emitted QA12 payloads match runner SHA256:
 headless `78d67f9083c57f83b5f3f92c447c5216926a2cfd560d65585ea85c4c488fe301`;
 Windows `2005ace9d816422af85d395fc64104905a2b197cf9c3bed0aa2b4614cb1a0d43`.
 All21 runner-read source hashes match only canonical LF→CRLF checkout conversion.
+The readable job log uses LF; the exact returned CRLF log is separately retained
+as windows-job-original.log.gz.b64, with both fingerprints in provenance.
 The final evidence/report publication is a descendant with production, executable
 harness, fixtures, generators and workflow identical to this tested source.
 Exact final publication SHA is supplied in the handoff. Local supplemental final

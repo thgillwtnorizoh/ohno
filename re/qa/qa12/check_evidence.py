@@ -59,6 +59,14 @@ def main():
             elif digest(b.replace(b'\r\n',b'\n').replace(b'\n',b'\r\n'))==h: checkout[name]='CRLF checkout'
             else: raise AssertionError(('unexpected hosted source bytes',name))
         print('Hosted byte identities:',dict(collections.Counter(checkout.values())))
+    provenance = Q/'verification/windows-provenance.json'
+    if provenance.exists():
+        prov = load(provenance)
+        log = (Q/'verification/windows-job.log').read_bytes()
+        assert digest(log) == prov['windows-job.log']['sha256']
+        original = gzip.decompress(base64.b64decode((Q/'verification/windows-job-original.log.gz.b64').read_bytes()))
+        assert digest(original) == prov['windows-job-original.log.gz.b64']['raw_sha256']
+        assert original.replace(b'\r\n',b'\n') == log
     before = subprocess.check_output(['git','show','e785774893d45fe4d2a45617212ce597ebe1bbba:re/contexts.md'],cwd=ROOT)
     assert (ROOT/'re/contexts.md').read_bytes().startswith(before)
     changed = subprocess.check_output(['git','diff','--name-only','e785774893d45fe4d2a45617212ce597ebe1bbba','HEAD'],cwd=ROOT,text=True).splitlines()

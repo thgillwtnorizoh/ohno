@@ -73,9 +73,15 @@
     "sha256": "f026335edddd142f147277f6c224323807ba697513bca106a39d1aec1661f366"
   },
   "windows-job.log": {
-    "bytes": 452721,
-    "sha256": "40844c3966d02de505ea6bed2b66e8ffc9901f92576607dcf110ec3e73fff826"
+    "bytes": 450272,
+    "sha256": "d6f7147dde3f9a895817de1a789030ff8cfe121fc54a8c0daa2fe8d2455dbe59",
+    "normalization": "CRLF to LF for readable Git text. Exact connector-returned original bytes preserved separately."
   },
   "result_raw_sha256": "78d67f9083c57f83b5f3f92c447c5216926a2cfd560d65585ea85c4c488fe301",
-  "windows_raw_sha256": "2005ace9d816422af85d395fc64104905a2b197cf9c3bed0aa2b4614cb1a0d43"
+  "windows_raw_sha256": "2005ace9d816422af85d395fc64104905a2b197cf9c3bed0aa2b4614cb1a0d43",
+  "windows-job-original.log.gz.b64": {
+    "raw_bytes": 452721,
+    "raw_sha256": "40844c3966d02de505ea6bed2b66e8ffc9901f92576607dcf110ec3e73fff826",
+    "stored_sha256": "732415637f903941e950ceabd39afeeac2f922583bf3450354621f431e102a64"
+  }
 }
