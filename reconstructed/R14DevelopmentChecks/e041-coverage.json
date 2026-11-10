@@ -1,0 +1,398 @@
+[
+  {
+    "case": "A01",
+    "original_initial_overrides": "T1999 before start; normally selected ordinary current predicate",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A02",
+    "original_initial_overrides": "Every relevant T2000 exactly start; current input reached",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A03",
+    "original_initial_overrides": "S<T<E,positive interval,post-smoothing U0",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A04",
+    "original_initial_overrides": "S<T<E,positive interval,post-smoothing U positive nonzero",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A05",
+    "original_initial_overrides": "S<T<E,positive interval,post-smoothing U negative nonzero",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A06",
+    "original_initial_overrides": "Two reached interior updates at unchanged T,positive supplied intervals,U nonzero",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A07",
+    "original_initial_overrides": "Interior update interval0 or negative",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A08",
+    "original_initial_overrides": "T=end exactly with U nonzero",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A09",
+    "original_initial_overrides": "first converted P1,old C0,cache0;ordinary sample prefix passes",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A10",
+    "original_initial_overrides": "second converted P2,old C1,cache1;ordinary sample prefix passes",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A11",
+    "original_initial_overrides": "jump converted P7,old C0,cache0;ordinary sample prefix passes",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A12",
+    "original_initial_overrides": "P integer equals cached integer,even if motion/target changed",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A13",
+    "original_initial_overrides": "C becomes N+3=18",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A14",
+    "original_initial_overrides": "C becomes N+4=19 (odd offset1)",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A15",
+    "original_initial_overrides": "C becomes N+5=20;plain mods",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A16",
+    "original_initial_overrides": "Same qualifying bonus with F0cc6 bit4194304 set",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A17",
+    "original_initial_overrides": "SpinnerFrequencyModulate=false,changed integer then interior U nonzero",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A18",
+    "original_initial_overrides": "Artificial direct M3b28 ratio0;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A19",
+    "original_initial_overrides": "Artificial direct M3b28 ratio0.5;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A20",
+    "original_initial_overrides": "Artificial direct M3b28 ratio1;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A21",
+    "original_initial_overrides": "Artificial direct M3b28 ratio2;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A22",
+    "original_initial_overrides": "Artificial direct M3b28 ratio3;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A23",
+    "original_initial_overrides": "Artificial direct M3b28 ratio-1;length8193",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A24",
+    "original_initial_overrides": "Artificial ratio 0/0 NaN;length8193",
+    "classification": "unsupported original state",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A25",
+    "original_initial_overrides": "Artificial ratio positive/0 +Infinity;length8193",
+    "classification": "unsupported original state",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A26",
+    "original_initial_overrides": "Artificial ratio negative/0 -Infinity;length8193",
+    "classification": "unsupported original state",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A27",
+    "original_initial_overrides": "Artificial ratio out-of-Int32 product;length8193",
+    "classification": "unsupported original state",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A28",
+    "original_initial_overrides": "Native signed length result-1;ratio1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A29",
+    "original_initial_overrides": "Native signed length result0;ratio1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A30",
+    "original_initial_overrides": "Native signed length result8191;ratio1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A31",
+    "original_initial_overrides": "Native signed length result8192;ratio1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A32",
+    "original_initial_overrides": "Native signed length result8193;ratio1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A33",
+    "original_initial_overrides": "F2356=0 or-1 artificial;length return supplied",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A34",
+    "original_initial_overrides": "Channel101 changes301 during length query",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A35",
+    "original_initial_overrides": "Changed integer increments C;native/helper throws before cache",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A36",
+    "original_initial_overrides": "U already stored;M05fb frequency helper throws",
+    "classification": "engineering alternative",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A37",
+    "original_initial_overrides": "Start queued at101/V40;channel301/V80 before execution",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A38",
+    "original_initial_overrides": "Channel changes301->401 during start attribute write",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A39",
+    "original_initial_overrides": "Changed global sample bank or index;application1/2",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A40",
+    "original_initial_overrides": "Unchanged selectors,forcefalse",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A41",
+    "original_initial_overrides": "Changed selectors,application0,forcefalse",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A42",
+    "original_initial_overrides": "Forced refresh unchanged selectors/application0",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A43",
+    "original_initial_overrides": "Previous spinner channel nonzero but native active0/2/3",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A44",
+    "original_initial_overrides": "Map spinnerspin.wav present;global index0 or17/base3",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A45",
+    "original_initial_overrides": "Map misses;skin admitted/default resource supplied",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A46",
+    "original_initial_overrides": "spinnerspin unresolved-1 or map/skin0;Acquire returns0",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A47",
+    "original_initial_overrides": "spinnerbonus resource unresolved-1 or0",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A48",
+    "original_initial_overrides": "First map bytes nonnull but backend returns-1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A49",
+    "original_initial_overrides": "Modern N15/C16;strict after-end manager gate passes",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A50",
+    "original_initial_overrides": "Modern N15/C14;strict after-end manager gate passes",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A51",
+    "original_initial_overrides": "Modern N15/C3;strict after-end manager gate passes",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A52",
+    "original_initial_overrides": "Modern N15/C2;strict after-end manager gate passes",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A53",
+    "original_initial_overrides": "Modern N0/C0 artificial prepared control",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A54",
+    "original_initial_overrides": "Final timing list null/empty",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A55",
+    "original_initial_overrides": "Timing change at E,another at E+1 or E+5",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A56",
+    "original_initial_overrides": "Final rawmask14/layeringfalse/custom-1/volume100",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A57",
+    "original_initial_overrides": "Final rawmask0 or qualifying layered14",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A58",
+    "original_initial_overrides": "Object base3/addition1/index2/volume25/custom7317",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A59",
+    "original_initial_overrides": "Object custom0 versus-1",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A60",
+    "original_initial_overrides": "Completion QPause submitted101,then global channel301",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A61",
+    "original_initial_overrides": "Manager cleanup/reset or reached pause-on candidates include spinner",
+    "classification": "engineering alternative",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A62",
+    "original_initial_overrides": "Later spinner starts before prior cleanup executes",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A63",
+    "original_initial_overrides": "Mapcache invalidation or device reinitialization branch reached",
+    "classification": "unsupported original state",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A64",
+    "original_initial_overrides": "Settings event with spinner channel active",
+    "classification": "executed production-component check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A65",
+    "original_initial_overrides": "Observer in final M24ba throws",
+    "classification": "engineering alternative",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  },
+  {
+    "case": "A66",
+    "original_initial_overrides": "Bonus queued successfully,then later label/transform helper throws",
+    "classification": "partial finite check",
+    "boundary": "Finite production calls with injected channel operands; shifted marker IDs/times are labelled in Program.cs. This is not execution of original CIL/native calls. Partial cases omit original external prerequisites or opaque helpers."
+  }
+]

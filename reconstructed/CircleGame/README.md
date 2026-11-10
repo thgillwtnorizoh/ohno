@@ -698,3 +698,36 @@ Settings are read at application startup. Restart after changing hitsounds.json 
 adding previously missing skin/default-pack resources: those shared resource-cache
 identities persist across map replacement. Map-specific resources are released
 with their prepared map; no file watcher or native device reinitialization is claimed.
+
+### Spinner audio (R14)
+
+Add two independently authored samples to the same optional default pack:
+
+```powershell
+./reconstructed/GenerateIndependentSpinnerSounds.ps1 -PackDirectory C:\MyIndependentPack
+```
+
+This preserves the earlier21 files and adds spinnerspin.wav (continuing) and
+spinnerbonus.wav (one-shot). Local map/skin resources use those exact unsuffixed,
+unprefixed names and WAV→MP3→OGG lookup. Positive completion uses the spinner's
+standard/custom samples selected at its stored end time. No proprietary samples
+are distributed. Missing resources or unsupported spinner metadata leave gameplay
+usable and appear in effects status.
+
+hitsounds.json also accepts SpinnerFrequencyModulate (default true) and
+SpinnerModifierBits (default0, original numeric suppression operand without an
+assumed descriptive name). The existing enabled/layering/effect/global volumes
+and local directories apply. Settings are loaded at startup; restart after changes.
+
+The Windows MediaPlayer backend supports nonmodulated looping spin, bonus and
+completion effects when the resources decode. **Audible frequency modulation is
+unsupported:** there is no verified native length/attribute1 mapping, and the app
+does not invent pitch or speed changes. The managed frequency requests are tested
+with injected lengths and recording channels only. MediaEnded looping may have
+gaps. Frequency output, decoding, sound quality and synchronisation require future
+owner-only listening qualification; automated checks play no audio.
+
+R14 remains bounded to fresh format14 supported single-producer state. The spinner
+channel is separate from the slider pair. Overlaps, seek/editor/reused-manager,
+ambiguous cache collisions, device replacement and native BASS equivalence remain
+unsupported or unverified. See ../R14-original-spinner-audio.md for evidence.

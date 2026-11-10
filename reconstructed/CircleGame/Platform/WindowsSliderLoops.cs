@@ -7,7 +7,7 @@ namespace Ohno.CircleGame.Platform;
 
 // ENGINEERING persistent MediaPlayers, distinct from the one-shot voice pool.
 // MediaEnded restarts the prepared stream: no guaranteed gapless/device/native parity.
-public sealed class WindowsSliderLoops : IPersistentSampleChannels
+public sealed class WindowsSliderLoops : ISpinnerSampleChannels
 {
     private sealed class Channel(MediaPlayer player)
     {
@@ -17,6 +17,9 @@ public sealed class WindowsSliderLoops : IPersistentSampleChannels
     private readonly Dictionary<int, Channel> channels = new();
     private bool disposed;
     public string? Error { get; private set; }
+    public FrequencyCapability FrequencyCapability => FrequencyCapability.Unsupported;
+    public string FrequencyStatus => "Unsupported frequency modulation: MediaPlayer has no verified native length/attribute1 mapping.";
+    public long? Length(int channel, int mode) => null; // Never substitute encoded WAV byte length.
     public int Ready => channels.Count;
     public async Task PrepareAsync(IReadOnlyDictionary<int, SampleBytes> samples, string cache, CancellationToken token)
     {

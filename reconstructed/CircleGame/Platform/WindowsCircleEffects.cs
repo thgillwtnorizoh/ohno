@@ -23,6 +23,7 @@ public sealed class WindowsCircleEffects : IDisposable
     private CircleSession? session;
     private readonly WindowsSliderLoops loops = new();
     private SharedSliderChannels? continuing;
+    private SharedSpinnerChannel? spinnerChannel;
     private readonly Dispatcher dispatcher;
     private bool loopsPaused = true;
     private int loopGeneration;
@@ -37,6 +38,9 @@ public sealed class WindowsCircleEffects : IDisposable
         (prepared.ContinuousLimitation is { } limitation ? " · continuous unavailable: " + limitation : "") +
         (prepared.Sliders.Count > 0 && loops.Ready == 0 ? " · continuous unavailable: no decoded loop resources" : "") +
         (loops.Error is { } loopError ? " · " + loopError : "") +
+        (prepared.SpinnerLimitation is { } spinnerLimit ? " · spinner unavailable: " + spinnerLimit : "") +
+        (prepared.Spinners.Count > 0 ? $" · spinner resources spin {prepared.SpinHandle > 0} /bonus {prepared.BonusHandle > 0} · " + loops.FrequencyStatus : "") +
+        (spinnerChannel?.FrequencyError is { } frequencyError ? " · " + frequencyError : "") +
         (Failure is { } error ? " · " + error : "") +
         (voices.Count == 0 && loops.Ready == 0 ? " · no playable effects; supply local map/skin samples or a default pack" : "");
     private WindowsCircleEffects(PreparedCircleEffects prepared, HitSoundSettings settings, Dispatcher dispatcher)
@@ -86,10 +90,12 @@ public sealed class WindowsCircleEffects : IDisposable
                 { foreach (var v in pool) Close(v); result.failure = "Decoder unavailable: " + pair.Value.Name + " — " + e.Message; }
             }));
             await result.loops.PrepareAsync(data.Samples, result.cache, token);
-            if (data.ContinuousLimitation is null)
+            if (data.ContinuousLimitation is null || (data.SpinnerLimitation is null && data.Spinners.Count > 0))
                 result.continuing = new(new GlobalSampleTiming(data.Source.Timing), result.loops, data.Resources.ResolveContinuing)
                 { SelectedFormat = data.Source.Format, SongFormat = data.Source.Format,
                   EffectVolume = library.Settings.VolumeEffect, UniversalVolume = library.Settings.VolumeUniversal };
+            if (result.continuing is not null && data.SpinnerLimitation is null && data.Spinners.Count > 0)
+                result.spinnerChannel = result.continuing.AttachSpinner(result.loops, () => data.SpinHandle);
             token.ThrowIfCancellationRequested();
             return result;
         }
@@ -119,10 +125,11 @@ public sealed class WindowsCircleEffects : IDisposable
         if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; DetachLoops(session); }
         if (continuing is not null) continuing.SameMapIdentity = ReferenceEquals(replacement.Map, prepared.PreparedMap);
         session = replacement; session.PositiveCircleSound += OnCircle; session.SliderSound += OnSlider;
+        session.SpinnerSound += OnSpinner;
         session.GlobalSoundTiming += OnGlobalTiming; session.ContinuingSound += OnContinuing; session.ContinuingManagerTail += OnManager;
     }
     private void DetachLoops(CircleSession old)
-    { old.GlobalSoundTiming -= OnGlobalTiming; old.ContinuingSound -= OnContinuing; old.ContinuingManagerTail -= OnManager; }
+    { old.SpinnerSound -= OnSpinner; old.GlobalSoundTiming -= OnGlobalTiming; old.ContinuingSound -= OnContinuing; old.ContinuingManagerTail -= OnManager; }
     private void OnGlobalTiming(int time)
     { if (LoopsEligible) GuardLoops(() => continuing!.Clock(time)); }
     private bool LoopsEligible => !disposed && !loopsPaused && Enabled && continuing is { SameMapIdentity: true };
@@ -139,7 +146,7 @@ public sealed class WindowsCircleEffects : IDisposable
     }
     private void OnContinuing(SliderState slider, int time, bool active)
     {
-        if (!LoopsEligible) return;
+        if (!LoopsEligible || prepared.ContinuousLimitation is not null) return;
         GuardLoops(() =>
         {
             if (!active) continuing!.QueuePause();
@@ -150,6 +157,35 @@ public sealed class WindowsCircleEffects : IDisposable
     }
     private void OnManager(bool current)
     { if (LoopsEligible) GuardLoops(() => { continuing!.ManagerTail(current); FlushLoops(); }); }
+    private void OnSpinner(SpinnerState state, SpinnerSoundStage stage)
+    {
+        if (!LoopsEligible || prepared.SpinnerLimitation is not null || !prepared.Spinners.TryGetValue(state.Definition, out var data)) return;
+        try
+        {
+            switch (stage)
+            {
+                case SpinnerSoundStage.ObservedChange:
+                    spinnerChannel?.Observe(state.Observation.Count, state.Required, settings.SpinnerFrequencyModulate);
+                    break;
+                case SpinnerSoundStage.Motion:
+                    spinnerChannel?.Continue(settings.SpinnerFrequencyModulate ? (float)state.Observation.Count / (float)state.Required : null);
+                    FlushLoops(); break;
+                case SpinnerSoundStage.ZeroMotion:
+                case SpinnerSoundStage.Cleanup:
+                    spinnerChannel?.QueuePause(); FlushLoops(); break;
+                case SpinnerSoundStage.Bonus:
+                    if (SpinnerSampleSelection.BonusAllowed(state.Observation.Count, state.Required, settings.SpinnerModifierBits))
+                        SpinnerSampleSelection.Bonus(state.Definition, prepared.BonusHandle, continuing!.CurrentVolume,
+                            new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), playback);
+                    break;
+                case SpinnerSoundStage.PositiveCompletion:
+                    SpinnerSampleSelection.Completion(data, prepared.Source.Timing, state.SoundCenter, prepared.Resources,
+                        new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), playback);
+                    break;
+            }
+        }
+        catch (Exception e) { failure = "Spinner effect unavailable: " + e.Message; }
+    }
     private void OnCircle(CircleDefinition circle)
     {
         if (disposed || prepared.Source.TimingError is not null) return;
@@ -199,7 +235,7 @@ public sealed class WindowsCircleEffects : IDisposable
     }
     private void PauseLoops() { loopsPaused = true; loopGeneration++; continuing?.Cancel(); loops.PauseAll(); }
     public void Pause()
-    { playback.Pause(); PauseLoops(); }
+    { session?.CleanupSpinnerAudio(); playback.Pause(); PauseLoops(); }
     public void Resume() { playback.Resume(); loopsPaused = false; }
     public void Restart(CircleSession replacement)
     { Pause(); continuing?.Timing.Reset(); playback.Restart(); Attach(replacement); Resume(); }
@@ -207,6 +243,7 @@ public sealed class WindowsCircleEffects : IDisposable
     public void Dispose()
     {
         if (disposed) return;
+        session?.CleanupSpinnerAudio();
         disposed = true;
         if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; DetachLoops(session); }
         loopGeneration++; continuing?.Cancel(); loops.Dispose();

@@ -59,6 +59,8 @@ public sealed class LocalSampleFiles : ISampleFiles
 public sealed record HitSoundSettings
 {
     public bool Enabled { get; init; } = true;
+    public bool SpinnerFrequencyModulate { get; init; } = true; // Explicit ordinary audio setting; Windows modulation remains unsupported.
+    public int SpinnerModifierBits { get; init; } // Original numeric gate; no speculative name.
     public bool LayeredHitSounds { get; init; } = true;
     public bool SkinSamples { get; init; } = true;
     public string SkinName { get; init; } = "Default";
@@ -117,6 +119,11 @@ public sealed class PreparedCircleEffects : IDisposable
     public required IReadOnlyDictionary<CircleDefinition, (CircleSampleMetadata Metadata, int Custom)> Circles { get; init; }
     public required IReadOnlyDictionary<int, SampleBytes> Samples { get; init; }
     public Beatmap? PreparedMap { get; init; }
+    public IReadOnlyDictionary<SpinnerDefinition, PreparedSpinnerSamples> Spinners { get; init; } =
+        new Dictionary<SpinnerDefinition, PreparedSpinnerSamples>(ReferenceEqualityComparer.Instance);
+    public string? SpinnerLimitation { get; init; }
+    public int SpinHandle { get; init; } = -1;
+    public int BonusHandle { get; init; } = -1;
     public string? ContinuousLimitation { get; init; }
     public string? Error { get; init; }
     public int MissingLayers { get; init; }
@@ -168,6 +175,7 @@ public sealed class HitSoundLibrary : IDisposable
         {
             int errorStart = catalog.Errors.Count;
             var circles = new Dictionary<CircleDefinition, (CircleSampleMetadata, int)>(ReferenceEqualityComparer.Instance);
+            var spinnerCustom = new Dictionary<SpinnerDefinition, int>(ReferenceEqualityComparer.Instance);
             var custom = new Dictionary<CircleDefinition, int>(ReferenceEqualityComparer.Instance);
             string? operandError = null;
             foreach (var operand in source.RegisteredOverrides)
@@ -179,6 +187,7 @@ public sealed class HitSoundLibrary : IDisposable
                 catch (Exception e) when (e is IOException or UnauthorizedAccessException or ArgumentException or NotSupportedException)
                 { operandError ??= "Hitsound custom resource rejected: " + e.Message; handle = -1; }
                 if (operand.Circle is not null) custom.Add(operand.Circle, handle);
+                if (operand.Spinner is not null) spinnerCustom.Add(operand.Spinner, handle);
             }
             var parentHandles = new Dictionary<SliderDefinition, int>(ReferenceEqualityComparer.Instance);
             // Parent handles were resolved in original registration order above.
@@ -200,6 +209,16 @@ public sealed class HitSoundLibrary : IDisposable
                 try { resources.PrepareContinuing(source.Timing.Select(t => t.Index)); }
                 catch (Exception e) { continuousLimitation = "Loop preparation failed: " + e.Message; }
             }
+            string? spinnerLimitation = SpinnerAdmission(map);
+            int spin = -1, bonus = -1;
+            var spinners = new Dictionary<SpinnerDefinition, PreparedSpinnerSamples>(ReferenceEqualityComparer.Instance);
+            if (spinnerLimitation is null && map.Spinners.Count > 0)
+            {
+                foreach (var data in source.Spinners)
+                    spinners.Add(data.Object, new(data, spinnerCustom.GetValueOrDefault(data.Object, -1)));
+                try { spin = resources.SpinnerResource(true); bonus = resources.SpinnerResource(false); }
+                catch (Exception e) { spinnerLimitation = "Spinner resource preparation failed: " + e.Message; }
+            }
             token.ThrowIfCancellationRequested();
             var handles = resources.Caches.Map.Values.Concat(resources.Caches.Skin.Values).Concat(resources.Caches.Embedded.Values).Where(h => h > 0).Distinct();
             var samples = catalog.Snapshot(handles);
@@ -215,10 +234,30 @@ public sealed class HitSoundLibrary : IDisposable
                         missing++;
             }
             string[] errors = circles.Values.Select(c => c.Item1.Error).Where(e => e is not null).Cast<string>().Concat(catalog.Errors.Skip(errorStart)).Distinct().ToArray();
-            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders, PreparedMap = map, ContinuousLimitation = continuousLimitation,
+            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders, PreparedMap = map, ContinuousLimitation = continuousLimitation, Spinners = spinners, SpinnerLimitation = spinnerLimitation, SpinHandle = spin, BonusHandle = bonus,
                 Error = source.TimingError ?? operandError ?? (errors.Length > 0 ? string.Join("; ", errors.Take(3)) : null) };
         }
         catch { resources.ClearMap(); throw; }
+    }
+    public static string? SpinnerAdmission(Beatmap map)
+    {
+        if (map.Spinners.Count == 0) return null;
+        if (map.HealthSource is null || !map.HealthSource.IsFreshFor(map)) return "spinner audio requires proven fresh map identity";
+        var source = map.CircleSounds;
+        if (source is null || source.Format != 14 || source.TimingError is not null) return "spinner audio requires format14 supported sample metadata";
+        if (source.Spinners.Count != map.Spinners.Count || map.Spinners.Any(s => !source.Spinners.Any(p => ReferenceEquals(p.Object, s)))) return "spinner source identity unavailable";
+        if (source.Spinners.Any(s => s.Payload.Error is not null || s.Payload.BaseSet is < 0 or > 3 || s.Payload.AdditionSet is < 0 or > 3 || s.Payload.Index < 0)) return "unsupported spinner sample operands";
+        if (source.Timing.Count == 0 || source.Timing.Any(t => !double.IsFinite(t.Time) || t.Set is < 0 or > 3 || t.Index < 0)) return "unsupported spinner global timing";
+        if (source.Timing.Zip(source.Timing.Skip(1)).Any(p => p.First.Time > p.Second.Time)) return "unsorted global spinner timing unsupported";
+        if (map.Spinners.Zip(map.Spinners.Skip(1)).Any(p => p.First.EndTime >= p.Second.StartTime)) return "overlapping spinner producers unsupported";
+        if (source.RegisteredOverrides.Any(o => CustomStem(o.Filename).ToLowerInvariant() is "spinnerspin" or "spinnerbonus")) return "ambiguous spinner named/custom cache collision";
+        foreach (var data in source.Spinners.Where(s => !string.IsNullOrEmpty(s.Payload.Filename)))
+        {
+            string stem = CustomStem(data.Payload.Filename);
+            if (IsStandardStem(stem) || source.RegisteredOverrides.Count(o => CustomStem(o.Filename) == stem) > 1)
+                return "ambiguous spinner completion custom-cache collision";
+        }
+        return null;
     }
     public static string? ContinuousAdmission(Beatmap map)
     {

@@ -161,21 +161,25 @@ public sealed class CircleState(CircleDefinition definition)
 public sealed record HitFeedback(Vector2 Position, string Text, int Time, Judgement Result);
 
 // E25: observed integer changes are independent of accumulated P and final grade.
+public enum SpinnerSoundStage { ObservedChange, Bonus, Motion, ZeroMotion, Cleanup, PositiveCompletion }
+
 public sealed class SpinnerProgressObservation
 {
     public int CachedInteger { get; private set; }
     public int Count { get; private set; }
-    public int Observe(float progress, int required)
+    public int Observe(float progress, int required, Action? changed = null, Action? bonus = null)
     {
         if (!float.IsFinite(progress) || progress <= int.MinValue || (double)progress >= 2147483648.0)
             throw new ArgumentOutOfRangeException(nameof(progress), "Finite in-range Single progress required.");
         int observed = (int)progress;
         if (observed == CachedInteger) return 0;
         Count = unchecked(Count + 1); // One increment, even if many integers were skipped.
+        changed?.Invoke(); // E041 after C increment, before classification/cache.
         int raw = Count > unchecked(required + 3) && unchecked(Count - unchecked(required + 3)) % 2 == 0 ? 16384 :
             Count > 1 ? (Count % 2 == 0 ? 8192 : 4096) : 0;
         // Original cache follows selection/helpers and a second P read. This serial
         // model has no opaque/reentrant hooks; its unchanged P is the second value.
+        if (raw == 16384) bonus?.Invoke(); // Before cache update and result handoff.
         CachedInteger = (int)progress;
         return raw; // No score, bonus payout or combo operation.
     }
@@ -198,6 +202,16 @@ public sealed class SpinnerState
     public bool InputHeld { get; private set; }
     public double VisualRotation { get; private set; } // Independent primitive presentation.
     public int LastComponentRaw { get; private set; }
+    public event Action<SpinnerState, SpinnerSoundStage>? Sound;
+    public string? SoundError { get; private set; }
+    public Vector2 SoundCenter { get; set; } = DisplayCenter; // Independent stored presentation operand.
+    public bool CompletionStarted { get; private set; }
+    private void RequestSound(SpinnerSoundStage stage)
+    {
+        try { Sound?.Invoke(this, stage); }
+        catch (Exception e) { SoundError = "Spinner effect failed: " + e.Message; }
+    }
+    public void CleanupAudio() => RequestSound(SpinnerSoundStage.Cleanup);
     public int FinalRaw { get; private set; }
     public Judgement Result { get; private set; }
 
@@ -246,7 +260,8 @@ public sealed class SpinnerState
                 (sampleInterval > 0 ? delta / sampleInterval : 0) : delta / InitialInterval;
         }
         PreviousAngle = theta; // Also after movement/hold/time rejection.
-        LastComponentRaw = Observation.Observe(Progress, Required); // Old P before later integration.
+        LastComponentRaw = Observation.Observe(Progress, Required,
+            () => RequestSound(SpinnerSoundStage.ObservedChange), () => RequestSound(SpinnerSoundStage.Bonus)); // Old P before later integration.
         return LastComponentRaw;
     }
 
@@ -259,6 +274,7 @@ public sealed class SpinnerState
         SmoothedMotion = Math.Max(-0.05, Math.Min(SmoothedMotion, 0.05));
         float step = (float)(SmoothedMotion * (double)updateInterval);
         VisualRotation += step;
+        RequestSound(SmoothedMotion != 0 ? SpinnerSoundStage.Motion : SpinnerSoundStage.ZeroMotion);
         Progress = (float)(Progress + Math.Min(1f, Math.Abs((float)((double)step / Math.PI))));
     }
 
@@ -273,6 +289,10 @@ public sealed class SpinnerState
     public bool Complete(int time)
     {
         if (Result != Judgement.Pending || time <= Definition.EndTime) return false;
+        RequestSound(SpinnerSoundStage.Cleanup);
+        CompletionStarted = true;
+        if (Required == 0 || Observation.Count >= Math.Max(0, Required / 4))
+            RequestSound(SpinnerSoundStage.PositiveCompletion); // Before later grade selection/accounting.
         // E26: no Observe call, P drain, counter increment or cache repair here.
         FinalRaw = ClassifyModern(Observation.Count, Required);
         Result = FinalRaw switch { 1024 => Judgement.Hit300, 512 => Judgement.Hit100, 256 => Judgement.Hit50, _ => Judgement.Miss };
@@ -390,6 +410,7 @@ public sealed class CircleSession
     public event Action<CircleDefinition>? PositiveCircleSound;
     public string? CircleSoundError { get; private set; }
     public event Action<SliderSoundEvent>? SliderSound;
+    public event Action<SpinnerState, SpinnerSoundStage>? SpinnerSound;
     public event Action<int>? GlobalSoundTiming;
     public event Action<SliderState, int, bool>? ContinuingSound; // true=continue, false=queued cleanup
     public event Action<bool>? ContinuingManagerTail; // ENGINEERING current-object proxy
@@ -452,6 +473,7 @@ public sealed class CircleSession
         Circles = map.Circles.Select(c => new CircleState(c)).ToArray();
         Sliders = map.Sliders.Select(s => new SliderState(s)).ToArray();
         Spinners = map.Spinners.Select(s => new SpinnerState(s, map.OverallDifficulty)).ToArray();
+        foreach (var spinner in Spinners) spinner.Sound += (state, stage) => SpinnerSound?.Invoke(state, stage);
         targets = Circles.Select(c => (Head: c, Slider: (SliderState?)null))
             .Concat(Sliders.Select(s => (Head: s.Head, Slider: (SliderState?)s)))
             .OrderBy(t => t.Head.Definition.StartTime).ToList();
@@ -488,6 +510,8 @@ public sealed class CircleSession
     private static int MapDifficulty(double d, double a, double b, double c) =>
         (int)(d > 5 ? b + (c - b) * (d - 5) / 5 : d < 5 ? b - (b - a) * (5 - d) / 5 : b);
 
+    // ENGINEERING host/full-list cleanup bridge, not original candidate arbitration.
+    public void CleanupSpinnerAudio() { foreach (var spinner in Spinners) spinner.CleanupAudio(); }
     public void SetHeldButtons(int buttons) => input.Publish(buttons);
 
     // Existing headless/circle API: no supplied live input means no held tracking.

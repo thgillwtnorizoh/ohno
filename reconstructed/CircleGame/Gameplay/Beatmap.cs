@@ -411,6 +411,8 @@ public sealed record CircleSampleMetadata(CircleDefinition Object, int RawSound,
         return new(circle, raw, raw & 14, baseSet, addition, index, volume, filename, payload, error);
     }
 }
+// E041 spinner factory sidecar; raw mask is never circle-constructor normalized.
+public sealed record SpinnerSampleMetadata(SpinnerDefinition Object, int SourceOrder, CircleSampleMetadata Payload);
 // E039 parent fields remain distinct from circle-normalized embedded-head fields.
 public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int EffectiveTraversals,
     int Format, int SourceOrder, string? RawEdgeSounds, string? RawEdgeSets, string? RawPayload,
@@ -473,11 +475,13 @@ public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int Ef
 public sealed record SampleTiming(double Time, int Set, int Index, int Volume, bool Uninherited, int SourceOrder);
 public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Index, string Filename, string? Error)
 {
+    public SpinnerDefinition? Spinner { get; init; }
     public SliderDefinition? Slider { get; init; }
 }
 public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<CircleSampleMetadata> Circles,
     IReadOnlyList<SampleTiming> Timing, string? TimingError)
 {
+    public IReadOnlyList<SpinnerSampleMetadata> Spinners { get; init; } = Array.Empty<SpinnerSampleMetadata>();
     // Shared resource preloading only. No slider/spinner playback hook is added.
     public IReadOnlyList<SamplePreparationOperand> RegisteredOverrides { get; init; } = Array.Empty<SamplePreparationOperand>();
 }
@@ -515,6 +519,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var circleSamples = new List<CircleSampleMetadata>();
         var sampleOperands = new List<SamplePreparationOperand>();
         var sampleTiming = new List<SampleTiming>();
+        var spinnerSamples = new List<SpinnerSampleMetadata>();
         string? sampleTimingError = null;
         int timingSourceOrder = 0;
         string section = "";
@@ -550,7 +555,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     if (row.Length < 6 || !int.TryParse(row[5], NumberStyles.Integer, CultureInfo.InvariantCulture, out int end) ||
                         end <= time || end > 3_600_000 || end - time > 60_000)
                         throw new InvalidDataException($"Line {lineNumber + 1}: spinner end must follow start, duration <=60000 ms, end <=3600000 ms.");
-                    spinners.Add(new(time, end, hitSound, row.Length > 6 ? row[6] : null));
+                    var spinner = new SpinnerDefinition(time, end, hitSound, row.Length > 6 ? row[6] : null);
+                    spinners.Add(spinner);
+                    var payload = sample with { Object = new CircleDefinition(new(256, 192), end), StoredMask = hitSound };
+                    spinnerSamples.Add(new(spinner, healthRows.Count - 1, payload));
+                    sampleOperands[^1] = sampleOperands[^1] with { Spinner = spinner };
                 }
                 else if ((type & 2) == 0)
                 {
@@ -693,7 +702,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
-                    { RegisteredOverrides = sampleOperands.AsReadOnly() } };
+                    { RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };
         map.HealthSource!.BindFreshOwner(map);
         return map;
 

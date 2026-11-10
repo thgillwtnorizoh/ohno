@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../R14DevelopmentChecks/R14DevelopmentChecks.csproj" />
+    <Compile Include="../CircleGame/Platform/WindowsSliderLoops.cs" Link="Production/WindowsSliderLoops.cs" />
+  </ItemGroup>
+</Project>

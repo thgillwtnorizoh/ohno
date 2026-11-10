@@ -952,3 +952,30 @@ QA11 failing run42018275697, seven corrected-oracle records, all research/QA/pri
 reports/journal prefixes unchanged. Final report/evidence-only publication changes
 no tested production/harness/workflow. No media/window/listening/original runtime.
 Stopping after R13-C01; R14/E041/QA12 and deferred score work remain unstarted.
+
+## R14 — Spinner audio and separate shared channel — 2026-11-10
+
+Work2 authorized R14 only; canonical base b20c00fe3279032357af682a4946ca57936440d4.
+Read AGENTS/standing contract, both journals, E024–E026/E037–E041 and full parsed
+E041 JSON, R07/R11–R13/C01, QA05/QA09–QA11 and current parser/session/resource/
+Windows/clock/presentation/CI/generators. No RTK.md, original archive inspection,
+binary execution/re-extraction, media/game/window/input/OBS/listening or E020 case.
+
+Added spinner sidecar identity/raw payload; pre-classification/cache observation
+modulation/bonus hooks, pre-P motion/zero-U cleanup and pre-quality positive final
+hook. Shared spinner channel separate from slider rows; admitted global refresh
+acquires it independently; settings reuse one R13-C01 gain across three live targets.
+Added native-length/frequency recording contract, finite original operand math,
+explicit unsupported nonfinite/length cases, Play(false) start and queued live-target
+Pause. Named spinnerspin/spinnerbonus stage7 map-index0 resources retain cache/flags;
+bonus distinct player registration; final uses stored End without+5 and standard/
+custom rules. Windows preopened-player reuse, explicit unsupported audible modulation
+(no fake WAV length/pitch), generation/error safety and full-list cleanup bridge.
+Added independent two-file generator, bounded R14 and Windows-empty checks, E041
+coverage map, README, R14 report and minimal existing CI steps. Source-only Windows
+controls and synthetic conditional states are labelled; no all66 original claim.
+Score/HP/R07 formulas, NewCombo, slider/circle behavior and historical evidence are
+preserved; only optional hooks observe gameplay. Existing1344 QA and every retained
+development group remain required. Windows gate pending; no local SDK. Reusable
+ci/verification will gate exact source before canonical main publication. Stop after
+R14; do not begin QA12/R15/E042, framework migration or deferred score inquiry.

@@ -62,12 +62,12 @@ public sealed class CircleSampleResources
     public int Standard(int bit, int set, int index, int stages = 7) => LoadStandard(LayerName(bit), set, index, stages);
     public string TickKey(int set, int index = 1) => SetName(set) + "-slidertick" + (index > 1 ? index.ToString(policy.Culture) : "");
     public int StandardTick(int set, int index, int stages = 7) => LoadStandard("slidertick", set, index, stages);
-    private int LoadStandard(string family, int set, int index, int stages, bool loop = false)
+    private int LoadStandard(string family, int set, int index, int stages, bool loop = false, bool unprefixed = false)
     {
         if (policy.EarlyProcessGate) return -1;
-        string baseKey = SetName(set) + "-" + family, mapKey = baseKey + (index > 1 ? index.ToString(policy.Culture) : "");
+        string baseKey = unprefixed ? family : SetName(set) + "-" + family, mapKey = baseKey + (!unprefixed && index > 1 ? index.ToString(policy.Culture) : "");
         int handle;
-        if ((stages & 4) != 0 && !policy.MapSuppressed && policy.HasSelectedMap && index != 0)
+        if ((stages & 4) != 0 && !policy.MapSuppressed && policy.HasSelectedMap && (unprefixed || index != 0))
         {
             if (!Caches.Map.TryGetValue(mapKey, out handle))
             {
@@ -165,6 +165,7 @@ public sealed class CircleSampleResources
         if (index <= 2) return tickTable[Bank(set), index];
         return Caches.Map.TryGetValue(TickKey(set, index), out int handle) && handle != -1 ? handle : tickTable[Bank(set), 0];
     }
+    public int SpinnerResource(bool spin) => LoadStandard(spin ? "spinnerspin" : "spinnerbonus", 0, 0, 7, spin, true);
     public string ContinuingKey(int row, int set, int index = 1) => SetName(set) + "-" + LoopFamily(row) + (index > 1 ? index.ToString(policy.Culture) : "");
     private static string LoopFamily(int row) => row switch { 0 => "sliderslide", 1 => "sliderwhistle", _ => throw new ArgumentOutOfRangeException(nameof(row)) };
     public void PrepareContinuing(IEnumerable<int> indexes)
@@ -198,13 +199,16 @@ public sealed class CircleSampleResources
 public sealed record CircleSoundPolicy(bool HasSkin, bool LayeredHitSounds, bool HasSelectedMap,
     int SelectedMode, int SongRate, bool RateMatching, int VolumeEffect, int VolumeUniversal);
 public sealed record SelectedCircleSample(int Mask, int BaseSet, int AdditionSet, int Index, int Volume);
-public enum SoundEventKind { Circle, SliderHead, SliderTick, SliderRepeatEdge, SliderAggregateEdge }
+public enum SoundEventKind { Circle, SliderHead, SliderTick, SliderRepeatEdge, SliderAggregateEdge, SpinnerBonus, SpinnerCompletion }
 public sealed record SoundEventIdentity(SoundEventKind Kind, SliderDefinition Parent, int Index, int ScheduleIndex, int UpdateTime);
 public sealed record SamplePlaybackRequest(CircleDefinition Source, int Handle, int Layer, int Volume,
     float Pan, float Factor, float Gain)
 {
     public SoundEventIdentity? Event { get; init; }
-    public SoundEventKind Kind => Event?.Kind ?? SoundEventKind.Circle;
+    public SpinnerBonusPlayer? BonusPlayer { get; init; }
+    public SpinnerDefinition? Spinner { get; init; }
+    public SoundEventKind? SpinnerKind { get; init; }
+    public SoundEventKind Kind => SpinnerKind ?? Event?.Kind ?? SoundEventKind.Circle;
 }
 public interface ISamplePlaybackSink { void Enqueue(SamplePlaybackRequest request); }
 public static class CircleSampleSelection
@@ -428,11 +432,14 @@ public interface IPersistentSampleChannels : IDisposable
 }
 public sealed record ChannelOperation(string Name, int Channel, int Attribute = 0, float Value = 0);
 // Recording implementation: activity is an injected native operand, never an inferred pending flag.
-public sealed class RecordingSampleChannels : IPersistentSampleChannels
+public sealed class RecordingSampleChannels : ISpinnerSampleChannels
 {
     public List<ChannelOperation> Operations { get; } = [];
     public Dictionary<int, int> States { get; } = [];
     public Func<int, bool, int> GetChannel { get; set; } = (sample, _) => sample;
+    public FrequencyCapability FrequencyCapability { get; set; } = FrequencyCapability.Supported;
+    public Func<int, int, long?> QueryLength { get; set; } = (_, _) => null;
+    public long? Length(int channel, int mode) { Record(new("Length", channel, mode)); return QueryLength(channel, mode); }
     public Action<ChannelOperation>? OnOperation { get; set; }
     private void Record(ChannelOperation op) { Operations.Add(op); OnOperation?.Invoke(op); }
     public int Acquire(int sample, bool onlyNew) { Record(new("Acquire", sample, 0, onlyNew ? 1 : 0)); return GetChannel(sample, onlyNew); }
@@ -448,6 +455,10 @@ public sealed class SharedSliderChannels
     private readonly IPersistentSampleChannels backend;
     private readonly Func<int, int, int, int> resolve;
     private readonly Queue<Action> actions = new();
+    public SharedSpinnerChannel? Spinner { get; private set; }
+    public SharedSpinnerChannel AttachSpinner(ISpinnerSampleChannels channels, Func<int> resolve) =>
+        Spinner = new(channels, resolve, () => ReplacementGain, () => StartGain, action => actions.Enqueue(action));
+    public int CurrentVolume => Volume;
     public GlobalSampleTiming Timing { get; }
     public int Channel0 { get; set; }
     public int Channel1 { get; set; }
@@ -485,6 +496,7 @@ public sealed class SharedSliderChannels
         if (!force && ((selectedBase == CurrentBase && SampleIndex == CurrentIndex) || ApplicationState is not (1 or 2))) return;
         CurrentBase = selectedBase == 0 ? 1 : selectedBase;
         CurrentIndex = SampleIndex;
+        Spinner?.Refresh(); // E041 unconditional on each admitted global sample refresh.
         if (force || LastBase == 0) PreparePair(CurrentBase, CurrentBase, force);
     }
     public void PreparePair(int selectedBase, int addition, bool force = false)
@@ -533,9 +545,106 @@ public sealed class SharedSliderChannels
         float gain = ReplacementGain;
         backend.Attribute(Channel0, 2, gain);
         backend.Attribute(Channel1, 2, gain);
+        Spinner?.SettingsGain(gain); // Same captured local, fresh spinner target.
     }
     public void ExecuteNext() { if (actions.TryDequeue(out var action)) action(); }
     public void Drain() { while (actions.Count > 0) ExecuteNext(); }
     // ENGINEERING cancellation discards stale work; original callbacks have no generation veto.
     public void Cancel() => actions.Clear();
+}
+
+// E041 frequency support is explicit, separate from recording logical requests.
+public enum FrequencyCapability { Supported, Unsupported, Failed }
+public interface ISpinnerSampleChannels : IPersistentSampleChannels
+{
+    long? Length(int channel, int mode); // null = unavailable engineering capability, never encoded-byte size.
+    FrequencyCapability FrequencyCapability { get; }
+}
+public sealed class SharedSpinnerChannel(ISpinnerSampleChannels backend, Func<int> resolve,
+    Func<float> replacementGain, Func<float> startGain, Action<Action> enqueue)
+{
+    public int Channel { get; set; } // F2356 CLR0, not slider row0/row1.
+    public FrequencyCapability FrequencyStatus { get; private set; } = backend.FrequencyCapability;
+    public string? FrequencyError { get; private set; }
+    public float? LastRatio { get; private set; }
+    public float? RequestedFrequency { get; private set; }
+    public void Refresh()
+    {
+        if (Channel != 0 && backend.Activity(Channel) == 1) backend.Stop(Channel);
+        Channel = backend.Acquire(resolve(), false);
+        float gain = replacementGain();
+        backend.Attribute(Channel, 11, 1f); backend.Attribute(Channel, 2, gain);
+    }
+    public void SettingsGain(float captured) => backend.Attribute(Channel, 2, captured);
+    public void Modulate(float ratio)
+    {
+        try
+        {
+            LastRatio = ratio; RequestedFrequency = null;
+            long? length = backend.Length(Channel, 0);
+            if (length is null) { Unsupported("Native channel length/frequency unavailable; encoded bytes are not a substitute."); return; }
+            if (length.Value <= 8192) return;
+            int target = Channel; // Fresh read after Length; invalid handles are not special-cased here.
+            float product = 40000f * ratio;
+            if (!float.IsFinite(product) || product < int.MinValue || (double)product >= 2147483648.0)
+            { Unsupported("Unpinned nonfinite/out-of-range original conv.i4; no frequency fallback."); return; }
+            int k = (int)product;
+            float frequency = (float)Math.Min(100000, unchecked(20000 + k));
+            RequestedFrequency = frequency;
+            if (backend.FrequencyCapability != FrequencyCapability.Supported)
+            { Unsupported("Audible numeric attribute1 frequency changes unsupported by this backend."); return; }
+            backend.Attribute(target, 1, frequency);
+            FrequencyStatus = FrequencyCapability.Supported; FrequencyError = null;
+        }
+        catch (Exception e) { FrequencyStatus = FrequencyCapability.Failed; FrequencyError = e.Message; throw; }
+    }
+    private void Unsupported(string reason) { FrequencyStatus = FrequencyCapability.Unsupported; FrequencyError = reason; }
+    public void Observe(int count, int required, bool enabled)
+    { if (enabled) Modulate((float)count / (float)required); }
+    public void Continue(float? ratio)
+    {
+        if (ratio.HasValue) Modulate(ratio.Value);
+        enqueue(() =>
+        {
+            int target = Channel; float gain = startGain();
+            backend.Attribute(target, 2, gain); backend.Play(Channel, false);
+        }); // No active1 suppression or pending-start flag.
+    }
+    public void QueuePause() => enqueue(() => backend.Pause(Channel));
+}
+public sealed record PreparedSpinnerSamples(SpinnerSampleMetadata Metadata, int Custom);
+public sealed record SpinnerBonusPlayer(int Sample, float InitialVolume, bool Restart = true, bool Secondary = false);
+public static class SpinnerSampleSelection
+{
+    public static bool BonusAllowed(int count, int required, int modifierBits) =>
+        count > unchecked(required + 3) && unchecked(count - unchecked(required + 3)) % 2 == 0 && (modifierBits & 4194304) == 0;
+    public static SpinnerBonusPlayer Bonus(SpinnerDefinition spinner, int handle, int globalVolume,
+        CircleSoundPolicy policy, ISamplePlaybackSink sink, Action<SpinnerBonusPlayer>? register = null)
+    {
+        // Named player registration occurs even for -1/0; worker validity is separate.
+        var player = new SpinnerBonusPlayer(handle, globalVolume / 100f);
+        register?.Invoke(player); // Before deferred player start; missing/0 still registers.
+        float global = (float)unchecked(policy.VolumeEffect * policy.VolumeUniversal) / 100f;
+        sink.Enqueue(new(new CircleDefinition(SpinnerState.DisplayCenter, spinner.EndTime), handle, 0, globalVolume,
+            0, 1, (globalVolume / 100f) * global / 100f)
+            { Spinner = spinner, SpinnerKind = SoundEventKind.SpinnerBonus, BonusPlayer = player });
+        return player;
+    }
+    public static void Completion(PreparedSpinnerSamples prepared, IReadOnlyList<SampleTiming>? timing,
+        System.Numerics.Vector2 freshCenter, CircleSampleResources resources, CircleSoundPolicy policy, ISamplePlaybackSink sink,
+        Action<SelectedCircleSample>? observer = null)
+    {
+        var data = prepared.Metadata;
+        if (data.Payload.Error is not null) throw new InvalidDataException(data.Payload.Error);
+        var point = CircleSampleSelection.At(timing, data.Object.EndTime); // Stored end, NO +5.
+        if (point is null) return;
+        var payload = data.Payload with { Object = new CircleDefinition(freshCenter, data.Object.EndTime) };
+        var info = CircleSampleSelection.Select(payload, point, policy); observer?.Invoke(info);
+        float pan = (freshCenter.X / 512f - .5f) * .800000011920929f;
+        var tagged = new SpinnerSink(sink, data.Object);
+        if (prepared.Custom != -1) CircleSampleSelection.Submit(payload.Object, prepared.Custom, 0, info.Volume, pan, policy, tagged);
+        else CircleSampleSelection.Standard(payload.Object, info, pan, resources, policy, tagged);
+    }
+    private sealed class SpinnerSink(ISamplePlaybackSink sink, SpinnerDefinition spinner) : ISamplePlaybackSink
+    { public void Enqueue(SamplePlaybackRequest r) => sink.Enqueue(r with { Spinner = spinner, SpinnerKind = SoundEventKind.SpinnerCompletion }); }
 }
