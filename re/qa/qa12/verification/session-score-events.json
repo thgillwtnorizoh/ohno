@@ -1,0 +1,1728 @@
+{
+  "schema": "QA12.sessions.v1",
+  "basis": "Each successive supplied action changes ledger EventCount by0 or1. Every nonzero event therefore appears as LastEvent. All19 are retained for each of six matched modes. Does not generalize visibility to arbitrary multi-event Advance calls.",
+  "events": {
+    "S01 matched intermediate session enabled": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ],
+    "S01 matched intermediate session disabled": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ],
+    "S01 matched intermediate session missing": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ],
+    "S01 matched intermediate session frequency unsupported": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ],
+    "S01 matched intermediate session backend failure": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ],
+    "S01 matched intermediate session callback failure": [
+      {
+        "Source": {
+          "ObjectId": 0,
+          "Kind": 0,
+          "StartTime": 500,
+          "EndTime": 500
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 1,
+        "Raw": 64,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 3,
+        "Raw": 128,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": 2
+      },
+      {
+        "Source": {
+          "ObjectId": 1,
+          "Kind": 1,
+          "StartTime": 1000,
+          "EndTime": 1600
+        },
+        "Sequence": 0,
+        "Kind": 4,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": true,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 2,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 3,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 4,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 5,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 6,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 7,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 8,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 9,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 10,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 11,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 12,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 13,
+        "Kind": 5,
+        "Raw": 4096,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 14,
+        "Kind": 5,
+        "Raw": 8192,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 2,
+          "Kind": 2,
+          "StartTime": 2200,
+          "EndTime": 8200
+        },
+        "Sequence": 0,
+        "Kind": 6,
+        "Raw": 256,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      },
+      {
+        "Source": {
+          "ObjectId": 3,
+          "Kind": 0,
+          "StartTime": 9000,
+          "EndTime": 9000
+        },
+        "Sequence": 0,
+        "Kind": 0,
+        "Raw": 1024,
+        "AccountingEnabled": true,
+        "ObjectHasSliderType": false,
+        "Policy": 0,
+        "ProducerRole": null
+      }
+    ]
+  }
+}

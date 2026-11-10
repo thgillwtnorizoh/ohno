@@ -1,0 +1,81 @@
+{
+  "schema": "QA12.Windows.provenance.v1",
+  "tested_source": "51c5d7262c0643213eae756165d9824eda35c831",
+  "tested_production": "75dbf61269937fedd969dfc9e847b731c9f6b446",
+  "baseline": "e785774893d45fe4d2a45617212ce597ebe1bbba",
+  "run": 42867750770,
+  "job": 130010531463,
+  "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42867750770",
+  "platform": "Windows2022",
+  "sdk": "8.0.427",
+  "runtime": ".NET 8.0.33",
+  "headless": {
+    "passed": 274,
+    "executed": 274,
+    "classifications": {
+      "Executed finite component": 262,
+      "Source-only inspection": 8,
+      "Independent asset control": 4
+    }
+  },
+  "windows": {
+    "passed": 12,
+    "executed": 12,
+    "classifications": {
+      "Executed Windows empty-resource component": 5,
+      "Executed Windows callback with recording backend": 7
+    }
+  },
+  "historical": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "total": 1344
+  },
+  "development": {
+    "R06_targets": 4,
+    "R06_fixtures": 4,
+    "R07": 8,
+    "R08": 13,
+    "R08C01": 4,
+    "R08C02": 14,
+    "R09": 15,
+    "R10": 23,
+    "R11": 32,
+    "R12": 40,
+    "R13": 54,
+    "R13_windows_empty": 1,
+    "R13C01": 6,
+    "R14": 58,
+    "R14_windows_empty": 1
+  },
+  "wpf": {
+    "configuration": "Release win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "qa11_g08": "PASS unchanged",
+  "original_runtime": "NOT RUN",
+  "limitations": "No nonempty media/decoder/player/window/device. Frequency audible support explicitly unsupported. Recording calls are logical requests.",
+  "windows-results.json.gz.b64": {
+    "bytes": 91661,
+    "sha256": "4fbb499a010834456dc58cb9f66daa3fe53c202a397b100f68fbf47607b6788d"
+  },
+  "windows-callback-results.json.gz.b64": {
+    "bytes": 1093,
+    "sha256": "f026335edddd142f147277f6c224323807ba697513bca106a39d1aec1661f366"
+  },
+  "windows-job.log": {
+    "bytes": 452721,
+    "sha256": "40844c3966d02de505ea6bed2b66e8ffc9901f92576607dcf110ec3e73fff826"
+  },
+  "result_raw_sha256": "78d67f9083c57f83b5f3f92c447c5216926a2cfd560d65585ea85c4c488fe301",
+  "windows_raw_sha256": "2005ace9d816422af85d395fc64104905a2b197cf9c3bed0aa2b4614cb1a0d43"
+}

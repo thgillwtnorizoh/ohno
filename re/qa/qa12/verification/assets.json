@@ -1,0 +1,17 @@
+{
+  "schema": "QA12.assets.v1",
+  "spinner_files": [
+    {
+      "name": "spinnerspin.wav",
+      "sha256": "feacd92566872ca40c42b079be9aa99da4ef7cafa48886b38616a57f060f42ce",
+      "frames": 22050
+    },
+    {
+      "name": "spinnerbonus.wav",
+      "sha256": "d67c0640388c3c5c7bacbc41bd4a4bd306c545f4cc2c3d979425404f86c93dba",
+      "frames": 13230
+    }
+  ],
+  "earlier_files": 21,
+  "controls": "W01 two individually executed structural controls; W02 generation comparison; W03 all21 old hashes compared against before-generation manifests and historical QA11 manifest. No decoder/audio claim."
+}

@@ -44,7 +44,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U01 strict time2199 interval-1",
@@ -110,7 +110,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U01 strict time2200 interval-1",
@@ -169,7 +169,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U02 signed smoothed U 0",
@@ -223,7 +223,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U02 signed smoothed U 0.7",
@@ -272,7 +272,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U02 signed smoothed U -0.7",
@@ -320,7 +320,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U04 repeated controlled timestamp still submits each reached update",
@@ -378,7 +378,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U01 strict time2201 interval-1",
@@ -442,7 +442,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "U01 strict time9200 interval-1",
@@ -521,7 +521,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O01 first change C before frequency raw0 and late cache",
@@ -565,7 +565,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O03 jump increments once each direction",
@@ -613,7 +613,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O01 first change C before frequency raw0 and late cache",
@@ -668,7 +668,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O02 unchanged converted P has no callback",
@@ -712,7 +712,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "B01 count23 modifier0",
@@ -760,7 +760,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "B01 count24 modifier0",
@@ -811,7 +811,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O05 frequency before classification and bonus before cache",
@@ -862,7 +862,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "B03 suppressed sound retains raw16384",
@@ -914,7 +914,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O04 frequency enabled False",
@@ -962,7 +962,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio 0",
@@ -1009,7 +1009,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio 0.5",
@@ -1052,7 +1052,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio 1",
@@ -1097,7 +1097,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio 2",
@@ -1148,7 +1148,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio 3",
@@ -1191,7 +1191,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F01 ratio -1",
@@ -1234,7 +1234,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F05 unpinned conversion NaN",
@@ -1277,7 +1277,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F05 unpinned conversion Infinity",
@@ -1320,7 +1320,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F05 unpinned conversion -Infinity",
@@ -1368,7 +1368,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F05 unpinned conversion NaN",
@@ -1431,7 +1431,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F02 signed length -1",
@@ -1474,7 +1474,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F02 signed length 0",
@@ -1517,7 +1517,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F02 signed length 8191",
@@ -1560,7 +1560,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F02 signed length 8192",
@@ -1603,7 +1603,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F02 signed length 8193",
@@ -1653,7 +1653,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F03 handle-987 activity0",
@@ -1724,7 +1724,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F04 replacement during Length",
@@ -1768,7 +1768,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O06 pure change exception preserves C stale cache",
@@ -1828,7 +1828,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "F08 backend failure Length",
@@ -1917,7 +1917,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "D03 replace after submission and execute fresh gain",
@@ -1962,7 +1962,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "D04 replace between Attribute and Play",
@@ -2010,7 +2010,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C02 refresh activity -1",
@@ -2073,7 +2073,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C06 unchanged global selectors silent",
@@ -2116,7 +2116,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C05 app0 forceFalse",
@@ -2160,7 +2160,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C04 cached same sample still reacquired",
@@ -2209,7 +2209,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C02 refresh activity 0",
@@ -2266,7 +2266,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "R01 named bonus .wav",
@@ -2334,7 +2334,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "R03 map skin default marker precedence",
@@ -2393,7 +2393,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "C07 opaque acquired identity -1",
@@ -2459,7 +2459,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "B04 independent player registration sample -1",
@@ -2524,7 +2524,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "R04 first nonnull bytes load result -1",
@@ -2583,7 +2583,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E01 completion count 21",
@@ -2634,7 +2634,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E01 completion count 19",
@@ -2685,7 +2685,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E01 completion count 5",
@@ -2736,7 +2736,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E01 completion count 4",
@@ -2779,7 +2779,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E02 N0 positive completion independent modulation",
@@ -2823,7 +2823,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E13 missing timing False",
@@ -2871,7 +2871,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E04 end selected distinct from start/end+5",
@@ -2918,7 +2918,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E08 mask14 layeredFalse",
@@ -2975,7 +2975,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E08 mask0 layeredFalse",
@@ -3074,7 +3074,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E17 combined custom overrides before dispatch",
@@ -3119,7 +3119,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E11 custom sentinel -1",
@@ -3172,7 +3172,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "D05 Pause fresh channel after real global replacement",
@@ -3224,7 +3224,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "S03 recovery guard independent audio cleanup",
@@ -3280,7 +3280,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "D05 Pause fresh channel after real global replacement",
@@ -3329,7 +3329,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "D07 timing reset retains shared identity and queued actions",
@@ -3384,7 +3384,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "G01 one gain three fresh fields mutation write1",
@@ -3436,7 +3436,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "E15 throwing positive hook contained",
@@ -3484,7 +3484,7 @@
         "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
       },
       "observed_managed_result": {
-        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "result_source": "verification/windows-results.json.gz.b64; tested source 51c5d7262c0643213eae756165d9824eda35c831",
         "named_outcomes": [
           {
             "id": "O07 pure bonus exception retains C and stale cache",
