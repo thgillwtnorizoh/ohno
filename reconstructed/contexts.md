@@ -979,3 +979,10 @@ preserved; only optional hooks observe gameplay. Existing1344 QA and every retai
 development group remain required. Windows gate pending; no local SDK. Reusable
 ci/verification will gate exact source before canonical main publication. Stop after
 R14; do not begin QA12/R15/E042, framework migration or deferred score inquiry.
+
+R14 initial Windows run42858280712, source0000b976ca56f02d7926624861e3d838f63a5923:
+WPF zero warnings/errors; historical1344 and all prior development suites passed.
+New R14 harness failed CS0136 (sample local shadowing); zero R14 assertions and
+zero R14 Windows groups executed. Preserve initial Program.cs.txt and log under
+R14DevelopmentChecks/verification; rename that local, no production or oracle
+change for this failure. Final exact-source gate remains pending.

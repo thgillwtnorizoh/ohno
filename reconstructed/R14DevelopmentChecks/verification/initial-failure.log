@@ -1,0 +1,30 @@
+2026-11-10T16:48:46.1799331Z Build succeeded.
+2026-11-10T16:48:46.1799777Z     0 Warning(s)
+2026-11-10T16:48:46.1800007Z     0 Error(s)
+2026-11-10T16:48:47.8040324Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-10T16:48:49.4062283Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-10T16:48:52.4482315Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-10T16:48:53.9913553Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-10T16:48:55.5336928Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-10T16:48:57.1302514Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-10T16:48:58.6367686Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-10T16:49:00.1302364Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-10T16:49:01.7258370Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-10T16:49:03.1555293Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-10T16:49:04.4992921Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-10T16:49:05.7927991Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-10T16:49:07.1249265Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-10T16:49:08.5227673Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-10T16:49:11.9571046Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-10T16:49:13.8788826Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-10T16:49:16.2657469Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-10T16:49:18.1712066Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-10T16:49:19.9342083Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-10T16:49:22.9992265Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-10T16:49:24.2129289Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-10T16:49:25.5483322Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-10T16:49:26.3293476Z R14: two independent spinner PCM sounds written; no playback.
+2026-11-10T16:49:27.2282127Z D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\Program.cs(32,13): error CS0136: A local or parameter named 'sample' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter [D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\R14DevelopmentChecks.csproj]
+2026-11-10T16:49:27.2347766Z The build failed. Fix the build errors and run again.
+2026-11-10T16:49:28.4535559Z D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\Program.cs(32,13): error CS0136: A local or parameter named 'sample' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter [D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\R14DevelopmentChecks.csproj]
+2026-11-10T16:49:28.4626430Z The build failed. Fix the build errors and run again.

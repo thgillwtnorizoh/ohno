@@ -29,10 +29,10 @@ foreach(int state in new[] { 0, 1, 2, 3, -1 })
 Pass("conditional prior active1 Stop, other numeric states still replace");
 backend.Operations.Clear(); spin.Channel = 0; spin.Refresh(); Yes(!backend.Operations.Any(o => o.Name is "Activity" or "Stop"));
 Pass("old channel0 skips activity/Stop, without repairing native sentinels");
-foreach(int sample in new[] {-1,0})
+foreach(int sampleSentinel in new[] {-1,0})
 {
- var invalid = new SharedSpinnerChannel(backend, () => sample, () => .25f, () => .5f, a => queue.Enqueue(a));
- invalid.Refresh(); Eq(invalid.Channel, sample);
+ var invalid = new SharedSpinnerChannel(backend, () => sampleSentinel, () => .25f, () => .5f, a => queue.Enqueue(a));
+ invalid.Refresh(); Eq(invalid.Channel, sampleSentinel);
 }
 Pass("missing minus1 and invalid0 remain opaque in pure acquisition model");
 var globalBackend = new RecordingSampleChannels();

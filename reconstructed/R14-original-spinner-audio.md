@@ -17,7 +17,14 @@ end-time standard/custom completion selection; Windows integration/capability
 status; independent two-file generator; R14 component/Windows-empty controls;
 README and existing CI updates; append-only journal. No original sample bytes.
 
-**Windows verification pending.** Source will be gated on reusable ci/verification
+Initial Windows run42858280712 on source0000b976ca56f02d7926624861e3d838f63a5923
+built WPF with0 warnings/errors, passed1344 historical QA and every retained
+development suite, then new R14 harness compilation failed CS0136 (nested local
+sample shadowed the later metadata local). No R14 assertions or R14 Windows
+lifecycle group executed. Initial Program/log are retained under
+R14DevelopmentChecks/verification; only the local name is corrected.
+
+**Final Windows verification pending.** Source will be gated on reusable ci/verification
 then safely advanced to canonical main. All1344 named independent checks and all
 historical development groups remain required. R14 development and asset/source
 checks are reported separately. No SDK is installed or available locally.
