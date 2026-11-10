@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  Restored /workspace/scratch/2c5632823e7c/ohno/re/qa/qa12/Headless/QA12.Headless.csproj (in 7.3 sec).
+  Restored /workspace/scratch/2c5632823e7c/ohno/re/qa/qa12/Windows/QA12.Windows.csproj (in 7.31 sec).
+  QA12.Headless -> /workspace/scratch/2c5632823e7c/ohno/re/qa/qa12/Headless/bin/Release/net8.0/QA12.Headless.dll
+  QA12.Windows -> /workspace/scratch/2c5632823e7c/ohno/re/qa/qa12/Windows/bin/Release/net8.0-windows/QA12.Windows.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:12.78

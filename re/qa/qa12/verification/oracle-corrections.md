@@ -1,0 +1,12 @@
+# QA12 preserved harness failures
+
+No production change. All original failures and exact harness source snapshots remain.
+
+1. Initial compile: CS0169, unused private `Tests.serial`, warnings-as-errors. No QA12 assertions executed. Remove that unused field only. Original sources/log preserved in `initial-compile/`.
+2. First executed preflight: 267 checks, 260 pass/7 fail. `C05 app{0,1,2,9} forceTrue` expected one acquisition, but saw three. `C07 opaque acquired identity {-1,0,929}` expected two attributes, but saw six. The complete attempt, expected/actual values, traces, source manifest and source files are in `initial-runtime/`.
+
+Independent correction authority: E040 M3b20 computes each row's change flag from current/last index and selected base/addition. These controls request base3 after initial base1. The forced reached global refresh also reaches both changed slider rows. Their acquisitions and attributes legitimately follow the spinner operations. E041 M3b1f places the spinner replacement before the conditional pair refresh. Therefore C05 now counts acquisitions of marker sample719 (the spinner sample), while C07 inspects the first two attribute writes (spinner attribute11, then2). Spinner expectations, validity semantics and production are unchanged. Full initial result traces are retained rather than filtered retrospectively.
+
+Third preflight:267/267 pass. An added270-case run initially passed268 with two sentinel-control failures. The new C09 assertion counted pair attributes during a forced unchanged-bank refresh. E040 M3b20 still writes the pair attributes even when neither change flag requires acquisition. The corrected C09 checks the first two attribute targets (both acquired spinner0). Exact failed results and source are retained in `added-sentinel-initial*`. Final component preflight adds two explicit unresolved-sample acquisition cases and one combined completion override case. Its actual final result is recorded separately. Windows cross-compilation:0 warnings/0 errors. Runtime here is installed SDK10.0.402/.NET10.0.13 with net8 target and explicit major roll-forward; authoritative .NET8 Windows results are reported separately.
+
+Compressed `.gz.b64` files are exact bytes after base64 decoding and gzip decompression. Snapshot `initial-runtime/Harness.cs` restores the private visibility used in that run; public backend visibility was added later solely to share the independent recorder with Windows callback controls. All other initial source files match their recorded hashes.

@@ -1,0 +1,342 @@
+{
+  "baseline": "e785774893d45fe4d2a45617212ce597ebe1bbba",
+  "tested_production": "75dbf61269937fedd969dfc9e847b731c9f6b446",
+  "files": [
+    {
+      "path": ".github/workflows/r04-build.yml",
+      "bytes": 14570,
+      "sha256": "a0b76b8d50ceead50432e0df5b3b0d587cbcf648a188332187612978c9ecb4f8"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1847,
+      "sha256": "ffcc2644d5c47a01d529e31d81d631747e6014a93f1aa6cb82d87d73e5c1d2fc"
+    },
+    {
+      "path": "re/24-spinner-input-and-rotation-entry.md",
+      "bytes": 49040,
+      "sha256": "ec0a30418c9a6cbf80d79cb7ee2581ea03c6b7db29bc5feb11a6dc8cc182eeb4"
+    },
+    {
+      "path": "re/25-spinner-integer-progress-and-first-result.md",
+      "bytes": 40607,
+      "sha256": "42481bf82947f332baf8981d384bba1a94902ca7d0fdab21ec729805978ff57c"
+    },
+    {
+      "path": "re/26-spinner-completion-and-final-judgement.md",
+      "bytes": 43197,
+      "sha256": "32a524d83cca7179ac38f86c9ade5d10bcde9194de53950c03488e7e28b46835"
+    },
+    {
+      "path": "re/37-ordinary-circle-hitsound-selection-and-dispatch.md",
+      "bytes": 33542,
+      "sha256": "e752a29e6f02a35e9b0ff0791eceade1c54346a30f60d8abb8a8f821fae93266"
+    },
+    {
+      "path": "re/38-hitsound-resource-keys-and-fallback.md",
+      "bytes": 45141,
+      "sha256": "ab0d66f5501c040c8a83a9c73d16e8e74758774156d0d9f0aa269da406eeae27"
+    },
+    {
+      "path": "re/39-ordinary-slider-hitsound-triggers-and-edge-samples.md",
+      "bytes": 57246,
+      "sha256": "89754f8dc4efd1415368232d6bac1f62126dc5e57d74390df67523bc18536a39"
+    },
+    {
+      "path": "re/40-original-slider-continuous-audio-and-shared-channels.md",
+      "bytes": 45329,
+      "sha256": "e05d64ddf28ab94fde6939e1fef1b59b2cfd2afc937c14784bbfd24a4de27d98"
+    },
+    {
+      "path": "re/41-original-spinner-audio-frequency-and-lifecycle.md",
+      "bytes": 36916,
+      "sha256": "82a18123c028fe5188b81e5f39bfbd7d4698e6876842ca4e90a769740bfac6d1"
+    },
+    {
+      "path": "re/Instruction.md",
+      "bytes": 21824,
+      "sha256": "bf9952eec9d375a8e2fb661142390c2feff6570214f4ce09aa8063d6f34274f9"
+    },
+    {
+      "path": "re/contexts.md",
+      "bytes": 434167,
+      "sha256": "0c4919acc2a5033ee326926d4093d0a8f7587d30a1d6417647d555d6bb596e67"
+    },
+    {
+      "path": "re/evidence/24/spinner-entry.json",
+      "bytes": 582993,
+      "sha256": "d41a6892799e6c1bcac04c87792f46ca1887616b18f913b13c19565706a8db42"
+    },
+    {
+      "path": "re/evidence/25/spinner-result.json",
+      "bytes": 426127,
+      "sha256": "2eda02bc5fd026b5031cbccc832ce2820a12a6c45b712b90bf7ef971fc7d39d4"
+    },
+    {
+      "path": "re/evidence/26/spinner-completion.json",
+      "bytes": 532058,
+      "sha256": "1035d909700edc0a10574d327e9a6c0c105e7841bb0105f123f8769d492b28b4"
+    },
+    {
+      "path": "re/evidence/37/circle-hitsound.json",
+      "bytes": 740850,
+      "sha256": "7fc63d473be5f30bb39714b0b726f449abb9765a8fe25adbcea3282f71ce536c"
+    },
+    {
+      "path": "re/evidence/38/hitsound-resources.json",
+      "bytes": 1246588,
+      "sha256": "f61b5e16baa403731488953301085e1a456b3bceceb8db7d86bd9c9f3b1fd659"
+    },
+    {
+      "path": "re/evidence/39/slider-hitsounds.json",
+      "bytes": 1258274,
+      "sha256": "2a45c9a2d6565246cfe9a627f6ef96929f7c36cd81fd4c9780e8d5375ad58a6e"
+    },
+    {
+      "path": "re/evidence/40/slider-continuous-audio.json",
+      "bytes": 1151511,
+      "sha256": "c4f5219a5f3ab36ec184335135fa9f233f7bc3b340905aeef2f4e555344b387b"
+    },
+    {
+      "path": "re/evidence/41/spinner-audio.json",
+      "bytes": 1542138,
+      "sha256": "4fae962a1d69000f522be14ba5c91b3587d001e245795287a457ee058a010a5e"
+    },
+    {
+      "path": "re/qa/qa05/Headless/SpinnerTests.cs",
+      "bytes": 16694,
+      "sha256": "3030004bc50b9f47c2d8ebd51e95f9be21e84f871d7edb6272bb0af1d0daf25a"
+    },
+    {
+      "path": "re/qa/qa05/README.md",
+      "bytes": 9702,
+      "sha256": "18801a6f6c6290add4210ea6dce365473bd63b58dce7b2b70ce0ae5947fc0f25"
+    },
+    {
+      "path": "re/qa/qa09/Headless/AssetsSource.cs",
+      "bytes": 13357,
+      "sha256": "af176900c380c4a8b1d5e15b9632b0eac0be00dc969ebb182d37f39a1a735a8c"
+    },
+    {
+      "path": "re/qa/qa09/Headless/Harness.cs",
+      "bytes": 11014,
+      "sha256": "220824e75fe96ab53e31e725a6b6f1170881075c87db768b1aaafed912e7ccbf"
+    },
+    {
+      "path": "re/qa/qa09/Headless/LifecycleIntegration.cs",
+      "bytes": 22607,
+      "sha256": "9a217dcda5d885bc6b089ceefb9db5be95cdcced6dbc56cbf9b168b328e0e46b"
+    },
+    {
+      "path": "re/qa/qa09/Headless/MetadataSelection.cs",
+      "bytes": 10476,
+      "sha256": "66567a5eee2984282fe012af5a384b7d1d39a9ffa775544ba9ea56e7ae808292"
+    },
+    {
+      "path": "re/qa/qa09/Headless/Resources.cs",
+      "bytes": 15321,
+      "sha256": "c4677f060b711cae4c6db88a922179c2532926f5cd48936dfd8cb9106ca19c1e"
+    },
+    {
+      "path": "re/qa/qa09/README.md",
+      "bytes": 16501,
+      "sha256": "2292859f4a151f0ede2ebeafcce35bd30e4979920d1f325088e59c205867fca9"
+    },
+    {
+      "path": "re/qa/qa10/Headless/AssetsBindings.cs",
+      "bytes": 5880,
+      "sha256": "4e07f7894026742f92fc4fd5bfbd0abb0397a9453fa8406f711220955c063813"
+    },
+    {
+      "path": "re/qa/qa10/Headless/Harness.cs",
+      "bytes": 12629,
+      "sha256": "afa7d8508feda90528d3498db62a751b0188231736e6aa32d52e68dbef888d00"
+    },
+    {
+      "path": "re/qa/qa10/Headless/MetadataProgress.cs",
+      "bytes": 10834,
+      "sha256": "af7b11114b623ff82cb082b40a8a49faa416e99f133333823e1003ba5108947b"
+    },
+    {
+      "path": "re/qa/qa10/Headless/SelectionResources.cs",
+      "bytes": 15083,
+      "sha256": "880bf619c019d5b98e9ae1ed1bac86c67c2f145207e620dfe4d9ced8ea59cd51"
+    },
+    {
+      "path": "re/qa/qa10/Headless/SessionsLifecycle.cs",
+      "bytes": 21749,
+      "sha256": "2057da62b1b2edd6700b9cc05311e407279ad9b9a894bd6c20e3667e2085b34b"
+    },
+    {
+      "path": "re/qa/qa10/README.md",
+      "bytes": 11579,
+      "sha256": "fac66cb60d9aa07edad56e37d756af4ce3111fb75f8fcab212194ff547bb568a"
+    },
+    {
+      "path": "re/qa/qa11/Headless/AdditionalControls.cs",
+      "bytes": 4596,
+      "sha256": "4771107fbb317484f61cd113768dee2aab1cf747298bba99997c396b445bd9a3"
+    },
+    {
+      "path": "re/qa/qa11/Headless/AssetsBindings.cs",
+      "bytes": 8412,
+      "sha256": "a2532e0c4deac489c452a26507ff432b5fedc91016c33f74c46f80a74d3fcee7"
+    },
+    {
+      "path": "re/qa/qa11/Headless/Harness.cs",
+      "bytes": 12972,
+      "sha256": "0952277d83b3f3147c3c83ed49b534104976a7089dd7be3f12787d0dfd8954c0"
+    },
+    {
+      "path": "re/qa/qa11/Headless/ResourcesAdmission.cs",
+      "bytes": 12167,
+      "sha256": "25b3267699caa9b710f266ba5d812934725d4e5b7c31d46adae3d1c11879ff90"
+    },
+    {
+      "path": "re/qa/qa11/Headless/Sessions.cs",
+      "bytes": 12548,
+      "sha256": "a4727a424eecffbf95239c2eb8953f0151148c3dbe19c3c49d00217f9123e973"
+    },
+    {
+      "path": "re/qa/qa11/Headless/TimingChannels.cs",
+      "bytes": 22402,
+      "sha256": "7106e7f44bea3e46ca323da4a3a2c2f78fd3d8f55ec866e6295ff0dca7789180"
+    },
+    {
+      "path": "re/qa/qa11/README.md",
+      "bytes": 15266,
+      "sha256": "75e99dec8cda26a0f89d209eacf879bb0a818adb744f31d1bcc8a0be98371c2f"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "bytes": 51577,
+      "sha256": "0e0c14495eebfb00b3e4deed75f3994108c2c8dca0d591ebc34998710f6f30cc"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+      "bytes": 38017,
+      "sha256": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e"
+    },
+    {
+      "path": "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+      "bytes": 64849,
+      "sha256": "6ce993bb80d794509e5f79478058c56a51dd71d9559f8ad74869f0396b8c3937"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/BeatmapAudio.cs",
+      "bytes": 5152,
+      "sha256": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/GameplayClock.cs",
+      "bytes": 512,
+      "sha256": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs",
+      "bytes": 19742,
+      "sha256": "23ba174b990401c667d49c0716a02cce7b0429b873898373622cdd569671408d"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/PracticeFixture.cs",
+      "bytes": 2695,
+      "sha256": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs",
+      "bytes": 15636,
+      "sha256": "cb19bf25b7e63ff9ab4496c63cf847007d152fdb3e1c812bfb121e0c1c840f23"
+    },
+    {
+      "path": "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs",
+      "bytes": 4400,
+      "sha256": "d876b205e32a4603181371161481c17bff4e8d92853a8d1b9bd79d49d25cb76b"
+    },
+    {
+      "path": "reconstructed/CircleGame/Program.cs",
+      "bytes": 14901,
+      "sha256": "5eae0d25ff1cc1c4afceda8a9197b1d2482043260f2088c8da5ef3ef36b7efe1"
+    },
+    {
+      "path": "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs",
+      "bytes": 875,
+      "sha256": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3"
+    },
+    {
+      "path": "reconstructed/CircleGame/Rendering/PlayfieldView.cs",
+      "bytes": 20654,
+      "sha256": "1a38b7665c9106138a777e3db654f14d56355d545efe0ba1c37e14bf50f1078d"
+    },
+    {
+      "path": "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs",
+      "bytes": 503,
+      "sha256": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentHitSounds.ps1",
+      "bytes": 2268,
+      "sha256": "9feead1f9a56e8d058a7020da0a503191d130d2fde40157e3e86ff83761c8172"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentSliderLoops.ps1",
+      "bytes": 1593,
+      "sha256": "db2c298ef7d3620eb397f1442607dd412aadb03c606c349ddaf0f3895430461a"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentSliderTicks.ps1",
+      "bytes": 1711,
+      "sha256": "8d8ea2977f21e0b1b2654a786262c6f0215082a12af7ad388296d65e013f17df"
+    },
+    {
+      "path": "reconstructed/GenerateIndependentSpinnerSounds.ps1",
+      "bytes": 1557,
+      "sha256": "66b01c4951faeab38829a33a78381954ef76d60d3262d88820c1c1b0d28118d1"
+    },
+    {
+      "path": "reconstructed/R07-first-spinner.md",
+      "bytes": 13416,
+      "sha256": "e9c1e7149d963c01773e42a01f35ed7ed9c78c07e0b4bbf9d47472b321be8ffb"
+    },
+    {
+      "path": "reconstructed/R11-original-circle-hitsounds.md",
+      "bytes": 14738,
+      "sha256": "8527cb8f41a498cd3e533e78db1a2f090e9a62216cb5047a70e6c1b3a27ef256"
+    },
+    {
+      "path": "reconstructed/R12-original-discrete-slider-hitsounds.md",
+      "bytes": 17290,
+      "sha256": "9ffb95ab1966e98aef732c056e02ed24f2d5f8bd2ec4494d0445deb9e6edd059"
+    },
+    {
+      "path": "reconstructed/R13-C01-shared-channel-gain-capture.md",
+      "bytes": 6892,
+      "sha256": "bd79938caaf45395a824d05d81e2f76185432d008564b3c9dcd102787723f06b"
+    },
+    {
+      "path": "reconstructed/R13-original-continuous-slider-audio.md",
+      "bytes": 11041,
+      "sha256": "0763f758a329ca267411d723120e0d08459b498bce410e3f505081f642fcb9d7"
+    },
+    {
+      "path": "reconstructed/R14-original-spinner-audio.md",
+      "bytes": 15028,
+      "sha256": "de0f4722b8923c6cf55e80598102d722642ba831f3320f1e600096302cc332a9"
+    },
+    {
+      "path": "reconstructed/R14DevelopmentChecks/Program.cs",
+      "bytes": 26946,
+      "sha256": "86ebed4a93a6d66dc952905db80eca8e69a3538fbd7ebaf5f3d7ea96ecb3d687"
+    },
+    {
+      "path": "reconstructed/R14DevelopmentChecks/e041-coverage.json",
+      "bytes": 27438,
+      "sha256": "27ea77c596dd78547181eb595ffd1166e3bedbeb7fda29ad13347620b2d08604"
+    },
+    {
+      "path": "reconstructed/contexts.md",
+      "bytes": 71183,
+      "sha256": "8de87cac62d6b3d11cb8c6e39197a14ab3793e8cac6b7fd56f76261804d67354"
+    }
+  ],
+  "note": "Canonical LF hashes. Windows checkout byte hashes retained separately. Source/workflow may include pending QA12 integration; prior journals hashed before QA12 append."
+}

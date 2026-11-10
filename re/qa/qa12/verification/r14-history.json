@@ -1,0 +1,9 @@
+{
+  "production_defect_claim": false,
+  "chronology": [
+    {"source":"0000b976ca56f02d7926624861e3d838f63a5923","windows_run":42858280712,"finding":"Initial harness CS0136 variable-shadowing compilation failure; no R14 assertions executed."},
+    {"source":"6e08c1df018d87cb25edccb1405aaa1c9b257c10","windows_run":42858711501,"finding":"24 groups passed before invalid residual-motion expectation; 20ms deceleration eliminated presumed residual."},
+    {"source":"75dbf61269937fedd969dfc9e847b731c9f6b446","windows_run":42859198871,"finding":"Final R14 58 groups and separate Windows-empty1 passed. Corrected six-second fixture explicitly proves U remains nonzero; production math unchanged."}
+  ],
+  "preservation":"Original R14DevelopmentChecks/verification bytes and Git ancestry unchanged. Initial failures do not independently establish a production defect. QA12 uses an independently constructed seven-second residual fixture with40/40/10ms intervals."
+}

@@ -1,0 +1,38 @@
+using System.Numerics;
+using Ohno.CircleGame.Gameplay;
+using Ohno.CircleGame.Platform;
+namespace Ohno.QA12;
+public static partial class Tests
+{
+    static void Metadata()
+    {
+        Add("M01 marker-distinct registered metadata","E041 M48e1/M3201;E037 parser",()=>{
+            var m=Map("11,22,500,1,65538,1:2:3:17:amber.wav\n33,44,1000,2,65540,L|133:44,1,100,,,3:1:9:37:jade.wav\n71,89,2200,8,65551,6200,2:3:7:61:violet.wav");
+            var s=m.Spinners.Single();var data=m.CircleSounds!.Spinners.Single();Yes(ReferenceEquals(s,data.Object),"spinner identity");Eq(s.StartTime,2200);Eq(s.EndTime,6200);Eq(s.HitSound,65551);Eq(s.HitSample,"2:3:7:61:violet.wav");Eq(data.SourceOrder,2);
+            var p=data.Payload;Eq(p.RawSound,65551);Eq(p.StoredMask,65551);Eq(p.BaseSet,2);Eq(p.AdditionSet,3);Eq(p.Index,7);Eq(p.Volume,61);Eq(p.Filename,"violet.wav");Eq(p.Object.StartTime,6200);Eq(p.Object.Position,new Vector2(256,192));Eq(p.Error,null);
+            Eq(m.CircleSounds.Circles.Single().StoredMask,2);Eq(m.Sliders.Single().Samples!.RawSound,65540);Seq(m.CircleSounds.RegisteredOverrides.Select(x=>x.Filename),"amber.wav","jade.wav","violet.wav");Yes(ReferenceEquals(m.CircleSounds.RegisteredOverrides[2].Spinner,s),"registered spinner identity");
+        });
+        foreach(int mask in new[]{0,1,2,4,8,14,15,65537,-1})Add("M02 raw mask "+mask,"E041 M3201 raw copy differs from circle",()=>{var m=Map($"71,89,2200,8,{mask},6200,0:0:0:0:");Eq(m.CircleSounds!.Spinners[0].Payload.StoredMask,mask);Eq(m.Spinners[0].HitSound,mask);});
+        foreach(string payload in new[]{"1","bad:2","2:3:no:61:x.wav","2:3:7:bad:x.wav"})Add("M03 malformed payload "+payload,"ENGINEERING diagnostic;not guessed original defaults",()=>{var m=Map("71,89,2200,8,1,6200,"+payload);Yes(m.CircleSounds!.Spinners[0].Payload.Error is not null,"diagnostic retained");Yes(HitSoundLibrary.SpinnerAdmission(m) is not null,"audio admission rejects malformed");Eq(m.Spinners.Count,1);});
+        foreach(string payload in new[]{"4:0:1:50:","0:4:1:50:","0:0:-1:50:","0:0:1:50:spinnerspin.wav","0:0:1:50:spinnerbonus.ogg"})Add("M04 unsupported operands "+payload,"R14 explicit finite admission",()=>{var m=Map("71,89,2200,8,1,6200,"+payload);Yes(HitSoundLibrary.SpinnerAdmission(m) is not null,"unsupported/collision explicit");});
+        foreach(int volume in new[]{-9,0,61,101})Add("M05 parsed volume "+volume,"E037 clamp0..100 reused by E041",()=>{var m=Map($"71,89,2200,8,1,6200,2:3:7:{volume}:");Eq(m.CircleSounds!.Spinners[0].Payload.Volume,volume<0?0:volume>100?100:volume);});
+        foreach(bool missing in new[]{false,true})Add("M06 prepared custom identity missing"+missing,"E041 metadata/custom setter;actual library preparation",()=>{
+            var m=Map();if(!missing)File.WriteAllBytes(Path.Combine(scratch,"violet.wav"),Marker(83));else File.Delete(Path.Combine(scratch,"violet.wav"));
+            using var lib=new HitSoundLibrary(new());using var p=lib.PrepareAsync(m,CancellationToken.None).GetAwaiter().GetResult();var s=m.Spinners[0];Yes(p.Spinners.ContainsKey(s),"prepared exact definition key");Yes(ReferenceEquals(p.Spinners[s].Metadata.Object,s),"metadata identity retained");Eq(p.SpinnerLimitation,null);if(missing)Eq(p.Spinners[s].Custom,-1);else{Yes(p.Spinners[s].Custom>0,"resolved custom handle");Eq(p.Samples[p.Spinners[s].Custom].Bytes[0],(byte)83);}Eq(p.Spinners.ContainsKey(s with{}),false);
+        });
+    }
+    static void Channels()
+    {
+        Add("C01 separate CLR-zero channel fields","E041 F2354/F2355/F2356",()=>{var f=new Rig(false);Eq(f.Spin.Channel,0);Eq(f.Global.Channel0,0);Eq(f.Global.Channel1,0);f.Global.Clock(0);Eq(f.Spin.Channel,733);Eq(f.Global.Channel0,101);Eq(f.Global.Channel1,202);f.Trace();});
+        foreach(int state in new[]{-1,0,1,2,3,17})Add("C02 refresh activity "+state,"E041 M3b1f:009d-010b",()=>{var f=new Rig();f.B.States[733]=state;f.Resolve=()=>{Eq(f.Global.CurrentBase,2);Eq(f.Global.CurrentIndex,17);};f.Global.Clock(110);Seq(f.B.Ops.Select(x=>x.Name),state==1?["Activity","Stop","Resolve","Acquire","Attribute","Attribute"]:["Activity","Resolve","Acquire","Attribute","Attribute"]);Eq(f.B.Ops.Single(o=>o.Name=="Acquire").Flag,false);Seq(f.B.Ops.Where(o=>o.Name=="Attribute").Select(o=>o.Attr),11,2);Eq(f.B.Ops[^2].Value,1f);Near(f.B.Ops[^1].Value,.29200002551078796,1e-7);Eq(f.Global.Channel0,101);Eq(f.Global.Channel1,202);f.Trace();});
+        Add("C03 old zero skips activity","E041 M3b1f nonzero guard",()=>{var f=new Rig();f.Spin.Channel=0;f.Global.Refresh(1,true);Yes(!f.B.Ops.Any(x=>x.Name is "Activity" or "Stop"),"no active query at zero");Eq(f.Spin.Channel,733);});
+        Add("C04 cached same sample still reacquired","E041 unconditional reached spinner refresh",()=>{var f=new Rig();f.Global.Refresh(1,true);f.Global.Refresh(1,true);Eq(f.B.Ops.Count(o=>o.Name=="Acquire"),2);});
+        foreach(int app in new[]{0,1,2,9})foreach(bool force in new[]{false,true})Add($"C05 app{app} force{force}","E041 retained M3b1f admission",()=>{var f=new Rig();f.Global.ApplicationState=app;f.Global.Refresh(3,force);Eq(f.B.Ops.Count(o=>o.Name=="Acquire"&&o.Handle==719),force||app is 1 or 2?1:0);});
+        Add("C06 unchanged global selectors silent","E041 M3b1f early return",()=>{var f=new Rig();f.Global.Clock(0);Eq(f.B.Ops.Count,0);});
+        foreach(int result in new[]{-1,0,929})Add("C07 opaque acquired identity "+result,"E041 no discrete sentinel shortcut",()=>{var f=new Rig();f.B.Acquisition=(_,_)=>result;f.Global.Refresh(3,true);Eq(f.Spin.Channel,result);Seq(f.B.Ops.Where(o=>o.Name=="Attribute").Take(2).Select(o=>o.Handle),result,result);});
+        foreach(int sample in new[]{-1,0})Add("C09 unresolved sample "+sample,"E041 Acquire(false) without one-shot sample guard",()=>{var f=new Rig();f.Sample=sample;f.B.Acquisition=(_,_)=>0;f.Global.Refresh(1,true);Eq(f.B.Ops.Single(o=>o.Name=="Acquire").Handle,sample);Eq(f.Spin.Channel,0);Seq(f.B.Ops.Where(o=>o.Name=="Attribute").Take(2).Select(o=>o.Handle),0,0);});
+        foreach(string fail in new[]{"Activity","Stop","Resolve","Acquire","Attribute11","Attribute2"})Add("C08 partial refresh "+fail,"E041 M3b1f selectors/store survive later failure",()=>{var f=new Rig();f.B.States[733]=1;f.B.Acquisition=(_,_)=>929;f.B.Enter=o=>{if(o.Name==fail||o.Name=="Attribute"&&fail=="Attribute"+o.Attr)throw new IOException(fail);};f.Resolve=()=>{if(fail=="Resolve")throw new IOException(fail);};Throws<IOException>(()=>f.Global.Clock(110));Eq(f.Global.CurrentBase,2);Eq(f.Global.CurrentIndex,17);Eq(f.Spin.Channel,fail.StartsWith("Attribute")?929:733);Eq(f.Global.Channel0,101);f.Trace();});
+        foreach(int mutation in new[]{1,2})Add("G01 one gain three fresh fields mutation write"+mutation,"E041 M3b11:0018/001f/002c/0039",()=>{var f=new Rig();int n=0;f.B.Enter=o=>{if(o.Name!="Attribute")return;n++;if(n==mutation){f.Global.UniversalVolume=100;f.Global.Channel1=404;f.Spin.Channel=505;}};f.Global.SettingsChanged(80,50);Seq(f.B.Ops.Select(o=>o.Handle),101,mutation==1?404:202,505);foreach(var o in f.B.Ops){Eq(o.Attr,2);Bits(o.Value,0x3dcccccd);}Eq(f.Global.Pending,0);f.Trace();});
+        Add("G02 settings partial exception","E041 captured local no transaction",()=>{var f=new Rig();f.B.Enter=o=>{if(o.Handle==202)throw new IOException("second");};Throws<IOException>(()=>f.Global.SettingsChanged(80,50));Seq(f.B.Ops.Select(o=>o.Handle),101,202);Eq(f.Global.UniversalVolume,50);});
+    }
+}

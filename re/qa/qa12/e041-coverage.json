@@ -1,0 +1,3505 @@
+{
+  "schema": "QA12.E041.v1",
+  "authority_sha256": "4fae962a1d69000f522be14ba5c91b3587d001e245795287a457ee058a010a5e",
+  "counts": {
+    "Executed finite component": 55,
+    "Unsupported state": 5,
+    "Partial component": 5,
+    "Source-only inspection": 1
+  },
+  "counting": "66 evidence predictions are not66 named QA cases; repetitions/reference links do not add cases.",
+  "rows": [
+    {
+      "id": "A01",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "none from these routes",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A01",
+        "initial_overrides": "T1999 before start; normally selected ordinary current predicate",
+        "ordered_managed_transitions": "No ordinary current input; update returns before loop operations",
+        "queued_actions": "none",
+        "reached_path": "M22c5;M05f5",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U01 strict time2199 interval-1",
+          "U01 strict time2199 interval0",
+          "U01 strict time2199 interval1",
+          "U01 strict time2199 interval29"
+        ],
+        "input_basis": "T1999 before start; normally selected ordinary current predicate",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U01 strict time2199 interval-1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2199 interval0",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2199 interval1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2199 interval29",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A02",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Frequency only if input detects a changed integer",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A02",
+        "initial_overrides": "Every relevant T2000 exactly start; current input reached",
+        "ordered_managed_transitions": "Input may observe old P; strict integration/loop region skipped",
+        "queued_actions": "none from update; input bonus separate",
+        "reached_path": "M05f6 then M05f5",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U01 strict time2200 interval-1",
+          "U01 strict time2200 interval0",
+          "U01 strict time2200 interval1",
+          "U01 strict time2200 interval29"
+        ],
+        "input_basis": "Every relevant T2000 exactly start; current input reached",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U01 strict time2200 interval-1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2200 interval0",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2200 interval1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2200 interval29",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A03",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "On callback Pause(fresh2356); no Stop/free",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A03",
+        "initial_overrides": "S<T<E,positive interval,post-smoothing U0",
+        "ordered_managed_transitions": "Presentation rotation can precede cleanup; P store follows",
+        "queued_actions": "QPause=M3ba9",
+        "reached_path": "M05f5:0361 -> cleanup",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U02 signed smoothed U 0",
+          "U02 signed smoothed U 0.7",
+          "U07 zero queues Pause before P"
+        ],
+        "input_basis": "S<T<E,positive interval,post-smoothing U0",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U02 signed smoothed U 0",
+            "passed": true
+          },
+          {
+            "id": "U02 signed smoothed U 0.7",
+            "passed": true
+          },
+          {
+            "id": "U07 zero queues Pause before P",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A04",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "With COMMON C0/N15 and modulation true:Length query and attr1=20000 when>8192 before enqueue;on callback attr2(fresh timing gain),Play(fresh2356,false)",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A04",
+        "initial_overrides": "S<T<E,positive interval,post-smoothing U positive nonzero",
+        "ordered_managed_transitions": "Loop helper reached before P accumulation; direction does not select a different resource",
+        "queued_actions": "QStart=M3ba3 after optional synchronous frequency request",
+        "reached_path": "M05f5->M05fb->M3b34",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U02 signed smoothed U 0.7",
+          "U03 independently established release residual"
+        ],
+        "input_basis": "S<T<E,positive interval,post-smoothing U positive nonzero",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U02 signed smoothed U 0.7",
+            "passed": true
+          },
+          {
+            "id": "U03 independently established release residual",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A05",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "With COMMON C0/N15 and modulation true:Length query and attr1=20000 when>8192 before enqueue;on callback attr2(fresh timing gain),Play(fresh2356,false)",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A05",
+        "initial_overrides": "S<T<E,positive interval,post-smoothing U negative nonzero",
+        "ordered_managed_transitions": "Loop helper reached before P accumulation; direction does not select a different resource",
+        "queued_actions": "QStart=M3ba3 after optional synchronous frequency request",
+        "reached_path": "M05f5->M05fb->M3b34",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U02 signed smoothed U -0.7"
+        ],
+        "input_basis": "S<T<E,positive interval,post-smoothing U negative nonzero",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U02 signed smoothed U -0.7",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A06",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Conditional callback Play(false) twice; not two audible restarts",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A06",
+        "initial_overrides": "Two reached interior updates at unchanged T,positive supplied intervals,U nonzero",
+        "ordered_managed_transitions": "No native-activity/pending-start suppression in M3b34",
+        "queued_actions": "QStart,QStart",
+        "reached_path": "M05f5 twice",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U04 repeated controlled timestamp still submits each reached update",
+          "D02 repeat submissions activity 0",
+          "D02 repeat submissions activity 1",
+          "D02 repeat submissions activity 3"
+        ],
+        "input_basis": "Two reached interior updates at unchanged T,positive supplied intervals,U nonzero",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U04 repeated controlled timestamp still submits each reached update",
+            "passed": true
+          },
+          {
+            "id": "D02 repeat submissions activity 0",
+            "passed": true
+          },
+          {
+            "id": "D02 repeat submissions activity 1",
+            "passed": true
+          },
+          {
+            "id": "D02 repeat submissions activity 3",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A07",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No loop request from skipped region",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A07",
+        "initial_overrides": "Interior update interval0 or negative",
+        "ordered_managed_transitions": "Skip smoothing/loop/zero-motion cleanup region; later display processing separate",
+        "queued_actions": "none here",
+        "reached_path": "M05f5:0173",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U01 strict time2201 interval-1",
+          "U01 strict time2201 interval0"
+        ],
+        "input_basis": "Interior update interval0 or negative",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U01 strict time2201 interval-1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time2201 interval0",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A08",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9",
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Prior queued operations remain independent",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9",
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A08",
+        "initial_overrides": "T=end exactly with U nonzero",
+        "ordered_managed_transitions": "Loop region and whole completion both skipped",
+        "queued_actions": "none from these paths",
+        "reached_path": "M05f5:014e;M28e4:008f",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "U01 strict time9200 interval-1",
+          "U01 strict time9200 interval0",
+          "U01 strict time9200 interval1",
+          "U01 strict time9200 interval29",
+          "E01 completion count 4",
+          "E01 completion count 5",
+          "E01 completion count 18",
+          "E01 completion count 19",
+          "E01 completion count 20",
+          "E01 completion count 21"
+        ],
+        "input_basis": "T=end exactly with U nonzero",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "U01 strict time9200 interval-1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time9200 interval0",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time9200 interval1",
+            "passed": true
+          },
+          {
+            "id": "U01 strict time9200 interval29",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 4",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 5",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 18",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 19",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 20",
+            "passed": true
+          },
+          {
+            "id": "E01 completion count 21",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A09",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(2356,mode0); if>8192 set attr1 from ratio; returned component 0",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A09",
+        "initial_overrides": "first converted P1,old C0,cache0;ordinary sample prefix passes",
+        "ordered_managed_transitions": "C increases once; modulate fresh C/N before result; later cache reread",
+        "queued_actions": "none from frequency; no bonus in stated controls",
+        "reached_path": "M05f6 inequality",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O01 first change C before frequency raw0 and late cache"
+        ],
+        "input_basis": "first converted P1,old C0,cache0;ordinary sample prefix passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O01 first change C before frequency raw0 and late cache",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A10",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(2356,mode0); if>8192 set attr1 from ratio; returned component 8192",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A10",
+        "initial_overrides": "second converted P2,old C1,cache1;ordinary sample prefix passes",
+        "ordered_managed_transitions": "C increases once; modulate fresh C/N before result; later cache reread",
+        "queued_actions": "none from frequency; no bonus in stated controls",
+        "reached_path": "M05f6 inequality",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O03 jump increments once each direction",
+          "O09 fresh ratio count and required"
+        ],
+        "input_basis": "second converted P2,old C1,cache1;ordinary sample prefix passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O03 jump increments once each direction",
+            "passed": true
+          },
+          {
+            "id": "O09 fresh ratio count and required",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A11",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(2356,mode0); if>8192 set attr1 from ratio; returned component 0",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A11",
+        "initial_overrides": "jump converted P7,old C0,cache0;ordinary sample prefix passes",
+        "ordered_managed_transitions": "C increases once; modulate fresh C/N before result; later cache reread",
+        "queued_actions": "none from frequency; no bonus in stated controls",
+        "reached_path": "M05f6 inequality",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O01 first change C before frequency raw0 and late cache",
+          "O03 jump increments once each direction"
+        ],
+        "input_basis": "jump converted P7,old C0,cache0;ordinary sample prefix passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O01 first change C before frequency raw0 and late cache",
+            "passed": true
+          },
+          {
+            "id": "O03 jump increments once each direction",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A12",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No M3b28 or bonus here; later update may queue loop",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A12",
+        "initial_overrides": "P integer equals cached integer,even if motion/target changed",
+        "ordered_managed_transitions": "Earlier angular mutations retained; C unchanged",
+        "queued_actions": "none from this observation",
+        "reached_path": "M05f6:02e0 equality",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O02 unchanged converted P has no callback"
+        ],
+        "input_basis": "P integer equals cached integer,even if motion/target changed",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O02 unchanged converted P has no callback",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A13",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Optional frequency remains reached first",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A13",
+        "initial_overrides": "C becomes N+3=18",
+        "ordered_managed_transitions": "Bonus equality rejected; ordinary parity8192",
+        "queued_actions": "none from bonus",
+        "reached_path": "M05f6:0320",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "B01 count23 modifier0",
+          "B01 count23 modifier4194304"
+        ],
+        "input_basis": "C becomes N+3=18",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "B01 count23 modifier0",
+            "passed": true
+          },
+          {
+            "id": "B01 count23 modifier4194304",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A14",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Optional frequency first",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A14",
+        "initial_overrides": "C becomes N+4=19 (odd offset1)",
+        "ordered_managed_transitions": "Bonus rejected; ordinary4096",
+        "queued_actions": "none from bonus",
+        "reached_path": "M05f6:0336",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "B01 count24 modifier0",
+          "B01 count24 modifier4194304"
+        ],
+        "input_basis": "C becomes N+4=19 (odd offset1)",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "B01 count24 modifier0",
+            "passed": true
+          },
+          {
+            "id": "B01 count24 modifier4194304",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A15",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037",
+        "M3b2b/M3b87/M140b"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Load spinnerbonus; volumeM3b42/100f; callback Play(true)",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037",
+          "M3b2b/M3b87/M140b"
+        ],
+        "id": "A15",
+        "initial_overrides": "C becomes N+5=20;plain mods",
+        "ordered_managed_transitions": "Optional presentation flash; raw16384 chosen; bonus request before later label/transforms/cache",
+        "queued_actions": "bonus player action M3b87",
+        "reached_path": "M05f6 bonus branch",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O05 frequency before classification and bonus before cache",
+          "B01 count25 modifier0",
+          "B01 count25 modifier4194304"
+        ],
+        "input_basis": "C becomes N+5=20;plain mods",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O05 frequency before classification and bonus before cache",
+            "passed": true
+          },
+          {
+            "id": "B01 count25 modifier0",
+            "passed": true
+          },
+          {
+            "id": "B01 count25 modifier4194304",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A16",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No bonus sample load here; frequency independent",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A16",
+        "initial_overrides": "Same qualifying bonus with F0cc6 bit4194304 set",
+        "ordered_managed_transitions": "Raw16384 retained; ancillary sample request skipped; presentation/cache continue",
+        "queued_actions": "no bonus action",
+        "reached_path": "M05f6:0378",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "B03 suppressed sound retains raw16384"
+        ],
+        "input_basis": "Same qualifying bonus with F0cc6 bit4194304 set",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "B03 suppressed sound retains raw16384",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A17",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No M3b28 from either gate; callback attr2/Play(false)",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A17",
+        "initial_overrides": "SpinnerFrequencyModulate=false,changed integer then interior U nonzero",
+        "ordered_managed_transitions": "No observation modulation; M05fb passes Nullable absent",
+        "queued_actions": "QStart still submitted",
+        "reached_path": "M05f6;M05fb",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O04 frequency enabled False",
+          "U05 playback independent setting False"
+        ],
+        "input_basis": "SpinnerFrequencyModulate=false,changed integer then interior U nonzero",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O04 frequency enabled False",
+            "passed": true
+          },
+          {
+            "id": "U05 playback independent setting False",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A18",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,20000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A18",
+        "initial_overrides": "Artificial direct M3b28 ratio0;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio 0",
+          "F01 ratio 0.5"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio0;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio 0",
+            "passed": true
+          },
+          {
+            "id": "F01 ratio 0.5",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A19",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,40000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A19",
+        "initial_overrides": "Artificial direct M3b28 ratio0.5;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio 0.5"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio0.5;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio 0.5",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A20",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,60000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A20",
+        "initial_overrides": "Artificial direct M3b28 ratio1;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio 1"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio1;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio 1",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A21",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,100000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A21",
+        "initial_overrides": "Artificial direct M3b28 ratio2;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio 2",
+          "F01 ratio 2.4999998E-05",
+          "F01 ratio 2.5E-05"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio2;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio 2",
+            "passed": true
+          },
+          {
+            "id": "F01 ratio 2.4999998E-05",
+            "passed": true
+          },
+          {
+            "id": "F01 ratio 2.5E-05",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A22",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,100000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A22",
+        "initial_overrides": "Artificial direct M3b28 ratio3;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio 3"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio3;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio 3",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A23",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "SetAttribute(current2356,1,-20000); native result discarded",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A23",
+        "initial_overrides": "Artificial direct M3b28 ratio-1;length8193",
+        "ordered_managed_transitions": "No channel validity/activity/lower-bound test",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F01 ratio -1"
+        ],
+        "input_basis": "Artificial direct M3b28 ratio-1;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F01 ratio -1",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A24",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Keep k=original conv.i4 output symbolic; attr1=Single(Min(100000,unchecked(20000+k))); no measured CLR output",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A24",
+        "initial_overrides": "Artificial ratio 0/0 NaN;length8193",
+        "ordered_managed_transitions": "Single multiplication then original unchecked conv.i4; no finite guard",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F05 unpinned conversion NaN"
+        ],
+        "input_basis": "Artificial ratio 0/0 NaN;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F05 unpinned conversion NaN",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Unsupported state",
+      "engineering_substitutions": "Explicit unsupported conversion guard",
+      "unsupported_dependencies": "Unpinned original CLR exceptional conv.i4 operand/result",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A25",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Keep k=original conv.i4 output symbolic; attr1=Single(Min(100000,unchecked(20000+k))); no measured CLR output",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A25",
+        "initial_overrides": "Artificial ratio positive/0 +Infinity;length8193",
+        "ordered_managed_transitions": "Single multiplication then original unchecked conv.i4; no finite guard",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F05 unpinned conversion Infinity"
+        ],
+        "input_basis": "Artificial ratio positive/0 +Infinity;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F05 unpinned conversion Infinity",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Unsupported state",
+      "engineering_substitutions": "Explicit unsupported conversion guard",
+      "unsupported_dependencies": "Unpinned original CLR exceptional conv.i4 operand/result",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A26",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Keep k=original conv.i4 output symbolic; attr1=Single(Min(100000,unchecked(20000+k))); no measured CLR output",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A26",
+        "initial_overrides": "Artificial ratio negative/0 -Infinity;length8193",
+        "ordered_managed_transitions": "Single multiplication then original unchecked conv.i4; no finite guard",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F05 unpinned conversion -Infinity"
+        ],
+        "input_basis": "Artificial ratio negative/0 -Infinity;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F05 unpinned conversion -Infinity",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Unsupported state",
+      "engineering_substitutions": "Explicit unsupported conversion guard",
+      "unsupported_dependencies": "Unpinned original CLR exceptional conv.i4 operand/result",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A27",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Keep k=original conv.i4 output symbolic; attr1=Single(Min(100000,unchecked(20000+k))); no measured CLR output",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A27",
+        "initial_overrides": "Artificial ratio out-of-Int32 product;length8193",
+        "ordered_managed_transitions": "Single multiplication then original unchecked conv.i4; no finite guard",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F05 unpinned conversion NaN",
+          "F05 unpinned conversion Infinity",
+          "F05 unpinned conversion -Infinity",
+          "F05 unpinned conversion 3.4028235E+38",
+          "F05 unpinned conversion 53687.094",
+          "F05 unpinned conversion -53687.098"
+        ],
+        "input_basis": "Artificial ratio out-of-Int32 product;length8193",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F05 unpinned conversion NaN",
+            "passed": true
+          },
+          {
+            "id": "F05 unpinned conversion Infinity",
+            "passed": true
+          },
+          {
+            "id": "F05 unpinned conversion -Infinity",
+            "passed": true
+          },
+          {
+            "id": "F05 unpinned conversion 3.4028235E+38",
+            "passed": true
+          },
+          {
+            "id": "F05 unpinned conversion 53687.094",
+            "passed": true
+          },
+          {
+            "id": "F05 unpinned conversion -53687.098",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Unsupported state",
+      "engineering_substitutions": "Explicit unsupported conversion guard",
+      "unsupported_dependencies": "Unpinned original CLR exceptional conv.i4 operand/result",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A28",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(fresh2356,0); no attr1",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A28",
+        "initial_overrides": "Native signed length result-1;ratio1",
+        "ordered_managed_transitions": "Signed <=8192 skips; otherwise branch reaches update",
+        "queued_actions": "none",
+        "reached_path": "M3121->M3122;M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F02 signed length -1"
+        ],
+        "input_basis": "Native signed length result-1;ratio1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F02 signed length -1",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A29",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(fresh2356,0); no attr1",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A29",
+        "initial_overrides": "Native signed length result0;ratio1",
+        "ordered_managed_transitions": "Signed <=8192 skips; otherwise branch reaches update",
+        "queued_actions": "none",
+        "reached_path": "M3121->M3122;M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F02 signed length 0"
+        ],
+        "input_basis": "Native signed length result0;ratio1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F02 signed length 0",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A30",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(fresh2356,0); no attr1",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A30",
+        "initial_overrides": "Native signed length result8191;ratio1",
+        "ordered_managed_transitions": "Signed <=8192 skips; otherwise branch reaches update",
+        "queued_actions": "none",
+        "reached_path": "M3121->M3122;M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F02 signed length 8191"
+        ],
+        "input_basis": "Native signed length result8191;ratio1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F02 signed length 8191",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A31",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(fresh2356,0); no attr1",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A31",
+        "initial_overrides": "Native signed length result8192;ratio1",
+        "ordered_managed_transitions": "Signed <=8192 skips; otherwise branch reaches update",
+        "queued_actions": "none",
+        "reached_path": "M3121->M3122;M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F02 signed length 8192"
+        ],
+        "input_basis": "Native signed length result8192;ratio1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F02 signed length 8192",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A32",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length(fresh2356,0); attr1=60000",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A32",
+        "initial_overrides": "Native signed length result8193;ratio1",
+        "ordered_managed_transitions": "Signed <=8192 skips; otherwise branch reaches update",
+        "queued_actions": "none",
+        "reached_path": "M3121->M3122;M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F02 signed length 8193"
+        ],
+        "input_basis": "Native signed length result8193;ratio1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F02 signed length 8193",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A33",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Query invalid handle; branch solely on supplied signed length; no guaranteed native success",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A33",
+        "initial_overrides": "F2356=0 or-1 artificial;length return supplied",
+        "ordered_managed_transitions": "No managed nonzero/activity guard",
+        "queued_actions": "none",
+        "reached_path": "M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F03 handle-987 activity0",
+          "F03 handle-987 activity1",
+          "F03 handle-1 activity0",
+          "F03 handle-1 activity1",
+          "F03 handle0 activity0",
+          "F03 handle0 activity1",
+          "F03 handle733 activity0",
+          "F03 handle733 activity1"
+        ],
+        "input_basis": "F2356=0 or-1 artificial;length return supplied",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F03 handle-987 activity0",
+            "passed": true
+          },
+          {
+            "id": "F03 handle-987 activity1",
+            "passed": true
+          },
+          {
+            "id": "F03 handle-1 activity0",
+            "passed": true
+          },
+          {
+            "id": "F03 handle-1 activity1",
+            "passed": true
+          },
+          {
+            "id": "F03 handle0 activity0",
+            "passed": true
+          },
+          {
+            "id": "F03 handle0 activity1",
+            "passed": true
+          },
+          {
+            "id": "F03 handle733 activity0",
+            "passed": true
+          },
+          {
+            "id": "F03 handle733 activity1",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A34",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Length101 then qualifying attr1 on301",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A34",
+        "initial_overrides": "Channel101 changes301 during length query",
+        "ordered_managed_transitions": "Length target captured before query; attribute target reread afterward",
+        "queued_actions": "none",
+        "reached_path": "M3b28:0000 versus0012",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F04 replacement during Length"
+        ],
+        "input_basis": "Channel101 changes301 during length query",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F04 replacement during Length",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A35",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Later same P can be counted again if method retried",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A35",
+        "initial_overrides": "Changed integer increments C;native/helper throws before cache",
+        "ordered_managed_transitions": "C increment retained; cache stale; no normal result dispatch",
+        "queued_actions": "no new bonus action reached",
+        "reached_path": "M05f6:02ed->M3b28",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O06 pure change exception preserves C stale cache",
+          "O08 state callback failure contained before progress handoff"
+        ],
+        "input_basis": "Changed integer increments C;native/helper throws before cache",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O06 pure change exception preserves C stale cache",
+            "passed": true
+          },
+          {
+            "id": "O08 state callback failure contained before progress handoff",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Partial component",
+      "engineering_substitutions": "Pure observation propagates with C advanced/cache stale; live SpinnerState contains optional effect errors.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A36",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No rollback",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A36",
+        "initial_overrides": "U already stored;M05fb frequency helper throws",
+        "ordered_managed_transitions": "Earlier U/presentation mutations survive; P store0395 not reached",
+        "queued_actions": "no QStart if exception before M3b34 enqueue",
+        "reached_path": "M05f5:0364",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "F08 backend failure Length",
+          "F08 backend failure Attribute",
+          "O08 state callback failure contained before progress handoff",
+          "U02 signed smoothed U -0.7",
+          "U02 signed smoothed U 0",
+          "U02 signed smoothed U 0.7",
+          "S01 matched intermediate session enabled",
+          "S01 matched intermediate session disabled",
+          "S01 matched intermediate session missing",
+          "S01 matched intermediate session frequency unsupported",
+          "S01 matched intermediate session backend failure",
+          "S01 matched intermediate session callback failure"
+        ],
+        "input_basis": "U already stored;M05fb frequency helper throws",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "F08 backend failure Length",
+            "passed": true
+          },
+          {
+            "id": "F08 backend failure Attribute",
+            "passed": true
+          },
+          {
+            "id": "O08 state callback failure contained before progress handoff",
+            "passed": true
+          },
+          {
+            "id": "U02 signed smoothed U -0.7",
+            "passed": true
+          },
+          {
+            "id": "U02 signed smoothed U 0",
+            "passed": true
+          },
+          {
+            "id": "U02 signed smoothed U 0.7",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session enabled",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session disabled",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session missing",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session frequency unsupported",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session backend failure",
+            "passed": true
+          },
+          {
+            "id": "S01 matched intermediate session callback failure",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Partial component",
+      "engineering_substitutions": "Pure channel model propagates; live SpinnerState contains errors and proceeds with P. Original interrupted-P outcome not reproduced by live engine, explicitly documented.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A37",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Attribute301,2,.8 then Play(current2356,false)",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A37",
+        "initial_overrides": "Start queued at101/V40;channel301/V80 before execution",
+        "ordered_managed_transitions": "No parent/channel/gain snapshot; target read before gain; Play target fresh again",
+        "queued_actions": "existing QStart",
+        "reached_path": "M3ba3",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "D03 replace after submission and execute fresh gain"
+        ],
+        "input_basis": "Start queued at101/V40;channel301/V80 before execution",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "D03 replace after submission and execute fresh gain",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A38",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Attribute301 then Play401,false",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A38",
+        "initial_overrides": "Channel changes301->401 during start attribute write",
+        "ordered_managed_transitions": "Attribute and Play use different fresh reads",
+        "queued_actions": "existing QStart",
+        "reached_path": "M3ba3:0011/0017",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "D04 replace between Attribute and Play"
+        ],
+        "input_basis": "Channel changes301->401 during start attribute write",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "D04 replace between Attribute and Play",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A39",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Loader(loop=true,unprefixed=true,stages7);GetChannel(sample,false)",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A39",
+        "initial_overrides": "Changed global sample bank or index;application1/2",
+        "ordered_managed_transitions": "Update selectors; Stop old nonzero active1; acquire spinnerspin(false);store2356;attributes11 then2",
+        "queued_actions": "none in replacement",
+        "reached_path": "M3b1f",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C02 refresh activity -1",
+          "C02 refresh activity 0",
+          "C02 refresh activity 1",
+          "C02 refresh activity 2",
+          "C02 refresh activity 3",
+          "C02 refresh activity 17"
+        ],
+        "input_basis": "Changed global sample bank or index;application1/2",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C02 refresh activity -1",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 0",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 1",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 2",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 3",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 17",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A40",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No spinner Activity/Stop/Acquire/attribute from refresh",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A40",
+        "initial_overrides": "Unchanged selectors,forcefalse",
+        "ordered_managed_transitions": "Return before spinner replacement",
+        "queued_actions": "none",
+        "reached_path": "M3b1f:0015",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C06 unchanged global selectors silent"
+        ],
+        "input_basis": "Unchanged selectors,forcefalse",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C06 unchanged global selectors silent",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A41",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No replacement here",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A41",
+        "initial_overrides": "Changed selectors,application0,forcefalse",
+        "ordered_managed_transitions": "Return before selector/channel writes",
+        "queued_actions": "none",
+        "reached_path": "M3b1f:0017-0027",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C05 app0 forceFalse"
+        ],
+        "input_basis": "Changed selectors,application0,forcefalse",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C05 app0 forceFalse",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A42",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Active1 old gets Stop; Acquire(false); no per-spinner owner",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A42",
+        "initial_overrides": "Forced refresh unchanged selectors/application0",
+        "ordered_managed_transitions": "Force bypasses early gates; spinner replacement still performed",
+        "queued_actions": "none",
+        "reached_path": "M3b1f:0001",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C04 cached same sample still reacquired",
+          "C05 app0 forceTrue"
+        ],
+        "input_basis": "Forced refresh unchanged selectors/application0",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C04 cached same sample still reacquired",
+            "passed": true
+          },
+          {
+            "id": "C05 app0 forceTrue",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A43",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No equivalence between inactive/paused/stopped assumed",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A43",
+        "initial_overrides": "Previous spinner channel nonzero but native active0/2/3",
+        "ordered_managed_transitions": "No Stop; acquire/store replacement independently",
+        "queued_actions": "none",
+        "reached_path": "M3b1f:00af",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C02 refresh activity 0",
+          "C02 refresh activity 2",
+          "C02 refresh activity 3"
+        ],
+        "input_basis": "Previous spinner channel nonzero but native active0/2/3",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C02 refresh activity 0",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 2",
+            "passed": true
+          },
+          {
+            "id": "C02 refresh activity 3",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A44",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "WAV->MP3->OGG;loop flag131072|4",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A44",
+        "initial_overrides": "Map spinnerspin.wav present;global index0 or17/base3",
+        "ordered_managed_transitions": "No bank prefix/index suffix;same keyspinnerspin;shared cache consulted first",
+        "queued_actions": "none from load",
+        "reached_path": "M3b14 unprefixed true",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "R01 named bonus .wav",
+          "R01 named bonus .mp3",
+          "R01 named bonus .ogg",
+          "R01 named spin .wav",
+          "R01 named spin .mp3",
+          "R01 named spin .ogg",
+          "R09 cache-only repeated resolution"
+        ],
+        "input_basis": "Map spinnerspin.wav present;global index0 or17/base3",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "R01 named bonus .wav",
+            "passed": true
+          },
+          {
+            "id": "R01 named bonus .mp3",
+            "passed": true
+          },
+          {
+            "id": "R01 named bonus .ogg",
+            "passed": true
+          },
+          {
+            "id": "R01 named spin .wav",
+            "passed": true
+          },
+          {
+            "id": "R01 named spin .mp3",
+            "passed": true
+          },
+          {
+            "id": "R01 named spin .ogg",
+            "passed": true
+          },
+          {
+            "id": "R09 cache-only repeated resolution",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A45",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Keep source-specific0 vs-1 behavior",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A45",
+        "initial_overrides": "Map misses;skin admitted/default resource supplied",
+        "ordered_managed_transitions": "Mapcache then unsuffixed skin cache then UI/gameplay key;sample bytes select loader",
+        "queued_actions": "none",
+        "reached_path": "M3b14",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "R03 map skin default marker precedence",
+          "R06 UI store before gameplay"
+        ],
+        "input_basis": "Map misses;skin admitted/default resource supplied",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "R03 map skin default marker precedence",
+            "passed": true
+          },
+          {
+            "id": "R06 UI store before gameplay",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A46",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Acquire(-1 or0,false);attr11/2;QStart may Play0,false",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A46",
+        "initial_overrides": "spinnerspin unresolved-1 or map/skin0;Acquire returns0",
+        "ordered_managed_transitions": "No one-shot sample-validity guard; store acquired0;attributes still attempted",
+        "queued_actions": "later QStart may still submit",
+        "reached_path": "M3b1f",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "C07 opaque acquired identity -1",
+          "C07 opaque acquired identity 0",
+          "C07 opaque acquired identity 929",
+          "C09 unresolved sample -1",
+          "C09 unresolved sample 0"
+        ],
+        "input_basis": "spinnerspin unresolved-1 or map/skin0;Acquire returns0",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "C07 opaque acquired identity -1",
+            "passed": true
+          },
+          {
+            "id": "C07 opaque acquired identity 0",
+            "passed": true
+          },
+          {
+            "id": "C07 opaque acquired identity 929",
+            "passed": true
+          },
+          {
+            "id": "C09 unresolved sample -1",
+            "passed": true
+          },
+          {
+            "id": "C09 unresolved sample 0",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A47",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037",
+        "M3b2b/M3b87/M1407/M140b"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Invalid sample sets player flag,skips native Play;no standard fallback",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037",
+          "M3b2b/M3b87/M1407/M140b"
+        ],
+        "id": "A47",
+        "initial_overrides": "spinnerbonus resource unresolved-1 or0",
+        "ordered_managed_transitions": "Player still created/registered/queued;sample validity tested by M140b",
+        "queued_actions": "M3b87",
+        "reached_path": "M3b2b->M13fb",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "B04 independent player registration sample -1",
+          "B04 independent player registration sample 0",
+          "B04 independent player registration sample 929",
+          "B05 actual worker sample validity -1",
+          "B05 actual worker sample validity 0",
+          "B05 actual worker sample validity 929"
+        ],
+        "input_basis": "spinnerbonus resource unresolved-1 or0",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "B04 independent player registration sample -1",
+            "passed": true
+          },
+          {
+            "id": "B04 independent player registration sample 0",
+            "passed": true
+          },
+          {
+            "id": "B04 independent player registration sample 929",
+            "passed": true
+          },
+          {
+            "id": "B05 actual worker sample validity -1",
+            "passed": true
+          },
+          {
+            "id": "B05 actual worker sample validity 0",
+            "passed": true
+          },
+          {
+            "id": "B05 actual worker sample validity 929",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A48",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Source native load result remains opaque",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A48",
+        "initial_overrides": "First map bytes nonnull but backend returns-1",
+        "ordered_managed_transitions": "Stop extension probing;fall through provider stages;do not retry codec after load",
+        "queued_actions": "none",
+        "reached_path": "M3b14",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "R04 first nonnull bytes load result -1",
+          "R04 first nonnull bytes load result 0",
+          "R04 first nonnull bytes load result 717"
+        ],
+        "input_basis": "First map bytes nonnull but backend returns-1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "R04 first nonnull bytes load result -1",
+            "passed": true
+          },
+          {
+            "id": "R04 first nonnull bytes load result 0",
+            "passed": true
+          },
+          {
+            "id": "R04 first nonnull bytes load result 717",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A49",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Return raw1024;queued Pause and playback are distinct",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A49",
+        "initial_overrides": "Modern N15/C16;strict after-end manager gate passes",
+        "ordered_managed_transitions": "Cleanup first; evaluated true before grade;positive hook before later comparisons",
+        "queued_actions": "QPause then ordered completion sample actions if resources",
+        "reached_path": "M05fa",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E01 completion count 21"
+        ],
+        "input_basis": "Modern N15/C16;strict after-end manager gate passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E01 completion count 21",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A50",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Return raw512;queued Pause and playback are distinct",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A50",
+        "initial_overrides": "Modern N15/C14;strict after-end manager gate passes",
+        "ordered_managed_transitions": "Cleanup first; evaluated true before grade;positive hook before later comparisons",
+        "queued_actions": "QPause then ordered completion sample actions if resources",
+        "reached_path": "M05fa",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E01 completion count 19"
+        ],
+        "input_basis": "Modern N15/C14;strict after-end manager gate passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E01 completion count 19",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A51",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Return raw256;queued Pause and playback are distinct",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A51",
+        "initial_overrides": "Modern N15/C3;strict after-end manager gate passes",
+        "ordered_managed_transitions": "Cleanup first; evaluated true before grade;positive hook before later comparisons",
+        "queued_actions": "QPause then ordered completion sample actions if resources",
+        "reached_path": "M05fa",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E01 completion count 5"
+        ],
+        "input_basis": "Modern N15/C3;strict after-end manager gate passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E01 completion count 5",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A52",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31",
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Return raw-131072;queued Pause and playback are distinct",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31",
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A52",
+        "initial_overrides": "Modern N15/C2;strict after-end manager gate passes",
+        "ordered_managed_transitions": "Cleanup first; evaluated true before grade;minimum failure skips hook",
+        "queued_actions": "QPause then no final hitsound action",
+        "reached_path": "M05fa",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E01 completion count 4"
+        ],
+        "input_basis": "Modern N15/C2;strict after-end manager gate passes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E01 completion count 4",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A53",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Final hook timing stored end",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A53",
+        "initial_overrides": "Modern N0/C0 artificial prepared control",
+        "ordered_managed_transitions": "Cleanup/evaluated;positive hook;return1024 independent of C",
+        "queued_actions": "QPause then final sample actions",
+        "reached_path": "M05fa:007d",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E02 N0 positive completion independent modulation"
+        ],
+        "input_basis": "Modern N0/C0 artificial prepared control",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E02 N0 positive completion independent modulation",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A54",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No final playback request from this hook",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A54",
+        "initial_overrides": "Final timing list null/empty",
+        "ordered_managed_transitions": "Positive hook returns without sample selection;grade can continue",
+        "queued_actions": "cleanup only",
+        "reached_path": "M3202:0019",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E13 missing timing False",
+          "E13 missing timing True"
+        ],
+        "input_basis": "Final timing list null/empty",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E13 missing timing False",
+            "passed": true
+          },
+          {
+            "id": "E13 missing timing True",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A55",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No start+5/end+5/hit-time substitution",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A55",
+        "initial_overrides": "Timing change at E,another at E+1 or E+5",
+        "ordered_managed_transitions": "Query Double(storedE),inclusive scan-all;later qualifying supplied entry atE wins",
+        "queued_actions": "final requests selected fromE point",
+        "reached_path": "M3202/M1be6",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E04 end selected distinct from start/end+5",
+          "E05 supplied-order scan-all not greatest timestamp"
+        ],
+        "input_basis": "Timing change at E,another at E+1 or E+5",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E04 end selected distinct from start/end+5",
+            "passed": true
+          },
+          {
+            "id": "E05 supplied-order scan-all not greatest timestamp",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A56",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Inherited pan from centerX256 gives0",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A56",
+        "initial_overrides": "Final rawmask14/layeringfalse/custom-1/volume100",
+        "ordered_managed_transitions": "Observer then Finish100->Whistle85->Clap85;no unconditional Normal",
+        "queued_actions": "three one-shot actions",
+        "reached_path": "M24ba/M3b32",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E08 mask14 layeredFalse"
+        ],
+        "input_basis": "Final rawmask14/layeringfalse/custom-1/volume100",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E08 mask14 layeredFalse",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A57",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Normal*.8;Finish1;Whistle/Clap*.85",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A57",
+        "initial_overrides": "Final rawmask0 or qualifying layered14",
+        "ordered_managed_transitions": "Normal added;standard order1/4/2/8;floor8 precedes attenuation",
+        "queued_actions": "ordered standard actions",
+        "reached_path": "M44a2/M3b32",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E08 mask0 layeredFalse",
+          "E08 mask1 layeredFalse",
+          "E08 mask2 layeredFalse",
+          "E08 mask14 layeredFalse",
+          "E08 mask65536 layeredFalse",
+          "E08 mask0 layeredTrue",
+          "E08 mask1 layeredTrue",
+          "E08 mask2 layeredTrue",
+          "E08 mask14 layeredTrue",
+          "E08 mask65536 layeredTrue",
+          "E10 standard volume floor 0",
+          "E10 standard volume floor 1",
+          "E10 standard volume floor 7",
+          "E10 standard volume floor 8",
+          "E10 standard volume floor 67"
+        ],
+        "input_basis": "Final rawmask0 or qualifying layered14",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E08 mask0 layeredFalse",
+            "passed": true
+          },
+          {
+            "id": "E08 mask1 layeredFalse",
+            "passed": true
+          },
+          {
+            "id": "E08 mask2 layeredFalse",
+            "passed": true
+          },
+          {
+            "id": "E08 mask14 layeredFalse",
+            "passed": true
+          },
+          {
+            "id": "E08 mask65536 layeredFalse",
+            "passed": true
+          },
+          {
+            "id": "E08 mask0 layeredTrue",
+            "passed": true
+          },
+          {
+            "id": "E08 mask1 layeredTrue",
+            "passed": true
+          },
+          {
+            "id": "E08 mask2 layeredTrue",
+            "passed": true
+          },
+          {
+            "id": "E08 mask14 layeredTrue",
+            "passed": true
+          },
+          {
+            "id": "E08 mask65536 layeredTrue",
+            "passed": true
+          },
+          {
+            "id": "E10 standard volume floor 0",
+            "passed": true
+          },
+          {
+            "id": "E10 standard volume floor 1",
+            "passed": true
+          },
+          {
+            "id": "E10 standard volume floor 7",
+            "passed": true
+          },
+          {
+            "id": "E10 standard volume floor 8",
+            "passed": true
+          },
+          {
+            "id": "E10 standard volume floor 67",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A58",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Volume25 no standard floor;pan0;matchRate true/factor initial1",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A58",
+        "initial_overrides": "Object base3/addition1/index2/volume25/custom7317",
+        "ordered_managed_transitions": "Object nonzero selectors win;observer still runs;custom!= -1 bypasses standard",
+        "queued_actions": "one custom M3bb6 action",
+        "reached_path": "M3202/M24ba",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E17 combined custom overrides before dispatch"
+        ],
+        "input_basis": "Object base3/addition1/index2/volume25/custom7317",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E17 combined custom overrides before dispatch",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A59",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Do not convert0 into standard fallback",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A59",
+        "initial_overrides": "Object custom0 versus-1",
+        "ordered_managed_transitions": "0 selects custom arm; -1 selects standard;validity later",
+        "queued_actions": "custom0 action or standard layers",
+        "reached_path": "M24ba",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E11 custom sentinel -1",
+          "E11 custom sentinel 0",
+          "E11 custom sentinel 929"
+        ],
+        "input_basis": "Object custom0 versus-1",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E11 custom sentinel -1",
+            "passed": true
+          },
+          {
+            "id": "E11 custom sentinel 0",
+            "passed": true
+          },
+          {
+            "id": "E11 custom sentinel 929",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A60",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "At execution Pause301;not submitted101",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9"
+        ],
+        "id": "A60",
+        "initial_overrides": "Completion QPause submitted101,then global channel301",
+        "ordered_managed_transitions": "No capture/clear/ownership check",
+        "queued_actions": "QPause",
+        "reached_path": "M05fc->M3b54->M3ba9",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "D05 Pause fresh channel after real global replacement"
+        ],
+        "input_basis": "Completion QPause submitted101,then global channel301",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "D05 Pause fresh channel after real global replacement",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A61",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9",
+        "M28c5:0050",
+        "M2262:01da",
+        "M0acb:003c"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Native Pause only when callback executes;no implicit Stop/free",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9",
+          "M28c5:0050",
+          "M2262:01da",
+          "M0acb:003c"
+        ],
+        "id": "A61",
+        "initial_overrides": "Manager cleanup/reset or reached pause-on candidates include spinner",
+        "ordered_managed_transitions": "Queue cleanup before later dispose/song toggle;cursor/count resets independent",
+        "queued_actions": "QPause for reached spinner",
+        "reached_path": "M28c5/M0acb/M2262->virtualM24c4",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "S03 recovery guard independent audio cleanup",
+          "P04 lifecycle cancellation source"
+        ],
+        "input_basis": "Manager cleanup/reset or reached pause-on candidates include spinner",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "S03 recovery guard independent audio cleanup",
+            "passed": true
+          },
+          {
+            "id": "P04 lifecycle cancellation source",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Partial component",
+      "engineering_substitutions": "Actual host full-list CleanupSpinnerAudio/pause/teardown bridge; native candidate list and song toggle ordering source-only.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A62",
+      "original_evidence_sites": [
+        "M05f5:0143-0173,0352-0395",
+        "M3b34",
+        "M3ba3",
+        "M05fc/M3b54/M3ba9",
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Conditional execution may Pause current later channel;native outcome unresolved",
+        "evidence": [
+          "M05f5:0143-0173,0352-0395",
+          "M3b34",
+          "M3ba3",
+          "M05fc/M3b54/M3ba9",
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A62",
+        "initial_overrides": "Later spinner starts before prior cleanup executes",
+        "ordered_managed_transitions": "Same global2356;prior queued cleanup can affect later channel;no owner token",
+        "queued_actions": "QPause/QStart in reached submission order",
+        "reached_path": "M3b1f or reused channel;M3b34",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "D05 Pause fresh channel after real global replacement",
+          "D06 pause then reentry start"
+        ],
+        "input_basis": "Later spinner starts before prior cleanup executes",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "D05 Pause fresh channel after real global replacement",
+            "passed": true
+          },
+          {
+            "id": "D06 pause then reentry start",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Partial component",
+      "engineering_substitutions": "Artificial shared-channel interleavings and reentry; fresh overlapping spinner producers explicitly unsupported.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A63",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Native frees do not prove handle-field reset",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038"
+        ],
+        "id": "A63",
+        "initial_overrides": "Mapcache invalidation or device reinitialization branch reached",
+        "ordered_managed_transitions": "SampleFree/cacheclear distinct from global2356;no direct zero store",
+        "queued_actions": "Old actions not proven cancelled",
+        "reached_path": "M28f6/M3b1d/M3b1b/M3b5e",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "D07 timing reset retains shared identity and queued actions",
+          "R09 cache-only repeated resolution",
+          "P04 lifecycle cancellation source"
+        ],
+        "input_basis": "Mapcache invalidation or device reinitialization branch reached",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "D07 timing reset retains shared identity and queued actions",
+            "passed": true
+          },
+          {
+            "id": "R09 cache-only repeated resolution",
+            "passed": true
+          },
+          {
+            "id": "P04 lifecycle cancellation source",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Source-only inspection",
+      "engineering_substitutions": "Timing reset survival executed separately; native sample/device teardown has no original-equivalent executable backend.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A64",
+      "original_evidence_sites": [
+        "M3b19:015a-017a",
+        "M3b1f:009d-0110",
+        "M3b14/E038",
+        "M3b11:0018-003f"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "Spinner attr2 uses same captured gain;target2356 read after earlier writes",
+        "evidence": [
+          "M3b19:015a-017a",
+          "M3b1f:009d-0110",
+          "M3b14/E038",
+          "M3b11:0018-003f"
+        ],
+        "id": "A64",
+        "initial_overrides": "Settings event with spinner channel active",
+        "ordered_managed_transitions": "Compute one gain local;write slider0/slider1/spinner2356 using it",
+        "queued_actions": "none from this handler",
+        "reached_path": "M3b11",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "G01 one gain three fresh fields mutation write1",
+          "G01 one gain three fresh fields mutation write2",
+          "P08 E041 gain local independent literal sites"
+        ],
+        "input_basis": "Settings event with spinner channel active",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "G01 one gain three fresh fields mutation write1",
+            "passed": true
+          },
+          {
+            "id": "G01 one gain three fresh fields mutation write2",
+            "passed": true
+          },
+          {
+            "id": "P08 E041 gain local independent literal sites",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Executed finite component",
+      "engineering_substitutions": "Explicit normally returning finite managed inputs and recording backend; shifted marker fixtures, stable per-call operands; not original scheduler/native execution.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A65",
+      "original_evidence_sites": [
+        "M05fa",
+        "M3202:000b-002f",
+        "M24ba/M44a2/M3b32/M3b31"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No guaranteed final sample request or grade return",
+        "evidence": [
+          "M05fa",
+          "M3202:000b-002f",
+          "M24ba/M44a2/M3b32/M3b31"
+        ],
+        "id": "A65",
+        "initial_overrides": "Observer in final M24ba throws",
+        "ordered_managed_transitions": "Evaluated remains true;cleanup already submitted;classification/handoff interrupted",
+        "queued_actions": "earlier QPause retained",
+        "reached_path": "M28a1 before custom/standard",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "E15 throwing positive hook contained",
+          "E16 observer before dispatch partial exception"
+        ],
+        "input_basis": "Observer in final M24ba throws",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "E15 throwing positive hook contained",
+            "passed": true
+          },
+          {
+            "id": "E16 observer before dispatch partial exception",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Partial component",
+      "engineering_substitutions": "Direct completion selector observer exception executed; live SpinnerState contains effect failure and grades normally, deliberately differing from original interruption.",
+      "unsupported_dependencies": "Original Windows runtime, native BASS return values and device/audible behavior unverified.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    },
+    {
+      "id": "A66",
+      "original_evidence_sites": [
+        "M05f6:02d4-04cd",
+        "M05fb:0000-0030",
+        "M3b28:0000-0037"
+      ],
+      "original_static_expected_transition": {
+        "conditional_native_operations": "No transactional cancellation;retry could request another bonus",
+        "evidence": [
+          "M05f6:02d4-04cd",
+          "M05fb:0000-0030",
+          "M3b28:0000-0037"
+        ],
+        "id": "A66",
+        "initial_overrides": "Bonus queued successfully,then later label/transform helper throws",
+        "ordered_managed_transitions": "C advanced;cache may stay stale;one-shot already registered/queued;no normal component return",
+        "queued_actions": "bonus action survives logically",
+        "reached_path": "M05f6:0390-04c7",
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "COMMON prerequisites; actual scheduler/interleaving, installed providers, native return values, CLR exceptional conversion and audible output. Artificial inputs are not natural observations."
+      },
+      "production_setup": {
+        "case_ids": [
+          "O07 pure bonus exception retains C and stale cache",
+          "B08 registration failure before queue"
+        ],
+        "input_basis": "Bonus queued successfully,then later label/transform helper throws",
+        "fixture_adjustment": "QA12 uses S2200, varied E6200/9200, N20/35 and marker identities733/919; original count thresholds shifted only by independently derived N. See named case code and retained fixture hashes."
+      },
+      "observed_managed_result": {
+        "result_source": "verification/windows-results.json.gz.b64 (authoritative once available); verification/local-results.json.gz.b64 supplemental",
+        "named_outcomes": [
+          {
+            "id": "O07 pure bonus exception retains C and stale cache",
+            "passed": true
+          },
+          {
+            "id": "B08 registration failure before queue",
+            "passed": true
+          }
+        ]
+      },
+      "execution_classification": "Unsupported state",
+      "engineering_substitutions": "Opaque original post-bonus label/transform helper absent; nearby pre-cache/registration boundaries exercised separately.",
+      "unsupported_dependencies": "No executable original post-queue presentation helper; no full A66 execution claimed.",
+      "original_runtime": "Unverified native/original-runtime behavior; NOT RUN"
+    }
+  ]
+}

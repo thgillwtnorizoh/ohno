@@ -39,6 +39,10 @@ on:
       - re/qa/qa11/Windows/**
       - re/qa/qa11/Inputs/**
       - re/qa/qa11/Run-QA11.ps1
+      - re/qa/qa12/Headless/**
+      - re/qa/qa12/Windows/**
+      - re/qa/qa12/Inputs/**
+      - re/qa/qa12/Run-QA12.ps1
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -292,4 +296,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R14WindowsChecks/R14WindowsChecks.csproj -c Release
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA12 spinner audio without media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa12/Run-QA12.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa12-results.json')
           exit $LASTEXITCODE
