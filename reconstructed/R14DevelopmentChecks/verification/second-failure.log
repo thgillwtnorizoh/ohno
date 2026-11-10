@@ -1,0 +1,54 @@
+2026-11-10T16:51:19.5883587Z Build succeeded.
+2026-11-10T16:51:19.5884062Z     0 Warning(s)
+2026-11-10T16:51:19.5884430Z     0 Error(s)
+2026-11-10T16:51:22.3297378Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-10T16:51:25.1370466Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-10T16:51:30.3360213Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-10T16:51:32.9118084Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-10T16:51:35.4350218Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-10T16:51:37.9250368Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-10T16:51:40.2807507Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-10T16:51:42.7756792Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-10T16:51:45.2220355Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-10T16:51:47.4464420Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-10T16:51:49.7045159Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-10T16:51:51.9145428Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-10T16:51:54.1715473Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-10T16:51:56.6687073Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-10T16:52:01.7726197Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-10T16:52:04.9606854Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-10T16:52:09.2701139Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-10T16:52:12.5901989Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-10T16:52:15.1518549Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-10T16:52:19.8826895Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-10T16:52:21.9124550Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-10T16:52:24.0833365Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-10T16:52:27.3917845Z PASS R14 01 A39 spinner default0, unprefixed resolution, Acquire(false), attribute11 then gain
+2026-11-10T16:52:27.3923403Z PASS R14 02 conditional prior active1 Stop, other numeric states still replace
+2026-11-10T16:52:27.3925235Z PASS R14 03 old channel0 skips activity/Stop, without repairing native sentinels
+2026-11-10T16:52:27.3926244Z PASS R14 04 missing minus1 and invalid0 remain opaque in pure acquisition model
+2026-11-10T16:52:27.3947793Z PASS R14 05 A39/A40 admitted global bank/index refresh always reacquires same spinner sample separately from sliders
+2026-11-10T16:52:27.3949390Z PASS R14 06 unchanged/application and forced global refresh gates retained
+2026-11-10T16:52:27.3956759Z PASS R14 07 A65 R13-C01 single gain across slider0/slider1/spinner with fresh spinner target
+2026-11-10T16:52:27.3961691Z PASS R14 08 A18-A23 finite Single frequency0/.5/1/2/3/-1; upper cap only, no lower floor
+2026-11-10T16:52:27.3962636Z PASS R14 09 A28-A30 signed Int64 native length: strict >8192, mode0
+2026-11-10T16:52:27.3964480Z PASS R14 10 A31/A32 length query old target then fresh frequency target; no activity gate
+2026-11-10T16:52:27.3968610Z PASS R14 11 A24-A27 unsupported conversion produces no invented CLR frequency
+2026-11-10T16:52:27.3975797Z PASS R14 12 unknown native length is explicit unsupported modulation; continuing start remains available
+2026-11-10T16:52:27.3977116Z PASS R14 13 explicit unsupported frequency capability is not a successful no-op attribute setter
+2026-11-10T16:52:27.3978166Z PASS R14 14 frequency failure status and pure-model exception propagation
+2026-11-10T16:52:27.3979180Z PASS R14 15 A33-A35 synchronous frequency before queued start; fresh gain/channel and Play(false)
+2026-11-10T16:52:27.3980297Z PASS R14 16 repeated start submissions have no native-active or pending-start suppression
+2026-11-10T16:52:27.3981306Z PASS R14 17 start callback rereads spinner field between gain assignment and Play
+2026-11-10T16:52:27.3982240Z PASS R14 18 A60 queued Pause targets replacement spinner channel, not Stop/release
+2026-11-10T16:52:27.3983224Z PASS R14 19 A33 artificial invalid channel does not invent a frequency validity/activity guard
+2026-11-10T16:52:27.3986324Z PASS R14 20 A35 pure observed-change exception leaves advanced C and stale cache before component selection
+2026-11-10T16:52:27.3988103Z PASS R14 21 A09/A11 jumped integer changes C once before raw0 classification/cache; unchanged integer silent
+2026-11-10T16:52:27.3989370Z PASS R14 22 first C1/raw0 frequency possible; disabled setting suppresses observation modulation only
+2026-11-10T16:52:27.3990417Z PASS R14 23 N0 modulation unsupported independently of modern N0 final grade
+2026-11-10T16:52:27.4013468Z PASS R14 24 A02 nonzero smoothed U helper occurs before P accumulation
+2026-11-10T16:52:27.4701018Z Unhandled exception. System.Exception: R14 assertion failed at group 25
+2026-11-10T16:52:27.4702004Z    at Program.<>c__DisplayClass0_0.<<Main>$>g__Yes|0(Boolean value) in D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\Program.cs:line 9
+2026-11-10T16:52:27.4703015Z    at Program.<Main>$(String[] args) in D:\a\ohno\ohno\reconstructed\R14DevelopmentChecks\Program.cs:line 100
+2026-11-10T16:52:27.4703627Z    at Program.<Main>(String[] args)
+2026-11-10T16:52:29.7341779Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played

@@ -986,3 +986,12 @@ New R14 harness failed CS0136 (sample local shadowing); zero R14 assertions and
 zero R14 Windows groups executed. Preserve initial Program.cs.txt and log under
 R14DevelopmentChecks/verification; rename that local, no production or oracle
 change for this failure. Final exact-source gate remains pending.
+
+R14 second run42858711501/source6e08c1df018d87cb25edccb1405aaa1c9b257c10:
+WPF/historical1344/prior development green, R14 groups1–24 passed, Windows-empty1
+passed. Group25 residual-motion fixture failed: two-second acceleration0.00158
+gives20ms allowance0.0316, fully damping priorU~0.018 to0. Fixture expectation
+precondition was wrong, not a production discrepancy. Preserve second Program/log;
+use six-second acceleration0.00008, two held steps U0.0016→0.0032 then released
+U0.0016. Keep expected continuation and add explicit U>0 assertion. No gameplay,
+score/HP or original/independent QA change. Final gate pending.

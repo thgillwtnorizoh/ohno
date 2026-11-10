@@ -24,6 +24,15 @@ sample shadowed the later metadata local). No R14 assertions or R14 Windows
 lifecycle group executed. Initial Program/log are retained under
 R14DevelopmentChecks/verification; only the local name is corrected.
 
+Second run42858711501 on source6e08c1df018d87cb25edccb1405aaa1c9b257c10
+passed WPF/historical/prior checks,24 R14 groups and Windows-empty1, then failed
+the new residual-motion fixture. The original two-second spinner has acceleration
+0.00158; its20ms deceleration allowance0.0316 exceeds prior U~0.018, reaching0.
+That fixture did not establish its expected residual. Preserve second Program/log.
+The corrected six-second fixture has acceleration0.00008: two held20ms updates
+build U0.0016→0.0032; release leaves U0.0016, without changing production math.
+The continuation expectation is retained and a positive-U assertion added.
+
 **Final Windows verification pending.** Source will be gated on reusable ci/verification
 then safely advanced to canonical main. All1344 named independent checks and all
 historical development groups remain required. R14 development and asset/source

@@ -93,11 +93,12 @@ backend.Operations.Clear();spin.Observe(1,10,true);Eq(backend.Operations[1].Valu
 Pass("first C1/raw0 frequency possible; disabled setting suppresses observation modulation only");
 spin.Observe(1,0,true);Eq(spin.FrequencyStatus,FrequencyCapability.Unsupported);
 Pass("N0 modulation unsupported independently of modern N0 final grade");
-var moving=new SpinnerState(new(1000,3000,0,null),5);var stages=new List<SpinnerSoundStage>();float oldProgress=0;
+var moving=new SpinnerState(new(1000,7000,0,null),5);var stages=new List<SpinnerSoundStage>();float oldProgress=0;
 moving.Sound+=(s,e)=>{stages.Add(e);if(e==SpinnerSoundStage.Motion)Eq(s.Progress,oldProgress);};
 moving.SampleAngle(0,1000,20,true);moving.SampleAngle(.3,1020,20,true);oldProgress=moving.Progress;moving.Integrate(1020,20);Yes(stages.Contains(SpinnerSoundStage.Motion));Yes(moving.Progress>oldProgress);
 Pass("A02 nonzero smoothed U helper occurs before P accumulation");
-stages.Clear();moving.SampleAngle(.6,1040,20,false);oldProgress=moving.Progress;moving.Integrate(1040,20);Yes(stages.Contains(SpinnerSoundStage.Motion));Yes(!moving.InputHeld);
+moving.SampleAngle(.6,1040,20,true);oldProgress=moving.Progress;moving.Integrate(1040,20);
+stages.Clear();moving.SampleAngle(.9,1060,20,false);oldProgress=moving.Progress;moving.Integrate(1060,20);Yes(moving.SmoothedMotion>0);Yes(stages.Contains(SpinnerSoundStage.Motion));Yes(!moving.InputHeld);
 Pass("A04 residual smoothed motion after release still produces continuation");
 var stationary=new SpinnerState(new(1000,3000,0,null),5);stages.Clear();stationary.Sound+=(_,e)=>stages.Add(e);
 stationary.Integrate(1000,20);stationary.Integrate(3000,20);stationary.Integrate(999,20);stationary.Integrate(3001,20);stationary.Integrate(1020,0);Eq(stages.Count,0);
