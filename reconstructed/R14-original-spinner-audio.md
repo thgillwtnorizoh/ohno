@@ -33,10 +33,39 @@ The corrected six-second fixture has acceleration0.00008: two held20ms updates
 build U0.0016→0.0032; release leaves U0.0016, without changing production math.
 The continuation expectation is retained and a positive-U assertion added.
 
-**Final Windows verification pending.** Source will be gated on reusable ci/verification
-then safely advanced to canonical main. All1344 named independent checks and all
-historical development groups remain required. R14 development and asset/source
-checks are reported separately. No SDK is installed or available locally.
+**Final Windows verification: PASS.** Tested source
+`75dbf61269937fedd969dfc9e847b731c9f6b446`.
+[Windows run42859198871](https://github.com/thgillwtnorizoh/ohno/actions/runs/42859198871),
+2026-11-10, Windows2022/preinstalled SDK8.0.427. The exact source passed on the reusable
+ci/verification ref before canonical main was advanced to it. Final report/evidence
+publication changes no tested production, harness, generator or workflow bytes.
+
+| Executed gate | Actual result |
+|---|---:|
+|WPF Release win-x64|0 warnings,0 errors|
+|QA01 /03 /04 /05 /06|90 /56 /43 /66 /99 passed|
+|QA07 /08 /09 /10 /11|159 /115 /234 /229 /253 passed|
+|Historical independent named total|1344/1344|
+|R14 development groups|58/58|
+|Separate R14 Windows-empty capability/lifecycle|1/1|
+
+The58 groups comprise55 managed production-component groups,2 explicitly labelled
+source inspections and1 independent two-file structural asset group. No group
+establishes original-runtime or audible equivalence. QA11 includes234 components,
+9 source audits,4 asset controls and6 empty-Windows controls; QA10 likewise
+includes4 source audits. Independent totals are named checks, not runtime-only cases.
+All retained development gates passed: R06 targets4/fixtures4, R07 8, R08 13,
+C01 4, C02 14, R09 15, R10 23, R11 32, R12 40, R13 54, its separate Windows1,
+and R13-C01 6. Unchanged QA11 G08 remains PASS. All21 existing generated WAV
+fingerprints are preserved after adding the two independent spinner samples.
+The WAV structures are checked without decoder opening/playback.
+
+Initial compiler failure and residual-fixture failure remain immutable in the
+source ancestry and under R14DevelopmentChecks/verification. The final gate
+passed after those harness-only corrections; the initial production implementation
+already built and passed the historical gate. Summary/provenance pin the exact
+source, group classes and preserved failure snapshots. No local SDK was installed
+or available, and no local .NET execution is claimed.
 No original/reconstructed game window, OS input, native BASS, media opening,
 automated playback/listening/loopback capture, OBS or E020 experiment is performed.
 
@@ -122,7 +151,9 @@ Pause/restart/disable/replacement/disposal cancel stale shared callbacks and pau
 or release resources. CleanupSpinnerAudio is an explicit full-list host bridge,
 not exact native candidate arbitration: pause/teardown reaches cleanup events,
 then safety cancellation/direct PauseAll or Close supersedes queued native actions.
-Original callbacks have no such generation veto. Original scene/device/editor/
+Original callbacks have no such generation veto. Reused prepared spinner players
+retain their media position through Pause/restart; a later Play(false) resumes
+that position. No native phase-reset/reacquisition equivalence is claimed. Original scene/device/editor/
 seek/overlap ownership and unrestricted cross-map lifecycle are unsupported.
 
 Optional errors are contained at spinner audio boundaries. The pure observation
@@ -133,7 +164,8 @@ thresholds, raw results, score, HP, NewCombo and R13-C01 arithmetic are preserve
 The fresh center is a separate stored sound operand initialized to256/192; it is
 not the pointer or slider presentation X. No original renderer animation is claimed.
 
-**VERIFIED COMPONENT:** pending the exact-source Windows gate. R14 harness links
+**VERIFIED COMPONENT:** the exact-source Windows gate executed58 groups plus the
+separate empty-Windows group, as detailed above. The R14 harness links
 actual parser/session/selection/resource/library/channel/dispatch sources. Conditional
 artificial initial C states and injected length/native returns are labelled. The
 coverage map retains all A01–A66 and distinguishes executed finite, partial,
@@ -166,7 +198,8 @@ is still required. No R15/E042/QA12, framework migration or deferred score resea
 RECONSTRUCTED global refresh:
     retain gates; write global bank/index
     active1 nonzero spinner channel -> Stop(current channel)
-    spinnerChannel = Acquire(resolve unprefixed spinnerspin loop,true stages7,false)
+    sample = resolve("spinnerspin",loop=true,unprefixed=true,stages=7)
+    spinnerChannel = Acquire(sample,false)
     captured replacement gain -> attr11 then attr2
     retain conditional slider-pair preparation
 

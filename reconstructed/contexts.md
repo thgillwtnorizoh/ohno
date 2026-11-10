@@ -995,3 +995,20 @@ precondition was wrong, not a production discrepancy. Preserve second Program/lo
 use six-second acceleration0.00008, two held steps U0.0016→0.0032 then released
 U0.0016. Keep expected continuation and add explicit U>0 assertion. No gameplay,
 score/HP or original/independent QA change. Final gate pending.
+
+R14 final Windows gate42859198871, tested source75dbf61269937fedd969dfc9e847b731c9f6b446:
+PASS before main advanced to that exact commit. WPF Release win-x64 zero warnings/
+errors; all1344 historical independent named checks pass, including unchangedQA11
+G08 and all retained development checks (R11 32,R12 40,R13 54,Windows1,C01 6).
+R14 58/58 groups =55 executed managed-component,2 source-inspected,1 two-file asset
+structure group; separate Windows empty-resource capability/lifecycle1/1. Existing
+21 generated WAV hashes preserved after adding2 independent spinner WAVs. No audio
+decoder/player/window/device was opened by the empty test, no playback/listening.
+Failed initial compilation and residual-fixture precondition are preserved with
+source snapshots/logs; no production fix was needed for those new harness failures.
+Final report/evidence-only publication preserves exact tested code/CI/generator.
+Managed frequency requests verified with injected lengths; Windows native length/
+audible attribute1 modulation explicitly unsupported, never inferred from WAV bytes.
+Owner-only audible qualification remains pending; original BASS scheduling/device/
+frequency/overlap equivalence unverified. Stop after R14; no QA12/R15/E042 or
+framework/deferred score work. Historical journals/research/QA/reports preserved.

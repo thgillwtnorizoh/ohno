@@ -1,0 +1,68 @@
+{
+  "baseline": "b20c00fe3279032357af682a4946ca57936440d4",
+  "tested_source": "75dbf61269937fedd969dfc9e847b731c9f6b446",
+  "run_id": 42859198871,
+  "run_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42859198871",
+  "result": "success",
+  "build": {
+    "configuration": "Release win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "independent_named_checks": 1344,
+  "r14_groups": 58,
+  "r14_managed_groups": 55,
+  "r14_source_inspections": 2,
+  "r14_asset_structure_groups": 1,
+  "r14_windows_empty_groups": 1,
+  "new_generated_files": 2,
+  "old_generated_fingerprints_preserved": 21,
+  "qa11_g08": "unchanged PASS",
+  "historical_development": {
+    "r06_targets": 4,
+    "r06_fixtures": 4,
+    "r07": 8,
+    "r08": 13,
+    "r08_c01": 4,
+    "r08_c02": 14,
+    "r09": 15,
+    "r10": 23,
+    "r11": 32,
+    "r12": 40,
+    "r13": 54,
+    "r13_windows_empty": 1,
+    "r13_c01": 6
+  },
+  "coverage_classes": {
+    "executed production-component check": 33,
+    "engineering alternative": 3,
+    "unsupported original state": 5,
+    "partial finite check": 25
+  },
+  "windows_audible_frequency": "unsupported; native channel length unavailable",
+  "initial_failures": [
+    {
+      "source": "0000b976ca56f02d7926624861e3d838f63a5923",
+      "run_id": 42858280712,
+      "failure": "new harness CS0136; zero R14 assertions"
+    },
+    {
+      "source": "6e08c1df018d87cb25edccb1405aaa1c9b257c10",
+      "run_id": 42858711501,
+      "failure": "24 R14 groups then residual-motion fixture precondition failed; Windows-empty1 passed"
+    }
+  ],
+  "files": {
+    "windows-summary.log": "d7998b39ada45eeb790a08009d1d8d22496435c6ba89588c15b5ef3c07bd042d",
+    "initial-failure.log": "9baf6611d4c5f7cd598c36c2361e3113a48900505ff9453c4a8b1a38352bae27",
+    "initial-Program.cs.txt": "8590cb1eefe71fd449591508001695435d5acd7a515f0383b900554587a56290",
+    "second-failure.log": "b93a7d266f5cd553a7d44f4d98a7bd0115bd4c0773e92275a65846d116bee9d2",
+    "second-Program.cs.txt": "760f6d3573a180dc4a14a5f35187879f65caa8c762bffa82f023c7de44a8b351"
+  },
+  "media_opened": false,
+  "game_window_opened": false,
+  "original_runtime_executed": false,
+  "audible_qualification": "owner-only, not performed",
+  "job_id": 129980416604,
+  "sdk": "8.0.427"
+}
