@@ -60,7 +60,7 @@ internal static class Program
             Pass("D08 admitted skin precedes default resource");
             using (var cached = new HitSoundLibrary(new() { DefaultPackDirectory = circleOnly }))
             {
-                using (var before=Prepare(cached,map)) Eq(before.SpinHandle,-1);
+                using (var missingBefore=Prepare(cached,map)) Eq(missingBefore.SpinHandle,-1);
                 File.Copy(Path.Combine(pack,"spinnerspin.wav"),Path.Combine(circleOnly,"spinnerspin.wav"));
                 using (var reload=Prepare(cached,map)) Eq(reload.SpinHandle,-1);
                 using var freshLib = new HitSoundLibrary(new() { DefaultPackDirectory = circleOnly });

@@ -28,7 +28,18 @@ R14Q01DevelopmentChecks, minimal existing CI addition, this report and append-on
 implementation journal. Historical research, QA01–QA12, previous reports,
 fixtures/generators and gameplay arithmetic are preserved.
 
-**Exact-source Windows gate: PENDING.** Required1630 named independent checks,
+Initial Windows gate42941701913/job130264802295 at
+`ab62bea33a08e0496d1c53c546698062d80971ef` is preserved. WPF built with0 warnings/
+errors;1629/1630 independent checks passed; QA09 A05 source audit failed because
+Program delegated the path expression to a helper rather than retaining its explicit
+`Path.Combine(AppContext.BaseDirectory,"hitsounds.json")`. Restored that existing
+expression without changing the QA09 audit. All other independent checks and prior
+development suites passed. New harness failed compilation CS0136 (nested `before`
+local shadowed a later local); zero new assertions executed. Renamed only that
+harness local. Exact returned log/gzip, summaries, provenance and both initial
+Program snapshots remain under R14Q01DevelopmentChecks/verification.
+
+**Final exact-source Windows gate: PENDING.** Required1630 named independent checks,
 all retained development suites and clean Release win-x64. New development controls
 are separately23 groups:22 executed production-component/recording/empty-Windows
 controls and1 explicitly source-only nonempty decoder/export inspection. No new

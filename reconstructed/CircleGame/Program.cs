@@ -42,7 +42,7 @@ public sealed class GameWindow : Window
     private readonly TextBlock effectsStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 12, TextWrapping = TextWrapping.Wrap };
     private readonly CheckBox effectsEnabled = new() { Content = "HitSounds (including loops)", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
     private string? effectsConfigurationError;
-    private static string EffectsConfigurationPath => HitSoundSettings.ConfigurationPath();
+    private static string EffectsConfigurationPath => Path.Combine(AppContext.BaseDirectory, "hitsounds.json");
 
     public GameWindow(string? mapPath)
     {

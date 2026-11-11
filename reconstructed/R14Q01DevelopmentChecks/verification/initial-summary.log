@@ -1,0 +1,34 @@
+2026-11-11T01:49:58.5652851Z     0 Warning(s)
+2026-11-11T01:49:58.5653260Z     0 Error(s)
+2026-11-11T01:50:01.2285003Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T01:50:03.8594307Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T01:50:08.6432347Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T01:50:10.8671462Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T01:50:13.1711647Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T01:50:15.3284095Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T01:50:17.6410123Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T01:50:20.0227063Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T01:50:22.4168910Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T01:50:24.5854164Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T01:50:26.8132272Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T01:50:29.1072274Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T01:50:31.7095538Z PASS G08 unsupported mixed/hold raw 3
+2026-11-11T01:50:31.7096126Z PASS G08 unsupported mixed/hold raw 9
+2026-11-11T01:50:31.7096722Z PASS G08 unsupported mixed/hold raw 128
+2026-11-11T01:50:31.7097311Z PASS G08 unsupported mixed/hold raw 0
+2026-11-11T01:50:31.8382421Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T01:50:34.3451324Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T01:50:39.1898453Z FAIL A05 application config placement malformed handling optional effects: System.Exception: config beside executable
+2026-11-11T01:50:39.3005509Z QA09 HITSOUND TESTS: 233 passed, 1 failed, 234 executed
+2026-11-11T01:50:42.3627611Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T01:50:46.1877454Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T01:50:49.2143803Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T01:50:51.6820950Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-11T01:50:55.0771493Z PASS G08 settings gain captured once across backend callback
+2026-11-11T01:50:56.0881650Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T01:50:59.9170815Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T01:51:03.2196353Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T01:51:05.2669071Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-11T01:51:09.5631844Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T01:51:11.8685297Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T01:51:14.6904273Z D:\a\ohno\ohno\reconstructed\R14Q01DevelopmentChecks\Program.cs(63,28): error CS0136: A local or parameter named 'before' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter [D:\a\ohno\ohno\reconstructed\R14Q01DevelopmentChecks\R14Q01DevelopmentChecks.csproj]

@@ -1039,3 +1039,11 @@ No local SDK/no local .NET run; exact Windows gate pending. Preserve all1630
 independent QA and every prior dev suite/G08/research/fixtures/failure evidence.
 No original binary/gameplay window/input/media opening/listening/capture/E020,
 R15/QA13/E042 or score discrepancy work. Verification details append after execution.
+
+R14-Q01 first gate42941701913/sourceab62bea33a08e0496d1c53c546698062d80971ef:
+WPF0 warnings/errors,1629/1630 independent pass, QA09 A05 literal configuration
+expression source audit fails after helper delegation. Restore existing explicit
+Program path expression; no oracle change. Prior development and QA12 pass.
+New harness CS0136 before-local shadowing means zero new assertions executed;
+rename nested local missingBefore. Preserve exact log095ae15e6e27999a00b77f215215dfcb03be71bfac51e038f15ddfe8d31d1d8e,
+both initial Program snapshots and summary/provenance. Final full gate pending.
