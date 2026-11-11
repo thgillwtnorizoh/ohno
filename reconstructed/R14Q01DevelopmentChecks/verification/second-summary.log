@@ -1,0 +1,39 @@
+2026-11-11T01:53:17.4820783Z     0 Warning(s)
+2026-11-11T01:53:17.4821253Z     0 Error(s)
+2026-11-11T01:53:19.8099612Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T01:53:22.2160175Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T01:53:26.9316089Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T01:53:29.2531348Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T01:53:31.4201475Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T01:53:33.5706836Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T01:53:35.5752938Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T01:53:37.7275247Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T01:53:39.8861469Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T01:53:41.9982841Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T01:53:43.9238468Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T01:53:45.8210561Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T01:53:47.6481812Z PASS G08 unsupported mixed/hold raw 3
+2026-11-11T01:53:47.6482257Z PASS G08 unsupported mixed/hold raw 9
+2026-11-11T01:53:47.6482657Z PASS G08 unsupported mixed/hold raw 128
+2026-11-11T01:53:47.6483057Z PASS G08 unsupported mixed/hold raw 0
+2026-11-11T01:53:47.7586939Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T01:53:49.8084109Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T01:53:54.2347148Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-11T01:53:57.1222383Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T01:54:00.6405699Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T01:54:03.7118521Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T01:54:06.1382587Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-11T01:54:09.5334348Z PASS G08 settings gain captured once across backend callback
+2026-11-11T01:54:10.4272630Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T01:54:14.1426708Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T01:54:17.1951346Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T01:54:19.1713975Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-11T01:54:23.3384199Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T01:54:25.5758640Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T01:54:28.4940972Z PASS R14-Q01 01 D01 executable-relative configuration path and absent-file defaults
+2026-11-11T01:54:28.5407136Z PASS R14-Q01 02 D02 explicit configured pack read from selected settings file
+2026-11-11T01:54:28.6234459Z PASS R14-Q01 03 D03 wrong directory remains missing, gameplay parser succeeds
+2026-11-11T01:54:28.6534150Z PASS R14-Q01 04 D04 valid circle pack does not imply either spinner resource
+2026-11-11T01:54:28.6729356Z PASS R14-Q01 05 D05 correct independent pack maps positive separate loop/bonus handles and provenance
+2026-11-11T01:54:28.7114367Z Unhandled exception. System.IO.InvalidDataException: Use an osu file format v5–v14 supported circle/Linear-slider map.
+2026-11-11T01:54:28.7115949Z    at Program.Main(String[] args) in D:\a\ohno\ohno\reconstructed\R14Q01DevelopmentChecks\Program.cs:line 51

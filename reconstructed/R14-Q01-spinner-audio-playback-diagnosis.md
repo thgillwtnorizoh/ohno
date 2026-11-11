@@ -74,8 +74,10 @@ independent QA campaign. Actual source/run/results will be recorded after execut
    `C:\MyIndependentPack`. The owner's actual JSON has not been supplied/read.
    Configured roots resolve to full local paths; invalid JSON/volumes/root admission
    leaves optional effects unavailable. A circle-only pack can play a completion
-   tap while both spinner keys are missing. Format15+ gameplay does not imply
-   spinner admission. The original UI's setup text still described12 circle files
+   tap while both spinner keys are missing. Inspection confirmed the current parser already
+   rejects non14 spinners (and all format15+ maps); the separate exact14 audio
+   predicate is defensive, not an explanation for silence after a normally parsed
+   spinner has loaded. The original UI's setup text still described12 circle files
    and its spinner status used positive handles alone; those diagnostic gaps are
    now corrected without asserting an audible-path bug.
 2. **Event mistaken for bonus:** independently plausible. The R07 fixture is
@@ -118,7 +120,11 @@ sidecar count/reference identity, no payload errors/base/addition outside0–3 o
 negative indexes, nonempty finite supported timing/set/index, supplied-order
 nondecreasing times, no touching/overlapping spinner producers, no registered custom
 stem spinnerspin/spinnerbonus and no standard/duplicate completion custom stem.
-The parser can reject other malformed/touching object states even earlier.
+The parser already rejects non14 spinners and can reject other malformed/touching
+object states even earlier. Older-format circle/linear-slider parsing is broader,
+not spinner parsing. D06 isolates the defensive audio gate with an explicitly
+artificial metadata variant and rebound internal freshness proof; it is not a
+claim that the parser accepts a format15 spinner.
 Map/session identity is additionally checked by reference at Windows Attach.
 No supported domain was broadened. Rejection preserves otherwise playable gameplay.
 
@@ -153,7 +159,16 @@ real WPF dispatcher pump without a Window. D16/17 use controlled artificial coun
 progression, not synthetic physical gameplay or a claimed owner performance.
 Missing-voice/injected-worker failure controls are not actual codec failures.
 
-Initial/authoritative run details and full historical count summary: PENDING.
+Second gate42942081383/job130266038300 at
+`29dcdeedb2118facf482a4646e5730baf6563599` passed WPF clean, all1630 independent
+checks and all prior development suites. New D01–D05 passed; D06 incorrectly tried
+to parse a v15 spinner before checking optional-audio admission. Parser correctly
+rejected it. Preserved exact log/source/provenance. Corrected the fixture to assert
+real v13/v15 parser rejection, then an explicitly artificial rebound-freshness
+metadata variant to isolate the unchanged exact14 audio guard. No parser or
+production admission change and no weakened exact14 assertion.
+
+Final authoritative run details and full historical count summary: PENDING.
 No test oracle is weakened and unchanged QA11 G08 remains mandatory.
 
 ## Owner-only Windows qualification procedure

@@ -48,9 +48,16 @@ internal static class Program
             Eq(full.Samples[full.SpinHandle].Loop,true); Eq(full.Samples[full.BonusHandle].Loop,false);
             Pass("D05 correct independent pack maps positive separate loop/bonus handles and provenance");
             string v15 = Path.Combine(temp,"v15.osu"); File.WriteAllText(v15,File.ReadAllText(mapPath).Replace("format v14","format v15"));
-            var unsupported=Beatmap.Load(v15); Yes(HitSoundLibrary.SpinnerAdmission(unsupported)!.Contains("format14"));
+            bool rejected=false;try { Beatmap.Load(v15); } catch(InvalidDataException) { rejected=true; } Yes(rejected);
+            string v13=Path.Combine(temp,"v13.osu");File.WriteAllText(v13,File.ReadAllText(mapPath).Replace("format v14","format v13"));
+            rejected=false;try { Beatmap.Load(v13); } catch(InvalidDataException) { rejected=true; } Yes(rejected);
+            // Artificial bounded metadata variant isolates the defensive audio gate.
+            // Normal parser never produces a non-v14 spinner. No playable-v15 claim.
+            var unsupported=map with { CircleSounds=map.CircleSounds! with { Format=15 }, HealthSource=map.HealthSource! with { } };
+            unsupported.HealthSource!.BindFreshOwner(unsupported);Yes(unsupported.HealthSource!.IsFreshFor(unsupported));
+            Yes(HitSoundLibrary.SpinnerAdmission(unsupported)!.Contains("format14"));
             using (var data = Prepare(fullLib,unsupported)) { Eq(data.Spinners.Count,0); Yes(Field(data.Diagnostics.Json(),"spinnerAdmission").Contains("format14")); }
-            Pass("D06 exact14 audio admission explicitly rejects playable15");
+            Pass("D06 non14 parser rejection and artificial defensive audio-format rejection");
             File.Copy(Path.Combine(pack,"spinnerspin.wav"),Path.Combine(temp,"spinnerspin.wav"));
             using (var data = Prepare(fullLib,map)) { Eq(data.Samples[data.SpinHandle].Origin,SampleOrigin.Map); Eq(data.Samples[data.SpinHandle].Name,"spinnerspin.wav"); }
             File.Delete(Path.Combine(temp,"spinnerspin.wav"));

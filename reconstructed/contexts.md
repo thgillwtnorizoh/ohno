@@ -1047,3 +1047,13 @@ Program path expression; no oracle change. Prior development and QA12 pass.
 New harness CS0136 before-local shadowing means zero new assertions executed;
 rename nested local missingBefore. Preserve exact log095ae15e6e27999a00b77f215215dfcb03be71bfac51e038f15ddfe8d31d1d8e,
 both initial Program snapshots and summary/provenance. Final full gate pending.
+
+R14-Q01 second gate42942081383/source29dcdeedb2118facf482a4646e5730baf6563599:
+WPF clean,1630/1630 independent and all prior dev pass. D01-D05 pass; D06 wrong
+fixture precondition: parser already rejects v15 and non14 spinners, so never
+reaches audio admission. Preserve second exact log/Program/provenance. Assert real
+parser rejection plus labelled artificial cloned metadata/rebound freshness to
+isolate defensive exact14 guard. No production/parser/QA assertion correction.
+Clarification of preceding Q01 entry: broader ordinary-map parsing is not broader
+spinner parsing; format alone cannot explain silence after normal spinner parsing.
+Final full gate pending. Owner root cause remains unknown.

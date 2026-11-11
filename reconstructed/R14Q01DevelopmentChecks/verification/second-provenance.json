@@ -1,0 +1,8 @@
+{
+  "source": "29dcdeedb2118facf482a4646e5730baf6563599",
+  "run": 42942081383,
+  "job": 130266038300,
+  "logBytes": 456082,
+  "logSha256": "6ff62d03bda9f3000b25eaab884a66563dcedf175b60199d69b94532aad64d2a",
+  "outcome": "WPF clean; all1630 independent checks and prior dev pass; new groups1-5 pass then group6 fixture fails parser v15 rejection, before spinner-admission check"
+}

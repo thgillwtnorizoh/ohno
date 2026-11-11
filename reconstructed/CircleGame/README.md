@@ -757,8 +757,8 @@ Start with `Spinner Practice` (format14, N15). Hold Z/X and rotate manually duri
 3–6 seconds: ongoing motion should request the spin loop. Progress16 can earn a300
 and its ordinary completion tap; first normal bonus is **C20**, then22,24… . An end
 tap alone does not prove a bonus was attempted. The footer separately shows spin
-and bonus logical handles and decoder readiness. Source format15+ can remain
-playable while spinner audio is explicitly unsupported; do not relabel the file
-as14. Windows frequency modulation remains unsupported even when loops play.
+and bonus logical handles and decoder readiness. The current parser already rejects non14 spinners (and format15+ maps);
+the separate audio admission is also exact14. Other optional-audio limitations
+can leave a valid14 chart playable. Do not relabel a file as14 to bypass admission. Windows frequency modulation remains unsupported even when loops play.
 See `../R14-Q01-spinner-audio-playback-diagnosis.md` for the reproducible procedure,
 JSON example, diagnostic interpretation and exact verification evidence.
