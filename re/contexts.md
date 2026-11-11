@@ -1315,3 +1315,122 @@ Tested source51c5d7262c0643213eae756165d9824eda35c831; run42867750770/job1300105
 QA12 headless274/274 =262 finite components,8 source inspections,4 independent asset controls; separate Windows12/12 =5 actual empty-resource controls,7 actual callback controls with injected independent recorder. Total286/286 new named checks.66 coverage rows/asset files/repetitions are not extra cases. Raw headless payload4422522bytes SHA25678d67f9083c57f83b5f3f92c447c5216926a2cfd560d65585ea85c4c488fe301; raw Windows6092bytes SHA2562005ace9d816422af85d395fc64104905a2b197cf9c3bed0aa2b4614cb1a0d43. Both recovered payloads match emitted hashes. All21 source hashes independently explained by exact canonical LF→CRLF checkout bytes. Full log/provenance/structured results preserved. All19 ledger events in each matched finite mode recovered because every action's EventCount delta is0/1; no arbitrary hidden multi-event stream claimed.
 
 Final local270/270 pass after retained sentinel-oracle correction; local Windows cross-build0 warnings/errors. Evidence checker confirms preserved initial267(260/7) and270(268/2) failures, exact initial snapshot hashes, canonical source scope and journal prefix,66 coverage entries and final274+12 outcomes. No production defect confirmed; supported finite mechanisms VERIFIED COMPONENT only. Windows audible frequency modulation unsupported, nonempty decoding/native scheduling/device/acoustic behavior and owner-only audible qualification remain UNVERIFIED. Final report/evidence-only publication preserves tested executable sources/workflow/fixtures/generators. No production/research/history/QA01–QA11/R14 development change, original runtime/media/window/input/listening or deferred work. Stop after QA12.
+
+
+## Expedition 042 — Original Rank results, final grade and record provenance (2026-11-11)
+
+Work 1 authorized original-static research only. Verified canonical starting main
+47277a8da8603af93b0c515f86aac2a1463ef51c, R14-Q01/accepted QA12 baseline. Read
+the actual AGENTS/standing contract and directed RTK, project journals,
+E002/E003/E019/E023/E027/E033/E034 and relevant spinner/health/NewCombo evidence,
+R08/C02/R09/C01/R10/R14/Q01, QA06-QA08/QA12 and current ledger/session/host/overlay.
+No authorized exception. E005 ordinary osu!standard/Taiko correction preserved.
+
+Actual pinned inputs verified before original instruction decoding. Archive
+78546961 bytes SHA256 7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738.
+ZIP osu!.exe 4541728 bytes SHA256
+6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d.
+Self-declared Stable40/file1.3.3.8 official dated authenticity/modification status
+remains unresolved. Windows/Python3.12 with existing dnfile0.18.0/dncil1.0.2/
+pefile2024.8.26, data inspection only. No original executable/CLR/native/game,
+reconstruction game/window, physical input, debugger, OBS/listening/capture or
+proprietary image/audio export. Bitmap entries were not deserialized. E02017
+original-runtime cases remain NOT RUN. Historical1630 reconstruction QA checks
+were not rerun and are not represented by static checker passes.
+
+CONFIRMED STATIC T06a8 Rank inherits T05b4/T08fb/T0397. M32d0 initializes lists/
+array/base host before later M32db virtual activation. E003 accepted pendingRank,
+M46b0 current commit, immediate or queued old-mode disposal, constructor,
+registration, initialization and eventual draw remain distinct. Pending/current
+comparison preserves reentrant requests. M32dd/M32de ordinary arm retains fresh
+global F13c3 by reference in F1da9. Handler F05f3 alias/reset and finalization
+remain separate reads/writes. There is no new immutable completed snapshot.
+
+M2b47 first computes Single n300/virtualTotal and n50/anotherTotal, then false
+F1978 returns F8. Enum XH0/SH1/X2/S3/A4/B5/C6/D7/F8/N9 is metadata. Base grade
+uses p300 equality1, strict Double thresholds .9/.8/.7/.6, p50<=.01 and fresh MISS
+tests. Hidden8/Flashlight1024 select silver XH/SH. Score, accuracy getter,
+combo, F197c and F1990 do not enter this body. No cache store. Binary32 finite
+controls distinguish 80/20->A,70/30->C,60/40->C and empty total success->D while
+accuracy getter returns1f. Original x86 precision at marginal boundaries remains
+unmeasured. These are reconstructed static projections, not observed original grades.
+
+Old Play M2266/M2267 executes between exit-selector grade and ordinary Rank record
+access when cleanup is synchronous. It can update record UTC date and flags.
+The reached F136b>0 suffix clears F1978 at02fb under its original eligibility
+gates, permitting a conditional later grade change. Count mismatch invalidates
+F1990 but still calls finalization. Failed outer Play update can bypass automatic
+Rank altogether. E035 M1150's watched F05fd reset/increments supply the prepared
+combo scalar compared by M0acd's F197c write. No HP/scoring arithmetic reopened.
+
+M32d7 reads score through M2b4b unless nullable override supplied, captures width8
+ordinary score text, six original hit-count fields, F1975 maximum combo and
+M2b42*100f formatted to two decimals. M32da makes up to three fresh grade reads
+for ranking-EnumName keys/extra sprite eligibility. Record validity is separate
+from grade/display. Map hash resolution/current metadata, retained player/date,
+FontScore/FontScoreOverlap, eager widgets/digit preload and later dirty glyph
+rebuilding are established. Containers reach sprite/digit draw slots and the
+abstract texture-renderer boundary, without a visible-pixel claim. Resources,
+culture, native rendering and external child/persistence branches remain bounded.
+
+Back requests SelectPlay5 and retry requests Play2 through E003 guards. Reveal
+skip and retry/replay callers use the reveal Boolean differently. Update reveals
+captured score characters without score mutation. Applause depends on Boolean
+history majority. Disposal cleans optional audio/viewport/input/child/record
+auxiliaries, conditionally clears global by pending mode7/14/17/18 and disposes
+containers. Record aliases and arbitrary reentrant lifetimes remain explicit.
+
+Added only re/42-original-rank-results-grade-and-record-provenance.md,
+re/evidence/42/rank-results.json, re/tools/rank_results_evidence.py,
+re/tools/check_rank_results.py and this append. Evidence1220453 bytes SHA256
+484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911.
+Collector SHA256 6fefa97be85ec05b215d72ec49f632b2894b30f55b8abc4863cc9fd77157af90.
+Checker SHA256 d2c97787c0f30cf6cbc0e5a1257312ddedcbe62132015853bb1a99bece16ec2f.
+Two fresh final extraction processes/public-byte comparison PASS. Selected112
+MethodDefs/110 managed bodies,430 field declarations,69 watched fields with3064
+direct sites,126 selected direct references,19659 decoded/1739zero-RVA/0errors.
+Seventy-eight R01-R78 conditional predictions record operands/sites/exceptions/
+uncertainty. All are RECONSTRUCTED STATIC PREDICTION. Twenty-six finite grade
+controls are checked with an independent Python instruction walk under the
+declared binary32/stable-wrapper profile, without invoking original CLR methods.
+
+Independent archive audit PASS112 method identities/110 body hashes and exact
+token/constant/branch inventories, fields/slots/ancestry/enum relationships,
+58 independently decoded strings,116 overlapping historical body hashes and
+resource metadata spans. Two embedded stores report727 UI/456 gameplay entries.
+Seventeen of21 requested keys are present in UI, none in gameplay. ranking-F/N
+and ranking-retry/replay are absent from those exact stores, with external skin
+resolution still conditional. Only opaque serialized-span hashes/metadata published.
+
+All12 unchanged historical checkers PASS on retained evidence for E002/E003/
+E019/E023/E025/E026/E027/E033/E034/E035/E036/E038. E038 archive-backed decoding
+additionally PASS56 strings/12 historical embedded keys. New tools syntax/compile
+in memory, exact three report headings, diff/scope and old journal prefix checks
+PASS. Complete prior438445-byte journal prefix SHA256
+492aa2687aaed794837a81a6890bf07e3acb71b0154e1527fd9a972a27c2aa18 preserved.
+
+New-checker development failure retained in JSON: initial checker SHA256
+062a10d46fa60127cd9428d39fb48131b62836b2c1f365f57cbcb458afdc5cf9 assumed every
+selected string had byte flag0x40000000. Actual identifier2064569235/offset123961
+has encoded size36 and UTF16LE flag0. Independently follow unchanged E038's
+Unicode branch, assert that control explicitly, then final audit passes. No
+historical checker/original finding changed. A runpy path probe failed before
+decoding, and an early relationship probe read the prior74-case file while its
+replacement extraction was pending. Final checks use completed identical78-case
+outputs. No original-runtime or reconstruction defect is claimed from these probes.
+
+RECONSTRUCTED readiness supports a narrow fresh no-mod/base-legacy R15 results
+state, grade getter and record-bound score/accuracy/count/max-combo presentation
+using existing calculations. Success/validity/perfect and policy provenance must
+be explicit. A WPF layout, immutable DTO capture point or absent selection-menu
+destination would be ENGINEERING decisions. Preserve mutable original reference
+and getter boundaries in claimed behavior. Full skin/frontend/graph/replay/
+online/native rendering and marginal target-JIT behavior remain unsupported or
+UNVERIFIED ORIGINAL-RUNTIME. Original-derived input model does not prove pixels.
+The deferred Joined Bezier numerical mismatch stays open pending actual chart/
+settings/event provenance. No multiplier change or inferred score event.
+
+Verified latest origin/main before safe non-force publication. Exact publication
+SHA and remote verification are supplied in the final handoff. Historical research,
+QA01-QA12 including failed runs/corrections, production/development checks,
+fixtures and journals preserved. Stop E042. No R15, E043, QA13 or migration begun.
