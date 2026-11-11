@@ -1,0 +1,15 @@
+{
+  "baseline": "74c47dd452befb741d659e71b2f5267ceb7171a2",
+  "protectedPriorFiles": 632,
+  "allowedExistingChanges": [
+    ".github/workflows/r04-build.yml",
+    "re/contexts.md append only"
+  ],
+  "researchJournalPrefixBytes": 446603,
+  "researchJournalPrefixSHA256": "c028aee7a905cd408fd09a685cd5619b4ac6d5052f6f64dfabd01a398a06578f",
+  "production": "UNCHANGED from 3f9a8f58d29480729d1d305f075791769163f46d",
+  "testedHarness": "34cdf83fb9fe5acf4bf0bf802bf553b98b519149",
+  "scope": "New re/qa/qa13 files only plus listed workflow/journal",
+  "productionAndHistoricalPreservation": "PASS",
+  "historyRewrite": "NONE"
+}

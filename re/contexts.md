@@ -1434,3 +1434,104 @@ Verified latest origin/main before safe non-force publication. Exact publication
 SHA and remote verification are supplied in the final handoff. Historical research,
 QA01-QA12 including failed runs/corrections, production/development checks,
 fixtures and journals preserved. Stop E042. No R15, E043, QA13 or migration begun.
+
+## QA13 — Independent Rank results, final grade and lifecycle verification (2026-11-11)
+
+Work1 authorized independent verification only. Canonical baseline
+74c47dd452befb741d659e71b2f5267ceb7171a2; R15 production
+3f9a8f58d29480729d1d305f075791769163f46d. Consulted actual AGENTS/directed RTK,
+standing research instructions, both journals, E002/E003/E023/E027/E033-E036,
+complete retained E042 report/evidence, R08/C02/R09/R10/R14/R15, QA06-QA12 and
+actual grade/record/parser/ledger/session/host/view/CI interfaces. Original-static
+expectations independently derived; development outputs used only for interface
+and history discovery. No authorized exception. Production/development code,
+earlier QA/research/fixtures and historical journal prefixes unchanged.
+
+Added re/qa/qa13 independent net8 headless/Windows harnesses,91 rational binary32
+grade vectors, deterministic finite osu inputs, record/flags/policy/completion/
+transition/presentation/reveal controls, matched gameplay/audio/health traces,
+unshown WPF/empty-effects controls, source audits, original E04278-row independent
+coverage, R30 analysis, exact structured output/log/source provenance and report.
+Existing Windows workflow gains only QA13 path filters and one retained-gate step.
+No original binary/archive excavation, original CLR/native methods, gameplay
+Window, OS input, media Open/playback, listening, screenshot/audio capture, OBS,
+debugger or E020 experiment. All17 original-runtime cases remain NOT RUN.
+
+Independent R30 result: original M2b47 body SHA256
+612f291e51c2668a73fbc0a9425e28f9b00d2bc4475322c25bd18ec2f103b267 and published
+branch sites00c7/00cf/00dc/0100 select B5 for9x300+MISS1 under stored binary32.
+Exact rational rounding gives0x3f666666=.8999999761581421. MISS0 arm false,
+strict Double>.9 false, >.8 true. Production firstX thenmutatedB agrees.
+E042 R30's descriptive A is a research-description error under its declared
+profile; original E042 report/JSON/checker and R15 initial/corrected assertion
+remain untouched. Original x86 precision is not runtime measured. Retain R15
+initial27c89de/run43001655771 group31 oracle failure and corrected3f9a8f5/
+run43002288864, with no production difference between those sources.
+
+Initial local229 headless:228pass/1 invalid overlapping-spinner fixture rejected
+by existing R07 parser. Retained exact145581092-byte JSON as reversible gzip/
+base64 with source snapshots/hash. Final retains that rejection plus labelled
+artificial maximum-end control; no supported overlap invented. Initial unshown
+Windows24:18pass/6 failures because harness traversed unmaterialized visual tree.
+Retain exact Program/result/UTF16LE log; logical-tree walker proves constructed
+widgets and component callbacks without showing/drawing. Production unchanged.
+Local final257headless/24Windows PASS on installed SDK10 targetingnet8 and actual
+runtime8.0.17; authoritative Windows8 gate below. Local restore NU1900 advisory
+preserved separately from clean CI compiler result.
+
+First exact-source gate d4c9f9fdb06467f90dc6f90e391d6bd226d5efeb /
+run43038358344 PASS281new/historical1630/all development/build. Preserved full
+first successful evidence. Review strengthened W19 to a distinct parsed map,
+W15/W18 to explicit held-input history, W22 to pending slider and spinner starts.
+Same named cases, no count inflation; second full gate justified by new assertions.
+
+Final tested source34cdf83fb9fe5acf4bf0bf802bf553b98b519149;
+Windows run43039778568/job130588158268 SUCCESS,
+https://github.com/thgillwtnorizoh/ohno/actions/runs/43039778568 . Windows2022,
+installed SDK8.0.427/runtime8.0.33,2026-11-11 14:34-14:36UTC/21:34-21:36Asia/Bangkok.
+WPF Release win-x64 zero warnings/errors. Historical QA01/03/04/05/06/07/08/09/
+10/11/12:90/56/43/66/99/159/115/234/229/253/286=1630/1630, unchanged G08.
+All development gates pass: R06targets4/fixtures4,R07 8,R08 13,C01 4,C02 14,
+R09 15,R10 23,R11 32,R12 40,R13 54+Windows1,R13-C01 6,R14 58+Windows1,
+R14-Q01 23,R15 79+Windows8. QA13 new281/281=249 headless executed components,
+8 source audits,24 actual unshown Windows host/widget/empty-effects controls.
+Total1911 named independent checkpoint; audits/assets retain separate meaning.
+
+Exact final headless payload2890709bytes SHA256
+c0a7b7fd2a26fe6f29e1cce1c8405e746d5a524e31eef14455a939df50e89687;
+Windows11655bytes SHA256
+3b52836e5cd1a11cc53b7f0f1c1ca2231cdd2ab13bb3adc4c294cad27e45c810.
+Returned UTF8 BOM/CRLF log851556bytes SHA256
+af1ffb069481411ca62751996b46a12efc1b34bf3f8df29e5909349f1b73b00c;
+LF-readable copy retained separately. Twenty-one runner source fingerprints
+match exact canonical source with only LF/CRLF checkout conversion. Results
+carry expected/actual, fresh identities, finite operands and exceptional states.
+
+Covered finite R15 behavior independently VERIFIED COMPONENT: uncached ordered
+grade/precision, live ledger/record versus captured text, independent success/
+validity/perfect, E035 prepared combo scalar,6999/7000/7001 policy admission,
+strict finalization and separate Rank stages, repeated grade keys, width8/Single
+accuracy/invariant formatting, reveal/skip, guarded Back/Retry, cleanup and fresh
+input/session/map identity. Ten matched finite variants compare3953 action
+boundaries including score/K/counters/combo/HP/NewCombo, slider/spinner state and
+ordered discrete/continuing audio callbacks. Completed presentation operations
+do not mutate ledger/HP. LastEvent/EventCount visibility is not an arbitrary
+full internal multi-event subscription. Keyboard wiring source-only; unshown
+logical components are not visible original gameplay or physical interaction.
+
+Independent E042 matrix42finite/23partial/1source/11unsupported/1description
+conflict, all78 original prerequisites/predictions retained. No matrix row adds
+a QA case. Unsupported original textures/GPU/native fade/scheduler, graph/replay/
+restore/player/date/decorated counters/applause, arbitrary modes/disposal and
+original x86 precision remain explicit. WPF typography/capture/invariant culture,
+empty event horizon, fresh retry, silent results and generation cancellation are
+ENGINEERING. No production discrepancy confirmed; no corrective implementation
+requested. Owner-only audiovisual/physical qualification remains unverified.
+
+Packet checker verifies retained original relationships, independent arithmetic,
+all632 protected prior files, journal prefix, failures, matrix and exact Windows
+outcomes. Final report/evidence-only child preserves tested executable harness,
+workflow and production. Latest canonical main verified before safe non-force
+publication; exact final publication SHA supplied in verified handoff. No history
+rewrite or unrelated change. Deferred Joined Bezier mismatch untouched. Stop
+after QA13; no R16,E043,QA14,framework migration or owner-only runtime campaign.

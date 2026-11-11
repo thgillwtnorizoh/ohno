@@ -1,0 +1,46 @@
+{
+  "0e573fbcb1c33bf93ee9558157abd536f226e7f10542105fa0b2e7196fb7bba0.osu": {
+    "canonicalLFsha256": "0e573fbcb1c33bf93ee9558157abd536f226e7f10542105fa0b2e7196fb7bba0",
+    "canonicalLFbytes": 188438
+  },
+  "219e5e6a65a182393fbf63811ed96cf06072a660f573296d1a2133ed3b1c061a.osu": {
+    "canonicalLFsha256": "219e5e6a65a182393fbf63811ed96cf06072a660f573296d1a2133ed3b1c061a",
+    "canonicalLFbytes": 345
+  },
+  "3200f569b7422eadd35467e2349985ce5ac0860f1db2422c7a00158d15b240c6.osu": {
+    "canonicalLFsha256": "3200f569b7422eadd35467e2349985ce5ac0860f1db2422c7a00158d15b240c6",
+    "canonicalLFbytes": 322
+  },
+  "688035f1d3e28973d78bee8b83c7c1d15190bdb51872ec4814af65977a63edef.osu": {
+    "canonicalLFsha256": "688035f1d3e28973d78bee8b83c7c1d15190bdb51872ec4814af65977a63edef",
+    "canonicalLFbytes": 351
+  },
+  "8070af2dad2399208f9084107667858d420684da35f377b8c0138469b54036a1.osu": {
+    "canonicalLFsha256": "8070af2dad2399208f9084107667858d420684da35f377b8c0138469b54036a1",
+    "canonicalLFbytes": 316
+  },
+  "9f1a5a64b81bbd584845265c5d1263818354a7e4695bd1d6b963d7c6a5d5df17.osu": {
+    "canonicalLFsha256": "9f1a5a64b81bbd584845265c5d1263818354a7e4695bd1d6b963d7c6a5d5df17",
+    "canonicalLFbytes": 249
+  },
+  "a7aa7908faaa849143b7a9d52ce409185880112b3438b9946625f8fccbf87c27.osu": {
+    "canonicalLFsha256": "a7aa7908faaa849143b7a9d52ce409185880112b3438b9946625f8fccbf87c27",
+    "canonicalLFbytes": 341
+  },
+  "aa9c80defb7add5e5911ce8fad62a61714053ed9fb169d35a1259e85bc3e0b80.osu": {
+    "canonicalLFsha256": "aa9c80defb7add5e5911ce8fad62a61714053ed9fb169d35a1259e85bc3e0b80",
+    "canonicalLFbytes": 291
+  },
+  "cd7856432f7b3756911c5eb655cd370b35da667a41ef9de4e0e323b00ac8ec6d.osu": {
+    "canonicalLFsha256": "cd7856432f7b3756911c5eb655cd370b35da667a41ef9de4e0e323b00ac8ec6d",
+    "canonicalLFbytes": 322
+  },
+  "cfd646c79445769bc343676ba322f0fa3ef5b57910aac2e7496b9771493f9bbd.osu": {
+    "canonicalLFsha256": "cfd646c79445769bc343676ba322f0fa3ef5b57910aac2e7496b9771493f9bbd",
+    "canonicalLFbytes": 188492
+  },
+  "dec84959e48d116917e329c757fba0d0339c66616a34a64ed0c9f39acd573bcb.osu": {
+    "canonicalLFsha256": "dec84959e48d116917e329c757fba0d0339c66616a34a64ed0c9f39acd573bcb",
+    "canonicalLFbytes": 188465
+  }
+}

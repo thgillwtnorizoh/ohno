@@ -1,0 +1,20 @@
+{
+  "initial": {
+    "source": "27c89de3d4e74af2a474e7a8edff8adef7741e64",
+    "run": 43001655771,
+    "result": "R15 group31 expected A, actual B; historical1630 and Windows8 passed"
+  },
+  "corrected": {
+    "source": "3f9a8f58d29480729d1d305f075791769163f46d",
+    "run": 43002288864,
+    "result": "79 R15 groups, Windows8, historical1630 all passed"
+  },
+  "classification": "Retained development-oracle/research-description conflict; no production change between initial and corrected source",
+  "artifacts": {
+    "reconstructed/R15DevelopmentChecks/verification/initial-Program.cs.txt": "99fbebf6fece0d8e268387f72f09f172bacf265cbac7c33b2ec898f41a931ad5",
+    "reconstructed/R15DevelopmentChecks/verification/initial-provenance.json": "efb242a652b1771563fdc43f80df7b767a03a7bcb04822d62e14fd4706d28d1e",
+    "reconstructed/R15DevelopmentChecks/verification/initial-windows-job.log.gz.b64": "de9439656eb6f91c78eee2f6efb77186bd1e67bf0b2616ab9791987fd4a2140c",
+    "reconstructed/R15DevelopmentChecks/verification/windows-provenance.json": "97962a35f44f5fa44d00cf87479962d48a7a6c98a6eba6a45806663a68ba9cf7",
+    "re/evidence/42/rank-results.json": "484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911"
+  }
+}

@@ -1,0 +1,7 @@
+QA13 published original relationships and 91 independent rational vectors PASS
+QA13 protected historical files PASS 632
+QA13 exact result packet PASS windows-results.json.gz.b64 257 c0a7b7fd2a26fe6f29e1cce1c8405e746d5a524e31eef14455a939df50e89687
+QA13 exact result packet PASS windows-widget-results.json.gz.b64 24 3b52836e5cd1a11cc53b7f0f1c1ca2231cdd2ab13bb3adc4c294cad27e45c810
+QA13 independent E042 matrix PASS {'DESCRIPTION CONFLICT': 1, 'FINITE': 42, 'PARTIAL': 23, 'SOURCE INSPECTION': 1, 'UNSUPPORTED': 11}
+QA13 preserved fixture and unshown-tree failures PASS
+QA13 exact-source Windows build/historical1630/development gates PASS 34cdf83fb9fe5acf4bf0bf802bf553b98b519149

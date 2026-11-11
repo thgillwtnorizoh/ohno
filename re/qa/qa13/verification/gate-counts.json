@@ -1,0 +1,51 @@
+{
+  "historical": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "QA12": 286
+  },
+  "historicalTotal": 1630,
+  "QA13": {
+    "executedHeadless": 249,
+    "sourceInspections": 8,
+    "executedWindows": 24,
+    "total": 281
+  },
+  "newCheckpoint": 1911,
+  "build": {
+    "configuration": "Release win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "development": {
+    "R06Targets": 4,
+    "R06Fixtures": 4,
+    "R07": 8,
+    "R08": 13,
+    "R08C01": 4,
+    "R08C02": 14,
+    "R09": 15,
+    "R10": 23,
+    "R11": 32,
+    "R12": 40,
+    "R13": 54,
+    "R13Windows": 1,
+    "R13C01": 6,
+    "R14": 58,
+    "R14Windows": 1,
+    "R14Q01": 23,
+    "R15": 79,
+    "R15Windows": 8
+  },
+  "source": "34cdf83fb9fe5acf4bf0bf802bf553b98b519149",
+  "run": 43039778568,
+  "authority": "Returned Windows log and per-step success; counts not original-runtime claims"
+}
