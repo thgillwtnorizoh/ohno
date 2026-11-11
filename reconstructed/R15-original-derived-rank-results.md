@@ -33,12 +33,39 @@ discrepancy, not a production repair. Original E042 report/JSON and historical Q
 remain unchanged. Corrected only that new assertion to B; coverage R30 marked
 partial with the conflict. Initial source snapshot/exact log/provenance retained.
 
-**Final exact-source Windows verification: PENDING.** No local .NET SDK/run is claimed.
-Required full1630 independent checks, all retained development suites, planned
-R15 79 groups (77 executed finite component groups,2 source inspections) and
-separate Windows8 host/widget groups. Actual tested SHA, CI, results and publication
-will be recorded after execution. No static prediction or generated asset is an
-additional executed independent case. Initial failures, if any, remain preserved.
+**Final exact-source Windows verification: PASS.** Tested source
+`3f9a8f58d29480729d1d305f075791769163f46d`.
+[Windows CI43002288864/job130461106249](https://github.com/thgillwtnorizoh/ohno/actions/runs/43002288864),
+2026-11-11 10:16–10:18 UTC /17:16–17:18 Asia/Bangkok, Windows2022/installed SDK8.0.427.
+Verified on reusable ci/verification before canonical main publication. Final
+report/evidence/coverage-only child retains tested production/harness/workflow;
+publication SHA is supplied in the final handoff and canonical commit metadata.
+No force update, history deletion or historical assertion change.
+
+| Gate | Actual result |
+|---|---:|
+|WPF Release win-x64|0 warnings /0 errors|
+|QA01/03/04/05/06|90/56/43/66/99 passed|
+|QA07/08/09/10|159/115/234/229 passed|
+|QA11 including unchanged G08|253/253|
+|QA12 unchanged|286/286|
+|Historical named independent total|1630/1630|
+|R15 development|79/79 (77 executed component,2 source inspections)|
+|Separate R15 Windows host/widgets|8/8 (no Window/show/draw/media)|
+
+All retained development suites passed: R06 targets4/fixtures4, R07 8, R08 13,
+C01 4, C02 14, R09 15, R10 23, R11 32, R12 40, R13 54 plus Windows1,
+R13-C01 6, R14 58 plus Windows1 and R14-Q01 23. Independent totals preserve their
+historical component/source/asset/empty-backend classification, not1630 native
+runtime tests. All original fixtures/generators and source research/QA01–QA12 bytes
+are preserved. No local SDK/install/.NET run claim.
+
+Full exact returned UTF-8/CRLF job logs are retained using reversible gzip/base64,
+with SHA256/byte provenance, readable summaries, first-run Program snapshot and
+final79-group structured results under R15DevelopmentChecks/verification. The first
+failed gate is preserved; production was unchanged between first/final runs.
+Original R30 descriptive expectation A remains in research; the new development
+assertion uses original-getter binary32 result B and documents the conflict.
 
 # 2. What they found
 
@@ -205,7 +232,13 @@ The78-row `R15DevelopmentChecks/e042-coverage.json` retains every original ID,
 original sites, finite/partial/source/unsupported classification and UNVERIFIED
 ORIGINAL-RUNTIME boundary. Static rows are not counted as executed groups.
 
-**VERIFIED COMPONENT:** pending exact-source Windows gate. **UNVERIFIED ORIGINAL-
+**VERIFIED COMPONENT:**79 production development groups plus8 actual Windows
+host/widget groups passed on the exact source above. Final conservative matrix
+assessment:45 executed finite variants,21 partial,1 source inspection,11 unsupported;
+all78 retain UNVERIFIED ORIGINAL-RUNTIME. R30 is partial because of the retained
+prediction-text discrepancy. R42 is conservatively partial (grade/validity
+independence executed, WPF validity display source/constructed). This final
+coverage-metadata assessment changes no executable tests or original expectations. **UNVERIFIED ORIGINAL-
 RUNTIME:** original-x86 precision, GPU/pixels, skin fallback, worker/child/cleanup
 interleavings, physical usability and audiovisual fidelity. WPF Release build and
 wired manual-playable path do not claim owner-observed results interaction.

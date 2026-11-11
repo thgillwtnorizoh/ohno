@@ -1,0 +1,123 @@
+2026-11-11T10:17:32.0052308Z     0 Warning(s)
+2026-11-11T10:17:32.0055387Z     0 Error(s)
+2026-11-11T10:17:33.9769451Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T10:17:35.8679611Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T10:17:37.5640631Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-11T10:17:37.6090080Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-11T10:17:39.5647048Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T10:17:41.3166076Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T10:17:43.0866496Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T10:17:44.8996702Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T10:17:46.6864131Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T10:17:48.3963790Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T10:17:50.2093507Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T10:17:51.8160843Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T10:17:53.4119614Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T10:17:54.9960890Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T10:17:56.6410305Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T10:17:58.4770488Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T10:18:01.4810495Z PASS R15 null permitted skin is explicit unsupported receiver
+2026-11-11T10:18:02.5777017Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-11T10:18:05.1199369Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T10:18:07.7273553Z PASS R15 entirely unavailable tick missing
+2026-11-11T10:18:08.1978069Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T10:18:10.6818390Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T10:18:12.8953068Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-11T10:18:15.5325708Z PASS G08 settings gain captured once across backend callback
+2026-11-11T10:18:15.5591921Z PASS R15 embedded0 normalization versus map0
+2026-11-11T10:18:16.2131017Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T10:18:19.1629859Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T10:18:21.7444385Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T10:18:23.3171889Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-11T10:18:26.7072092Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T10:18:28.5346785Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T10:18:31.1720696Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-11T10:18:32.9306496Z PASS R15 01 R01 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9307172Z PASS R15 02 R02 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9307795Z PASS R15 03 R03 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9308405Z PASS R15 04 R04 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9309056Z PASS R15 05 R05 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9309615Z PASS R15 06 R06 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9310155Z PASS R15 07 R07 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9310678Z PASS R15 08 R08 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9311212Z PASS R15 09 R09 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9311760Z PASS R15 10 R10 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9312309Z PASS R15 11 R11 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9312873Z PASS R15 12 R12 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9313427Z PASS R15 13 R13 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9313942Z PASS R15 14 R14 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9314473Z PASS R15 15 R15 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9314994Z PASS R15 16 R16 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9315507Z PASS R15 17 R17 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9316023Z PASS R15 18 R18 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9316539Z PASS R15 19 R19 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9317052Z PASS R15 20 R20 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9317597Z PASS R15 21 R21 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9318150Z PASS R15 22 R22 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9318697Z PASS R15 23 R23 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9319237Z PASS R15 24 R24 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9319767Z PASS R15 25 R25 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9320567Z PASS R15 26 R26 E042 literal grade vector through actual production getter
+2026-11-11T10:18:32.9330784Z PASS R15 27 enum identities and sentinel
+2026-11-11T10:18:32.9334123Z PASS R15 28 UInt16 fresh fields sum in Int32 without decorated counts
+2026-11-11T10:18:32.9334678Z PASS R15 29 separate virtual total reads for p300 and p50
+2026-11-11T10:18:32.9335182Z PASS R15 30 failed success flag read after both proportion operations
+2026-11-11T10:18:32.9335723Z PASS R15 31 R29/R30 repeated getters after success/count mutation
+2026-11-11T10:18:32.9336229Z PASS R15 32 R27/R28 validity/score/perfect independent of grade
+2026-11-11T10:18:32.9348977Z PASS R15 33 R55 artificial successful empty accuracy100 and gradeD
+2026-11-11T10:18:32.9351637Z PASS R15 34 R57-R59 independent first/eligibility grade reads and keys
+2026-11-11T10:18:32.9352165Z PASS R15 35 third grade read for optional secondary key
+2026-11-11T10:18:32.9362442Z PASS R15 36 R49/R50 eight-digit minimum, large score not truncated
+2026-11-11T10:18:32.9363108Z PASS R15 37 R51 optional presentation score leaves record unchanged
+2026-11-11T10:18:32.9363688Z PASS R15 38 R53/R54 Single accuracy percent with explicit invariant culture
+2026-11-11T10:18:32.9365090Z PASS R15 39 R56 four ordinary whole counters and maximum combo only
+2026-11-11T10:18:32.9365705Z PASS R15 40 captured presentation remains distinct from later live record getters
+2026-11-11T10:18:32.9369241Z PASS R15 41 prepared perfect scalar rather than100 percent/no misses
+2026-11-11T10:18:32.9370051Z PASS R15 42 unavailable perfect provenance and artificial unchecked subtraction
+2026-11-11T10:18:32.9377610Z PASS R15 43 strict B+200, separate finalization latch and completed record
+2026-11-11T10:18:32.9378235Z PASS R15 44 conditional q0 shortcut, suspension and continuation gates
+2026-11-11T10:18:32.9390829Z PASS R15 45 B+3000 equality and separate event-horizon equality
+2026-11-11T10:18:32.9391448Z PASS R15 46 ENGINEERING defer pending accounting without fabricating results
+2026-11-11T10:18:32.9392689Z PASS R15 47 R76 count mismatch invalidates but still finalizes and grades
+2026-11-11T10:18:32.9394036Z PASS R15 48 R77 failed caller bypass and unavailable success provenance; no fabricated Rank
+2026-11-11T10:18:32.9399568Z PASS R15 49 R33-R35 deferred guarded resubmission, accepted pending not committed
+2026-11-11T10:18:32.9400746Z PASS R15 50 guard rejection, commitment and initialization are separate, repeated commit suppressed
+2026-11-11T10:18:32.9401451Z PASS R15 51 R39 new pending request survives initialization mismatch
+2026-11-11T10:18:32.9404652Z PASS R15 52 R37/R41 commit, cleanup, selection, initialization, presentation boundaries
+2026-11-11T10:18:32.9405307Z PASS R15 53 R40 delayed Rank binding observes replacement global reference
+2026-11-11T10:18:32.9408205Z PASS R15 54 R69 selector grade can differ from Rank after synchronous cleanup mutation
+2026-11-11T10:18:32.9408990Z PASS R15 55 R38 partial: deferred cleanup after initialization changes live record, not captured text
+2026-11-11T10:18:32.9409751Z PASS R15 56 R31/R32 handler alias distinct from replaced global selector record
+2026-11-11T10:18:32.9410403Z PASS R15 57 R43/R45 bounded missing/mismatched record-map rejection, no restoration claim
+2026-11-11T10:18:32.9411116Z PASS R15 58 cleanup exception retains prior commitment; no fabricated transactional rollback
+2026-11-11T10:18:32.9418566Z PASS R15 59 R62 elapsed/500 reveal uses separate captured text and +300 host start
+2026-11-11T10:18:32.9419236Z PASS R15 60 R63/R64 first skip retimes by7000, repeated and5000 boundary behavior
+2026-11-11T10:18:32.9421098Z PASS R15 61 Space/Enter reveal skip does not retry or prepare record again
+2026-11-11T10:18:32.9421808Z PASS R15 62 R65 Back requests5 then commits to ENGINEERING chart selection
+2026-11-11T10:18:32.9423095Z PASS R15 63 R66 retry independent of reveal Boolean; conditional E00310000 guard/equality
+2026-11-11T10:18:32.9423788Z PASS R15 64 E003 conditional unordered retry operand is not ordered-less10000
+2026-11-11T10:18:32.9424674Z PASS R15 65 deterministic disposal rejects later operations, retained aliases stay distinct
+2026-11-11T10:18:32.9840710Z PASS R15 66 fresh policy, live ledger adapter, identity, prepared metadata and E035 perfect scalar
+2026-11-11T10:18:32.9841266Z PASS R15 67 explicit unsupported modifiers/rulesets/source/replay/restored/alternate/accumulator guards
+2026-11-11T10:18:33.0278629Z PASS R15 68 E023 automatic ScoreV2 source-row boundary6999/7000 independent of no-mod label
+2026-11-11T10:18:33.0279145Z PASS R15 69 cloned/reused map does not inherit fresh results provenance
+2026-11-11T10:18:33.0281083Z PASS R15 70 E035 F05fd a+b-1 then per-object1; spinner count not extra combo
+2026-11-11T10:18:33.0282333Z PASS R15 71 perfect decoration unavailable without completed health-preparation provenance
+2026-11-11T10:18:33.0287522Z PASS R15 72 fresh retry session independent ledger/judgement/health/record identities
+2026-11-11T10:18:33.1527144Z PASS R15 73 four matched finite sessions: all intermediate judgement/score/combo/health/audio histories unchanged
+2026-11-11T10:18:33.1527773Z PASS R15 74 presentation construction leaves authoritative completed ledger and health unchanged
+2026-11-11T10:18:33.1535179Z PASS R15 75 missing metadata does not fabricate map/player/date fields
+2026-11-11T10:18:33.1536040Z PASS R15 76 unsupported alternate numeric policy is explicit, no legacy rewrite
+2026-11-11T10:18:33.1561295Z PASS R15 77 E042 coverage inventory78 retained IDs/classifications, not78 executed tests
+2026-11-11T10:18:33.1562914Z PASS R15 78 SOURCE INSPECTION Windows cleanup/key clearing/dedicated results wiring; no window execution
+2026-11-11T10:18:33.1564019Z PASS R15 79 SOURCE INSPECTION engineering typography, no fabricated native transition delay or Rank audio
+2026-11-11T10:18:33.1565030Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-11T10:18:37.9612686Z PASS R15 WINDOWS 01 actual host separate commitment/cleanup/binding/presentation with silent audio and no Window
+2026-11-11T10:18:37.9613197Z PASS R15 WINDOWS 02 Rank frames leave gameplay ledger/HP frozen
+2026-11-11T10:18:38.9249199Z PASS R15 WINDOWS 03 actual independent WPF widgets bind/rebind without parent reuse failure; no draw/screenshot
+2026-11-11T10:18:38.9250504Z PASS R15 WINDOWS 04 unavailable results representation has controls and no fabricated grade
+2026-11-11T10:18:38.9252152Z PASS R15 WINDOWS 05 actual host reveal skip does not retry or duplicate accounting
+2026-11-11T10:18:38.9253264Z PASS R15 WINDOWS 06 Back commits SelectPlay5 to chart-selection substitute with clock stopped
+2026-11-11T10:18:38.9278820Z PASS R15 WINDOWS 07 actual retry constructs fresh ledger/health/judgement/Rank and restarts supported clock
+2026-11-11T10:18:38.9279600Z PASS R15 WINDOWS 08 pause/repeat disposal contains lifetime; no nonempty media or game Window
+2026-11-11T10:18:38.9280210Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback

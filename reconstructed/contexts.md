@@ -1125,3 +1125,25 @@ MISS1 rejects A, >.8 yieldsB. Keep original research/QA unchanged; correct only 
 development expectedB and classify R30partial/discrepancy. Initial exact log,
 Program snapshot and source/run/provenance preserved. No production change needed.
 Final full gate pending; noQA13 or original-runtime claim.
+
+R15 final Windows gate43002288864/job130461106249 at exact source
+3f9a8f58d29480729d1d305f075791769163f46d PASS before main publication. Windows2022/
+installed SDK8.0.427,2026-11-11 10:16-10:18UTC/17:16-17:18Asia/Bangkok. WPF
+Release win-x64 zero warnings/errors; all1630/1630 historical independent checks,
+G08/QA12 unchanged; every retained dev suite inclR14-Q0123 passes. R15 79/79
+(77 component,2 source) plus separate actual Windows host/widget8/8, no Window/show/
+draw/physical input/nonempty media. Four matched finite sessions retain all
+intermediate judgement/score/accuracy/combo/HP/audio histories; presentation does
+not mutate completed ledger. No manually observed results/pixel/native claim.
+
+Preserved full exact first/final logs(gzip/base64), summaries, first Program and
+final structured development results with SHA256/source/run provenance. Only new
+R30 dev expectation changed A->B using original predicate/R05; research text,
+originalJSON and allQA stay immutable. Final coverage45 finite/21partial/1source/
+11unsupported with all78 original-runtime unverified; conservative R42 docs-only
+reassessment changes no code. Final report/journal/evidence/coverage-only child
+preserves exact tested production/harness/workflow. Canonical expected-head
+non-force publication, no history rewrite. Deferred JoinedBezier score discrepancy
+untouched. Silent engineering WPF Rank, empty event-horizon/clock/lifetime/capture
+policies explicit; original x86/GPU/skin/queue/frontend/replay/online remain
+unsupported/unverified. Stop R15, noQA13/E043/R16 or new original research.

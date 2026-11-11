@@ -1,7 +1,7 @@
 {
   "schema": "R15.E042.coverage.v1",
   "authoritySha256": "484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911",
-  "gate": "PENDING exact-source Windows verification",
+  "gate": "PASS exact-source Windows run43002288864/source3f9a8f58d29480729d1d305f075791769163f46d",
   "rows": [
     {
       "id": "R01",
@@ -454,14 +454,14 @@
     },
     {
       "id": "R42",
-      "classification": "executed finite behavior",
+      "classification": "partial",
       "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
       "evidence": [
         "M32de",
         "M32db:002a-0098",
         "M2b47"
       ],
-      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "scope": "Invalid flag independence from grade is executed; WPF validity label is constructed/source-inspected. Original persistence eligibility remains excluded.",
       "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
     },
     {
@@ -853,5 +853,6 @@
       "scope": "Distinct construction/initialization/presentation gates; native viewport-null/disposal cases excluded.",
       "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
     }
-  ]
+  ],
+  "classificationsNote": "Final docs-only conservative R42 reassessment from executed finite to partial; inventory/controls unchanged."
 }

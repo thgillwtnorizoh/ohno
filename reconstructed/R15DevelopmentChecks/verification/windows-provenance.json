@@ -1,0 +1,84 @@
+{
+  "schema": "ohno.R15.verification.v1",
+  "baseline": "305d6decda10f4450f0d12bd697e4f945d5450a0",
+  "testedSource": "3f9a8f58d29480729d1d305f075791769163f46d",
+  "run": 43002288864,
+  "job": 130461106249,
+  "ci": "https://github.com/thgillwtnorizoh/ohno/actions/runs/43002288864",
+  "platform": "Windows2022/installed SDK8.0.427",
+  "build": {
+    "configuration": "Release",
+    "runtime": "win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "independent": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "QA12": 286,
+    "total": 1630
+  },
+  "development": {
+    "newGroups": 79,
+    "executedComponents": 77,
+    "sourceInspected": 2,
+    "separateWindowsHostWidget": 8,
+    "retained": "R06 targets4/fixtures4; R07 8; R08 13; C01 4; C02 14; R09 15; R10 23; R11 32; R12 40; R13 54+Windows1; R13-C01 6; R14 58+Windows1; R14-Q01 23"
+  },
+  "coverage": {
+    "executed finite behavior": 45,
+    "partial": 21,
+    "unsupported": 11,
+    "source inspection": 1
+  },
+  "fullLogBytes": 487691,
+  "fullLogSha256": "2616acfd1a37c5d81b573a7832fa7088f271ecda86820c3783bbab3b74a63586",
+  "predictionDiscrepancy": {
+    "id": "E042 R30",
+    "publishedExpectation": "A after9x300+1MISS",
+    "finiteGetterExpectedActual": "B",
+    "reason": "Single9/10=.899999976, MISS1 skips A first arm; >.9 false; >.8 true ->B. Original getter/R05; original evidence unchanged.",
+    "initialRun": 43001655771,
+    "initialSource": "27c89de3d4e74af2a474e7a8edff8adef7741e64"
+  },
+  "limits": "No original/reconstructed Window, physical input, nonempty media/player opening, listening, draw/screenshot/GPU test; actual silent host and WPF widget construction only. NoQA13.",
+  "files": {
+    "initial-Program.cs.txt": {
+      "bytes": 23284,
+      "sha256": "99fbebf6fece0d8e268387f72f09f172bacf265cbac7c33b2ec898f41a931ad5"
+    },
+    "initial-provenance.json": {
+      "bytes": 513,
+      "sha256": "efb242a652b1771563fdc43f80df7b767a03a7bcb04822d62e14fd4706d28d1e"
+    },
+    "initial-summary.log": {
+      "bytes": 7587,
+      "sha256": "0c2b7f55c4733ab91e448c459f2505700928e1052193a5508656604ee40b6e80"
+    },
+    "initial-windows-job.log.gz.b64": {
+      "bytes": 290321,
+      "sha256": "de9439656eb6f91c78eee2f6efb77186bd1e67bf0b2616ab9791987fd4a2140c"
+    },
+    "windows-development-results.json": {
+      "bytes": 8239,
+      "sha256": "a2c132ff6d7d366976292bf848750193099ace6c70854e6fb6712da66fe929d4"
+    },
+    "windows-job.log.gz.b64": {
+      "bytes": 296861,
+      "sha256": "06c649364ed511070e0565b9d740729c5fba8a72c9abb6757066bf3dadf3f981"
+    },
+    "windows-summary.log": {
+      "bytes": 13251,
+      "sha256": "6c7e30f89b3c071c4cabd89ccf8fa2413d8e30f3908ace21b1f5bd988dc6ddbe"
+    }
+  },
+  "coverageFileSha256": "8fb867b117e90dfb66b4ba8c35cf9dd0f5f5e3c34b576d39889fff9fe1b6e495"
+}
