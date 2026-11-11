@@ -1,0 +1,110 @@
+{
+  "AGENTS.md": {
+    "bytes": 1847,
+    "sha256": "ffcc2644d5c47a01d529e31d81d631747e6014a93f1aa6cb82d87d73e5c1d2fc"
+  },
+  "re/Instruction.md": {
+    "bytes": 21824,
+    "sha256": "bf9952eec9d375a8e2fb661142390c2feff6570214f4ce09aa8063d6f34274f9"
+  },
+  "re/contexts.md": {
+    "bytes": 446603,
+    "sha256": "c028aee7a905cd408fd09a685cd5619b4ac6d5052f6f64dfabd01a398a06578f"
+  },
+  "reconstructed/contexts.md": {
+    "bytes": 80851,
+    "sha256": "4d9157cc9d834c2b0927551545ff3c59436676026ed2923cb9534130b45cf372"
+  },
+  "re/02-static-gameplay-initialization-and-control-flow.md": {
+    "bytes": 16100,
+    "sha256": "0df792338297cbbe179b1e2a06e15338b4d852adc49fe493a9b25bd59389b21e"
+  },
+  "re/03-mode-request-guards-and-redirects.md": {
+    "bytes": 19891,
+    "sha256": "f6cd2df722013d4472d6c4b254750a44e97edd8737be6b8c0ebaec7639c90841"
+  },
+  "re/23-slider-aggregate-policy-reference-origin.md": {
+    "bytes": 44578,
+    "sha256": "abc17edbb090152a710391653f0c31a54b9dcb30cc7d675fb1782c794cf575b8"
+  },
+  "re/27-gameplay-completion-and-results-entry.md": {
+    "bytes": 46395,
+    "sha256": "0e0bceb38952ce3c2d11da9d0d81a06143f2e9457cf238e5a553109a9d355034"
+  },
+  "re/33-ordinary-score-and-accuracy.md": {
+    "bytes": 22332,
+    "sha256": "2856abe9ddebca1689265aa1efec288e701f7a9e55dba9c689a88a46277e5adb"
+  },
+  "re/34-chart-derived-score-multiplier.md": {
+    "bytes": 25578,
+    "sha256": "0237501825d00912499bd6ef94c3313b174d92a6799438cd91e36a9c1a23fe70"
+  },
+  "re/35-ordinary-health-drain-and-judgement-hp.md": {
+    "bytes": 42578,
+    "sha256": "8e200b8004bd9f7f9cfca54bc01fb6e4536cd79e73916c813e16d8790d9e3eb9"
+  },
+  "re/36-original-newcombo-preparation-and-health-grouping.md": {
+    "bytes": 22820,
+    "sha256": "19b286736c4c92353d222da5fb5e074521119762fdd9f415a897503d5f04bb5a"
+  },
+  "re/42-original-rank-results-grade-and-record-provenance.md": {
+    "bytes": 42707,
+    "sha256": "2b6df412423395a26bd16a0baaa7ff2bf6793319363310b77107ab1f337aec85"
+  },
+  "re/evidence/42/rank-results.json": {
+    "bytes": 1220453,
+    "sha256": "484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911"
+  },
+  "reconstructed/R08-legacy-accounting.md": {
+    "bytes": 14212,
+    "sha256": "004e8b6b0b77b43bf791937f9d39582784a030cfb5860cda19886d71bf350166"
+  },
+  "reconstructed/R08-C02-automatic-score-multiplier.md": {
+    "bytes": 11064,
+    "sha256": "c8ed0af4b312a8e308a0465ed0b798d2479b7295e50410fe7a80442c82ec7e59"
+  },
+  "reconstructed/R09-original-health-system.md": {
+    "bytes": 16802,
+    "sha256": "460ab5a9576470dc0d022d8fd6d01a9ae660632e842613a542ce2ebc8888d51a"
+  },
+  "reconstructed/R10-original-newcombo-health-preparation.md": {
+    "bytes": 13272,
+    "sha256": "5de00dd2eadd96237f65bdfe3154f6babec46383b22868a0002345c7ccff9f3c"
+  },
+  "reconstructed/R15-original-derived-rank-results.md": {
+    "bytes": 17514,
+    "sha256": "9ada23fe61313b6a51db420c717d10c64d119026ea4e11c2c354126a4e4f0386"
+  },
+  "reconstructed/R15DevelopmentChecks/e042-coverage.json": {
+    "bytes": 31728,
+    "sha256": "8fb867b117e90dfb66b4ba8c35cf9dd0f5f5e3c34b576d39889fff9fe1b6e495"
+  },
+  "re/qa/qa06/README.md": {
+    "bytes": 13248,
+    "sha256": "7b7856c84fdbd9263307b8d0b814498a4a643b1e39308ab8d4ca3f6c5fc6055e"
+  },
+  "re/qa/qa07/README.md": {
+    "bytes": 13253,
+    "sha256": "2de1b2f70dd850103f9529363b1e079aff1aeeed5a66fe1e7df101bb23776a02"
+  },
+  "re/qa/qa08/README.md": {
+    "bytes": 14411,
+    "sha256": "e8214c3da818c54b175807caa56d8467e2ee7f6d392a97ee23d0ecef49161260"
+  },
+  "re/qa/qa09/README.md": {
+    "bytes": 16501,
+    "sha256": "2292859f4a151f0ede2ebeafcce35bd30e4979920d1f325088e59c205867fca9"
+  },
+  "re/qa/qa10/README.md": {
+    "bytes": 11579,
+    "sha256": "fac66cb60d9aa07edad56e37d756af4ce3111fb75f8fcab212194ff547bb568a"
+  },
+  "re/qa/qa11/README.md": {
+    "bytes": 15266,
+    "sha256": "75e99dec8cda26a0f89d209eacf879bb0a818adb744f31d1bcc8a0be98371c2f"
+  },
+  "re/qa/qa12/README.md": {
+    "bytes": 10044,
+    "sha256": "fd1a098bcd46d27c819892e7849999e3798f48b1b9dea31626424e70abc3e1ff"
+  }
+}

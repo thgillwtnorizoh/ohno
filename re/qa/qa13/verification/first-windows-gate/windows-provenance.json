@@ -1,0 +1,44 @@
+{
+  "schema": "QA13.execution.v1",
+  "source": "d4c9f9fdb06467f90dc6f90e391d6bd226d5efeb",
+  "production": "3f9a8f58d29480729d1d305f075791769163f46d",
+  "baseline": "74c47dd452befb741d659e71b2f5267ceb7171a2",
+  "run": 43038358344,
+  "job": 130583156408,
+  "url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/43038358344",
+  "result": "success",
+  "returnedLog": {
+    "bytes": 851510,
+    "sha256": "0bc2f0d95a8edd4e618cb911d0e7da537b7e9e1185c7a6eb2b494ecb59188fb0"
+  },
+  "readableLog": {
+    "bytes": 848618,
+    "sha256": "c8eb245b99416b24d1ce0ea501cfefea158e04a58dc9ebfc04809b8b436dd604"
+  },
+  "packets": {
+    "QA13": {
+      "named": 257,
+      "passed": 257,
+      "failed": 0,
+      "bytes": 2890709,
+      "sha256": "581eb7cbee8cd8f4774051b9451bb6d66237eb4792ecd7b0223a86bb61b3948f",
+      "source": "d4c9f9fdb06467f90dc6f90e391d6bd226d5efeb",
+      "classifications": {
+        "EXECUTED COMPONENT": 249,
+        "SOURCE INSPECTION": 8
+      }
+    },
+    "QA13 WINDOWS": {
+      "named": 24,
+      "passed": 24,
+      "failed": 0,
+      "bytes": 10945,
+      "sha256": "06ed51647797e5590f98bbbcbd397ee1e70dcd17535a77873bb6033cc6545603",
+      "source": "d4c9f9fdb06467f90dc6f90e391d6bd226d5efeb",
+      "classifications": {
+        "EXECUTED WINDOWS COMPONENT": 24
+      }
+    }
+  },
+  "note": "Exact returned UTF8 BOM/CRLF log retained; readable log LF; runner source hashes match current source with only checkout LF/CRLF conversion."
+}

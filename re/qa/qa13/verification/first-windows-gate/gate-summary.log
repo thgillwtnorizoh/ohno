@@ -1,0 +1,37 @@
+2026-11-11T14:25:52.4361610Z 8.0.427 [C:\Program Files\dotnet\sdk]
+2026-11-11T14:25:56.7213965Z 8.0.427
+2026-11-11T14:26:16.1975308Z     0 Warning(s)
+2026-11-11T14:26:16.1975525Z     0 Error(s)
+2026-11-11T14:26:18.2802270Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T14:26:20.5280696Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T14:26:22.4034993Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-11T14:26:22.4435085Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-11T14:26:24.5744895Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T14:26:26.5560887Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T14:26:28.5147279Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T14:26:30.4090949Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T14:26:32.2817548Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T14:26:34.0942966Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T14:26:36.0713548Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T14:26:37.8705155Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T14:26:39.6319663Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T14:26:41.3535803Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T14:26:43.0606217Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T14:26:44.9148888Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T14:26:48.9279805Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-11T14:26:51.4422756Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T14:26:54.6978492Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T14:26:57.2518287Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T14:26:59.4676604Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-11T14:27:03.5190066Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T14:27:05.0456543Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-11T14:27:06.8545247Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T14:27:09.9621322Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T14:27:11.8259831Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-11T14:27:15.9113460Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T14:27:18.0393371Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T14:27:21.2435261Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-11T14:27:23.4049145Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-11T14:27:28.4866407Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback
+2026-11-11T14:27:30.9460139Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-11T14:27:33.0437706Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls

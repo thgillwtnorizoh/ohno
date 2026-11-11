@@ -1,0 +1,107 @@
+{
+  "reconstructed/CircleGame/Program.cs": {
+    "runner": "6b2d87c89f816d3dce60c2ca73172acac18f3364f042fb2d78315657116252a6",
+    "canonicalLF": "a66665254953d90fae87386f83dc2d6b055fc1e2fe9d4b70a84694efdcbd3b14",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Gameplay/Beatmap.cs": {
+    "runner": "1308c919478585a50a8d03decfc7da18e3d9601386cfdcf51c240cb3c6ea117c",
+    "canonicalLF": "07c58b9c25d91928ce0341725af7566a34594bc3ce86fdd72ed6ccc150f72de1",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": {
+    "runner": "bd1095c94bed4718ee0ad3bdd138aa8a056e25aaff44ddfa71661d5ebecf424c",
+    "canonicalLF": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Gameplay/CircleSession.cs": {
+    "runner": "26b60b53421d5d15792836e9f0ee897c293c68d629e2841b4aaeea67888b7a72",
+    "canonicalLF": "6ce993bb80d794509e5f79478058c56a51dd71d9559f8ad74869f0396b8c3937",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Gameplay/RankResults.cs": {
+    "runner": "c06ea0ad55655e5d00a124bc7b286cb80590a74bca2d767bb906c10b247fed6f",
+    "canonicalLF": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/BeatmapAudio.cs": {
+    "runner": "5ca05ad796a35298c1b59b37137d0ed0a29a88c7c816c3ce5700d00aaedd9170",
+    "canonicalLF": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/GameplayClock.cs": {
+    "runner": "5c0f96fc7fb7242895b07c4a4987c9f4903360340c4e2f9c39cbe6d072554806",
+    "canonicalLF": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": {
+    "runner": "33f6fad3628a4fd2d18c560867e3ac7851670dd4f1bbe17c860ea3c1035a1343",
+    "canonicalLF": "627771ee1d620a6a2a39b0ba4d501663dec72663b3db72513ee5067cf9eb0877",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/PracticeFixture.cs": {
+    "runner": "fd572331f0444245fd68f9839c7d6f3c0a5bc4deb9196f1f46c802da587856ea",
+    "canonicalLF": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": {
+    "runner": "ed403ea93e2c98d26f2d969c502c1c6bcfb9535276abab0932bbf34dcfd20861",
+    "canonicalLF": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": {
+    "runner": "a7d55ce3a5dbdf43c0e2f8320ee7c144ec722410c7508d047b3a56e08861a834",
+    "canonicalLF": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": {
+    "runner": "a2d96dd9b5820ac05c054423efabc6acfc436de47e073740e872e0adbfc088b4",
+    "canonicalLF": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Rendering/PlayfieldView.cs": {
+    "runner": "3cec16070ae2daa29ae431ba615ac123355a3eb1d2bd2dc8592a85a026d7a553",
+    "canonicalLF": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Rendering/RankResultsView.cs": {
+    "runner": "b3b21a44f9ac766e7d6c4a838d4d9881bb60c3bbdd159e63df2dd4a235a4e7d0",
+    "canonicalLF": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "profile": "CRLF"
+  },
+  "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": {
+    "runner": "5925f151c5104db501d7490d4842a46a96986881e7069d7f2482d3e288ee1df3",
+    "canonicalLF": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/CompletionTransitions.cs": {
+    "runner": "162901ada7e52b8718299b03fa267e4eafc478e2e283dbcfb9496ef408426b54",
+    "canonicalLF": "4ef23fa612db7e7cd0c8893daf6ef95d903a7d39297cf85d71e26eba07802075",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/Grades.cs": {
+    "runner": "95756e4cd9a57fe0c480f1f4ab90de1a7bec5d7d3b51a82d190de74831f32598",
+    "canonicalLF": "e74d96a452e651577e697da397013dfa6602e8ccdb4f23a2aba622df05ac8fea",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/Harness.cs": {
+    "runner": "89dc264eb373d19148d6722a7a9a4a3eee5c34676dad5706f34df30985d62104",
+    "canonicalLF": "161dc653dd652917eae77756de2e01ab0de36adf81a70fcf477763724f9ec46b",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/PresentationReveal.cs": {
+    "runner": "ee815842db0719e05051d9ad87c199e88cf016d3ad01c48dacbca09b26135db6",
+    "canonicalLF": "f8db09bb786d82e197cfcc1f68fe57691e67386edb242b5a88c373e8fbc8ee4a",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/RecordsPolicy.cs": {
+    "runner": "8ced065573fecd4e7fc1fbd4df3f03ae11f4a137a4d85312d0110cd7539241f5",
+    "canonicalLF": "95c80a160bff42214e5e20f7e88ffdd2f273c3dbef7f8f49f87b0279ad608b41",
+    "profile": "CRLF"
+  },
+  "re/qa/qa13/Headless/SessionsAudit.cs": {
+    "runner": "a9262d20cbbd52da50d04552bb0ea284b5ea3955f3235578136aea0c865e389b",
+    "canonicalLF": "92214cac7cd7739250798cb1503c57f4950c17862467218f106e3fb65a011cbe",
+    "profile": "CRLF"
+  }
+}
