@@ -1,0 +1,478 @@
+{
+  "schema": "QA13.Windows.v1",
+  "source": "local-preflight",
+  "named": 24,
+  "passed": 18,
+  "failed": 6,
+  "cases": [
+    {
+      "id": "W01 fresh actual host alias",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W02 admitted not presented",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "expected": null,
+          "actual": null
+        },
+        {
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W03 commit cleanup first frame",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "expected": null,
+          "actual": null
+        },
+        {
+          "expected": false,
+          "actual": false
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W04 initialize second frame",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": "Independent Windows Rank",
+          "actual": "Independent Windows Rank"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W05 third frame permits view",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W06 results frames freeze gameplay",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 300,
+          "actual": 300
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "expected": 200,
+          "actual": 200
+        },
+        {
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W07 unshown view initially collapsed",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 2,
+          "actual": 2
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W08 actual presentation binds independently",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "expected": true,
+          "actual": false
+        }
+      ],
+      "error": "System.Exception: expected True, actual False\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__9() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 51\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W09 same reference reveal updates",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": true,
+          "actual": false
+        }
+      ],
+      "error": "System.Exception: expected True, actual False\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__10() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 52\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W10 hide and rebind same score widget",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "expected": true,
+          "actual": false
+        }
+      ],
+      "error": "System.Exception: expected True, actual False\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__11() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 53\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W11 replacement presentation frozen fields",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": true,
+          "actual": false
+        }
+      ],
+      "error": "System.Exception: expected True, actual False\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__12() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 54\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W12 unavailable view no invented grade",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": true,
+          "actual": false
+        }
+      ],
+      "error": "System.Exception: expected True, actual False\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__13() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 55\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W13 supplied callbacks component event only",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "expected": 1,
+          "actual": 0
+        }
+      ],
+      "error": "System.Exception: expected 1, actual 0\r\n   at Program.Eq[T](T a, T e) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 17\r\n   at Program.\u003C\u003Ec__DisplayClass12_0.\u003CMain\u003Eb__14() in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 56\r\n   at Program.Run(String id, Action body) in C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa13\\Windows\\Program.cs:line 18"
+    },
+    {
+      "id": "W14 host reveal skip no restart",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W15 held buttons suppressed in Rank",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W16 actual Back commits selection",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 5,
+          "actual": 5
+        },
+        {
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "expected": false,
+          "actual": false
+        },
+        {
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W17 rejected Retry creates no session",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": null,
+          "actual": null
+        },
+        {
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W18 actual fresh Retry",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "expected": false,
+          "actual": false
+        },
+        {
+          "expected": false,
+          "actual": false
+        },
+        {
+          "expected": false,
+          "actual": false
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 11,
+          "actual": 11
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W19 map replacement discards Rank",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 11,
+          "actual": 11
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W20 repeat host disposal",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 11,
+          "actual": 11
+        },
+        {
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W21 effects empty resource preparation",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W22 pending shared starts cancelled at results",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W23 no duplicate score through effects cleanup",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W24 disposed effects remain bounded",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "expected": 11,
+          "actual": 11
+        }
+      ],
+      "error": null
+    }
+  ],
+  "limit": "Unshown components; direct callback/routed component events, no physical input, no gameplay Frame sampling, no Window.Show, no media Open or playback"
+}

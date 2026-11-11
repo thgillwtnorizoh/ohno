@@ -46,6 +46,10 @@ on:
       - re/qa/qa12/Windows/**
       - re/qa/qa12/Inputs/**
       - re/qa/qa12/Run-QA12.ps1
+      - re/qa/qa13/Headless/**
+      - re/qa/qa13/Windows/**
+      - re/qa/qa13/Inputs/**
+      - re/qa/qa13/Run-QA13.ps1
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -334,4 +338,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R15WindowsChecks/R15WindowsChecks.csproj -c Release
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA13 Rank results without windows or media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa13/Run-QA13.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa13-results.json')
           exit $LASTEXITCODE

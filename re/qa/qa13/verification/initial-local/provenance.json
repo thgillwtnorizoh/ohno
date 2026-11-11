@@ -1,0 +1,12 @@
+{
+  "kind": "Local preflight",
+  "sdk": "10.0.402",
+  "runtime": ".NET 8.0.17",
+  "production": "3f9a8f58d29480729d1d305f075791769163f46d",
+  "named": 229,
+  "passed": 228,
+  "failed": 1,
+  "sha256": "b8e20e7767980de3684b9699cbba99d885572715cfe9c9f3edaf174dc5799f05",
+  "finding": "QA fixture exceeds existing R07 spinner-overlap admission; no production behavior defect",
+  "originalRuntime": "NOT RUN"
+}

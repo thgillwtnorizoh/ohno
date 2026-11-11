@@ -1,0 +1,1736 @@
+{
+  "schema": "QA13.exact-rational.v1",
+  "authority": "E042 T059e.M2b47 0001-0113; M2b44",
+  "numeric_profile": "Exact integer quotient rounded once ties-to-even binary32; exact comparison with binary64 literals",
+  "cases": [
+    {
+      "id": "all300-mod0",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod0",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "all300-mod8",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 8,
+      "expected": {
+        "grade": 0,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod8",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 8,
+      "expected": {
+        "grade": 1,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "all300-mod1024",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1024,
+      "expected": {
+        "grade": 0,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod1024",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1024,
+      "expected": {
+        "grade": 1,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "all300-mod1032",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1032,
+      "expected": {
+        "grade": 0,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod1032",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1032,
+      "expected": {
+        "grade": 1,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "all300-mod16",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 16,
+      "expected": {
+        "grade": 2,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod16",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 16,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "all300-mod2048",
+      "counts": [
+        17,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 2048,
+      "expected": {
+        "grade": 2,
+        "total": 17,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "S-mod2048",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 2048,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-89-noMISS",
+      "counts": [
+        89,
+        11,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f63d70a",
+        "p50Bits": "00000000",
+        "p300": 0.8899999856948853,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-89-MISS",
+      "counts": [
+        89,
+        0,
+        0,
+        11
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f63d70a",
+        "p50Bits": "00000000",
+        "p300": 0.8899999856948853,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-90-noMISS",
+      "counts": [
+        90,
+        10,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-90-MISS",
+      "counts": [
+        90,
+        0,
+        0,
+        10
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-91-noMISS",
+      "counts": [
+        91,
+        9,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f68f5c3",
+        "p50Bits": "00000000",
+        "p300": 0.9100000262260437,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-91-MISS",
+      "counts": [
+        91,
+        0,
+        0,
+        9
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f68f5c3",
+        "p50Bits": "00000000",
+        "p300": 0.9100000262260437,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-79-noMISS",
+      "counts": [
+        79,
+        21,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f4a3d71",
+        "p50Bits": "00000000",
+        "p300": 0.7900000214576721,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-79-MISS",
+      "counts": [
+        79,
+        0,
+        0,
+        21
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f4a3d71",
+        "p50Bits": "00000000",
+        "p300": 0.7900000214576721,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-80-noMISS",
+      "counts": [
+        80,
+        20,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f4ccccd",
+        "p50Bits": "00000000",
+        "p300": 0.800000011920929,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-80-MISS",
+      "counts": [
+        80,
+        0,
+        0,
+        20
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f4ccccd",
+        "p50Bits": "00000000",
+        "p300": 0.800000011920929,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-81-noMISS",
+      "counts": [
+        81,
+        19,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f4f5c29",
+        "p50Bits": "00000000",
+        "p300": 0.8100000023841858,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-81-MISS",
+      "counts": [
+        81,
+        0,
+        0,
+        19
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f4f5c29",
+        "p50Bits": "00000000",
+        "p300": 0.8100000023841858,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-69-noMISS",
+      "counts": [
+        69,
+        31,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f30a3d7",
+        "p50Bits": "00000000",
+        "p300": 0.6899999976158142,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-69-MISS",
+      "counts": [
+        69,
+        0,
+        0,
+        31
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f30a3d7",
+        "p50Bits": "00000000",
+        "p300": 0.6899999976158142,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-70-noMISS",
+      "counts": [
+        70,
+        30,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f333333",
+        "p50Bits": "00000000",
+        "p300": 0.699999988079071,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-70-MISS",
+      "counts": [
+        70,
+        0,
+        0,
+        30
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f333333",
+        "p50Bits": "00000000",
+        "p300": 0.699999988079071,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-71-noMISS",
+      "counts": [
+        71,
+        29,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f35c28f",
+        "p50Bits": "00000000",
+        "p300": 0.7099999785423279,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-71-MISS",
+      "counts": [
+        71,
+        0,
+        0,
+        29
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f35c28f",
+        "p50Bits": "00000000",
+        "p300": 0.7099999785423279,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-59-noMISS",
+      "counts": [
+        59,
+        41,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 100,
+        "p300Bits": "3f170a3d",
+        "p50Bits": "00000000",
+        "p300": 0.5899999737739563,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-59-MISS",
+      "counts": [
+        59,
+        0,
+        0,
+        41
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 100,
+        "p300Bits": "3f170a3d",
+        "p50Bits": "00000000",
+        "p300": 0.5899999737739563,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-60-noMISS",
+      "counts": [
+        60,
+        40,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f19999a",
+        "p50Bits": "00000000",
+        "p300": 0.6000000238418579,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-60-MISS",
+      "counts": [
+        60,
+        0,
+        0,
+        40
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f19999a",
+        "p50Bits": "00000000",
+        "p300": 0.6000000238418579,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-61-noMISS",
+      "counts": [
+        61,
+        39,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f1c28f6",
+        "p50Bits": "00000000",
+        "p300": 0.6100000143051147,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p300-61-MISS",
+      "counts": [
+        61,
+        0,
+        0,
+        39
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f1c28f6",
+        "p50Bits": "00000000",
+        "p300": 0.6100000143051147,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "p50-98-of10000",
+      "counts": [
+        9802,
+        100,
+        98,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 10000,
+        "p300Bits": "3f7aee63",
+        "p50Bits": "3c20902e",
+        "p300": 0.9801999926567078,
+        "p50": 0.009800000116229057
+      }
+    },
+    {
+      "id": "p50-99-of10000",
+      "counts": [
+        9801,
+        100,
+        99,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 10000,
+        "p300Bits": "3f7ae7d5",
+        "p50Bits": "3c22339c",
+        "p300": 0.9800999760627747,
+        "p50": 0.00989999994635582
+      }
+    },
+    {
+      "id": "p50-100-of10000",
+      "counts": [
+        9800,
+        100,
+        100,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 10000,
+        "p300Bits": "3f7ae148",
+        "p50Bits": "3c23d70a",
+        "p300": 0.9800000190734863,
+        "p50": 0.009999999776482582
+      }
+    },
+    {
+      "id": "p50-101-of10000",
+      "counts": [
+        9799,
+        100,
+        101,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 10000,
+        "p300Bits": "3f7adaba",
+        "p50Bits": "3c257a78",
+        "p300": 0.9799000024795532,
+        "p50": 0.010099999606609344
+      }
+    },
+    {
+      "id": "p50-102-of10000",
+      "counts": [
+        9798,
+        100,
+        102,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 10000,
+        "p300Bits": "3f7ad42c",
+        "p50Bits": "3c271de7",
+        "p300": 0.9797999858856201,
+        "p50": 0.010200000368058681
+      }
+    },
+    {
+      "id": "50-0-of100",
+      "counts": [
+        100,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 100,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "50-1-of100",
+      "counts": [
+        99,
+        0,
+        1,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "3c23d70a",
+        "p300": 0.9900000095367432,
+        "p50": 0.009999999776482582
+      }
+    },
+    {
+      "id": "50-2-of100",
+      "counts": [
+        98,
+        0,
+        2,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f7ae148",
+        "p50Bits": "3ca3d70a",
+        "p300": 0.9800000190734863,
+        "p50": 0.019999999552965164
+      }
+    },
+    {
+      "id": "50-3-of100",
+      "counts": [
+        97,
+        0,
+        3,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f7851ec",
+        "p50Bits": "3cf5c28f",
+        "p300": 0.9700000286102295,
+        "p50": 0.029999999329447746
+      }
+    },
+    {
+      "id": "counts-9,0,0,1-successTrue",
+      "counts": [
+        9,
+        0,
+        0,
+        1
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 10,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-9,0,0,1-successFalse",
+      "counts": [
+        9,
+        0,
+        0,
+        1
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 10,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-1,0,0,1-successTrue",
+      "counts": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 2,
+        "p300Bits": "3f000000",
+        "p50Bits": "00000000",
+        "p300": 0.5,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-1,0,0,1-successFalse",
+      "counts": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 2,
+        "p300Bits": "3f000000",
+        "p50Bits": "00000000",
+        "p300": 0.5,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-0,0,0,0-successTrue",
+      "counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 0,
+        "p300Bits": "7fc00000",
+        "p50Bits": "7fc00000",
+        "p300": "NaN",
+        "p50": "NaN"
+      }
+    },
+    {
+      "id": "counts-0,0,0,0-successFalse",
+      "counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 0,
+        "p300Bits": "7fc00000",
+        "p50Bits": "7fc00000",
+        "p300": "NaN",
+        "p50": "NaN"
+      }
+    },
+    {
+      "id": "counts-0,0,0,1-successTrue",
+      "counts": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 1,
+        "p300Bits": "00000000",
+        "p50Bits": "00000000",
+        "p300": 0.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-0,0,0,1-successFalse",
+      "counts": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 1,
+        "p300Bits": "00000000",
+        "p50Bits": "00000000",
+        "p300": 0.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-65535,65535,65535,65535-successTrue",
+      "counts": [
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 262140,
+        "p300Bits": "3e800000",
+        "p50Bits": "3e800000",
+        "p300": 0.25,
+        "p50": 0.25
+      }
+    },
+    {
+      "id": "counts-65535,65535,65535,65535-successFalse",
+      "counts": [
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 262140,
+        "p300Bits": "3e800000",
+        "p50Bits": "3e800000",
+        "p300": 0.25,
+        "p50": 0.25
+      }
+    },
+    {
+      "id": "counts-65535,0,0,0-successTrue",
+      "counts": [
+        65535,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 65535,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-65535,0,0,0-successFalse",
+      "counts": [
+        65535,
+        0,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 65535,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-65534,1,0,0-successTrue",
+      "counts": [
+        65534,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 65535,
+        "p300Bits": "3f7fff00",
+        "p50Bits": "00000000",
+        "p300": 0.9999847412109375,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-65534,1,0,0-successFalse",
+      "counts": [
+        65534,
+        1,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 65535,
+        "p300Bits": "3f7fff00",
+        "p50Bits": "00000000",
+        "p300": 0.9999847412109375,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-1,1,1,1-successTrue",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 4,
+        "p300Bits": "3e800000",
+        "p50Bits": "3e800000",
+        "p300": 0.25,
+        "p50": 0.25
+      }
+    },
+    {
+      "id": "counts-1,1,1,1-successFalse",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 4,
+        "p300Bits": "3e800000",
+        "p50Bits": "3e800000",
+        "p300": 0.25,
+        "p50": 0.25
+      }
+    },
+    {
+      "id": "counts-0,10,0,0-successTrue",
+      "counts": [
+        0,
+        10,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 10,
+        "p300Bits": "00000000",
+        "p50Bits": "00000000",
+        "p300": 0.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-0,10,0,0-successFalse",
+      "counts": [
+        0,
+        10,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 10,
+        "p300Bits": "00000000",
+        "p50Bits": "00000000",
+        "p300": 0.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "counts-0,0,10,0-successTrue",
+      "counts": [
+        0,
+        0,
+        10,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 10,
+        "p300Bits": "00000000",
+        "p50Bits": "3f800000",
+        "p300": 0.0,
+        "p50": 1.0
+      }
+    },
+    {
+      "id": "counts-0,0,10,0-successFalse",
+      "counts": [
+        0,
+        0,
+        10,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 10,
+        "p300Bits": "00000000",
+        "p50Bits": "3f800000",
+        "p300": 0.0,
+        "p50": 1.0
+      }
+    },
+    {
+      "id": "E042-R01",
+      "counts": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 10,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R02",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R03",
+      "counts": [
+        99,
+        0,
+        1,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "3c23d70a",
+        "p300": 0.9900000095367432,
+        "p50": 0.009999999776482582
+      }
+    },
+    {
+      "id": "E042-R04",
+      "counts": [
+        99,
+        0,
+        0,
+        1
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R05",
+      "counts": [
+        90,
+        0,
+        0,
+        10
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R06",
+      "counts": [
+        80,
+        20,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f4ccccd",
+        "p50Bits": "00000000",
+        "p300": 0.800000011920929,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R07",
+      "counts": [
+        70,
+        30,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f333333",
+        "p50Bits": "00000000",
+        "p300": 0.699999988079071,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R08",
+      "counts": [
+        60,
+        40,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f19999a",
+        "p50Bits": "00000000",
+        "p300": 0.6000000238418579,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R09",
+      "counts": [
+        59,
+        41,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 100,
+        "p300Bits": "3f170a3d",
+        "p50Bits": "00000000",
+        "p300": 0.5899999737739563,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R10",
+      "counts": [
+        95,
+        0,
+        5,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f733333",
+        "p50Bits": "3d4ccccd",
+        "p300": 0.949999988079071,
+        "p50": 0.05000000074505806
+      }
+    },
+    {
+      "id": "E042-R11",
+      "counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 0,
+        "p300Bits": "7fc00000",
+        "p50Bits": "7fc00000",
+        "p300": "NaN",
+        "p50": "NaN"
+      }
+    },
+    {
+      "id": "E042-R12",
+      "counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 0,
+        "p300Bits": "7fc00000",
+        "p50Bits": "7fc00000",
+        "p300": "NaN",
+        "p50": "NaN"
+      }
+    },
+    {
+      "id": "E042-R13",
+      "counts": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "success": false,
+      "mods": 0,
+      "expected": {
+        "grade": 8,
+        "total": 10,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R14",
+      "counts": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 8,
+      "expected": {
+        "grade": 0,
+        "total": 10,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R15",
+      "counts": [
+        10,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1024,
+      "expected": {
+        "grade": 0,
+        "total": 10,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R16",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 8,
+      "expected": {
+        "grade": 1,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R17",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 1024,
+      "expected": {
+        "grade": 1,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R18",
+      "counts": [
+        99,
+        1,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 16,
+      "expected": {
+        "grade": 3,
+        "total": 100,
+        "p300Bits": "3f7d70a4",
+        "p50Bits": "00000000",
+        "p300": 0.9900000095367432,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R19",
+      "counts": [
+        0,
+        100,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 7,
+        "total": 100,
+        "p300Bits": "00000000",
+        "p50Bits": "00000000",
+        "p300": 0.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R20",
+      "counts": [
+        100,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 100,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R21",
+      "counts": [
+        90,
+        10,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 4,
+        "total": 100,
+        "p300Bits": "3f666666",
+        "p50Bits": "00000000",
+        "p300": 0.8999999761581421,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R22",
+      "counts": [
+        81,
+        0,
+        0,
+        19
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f4f5c29",
+        "p50Bits": "00000000",
+        "p300": 0.8100000023841858,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R23",
+      "counts": [
+        71,
+        29,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f35c28f",
+        "p50Bits": "00000000",
+        "p300": 0.7099999785423279,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R24",
+      "counts": [
+        61,
+        39,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 6,
+        "total": 100,
+        "p300Bits": "3f1c28f6",
+        "p50Bits": "00000000",
+        "p300": 0.6100000143051147,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R25",
+      "counts": [
+        80,
+        0,
+        0,
+        20
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 5,
+        "total": 100,
+        "p300Bits": "3f4ccccd",
+        "p50Bits": "00000000",
+        "p300": 0.800000011920929,
+        "p50": 0.0
+      }
+    },
+    {
+      "id": "E042-R26",
+      "counts": [
+        65535,
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "mods": 0,
+      "expected": {
+        "grade": 2,
+        "total": 65535,
+        "p300Bits": "3f800000",
+        "p50Bits": "00000000",
+        "p300": 1.0,
+        "p50": 0.0
+      }
+    }
+  ]
+}
