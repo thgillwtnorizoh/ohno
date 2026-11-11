@@ -1,0 +1,8 @@
+{
+  "source": "27c89de3d4e74af2a474e7a8edff8adef7741e64",
+  "run": 43001655771,
+  "job": 130458991540,
+  "logBytes": 471391,
+  "logSha256": "4653e3ce6c02e7231fb7c44417d3f85c24cc775b4b6a3122de0c8978ba430c69",
+  "outcome": "WPF clean;1630 historical QA/prior dev/newWindows8 pass; R15 groups1-30 pass then new group31 expectedA vs actualB. E042 R30 descriptive expectation conflicts with original getter/R05 binary32 result for9/10 withMISS1. New dev expectation corrected toB; no production/research/QA change."
+}

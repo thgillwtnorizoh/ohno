@@ -1116,3 +1116,12 @@ R15 pre-gate additions include missing-metadata rejection, explicit unsupported
 numeric ledger policy and78-row coverage inventory controls: planned79 groups,
 77 executed finite components plus2 source inspections, separate Windows8.
 No static row is counted as an executed case. Exact Windows gate still pending.
+
+R15 initial gate43001655771/source27c89de3d4e74af2a474e7a8edff8adef7741e64:
+WPF0 warnings/errors;1630 independent QA/all prior dev/new Windows8 pass. New
+R15 groups1-30 pass then31 fails expectedA/actualB for9x300+1MISS. E042 R30's
+descriptive A conflicts with original M2b47 and E042 R05: binary32 ratio.899999976,
+MISS1 rejects A, >.8 yieldsB. Keep original research/QA unchanged; correct only new
+development expectedB and classify R30partial/discrepancy. Initial exact log,
+Program snapshot and source/run/provenance preserved. No production change needed.
+Final full gate pending; noQA13 or original-runtime claim.

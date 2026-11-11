@@ -40,7 +40,7 @@ internal static class Program
         Pass("separate virtual total reads for p300 and p50");
         fresh=new FakeRecord{Success=true};reads=0;fresh.Total=()=>{reads++;if(reads==2)fresh.Success=false;return 0;};Eq(fresh.Grade(),RankGrade.F);Eq(reads,2);
         Pass("failed success flag read after both proportion operations");
-        fresh=new FakeRecord{Success=true};Eq(fresh.Grade(),RankGrade.X);fresh.Success=false;Eq(fresh.Grade(),RankGrade.F);fresh.Success=true;fresh.C300=9;fresh.Miss=1;Eq(fresh.Grade(),RankGrade.A);
+        fresh=new FakeRecord{Success=true};Eq(fresh.Grade(),RankGrade.X);fresh.Success=false;Eq(fresh.Grade(),RankGrade.F);fresh.Success=true;fresh.C300=9;fresh.Miss=1;Eq(fresh.Grade(),RankGrade.B);
         Pass("R29/R30 repeated getters after success/count mutation");
         fresh=new FakeRecord{Success=true,Valid=false,Numeric=123456789};Eq(fresh.Grade(),RankGrade.X);Eq(fresh.Score,123456789);fresh.Perfect=true;Eq(fresh.Grade(),RankGrade.X);
         Pass("R27/R28 validity/score/perfect independent of grade");

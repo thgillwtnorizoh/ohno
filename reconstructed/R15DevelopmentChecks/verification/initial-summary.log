@@ -1,0 +1,72 @@
+2026-11-11T10:13:04.5415135Z     0 Warning(s)
+2026-11-11T10:13:04.5415432Z     0 Error(s)
+2026-11-11T10:13:06.9745238Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T10:13:09.4571525Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T10:13:13.9034358Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T10:13:16.1333837Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T10:13:18.4049068Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T10:13:20.5244972Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T10:13:22.6376660Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T10:13:25.0178093Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T10:13:27.3850707Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T10:13:29.3563839Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T10:13:31.3259116Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T10:13:33.3137441Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T10:13:35.3775572Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T10:13:37.6754674Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T10:13:41.0858878Z PASS R15 null permitted skin is explicit unsupported receiver
+2026-11-11T10:13:42.4065311Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-11T10:13:45.2723899Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T10:13:48.5243957Z PASS R15 entirely unavailable tick missing
+2026-11-11T10:13:49.1566718Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T10:13:52.1150470Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T10:13:57.9203373Z PASS G08 settings gain captured once across backend callback
+2026-11-11T10:13:57.9495942Z PASS R15 embedded0 normalization versus map0
+2026-11-11T10:13:58.8828309Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T10:14:02.6325136Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T10:14:05.8253056Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T10:14:11.8247591Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T10:14:14.0044999Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T10:14:17.3743849Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-11T10:14:19.3669482Z PASS R15 01 R01 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3670677Z PASS R15 02 R02 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3671431Z PASS R15 03 R03 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3672089Z PASS R15 04 R04 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3672783Z PASS R15 05 R05 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3673461Z PASS R15 06 R06 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3673882Z PASS R15 07 R07 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3674285Z PASS R15 08 R08 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3674684Z PASS R15 09 R09 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3675126Z PASS R15 10 R10 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3675548Z PASS R15 11 R11 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3675943Z PASS R15 12 R12 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3676348Z PASS R15 13 R13 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3676756Z PASS R15 14 R14 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3677167Z PASS R15 15 R15 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3677566Z PASS R15 16 R16 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3677958Z PASS R15 17 R17 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3678348Z PASS R15 18 R18 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3678739Z PASS R15 19 R19 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3679129Z PASS R15 20 R20 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3679529Z PASS R15 21 R21 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3679928Z PASS R15 22 R22 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3680318Z PASS R15 23 R23 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3680711Z PASS R15 24 R24 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3681107Z PASS R15 25 R25 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3681727Z PASS R15 26 R26 E042 literal grade vector through actual production getter
+2026-11-11T10:14:19.3700176Z PASS R15 27 enum identities and sentinel
+2026-11-11T10:14:19.3704116Z PASS R15 28 UInt16 fresh fields sum in Int32 without decorated counts
+2026-11-11T10:14:19.3705135Z PASS R15 29 separate virtual total reads for p300 and p50
+2026-11-11T10:14:19.3705845Z PASS R15 30 failed success flag read after both proportion operations
+2026-11-11T10:14:19.4095399Z Unhandled exception. System.Exception: R15 group 31: B != A
+2026-11-11T10:14:19.4096003Z    at Program.Eq[T](T actual, T expected) in D:\a\ohno\ohno\reconstructed\R15DevelopmentChecks\Program.cs:line 11
+2026-11-11T10:14:19.4096642Z    at Program.Main(String[] args) in D:\a\ohno\ohno\reconstructed\R15DevelopmentChecks\Program.cs:line 43
+2026-11-11T10:14:22.9288344Z PASS R15 WINDOWS 01 actual host separate commitment/cleanup/binding/presentation with silent audio and no Window
+2026-11-11T10:14:22.9289387Z PASS R15 WINDOWS 02 Rank frames leave gameplay ledger/HP frozen
+2026-11-11T10:14:23.3799441Z PASS R15 WINDOWS 03 actual independent WPF widgets bind/rebind without parent reuse failure; no draw/screenshot
+2026-11-11T10:14:23.3801692Z PASS R15 WINDOWS 04 unavailable results representation has controls and no fabricated grade
+2026-11-11T10:14:23.3803917Z PASS R15 WINDOWS 05 actual host reveal skip does not retry or duplicate accounting
+2026-11-11T10:14:23.3805361Z PASS R15 WINDOWS 06 Back commits SelectPlay5 to chart-selection substitute with clock stopped
+2026-11-11T10:14:23.3836576Z PASS R15 WINDOWS 07 actual retry constructs fresh ledger/health/judgement/Rank and restarts supported clock
+2026-11-11T10:14:23.3838223Z PASS R15 WINDOWS 08 pause/repeat disposal contains lifetime; no nonempty media or game Window
+2026-11-11T10:14:23.3838932Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback

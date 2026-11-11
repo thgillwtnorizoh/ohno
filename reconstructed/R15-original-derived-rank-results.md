@@ -22,7 +22,18 @@ findings, actual ledger/parser/session/host/input/media/CI interfaces. No RTK.md
 present. No original binary extraction/execution/new research, E020 experiment,
 physical input, gameplay Window, listening, nonempty media opening or screenshot.
 
-**Exact-source Windows verification: PENDING.** No local .NET SDK/run is claimed.
+Initial run43001655771/job130458991540 at source
+`27c89de3d4e74af2a474e7a8edff8adef7741e64`: WPF0 warnings/errors;1630 historical
+checks and all retained development groups pass; Windows R15 host/widget8 pass.
+R15 groups1–30 pass; group31 copied E042 R30's descriptive A expectation for nine
+300s plus one MISS, but actual production returned B. Published getter M2b47 and
+R05 give p300=Single9/10≈.899999976: A's MISS0 arm fails and >.9 fails, while
+B's >.8 arm succeeds. This is a new development-oracle/published prediction-text
+discrepancy, not a production repair. Original E042 report/JSON and historical QA
+remain unchanged. Corrected only that new assertion to B; coverage R30 marked
+partial with the conflict. Initial source snapshot/exact log/provenance retained.
+
+**Final exact-source Windows verification: PENDING.** No local .NET SDK/run is claimed.
 Required full1630 independent checks, all retained development suites, planned
 R15 79 groups (77 executed finite component groups,2 source inspections) and
 separate Windows8 host/widget groups. Actual tested SHA, CI, results and publication

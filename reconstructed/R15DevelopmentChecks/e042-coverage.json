@@ -326,12 +326,12 @@
     },
     {
       "id": "R30",
-      "classification": "executed finite behavior",
+      "classification": "partial",
       "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
       "evidence": [
         "M2b47:0066-00df"
       ],
-      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "scope": "Published R30 text says A for9/10 withMISS1. Recovered M2b47 and binary32 .899999976 plus R05 imply B; new development assertion B. Research row unchanged, descriptive prediction discrepancy explicitly retained, no original runtime claim.",
       "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
     },
     {
