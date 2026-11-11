@@ -193,7 +193,12 @@ returned Windows job log is retained as `verification/windows-job.log.gz.b64`;
 base64 decode then gzip decompress reproduces the UTF-8/CRLF bytes. Summary,
 SHA256/byte provenance and the **artificial development-session** diagnostic JSON
 are alongside it. This JSON is not evidence from the owner's failing session.
-Initial logs use the same reversible encoding. All exact sources/runs are distinct;
+Initial logs use the same reversible encoding. Final publication-byte review
+found that text transport had normalized the synthetic diagnostic JSON CRLF to LF
+in the first docs publication `2f8291d36c52babd7c685b3ec40d1310fe654cf2`.
+Restored that JSON through a raw-byte Git blob to match the runner artifact and
+its retained SHA256. The compressed exact job log, tested code and assertions were
+unaffected; first publication remains in ancestry. All exact sources/runs are distinct;
 second-run production bytes are identical to final tested production. Final source
 changes after the second gate were the D06 fixture and documentation/evidence only.
 No test oracle is weakened and unchanged QA11 G08 remains mandatory.

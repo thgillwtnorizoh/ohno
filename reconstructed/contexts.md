@@ -1074,3 +1074,10 @@ journal prefixes unchanged; no score/HP/cache/scheduling/frequency rule repair.
 Owner root cause remains NOT YET ESTABLISHED; owner-only exact-settings/fixture/
 C20 vs C16 procedure and Save audio diagnostics enable missing runtime evidence.
 No audible/native equivalence claim. Stop after R14-Q01; noR15/QA13/E042.
+
+R14-Q01 publication-byte audit: text transport normalized only the synthetic
+Windows diagnostic JSON CRLF to LF in first docs publication2f8291d36c52babd7c685b3ec40d1310fe654cf2.
+Exact compressed full job logs and all tested code were unaffected. Restore that
+one JSON via raw-byte Git blob so retained provenance0b9e6040f21744a398c44e8aeebd5ee9ba81122801035c4888f5ca7029e9cb25
+matches the emitted artifact; preserve first publication in ancestry. No test or
+production change/re-execution required. Final byte/hash preservation rechecked.

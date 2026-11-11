@@ -85,5 +85,12 @@
       "bytes": 6067,
       "sha256": "8dbef72508ac76496d7cec5e4fe26f4f55eb2bee57368cd3a16e6eb4bb2ef842"
     }
+  },
+  "publicationSerializationCorrection": {
+    "firstPublication": "2f8291d36c52babd7c685b3ec40d1310fe654cf2",
+    "path": "development-diagnostics.json",
+    "normalizedSha256": "1d523756469239b6c9a62ae328d581e274de9147cb596f52cc69825f5230c4bd",
+    "exactRawSha256": "0b9e6040f21744a398c44e8aeebd5ee9ba81122801035c4888f5ca7029e9cb25",
+    "change": "Restore original CRLF through raw Git blob; no code/test/log change"
   }
 }
