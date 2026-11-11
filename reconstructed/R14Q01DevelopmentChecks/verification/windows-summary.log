@@ -1,0 +1,55 @@
+2026-11-11T01:57:16.0829872Z     0 Warning(s)
+2026-11-11T01:57:16.0832761Z     0 Error(s)
+2026-11-11T01:57:18.7373018Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-11T01:57:21.4664216Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-11T01:57:23.7484055Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-11T01:57:23.7946531Z R06 FIXTURE LOADS: 4 completed (parser/preparation only)
+2026-11-11T01:57:26.4929249Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-11T01:57:28.9451553Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-11T01:57:31.3742900Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-11T01:57:33.6967388Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-11T01:57:36.0927137Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-11T01:57:38.4027373Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-11T01:57:40.8158236Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-11T01:57:42.9024441Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-11T01:57:45.0197928Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-11T01:57:47.2336769Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-11T01:57:49.4221719Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-11T01:57:51.6784482Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-11T01:57:56.6120908Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-11T01:57:59.6107982Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-11T01:58:03.7062042Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-11T01:58:06.8131559Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-11T01:58:09.3586536Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-11T01:58:13.4370641Z PASS G08 settings gain captured once across backend callback
+2026-11-11T01:58:14.4096395Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-11T01:58:18.3164087Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-11T01:58:21.7225456Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-11T01:58:23.7772329Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-11T01:58:28.0663803Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-11T01:58:30.4956740Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-11T01:58:33.5596394Z PASS R14-Q01 01 D01 executable-relative configuration path and absent-file defaults
+2026-11-11T01:58:33.6174048Z PASS R14-Q01 02 D02 explicit configured pack read from selected settings file
+2026-11-11T01:58:33.7105741Z PASS R14-Q01 03 D03 wrong directory remains missing, gameplay parser succeeds
+2026-11-11T01:58:33.7407825Z PASS R14-Q01 04 D04 valid circle pack does not imply either spinner resource
+2026-11-11T01:58:33.7662280Z PASS R14-Q01 05 D05 correct independent pack maps positive separate loop/bonus handles and provenance
+2026-11-11T01:58:33.7927466Z PASS R14-Q01 06 D06 non14 parser rejection and artificial defensive audio-format rejection
+2026-11-11T01:58:33.8163261Z PASS R14-Q01 07 D07 map unprefixed index0 resource precedes default pack
+2026-11-11T01:58:33.8416829Z PASS R14-Q01 08 D08 admitted skin precedes default resource
+2026-11-11T01:58:33.9213834Z PASS R14-Q01 09 D09 cached default miss survives map reload; fresh library/app reads added file
+2026-11-11T01:58:33.9232685Z PASS R14-Q01 10 D10 actual catalogued resource distinct from empty Windows decoder readiness; no media opened
+2026-11-11T01:58:33.9773544Z PASS R14-Q01 11 D11 nonzero U reaches actual session callback and queues continuing start
+2026-11-11T01:58:33.9824990Z PASS R14-Q01 12 D12 actual WPF dispatcher drains deferred Play(false) with recording backend
+2026-11-11T01:58:33.9835831Z PASS R14-Q01 13 D13 start then zero-motion Pause remains distinct and observable
+2026-11-11T01:58:33.9924517Z PASS R14-Q01 14 D14 restart generation cancels stale callback and reports cancellation
+2026-11-11T01:58:33.9931552Z PASS R14-Q01 15 D15 unavailable backend channel reports failed start without media
+2026-11-11T01:58:33.9932894Z PASS R14-Q01 16 D16 actual observed C20 first normal bonus for N15; modifier separate
+2026-11-11T01:58:33.9940859Z PASS R14-Q01 17 D17 C16 positive300 completion is independent of C20 bonus
+2026-11-11T01:58:33.9983468Z PASS R14-Q01 18 D18 actual Windows bonus/completion request identities and missing bonus voice; no fallback claim
+2026-11-11T01:58:33.9986003Z PASS R14-Q01 19 D19 actual playback invalid bonus sentinel and contained injected failure; not a decoder test
+2026-11-11T01:58:33.9991523Z PASS R14-Q01 20 D20 effects disable gate and zero gain preserved and observable
+2026-11-11T01:58:34.0128464Z PASS R14-Q01 21 D21 audio diagnostics leave accounting/state and distinct shared slider Play(true) intact
+2026-11-11T01:58:34.0172303Z PASS R14-Q01 22 D22 bounded aggregate diagnostics and honest unsupported frequency capability
+2026-11-11T01:58:34.0175439Z PASS R14-Q01 23 D23 SOURCE INSPECTION ONLY nonempty decoder/MediaFailed instrumentation and owner export wiring
+2026-11-11T01:58:34.0176641Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-11T01:58:09.3586536Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played

@@ -1,0 +1,89 @@
+{
+  "schema": "ohno.R14-Q01.verification.v1",
+  "source": "2630e3ebe97d89eb712810258651fc6bca99007d",
+  "run": 42942529851,
+  "job": 130267497951,
+  "ci": "https://github.com/thgillwtnorizoh/ohno/actions/runs/42942529851",
+  "platform": "Windows2022, installed SDK8.0.427",
+  "build": {
+    "configuration": "Release",
+    "runtime": "win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "independent": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "QA12": 286,
+    "total": 1630
+  },
+  "development": {
+    "newGroups": 23,
+    "executedComponent": 22,
+    "sourceInspected": 1,
+    "retained": "R06 targets4/fixtures4;R07 8;R08 13;C01 4;C02 14;R09 15;R10 23;R11 32;R12 40;R13 54+Windows1;R13-C01 6;R14 58+Windows1"
+  },
+  "fullLogBytes": 465640,
+  "fullLogSha256": "d0ef781eb9314fbc8f6736b9c4e886f432e7796d860847f002ac7b17dac97bf8",
+  "ownerObserved": "No continuing spin; ordinary tap where bonus expected; pack at C:\\MyIndependentPack",
+  "rootCause": "NOT YET ESTABLISHED; owner session configuration/admission/resources/decoder/event/device evidence unavailable",
+  "limits": "No media/player opened or played by automation; actual Windows dispatcher with injected recording backend and empty real Windows channels. No gameplay Window/input/listening/native equivalence.",
+  "files": {
+    "development-diagnostics.json": {
+      "bytes": 5772,
+      "sha256": "0b9e6040f21744a398c44e8aeebd5ee9ba81122801035c4888f5ca7029e9cb25"
+    },
+    "initial-GameProgram.cs.txt": {
+      "bytes": 15915,
+      "sha256": "03293cfa1c458b8763a2b27c2ca3d126a640c04abc87c04d023ef0335907479b"
+    },
+    "initial-Program.cs.txt": {
+      "bytes": 13688,
+      "sha256": "f526cdc6dd7d5a8de18abec10b786330e260bf514594747063044853768362aa"
+    },
+    "initial-provenance.json": {
+      "bytes": 399,
+      "sha256": "b9c63c92169fa2c5169e7a046451d0f3536d79f50af3666166661b45ac52e2cc"
+    },
+    "initial-summary.log": {
+      "bytes": 3640,
+      "sha256": "2f9c6073423d12d7360a9d7f09e4504e72d68710516187260845debece92ad90"
+    },
+    "initial-windows-job.log.gz.b64": {
+      "bytes": 284413,
+      "sha256": "2d6d12f4a8d213ce4b221eaf1c098cad6eece08ba8de691bd29e18bfadc22fb9"
+    },
+    "second-Program.cs.txt": {
+      "bytes": 13702,
+      "sha256": "851d1de1a0bbdaa95ae114fe08eb69106d2d954157c2f5d9a89d171d00fb8a92"
+    },
+    "second-provenance.json": {
+      "bytes": 381,
+      "sha256": "cc7f812d730293d03a9237180961471074d9ab61dff8a1f88153b8e3cdb2fd08"
+    },
+    "second-summary.log": {
+      "bytes": 3990,
+      "sha256": "9fc3c3e85caacd6879d4d8c8a61586f6b87bfce7b10376781acb24ec489839bb"
+    },
+    "second-windows-job.log.gz.b64": {
+      "bytes": 284101,
+      "sha256": "d87fc9d03efa0b636e2fb7612f8f175452a9bf6ba3f9156fd7767f5216367cad"
+    },
+    "windows-job.log.gz.b64": {
+      "bytes": 288729,
+      "sha256": "920ccd9e0ac326e7c57fe412004e12607606ee3c95ca5136248feb6b2515c1dc"
+    },
+    "windows-summary.log": {
+      "bytes": 6067,
+      "sha256": "8dbef72508ac76496d7cec5e4fe26f4f55eb2bee57368cd3a16e6eb4bb2ef842"
+    }
+  }
+}

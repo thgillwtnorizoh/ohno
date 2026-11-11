@@ -39,11 +39,31 @@ local shadowed a later local); zero new assertions executed. Renamed only that
 harness local. Exact returned log/gzip, summaries, provenance and both initial
 Program snapshots remain under R14Q01DevelopmentChecks/verification.
 
-**Final exact-source Windows gate: PENDING.** Required1630 named independent checks,
-all retained development suites and clean Release win-x64. New development controls
-are separately23 groups:22 executed production-component/recording/empty-Windows
-controls and1 explicitly source-only nonempty decoder/export inspection. No new
-independent QA campaign. Actual source/run/results will be recorded after execution.
+**Final exact-source Windows gate: PASS.** Tested source
+`2630e3ebe97d89eb712810258651fc6bca99007d`.
+[Windows run42942529851/job130267497951](https://github.com/thgillwtnorizoh/ohno/actions/runs/42942529851),
+Windows2022/installed .NET8,2026-11-11 01:56–01:58 UTC /08:56–08:58 Asia/Bangkok.
+Verified on reusable ci/verification before canonical main publication; final
+report/evidence-only child preserves the tested production/harness/workflow bytes.
+Publication commit is supplied in the final handoff, with no force update.
+
+| Gate | Actual result |
+|---|---:|
+|WPF Release win-x64|0 warnings /0 errors|
+|QA01/03/04/05/06|90/56/43/66/99 passed|
+|QA07/08/09/10|159/115/234/229 passed|
+|QA11 (including unchanged G08)|253/253|
+|QA12 (274 headless +12 Windows)|286/286|
+|Historical independent total|1630/1630|
+|New R14-Q01 development controls|23/23 (22 component,1 source inspection)|
+
+Every retained development suite passed: R06 targets4/fixtures4; R07 8; R08 13;
+C01 4; C02 14; R09 15; R10 23; R11 32; R12 40; R13 54 plus Windows1;
+R13-C01 6; R14 58 plus Windows1. Counts retain historical source/asset/empty-backend
+classifications and are not claimed as1630 runtime-only cases. Generated artifacts
+and new development groups are not additional independent QA. The two earlier
+failed gates and exact logs/source snapshots remain immutable. No original research
+or historical oracle was changed to achieve this result.
 
 # 2. What they found
 
@@ -168,7 +188,14 @@ real v13/v15 parser rejection, then an explicitly artificial rebound-freshness
 metadata variant to isolate the unchanged exact14 audio guard. No parser or
 production admission change and no weakened exact14 assertion.
 
-Final authoritative run details and full historical count summary: PENDING.
+Final authoritative run passed23/23 as tabulated in Result. Complete exact
+returned Windows job log is retained as `verification/windows-job.log.gz.b64`;
+base64 decode then gzip decompress reproduces the UTF-8/CRLF bytes. Summary,
+SHA256/byte provenance and the **artificial development-session** diagnostic JSON
+are alongside it. This JSON is not evidence from the owner's failing session.
+Initial logs use the same reversible encoding. All exact sources/runs are distinct;
+second-run production bytes are identical to final tested production. Final source
+changes after the second gate were the D06 fixture and documentation/evidence only.
 No test oracle is weakened and unchanged QA11 G08 remains mandatory.
 
 ## Owner-only Windows qualification procedure

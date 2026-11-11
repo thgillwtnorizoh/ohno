@@ -1057,3 +1057,20 @@ isolate defensive exact14 guard. No production/parser/QA assertion correction.
 Clarification of preceding Q01 entry: broader ordinary-map parsing is not broader
 spinner parsing; format alone cannot explain silence after normal spinner parsing.
 Final full gate pending. Owner root cause remains unknown.
+
+R14-Q01 final Windows gate42942529851/job130267497951 at source
+2630e3ebe97d89eb712810258651fc6bca99007d PASS on ci/verification before main
+publication. Windows2022/installed .NET8: WPF Release win-x64 zero warnings/errors;
+all1630/1630 named independent QA01-QA12 checks including unchanged G08; every
+retained development gate (R11 32,R12 40,R13 54+Windows1,C01 6,R14 58+Windows1).
+R14-Q01 23/23 groups:22 executed production components with recording/empty
+Windows backends and actual dispatcher pump,1 source-only nonempty media/export
+inspection. No decoder/player/window/audio playback opened by automation. Full
+exact job logs (reversible gzip/base64), summaries, source/run/provenance and
+artificial development diagnostic JSON retained; both earlier failures preserved.
+Second→final production unchanged; final report/evidence-only publication keeps
+all tested source/harness/workflow bytes. Original research/QA/prior reports and
+journal prefixes unchanged; no score/HP/cache/scheduling/frequency rule repair.
+Owner root cause remains NOT YET ESTABLISHED; owner-only exact-settings/fixture/
+C20 vs C16 procedure and Save audio diagnostics enable missing runtime evidence.
+No audible/native equivalence claim. Stop after R14-Q01; noR15/QA13/E042.
