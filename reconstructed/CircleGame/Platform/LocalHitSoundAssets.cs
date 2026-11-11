@@ -68,6 +68,7 @@ public sealed record HitSoundSettings
     public string? DefaultPackDirectory { get; init; }
     public int VolumeEffect { get; init; } = 80;
     public int VolumeUniversal { get; init; } = 100;
+    public static string ConfigurationPath(string? baseDirectory = null) => Path.Combine(baseDirectory ?? AppContext.BaseDirectory, "hitsounds.json");
     public static HitSoundSettings Read(string path)
     {
         if (!File.Exists(path)) return new();
@@ -76,6 +77,75 @@ public sealed record HitSoundSettings
         if (settings.VolumeEffect is < 0 or > 100 || settings.VolumeUniversal is < 0 or > 100 || string.IsNullOrWhiteSpace(settings.SkinName))
             throw new InvalidDataException("Hitsound volumes must be 0–100 and SkinName nonempty.");
         return settings;
+    }
+}
+// ENGINEERING bounded in-memory evidence. No per-frame file I/O or audio bytes.
+// Counts are logical operations, never proof of device output. Export is owner initiated.
+public sealed class EffectAudioDiagnostics
+{
+    private readonly object sync = new();
+    private readonly Dictionary<string, long> counts = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, string> fields = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, DateTimeOffset> lastUtc = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, long> lastSequence = new(StringComparer.Ordinal);
+    private readonly Dictionary<int, string> channelOperations = new();
+    private readonly Queue<object> transitions = new();
+    private long sequence;
+    public EffectAudioDiagnostics(HitSoundSettings? settings = null, string? configurationPath = null)
+    {
+        settings ??= new();
+        string path = Path.GetFullPath(configurationPath ?? HitSoundSettings.ConfigurationPath());
+        Set("configurationFile", path); Set("configurationExists", File.Exists(path));
+        Set("baseDirectory", AppContext.BaseDirectory);
+        Set("defaultPackDirectory", settings.DefaultPackDirectory is null ? "UNCONFIGURED" : Path.GetFullPath(settings.DefaultPackDirectory));
+        Set("defaultPackDirectoryExists", settings.DefaultPackDirectory is not null && Directory.Exists(settings.DefaultPackDirectory));
+        Set("skinDirectory", settings.SkinDirectory ?? "UNCONFIGURED"); Set("skinName", settings.SkinName); Set("skinSamples", settings.SkinSamples);
+        Set("configuredEnabled", settings.Enabled); Set("effectVolume", settings.VolumeEffect); Set("universalVolume", settings.VolumeUniversal);
+        Set("spinnerModifierBits", settings.SpinnerModifierBits); Set("spinnerFrequencyModulate", settings.SpinnerFrequencyModulate);
+    }
+    public void Set(string key, object? value)
+    {
+        lock (sync) { if (fields.ContainsKey(key) || fields.Count < 128) fields[key] = Text(value); }
+    }
+    private static string Text(object? value)
+    {
+        string text = Convert.ToString(value, System.Globalization.CultureInfo.InvariantCulture) ?? "null";
+        return text.Length > 1600 ? text[..1600] : text;
+    }
+    public void Count(string key, object? detail = null)
+    {
+        lock (sync)
+        {
+            if (!counts.ContainsKey(key) && counts.Count >= 256) return;
+            counts[key] = counts.GetValueOrDefault(key) + 1;
+            lastSequence[key] = ++sequence; lastUtc[key] = DateTimeOffset.UtcNow;
+            if (detail is not null && (fields.ContainsKey(key) || fields.Count < 128)) fields[key] = Text(detail);
+        }
+    }
+    public void Transition(int channel, string operation)
+    {
+        lock (sync)
+        {
+            if (channelOperations.GetValueOrDefault(channel) == operation || (!channelOperations.ContainsKey(channel) && channelOperations.Count >= 64)) return;
+            channelOperations[channel] = operation;
+            if (transitions.Count == 32) transitions.Dequeue();
+            transitions.Enqueue(new { channel, operation, utc = DateTimeOffset.UtcNow, sequence = ++sequence });
+        }
+    }
+    public void Resource(string role, int handle, IReadOnlyDictionary<int, SampleBytes> samples)
+    {
+        Set(role + ".handle", handle);
+        Set(role + ".catalogued", samples.ContainsKey(handle));
+        if (samples.TryGetValue(handle, out var sample))
+        { Set(role + ".provider", sample.Origin); Set(role + ".key", sample.Name); Set(role + ".loop", sample.Loop); }
+        else Set(role + ".resource", handle == -1 ? "MISSING" : handle == 0 ? "INVALID logical0" : "NOT CATALOGUED");
+        Set(role + ".decoder", "NOT OPENED");
+    }
+    public string Json()
+    {
+        lock (sync) return JsonSerializer.Serialize(new { schema = "ohno.R14-Q01.audio.v1", capturedUtc = DateTimeOffset.UtcNow,
+            executable = Environment.ProcessPath, assemblyVersion = typeof(EffectAudioDiagnostics).Assembly.GetName().Version?.ToString(),
+            fields, counts, lastSequence, lastUtc, transitions, limits = "128 fields, 256 counters, last32 channel-operation transitions, 1600 characters/value; cumulative per prepared map; logical operations do not establish audibility" }, new JsonSerializerOptions { WriteIndented = true });
     }
 }
 // Independent pack interface: exact resource key maps to key.wav, no native
@@ -114,6 +184,7 @@ public sealed class EffectSampleCatalog : ISampleLoader
 }
 public sealed class PreparedCircleEffects : IDisposable
 {
+    public EffectAudioDiagnostics Diagnostics { get; init; } = new();
     public required CircleSoundMap Source { get; init; }
     public required CircleSampleResources Resources { get; init; }
     public required IReadOnlyDictionary<CircleDefinition, (CircleSampleMetadata Metadata, int Custom)> Circles { get; init; }
@@ -234,7 +305,13 @@ public sealed class HitSoundLibrary : IDisposable
                         missing++;
             }
             string[] errors = circles.Values.Select(c => c.Item1.Error).Where(e => e is not null).Cast<string>().Concat(catalog.Errors.Skip(errorStart)).Distinct().ToArray();
-            return new() { Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders, PreparedMap = map, ContinuousLimitation = continuousLimitation, Spinners = spinners, SpinnerLimitation = spinnerLimitation, SpinHandle = spin, BonusHandle = bonus,
+            var diagnostics = new EffectAudioDiagnostics(Settings);
+            diagnostics.Set("mapTitle", map.Title); diagnostics.Set("mapDirectory", source.Directory); diagnostics.Set("sourceFormat", source.Format);
+            diagnostics.Set("spinnerAdmission", spinnerLimitation ?? "ADMITTED"); diagnostics.Set("spinnerCount", map.Spinners.Count);
+            diagnostics.Set("continuousAdmission", continuousLimitation ?? "ADMITTED");
+            diagnostics.Set("preparationError", source.TimingError ?? operandError ?? string.Join("; ", errors.Take(3)));
+            diagnostics.Resource("spin", spin, samples); diagnostics.Resource("bonus", bonus, samples);
+            return new() { Diagnostics = diagnostics, Source = operandError is null ? source : source with { TimingError = operandError }, Resources = resources, Circles = circles, Samples = samples, MissingLayers = missing, Sliders = sliders, PreparedMap = map, ContinuousLimitation = continuousLimitation, Spinners = spinners, SpinnerLimitation = spinnerLimitation, SpinHandle = spin, BonusHandle = bonus,
                 Error = source.TimingError ?? operandError ?? (errors.Length > 0 ? string.Join("; ", errors.Take(3)) : null) };
         }
         catch { resources.ClearMap(); throw; }

@@ -18,6 +18,7 @@ on:
       - reconstructed/R13C01DevelopmentChecks/**
       - reconstructed/R14DevelopmentChecks/**
       - reconstructed/R14WindowsChecks/**
+      - reconstructed/R14Q01DevelopmentChecks/**
       - reconstructed/GenerateIndependentSpinnerSounds.ps1
       - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
@@ -304,3 +305,17 @@ jobs:
         run: |
           & ./re/qa/qa12/Run-QA12.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa12-results.json')
           exit $LASTEXITCODE
+
+      - name: Check R14-Q01 routing and diagnostics without opening media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          $packPath = Join-Path $env:RUNNER_TEMP 'ohno-r14-q01-pack'
+          & ./reconstructed/GenerateIndependentHitSounds.ps1 -PackDirectory $packPath
+          & ./reconstructed/GenerateIndependentSliderTicks.ps1 -PackDirectory $packPath
+          & ./reconstructed/GenerateIndependentSliderLoops.ps1 -PackDirectory $packPath
+          & ./reconstructed/GenerateIndependentSpinnerSounds.ps1 -PackDirectory $packPath
+          dotnet run --project reconstructed/R14Q01DevelopmentChecks/R14Q01DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" $packPath
+          $resultCode = $LASTEXITCODE
+          Remove-Item $packPath -Recurse
+          exit $resultCode

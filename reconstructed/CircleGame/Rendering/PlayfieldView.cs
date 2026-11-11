@@ -15,6 +15,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     private WindowsCircleEffects? effects;
     private bool effectsEnabled = true;
     public string EffectsNote { get; set; } = "";
+    public string? EffectsDiagnosticsJson => effects?.DiagnosticsJson;
     public string EffectsStatus => effects?.Status ?? ("HitSounds unavailable · " + EffectsNote);
     public bool EffectsEnabled
     {

@@ -1012,3 +1012,30 @@ audible attribute1 modulation explicitly unsupported, never inferred from WAV by
 Owner-only audible qualification remains pending; original BASS scheduling/device/
 frequency/overlap equivalence unverified. Stop after R14; no QA12/R15/E042 or
 framework/deferred score work. Historical journals/research/QA/reports preserved.
+
+## R14-Q01 — Owner spinner-audio failure/resource routing diagnosis — 2026-11-11
+
+Work2 authorized bounded investigation; verified latest canonical main
+ d991dc7c411c28c3bbe88a22a35773c43b054c47. Read standing contract/AGENTS/journals,
+R14/R13/C01, E041 report/full parsed evidence and66 predictions, QA12 report/
+evidence/current production/Windows/renderer/Program/settings/generator/CI.
+OWNER-OBSERVED no continuing spin and ordinary tap where bonus expected, pack files
+at C:\MyIndependentPack. Session configuration/map/C/U/provider/decoder/output not
+available; no specific audible-path source defect established. Confirmed settings
+read beside running executable; absent default pack is null. Cached default−1
+survives map reload, full relaunch needed. Exact14 spinner admission independent
+of playable maps. N15 first bonusC20; C16 positive300 can play normal completion.
+
+Added bounded in-memory diagnostic snapshot, per-resource logical vs decoder status,
+provider/admission/config fields, separate event/request/channel/dispatch/generation
+counts/errors and last32 changed loop operations. Owner-initiated JSON save pauses
+first; no per-frame disk logs/audio buffers. Updated misleading12-file setup and
+logical-only spinner status. No scheduling/cache/resource/backend/frequency/gameplay
+rule correction; exact shared identity/Play(false)/fresh callbacks/Stop-Pause
+preserved. New23 development groups planned (22 component,1 source inspection),
+existing Windows gate minimally extended. R14-Q01 report contains hypotheses,
+full audit and executable-adjacent JSON/owner-only listening procedure.
+No local SDK/no local .NET run; exact Windows gate pending. Preserve all1630
+independent QA and every prior dev suite/G08/research/fixtures/failure evidence.
+No original binary/gameplay window/input/media opening/listening/capture/E020,
+R15/QA13/E042 or score discrepancy work. Verification details append after execution.

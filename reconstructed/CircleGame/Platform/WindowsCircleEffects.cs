@@ -14,6 +14,7 @@ public sealed class WindowsCircleEffects : IDisposable
     {
         public MediaPlayer Player { get; } = player;
         public bool Busy { get; set; }
+        public bool DecoderReady { get; set; }
     }
     private readonly PreparedCircleEffects prepared;
     private readonly HitSoundSettings settings;
@@ -26,11 +27,28 @@ public sealed class WindowsCircleEffects : IDisposable
     private SharedSpinnerChannel? spinnerChannel;
     private readonly Dispatcher dispatcher;
     private bool loopsPaused = true;
+    private bool playbackPaused = true;
     private int loopGeneration;
     private string? failure;
     private readonly List<Voice> opening = new();
     private string? Failure => failure ?? prepared.Error ?? playback.Error;
     private bool disposed;
+    private bool IsVoiceReady(int handle) => voices.TryGetValue(handle, out var pool) && pool.Any(v => v.DecoderReady);
+    public string DiagnosticsJson
+    {
+        get
+        {
+            var d = prepared.Diagnostics;
+            d.Set("effectiveEnabled", Enabled); d.Set("loopsPaused", loopsPaused); d.Set("disposed", disposed);
+            d.Set("sameMapIdentity", continuing?.SameMapIdentity); d.Set("sharedSpinnerChannel", spinnerChannel?.Channel);
+            d.Set("spin.decoder", loops.IsReady(prepared.SpinHandle) ? "READY" : "UNAVAILABLE");
+            d.Set("bonus.decoder", IsVoiceReady(prepared.BonusHandle) ? "READY" : "UNAVAILABLE");
+            d.Set("pendingSharedActions", continuing?.Pending); d.Set("generation", loopGeneration);
+            d.Set("frequencyCapability", loops.FrequencyStatus); d.Set("failure", Failure ?? loops.Error);
+            d.Set("globalTimingVolume", continuing?.CurrentVolume);
+            return d.Json();
+        }
+    }
     public bool Enabled { get => playback.Enabled; set { if (!value) playback.Pause(); if (!value) PauseLoops(); playback.Enabled = value; } }
     public string Status => $"HitSounds {(Enabled ? "ON" : "OFF")} · {voices.Count}/{prepared.Samples.Count} resources decoded · {prepared.MissingLayers} unresolved circle layers · {prepared.Sliders.Count} discrete sliders · {loops.Ready} loop resources · " +
         (settings.DefaultPackDirectory is null ? "no independent default pack" : "independent default pack configured") +
@@ -39,14 +57,25 @@ public sealed class WindowsCircleEffects : IDisposable
         (prepared.Sliders.Count > 0 && loops.Ready == 0 ? " · continuous unavailable: no decoded loop resources" : "") +
         (loops.Error is { } loopError ? " · " + loopError : "") +
         (prepared.SpinnerLimitation is { } spinnerLimit ? " · spinner unavailable: " + spinnerLimit : "") +
-        (prepared.Spinners.Count > 0 ? $" · spinner resources spin {prepared.SpinHandle > 0} /bonus {prepared.BonusHandle > 0} · " + loops.FrequencyStatus : "") +
+        (prepared.Spinners.Count > 0 ? $" · spinner spin handle {prepared.SpinHandle}, decoder {loops.IsReady(prepared.SpinHandle)} / bonus handle {prepared.BonusHandle}, decoder {IsVoiceReady(prepared.BonusHandle)} · " + loops.FrequencyStatus : "") +
         (spinnerChannel?.FrequencyError is { } frequencyError ? " · " + frequencyError : "") +
         (Failure is { } error ? " · " + error : "") +
         (voices.Count == 0 && loops.Ready == 0 ? " · no playable effects; supply local map/skin samples or a default pack" : "");
     private WindowsCircleEffects(PreparedCircleEffects prepared, HitSoundSettings settings, Dispatcher dispatcher)
     {
         this.prepared = prepared; this.settings = settings; this.dispatcher = dispatcher;
-        playback = new(Play, action => dispatcher.BeginInvoke(action, DispatcherPriority.Normal), StopVoices) { Enabled = settings.Enabled };
+        loops.Diagnostics = prepared.Diagnostics;
+        playback = new(Play, action =>
+        {
+            int epoch = loopGeneration;
+            prepared.Diagnostics.Count("oneShot.queue.submitted");
+            dispatcher.BeginInvoke(new Action(() =>
+            {
+                prepared.Diagnostics.Count("oneShot.dispatch.executed");
+                if (epoch != loopGeneration || disposed || playbackPaused || !Enabled) prepared.Diagnostics.Count("oneShot.dispatch.generationOrPause");
+                action(); // Existing CircleSoundPlayback owns all admission/generation decisions.
+            }), DispatcherPriority.Normal);
+        }, StopVoices) { Enabled = settings.Enabled };
     }
     public static async Task<WindowsCircleEffects> PrepareAsync(Beatmap map, HitSoundLibrary library,
         Dispatcher dispatcher, CancellationToken token, Action<WindowsCircleEffects>? acquired = null)
@@ -83,11 +112,12 @@ public sealed class WindowsCircleEffects : IDisposable
                     }
                     token.ThrowIfCancellationRequested();
                     result.voices.Add(pair.Key, pool.ToArray());
+                    data.Diagnostics.Count("oneShot.decoder.ready", pair.Key + ":" + pair.Value.Name);
                     foreach (var v in pool) result.opening.Remove(v);
                 }
                 catch (OperationCanceledException) { foreach (var v in pool) Close(v); throw; }
                 catch (Exception e)
-                { foreach (var v in pool) Close(v); result.failure = "Decoder unavailable: " + pair.Value.Name + " — " + e.Message; }
+                { foreach (var v in pool) Close(v); result.failure = "Decoder unavailable: " + pair.Value.Name + " — " + e.Message; data.Diagnostics.Count("oneShot.decoder.failed", result.failure); }
             }));
             await result.loops.PrepareAsync(data.Samples, result.cache, token);
             if (data.ContinuousLimitation is null || (data.SpinnerLimitation is null && data.Spinners.Count > 0))
@@ -115,15 +145,17 @@ public sealed class WindowsCircleEffects : IDisposable
         {
             voice.Player.Open(new Uri(path)); // Never Play during preparation.
             await opened.Task.WaitAsync(TimeSpan.FromSeconds(15), token);
+            voice.DecoderReady = true;
         }
         finally { voice.Player.MediaOpened -= onOpen; voice.Player.MediaFailed -= onFail; }
         voice.Player.MediaEnded += (_, _) => { voice.Busy = false; try { voice.Player.Stop(); } catch (Exception e) { failure = e.Message; } };
-        voice.Player.MediaFailed += (_, args) => { voice.Busy = false; failure = "Effect playback failed: " + args.ErrorException.Message; };
+        voice.Player.MediaFailed += (_, args) => { voice.Busy = false; voice.DecoderReady = false; failure = "Effect playback failed: " + args.ErrorException.Message; prepared.Diagnostics.Count("oneShot.media.failed", failure); };
     }
     public void Attach(CircleSession replacement)
     {
         if (session is not null) { session.PositiveCircleSound -= OnCircle; session.SliderSound -= OnSlider; DetachLoops(session); }
         if (continuing is not null) continuing.SameMapIdentity = ReferenceEquals(replacement.Map, prepared.PreparedMap);
+        prepared.Diagnostics.Set("sameMapIdentity", ReferenceEquals(replacement.Map, prepared.PreparedMap));
         session = replacement; session.PositiveCircleSound += OnCircle; session.SliderSound += OnSlider;
         session.SpinnerSound += OnSpinner;
         session.GlobalSoundTiming += OnGlobalTiming; session.ContinuingSound += OnContinuing; session.ContinuingManagerTail += OnManager;
@@ -141,8 +173,13 @@ public sealed class WindowsCircleEffects : IDisposable
     private void FlushLoops()
     {
         int epoch = loopGeneration;
+        prepared.Diagnostics.Count("shared.flush.submitted");
         dispatcher.BeginInvoke(new Action(() =>
-        { if (epoch == loopGeneration && LoopsEligible) GuardLoops(() => continuing!.Drain()); }), DispatcherPriority.Normal);
+        {
+            if (epoch == loopGeneration && LoopsEligible)
+            { prepared.Diagnostics.Count("shared.flush.executed"); GuardLoops(() => continuing!.Drain()); }
+            else prepared.Diagnostics.Count("shared.flush.cancelled", $"submitted={epoch}; current={loopGeneration}; eligible={LoopsEligible}");
+        }), DispatcherPriority.Normal);
     }
     private void OnContinuing(SliderState slider, int time, bool active)
     {
@@ -159,7 +196,10 @@ public sealed class WindowsCircleEffects : IDisposable
     { if (LoopsEligible) GuardLoops(() => { continuing!.ManagerTail(current); FlushLoops(); }); }
     private void OnSpinner(SpinnerState state, SpinnerSoundStage stage)
     {
-        if (!LoopsEligible || prepared.SpinnerLimitation is not null || !prepared.Spinners.TryGetValue(state.Definition, out var data)) return;
+        prepared.Diagnostics.Count("spinner.event." + stage, $"C={state.Observation.Count}; N={state.Required}; U={state.SmoothedMotion:R}");
+        prepared.Diagnostics.Set("spinner.observed", $"start={state.Definition.StartTime}; end={state.Definition.EndTime}; C={state.Observation.Count}; N={state.Required}; U={state.SmoothedMotion:R}");
+        if (!LoopsEligible || prepared.SpinnerLimitation is not null || !prepared.Spinners.TryGetValue(state.Definition, out var data))
+        { prepared.Diagnostics.Count("spinner.rejected", $"eligible={LoopsEligible}; limitation={prepared.SpinnerLimitation}; metadata={prepared.Spinners.ContainsKey(state.Definition)}"); return; }
         try
         {
             switch (stage)
@@ -169,18 +209,19 @@ public sealed class WindowsCircleEffects : IDisposable
                     break;
                 case SpinnerSoundStage.Motion:
                     spinnerChannel?.Continue(settings.SpinnerFrequencyModulate ? (float)state.Observation.Count / (float)state.Required : null);
+                    prepared.Diagnostics.Count("spinner.start.submitted", spinnerChannel?.Channel);
                     FlushLoops(); break;
                 case SpinnerSoundStage.ZeroMotion:
                 case SpinnerSoundStage.Cleanup:
-                    spinnerChannel?.QueuePause(); FlushLoops(); break;
+                    spinnerChannel?.QueuePause(); prepared.Diagnostics.Count("spinner.pause.submitted", spinnerChannel?.Channel); FlushLoops(); break;
                 case SpinnerSoundStage.Bonus:
                     if (SpinnerSampleSelection.BonusAllowed(state.Observation.Count, state.Required, settings.SpinnerModifierBits))
                         SpinnerSampleSelection.Bonus(state.Definition, prepared.BonusHandle, continuing!.CurrentVolume,
-                            new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), playback);
+                            new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), new DiagnosticSink(playback, prepared.Diagnostics));
                     break;
                 case SpinnerSoundStage.PositiveCompletion:
                     SpinnerSampleSelection.Completion(data, prepared.Source.Timing, state.SoundCenter, prepared.Resources,
-                        new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), playback);
+                        new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), new DiagnosticSink(playback, prepared.Diagnostics));
                     break;
             }
         }
@@ -194,16 +235,26 @@ public sealed class WindowsCircleEffects : IDisposable
         CircleSampleSelection.Request(sample.Metadata, prepared.Source.Timing, sample.Custom, prepared.Resources,
             new(true, settings.LayeredHitSounds, true, 0, 100, false, settings.VolumeEffect, settings.VolumeUniversal), playback);
     }
+    private sealed class DiagnosticSink(ISamplePlaybackSink next, EffectAudioDiagnostics diagnostics) : ISamplePlaybackSink
+    {
+        public void Enqueue(SamplePlaybackRequest request)
+        {
+            diagnostics.Count(request.Kind + ".request", $"handle={request.Handle}; gain={request.Gain:R}; volume={request.Volume}");
+            if (request.Handle is 0 or -1) diagnostics.Count(request.Kind + ".invalidSample", request.Handle);
+            next.Enqueue(request);
+        }
+    }
     private void Play(SamplePlaybackRequest request)
     {
-        if (disposed || !voices.TryGetValue(request.Handle, out var pool)) return;
+        if (disposed || !voices.TryGetValue(request.Handle, out var pool))
+        { prepared.Diagnostics.Count(request.Kind + ".voiceMissing", request.Handle); return; }
         Voice? voice = pool.FirstOrDefault(v => !v.Busy);
-        if (voice is null) { failure = "Two effect voices busy; new voice dropped (engineering limit)."; return; }
+        if (voice is null) { failure = "Two effect voices busy; new voice dropped (engineering limit)."; prepared.Diagnostics.Count(request.Kind + ".voiceBusy"); return; }
         voice.Player.Stop(); voice.Player.Position = TimeSpan.Zero;
         voice.Player.Volume = Math.Clamp(request.Gain, 0, 1);
         voice.Player.Balance = Math.Clamp(request.Pan, -1, 1);
         voice.Player.SpeedRatio = request.Factor; // Ordinary no-mod practice factor1; not native frequency equivalence.
-        voice.Busy = true; voice.Player.Play();
+        voice.Busy = true; voice.Player.Play(); prepared.Diagnostics.Count(request.Kind + ".MediaPlayer.Play", request.Handle);
     }
     private void OnSlider(SliderSoundEvent sound)
     {
@@ -233,10 +284,10 @@ public sealed class WindowsCircleEffects : IDisposable
         foreach (var pool in voices.Values) foreach (var voice in pool)
         { try { voice.Player.Stop(); } catch (Exception e) { failure = e.Message; } voice.Busy = false; }
     }
-    private void PauseLoops() { loopsPaused = true; loopGeneration++; continuing?.Cancel(); loops.PauseAll(); }
+    private void PauseLoops() { prepared.Diagnostics.Count("lifecycle.cancel", continuing?.Pending); loopsPaused = true; loopGeneration++; continuing?.Cancel(); loops.PauseAll(); }
     public void Pause()
-    { session?.CleanupSpinnerAudio(); playback.Pause(); PauseLoops(); }
-    public void Resume() { playback.Resume(); loopsPaused = false; }
+    { session?.CleanupSpinnerAudio(); playbackPaused = true; playback.Pause(); PauseLoops(); }
+    public void Resume() { playback.Resume(); playbackPaused = false; loopsPaused = false; }
     public void Restart(CircleSession replacement)
     { Pause(); continuing?.Timing.Reset(); playback.Restart(); Attach(replacement); Resume(); }
     private static void Close(Voice voice) { try { voice.Player.Close(); } catch (Exception e) { System.Diagnostics.Debug.WriteLine(e); } }

@@ -40,13 +40,13 @@ public sealed class GameWindow : Window
     private readonly HitSoundLibrary effectsLibrary;
     private WindowsCircleEffects? pendingEffects;
     private readonly TextBlock effectsStatus = new() { Foreground = Brushes.LightSteelBlue, FontSize = 12, TextWrapping = TextWrapping.Wrap };
-    private readonly CheckBox effectsEnabled = new() { Content = "Discrete HitSounds", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
+    private readonly CheckBox effectsEnabled = new() { Content = "HitSounds (including loops)", Foreground = Brushes.White, Margin = new Thickness(8, 6, 8, 6) };
     private string? effectsConfigurationError;
-    private static string EffectsConfigurationPath => Path.Combine(AppContext.BaseDirectory, "hitsounds.json");
+    private static string EffectsConfigurationPath => HitSoundSettings.ConfigurationPath();
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R12 Discrete Slider HitSounds Practice";
+        Title = "ohno · Spinner Audio Diagnosis R14-Q01";
         try { effectsLibrary = new(HitSoundSettings.Read(EffectsConfigurationPath)); }
         catch (Exception e)
         {
@@ -88,8 +88,9 @@ public sealed class GameWindow : Window
         tools.Children.Add(effectsEnabled);
         tools.Children.Add(Button("Effects setup", () => MessageBox.Show(this,
             "Configure hitsounds.json beside the built executable, then relaunch.\n" + EffectsConfigurationPath +
-            "\n\nOptional SkinDirectory and DefaultPackDirectory admit local roots. The independent pack uses twelve exact key.wav files. " +
-            "Add the optional three slidertick files for R12. See CircleGame/README.md for the JSON schema and independent sample generators. No original samples are supplied.", "Circle HitSounds setup")));
+            "\n\nOptional SkinDirectory and DefaultPackDirectory admit local roots. The full independent pack uses 23 exact key.wav files. " +
+            "Spinner sound needs spinnerspin.wav and spinnerbonus.wav in the configured pack. Restart the app after changing settings or missing pack files. See CircleGame/README.md for the JSON schema and independent sample generators. No original samples are supplied.", "HitSounds setup")));
+        tools.Children.Add(Button("Save audio diagnostics", SaveAudioDiagnostics));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
         Grid.SetRow(surface, 1); root.Children.Add(surface);
@@ -122,6 +123,22 @@ public sealed class GameWindow : Window
             await LoadMapAsync(mapPath ?? BundledSilentMap);
             if (!closing) surface.Focus();
         };
+    }
+
+    private void SaveAudioDiagnostics()
+    {
+        // Owner action; serialization/file writing never occurs in gameplay callbacks.
+        surface.Pause();
+        var dialog = new SaveFileDialog { Filter = "Audio diagnosis (*.json)|*.json", FileName = "ohno-audio-diagnostics.json" };
+        if (dialog.ShowDialog(this) != true) return;
+        try
+        {
+            var fallback = new EffectAudioDiagnostics(effectsLibrary.Settings, EffectsConfigurationPath);
+            fallback.Set("preparationOrConfigurationError", effectsConfigurationError ?? surface.EffectsNote);
+            fallback.Set("effectsInstance", "UNAVAILABLE");
+            File.WriteAllText(dialog.FileName, surface.EffectsDiagnosticsJson ?? fallback.Json());
+        }
+        catch (Exception e) { MessageBox.Show(this, e.Message, "Could not save audio diagnostics"); }
     }
 
     private static string BundledSilentMap => Path.Combine(AppContext.BaseDirectory, "Fixtures", "first-circles.osu");

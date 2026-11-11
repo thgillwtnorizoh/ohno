@@ -731,3 +731,34 @@ R14 remains bounded to fresh format14 supported single-producer state. The spinn
 channel is separate from the slider pair. Overlaps, seek/editor/reused-manager,
 ambiguous cache collisions, device replacement and native BASS equivalence remain
 unsupported or unverified. See ../R14-original-spinner-audio.md for evidence.
+
+## R14-Q01 owner audio diagnosis
+
+`hitsounds.json` is read from `AppContext.BaseDirectory`, beside the executable
+actually running. It is optional: an absent file leaves the default pack
+**unconfigured**. Files merely existing at `C:\MyIndependentPack` do not configure
+it. Use `Effects setup` to see the precise settings path. The full pack has23 WAVs;
+spinner audio specifically needs unsuffixed `spinnerspin.wav` and `spinnerbonus.wav`.
+Map samples take precedence, then an admitted skin, then the independent default
+pack. Previously missing default/skin resources stay cached across map reloads;
+close and reopen the app after changing pack files or configuration.
+
+`Save audio diagnostics` pauses gameplay and writes an owner-chosen JSON snapshot.
+It includes effective settings/paths, optional-audio admission reason, per-resource
+provider/key/logical handle and decoder readiness, spinner C/N/U at each last event,
+separate bonus/completion requests, shared-channel/start/Pause/Stop counters,
+dispatch/generation counts, last32 changed channel-operation transitions and media
+errors. Counts are cumulative per prepared map and bounded in memory; no per-frame
+file logging or sample buffers. The save action itself causes expected Pause and
+cancellation entries. A logical Play or decoder-ready flag does not prove device
+output. Paths in the report identify the local installation; review before sharing.
+
+Start with `Spinner Practice` (format14, N15). Hold Z/X and rotate manually during
+3–6 seconds: ongoing motion should request the spin loop. Progress16 can earn a300
+and its ordinary completion tap; first normal bonus is **C20**, then22,24… . An end
+tap alone does not prove a bonus was attempted. The footer separately shows spin
+and bonus logical handles and decoder readiness. Source format15+ can remain
+playable while spinner audio is explicitly unsupported; do not relabel the file
+as14. Windows frequency modulation remains unsupported even when loops play.
+See `../R14-Q01-spinner-audio-playback-diagnosis.md` for the reproducible procedure,
+JSON example, diagnostic interpretation and exact verification evidence.
