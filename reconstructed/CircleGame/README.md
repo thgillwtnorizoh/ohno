@@ -762,3 +762,47 @@ the separate audio admission is also exact14. Other optional-audio limitations
 can leave a valid14 chart playable. Do not relabel a file as14 to bypass admission. Windows frequency modulation remains unsupported even when loops play.
 See `../R14-Q01-spinner-audio-playback-diagnosis.md` for the reproducible procedure,
 JSON example, diagnostic interpretation and exact verification evidence.
+
+## R15 Rank / results
+
+A supported fresh no-mod base-legacy session now enters a separate results screen.
+It displays original enum grade X/S/A/B/C/D (silver XH/SH exist in the independently
+callable getter), minimum-eight-digit score, Single-derived two-decimal accuracy,
+four whole-result counts and maximum combo. The grade uses unrounded binary32
+ratios compared to binary64 thresholds, not the formatted accuracy percentage.
+Perfect text is shown only when the completed E035/R10 preparation supplies the
+required combo scalar. Validity, success and perfect eligibility remain separate.
+
+The host retains the existing gameplay kernel and B+3000 session end. A separate
+finalization latch normally requires time strictly beyond maximum stored end+200;
+Rank request, admission, commitment, audio/input cleanup, current-record binding,
+widget initialization and presentation are distinct operations. The bounded host
+uses stable nonzero clock state and an **empty unsupported storyboard-event
+horizon**, with subsequent render callbacks committing/initializing/presenting;
+this is an engineering coordinator, not the original transition/fade framework.
+It defers finalization while kernel judgements are pending. No events are invented.
+
+On results, **Space / Enter** or Reveal score skips the deterministic score reveal;
+it does not retry. **R / Retry** creates a fresh gameplay/score/health/results
+session on the selected chart. **Escape / Back** requests original SelectPlay5 and
+lands on a clearly labelled engineering chart/fixture-selection state. Use the
+existing Open/fixture controls there, or Space to retry the selected chart.
+Gameplay's prior R/Enter/Space controls retain their meanings during gameplay.
+
+The screen uses independent WPF typography/shapes. The mutable selected record is
+retained, but visible text/grade are captured once at results initialization.
+Reveal uses its own Stopwatch host clock, start+300, elapsed/500 prefix and dot
+placeholders; numeric score never changes. Native random digits, textures/fonts,
+grade pulses, graph, player/date, decorated300g/100k, replay, online/submission and
+Rank/interface audio are unsupported. No applause is inferred from a good grade.
+
+Admission requires exact fresh parser identity, ordinary/no-mod/no-source/base
+record policy and source-row count **below7000**. E023 automatically enables
+ScoreV2 at7000; R15 marks this unsupported without changing existing gameplay or
+legacy score arithmetic. Failure-latched or unavailable HP/success provenance
+likewise does not claim normal Rank entry. A bounded unavailable panel offers
+Back/Retry. Perfect eligibility can be unavailable independently of grade.
+This work does not correct the deferred Joined Bézier score discrepancy.
+See `../R15-original-derived-rank-results.md` for provenance, verified counts,
+engineering substitutions and the78-row E042 coverage matrix. Windows source is
+built/tested without launching the gameplay window, listening or screenshot claims.

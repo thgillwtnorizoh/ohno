@@ -11,6 +11,20 @@ namespace Ohno.CircleGame.Rendering;
 public sealed class PlayfieldView : FrameworkElement, IDisposable
 {
     private readonly GameplayClock clock = new();
+    private readonly System.Diagnostics.Stopwatch rankClock = System.Diagnostics.Stopwatch.StartNew();
+    public RankSession? Rank { get; private set; }
+    public int RankHostTime => unchecked((int)rankClock.ElapsedMilliseconds);
+    public bool HasRankControls => Rank?.Stage is RankStage.RankAdmitted or RankStage.TransitionCommitted or
+        RankStage.ResultsInitialized or RankStage.ResultsPresented or RankStage.DepartureRequested or RankStage.Unavailable;
+    public event Action? ResultsCommitted;
+    public void SkipResultsReveal() => Rank?.Skip(RankHostTime);
+    public void BackFromResults() { Rank?.Back(); InvalidateVisual(); }
+    public void RetryResults()
+    {
+        if (Rank?.Stage == RankStage.Unavailable && Rank.Transitions.Current == RankMode.Play) Restart();
+        else Rank?.Retry(RankHostTime);
+        InvalidateVisual();
+    }
     private BeatmapAudio? audio;
     private WindowsCircleEffects? effects;
     private bool effectsEnabled = true;
@@ -60,6 +74,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         effects?.Dispose(); effects = preparedEffects;
         if (effects is not null) { effects.Enabled = effectsEnabled; effects.Attach(replacement); }
         Session = replacement;
+        Rank?.Dispose(); Rank = new(replacement);
         paths = preparedPaths;
         CurrentTime = 0;
         previousHealthRender = null;
@@ -76,6 +91,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         var replacement = CircleSession.CreateFreshOrdinary(Session.Map, Session.Scoring);
         if (audio?.Restart() == false) { AudioChanged(); return; }
         Session = replacement;
+        Rank?.Dispose(); Rank = new(replacement);
         effects?.Restart(replacement);
         started = true;
         CurrentTime = 0;
@@ -87,6 +103,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void TogglePause()
     {
         if (Session is null) return;
+        if (HasRankControls) { SkipResultsReveal(); return; }
         if (!started || Session.Finished) { Restart(); return; }
         if (Running) Pause();
         else if (audio?.Resume() != false) { effects?.Resume(); clock.Resume(); }
@@ -110,11 +127,11 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         FrameUpdated?.Invoke();
     }
 
-    public void SetHeldButtons(int buttons) => Session?.SetHeldButtons(buttons);
+    public void SetHeldButtons(int buttons) => Session?.SetHeldButtons(HasRankControls ? 0 : buttons);
 
     public void Press(int side = 1)
     {
-        if (!Running || Session is null || ActualWidth <= 0 || ActualHeight <= 0) return;
+        if (HasRankControls || !Running || Session is null || ActualWidth <= 0 || ActualHeight <= 0) return;
         Point mouse = Mouse.GetPosition(this); // Actual OS/WPF mouse, no synthetic input.
         PlayfieldLayout layout = PlayfieldLayout.Fit(ActualWidth, ActualHeight);
         if (mouse.X < layout.StageX || mouse.Y < layout.StageY ||
@@ -127,7 +144,20 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
 
     private void Frame(object? sender, EventArgs args)
     {
-        if (disposed || !Running || Session is null) return;
+        if (disposed || Session is null) return;
+        if (Rank is { } rank && (HasRankControls || rank.Stage == RankStage.ChartSelection))
+        {
+            if (rank.Stage == RankStage.RankAdmitted || rank.Stage == RankStage.DepartureRequested)
+            {
+                bool retry = rank.Transitions.Pending == RankMode.Play;
+                rank.Commit(() => { Pause(); Session.SetHeldButtons(0); ResultsCommitted?.Invoke(); });
+                if (retry) { Restart(); FrameUpdated?.Invoke(); return; }
+            }
+            else if (rank.Stage == RankStage.TransitionCommitted) rank.Initialize(RankHostTime);
+            else if (rank.Stage == RankStage.ResultsInitialized) rank.Present();
+            InvalidateVisual(); FrameUpdated?.Invoke(); return;
+        }
+        if (!Running) return;
         CurrentTime = clock.Time;
         // Real held-key and mouse samples; no synthetic gameplay events.
         int buttons = (Keyboard.IsKeyDown(Key.Z) ? 1 : 0) | (Keyboard.IsKeyDown(Key.X) ? 2 : 0);
@@ -146,6 +176,16 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         // remains gameplay authority. No original F2c22 scale or BASS identity claimed.
         Session.Advance(CurrentTime, pointer, buttons, spinnerPointer,
             new HealthHostTiming(hostElapsed, hostElapsed / (1000.0 / 60.0)));
+        if (Rank is { } results)
+        {
+            // ENGINEERING stable nonzero clock, ready phase, no timed storyboard-event horizon.
+            // Session.Advance remains authoritative; no pending result is drained or manufactured here.
+            results.Observe(CurrentTime, continuation: CurrentTime <= results.MaximumEnd);
+            results.Complete();
+            results.Observe(CurrentTime, continuation: CurrentTime <= results.MaximumEnd);
+            if (Session.Finished && results.Stage is RankStage.Active or RankStage.FinalizationEligible)
+                results.UnsupportedCompletion();
+        }
         if (Session.Finished) Pause();
         InvalidateVisual();
         FrameUpdated?.Invoke();
@@ -160,6 +200,8 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         dc.DrawRoundedRectangle(Stage, null, new Rect(l.StageX, l.StageY, l.Width, l.Height), 12, 12);
         Vector2 origin = l.ToScreen(Vector2.Zero);
         dc.DrawRectangle(null, new Pen(Brush("#293D56"), 1), new Rect(origin.X, origin.Y, 512 * l.Scale, 384 * l.Scale));
+        if (Rank?.Stage == RankStage.ChartSelection)
+        { Message(dc, "Chart / fixture selection", "ENGINEERING destination for SelectPlay5\nChoose Open .osu or a fixture above · Space to retry this chart"); return; }
         if (Session is not { } game) { Message(dc, "Load a supported .osu map", "Open .osu above to begin"); return; }
         if (game.Health is { } hp)
         {
@@ -301,16 +343,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
         if (next is not null && started && !game.Finished && !game.Spinners.Any(s => s.Result == Judgement.Pending && CurrentTime >= s.Definition.StartTime))
             Text(dc, $"NEXT  {Math.Max(0, next.Definition.StartTime - CurrentTime)} ms", new Point(ActualWidth / 2, 24), 15, Accent, true);
 
-        if (game.Finished)
-        {
-            ScoreLedger ledger = game.Ledger;
-            string record = ledger.IsSupported ? $"Legacy score: {ledger.Score:N0}    Accuracy: {ledger.AccuracyPercent:F2}%\n" +
-                $"300: {ledger.N300}   100: {ledger.N100}   50: {ledger.N50}   MISS: {ledger.NMiss}\n" +
-                $"Max combo: {ledger.MaximumCombo}    Admitted results: {ledger.TotalWholeResults}" :
-                "Legacy accounting unavailable\n" + ledger.UnsupportedReason;
-            Message(dc, "Practice complete", record + $"\nCompleted objects: {game.JudgedCount}/{game.ObjectCount}\n" +
-                ledger.PolicyLabel + "\nR / Enter to play again", 280);
-        }
+        if (game.Finished) Message(dc, "Preparing results", Rank?.Limitation ?? "Record complete · waiting for bounded Rank transition");
         else if (!started) Message(dc, "Gameplay practice", "Aim Z/X · Hold and follow sliders · Hold and rotate for spinners\nSpace or Start to begin · " + AudioStatus);
         else if (!Running) Message(dc, audio?.Failure is null ? "Paused" : "Audio unavailable",
             audio?.Failure is null ? "Space to resume · R to restart" : "Reload the map or choose Silent fixture above.");
@@ -366,6 +399,7 @@ public sealed class PlayfieldView : FrameworkElement, IDisposable
     public void Dispose()
     {
         disposed = true;
+        Rank?.Dispose();
         clock.Pause();
         if (audio is not null) { audio.StateChanged -= AudioChanged; audio.Dispose(); audio = null; }
         CompositionTarget.Rendering -= Frame;

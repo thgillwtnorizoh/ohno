@@ -1081,3 +1081,38 @@ Exact compressed full job logs and all tested code were unaffected. Restore that
 one JSON via raw-byte Git blob so retained provenance0b9e6040f21744a398c44e8aeebd5ee9ba81122801035c4888f5ca7029e9cb25
 matches the emitted artifact; preserve first publication in ancestry. No test or
 production change/re-execution required. Final byte/hash preservation rechecked.
+
+## R15 — Original-derived Rank results/grade foundation — 2026-11-11
+
+Work2 authorized R15 only; verified latest main305d6decda10f4450f0d12bd697e4f945d5450a0.
+Read standing contract/AGENTS/journals, E042 report/full parsed JSON (1220453 bytes,
+SHA256484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911), all78
+conditional predictions, E002/E003/E023/E027/E033-E036, R08/C02/R09/R10/R14/Q01,
+QA06-QA12 and actual ledger/parser/session/host/input/media/CI interfaces.
+No RTK.md, original archive/binary/research/execution, game Window/input/listening/
+nonempty media/OBS/E020. No authorised exception or scoring-discrepancy work.
+
+Added separate RankResults model, enum/getter, live ledger adapter with distinct
+success/validity/perfect, prepared E035/R10 combo scalar, explicit fresh/base-policy
+admission incl7000-row ScoreV2 rejection. Separate finalization B+200, record,
+B+3000 request, admission, commit/cleanup, current-record binding, initialization,
+presentation/departure. Original repeated grade reads preserved; invariant/frozen
+text capture and deterministic dots/UI clock are ENGINEERING. Independent WPF
+results panel, reveal skip, Back5 chart-selection substitute, Retry2 fresh session,
+input/audio cleanup. Additive display metadata only; numeric gameplay and all
+E037-E041/R14-Q01 code/evidence unchanged. Failure/unknown success/policy states
+explicitly unavailable. Empty timed-event horizon/nonzero clock/ready/K projection,
+pending-accounting guard and deterministic generation/lifetime documented.
+
+Added R15 development planned76 groups (74 component,2 source), separate Windows8
+host/widget groups with no Window/show/draw/media, E04278-row classified matrix,
+README/new R15 report/minimal CI. All1630 independent QA and retained development
+suites/G08/Q01 23 remain mandatory. No local SDK/run claim; exact-source Windows
+verification pending, failures to be retained. Canonical expected-head non-force
+publication only after CI; final report/evidence-only child preserves tested code.
+Stop R15, noQA13/E043/R16, frontend/replay/online/native animation/frequency work.
+
+R15 pre-gate additions include missing-metadata rejection, explicit unsupported
+numeric ledger policy and78-row coverage inventory controls: planned79 groups,
+77 executed finite components plus2 source inspections, separate Windows8.
+No static row is counted as an executed case. Exact Windows gate still pending.

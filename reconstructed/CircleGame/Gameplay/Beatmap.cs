@@ -486,10 +486,13 @@ public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<
     public IReadOnlyList<SamplePreparationOperand> RegisteredOverrides { get; init; } = Array.Empty<SamplePreparationOperand>();
 }
 
+public sealed record MapDisplayMetadata(string? Difficulty, string? Artist);
+
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
     public LegacyScoreMetadata? ScoreMetadata { get; init; }
+    public MapDisplayMetadata? DisplayMetadata { get; init; }
     public HealthMapSource? HealthSource { get; init; }
     public CircleSoundMap? CircleSounds { get; init; }
 
@@ -698,7 +701,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
-                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)

@@ -1,0 +1,857 @@
+{
+  "schema": "R15.E042.coverage.v1",
+  "authoritySha256": "484881b5ce25f251208c78f0120810d72a326bca657cf6873bd972f12b4ff911",
+  "gate": "PENDING exact-source Windows verification",
+  "rows": [
+    {
+      "id": "R01",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R02",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R03",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R04",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R05",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R06",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R07",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R08",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R09",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R10",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R11",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R12",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R13",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R14",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R15",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R16",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R17",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R18",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R19",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R20",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R21",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R22",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R23",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R24",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R25",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R26",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0000-0114",
+        "M2b44:0000-001b"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R27",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b5a:0002",
+        "M2b47",
+        "M32d7",
+        "M32de"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R28",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47",
+        "M32d7:0b28-0b92"
+      ],
+      "scope": "Grade/perfect independent flags; native conditional sprite is replaced by engineering text.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R29",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0021-0029",
+        "M32da:0011,00fe,0119"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R30",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b47:0066-00df"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R31",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M0acd:0001-003d",
+        "M32de:0001-0011"
+      ],
+      "scope": "Separate handler/global references tested; original arbitrary restoration excluded.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R32",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M0ace:0001-0012"
+      ],
+      "scope": "Initial reference alias retained; no original record reset interpreter.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R33",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46ad:0030-006d",
+        "M46e6:000c"
+      ],
+      "scope": "Gate returns Deferred; host/manual caller resubmits, no original worker delay.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R34",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46ad:022a-02ed"
+      ],
+      "scope": "Live guarded resubmission and pending semantics only; native callbacks absent.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R35",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46ad:022a",
+        "M46b0:0063-0072"
+      ],
+      "scope": "Pending/current distinction executed; original outgoing fade absent.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R36",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46b0:0000-0009"
+      ],
+      "scope": "Only Play2/SelectPlay5/Rank7 admitted; original Unknown10 commit unsupported.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R37",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46b0:0063-00d0,04b5-04bf,054b-0577"
+      ],
+      "scope": "Commit -> cleanup -> Initialize -> Present executed; original manager registration/containers excluded.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R38",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46b0:0084-00ac",
+        "M46df:0000-0021"
+      ],
+      "scope": "Controlled late cleanup mutation after captured presentation; no native scheduler claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R39",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M46b0:0569-0577"
+      ],
+      "scope": "Pending/current mismatch retained; arbitrary initializer reentrancy excluded.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R40",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2286",
+        "M46ad",
+        "M32de:0001-0006"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R41",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M4390",
+        "M32dd:0000-0011,0122-0129",
+        "M32de:0001-0006"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R42",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32de",
+        "M32db:002a-0098",
+        "M2b47"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R43",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:0000-0016"
+      ],
+      "scope": "Bounded unavailable state replaces original queued Menu request.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R44",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:0000-0024",
+        "M32de:0001-0011"
+      ],
+      "scope": "Source-only/recorded null dereference route excluded by policy.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R45",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:003a-0098"
+      ],
+      "scope": "Bounded unavailable state on missing/mismatched map, no original Menu frontend.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R46",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:0053-0098",
+        "M32df:0000-0057"
+      ],
+      "scope": "Record-hash map lookup/restoration unsupported.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R47",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:0000-0003"
+      ],
+      "scope": "Null M32d7 builder/idempotence path not implemented.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R48",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:0004-0021"
+      ],
+      "scope": "Numeric score and optional override captured; no original widget list cleanup.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R49",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b4b:0001-0010",
+        "M32d7:00b0-00c6"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R50",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:00b0-00c6"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R51",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:000b-0021,00b0-00c6"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R52",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:0082-00ae",
+        "M2b4b:0000-0016"
+      ],
+      "scope": "Accumulator/alternate format policies rejected.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R53",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b42",
+        "M32d7:09b1-09cc"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R54",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b42:000f-003d",
+        "M32d7:09b1-09cc"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R55",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2b42:0001-000e",
+        "M2b47:0000-0026,0066-0114"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R56",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:0196-033a,091e-0948"
+      ],
+      "scope": "Four ordinary counters and max displayed; decorated300g/100k unavailable and omitted.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R57",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32da:0001-0062,00f8-016a"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R58",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32da:0001-0062,00f8-0104"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R59",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32da:0011,00fe,0119"
+      ],
+      "scope": "Actual production finite grade/record/formatting/lifetime component control; no native/runtime claim.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R60",
+      "classification": "source inspection",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M451a:001b-002d"
+      ],
+      "scope": "Source-inspected engineering typography; no original missing-texture renderer or pixel test.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R61",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:0341-0357",
+        "M32d5:0001-0032",
+        "M2cf0:04e1"
+      ],
+      "scope": "Windows widget/host construction tested without Window, draw or GPU output.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R62",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d4:004b-00d4"
+      ],
+      "scope": "Signed elapsed/500, host+300 and captured score; deterministic dots replace M2333.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R63",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32e7:0000-00f6"
+      ],
+      "scope": "Skip flag/retiming model only; original sprite transforms/overlay removal excluded.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R64",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32e7:00f7-0101"
+      ],
+      "scope": "Reveal Boolean preserved; optional generic-argument back caller outside bounded UI.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R65",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d1:0000-000b",
+        "M32eb",
+        "M32e8:0000-001d"
+      ],
+      "scope": "Mode5 request/guards executed; destination explicit engineering chart selection, silent.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R66",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32e1:0000-002d",
+        "M46ad:0133-0154"
+      ],
+      "scope": "Mode2 request/reveal separation and guards; host fresh retry test; no menu sound.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R67",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d3:0072-0129",
+        "M2b61",
+        "M2b63"
+      ],
+      "scope": "Clear global and keep retained record; replay/graph serialization absent.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R68",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d3:00c2-00de"
+      ],
+      "scope": "Original pending7/14/17/18 disposal preservation unsupported; deterministic host disposal clears global.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R69",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2285",
+        "M2266:00e3",
+        "M2267:02ed-0305",
+        "M32da:0011"
+      ],
+      "scope": "Controlled cleanup clears success before selection; native M2267 suffix guards not reproduced.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R70",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M2267:0001-0014"
+      ],
+      "scope": "Nonreturning Environment.Exit cleanup deliberately unsupported.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R71",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32dd:0016-0059"
+      ],
+      "scope": "Recorded/source player selection rejected.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R72",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32dd:005a-0121"
+      ],
+      "scope": "Historical saved/replay record replacement rejected.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R73",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d7:0a01-0b28",
+        "M490a:0045-005c"
+      ],
+      "scope": "Missing graph/error/speed/player/date fields omitted; native optional child absent.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R74",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db",
+        "M32d7:0026-0076"
+      ],
+      "scope": "Repeated initialization rejected by ENGINEERING one-time stage guard.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R75",
+      "classification": "unsupported",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32db:0380-0402",
+        "M32f1",
+        "M32f2",
+        "M32d3:0001-000e"
+      ],
+      "scope": "Silent Rank: applause/history-majority sound path not implemented.",
+      "control": "Explicit admission/policy boundary; not counted executed"
+    },
+    {
+      "id": "R76",
+      "classification": "executed finite behavior",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M0aa5:003a",
+        "M2276:00f5-010f",
+        "M0acd:0007-003d",
+        "M2b47"
+      ],
+      "scope": "Artificial count mismatch invalidates flags without score rewrite; finalization/grade proceed.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R77",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "E027 M226b:0abd-0ad0",
+        "M0acd:000c-001a",
+        "M2b47:0021-0029"
+      ],
+      "scope": "Failed outer caller bypass model and bounded unavailable representation, no original fail navigation.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    },
+    {
+      "id": "R78",
+      "classification": "partial",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "evidence": [
+        "M32d4:0001-0008",
+        "M32d5:0001-0008",
+        "M32d3:0001-0013,0053-0071"
+      ],
+      "scope": "Distinct construction/initialization/presentation gates; native viewport-null/disposal cases excluded.",
+      "control": "R15DevelopmentChecks and, for host/widgets, R15WindowsChecks"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ public static class Program
 public sealed class GameWindow : Window
 {
     private readonly PlayfieldView surface = new();
+    private readonly RankResultsView rankView = new();
     private readonly TextBlock hud = new() { Foreground = Brushes.White, FontSize = 16, VerticalAlignment = VerticalAlignment.Center };
     private readonly TextBlock mapLabel = new() { Foreground = Brushes.LightSteelBlue, FontSize = 13, Margin = new Thickness(16, 0, 0, 0), VerticalAlignment = VerticalAlignment.Center };
     private readonly Button playButton;
@@ -46,7 +47,7 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · Spinner Audio Diagnosis R14-Q01";
+        Title = "ohno · R15 Rank Results Practice";
         try { effectsLibrary = new(HitSoundSettings.Read(EffectsConfigurationPath)); }
         catch (Exception e)
         {
@@ -68,7 +69,7 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Open .osu", OpenMap));
         playButton = Button("Start / Pause", () => surface.TogglePause());
         tools.Children.Add(playButton);
-        restartButton = Button("Restart (R)", () => surface.Restart());
+        restartButton = Button("Restart / Retry (R)", () => { if (surface.HasRankControls) surface.RetryResults(); else surface.Restart(); });
         tools.Children.Add(restartButton);
         tools.Children.Add(Button("Audible fixture", OpenAudibleFixture));
         tools.Children.Add(Button("Silent fixture", () => _ = LoadMapAsync(BundledSilentMap)));
@@ -93,7 +94,12 @@ public sealed class GameWindow : Window
         tools.Children.Add(Button("Save audio diagnostics", SaveAudioDiagnostics));
         tools.Children.Add(mapLabel);
         root.Children.Add(tools);
-        Grid.SetRow(surface, 1); root.Children.Add(surface);
+        var playHost = new Grid(); playHost.Children.Add(surface); playHost.Children.Add(rankView);
+        Grid.SetRow(playHost, 1); root.Children.Add(playHost);
+        rankView.BackRequested += () => { heldKeys.Clear(); surface.BackFromResults(); };
+        rankView.RetryRequested += () => { heldKeys.Clear(); surface.RetryResults(); };
+        rankView.SkipRequested += surface.SkipResultsReveal;
+        surface.ResultsCommitted += () => { heldKeys.Clear(); PublishHeldKeys(); };
         var footer = new StackPanel { Margin = new Thickness(20, 12, 20, 14) };
         footer.Children.Add(hud);
         footer.Children.Add(scoringStatus);
@@ -245,10 +251,18 @@ public sealed class GameWindow : Window
 
     private void KeyPressed(object sender, KeyEventArgs e)
     {
-        if (e.Key is not (Key.Z or Key.X or Key.Space or Key.R or Key.Enter)) return;
+        if (e.Key is not (Key.Z or Key.X or Key.Space or Key.R or Key.Enter or Key.Escape)) return;
         e.Handled = true;
         if (loading || closing) return;
         if (e.IsRepeat || !heldKeys.Add(e.Key)) return;
+        if (surface.HasRankControls)
+        {
+            heldKeys.Clear(); PublishHeldKeys();
+            if (e.Key is Key.Space or Key.Enter) surface.SkipResultsReveal();
+            else if (e.Key == Key.Escape) surface.BackFromResults();
+            else if (e.Key == Key.R) surface.RetryResults();
+            UpdateHud(); return;
+        }
         PublishHeldKeys();
         switch (e.Key)
         {
@@ -261,6 +275,9 @@ public sealed class GameWindow : Window
 
     private void UpdateHud()
     {
+        if (surface.Rank is { } rank && rank.Stage is RankStage.ResultsPresented or RankStage.Unavailable)
+            rankView.Bind(rank.Presentation, rank.Limitation, rank.Reveal?.Text(surface.RankHostTime) ?? "");
+        else rankView.Hide();
         foreach (Button button in buttons) button.IsEnabled = !loading && !closing;
         playButton.IsEnabled &= surface.Session is not null;
         restartButton.IsEnabled &= surface.Session is not null;
@@ -277,6 +294,6 @@ public sealed class GameWindow : Window
             $"{game.HealthStatus} · H {hp.State.H:F2} / V {hp.State.V:F2} / A {hp.State.A:F2} · " +
             $"r {hp.State.Rate:G6}, B {hp.State.B:G5}, G {hp.State.G:G5}, trials {hp.Calibration.Trials}" +
             (hp.Failed ? " · failure latched; departure unimplemented, practice continues" : "") : game.HealthStatus;
-        playButton.Content = surface.Running ? "Pause (Space)" : game.Finished ? "Play again" : "Start / Resume";
+        playButton.Content = surface.HasRankControls ? "Reveal score" : surface.Running ? "Pause (Space)" : "Start / Resume";
     }
 }

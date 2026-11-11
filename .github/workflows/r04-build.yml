@@ -19,6 +19,8 @@ on:
       - reconstructed/R14DevelopmentChecks/**
       - reconstructed/R14WindowsChecks/**
       - reconstructed/R14Q01DevelopmentChecks/**
+      - reconstructed/R15DevelopmentChecks/**
+      - reconstructed/R15WindowsChecks/**
       - reconstructed/GenerateIndependentSpinnerSounds.ps1
       - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
@@ -319,3 +321,17 @@ jobs:
           $resultCode = $LASTEXITCODE
           Remove-Item $packPath -Recurse
           exit $resultCode
+
+      - name: Check R15 original-derived Rank model without media or windows
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R15DevelopmentChecks/R15DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R15 WPF host and widgets without showing a Window
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R15WindowsChecks/R15WindowsChecks.csproj -c Release
+          exit $LASTEXITCODE
