@@ -1535,3 +1535,113 @@ workflow and production. Latest canonical main verified before safe non-force
 publication; exact final publication SHA supplied in verified handoff. No history
 rewrite or unrelated change. Deferred Joined Bezier mismatch untouched. Stop
 after QA13; no R16,E043,QA14,framework migration or owner-only runtime campaign.
+
+## Expedition 043 — SelectPlay, local difficulties and selected-map provenance — 2026-11-12
+
+Work1 authorized original-static research, canonical starting/tested source
+b440e4e601798be9157fbaa1274a25fcac130232. Objective: bounded local ordinary
+SelectPlay controller, indexed map/difficulty selection, metadata/preview, Play
+entry and Rank return; naturally reached local star-cache/producer provenance
+only. No reconstruction or QA modification, database implementation, complete
+star algorithm, proprietary asset export, R16,E044 or QA14. No exception.
+
+Pinned actual archive78546961bytes SHA256
+7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738;
+ZIP osu!.exe4541728bytes SHA256
+6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d,
+verified before decoding. Self-reported Stable40/1.3.3.8 remains unauthenticated
+as an official dated release. Windows Python3.12/dnfile0.18.0/dncil1.0.2 static
+metadata only; no original executable/CLR/native calls, game Window, input,
+debugger, listening or capture. Historical1911 QA and six owner manual checks
+are retained context, not rerun here; E02017 original-runtime cases NOT RUN.
+
+Preparation: AGENTS/RTK/Instruction, both journals; E002–E005,E023,E027,E033–E036,
+E042 and relevant map/audio evidence, QA13 report/matrix, R15 report and read-only
+host/parser/selection interfaces. New files:
+re/43-original-selectplay-beatmap-selection-and-gameplay-entry.md,
+re/evidence/43/selectplay.json, re/tools/selectplay_evidence.py and
+re/tools/check_selectplay.py. Only prior-file change is this append. Previous
+research journal453417bytes SHA256
+5071fc7753de5df65e2353f93cfa413dc4affc7c307d88d9e723d0c0774b0926;
+implementation journal unchanged80851bytes SHA256
+4d9157cc9d834c2b0927551545ff3c59436676026ed2923cb9534130b45cf372.
+
+CONFIRMED STATIC controller T04d6/M2571, ancestry T05b4/T08fb/T0397;
+virtual initM25c0/updateM25a2/drawM25bf/disposeM2576. M46b0 mode5 shares a
+switch target with selectionmode4 but conditionally constructs loadingT0373/
+current19 rather than SelectPlay. E003 F2c48 redirect retained. Construction,
+registration/init and later draw remain distinct. BrowserT082c retains map
+references in T059a.F1941; available contiguous equal-folder runs receive F1942
+in M3ea7, independent of online setID. HighlightF254d differs from committed
+difficultyF254b and globalF1a0f. M3ebc→F2557→M2581 calls M2c64 for nonnull
+map, before metadata validation/preview. Complete direct scan finds M2c64's
+0021 store is the only managed F1a0f writer. Same-reference return, old-resource
+cleanup-before-store and null-callback retention are preserved. No unproved
+universal gameplay-cache invalidation or automatic rollback.
+
+CatalogF1a01 combines osu!.db metadata loading M2ca5/M1bf1/M1bf2 and regular
+*.osu discovery M2c8c/M1bc1 plus filesystem refresh. M1bf4 compares filename
+only for BinarySearch; equal filename/F0fee registration can retain existing
+entry, and hash/positiveID indexers can overwrite by supplied catalog order.
+No universal full-path uniqueness, stable sort or duplicate-ID rejection claimed.
+F19ff root derives BeatmapDirectory/Songs. Metadata consumers include prepared
+title/artist/version/creator, difficulty scalars, BPM/end/counts and background/
+preview identities; E034 score-duration/K remain separate.
+
+Ordinary Start M2578 requires nonnull selection, !F2540, phase2. It cleans up
+M2577(true):0311 before queued M46ae(Play2,false,1000):031d. Queue closure
+captures mode/options/scalar, no chart; M4711 commits through M46b0 and is not
+a rerun of all M46ad guards. Play.M2237 freshly captures selected map into
+instanceF13f8:0006. Changed selection before initialization can change captured
+chart. Preserve corrected E005 ordinary factory and E004 loading failures.
+Rank.M32e8 requests SelectPlay5,false at0018, without map/scroll payload.
+Rebuild callback M25f3 checks active controller/exiting state, then reads fresh
+global selection and locates by reference. Group/search/ruleset retention is
+identified; exact old scroll, unavailable-map recovery and stale worker outcomes
+remain conditional. Preview receiver map F2367.F24ad can differ from selection;
+same-folder/audiofilename permits receiver reuse, missing stream can use silent
+timeline fallback. No universal preview-stop-on-departure rule invented.
+
+Local star provenance FOUND: per-map Dictionary<Int32,Single>[4] F0fea;
+M1bc7 normalized-mod read, M1bd5 Abs, M1bdb display with M2d7f floor2 before
+format0.##★. Missing key0 and negative stale key0 can schedule M2588/M2589→
+M1bcf/M1c1e; worker waits while Play2, calls M1bd0 then queues M1c23 cache
+writeback and conditional selected-map refresh. DB version20250107 changes
+Double→Single cache shape; older per-mode cutoffs negate Abs as stale marker.
+Ordinary calculator factory M1bc6→M0801/T011b→M3696/T072f and virtual M08d9
+entry/inputs identified. Full strain/skill/aggregation/mod algorithm deliberately
+not reconstructed. This cache is not E034 legacy score multiplier.
+
+Verification PASS:277 methods/277 independent original-byte body audits,
+926 field declarations,2198 bounded field sites,90 call sites,73 literal
+relationships,326 independently decoded strings,105 historical body comparisons,
+66 RECONSTRUCTED STATIC PREDICTIONS and19 independent finite Python projections.
+Complete scan19659 decoded/1739 zeroRVA/no errors. Repeated final extraction
+byte-identical2610266bytes SHA256
+9ac182e9b6af5faaca3e517c4500bbeef574b715af01350f5d223b8fc88324a4.
+New-checker SHA256
+a5209c20c737c2877e1d643216cf1eb211d22c698b0358d8d19281933b38d050.
+The checker reparses pinned archive independently; no E043 collector import.
+NaN/nonfinite constants are strict-JSON strings, raw bytes pinned by body hash.
+
+Unchanged historical checks PASS E002/E003/E004/E005/E023/E027/E033/E034.
+E042 unchanged relationship/archive functions PASS26 finite binary32 grades and
+110 bodies; its pre-R15 reconstruction-source manifest is explicitly not asserted
+against current R15. E038 full archive checker PASS112methods/56 independently
+decoded strings/12 embedded-key metadata/178 historical hashes. No historical
+checker, E042 R30 statement or QA13 correction rewritten. Syntax checks PASS.
+Research-tool setup corrections preserved in report/evidence: misspelled E005
+path, misnamed optional checker, overbroad no-M46ad assertion across alternate
+M2578 arms, five offset/opcode transcriptions, NaN self-equality and compressed
+search-regex string assumption. E038-established compression branch independently
+handled; these are tooling failures, not production behavior defects.
+
+RECONSTRUCTED handoff recommends only a future bounded engineering index with
+original-derived folder/difficulty/selection/capture stages, metadata, Rank
+return and existing fresh Retry. Preview cancellation and any stronger path
+identity policy are ENGINEERING. Optional cache-backed star display needs stated
+provenance; local star calculation deferred. No authorization to implement R16.
+Original scheduler/native preview/rendering/resources, arbitrary DB/providers,
+physical input and human-visible frontend fidelity remain UNVERIFIED
+ORIGINAL-RUNTIME. Latest canonical origin/main checked before safe non-force
+publication; exact publication SHA supplied in verified handoff. Stop after E043.
