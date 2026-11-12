@@ -1,0 +1,62 @@
+{
+  "verification/failure-headless-local-2/execution.log": {
+    "stored": "verification/failure-headless-local-2/execution.log.gz.b64",
+    "bytes": 8271,
+    "sha256": "68f741a36845b2906e87a863d1497b7d43552e94538c084eb77202dced96b7b9",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/failure-headless-local-3/execution.log": {
+    "stored": "verification/failure-headless-local-3/execution.log.gz.b64",
+    "bytes": 1062915,
+    "sha256": "f921608d3f36a671439632696b4604bc1676578c64123bd8d30e899793deb699",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/failure-headless-local-3/results.json": {
+    "stored": "verification/failure-headless-local-3/results.json.gz.b64",
+    "bytes": 6731473,
+    "sha256": "0ff2fe8cff6fdd74b087b700158ea9d1521986fb850447756f5db4aac4d56d0c",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/first-complete-local/local-headless-results.json": {
+    "stored": "verification/first-complete-local/local-headless-results.json.gz.b64",
+    "bytes": 6735467,
+    "sha256": "d7de6ec2c68bca1e7e72583d2e93f6b32e2aca44c19e5a7423923f8b496532e1",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/first-complete-local/local-headless.log": {
+    "stored": "verification/first-complete-local/local-headless.log.gz.b64",
+    "bytes": 1062357,
+    "sha256": "c26322448a2ff575d1aca72d4bcf2ebf3e591d30cc67b7045ca5a9b6e5ea16a8",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/initial-headless-local/execution.log": {
+    "stored": "verification/initial-headless-local/execution.log.gz.b64",
+    "bytes": 3248,
+    "sha256": "7089661b4394c9e3215793258e8de2f1026e95d7d48390bb2a471ddd5eb890bf",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/initial-windows-local/execution.log": {
+    "stored": "verification/initial-windows-local/execution.log.gz.b64",
+    "bytes": 1061,
+    "sha256": "8ffc50bf0155f9bf8934ff6b3b6e4b99b162b4b51cd999599af97e141fb7f6b2",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/local-headless.log": {
+    "stored": "verification/local-headless.log.gz.b64",
+    "bytes": 4552,
+    "sha256": "49d4e52644b0e0d654e95dfdb4847fd44a20817e8393f0ba27cecac2fd698b3b",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/local-selection.log": {
+    "stored": "verification/local-selection.log.gz.b64",
+    "bytes": 4660,
+    "sha256": "68144cbcc780cbdd415fc0f9c2862df634ddac4fab04766298dbe9df4d530f86",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/local-windows.log": {
+    "stored": "verification/local-windows.log.gz.b64",
+    "bytes": 4819,
+    "sha256": "a1eac5e481cb2256c50c5f199db515efa183eb8a564cb1edfa11ce0a2952303a",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  }
+}

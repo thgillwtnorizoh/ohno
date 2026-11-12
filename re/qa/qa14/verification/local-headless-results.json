@@ -1,0 +1,722 @@
+{
+  "schema": "QA14.v1",
+  "source": "local-preflight",
+  "production": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "runtime": ".NET 8.0.17",
+  "filter": "R/",
+  "named": 15,
+  "passed": 15,
+  "failed": 0,
+  "classifications": {
+    "EXECUTED COMPONENT": 15
+  },
+  "cases": [
+    {
+      "id": "R/missing-before-request",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference capture is not file validity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": "FileNotFoundException",
+          "actual": "FileNotFoundException",
+          "Message": "Could not find file \u0027C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Temp\\ohno-qa14-bc48efcd4ce64130873f54467f9d47ba\\a1813a8365d7a7d6\\song\\chart.osu\u0027."
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/missing-before-capture",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference capture is not file validity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": "FileNotFoundException",
+          "actual": "FileNotFoundException",
+          "Message": "Could not find file \u0027C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Temp\\ohno-qa14-bc48efcd4ce64130873f54467f9d47ba\\91f08c29541eeadd\\song\\chart.osu\u0027."
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/missing-before-parsing",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference capture is not file validity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": "FileNotFoundException",
+          "actual": "FileNotFoundException",
+          "Message": "Could not find file \u0027C:\\Users\\Hjuiujerrjj\\AppData\\Local\\Temp\\ohno-qa14-bc48efcd4ce64130873f54467f9d47ba\\0db6a2c15af691a6\\song\\chart.osu\u0027."
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/changed-after-parse-delete",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "final validation rejects change",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "label": "",
+          "expected": "Independent QA14",
+          "actual": "Independent QA14"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/changed-after-parse-append",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "final validation rejects change",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "label": "",
+          "expected": "Independent QA14",
+          "actual": "Independent QA14"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/changed-after-parse-same-length-stamp",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "final validation rejects change",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "label": "",
+          "expected": "Independent QA14",
+          "actual": "Independent QA14"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/cancel-during-preparation-refresh",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/cancel-during-preparation-back",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": 9,
+          "actual": 9
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/cancel-during-preparation-shutdown",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": 10,
+          "actual": 10
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/newer-completes-before-old",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "new request ready",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 7,
+          "actual": 7
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/cancelled-preparation-throws",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "accept",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "queue",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "capture",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/index-is-not-parser",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "775c84f02c8119075d2c28b1922e1cea9f1e8706dc4989d4dc2d5af5e8935ea3",
+          "length": 255,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "metadata indexed without AR",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "expected": "InvalidDataException",
+          "actual": "InvalidDataException",
+          "Message": "R02 requires explicit ApproachRate."
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/index-size-is-not-parser-size",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "4e0a664acc7214ff6e78c2bc12c14ee7c0028bdd60774fd4ab5a6c63efa9567a",
+          "length": 2097153,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "metadata index admits2MiB\u002B1 within its4MiB limit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 2097153,
+          "actual": 2097153
+        },
+        {
+          "expected": "InvalidDataException",
+          "actual": "InvalidDataException",
+          "Message": "R02 accepts beatmaps up to 2 MB."
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/changed-after-final-check-in-memory",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": "Independent QA14",
+          "actual": "Independent QA14"
+        },
+        {
+          "label": "",
+          "expected": 1700,
+          "actual": 1700
+        },
+        {
+          "expected": "InvalidDataException",
+          "actual": "InvalidDataException",
+          "Message": "Chart changed since indexing; refresh and commit its new row: chart.osu"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "R/prior-session-retained-on-parser-failure",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "fcf7a855584c209a536907f50c691f3e46c68bf0da4af588a23c63e1b93f8fec",
+          "length": 209,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    }
+  ],
+  "manifest": {
+    "reconstructed/CircleGame/Program.cs": "2e5a02d2082761ce2561dbe343636db1a7d8ec1b7f3abd7bc3a8fb25f6528f92",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "07c58b9c25d91928ce0341725af7566a34594bc3ce86fdd72ed6ccc150f72de1",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "6ce993bb80d794509e5f79478058c56a51dd71d9559f8ad74869f0396b8c3937",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "627771ee1d620a6a2a39b0ba4d501663dec72663b3db72513ee5067cf9eb0877",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "1dff4ede2116c7cb1d75730ccf828ca0cdaa9d58f5077802bd1f2ee4beae2b90",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "d493bc9836bcbbbb4165d38badaabcf15d233f9a7cdcf833756420f14bb154f8",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "re/qa/qa14/Headless/CatalogIdentity.cs": "4df2c71daf6c631dbbaee9c0c895a2dcb486f81100a4f8a03354b1b8b54efda6",
+    "re/qa/qa14/Headless/Harness.cs": "54d146460564c8c634974d30b33457149c210445c04522d6e2ea86651e0b212e",
+    "re/qa/qa14/Headless/MetadataStars.cs": "0483b1742a75a3e65f146106598d8115cb903381e9bcc9721f0196b020b8e14d",
+    "re/qa/qa14/Headless/SelectionEntry.cs": "3d10c4dff39ff5cf627b51a90d2c4b2e0d12958c6809acd5e300889bb4fb02e6",
+    "re/qa/qa14/Headless/SessionsAudit.cs": "0e14f9286b25db3350dca573ee25e00afb5118837e51da0b3f33a0d491a7793f"
+  }
+}

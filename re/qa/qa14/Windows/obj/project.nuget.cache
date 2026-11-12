@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "vWc4zKaNnE0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa14\\Windows\\QA14.Windows.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hjuiujerrjj\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Hjuiujerrjj\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Hjuiujerrjj\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.32\\microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Hjuiujerrjj\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.32\\microsoft.netcore.app.host.win-x64.8.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}

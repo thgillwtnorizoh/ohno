@@ -1,0 +1,18 @@
+{
+  "command": [
+    "rtk",
+    "proxy",
+    "dotnet",
+    "run",
+    "--project",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa14\\Windows\\QA14.Windows.csproj",
+    "-c",
+    "Release",
+    "--",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa14\\verification\\local-windows-results.json"
+  ],
+  "exit": 1,
+  "log_sha256": "8ffc50bf0155f9bf8934ff6b3b6e4b99b162b4b51cd999599af97e141fb7f6b2",
+  "classification": "Initial QA14 local run, not an R16 development failure"
+}

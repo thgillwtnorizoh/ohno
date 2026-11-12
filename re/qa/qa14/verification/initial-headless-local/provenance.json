@@ -1,0 +1,18 @@
+{
+  "command": [
+    "rtk",
+    "proxy",
+    "dotnet",
+    "run",
+    "--project",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa14\\Headless\\QA14.Headless.csproj",
+    "-c",
+    "Release",
+    "--",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno",
+    "C:\\Users\\Hjuiujerrjj\\Documents\\ChatGPT\\Reverse engineer osu! stable\\ohno\\re\\qa\\qa14\\verification\\local-headless-results.json"
+  ],
+  "exit": 1,
+  "log_sha256": "7089661b4394c9e3215793258e8de2f1026e95d7d48390bb2a471ddd5eb890bf",
+  "classification": "Initial QA14 local run, not an R16 development failure"
+}

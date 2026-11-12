@@ -52,6 +52,10 @@ on:
       - re/qa/qa13/Windows/**
       - re/qa/qa13/Inputs/**
       - re/qa/qa13/Run-QA13.ps1
+      - re/qa/qa14/Headless/**
+      - re/qa/qa14/Windows/**
+      - re/qa/qa14/Inputs/**
+      - re/qa/qa14/Run-QA14.ps1
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -361,4 +365,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R16WindowsChecks/R16WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA14 catalog selection and entry controls without windows/media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa14/Run-QA14.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa14-results.json')
           exit $LASTEXITCODE

@@ -1,0 +1,908 @@
+{
+  "schema": "QA14.v1",
+  "source": "local-preflight",
+  "production": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "runtime": ".NET 8.0.17",
+  "filter": "S/",
+  "named": 26,
+  "passed": 26,
+  "failed": 0,
+  "classifications": {
+    "EXECUTED COMPONENT": 26
+  },
+  "cases": [
+    {
+      "id": "S/null-initial",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/same-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/null-retains-map",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/cleanup-before-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 2,
+          "actual": 2
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/cleanup-throws",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "expected": "IOException",
+          "actual": "IOException",
+          "Message": "controlled cleanup failure"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/first-highlight-only",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/same-run-highlight-commits",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "s/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/different-run-pending",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/row-before-callback",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "explicit commit",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/callback-throws-before-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "partial failure retained",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/callback-throws-after-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/callback-null",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "explicit callback-unavailable",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/repeated-commit-stable-selection",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/unavailable-commit-rejected",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "2f05d4b689d270cafb02285f35f44866f7dc8a2d368a3f9d1124373eeab31fb1",
+          "length": 3,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/rebuild-retained-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/rebuild-missing-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "recovery instead of arbitrary first row",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/new-revision-no-substitution",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/stale-generation-rejected",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/same-generation-status-refresh",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "same-generation status update intentionally supported",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/obsolete-row-callback",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "s/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/confirmation-two-stages",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/mouse-first-and-repeat",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/no-available-confirmation",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "f1234d75178d892a133a410355a5a990cf75d2f33eba25d575943d4df632f3a4",
+          "length": 7,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/empty-return-no-replacement",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/live-selection-after-rebuild",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "s/a.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "fixture": "t/b.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "S/return-after-cancelled-refresh",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "9cd73d0ad7ab623459d0c61e69fea9d7d220e9e6f92a20702958f093a4aeb6ef",
+          "length": 306,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    }
+  ],
+  "manifest": {
+    "reconstructed/CircleGame/Program.cs": "2e5a02d2082761ce2561dbe343636db1a7d8ec1b7f3abd7bc3a8fb25f6528f92",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "07c58b9c25d91928ce0341725af7566a34594bc3ce86fdd72ed6ccc150f72de1",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "6ce993bb80d794509e5f79478058c56a51dd71d9559f8ad74869f0396b8c3937",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "627771ee1d620a6a2a39b0ba4d501663dec72663b3db72513ee5067cf9eb0877",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "1dff4ede2116c7cb1d75730ccf828ca0cdaa9d58f5077802bd1f2ee4beae2b90",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "d493bc9836bcbbbb4165d38badaabcf15d233f9a7cdcf833756420f14bb154f8",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "re/qa/qa14/Headless/CatalogIdentity.cs": "4df2c71daf6c631dbbaee9c0c895a2dcb486f81100a4f8a03354b1b8b54efda6",
+    "re/qa/qa14/Headless/Harness.cs": "54d146460564c8c634974d30b33457149c210445c04522d6e2ea86651e0b212e",
+    "re/qa/qa14/Headless/MetadataStars.cs": "0483b1742a75a3e65f146106598d8115cb903381e9bcc9721f0196b020b8e14d",
+    "re/qa/qa14/Headless/SelectionEntry.cs": "3d10c4dff39ff5cf627b51a90d2c4b2e0d12958c6809acd5e300889bb4fb02e6",
+    "re/qa/qa14/Headless/SessionsAudit.cs": "0e14f9286b25db3350dca573ee25e00afb5118837e51da0b3f33a0d491a7793f"
+  }
+}

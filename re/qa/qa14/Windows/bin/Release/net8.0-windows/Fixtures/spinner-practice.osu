@@ -1,0 +1,23 @@
+osu file format v14
+
+// Independently authored Project ohno input; no original assets.
+[General]
+Mode: 0
+
+[Metadata]
+Title:Spinner Practice — R07
+Artist:Project ohno
+Creator:Work 2
+Version:Hold and Rotate
+
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+256,192,3000,8,0,6000,0:0:0:0:

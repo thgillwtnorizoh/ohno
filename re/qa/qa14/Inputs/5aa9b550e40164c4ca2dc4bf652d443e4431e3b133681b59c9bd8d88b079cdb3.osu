@@ -1,0 +1,17 @@
+osu file format v14
+[General]
+Mode:0
+[Metadata]
+Title:Independent QA14
+Artist:Finite artist
+Creator:Work1
+Version:Control
+[Difficulty]
+HPDrainRate:Infinity
+CircleSize:Infinity
+OverallDifficulty:Infinity
+ApproachRate:Infinity
+[TimingPoints]
+0,600,4,1,1,55,1,0
+[HitObjects]
+173,141,1700,1,2,0:0:0:0:

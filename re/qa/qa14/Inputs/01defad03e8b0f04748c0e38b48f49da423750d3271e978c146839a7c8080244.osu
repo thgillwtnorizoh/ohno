@@ -1,0 +1,20 @@
+osu file format v14
+[General]
+Mode:0
+[Metadata]
+Title:Independent QA14
+Artist:Finite artist
+Creator:Work1
+Version:Control
+[Difficulty]
+HPDrainRate:0
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[TimingPoints]
+0,600,4,1,1,55,1,0
+[HitObjects]
+64,192,1000,2,14,L|264:192,2,200,2|8|4,1:2|3:1|2:3,0:0:0:0:
+448,192,6000,1,0,0:0:0:0:
