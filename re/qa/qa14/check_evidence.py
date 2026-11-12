@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 import struct
 import subprocess
@@ -59,6 +60,14 @@ def packed():
         assert len(b)==item['bytes'] and sha(b)==item['sha256'],name
     return len(load(V/'packed-files.json'))
 
+def fixtures():
+    entries=load(QA/'Inputs/manifest.json')['files']
+    assert len(entries)==54
+    for name,item in entries.items():
+        b=(QA/'Inputs'/name).read_bytes()
+        assert len(b)==item['bytes'] and sha(b)==item['sha256']==Path(name).stem,name
+    return len(entries)
+
 def failures():
     assert 'NU1301' in raw(V/'initial-headless-local/execution.log').decode('utf-8-sig')
     assert 'CS0119' in raw(V/'initial-windows-local/execution.log').decode('utf-8-sig')
@@ -97,6 +106,7 @@ def coverage(e,packets):
         assert row['originalEvidence']==original['evidence']
         assert row['originalCaseExecuted'] is False and row['originalRuntime']=='UNVERIFIED ORIGINAL-RUNTIME'
         for linked in row['inputsAndOutcomes']:
+            assert (QA/linked['packet']).exists(),linked['packet']
             c=cases[linked['control']];assert c['passed']==linked['passed']
             assert linked['caseSha256']==sha(json.dumps(c,sort_keys=True,ensure_ascii=False).encode())
         if row['classification']=='FINITE':assert row['inputsAndOutcomes']
@@ -111,15 +121,16 @@ def gate(packets):
     for label,n in [('HEADLESS COMPONENT TESTS',90),('QA03 SLIDER TESTS',56),('QA04 GEOMETRY TESTS',43),('QA05 SPINNER TESTS',66),('QA06 ACCOUNTING TESTS',99),('QA07 HEALTH TESTS',159),('QA08 NEWCOMBO TESTS',115),('QA09 HITSOUND TESTS',234),('QA10 SLIDER SOUND TESTS',229),('QA11 CONTINUOUS TESTS',247),('QA12',274),('QA13 HEADLESS',257),('QA14 HEADLESS',234)]:
         assert f'{label}: {n} passed, 0 failed' in text,label
     for s in ['0 Warning(s)','0 Error(s)','QA11 WINDOWS EMPTY: 6 passed, 0 failed','QA12 WINDOWS: 12 passed, 0 failed','QA13 WINDOWS: 24 passed, 0 failed','QA14 WINDOWS: 30 passed, 0 failed',
-        'R11 HITSOUND CHECKS: 32 passed','R12 SLIDER SOUND CHECKS: 40 passed','R13 CONTINUING CHECKS: 54 passed','R13-C01 DEVELOPMENT CHECKS: 6 passed','R14 SPINNER AUDIO CHECKS: 58 passed','R14-Q01 DEVELOPMENT: 23/23','R15 DEVELOPMENT: 79 groups passed','R15 WINDOWS: 8/8','R16 DEVELOPMENT: 52/52','R16 WINDOWS: 12/12']:
+        'R11 HITSOUND CHECKS: 32 passed','R12 SLIDER SOUND CHECKS: 40 passed','R13 CONTINUING CHECKS: 54 passed','R13-C01 DEVELOPMENT CHECKS: 6 passed','R14 SPINNER AUDIO CHECKS: 58 passed','R14-Q01 DEVELOPMENT: 23/23','R15 DEVELOPMENT: 79 groups passed','R15 WINDOWS: 8/8','R16 DEVELOPMENT: 52 groups passed','R16 WINDOWS: 12/12']:
         assert s in text,s
+    assert [int(n) for n in re.findall(r'PASS R16 (\d{2}) ',text)]==list(range(1,53))
     for name,label in [('windows-results.json','QA14'),('windows-widget-results.json','QA14 WINDOWS')]:assert sha(raw(V/name))==p['packets'][label]['sha256']
     return p['source'],p['url']
 
 if __name__=='__main__':
     e=authority();print('PASS QA14 published E043 relationships and independent binary32 floor operands')
     if '--preservation' in sys.argv:print('PASS protected historical files',preserved())
-    print('PASS lossless retained packets',packed());failures();print('PASS preserved QA14 local setup/oracle failures and first complete pass')
+    print('PASS lossless retained packets',packed());print('PASS exact independent fixture bytes',fixtures());failures();print('PASS preserved QA14 local setup/oracle failures and first complete pass')
     if (V/'windows-provenance.json').exists():
         p=final_results();print('PASS independent named controls264:226 headless component +8 source +30 Windows')
         print('PASS independent E043 coverage',coverage(e,p));print('PASS exact Windows gate, historical1911 and retained development',gate(p))

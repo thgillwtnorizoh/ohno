@@ -1645,3 +1645,130 @@ Original scheduler/native preview/rendering/resources, arbitrary DB/providers,
 physical input and human-visible frontend fidelity remain UNVERIFIED
 ORIGINAL-RUNTIME. Latest canonical origin/main checked before safe non-force
 publication; exact publication SHA supplied in verified handoff. Stop after E043.
+
+## QA14 — Independent SelectPlay/catalog/identity/Play entry — 2026-11-12
+
+Work1 authorized independent verification only. Verified canonical baseline
+abd9dbf763b27556fe73e64c41c1042443a2d2d5; tested R16 production
+19bb644e01c646ca8850f0751ec03f7ef881d766. Read standing AGENTS/RTK/Instruction,
+both journals, E002–E005/E023/E027/E033–E034/E042/E043, R15/QA13/R16 reports,
+all66 E043 predictions/full published packet, R16 matrix and actual catalog,
+selection/view/host/entry/parser/ledger/health/audio/Rank/CI interfaces. Expected
+operands independently derived from E043 and declared engineering policy, not
+copied from R16 development expectations. No production correction/exception.
+
+R16 chronology retained and independently checked: development source19bb644e
+run43153555528/job130968150828 and publicationabd9dbf run43154351392/
+job130970691482 both successful; historical1911, R1652 and Windows12 passed.
+No prior R16 failure invented. QA14 preparation failures are separate new Work1
+tooling history, preserved in re/qa/qa14/verification with source/log/provenance.
+
+Exact-source QA14 Windows gate PASS:
+b795dcb31a0c2e07021824ef5f962d55765c0bbd,
+https://github.com/thgillwtnorizoh/ohno/actions/runs/43167359057,
+job131012244884,2026-11-12 06:19:45–06:22:59UTC /
+13:19:45–13:22:59Asia/Bangkok. Windows2022/installed SDK8.0.427, actual.NET8.0.33.
+WPF Release win-x64 zero warnings/errors. Unchanged historical QA01/03/04/05/06/
+07/08/09/10/11/12/13 pass90/56/43/66/99/159/115/234/229/253/286/281 =1911.
+Every retained development gate passes inclR06 preparation4/fixtures4,R07 8,
+R08 13,C01 4,C02 14,R09 15,R10 23,R11 32,R12 40,R13 54+Windows1,C01 6,
+R14 58+Windows1,R14-Q0123,R15 79+Windows8,R16 52+Windows12. QA11G08 unchanged.
+
+New independent QA14 =264/264 named controls:226 executed headless production
+components,8 source-only audits,30 actual unshown Windows components. Headless
+234 categories C51/I14/G16/S26/E25/R15/M28/T33/P18/A8. Combined named checkpoint
+2175, retaining prior source/asset/component classifications. Neither54 new
+source fixtures,66 E043 rows, repeated/subset runs nor development groups add
+independent cases. Local supplemental runs used installed SDK10.0.402 targeting
+net8 and actual.NET8.0.17; no SDK/runtime installed or substituted for CI8.
+
+VERIFIED COMPONENT within finite scope: canonical path/length/time/SHA256 revision
+identity; duplicate filenames/chart/set IDs retained across distinct folders;
+unchanged successful reference retention; changed/deleted/reintroduced/failed
+revision isolation; metadata admission distinct from full parser. Exercised
+4MiB−1/exact/+1,99999/100000/100001 lines,32/33 depth,4096 total-directory
+boundary,10001 charts truncated10000,50000 candidate boundary, artificial
+external9999/10000/10001 admission,16KiB settings neighbours and finite end-time
+limit. These are ENGINEERING limits, not original parser rules. UTF8/BOM and
+UTF16LE/BE, Unicode fallback, null metadata and invariant display verified.
+
+Supplied-order folder runs (including s/t/s and unavailable-row split), separate
+highlight/committed/authoritative/captured identities, same-reference/null guard,
+cleanup-before-store and after-store exceptions verified. Raw original M2c64(null)
+is not equated with the bounded SelectedChartState API, which also includes the
+upstream M2581 null-callback guard. Request/accept/pending/commit/capture/loading/
+ready are separate; duplicate/stale generations and cancelled exception outcomes
+exercised. Selection before/after capture discriminates the retained map.
+Controlled file mutations and scan barriers reject stale publication/install;
+actual surface remains intact in composed pre-install failure controls.
+
+GameWindow's uninstrumented async decode/effects/install coroutine and key/dispatcher
+wiring are SOURCE INSPECTION, explicitly not executed via a gameplay Window.
+Race controls dynamically compose real catalog/chart/entry/surface components,
+not a claim of intercepted native decoder races. Missing declared song fails
+before opening a player; empty Windows effects lifecycle executes without media.
+Full atomic filesystem transactions/nonempty decoder error races not claimed.
+Post-final-check file changes retain the already parsed in-memory map policy.
+
+Actual unshown views bind song/difficulty lists, labels/recovery, commit/play/
+refresh/open/back callbacks, stale generation and public disposal guards. Actual
+R15 Rank Back restores live available references/group; missing/changed charts
+require explicit recovery; cancelled refresh retains published snapshot. Fresh
+Retry retains Play's map despite browser selection and resets ledger/HP/session.
+Results frames do not add score/HP mutations or advance gameplay clock.
+
+Twelve matched compatibility/new-loader variants compare5220 supplied action
+boundaries across circles, straight/repeating/Bézier/joined sliders and spinners,
+full/reduced hits. Parser timing/geometry/K, judgement/counters/combo/accuracy,
+NewCombo/health/recovery, Rank grade/stats and actual discrete sample requests/
+shared-channel operations agree under injected marker resources/native operands.
+All matched variants have prepared health. LastEvent/EventCount at supplied
+actions are not an arbitrary internal full-event subscription. No deferred
+Joined Bézier numeric expectation changed or discrepancy investigated.
+
+Supplied-star contract verifies compatibility/source/hash/mode/mod/nonfinite/
+stale guards and Single→Double Abs/floor2 display (1.15f→1.14,1.01f→1,
+2.675f→2.67). Normal UI says Stars not calculated; no M08d9/pp/library engine.
+Tag admission is not proof of a compatible producer. E034 K remains separate.
+Independent E043 matrix19finite/22partial/25unsupported preserves all66 original
+predictions, sites and original-runtime uncertainty. Original database/loading19/
+mode manager/filename comparator/preview/star workers/profile/native frontend
+remain unsupported; no matrix row is an original experiment or an extra QA case.
+
+Preserved local QA14 history: initial dependency NU1301 and Windows CS0119 gave
+zero assertions; first executed headless partial171 passes/3 failures then
+driver-path exception (wrong canonical path oracle, file-isolation timeout/junction
+denial, invalid colon in case-directory name); next complete225/226 failed only
+an LF-specific source audit against CRLF. Exact initial sources/logs retained.
+Corrected complete231/231 preserved, then3 async controls added and one overly
+broad test name corrected. Final case IDs unique. No production oracle weakened.
+Final packet checker initially expected wrong R16 summary text52/52; original
+reader/log retained, corrected to actual52 groups passed plus52 ordered pass lines.
+Local commitcc82381 accidentally tracked build outputs; b795dcb removed them from
+the final tree with index-only removal and QA14-local ignores/byte attributes;
+no remote force/history rewrite or final-tree binaries. This is staging/tooling
+history, not a production behavior defect.
+
+Exact CI log1944795bytes SHA256
+6928c02b3be9a14fd72c07ed86de8f78effb5b9d7d25a1044533785830e5f8c1;
+headless packet6739128bytes SHA256
+3c26e94e7dd4c5424dfb7499be39d557bf22f912da3bbf1c85ea7b49f327a1ad;
+Windows packet21560bytes SHA256
+4e611b154f582b705c7fd4850ec1733173c09558c3dbac2e1c0cd7fcbbe5876f.
+Lossless gzip/base64 packets, source/run/job metadata, fixtures/manifests, expected/
+actual outcomes, independent coverage/report/checker/runner and failure proofs
+published under re/qa/qa14. Existing workflow extension only adds4 QA14 paths and
+one step. All720 protected prior files pass Git-filtered/raw-byte checks; old
+research journal460722bytes SHA256
+e722e9914ba0c2ef0656a1e7cef6d1940853ad25d90f630cf43b287dcb087651 is an exact prefix.
+Implementation journal/fixtures/QA/development/research unchanged. Final publication
+changes report/evidence/packet reader/journal, not tested C#/runner/workflow.
+
+No original executable/CLR, E020 experiment, game Window/show, OS input, screenshot,
+listening/nonempty media/audio capture, proprietary extraction, production change,
+star calculation or score fitting occurred. All17 E020 cases remain NOT RUN.
+Original native scheduling/preview/graphics/input geometry and owner visual/
+audible usability remain UNVERIFIED; selection is intentionally silent. No
+confirmed production discrepancy or Work2 correction requested. Verify latest
+canonical main before safe non-force publication; exact publication SHA in final
+verified handoff. Stop after QA14; no R17,E044,QA15 or framework migration.

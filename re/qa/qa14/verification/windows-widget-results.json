@@ -1,0 +1,762 @@
+{
+  "schema": "QA14.windows.v1",
+  "source": "b795dcb31a0c2e07021824ef5f962d55765c0bbd",
+  "production": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "runtime": ".NET 8.0.33",
+  "named": 30,
+  "passed": 30,
+  "failed": 0,
+  "cases": [
+    {
+      "id": "W01-construction",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "label": "",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": 3,
+          "actual": 3
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W02-empty",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W03-song-difficulty-binding",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "label": "",
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W04-highlight-versus-selected-label",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": "Commit difficulty",
+          "actual": "Commit difficulty"
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W05-commit-button",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": "Play selected",
+          "actual": "Play selected"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W06-play-button",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W07-row-first-repeat",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W08-refresh-callback",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W09-open-callback-no-dialog",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W10-back-callback",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W11-status",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": "independent status",
+          "actual": "independent status"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W12-unavailable-row",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": -1,
+          "actual": -1
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W13-no-star-fabrication",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W14-same-folder-list-event",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W15-callback-error-visible",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W16-stale-generation",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 5,
+          "actual": 5
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W17-disposed-supported-callbacks",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W18-model-event-unregistered",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": "Highlight: A  |  Committed: none  |  Selected: none",
+          "actual": "Highlight: A  |  Committed: none  |  Selected: none"
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W19-rebind-no-feedback-loop",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W20-retained-reference-group",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": "C:\\Users\\runneradmin\\AppData\\Local\\Temp\\ohno-qa14-windows-7e9bd3d22d0c4a10a065b8084321b630\\W20-retained-reference-group\\t",
+          "actual": "C:\\Users\\runneradmin\\AppData\\Local\\Temp\\ohno-qa14-windows-7e9bd3d22d0c4a10a065b8084321b630\\W20-retained-reference-group\\t"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W21-missing-reference-recovery",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W22-new-revision-explicit-commit",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W23-browser-does-not-update-play",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W24-real-rank-back",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "label": "",
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "label": "",
+          "expected": 9,
+          "actual": 9
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 300,
+          "actual": 300
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W25-real-fresh-retry-captured-map",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "label": "",
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "label": "",
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W26-final-validation-retains-host",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 8,
+          "actual": 8
+        },
+        {
+          "label": "reference identity",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W27-missing-required-audio",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W28-empty-effects",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W29-results-do-not-score",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": 4,
+          "actual": 4
+        },
+        {
+          "label": "",
+          "expected": 7,
+          "actual": 7
+        },
+        {
+          "label": "",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "label": "",
+          "expected": 300,
+          "actual": 300
+        },
+        {
+          "label": "",
+          "expected": 200,
+          "actual": 200
+        },
+        {
+          "label": "",
+          "expected": 0,
+          "actual": 0
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "W30-bound-detail-metadata",
+      "classification": "EXECUTED WINDOWS COMPONENT",
+      "authority": "E043 reference/selection/Rank model plus R16 declared unshown WPF engineering contract",
+      "passed": true,
+      "observations": [
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        },
+        {
+          "label": "",
+          "expected": true,
+          "actual": true
+        }
+      ],
+      "error": null
+    }
+  ],
+  "manifest": {
+    "reconstructed/CircleGame/Program.cs": "adae727eae1893f878eab7624f7590415f4e79629d9b2f381b26fa3586067681",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "1308c919478585a50a8d03decfc7da18e3d9601386cfdcf51c240cb3c6ea117c",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "bd1095c94bed4718ee0ad3bdd138aa8a056e25aaff44ddfa71661d5ebecf424c",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "26b60b53421d5d15792836e9f0ee897c293c68d629e2841b4aaeea67888b7a72",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "c06ea0ad55655e5d00a124bc7b286cb80590a74bca2d767bb906c10b247fed6f",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "5ca05ad796a35298c1b59b37137d0ed0a29a88c7c816c3ce5700d00aaedd9170",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "5c0f96fc7fb7242895b07c4a4987c9f4903360340c4e2f9c39cbe6d072554806",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "33f6fad3628a4fd2d18c560867e3ac7851670dd4f1bbe17c860ea3c1035a1343",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "fd572331f0444245fd68f9839c7d6f3c0a5bc4deb9196f1f46c802da587856ea",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "ed403ea93e2c98d26f2d969c502c1c6bcfb9535276abab0932bbf34dcfd20861",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "a7d55ce3a5dbdf43c0e2f8320ee7c144ec722410c7508d047b3a56e08861a834",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "a2d96dd9b5820ac05c054423efabc6acfc436de47e073740e872e0adbfc088b4",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3cec16070ae2daa29ae431ba615ac123355a3eb1d2bd2dc8592a85a026d7a553",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "b3b21a44f9ac766e7d6c4a838d4d9881bb60c3bbdd159e63df2dd4a235a4e7d0",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "d6ac376c945ce09ca4e6776043708235288a7fc3c2e77e6e89bcfa4928f4173b",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "5925f151c5104db501d7490d4842a46a96986881e7069d7f2482d3e288ee1df3",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "e8e22c6000297546d89ef65b9795b818fa33bfa3b838f5f5696f472894b0645d",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "ecce7fee901fc6253f37e57ae4e082e242add5c404d4056462282f6cc31de7b1",
+    "re/qa/qa14/Windows/Program.cs": "2704d92ea9d42e06c481bccc96a56c14b19c15e1b739f5ab647967eee1dfd8b9"
+  }
+}

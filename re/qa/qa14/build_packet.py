@@ -73,7 +73,10 @@ def coverage():
         inputs=[]
         for key in matches:
             case,packet=cases[key]
-            inputs.append({'control':key,'packet':'verification/'+packet+'.gz.b64','classification':case['classification'],'passed':case['passed'],'caseSha256':sha(json.dumps(case,sort_keys=True,ensure_ascii=False).encode()),'expectedActual':'See the retained observations/input fixtures in this exact control, not a development-suite expected value.'})
+            packet_path=V/packet
+            if not packet_path.exists():packet_path=Path(str(packet_path)+'.gz.b64')
+            assert packet_path.exists()
+            inputs.append({'control':key,'packet':str(packet_path.relative_to(QA)).replace('\\','/'),'classification':case['classification'],'passed':case['passed'],'caseSha256':sha(json.dumps(case,sort_keys=True,ensure_ascii=False).encode()),'expectedActual':'See the retained observations/input fixtures in this exact control, not a development-suite expected value.'})
         if classification!='UNSUPPORTED':assert inputs,old['id']
         if any(not c['passed'] for c in inputs):classification='DISCREPANCY'
         scope=scopes.get(n,'Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.' if classification=='FINITE' else 'Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.')

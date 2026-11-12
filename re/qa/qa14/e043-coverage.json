@@ -1,0 +1,2028 @@
+{
+  "schema": "QA14.E043.coverage.v1",
+  "authoritySha256": "9ac182e9b6af5faaca3e517c4500bbeef574b715af01350f5d223b8fc88324a4",
+  "testedSource": "b795dcb31a0c2e07021824ef5f962d55765c0bbd",
+  "rows": [
+    {
+      "id": "P01",
+      "originalEvidence": [
+        "M46ad",
+        "E003"
+      ],
+      "originalInitial": "M46ad target5, F2c48=true, other guards admitted",
+      "originalStaticPrediction": "Target redirects Menu0; no guaranteed SelectPlay controller.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P02",
+      "originalEvidence": [
+        "M46ad:0030-006d",
+        "M46e6:000c"
+      ],
+      "originalInitial": "M46ad target5, closed E003 time gate",
+      "originalStaticPrediction": "Queue M46e6; callback reruns guards; pending/current and construction are not established by submission.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P03",
+      "originalEvidence": [
+        "M46b0:0063-0072"
+      ],
+      "originalInitial": "pending5/current7, commit not reached",
+      "originalStaticPrediction": "Current remains Rank7; no controller construction yet.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P04",
+      "originalEvidence": [
+        "M46b0:0361-0398"
+      ],
+      "originalInitial": "M46b0 switch5, M19b8=true",
+      "originalStaticPrediction": "Construct loading T0373 and set current19.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P05",
+      "originalEvidence": [
+        "M46b0:0368-0398"
+      ],
+      "originalInitial": "M19b8=false, previous7, catalog empty",
+      "originalStaticPrediction": "Loading19, not empty visible song list by assumption.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P06",
+      "originalEvidence": [
+        "M46b0:0368-03ac",
+        "M258f"
+      ],
+      "originalInitial": "M19b8=false, previous19, catalog empty",
+      "originalStaticPrediction": "Construct T04d6; M258f can reject ordinary availability during constructor/init.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P07",
+      "originalEvidence": [
+        "M46b0:03a7,055a-0564",
+        "M25bf:0326-0360"
+      ],
+      "originalInitial": "M19b8=false, previous7, catalog1 valid map",
+      "originalStaticPrediction": "Construct T04d6, register then virtual M25c0. Drawing requires later draw path.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P08",
+      "originalEvidence": [
+        "M258f:0000-00be"
+      ],
+      "originalInitial": "M258f catalog2, F1a0d=2, ordinary flagtrue",
+      "originalStaticPrediction": "Set F15c4; returnfalse, with settings-dependent mode15 or notification actions.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P09",
+      "originalEvidence": [
+        "M3ed2:0506",
+        "M3ed5",
+        "M3ebc:0092-00ac"
+      ],
+      "originalInitial": "One supplied catalog map A, available, normal grouping12",
+      "originalStaticPrediction": "One T059a row retains A reference; browser can commit it through F2557/M2581.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "G/one",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "7c4d7204bd1fca4eb8a3412bba77de9beb1b2dacb863b7ccb87a61c19c139cc7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "G/one-folder-many",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "fcc06a5f1016e5c15a5ad9b55c60502a08b1716f123c40f0bbf3dce7b2b5301e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W05-commit-button",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "a8840d505724f37ec7603245fd7cf1d0e7381fe1d6c94d18bb8db3fe2f1c4d59",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P10",
+      "originalEvidence": [
+        "M3ea7:005f-00b5"
+      ],
+      "originalInitial": "Prepared rows A/B same folder, C another folder, all available",
+      "originalStaticPrediction": "A/B share contiguous run F1942; C begins new run, independent of chart/set IDs.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "G/one-folder-many",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "fcc06a5f1016e5c15a5ad9b55c60502a08b1716f123c40f0bbf3dce7b2b5301e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "G/row-indexes",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "e2bb2de3e5cb9b3229d5a630df514ab59c223d73dcd4815dd9eb3f607ba80bc0",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P11",
+      "originalEvidence": [
+        "M3ea7:005f-00b5"
+      ],
+      "originalInitial": "Prepared rows A/B/A folders s/t/s, all available",
+      "originalStaticPrediction": "Three runs in supplied order; not a global folder GroupBy after sorting.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "G/interleaved-order",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "692bdfb59cfb4cfd496c4818f73b1e5c5d862cd73920b8c9336e8a408ceeaf1a",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P12",
+      "originalEvidence": [
+        "M3ebc:003e,0092-00ac",
+        "M2581:0011,00df-01ec",
+        "M2c64"
+      ],
+      "originalInitial": "GlobalA, commit difficultyB, both same folder",
+      "originalStaticPrediction": "F254b first changes; event stores globalB, clears old cached resource, metadata refreshes; same-folder preview can reuse song.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Reference update/order exercised; original preview/resource cleanup not reproduced.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/row-before-callback",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "63042cb6fb6c5b52e61debcbf23aa64e9d9817d196375316dbd1a0b742c2e27f",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/same-run-highlight-commits",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "acee5759700a172cee92a3a9712ce6e34fd4c7eabcfc193ed46d91a2a4a0628c",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W14-same-folder-list-event",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "e58c17da13a628c740fe8f63dbb1c4d1de4048822ea91782324e407618c81198",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P13",
+      "originalEvidence": [
+        "M2581:00df-0134"
+      ],
+      "originalInitial": "GlobalA, commit songC with different folder",
+      "originalStaticPrediction": "GlobalC; same-folder preview shortcut false; selection-expand resource request conditional on refresh.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Different-run commit exercised; original select-expand sound/preview excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/different-run-pending",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "b5da7005c08fdcbcbc9b859f8202e0ae489fbcbfa1a8ea02a7c17b1b17e43f77",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P14",
+      "originalEvidence": [
+        "M2c64:0000-0008"
+      ],
+      "originalInitial": "GlobalA, setter(A)",
+      "originalStaticPrediction": "Return without cleanup/store.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/same-reference",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "16c3643aadd6d0fcf3aae1558fa4fa5026efc2c63da76ef87435c3149b82a2ef",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P15",
+      "originalEvidence": [
+        "M2c64:0009-0021"
+      ],
+      "originalInitial": "GlobalA, setter(B), old cleanup returns",
+      "originalStaticPrediction": "Old M1c12 then M38b9(true), then storeB.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Injected cleanup-before-store exercised; original M1c12/M38b9 resources excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/cleanup-before-store",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "37f83ae647163fcd93e14dc4e4f85af73a094f52b6d372cf8d4eb644c0c46a92",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P16",
+      "originalEvidence": [
+        "M2c64:0015-0021"
+      ],
+      "originalInitial": "GlobalA, setter(B), old M1c12 throws",
+      "originalStaticPrediction": "Store not reached; globalA retained, preceding helper may be partially mutated.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/cleanup-throws",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "5910ea2cf08cbaf9b4366ae1fc3abd956fd2cfeb03b7d014d12f8d501ff419d9",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P17",
+      "originalEvidence": [
+        "M2581:000c-0011"
+      ],
+      "originalInitial": "GlobalA, browser selection callback map=null",
+      "originalStaticPrediction": "No M2c64(null) in this callback; globalA remains.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/null-retains-map",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "0a6d525b638eeee2c01af7641b6ab7fe86dde8c18ed0a86b845bd1dd21c818b0",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P18",
+      "originalEvidence": [
+        "M2581:0011-006e"
+      ],
+      "originalInitial": "Globalnull, browser callbackA",
+      "originalStaticPrediction": "SetglobalA before metadata/preview preparation.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/row-before-callback",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "63042cb6fb6c5b52e61debcbf23aa64e9d9817d196375316dbd1a0b742c2e27f",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P19",
+      "originalEvidence": [
+        "M3ec7:0017-0040"
+      ],
+      "originalInitial": "GlobalA, browser highlightB in different run via M3ec7",
+      "originalStaticPrediction": "F254d=B index; no committed F254b/F2557 map change on that branch.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/different-run-pending",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "b5da7005c08fdcbcbc9b859f8202e0ae489fbcbfa1a8ea02a7c17b1b17e43f77",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W04-highlight-versus-selected-label",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "9dcaee8bc0c02bf1b51f7b433172b57a58c701df0d52618643ac06a0aa1c1c14",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P20",
+      "originalEvidence": [
+        "M3ebb",
+        "M3f1c",
+        "M3ebc:0187-019c",
+        "M2581:000c"
+      ],
+      "originalInitial": "GlobalA, unavailable selectedA absent from rebuilt rows",
+      "originalStaticPrediction": "Reference search returns-1; callbacknull leaves globalA. No unconditional first-map recovery.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/rebuild-missing-reference",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "3191dbebccb5408fcf0d3eee5e93a7769f6b4680f410a1ae7f6165510c1ae698",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W21-missing-reference-recovery",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "83bfa71fdcfe9091b0011e079989c66db2b769b056ce9af72fdaa500a8bf4c04",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P21",
+      "originalEvidence": [
+        "M2c88:0098,0229-0245",
+        "M2caf"
+      ],
+      "originalInitial": "Indexed A.F0fde=true during scan removal",
+      "originalStaticPrediction": "M2caf true removes A; watcher/refresh callbacks and selected-map relookup remain separate.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Deletion/revision refresh exercised; original watcher/F0fde scan policy excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "I/delete-and-reintroduce",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "e5cbf2e1756ddc1884041d53ed06bf36fa9b8665d6b3a73c4ed358f95207ca3e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "I/path-replaced-invalid",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "48ccd646350f9b3229cc981522ade8d268b38e88c26080af30525cf6066028a1",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P22",
+      "originalEvidence": [
+        "M1bf4:0001-000c",
+        "M2c6f:0006-0029"
+      ],
+      "originalInitial": "Catalog entry existing filename x, incoming same x, equal F0fee",
+      "originalStaticPrediction": "M1bf4 compares filename only; registration returns existing index before hash/ID dictionary assignment.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P23",
+      "originalEvidence": [
+        "M2c6a"
+      ],
+      "originalInitial": "Two catalog records with same positive chartID, rebuild in A,B order",
+      "originalStaticPrediction": "Dictionary indexer laterB wins; no universal duplicate-ID rejection.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P24",
+      "originalEvidence": [
+        "M2c85:0000-0017"
+      ],
+      "originalInitial": "M2c85 catalognonempty, forcefalse",
+      "originalStaticPrediction": "Returnfalse; skip DB reload/watcher recreation.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P25",
+      "originalEvidence": [
+        "M2ca5:006c-009a",
+        "M1bf1",
+        "M1bf2"
+      ],
+      "originalInitial": "DB supplied, M2ca5 read succeeds",
+      "originalStaticPrediction": "List<T03ad> restored, dictionaries rebuilt; UI selection need not parse every file.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P26",
+      "originalEvidence": [
+        "M2c8c:018b-0265",
+        "M2571:1de0-1df9"
+      ],
+      "originalInitial": "New local *.osu discovered, metadata helper normal, valid/loadable predicates true",
+      "originalStaticPrediction": "Construct map, store filename/folder, parse M1bc1, register, enqueue F1a0b; selection later in constructor.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Local discovery/index exercised; original F1a0b queue and parser not implemented.",
+      "inputsAndOutcomes": [
+        {
+          "control": "C/external-path",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "6f643208b14df435ec4f9ad97e37b5a28cc2ed87ff36d15c4050cd1cfc6ded05",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "C/one",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "097f6a197e9c7ba89963aee723c15d17e0d5baf42c52e1ca44a1b0c7314e6e4b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P27",
+      "originalEvidence": [
+        "M2581:0011,013a-01bb"
+      ],
+      "originalInitial": "SelectedA, M2581 changed toB; B not prepared and locally loadable, M1bc1 false",
+      "originalStaticPrediction": "GlobalB already assigned; repair/error branch can return before preview. No selection rollback proven.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Post-store failure containment exercised; original repair UI/preview excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "R/index-is-not-parser",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "ec896fb0c2548994a4e22e150e21a4bde6f2ae0393ec0b3e47216a56bf009df7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/callback-throws-after-store",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "3ad7c40ddb6cf74f57cac7c357cfffe4d9fda89f75f91529111f7fff619534af",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P28",
+      "originalEvidence": [
+        "M25f3:0000-0020"
+      ],
+      "originalInitial": "Async row build captured controllerA; active controllerB at M25f3",
+      "originalStaticPrediction": "Return before enabling browser/selection callback.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Generation rejection exercised; original active-object identity worker guards not reproduced.",
+      "inputsAndOutcomes": [
+        {
+          "control": "C/superseded-scan",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "eaa6daa9aa5beae8857acf8ad1433655ec68c057cb349058e1afc3e7ce98d8e1",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/stale-generation-rejected",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "0b566b4d128f7570f809b405f9ba9f4c8b12e45e4b5e2c632cbdbac37032f478",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W16-stale-generation",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "ebc69bf04391931e2f4e04181a21e3684fabb039f745b25ceef3019f75ef624b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P29",
+      "originalEvidence": [
+        "M25f3:0048-005f",
+        "M3f1c"
+      ],
+      "originalInitial": "Async rows built; global changes A->B before M25f3, B present byref",
+      "originalStaticPrediction": "Fresh globalB used for browser reference search and selection restoration.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "S/live-selection-after-rebuild",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "81d8d93b88de4f7ac4422a4f0cb45fad0e069317854dc4f4387dd331287028c0",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P30",
+      "originalEvidence": [
+        "M2578:0000-0024,0311-031d",
+        "M46ae:0000-0016"
+      ],
+      "originalInitial": "Ordinary start, selectednonnull, randomfalse, phase2",
+      "originalStaticPrediction": "Cleanup M2577(true) precedes queued M46ae(2,false,1000); no map captured by transition closure.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Actual production stages and host source order checked; original cleanup resources/scheduler excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/queued-host-capture",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "6d53750aac78ab8f12695bfdeb103b6d024fa8247710f5d02df8536c4ae0264c",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/accepted-not-committed",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "b66ac3d462e6da44afe678d7fc9077c32d80a434d617dae34dbdae6317bc8cb4",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-Accepted",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "e339c0be07a6c22a044149145477f1927cc770e37388274e4c01c3d8d78eb752",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-Captured",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "bebe6ede8b98f8c77f9fedbb6e1a0d3a7a90b248aed8a9084ae409a44c51ab73",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-Loading",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "0654f101deb7941274e1bc2776eb86dbf2c71009db8e96f7ad989c1a7b3c49ba",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-PendingPlay",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "4fdbb78827bb5467c230aa5284a33edace2ce448ed76add05b6dc33a02c44f3f",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-PlayCommitted",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "a8b05b0224308fbc0e392714dd47cb0a66769b0f6685a93c0668c858977dd61b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-StartRequested",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "a371dbfa1ade128904c9fce3ec579a250a5678eff9d1db13d190e98eb3dc68ee",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/duplicate-browser-confirm-single-flow",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "6bd8626408399f5826504022221d84c2ec2adb2b888e3602ba2572a21e8e257a",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P31",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "originalInitial": {
+        "F2540": false,
+        "F2c6b": 2,
+        "selected_nonnull": false
+      },
+      "originalStaticPrediction": "M2578 returns before Play request.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "E/no-selection",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "18ffb3eaac661fb8483aa8eb1d91a66ae7480998374d00b54548250f55e4a9d1",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P32",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "originalInitial": {
+        "F2540": true,
+        "F2c6b": 2,
+        "selected_nonnull": true
+      },
+      "originalStaticPrediction": "M2578 returns before Play request.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "E/temporary-selection",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "317e788d67b51a94cfb2e11565b611045f6fb4ec15bd7a232c7876d94e53b6bb",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P33",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "originalInitial": {
+        "F2540": false,
+        "F2c6b": 1,
+        "selected_nonnull": true
+      },
+      "originalStaticPrediction": "M2578 returns before Play request.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "E/phase-1",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "3a47a041dae89104dc67f621b68f6467bc15ff201af72760ff83d7ead1a7dd4e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P34",
+      "originalEvidence": [
+        "M2578",
+        "M223b:008e",
+        "E004 M223c failure"
+      ],
+      "originalInitial": "Ordinary eligible start with selectedA but missing chart file",
+      "originalStaticPrediction": "M2578 has no direct file-exists guard; downstream map preparation/loader can fail. A request is not successful loading.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "R/missing-before-request",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "a3df570ed705b8cd6777dfc19cb2d03d29341b94c6aecf1ad72ae2d87a004be3",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P35",
+      "originalEvidence": [
+        "M46ae:0008-0016,0059-006f"
+      ],
+      "originalInitial": "Queued M46ae target2, current!=2, action not executed",
+      "originalStaticPrediction": "No committed Play yet; capture contains target/repeat/cleanup scalar only.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "No request-time chart payload checked; original queue/native commitment unmeasured.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/queued-host-capture",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "6d53750aac78ab8f12695bfdeb103b6d024fa8247710f5d02df8536c4ae0264c",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/accepted-not-committed",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "b66ac3d462e6da44afe678d7fc9077c32d80a434d617dae34dbdae6317bc8cb4",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P36",
+      "originalEvidence": [
+        "M4711:0094-009f",
+        "M2237:0001-0006"
+      ],
+      "originalInitial": "Queued start forA; global replacedB before M2237",
+      "originalStaticPrediction": "Play.F13f8 capturesB; request does not freezeA.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "E/live-before-capture",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "8813ade8d23fdb81b5584af8598676e0d61c23351c970f81edf3e8b577d1560b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P37",
+      "originalEvidence": [
+        "M2237:0006",
+        "M223b",
+        "E004"
+      ],
+      "originalInitial": "Play initializedcapturedA; global changesB afterwards",
+      "originalStaticPrediction": "F13f8 remainsA absent another writer; loading retains its own capture and additional fresh reads.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "E/after-capture-retained",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "a57e82fb3b4fddc43ee7af95ae3bcf020671f5c65da6cfb76113da4be6dc09a9",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/retry-captured-not-browser",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "fbc68c2e9afff3651e0a4c749ede6ebd957223da45841893262d94b86cf8525c",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P38",
+      "originalEvidence": [
+        "M32e8:0018",
+        "M46ad"
+      ],
+      "originalInitial": "Rank Back with ordinary localrecord",
+      "originalStaticPrediction": "M32e8 requests5,false via M46ad; no map or scroll payload in request.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Actual R15 Rank Back component exercised; original menuback and mode manager excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/refresh-back-close-cancellation",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "a6947dc7470c38d15940cab66344d8ad340c9ee88daf2b939568e280477b630b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W24-real-rank-back",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "ad1aa51e0f2b74e648f18d4246b84d932040697f99e144278cd037b5f775fb73",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P39",
+      "originalEvidence": [
+        "M32e8",
+        "M46ad",
+        "M46e6"
+      ],
+      "originalInitial": "Rank Back deferred/rejected/redirected",
+      "originalStaticPrediction": "No guaranteed SelectPlay construction; E003 live admission gates apply.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P40",
+      "originalEvidence": [
+        "M2571:0049-0052,0095,1e21-1e50",
+        "M25f3:0048-005f"
+      ],
+      "originalInitial": "Rank return globalA still in catalog, saved group/search present",
+      "originalStaticPrediction": "Ctor captures liveglobal, restores group/search, async M25f3 locatesA byref. PreviousRank does not set returnFromPlay flag.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Available selected reference/group restored; original saved search/ruleset/native scroll excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "P/rank-return-unchanged",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "750032b244c691347a6787044fbd5515bf79346deadfb98a8131c22678ea3514",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W20-retained-reference-group",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "c2d775dabb84d96f55ed9634f5ee739fce58094b48728769ba27a31fdfffc2d4",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P41",
+      "originalEvidence": [
+        "M2571:0130-01c3",
+        "M3ebb",
+        "M25c2:008e-009d"
+      ],
+      "originalInitial": "Rank return globalA gone, queued newmapnull",
+      "originalStaticPrediction": "M3ebb may fail refsearch. Later state depends constructor validation and preview fallback; no unconditional same-scroll guarantee.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Explicit missing/revision recovery exercised; original constructor fallback branches not reproduced.",
+      "inputsAndOutcomes": [
+        {
+          "control": "P/rank-return-changed",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "c702e211f2b3157acf80bff86edfe4ef71a654dd72c6cdfd5b59bbbd47a5ddda",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/rank-return-deleted",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "77bc5f8c0c69d7717524c6f007883c95914c79fe00c667f0baa3dbac905b8691",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/return-after-cancelled-refresh",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "ce3badb01d6ff1c4bbd43a0a4a8ce44f489804ab431b70ceed5c891c18c4eac7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W21-missing-reference-recovery",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "83bfa71fdcfe9091b0011e079989c66db2b769b056ce9af72fdaa500a8bf4c04",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P42",
+      "originalEvidence": [
+        "M25b2",
+        "M1c16",
+        "M1bde",
+        "M1bdb"
+      ],
+      "originalInitial": "MetadataA available, F2540=false",
+      "originalStaticPrediction": "M25b2 reads A title/BPM/end/counts/creator/difficulty text; F1008 is not E034 score drain-duration operand.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Prepared engineering display fields exercised; original localized/native widgets and exact BPM policy excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "M/all-text",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "1982e6175a3c444bfaeb6deda6b6a64f310a72f7265d6792451c9ebac05b89aa",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "M/base-bpm-filter",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "f28db0f357ac5609aefc5783b0a7f8c4f03bf9d5cf5767558a4061586e8bef10",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "M/counts-and-stored-end",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "d1544645ecffbf79ecb97cc3f02c00ae60f4b8bd65ba26a6473de6348786f606",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "M/scalars",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "01c91df0f845e6c117761bda857fc802ecc2be3346b24c8029e180595f8247cf",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P43",
+      "originalEvidence": [
+        "M2581:006e",
+        "M25d1:0049-005c"
+      ],
+      "originalInitial": "Selected difficulty changes A->B with different version/CS and starcache",
+      "originalStaticPrediction": "Changed selection triggers M25b2 for B; completed background calc refreshes only when same reference as current selection.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Changed metadata/revision exercised; original star background worker excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "M/changed-display-same-path",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "4e4d8d069c0b5af8d4ca7a78583910bfa33fb111dce68301bdd9898f4e6db445",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/new-revision-no-substitution",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "8007988dc52b090362781e875c4ff68cf0f7a7731e78f1d23b8bf3102cb44830",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P44",
+      "originalEvidence": [
+        "M1c16",
+        "M1bfb"
+      ],
+      "originalInitial": "Ordinary selected map has optional Unicode disabled",
+      "originalStaticPrediction": "M1c16 returns cached F0fe3; normal fallback string prepared by M1bfb.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Unicode preference/fallback exercised; original cached-header getter not reproduced.",
+      "inputsAndOutcomes": [
+        {
+          "control": "M/unicode-empty-fallback",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "58c05d81c416e329d80e30f4cc751b2746d9c6ae6cccd0d46030d6532f390249",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "M/unicode-preference-False",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "13d3334d0112014f546378c88c3860d1f1d66da7dc2d7e6aab9ad945ae19b723",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "M/unicode-preference-True",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "fb49419c82bf67d3be5899d117a76630b06cdea4fccda52233737ea0cac2793d",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P45",
+      "originalEvidence": [
+        "M25c1:0022-002a"
+      ],
+      "originalInitial": "M25c1(argmapA,true), globalB",
+      "originalStaticPrediction": "Calls M3b47 with freshglobalB; supplied map argument is not the audio operand.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P46",
+      "originalEvidence": [
+        "M3b45:0064-00bc"
+      ],
+      "originalInitial": "Two maps same folder and audio filename; existing receiver valid and eligible",
+      "originalStaticPrediction": "M3b45 rebinds F2367.F24ad to newmap and returnsfalse; stream reuse branch.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P47",
+      "originalEvidence": [
+        "M1c02",
+        "M3d52:0041-0068",
+        "M3d51"
+      ],
+      "originalInitial": "Missing selected audio resource",
+      "originalStaticPrediction": "M1c02 may returnnull; M3d52 can use M3d51 synthetic timeline receiver. No guaranteed audible preview.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P48",
+      "originalEvidence": [
+        "M25c1",
+        "M25c2:000c-0055"
+      ],
+      "originalInitial": "M25c1(false)",
+      "originalStaticPrediction": "Set F15e3=0; later M25c2 conditionally fades/reloads; not immediate universal cancellation.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P49",
+      "originalEvidence": [
+        "M2581:01ec-0205",
+        "M25c2:0001"
+      ],
+      "originalInitial": "Preview helper throws after global selection changed",
+      "originalStaticPrediction": "F15c0 error can suppress upkeep; selected reference can disagree with receiver map.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P50",
+      "originalEvidence": [
+        "M25b2",
+        "M223b:008e",
+        "E034"
+      ],
+      "originalInitial": "Current map sample/score metadata changes",
+      "originalStaticPrediction": "Selection metadata cache is distinct from Play refresh and E034 legacy multiplier. No new score transformation established.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "M/no-gameplay-side-effects",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "4abb573a0d42b9b501a3f4c39dc5cc9e145fb4671ac8a7b3578f7a72ad01e0b1",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-bezier-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "41074032d71fe2ccf083ed9aeaff194078951646c988ebed549d5f0f353baf3d",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-bezier-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "07d8005d1fb2578a15ce3730e1ffef6367bc58b560bdbce712c8390d3a53989f",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-circles-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "6db9bdb9e858ce28ccec72e3631a60f6750ba60d5293368acb00fcb34e5221d2",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-circles-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "5d64525e4d90f9ab5eb0cc0c16b29363fb26117370dc9c1ff807e5c6918b502b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-joined-bezier-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "d5453123d099b06858738ff3d8624a34d13bf248088b0055a59624a166c3aa56",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-joined-bezier-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "ba77c57638a430352f6e97cddec32115ee880bd14dd438c8d5e140d99a015831",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-repeat-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "50d78aaece4422739c7ee219786d4dfc1ccf8b82279163f7347d2544892741bc",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-repeat-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "6211bbaf41e351e9c9502e8f706dedb34f17c202524f53ab010ba8cb2f34f679",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-spinner-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "c53fb9bc1e13662829ac78637e9d462eb97fab60ba340388e1dbd1912cb625de",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-spinner-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "c49e53cb414089b6049024c41ab69dd3a295b835af37a9dbd1c03b7830d53bd8",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-straight-reducedFalse",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "ba6d7d5df20e40d09a81cd0ecfa3ffdb3049a1ed93463cc4902c111ad5a22fa7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "P/matched-straight-reducedTrue",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "b2b9245d527f800d9b44bd1d895b25151b5c863d84faea5a6ecb2c0561fdc9b3",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P51",
+      "originalEvidence": [
+        "M1bc7:0035-003a",
+        "M1bd5:0011",
+        "M1bdb:01b4",
+        "M2d7f"
+      ],
+      "originalInitial": "Star cache ruleset0 normalizedmods0 holds Single4.56789",
+      "originalStaticPrediction": "M1bd5 yields Abs(Double(Single)); display floors to two decimals then formats0.##★.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "T/value-below-decimal",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "af09e9637af3c38a57e95d84222b73862fe8344f0bc170cb9ffb3a634bb560d8",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/value-one-cent",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "2038fc6d0a68eef598c9364bf29f986138dad871b9afd53b9826563b21a6ccc7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/value-ordinary",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "0ba2f600546f9dd8b74ce4f952ec3d987c8556ff40b531027c96f263abe9e387",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P52",
+      "originalEvidence": [
+        "M1bc7:001e-0027",
+        "M1bd7",
+        "M1bdb:0148"
+      ],
+      "originalInitial": "Star cache normalized key absent, F1014=false",
+      "originalStaticPrediction": "M1bc7 returns0; M1bd7 can request calculation. Missing cache does not universally hide star line.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Engineering no-cache message verified; original zero/default and calculation request deliberately not implemented.",
+      "inputsAndOutcomes": [
+        {
+          "control": "T/no-cache",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "e67ab7eef8988e51d456b3b853b137a0c0cb205bb04d17add4c5a277d535b8a9",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W13-no-star-fabrication",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "04fa66ff1fbdb61029febd3e03c2f7818ab37cfffd320bafdedd2ab4d6880be0",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P53",
+      "originalEvidence": [
+        "M1bd5",
+        "M1bd7"
+      ],
+      "originalInitial": "Star cache key0 Single-4.5, F1014=false",
+      "originalStaticPrediction": "DisplayAbs4.5 while M1bd7 treats key0 negative as needing refresh.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Negative magnitude/stale display exercised; original in-progress refresh worker excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "T/value-explicit-stale",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "95e54ab54fe245173457f4e67c5197430e7bbb8283e8db5851b155413038b4bb",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/value-negative",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "5998172608fc81569d39486ab670c55525e8d487a330868fad3d2dda77f42ce8",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/value-negative-boundary",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "81792fd0bac3bf34f13e56423a23ce7b72a58946ceabbb4e6dff905ab2fc4044",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P54",
+      "originalEvidence": [
+        "M1bd7",
+        "M1bdb:0148"
+      ],
+      "originalInitial": "Star cache key0NaN",
+      "originalStaticPrediction": "M1bd5 AbsNaN; display blt.un skips star line; M1bd7 unordered branch is not negative.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Nonfinite unavailable policy exercised; original display/refresh predicates not identical.",
+      "inputsAndOutcomes": [
+        {
+          "control": "T/nan",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "950e69e3366541d5c3d031fe6cf9ba77606fabb9f45aaf6594f7b9359b2874a6",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P55",
+      "originalEvidence": [
+        "M1bf2:0181-01d6"
+      ],
+      "originalInitial": "Cache version older than F0fbd[mode] cutoff",
+      "originalStaticPrediction": "M1bf2 stores -Abs(each cachedSingle), preserving value magnitude as stale marker.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P56",
+      "originalEvidence": [
+        "M1bf2:0100-0179"
+      ],
+      "originalInitial": "Cache version20250106 vs20250107",
+      "originalStaticPrediction": "First reads Double dictionary then convertsSingle with normalization filter; second reads Int32/Single dictionary.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P57",
+      "originalEvidence": [
+        "M08cf",
+        "M0805",
+        "M0803:0000"
+      ],
+      "originalInitial": "Selected mods include only bits outside ordinary mask1370",
+      "originalStaticPrediction": "M08cf/M0805 normalize cachekey by AND; not every distinct rawmodinteger has separate starentry.",
+      "classification": "FINITE",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Finite supported production projection of the cited E043 reference/dataflow predicate; injected operands do not establish original execution.",
+      "inputsAndOutcomes": [
+        {
+          "control": "T/mods-0-0",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "1ca159008e9f9d6f2ae138a77cd9cee9a808e387495b81c78039ce4c021eaa9c",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-0-8",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "f228afd498bd8cdf0d2f3387c4777518ce36c2dbe0ef5f78c45f7a57169f37c7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-1-0",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "5701dfefa088d364df0e4c9d2231c30d68c80d09b043c375d0d9546a7d0f961e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-1-1",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "2206173acca5f0a03c564f17494e87a76116f99dd54dcb59b6de9c63b1a1ba98",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-1371-1370",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "9e064f37a51ce8d90ea5e887f388df401f482a658188393e8f3aca2988b0670a",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-8-0",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "5daad1f7702bc173a8882bc5f306618d57a262c58e942fceab3e0b04cceb937b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "T/mods-8-8",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "a25db2ee5adc41a0cfad73be3d237c21dd1b12090e87f359f92e00e19231d579",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P58",
+      "originalEvidence": [
+        "M1bcf",
+        "M1c1e:00a4,0115",
+        "M1bd0:0002-003c",
+        "M1bc6:002c"
+      ],
+      "originalInitial": "Missing cache, scheduler available, not Play at worker execution",
+      "originalStaticPrediction": "M1c1e calls local M1bd0; ordinary factory M1bc6 constructs T011b overT072f; dictionary writeback queued, algorithm not recovered here.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P59",
+      "originalEvidence": [
+        "M1c1e:0000-0018"
+      ],
+      "originalInitial": "Difficulty worker executes while currentmode2",
+      "originalStaticPrediction": "Waits with Thread.Sleep1000 until currentmode changes; no measured duration/cancellation promise.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P60",
+      "originalEvidence": [
+        "M1c23",
+        "M25d1:0049-005c"
+      ],
+      "originalInitial": "Background callback forA after selectedmap becomesB",
+      "originalStaticPrediction": "CacheA updated, pendingchartID removed, but no selected metadata refresh forA.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P61",
+      "originalEvidence": [
+        "M3eba:0054-00e4"
+      ],
+      "originalInitial": "Preferred-difficulty candidates4.0/6.0, preference5.0, same run/ruleset",
+      "originalStaticPrediction": "Strict distance< retains first equidistant candidate; preference source remains profile getter M13d6.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P62",
+      "originalEvidence": [
+        "M3e97",
+        "M3e84",
+        "M2584"
+      ],
+      "originalInitial": "Browser Enter13, accepted initial-press operand, currentdifficultyvalid, no highlight/modal/specialmod branch",
+      "originalStaticPrediction": "F255a invokes M2584 then M2578; start guards still apply.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Actual model/view confirmation plus source key audit; no physical key or original dispatcher.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/browser-rank-key-isolation",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "ee2c5072fb335aece32a8a06a0424d2299e87a4c00261e1abd1b10abd24eaea9",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/confirmation-two-stages",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "f105103da4444a41e6a0f8d845409de651632bd7f0d9a181cf62bf314b597ed7",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W05-commit-button",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "a8840d505724f37ec7603245fd7cf1d0e7381fe1d6c94d18bb8db3fe2f1c4d59",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W06-play-button",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "86bdd558ee6cc99f104889b6130602aef6a5aefd7f4744e2b400a256e689940f",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P63",
+      "originalEvidence": [
+        "M3e94:0121-0131"
+      ],
+      "originalInitial": "Mouse release over same selected difficulty, inputenabled, no specialflag",
+      "originalStaticPrediction": "F255a triggersstart; different difficulty follows select/preferred-select path.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Actual view callback exercised; mouse-down engineering bridge differs from original release/geometry.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/windows-view-wiring",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "2a5d989492d039d924c670180ddcd7d770e2cc954fdca652ee654331aab2c479",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "S/mouse-first-and-repeat",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "030565b6a9a12d70ddabfe240cc401eb1cf648dfe9f65f54e3800d576f9c0d56",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W07-row-first-repeat",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "1a413969bf491c8eebc6d32d3e98f2f765b1ebd8a4952d0dbb1973e19e95861e",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P64",
+      "originalEvidence": [
+        "M25c5:003f-0041"
+      ],
+      "originalInitial": "Ordinary Back callback reached",
+      "originalStaticPrediction": "M25c5 requests Menu0,false, not Rank and not universal selection deletion.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Back callback exercised; Local Practice Home is an engineering substitute for Menu0.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/refresh-back-close-cancellation",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "a6947dc7470c38d15940cab66344d8ad340c9ee88daf2b939568e280477b630b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W10-back-callback",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "04741e7552f59e3dc8b04d4c33cf2fd592f5d3774f294230fd0ce5a3638a37f1",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P65",
+      "originalEvidence": [
+        "M2577:0001-0008,0195,0234",
+        "M2576"
+      ],
+      "originalInitial": "First disposal towardPlay",
+      "originalStaticPrediction": "M2577(true) runs once, saves group/ruleset, unregisters inputs; gameplay container optionally retained. Secondcleanup returns immediately.",
+      "classification": "PARTIAL",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Supported public callbacks/disposal/subscription checked; original scheduler and retained visual containers excluded.",
+      "inputsAndOutcomes": [
+        {
+          "control": "A/refresh-back-close-cancellation",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "SOURCE INSPECTION",
+          "passed": true,
+          "caseSha256": "a6947dc7470c38d15940cab66344d8ad340c9ee88daf2b939568e280477b630b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "E/disposed-rejects",
+          "packet": "verification/windows-results.json.gz.b64",
+          "classification": "EXECUTED COMPONENT",
+          "passed": true,
+          "caseSha256": "6c2bb65f1d27698cc8d8dd09c5dfa92a0f370af7c3228085feb4279b8f1ea02b",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W17-disposed-supported-callbacks",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "fcc2944c3503f6e4ad673303e0a3fc828e0f0a282cadf2e33bb0122ffe2027fc",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        },
+        {
+          "control": "W18-model-event-unregistered",
+          "packet": "verification/windows-widget-results.json",
+          "classification": "EXECUTED WINDOWS COMPONENT",
+          "passed": true,
+          "caseSha256": "1043a77189d158ba06bce660b3382b88b0daa9b62b652101c1e3aa73daab3d9a",
+          "expectedActual": "See the retained observations/input fixtures in this exact control, not a development-suite expected value."
+        }
+      ],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    },
+    {
+      "id": "P66",
+      "originalEvidence": [
+        "field_sites F15e4/F15e5",
+        "M25c1",
+        "M2577:0215"
+      ],
+      "originalInitial": "F15e4/F15e5 defaultnull under direct managed inventory",
+      "originalStaticPrediction": "No direct writer to these fields found; retain conditional preview-thread branches without inventing an active producer.",
+      "classification": "UNSUPPORTED",
+      "productionBoundary": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Rendering/SelectPlayView.cs; existing Rank/parser/kernel; Program host as source audit only",
+      "scope": "Original mode manager/loading19/database/filename comparator/preview/star-worker/profile/native dependency excluded by R16; no substitute is counted as original coverage.",
+      "inputsAndOutcomes": [],
+      "engineeringSubstitution": "Canonical path/revision identity, invariant WPF display, scan limits, generation cancellation, silent selection and supplied-cache admission are explicitly engineering. SelectedChartState.Set combines the M2581 null guard with bounded M2c64-like reference/store behavior; raw original M2c64(null) is not claimed.",
+      "originalCaseExecuted": false,
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "discrepancy": null
+    }
+  ],
+  "counts": {
+    "UNSUPPORTED": 25,
+    "FINITE": 19,
+    "PARTIAL": 22
+  },
+  "rule": "66 matrix rows are not66 extra tests. FINITE means executed bounded reconstruction projection, never original runtime. This matrix was independently bound to QA14 controls, not R16 development expectations."
+}

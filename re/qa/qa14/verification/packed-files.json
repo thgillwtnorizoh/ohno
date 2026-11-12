@@ -58,5 +58,23 @@
     "bytes": 4819,
     "sha256": "a1eac5e481cb2256c50c5f199db515efa183eb8a564cb1edfa11ce0a2952303a",
     "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/windows-job-original.log": {
+    "stored": "verification/windows-job-original.log.gz.b64",
+    "bytes": 1944795,
+    "sha256": "6928c02b3be9a14fd72c07ed86de8f78effb5b9d7d25a1044533785830e5f8c1",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/windows-results.json": {
+    "stored": "verification/windows-results.json.gz.b64",
+    "bytes": 6739128,
+    "sha256": "3c26e94e7dd4c5424dfb7499be39d557bf22f912da3bbf1c85ea7b49f327a1ad",
+    "compression": "gzip/base64 lossless; original bytes retained"
+  },
+  "verification/packet-checker-initial.log": {
+    "stored": "verification/packet-checker-initial.log.gz.b64",
+    "bytes": 1056,
+    "sha256": "4217cf0e40ce60429e6b186fc6e14154031953d81a1fd53d95e1c05822b1df46",
+    "compression": "gzip/base64 lossless; original bytes retained"
   }
 }
