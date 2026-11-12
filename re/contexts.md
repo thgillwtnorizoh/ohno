@@ -1772,3 +1772,103 @@ audible usability remain UNVERIFIED; selection is intentionally silent. No
 confirmed production discrepancy or Work2 correction requested. Verify latest
 canonical main before safe non-force publication; exact publication SHA in final
 verified handoff. Stop after QA14; no R17,E044,QA15 or framework migration.
+
+
+## Expedition 044 — Original local star difficulty mathematics — 2026-11-12
+
+Work1, authorized ORIGINAL-STATIC ONLY. Canonical research source:
+`00ad4e790e5a0c23bc6bb4476a2313951dcb996f`; R16/accepted QA14 is read-only
+context. No exception. No reconstruction, historical research/QA/development,
+fixture or old journal bytes changed. E044 creates its new report, extractor,
+independent byte checker, research-only mathematical projection and evidence44.
+
+Objective: extend E043's M1bc6/M0801/M3696/M08d9 producer boundary to ordinary
+no-mod object preparation, component processing, aggregation, final result and
+cache; determine R17 readiness without importing a different algorithm.
+Competing hypotheses: base method versus actual virtual target; raw metadata
+versus separately prepared runtime objects; one conventional sorted strain sum
+versus multiple aggregators. Original byte/slot/dataflow evidence discriminates
+these. All instructions and numbers apply only to the pinned executable.
+
+Verified archive SHA256
+7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738;
+ZIP member osu!.exe SHA256
+6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d.
+Archive78546961 bytes/18 members; executable4541728 bytes. Stable40/1.3.3.8
+official dated release remains historically unauthenticated. Python3.12.8 and
+existing dnfile0.18.0/dncil1.0.2/pefile2024.8.26 on Windows; no CLR/game/native
+execution, audio/display measurement or proprietary asset export.
+
+CONFIRMED STATIC: concrete calculator T011b -> T072f -> T0138. M08d9 and M08c8
+are nonvirtual despite callvirt; actual mathematical virtual dispatch is
+M08d3 -> M0809 -> M3699/M0810/M0811/M080a. Earlier E043 shorthand is preserved,
+with this refinement here. Calculator constructor reparses a new path-backed map,
+creates an ordinary T00e8(false) manager and loads HitObjects through
+M28f7(64,false,true,true). E005 corrected standard/Taiko factory identification
+is retained. Pair objects T072e are made in registered list order from index1,
+then sorted by current raw start; time subtraction precedes Double conversion,
+and only strain-time field is clamped25. Existing geometry/nested preparation,
+radius/preempt/OD and global manager operands are significant.
+
+Three base components T0379/T06fe/T0698 plus optional1024/T084a are constructed
+fresh each calculation. Recovered recurrences use .2/.3/.8 decay bases and
+distinct deltas. T0379 uses duration/envelope state,400 intervals, strict boundary
+comparison and duration-valued aggregation. T06fe/T0698 use sorted positive
+per-object values with weight (1+s/(i+1))/(Pow(i,.9)+1+s/(i+1)); s20 versus1.
+This is not Pow(.9,i). History/angle/visibility helpers remain distinct.
+
+Final output from supplied accumulators is recovered: Pow(q0,.63)*.02275,
+Sqrt(q1) and Sqrt(q2), each *.0675 then cube*4; optional Sqrt(q3)*.0675 squared*25, asymmetric M080c
+combination,1.1 norm, then Pow(joined*1.12,Double1/3). Returned Double,
+conv.r4 cached Single and promoted-Abs/floored display are different quantities.
+No K, score/accuracy or pp formula is used. No star calculator is added to R16.
+
+Mode0 cache mask1370 and compatible six-choice mod generation are recovered;
+GetHashCode overlap filtering remains a conditional runtime operand. Rate1.5/.75,
+Easy/HardRock regeneration/scalar gates, Hidden and optional Flashlight paths
+are distinguished from arbitrary direct-call bits. DB20250107 changes cache
+representation, not a proved mathematical formula switch. F0fbd cutoffs decode
+to20260630/20260630/20260630/20231214; metadata-only16-byte integer-table hash
+is published, no assets. Worker F1014/timeout/normal completion and retained-map
+writeback have no universal stale-hash/generation cancellation guarantee.
+
+PARTIAL verdict: general fresh-chart no-mod calculation is NOT ready for faithful
+R17. Critical full semantic/independent-validation gaps: M11c1/M11c3 movement
+history; M408c/M408d angle/velocity contrast; M1744/M1746-M174f rhythm pattern
+history; M1e57-M1e65 visibility history; M1441/M432d nested slider event identity
+and M3691/M3692 geometry/travel integration. All named bodies are decodable;
+absence of a full validated projection is not alleged missing native mathematics.
+No guessed defaults or modern alternative algorithm replaces them.
+
+Actual verification PASS:352 selected MethodDefs/335 nonzero-RVA bodies,
+394 field declarations,65 type records,23 declared virtual resolutions,
+2514 focused call edges,3021 watched-field sites,1503 direct watched-call sites,
+40 independent literal controls and294 equal historical body comparisons.
+Whole scan19659 bodies/1739 zero-RVA/no errors. Four selected strings independently
+decoded. Two final extractions identical:2587199 bytes SHA256
+7d7d5ab57ac533507b3b8c066d2da4599106872c7978cf26ce4513331175c917.
+82 independent finite mathematical projections PASS;58 conditional D controls
+remain RECONSTRUCTED STATIC PREDICTIONS, NOT original experiments. The mathematical
+controls cover explicit prepared/artificial operands, including a narrowly derived
+two-circle branch; they are not a general chart-star oracle. AST checks3 tools PASS.
+
+Unchanged E004/E005/E006/E023/E032/E033/E034 checkers PASS. Unchanged E043
+relationships73, finite projections19 and original archive body audits277 PASS;
+its pre-R16 reconstruction-source manifest is not asserted against R16. Exact
+commands/reproduction are in the report and logs; no historical checker weakened.
+Initial new-checker00ae/00af literal-site transcription failure is preserved as
+an explicitly labelled reproduced failure/source, then corrected against CIL.
+This is a research-tool failure, not production/original behavior evidence.
+
+Preservation PASS848 prior tracked files and original research journal prefix
+469272 bytes SHA256
+7fdaeaea67f07ad6c6c941167890191a18a62bba197f8bc9f24cee10e16b89f3.
+Original runtime/JIT/Math last-bit behavior, providers/globals, exceptional paths,
+complete slider integration, background worker races and visible native output
+remain UNVERIFIED ORIGINAL-RUNTIME. Historical2175 reconstruction checks are
+retained, not rerun. E020 all17 remain NOT RUN.
+
+Recommendation only: retain Stars not calculated; a bounded independent circle
+history/evaluator study is the smallest mathematical continuation before slider
+nested integration. No R17, E045 or QA15 is started. Publish E044 through a
+verified non-force update of canonical main; exact publication SHA in handoff.

@@ -1,0 +1,3 @@
+# Preserve exact native diagnostic transport bytes without newline rewriting.
+final-check.txt -text -diff
+tool-development/initial-checker/failure.txt -text -diff

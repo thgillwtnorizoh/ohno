@@ -1,0 +1,96 @@
+{
+  "research_source": "00ad4e790e5a0c23bc6bb4476a2313951dcb996f",
+  "date": "2026-11-12",
+  "timezone": "Asia/Bangkok",
+  "host": "Windows static analysis; Python 3.12.8",
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "extraction_repeat_identical": true,
+  "packet_bytes": 2587199,
+  "packet_sha256": "7d7d5ab57ac533507b3b8c066d2da4599106872c7978cf26ce4513331175c917",
+  "selected_methods": 352,
+  "field_declarations": 394,
+  "type_records": 65,
+  "resolved_virtual_pairs": 23,
+  "call_graph_edges": 2514,
+  "reference_cases": 58,
+  "decoded_strings": 4,
+  "checks": {
+    "audited_bodies": 335,
+    "scanned_bodies": 19659,
+    "field_sites": 3021,
+    "call_sites": 1503,
+    "literal_controls": 40,
+    "historical_body_comparisons": 294,
+    "protected_prior_files": 848,
+    "finite_mathematical_controls": 82
+  },
+  "syntax_tools_pass": 3,
+  "tool_sha256": {
+    "star_difficulty_evidence.py": "a2f5dc372fefa20026f3761490eac1de93abf0e40276e027690d3591ceb3dcf5",
+    "check_star_difficulty.py": "fd7afb43cad862e41f75916fa99b96ba87bc34fb1471962e01524561fdfe7d61",
+    "star_difficulty_projection.py": "5dcbc3e9031e84b5feae110bd49caf254474429e9ccbd96e45587c61d4dedaad"
+  },
+  "historical": [
+    {
+      "authority": "E004",
+      "tool": "check_beatmap_init.py",
+      "source_sha256": "bdac1747f3aeb53abd526ffba2037747a2a9d3263837e548f024c610a7ee96d3",
+      "packet": "04/initialization.json",
+      "pass": true
+    },
+    {
+      "authority": "E005",
+      "tool": "check_slider_timing.py",
+      "source_sha256": "a9a520c393f065f6ebf9e86f66bab78f756e698ddfd848ef5385dd2380873530",
+      "packet": "05/slider-timing.json",
+      "pass": true
+    },
+    {
+      "authority": "E006",
+      "tool": "check_linear_geometry.py",
+      "source_sha256": "cd12600632fa6b6a35e45eb71e8d348ff7c9d2b9c5db5f613a83db15f158fd24",
+      "packet": "06/linear-geometry.json",
+      "pass": true
+    },
+    {
+      "authority": "E023",
+      "tool": "check_aggregate_policy.py",
+      "source_sha256": "62f3b406867f01625d464b841af7dae59ddf78f8f2183f83af5176051c9d11ad",
+      "packet": "23/aggregate-policy.json",
+      "pass": true
+    },
+    {
+      "authority": "E032",
+      "tool": "check_bezier_geometry.py",
+      "source_sha256": "687236051d52bd833521bedbcc0be5c39420eae71306d237475d18d1667404d6",
+      "packet": "32/bezier-geometry.json",
+      "pass": true
+    },
+    {
+      "authority": "E033",
+      "tool": "check_score_accounting.py",
+      "source_sha256": "a81fba2b2fb07992a9dc121ed58798d94d1c88aa5d05652ade67269a0e9137a6",
+      "packet": "33/score-accounting.json",
+      "pass": true
+    },
+    {
+      "authority": "E034",
+      "tool": "check_chart_score_multiplier.py",
+      "source_sha256": "b44344b939170bf37c06bc0e2e3b97129633dc918822237d0bc4fd7f56151f80",
+      "packet": "34/chart-score-multiplier.json",
+      "pass": true
+    },
+    {
+      "authority": "E043",
+      "tool": "check_selectplay.py:relationships/projections/archive_audit",
+      "pass": true,
+      "literals": 73,
+      "projections": 19,
+      "original_byte_bodies": 277,
+      "boundary": "Pre-R16 reconstruction-source manifest intentionally not asserted against R16; original-static checks unchanged."
+    }
+  ],
+  "completeness": "PARTIAL; general fresh-chart no-mod difficulty not ready for faithful R17. Final formula from supplied component accumulators recovered.",
+  "original_runtime": "NOT RUN; E02017 unchanged; historical2175 QA not rerun."
+}

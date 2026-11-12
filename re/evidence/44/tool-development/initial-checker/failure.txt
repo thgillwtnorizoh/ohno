@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\e044_run.py", line 7, in <module>
+    target=sys.argv[2];sys.argv=[target,*sys.argv[3:]];runpy.run_path(target,run_name='__main__')
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\evidence\44\tool-development\initial-checker\check_star_difficulty.py", line 217, in <module>
+    stats=audit(d,sys.argv[2]);rows=finite();root=Path(__file__).resolve().parents[2]
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\evidence\44\tool-development\initial-checker\check_star_difficulty.py", line 142, in audit
+    at(m,o,op,v)
+  File "C:\Users\Hjuiujerrjj\Documents\ChatGPT\Reverse engineer osu! stable\ohno\re\evidence\44\tool-development\initial-checker\check_star_difficulty.py", line 118, in at
+    actual=instructions[m][o];assert actual[0]==op and (v is None or actual[1]==v),(hex(m),hex(o),actual,op,v)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('0x8d7', '0xae', ('ldarg.0', None), 'callvirt', 100665554)

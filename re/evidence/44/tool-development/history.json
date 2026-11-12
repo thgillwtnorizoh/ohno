@@ -1,0 +1,7 @@
+{
+  "initial_failure": "A manually transcribed literal expected the M08d2 call at00ae; original00ae is ldarg.0, actual call00af. Initial failing source state was reconstructed by reverting this one literal in the unchanged checker then rerun and captured. The original first command traceback was visible in tool output; the retained file is the explicitly labelled reproduction, not a claimed first-run transport.",
+  "preserved": "tool-development/initial-checker/check_star_difficulty.py and failure.txt",
+  "correction": "Only expected call offset00ae ->00af; body hash/site audit and expected opcode/callee retained.",
+  "other_setup": "An attempted private log-capture one-liner failed Python quoting before checks. Direct private inspection commands also corrected a working-directory spelling and a quoting error; no original runtime was invoked.",
+  "classification": "Research-tool setup/transcription failures only. No original-game or reconstruction production failure."
+}
