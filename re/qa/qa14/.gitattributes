@@ -1,2 +1,5 @@
 # Synthetic byte/encoding/malformed-input controls must retain exact bytes.
 Inputs/*.osu -text -diff
+# Exact returned JSON/source snapshots may use Windows CRLF. Preserve bytes and
+# recognize CR as a line ending while retaining other whitespace checks.
+verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
