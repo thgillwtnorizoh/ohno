@@ -21,6 +21,8 @@ on:
       - reconstructed/R14Q01DevelopmentChecks/**
       - reconstructed/R15DevelopmentChecks/**
       - reconstructed/R15WindowsChecks/**
+      - reconstructed/R16DevelopmentChecks/**
+      - reconstructed/R16WindowsChecks/**
       - reconstructed/GenerateIndependentSpinnerSounds.ps1
       - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
@@ -345,4 +347,18 @@ jobs:
         shell: pwsh
         run: |
           & ./re/qa/qa13/Run-QA13.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa13-results.json')
+          exit $LASTEXITCODE
+
+      - name: Check R16 local catalog selection and Play capture without windows/media
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R16DevelopmentChecks/R16DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R16 unshown SelectPlay widgets and Rank-return host boundaries
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R16WindowsChecks/R16WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE

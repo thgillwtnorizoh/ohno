@@ -1,0 +1,934 @@
+{
+  "schema": "R16.E043.coverage.v1",
+  "authoritySha256": "9ac182e9b6af5faaca3e517c4500bbeef574b715af01350f5d223b8fc88324a4",
+  "rows": [
+    {
+      "id": "P01",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M46ad",
+        "E003"
+      ],
+      "publishedInitial": "M46ad target5, F2c48=true, other guards admitted",
+      "publishedExpected": "Target redirects Menu0; no guaranteed SelectPlay controller.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Original F2c48 redirect/complete mode manager excluded; browser home is explicit engineering UI.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P02",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M46ad:0030-006d",
+        "M46e6:000c"
+      ],
+      "publishedInitial": "M46ad target5, closed E003 time gate",
+      "publishedExpected": "Queue M46e6; callback reruns guards; pending/current and construction are not established by submission.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No original M46ad worker replay; existing R15 guards retained separately.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P03",
+      "classification": "partial",
+      "originalEvidence": [
+        "M46b0:0063-0072"
+      ],
+      "publishedInitial": "pending5/current7, commit not reached",
+      "publishedExpected": "Current remains Rank7; no controller construction yet.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Rank pending/current distinction retained, unshown Back host control; no native constructor claim.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P04",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M46b0:0361-0398"
+      ],
+      "publishedInitial": "M46b0 switch5, M19b8=true",
+      "publishedExpected": "Construct loading T0373 and set current19.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Original loading19 controller/osu.db excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P05",
+      "classification": "partial",
+      "originalEvidence": [
+        "M46b0:0368-0398"
+      ],
+      "publishedInitial": "M19b8=false, previous7, catalog empty",
+      "publishedExpected": "Loading19, not empty visible song list by assumption.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Empty engineering catalog/view is usable, not original loading19 behavior.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P06",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M46b0:0368-03ac",
+        "M258f"
+      ],
+      "publishedInitial": "M19b8=false, previous19, catalog empty",
+      "publishedExpected": "Construct T04d6; M258f can reject ordinary availability during constructor/init.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Previous-mode19 initialization special case excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P07",
+      "classification": "partial",
+      "originalEvidence": [
+        "M46b0:03a7,055a-0564",
+        "M25bf:0326-0360"
+      ],
+      "publishedInitial": "M19b8=false, previous7, catalog1 valid map",
+      "publishedExpected": "Construct T04d6, register then virtual M25c0. Drawing requires later draw path.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Unshown WPF browser construction, no original resources/draw.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P08",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M258f:0000-00be"
+      ],
+      "publishedInitial": "M258f catalog2, F1a0d=2, ordinary flagtrue",
+      "publishedExpected": "Set F15c4; returnfalse, with settings-dependent mode15 or notification actions.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Unavailable rows/empty groups displayed explicitly; original settings-dependent mode15 path excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P09",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M3ed2:0506",
+        "M3ed5",
+        "M3ebc:0092-00ac"
+      ],
+      "publishedInitial": "One supplied catalog map A, available, normal grouping12",
+      "publishedExpected": "One T059a row retains A reference; browser can commit it through F2557/M2581.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Finite actual production component control with injected state; no native runtime claim.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P10",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M3ea7:005f-00b5"
+      ],
+      "publishedInitial": "Prepared rows A/B same folder, C another folder, all available",
+      "publishedExpected": "A/B share contiguous run F1942; C begins new run, independent of chart/set IDs.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Supplied contiguous folder runs; catalog sorts full paths by engineering policy.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P11",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M3ea7:005f-00b5"
+      ],
+      "publishedInitial": "Prepared rows A/B/A folders s/t/s, all available",
+      "publishedExpected": "Three runs in supplied order; not a global folder GroupBy after sorting.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Supplied s/t/s creates three runs; no universal folder GroupBy.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P12",
+      "classification": "partial",
+      "originalEvidence": [
+        "M3ebc:003e,0092-00ac",
+        "M2581:0011,00df-01ec",
+        "M2c64"
+      ],
+      "publishedInitial": "GlobalA, commit difficultyB, both same folder",
+      "publishedExpected": "F254b first changes; event stores globalB, clears old cached resource, metadata refreshes; same-folder preview can reuse song.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Same-folder selection commit executed; native cached cleanup/preview reuse excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P13",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2581:00df-0134"
+      ],
+      "publishedInitial": "GlobalA, commit songC with different folder",
+      "publishedExpected": "GlobalC; same-folder preview shortcut false; selection-expand resource request conditional on refresh.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Different-folder selection executed; native expand resource/preview excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P14",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2c64:0000-0008"
+      ],
+      "publishedInitial": "GlobalA, setter(A)",
+      "publishedExpected": "Return without cleanup/store.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Same-reference setter no-op executed.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P15",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2c64:0009-0021"
+      ],
+      "publishedInitial": "GlobalA, setter(B), old cleanup returns",
+      "publishedExpected": "Old M1c12 then M38b9(true), then storeB.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Injected old-resource callback before store; no M38b9/native resource implementation.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P16",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2c64:0015-0021"
+      ],
+      "publishedInitial": "GlobalA, setter(B), old M1c12 throws",
+      "publishedExpected": "Store not reached; globalA retained, preceding helper may be partially mutated.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Injected pre-store throw retains old selected reference.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P17",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2581:000c-0011"
+      ],
+      "publishedInitial": "GlobalA, browser selection callback map=null",
+      "publishedExpected": "No M2c64(null) in this callback; globalA remains.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Null callback retains global; UI committed field remains separate.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P18",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2581:0011-006e"
+      ],
+      "publishedInitial": "Globalnull, browser callbackA",
+      "publishedExpected": "SetglobalA before metadata/preview preparation.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Global store before injected metadata failure; no rollback.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P19",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M3ec7:0017-0040"
+      ],
+      "publishedInitial": "GlobalA, browser highlightB in different run via M3ec7",
+      "publishedExpected": "F254d=B index; no committed F254b/F2557 map change on that branch.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Different-run highlight pending without commit/global update.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P20",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M3ebb",
+        "M3f1c",
+        "M3ebc:0187-019c",
+        "M2581:000c"
+      ],
+      "publishedInitial": "GlobalA, unavailable selectedA absent from rebuilt rows",
+      "publishedExpected": "Reference search returns-1; callbacknull leaves globalA. No unconditional first-map recovery.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Missing exact reference yields explicit recovery, retains selector, no implicit first row.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P21",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2c88:0098,0229-0245",
+        "M2caf"
+      ],
+      "publishedInitial": "Indexed A.F0fde=true during scan removal",
+      "publishedExpected": "M2caf true removes A; watcher/refresh callbacks and selected-map relookup remain separate.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Manual bounded refresh removes deleted paths; no native watcher/database repair.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P22",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1bf4:0001-000c",
+        "M2c6f:0006-0029"
+      ],
+      "publishedInitial": "Catalog entry existing filename x, incoming same x, equal F0fee",
+      "publishedExpected": "M1bf4 compares filename only; registration returns existing index before hash/ID dictionary assignment.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Original filename-only equal-entry comparator deliberately not implemented. Canonical-path engineering keys retain unrelated folders.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P23",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2c6a"
+      ],
+      "publishedInitial": "Two catalog records with same positive chartID, rebuild in A,B order",
+      "publishedExpected": "Dictionary indexer laterB wins; no universal duplicate-ID rejection.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Duplicate positive IDs retained rather than silently overwritten; original last-index-wins policy not emulated.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P24",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M2c85:0000-0017"
+      ],
+      "publishedInitial": "M2c85 catalognonempty, forcefalse",
+      "publishedExpected": "Returnfalse; skip DB reload/watcher recreation.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No original osu.db reuse/forcefalse load gate.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P25",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M2ca5:006c-009a",
+        "M1bf1",
+        "M1bf2"
+      ],
+      "publishedInitial": "DB supplied, M2ca5 read succeeds",
+      "publishedExpected": "List<T03ad> restored, dictionaries rebuilt; UI selection need not parse every file.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No binary database import; lightweight separate index avoids parsing on highlight.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P26",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2c8c:018b-0265",
+        "M2571:1de0-1df9"
+      ],
+      "publishedInitial": "New local *.osu discovered, metadata helper normal, valid/loadable predicates true",
+      "publishedExpected": "Construct map, store filename/folder, parse M1bc1, register, enqueue F1a0b; selection later in constructor.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Actual local recursive scan/index, without original F1a0b loader-controller queue.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P27",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2581:0011,013a-01bb"
+      ],
+      "publishedInitial": "SelectedA, M2581 changed toB; B not prepared and locally loadable, M1bc1 false",
+      "publishedExpected": "GlobalB already assigned; repair/error branch can return before preview. No selection rollback proven.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Injected post-store failure contained; committed global retained; native repair/preview excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P28",
+      "classification": "partial",
+      "originalEvidence": [
+        "M25f3:0000-0020"
+      ],
+      "publishedInitial": "Async row build captured controllerA; active controllerB at M25f3",
+      "publishedExpected": "Return before enabling browser/selection callback.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Latest-generation catalog and row rebuild veto tested; original active-controller scheduling is different.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P29",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M25f3:0048-005f",
+        "M3f1c"
+      ],
+      "publishedInitial": "Async rows built; global changes A->B before M25f3, B present byref",
+      "publishedExpected": "Fresh globalB used for browser reference search and selection restoration.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Restore reads current authoritative reference at execution, no cached request payload.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P30",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2578:0000-0024,0311-031d",
+        "M46ae:0000-0016"
+      ],
+      "publishedInitial": "Ordinary start, selectednonnull, randomfalse, phase2",
+      "publishedExpected": "Cleanup M2577(true) precedes queued M46ae(2,false,1000); no map captured by transition closure.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Request/accept/queue/commit/capture split; next dispatcher turn and browser lifetime are engineering, no native M2577 equivalence.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P31",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "publishedInitial": {
+        "F2540": false,
+        "F2c6b": 2,
+        "selected_nonnull": false
+      },
+      "publishedExpected": "M2578 returns before Play request.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No selected chart Start rejected.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P32",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "publishedInitial": {
+        "F2540": true,
+        "F2c6b": 2,
+        "selected_nonnull": true
+      },
+      "publishedExpected": "M2578 returns before Play request.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Special temporary selection guard.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P33",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2578:0000-0024"
+      ],
+      "publishedInitial": {
+        "F2540": false,
+        "F2c6b": 1,
+        "selected_nonnull": true
+      },
+      "publishedExpected": "M2578 returns before Play request.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Nonready phase guard.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P34",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2578",
+        "M223b:008e",
+        "E004 M223c failure"
+      ],
+      "publishedInitial": "Ordinary eligible start with selectedA but missing chart file",
+      "publishedExpected": "M2578 has no direct file-exists guard; downstream map preparation/loader can fail. A request is not successful loading.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Eligible missing-file request accepted; downstream verification fails before install.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P35",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M46ae:0008-0016,0059-006f"
+      ],
+      "publishedInitial": "Queued M46ae target2, current!=2, action not executed",
+      "publishedExpected": "No committed Play yet; capture contains target/repeat/cleanup scalar only.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Pending Play has no captured chart until explicit capture stage.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P36",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M4711:0094-009f",
+        "M2237:0001-0006"
+      ],
+      "publishedInitial": "Queued start forA; global replacedB before M2237",
+      "publishedExpected": "Play.F13f8 capturesB; request does not freezeA.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Selection B replaces A before capture; B is retained.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P37",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M2237:0006",
+        "M223b",
+        "E004"
+      ],
+      "publishedInitial": "Play initializedcapturedA; global changesB afterwards",
+      "publishedExpected": "F13f8 remainsA absent another writer; loading retains its own capture and additional fresh reads.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "After capture A stays Play chart while selector changes B.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P38",
+      "classification": "partial",
+      "originalEvidence": [
+        "M32e8:0018",
+        "M46ad"
+      ],
+      "publishedInitial": "Rank Back with ordinary localrecord",
+      "publishedExpected": "M32e8 requests5,false via M46ad; no map or scroll payload in request.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Existing Rank Back mode5 model retained; R16 restores catalog without chart payload.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P39",
+      "classification": "partial",
+      "originalEvidence": [
+        "M32e8",
+        "M46ad",
+        "M46e6"
+      ],
+      "publishedInitial": "Rank Back deferred/rejected/redirected",
+      "publishedExpected": "No guaranteed SelectPlay construction; E003 live admission gates apply.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Existing R15 request guards unchanged; no full E003 redirect/frontend construction.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P40",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2571:0049-0052,0095,1e21-1e50",
+        "M25f3:0048-005f"
+      ],
+      "publishedInitial": "Rank return globalA still in catalog, saved group/search present",
+      "publishedExpected": "Ctor captures liveglobal, restores group/search, async M25f3 locatesA byref. PreviousRank does not set returnFromPlay flag.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Reference restore/group availability executed; exact scroll/search/profile/native layout excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P41",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2571:0130-01c3",
+        "M3ebb",
+        "M25c2:008e-009d"
+      ],
+      "publishedInitial": "Rank return globalA gone, queued newmapnull",
+      "publishedExpected": "M3ebb may fail refsearch. Later state depends constructor validation and preview fallback; no unconditional same-scroll guarantee.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Missing Rank-return chart explicit recovery; refresh never clears valid old selector implicitly.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P42",
+      "classification": "partial",
+      "originalEvidence": [
+        "M25b2",
+        "M1c16",
+        "M1bde",
+        "M1bdb"
+      ],
+      "publishedInitial": "MetadataA available, F2540=false",
+      "publishedExpected": "M25b2 reads A title/BPM/end/counts/creator/difficulty text; F1008 is not E034 score drain-duration operand.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Prepared metadata subset, scalar/BPM range/end/counts; no original localization/background/full duration cache.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P43",
+      "classification": "partial",
+      "originalEvidence": [
+        "M2581:006e",
+        "M25d1:0049-005c"
+      ],
+      "publishedInitial": "Selected difficulty changes A->B with different version/CS and starcache",
+      "publishedExpected": "Changed selection triggers M25b2 for B; completed background calc refreshes only when same reference as current selection.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Selection metadata follows committed row; no background star calculator.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P44",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M1c16",
+        "M1bfb"
+      ],
+      "publishedInitial": "Ordinary selected map has optional Unicode disabled",
+      "publishedExpected": "M1c16 returns cached F0fe3; normal fallback string prepared by M1bfb.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Explicit Unicode preference and nonempty filename fallback.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P45",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M25c1:0022-002a"
+      ],
+      "publishedInitial": "M25c1(argmapA,true), globalB",
+      "publishedExpected": "Calls M3b47 with freshglobalB; supplied map argument is not the audio operand.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Silent selection, native preview live-map operand excluded.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P46",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M3b45:0064-00bc"
+      ],
+      "publishedInitial": "Two maps same folder and audio filename; existing receiver valid and eligible",
+      "publishedExpected": "M3b45 rebinds F2367.F24ad to newmap and returnsfalse; stream reuse branch.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No native preview receiver/stream reuse implementation.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P47",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1c02",
+        "M3d52:0041-0068",
+        "M3d51"
+      ],
+      "publishedInitial": "Missing selected audio resource",
+      "publishedExpected": "M1c02 may returnnull; M3d52 can use M3d51 synthetic timeline receiver. No guaranteed audible preview.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No preview fallback stream; declared missing gameplay audio separately fails nonfatally.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P48",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M25c1",
+        "M25c2:000c-0055"
+      ],
+      "publishedInitial": "M25c1(false)",
+      "publishedExpected": "Set F15e3=0; later M25c2 conditionally fades/reloads; not immediate universal cancellation.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No original fade/preview upkeep.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P49",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M2581:01ec-0205",
+        "M25c2:0001"
+      ],
+      "publishedInitial": "Preview helper throws after global selection changed",
+      "publishedExpected": "F15c0 error can suppress upkeep; selected reference can disagree with receiver map.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No preview helper; metadata-callback partial state tested underP27 only.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P50",
+      "classification": "partial",
+      "originalEvidence": [
+        "M25b2",
+        "M223b:008e",
+        "E034"
+      ],
+      "publishedInitial": "Current map sample/score metadata changes",
+      "publishedExpected": "Selection metadata cache is distinct from Play refresh and E034 legacy multiplier. No new score transformation established.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Light index is separate; authoritative fresh parser and E034 matched controls retain score metadata.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P51",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M1bc7:0035-003a",
+        "M1bd5:0011",
+        "M1bdb:01b4",
+        "M2d7f"
+      ],
+      "publishedInitial": "Star cache ruleset0 normalizedmods0 holds Single4.56789",
+      "publishedExpected": "M1bd5 yields Abs(Double(Single)); display floors to two decimals then formats0.##★.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Compatible supplied binary32 star floor2; no local calculation.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P52",
+      "classification": "partial",
+      "originalEvidence": [
+        "M1bc7:001e-0027",
+        "M1bd7",
+        "M1bdb:0148"
+      ],
+      "publishedInitial": "Star cache normalized key absent, F1014=false",
+      "publishedExpected": "M1bc7 returns0; M1bd7 can request calculation. Missing cache does not universally hide star line.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Engineering missing cache labelled not-calculated; native zero-return/display/calculation request not adopted.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P53",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M1bd5",
+        "M1bd7"
+      ],
+      "publishedInitial": "Star cache key0 Single-4.5, F1014=false",
+      "publishedExpected": "DisplayAbs4.5 while M1bd7 treats key0 negative as needing refresh.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Negative cached magnitude labelled stale while Abs/floor display retained.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P54",
+      "classification": "partial",
+      "originalEvidence": [
+        "M1bd7",
+        "M1bdb:0148"
+      ],
+      "publishedInitial": "Star cache key0NaN",
+      "publishedExpected": "M1bd5 AbsNaN; display blt.un skips star line; M1bd7 unordered branch is not negative.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Nonfinite supplied values unavailable; native scheduler unordered tests not emulated.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P55",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1bf2:0181-01d6"
+      ],
+      "publishedInitial": "Cache version older than F0fbd[mode] cutoff",
+      "publishedExpected": "M1bf2 stores -Abs(each cachedSingle), preserving value magnitude as stale marker.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No versioned native database stale-cutoff reconstruction.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P56",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1bf2:0100-0179"
+      ],
+      "publishedInitial": "Cache version20250106 vs20250107",
+      "publishedExpected": "First reads Double dictionary then convertsSingle with normalization filter; second reads Int32/Single dictionary.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No original Double/Single dictionary binary database versions.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P57",
+      "classification": "executed finite behavior",
+      "originalEvidence": [
+        "M08cf",
+        "M0805",
+        "M0803:0000"
+      ],
+      "publishedInitial": "Selected mods include only bits outside ordinary mask1370",
+      "publishedExpected": "M08cf/M0805 normalize cachekey by AND; not every distinct rawmodinteger has separate starentry.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Ordinary supplied cache normalized mod mask1370.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P58",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1bcf",
+        "M1c1e:00a4,0115",
+        "M1bd0:0002-003c",
+        "M1bc6:002c"
+      ],
+      "publishedInitial": "Missing cache, scheduler available, not Play at worker execution",
+      "publishedExpected": "M1c1e calls local M1bd0; ordinary factory M1bc6 constructs T011b overT072f; dictionary writeback queued, algorithm not recovered here.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Local M08d9 calculator deliberately unimplemented.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P59",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1c1e:0000-0018"
+      ],
+      "publishedInitial": "Difficulty worker executes while currentmode2",
+      "publishedExpected": "Waits with Thread.Sleep1000 until currentmode changes; no measured duration/cancellation promise.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No native star worker wait/poll scheduling.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P60",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M1c23",
+        "M25d1:0049-005c"
+      ],
+      "publishedInitial": "Background callback forA after selectedmap becomesB",
+      "publishedExpected": "CacheA updated, pendingchartID removed, but no selected metadata refresh forA.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No background calculation/writeback callbacks.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P61",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M3eba:0054-00e4"
+      ],
+      "publishedInitial": "Preferred-difficulty candidates4.0/6.0, preference5.0, same run/ruleset",
+      "publishedExpected": "Strict distance< retains first equidistant candidate; preference source remains profile getter M13d6.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No original profile-based preferred-difficulty chooser; explicit owner difficulty selection.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P62",
+      "classification": "partial",
+      "originalEvidence": [
+        "M3e97",
+        "M3e84",
+        "M2584"
+      ],
+      "publishedInitial": "Browser Enter13, accepted initial-press operand, currentdifficultyvalid, no highlight/modal/specialmod branch",
+      "publishedExpected": "F255a invokes M2584 then M2578; start guards still apply.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Enter pending-commit versus Start and guards executed; actual key dispatch source-inspected.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P63",
+      "classification": "partial",
+      "originalEvidence": [
+        "M3e94:0121-0131"
+      ],
+      "publishedInitial": "Mouse release over same selected difficulty, inputenabled, no specialflag",
+      "publishedExpected": "F255a triggersstart; different difficulty follows select/preferred-select path.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Unshown row callback/repeated selected-row Start; original geometry/release timing not claimed.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P64",
+      "classification": "partial",
+      "originalEvidence": [
+        "M25c5:003f-0041"
+      ],
+      "publishedInitial": "Ordinary Back callback reached",
+      "publishedExpected": "M25c5 requests Menu0,false, not Rank and not universal selection deletion.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Back goes explicit engineering home, not original Menu frontend.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P65",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "M2577:0001-0008,0195,0234",
+        "M2576"
+      ],
+      "publishedInitial": "First disposal towardPlay",
+      "publishedExpected": "M2577(true) runs once, saves group/ruleset, unregisters inputs; gameplay container optionally retained. Secondcleanup returns immediately.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "Native once-only controller disposal/input unregistration not reconstructed; host cancellation/disposal explicit.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    },
+    {
+      "id": "P66",
+      "classification": "unsupported",
+      "originalEvidence": [
+        "field_sites F15e4/F15e5",
+        "M25c1",
+        "M2577:0215"
+      ],
+      "publishedInitial": "F15e4/F15e5 defaultnull under direct managed inventory",
+      "publishedExpected": "No direct writer to these fields found; retain conditional preview-thread branches without inventing an active producer.",
+      "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
+      "scope": "No fabricated preview-thread producer.",
+      "execution": "PENDING Windows gate",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+    }
+  ]
+}
