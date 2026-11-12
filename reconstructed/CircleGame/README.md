@@ -1,4 +1,4 @@
-# R12 — Discrete HitSound Practice for Windows
+# R16 — Local SelectPlay Practice for Windows
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
@@ -30,7 +30,9 @@ From a checkout of the latest `main`, either double-click
 dotnet run --project reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release
 ```
 
-1. The original silent eight-circle fixture loads into a ready screen.
+1. The application opens the local SelectPlay browser. Select a song and difficulty,
+   commit it, then choose Play selected. The compatibility **Silent fixture** button
+   loads the original eight-circle fixture paused.
    For audio, click **Audible fixture** and wait for its local media to load.
    **Slider fixture** retains the R04 control. For R05, choose **Tick fixture**,
    **Repeat fixture**, or **Mixed R05**.
@@ -806,3 +808,84 @@ This work does not correct the deferred Joined Bézier score discrepancy.
 See `../R15-original-derived-rank-results.md` for provenance, verified counts,
 engineering substitutions and the78-row E042 coverage matrix. Windows source is
 built/tested without launching the gameplay window, listening or screenshot claims.
+
+
+## R16 local SelectPlay
+
+The default screen is a silent, independently drawn local song/difficulty browser.
+It indexes `.osu` metadata in **Songs beside the executable**, recursively, and the
+bundled `Fixtures`. Configure `selection.json` beside the built executable (the
+same `AppContext.BaseDirectory` convention as `hitsounds.json`):
+
+```json
+{
+  "BeatmapDirectory": "C:\\Games\\osu!\\Songs",
+  "PreferUnicode": false
+}
+```
+
+`BeatmapDirectory` defaults to `Songs`; relative paths resolve against that executable
+directory, not the shell working directory. JSON property names are case sensitive.
+Restart after editing configuration. A missing root/configuration problem is visible;
+bundled fixtures remain available. UNC roots and reparse/symlink paths are excluded.
+
+Click a song to highlight it. Click a difficulty to commit it; click the committed
+row again, or choose **Play selected**, to start. A highlight in another folder can
+remain pending; Enter first commits it and a second Enter requests Play. Within the
+current committed folder run, highlighting another difficulty can commit immediately.
+The header distinguishes highlight, committed row and authoritative selection.
+Up/Down move one available row; Page Up/Down move up to ten; Left/Right confirm a
+pending highlight or move between folder runs. The wheel scrolls the lists. Escape
+returns to the explicitly engineering **Local Practice Home**. No original main menu
+is claimed. SelectPlay on the toolbar reopens the browser; Resume loaded chart is a
+compatibility route to an existing paused session.
+
+**Refresh catalog** explicitly rescans metadata. There is no watcher or `osu!.db`.
+The engineering index uses canonical full paths (Windows ordinal-ignore-case),
+length, write time and SHA256; duplicate filenames and online IDs are retained.
+Charts are ordered by those paths and adjacent available entries from one containing
+folder form difficulty runs. Online set ID does not group unrelated directories.
+Limits are 4 MiB/chart, 10,000 charts, 4,096 directories, depth32, 50,000 examined file
+candidates, up to10,000 candidates/directory and 100,000 lines/chart. A limit yields a
+partial-index notice. Refresh is cancellable and only its latest generation installs.
+No highlighting performs a full gameplay parse or media preparation.
+
+Metadata uses invariant formatting, optional Unicode preference then ordinary text,
+then filename for missing title/version. Artist/creator may be unavailable. BPM uses
+finite positive base timing records; displayed end time is maximum circle/spinner
+stored end. Slider duration is explicitly unavailable until full preparation. These
+are browser display inputs; E034 gameplay metadata and score multiplier are untouched.
+**Stars not calculated** is the normal display. No original star calculator, external
+calculator, score-multiplier substitute or fabricated zero rating is used. The model
+can validate an explicitly compatible supplied cache with hash/mode/normalized-mod
+provenance, mark it stale and format promoted-Single magnitude with floor-to-two
+and `0.##`; there is no disk cache importer in R16.
+
+Starting is staged: request/admission/queued Play, commitment, live selected-chart
+capture, full existing parser, existing song/effects preparation, file revalidation,
+then installation of a fresh session. Scalar1000 is retained as original request
+metadata, not a fabricated delay. The host uses a next-dispatcher-turn engineering
+queue plus cancellation generations. A newer selection before capture may change
+which chart loads; changes after capture cannot replace that Play chart. Changed,
+deleted, invalid or unsupported files and missing declared song audio fail visibly
+and leave any previous valid session paused. Refresh cancels pending loading. Select
+another available row, or Refresh and commit the new chart revision, to recover.
+**Indexed** means metadata was prepared, not that the full parser/decoder succeeded.
+Only a successful load marks a revision validated; Refresh retries failed revisions.
+
+R15 Rank Back enters SelectPlay and refreshes the index. An unchanged available selected
+reference is restored in its group; changed/missing selection remains explicit until
+you commit an available row. Exact scroll restoration is not claimed. R15 Retry still
+creates a fresh session from the captured Play map. Rank Space/Enter skip reveal;
+they never start another chart. The picker, command-line chart argument and all old
+fixture buttons retain their paused compatibility loading routes and register the
+external chart in the catalog. External registrations persist for this process only.
+
+The browser has no preview audio, original skins/database/sort modes/online discovery
+or native scheduling claims. Owner-only qualification: build/run on Windows, browse a
+folder with two difficulties, commit and Play, physically complete it, Back from Rank,
+verify the selected difficulty, then Retry or start again. Rename a chart while away
+and Refresh to check recovery. No agent has shown the window, injected physical input,
+listened or claimed visual/audible equivalence. See
+[`R16-original-derived-selectplay.md`](../R16-original-derived-selectplay.md) for the
+exact-source gate and the separate development/Windows coverage inventory.

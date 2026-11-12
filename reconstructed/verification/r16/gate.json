@@ -1,0 +1,63 @@
+{
+  "schema": "R16.Windows.gate.v1",
+  "baseline": "352ea0b161153565e1ec2748d51dfc8cb3813b81",
+  "testedSource": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "run": "https://github.com/thgillwtnorizoh/ohno/actions/runs/43153555528",
+  "job": 130968150828,
+  "result": "PASS",
+  "utcInterval": "2026-11-12T04:15:12Z/2026-11-12T04:17:01Z",
+  "os": "Windows Server2022 GitHub Actions",
+  "build": {
+    "configuration": "Release",
+    "rid": "win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "independent": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "QA12": 286,
+    "QA13": 281,
+    "total": 1911
+  },
+  "R16": {
+    "headless": 52,
+    "headlessComponents": 50,
+    "headlessSourceAudits": 2,
+    "windows": 12,
+    "windowsComponents": 11,
+    "windowsSourceAudits": 1
+  },
+  "originalPredictions": {
+    "unsupported": 21,
+    "partial": 24,
+    "executed finite behavior": 21
+  },
+  "productionHarnessWorkflowSha256": {
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "1dff4ede2116c7cb1d75730ccf828ca0cdaa9d58f5077802bd1f2ee4beae2b90",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "d493bc9836bcbbbb4165d38badaabcf15d233f9a7cdcf833756420f14bb154f8",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "reconstructed/R16DevelopmentChecks/Program.cs": "c41f8ed0653d31c022d13961491289fd418d3ac06e43cf5fa93ccbbe2cc831ba",
+    "reconstructed/R16DevelopmentChecks/R16DevelopmentChecks.csproj": "b4b7043e204582b28358ca5b3d118a6c8f2f44c5556a0485949322a2dba26d58",
+    "reconstructed/R16WindowsChecks/Program.cs": "528b4bb41ed76e3ffe6481c41002ae56a310660549087cb266b46cd5b4c7744e",
+    "reconstructed/R16WindowsChecks/R16WindowsChecks.csproj": "5e21da6f0c54c39b1fd2cc136efe102d3c10368d249ac68191828ca112b548bb",
+    ".github/workflows/r04-build.yml": "3c6db9c60ccf09f717515d1ad13245c826dc592f77118c6c377a33e5298a441b",
+    "reconstructed/CircleGame/Program.cs": "2e5a02d2082761ce2561dbe343636db1a7d8ec1b7f3abd7bc3a8fb25f6528f92"
+  },
+  "decodedFullLog": {
+    "bytes": 869069,
+    "sha256": "32ee4048455b6fa196ff19b373519b8129489e65643febd64efd5f47c4a81700",
+    "encoding": "UTF8 original GitHub decoded log, includes BOM/CRLF; gzip mtime0 then base64"
+  },
+  "noWindowInputMediaListening": true,
+  "firstGatePassed": true,
+  "sdk": "8.0.427"
+}

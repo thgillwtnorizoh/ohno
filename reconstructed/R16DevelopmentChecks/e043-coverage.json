@@ -13,8 +13,13 @@
       "publishedExpected": "Target redirects Menu0; no guaranteed SelectPlay controller.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Original F2c48 redirect/complete mode manager excluded; browser home is explicit engineering UI.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Original F2c48 redirect/complete mode manager excluded; browser home is explicit engineering UI."
     },
     {
       "id": "P02",
@@ -27,8 +32,13 @@
       "publishedExpected": "Queue M46e6; callback reruns guards; pending/current and construction are not established by submission.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No original M46ad worker replay; existing R15 guards retained separately.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No original M46ad worker replay; existing R15 guards retained separately."
     },
     {
       "id": "P03",
@@ -40,8 +50,15 @@
       "publishedExpected": "Current remains Rank7; no controller construction yet.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Rank pending/current distinction retained, unshown Back host control; no native constructor claim.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": [
+          6
+        ]
+      },
+      "actual": "W06 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P04",
@@ -53,8 +70,13 @@
       "publishedExpected": "Construct loading T0373 and set current19.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Original loading19 controller/osu.db excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Original loading19 controller/osu.db excluded."
     },
     {
       "id": "P05",
@@ -66,8 +88,16 @@
       "publishedExpected": "Loading19, not empty visible song list by assumption.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Empty engineering catalog/view is usable, not original loading19 behavior.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": [
+          1,
+          10
+        ]
+      },
+      "actual": "W01 PASS (unshown component/source classification in harness); W10 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P06",
@@ -80,8 +110,13 @@
       "publishedExpected": "Construct T04d6; M258f can reject ordinary availability during constructor/init.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Previous-mode19 initialization special case excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Previous-mode19 initialization special case excluded."
     },
     {
       "id": "P07",
@@ -94,8 +129,15 @@
       "publishedExpected": "Construct T04d6, register then virtual M25c0. Drawing requires later draw path.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Unshown WPF browser construction, no original resources/draw.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": [
+          1
+        ]
+      },
+      "actual": "W01 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P08",
@@ -107,8 +149,13 @@
       "publishedExpected": "Set F15c4; returnfalse, with settings-dependent mode15 or notification actions.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Unavailable rows/empty groups displayed explicitly; original settings-dependent mode15 path excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Unavailable rows/empty groups displayed explicitly; original settings-dependent mode15 path excluded."
     },
     {
       "id": "P09",
@@ -122,8 +169,16 @@
       "publishedExpected": "One T059a row retains A reference; browser can commit it through F2557/M2581.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Finite actual production component control with injected state; no native runtime claim.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          15,
+          17
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H15 PASS: folder runs and initial highlight do not implicitly commit selection; H17 PASS: difficulty commit invokes nonnull authoritative selection callback; finite managed behavior only."
     },
     {
       "id": "P10",
@@ -135,8 +190,16 @@
       "publishedExpected": "A/B share contiguous run F1942; C begins new run, independent of chart/set IDs.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Supplied contiguous folder runs; catalog sorts full paths by engineering policy.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          5,
+          15
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H05 PASS: duplicate filenames across folders and duplicate chart IDs are retained; H15 PASS: folder runs and initial highlight do not implicitly commit selection; finite managed behavior only."
     },
     {
       "id": "P11",
@@ -148,8 +211,15 @@
       "publishedExpected": "Three runs in supplied order; not a global folder GroupBy after sorting.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Supplied s/t/s creates three runs; no universal folder GroupBy.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          16
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H16 PASS: P11 supplied folder s/t/s creates three contiguous runs, not global set grouping; finite managed behavior only."
     },
     {
       "id": "P12",
@@ -163,8 +233,16 @@
       "publishedExpected": "F254b first changes; event stores globalB, clears old cached resource, metadata refreshes; same-folder preview can reuse song.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Same-folder selection commit executed; native cached cleanup/preview reuse excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          19,
+          20
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H19 PASS: same-run highlight may immediately commit difficulty; H20 PASS: same-reference setter and null callback do not clear or clean a valid selection; native/original remainder remains unverified."
     },
     {
       "id": "P13",
@@ -176,8 +254,17 @@
       "publishedExpected": "GlobalC; same-folder preview shortcut false; selection-expand resource request conditional on refresh.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Different-folder selection executed; native expand resource/preview excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          18,
+          23,
+          28
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H18 PASS: different-song highlight remains pending without selected-map change; H23 PASS: post-store callback failure is contained without manufactured rollback; H28 PASS: mouse different-row selection and repeated selected-row Start remain separate; native/original remainder remains unverified."
     },
     {
       "id": "P14",
@@ -189,8 +276,15 @@
       "publishedExpected": "Return without cleanup/store.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Same-reference setter no-op executed.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          20
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H20 PASS: same-reference setter and null callback do not clear or clean a valid selection; finite managed behavior only."
     },
     {
       "id": "P15",
@@ -202,8 +296,15 @@
       "publishedExpected": "Old M1c12 then M38b9(true), then storeB.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Injected old-resource callback before store; no M38b9/native resource implementation.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          21
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H21 PASS: pre-store cleanup failure retains old authoritative reference; native/original remainder remains unverified."
     },
     {
       "id": "P16",
@@ -215,8 +316,15 @@
       "publishedExpected": "Store not reached; globalA retained, preceding helper may be partially mutated.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Injected pre-store throw retains old selected reference.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          21
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H21 PASS: pre-store cleanup failure retains old authoritative reference; finite managed behavior only."
     },
     {
       "id": "P17",
@@ -228,8 +336,16 @@
       "publishedExpected": "No M2c64(null) in this callback; globalA remains.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Null callback retains global; UI committed field remains separate.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          20,
+          22
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H20 PASS: same-reference setter and null callback do not clear or clean a valid selection; H22 PASS: null selection callback preserves global while exposing committed/global distinction; finite managed behavior only."
     },
     {
       "id": "P18",
@@ -241,8 +357,15 @@
       "publishedExpected": "SetglobalA before metadata/preview preparation.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Global store before injected metadata failure; no rollback.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          23
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H23 PASS: post-store callback failure is contained without manufactured rollback; finite managed behavior only."
     },
     {
       "id": "P19",
@@ -254,8 +377,15 @@
       "publishedExpected": "F254d=B index; no committed F254b/F2557 map change on that branch.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Different-run highlight pending without commit/global update.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          18
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H18 PASS: different-song highlight remains pending without selected-map change; finite managed behavior only."
     },
     {
       "id": "P20",
@@ -270,8 +400,17 @@
       "publishedExpected": "Reference search returns-1; callbacknull leaves globalA. No unconditional first-map recovery.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Missing exact reference yields explicit recovery, retains selector, no implicit first row.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          25
+        ],
+        "windowsGroups": [
+          10
+        ]
+      },
+      "actual": "H25 PASS: missing selected row recovery and stale browser generation cannot replace newer selection; W10 PASS (unshown component/source classification in harness); finite managed behavior only."
     },
     {
       "id": "P21",
@@ -284,8 +423,15 @@
       "publishedExpected": "M2caf true removes A; watcher/refresh callbacks and selected-map relookup remain separate.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Manual bounded refresh removes deleted paths; no native watcher/database repair.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          39
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H39 PASS: root refresh removes deleted chart independently of retained selection; native/original remainder remains unverified."
     },
     {
       "id": "P22",
@@ -298,8 +444,15 @@
       "publishedExpected": "M1bf4 compares filename only; registration returns existing index before hash/ID dictionary assignment.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Original filename-only equal-entry comparator deliberately not implemented. Canonical-path engineering keys retain unrelated folders.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          5
+        ],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Original filename-only equal-entry comparator deliberately not implemented. Canonical-path engineering keys retain unrelated folders."
     },
     {
       "id": "P23",
@@ -311,8 +464,15 @@
       "publishedExpected": "Dictionary indexer laterB wins; no universal duplicate-ID rejection.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Duplicate positive IDs retained rather than silently overwritten; original last-index-wins policy not emulated.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          5
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H05 PASS: duplicate filenames across folders and duplicate chart IDs are retained; native/original remainder remains unverified."
     },
     {
       "id": "P24",
@@ -324,8 +484,13 @@
       "publishedExpected": "Returnfalse; skip DB reload/watcher recreation.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No original osu.db reuse/forcefalse load gate.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No original osu.db reuse/forcefalse load gate."
     },
     {
       "id": "P25",
@@ -339,8 +504,16 @@
       "publishedExpected": "List<T03ad> restored, dictionaries rebuilt; UI selection need not parse every file.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No binary database import; lightweight separate index avoids parsing on highlight.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          4,
+          13
+        ],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No binary database import; lightweight separate index avoids parsing on highlight."
     },
     {
       "id": "P26",
@@ -353,8 +526,17 @@
       "publishedExpected": "Construct map, store filename/folder, parse M1bc1, register, enqueue F1a0b; selection later in constructor.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Actual local recursive scan/index, without original F1a0b loader-controller queue.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          4,
+          40,
+          43
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H04 PASS: recursive local discovery indexes metadata without full gameplay validation; H40 PASS: file-picker external chart becomes its own local catalog entry; H43 PASS: bundled existing development fixtures discover without rewriting source files; native/original remainder remains unverified."
     },
     {
       "id": "P27",
@@ -366,8 +548,15 @@
       "publishedExpected": "GlobalB already assigned; repair/error branch can return before preview. No selection rollback proven.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Injected post-store failure contained; committed global retained; native repair/preview excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          23
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H23 PASS: post-store callback failure is contained without manufactured rollback; finite managed behavior only."
     },
     {
       "id": "P28",
@@ -379,8 +568,16 @@
       "publishedExpected": "Return before enabling browser/selection callback.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Latest-generation catalog and row rebuild veto tested; original active-controller scheduling is different.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          25,
+          42
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H25 PASS: missing selected row recovery and stale browser generation cannot replace newer selection; H42 PASS: actual scans with injected publication interleaving retain latest snapshot only; native/original remainder remains unverified."
     },
     {
       "id": "P29",
@@ -393,8 +590,17 @@
       "publishedExpected": "Fresh globalB used for browser reference search and selection restoration.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Restore reads current authoritative reference at execution, no cached request payload.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          24
+        ],
+        "windowsGroups": [
+          6
+        ]
+      },
+      "actual": "H24 PASS: rebuild/Rank return restores live selected reference and containing group; W06 PASS (unshown component/source classification in harness); finite managed behavior only."
     },
     {
       "id": "P30",
@@ -407,8 +613,17 @@
       "publishedExpected": "Cleanup M2577(true) precedes queued M46ae(2,false,1000); no map captured by transition closure.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Request/accept/queue/commit/capture split; next dispatcher turn and browser lifetime are engineering, no native M2577 equivalence.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          30,
+          31,
+          32
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H30 PASS: accepted queued Play is not commitment or captured chart; duplicate Start suppressed; H31 PASS: live selection at capture sees before-capture change; later global change does not replace Play; H32 PASS: full parser follows Play commitment/capture; readiness is a separate completion; native/original remainder remains unverified."
     },
     {
       "id": "P31",
@@ -424,8 +639,15 @@
       "publishedExpected": "M2578 returns before Play request.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No selected chart Start rejected.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          29
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H29 PASS: Start no-selection temporary-mode and nonready-phase guards; finite managed behavior only."
     },
     {
       "id": "P32",
@@ -441,8 +663,15 @@
       "publishedExpected": "M2578 returns before Play request.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Special temporary selection guard.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          29
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H29 PASS: Start no-selection temporary-mode and nonready-phase guards; finite managed behavior only."
     },
     {
       "id": "P33",
@@ -458,8 +687,15 @@
       "publishedExpected": "M2578 returns before Play request.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Nonready phase guard.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          29
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H29 PASS: Start no-selection temporary-mode and nonready-phase guards; finite managed behavior only."
     },
     {
       "id": "P34",
@@ -473,8 +709,18 @@
       "publishedExpected": "M2578 has no direct file-exists guard; downstream map preparation/loader can fail. A request is not successful loading.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Eligible missing-file request accepted; downstream verification fails before install.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          36
+        ],
+        "windowsGroups": [
+          8,
+          9
+        ]
+      },
+      "actual": "H36 PASS: M2578-style request does not prove file availability or successful load; W08 PASS (unshown component/source classification in harness); W09 PASS (unshown component/source classification in harness); finite managed behavior only."
     },
     {
       "id": "P35",
@@ -486,8 +732,15 @@
       "publishedExpected": "No committed Play yet; capture contains target/repeat/cleanup scalar only.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Pending Play has no captured chart until explicit capture stage.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          30
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H30 PASS: accepted queued Play is not commitment or captured chart; duplicate Start suppressed; finite managed behavior only."
     },
     {
       "id": "P36",
@@ -500,8 +753,15 @@
       "publishedExpected": "Play.F13f8 capturesB; request does not freezeA.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Selection B replaces A before capture; B is retained.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          31
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H31 PASS: live selection at capture sees before-capture change; later global change does not replace Play; finite managed behavior only."
     },
     {
       "id": "P37",
@@ -515,8 +775,15 @@
       "publishedExpected": "F13f8 remainsA absent another writer; loading retains its own capture and additional fresh reads.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "After capture A stays Play chart while selector changes B.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          31
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H31 PASS: live selection at capture sees before-capture change; later global change does not replace Play; finite managed behavior only."
     },
     {
       "id": "P38",
@@ -529,8 +796,18 @@
       "publishedExpected": "M32e8 requests5,false via M46ad; no map or scroll payload in request.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Existing Rank Back mode5 model retained; R16 restores catalog without chart payload.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          24
+        ],
+        "windowsGroups": [
+          6,
+          12
+        ]
+      },
+      "actual": "H24 PASS: rebuild/Rank return restores live selected reference and containing group; W06 PASS (unshown component/source classification in harness); W12 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P39",
@@ -544,8 +821,15 @@
       "publishedExpected": "No guaranteed SelectPlay construction; E003 live admission gates apply.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Existing R15 request guards unchanged; no full E003 redirect/frontend construction.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          29
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H29 PASS: Start no-selection temporary-mode and nonready-phase guards; native/original remainder remains unverified."
     },
     {
       "id": "P40",
@@ -558,8 +842,19 @@
       "publishedExpected": "Ctor captures liveglobal, restores group/search, async M25f3 locatesA byref. PreviousRank does not set returnFromPlay flag.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Reference restore/group availability executed; exact scroll/search/profile/native layout excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          24,
+          25
+        ],
+        "windowsGroups": [
+          6,
+          12
+        ]
+      },
+      "actual": "H24 PASS: rebuild/Rank return restores live selected reference and containing group; H25 PASS: missing selected row recovery and stale browser generation cannot replace newer selection; W06 PASS (unshown component/source classification in harness); W12 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P41",
@@ -573,8 +868,19 @@
       "publishedExpected": "M3ebb may fail refsearch. Later state depends constructor validation and preview fallback; no unconditional same-scroll guarantee.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Missing Rank-return chart explicit recovery; refresh never clears valid old selector implicitly.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          25,
+          37,
+          39
+        ],
+        "windowsGroups": [
+          10
+        ]
+      },
+      "actual": "H25 PASS: missing selected row recovery and stale browser generation cannot replace newer selection; H37 PASS: changed metadata creates new revision; stale cached selection never silently substitutes it; H39 PASS: root refresh removes deleted chart independently of retained selection; W10 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P42",
@@ -589,8 +895,19 @@
       "publishedExpected": "M25b2 reads A title/BPM/end/counts/creator/difficulty text; F1008 is not E034 score drain-duration operand.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Prepared metadata subset, scalar/BPM range/end/counts; no original localization/background/full duration cache.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          6,
+          7,
+          9
+        ],
+        "windowsGroups": [
+          3
+        ]
+      },
+      "actual": "H06 PASS: title artist creator version and effective ordinary ruleset; H07 PASS: independent HP CS OD AR count fixed BPM and stored-end metadata; H09 PASS: missing optional metadata uses declared filename fallback; actual parser remains authoritative; W03 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P43",
@@ -603,12 +920,19 @@
       "publishedExpected": "Changed selection triggers M25b2 for B; completed background calc refreshes only when same reference as current selection.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Selection metadata follows committed row; no background star calculator.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          19
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H19 PASS: same-run highlight may immediately commit difficulty; native/original remainder remains unverified."
     },
     {
       "id": "P44",
-      "classification": "executed finite behavior",
+      "classification": "partial",
       "originalEvidence": [
         "M1c16",
         "M1bfb"
@@ -617,8 +941,16 @@
       "publishedExpected": "M1c16 returns cached F0fe3; normal fallback string prepared by M1bfb.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Explicit Unicode preference and nonempty filename fallback.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          8,
+          9
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H08 PASS: Unicode preference with fallback separate from gameplay metadata; H09 PASS: missing optional metadata uses declared filename fallback; actual parser remains authoritative; native/original remainder remains unverified."
     },
     {
       "id": "P45",
@@ -630,8 +962,13 @@
       "publishedExpected": "Calls M3b47 with freshglobalB; supplied map argument is not the audio operand.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Silent selection, native preview live-map operand excluded.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Silent selection, native preview live-map operand excluded."
     },
     {
       "id": "P46",
@@ -643,8 +980,13 @@
       "publishedExpected": "M3b45 rebinds F2367.F24ad to newmap and returnsfalse; stream reuse branch.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No native preview receiver/stream reuse implementation.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No native preview receiver/stream reuse implementation."
     },
     {
       "id": "P47",
@@ -658,8 +1000,15 @@
       "publishedExpected": "M1c02 may returnnull; M3d52 can use M3d51 synthetic timeline receiver. No guaranteed audible preview.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No preview fallback stream; declared missing gameplay audio separately fails nonfatally.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          35
+        ],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No preview fallback stream; declared missing gameplay audio separately fails nonfatally."
     },
     {
       "id": "P48",
@@ -672,8 +1021,13 @@
       "publishedExpected": "Set F15e3=0; later M25c2 conditionally fades/reloads; not immediate universal cancellation.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No original fade/preview upkeep.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No original fade/preview upkeep."
     },
     {
       "id": "P49",
@@ -686,8 +1040,15 @@
       "publishedExpected": "F15c0 error can suppress upkeep; selected reference can disagree with receiver map.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No preview helper; metadata-callback partial state tested underP27 only.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          23
+        ],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No preview helper; metadata-callback partial state tested underP27 only."
     },
     {
       "id": "P50",
@@ -701,8 +1062,18 @@
       "publishedExpected": "Selection metadata cache is distinct from Play refresh and E034 legacy multiplier. No new score transformation established.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Light index is separate; authoritative fresh parser and E034 matched controls retain score metadata.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          38,
+          50
+        ],
+        "windowsGroups": [
+          5
+        ]
+      },
+      "actual": "H38 PASS: selection metadata/fingerprints preserve authoritative E034 metadata and score multiplier; H50 PASS: four old-loader versus SelectPlay-loader matched histories: score K counts judgement slider spinner HP audio Rank unchanged; W05 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P51",
@@ -717,8 +1088,15 @@
       "publishedExpected": "M1bd5 yields Abs(Double(Single)); display floors to two decimals then formats0.##★.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Compatible supplied binary32 star floor2; no local calculation.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          45
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H45 PASS: compatible hash/mode/mod source uses promoted Single magnitude and floor2; finite managed behavior only."
     },
     {
       "id": "P52",
@@ -732,8 +1110,15 @@
       "publishedExpected": "M1bc7 returns0; M1bd7 can request calculation. Missing cache does not universally hide star line.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Engineering missing cache labelled not-calculated; native zero-return/display/calculation request not adopted.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          44
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H44 PASS: absent star cache never fabricates a zero-star calculation; native/original remainder remains unverified."
     },
     {
       "id": "P53",
@@ -746,8 +1131,15 @@
       "publishedExpected": "DisplayAbs4.5 while M1bd7 treats key0 negative as needing refresh.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Negative cached magnitude labelled stale while Abs/floor display retained.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          47
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H47 PASS: negative cached magnitude staleness and nonfinite values do not imply valid calculated stars; finite managed behavior only."
     },
     {
       "id": "P54",
@@ -760,8 +1152,15 @@
       "publishedExpected": "M1bd5 AbsNaN; display blt.un skips star line; M1bd7 unordered branch is not negative.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Nonfinite supplied values unavailable; native scheduler unordered tests not emulated.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          47
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H47 PASS: negative cached magnitude staleness and nonfinite values do not imply valid calculated stars; native/original remainder remains unverified."
     },
     {
       "id": "P55",
@@ -773,8 +1172,13 @@
       "publishedExpected": "M1bf2 stores -Abs(each cachedSingle), preserving value magnitude as stale marker.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No versioned native database stale-cutoff reconstruction.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No versioned native database stale-cutoff reconstruction."
     },
     {
       "id": "P56",
@@ -786,8 +1190,13 @@
       "publishedExpected": "First reads Double dictionary then convertsSingle with normalization filter; second reads Int32/Single dictionary.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No original Double/Single dictionary binary database versions.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No original Double/Single dictionary binary database versions."
     },
     {
       "id": "P57",
@@ -801,8 +1210,15 @@
       "publishedExpected": "M08cf/M0805 normalize cachekey by AND; not every distinct rawmodinteger has separate starentry.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Ordinary supplied cache normalized mod mask1370.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          48
+        ],
+        "windowsGroups": []
+      },
+      "actual": "H48 PASS: ordinary normalized star key masks1370; raw excluded bit does not create a new cache entry; finite managed behavior only."
     },
     {
       "id": "P58",
@@ -817,8 +1233,13 @@
       "publishedExpected": "M1c1e calls local M1bd0; ordinary factory M1bc6 constructs T011b overT072f; dictionary writeback queued, algorithm not recovered here.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Local M08d9 calculator deliberately unimplemented.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. Local M08d9 calculator deliberately unimplemented."
     },
     {
       "id": "P59",
@@ -830,8 +1251,13 @@
       "publishedExpected": "Waits with Thread.Sleep1000 until currentmode changes; no measured duration/cancellation promise.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No native star worker wait/poll scheduling.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No native star worker wait/poll scheduling."
     },
     {
       "id": "P60",
@@ -844,8 +1270,13 @@
       "publishedExpected": "CacheA updated, pendingchartID removed, but no selected metadata refresh forA.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No background calculation/writeback callbacks.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No background calculation/writeback callbacks."
     },
     {
       "id": "P61",
@@ -857,8 +1288,13 @@
       "publishedExpected": "Strict distance< retains first equidistant candidate; preference source remains profile getter M13d6.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No original profile-based preferred-difficulty chooser; explicit owner difficulty selection.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No original profile-based preferred-difficulty chooser; explicit owner difficulty selection."
     },
     {
       "id": "P62",
@@ -872,8 +1308,20 @@
       "publishedExpected": "F255a invokes M2584 then M2578; start guards still apply.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Enter pending-commit versus Start and guards executed; actual key dispatch source-inspected.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          26,
+          27,
+          29,
+          51
+        ],
+        "windowsGroups": [
+          12
+        ]
+      },
+      "actual": "H26 PASS: nearby/page/group movement distinguishes pending confirmation from committed navigation; H27 PASS: Enter commits a pending highlight before a separate confirmed Start; H29 PASS: Start no-selection temporary-mode and nonready-phase guards; H51 PASS: SOURCE INSPECTION state-specific keyboard, Rank skip, loader revalidation and Rank-return refresh wiring; W12 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P63",
@@ -885,8 +1333,18 @@
       "publishedExpected": "F255a triggersstart; different difficulty follows select/preferred-select path.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Unshown row callback/repeated selected-row Start; original geometry/release timing not claimed.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          28
+        ],
+        "windowsGroups": [
+          2,
+          4
+        ]
+      },
+      "actual": "H28 PASS: mouse different-row selection and repeated selected-row Start remain separate; W02 PASS (unshown component/source classification in harness); W04 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P64",
@@ -898,8 +1356,17 @@
       "publishedExpected": "M25c5 requests Menu0,false, not Rank and not universal selection deletion.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Back goes explicit engineering home, not original Menu frontend.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "PASS bounded controls at19bb644e01c646ca8850f0751ec03f7ef881d766, run43153555528",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          51
+        ],
+        "windowsGroups": [
+          12
+        ]
+      },
+      "actual": "H51 PASS: SOURCE INSPECTION state-specific keyboard, Rank skip, loader revalidation and Rank-return refresh wiring; W12 PASS (unshown component/source classification in harness); native/original remainder remains unverified."
     },
     {
       "id": "P65",
@@ -912,8 +1379,17 @@
       "publishedExpected": "M2577(true) runs once, saves group/ruleset, unregisters inputs; gameplay container optionally retained. Secondcleanup returns immediately.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "Native once-only controller disposal/input unregistration not reconstructed; host cancellation/disposal explicit.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [
+          35
+        ],
+        "windowsGroups": [
+          11
+        ]
+      },
+      "actual": "Original dependency excluded. Native once-only controller disposal/input unregistration not reconstructed; host cancellation/disposal explicit."
     },
     {
       "id": "P66",
@@ -927,8 +1403,26 @@
       "publishedExpected": "No direct writer to these fields found; retain conditional preview-thread branches without inventing an active producer.",
       "production": "Selection/LocalChartCatalog.cs, SelectPlayModel.cs; Program.cs; Rendering/SelectPlayView.cs",
       "scope": "No fabricated preview-thread producer.",
-      "execution": "PENDING Windows gate",
-      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME"
+      "execution": "NOT EXECUTED original conditional; related engineering controls do not establish it",
+      "originalRuntime": "UNVERIFIED ORIGINAL-RUNTIME",
+      "controls": {
+        "headlessGroups": [],
+        "windowsGroups": []
+      },
+      "actual": "Original dependency excluded. No fabricated preview-thread producer."
     }
-  ]
+  ],
+  "counts": {
+    "unsupported": 21,
+    "partial": 24,
+    "executed finite behavior": 21
+  },
+  "gate": {
+    "testedSource": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+    "runId": 43153555528,
+    "jobId": 130968150828,
+    "headlessGroups": 52,
+    "windowsGroups": 12,
+    "staticRowsAreNotExecutedTests": true
+  }
 }

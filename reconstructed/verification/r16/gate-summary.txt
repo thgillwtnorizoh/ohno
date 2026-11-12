@@ -1,0 +1,101 @@
+2026-11-12T04:15:35.5307494Z     0 Warning(s)
+2026-11-12T04:15:35.5307751Z     0 Error(s)
+2026-11-12T04:15:37.9969418Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-12T04:15:40.4330640Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-12T04:15:42.4774894Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-12T04:15:44.9078767Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-12T04:15:47.0342382Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-12T04:15:49.1516510Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-12T04:15:51.1984616Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-12T04:15:53.2891254Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-12T04:15:55.3964653Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-12T04:15:57.5434014Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-12T04:15:59.4538987Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-12T04:16:01.3973672Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-12T04:16:03.2896102Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-12T04:16:05.2495289Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-12T04:16:07.3993844Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-12T04:16:12.0155891Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-12T04:16:14.7419632Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-12T04:16:18.4182005Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-12T04:16:21.1931318Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-12T04:16:26.5156470Z PASS G08 settings gain captured once across backend callback
+2026-11-12T04:16:27.4433114Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-12T04:16:29.1301215Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-12T04:16:31.0097729Z R13-C01 G08 control: expected0.1/0.1 actual=0.1/0.1
+2026-11-12T04:16:31.0130587Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-12T04:16:34.1105419Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-12T04:16:35.9502484Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-12T04:16:39.8539835Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-12T04:16:41.9303300Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-12T04:16:45.0775409Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-12T04:16:47.4241499Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-12T04:16:51.4176836Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback
+2026-11-12T04:16:54.0899809Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-12T04:16:56.2151764Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-12T04:16:58.0860079Z PASS R16 01 configuration beside executable and application-relative Songs default
+2026-11-12T04:16:58.1102827Z PASS R16 02 explicit BeatmapDirectory and Unicode preference inputs
+2026-11-12T04:16:58.1188380Z PASS R16 03 empty/missing root produces usable explicit empty index
+2026-11-12T04:16:58.1420419Z PASS R16 04 recursive local discovery indexes metadata without full gameplay validation
+2026-11-12T04:16:58.1424200Z PASS R16 05 duplicate filenames across folders and duplicate chart IDs are retained
+2026-11-12T04:16:58.1424763Z PASS R16 06 title artist creator version and effective ordinary ruleset
+2026-11-12T04:16:58.1435579Z PASS R16 07 independent HP CS OD AR count fixed BPM and stored-end metadata
+2026-11-12T04:16:58.1443789Z PASS R16 08 Unicode preference with fallback separate from gameplay metadata
+2026-11-12T04:16:58.1624076Z PASS R16 09 missing optional metadata uses declared filename fallback; actual parser remains authoritative
+2026-11-12T04:16:58.1653165Z PASS R16 10 invalid and missing osu rows expose status instead of fabricated chart
+2026-11-12T04:16:58.1700814Z PASS R16 11 unsupported ruleset and format visible before gameplay loading
+2026-11-12T04:16:58.1711461Z PASS R16 12 unsupported object metadata is unavailable
+2026-11-12T04:16:58.1728758Z PASS R16 13 metadata indexed is distinct from successful full gameplay parsing
+2026-11-12T04:16:58.1782575Z PASS R16 14 unchanged bytes/stamp preserve exact chart reference across refresh
+2026-11-12T04:16:58.1794434Z PASS R16 15 folder runs and initial highlight do not implicitly commit selection
+2026-11-12T04:16:58.1795073Z PASS R16 16 P11 supplied folder s/t/s creates three contiguous runs, not global set grouping
+2026-11-12T04:16:58.1799019Z PASS R16 17 difficulty commit invokes nonnull authoritative selection callback
+2026-11-12T04:16:58.1801291Z PASS R16 18 different-song highlight remains pending without selected-map change
+2026-11-12T04:16:58.1801999Z PASS R16 19 same-run highlight may immediately commit difficulty
+2026-11-12T04:16:58.1802554Z PASS R16 20 same-reference setter and null callback do not clear or clean a valid selection
+2026-11-12T04:16:58.1803161Z PASS R16 21 pre-store cleanup failure retains old authoritative reference
+2026-11-12T04:16:58.1803792Z PASS R16 22 null selection callback preserves global while exposing committed/global distinction
+2026-11-12T04:16:58.1804331Z PASS R16 23 post-store callback failure is contained without manufactured rollback
+2026-11-12T04:16:58.1804826Z PASS R16 24 rebuild/Rank return restores live selected reference and containing group
+2026-11-12T04:16:58.1805371Z PASS R16 25 missing selected row recovery and stale browser generation cannot replace newer selection
+2026-11-12T04:16:58.1811129Z PASS R16 26 nearby/page/group movement distinguishes pending confirmation from committed navigation
+2026-11-12T04:16:58.1814306Z PASS R16 27 Enter commits a pending highlight before a separate confirmed Start
+2026-11-12T04:16:58.1815027Z PASS R16 28 mouse different-row selection and repeated selected-row Start remain separate
+2026-11-12T04:16:58.1822796Z PASS R16 29 Start no-selection temporary-mode and nonready-phase guards
+2026-11-12T04:16:58.1823576Z PASS R16 30 accepted queued Play is not commitment or captured chart; duplicate Start suppressed
+2026-11-12T04:16:58.1824619Z PASS R16 31 live selection at capture sees before-capture change; later global change does not replace Play
+2026-11-12T04:16:58.1837667Z PASS R16 32 full parser follows Play commitment/capture; readiness is a separate completion
+2026-11-12T04:16:58.1838270Z PASS R16 33 stale load success/failure cannot install or overwrite newer generation
+2026-11-12T04:16:58.1852034Z PASS R16 34 controlled deferred completion after cancellation cannot become gameplay ready
+2026-11-12T04:16:58.1852958Z PASS R16 35 explicit load failure recovery and application-close disposal reject stale work
+2026-11-12T04:16:58.1869815Z PASS R16 36 M2578-style request does not prove file availability or successful load
+2026-11-12T04:16:58.1929660Z PASS R16 37 changed metadata creates new revision; stale cached selection never silently substitutes it
+2026-11-12T04:16:58.2071504Z PASS R16 38 selection metadata/fingerprints preserve authoritative E034 metadata and score multiplier
+2026-11-12T04:16:58.2114909Z PASS R16 39 root refresh removes deleted chart independently of retained selection
+2026-11-12T04:16:58.2174235Z PASS R16 40 file-picker external chart becomes its own local catalog entry
+2026-11-12T04:16:58.2181765Z PASS R16 41 cancelled refresh leaves previously installed snapshot intact
+2026-11-12T04:16:58.2280367Z PASS R16 42 actual scans with injected publication interleaving retain latest snapshot only
+2026-11-12T04:16:58.2322954Z PASS R16 43 bundled existing development fixtures discover without rewriting source files
+2026-11-12T04:16:58.2326613Z PASS R16 44 absent star cache never fabricates a zero-star calculation
+2026-11-12T04:16:58.2349914Z PASS R16 45 compatible hash/mode/mod source uses promoted Single magnitude and floor2
+2026-11-12T04:16:58.2351056Z PASS R16 46 star mode/mod/hash/profile mismatches are explicit; no alternate calculator substitution
+2026-11-12T04:16:58.2352260Z PASS R16 47 negative cached magnitude staleness and nonfinite values do not imply valid calculated stars
+2026-11-12T04:16:58.2353324Z PASS R16 48 ordinary normalized star key masks1370; raw excluded bit does not create a new cache entry
+2026-11-12T04:16:58.2355637Z PASS R16 49 star display is separate from E034 K; queued scalar1000 is metadata not Task.Delay
+2026-11-12T04:16:58.3930340Z PASS R16 50 four old-loader versus SelectPlay-loader matched histories: score K counts judgement slider spinner HP audio Rank unchanged
+2026-11-12T04:16:58.3931856Z PASS R16 51 SOURCE INSPECTION state-specific keyboard, Rank skip, loader revalidation and Rank-return refresh wiring
+2026-11-12T04:16:58.3943750Z PASS R16 52 SOURCE INSPECTION no fabricated native queue delay and66 original prediction rows retained separately
+2026-11-12T04:16:58.3945215Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input
+2026-11-12T04:17:00.5289295Z PASS R16 WINDOWS 01 unshown browser widget construction creates song/difficulty/detail/actions without gameplay session
+2026-11-12T04:17:00.5305147Z PASS R16 WINDOWS 02 actual view row callback commits authoritative chart
+2026-11-12T04:17:00.5311509Z PASS R16 WINDOWS 03 same-folder rebind selects difficulty and exposes unavailable star provenance
+2026-11-12T04:17:00.5316361Z PASS R16 WINDOWS 04 repeated selected-row and confirm callbacks request Start separately from selection
+2026-11-12T04:17:00.5741252Z PASS R16 WINDOWS 05 browser initialization/navigation does not create score events or advance gameplay clock
+2026-11-12T04:17:00.5879092Z PASS R16 WINDOWS 06 actual Rank Back and reference restoration preserve live selection independently of captured Play map
+2026-11-12T04:17:00.5892352Z PASS R16 WINDOWS 07 existing fresh Retry is independent of browser selection and retains loaded map
+2026-11-12T04:17:00.5910633Z PASS R16 WINDOWS 08 changed file after preparation is rejected before replacing previous valid host session
+2026-11-12T04:17:00.5928407Z PASS R16 WINDOWS 09 missing declared song fails before MediaPlayer construction; previous gameplay remains retained
+2026-11-12T04:17:00.5950049Z PASS R16 WINDOWS 10 missing Rank-return chart displays explicit recovery and unavailable rows
+2026-11-12T04:17:00.5956743Z PASS R16 WINDOWS 11 disposed browser/entry/host reject stale callbacks with no media or Window shown
+2026-11-12T04:17:00.5958782Z PASS R16 WINDOWS 12 SOURCE INSPECTION keyboard isolation, exact install guard and Rank-return generation refresh
+2026-11-12T04:17:00.5959744Z R16 WINDOWS: 12/12 groups passed; final1 source inspection; unshown components only; no Window/show/render/OS input/nonempty media

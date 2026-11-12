@@ -1147,3 +1147,57 @@ non-force publication, no history rewrite. Deferred JoinedBezier score discrepan
 untouched. Silent engineering WPF Rank, empty event-horizon/clock/lifetime/capture
 policies explicit; original x86/GPU/skin/queue/frontend/replay/online remain
 unsupported/unverified. Stop R15, noQA13/E043/R16 or new original research.
+
+## R16 — Local SelectPlay catalog and gameplay entry — 2026-11-12
+
+Work2 authorized bounded R16 only. Synced clean main to verified
+352ea0b161153565e1ec2748d51dfc8cb3813b81; remote head rechecked before source upload.
+Read AGENTS/standing contract/journals, complete E043 report and parsed full evidence
+(all66 predictions;2610266bytes SHA2569ac182e9b6af5faaca3e517c4500bbeef574b715af01350f5d223b8fc88324a4),
+relevant transitions/ordinary E005 correction/loading/record-policy/scoring/Rank,
+R15/QA13 and actual parser/session/host/audio/CI interfaces. No RTK file present.
+No original binary, Window/show, OS input, listening/media preview, original calculator,
+QA14/E044/R17 or score-discrepancy investigation. No authorized exception needed.
+
+Added engineering bounded local metadata catalog with selection.json BeatmapDirectory
+Songs default, canonical paths/revision fingerprints, fixtures/external paths,
+contiguous folder runs, highlight/committed/global/Play-capture separation, live
+selection capture at staged queued commitment, failure/cancellation generations,
+revalidation before install, silent independent WPF browser. Rank Back fresh-reference
+restoration/refresh; Retry unchanged. Existing gameplay/parser/Rank/audio code unchanged;
+only Program host integrates browser. Stars unavailable unless explicitly compatible
+supplied component cache; no importer/calculator/preview/online/native frontend claims.
+README/report/new checks/minimal CI/66-row coverage added, no historical source or
+journal prefix overwritten. Review caught and prevented obsolete dispatcher action
+committing a newer pending request with a request-generation check.
+
+Source19bb644e01c646ca8850f0751ec03f7ef881d766 submitted non-force to existing
+ci/verification; Windows run43153555528. Planned R16 52 headless groups (50 component,
+2source) plus Windows12 (11unshown component,1source); four matched old/new loader
+sessions contained in one group,66 research predictions counted separately. All1911
+historical independent checks/all retained dev mandatory inclQA11G08/R15 79+Windows8.
+No local SDK or executed-test claim at preparation boundary. Preserve any initial
+failure evidence; canonical publication only after exact-source Windows gate passes.
+Final addendum will record exact outcome/source/run and publication policy. Stop R16.
+
+R16 exact-source Windows gate43153555528/job130968150828 at
+19bb644e01c646ca8850f0751ec03f7ef881d766 PASS on first run. Windows2022,
+2026-11-12 04:15-04:17UTC/11:15-11:17Asia/Bangkok, WPF Release win-x64 zero
+warnings/errors. Historical1911/1911 independent checks/all retained dev pass incl
+unchangedQA11G08 expected0.1/0.1 actual0.1/0.1, QA12286/QA13281, R14-Q0123,
+R1579+Windows8. New R1652/52(50component2source), separateWindows12/12
+(11unshown component1source). Four actual old/new loader matched finite histories
+preserve score/K/accuracy/combo/judgement/slider/spinner/HP/audio/Rank; no Window/show,
+OS input, nonempty media or owner navigation claim. No failure/oracle weakening.
+
+Full exact decoded GitHub log869069bytes SHA256
+32ee4048455b6fa196ff19b373519b8129489e65643febd64efd5f47c4a81700 preserved gzip/base64,
+plus structured52-group output, readable gate summary and code/harness/workflow hash
+manifest under reconstructed/verification/r16. E04366-row final matrix21finite,
+24partial,21unsupported, each linked to scope/actual group result or excluded original
+dependency; all original-runtime unverified. Documentation-only conservative P44
+classification change reflects Unicode/fallback support versus original title-cache
+getter, no executable change. No original research/QA/historical reports rewritten.
+Final report/README/journal/evidence/coverage-only child retains tested source exactly;
+latest main expected-head rechecked for safe non-force publication. No authorized
+exception, deferred score discrepancy untouched. StopR16; noQA14/E044/R17.
