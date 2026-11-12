@@ -1,0 +1,2 @@
+# Synthetic byte/encoding/malformed-input controls must retain exact bytes.
+Inputs/*.osu -text -diff

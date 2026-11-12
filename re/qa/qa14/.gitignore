@@ -1,0 +1,5 @@
+Headless/bin/
+Headless/obj/
+Windows/bin/
+Windows/obj/
+__pycache__/
