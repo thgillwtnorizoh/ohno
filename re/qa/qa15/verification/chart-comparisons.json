@@ -1,0 +1,1463 @@
+{
+  "authority": "E046 independent oracle; expected.json.gz.b64",
+  "production": "Actual C# source linked from reconstructed/CircleGame, no Work2 harness imported",
+  "rows": [
+    {
+      "id": "QA15-01",
+      "kind": "packaged raw",
+      "path": "Songs/01-basic-two-circle/QA15-01.osu",
+      "expected": {
+        "double": 0.119846523006125,
+        "single": 0.11984652280807495,
+        "single_bits_le": "1872f53d",
+        "display": 0.11
+      },
+      "actual": {
+        "double": 0.119846523006125,
+        "single": 0.11984652280807495,
+        "single_bits_le": "1872f53d",
+        "display": 0.11
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        1.16,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        1.16,
+        0
+      ],
+      "independent_control": "numerical/QA15-01"
+    },
+    {
+      "id": "QA15-02",
+      "kind": "packaged raw",
+      "path": "Songs/02-basic-three-circle/QA15-02.osu",
+      "expected": {
+        "double": 0.17843318764528587,
+        "single": 0.17843319475650787,
+        "single_bits_le": "31b7363e",
+        "display": 0.17
+      },
+      "actual": {
+        "double": 0.17843318764528587,
+        "single": 0.17843319475650787,
+        "single_bits_le": "31b7363e",
+        "display": 0.17
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        2.5713333333333335,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        2.5713333333333335,
+        0
+      ],
+      "independent_control": "numerical/QA15-02"
+    },
+    {
+      "id": "QA15-03",
+      "kind": "packaged raw",
+      "path": "Songs/03-basic-four-circle/QA15-03.osu",
+      "expected": {
+        "double": 0.22526837835848854,
+        "single": 0.2252683788537979,
+        "single_bits_le": "c1ac663e",
+        "display": 0.22
+      },
+      "actual": {
+        "double": 0.22526837835848854,
+        "single": 0.2252683788537979,
+        "single_bits_le": "c1ac663e",
+        "display": 0.22
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        4.717096725851477,
+        3.9276592487134976,
+        0
+      ],
+      "actual_aggregates": [
+        4.717096725851477,
+        3.9276592487134976,
+        0
+      ],
+      "independent_control": "numerical/QA15-03"
+    },
+    {
+      "id": "QA15-04",
+      "kind": "packaged raw",
+      "path": "Songs/04-age-above/QA15-04.osu",
+      "expected": {
+        "double": 5.298776738537817,
+        "single": 5.298776626586914,
+        "single_bits_le": "948fa940",
+        "display": 5.29
+      },
+      "actual": {
+        "double": 5.298776738537817,
+        "single": 5.298776626586914,
+        "single_bits_le": "948fa940",
+        "display": 5.29
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2342.068208555797,
+        368.38005897570974,
+        680.3565740547349
+      ],
+      "actual_aggregates": [
+        2342.068208555797,
+        368.3800589757097,
+        680.3565740547349
+      ],
+      "independent_control": "numerical/QA15-04"
+    },
+    {
+      "id": "QA15-05",
+      "kind": "packaged raw",
+      "path": "Songs/05-age-below/QA15-05.osu",
+      "expected": {
+        "double": 5.2744312921533885,
+        "single": 5.274431228637695,
+        "single_bits_le": "24c8a840",
+        "display": 5.27
+      },
+      "actual": {
+        "double": 5.274431292153389,
+        "single": 5.274431228637695,
+        "single_bits_le": "24c8a840",
+        "display": 5.27
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2321.0589621929407,
+        368.38278777719444,
+        680.3716015488626
+      ],
+      "actual_aggregates": [
+        2321.058962192941,
+        368.38278777719444,
+        680.3716015488626
+      ],
+      "independent_control": "numerical/QA15-05"
+    },
+    {
+      "id": "QA15-06",
+      "kind": "packaged raw",
+      "path": "Songs/06-age-equal/QA15-06.osu",
+      "expected": {
+        "double": 5.274426744364648,
+        "single": 5.2744269371032715,
+        "single_bits_le": "1bc8a840",
+        "display": 5.27
+      },
+      "actual": {
+        "double": 5.274426744364648,
+        "single": 5.2744269371032715,
+        "single_bits_le": "1bc8a840",
+        "display": 5.27
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2321.0589621929407,
+        368.38143494355484,
+        680.3640869634767
+      ],
+      "actual_aggregates": [
+        2321.058962192941,
+        368.3814349435548,
+        680.3640869634767
+      ],
+      "independent_control": "numerical/QA15-06"
+    },
+    {
+      "id": "QA15-07",
+      "kind": "packaged raw",
+      "path": "Songs/07-capacity-above/QA15-07.osu",
+      "expected": {
+        "double": 8.639178636128037,
+        "single": 8.639178276062012,
+        "single_bits_le": "133a0a41",
+        "display": 8.63
+      },
+      "actual": {
+        "double": 8.639178636128037,
+        "single": 8.639178276062012,
+        "single_bits_le": "133a0a41",
+        "display": 8.63
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        5135.57192642194,
+        634.287468568411,
+        1885.3705913945478
+      ],
+      "actual_aggregates": [
+        5135.57192642194,
+        634.287468568411,
+        1885.3705913945485
+      ],
+      "independent_control": "numerical/QA15-07"
+    },
+    {
+      "id": "QA15-08",
+      "kind": "packaged raw",
+      "path": "Songs/08-capacity-below/QA15-08.osu",
+      "expected": {
+        "double": 7.682399158840432,
+        "single": 7.682399272918701,
+        "single_bits_le": "37d6f540",
+        "display": 7.68
+      },
+      "actual": {
+        "double": 7.6823991588404335,
+        "single": 7.682399272918701,
+        "single_bits_le": "37d6f540",
+        "display": 7.68
+      },
+      "double_absolute_difference": 1.7763568394002505e-15,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        4231.558024883848,
+        583.3916505053058,
+        1525.097187981625
+      ],
+      "actual_aggregates": [
+        4231.558024883849,
+        583.3916505053058,
+        1525.0971879816254
+      ],
+      "independent_control": "numerical/QA15-08"
+    },
+    {
+      "id": "QA15-09",
+      "kind": "packaged raw",
+      "path": "Songs/09-combined-repeat-visibility/QA15-09.osu",
+      "expected": {
+        "double": 5.119475874072683,
+        "single": 5.119475841522217,
+        "single_bits_le": "bfd2a340",
+        "display": 5.11
+      },
+      "actual": {
+        "double": 5.119475874072683,
+        "single": 5.119475841522217,
+        "single_bits_le": "bfd2a340",
+        "display": 5.11
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2336.2016888390713,
+        435.7016415760794,
+        199.55909217927814
+      ],
+      "actual_aggregates": [
+        2336.2016888390717,
+        435.7016415760794,
+        199.5590921792781
+      ],
+      "independent_control": "numerical/QA15-09"
+    },
+    {
+      "id": "QA15-10",
+      "kind": "packaged raw",
+      "path": "Songs/10-dense-right-angles/QA15-10.osu",
+      "expected": {
+        "double": 4.146836873215262,
+        "single": 4.146836757659912,
+        "single_bits_le": "e3b28440",
+        "display": 4.14
+      },
+      "actual": {
+        "double": 4.146836873215261,
+        "single": 4.146836757659912,
+        "single_bits_le": "e3b28440",
+        "display": 4.14
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1394.4328207284923,
+        388.7722894741868,
+        608.8698093708563
+      ],
+      "actual_aggregates": [
+        1394.4328207284923,
+        388.7722894741867,
+        608.8698093708562
+      ],
+      "independent_control": "numerical/QA15-10"
+    },
+    {
+      "id": "QA15-11",
+      "kind": "packaged raw",
+      "path": "Songs/11-dense-short-preempt/QA15-11.osu",
+      "expected": {
+        "double": 5.227489448434895,
+        "single": 5.227489471435547,
+        "single_bits_le": "9847a740",
+        "display": 5.22
+      },
+      "actual": {
+        "double": 5.227489448434895,
+        "single": 5.227489471435547,
+        "single_bits_le": "9847a740",
+        "display": 5.22
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2323.276063579977,
+        564.8373807905086,
+        394.9000975144367
+      ],
+      "actual_aggregates": [
+        2323.276063579977,
+        564.8373807905085,
+        394.9000975144367
+      ],
+      "independent_control": "numerical/QA15-11"
+    },
+    {
+      "id": "QA15-12",
+      "kind": "packaged raw",
+      "path": "Songs/12-different-counts/QA15-12.osu",
+      "expected": {
+        "double": 4.533690017110783,
+        "single": 4.533689975738525,
+        "single_bits_le": "fd139140",
+        "display": 4.53
+      },
+      "actual": {
+        "double": 4.533690017110783,
+        "single": 4.533689975738525,
+        "single_bits_le": "fd139140",
+        "display": 4.53
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1672.7026721258771,
+        544.1736844837924,
+        558.4351181316355
+      ],
+      "actual_aggregates": [
+        1672.7026721258771,
+        544.1736844837923,
+        558.4351181316356
+      ],
+      "independent_control": "numerical/QA15-12"
+    },
+    {
+      "id": "QA15-13",
+      "kind": "packaged raw",
+      "path": "Songs/13-distinct-count2/QA15-13.osu",
+      "expected": {
+        "double": 4.698022059606429,
+        "single": 4.69802188873291,
+        "single_bits_le": "32569640",
+        "display": 4.69
+      },
+      "actual": {
+        "double": 4.698022059606429,
+        "single": 4.69802188873291,
+        "single_bits_le": "32569640",
+        "display": 4.69
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1859.39623303116,
+        496.67102857587025,
+        518.0091504881417
+      ],
+      "actual_aggregates": [
+        1859.39623303116,
+        496.67102857587037,
+        518.0091504881417
+      ],
+      "independent_control": "numerical/QA15-13"
+    },
+    {
+      "id": "QA15-14",
+      "kind": "packaged raw",
+      "path": "Songs/14-following-outside-window/QA15-14.osu",
+      "expected": {
+        "double": 4.621139173547889,
+        "single": 4.621139049530029,
+        "single_bits_le": "5fe09340",
+        "display": 4.62
+      },
+      "actual": {
+        "double": 4.621139173547889,
+        "single": 4.621139049530029,
+        "single_bits_le": "5fe09340",
+        "display": 4.62
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1962.035790580704,
+        354.8146655554208,
+        254.99375707713222
+      ],
+      "actual_aggregates": [
+        1962.035790580704,
+        354.8146655554208,
+        254.99375707713222
+      ],
+      "independent_control": "numerical/QA15-14"
+    },
+    {
+      "id": "QA15-15",
+      "kind": "packaged raw",
+      "path": "Songs/15-inside-tolerance/QA15-15.osu",
+      "expected": {
+        "double": 5.320716727060625,
+        "single": 5.320716857910156,
+        "single_bits_le": "5043aa40",
+        "display": 5.32
+      },
+      "actual": {
+        "double": 5.320716727060625,
+        "single": 5.320716857910156,
+        "single_bits_le": "5043aa40",
+        "display": 5.32
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2341.5695574881747,
+        375.47787389266205,
+        717.2600129002517
+      ],
+      "actual_aggregates": [
+        2341.5695574881747,
+        375.477873892662,
+        717.2600129002518
+      ],
+      "independent_control": "numerical/QA15-15"
+    },
+    {
+      "id": "QA15-16",
+      "kind": "packaged raw",
+      "path": "Songs/16-near-tolerance-outside/QA15-16.osu",
+      "expected": {
+        "double": 5.313025759643257,
+        "single": 5.313025951385498,
+        "single_bits_le": "4f04aa40",
+        "display": 5.31
+      },
+      "actual": {
+        "double": 5.313025759643257,
+        "single": 5.313025951385498,
+        "single_bits_le": "4f04aa40",
+        "display": 5.31
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2337.7689989891724,
+        370.0304064337491,
+        714.7535910629325
+      ],
+      "actual_aggregates": [
+        2337.7689989891724,
+        370.03040643374914,
+        714.7535910629325
+      ],
+      "independent_control": "numerical/QA15-16"
+    },
+    {
+      "id": "QA15-17",
+      "kind": "packaged raw",
+      "path": "Songs/17-nearly-equal-angles/QA15-17.osu",
+      "expected": {
+        "double": 4.751575127254562,
+        "single": 4.751574993133545,
+        "single_bits_le": "e70c9840",
+        "display": 4.75
+      },
+      "actual": {
+        "double": 4.751575127254563,
+        "single": 4.751574993133545,
+        "single_bits_le": "e70c9840",
+        "display": 4.75
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1317.6381292497754,
+        692.0479567355274,
+        1117.0037932155215
+      ],
+      "actual_aggregates": [
+        1317.6381292497754,
+        692.0479567355272,
+        1117.0037932155221
+      ],
+      "independent_control": "numerical/QA15-17"
+    },
+    {
+      "id": "QA15-18",
+      "kind": "packaged raw",
+      "path": "Songs/18-next-jump-small/QA15-18.osu",
+      "expected": {
+        "double": 3.2085461068443983,
+        "single": 3.2085461616516113,
+        "single_bits_le": "d2584d40",
+        "display": 3.2
+      },
+      "actual": {
+        "double": 3.2085461068443983,
+        "single": 3.2085461616516113,
+        "single_bits_le": "d2584d40",
+        "display": 3.2
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        873.8448347942841,
+        388.7722894741868,
+        280.61262868944607
+      ],
+      "actual_aggregates": [
+        873.8448347942841,
+        388.7722894741867,
+        280.612628689446
+      ],
+      "independent_control": "numerical/QA15-18"
+    },
+    {
+      "id": "QA15-19",
+      "kind": "packaged raw",
+      "path": "Songs/19-next-jump-zero/QA15-19.osu",
+      "expected": {
+        "double": 3.208522372800973,
+        "single": 3.208522319793701,
+        "single_bits_le": "6e584d40",
+        "display": 3.2
+      },
+      "actual": {
+        "double": 3.208522372800973,
+        "single": 3.208522319793701,
+        "single_bits_le": "6e584d40",
+        "display": 3.2
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        873.8448347942841,
+        388.7722894741868,
+        280.5877090548834
+      ],
+      "actual_aggregates": [
+        873.8448347942841,
+        388.7722894741867,
+        280.58770905488336
+      ],
+      "independent_control": "numerical/QA15-19"
+    },
+    {
+      "id": "QA15-20",
+      "kind": "packaged raw",
+      "path": "Songs/20-opposing-directions/QA15-20.osu",
+      "expected": {
+        "double": 6.195064032018704,
+        "single": 6.195064067840576,
+        "single_bits_le": "f73dc640",
+        "display": 6.19
+      },
+      "actual": {
+        "double": 6.195064032018703,
+        "single": 6.195064067840576,
+        "single_bits_le": "f73dc640",
+        "display": 6.19
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2462.3969601872254,
+        692.0479567355274,
+        1716.27438650044
+      ],
+      "actual_aggregates": [
+        2462.3969601872254,
+        692.0479567355272,
+        1716.2743865004397
+      ],
+      "independent_control": "numerical/QA15-20"
+    },
+    {
+      "id": "QA15-21",
+      "kind": "packaged raw",
+      "path": "Songs/21-repeat-after-nonmatch/QA15-21.osu",
+      "expected": {
+        "double": 4.160629075538004,
+        "single": 4.1606292724609375,
+        "single_bits_le": "e0238540",
+        "display": 4.16
+      },
+      "actual": {
+        "double": 4.160629075538005,
+        "single": 4.1606292724609375,
+        "single_bits_le": "e0238540",
+        "display": 4.16
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1456.526833063511,
+        454.686592195832,
+        478.83428046646844
+      ],
+      "actual_aggregates": [
+        1456.526833063511,
+        454.686592195832,
+        478.83428046646856
+      ],
+      "independent_control": "numerical/QA15-21"
+    },
+    {
+      "id": "QA15-22",
+      "kind": "packaged raw",
+      "path": "Songs/22-repeating-count2/QA15-22.osu",
+      "expected": {
+        "double": 5.4302855064859195,
+        "single": 5.430285453796387,
+        "single_bits_le": "e6c4ad40",
+        "display": 5.43
+      },
+      "actual": {
+        "double": 5.4302855064859195,
+        "single": 5.430285453796387,
+        "single_bits_le": "e6c4ad40",
+        "display": 5.43
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2336.2016888390713,
+        435.7016415760794,
+        880.0495743362889
+      ],
+      "actual_aggregates": [
+        2336.2016888390717,
+        435.7016415760794,
+        880.049574336289
+      ],
+      "independent_control": "numerical/QA15-22"
+    },
+    {
+      "id": "QA15-23",
+      "kind": "packaged raw",
+      "path": "Songs/23-regular-rhythm-practice/QA15-23.osu",
+      "expected": {
+        "double": 3.903107342923182,
+        "single": 3.9031074047088623,
+        "single_bits_le": "83cc7940",
+        "display": 3.9
+      },
+      "actual": {
+        "double": 3.903107342923182,
+        "single": 3.9031074047088623,
+        "single_bits_le": "83cc7940",
+        "display": 3.9
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1553.748016311217,
+        100.79774714983785,
+        158.5096787357833
+      ],
+      "actual_aggregates": [
+        1553.748016311217,
+        100.79774714983783,
+        158.50967873578327
+      ],
+      "independent_control": "numerical/QA15-23"
+    },
+    {
+      "id": "QA15-24",
+      "kind": "packaged raw",
+      "path": "Songs/24-long-history-practice/QA15-24.osu",
+      "expected": {
+        "double": 3.107360002030944,
+        "single": 3.1073598861694336,
+        "single_bits_le": "fcde4640",
+        "display": 3.1
+      },
+      "actual": {
+        "double": 3.107360002030944,
+        "single": 3.1073598861694336,
+        "single_bits_le": "fcde4640",
+        "display": 3.1
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1101.4402648167704,
+        59.05298664220547,
+        1.90877777006892
+      ],
+      "actual_aggregates": [
+        1101.4402648167704,
+        59.052986642205454,
+        1.9087777700689192
+      ],
+      "independent_control": "numerical/QA15-24"
+    },
+    {
+      "id": "QA15-25",
+      "kind": "packaged raw",
+      "path": "Songs/25-practice-2-straight/QA15-25.osu",
+      "expected": {
+        "double": 0.119846523006125,
+        "single": 0.11984652280807495,
+        "single_bits_le": "1872f53d",
+        "display": 0.11
+      },
+      "actual": {
+        "double": 0.119846523006125,
+        "single": 0.11984652280807495,
+        "single_bits_le": "1872f53d",
+        "display": 0.11
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        1.16,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        1.16,
+        0
+      ],
+      "independent_control": "numerical/QA15-25"
+    },
+    {
+      "id": "QA15-26",
+      "kind": "packaged raw",
+      "path": "Songs/26-practice-3-straight/QA15-26.osu",
+      "expected": {
+        "double": 0.17843318764528587,
+        "single": 0.17843319475650787,
+        "single_bits_le": "31b7363e",
+        "display": 0.17
+      },
+      "actual": {
+        "double": 0.17843318764528587,
+        "single": 0.17843319475650787,
+        "single_bits_le": "31b7363e",
+        "display": 0.17
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        2.5713333333333335,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        2.5713333333333335,
+        0
+      ],
+      "independent_control": "numerical/QA15-26"
+    },
+    {
+      "id": "QA15-27",
+      "kind": "packaged raw",
+      "path": "Songs/27-practice-4-straight/QA15-27.osu",
+      "expected": {
+        "double": 0.22526837835848854,
+        "single": 0.2252683788537979,
+        "single_bits_le": "c1ac663e",
+        "display": 0.22
+      },
+      "actual": {
+        "double": 0.22526837835848854,
+        "single": 0.2252683788537979,
+        "single_bits_le": "c1ac663e",
+        "display": 0.22
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        4.717096725851477,
+        3.9276592487134976,
+        0
+      ],
+      "actual_aggregates": [
+        4.717096725851477,
+        3.9276592487134976,
+        0
+      ],
+      "independent_control": "numerical/QA15-27"
+    },
+    {
+      "id": "prepared/artificial-exact-tolerance/129",
+      "kind": "ARTIFICIAL PREPARED WINDOW100",
+      "path": null,
+      "expected": {
+        "double": 3.887469756437654,
+        "single": 3.88746976852417,
+        "single_bits_le": "4ecc7840",
+        "display": 3.88
+      },
+      "actual": {
+        "double": 3.887469756437654,
+        "single": 3.88746976852417,
+        "single_bits_le": "4ecc7840",
+        "display": 3.88
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1317.1175236301124,
+        334.1183743927303,
+        459.2609285806216
+      ],
+      "actual_aggregates": [
+        1317.1175236301124,
+        334.1183743927304,
+        459.2609285806217
+      ],
+      "independent_control": "numerical/prepared/artificial-exact-tolerance/129"
+    },
+    {
+      "id": "prepared/artificial-exact-tolerance/130",
+      "kind": "ARTIFICIAL PREPARED WINDOW100",
+      "path": null,
+      "expected": {
+        "double": 3.876976213114423,
+        "single": 3.876976251602173,
+        "single_bits_le": "61207840",
+        "display": 3.87
+      },
+      "actual": {
+        "double": 3.876976213114423,
+        "single": 3.876976251602173,
+        "single_bits_le": "61207840",
+        "display": 3.87
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1315.1943724304508,
+        324.3992273380445,
+        457.5798715820813
+      ],
+      "actual_aggregates": [
+        1315.1943724304506,
+        324.39922733804457,
+        457.5798715820813
+      ],
+      "independent_control": "numerical/prepared/artificial-exact-tolerance/130"
+    },
+    {
+      "id": "prepared/artificial-exact-tolerance/131",
+      "kind": "ARTIFICIAL PREPARED WINDOW100",
+      "path": null,
+      "expected": {
+        "double": 3.871835831751243,
+        "single": 3.871835947036743,
+        "single_bits_le": "29cc7740",
+        "display": 3.87
+      },
+      "actual": {
+        "double": 3.871835831751243,
+        "single": 3.871835947036743,
+        "single_bits_le": "29cc7740",
+        "display": 3.87
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1313.2896240227603,
+        322.49180309414976,
+        455.9061526911077
+      ],
+      "actual_aggregates": [
+        1313.2896240227603,
+        322.4918030941498,
+        455.90615269110776
+      ],
+      "independent_control": "numerical/prepared/artificial-exact-tolerance/131"
+    },
+    {
+      "id": "prepared/E045/regular",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 5.627450242938406,
+        "single": 5.627450466156006,
+        "single_bits_le": "1314b440",
+        "display": 5.62
+      },
+      "actual": {
+        "double": 5.627450242938406,
+        "single": 5.627450466156006,
+        "single_bits_le": "1314b440",
+        "display": 5.62
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2107.690667765326,
+        885.0214777114164,
+        1210.5742746455253
+      ],
+      "actual_aggregates": [
+        2107.690667765326,
+        885.0214777114165,
+        1210.5742746455253
+      ],
+      "independent_control": "numerical/prepared/E045/regular"
+    },
+    {
+      "id": "prepared/E045/alternating",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 4.829656052634755,
+        "single": 4.82965612411499,
+        "single_bits_le": "8b8c9a40",
+        "display": 4.82
+      },
+      "actual": {
+        "double": 4.829656052634754,
+        "single": 4.82965612411499,
+        "single_bits_le": "8b8c9a40",
+        "display": 4.82
+      },
+      "double_absolute_difference": 8.881784197001252e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        1730.5108839745951,
+        692.4582933536205,
+        752.064898885475
+      ],
+      "actual_aggregates": [
+        1730.5108839745947,
+        692.4582933536209,
+        752.0648988854747
+      ],
+      "independent_control": "numerical/prepared/E045/alternating"
+    },
+    {
+      "id": "prepared/E045/perturbed",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 5.97597028998677,
+        "single": 5.975970268249512,
+        "single_bits_le": "263bbf40",
+        "display": 5.97
+      },
+      "actual": {
+        "double": 5.97597028998677,
+        "single": 5.975970268249512,
+        "single_bits_le": "263bbf40",
+        "display": 5.97
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        2128.5362266981538,
+        849.9573115879184,
+        1701.6893148559109
+      ],
+      "actual_aggregates": [
+        2128.5362266981538,
+        849.9573115879182,
+        1701.6893148559107
+      ],
+      "independent_control": "numerical/prepared/E045/perturbed"
+    },
+    {
+      "id": "prepared/E045/long-pauses",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 1.7811920364433194,
+        "single": 1.7811920642852783,
+        "single_bits_le": "1afee33f",
+        "display": 1.78
+      },
+      "actual": {
+        "double": 1.7811920364433194,
+        "single": 1.7811920642852783,
+        "single_bits_le": "1afee33f",
+        "display": 1.78
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        416.01026329210055,
+        91.5471569900491,
+        0
+      ],
+      "actual_aggregates": [
+        416.01026329210055,
+        91.54715699004909,
+        0
+      ],
+      "independent_control": "numerical/prepared/E045/long-pauses"
+    },
+    {
+      "id": "prepared/E045/same-position",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 13.276890545898917,
+        "single": 13.276890754699707,
+        "single_bits_le": "256e5441",
+        "display": 13.27
+      },
+      "actual": {
+        "double": 13.276890545898922,
+        "single": 13.276890754699707,
+        "single_bits_le": "256e5441",
+        "display": 13.27
+      },
+      "double_absolute_difference": 5.329070518200751e-15,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        14236.38950147469,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        14236.389501474698,
+        0
+      ],
+      "independent_control": "numerical/prepared/E045/same-position"
+    },
+    {
+      "id": "prepared/E045/right-angles",
+      "kind": "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT",
+      "path": null,
+      "expected": {
+        "double": 0.8471012936611392,
+        "single": 0.8471012711524963,
+        "single_bits_le": "a1db583f",
+        "display": 0.84
+      },
+      "actual": {
+        "double": 0.8471012936611393,
+        "single": 0.8471012711524963,
+        "single_bits_le": "a1db583f",
+        "display": 0.84
+      },
+      "double_absolute_difference": 1.1102230246251565e-16,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        135.23669430585113,
+        12.736491069903966,
+        0
+      ],
+      "actual_aggregates": [
+        135.23669430585116,
+        12.736491069903966,
+        0
+      ],
+      "independent_control": "numerical/prepared/E045/right-angles"
+    },
+    {
+      "id": "boundary/seed5000/999",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 0.35341787107522565,
+        "single": 0.35341787338256836,
+        "single_bits_le": "30f3b43e",
+        "display": 0.35
+      },
+      "actual": {
+        "double": 0.35341787107522565,
+        "single": 0.35341787338256836,
+        "single_bits_le": "30f3b43e",
+        "display": 0.35
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        10.087513398125925,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        10.087513398125925,
+        0
+      ],
+      "independent_control": "numerical/boundary/seed5000/999"
+    },
+    {
+      "id": "boundary/seed5000/1000",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 0.35338703763873175,
+        "single": 0.3533870279788971,
+        "single_bits_le": "25efb43e",
+        "display": 0.35
+      },
+      "actual": {
+        "double": 0.3533870376387318,
+        "single": 0.3533870279788971,
+        "single_bits_le": "25efb43e",
+        "display": 0.35
+      },
+      "double_absolute_difference": 5.551115123125783e-17,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        10.085753333559895,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        10.085753333559897,
+        0
+      ],
+      "independent_control": "numerical/boundary/seed5000/1000"
+    },
+    {
+      "id": "boundary/seed5000/1001",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 0.35336879827961104,
+        "single": 0.3533687889575958,
+        "single_bits_le": "c1ecb43e",
+        "display": 0.35
+      },
+      "actual": {
+        "double": 0.35336879827961104,
+        "single": 0.3533687889575958,
+        "single_bits_le": "c1ecb43e",
+        "display": 0.35
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        10.084712248799228,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        10.084712248799228,
+        0
+      ],
+      "independent_control": "numerical/boundary/seed5000/1001"
+    },
+    {
+      "id": "boundary/capacity32/32",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 12.518912662978563,
+        "single": 12.518912315368652,
+        "single_bits_le": "774d4841",
+        "display": 12.51
+      },
+      "actual": {
+        "double": 12.518912662978565,
+        "single": 12.518912315368652,
+        "single_bits_le": "774d4841",
+        "display": 12.51
+      },
+      "double_absolute_difference": 1.7763568394002505e-15,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        12657.27835059007,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        12657.278350590072,
+        0
+      ],
+      "independent_control": "numerical/boundary/capacity32/32"
+    },
+    {
+      "id": "boundary/capacity32/33",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 12.71712323126825,
+        "single": 12.717123031616211,
+        "single_bits_le": "56794b41",
+        "display": 12.71
+      },
+      "actual": {
+        "double": 12.71712323126825,
+        "single": 12.717123031616211,
+        "single_bits_le": "56794b41",
+        "display": 12.71
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        13061.253876329245,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        13061.253876329245,
+        0
+      ],
+      "independent_control": "numerical/boundary/capacity32/33"
+    },
+    {
+      "id": "boundary/capacity32/34",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 12.90935888610739,
+        "single": 12.909358978271484,
+        "single_bits_le": "bc8c4e41",
+        "display": 12.9
+      },
+      "actual": {
+        "double": 12.90935888610739,
+        "single": 12.909358978271484,
+        "single_bits_le": "bc8c4e41",
+        "display": 12.9
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        13459.113663033118,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        13459.113663033117,
+        0
+      ],
+      "independent_control": "numerical/boundary/capacity32/34"
+    },
+    {
+      "id": "boundary/capacity32/35",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 13.095869604704786,
+        "single": 13.095870018005371,
+        "single_bits_le": "af885141",
+        "display": 13.09
+      },
+      "actual": {
+        "double": 13.095869604704784,
+        "single": 13.095870018005371,
+        "single_bits_le": "af885141",
+        "display": 13.09
+      },
+      "double_absolute_difference": 1.7763568394002505e-15,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        0.0,
+        13850.829906520587,
+        0
+      ],
+      "actual_aggregates": [
+        0,
+        13850.829906520587,
+        0
+      ],
+      "independent_control": "numerical/boundary/capacity32/35"
+    },
+    {
+      "id": "boundary/angle2000/499",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 1.3207004658155301,
+        "single": 1.3207004070281982,
+        "single_bits_le": "b60ca93f",
+        "display": 1.32
+      },
+      "actual": {
+        "double": 1.3207004658155301,
+        "single": 1.3207004070281982,
+        "single_bits_le": "b60ca93f",
+        "display": 1.32
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        273.3844746461866,
+        31.420314976789513,
+        0
+      ],
+      "actual_aggregates": [
+        273.3844746461866,
+        31.42031497678951,
+        0
+      ],
+      "independent_control": "numerical/boundary/angle2000/499"
+    },
+    {
+      "id": "boundary/angle2000/500",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 1.319083084206708,
+        "single": 1.3190830945968628,
+        "single_bits_le": "b7d7a83f",
+        "display": 1.31
+      },
+      "actual": {
+        "double": 1.319083084206708,
+        "single": 1.3190830945968628,
+        "single_bits_le": "b7d7a83f",
+        "display": 1.31
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        272.86990523484855,
+        31.31713340510181,
+        0
+      ],
+      "actual_aggregates": [
+        272.86990523484855,
+        31.31713340510181,
+        0
+      ],
+      "independent_control": "numerical/boundary/angle2000/500"
+    },
+    {
+      "id": "boundary/angle2000/501",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 1.3174709812228247,
+        "single": 1.3174710273742676,
+        "single_bits_le": "e4a2a83f",
+        "display": 1.31
+      },
+      "actual": {
+        "double": 1.3174709812228247,
+        "single": 1.3174710273742676,
+        "single_bits_le": "e4a2a83f",
+        "display": 1.31
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        272.3573220777926,
+        31.214509003809482,
+        0
+      ],
+      "actual_aggregates": [
+        272.3573220777926,
+        31.214509003809475,
+        0
+      ],
+      "independent_control": "numerical/boundary/angle2000/501"
+    },
+    {
+      "id": "boundary/angle2000/600",
+      "kind": "PREPARED-ONLY EXACT HISTORY BOUNDARY",
+      "path": null,
+      "expected": {
+        "double": 1.1801975647922471,
+        "single": 1.1801975965499878,
+        "single_bits_le": "b710973f",
+        "display": 1.18
+      },
+      "actual": {
+        "double": 1.1801975647922471,
+        "single": 1.1801975965499878,
+        "single_bits_le": "b710973f",
+        "display": 1.18
+      },
+      "double_absolute_difference": 0.0,
+      "single_bits_match": true,
+      "display_match": true,
+      "expected_aggregates": [
+        229.8663925833259,
+        23.261197905282334,
+        0
+      ],
+      "actual_aggregates": [
+        229.8663925833259,
+        23.261197905282334,
+        0
+      ],
+      "independent_control": "numerical/boundary/angle2000/600"
+    }
+  ]
+}

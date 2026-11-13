@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""QA15 independent report verifier. Reads only; never loads original code or media."""
+import base64,csv,gzip,hashlib,importlib.util,json,math,re,subprocess,sys
+from collections import Counter
+from pathlib import Path
+QA=Path(__file__).resolve().parent
+ROOT=QA.parents[2]
+V=QA/'verification'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def raw(p):return gzip.decompress(base64.b64decode(Path(p).read_bytes()))
+def load(p):return json.loads(Path(p).read_bytes())
+def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT)
+def preserve():
+    baseline=load(V/'baseline.json');journal=(ROOT/'re/contexts.md').read_bytes()
+    assert sha(journal[:baseline['journal_bytes']])==baseline['journal_sha256']
+    for p,digest in baseline['protected'].items():assert sha((ROOT/p).read_bytes())==digest,p
+    changes=git('diff',baseline['base'],'--name-only').decode().splitlines()
+    assert all(p.startswith('re/qa/qa15/') or p in ['re/contexts.md','.github/workflows/r04-build.yml'] for p in changes),changes
+    assert not git('diff','9ae1fbde06812adeaeac7df61de23c4d4268a51c','--','reconstructed/CircleGame',':!reconstructed/CircleGame/README.md')
+    print('PASS preserved historical files',len(baseline['protected']),'journal prefix',baseline['journal_bytes'],'production unchanged from tested R17')
+def numeric(expected,actual,path='',stats=None):
+    stats=stats if stats is not None else {'scalar':0,'largest_final_double_absolute_difference':0}
+    if isinstance(expected,dict):
+        assert expected.keys()==actual.keys(),path
+        for k in expected:numeric(expected[k],actual[k],path+'/'+k,stats)
+    elif isinstance(expected,list):
+        assert len(expected)==len(actual),path
+        for i,(a,b) in enumerate(zip(expected,actual)):numeric(a,b,path+'/'+str(i),stats)
+    elif isinstance(expected,(float,int)) and not isinstance(expected,bool):
+        stats['scalar']+=1
+        exact=isinstance(expected,int) or path.endswith('/final/single') or path.endswith('/final/display')
+        assert math.isfinite(actual) and (actual==expected if exact else math.isclose(expected,actual,rel_tol=5e-12,abs_tol=5e-13)),(path,expected,actual)
+        if path.endswith('/final/double'):stats['largest_final_double_absolute_difference']=max(stats['largest_final_double_absolute_difference'],abs(expected-actual))
+    else:assert expected==actual,(path,expected,actual)
+    return stats
+
+def result_packets():
+    provenance=load(V/'windows-provenance.json');run=load(V/'windows-run.json');jobs=load(V/'windows-jobs.json')
+    assert run['head_sha']==provenance['source'] and run['conclusion']==provenance['conclusion']=='success'
+    job=jobs['jobs'][0];assert job['conclusion']=='success' and all(x['conclusion']=='success' for x in job['steps'])
+    log=raw(V/'windows-job-original.log.gz.b64');assert len(log)==provenance['returned_log']['bytes'] and sha(log)==provenance['returned_log']['sha256']
+    text=log.decode('utf-8');packets=[]
+    for label,info in provenance['packets'].items():
+        b=raw(V/info['path']);assert len(b)==info['bytes'] and sha(b)==info['sha256']
+        p=json.loads(b);assert p['source']==run['head_sha'] and p['originalExecuted'] is False and p['humanGate']=='PENDING HUMAN TEST'
+        assert p['named']==p['passed']==len(p['cases']) and p['failed']==0
+        assert len({c['id'] for c in p['cases']})==p['named']
+        assert all(c['passed'] and c['observations'] and c['error'] is None for c in p['cases'])
+        for name,digest in p['manifest'].items():assert sha((ROOT/name).read_bytes().replace(b'\r\n',b'\n'))==digest,name
+        packets.append(p)
+    historical=[('HEADLESS COMPONENT TESTS',90),('QA03 SLIDER TESTS',56),('QA04 GEOMETRY TESTS',43),('QA05 SPINNER TESTS',66),('QA06 ACCOUNTING TESTS',99),('QA07 HEALTH TESTS',159),('QA08 NEWCOMBO TESTS',115),('QA09 HITSOUND TESTS',234),('QA10 SLIDER SOUND TESTS',229),('QA11 CONTINUOUS TESTS',247),('QA11 WINDOWS EMPTY',6),('QA12',274),('QA12 WINDOWS',12),('QA13 HEADLESS',257),('QA13 WINDOWS',24),('QA14 HEADLESS',234),('QA14 WINDOWS',30)]
+    for label,n in historical:assert f'{label}: {n} passed, 0 failed' in text,(label,n)
+    assert sum(n for _,n in historical)==2175
+    assert '0 Warning(s)' in text and '0 Error(s)' in text
+    # Every retained development step is included by its exact successful workflow
+    # step, not inferred from absence of errors. Summary literals add count checks.
+    development=[s for s in job['steps'] if s['name'].startswith('Check R')]
+    assert len(development)==21,len(development)
+    for s in ['R11 HITSOUND CHECKS: 32 passed','R12 SLIDER SOUND CHECKS: 40 passed','R13 CONTINUING CHECKS: 54 passed','R13-C01 DEVELOPMENT CHECKS: 6 passed','R14 SPINNER AUDIO CHECKS: 58 passed','R14-Q01 DEVELOPMENT: 23/23','R15 DEVELOPMENT: 79 groups passed','R15 WINDOWS: 8/8','R16 DEVELOPMENT: 52 groups passed','R16 WINDOWS: 12/12','R17 WINDOWS: 12/12']:
+        assert s in text,s
+    assert [int(x) for x in re.findall(r'PASS R17 (\d{3}) ',text)]==list(range(1,83))
+    print('PASS exact-source Windows Release win-x64 / zero compiler warnings/errors; historical2175 and retained development incl.R17 82+12:',run['head_sha'])
+    return packets
+
+def mathematics(packets):
+    expected=json.loads(raw(V/'expected.json.gz.b64'));oracle=(ROOT/'re/evidence/46/independent_oracle.py').read_bytes().replace(b'\r\n',b'\n')
+    assert sha(oracle)==expected['oracle_sha256']
+    head=next(x for x in packets if x['charts']);actual={x['id']:x for x in head['charts']}
+    assert len(actual)==len(expected['rows'])==47
+    totals={'scalar':0,'largest_final_double_absolute_difference':0}
+    for row in expected['rows']:numeric(row['expected'],actual[row['id']]['actual'],row['id'],totals)
+    files=load(QA/'beatmaps/manifest.json')['files']
+    for row in files:
+        result=actual[row['id']]['actual']['final']
+        assert result['single_bits_le']==row['expected_cached_single_bits_le'] and result['single']==row['expected_cached_single']
+        assert f"{result['display']:g}★"==row['expected_r17_display']
+        assert row['original_game_displayed_stars']=='' and row['comparison_status']=='PENDING HUMAN TEST'
+    with (QA/'beatmaps/comparison-results.csv').open() as f:
+        csvrows=list(csv.DictReader(f))
+        assert len(csvrows)==len(files) and all(not r['original_game_displayed_stars'] and not r['observed_ohno_displayed_stars'] and not r['displayed_difference_ohno_minus_original'] for r in csvrows)
+    print('PASS independent expected/actual',len(actual),'whole traces;',totals)
+    return totals
+
+def failures():
+    p=load(V/'failures/initial-windows-provenance.json');b=raw(V/'failures/initial-windows-job.log.gz.b64')
+    assert len(b)==p['returned_log_bytes'] and sha(b)==p['returned_log_sha256']
+    assert b"AssertionError: ('/files/3/source'" in b and b'QA15 HEADLESS EVIDENCE ' not in b
+    print('PASS lossless original failed Windows run; provenance-path failure before QA15 execution')
+
+if __name__=='__main__':
+    if '--preservation' in sys.argv:preserve()
+    subprocess.run([sys.executable,str(QA/'build_corpus.py'),'--check'],cwd=ROOT,check=True)
+    subprocess.run([sys.executable,str(QA/'package_corpus.py'),'--check'],cwd=ROOT,check=True)
+    if (V/'windows-provenance.json').exists():
+        packets=result_packets();mathematics(packets);failures()
+        print('PASS QA15 independent named classifications',dict(Counter(c['classification'] for p in packets for c in p['cases'])))
+    print('Gate3 PENDING HUMAN TEST; no original-game or physical GUI qualification asserted')

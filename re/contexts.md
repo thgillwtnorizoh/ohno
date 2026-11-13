@@ -2141,3 +2141,124 @@ No mathematical expected value or input was changed for this clarification.
 Executed E046 raw profiles are CS5/OD5, AR5 or10, viewport512x384, shift0.
 Reader admission of other supported scalar/viewport values is not itself new
 executed coverage. Old six prepared profiles explicitly radius50/preempt1200/window99.
+
+
+## QA15 — Independent restricted star verification and comparison corpus — 2026-11-13
+
+Work1, AUTHORIZED INDEPENDENT VERIFICATION AND COMPARISON CORPUS. Starting canonical
+main f1df469987ca184d28b66825718873a486a2cfc0; R17 production code under test remains
+9ae1fbde06812adeaeac7df61de23c4d4268a51c. No production mathematics/admission changes,
+research/historical-QA edits, original execution, R18 or E047. No exception.
+
+Objective: independently verify the actual R17 calculator and prepare identical
+playable files for owner original-versus-reconstruction testing. Competing outcomes:
+correct oracle/production agreement versus numerical or mutable-state divergence;
+correct revision/generation ownership versus stale-cache publication; documented
+import readiness versus actual original-runtime import/ratings. Controlled actual
+production jobs and independently prepared E046 histories discriminate the first
+two. Only physical owner observations can discriminate the third.
+
+Evidence read: standing contract/AGENTS, both journals, E043–E046 reports/packets,
+E046 independent_oracle.py/results/finite_inputs and all19 raw fixtures, E045 three
+strict raw fixtures, R17 production/cache/controller/view/host, development and
+Windows harnesses (read-only), QA14 baseline and retained CI workflow. No archive
+member/original CLR/native invocation or copyrighted asset export. The archived
+original identity remains SHA2566e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d,
+assembly40/1.3.3.8, dated official release unauthenticated. Human host details unknown.
+
+Corpus: re/qa/qa15/beatmaps/Songs contains27 synthetic v14/Mode0/mods0/simple-circle
+charts, explicit StackLeniency0, CS5/OD5, AR5 or10, viewport512x384, shift0/rate1.
+All22 historical raw numerical inputs preserved; distinct metadata and original
+silent mono8kHz PCM16 WAVs added. Five independently recalculated practice variants:
+regular square,129-circle64s history and2/3/4-straight with every timestamp+2500ms.
+The latter remain distinct inputs, not silently shifted historical fixtures.27
+final .osu and local WAV hashes, metadata, durations, expected Double, cached Single
+and LEbits/display in manifest.json. Original-game and observed ohno columns remain
+blank in owner-editable comparison-results.csv. Folder/27 nested osz package verified
+against documented primary osu! format/import documentation. No observed original
+import. ZIP71707 bytes SHA256be2168196216889faba4f60fef230f28bc6cbf3a39904338a81d06ec48a12499.
+
+Independent expected adapter imports unchanged Work1 E046 oracle only; its AST
+imports remain math/struct/collections. No Work2/production function in expected
+implementation. Full expected/actual traces retained separately. Actual production
+is linked into new Work1 Headless project; actual WPF project referenced for unshown
+widget/Rank host checks.47 numerical traces:27 packaged raw, nine retained prepared
+references and11 exact5000ms/capacity32/angle2000ms boundaries. Prepared-only controls
+do not expand raw admission or masquerade as original-import charts. Every reached
+pair/raw movement/velocity/rhythm identity/event/visibility history/recurrence/
+duration/aggregate/final Double/cache bit/display compared. Dead pair0 visibility
+diagnostics excluded after actual early return; raw zero compared. Early movement/
+velocity returns and complete geometry/composite preserved. Relative5e-12/absolute
+5e-13 scalar tolerance; discrete identity/content/branch/index/Single bits/display
+exact.279369 numeric assertions are not additional named cases. Max final Double
+error5.329070518200751e-15; all47 cached Singles/bits/floors exact. Combined QA15-09
+Double5.119475874072683 /Single5.119475841522217 /LEbitsbfd2a340 /display5.11★.
+Historical two/three/four displays0.11/0.17/0.22★ pass packaged actual pipeline.
+These are oracle/production results, never original-game observations.
+
+Exact passing QA15 source116b140314d6ccad73303bda5d4cb1c888f93625; GitHub Actions
+run43381876511/job131741281970,2026-11-13 06:53:51–06:57:23UTC /
+13:53:51–13:57:23Asia/Bangkok. Windows2022, installed SDK8.0.427, actual.NET8.0.33,
+OS10.0.20348. Release win-x64 zero compiler warnings/errors.95/95 headless production
+component controls;35/35 unshown Windows components;4/4 source-only GameWindow wiring
+checks. QA15 total134/134, separately classified; all2175 retained historical
+independent QA and all21 retained development steps pass, including R17 82+Windows12.
+Combined named checkpoint2309 preserves classifications; development, trace/file
+counts and numeric assertions are not additional independent QA.
+
+Cache/controller evidence: real computation/reuse and content/profile identity,
+coalescing with duplicate-caller cancellation, owner cancel/retry, same-size/same-time
+changed bytes, changed-in-flight revision, missing file,64 completed-entry bound,
+failures and disposal; current-reference/catalog epochs prevent held stale jobs from
+publishing into new charts. Actual unshown view binds all27 own ratings, pending /
+calculated, refresh/cache return, stale/replacement recovery and unrated playable
+sliders/spinners. Actual Rank Back/Retry host components exercised only at Rank;
+no active gameplay Frame/input sampling. Matched session snapshots preserve finite
+score/health/Rank states. Historical audio assertions pass without listening.
+No confirmed production discrepancy found; queue saturation/full4096 performance
+are not newly independently qualified.
+
+Initial local corpus tooling KeyError on uninitialized header section fixed before
+fixture generation. Initial CI sourceb5aa6e6eade2886c6a0fdbbc9bf61b68108b9de1 /
+run43381288711/job131739395393 failed QA15 path provenance before C# execution:
+Windows backslashes vs stored slash paths. Path.as_posix correction; historical2175
+and R17 development82+12 already passed. Original log1983480 UTF8 bytes SHA256
+8f75280a5f0b00e12f60d52df1223d247ed089c8c1f69378f559ad07a4f83c48 retained losslessly.
+A report-preservation assertion initially included pre-existing R17 README-only
+publication differences from9ae to f1; exclude only that README for code-lineage
+comparison while exact f1 baseline still pins it. Intermediate first-log base64
+transport truncated at1MiB; final restores original returned bytes and pins hash,
+with the bad intermediate blob retained in Git history. No expected math weakened.
+
+Passing full returned log2410192 UTF8 bytes SHA256
+85d174a3a3326c6c1fc5ccf91187a5f652b50b9c8da32121d598181b644c83d7.
+Headless packet3729518 bytes SHA256
+6ef9cada4c5e69842f9677677ddefc5c8099ed06b606f01cedae3d2937db055e;
+Windows packet52904 bytes SHA256
+db4b1852fab22dc67b5f0ffda400912a8934dcdb4e2adebb797cc89e9370857b.
+Compressed/base64 evidence includes exact run/job steps/source hashes, expected /
+actual typed results, chart comparisons, failures and dispositions. Full retained
+regressions are explicit successful steps/summary counts, not assumed from a green
+new test. Report checker additionally rereads all47 traces,134 cases, package hashes,
+968 protected historical files and493810-byte original journal prefix SHA256
+44af7f36b28a99ec6749bcdc5513e6faa4674bb9bff1d2edfcf46d1ee4c74caf.
+
+Files added only under re/qa/qa15: README/numbered verification mark, corpus/manifest/
+CSV/ZIP, independent builder/runner/headless/Windows checks, coverage, human protocol/
+result template and verification evidence/checkers. Workflow extends the existing
+Windows gate without weakening old steps. This journal is append-only. Reproduce:
+./re/qa/qa15/Run-QA15.ps1; python re/qa/qa15/build_corpus.py --check; python
+re/qa/qa15/package_corpus.py --check; python re/qa/qa15/check_evidence.py --preservation.
+No local .NET or physical Windows/original application testing performed.
+
+Gate1 PASS for engineering/documented-format corpus; Gate2 PASS for finite component
+QA and exact Windows regression. Gate3 PENDING HUMAN TEST. Human protocol requires
+owner import and physically operating both applications, no mods, exact installed
+chart SHA256/build identities, actual star text/screenshots, gameplay/score/HP/audio/
+Rank/Back/Retry/recovery/rapid selection and unrated sliders/spinners. Both observed
+values/difference remain blank. MATCH/MISMATCH/unavailable/unsupported/inconclusive
+classification is based only on actual observations. Do not fit unexplained displays.
+Original import/provider/manager/native/JIT precision, real rendering/input/audio and
+final R17 owner acceptance remain unresolved. E02017 original-runtime cases NOT RUN.
+Engineering deliverables complete upon verified canonical-main publication; await
+human observations and stop. No R18/E047 or production correction authorization.
