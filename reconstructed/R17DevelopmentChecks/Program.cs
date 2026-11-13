@@ -5,10 +5,11 @@ using System.Text.Json;
 using Ohno.CircleGame.Difficulty;
 using Ohno.CircleGame.Gameplay;
 using Ohno.CircleGame.Selection;
+using CircleDefinition = Ohno.CircleGame.Difficulty.CircleDefinition;
 
 internal static class Program
 {
-    static int groups,comparisons;static readonly List<object> results=[];
+    static int groups,comparisons;static readonly List<object> results=[];static readonly List<object> charts=[];
     static void Pass(string label){results.Add(new{group=++groups,label,passed=true});Console.WriteLine($"PASS R17 {groups:000} {label}");}
     static void Yes(bool ok,string path=""){if(!ok)throw new Exception($"R17 group{groups+1}: {path}");}
     static void Eq<T>(T expected,T actual,string path=""){Yes(EqualityComparer<T>.Default.Equals(expected,actual),$"{path}: expected{expected} actual{actual}");}
@@ -70,12 +71,14 @@ internal static class Program
         try
         {
             using var input=JsonDocument.Parse(File.ReadAllBytes(Path.Combine(repo,"reconstructed/R17DevelopmentChecks/reference-inputs.json")));
-            byte[] reference=File.ReadAllBytes(Path.Combine(repo,"re/evidence/46/results.json"));Eq(Convert.ToHexString(SHA256.HashData(reference)).ToLowerInvariant(),input.RootElement.GetProperty("authoritySha256").GetString());
+            byte[] reference=File.ReadAllBytes(Path.Combine(repo,"re/evidence/46/results.json"));Eq(Convert.ToHexString(SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(System.Text.Encoding.UTF8.GetString(reference).Replace("\r\n","\n")))).ToLowerInvariant(),input.RootElement.GetProperty("authoritySha256").GetString());
             using var expected=JsonDocument.Parse(reference);Eq(expected.RootElement.GetProperty("charts").GetArrayLength(),28);Pass("pinned independent E046 expected reference;28 are fixtures, not automatic passing checks");
             foreach(var row in input.RootElement.GetProperty("rows").EnumerateArray())
             {
                 string id=row.GetProperty("id").GetString()!;var p=row.GetProperty("params");var result=CircleStarCalculator.CalculatePrepared(Circles(row.GetProperty("circles")),new(p[0].GetSingle(),p[1].GetDouble(),p[2].GetDouble()));
                 var want=expected.RootElement.GetProperty("charts").EnumerateArray().Single(x=>x.GetProperty("id").GetString()==id).GetProperty("expected");Compare(want,result,row.GetProperty("movement_terms"));
+                charts.Add(new{id,result.CalculatedDouble,result.CachedSingle,result.SingleBitsLittleEndian,result.Display,aggregates=result.Trace!.Aggregates});
+                Console.WriteLine($"R17 CHART {id}: Double={result.CalculatedDouble:R} SingleLE={result.SingleBitsLittleEndian} display={result.Display}");
                 if(row.GetProperty("kind").GetString()!.StartsWith("BOUNDED RAW",StringComparison.Ordinal))
                 {var chart=LocalChartCatalog.Index(Path.Combine(repo,"re/evidence/46/fixtures",id+".osu"));var raw=CircleStarCalculator.Calculate(chart,capture:true);Near(result.CalculatedDouble,raw.CalculatedDouble);Eq(result.SingleBitsLittleEndian,raw.SingleBitsLittleEndian);}
                 Pass("executed full independent intermediate/chart comparison "+id);
@@ -144,7 +147,7 @@ internal static class Program
             }
             Pass("four matched before/after metadata calculation sessions preserve parser K events judgement HP audio Rank histories");
             string host=File.ReadAllText(Path.Combine(repo,"reconstructed/CircleGame/Program.cs"));Yes(host.Contains("stars.Highlight(browser.Highlighted, browser.CatalogGeneration)"));Yes(host.Contains("stars.Invalidate()"));Yes(host.Contains("stars.Dispose(); starCache.Dispose()"));Yes(host.Contains("Dispatcher.BeginInvoke(new Action(() => { if (!closing && selectionVisible) browserView.Bind(); }))"));Pass("SOURCE INSPECTION host highlight/refresh/Play/close generations and UI dispatcher publication");
-            Console.WriteLine($"R17 DEVELOPMENT: {groups} groups passed; {comparisons} finite scalar comparisons; last1 source inspection; research controls not added to independent QA");Console.WriteLine("R17 EVIDENCE "+Convert.ToBase64String(JsonSerializer.SerializeToUtf8Bytes(new{groups,comparisons,results})));return 0;
+            Console.WriteLine($"R17 DEVELOPMENT: {groups} groups passed; {comparisons} finite scalar comparisons; last1 source inspection; research controls not added to independent QA");Console.WriteLine("R17 EVIDENCE "+Convert.ToBase64String(JsonSerializer.SerializeToUtf8Bytes(new{groups,comparisons,results,charts})));return 0;
         }
         finally{Directory.Delete(temp,true);}
     }
