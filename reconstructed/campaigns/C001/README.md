@@ -92,3 +92,15 @@ Still unresolved: original header recognition/default-version recovery, complete
 field dispatch/error side effects, F2c2b culture identity/native CLR exceptional
 parsing, resource/event semantics, general stacks, P/C and alternate factories.
 This finite implementation must not be described as full parser equivalence.
+
+## Compatibility and registered identity
+
+Historical string Beatmap.Load and CatalogChart.LoadGameplay retain explicit-field
+and v14-Bezier admission. Their canonical counterparts and actual typed GameWindow
+request share the same document/preparation implementation with extended C001
+semantics. Canonical runtime construction follows original bit priority, while
+metadata summary counts exact masked values. Raw flags and actual registered type
+remain separate through NewCombo/health. A hold category preserved by the catalog
+still cannot become playable without its missing standard factory. Catalog ignores
+comment lines for its engineering index contract; complete original refresh error
+recovery is pending and is not certified by that policy.

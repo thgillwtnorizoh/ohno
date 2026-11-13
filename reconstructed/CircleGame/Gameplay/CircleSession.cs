@@ -840,7 +840,10 @@ public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyL
         var objects = new List<PreparedHealthObject>();
         foreach (HealthObjectSource row in source.Rows)
         {
-            ScoreObjectKind kind = (row.RawType & 8) != 0 ? ScoreObjectKind.Spinner :
+            ScoreObjectKind kind = row.RegisteredType is { } registered ? registered switch
+                { OriginalRegisteredType.Circle => ScoreObjectKind.Circle, OriginalRegisteredType.Slider => ScoreObjectKind.Slider,
+                    OriginalRegisteredType.SpinnerBase => ScoreObjectKind.Spinner, _ => throw Unsupported("Unknown registered factory identity.") } :
+                (row.RawType & 8) != 0 ? ScoreObjectKind.Spinner :
                 (row.RawType & 2) != 0 ? ScoreObjectKind.Slider : ScoreObjectKind.Circle;
             // Historical R09 projection retained only for its compatibility policy.
             // E036 mode replaces these values from the proven fresh pipeline below.
@@ -877,7 +880,8 @@ public sealed record HealthChart(double Hp, int Approach, int Format, IReadOnlyL
                 ScoreObjectKind.Circle => OriginalRegisteredType.Circle, ScoreObjectKind.Slider => OriginalRegisteredType.Slider,
                 _ => OriginalRegisteredType.SpinnerBase
             })).ToArray();
-            provenance = NewComboPreparation.Prepare(inputs, source.Breaks, source.Version, NewComboContext.FreshZeroShift);
+            provenance = NewComboPreparation.Prepare(inputs, source.Breaks, source.Version,
+                NewComboContext.FreshZeroShift with { OriginalFactoryPriority = source.OriginalFactoryPriority });
             for (int i = 0; i < objects.Count; i++) objects[i] = objects[i] with { NewCombo = provenance[i].FinalFlag };
         }
         var chart = new HealthChart(metadata.Hp, approach, source.Version, objects.AsReadOnly(), source.Breaks)

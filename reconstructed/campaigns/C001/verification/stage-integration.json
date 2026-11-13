@@ -1,0 +1,228 @@
+{
+  "source": "f6f1203745f82886aae3897c37f5ce517250b323",
+  "run": 43453450452,
+  "job": 131981354142,
+  "raw_log_bytes": 2479712,
+  "raw_log_sha256": "a4df695cd1dcc022d199f6f255c959f4bb2047de5063e94776632e84764232cd",
+  "summary_sha256": "a8fcfb370d870c1c1080747d27ca7c3c221aa2439f41e376b22f1a3cd9ac1d73",
+  "retention": "All ordinary log lines retained; repeated historical result packets omitted with exact line hashes. Full log via Actions job ID.",
+  "omitted_payloads": [
+    {
+      "line": 245,
+      "bytes": 412274,
+      "sha256": "5c5879813490ec7f96cb3940a9e44c3e104f3b073630f8fa41115c592b8b53ff",
+      "prefix": "2026-11-13T15:32:11.2748418Z QA15 HEADLESS EVIDENCE H4sIAAAAAAACCuy963LjSJIm+iqy3L9KVHiEx63+5VZX2Zxj"
+    },
+    {
+      "line": 286,
+      "bytes": 6305,
+      "sha256": "942f5963e34f977593e89cbecd8c50e1fda08f27d06a8de99cbf45d75cd90e9d",
+      "prefix": "2026-11-13T15:32:17.7282495Z QA15 WINDOWS EVIDENCE H4sIAAAAAAACCu1dXXPbuJL9Kyw/7VaFNr4IEL5PGcczmaqJ4"
+    },
+    {
+      "line": 1416,
+      "bytes": 6049,
+      "sha256": "474f22144820eead622bf14bcf085c29faac625bc1639404d5cd5e79f8c32bd2",
+      "prefix": "2026-11-13T15:32:54.9157742Z QA09 EVIDENCE 1/6 H4sIAAAAAAACCuy9WZvjNpIu/Ff45fNd5oJ9ST/nwku17RmXXePy9"
+    },
+    {
+      "line": 1417,
+      "bytes": 6049,
+      "sha256": "96c1d7fa79c11cc42a72da03756924a2e9d8038087cf613b9fa0e861eeb620df",
+      "prefix": "2026-11-13T15:32:54.9226817Z QA09 EVIDENCE 2/6 7Ww0mez8/Hdg4atH5d8AfI2NHFs7OP4YHBnyuY4MXY9MzaAp3j8y6"
+    },
+    {
+      "line": 1418,
+      "bytes": 6049,
+      "sha256": "6edbf6c6ce70447ed9a7b60dec4f0ff825980f1e7c90cf951daf3739b57c1f04",
+      "prefix": "2026-11-13T15:32:54.9295512Z QA09 EVIDENCE 3/6 zufoEY/p9axX0cQu88X0torJlY3Gq5AmXcF+eO3VEO9r1VshajX05"
+    },
+    {
+      "line": 1419,
+      "bytes": 6049,
+      "sha256": "89927041e3896d49199946f223816a6489808364fc289f6ba3775602b98b434f",
+      "prefix": "2026-11-13T15:32:54.9404106Z QA09 EVIDENCE 4/6 q3MNswAYDJ1aOD+qUu6rNffwj50fgq+qJhtq5whwfdEYNUVHgX6Nw"
+    },
+    {
+      "line": 1420,
+      "bytes": 6049,
+      "sha256": "747483067f35ccc86d9f206997556d9047027106c4bbb9fd1b0507df711c2e0e",
+      "prefix": "2026-11-13T15:32:54.9478795Z QA09 EVIDENCE 5/6 /jM7zUgbKQ/9D/+QbWbO92DmrJ2ZY7RNzYvfnyk3R01uzvfi5uwFc"
+    },
+    {
+      "line": 1421,
+      "bytes": 3505,
+      "sha256": "c41f1048a8a02e2bb25c31b44fbec78455e5f8e5d1fa49dc610919e880db7d6b",
+      "prefix": "2026-11-13T15:32:54.9524098Z QA09 EVIDENCE 6/6 zY3KP3D5sa7yR13JPEbVaip/hLpNehZeopG/t5FvJVZrbX+oA7em7"
+    },
+    {
+      "line": 1752,
+      "bytes": 6049,
+      "sha256": "1804f7010fa5d8c9093af4256a42001e96a967a2a085a6e217f4490ce3ff6cfc",
+      "prefix": "2026-11-13T15:33:01.8676605Z QA10 EVIDENCE 1/8 H4sIAAAAAAACCuy9aXfbRraG+1ew9OmctTTUPNDrfnA7SuJ74sRtu"
+    },
+    {
+      "line": 1753,
+      "bytes": 6049,
+      "sha256": "31c26b65dc145f6f298e47946a18842452e6b358a5f549da6de459e7cb627016",
+      "prefix": "2026-11-13T15:33:01.8798313Z QA10 EVIDENCE 2/8 v0PjExwwv9kmDiEeViylStXJKWH0pI7dM0JPzhhpFWdFddEu4XwM1"
+    },
+    {
+      "line": 1754,
+      "bytes": 6049,
+      "sha256": "2b3fb5029a13d60615ca7acbcb726820036ae44aaaeb0a90e2c7cd6b0d8c69ab",
+      "prefix": "2026-11-13T15:33:01.8921769Z QA10 EVIDENCE 3/8 zi/DwS/lB9c9T6uHSNQcX3x2VdEbDopeWfTzvsfFu2E1KHwqur3uU"
+    },
+    {
+      "line": 1755,
+      "bytes": 6049,
+      "sha256": "e241a9d46042ba07e7993bc27d7f929eabb67ed823b2d8075a785b8f81dc4730",
+      "prefix": "2026-11-13T15:33:01.9042982Z QA10 EVIDENCE 4/8 yKxsuN7gOpP7MprZXRXDbrhw3XM4xsKt1KObBhTZjpmhr/oppJi6I"
+    },
+    {
+      "line": 1756,
+      "bytes": 6049,
+      "sha256": "2bc525b992863b835e61816b1cbb0b7cf236dd6df62bd48e7032d185a12b94fc",
+      "prefix": "2026-11-13T15:33:01.9151737Z QA10 EVIDENCE 5/8 tDICbe0k+Bv8bEH6rPhv6vdmin4o5cvcBtasybO6rNcodVxNZE0Qz"
+    },
+    {
+      "line": 1757,
+      "bytes": 6049,
+      "sha256": "20503ed11d09b6bbb910685546ba08ab18f76a7e40976701c6c28de8351698d1",
+      "prefix": "2026-11-13T15:33:01.9216489Z QA10 EVIDENCE 6/8 MoFM8OyHTCATyOSQ2002sclkysQpnfBvoBNerxO+Qie8dubNnSfeZ"
+    },
+    {
+      "line": 1758,
+      "bytes": 6049,
+      "sha256": "7d7c4e9b0c4bfba3169db4900e4c441db5f0254126bce6d6bdf2d473b9942226",
+      "prefix": "2026-11-13T15:33:01.9274449Z QA10 EVIDENCE 7/8 PNY2QUgQEoQEIUFIEBKEBA95UmpundbKSa64HQ/xnExKLVux48xRG"
+    },
+    {
+      "line": 2129,
+      "bytes": 6050,
+      "sha256": "76fa6674a8b9656c078557d9189fec3dd6b0715a592bb0645abaf28edab71b54",
+      "prefix": "2026-11-13T15:33:11.6617955Z QA11 EVIDENCE 1/10 H4sIAAAAAAACCuy92XbjRrau+yo4ulprDDXRoVOOc+FKp+0822ln"
+    },
+    {
+      "line": 2130,
+      "bytes": 6050,
+      "sha256": "ef96742a54d764e22d47a67bc732b57f21148b004bfc8687fecbe0cd733d2798",
+      "prefix": "2026-11-13T15:33:11.6731688Z QA11 EVIDENCE 2/10 fPPJOblu8/Et3k20Hp858Bn4DHwGPp8/Pq9ESWvodvlUQPQzQfRN"
+    },
+    {
+      "line": 2131,
+      "bytes": 6050,
+      "sha256": "0705dfb87f6c9d8091eb0646be7cd2eae107109bac64065fb3fe17b2222165e5",
+      "prefix": "2026-11-13T15:33:11.6828785Z QA11 EVIDENCE 3/10 +lZabmml5cGstNyNxZKMn/cb9TboMc9+qr6P27LH8IP1GL6jHqO2"
+    },
+    {
+      "line": 2132,
+      "bytes": 6050,
+      "sha256": "850182775b1267a03dbc67268fc884604a9db8700560478695762bef160dd1c1",
+      "prefix": "2026-11-13T15:33:11.6911996Z QA11 EVIDENCE 4/10 JdCZX2cp3Sz55S907ncfv67IbP9Ej2ov8zaryCD8nP3L3Lp/L378"
+    },
+    {
+      "line": 2133,
+      "bytes": 6050,
+      "sha256": "a973d009015bcafb7854288e1a0ba8a8b3eb2490179f5d8620fe0f07fac17b01",
+      "prefix": "2026-11-13T15:33:11.7011219Z QA11 EVIDENCE 5/10 WXNvr9m9xrEm65EsWxLZvZJx/KNhEZf04LY7abyPEesese4R6x6x"
+    },
+    {
+      "line": 2134,
+      "bytes": 6050,
+      "sha256": "5bd6b7bc06b23fbd6f5c3a90e3eb1a82365986ec15d681a803d75af3e5bc9453",
+      "prefix": "2026-11-13T15:33:11.7105314Z QA11 EVIDENCE 6/10 UB6xXiAhkBBICCQEEgIJgYRAQiAhckSBhcBCYCGwEFgILAQWAguB"
+    },
+    {
+      "line": 2135,
+      "bytes": 6050,
+      "sha256": "3202aca7f926a8ae0f2cc4d8321f8ea2ac3d5fbd0c34fdceb58ca4212024e302",
+      "prefix": "2026-11-13T15:33:11.7171480Z QA11 EVIDENCE 7/10 6aUbSi9GekcuPXMIKT2Uh/JQHspDebAM5aE8lHcUyiOfh/SQHtJD"
+    },
+    {
+      "line": 2136,
+      "bytes": 6050,
+      "sha256": "04b0f246a20f11bfbdc10b942ebf94bdb9cd83ae448ef635cec872769357f65c",
+      "prefix": "2026-11-13T15:33:11.7230576Z QA11 EVIDENCE 8/10 AwT9FsX5/ccHTwf0acMpp3UISZCjGC93N+8bzrhEW5Mo76xe6m9e"
+    },
+    {
+      "line": 2137,
+      "bytes": 6050,
+      "sha256": "16eab5a1d24629e12113813ab1ce21d08e8495ce508014fc35ba0e7651c78f6d",
+      "prefix": "2026-11-13T15:33:11.7298426Z QA11 EVIDENCE 9/10 X17JwqX6POlPtqMcciY7vDEYXcn04/z3sQyWL1FHTtlI4PYpG0ef"
+    },
+    {
+      "line": 2138,
+      "bytes": 3779,
+      "sha256": "52985a1ab06ce79eb49beb33896918a7d84bef61dd0bac60d17937082fdd8108",
+      "prefix": "2026-11-13T15:33:11.7384886Z QA11 EVIDENCE 10/10 betc3kyMCSbNW3mnWSBBxVnHBt3qZFJzpOFk4dGJjVqD/ng46PX"
+    },
+    {
+      "line": 2565,
+      "bytes": 92421,
+      "sha256": "79dc3385f79d3bf7759779e838f42ead86cf80f3d7712f7dd404218f5163e69c",
+      "prefix": "2026-11-13T15:33:25.4310940Z QA12 EVIDENCE H4sIAAAAAAACCuzdW3PjRrqo6fuJmP+AqKu9Y1ysPB/cMRdur3Iv773t7"
+    },
+    {
+      "line": 2580,
+      "bytes": 1149,
+      "sha256": "c158a90e12cb5a3b4bf9773d0a3554ff4eb6ddae95ebc8e086a7a9ca2197363d",
+      "prefix": "2026-11-13T15:33:27.3885387Z QA12 WINDOWS EVIDENCE H4sIAAAAAAACCu1YO2/bMBDeC/Q/HDTHD8l27LRThwwB+kiHo"
+    },
+    {
+      "line": 2631,
+      "bytes": 7751,
+      "sha256": "dd76f86e73a5ec088e602dd01f64d2afdf1726a2889b6724437edd356cc5237b",
+      "prefix": "2026-11-13T15:33:31.1111349Z R14-Q01 DIAGNOSTICS ew0KICAic2NoZW1hIjogIm9obm8uUjE0LVEwMS5hdWRpby52MSI"
+    },
+    {
+      "line": 2717,
+      "bytes": 11032,
+      "sha256": "8d467c34c09e1044f38fd6436b49066a0d8167e6d1c2902a3e0799deb3d4d7c2",
+      "prefix": "2026-11-13T15:33:33.5794573Z R15 EVIDENCE eyJzY2hlbWEiOiJSMTUuZGV2ZWxvcG1lbnQudjEiLCJncm91cHMiOjc5LC"
+    },
+    {
+      "line": 2996,
+      "bytes": 344477,
+      "sha256": "ff27a0232e575b97a5c616472fc9d3088489c248e5f4e815c626c5ce1e38ba37",
+      "prefix": "2026-11-13T15:33:39.2167732Z QA13 EVIDENCE H4sIAAAAAAACCuy9a3MbR5I2+v1EnP+AUMT5csKQ6n6xYz/YGnnt3bU8r"
+    },
+    {
+      "line": 3023,
+      "bytes": 1545,
+      "sha256": "cd9a97c07b8de34e39a0c7e0222e00e9d7f523295a275827eb72e8da92ee2e46",
+      "prefix": "2026-11-13T15:33:41.1554891Z QA13 WINDOWS EVIDENCE H4sIAAAAAAACCu1aS2/jNhC+F+h/GPgcpJbkZ3vaRwrsoUmb3"
+    },
+    {
+      "line": 3325,
+      "bytes": 1056225,
+      "sha256": "9e073bd296a1c9e1740ad2e13e377fba8184947babf528e880b8d53080c067eb",
+      "prefix": "2026-11-13T15:34:30.4592183Z QA14 EVIDENCE H4sIAAAAAAACCuy9bXMbR5IG+P0i7j90KO6DN8KQ6v1FE/NBL/SM90a21"
+    },
+    {
+      "line": 3362,
+      "bytes": 3833,
+      "sha256": "92d163bc83b322b243f84468d69bc3e0b0ef6bc0adf0b364f73fe21e29fc6cb7",
+      "prefix": "2026-11-13T15:34:40.9359720Z QA14 WINDOWS EVIDENCE H4sIAAAAAAACCu1cWW/cRhJ+X2D/A6EnL2BKfR8G8qCVlc0Cj"
+    },
+    {
+      "line": 3480,
+      "bytes": 19772,
+      "sha256": "e11a50004d99652b03addee88edb318e50e66833e0ab69d3ad781e36b976acd7",
+      "prefix": "2026-11-13T15:34:44.8358202Z R17 EVIDENCE eyJncm91cHMiOjgyLCJjb21wYXJpc29ucyI6ODk4NzgsInJlc3VsdHMiOl"
+    }
+  ],
+  "notable_lines": [
+    "2026-11-13T15:32:01.9215218Z     0 Warning(s)",
+    "2026-11-13T15:32:01.9215707Z     0 Error(s)",
+    "2026-11-13T15:33:43.3153493Z Unhandled exception. System.Exception: R16 group 12: Indexed != Unsupported",
+    "2026-11-13T15:33:48.3346616Z FAIL QA14 C/unknown-type System.Exception:  expected=Unsupported actual=Indexed",
+    "2026-11-13T15:34:26.9207224Z FAIL QA14 S/new-revision-no-substitution System.Exception: reference identity expected=True actual=False",
+    "2026-11-13T15:34:27.0654537Z FAIL QA14 R/index-is-not-parser System.Exception: Expected InvalidDataException",
+    "2026-11-13T15:34:27.0858178Z FAIL QA14 R/index-size-is-not-parser-size System.Exception: metadata index admits2MiB+1 within its4MiB limit expected=True actual=False",
+    "2026-11-13T15:34:27.1233772Z FAIL QA14 R/prior-session-retained-on-parser-failure System.Exception: invalid fixture accepted",
+    "2026-11-13T15:34:40.6880079Z FAIL QA14 WINDOWS W22-new-revision-explicit-commit System.Exception: reference identity expected=True actual=False",
+    "2026-11-13T15:34:47.4307152Z Unhandled exception. System.Exception: R17 Windows group8",
+    "2026-11-13T15:34:49.6202359Z C001 DEVELOPMENT: 145/145 PASS"
+  ]
+}

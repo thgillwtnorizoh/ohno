@@ -85,7 +85,11 @@ public sealed class CatalogChart(string path, ChartFingerprint? fingerprint, Cha
     }
     public Beatmap LoadGameplay(CancellationToken token = default)
     {
-        Verify(token); var map = Beatmap.LoadCanonical(Path, token); Verify(token); return map; // Fresh authoritative parser, never cached Beatmap substitution.
+        Verify(token); var map = Beatmap.Load(Path, token); Verify(token); return map; // Historical compatibility admission, shared preparation core.
+    }
+    public Beatmap LoadCanonicalGameplay(CancellationToken token = default)
+    {
+        Verify(token); var map = Beatmap.LoadCanonical(Path, token); Verify(token); return map;
     }
 }
 public sealed record CatalogSnapshot(long Generation, IReadOnlyList<CatalogChart> Charts, IReadOnlyList<string> Notices);
@@ -181,6 +185,9 @@ public sealed class LocalChartCatalog : IDisposable
             {
                 token.ThrowIfCancellationRequested();
                 string line = entry.Text, section = entry.Section;
+                // Preserve the catalog's engineering comment-tolerant index profile;
+                // this does not certify M1bc1's partial-error recovery semantics.
+                if (line.StartsWith("//", StringComparison.Ordinal)) continue;
                 int colon = line.IndexOf(':');
                 if (section is "[Metadata]" or "[General]" or "[Difficulty]")
                 { if (colon > 0) fields[section + line[..colon].Trim()] = line[(colon + 1)..].Trim(); continue; }
@@ -192,7 +199,9 @@ public sealed class LocalChartCatalog : IDisposable
                 if (type == 8) { spinners++; if (cells.Length < 6 || !int.TryParse(cells[5], out int stop) || stop < time || stop > 3600000) throw new InvalidDataException("Malformed spinner end metadata."); end = Math.Max(end, stop); }
                 else if (type is 2 or 128) sliders++;
                 else if (type == 1) circles++;
-                else unsupportedObject = true;
+                // Metadata category counts and runtime admission are separate stages.
+                // A preserved hold category still has no standard gameplay factory.
+                if (OriginalObjectClassification.Runtime(raw) == OriginalRegisteredType.Unknown) unsupportedObject = true;
             }
             var preparedSettings = OsuMetadataSettings.Prepare(document, token);
             string? Get(string key) => fields.GetValueOrDefault(key) is { Length: > 0 } value ? value : null;

@@ -141,6 +141,20 @@ internal static class Program
             var stageMap = Beatmap.LoadCanonical(path);
             Check(stageMap.Circles.Count == 1 && stageMap.ScoreMetadata?.RowCount == 2, "metadata count and runtime registration remain distinct original stages");
             Check(LocalChartCatalog.Index(path).Metadata?.PreparedSettings?.Ar == stageMap.ApproachRate, "catalog exposes prepared settings alongside raw display scalars");
+            foreach (int flags in new[] {3,9,11,129})
+            {
+                File.WriteAllText(path,Map(14,$"100,100,1000,{flags},0,1500\n200,100,2000,1,0"));
+                var combined = Beatmap.LoadCanonical(path);
+                Check(combined.Circles.Count == 2 && combined.Sliders.Count == 0 && combined.Spinners.Count == 0 && combined.HealthSource!.Rows[0].RawType == flags && combined.HealthSource.Rows[0].RegisteredType == OriginalRegisteredType.Circle, "combined bit circle priority and raw identity " + flags);
+                Check(combined.ScoreMetadata!.Circles == 1 && LocalChartCatalog.Index(path).Metadata!.Circles == 1, "exact metadata category counts differ from runtime priority " + flags);
+                var session = CircleSession.CreateFreshOrdinary(combined, ScoreConfiguration.FromBeatmap(combined));
+                Check(session.Health is not null && session.Health.Chart.NewComboProvenance[0].RawType == flags && session.Health.Chart.NewComboProvenance[0].RuntimeType == OriginalRegisteredType.Circle, "combined bits retain real factory provenance through NewCombo health " + flags);
+                Reject<InvalidDataException>(() => Beatmap.Load(path), "legacy combined type admission retained " + flags);
+            }
+            File.WriteAllText(path,Map(14,"100.9999999,100.9999999,1000,1,0"));
+            Check(Beatmap.LoadCanonical(path).Circles[0].Position == new Vector2(100,100), "canonical head Double clamp truncate precedes Single rounding");
+            foreach (int invalidMode in new[] {99,-2})
+                Check(OsuMetadataSettings.Prepare(OsuDocument.Parse($"osu file format v14\n[General]\nMode:{invalidMode}")).Mode == 0, "M1bbb undefined mode fallback " + invalidMode);
             string resultPath = Path.Combine(repo, "reconstructed/campaigns/C001/development-results.json");
             File.WriteAllText(resultPath, JsonSerializer.Serialize(new { classification = "Work 2 production development checks; not independent QA or original runtime", groups = Results.Count, results = Results }, new JsonSerializerOptions { WriteIndented = true }));
             Console.WriteLine($"C001 DEVELOPMENT: {Results.Count}/{Results.Count} PASS"); return 0;

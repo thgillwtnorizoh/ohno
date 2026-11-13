@@ -1411,3 +1411,29 @@ remains explicit engineering compatibility. Workflow records independent suite i
 clearly labeled --audit mode; gaps are diagnostic, never a conformance pass. Combined
 runtime flag construction and other original semantics remain open. No historical
 QA source/expectation changed; no owner exception requested or presumed.
+
+C001 checkpoint03 source: prior exact stage gatef6f1203745f82886aae3897c37f5ce517250b323,
+run43453450452/job131981354142: WPF0warnings/0errors; new145/145 development PASS;
+independent original-contract audit94/106matches,12gaps,4/4engineering controls.
+Failures preserved: R16group12/QA14unknown-type exposed metadata hold count as
+playability; QA14/R17fresh-revision selection failed because metadata-stage comments
+were indexed as objects; legacy CatalogChart.LoadGameplay no longer rejected
+missing explicit AR/difficulty expected by historical compatibility controls.
+Corrections: separate catalog category count from available runtime factory,
+retain catalog ENGINEERING comment-tolerant index, preserve historical LoadGameplay
+admission and expose LoadCanonicalGameplay separately. Actual application uses
+canonical typed request. Do not alter historical test inputs/expectations.
+
+New supported original behavior: runtime type priority Circle→Slider→Spinner,
+separate exact-category metadata counts; HealthObjectSource records raw type and
+actual registered type, FreshCanonical NewCombo validates priority while historical
+strict context remains unchanged. Combined circle variants3/9/11/129 exercised
+through parsed definitions and actual fresh health/NewCombo; canonical heads use
+Double→clamp→Int32→Single, preserving fractional truncation before Single rounding.
+Hold-only input still rejects unavailable standard factory. Remaining P/C/stacks/
+full modes/errors/resources stay open. Diagnostic audit will be rerun unchanged.
+
+Confidence clarification: initial Work2 fixture-byte mismatch was diagnosed as
+consistent with Windows autocrlf; initial raw newline counts were not captured.
+Path-specific -text then passed all exact hash controls in second gate. This is
+support for the checkout-policy correction, not a fabricated initial byte capture.

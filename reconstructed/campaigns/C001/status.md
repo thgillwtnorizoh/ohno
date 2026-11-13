@@ -50,3 +50,15 @@ be called a conformance pass while any gap remains. Canonical catalog now uses
 metadata-stage state, original finite settings/defaults/mode fallback and exact
 masked category counts. Nonfinite raw scalar null display policy remains explicit;
 combined runtime priority, P/C and all remaining gates remain open.
+
+Checkpoint03 source corrections: preserve historical CatalogChart.LoadGameplay
+admission; expose LoadCanonicalGameplay explicitly. Actual GameWindow remains on
+typed canonical request. Separate catalog metadata counting from runtime admission:
+hold counts do not authorize an unavailable standard factory. Catalog retains its
+comment-tolerant engineering index profile (original partial refresh still open).
+Stage gatef6f1203: C001145/145PASS, independent94/106fields with12gaps; WPF0/0.
+Failures: hold incorrectly indexed as playable, comment rows made updated revisions
+unavailable, and old compatibility loader admitted new defaults. All failure lines
+retained; old test expectations unchanged. New source implements original runtime
+bit priority with raw flags/registered identity retained through health/NewCombo;
+canonical head Double→clamp→Int32→Single; next gate pending. Campaign remains OPEN.

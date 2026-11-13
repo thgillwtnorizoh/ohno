@@ -475,10 +475,14 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
 public sealed record LegacyScoreMultiplier(LegacyScoreMetadata Metadata, float DensityTerm, float BeforeRounding, int K);
 
 // R09 preserves parser provenance for E035; this is not inferred from judgements.
-public sealed record HealthObjectSource(int Start, int RawType);
+public sealed record HealthObjectSource(int Start, int RawType)
+{
+    public OriginalRegisteredType? RegisteredType { get; init; }
+}
 public sealed record HealthBreak(int Start, int End);
 public sealed record HealthMapSource(int Version, IReadOnlyList<HealthObjectSource> Rows, IReadOnlyList<HealthBreak> Breaks)
 {
+    public bool OriginalFactoryPriority { get; init; }
     // ENGINEERING ownership proof for the exact fresh parsed map. A record clone
     // must not silently inherit a claim of fresh original registration identity.
     private WeakReference<Beatmap>? freshOwner;
@@ -492,8 +496,15 @@ public enum OriginalRegisteredType { Null, Circle, Slider, SpinnerBase, Assignab
 public enum NewComboOrigin { FreshOrdinaryText, RetainedManager, CloneOrEditor, AlternateFactory, Unknown }
 public readonly record struct NewComboContext(NewComboOrigin Origin, OriginalRegisteredType InitialLast, bool SharedTimeDomain)
 {
+    public bool OriginalFactoryPriority { get; init; }
     // Current parser's explicit zero-shift domain for both objects and breaks.
     public static NewComboContext FreshZeroShift => new(NewComboOrigin.FreshOrdinaryText, OriginalRegisteredType.Null, true);
+}
+public static class OriginalObjectClassification
+{
+    // M28f7 priority differs from M1bc1's exact masked-category summary switch.
+    public static OriginalRegisteredType Runtime(int raw) => (raw & 1) != 0 ? OriginalRegisteredType.Circle :
+        (raw & 2) != 0 ? OriginalRegisteredType.Slider : (raw & 8) != 0 ? OriginalRegisteredType.SpinnerBase : OriginalRegisteredType.Unknown;
 }
 public sealed record NewComboInput(object Identity, int Start, int RawType, OriginalRegisteredType RuntimeType);
 public sealed record PreparedNewCombo(int SourceIndex, object Identity, int Start, int RawType,
@@ -530,12 +541,12 @@ public static class NewComboPreparation
             if (i > 0 && row.Start <= registeredSource[i - 1].Start)
                 throw Unsupported("R10 requires strictly increasing source/registered starts; no sorting or equal-start inference.");
             int masked = row.RawType & -113;
-            OriginalRegisteredType expected = (masked & ~4) switch
+            OriginalRegisteredType expected = context.OriginalFactoryPriority ? OriginalObjectClassification.Runtime(row.RawType) : (masked & ~4) switch
             {
                 1 => OriginalRegisteredType.Circle, 2 => OriginalRegisteredType.Slider, 8 => OriginalRegisteredType.SpinnerBase,
                 _ => throw Unsupported("Unsupported ordinary registered type/factory.")
             };
-            if (row.RuntimeType != expected) throw Unsupported("Original runtime type is inconsistent/alternate, not an ordinary row category.");
+            if (expected == OriginalRegisteredType.Unknown || row.RuntimeType != expected) throw Unsupported("Original runtime type is inconsistent/alternate, not an ordinary row category.");
             bool fileBit = (masked & 4) > 0;
             bool? inferred = null, argument = null;
             bool constructor, parser;
@@ -744,24 +755,27 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             {
                 string[] row = line.Split(',');
                 if (row.Length < 5 || !int.TryParse(row[2], NumberStyles.Integer, CultureInfo.InvariantCulture, out int time) ||
-                    !int.TryParse(row[3], NumberStyles.Integer, CultureInfo.InvariantCulture, out int type) ||
-                    (type & ~(4 | 112)) is not (1 or 2 or 8))
+                    !int.TryParse(row[3], NumberStyles.Integer, CultureInfo.InvariantCulture, out int type))
                     throw new InvalidDataException($"Line {lineNumber + 1}: use supported circles, sliders or format-v14 spinners.");
-                healthRows.Add(new(time, type));
+                OriginalRegisteredType registered = extendedPaths ? OriginalObjectClassification.Runtime(type) : (type & ~(4 | 112)) switch
+                { 1 => OriginalRegisteredType.Circle, 2 => OriginalRegisteredType.Slider, 8 => OriginalRegisteredType.SpinnerBase, _ => OriginalRegisteredType.Unknown };
+                if (registered == OriginalRegisteredType.Unknown) throw new InvalidDataException("Unsupported object factory; hold/mode preparation remains unavailable.");
+                bool isSlider = registered == OriginalRegisteredType.Slider, isSpinner = registered == OriginalRegisteredType.SpinnerBase;
+                healthRows.Add(new(time, type) { RegisteredType = extendedPaths ? registered : null });
                 // QA01-D02: validate syntax only; no invented sound-bit restrictions.
                 if (!int.TryParse(row[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out int hitSound))
                     throw new InvalidDataException($"Line {lineNumber + 1}: hitSound (column 5) must be an integer, not empty or malformed.");
-                bool isBezier = (type & 2) != 0 && row.Length >= 6 && row[5].StartsWith("B|", StringComparison.Ordinal);
-                float x = isBezier ? (float)(int)Math.Clamp(DoubleNumber(row[0], "head X"), 0, 512) : Number(row[0], "circle X");
-                float y = isBezier ? (float)(int)Math.Clamp(DoubleNumber(row[1], "head Y"), 0, 512) : Number(row[1], "circle Y");
+                bool isBezier = isSlider && row.Length >= 6 && row[5].StartsWith("B|", StringComparison.Ordinal);
+                float x = isBezier || extendedPaths ? (float)(int)Math.Clamp(DoubleNumber(row[0], "head X"), 0, 512) : Number(row[0], "circle X");
+                float y = isBezier || extendedPaths ? (float)(int)Math.Clamp(DoubleNumber(row[1], "head Y"), 0, 512) : Number(row[1], "circle Y");
                 if (time < 0 || time > 3_600_000)
                     throw new InvalidDataException("R02 requires object times between 0 and 3600000 ms.");
                 // E04 parser bounds both axes to 512, then truncates. No mods/offsets.
                 var head = new CircleDefinition(new((int)Math.Clamp(x, 0, 512), (int)Math.Clamp(y, 0, 512)), time);
-                int sampleColumn = (type & 8) != 0 ? 6 : (type & 2) != 0 ? 10 : 5;
+                int sampleColumn = isSpinner ? 6 : isSlider ? 10 : 5;
                 var sample = CircleSampleMetadata.Parse(head, hitSound, row.Length > sampleColumn ? row[sampleColumn] : null);
-                sampleOperands.Add(new((type & (2 | 8)) == 0 ? head : null, sample.Index, sample.Filename, sample.Error));
-                if ((type & 8) != 0)
+                sampleOperands.Add(new(!isSlider && !isSpinner ? head : null, sample.Index, sample.Filename, sample.Error));
+                if (isSpinner)
                 {
                     if (version != 14) throw new InvalidDataException("R07 supports only modern-policy, format-v14 spinners.");
                     if (row.Length < 6 || !int.TryParse(row[5], NumberStyles.Integer, CultureInfo.InvariantCulture, out int end) ||
@@ -773,7 +787,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     spinnerSamples.Add(new(spinner, healthRows.Count - 1, payload));
                     sampleOperands[^1] = sampleOperands[^1] with { Spinner = spinner };
                 }
-                else if ((type & 2) == 0)
+                else if (!isSlider)
                 {
                     circles.Add(head);
                     circleSamples.Add(sample);
@@ -913,7 +927,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { Document = document, MetadataSettings = settings, AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
                 Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(document, extendedPaths),
-                HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
+                HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()) { OriginalFactoryPriority = extendedPaths },
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
                     { RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };

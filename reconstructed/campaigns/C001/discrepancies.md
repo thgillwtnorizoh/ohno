@@ -11,7 +11,7 @@
 | D015 | CORRECTED IN SOURCE; gate pending | C001 exact-byte fixture hashes changed under Windows autocrlf checkout. Path-scoped corpus/*.osu -text preserves manifest bytes; no input or expectation changed. |
 | D014 | CORRECTED IN SOURCE; gate pending | Initial Windows QA04 F01 expects historical Load to reject v13 Bezier. Preserve that compatibility API; canonical application/catalog entry uses LoadCanonical sharing the same core. Initial failed gate retained. |
 | D007 | CORRECTED IN SOURCE; gate pending | E006 L16: Linear control coordinates previously parsed Single without Int32 truncation. Now common Double→Int32→Single path; regression controls retain prior expectations. |
-| D008 | OPEN — engineering precision limit | Linear head still parses Single before clamp/truncate; Bezier uses Double. Extreme fractional head rounding needs common original-derived normalization and focused controls. |
+| D008 | CORRECTED IN CANONICAL SOURCE; gate pending | Canonical head now parses Double→clamp→Int32→Single for all supported categories. Historical loader retains its compatibility conversion. Fractional-rounding control added. |
 | D009 | OPEN — encoding/recovery research | BOM-aware UTF8/UTF16 retention is engineering; original encoding fallback and malformed-byte recovery not established. |
 | D010 | PARTIAL — original stage projections added | Work 1 established failed Enum section conversion retains previous section. Canonical runtime/metadata use this; normalized raw/catalog compatibility view remains explicit. Full header/error behavior open. |
 | D011 | OPEN — verification | Work 1 independent C001 production suite not yet published at baseline. Work 2 checks must not be relabeled independent QA. |
@@ -23,3 +23,6 @@ break historical gates require explained disposition and owner acceptance; never
 weaken old expectations silently.
 
 | D016 | CORRECTED IN SOURCE; gate pending | Second gate passed126/126 C001 but two historical source-only audits require literal Beatmap.Load(path). Application now uses that actual call with explicit CanonicalBeatmapPath overload, carrying profile/cancellation; no audit/test changed. |
+
+| D017 | OPEN — original refresh recovery versus engineering index | Metadata-stage comments can terminate original refresh through its catch boundary. Catalog preserves comment-tolerant indexing, explicitly ENGINEERING; complete partial metadata recovery still needs implementation/verification. |
+| D018 | CORRECTED IN SOURCE; gate pending | f6f1203 exposed hold category as playable and comment rows invalidated fresh catalog revisions; restore separate runtime admission and engineering comment policy. Preserve compatibility LoadGameplay; expose canonical API explicitly. |
