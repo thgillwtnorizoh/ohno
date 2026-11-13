@@ -16,6 +16,7 @@ public sealed class SelectPlayView : Grid, IDisposable
     private readonly TextBlock status = new() { TextWrapping = TextWrapping.Wrap, Foreground = Brushes.LightSteelBlue, FontSize = 13 };
     private readonly Button play;
     private bool binding, disposed;
+    public Func<CatalogChart,string>? CalculatedStars { get; set; }
     public event Action? RefreshRequested;
     public event Action? OpenRequested;
     public event Action? BackRequested;
@@ -64,7 +65,7 @@ public sealed class SelectPlayView : Grid, IDisposable
             songs.SelectedItem = run; difficulties.ItemsSource = run?.Rows.Select(r => r.Chart).ToArray(); difficulties.SelectedItem = model.Highlighted;
             var chart = model.Highlighted;
             detail.Text = chart is null ? "No highlighted difficulty. Configure BeatmapDirectory or open a local .osu file.\n" + model.Recovery :
-                (chart.Metadata?.Details ?? chart.Filename) + "\n\n" + StarDisplay.Prepare(chart, chart.Metadata?.Ruleset ?? 0, 0).Text + "\n\n" +
+                (chart.Metadata?.Details ?? chart.Filename) + "\n\n" + (CalculatedStars?.Invoke(chart) ?? StarDisplay.Prepare(chart, chart.Metadata?.Ruleset ?? 0, 0).Text) + "\n\n" +
                 (chart.Available ? chart.GameplayValidated ? "Gameplay parser validated this revision." : "Metadata indexed; full gameplay validation occurs on load." : chart.GameplayError ?? chart.Error) + "\n\n" + chart.Path;
             state.Text = "Highlight: " + (chart?.Metadata?.Version ?? chart?.Filename ?? "none") + "  |  Committed: " + (model.Committed?.Filename ?? "none") + "  |  Selected: " + (model.Selection.Current?.Filename ?? "none") +
                 (model.Recovery is null ? "" : "\n" + model.Recovery) + (model.SelectionError is null ? "" : "\n" + model.SelectionError);

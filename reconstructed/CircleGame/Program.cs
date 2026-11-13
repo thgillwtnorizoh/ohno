@@ -8,6 +8,7 @@ using Ohno.CircleGame.Gameplay;
 using Ohno.CircleGame.Platform;
 using Ohno.CircleGame.Rendering;
 using Ohno.CircleGame.Selection;
+using Ohno.CircleGame.Difficulty;
 
 namespace Ohno.CircleGame;
 
@@ -30,6 +31,8 @@ public sealed class GameWindow : Window
     private readonly SelectPlayModel browser;
     private readonly SelectPlayView browserView;
     private readonly PlayEntryFlow entry;
+    private readonly CalculatedStarCache starCache = new();
+    private readonly SelectPlayStarController stars;
     private readonly SelectionSettings selectionSettings;
     private readonly TextBlock home = new() { Text = "LOCAL PRACTICE HOME\nOpen SelectPlay, a fixture, or an .osu chart using the controls above.", Foreground = Brushes.White, FontSize = 24, TextWrapping = TextWrapping.Wrap, Margin = new(30), Background = Brushes.Black, Visibility = Visibility.Collapsed };
     private bool selectionVisible = true, homeVisible;
@@ -59,12 +62,20 @@ public sealed class GameWindow : Window
 
     public GameWindow(string? mapPath)
     {
-        Title = "ohno · R16 Local SelectPlay";
+        Title = "ohno · R17 Restricted Circle Stars";
         try { selectionSettings = SelectionSettings.Read(SelectionSettings.ConfigurationPath()); }
         catch (Exception e) { selectionSettings = new(); selectionConfigurationError = "Selection configuration unavailable: " + e.Message; }
         try { catalog = new([selectionSettings.SongsRoot(AppContext.BaseDirectory), Path.Combine(AppContext.BaseDirectory, "Fixtures")], selectionSettings.PreferUnicode); }
         catch (Exception e) { catalog = new([Path.Combine(AppContext.BaseDirectory, "Fixtures")]); selectionConfigurationError = "Songs root unavailable: " + e.Message; }
         browser = new(selectedChart); browserView = new(browser); entry = new(selectedChart);
+        stars = new(starCache);
+        browserView.CalculatedStars = chart => stars.StateFor(chart).Text;
+        browser.Changed += () => { if (selectionVisible) stars.Highlight(browser.Highlighted, browser.CatalogGeneration); };
+        stars.Changed += () =>
+        {
+            if (closing || Dispatcher.HasShutdownStarted) return;
+            Dispatcher.BeginInvoke(new Action(() => { if (!closing && selectionVisible) browserView.Bind(); }));
+        };
         browser.StartRequested += StartSelected;
         browserView.RefreshRequested += () => _ = RefreshCatalogAsync();
         browserView.OpenRequested += OpenMap;
@@ -142,6 +153,7 @@ public sealed class GameWindow : Window
         {
             closing = true;
             entry.Dispose(); catalog.Dispose(); browserView.Dispose();
+            stars.Dispose(); starCache.Dispose();
             loadCancellation?.Cancel();
             pendingAudio?.Dispose(); // Synchronous release, even if an await cannot resume at shutdown.
             pendingEffects?.Dispose();
@@ -168,6 +180,7 @@ public sealed class GameWindow : Window
     {
         if (closing) return;
         entry.Cancel(); loadCancellation?.Cancel();
+        stars.Invalidate();
         catalogStatus = "Indexing local .osu metadata…"; UpdateHud();
         try
         {
@@ -184,6 +197,7 @@ public sealed class GameWindow : Window
         if (closing || entry.Request(browser.SpecialTemporarySelection) != StartDecision.Accepted) { UpdateHud(); return; }
         entry.Accept(); entry.Queue();
         long queuedGeneration = entry.Generation;
+        stars.Invalidate();
         // ENGINEERING next dispatcher turn, not a measured1000ms original delay.
         Dispatcher.BeginInvoke(new Action(async () =>
         {

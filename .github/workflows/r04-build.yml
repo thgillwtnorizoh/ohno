@@ -23,6 +23,8 @@ on:
       - reconstructed/R15WindowsChecks/**
       - reconstructed/R16DevelopmentChecks/**
       - reconstructed/R16WindowsChecks/**
+      - reconstructed/R17DevelopmentChecks/**
+      - reconstructed/R17WindowsChecks/**
       - reconstructed/GenerateIndependentSpinnerSounds.ps1
       - reconstructed/R13WindowsChecks/**
       - reconstructed/GenerateIndependentSliderLoops.ps1
@@ -372,4 +374,18 @@ jobs:
         shell: pwsh
         run: |
           & ./re/qa/qa14/Run-QA14.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa14-results.json')
+          exit $LASTEXITCODE
+
+      - name: Check R17 restricted circle mathematics against independent E045 E046 data
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R17DevelopmentChecks/R17DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Check R17 unshown calculated-star browser and Rank boundaries
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/R17WindowsChecks/R17WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
