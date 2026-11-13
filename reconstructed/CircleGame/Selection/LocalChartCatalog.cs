@@ -53,6 +53,9 @@ public sealed record ChartMetadata(string Title, string? Artist, string? Creator
     float? Hp, float? Cs, float? Od, float? Ar, int Objects, int Circles, int Sliders, int Spinners,
     double? MinimumBpm, double? MaximumBpm, int? DurationMilliseconds, int? ChartId, int? SetId, string? AudioFilename)
 {
+    // Raw display scalars above retain the historical catalog contract. Prepared
+    // original-derived defaults/order/clamps are exposed separately, never conflated.
+    public OsuMetadataSettings? PreparedSettings { get; init; }
     public string Details => string.Join("\n", new[] { Title, Artist ?? "Artist unavailable", "Creator: " + (Creator ?? "unavailable"),
         "Difficulty: " + (Version ?? "unavailable"), $"Ruleset {Ruleset} · format{Format}",
         $"HP:{Scalar(Hp)} CS:{Scalar(Cs)} OD:{Scalar(Od)} AR:{Scalar(Ar)}",
@@ -174,7 +177,7 @@ public sealed class LocalChartCatalog : IDisposable
             var fields = new Dictionary<string, string>(StringComparer.Ordinal); var bpm = new List<double>();
             int objects = 0, circles = 0, sliders = 0, spinners = 0, end = 0; bool unsupportedObject = false;
             if (document.SourceLines.Count - 1 > 100000) throw new InvalidDataException("Index line limit exceeded.");
-            foreach (var entry in document.Entries)
+            foreach (var entry in document.ReadStage(OsuReadStage.MetadataRefresh, token))
             {
                 token.ThrowIfCancellationRequested();
                 string line = entry.Text, section = entry.Section;
@@ -186,16 +189,17 @@ public sealed class LocalChartCatalog : IDisposable
                 if (section != "[HitObjects]") continue;
                 if (cells.Length < 5 || !int.TryParse(cells[2], out int time) || !int.TryParse(cells[3], out int raw) || time < 0 || time > 3600000) throw new InvalidDataException("Malformed object metadata.");
                 objects++; end = Math.Max(end, time); int type = raw & 139;
-                if ((type & 8) != 0) { spinners++; if (cells.Length < 6 || !int.TryParse(cells[5], out int stop) || stop < time || stop > 3600000) throw new InvalidDataException("Malformed spinner end metadata."); end = Math.Max(end, stop); }
-                else if ((type & 2) != 0) sliders++;
-                else if ((type & 1) != 0) circles++;
+                if (type == 8) { spinners++; if (cells.Length < 6 || !int.TryParse(cells[5], out int stop) || stop < time || stop > 3600000) throw new InvalidDataException("Malformed spinner end metadata."); end = Math.Max(end, stop); }
+                else if (type is 2 or 128) sliders++;
+                else if (type == 1) circles++;
                 else unsupportedObject = true;
             }
+            var preparedSettings = OsuMetadataSettings.Prepare(document, token);
             string? Get(string key) => fields.GetValueOrDefault(key) is { Length: > 0 } value ? value : null;
             int Int(string key, int fallback) => int.TryParse(Get(key), NumberStyles.Integer, CultureInfo.InvariantCulture, out int n) ? n : fallback;
-            float? Scalar(string key) => float.TryParse(Get("[Difficulty]" + key), NumberStyles.Float, CultureInfo.InvariantCulture, out float f) && float.IsFinite(f) ? f : null;
+            float? Scalar(string key) => preparedSettings.Error is null ? key switch { "HPDrainRate" => preparedSettings.Hp, "CircleSize" => preparedSettings.Cs, "OverallDifficulty" => preparedSettings.Od, "ApproachRate" => preparedSettings.Ar, _ => null } : float.TryParse(Get("[Difficulty]" + key), NumberStyles.Float, CultureInfo.InvariantCulture, out float f) && float.IsFinite(f) ? f : null;
             string title = (preferUnicode ? Get("[Metadata]TitleUnicode") : null) ?? Get("[Metadata]Title") ?? System.IO.Path.GetFileNameWithoutExtension(path);
-            var metadata = new ChartMetadata(title, (preferUnicode ? Get("[Metadata]ArtistUnicode") : null) ?? Get("[Metadata]Artist"), Get("[Metadata]Creator"), Get("[Metadata]Version"), format, Int("[General]Mode", 0), Scalar("HPDrainRate"), Scalar("CircleSize"), Scalar("OverallDifficulty"), Scalar("ApproachRate"), objects, circles, sliders, spinners, bpm.Count == 0 ? null : bpm.Min(), bpm.Count == 0 ? null : bpm.Max(), sliders == 0 ? end : null, Int("[Metadata]BeatmapID", 0), Int("[Metadata]BeatmapSetID", 0), Get("[General]AudioFilename"));
+            var metadata = new ChartMetadata(title, (preferUnicode ? Get("[Metadata]ArtistUnicode") : null) ?? Get("[Metadata]Artist"), Get("[Metadata]Creator"), Get("[Metadata]Version"), format, preparedSettings.Error is null ? preparedSettings.Mode : Int("[General]Mode", 0), Scalar("HPDrainRate"), Scalar("CircleSize"), Scalar("OverallDifficulty"), Scalar("ApproachRate"), objects, circles, sliders, spinners, bpm.Count == 0 ? null : bpm.Min(), bpm.Count == 0 ? null : bpm.Max(), sliders == 0 ? end : null, Int("[Metadata]BeatmapID", 0), Int("[Metadata]BeatmapSetID", 0), Get("[General]AudioFilename")) { PreparedSettings = preparedSettings };
             string? limitation = format is < 5 or > 14 ? "Gameplay format unsupported." : metadata.Ruleset != 0 ? "Only ordinary ruleset0 supported." : unsupportedObject || spinners > 0 && format != 14 ? "Unsupported gameplay object/format." : objects == 0 ? "No indexed objects." : null;
             return new(path, fingerprint, metadata, limitation is null ? ChartAvailability.Indexed : ChartAvailability.Unsupported, limitation);
         }

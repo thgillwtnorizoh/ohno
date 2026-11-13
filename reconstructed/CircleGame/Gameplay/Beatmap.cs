@@ -8,6 +8,10 @@ namespace Ohno.CircleGame.Gameplay;
 // every retained section/field is interpreted by the pinned original executable.
 // Kept in this shared file because historical QA links Beatmap.cs directly.
 public sealed record OsuEntry(int LineNumber, string Section, string Text, string? Key, string? Value);
+public enum OsuReadStage { MetadataRefresh, RuntimeObjects }
+[Flags]
+public enum OsuFileSection { Unknown = 0, General = 1, Colours = 2, Editor = 4, Metadata = 8,
+    TimingPoints = 16, Events = 32, HitObjects = 64, Difficulty = 128, Variables = 256, All = 511 }
 public sealed class OsuDocument
 {
     private readonly byte[]? sourceBytes;
@@ -67,6 +71,88 @@ public sealed class OsuDocument
     }
     // Duplicate keys and registration order remain visible through Entries.
     public IEnumerable<OsuEntry> Section(string name) => Entries.Where(e => e.Section == name);
+
+    // C001 Work 1 checkpoint01: M1bc1 and M28f7 are distinct readers. Raw
+    // SourceLines remain authoritative; normalized Entries are an engineering view.
+    public IEnumerable<OsuEntry> ReadStage(OsuReadStage stage, CancellationToken token = default)
+    {
+        OsuFileSection section = OsuFileSection.Unknown;
+        for (int i = 0; i < SourceLines.Count; i++)
+        {
+            token.ThrowIfCancellationRequested(); string raw = SourceLines[i];
+            if (stage == OsuReadStage.RuntimeObjects && (raw.Length == 0 || raw[0] is ' ' or '_' || raw.StartsWith("//", StringComparison.Ordinal))) continue;
+            string line = raw.Trim();
+            if (line.Length == 0) continue;
+            int colon = line.IndexOf(':');
+            string sectionOperand = stage == OsuReadStage.MetadataRefresh && section != OsuFileSection.HitObjects && colon >= 0 ? line[..colon] :
+                stage == OsuReadStage.RuntimeObjects ? raw : line;
+            if (sectionOperand.StartsWith('['))
+            {
+                try { section = Enum.Parse<OsuFileSection>(sectionOperand.Trim('[', ']'), ignoreCase: false); }
+                catch (Exception e) when (e is ArgumentException or OverflowException) { /* Original retains previous section. */ }
+                continue;
+            }
+            string? value = colon < 0 ? null : line[(colon + 1)..];
+            if (stage == OsuReadStage.RuntimeObjects && value is not null)
+            {
+                int next = value.IndexOf(':'); if (next >= 0) value = value[..next];
+            }
+            yield return new(i + 1, "[" + section + "]", line,
+                colon < 0 ? null : line[..colon].Trim(), value?.Trim());
+        }
+    }
+}
+
+// Fresh M1387/M1bc1 state only. Invariant finite parsing is an explicit engineering
+// profile until Work 1 closes F2c2b/native CLR behavior; errors preserve prior writes.
+public sealed record OsuMetadataSettings(int Mode, float Hp, float Cs, float Od, float Ar,
+    bool ExplicitAr, float StackLeniency, double SliderMultiplier, double SliderTickRate,
+    int? ErrorLine, string? Error)
+{
+    public static OsuMetadataSettings Prepare(OsuDocument document, CancellationToken token = default)
+    {
+        int mode = 0; float hp = 5, cs = 5, od = 5, ar = 5, stack = .7f;
+        bool explicitAr = false; double multiplier = 1.4, tickRate = 1;
+        foreach (var entry in document.ReadStage(OsuReadStage.MetadataRefresh, token))
+        {
+            if (entry.Key is null || entry.Value is null) continue;
+            try
+            {
+                if (entry.Section == "[General]")
+                {
+                    if (entry.Key == "Mode") { int value = int.Parse(entry.Value, NumberStyles.Integer, CultureInfo.InvariantCulture); mode = value is >= 0 and <= 3 ? value : 0; }
+                    else if (entry.Key == "StackLeniency") stack = Math.Clamp(Single(entry.Value), 0, 1);
+                }
+                else if (entry.Section == "[Difficulty]")
+                {
+                    switch (entry.Key)
+                    {
+                        case "HPDrainRate": hp = Difficulty(entry.Value, 0, 10); break;
+                        case "CircleSize": cs = Difficulty(entry.Value, document.FormatVersion >= 13 && mode == 3 ? 1 : 0, document.FormatVersion >= 13 && mode == 3 ? 18 : 10); break;
+                        case "OverallDifficulty": od = Difficulty(entry.Value, 0, 10); if (!explicitAr) ar = od; break;
+                        case "ApproachRate": ar = Difficulty(entry.Value, 0, 10); explicitAr = true; break;
+                        case "SliderMultiplier": multiplier = Math.Clamp(Double(entry.Value), .4, 3.6); break;
+                        case "SliderTickRate": tickRate = Math.Clamp(Double(entry.Value), .5, 8); break;
+                    }
+                }
+            }
+            catch (Exception e) when (e is FormatException or OverflowException or InvalidDataException)
+            { return new(mode, hp, cs, od, ar, explicitAr, stack, multiplier, tickRate, entry.LineNumber, e.Message); }
+        }
+        return new(mode, hp, cs, od, ar, explicitAr, stack, multiplier, tickRate, null, null);
+        float Difficulty(string value, float min, float max) => Math.Clamp(document.FormatVersion < 13 ?
+            byte.Parse(value, NumberStyles.Integer, CultureInfo.InvariantCulture) : Single(value), min, max);
+        static float Single(string value)
+        {
+            float v = float.Parse(value, NumberStyles.Float, CultureInfo.InvariantCulture);
+            return float.IsFinite(v) ? v : throw new InvalidDataException("Nonfinite metadata is outside the finite C001 profile.");
+        }
+        static double Double(string value)
+        {
+            double v = double.Parse(value, NumberStyles.Float, CultureInfo.InvariantCulture);
+            return double.IsFinite(v) ? v : throw new InvalidDataException("Nonfinite metadata is outside the finite C001 profile.");
+        }
+    }
 }
 
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
@@ -299,8 +385,8 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
     // Malformed metadata rejects explicitly instead of fabricating an original result.
     public static LegacyScoreMetadata ReadFresh(IEnumerable<string> lines, int version)
         => ReadFreshEntries(LegacyEntries(lines), version);
-    public static LegacyScoreMetadata ReadFresh(OsuDocument document)
-        => ReadFreshEntries(document.Entries, document.FormatVersion);
+    public static LegacyScoreMetadata ReadFresh(OsuDocument document, bool originalStages = false)
+        => ReadFreshEntries(originalStages ? document.ReadStage(OsuReadStage.MetadataRefresh) : document.Entries, document.FormatVersion);
     // Compatibility adapter for independent callers supplying headerless lines.
     // Production loading uses the already-tokenized canonical document instead.
     private static IEnumerable<OsuEntry> LegacyEntries(IEnumerable<string> lines)
@@ -586,11 +672,19 @@ public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<
 }
 
 public sealed record MapDisplayMetadata(string? Difficulty, string? Artist);
+// Explicit application request selects C001 interpretation and carries cancellation.
+// String callers retain the historical compatibility admission profile.
+public readonly record struct CanonicalBeatmapPath(string Value, CancellationToken Token)
+{
+    public static implicit operator string(CanonicalBeatmapPath path) => path.Value;
+    public override string ToString() => Value;
+}
 
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
     public OsuDocument? Document { get; init; }
+    public OsuMetadataSettings? MetadataSettings { get; init; }
     public LegacyScoreMetadata? ScoreMetadata { get; init; }
     public MapDisplayMetadata? DisplayMetadata { get; init; }
     public HealthMapSource? HealthSource { get; init; }
@@ -609,6 +703,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     // only the historical Bezier admission guard differs.
     public static Beatmap LoadCanonical(string path, CancellationToken token = default)
         => LoadCore(path, token, extendedPaths: true);
+    public static Beatmap Load(CanonicalBeatmapPath path) => LoadCanonical(path.Value, path.Token);
 
     private static Beatmap LoadCore(string path, CancellationToken token, bool extendedPaths)
     {
@@ -621,6 +716,13 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             throw new InvalidDataException("Use an osu file format v5–v14 supported circle/Linear-slider map.");
 
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
+        OsuMetadataSettings? settings = extendedPaths ? OsuMetadataSettings.Prepare(document, token) : null;
+        if (settings?.Error is { } metadataError)
+            throw new InvalidDataException($"Metadata line {settings.ErrorLine}: {metadataError}");
+        if (extendedPaths)
+            foreach (var entry in document.ReadStage(OsuReadStage.MetadataRefresh, token))
+                if (entry.Section is "[General]" or "[Metadata]" or "[Difficulty]" && entry.Key is not null && entry.Value is not null)
+                    fields[entry.Section + entry.Key] = entry.Value;
         var circles = new List<CircleDefinition>();
         var spinners = new List<SpinnerDefinition>();
         var sliderRows = new List<(CircleDefinition Head, Vector2[] Controls, bool Bezier, double Length, int Traversals, SliderSoundMetadata Samples)>();
@@ -633,7 +735,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var spinnerSamples = new List<SpinnerSampleMetadata>();
         string? sampleTimingError = null;
         int timingSourceOrder = 0;
-        foreach (var entry in document.Entries)
+        foreach (var entry in extendedPaths ? document.ReadStage(OsuReadStage.RuntimeObjects, token) : document.Entries)
         {
             token.ThrowIfCancellationRequested();
             int lineNumber = entry.LineNumber - 1;
@@ -740,13 +842,13 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 { sampleTimingError ??= "Hitsounds unavailable: " + e.Message; }
                 timingSourceOrder++;
             }
-            else if (section is "[General]" or "[Metadata]" or "[Difficulty]")
+            else if (!extendedPaths && section is "[General]" or "[Metadata]" or "[Difficulty]")
             {
                 int colon = line.IndexOf(':');
                 if (colon >= 0) fields[section + line[..colon].Trim()] = line[(colon + 1)..].Trim();
             }
         }
-        if (!fields.TryGetValue("[General]Mode", out string? mode) || mode != "0")
+        if (extendedPaths ? settings!.Mode != 0 : !fields.TryGetValue("[General]Mode", out string? mode) || mode != "0")
             throw new InvalidDataException("R02 requires explicit Mode: 0 (osu!standard).");
         if (circles.Count + sliderRows.Count + spinners.Count == 0) throw new InvalidDataException("No playable objects found.");
         circles.Sort((a, b) => a.StartTime.CompareTo(b.StartTime));
@@ -809,8 +911,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 throw new InvalidDataException("AudioFilename must stay within the beatmap folder.");
         }
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
-            Difficulty("ApproachRate"), circles.AsReadOnly()) { Document = document, AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
-                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(document),
+            Difficulty("ApproachRate"), circles.AsReadOnly()) { Document = document, MetadataSettings = settings, AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(document, extendedPaths),
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
@@ -820,6 +922,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
         double SliderSetting(string name, double lower, double upper)
         {
+            if (settings is not null) return name == "SliderMultiplier" ? settings.SliderMultiplier : settings.SliderTickRate;
             if (!fields.TryGetValue("[Difficulty]" + name, out string? raw))
                 throw new InvalidDataException($"Slider maps require explicit {name}.");
             return Math.Clamp(DoubleNumber(raw, name), lower, upper); // E05 parser bounds.
@@ -827,6 +930,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
         float Difficulty(string name)
         {
+            if (settings is not null) return name switch { "CircleSize" => settings.Cs, "OverallDifficulty" => settings.Od, "ApproachRate" => settings.Ar, _ => throw new InvalidDataException("Unknown prepared difficulty setting.") };
             if (!fields.TryGetValue("[Difficulty]" + name, out string? raw))
                 throw new InvalidDataException($"R02 requires explicit {name}.");
             float value = Number(raw, name);

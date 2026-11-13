@@ -30,3 +30,23 @@ Next action: publish coherent checkpoint with expected-head guard, inspect compl
 Windows job results, correct failures preserving evidence; consume Work 1 findings
 as published. Do not stop at this checkpoint if supported work remains. Complete
 campaign acceptance remains blocked by open original research and owner-only runtime.
+
+Checkpoint02 SOURCE READY: consumed Work 1ee83d5c, original metadata/runtime stage
+views, typed fresh settings/defaults/version/clamp/order behavior, canonical
+application integration, catalog prepared-settings sidecar and stage-sensitive
+score-vs-runtime counts. New exact-source Windows regression pending.
+
+Second gate80f7ac1/run43451497523/job131974535354: WPF0/0; C001126/126PASS;
+all retained steps except two source-only audits pass. QA09A05/QA14validation-install
+literal Beatmap.Load(path) anchors failed after rename. Actual typed canonical
+request overload restores the real call and retains cancellation/profile selection;
+no old expectation changed. Failed gate summary/hash retained. Portable publish
+skipped because overall gate failed. No owner qualification.
+
+Integrated Work 1 independent audit584e3d41c047fe93964fa313d4519c2d089fd668:
+49-file corpus,106 declared fields,44 gaps at prior production. Next exact Windows
+workflow also records this independent suite in explicit --audit mode; it must not
+be called a conformance pass while any gap remains. Canonical catalog now uses
+metadata-stage state, original finite settings/defaults/mode fallback and exact
+masked category counts. Nonfinite raw scalar null display policy remains explicit;
+combined runtime priority, P/C and all remaining gates remain open.

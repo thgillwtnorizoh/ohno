@@ -14,7 +14,8 @@ contract, not a claim that every retained property has original semantics. Raw m
 identity remains in General entries; a fully typed raw model is still pending.
 
 Gameplay, catalog and strict R17 admission use the shared syntax. The application
-and catalog now call Beatmap.LoadCanonical; Beatmap.Load preserves the historical
+uses Beatmap.Load(CanonicalBeatmapPath), carrying the selected canonical profile and
+cancellation; catalog calls LoadCanonical. String Beatmap.Load preserves historical
 v14-only Bezier admission boundary as a compatibility wrapper over the same core. Gameplay attaches
 the source document to its prepared Beatmap and passes it directly to fresh score
 metadata preparation. The headerless ReadFresh(lines,version) compatibility API
@@ -64,3 +65,30 @@ new Work 1 findings, use expected-head non-force publication. Work 2 does not ed
 historical research/QA. Work 1 can add research and independent verification under
 re/ and reference these contracts continuously. Checkpoint completion does not close
 C001; original-supported inventory itself still needs Work 1 closure.
+
+## Work 1 checkpoint01 integration
+
+Authority: re/campaigns/C001/original-behavior/01-parser-boundaries.md at
+ ee83d5cb3960f327aa30be056b8e5970eee736eb;277 static assertions checked locally.
+OsuDocument.ReadStage separates metadata-refresh and runtime-object projections.
+Both use original case-sensitive CLR FileSection parsing, including Variables and
+numeric enum values, retaining prior section on failed conversion. Runtime filters
+raw SPACE/underscore/comment prefixes before trimming; metadata preserves the full
+first-colon remainder while runtime key values use only the second colon cell.
+Normalized Entries remain an explicitly separate engineering/raw inspection view.
+
+OsuMetadataSettings models fresh defaults, finite version13 Byte/Single parsing,
+source-order OD→AR inheritance until explicit AR, mode-at-CS parse-time bounds,
+StackLeniency and slider clamps. A bad supported scalar records partial prior writes
+and stops this projection. Canonical gameplay rejects incomplete metadata rather
+than claiming complete original partial-recovery behavior. It consumes prepared
+CS/OD/AR and slider settings; catalog exposes PreparedSettings alongside display fields, using finite prepared
+defaults/clamps and stage-aware metadata. Invalid-scalar nullable display behavior
+remains an explicit engineering compatibility policy. Original metadata category
+counts use exact masked values; runtime priority combinations remain open. Score metadata uses the metadata stage;
+object registration uses the runtime stage, so counts can legitimately differ.
+
+Still unresolved: original header recognition/default-version recovery, complete
+field dispatch/error side effects, F2c2b culture identity/native CLR exceptional
+parsing, resource/event semantics, general stacks, P/C and alternate factories.
+This finite implementation must not be described as full parser equivalence.

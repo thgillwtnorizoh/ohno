@@ -258,7 +258,7 @@ public sealed class GameWindow : Window
         if (!closing) UpdateHud();
     }
 
-    private async Task LoadMapAsync(string path, CatalogChart? captured = null, long ticket = -1)
+    private async Task LoadMapAsync(string sourcePath, CatalogChart? captured = null, long ticket = -1)
     {
         if (closing) return;
         if (captured is null) entry.Cancel();
@@ -266,6 +266,7 @@ public sealed class GameWindow : Window
         pendingAudio?.Dispose();
         pendingEffects?.Dispose();
         var request = new CancellationTokenSource();
+        var path = new CanonicalBeatmapPath(sourcePath, request.Token);
         loadCancellation = request;
         BeatmapAudio? candidateAudio = null;
         WindowsCircleEffects? candidateEffects = null;
@@ -277,7 +278,7 @@ public sealed class GameWindow : Window
         try
         {
             captured?.Verify(request.Token);
-            Beatmap map = Beatmap.LoadCanonical(path); // Parse before replacing any active state.
+            Beatmap map = Beatmap.Load(path); // Typed canonical request; parse before replacing active state.
             ScoreConfiguration scoring = ScoreConfiguration.FromBeatmap(map); // No fallback preset on error.
             candidateAudio = new BeatmapAudio(map.AudioPath);
             pendingAudio = candidateAudio;

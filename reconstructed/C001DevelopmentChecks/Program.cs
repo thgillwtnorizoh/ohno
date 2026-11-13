@@ -103,6 +103,44 @@ internal static class Program
                 }
                 else Reject<InvalidDataException>(() => Beatmap.LoadCanonical(fixturePath), "raw retained but unsupported gameplay " + Path.GetFileName(fixturePath));
             }
+            string stageText = "osu file format v14\n[Metadata]\nTitle:first:second\n[FutureSection]\nTitle:retained\n[Variables]\n$test:replacement\n[General]\nAudioFilename:a:b:c\n[HitObjects]\n 64,64,1000,1,0\n_ignored\n64,64,2000,1,0\n";
+            var stages = OsuDocument.Parse(stageText);
+            var metadataStage = stages.ReadStage(OsuReadStage.MetadataRefresh).ToArray();
+            var runtimeStage = stages.ReadStage(OsuReadStage.RuntimeObjects).ToArray();
+            Check(metadataStage.First(e => e.Key == "Title").Value == "first:second" && metadataStage.Last(e => e.Key == "Title").Section == "[Metadata]", "metadata first-colon value and unknown-section retention");
+            Check(runtimeStage.First(e => e.Key == "Title").Value == "first" && runtimeStage.Single(e => e.Key == "AudioFilename").Value == "a", "runtime key projection keeps only first two colon cells");
+            Check(metadataStage.Count(e => e.Section == "[HitObjects]") == 3 && runtimeStage.Count(e => e.Section == "[HitObjects]") == 1, "runtime raw SPACE and underscore prefix filtering differs from metadata");
+            Check(metadataStage.Single(e => e.Key == "$test").Section == "[Variables]", "Variables section retained and recognized");
+            var numericSections = OsuDocument.Parse("osu file format v14\n[1]\nMode:0\n[UnknownSection]\nMode:1\n").ReadStage(OsuReadStage.MetadataRefresh).ToArray();
+            Check(numericSections.All(e => e.Key is null || e.Section == "[General]"), "CLR numeric enum names and unknown-section state");
+            var fresh = OsuMetadataSettings.Prepare(OsuDocument.Parse("osu file format v14"));
+            Check(fresh.Mode == 0 && fresh.Hp == 5 && fresh.Cs == 5 && fresh.Od == 5 && fresh.Ar == 5 && fresh.SliderMultiplier == 1.4 && fresh.SliderTickRate == 1 && fresh.StackLeniency == .7f, "M1387 and M1bc1 fresh defaults");
+            foreach (int version in new[] { 12,13,14 })
+            {
+                var order = OsuMetadataSettings.Prepare(OsuDocument.Parse($"osu file format v{version}\n[Difficulty]\nOverallDifficulty:8\nApproachRate:3\nOverallDifficulty:9\n"));
+                Check(order.Od == 9 && order.Ar == 3 && order.ExplicitAr && order.Error is null, $"v{version} explicit AR prevents later OD inheritance");
+            }
+            var inherit = OsuMetadataSettings.Prepare(OsuDocument.Parse("osu file format v14\n[Difficulty]\nOverallDifficulty:7.5\n"));
+            Check(inherit.Od == 7.5f && inherit.Ar == 7.5f && !inherit.ExplicitAr, "OD inherits to AR until explicit AR");
+            foreach (bool before in new[] { true,false })
+            {
+                string modeLines = before ? "[General]\nMode:3\n[Difficulty]\nCircleSize:20\n" : "[Difficulty]\nCircleSize:20\n[General]\nMode:3\n";
+                var modeSettings = OsuMetadataSettings.Prepare(OsuDocument.Parse("osu file format v14\n" + modeLines));
+                Check(modeSettings.Mode == 3 && modeSettings.Cs == (before ? 18 : 10), "mode at CS parse time " + before);
+            }
+            var partial = OsuMetadataSettings.Prepare(OsuDocument.Parse("osu file format v12\n[Difficulty]\nHPDrainRate:7\nCircleSize:4.5\nOverallDifficulty:9\n"));
+            Check(partial.ErrorLine == 4 && partial.Hp == 7 && partial.Cs == 5 && partial.Od == 5, "pre-v13 Byte syntax error retains prior field writes and stops refresh");
+            var clamps = OsuMetadataSettings.Prepare(OsuDocument.Parse("osu file format v14\n[General]\nStackLeniency:2\n[Difficulty]\nCircleSize:-2\nHPDrainRate:12\nSliderMultiplier:9\nSliderTickRate:.1\n"));
+            Check(clamps.StackLeniency == 1 && clamps.Cs == 0 && clamps.Hp == 10 && clamps.SliderMultiplier == 3.6 && clamps.SliderTickRate == .5, "finite original metadata clamps");
+            File.WriteAllText(path,"osu file format v14\n[Difficulty]\nOverallDifficulty:7\n[HitObjects]\n64,64,1000,1,0\n");
+            var defaultsMap = Beatmap.Load(new CanonicalBeatmapPath(path, CancellationToken.None));
+            Check(defaultsMap.ApproachRate == 7 && defaultsMap.CircleSize == 5 && defaultsMap.MetadataSettings?.ExplicitAr == false, "canonical application request integrates default Mode CS and inherited AR");
+            Reject<InvalidDataException>(() => Beatmap.Load(path), "historical explicit-field admission remains separate");
+            Reject<OperationCanceledException>(() => Beatmap.Load(new CanonicalBeatmapPath(path, cancelled.Token)), "typed application request carries cancellation");
+            File.WriteAllText(path,Map(14,"64,64,1000,1,0\n 128,128,2000,1,0"));
+            var stageMap = Beatmap.LoadCanonical(path);
+            Check(stageMap.Circles.Count == 1 && stageMap.ScoreMetadata?.RowCount == 2, "metadata count and runtime registration remain distinct original stages");
+            Check(LocalChartCatalog.Index(path).Metadata?.PreparedSettings?.Ar == stageMap.ApproachRate, "catalog exposes prepared settings alongside raw display scalars");
             string resultPath = Path.Combine(repo, "reconstructed/campaigns/C001/development-results.json");
             File.WriteAllText(resultPath, JsonSerializer.Serialize(new { classification = "Work 2 production development checks; not independent QA or original runtime", groups = Results.Count, results = Results }, new JsonSerializerOptions { WriteIndented = true }));
             Console.WriteLine($"C001 DEVELOPMENT: {Results.Count}/{Results.Count} PASS"); return 0;

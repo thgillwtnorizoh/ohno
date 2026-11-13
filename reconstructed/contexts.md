@@ -1376,3 +1376,38 @@ colon handling), typed/order-sensitive difficulty defaults and Variables support
 These are next C001 work, not equivalent to current engineering normalized Entries.
 Raw SourceLines and defensive bytes preserve the information required to implement
 them. Preserve Work 1 journal and evidence unchanged; no concurrent overwrite.
+
+C001 checkpoint02 — Work 1 boundary/default integration. Consumedee83d5c report and
+277static assertions. OsuDocument.ReadStage uses original FileSection enum/CLR parse,
+retains previous state on failed section conversion, includes Variables; runtime
+raw SPACE/underscore/comment filtering precedes trim, with distinct colon value
+projection. MetadataSettings models fresh defaults, version13 Byte/Single split,
+mode at CS parse time, OD→AR until explicit AR, slider/stack clamps, finite error
+state with prior writes retained. Invariant finite parse/partial-load rejection
+remain explicit engineering restrictions; header/no-version and full key/recovery
+semantics remain open. Canonical gameplay consumes this prepared settings state,
+metadata source for score, runtime source for object registration; catalog exposes
+prepared settings alongside historical nullable raw display scalars. Added actual
+production controls for each stage/default/order/error/integration boundary.
+
+Second Windows gate source80f7ac1a2ead36f88887c33b7e60ae7feccdfbe3,
+run43451497523/job131974535354: Release0warnings/0errors, new C001126/126PASS,
+QA04 restored43/43. Two historical SOURCE ONLY audits failed on literal application
+call rename: QA09A05 and QA14validation-install-order. No behavioral failure or
+weakened historical expectation. Correct using explicit CanonicalBeatmapPath request
+(profile and cancellation), actual Beatmap.Load(path) overload delegates canonical;
+string loader remains historical compatibility. Reproducible ordinary log retained
+compressed, repeated old QA packets hashed; raw2425303bytes SHA256
+dfef64f578cbd9ec6f3706243a98e44005ec4d8730df3b16596aec807e7e93da.
+Publish was skipped due failed gate; corrected full gate pending. No runtime claims.
+
+Before checkpoint02 publication, fetched/fast-forward integrated Work 1 independent
+audit584e3d41c047fe93964fa313d4519c2d089fd668 without overwriting its files. Read
+02-production-audit and independent49-file/106-field corpus. Catalog now consumes
+metadata stage with prepared finite settings/default/clamp/mode-at-parse state;
+undefined mode maps0 per recoveredM1bbb; exact masked category counts preserve
+metadata-vs-runtime distinction. Existing invalid-scalar nullable catalog display
+remains explicit engineering compatibility. Workflow records independent suite in
+clearly labeled --audit mode; gaps are diagnostic, never a conformance pass. Combined
+runtime flag construction and other original semantics remain open. No historical
+QA source/expectation changed; no owner exception requested or presumed.

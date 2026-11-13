@@ -418,6 +418,13 @@ jobs:
           Copy-Item reconstructed/campaigns/C001/corpus-manifest.json "${{ runner.temp }}/ohno-c001-windows/"
           Copy-Item reconstructed/campaigns/C001/human-qualification.md "${{ runner.temp }}/ohno-c001-windows/"
 
+      - name: Record independent C001 original-contract diagnostic audit
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/campaigns/C001/verification/Headless/C001.Headless.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-independent-audit.json" --audit
+          exit $LASTEXITCODE
+
       - name: Preserve C001 development evidence and Windows application
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -426,4 +433,5 @@ jobs:
           path: |
             ${{ runner.temp }}/ohno-c001-windows/
             reconstructed/campaigns/C001/development-results.json
+            ${{ runner.temp }}/c001-independent-audit.json
           if-no-files-found: warn

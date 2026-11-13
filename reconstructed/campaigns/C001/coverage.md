@@ -6,17 +6,17 @@ Inventory disposition: preliminary complete domain categories, original branch-b
 |---|---|---|---|
 | A Recognition/syntax: Header/version recognition | E004/E034 | shared version stored; gameplay5–14/star14 admission | full original version domain open |
 | A Recognition/syntax: Encoding/BOM/line endings | R16 engineering | shared BOM-aware reader; source lines retained | original encoding/error fallback open |
-| A Recognition/syntax: Whitespace/comments/sections | historical loaders | one lexer for production consumers | original malformed delimiters open |
+| A Recognition/syntax: Whitespace/comments/sections | historical loaders | one lexer for production consumers | stage-specific filtering/Enum section state implemented; complete error closure open |
 | A Recognition/syntax: Key syntax/duplicates/unknown sections | E004/E043 partial | all ordered entries retained; projection duplicate policies explicit | complete original key inventory open |
 | A Recognition/syntax: Numeric/culture/overflow/recovery | E005/006/034 partial | existing finite invariant projections retained | full malformed/partial loading open |
-| B Sections/fields: General | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: Editor | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: Metadata | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: Difficulty | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: Events | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: TimingPoints | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: Colours | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
-| B Sections/fields: HitObjects | E004/E043 partial | all raw entries retained | typed recognized fields/defaults/version branches open |
+| B Sections/fields: General | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: Editor | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: Metadata | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: Difficulty | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: Events | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: TimingPoints | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: Colours | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
+| B Sections/fields: HitObjects | E004/E043 partial | all raw entries retained | fresh difficulty settings typed and integrated; remaining recognized fields/defaults open |
 | C Timing/inheritance: Base/inherited normalization | E005/E016/E037–041 | existing bounded timing/sample preparation retained | general branch/default/error closure open |
 | C Timing/inheritance: List order and same timestamp | E005/E016/E037–041 | existing bounded timing/sample preparation retained | general branch/default/error closure open |
 | C Timing/inheritance: Truncated query versus raw timestamp | E005/E016/E037–041 | existing bounded timing/sample preparation retained | general branch/default/error closure open |
