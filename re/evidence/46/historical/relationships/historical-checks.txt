@@ -1,0 +1,16 @@
+E004 check_beatmap_init.py 04/initialization.json
+PASS: pinned input, 66 methods, selected-map flow, callback wiring, factory slots, object constructors, registration and initial fields
+E005 check_slider_timing.py 05/slider-timing.json
+PASS: 57 methods, ruleset correction, virtual slots, timing/length/arithmetic sites, versions, separate writer; 19 E04 body hashes agree
+E006 check_linear_geometry.py 06/linear-geometry.json
+PASS: 43 methods, Linear switch/pairs, coordinate conversions, tail guards, storage, duration and external consumer; 19 E05 hashes agree; full field scan 19659 bodies
+E023 check_aggregate_policy.py 23/aggregate-policy.json
+PASS: 47 original methods; exact four F198e stores, metadata, factory/source/restore/consumer gates; 44 historical body hashes; static only, E20 NOT RUN
+E032 check_bezier_geometry.py 32/bezier-geometry.json
+PASS E32: 22 method bodies, version/separator/sampler/flatness/subdivision/output/tail sites; 11 E06 body hashes agree; no game execution
+E033 check_score_accounting.py 33/score-accounting.json
+PASS E33: 31 selected methods, score/counter/accuracy/identity/reset/HUD sites; 41 historical hash matches; targeted direct xrefs, no game execution
+E034 check_chart_score_multiplier.py 34/chart-score-multiplier.json
+PASS E34:21 methods, six exact operand stores, parser/cache/setup/float/rounding sites; 22 historical hashes; no original runtime
+PASS E043 unchanged relationships 73 finite 19 archive bodies 277
+Pre-R16 reconstruction-source manifest not asserted against later R16; original-static functions unchanged.

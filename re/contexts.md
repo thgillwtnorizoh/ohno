@@ -1993,3 +1993,151 @@ Stars not calculated default remains untouched. Original x86/native/provider,
 scheduler and audible/visible behavior remain UNVERIFIED ORIGINAL-RUNTIME.
 Historical2175 QA not rerun; E02017 remain NOT RUN. Safe non-force canonical-main
 publication only; exact publication SHA is in the verified completion handoff.
+
+
+## Expedition 046 — Independent rhythm and dense visibility closure — 2026-11-13
+
+Work1, authorized BOUNDED ORIGINAL-STATIC ONLY. Research source and verified
+canonical main fadeca62227b94b25fa3d940e5ecf85453482bfc. No exception. R16 and
+owner-qualified QA14 remain read-only. No reconstruction, historical QA/research,
+fixture or previous journal bytes changed. Append E046 only; no R17/E047/QA15.
+
+Objective: independently close E045's saved rhythm-group aliases and dense
+visibility/angle history, then compare complete circle chart-to-star calculations
+without calling the subject model for expected values. Competing interpretations:
+reference versus value-copy group lists; scalar agreement versus actual identity;
+drain-all versus seeded history; current versus next jump; prefiltered versus
+post-update2000ms termination. Original CIL and independently constructed finite
+equation/heap/indexed-history controls discriminate these alternatives.
+
+Archive78546961 bytes/18 entries SHA256
+7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738;
+member osu!.exe4541728 bytes SHA256
+6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d.
+Verified before original instruction extraction. Stable40/1.3.3.8 official dated
+release still unauthenticated. Python3.12/existing dnfile0.18.0,dncil1.0.2,
+pefile2024.8.26 on Windows. No original CLR/game/native calls, proprietary asset
+export, gameplay Window, physical input, listening or capture.
+
+Preparation: standing instructions, both journals, E043/E044/E045 reports and
+full parsed evidence/controls/conditional matrices, six old non-golden traces,
+E045 preserved fixture correction; E004/E005 loading, E006/E032 geometry exclusion,
+E010 timing, E023/E033/E034 score separation, R16/QA14. Preserve E045's ancestry
+correction: circle T094c->T035a->T04c3->T0828->T01dc, slider T02af->T0339->T04c3,
+spinner T00d8->T067f->T04c3. No edits to E044's incorrect prose or correct metadata.
+No K, pp, modern alternate difficulty algorithm or JoinedBezier investigation.
+
+CONFIRMED STATIC: T0326 F0daf interval/F0db0 count/F0db1 repeats Int32. M1744
+03b7-03ba adds current reference,0419-041a retains it as last,041e-0423 constructs
+a new current. Saved match031a-0328 mutates repeat counter through existing
+reference. Original strict tolerance, parity, count, descending-pattern, logistic
+repeat, doubletap and final attenuation remain ordered. Capacity Min(index,32),
+strict5000ms seed then forward walk is not32 processed entries. Actual count
+mutation after insertion is not fabricated: current replacement separates count
+updates; reached saved mutations are repeats. A persistent deep-copy mutant can
+preserve the scalar, so identity graph and numerical scalar are distinct checks.
+
+E046 independent_oracle.py imports only math/struct/collections, checked by AST.
+Expected state uses explicit integer group identities/heap, indexed visibility
+equations, separately derived Single geometry and independent offline duration
+sweep/queue prefix. It never imports E044/E045 or the subject adapter. Subject
+rhythm_visibility_projection.py calls unchanged E045 mathematics and decorates
+snapshots with actual object-reference registry ordinals; retained references
+prevent address reuse. Pattern arithmetic unchanged; instrumentation restored
+in finally. No E045 file edited. Collector/checker source hashes pin independence.
+
+VERIFIED COMPONENT applies only to research mathematics: final88/88 named controls
+PASS, including28 complete expected/actual chart comparisons (19 new strict raw
+fixtures,3 artificial window100 profiles,6 reassessed prepared E045 traces).
+Raw admission checks and scalar/identity/mutant anchors counted separately by
+their existing tags;19 files, individual scalar comparisons and coverage rows
+are not extra tests. Every pair, group identity/content/transition, visibility
+candidate/weight, raw component, state/output, aggregate, final Double, Single
+bits and display is retained in results.json. Scalar tolerance5e-12 relative/
+5e-13 absolute; discrete history/branch/identity and cache-bit differences do not
+get a tolerance waiver. Original x86/JIT/Math/tie last-bit behavior unmeasured.
+
+Independent repeated-pattern anchor: [300]+[100,100,200]*6, window99, selected
+last pair seed16. Four completed count2 groups have repeats1/2/3/4, weights
+1/3,1/2,2/3,5/6. E=2.75/(1+Exp(.24*(58.33-100))); sum=1/3 plus weighted
+Sqrt(.25*r^-E) for r2/3/4 =.5652670333869401. Multiplier
+Sqrt(4+.95*sum)/2=1.065012169146155. Both independent heap and unchanged
+projection agree. Repeat updates materially affect scalar. Actual reference
+graph distinguishes deep-copy insertion even where copy scalar agrees.
+
+Independent dense visibility anchors: six nonnull right-angle predecessors
+give M1e5e1/3. At radius50/dt100/preempt1200/jump200, backward8 and forward3;
+at preempt450/jump400, backward2 and forward1.875, with both movement and
+short-preempt terms positive. Closed expression includes following jump gate,
+Max0 subtraction2.5, power.45*2.4, separate short-preempt term,1.5 norm and .8
+normalization. Additional cap/quintic/null-angle and499/500/501/600 interval
+controls close first-crossing2000ms behavior. Exact tolerance30 is separately
+artificial window100, not invented as a raw OD-derived odd full window.
+
+The combined-repeat-visibility raw fixture has q0/q1/q2 approximately
+2336.2016888390713/435.7016415760794/199.55909217927814, Double
+5.119475874072683, cached Single5.119475841522217, little-endian bitsbfd2a340,
+floor display5.11. These are finite research model results, not original-game
+observations. New raw controls also distinguish next jump0/small/large/absent,
+following outside window, multiple groups/counts and tolerance/capacity/history
+boundaries. E045's strict v14/Mode0/StackLeniency0/increasing circle source class,
+explicit viewport/shift and zero-stack proof remain intact. Provider/full manager,
+nonzero stacking and equal-time registration are not broadened.
+
+All six old E045 traces now receive new independent whole-numerical closure:
+regular,alternating,perturbed,long-pauses,same-position,right-angles. Old evidence
+and non-golden classification remain unchanged. New trace-reassessment.json
+links old inputs/results/classification to new expected/actual/intermediates.
+Movement/velocity, all three recurrences, mutable duration prefix, first-minute
+transform, sorted s20/s1 weights and E044 final formula/cache conversion retained.
+No unresolved contribution is assigned a neutral value to obtain a result.
+
+Final new static gate PASS354 MethodDefs/337 bodies,394 fields,65 types,23 slots,
+2515 focused call edges,3021 field sites/1589 direct watched-call sites; scan19659
+bodies/1739 zero-RVA/no errors.40 E044+40 E045+24 E046 literal relationships,
+five independent string reductions. Two byte-identical final extractions2641711
+bytes SHA2568bdd62c91eeb6470c45cc88a9e9df9c216abda2e583253994b3029625a1661ce.
+Unchanged E04373 relationship/19 projection/277 body checks PASS; E04482 finite/
+335 body/294 historical comparisons PASS; E045175 finite/337 bodies PASS. Relevant
+unchanged E004/E005/E006/E023/E032/E033/E034 PASS. E043 pre-R16 production source
+manifest not asserted against later R16. E045 unchanged functions invoked directly
+to prevent its historical failure handler writing into old evidence. All outputs
+under evidence46. Six core source AST checks and exact19 fixture-byte checks PASS.
+
+Preserved initial full-gate tool failure: result-provenance serialization used
+relative __file__ against absolute ROOT, raising ValueError; failure handler
+repeated same error. Failing source, input packet/hash and error retained under
+failures; resolve source path first in both locations. No mathematical assertion,
+original or production defect inferred. Seven literal branch checks added,
+no numerical expectation weakened. Corrected88-control pass retained compressed
+before strengthening constructor tags into actual reference registry ordinals;
+old source/results/hash and reason preserved under runs. Final gate88/88 rerun
+at exact strengthened source. E044/E045 failure history untouched.
+
+Artifacts: re/46-original-rhythm-visibility-star-closure.md; re/tools/
+rhythm_visibility_evidence.py,check_rhythm_visibility.py,
+rhythm_visibility_projection.py; evidence46 packet/results, independent oracle,
+finite inputs/19 raw fixtures, group/visibility derivations, focused methods,
+coverage, six-trace reassessment, historical runner/logs, failures/strengthening
+history, execution/provenance and verification. All895 prior tracked files and
+483804-byte journal prefix SHA256
+93acf9ce2b8ed8655feddfcb7a8397b3fd9db7249090d437db05c2d4a9083cee preserved.
+
+Readiness: both principal history families and combined finite profile ready
+for a separately authorized restricted circle-only mathematical implementation.
+This is not implementation authorization or general original-runtime equivalence.
+Original provider/manager completeness, nonzero stacking, equal-time registration,
+native/JIT/library precision, slider/spinner/mod variants remain deferred. General
+all-object R17 NOT READY; R16 Stars not calculated unchanged. Historical2175 QA
+not rerun; E02017 NOT RUN. No R17/E047/QA15 or other milestone started. Safe
+non-force publication only after final preservation/diff/remote-head checks;
+exact publication SHA in verified handoff.
+
+E046 coverage clarification: raw corpus IDs do not prove boundary reachability.
+capacity-below has final capacity32; exact boundary controls are V032-V035.
+age-below/equal/above vary final1999/2000/2001 interval, not total5000 age; exact
+5000ms controls are V029-V031. Coverage records actual flags/capacities/seeds.
+No mathematical expected value or input was changed for this clarification.
+Executed E046 raw profiles are CS5/OD5, AR5 or10, viewport512x384, shift0.
+Reader admission of other supported scalar/viewport values is not itself new
+executed coverage. Old six prepared profiles explicitly radius50/preempt1200/window99.

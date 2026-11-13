@@ -1,0 +1,845 @@
+{
+  "e045_conditional_updates": [
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "N objects",
+        "id": "C01",
+        "initial_state": "N ordered circles",
+        "original_runtime": "NOT RUN",
+        "prediction": "N-1 pairs; source registration retained before current-start sorting",
+        "sites": [
+          "M0810",
+          "M3699"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "early returns",
+        "id": "C02",
+        "initial_state": "No two prior difficulty pairs",
+        "original_runtime": "NOT RUN",
+        "prediction": "First two angles null, M11c1/M408c index<=1 return0",
+        "sites": [
+          "M3694",
+          "M11c1:0014",
+          "M408c:0014"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "constant",
+        "id": "C03",
+        "initial_state": "Constant spacing, dt24/25/26/99/100/101/1000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Raw dt retained; strain floor25; separate movement and velocity outputs",
+        "sites": [
+          "M11c1",
+          "M408c"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "six-predecessor",
+        "id": "C04",
+        "initial_state": "More than six angle predecessors",
+        "original_runtime": "NOT RUN",
+        "prediction": "M11c3 inspects no more than six and applies repeated-angle weighting",
+        "sites": [
+          "M11c3"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "angle branch",
+        "id": "C05",
+        "initial_state": "Straight or right-angle history",
+        "original_runtime": "NOT RUN",
+        "prediction": "Distinct movement and velocity-angle channels remain independently evaluated",
+        "sites": [
+          "M11c1",
+          "M408c"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "equal intervals",
+        "id": "C06",
+        "initial_state": "Equal rhythm intervals",
+        "original_runtime": "NOT RUN",
+        "prediction": "No rhythm transition sum; multiplier1",
+        "sites": [
+          "M1744"
+        ]
+      },
+      "e046_status": "NEW independent heap/scalar/whole-chart rhythm closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "alternating",
+        "id": "C07",
+        "initial_state": "Alternating rhythm intervals",
+        "original_runtime": "NOT RUN",
+        "prediction": "Mutable group transition produces finite positive rhythm sum",
+        "sites": [
+          "M1744",
+          "M1746-M174f"
+        ]
+      },
+      "e046_status": "NEW independent heap/scalar/whole-chart rhythm closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "capacity32",
+        "id": "C08",
+        "initial_state": "History length beyond32",
+        "original_runtime": "NOT RUN",
+        "prediction": "Seed traversal yields at most30 processed comparisons for dense normal inputs",
+        "sites": [
+          "M1744:0064-00c9"
+        ]
+      },
+      "e046_status": "NEW independent heap/scalar/whole-chart rhythm closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "5000ms",
+        "id": "C09",
+        "initial_state": "History age at5000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict traversal predicate distinguishes just-before and equality",
+        "sites": [
+          "M1744:009a-00a3"
+        ]
+      },
+      "e046_status": "NEW independent heap/scalar/whole-chart rhythm closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "strict tolerance",
+        "id": "C10",
+        "initial_state": "Pattern interval difference equals tolerance",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict parity/equality comparisons reject equality",
+        "sites": [
+          "M174e",
+          "M174f"
+        ]
+      },
+      "e046_status": "NEW independent heap/scalar/whole-chart rhythm closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "visibility interval",
+        "id": "C11",
+        "initial_state": "Visibility fade-in and start endpoints",
+        "original_runtime": "NOT RUN",
+        "prediction": "No-mod visibility has explicit fade/preempt and after-start guard",
+        "sites": [
+          "M368f"
+        ]
+      },
+      "e046_status": "NEW independent indexed/closed-expression/whole-chart visibility closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "3000ms",
+        "id": "C12",
+        "initial_state": "Past/future history age3000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Equality enters processing; later item terminates scan",
+        "sites": [
+          "M1e63",
+          "M1e5d"
+        ]
+      },
+      "e046_status": "NEW independent indexed/closed-expression/whole-chart visibility closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "2000ms",
+        "id": "C13",
+        "initial_state": "Angle-history elapsed2000",
+        "original_runtime": "NOT RUN",
+        "prediction": "The first outside entry can be processed before updated elapsed stops next iteration",
+        "sites": [
+          "M1e5e"
+        ]
+      },
+      "e046_status": "NEW independent indexed/closed-expression/whole-chart visibility closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "following",
+        "id": "C14",
+        "initial_state": "Following pair jump differs from current",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1e58 uses next pair retained from M2cb6, not current pair",
+        "sites": [
+          "M1e57:0028-0069",
+          "M1e58"
+        ]
+      },
+      "e046_status": "NEW independent indexed/closed-expression/whole-chart visibility closure",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "strict400",
+        "id": "C15",
+        "initial_state": "Envelope exact400",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict crossing; no interval close at equality",
+        "sites": [
+          "M3f34:00b2"
+        ]
+      },
+      "e046_status": "RETAINED + NEW independent offline whole-chart aggregation/cache comparison",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "duration prefix",
+        "id": "C16",
+        "initial_state": "Mutable4000-duration prefix",
+        "original_runtime": "NOT RUN",
+        "prediction": "Appended20-unit copies may themselves be consumed; Skip then descending sort",
+        "sites": [
+          "M19ec"
+        ]
+      },
+      "e046_status": "RETAINED + NEW independent offline whole-chart aggregation/cache comparison",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "first-minute",
+        "id": "C17",
+        "initial_state": "First60000ms boundary",
+        "original_runtime": "NOT RUN",
+        "prediction": "Count equality; transform positive prefix before descending sort",
+        "sites": [
+          "M3260",
+          "M325f",
+          "M1d08"
+        ]
+      },
+      "e046_status": "RETAINED + NEW independent offline whole-chart aggregation/cache comparison",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "two-circle",
+        "id": "C18",
+        "initial_state": "Two circle complete finite result",
+        "original_runtime": "NOT RUN",
+        "prediction": "Interval-only closed scalar with instruction-derived adjusted timing",
+        "sites": [
+          "M0d6c",
+          "M3539",
+          "M080a"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "small complete",
+        "id": "C19",
+        "initial_state": "Three circle complete finite result",
+        "original_runtime": "NOT RUN",
+        "prediction": "Positive temporal sum, zero reached movement/visibility in finite dt1000 controls",
+        "sites": [
+          "M11c1",
+          "M408c",
+          "M1e57",
+          "M1d08"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "four-circle",
+        "id": "C20",
+        "initial_state": "Four straight circles dt1000",
+        "original_runtime": "NOT RUN",
+        "prediction": "First nonzero movement composite plus independent mutable duration oracle and temporal sum",
+        "sites": [
+          "M19ea",
+          "M19ec",
+          "M080a"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "coincident",
+        "id": "C21",
+        "initial_state": "Coincident circle positions",
+        "original_runtime": "NOT RUN",
+        "prediction": "No universal zero stars; interval component survives",
+        "sites": [
+          "M0d6c"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "manager",
+        "id": "C22",
+        "initial_state": "Explicit CS5 AR5 OD5 viewport512x384",
+        "original_runtime": "NOT RUN",
+        "prediction": "Prepared radius32.013118743896484, preempt1200, full window99",
+        "sites": [
+          "M28be",
+          "M28b2",
+          "M28b3"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "bounded osu-to-star",
+        "id": "C23",
+        "initial_state": "Strict admitted v14 source with StackLeniency0",
+        "original_runtime": "NOT RUN",
+        "prediction": "No-stack position proof; independent two/three/four-circle star scalar",
+        "sites": [
+          "M1bc1",
+          "M28eb",
+          "M24b0"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "bounded reader rejects",
+        "id": "C24",
+        "initial_state": "Missing/nonzero leniency or equal timestamps",
+        "original_runtime": "NOT RUN",
+        "prediction": "Research raw reader rejects; no guessed stack displacement",
+        "sites": [
+          "M28eb"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "registered order",
+        "id": "C25",
+        "initial_state": "Signed zero/negative/overflow pair delta artificial control",
+        "original_runtime": "NOT RUN",
+        "prediction": "Original Int32 subtraction occurs before Double; only strain clamped",
+        "sites": [
+          "M2cb4",
+          "M366d"
+        ]
+      },
+      "e046_status": "RETAINED E045 finite/static boundary; unchanged175-control rerun",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "cache",
+        "id": "C26",
+        "initial_state": "Final Double near cache boundary",
+        "original_runtime": "NOT RUN",
+        "prediction": "Convert to Single before absolute/floor display",
+        "sites": [
+          "M1bd0",
+          "M1bd5",
+          "M2d7f"
+        ]
+      },
+      "e046_status": "RETAINED + NEW independent offline whole-chart aggregation/cache comparison",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    },
+    {
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "TRACE ONLY",
+        "id": "C27",
+        "initial_state": "General dense circle history",
+        "original_runtime": "NOT RUN",
+        "prediction": "All translated components execute, but six large traces have no independent golden scalar",
+        "sites": [
+          "M11c1",
+          "M408c",
+          "M1744",
+          "M1e57"
+        ]
+      },
+      "e046_status": "NEW six prepared trace comparisons closed in E046; old classifications preserved",
+      "new_result": "88-control gate; per-chart intermediate expected/actuals retained",
+      "original_runtime": "NOT RUN",
+      "limits": "No expansion to nonzero stacking, provider completeness, sliders/spinners or mods. No static row counted as an extra named control."
+    }
+  ],
+  "counts": {
+    "INDEPENDENT FINITE MATHEMATICS": 33,
+    "ARTIFICIAL IDENTITY OBSERVATION OF REACHED PATH": 2,
+    "ENGINEERING MUTANT CONTROL": 3,
+    "ARTIFICIAL ANGLE CONTROL": 3,
+    "ARTIFICIAL PREPARED WINDOW100": 3,
+    "BOUNDED RAW V14 / StackLeniency0": 19,
+    "BOUNDED RAW-CHART CONTROL": 19,
+    "PREPARED INPUT / NEW INDEPENDENT REASSESSMENT": 6
+  },
+  "named_controls": 88,
+  "complete_comparison_cases": 28,
+  "new_raw_fixtures": 19,
+  "artificial_window100_charts": 3,
+  "reassessed_old_traces": 6,
+  "fixture_label_notes": {
+    "capacity-below": "Descriptive corpus ID, not a proof of below32: last selected capacity is32. Exact below/equality/above expectations are separately executed V032-V035.",
+    "age-below/equal/above": "Corpus IDs vary last interval1999/2000/2001, not total5000ms history age. Exact5000 cutoff expectations are separately executed V029-V031."
+  },
+  "chart_branch_properties": [
+    {
+      "id": "artificial-exact-tolerance/129",
+      "last_capacity": 16,
+      "last_seed": 14,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 40,
+        "append": 35,
+        "saved-insert": 12,
+        "parity": 18,
+        "equal-count": 18,
+        "saved-match": 18,
+        "repeat-increment": 18
+      }
+    },
+    {
+      "id": "artificial-exact-tolerance/130",
+      "last_capacity": 16,
+      "last_seed": 14,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 40,
+        "equal-count": 30,
+        "saved-insert": 12,
+        "saved-match": 18,
+        "repeat-increment": 18
+      }
+    },
+    {
+      "id": "artificial-exact-tolerance/131",
+      "last_capacity": 16,
+      "last_seed": 14,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 40,
+        "equal-count": 35,
+        "saved-insert": 13,
+        "saved-match": 22,
+        "repeat-increment": 22
+      }
+    },
+    {
+      "id": "repeating-count2",
+      "last_capacity": 18,
+      "last_seed": 16,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "append": 51,
+        "activate": 40,
+        "saved-insert": 12,
+        "parity": 18,
+        "equal-count": 18,
+        "saved-match": 18,
+        "repeat-increment": 18
+      }
+    },
+    {
+      "id": "distinct-count2",
+      "last_capacity": 16,
+      "last_seed": 14,
+      "maximum_saved_groups": 3,
+      "reached_flags": {
+        "activate": 40,
+        "append": 35,
+        "saved-insert": 24,
+        "equal-count": 18,
+        "saved-match": 6
+      }
+    },
+    {
+      "id": "different-counts",
+      "last_capacity": 14,
+      "last_seed": 12,
+      "maximum_saved_groups": 3,
+      "reached_flags": {
+        "activate": 28,
+        "append": 31,
+        "saved-insert": 19
+      }
+    },
+    {
+      "id": "repeat-after-nonmatch",
+      "last_capacity": 13,
+      "last_seed": 11,
+      "maximum_saved_groups": 2,
+      "reached_flags": {
+        "activate": 26,
+        "append": 22,
+        "saved-insert": 15,
+        "equal-count": 9,
+        "saved-match": 3
+      }
+    },
+    {
+      "id": "inside-tolerance",
+      "last_capacity": 19,
+      "last_seed": 17,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 57,
+        "append": 51,
+        "saved-insert": 15,
+        "parity": 30,
+        "equal-count": 30,
+        "saved-match": 30,
+        "repeat-increment": 30
+      }
+    },
+    {
+      "id": "near-tolerance-outside",
+      "last_capacity": 19,
+      "last_seed": 17,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 57,
+        "equal-count": 51,
+        "saved-insert": 16,
+        "saved-match": 35,
+        "repeat-increment": 35
+      }
+    },
+    {
+      "id": "capacity-below",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 155,
+        "append": 145,
+        "saved-insert": 27,
+        "parity": 108,
+        "equal-count": 108,
+        "saved-match": 108,
+        "repeat-increment": 108
+      }
+    },
+    {
+      "id": "capacity-above",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 245,
+        "append": 235,
+        "saved-insert": 36,
+        "parity": 183,
+        "equal-count": 183,
+        "saved-match": 183,
+        "repeat-increment": 183
+      }
+    },
+    {
+      "id": "age-below",
+      "last_capacity": 15,
+      "last_seed": 13,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "append": 35,
+        "activate": 26,
+        "saved-insert": 9,
+        "parity": 9,
+        "equal-count": 9,
+        "saved-match": 9,
+        "repeat-increment": 9
+      }
+    },
+    {
+      "id": "age-equal",
+      "last_capacity": 15,
+      "last_seed": 13,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "append": 35,
+        "activate": 26,
+        "saved-insert": 9,
+        "parity": 9,
+        "equal-count": 9,
+        "saved-match": 9,
+        "repeat-increment": 9
+      }
+    },
+    {
+      "id": "age-above",
+      "last_capacity": 15,
+      "last_seed": 13,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "append": 35,
+        "activate": 26,
+        "saved-insert": 9,
+        "parity": 9,
+        "equal-count": 9,
+        "saved-match": 9,
+        "repeat-increment": 9
+      }
+    },
+    {
+      "id": "dense-right-angles",
+      "last_capacity": 11,
+      "last_seed": 9,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 45
+      }
+    },
+    {
+      "id": "dense-short-preempt",
+      "last_capacity": 17,
+      "last_seed": 15,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 120
+      }
+    },
+    {
+      "id": "combined-repeat-visibility",
+      "last_capacity": 18,
+      "last_seed": 16,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "append": 51,
+        "activate": 40,
+        "saved-insert": 12,
+        "parity": 18,
+        "equal-count": 18,
+        "saved-match": 18,
+        "repeat-increment": 18
+      }
+    },
+    {
+      "id": "nearly-equal-angles",
+      "last_capacity": 23,
+      "last_seed": 21,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 231
+      }
+    },
+    {
+      "id": "opposing-directions",
+      "last_capacity": 23,
+      "last_seed": 21,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 231
+      }
+    },
+    {
+      "id": "next-jump-zero",
+      "last_capacity": 11,
+      "last_seed": 9,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 45
+      }
+    },
+    {
+      "id": "next-jump-small",
+      "last_capacity": 11,
+      "last_seed": 9,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 45
+      }
+    },
+    {
+      "id": "following-outside-window",
+      "last_capacity": 11,
+      "last_seed": 9,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 45
+      }
+    },
+    {
+      "id": "E045/regular",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 675
+      }
+    },
+    {
+      "id": "E045/alternating",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 1,
+      "reached_flags": {
+        "activate": 345,
+        "equal-count": 326,
+        "saved-insert": 36,
+        "saved-match": 290,
+        "repeat-increment": 290
+      }
+    },
+    {
+      "id": "E045/perturbed",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 555
+      }
+    },
+    {
+      "id": "E045/long-pauses",
+      "last_capacity": 29,
+      "last_seed": 2,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "activate": 9,
+        "append": 4
+      }
+    },
+    {
+      "id": "E045/same-position",
+      "last_capacity": 32,
+      "last_seed": 30,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 525
+      }
+    },
+    {
+      "id": "E045/right-angles",
+      "last_capacity": 19,
+      "last_seed": 4,
+      "maximum_saved_groups": 0,
+      "reached_flags": {
+        "append": 62
+      }
+    }
+  ]
+}

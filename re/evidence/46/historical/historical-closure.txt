@@ -1,0 +1,3 @@
+PASS historical static checks
+PASS E044 {"audited_bodies": 335, "call_sites": 1503, "field_sites": 3021, "finite_mathematical_controls": 82, "historical_body_comparisons": 294, "literal_controls": 40, "protected_prior_files": 848, "scanned_bodies": 19659}
+PASS E045 unchanged byte_audit/finite/preservation {"audited_bodies": 337, "call_sites": 1589, "circle_type_exclusion": true, "e045_literal_relationships": 40, "field_sites": 3021, "finite_controls": 175, "literal_controls": 40, "non_golden_traces": 6, "preserved_files": 863, "scanned_bodies": 19659}

@@ -1,0 +1,8 @@
+{
+  "failure": "failure-01.json",
+  "classification": "research-tool source-provenance path/export failure; no mathematical assertion failure",
+  "cause": "runpy supplied relative __file__; ROOT was resolved absolute. relative_to rejected the mismatch in both result and failure serialization.",
+  "fix": "Resolve __file__ before computing repository-relative provenance in both locations. Mathematical source/oracle/expectations unchanged.",
+  "initial_packet": "initial-packet.json",
+  "additional_strengthening": "Seven explicit original M1744 branch-target checks added; no expectation weakened."
+}

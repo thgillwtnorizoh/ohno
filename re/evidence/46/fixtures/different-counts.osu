@@ -1,0 +1,40 @@
+osu file format v14
+
+[General]
+Mode:0
+StackLeniency:0
+
+[Metadata]
+Title:E046 independent history
+Artist:Work1 research
+Creator:Work1
+Version:different-counts
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5.0
+ApproachRate:5.0
+OverallDifficulty:5.0
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+448,64,300,1,0
+448,320,600,1,0
+64,320,700,1,0
+64,64,800,1,0
+448,64,1050,1,0
+448,320,1150,1,0
+64,320,1250,1,0
+64,64,1350,1,0
+448,64,1600,1,0
+448,320,1750,1,0
+64,320,1900,1,0
+64,64,2150,1,0
+448,64,2250,1,0
+448,320,2350,1,0
+64,320,2600,1,0

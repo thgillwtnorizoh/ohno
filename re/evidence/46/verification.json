@@ -1,0 +1,114 @@
+{
+  "research_source": "fadeca62227b94b25fa3d940e5ecf85453482bfc",
+  "date": "2026-11-13",
+  "timezone": "Asia/Bangkok",
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "packet_bytes": 2641711,
+  "packet_sha256": "8bdd62c91eeb6470c45cc88a9e9df9c216abda2e583253994b3029625a1661ce",
+  "repeat_byte_identical": true,
+  "stats": {
+    "audited_bodies": 337,
+    "scanned_bodies": 19659,
+    "field_sites": 3021,
+    "call_sites": 1589,
+    "literal_controls": 40,
+    "e045_literal_relationships": 40,
+    "circle_type_exclusion": true,
+    "e046_literal_relationships": 24,
+    "oracle_import_independence": true,
+    "independent_controls": 88,
+    "integrated_charts": 28,
+    "preserved_files": 895
+  },
+  "method_declarations": 354,
+  "fields": 394,
+  "types": 65,
+  "slots": 23,
+  "focused_calls": 2515,
+  "new_source_syntax_files": 6,
+  "new_sources": {
+    "re/tools/rhythm_visibility_evidence.py": "d81b3e48bc582f1a75f6a3a85ac069956d466fdb8775dc870f7f933e91120b23",
+    "re/tools/check_rhythm_visibility.py": "5746f7c22e06dac0660faa57cc596f305cd585e7f69ddd1e75ad7aa12fc33b8d",
+    "re/tools/rhythm_visibility_projection.py": "80d3978aa5fa4323842b4678c3fb48b81cc561224ef6254db46884a9ad56d59d",
+    "re/evidence/46/independent_oracle.py": "ca33218cb55213bd4a6092bc27710e68d128fbaca7c7376ca1292de51b99c01d",
+    "re/evidence/46/finite_inputs.py": "9a6aeb448eb86dd5bb3a549ecd568b8d7254179d0a41c35cdeda53b4645e2a09",
+    "re/evidence/46/run_historical.py": "f0b5459e44b16cf3694b2c8758939782700281b0c010e1876f19e42fb76c3feb"
+  },
+  "results_bytes": 22671929,
+  "results_sha256": "1cb4fbcef4c019ed1a0025da09c30b5844afa4d3ab4a472e7563847f1c989c6d",
+  "preserved_files": 895,
+  "journal_prefix_bytes": 483804,
+  "journal_prefix_sha256": "93acf9ce2b8ed8655feddfcb7a8397b3fd9db7249090d437db05c2d4a9083cee",
+  "historical": [
+    {
+      "suite": "E004/E005/E006/E023/E032/E033/E034/E043",
+      "pass": true
+    },
+    {
+      "suite": "E044 unchanged full CLI",
+      "pass": true
+    },
+    {
+      "suite": "E045 unchanged byte_audit/finite/preservation",
+      "pass": true,
+      "stats": {
+        "audited_bodies": 337,
+        "scanned_bodies": 19659,
+        "field_sites": 3021,
+        "call_sites": 1589,
+        "literal_controls": 40,
+        "e045_literal_relationships": 40,
+        "circle_type_exclusion": true,
+        "finite_controls": 175,
+        "non_golden_traces": 6,
+        "preserved_files": 863
+      },
+      "boundary": "Call unchanged functions directly to avoid historical CLI failure-capture writing inside evidence45; outputs only under new directory."
+    }
+  ],
+  "fixture_sha256": {
+    "age-above.osu": "47c330103b0ad71ec04bebbf40688dc3f9d1880467131db807c1b9149f9602f5",
+    "age-below.osu": "25606466852ef7915a9d354469a6898764c4029f2565cc217f6503b2b84c448b",
+    "age-equal.osu": "4b78d97d0781eb27f3d3ad9dcda328dcc3d028cffaca7b3c18d9d5654c001fd1",
+    "capacity-above.osu": "3b7da641a67fbd6c14a4bd39f6c0597711701809acfa05f234e557cce9874350",
+    "capacity-below.osu": "4408befbc69b3a8cc650f994ba3f7a153691218151a4e288136e397c28a2092b",
+    "combined-repeat-visibility.osu": "c08b9b86dc8cd28dbfe72352a9df9fe162fa0f731ff3dfe5dd0a9884b1cb7728",
+    "dense-right-angles.osu": "ef8fa489a0db299817cc24aaccbbd62cfd7cfcbd00e340aabf427e4883969d2c",
+    "dense-short-preempt.osu": "a5b01a721fc13f9a3b9a9d4022a13d82b50e8153eea6af1796252731233ba618",
+    "different-counts.osu": "ae6042e965a91a4e0340db39d2b7f0cc6eef0dcf537e1d4e197933d17b96d4ca",
+    "distinct-count2.osu": "89f1f19023e8dad8e17aa97f7064dc5dd70e0afc9628566a6d996892e7a5be6a",
+    "following-outside-window.osu": "3ca42f66b79b902b286a782ec524b92622aaa3108e7dab589e5469f72ee58ab1",
+    "inside-tolerance.osu": "ec826920bf140b2ba64fc8b2374e9a660313aacf1161b1c48df2e6a42b096161",
+    "near-tolerance-outside.osu": "513c39469032a96d6b57815ec4f2f21ce5271a63afc09d264c4411e3dce1eba2",
+    "nearly-equal-angles.osu": "f094ac14853e1e8552763a84307d9ae8bdb1d09bddd78d0bd3da5281e7d0d1c6",
+    "next-jump-small.osu": "886e6ef24876423c51e0091e6539aaf4af793fe71cd3ebaba361d70897f99e8c",
+    "next-jump-zero.osu": "9e9a441a33e9751315e5016dfbcb379c92d061940b0501b4ef0084bf66367d2d",
+    "opposing-directions.osu": "afb7accfcd4beeaf1c349d18d09a428a46ed59a3ed88043f521b3ad1400379b7",
+    "repeat-after-nonmatch.osu": "64aa7c16d8f353b04f62611d32a6ae71cf4043394cda34310837ec42f95ece3b",
+    "repeating-count2.osu": "bde9a4c0a4de455651834cbe65f9651eaa940e5ba3230521c5f36a91836879d9"
+  },
+  "failure": "Initial full-gate provenance-path export failure preserved with original packet and sources; fixed path resolution, no mathematical correction",
+  "original_runtime": "NOT RUN;E02017 NOT RUN",
+  "historical2175_qa": "NOT RERUN",
+  "production_changes": "NONE",
+  "r17_e047_qa15": "NOT STARTED",
+  "python": "3.12.8",
+  "publication": "Exact verified main commit containing this file reported in completion handoff; no self-referential file hash",
+  "git_diff_check": "PASS",
+  "canonical_prepublication": "fadeca62227b94b25fa3d940e5ecf85453482bfc",
+  "executed_raw_profiles": {
+    "CS": 5,
+    "OD": 5,
+    "AR": [
+      5,
+      10
+    ],
+    "viewport": [
+      512,
+      384
+    ],
+    "shift": 0
+  },
+  "other_reader_admitted_scalar_profiles": "Not independently promoted to executed coverage by admission alone"
+}

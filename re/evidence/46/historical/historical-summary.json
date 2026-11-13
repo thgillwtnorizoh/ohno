@@ -1,0 +1,27 @@
+[
+  {
+    "suite": "E004/E005/E006/E023/E032/E033/E034/E043",
+    "pass": true
+  },
+  {
+    "suite": "E044 unchanged full CLI",
+    "pass": true
+  },
+  {
+    "suite": "E045 unchanged byte_audit/finite/preservation",
+    "pass": true,
+    "stats": {
+      "audited_bodies": 337,
+      "scanned_bodies": 19659,
+      "field_sites": 3021,
+      "call_sites": 1589,
+      "literal_controls": 40,
+      "e045_literal_relationships": 40,
+      "circle_type_exclusion": true,
+      "finite_controls": 175,
+      "non_golden_traces": 6,
+      "preserved_files": 863
+    },
+    "boundary": "Call unchanged functions directly to avoid historical CLI failure-capture writing inside evidence45; outputs only under new directory."
+  }
+]

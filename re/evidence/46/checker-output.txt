@@ -1,0 +1,1 @@
+PASS E046 {"audited_bodies": 337, "call_sites": 1589, "circle_type_exclusion": true, "e045_literal_relationships": 40, "e046_literal_relationships": 24, "field_sites": 3021, "independent_controls": 88, "integrated_charts": 28, "literal_controls": 40, "oracle_import_independence": true, "preserved_files": 895, "scanned_bodies": 19659}

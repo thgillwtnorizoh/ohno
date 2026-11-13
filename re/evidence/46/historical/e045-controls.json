@@ -1,0 +1,3076 @@
+{
+  "stats": {
+    "audited_bodies": 337,
+    "scanned_bodies": 19659,
+    "field_sites": 3021,
+    "call_sites": 1589,
+    "literal_controls": 40,
+    "e045_literal_relationships": 40,
+    "circle_type_exclusion": true,
+    "finite_controls": 175,
+    "non_golden_traces": 6,
+    "preserved_files": 863
+  },
+  "cases": [
+    {
+      "id": "H001",
+      "name": "N objects produce N-1 pairs",
+      "input": 2,
+      "expected": 1,
+      "actual": 1,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H002",
+      "name": "nullable angle starts at pair2",
+      "input": 2,
+      "expected": [
+        null
+      ],
+      "actual": [
+        null
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H003",
+      "name": "N objects produce N-1 pairs",
+      "input": 3,
+      "expected": 2,
+      "actual": 2,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H004",
+      "name": "nullable angle starts at pair2",
+      "input": 3,
+      "expected": [
+        null,
+        null
+      ],
+      "actual": [
+        null,
+        null
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H005",
+      "name": "N objects produce N-1 pairs",
+      "input": 4,
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H006",
+      "name": "nullable angle starts at pair2",
+      "input": 4,
+      "expected": [
+        null,
+        null,
+        3.141592653589793
+      ],
+      "actual": [
+        null,
+        null,
+        3.141592653589793
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H007",
+      "name": "N objects produce N-1 pairs",
+      "input": 5,
+      "expected": 4,
+      "actual": 4,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H008",
+      "name": "nullable angle starts at pair2",
+      "input": 5,
+      "expected": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "actual": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H009",
+      "name": "N objects produce N-1 pairs",
+      "input": 6,
+      "expected": 5,
+      "actual": 5,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H010",
+      "name": "nullable angle starts at pair2",
+      "input": 6,
+      "expected": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "actual": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H011",
+      "name": "N objects produce N-1 pairs",
+      "input": 7,
+      "expected": 6,
+      "actual": 6,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H012",
+      "name": "nullable angle starts at pair2",
+      "input": 7,
+      "expected": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "actual": [
+        null,
+        null,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H013",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 24,
+      "expected": 14.652459422099048,
+      "actual": 14.652459422099048,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H014",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 24,
+      "expected": 7.464263932294459,
+      "actual": 7.464263932294459,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H015",
+      "name": "strain floor retains raw delta",
+      "input": 24,
+      "expected": [
+        24.0,
+        25.0
+      ],
+      "actual": [
+        24.0,
+        25.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H016",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 25,
+      "expected": 14.652459422099048,
+      "actual": 14.652459422099048,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H017",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 25,
+      "expected": 7.464263932294459,
+      "actual": 7.464263932294459,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H018",
+      "name": "strain floor retains raw delta",
+      "input": 25,
+      "expected": [
+        25.0,
+        25.0
+      ],
+      "actual": [
+        25.0,
+        25.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H019",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 26,
+      "expected": 13.787866861875328,
+      "actual": 13.787866861875328,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H020",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 26,
+      "expected": 7.051615852875847,
+      "actual": 7.051615852875847,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H021",
+      "name": "strain floor retains raw delta",
+      "input": 26,
+      "expected": [
+        26.0,
+        26.0
+      ],
+      "actual": [
+        26.0,
+        26.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H022",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 99,
+      "expected": 1.865195894144907,
+      "actual": 1.8651958941449067,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H023",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 99,
+      "expected": 1.0146796906627913,
+      "actual": 1.0146796906627913,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H024",
+      "name": "strain floor retains raw delta",
+      "input": 99,
+      "expected": [
+        99.0,
+        99.0
+      ],
+      "actual": [
+        99.0,
+        99.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H025",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 100,
+      "expected": 1.8386082148171452,
+      "actual": 1.8386082148171452,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H026",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 100,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H027",
+      "name": "strain floor retains raw delta",
+      "input": 100,
+      "expected": [
+        100.0,
+        100.0
+      ],
+      "actual": [
+        100.0,
+        100.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H028",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 101,
+      "expected": 1.8126807131354385,
+      "actual": 1.8126807131354385,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H029",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 101,
+      "expected": 0.9856756047923317,
+      "actual": 0.9856756047923317,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H030",
+      "name": "strain floor retains raw delta",
+      "input": 101,
+      "expected": [
+        101.0,
+        101.0
+      ],
+      "actual": [
+        101.0,
+        101.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H031",
+      "name": "movement first reached nonzero pair constant spacing",
+      "input": 1000,
+      "expected": 0.10309278350515465,
+      "actual": 0.10309278350515466,
+      "pass": true,
+      "authority": [
+        "M11c1:000d-0032,00c1-00cc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H032",
+      "name": "distinct velocity-angle pair2 constant timing",
+      "input": 1000,
+      "expected": 0.03548133892335755,
+      "actual": 0.03548133892335755,
+      "pass": true,
+      "authority": [
+        "M408c:0014,00bd-011a,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H033",
+      "name": "strain floor retains raw delta",
+      "input": 1000,
+      "expected": [
+        1000.0,
+        1000.0
+      ],
+      "actual": [
+        1000.0,
+        1000.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M366d",
+        "M3691",
+        "M3694"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H034",
+      "name": "movement and contrast early returns",
+      "input": 2,
+      "expected": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "actual": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "pass": true,
+      "authority": [
+        "M11c1:0014",
+        "M408c:0014"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H035",
+      "name": "movement and contrast early returns",
+      "input": 3,
+      "expected": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "actual": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "pass": true,
+      "authority": [
+        "M11c1:0014",
+        "M408c:0014"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H036",
+      "name": "raw radius overlap ramp",
+      "input": [
+        0,
+        50
+      ],
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H037",
+      "name": "raw radius overlap ramp",
+      "input": [
+        49,
+        50
+      ],
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H038",
+      "name": "raw radius overlap ramp",
+      "input": [
+        50,
+        50
+      ],
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H039",
+      "name": "raw radius overlap ramp",
+      "input": [
+        75,
+        50
+      ],
+      "expected": 0.75,
+      "actual": 0.75,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H040",
+      "name": "raw radius overlap ramp",
+      "input": [
+        100,
+        50
+      ],
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H041",
+      "name": "raw radius overlap ramp",
+      "input": [
+        101,
+        50
+      ],
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M408d:0000-0065"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H042",
+      "name": "six-predecessor repeated angle weighting",
+      "input": 1,
+      "expected": 0.8730566406250001,
+      "actual": 0.8730566406250001,
+      "pass": true,
+      "authority": [
+        "M11c3:0034-011a,018c-01d1"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H043",
+      "name": "six-predecessor repeated angle weighting",
+      "input": 2,
+      "expected": 0.8599664306640625,
+      "actual": 0.8599664306640625,
+      "pass": true,
+      "authority": [
+        "M11c3:0034-011a,018c-01d1"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H044",
+      "name": "six-predecessor repeated angle weighting",
+      "input": 6,
+      "expected": 0.8561068386501737,
+      "actual": 0.8561068386501737,
+      "pass": true,
+      "authority": [
+        "M11c3:0034-011a,018c-01d1"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H045",
+      "name": "six-predecessor repeated angle weighting",
+      "input": 9,
+      "expected": 0.8561068386501737,
+      "actual": 0.8561068386501737,
+      "pass": true,
+      "authority": [
+        "M11c3:0034-011a,018c-01d1"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H046",
+      "name": "movement full straight angle branch",
+      "input": {
+        "index": 3,
+        "time": 4000.0,
+        "delta": 1000.0,
+        "strain": 1000.0,
+        "position": [
+          400.0,
+          192.0
+        ],
+        "previous_position": [
+          300.0,
+          192.0
+        ],
+        "radius": 50.0,
+        "preempt": 1200.0,
+        "window": 99.0,
+        "gap": 1000.0,
+        "jump": 100.0,
+        "angle": 3.141592653589793,
+        "axis": 0.0
+      },
+      "expected": 0.11422533591778304,
+      "actual": 0.11422533591778306,
+      "pass": true,
+      "authority": [
+        "M11c1:00cd-03fc",
+        "M11c3"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H047",
+      "name": "movement two right angles independently expanded",
+      "input": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1000,
+          100,
+          0
+        ],
+        [
+          2000,
+          100,
+          100
+        ],
+        [
+          3000,
+          0,
+          100
+        ],
+        [
+          4000,
+          0,
+          0
+        ]
+      ],
+      "expected": 0.1262797890491261,
+      "actual": 0.12627978904912612,
+      "pass": true,
+      "authority": [
+        "M11c1:00cd-03fc",
+        "M11c3"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H048",
+      "name": "distinct velocity full right angle branch",
+      "input": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1000,
+          100,
+          0
+        ],
+        [
+          2000,
+          100,
+          100
+        ],
+        [
+          3000,
+          0,
+          100
+        ],
+        [
+          4000,
+          0,
+          0
+        ]
+      ],
+      "expected": 0.05190603566941789,
+      "actual": 0.05190603566941789,
+      "pass": true,
+      "authority": [
+        "M408c:011b-021c,02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H049",
+      "name": "equal intervals rhythm multiplier",
+      "input": 24,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H050",
+      "name": "equal intervals rhythm multiplier",
+      "input": 25,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H051",
+      "name": "equal intervals rhythm multiplier",
+      "input": 26,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H052",
+      "name": "equal intervals rhythm multiplier",
+      "input": 99,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H053",
+      "name": "equal intervals rhythm multiplier",
+      "input": 100,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H054",
+      "name": "equal intervals rhythm multiplier",
+      "input": 101,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H055",
+      "name": "equal intervals rhythm multiplier",
+      "input": 1000,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1744:023f-046f,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H056",
+      "name": "alternating intervals one completed group",
+      "input": [
+        0,
+        200,
+        300,
+        500,
+        600,
+        800,
+        900
+      ],
+      "expected": 1.0644247272588137,
+      "actual": 1.0644247272588137,
+      "pass": true,
+      "authority": [
+        "M1744:03df-040a,0485-04cd"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H057",
+      "name": "alternating group intermediate sum",
+      "input": [
+        0,
+        200,
+        300,
+        500,
+        600,
+        800,
+        900
+      ],
+      "expected": 0.56,
+      "actual": 0.5599999999999999,
+      "pass": true,
+      "authority": [
+        "M1744:03fb-040a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H058",
+      "name": "capacity32 retains30 processed comparisons",
+      "input": 40,
+      "expected": 30,
+      "actual": 30,
+      "pass": true,
+      "authority": [
+        "M1744:0064-00c9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H059",
+      "name": "5000ms backward equality boundary",
+      "input": 999,
+      "expected": 5,
+      "actual": 5,
+      "pass": true,
+      "authority": [
+        "M1744:007e-00a5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H060",
+      "name": "5000ms backward equality boundary",
+      "input": 1000,
+      "expected": 4,
+      "actual": 4,
+      "pass": true,
+      "authority": [
+        "M1744:007e-00a5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H061",
+      "name": "5000ms backward equality boundary",
+      "input": 1001,
+      "expected": 4,
+      "actual": 4,
+      "pass": true,
+      "authority": [
+        "M1744:007e-00a5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H062",
+      "name": "pattern equality strict tolerance",
+      "input": [
+        100,
+        109,
+        10
+      ],
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "authority": [
+        "M174f"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H063",
+      "name": "pattern parity strict tolerance",
+      "input": [
+        100,
+        109,
+        10
+      ],
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "authority": [
+        "M174e"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H064",
+      "name": "pattern equality strict tolerance",
+      "input": [
+        100,
+        110,
+        10
+      ],
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "authority": [
+        "M174f"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H065",
+      "name": "pattern parity strict tolerance",
+      "input": [
+        100,
+        110,
+        10
+      ],
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "authority": [
+        "M174e"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H066",
+      "name": "pattern equality strict tolerance",
+      "input": [
+        100,
+        111,
+        10
+      ],
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "authority": [
+        "M174f"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H067",
+      "name": "pattern parity strict tolerance",
+      "input": [
+        100,
+        111,
+        10
+      ],
+      "expected": false,
+      "actual": false,
+      "pass": true,
+      "authority": [
+        "M174e"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H068",
+      "name": "pattern constructor counters",
+      "input": null,
+      "expected": [
+        2147483647,
+        1,
+        1
+      ],
+      "actual": [
+        2147483647,
+        1,
+        1
+      ],
+      "pass": true,
+      "authority": [
+        "M1746"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H069",
+      "name": "sentinel append clamps interval only once",
+      "input": 24,
+      "expected": [
+        25,
+        2,
+        1
+      ],
+      "actual": [
+        25,
+        2,
+        1
+      ],
+      "pass": true,
+      "authority": [
+        "M174d"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H070",
+      "name": "subsequent append retains interval",
+      "input": 100,
+      "expected": [
+        25,
+        3,
+        1
+      ],
+      "actual": [
+        25,
+        3,
+        1
+      ],
+      "pass": true,
+      "authority": [
+        "M174d"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H071",
+      "name": "fractional interval ratio triangular smooth",
+      "input": 1,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1745",
+        "M19db"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H072",
+      "name": "fractional interval ratio triangular smooth",
+      "input": 1.5,
+      "expected": 14.0,
+      "actual": 14.0,
+      "pass": true,
+      "authority": [
+        "M1745",
+        "M19db"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H073",
+      "name": "fractional interval ratio triangular smooth",
+      "input": 2,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1745",
+        "M19db"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H074",
+      "name": "fractional interval ratio triangular smooth",
+      "input": 2.25,
+      "expected": 14.0,
+      "actual": 14.0,
+      "pass": true,
+      "authority": [
+        "M1745",
+        "M19db"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H075",
+      "name": "visibility interval endpoints",
+      "input": 8799,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H076",
+      "name": "visibility interval endpoints",
+      "input": 8800,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H077",
+      "name": "visibility interval endpoints",
+      "input": 9000,
+      "expected": 0.5,
+      "actual": 0.5,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H078",
+      "name": "visibility interval endpoints",
+      "input": 9200,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H079",
+      "name": "visibility interval endpoints",
+      "input": 10000,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H080",
+      "name": "visibility interval endpoints",
+      "input": 10001,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M368f:0000-0055,00c8-00e4"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H081",
+      "name": "visibility history time attenuation",
+      "input": 1499,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1e5f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H082",
+      "name": "visibility history time attenuation",
+      "input": 1500,
+      "expected": 1.0,
+      "actual": 1.0,
+      "pass": true,
+      "authority": [
+        "M1e5f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H083",
+      "name": "visibility history time attenuation",
+      "input": 2250,
+      "expected": 0.5,
+      "actual": 0.5,
+      "pass": true,
+      "authority": [
+        "M1e5f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H084",
+      "name": "visibility history time attenuation",
+      "input": 3000,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M1e5f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H085",
+      "name": "visibility history time attenuation",
+      "input": 3001,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M1e5f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H086",
+      "name": "2000ms angle walk processes first outside entry",
+      "input": 100,
+      "expected": 20,
+      "actual": 20,
+      "pass": true,
+      "authority": [
+        "M1e5e:0267-0290"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H087",
+      "name": "2000ms angle walk processes first outside entry",
+      "input": 1001,
+      "expected": 2,
+      "actual": 2,
+      "pass": true,
+      "authority": [
+        "M1e5e:0267-0290"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H088",
+      "name": "following large spacing",
+      "input": null,
+      "expected": 9.106946012956644,
+      "actual": 9.106946012956644,
+      "pass": true,
+      "authority": [
+        "M1e57:0026-0069",
+        "M1e58"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H089",
+      "name": "nullable following bypass",
+      "input": null,
+      "expected": 9.106946012956644,
+      "actual": 9.106946012956644,
+      "pass": true,
+      "authority": [
+        "M1e57:0026-0069",
+        "M1e58"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H090",
+      "name": "following spacing zero suppresses sqrt-forward term",
+      "input": 0,
+      "expected": 5.352721747014347,
+      "actual": 5.352721747014347,
+      "pass": true,
+      "authority": [
+        "M1e58:0000-007f"
+      ],
+      "classification": "ARTIFICIAL HELPER CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H091",
+      "name": "first-minute transformation precedes descending sort",
+      "input": [
+        4.0,
+        1.0,
+        9.0
+      ],
+      "expected": [
+        0.0,
+        0.6020599913279624,
+        7.605882360128311
+      ],
+      "actual": [
+        0.0,
+        0.6020599913279624,
+        7.605882360128311
+      ],
+      "pass": true,
+      "authority": [
+        "M325f",
+        "M1d08"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H092",
+      "name": "first-minute equality included then future stops",
+      "input": null,
+      "expected": 2,
+      "actual": 2,
+      "pass": true,
+      "authority": [
+        "M3260"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H093",
+      "name": "duration constructor ties-even rounding",
+      "input": 0.5,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M3f39"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H094",
+      "name": "duration constructor ties-even rounding",
+      "input": 1.5,
+      "expected": 2.0,
+      "actual": 2.0,
+      "pass": true,
+      "authority": [
+        "M3f39"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H095",
+      "name": "duration constructor ties-even rounding",
+      "input": 2.5,
+      "expected": 2.0,
+      "actual": 2.0,
+      "pass": true,
+      "authority": [
+        "M3f39"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H096",
+      "name": "duration constructor ties-even rounding",
+      "input": 3.5,
+      "expected": 4.0,
+      "actual": 4.0,
+      "pass": true,
+      "authority": [
+        "M3f39"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H097",
+      "name": "mutable duration prefix independently queued",
+      "input": [
+        [
+          1.0,
+          400.0
+        ]
+      ],
+      "expected": 0.38471238220739934,
+      "actual": 0.38471238220739934,
+      "pass": true,
+      "authority": [
+        "M19ec",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H098",
+      "name": "duration prefix consumed/grown list",
+      "input": [
+        [
+          1.0,
+          400.0
+        ]
+      ],
+      "expected": [
+        181,
+        200,
+        20
+      ],
+      "actual": [
+        181,
+        200,
+        20
+      ],
+      "pass": true,
+      "authority": [
+        "M19ec"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H099",
+      "name": "mutable duration prefix independently queued",
+      "input": [
+        [
+          3.0,
+          400.0
+        ],
+        [
+          2.0,
+          800.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ],
+      "expected": 5.03535379826809,
+      "actual": 5.03535379826809,
+      "pass": true,
+      "authority": [
+        "M19ec",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H100",
+      "name": "duration prefix consumed/grown list",
+      "input": [
+        [
+          3.0,
+          400.0
+        ],
+        [
+          2.0,
+          800.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ],
+      "expected": [
+        133,
+        200,
+        70
+      ],
+      "actual": [
+        133,
+        200,
+        70
+      ],
+      "pass": true,
+      "authority": [
+        "M19ec"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H101",
+      "name": "mutable duration prefix independently queued",
+      "input": [
+        [
+          2.0,
+          2000.0
+        ],
+        [
+          1.0,
+          2000.0
+        ]
+      ],
+      "expected": 9.411268990988718,
+      "actual": 9.411268990988718,
+      "pass": true,
+      "authority": [
+        "M19ec",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H102",
+      "name": "duration prefix consumed/grown list",
+      "input": [
+        [
+          2.0,
+          2000.0
+        ],
+        [
+          1.0,
+          2000.0
+        ]
+      ],
+      "expected": [
+        2,
+        200,
+        200
+      ],
+      "actual": [
+        2,
+        200,
+        200
+      ],
+      "pass": true,
+      "authority": [
+        "M19ec"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H103",
+      "name": "mutable duration prefix independently queued",
+      "input": [
+        [
+          2.0,
+          5000.0
+        ]
+      ],
+      "expected": 13.946218378776472,
+      "actual": 13.946218378776472,
+      "pass": true,
+      "authority": [
+        "M19ec",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H104",
+      "name": "duration prefix consumed/grown list",
+      "input": [
+        [
+          2.0,
+          5000.0
+        ]
+      ],
+      "expected": [
+        1,
+        250,
+        250
+      ],
+      "actual": [
+        1,
+        250,
+        250
+      ],
+      "pass": true,
+      "authority": [
+        "M19ec"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H105",
+      "name": "two-circle complete calculated scalar",
+      "input": 24,
+      "expected": 1.0465595253340274,
+      "actual": 1.0465595253340276,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H106",
+      "name": "two-circle complete calculated scalar",
+      "input": 25,
+      "expected": 1.0465595253340274,
+      "actual": 1.0465595253340276,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H107",
+      "name": "two-circle complete calculated scalar",
+      "input": 26,
+      "expected": 1.0142349810893314,
+      "actual": 1.0142349810893314,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H108",
+      "name": "two-circle complete calculated scalar",
+      "input": 99,
+      "expected": 0.3808972537916713,
+      "actual": 0.3808972537916713,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H109",
+      "name": "two-circle complete calculated scalar",
+      "input": 100,
+      "expected": 0.3789879823511248,
+      "actual": 0.3789879823511248,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H110",
+      "name": "two-circle complete calculated scalar",
+      "input": 101,
+      "expected": 0.37710713708201615,
+      "actual": 0.37710713708201626,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H111",
+      "name": "two-circle complete calculated scalar",
+      "input": 1000,
+      "expected": 0.119846523006125,
+      "actual": 0.119846523006125,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H112",
+      "name": "small complete chart scalar",
+      "input": 0,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H113",
+      "name": "small complete chart scalar",
+      "input": 1,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H114",
+      "name": "small complete chart scalar",
+      "input": 2,
+      "expected": 0.119846523006125,
+      "actual": 0.119846523006125,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H115",
+      "name": "small complete chart scalar",
+      "input": 3,
+      "expected": 0.17843318764528585,
+      "actual": 0.17843318764528587,
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H116",
+      "name": "spacing movement no-angle branch",
+      "input": 0,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H117",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 0,
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H118",
+      "name": "spacing movement no-angle branch",
+      "input": 1,
+      "expected": 0.0010309278350515464,
+      "actual": 0.0010309278350515466,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H119",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 1,
+      "expected": 3.467122307588406e-09,
+      "actual": 3.467122307588406e-09,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H120",
+      "name": "spacing movement no-angle branch",
+      "input": 25,
+      "expected": 0.025773195876288662,
+      "actual": 0.025773195876288665,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H121",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 25,
+      "expected": 0.0023767473420819173,
+      "actual": 0.0023767473420819173,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H122",
+      "name": "spacing movement no-angle branch",
+      "input": 50,
+      "expected": 0.051546391752577324,
+      "actual": 0.05154639175257733,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H123",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 50,
+      "expected": 0.012986930197671638,
+      "actual": 0.012986930197671638,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H124",
+      "name": "spacing movement no-angle branch",
+      "input": 100,
+      "expected": 0.10309278350515465,
+      "actual": 0.10309278350515466,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H125",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 100,
+      "expected": 0.03548133892335755,
+      "actual": 0.03548133892335755,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H126",
+      "name": "spacing movement no-angle branch",
+      "input": 170,
+      "expected": 0.1752577319587629,
+      "actual": 0.17525773195876293,
+      "pass": true,
+      "authority": [
+        "M11c1:00c1-00dc,0504-051c"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H127",
+      "name": "spacing velocity exponent and distance gate",
+      "input": 170,
+      "expected": 0.07658627308796842,
+      "actual": 0.07658627308796842,
+      "pass": true,
+      "authority": [
+        "M408c:02ca-02f5"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H128",
+      "name": "four coincident circles have positive temporal stars",
+      "input": [
+        [
+          0,
+          256,
+          192
+        ],
+        [
+          1000,
+          256,
+          192
+        ],
+        [
+          2000,
+          256,
+          192
+        ],
+        [
+          3000,
+          256,
+          192
+        ]
+      ],
+      "expected": 0.2205278002999479,
+      "actual": 0.2205278002999479,
+      "pass": true,
+      "authority": [
+        "M0d6c",
+        "M3539",
+        "M1d08",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H129",
+      "name": "four-circle independently closed aggregate operands",
+      "input": [
+        [
+          0,
+          0,
+          192
+        ],
+        [
+          1000,
+          100,
+          192
+        ],
+        [
+          2000,
+          200,
+          192
+        ],
+        [
+          3000,
+          300,
+          192
+        ]
+      ],
+      "expected": [
+        2.9823906464869827,
+        3.927659248713498,
+        0.0
+      ],
+      "actual": [
+        2.9823906464869827,
+        3.9276592487134976,
+        0.0
+      ],
+      "pass": true,
+      "authority": [
+        "M11c1",
+        "M408c",
+        "M19ea",
+        "M19ec",
+        "M1d08"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H130",
+      "name": "four-circle independently closed final scalar",
+      "input": [
+        [
+          0,
+          0,
+          192
+        ],
+        [
+          1000,
+          100,
+          192
+        ],
+        [
+          2000,
+          200,
+          192
+        ],
+        [
+          3000,
+          300,
+          192
+        ]
+      ],
+      "expected": 0.22238298840277892,
+      "actual": 0.22238298840277892,
+      "pass": true,
+      "authority": [
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H131",
+      "name": "manager no-mod CS5 AR5 OD5 prepared operands",
+      "input": [
+        512,
+        384
+      ],
+      "expected": {
+        "radius": 32.013118743896484,
+        "preempt": 1200.0,
+        "full_window": 99.0
+      },
+      "actual": {
+        "radius": 32.013118743896484,
+        "preempt": 1200.0,
+        "full_window": 99.0
+      },
+      "pass": true,
+      "authority": [
+        "M28be",
+        "M28b2",
+        "M28b3",
+        "M0810"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H132",
+      "name": "bounded osu-to-star independent finite scalar",
+      "input": {
+        "text": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n0,192,0,1,0\n100,192,1000,1,0\n",
+        "viewport": [
+          512,
+          384
+        ],
+        "time_shift": 0
+      },
+      "expected": 0.119846523006125,
+      "actual": 0.119846523006125,
+      "pass": true,
+      "authority": [
+        "M28be",
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1d08",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H133",
+      "name": "calculated result caches Single bits",
+      "input": 2,
+      "expected": "1872f53d",
+      "actual": "1872f53d",
+      "pass": true,
+      "authority": [
+        "M1bd0:002b"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H134",
+      "name": "calculated result displayed after cache rounding",
+      "input": 2,
+      "expected": 0.11,
+      "actual": 0.11,
+      "pass": true,
+      "authority": [
+        "M1bc7",
+        "M1bd5",
+        "M2d7f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H135",
+      "name": "bounded osu-to-star independent finite scalar",
+      "input": {
+        "text": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n0,192,0,1,0\n100,192,1000,1,0\n200,192,2000,1,0\n",
+        "viewport": [
+          512,
+          384
+        ],
+        "time_shift": 0
+      },
+      "expected": 0.17843318764528585,
+      "actual": 0.17843318764528587,
+      "pass": true,
+      "authority": [
+        "M28be",
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1d08",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H136",
+      "name": "calculated result caches Single bits",
+      "input": 3,
+      "expected": "31b7363e",
+      "actual": "31b7363e",
+      "pass": true,
+      "authority": [
+        "M1bd0:002b"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H137",
+      "name": "calculated result displayed after cache rounding",
+      "input": 3,
+      "expected": 0.17,
+      "actual": 0.17,
+      "pass": true,
+      "authority": [
+        "M1bc7",
+        "M1bd5",
+        "M2d7f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H138",
+      "name": "bounded osu-to-star independent finite scalar",
+      "input": {
+        "text": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n0,192,0,1,0\n100,192,1000,1,0\n200,192,2000,1,0\n300,192,3000,1,0\n",
+        "viewport": [
+          512,
+          384
+        ],
+        "time_shift": 0
+      },
+      "expected": 0.22526837835848854,
+      "actual": 0.22526837835848854,
+      "pass": true,
+      "authority": [
+        "M28be",
+        "M0810",
+        "M11c1",
+        "M408c",
+        "M1d08",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H139",
+      "name": "calculated result caches Single bits",
+      "input": 4,
+      "expected": "c1ac663e",
+      "actual": "c1ac663e",
+      "pass": true,
+      "authority": [
+        "M1bd0:002b"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H140",
+      "name": "calculated result displayed after cache rounding",
+      "input": 4,
+      "expected": 0.22,
+      "actual": 0.22,
+      "pass": true,
+      "authority": [
+        "M1bc7",
+        "M1bd5",
+        "M2d7f"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H141",
+      "name": "explicit constant chart shift preserves finite scalar",
+      "input": 0,
+      "expected": 0.17843318764528585,
+      "actual": 0.17843318764528587,
+      "pass": true,
+      "authority": [
+        "M2cb4",
+        "M3691",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H142",
+      "name": "explicit constant chart shift preserves finite scalar",
+      "input": 1000,
+      "expected": 0.17843318764528585,
+      "actual": 0.17843318764528587,
+      "pass": true,
+      "authority": [
+        "M2cb4",
+        "M3691",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H143",
+      "name": "explicit constant chart shift preserves finite scalar",
+      "input": 123456,
+      "expected": 0.17843318764528585,
+      "actual": 0.17843318764528587,
+      "pass": true,
+      "authority": [
+        "M2cb4",
+        "M3691",
+        "M19e9"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H144",
+      "name": "bounded reader rejects missing stack input",
+      "input": "osu file format v14\n[General]\nMode:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H145",
+      "name": "bounded reader rejects positive stack input",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:0.7\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H146",
+      "name": "bounded reader rejects equal time stack ambiguity",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,0,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H147",
+      "name": "bounded reader rejects unsupported source order",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,1001,1,0\n256,192,1000,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H148",
+      "name": "bounded reader rejects unsupported slider",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,2,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H149",
+      "name": "bounded reader rejects unsupported modifier domain mode",
+      "input": "osu file format v14\n[General]\nMode:1\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H150",
+      "name": "bounded reader rejects nonfinite stack input",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:NaN\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,1,0\n",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M28eb:003c-0042,00c6,01b0,0324",
+        "M24b0:0002"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H151",
+      "name": "zero stack threshold keeps coincident circle coordinates",
+      "input": "osu file format v14\n[General]\nMode:0\nStackLeniency:0\n[Difficulty]\nCircleSize:5\nApproachRate:5\nOverallDifficulty:5\n[HitObjects]\n256,192,0,1,0\n256,192,1000,1,0\n",
+      "expected": 0.119846523006125,
+      "actual": 0.119846523006125,
+      "pass": true,
+      "authority": [
+        "M28eb",
+        "M24b0",
+        "M0d6c",
+        "M080a"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H152",
+      "name": "duration envelope strict400 boundary",
+      "input": 399,
+      "expected": 0,
+      "actual": 0,
+      "pass": true,
+      "authority": [
+        "M3f34:00b2"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H153",
+      "name": "duration envelope strict400 boundary",
+      "input": 400,
+      "expected": 0,
+      "actual": 0,
+      "pass": true,
+      "authority": [
+        "M3f34:00b2"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H154",
+      "name": "duration envelope strict400 boundary",
+      "input": 401,
+      "expected": 1,
+      "actual": 1,
+      "pass": true,
+      "authority": [
+        "M3f34:00b2"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H155",
+      "name": "first-minute strict future boundary",
+      "input": 59999,
+      "expected": 2,
+      "actual": 2,
+      "pass": true,
+      "authority": [
+        "M3260:001f,0047"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H156",
+      "name": "first-minute strict future boundary",
+      "input": 60000,
+      "expected": 2,
+      "actual": 2,
+      "pass": true,
+      "authority": [
+        "M3260:001f,0047"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H157",
+      "name": "first-minute strict future boundary",
+      "input": 60001,
+      "expected": 1,
+      "actual": 1,
+      "pass": true,
+      "authority": [
+        "M3260:001f,0047"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H158",
+      "name": "3000ms history comparison includes equality",
+      "input": 2999,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "pass": true,
+      "authority": [
+        "M1e63:004c",
+        "M1e5d:0026,002f"
+      ],
+      "classification": "ARTIFICIAL PREEMPT CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H159",
+      "name": "3000ms history comparison includes equality",
+      "input": 3000,
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ],
+      "pass": true,
+      "authority": [
+        "M1e63:004c",
+        "M1e5d:0026,002f"
+      ],
+      "classification": "ARTIFICIAL PREEMPT CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H160",
+      "name": "3000ms history comparison includes equality",
+      "input": 3001,
+      "expected": [
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0
+      ],
+      "pass": true,
+      "authority": [
+        "M1e63:004c",
+        "M1e5d:0026,002f"
+      ],
+      "classification": "ARTIFICIAL PREEMPT CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H161",
+      "name": "registered order preserved before any pair sort",
+      "input": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ],
+      "expected": [
+        0.0
+      ],
+      "actual": [
+        0.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M2cb4:001d-002d"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H162",
+      "name": "strain floor alone clamps signed differences",
+      "input": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ],
+      "expected": [
+        25.0
+      ],
+      "actual": [
+        25.0
+      ],
+      "pass": true,
+      "authority": [
+        "M366d:0016-002a"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H163",
+      "name": "registered order preserved before any pair sort",
+      "input": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          50,
+          200,
+          0
+        ]
+      ],
+      "expected": [
+        -100.0,
+        50.0
+      ],
+      "actual": [
+        -100.0,
+        50.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M2cb4:001d-002d"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H164",
+      "name": "strain floor alone clamps signed differences",
+      "input": [
+        [
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0
+        ],
+        [
+          50,
+          200,
+          0
+        ]
+      ],
+      "expected": [
+        25.0,
+        50.0
+      ],
+      "actual": [
+        25.0,
+        50.0
+      ],
+      "pass": true,
+      "authority": [
+        "M366d:0016-002a"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H165",
+      "name": "registered order preserved before any pair sort",
+      "input": [
+        [
+          -2147483648,
+          0,
+          0
+        ],
+        [
+          2147483647,
+          100,
+          0
+        ]
+      ],
+      "expected": [
+        -1.0
+      ],
+      "actual": [
+        -1.0
+      ],
+      "pass": true,
+      "authority": [
+        "M0810",
+        "M2cb4:001d-002d"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H166",
+      "name": "strain floor alone clamps signed differences",
+      "input": [
+        [
+          -2147483648,
+          0,
+          0
+        ],
+        [
+          2147483647,
+          100,
+          0
+        ]
+      ],
+      "expected": [
+        25.0
+      ],
+      "actual": [
+        25.0
+      ],
+      "pass": true,
+      "authority": [
+        "M366d:0016-002a"
+      ],
+      "classification": "ARTIFICIAL PAIR INPUT",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H167",
+      "name": "invalid prepared radius explicit outcome",
+      "input": 0.0,
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M0810 required prepared radius"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H168",
+      "name": "invalid prepared radius explicit outcome",
+      "input": "NaN",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M0810 required prepared radius"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H169",
+      "name": "invalid prepared radius explicit outcome",
+      "input": "+Infinity",
+      "expected": "rejected",
+      "actual": "rejected",
+      "pass": true,
+      "authority": [
+        "M0810 required prepared radius"
+      ],
+      "classification": "ENGINEERING ADMISSION CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H170",
+      "name": "retained duration trims whole segment strictly above threshold",
+      "input": 43999.0,
+      "expected": 1,
+      "actual": 1,
+      "pass": true,
+      "authority": [
+        "M3f35"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H171",
+      "name": "retained duration trims whole segment strictly above threshold",
+      "input": 44000.0,
+      "expected": 1,
+      "actual": 1,
+      "pass": true,
+      "authority": [
+        "M3f35"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H172",
+      "name": "retained duration trims whole segment strictly above threshold",
+      "input": 44001.0,
+      "expected": 0,
+      "actual": 0,
+      "pass": true,
+      "authority": [
+        "M3f35"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H173",
+      "name": "trimming drops lower segment retaining prior mutations",
+      "input": null,
+      "expected": [
+        [
+          2.0,
+          22000.0
+        ]
+      ],
+      "actual": [
+        [
+          2.0,
+          22000.0
+        ]
+      ],
+      "pass": true,
+      "authority": [
+        "M3f35"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H174",
+      "name": "equal positive object values retain successive weights",
+      "input": [
+        2.0,
+        2.0
+      ],
+      "expected": 3.833333333333333,
+      "actual": 3.833333333333333,
+      "pass": true,
+      "authority": [
+        "M1d08"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    },
+    {
+      "id": "H175",
+      "name": "nonpositive and NaN entries excluded from positive object aggregation",
+      "input": [
+        0.0,
+        -1.0,
+        "NaN",
+        2.0
+      ],
+      "expected": 2.0,
+      "actual": 2.0,
+      "pass": true,
+      "authority": [
+        "M1d08",
+        "M1d0d"
+      ],
+      "classification": "EXECUTED MATHEMATICAL CONTROL",
+      "original_runtime": "NOT RUN"
+    }
+  ]
+}
