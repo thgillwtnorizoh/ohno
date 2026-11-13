@@ -104,3 +104,8 @@ remain separate through NewCombo/health. A hold category preserved by the catalo
 still cannot become playable without its missing standard factory. Catalog ignores
 comment lines for its engineering index contract; complete original refresh error
 recovery is pending and is not certified by that policy.
+
+Canonical finite score-summary row recovery now retains writes before a metadata
+processing error and exposes PartialErrorLine/PartialError. This lets a trailing
+comment terminate that summary while the runtime loader independently skips it.
+It does not certify complete original partial-file recovery or notifications.

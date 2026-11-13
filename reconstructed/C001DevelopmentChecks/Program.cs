@@ -155,6 +155,9 @@ internal static class Program
             Check(Beatmap.LoadCanonical(path).Circles[0].Position == new Vector2(100,100), "canonical head Double clamp truncate precedes Single rounding");
             foreach (int invalidMode in new[] {99,-2})
                 Check(OsuMetadataSettings.Prepare(OsuDocument.Parse($"osu file format v14\n[General]\nMode:{invalidMode}")).Mode == 0, "M1bbb undefined mode fallback " + invalidMode);
+            File.WriteAllText(path,Map(14,"64,64,1000,1,0\n128,128,2000,1,0")+"// revision\n");
+            var commented = Beatmap.LoadCanonical(path);
+            Check(commented.Circles.Count == 2 && commented.ScoreMetadata?.RowCount == 2 && commented.ScoreMetadata.PartialErrorLine is not null, "canonical score refresh retains prior rows at partial error while runtime skips comment");
             string resultPath = Path.Combine(repo, "reconstructed/campaigns/C001/development-results.json");
             File.WriteAllText(resultPath, JsonSerializer.Serialize(new { classification = "Work 2 production development checks; not independent QA or original runtime", groups = Results.Count, results = Results }, new JsonSerializerOptions { WriteIndented = true }));
             Console.WriteLine($"C001 DEVELOPMENT: {Results.Count}/{Results.Count} PASS"); return 0;

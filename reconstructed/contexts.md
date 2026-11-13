@@ -1437,3 +1437,29 @@ Confidence clarification: initial Work2 fixture-byte mismatch was diagnosed as
 consistent with Windows autocrlf; initial raw newline counts were not captured.
 Path-specific -text then passed all exact hash controls in second gate. This is
 support for the checkout-policy correction, not a fabricated initial byte capture.
+
+C001 finite metadata-error continuation correction: canonical object loading filters
+raw comment lines, but the separate metadata summary can encounter a comment in
+HitObjects. Preserve prior summary writes at its documented processing-error
+boundary and expose PartialErrorLine/PartialError instead of making a previously
+supported trailing-comment chart unplayable. Historical summary API remains strict
+and its own normalized comment filtering unchanged. Add an actual canonical
+trailing-comment regression. This is bounded row-summary recovery, not proof of
+complete M1bc1 key/error/notification/final-bookkeeping semantics. Source-level
+preservation check confirms888 baseline re files unchanged except append-only
+journal, and implementation journal prefix unchanged; artifact stored under C001.
+
+C001 checkpoint03 VERIFIED at185c294ca4d68a346ee2560adb0c87fa08ec8000:
+Windows43454761467/job131985858281 SUCCESS,SDK8.0.427/runtime8.0.33,WPF Release0/0;
+all2309 historical named QA and retained development steps pass unchanged;C001164/164.
+Unchanged Work1 independent corpus:106/106 declared original-static fields match,
+0gaps,4/4engineering controls;10diagnostic probes are not semantic equivalence
+passes. This run uses explicit --audit; next source runs unchanged suite strictly.
+Self-contained win-x64 publish/artifact14054080442,67726778bytes succeeds. Full log
+2490382bytes SHA256a271bed65fbdf68696b0aacfbc0df2826c51be3389db1dcee404a94fb9afcbc9;
+ordinary lines and independent packet preserved, repeated historical evidence
+payloads hash-addressed. No original runtime/physical input/rendering/listening or
+owner qualification. C001 remains OPEN: these finite106fields are not77-domain/
+2214-branch closure. Next verified source includes bounded partial-summary recovery
+for trailing comments and strict independent runner; all unsupported domain research
+and owner-only qualification remain explicit dependencies, with no waiver.

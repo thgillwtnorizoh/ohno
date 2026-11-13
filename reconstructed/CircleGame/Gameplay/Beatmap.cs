@@ -359,6 +359,8 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
     int LastEnd, int BreakMilliseconds, int WholeSeconds, ushort Circles, ushort Sliders, ushort Spinners,
     float Hp, float Od, float Cs)
 {
+    public int? PartialErrorLine { get; init; }
+    public string? PartialError { get; init; }
     public LegacyScoreMultiplier Prepare()
     {
         if (!float.IsFinite(Hp) || !float.IsFinite(Od) || !float.IsFinite(Cs) ||
@@ -386,7 +388,7 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
     public static LegacyScoreMetadata ReadFresh(IEnumerable<string> lines, int version)
         => ReadFreshEntries(LegacyEntries(lines), version);
     public static LegacyScoreMetadata ReadFresh(OsuDocument document, bool originalStages = false)
-        => ReadFreshEntries(originalStages ? document.ReadStage(OsuReadStage.MetadataRefresh) : document.Entries, document.FormatVersion);
+        => ReadFreshEntries(originalStages ? document.ReadStage(OsuReadStage.MetadataRefresh) : document.Entries, document.FormatVersion, originalStages);
     // Compatibility adapter for independent callers supplying headerless lines.
     // Production loading uses the already-tokenized canonical document instead.
     private static IEnumerable<OsuEntry> LegacyEntries(IEnumerable<string> lines)
@@ -400,15 +402,17 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
             yield return new(number, section, line, null, null);
         }
     }
-    private static LegacyScoreMetadata ReadFreshEntries(IEnumerable<OsuEntry> entries, int version)
+    private static LegacyScoreMetadata ReadFreshEntries(IEnumerable<OsuEntry> entries, int version, bool allowPartial = false)
     {
         if (version < 5 || version > 14) throw new InvalidDataException("Unsupported metadata format version.");
         int count = 0, first = -1, breaks = 0;
         ushort circles = 0, sliders = 0, spinners = 0;
         float hp = 5, od = 5, cs = 5; // M1387 fresh object defaults, not cached reuse.
-        string lastStart = "", lastEnd = "";
+        string lastStart = "", lastEnd = ""; int? partialLine = null; string? partialError = null;
         foreach (var entry in entries)
         {
+            try
+            {
             string line = entry.Text, section = entry.Section;
             if (section == "[HitObjects]")
             {
@@ -454,11 +458,14 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
                 difficulty = Math.Clamp(difficulty, 0f, 10f);
                 switch (key) { case "HPDrainRate": hp = difficulty; break; case "OverallDifficulty": od = difficulty; break; case "CircleSize": cs = difficulty; break; }
             }
+            }
+            catch (Exception e) when (allowPartial && e is InvalidDataException or FormatException or OverflowException)
+            { partialLine = entry.LineNumber; partialError = e.Message; break; }
         }
         int last = lastStart.Length == 0 ? -1 : Stamp(lastStart);
         int end = lastEnd.Length == 0 ? -1 : Stamp(lastEnd);
         int seconds = unchecked(unchecked(last - first) - breaks) / 1000;
-        return new(version, count, first, last, end, breaks, seconds, circles, sliders, spinners, hp, od, cs);
+        return new(version, count, first, last, end, breaks, seconds, circles, sliders, spinners, hp, od, cs) { PartialErrorLine = partialLine, PartialError = partialError };
 
         static int Integer(string text) => int.TryParse(text, NumberStyles.Integer, CultureInfo.InvariantCulture, out int n) ? n :
             throw new InvalidDataException("Invalid Int32 score metadata operand.");

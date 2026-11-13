@@ -62,3 +62,19 @@ unavailable, and old compatibility loader admitted new defaults. All failure lin
 retained; old test expectations unchanged. New source implements original runtime
 bit priority with raw flags/registered identity retained through health/NewCombo;
 canonical head Double→clamp→Int32→Single; next gate pending. Campaign remains OPEN.
+
+Finite score-summary recovery source prepared: retain prior rows on supported
+metadata processing errors and expose error provenance; trailing-comment canonical
+regression added. Complete metadata recovery remains OPEN. Pending final exact
+Windows build, independent106-field audit, historical2309 and new development gate.
+
+VERIFIED CHECKPOINT:185c294ca4d68a346ee2560adb0c87fa08ec8000.
+Windows run43454761467/job131985858281 SUCCESS: SDK8.0.427/runtime8.0.33,
+Release0warnings/0errors, all2309 historical named QA and every retained development
+step pass; C001164/164. Independent unchanged Work1 corpus106/106declared fields,
+0gaps,4/4engineering controls;10diagnostic probes not semantic passes. Audit-mode
+result corroborates the finite fields only. Portable self-contained Windows artifact
+14054080442/67726778bytes produced. Owner qualification PENDING; full C001 OPEN.
+Next source adds bounded score-summary partial recovery and switches the unchanged
+independent suite to strict (no --audit). Rerun full gate before calling that source
+verified. Unsupported original domains remain in both coverage matrices.

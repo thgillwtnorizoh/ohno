@@ -1,0 +1,8 @@
+{
+  "baseline": "0421f9249f494b4a86fdf59c7dd76cd9a664688b",
+  "checked_source": "185c294ca4d68a346ee2560adb0c87fa08ec8000",
+  "protected_re_files": 888,
+  "research_journal_prefix_sha256": "6f689a6731f0b7f40fba918a54687a9b3551a1ede9aeee15dcd9cc92b92ae9b3",
+  "implementation_journal_prefix_sha256": "88d7f3c78485fdce9af30f4fce8b8a54a1331dcd1c8110a335333545b278211d",
+  "result": "PASS: all baseline re files unchanged except append-only journal; implementation journal prefix unchanged"
+}
