@@ -1,0 +1,525 @@
+{
+  "classification": "Work 2 engineering compatibility corpus; original runtime and independent verification pending",
+  "cases": [
+    {
+      "file": "corpus/v05-bezier.osu",
+      "sha256": "bb8b5083ac3c79d9b01de678f753edfb0401e2ef5c3ee7cc20c63696ba2a4b78",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v5",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 5
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v05-polyline.osu",
+      "sha256": "1a8194d0b491ca1ed912414b28f2999f7ef5852e6b3f19b73cb25ff154c91c69",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v5",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v06-bezier.osu",
+      "sha256": "0b26e7b5b2c23d1dcb66da67207070edb29eb9f80dd11d821ac6ff9671f30daf",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v6",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 6
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v06-polyline.osu",
+      "sha256": "20bd9d9951f119bc0d0e81a90b71850959e83f204c4b12a72e0d71fda7433d33",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v6",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v07-bezier.osu",
+      "sha256": "2696cb666fb010d23a366eef54934506f81ccf953a285847a3f212ae8e9daf65",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v7",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 7
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v07-polyline.osu",
+      "sha256": "b4d9d3883684cbfb11664570d88efabfc322437323433b17c64f5b8b1b9d04d7",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v7",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v08-bezier.osu",
+      "sha256": "421b10792a07291044ab00dcb1e623df53a0b7358f775231853c618d1c9fe12d",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v8",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 8
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v08-polyline.osu",
+      "sha256": "c2d51b0ef0a464181516f6f176cd093d52239f4266baef9b5d07f0f5cd74f49b",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v8",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v09-bezier.osu",
+      "sha256": "912a68a0ed8952ece0c80f2d6ad084f049ed82dd8d568399348d761528a30111",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v9",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 9
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v09-polyline.osu",
+      "sha256": "6562a2322c2e8904c8ff3c1fb1bddd75684c35d25396bf2f3cdf622836030df3",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v9",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v10-bezier.osu",
+      "sha256": "054090744ff1049250a313a71feb741f6ae9bfcf9d993d82ed573bfa69cf149a",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v10",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 10
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v10-polyline.osu",
+      "sha256": "52c882280b80f2059046737406e341e5cb1882c0a4325b34c9d00e06b6cec075",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v10",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v11-bezier.osu",
+      "sha256": "e53e8c86883caa53c4aa6bc6fd93a0a79b81d54e67fc47d93c7a11b93d08b396",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v11",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 11
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v11-polyline.osu",
+      "sha256": "35fce0355e4aeb18a1a3e25544aec15911f03289f0fd3a577c6e900319f92a53",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v11",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v12-bezier.osu",
+      "sha256": "d9b4a63bb8dfee52e4d830853e6e0ebf0525a48c8942827121a5b8337ef19def",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v12",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 12
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v12-polyline.osu",
+      "sha256": "2e5d3234665d550a8a2f889d7f30f7201216d217c105b88a962a4509a0fa615b",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v12",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v13-bezier.osu",
+      "sha256": "1a38e40e751a116217899b20e2c19edd593c40a2b30c111e3bc83209395f6e69",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v13",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 13
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v13-polyline.osu",
+      "sha256": "18f07b34ec672671d97c6dc8ff0a82f7e63d2f3c81198e3d2a5d60122446d08e",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v13",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v14-bezier.osu",
+      "sha256": "98a51b2ba73bf2cabd1e6112b046d93e3aac789f631138ee60cd5d57370ba631",
+      "source": "build_corpus.py",
+      "features": [
+        "bezier",
+        "v14",
+        "timing",
+        "sample-sidecar"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "format": 14
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/v14-polyline.osu",
+      "sha256": "e92e3c1a8f870ccb819d7bd6a6b14b615031a470242d65f42d5d3ecf43507e9e",
+      "source": "build_corpus.py",
+      "features": [
+        "linear",
+        "multi-control",
+        "v14",
+        "tail-extension"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "objects": 1,
+        "sliders": 1,
+        "end": 4250,
+        "tail": [
+          228,
+          342
+        ]
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/mode0-raw.osu",
+      "sha256": "c7a3a34e74bfde1389492738a096ad1872036e84ec8a591d5dbac93277e4bdf4",
+      "source": "build_corpus.py",
+      "features": [
+        "mode-identity",
+        "resources",
+        "unknown-data",
+        "quoted-comma",
+        "circle"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": true,
+      "expected_prepared": {
+        "raw_hitobjects": 1,
+        "mode": 0
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/mode1-raw.osu",
+      "sha256": "9a5af6882c38d5a5c072d51f2815f4cc6b8deae3d0b1f0a09f73cb3843a8251f",
+      "source": "build_corpus.py",
+      "features": [
+        "mode-identity",
+        "resources",
+        "unknown-data",
+        "quoted-comma",
+        "circle"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": false,
+      "expected_prepared": {
+        "raw_hitobjects": 1,
+        "mode": 1
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/mode2-raw.osu",
+      "sha256": "2f36a1e96271ccbcfcac1d5623b4100eaa50e719409812f881ae2e81f5641009",
+      "source": "build_corpus.py",
+      "features": [
+        "mode-identity",
+        "resources",
+        "unknown-data",
+        "quoted-comma",
+        "circle"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": false,
+      "expected_prepared": {
+        "raw_hitobjects": 1,
+        "mode": 2
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    },
+    {
+      "file": "corpus/mode3-raw.osu",
+      "sha256": "301ec09dbfb776a13f8f51dc698389efee7b16e4039e9a84aa88f42f253664dd",
+      "source": "build_corpus.py",
+      "features": [
+        "mode-identity",
+        "resources",
+        "unknown-data",
+        "quoted-comma",
+        "hold"
+      ],
+      "expected_syntax": "accepted",
+      "expected_gameplay": false,
+      "expected_prepared": {
+        "raw_hitobjects": 1,
+        "mode": 3
+      },
+      "original_runtime": "NOT RUN",
+      "confidence": "ENGINEERING synthetic fixture; version geometry predictions derived from E006/E032"
+    }
+  ]
+}

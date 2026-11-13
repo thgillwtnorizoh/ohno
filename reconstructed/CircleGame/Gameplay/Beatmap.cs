@@ -4,6 +4,67 @@ using System.Numerics;
 
 namespace Ohno.CircleGame.Gameplay;
 
+// C001 shared syntax contract. ENGINEERING lossless retention, not a claim that
+// every retained section/field is interpreted by the pinned original executable.
+// Kept in this shared file because historical QA links Beatmap.cs directly.
+public sealed record OsuEntry(int LineNumber, string Section, string Text, string? Key, string? Value);
+public sealed class OsuDocument
+{
+    public int FormatVersion { get; }
+    public string Header { get; }
+    public string FirstLine { get; }
+    public IReadOnlyList<string> SourceLines { get; }
+    public IReadOnlyList<OsuEntry> Entries { get; }
+    public string? SourceSha256 { get; }
+    public string Compatibility => "C001.syntax-v1; semantic admission belongs to each prepared projection";
+    private OsuDocument(int version, string header, string first, List<string> lines,
+        List<OsuEntry> entries, string? hash)
+    {
+        FormatVersion = version; Header = header; FirstLine = first;
+        SourceLines = lines.AsReadOnly(); Entries = entries.AsReadOnly(); SourceSha256 = hash;
+    }
+    public static OsuDocument Read(byte[] bytes, CancellationToken token = default)
+    {
+        token.ThrowIfCancellationRequested();
+        using var stream = new MemoryStream(bytes, writable: false);
+        using var reader = new StreamReader(stream, System.Text.Encoding.UTF8, detectEncodingFromByteOrderMarks: true);
+        return ReadCore(reader, Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(bytes)), token);
+    }
+    public static OsuDocument Parse(string text, CancellationToken token = default)
+    {
+        using var reader = new StringReader(text);
+        return ReadCore(reader, null, token);
+    }
+    private static OsuDocument ReadCore(TextReader reader, string? hash, CancellationToken token)
+    {
+        var lines = new List<string>(); var entries = new List<OsuEntry>();
+        string section = "", header = ""; int version = 0;
+        while (reader.ReadLine() is { } source)
+        {
+            token.ThrowIfCancellationRequested(); lines.Add(source);
+            string line = source.Trim();
+            if (header.Length == 0 && line.Length > 0)
+            {
+                header = source.Trim('\uFEFF', ' ', '\t');
+                if (!header.StartsWith("osu file format v", StringComparison.Ordinal) ||
+                    !int.TryParse(header[17..], NumberStyles.Integer, CultureInfo.InvariantCulture, out version))
+                    throw new InvalidDataException("Missing osu format header.");
+                continue;
+            }
+            if (line.Length == 0 || line.StartsWith("//", StringComparison.Ordinal)) continue;
+            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            int colon = line.IndexOf(':');
+            entries.Add(new(lines.Count, section, line,
+                colon < 0 ? null : line[..colon].Trim(), colon < 0 ? null : line[(colon + 1)..].Trim()));
+        }
+        token.ThrowIfCancellationRequested();
+        if (header.Length == 0) throw new InvalidDataException("Missing osu format header.");
+        return new(version, header, lines[0], lines, entries, hash);
+    }
+    // Duplicate keys and registration order remain visible through Entries.
+    public IEnumerable<OsuEntry> Section(string name) => Entries.Where(e => e.Section == name);
+}
+
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
 public sealed record SpinnerDefinition(int StartTime, int EndTime, int HitSound, string? HitSample);
 
@@ -19,7 +80,7 @@ public static class SliderGeometryPreparation
 {
     public const int MaxControls = 64, MaxSegments = 8192, MaxSubdivisionWork = 50000;
 
-    public static SliderGeometry Prepare(Vector2 head, IReadOnlyList<Vector2> supplied, bool bezier, double requested)
+    public static SliderGeometry Prepare(Vector2 head, IReadOnlyList<Vector2> supplied, bool bezier, double requested, int format = 14)
     {
         var controls = supplied.ToList();
         if (controls.Count == 0 || controls[0] != head) controls.Insert(0, head);
@@ -29,15 +90,18 @@ public static class SliderGeometryPreparation
         if (!bezier) Emit(controls, true);
         else
         {
-            // Modern forward-adjacent equality; the final equal pair is NOT a separator.
+            // E032: <=6 includes the second duplicate in the preceding subcurve;
+            // >6 uses forward equality and skips to the second duplicate.
             int start = 0;
             for (int i = 0; i < controls.Count; i++)
             {
-                bool separator = i < controls.Count - 2 && controls[i] == controls[i + 1];
+                bool separator = format <= 6 ? i > 0 && controls[i] == controls[i - 1] :
+                    i < controls.Count - 2 && controls[i] == controls[i + 1];
                 if (!separator && i != controls.Count - 1) continue;
                 var range = controls.GetRange(start, i - start + 1);
-                Emit(range.Count == 2 ? range : Flatten(range, ref work), range.Count == 2);
-                start = ++i; // Second duplicate starts the next range; no global deduplication.
+                bool linear = format > 8 && range.Count == 2;
+                Emit(linear ? range : format == 9 ? Uniform(range) : Flatten(range, ref work), linear);
+                start = format <= 6 ? i : ++i;
             }
         }
         double originalLength = 0;
@@ -72,10 +136,26 @@ public static class SliderGeometryPreparation
             {
                 if (raw.Count >= MaxSegments) throw new InvalidDataException("R06 allows at most 8192 raw segments per slider.");
                 Vector2 a = points[j - 1], b = points[j];
-                raw.Add(linear ? new(a + (b - a) * 0f, a + (b - a) * 1f, j == points.Count - 1, true) :
+                raw.Add(linear ? new(a + (b - a) * 0f, a + (b - a) * 1f, true, true) :
                     new(a, b, j == points.Count - 1, false));
             }
         }
+    }
+
+    // E032 M2d64: v9 only, 50*n samples, s<steps; deliberately no t=1.
+    private static IReadOnlyList<Vector2> Uniform(IReadOnlyList<Vector2> controls)
+    {
+        int steps = checked(50 * controls.Count);
+        var output = new List<Vector2>(steps);
+        for (int s = 0; s < steps; s++)
+        {
+            float t = (float)s / steps;
+            Vector2[] scratch = controls.ToArray();
+            for (int level = controls.Count - 1; level > 0; level--)
+                for (int j = 0; j < level; j++) scratch[j] = scratch[j] + (scratch[j + 1] - scratch[j]) * t;
+            output.Add(scratch[0]);
+        }
+        return output;
     }
 
     // Raw flattener exposed for the two E32 finite preparation targets, not gameplay.
@@ -214,17 +294,32 @@ public sealed record LegacyScoreMetadata(int FormatVersion, int RowCount, int Fi
     // Only a fresh file; no cache restore, reused difficulty or partial-error recovery.
     // Malformed metadata rejects explicitly instead of fabricating an original result.
     public static LegacyScoreMetadata ReadFresh(IEnumerable<string> lines, int version)
+        => ReadFreshEntries(LegacyEntries(lines), version);
+    public static LegacyScoreMetadata ReadFresh(OsuDocument document)
+        => ReadFreshEntries(document.Entries, document.FormatVersion);
+    // Compatibility adapter for independent callers supplying headerless lines.
+    // Production loading uses the already-tokenized canonical document instead.
+    private static IEnumerable<OsuEntry> LegacyEntries(IEnumerable<string> lines)
+    {
+        string section = ""; int number = 0;
+        foreach (string source in lines)
+        {
+            number++; string line = source.Trim();
+            if (line.Length == 0 || line.StartsWith("//")) continue;
+            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            yield return new(number, section, line, null, null);
+        }
+    }
+    private static LegacyScoreMetadata ReadFreshEntries(IEnumerable<OsuEntry> entries, int version)
     {
         if (version < 5 || version > 14) throw new InvalidDataException("Unsupported metadata format version.");
         int count = 0, first = -1, breaks = 0;
         ushort circles = 0, sliders = 0, spinners = 0;
         float hp = 5, od = 5, cs = 5; // M1387 fresh object defaults, not cached reuse.
-        string section = "", lastStart = "", lastEnd = "";
-        foreach (string source in lines)
+        string lastStart = "", lastEnd = "";
+        foreach (var entry in entries)
         {
-            string line = source.Trim();
-            if (line.Length == 0 || line.StartsWith("//")) continue;
-            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            string line = entry.Text, section = entry.Section;
             if (section == "[HitObjects]")
             {
                 string[] row = line.Split(',', 7);
@@ -491,6 +586,7 @@ public sealed record MapDisplayMetadata(string? Difficulty, string? Artist);
 public sealed record Beatmap(string Title, float CircleSize, float OverallDifficulty,
     float ApproachRate, IReadOnlyList<CircleDefinition> Circles)
 {
+    public OsuDocument? Document { get; init; }
     public LegacyScoreMetadata? ScoreMetadata { get; init; }
     public MapDisplayMetadata? DisplayMetadata { get; init; }
     public HealthMapSource? HealthSource { get; init; }
@@ -502,14 +598,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     public IReadOnlyList<SpinnerDefinition> Spinners { get; init; } = Array.Empty<SpinnerDefinition>();
 
     // Deliberately narrow .osu reader, NOT stable's complete parser (E04/E05).
-    public static Beatmap Load(string path)
+    public static Beatmap Load(string path, CancellationToken token = default)
     {
         if (new FileInfo(path).Length > 2 * 1024 * 1024)
             throw new InvalidDataException("R02 accepts beatmaps up to 2 MB.");
-        string[] lines = File.ReadAllLines(path);
-        string? header = lines.FirstOrDefault(l => !string.IsNullOrWhiteSpace(l))?.Trim('\uFEFF', ' ', '\t');
-        if (header is null || !header.StartsWith("osu file format v", StringComparison.Ordinal) ||
-            !int.TryParse(header[17..], out int version) || version < 5 || version > 14)
+        token.ThrowIfCancellationRequested();
+        var document = OsuDocument.Read(File.ReadAllBytes(path), token);
+        int version = document.FormatVersion;
+        if (version < 5 || version > 14)
             throw new InvalidDataException("Use an osu file format v5–v14 supported circle/Linear-slider map.");
 
         var fields = new Dictionary<string, string>(StringComparer.Ordinal);
@@ -525,12 +621,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var spinnerSamples = new List<SpinnerSampleMetadata>();
         string? sampleTimingError = null;
         int timingSourceOrder = 0;
-        string section = "";
-        for (int lineNumber = 0; lineNumber < lines.Length; lineNumber++)
+        foreach (var entry in document.Entries)
         {
-            string line = lines[lineNumber].Trim();
-            if (line.Length == 0 || line.StartsWith("//")) continue;
-            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            token.ThrowIfCancellationRequested();
+            int lineNumber = entry.LineNumber - 1;
+            string line = entry.Text, section = entry.Section;
             if (section == "[HitObjects]")
             {
                 string[] row = line.Split(',');
@@ -573,9 +668,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 {
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
                     string[] pathPoints = row[5].Split('|');
-                    if (isBezier && version != 14) throw new InvalidDataException("R06 Bézier preparation supports only format v14.");
-                    if ((!isBezier && (pathPoints.Length != 2 || pathPoints[0] != "L")) || pathPoints.Length < 2)
-                        throw new InvalidDataException("Use L|x:y (one straight segment) or format-v14 B| controls. Other curve types are not implemented.");
+                    if ((!isBezier && pathPoints[0] != "L") || pathPoints.Length < 2)
+                        throw new InvalidDataException("Use L| or B| control points. Other curve types are not implemented.");
                     if (pathPoints.Length - 1 > SliderGeometryPreparation.MaxControls)
                         throw new InvalidDataException("R06 allows at most 64 normalized controls per slider.");
                     var controls = new List<Vector2>();
@@ -583,8 +677,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     {
                         string[] xy = point.Split(':');
                         if (xy.Length != 2) throw new InvalidDataException("Invalid slider control; expected x:y.");
-                        controls.Add(isBezier ? new(ControlCoordinate(xy[0]), ControlCoordinate(xy[1])) :
-                            new(Number(xy[0], "slider endpoint X"), Number(xy[1], "slider endpoint Y")));
+                        // E006/E032: both path families parse Double -> Int32 -> Single.
+                        controls.Add(new(ControlCoordinate(xy[0]), ControlCoordinate(xy[1])));
                     }
                     // Constructor normalization is exact and preserves duplicate controls.
                     if (controls.Count == 0 || controls[0] != head.Position) controls.Insert(0, head.Position);
@@ -655,6 +749,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             int totalCheckpoints = 0, totalSegments = 0, totalMovements = 0;
             foreach (var slider in sliderRows.OrderBy(s => s.Head.StartTime))
             {
+                token.ThrowIfCancellationRequested();
                 var prepared = PrepareSlider(slider.Head, slider.Controls, slider.Bezier, slider.Length, slider.Traversals, version, multiplier, tickRate, timing);
                 prepared = prepared with { Samples = slider.Samples.Prepare(prepared) };
                 int sourceIndex = slider.Samples.SourceOrder;
@@ -700,8 +795,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 throw new InvalidDataException("AudioFilename must stay within the beatmap folder.");
         }
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
-            Difficulty("ApproachRate"), circles.AsReadOnly()) { AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
-                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(lines, version),
+            Difficulty("ApproachRate"), circles.AsReadOnly()) { Document = document, AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
+                Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(document),
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()),
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
@@ -770,7 +865,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         double spacing = (100.0 * multiplier) / tickRate;
         double velocity = effectiveBeat > 0 ? (spacing * tickRate) * (1000.0 / effectiveBeat) : spacing * tickRate;
-        SliderGeometry geometry = SliderGeometryPreparation.Prepare(head.Position, controls, bezier, length);
+        SliderGeometry geometry = SliderGeometryPreparation.Prepare(head.Position, controls, bezier, length, version);
         if (!double.IsFinite(velocity) || velocity <= 0)
             throw new InvalidDataException("Unsupported slider geometry or travel rate.");
 

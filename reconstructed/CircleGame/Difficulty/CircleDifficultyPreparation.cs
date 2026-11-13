@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.IO;
 using Ohno.CircleGame.Selection;
+using Ohno.CircleGame.Gameplay;
 
 namespace Ohno.CircleGame.Difficulty;
 
@@ -11,7 +12,7 @@ public sealed record CirclePreparation(float Radius, double Preempt, double Full
 public sealed record StarProfile(int Mods = 0, float Width = 512, float Height = 384, int TimeShift = 0, double Rate = 1);
 public sealed record AdmittedCircles(IReadOnlyList<CircleDefinition> Circles, CirclePreparation Preparation);
 
-// ENGINEERING strict reader. It does not call or alter the gameplay parser/manager.
+// ENGINEERING strict projection of C001 syntax; independent gameplay admission.
 public static class StarAdmission
 {
     public const string CalculatorProfile = "E044-E046.circle-v1:CS5:OD5:AR5-or10:512x384:shift0:rate1:mods0";
@@ -30,17 +31,17 @@ public static class StarAdmission
         profile ??= new();
         if (profile.Mods != 0 || profile.Width != 512 || profile.Height != 384 || profile.TimeShift != 0 || profile.Rate != 1)
             throw new UnsupportedStarProfileException("Only mods0,512×384,shift0,rate1 independently verified profile is admitted.");
-        using var reader = new StringReader(text);
-        if (reader.ReadLine() != "osu file format v14") throw new UnsupportedStarProfileException("Format14 required.");
-        var fields = new Dictionary<string, string>(StringComparer.Ordinal); string section = "";
-        var circles = new List<CircleDefinition>(); int lines = 0;
-        while (reader.ReadLine() is { } raw)
+        OsuDocument document;
+        try { document = OsuDocument.Parse(text, token); }
+        catch (InvalidDataException e) { throw new UnsupportedStarProfileException(e.Message); }
+        if (document.FirstLine != "osu file format v14") throw new UnsupportedStarProfileException("Format14 required.");
+        if (document.SourceLines.Count - 1 > 100000) throw new UnsupportedStarProfileException("Restricted reader line limit exceeded.");
+        var fields = new Dictionary<string, string>(StringComparer.Ordinal);
+        var circles = new List<CircleDefinition>();
+        foreach (var entry in document.Entries)
         {
             token.ThrowIfCancellationRequested();
-            if (++lines > 100000) throw new UnsupportedStarProfileException("Restricted reader line limit exceeded.");
-            string line = raw.Trim();
-            if (line.Length == 0 || line.StartsWith("//", StringComparison.Ordinal)) continue;
-            if (line.StartsWith('[') && line.EndsWith(']')) { section = line; continue; }
+            string line = entry.Text, section = entry.Section;
             int colon = line.IndexOf(':');
             if (section is "[General]" or "[Difficulty]" && colon >= 0)
             {

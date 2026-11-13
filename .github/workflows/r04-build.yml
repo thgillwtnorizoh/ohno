@@ -4,6 +4,8 @@ on:
   push:
     branches: [main, ci/verification]
     paths:
+      - reconstructed/campaigns/C001/**
+      - reconstructed/C001DevelopmentChecks/**
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
       - reconstructed/R07DevelopmentChecks/**
@@ -397,3 +399,31 @@ jobs:
         run: |
           dotnet run --project reconstructed/R17WindowsChecks/R17WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
+
+      - name: Check C001 canonical syntax and versioned Bezier preparation
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Publish C001 Windows x64 application for owner qualification
+        if: ${{ success() }}
+        shell: pwsh
+        run: |
+          dotnet publish reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o "${{ runner.temp }}/ohno-c001-windows"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git rev-parse HEAD | Set-Content "${{ runner.temp }}/ohno-c001-windows/SOURCE-COMMIT.txt"
+          Copy-Item reconstructed/campaigns/C001/corpus "${{ runner.temp }}/ohno-c001-windows/C001Corpus" -Recurse
+          Copy-Item reconstructed/campaigns/C001/corpus-manifest.json "${{ runner.temp }}/ohno-c001-windows/"
+          Copy-Item reconstructed/campaigns/C001/human-qualification.md "${{ runner.temp }}/ohno-c001-windows/"
+
+      - name: Preserve C001 development evidence and Windows application
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ohno-C001-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/ohno-c001-windows/
+            reconstructed/campaigns/C001/development-results.json
+          if-no-files-found: warn

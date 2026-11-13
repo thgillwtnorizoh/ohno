@@ -1313,3 +1313,41 @@ prefix rewritten. Final publication is documentation/evidence-only child of exac
 tested source, expected-head non-force main update after remote recheck. No original
 binary/Window/physical input/nonempty media/listening/manual qualification. No exception.
 Stop afterR17, noQA15/E047/R18 or deferred JoinedBezier investigation.
+
+## C001 / Work 2 / checkpoint01 — canonical syntax and version-aware paths — 2026-11-13
+
+Authority: full C001 authorization and UEP-001, superseding historical per-expedition
+stop directives for this campaign. No historical report/journal changed. Baseline
+remote main0421f9249f494b4a86fdf59c7dd76cd9a664688b. Read contract, AGENTS, relevant
+E004–006/E010/E015–023/E032–036/E039–046 and R04–17/QA baseline records. Work 1 owns
+original investigation and independent C001 verification. No new Work 1 C001 files
+published at baseline. This checkpoint is partial, campaign OPEN.
+
+Objective: remove production syntax fragmentation and implement existing evidence's
+L/B version branches without substituting modern algorithms. Inventory and status
+in reconstructed/campaigns/C001. OsuDocument retains ordered source entries/lines,
+version and exact byte SHA256 (byte input), BOM detection, unknown data and duplicate
+properties. ENGINEERING contract; complete typed fields/default/error semantics open.
+Gameplay/catalog/star delegate to it; score consumes already-tokenized entries.
+Headerless historical score API remains. Catalog/star keep stricter admission;
+malformed catalog '[' behavior difference explicitly D010. No R17 math changes.
+
+RECONSTRUCTED E032: admitted5–14 B branches, <=6 duplicate rule,7–8 adaptive without
+pair bypass,9 uniform50*n excludes endpoint except pair bypass,>=10 adaptive with
+pair bypass. E006 multi-control L now admitted and every pair marked; control parse
+corrected to Double→Int32→Single (L16); Linear head precision remains D008. Existing
+common adjustment/movement/tick/score/audio/health contracts retained. Cancellation
+forwarded through catalog loading and checked per row/slider, inner geometry bounded.
+No guessed stacking/P/C/mode algorithms or defaults. Registers explicitly preserve
+R17 owner19 mismatches and historical Joined Bezier discrepancy.
+
+Changed: Beatmap.cs shared contract/geometry/loading; catalog/star projection; new
+C001 development harness/24 synthetic fixtures/hash manifest/generator; authorization,
+coverage/inventory/discrepancies/status/owner checklist and Windows gate extension.
+No copyrighted assets. Actual local checks: E032 evidence PASS22methods/11shared hashes;
+QA15 corpus PASS27charts/47traces; package PASS71707 bytes/SHA256
+be2168196216889faba4f60fef230f28bc6cbf3a39904338a81d06ec48a12499; C001 generator PASS24;
+diff --check PASS. No local dotnet SDK available. Windows gate/tests/publish pending;
+no original runtime, physical input/rendering/listening or human qualification.
+Next: publish expected-head checkpoint, inspect exact Windows gate and correct any
+failure without weakening historical expectations; then consume new Work 1 evidence.

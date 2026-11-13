@@ -82,7 +82,7 @@ public sealed class CatalogChart(string path, ChartFingerprint? fingerprint, Cha
     }
     public Beatmap LoadGameplay(CancellationToken token = default)
     {
-        Verify(token); var map = Beatmap.Load(Path); Verify(token); return map; // Fresh authoritative parser, never cached Beatmap substitution.
+        Verify(token); var map = Beatmap.Load(Path, token); Verify(token); return map; // Fresh authoritative parser, never cached Beatmap substitution.
     }
 }
 public sealed record CatalogSnapshot(long Generation, IReadOnlyList<CatalogChart> Charts, IReadOnlyList<string> Notices);
@@ -168,16 +168,16 @@ public sealed class LocalChartCatalog : IDisposable
             CatalogPaths.Canonical(path);
             if (!System.IO.Path.GetExtension(path).Equals(".osu", StringComparison.OrdinalIgnoreCase)) throw new InvalidDataException("Choose an .osu chart.");
             var read = ChartFingerprint.Read(path, token); fingerprint = read.Fingerprint;
-            using var reader = new StreamReader(new MemoryStream(read.Bytes), Encoding.UTF8, detectEncodingFromByteOrderMarks: true);
-            string? first = reader.ReadLine();
+            var document = OsuDocument.Read(read.Bytes, token);
+            string? first = document.FirstLine;
             if (first is null || !first.StartsWith("osu file format v", StringComparison.Ordinal) || !int.TryParse(first[17..], out int format)) throw new InvalidDataException("Missing osu format header.");
-            var fields = new Dictionary<string, string>(StringComparer.Ordinal); string section = ""; var bpm = new List<double>();
-            int objects = 0, circles = 0, sliders = 0, spinners = 0, end = 0, lines = 0; bool unsupportedObject = false;
-            while (reader.ReadLine() is { } line)
+            var fields = new Dictionary<string, string>(StringComparer.Ordinal); var bpm = new List<double>();
+            int objects = 0, circles = 0, sliders = 0, spinners = 0, end = 0; bool unsupportedObject = false;
+            if (document.SourceLines.Count - 1 > 100000) throw new InvalidDataException("Index line limit exceeded.");
+            foreach (var entry in document.Entries)
             {
-                token.ThrowIfCancellationRequested(); if (++lines > 100000) throw new InvalidDataException("Index line limit exceeded.");
-                line = line.Trim(); if (line.Length == 0 || line.StartsWith("//", StringComparison.Ordinal)) continue;
-                if (line.StartsWith('[')) { section = line; continue; }
+                token.ThrowIfCancellationRequested();
+                string line = entry.Text, section = entry.Section;
                 int colon = line.IndexOf(':');
                 if (section is "[Metadata]" or "[General]" or "[Difficulty]")
                 { if (colon > 0) fields[section + line[..colon].Trim()] = line[(colon + 1)..].Trim(); continue; }

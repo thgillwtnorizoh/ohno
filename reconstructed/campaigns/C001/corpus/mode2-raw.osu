@@ -1,0 +1,29 @@
+osu file format v14
+[General]
+Mode:2
+StackLeniency:0
+[Metadata]
+Title:C001 Independent Controls
+Artist:Project ohno
+Creator:Work 2
+Version:v14 mode2
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[Editor]
+Bookmarks:1000,2000
+[Events]
+0,0,"background,one.jpg",0,0
+Sample,2500,0,"sample.wav",60
+[Colours]
+Combo1:10,20,30
+[Future]
+Unknown:value:with:colons
+[HitObjects]
+64,64,3000,1,0
