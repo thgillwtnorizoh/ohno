@@ -1,0 +1,4 @@
+# Exact-byte reference fixtures must survive Windows checkouts unchanged.
+corpus/fixtures/*.osu -text
+# Preserve the supplied authorization byte-for-byte, including CRLF.
+authorization.md -text -whitespace

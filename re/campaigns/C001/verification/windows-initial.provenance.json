@@ -1,0 +1,13 @@
+{
+  "source": "333f6d1ff63ef89ddd8a50634e264ed2542b1eba",
+  "run": 43450210907,
+  "job": 131970075774,
+  "result": "failure",
+  "returned_log_bytes": 2418109,
+  "returned_log_sha256": "57305aa98b27742e35cd792173caf42c5db0cb642a0800b5f79d9a2b78de77c2",
+  "failed_steps": [
+    "Execute independent QA04 geometry and integration suite",
+    "Check C001 canonical syntax and versioned Bezier preparation"
+  ],
+  "original_runtime": "NOT RUN"
+}

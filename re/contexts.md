@@ -2330,3 +2330,44 @@ Windows regression, owner-only matched hashes/builds/runtime. Owner-reported8 ma
 19 mismatch star observations retained separately from immutable QA15 blank columns;
 no preparation cause inferred or star fitting authorized. Publish findings promptly
 on shared main after diff/remote-head review; continue within C001.
+
+## Campaign C001 — Work1 checkpoint02: independent production corpus and failed Windows gates — 2026-11-13
+
+Concurrent Work2 main333f6d1ff63ef89ddd8a50634e264ed2542b1eba discovered while publishing
+checkpoint01. Expected-head update did not overwrite it. Integrated research-only
+tree on333f6d1 and published ee83d5cb3960f327aa30be056b8e5970eee736eb. CLI push lacked
+credentials; connected GitHub Git-data API publication succeeded, remote reread and
+fresh worktree established integrated source. Local unpublished d8829eb remains only
+baseline packet provenance; original production hashes match0421f924 exactly.
+
+New Work1 independently generated49-file corpus/manifest and production-linked C#
+headless suite.39 files have metadata controls,8 prepared controls;10 diagnostic
+probes deliberately assert no original equivalence. Actual original runtime NOT RUN.
+Baseline and333f6d1 production both62/106 matching original-static fields,44 differences;
+4/4 actual changed-byte/revision/cancellation controls PASS. Strict conformance exit1
+preserved; no expected value weakened. Gaps/defaults/AR/mode/clamp/unknown-section/
+combined-type differences detailed in verification/02-production-audit.md. New
+.gitattributes preserves exact Work1 fixture bytes across Windows checkouts.
+
+Read Work2 shared syntax/versioned L/B source changes and campaign records.
+Actual Work2 development suite115/115 PASS on local .NET8.0.427/runtime8.0.33 Linux.
+Original Windows/headless distinction retained. Exact Windows source333f6d1 run
+43450210907/job131970075774 FAILED: QA04 F01 expects restricted v13 Bezier rejection,
+new admission accepts; C001 development fixture hash v05-bezier fails on Windows,
+local passes. First requires explained Headquarters disposition under authorization
+§10, not silently changing historical tests. Second suspected CRLF checkout, raw
+Windows newline/hash corroboration pending. Full returned log2418017 characters and
+step metadata retained losslessly; test expectations untouched. No production fix
+made by Work1. Other C001 semantics and owner runtime gates OPEN. This checkpoint
+adds independent evidence, not subsystem acceptance. Continue original geometry/
+stacking/mode/event recovery and canonical production verification inside C001.
+
+C001 checkpoint02 coordination addendum: Work2 published80f7ac1a2ead36f88887c33b7e60ae7feccdfbe3
+before audit publication. Integrated it without overwriting either workstream.
+Original failure preserved, not waived: legacy Beatmap.Load retains v14 Bezier
+admission; application/catalog explicitly use LoadCanonical. Work1 suite switched
+to actual canonical API and pinned last production commit in result provenance.
+Still62/106/44 plus4/4 engineering PASS. Original333f6d1 packet retained separately.
+Path-specific exact-byte attributes and defensive source snapshot/copy added by
+Work2. Local QA04 rerun43/43 PASS; no approval exception needed if corrected full
+gate passes. Windows confirmation and remaining research/production gaps stay OPEN.

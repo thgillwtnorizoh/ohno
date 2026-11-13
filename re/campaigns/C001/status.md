@@ -27,3 +27,16 @@ justify expansion. Do not fit owner star observations.
 Active gates: complete static semantics; canonical implementation/API; full exact
 Windows regression; owner-only matched original/ohno testing; discrepancy closure.
 None is waived. No final acceptance claimed.
+
+## Checkpoint02 — Work2 implementation now available
+
+Published research checkpoint01:ee83d5cb3960f327aa30be056b8e5970eee736eb on concurrent
+Work2 source333f6d1ff63ef89ddd8a50634e264ed2542b1eba. Source now contains shared syntax
+and versioned L/B preparation; earlier initial-availability statements are historical.
+
+Independent49-file corpus:62/106 original-contract fields match,44 gaps;4/4 revision/
+cancellation engineering controls PASS. Diagnostic probes10 are not semantic passes.
+Local Work2 development115/115 PASS. Exact Windows333f6d1 FAILED QA04 F01 admission
+expectation and C001 corpus hash. See verification/02-production-audit.md. Preserve
+historical failure; Headquarters disposition and raw Windows byte corroboration
+required. No original/human runtime accepted. Continue research and canonical fixes.

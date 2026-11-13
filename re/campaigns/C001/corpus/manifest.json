@@ -1,0 +1,894 @@
+{
+  "campaign": "C001",
+  "cases": [
+    {
+      "id": "control",
+      "feature": "ordinary distinct unstacked circles",
+      "expected_metadata": {
+        "Format": 14,
+        "Ruleset": 0,
+        "Title": "C001 control",
+        "Hp": 5,
+        "Cs": 5,
+        "Od": 5,
+        "Ar": 5,
+        "Objects": 2,
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": {
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0,
+        "CircleSize": 5,
+        "OverallDifficulty": 5,
+        "ApproachRate": 5
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/control.osu",
+      "sha256": "8827a5e6c8aef5d42323883c72d8dcdde40badd6cef0f6ee8ecec5008b749c0e",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-3",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 3
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-3.osu",
+      "sha256": "4a1454a611fb9b4cd5527da153471f7da99dc80855e7bd7ff390e23793e15573",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-4",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 4
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-4.osu",
+      "sha256": "2cde4e802e0b3f7947273f45d96e8a5f68658eddaff2cafe52e21bfe02eae890",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-5",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 5
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-5.osu",
+      "sha256": "5f50c688375cb805d83879d06f3246ff816428d01a3a13a87177e3a00121d041",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-7",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 7
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-7.osu",
+      "sha256": "b1b775113102e51256c17894bfd89981df4914b7cd19d724d484f4232956c619",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-8",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 8
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-8.osu",
+      "sha256": "bc7f43833bb9b6878b199d205fc856f99ce09b835e77cdb126be3c865438e719",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-9",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 9
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-9.osu",
+      "sha256": "a53c6fe1abe356455141e0146df0b58eb7369700b0faf80747293db8947dfca3",
+      "bytes": 356,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-10",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-10.osu",
+      "sha256": "7d20c605c66893852f4406f5b47676e515a7cdc58e90f65bb276b9ec07c14e92",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-12",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 12
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-12.osu",
+      "sha256": "3155ace06e68cc79dc53d009942850370fed57b3bf4984ecdac192b524072e4b",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-13",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 13
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-13.osu",
+      "sha256": "43d3be96e57122a4f7a1534826d9e1e2b956f01e91643a0e6b5aae03704c76ba",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-14",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 14
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-14.osu",
+      "sha256": "8827a5e6c8aef5d42323883c72d8dcdde40badd6cef0f6ee8ecec5008b749c0e",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "version-15",
+      "feature": "header recognition only, not general version admission",
+      "expected_metadata": {
+        "Format": 15
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/version-15.osu",
+      "sha256": "93099859a7f066f08861a39fec4cd9fe5d5d5e63934e8143301578467b30d254",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "title-colons",
+      "feature": "first-colon metadata remainder",
+      "expected_metadata": {
+        "Title": "a:b:c"
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/title-colons.osu",
+      "sha256": "826013947131c957250d2f19ead4bc348a81e6621caa0594aaeb4f97f0c82ec9",
+      "bytes": 350,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "unknown-section",
+      "feature": "unknown section retains Metadata",
+      "expected_metadata": {
+        "Title": "new"
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/unknown-section.osu",
+      "sha256": "e470a806e042aa61d60cda9fbc93ccede543b5d043312f842850149f79ad05a3",
+      "bytes": 380,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "unknown-case-section",
+      "feature": "case-sensitive enum parse retains Metadata",
+      "expected_metadata": {
+        "Title": "new"
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/unknown-case-section.osu",
+      "sha256": "cc116a399ff9926860692d143e8abcb09c043ebc9dde32168352e11781d3c7de",
+      "bytes": 369,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "duplicate-title",
+      "feature": "ordinary duplicate title overwrite",
+      "expected_metadata": {
+        "Title": "new"
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/duplicate-title.osu",
+      "sha256": "7d97f8eae546c3af8b4a531da4406a5ea5e8bde5667da8ebf04f077a270442a4",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "ar-fallback",
+      "feature": "OD-to-AR inheritance before explicit AR",
+      "expected_metadata": {
+        "Od": 7,
+        "Ar": 7
+      },
+      "expected_prepared": {
+        "OverallDifficulty": 7,
+        "ApproachRate": 7,
+        "Circles": 2
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/ar-fallback.osu",
+      "sha256": "1f44b0a2de6e98641aa761f8e3d28ccc81fed36534589206972f8663478d1b54",
+      "bytes": 342,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "ar-explicit-first",
+      "feature": "explicit AR protects later OD",
+      "expected_metadata": {
+        "Od": 7,
+        "Ar": 3
+      },
+      "expected_prepared": {
+        "OverallDifficulty": 7,
+        "ApproachRate": 3,
+        "Circles": 2
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/ar-explicit-first.osu",
+      "sha256": "29471ec7e18faf414df4ce82d93713817c8c1c99f937a7edd189f66f7abd18da",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "ar-explicit-last",
+      "feature": "explicit AR after OD replaces inheritance",
+      "expected_metadata": {
+        "Od": 7,
+        "Ar": 3
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/ar-explicit-last.osu",
+      "sha256": "44221cb23a0ec9d38828beb2be0a63c555c0de8be07e7f78ec945eb6d13591a0",
+      "bytes": 357,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "defaults",
+      "feature": "fresh difficulty defaults",
+      "expected_metadata": {
+        "Hp": 5,
+        "Cs": 5,
+        "Od": 5,
+        "Ar": 5
+      },
+      "expected_prepared": {
+        "CircleSize": 5,
+        "OverallDifficulty": 5,
+        "ApproachRate": 5,
+        "Circles": 2
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/defaults.osu",
+      "sha256": "261daf76a6a0e7d480d7982b08443aa90962d6e99332f1665d6e3ac18606b3c9",
+      "bytes": 295,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-hp-neg1",
+      "feature": "v14 HPDrainRate clamp",
+      "expected_metadata": {
+        "Hp": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-hp-neg1.osu",
+      "sha256": "2c71d375d78cba49a14562e62323a6b13329ce60a88dabcd557abfcdcb14221f",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-hp-12",
+      "feature": "v14 HPDrainRate clamp",
+      "expected_metadata": {
+        "Hp": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-hp-12.osu",
+      "sha256": "e81ac4a722a81221754f3ba3117d7ca435fd367beeee78f52ff510b6d35628b1",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-cs-neg1",
+      "feature": "v14 CircleSize clamp",
+      "expected_metadata": {
+        "Cs": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-cs-neg1.osu",
+      "sha256": "fdb60d2dc61ba8bab2d136f609dfa3c1794de9950072a0847b4e9d2beb1984a6",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-cs-12",
+      "feature": "v14 CircleSize clamp",
+      "expected_metadata": {
+        "Cs": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-cs-12.osu",
+      "sha256": "e131d99b0b08d7e815c36478897d086acf755b8c3e8c1748c963c8427f5a200c",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-od-neg1",
+      "feature": "v14 OverallDifficulty clamp",
+      "expected_metadata": {
+        "Od": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-od-neg1.osu",
+      "sha256": "bd57a37de32f094a52b732460e34e0223610c7ea743f73deb1ed11c23f5bd6af",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-od-12",
+      "feature": "v14 OverallDifficulty clamp",
+      "expected_metadata": {
+        "Od": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-od-12.osu",
+      "sha256": "c4a5704a54d38fcc0ae77d27b9c2b33a78a8a3d9b882802d0c7df7f8242e69e2",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-ar-neg1",
+      "feature": "v14 ApproachRate clamp",
+      "expected_metadata": {
+        "Ar": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-ar-neg1.osu",
+      "sha256": "c819fbb8fc7536a90a37e1a56347f9b79ebae41cb086c503f1b4553c539ec583",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "clamp-ar-12",
+      "feature": "v14 ApproachRate clamp",
+      "expected_metadata": {
+        "Ar": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/clamp-ar-12.osu",
+      "sha256": "44cbf614832891527554d03e9dda8cd4fcb79cec48a56be4e19c61d31e534db6",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "mania-cs",
+      "feature": "mode3 CS upper18",
+      "expected_metadata": {
+        "Ruleset": 3,
+        "Cs": 17.5
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/mania-cs.osu",
+      "sha256": "e3710c874814d23c691294c8ddd9524dc514bc77c378a406c6c8f77cfbf56bac",
+      "bytes": 360,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "mania-mode-after-cs",
+      "feature": "CS consumes mode at field interpretation time",
+      "expected_metadata": {
+        "Ruleset": 3,
+        "Cs": 10
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/mania-mode-after-cs.osu",
+      "sha256": "80eaf0985550fc83b8de2ec7187c14a894adb472fa3ccd942f0d815fcf13f69c",
+      "bytes": 383,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "invalid-mode-99",
+      "feature": "M1bbb rejects undefined enum to0",
+      "expected_metadata": {
+        "Ruleset": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/invalid-mode-99.osu",
+      "sha256": "7b3b42925a79250fc4eebba08718ee1764e4ae362b11203a11ec5b5c00aae270",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "invalid-mode-neg2",
+      "feature": "M1bbb rejects undefined enum to0",
+      "expected_metadata": {
+        "Ruleset": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/invalid-mode-neg2.osu",
+      "sha256": "468c9da37838e7a4598c46013fc47994959f007d423bc433abdb4d347bd5777d",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-3",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": {
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-3.osu",
+      "sha256": "2163ed602e36fb84345525339f2a9a131ca0ee4e8ab26e3fb9798e653187fa60",
+      "bytes": 362,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-9",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": {
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-9.osu",
+      "sha256": "c0e1b5af8a223a7502fb57b56778ab64865732c5568919d5110af5018d1f8a94",
+      "bytes": 362,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-10",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-10.osu",
+      "sha256": "0072ed3cc6bc5c08adf8be4773ff209154c94f815135ee59ccec81d5a708117e",
+      "bytes": 363,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-11",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": {
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-11.osu",
+      "sha256": "5b65abb94e3dccc49b97a5bacc93735c3c2fc9123d2cb5431ea51bd28981dfca",
+      "bytes": 363,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-129",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": {
+        "Circles": 2,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-129.osu",
+      "sha256": "f46d6f18c31672a99669bf6b7f191a83920e9339d6fa7218c5b9d5552ab0f278",
+      "bytes": 364,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-130",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-130.osu",
+      "sha256": "1928efdf46f0b6da40864c2b7b48c9d7ac2f14b211dd564b127414b38762ab7a",
+      "bytes": 364,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "combined-136",
+      "feature": "metadata exact masked category versus factory bit priority",
+      "expected_metadata": {
+        "Objects": 2,
+        "Circles": 1,
+        "Sliders": 0,
+        "Spinners": 0
+      },
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/combined-136.osu",
+      "sha256": "ac63387466f8cf4973cf3660f786d37867966153bd6c7377e2371d2fe35a47b3",
+      "bytes": 364,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "v12-fraction",
+      "feature": "Byte.Parse failure and partial refresh",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/v12-fraction.osu",
+      "sha256": "35f6ed17dc03bf82a36ef6111b4bd1891be769ba25318c8ba647f692c2ed2322",
+      "bytes": 359,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "timing-three-columns",
+      "feature": "missing required fourth column caught to null",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/timing-three-columns.osu",
+      "sha256": "aabf895444dc1533e2a8049dfd7a46b1047676eea22e8afaa65ea1e3a8d2caa3",
+      "bytes": 345,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "timing-two-columns",
+      "feature": "historical short defaults include external sample operand",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/timing-two-columns.osu",
+      "sha256": "f4f78ef91ab162bda1a999d12593750ce798557db3c847a53c3023f7b9ebbc5e",
+      "bytes": 343,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "hold-short-sample",
+      "feature": "hold length>1 then unguarded cell2",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/hold-short-sample.osu",
+      "sha256": "4e91041c7043df54d57cbbbe95c0e7afd68a6a7664e18f47baef232e8395db65",
+      "bytes": 366,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "perfect-path",
+      "feature": "P curve data and geometry",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/perfect-path.osu",
+      "sha256": "0455ad089a522924ff6faca01fa0697fc89185ac479a1190c0af55abca18c3b5",
+      "bytes": 380,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "catmull-path",
+      "feature": "C curve data and geometry",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/catmull-path.osu",
+      "sha256": "ec5de0519c61b774ca53375b89d47c804ec99ba874cc5620cd06a0eff79ab2aa",
+      "bytes": 380,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "slider-repeats-9001",
+      "feature": "original explicit >9000 rejection",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/slider-repeats-9001.osu",
+      "sha256": "f973371082e2b43323f069d61f5a0fdf5b068e41797e290fc3fae1f45183513c",
+      "bytes": 376,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "header-leading-blank",
+      "feature": "recognition versus default14 continuation",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/header-leading-blank.osu",
+      "sha256": "529d853e8d20c181c2a6cadf2b63b52a8804b5d1e83bb9b774675b82994750a2",
+      "bytes": 358,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "timing-order",
+      "feature": "unsorted timing source order",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/timing-order.osu",
+      "sha256": "174cbdace9b7e7f82eaac28a0775352d3850cd8392ad30d3b787a4f18817d610",
+      "bytes": 379,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    },
+    {
+      "id": "stack-tail",
+      "feature": "negative slider-tail stack",
+      "expected_metadata": {},
+      "expected_prepared": null,
+      "authority": "original-behavior/01-parser-boundaries.md",
+      "path": "fixtures/stack-tail.osu",
+      "sha256": "6a4d819e3a56eaa279d385718ae862e1f1c588dfaf0605b56b6543e1393050cb",
+      "bytes": 375,
+      "source": "build.py",
+      "confidence": "RECONSTRUCTED finite prediction from CONFIRMED STATIC sites",
+      "original_runtime": "NOT RUN",
+      "actual_reconstruction": "verification/production-results.json (when executed)",
+      "limitation": "Only nonempty expected fields are asserted. Empty expectations are diagnostic probes, never passes proving original equivalence."
+    }
+  ],
+  "qa15_reuse": "re/qa/qa15/beatmaps/manifest.json (27 files unchanged)"
+}

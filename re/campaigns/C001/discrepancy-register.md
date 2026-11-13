@@ -12,3 +12,15 @@ Status: OPEN. None of these records authorizes star fitting or historical expect
 | C001-D06 | HP/CS/OD/AR defaults/version13 parsing/mode3 CS and order-sensitive AR inheritance exceed prototype coverage | CONFIRMED STATIC M1387/M1bc1 | OPEN. Work 2 must preserve field history and mode at parse time |
 | C001-D07 | Original slider repeats reject >9000; prototype limits 16; original missing length starts0 and effective traversal max1 | CONFIRMED STATIC M28f7/M142d; current implementation limits are ENGINEERING | OPEN; do not merely raise limits without resource controls and preparation fidelity |
 | C001-D08 | Retained original-runtime E020 cases never run | UNVERIFIED ORIGINAL-RUNTIME | OPEN owner gate; component checks do not close it |
+
+## Independent Work2 checkpoint audit (333f6d1)
+
+- C001-D09 OPEN: QA04 F01 historical v13-Bezier rejection fails after C001 admission expansion. Preserve original expectation and failed evidence; requires Headquarters disposition per authorization §10.
+- C001-D10 OPEN: Windows C001 fixture hash fails, local115/115 passes. Suspected checkout line endings, not yet measured Windows raw bytes. Preserve exact fixtures; Work2 add explicit byte policy and rerun.
+- C001-D11 VERIFIED COMPONENT differences:49-file independent corpus exposes44 field gaps across defaults, AR inheritance, clamping, unknown sections, invalid/mode-order and combined-type classification. See verification/02-production-audit.md and production-results.json. No original-runtime equivalence or mathematical fitting.
+
+Work2 correction80f7ac1: D09 compatibility boundary restored via legacy Load versus
+application/catalog LoadCanonical, without historical test edits. Local QA04 43/43
+PASS; corrected Windows confirmation pending. D10 path-specific fixture attributes
+added; exact Windows byte confirmation pending. Original44 semantic gaps unchanged
+under actual canonical API; do not close them because legacy regression passes.
