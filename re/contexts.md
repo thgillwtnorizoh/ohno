@@ -2262,3 +2262,71 @@ Original import/provider/manager/native/JIT precision, real rendering/input/audi
 final R17 owner acceptance remain unresolved. E02017 original-runtime cases NOT RUN.
 Engineering deliverables complete upon verified canonical-main publication; await
 human observations and stop. No R18/E047 or production correction authorization.
+
+## Campaign C001 — Work 1 checkpoint 01: loader inventory and parser boundaries — 2026-11-13
+
+AUTHORIZED FULL SUBSYSTEM CAMPAIGN under UEP-001. Work1 original investigation and
+independent production verification; Work2 implementation remains separate. Start
+canonical main0421f9249f494b4a86fdf59c7dd76cd9a664688b, verified via GitHub branch
+and git remote. Full authorization retained under re/campaigns/C001/authorization.md;
+charter adopts subsystem completion, no new expedition permissions needed. Prior
+reports and both journals retained; only this research journal appended. No exception.
+
+Question: which original reader/default/version/type boundaries must canonical
+preparation preserve? Competing hypotheses: shared syntax versus distinct metadata/
+runtime readers; universal validation versus caller-controlled checks; unknown
+section clears versus retains prior state; one object classifier versus separate
+metadata/construction rules. Static original-byte dataflow distinguishes these;
+no modern implementation or guessed defaults serve as original authority.
+
+Reference archive7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738;
+EXE6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d, self-declared
+Stable40/file1.3.3.8. Official dated identity/authenticity unresolved. Linux Python3.12,
+dnfile0.18.0/pefile2024.8.26/dncil1.0.2; no original CLR/native/UI executed.
+
+Initial assessment consulted AGENTS/full contract, both journals, relevant research
+reports/evidence E004–E006/E010/E015–E023/E032–E046, reconstruction/QA coverage and
+actual Beatmap/catalog/star/consumer sources. Four interpretation paths identified:
+Beatmap.Load, LegacyScoreMetadata.ReadFresh, LocalChartCatalog.Index, StarAdmission.
+No production modification. Historical E005 ordinary/Taiko correction retained.
+
+CONFIRMED STATIC M1bc1 first-colon remainder versus M28f7 all-colon first-two-cells;
+unknown section conversion catch retains previous state; runtime raw SPACE/_/ //
+prefix suppression; FileSection includes Variables256. M09e3/e4/e5 skip bounds/NaN
+checks when Boolean false. Fresh defaults AR/CS/HP/OD5,Double multiplier1.4/tick1;
+refresh format14,StackLeniency.7,Countdown1,sample1. v13 difficulty Single versus
+older Byte; Mania CS1..18 versus ordinary0..10; OD inherits AR until explicit AR;
+mode is read when CS appears. Old+24 shift requires version<5 AND Edit1. Original
+runtime classifier Normal/Slider/Spinner/Hold priority differs from catalog8/2/1
+and metadata exact-value switch. Repeat>9000 rejection, missing slider length0,
+hold factory/null registration and mode/version stacking boundaries recovered.
+Full semantic details/offsets/pseudocode in original-behavior/01-parser-boundaries.md.
+
+New persistent charter,77 initial section4 coverage obligations (not complete domain
+inventory), dependency/discrepancy registers, status, inherited-authority guide and
+read-only extractor/checker/static packet.353 selected methods/243 literal reductions/
+2214 branch sites; whole scan19659 bodies/1739 zero-RVA/zero decode errors. All
+selected branch targets validated.277 independent literal/token/branch/hash-overlap
+assertions PASS; no original runtime equivalence. All branch dispositions remain
+conservative unresolved pending semantic and production coverage. Corpus and new
+production verification follow within C001; campaign OPEN.
+
+Actual tests: extractor pinned archive and EXE; check.py PASS277. Existing
+python re/qa/qa15/check_evidence.py PASS stored exact-source Windows provenance,
+134 QA15 cases,2175 prior QA summary,21 development steps,47 traces/279369 scalar
+assertions and27 corpus files. This revalidates old evidence, not a Windows rerun.
+Installed local .NETSDK8.0.427/runtime8.0.33; executed actual linked production
+QA15.Headless Release against start source:95/95 passed,zero failed. Linux run
+is not the35 unshown Windows checks or4 source wiring checks and not human play.
+Private inspection helper initially named inspect.py shadowed Python's standard
+inspect module; renamed locally before evidence extraction. No failed behavioral
+expectation was changed. Original disassembly stays outside repository.
+
+Preservation manifest pins1064 prior files plus502499-byte original research journal
+prefix; continued checkpoints must preserve them, with only declared workflow
+integration changes if required. Pending: remaining original sections/modes/geometry/
+stack/event/error semantics, canonical Work2 production/API, independent full changed
+Windows regression, owner-only matched hashes/builds/runtime. Owner-reported8 match/
+19 mismatch star observations retained separately from immutable QA15 blank columns;
+no preparation cause inferred or star fitting authorized. Publish findings promptly
+on shared main after diff/remote-head review; continue within C001.

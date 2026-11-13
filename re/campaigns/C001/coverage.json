@@ -1,0 +1,772 @@
+[
+  {
+    "id": "C001-001",
+    "domain": "A. File recognition and syntax",
+    "feature": "Version header and recognized versions",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-002",
+    "domain": "A. File recognition and syntax",
+    "feature": "Text encoding and byte-order marks",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-003",
+    "domain": "A. File recognition and syntax",
+    "feature": "Line endings, whitespace and comments",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-004",
+    "domain": "A. File recognition and syntax",
+    "feature": "Section delimiters and unknown sections",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-005",
+    "domain": "A. File recognition and syntax",
+    "feature": "Key/value syntax and duplicate properties",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-006",
+    "domain": "A. File recognition and syntax",
+    "feature": "Missing properties and original defaults",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-007",
+    "domain": "A. File recognition and syntax",
+    "feature": "Numerical parsing and culture behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-008",
+    "domain": "A. File recognition and syntax",
+    "feature": "Overflow, invalid values and malformed input",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-009",
+    "domain": "A. File recognition and syntax",
+    "feature": "Version-dependent interpretation and compatibility",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-010",
+    "domain": "A. File recognition and syntax",
+    "feature": "Original rejection, recovery and partial-loading behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-011",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[General]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-012",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[Editor]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-013",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[Metadata]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-014",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[Difficulty]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-015",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[Events]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-016",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[TimingPoints]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-017",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[Colours]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-018",
+    "domain": "B. Complete `.osu` sections",
+    "feature": "`[HitObjects]`",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-019",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Base timing points",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-020",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Inherited timing points",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-021",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Beat lengths and slider velocity",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-022",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Meter and timing-point flags",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-023",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Sample sets and sample indices",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-024",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Timing-point ordering and replacement",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-025",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Same-timestamp timing-point behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-026",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Relevant negative or exceptional timing values",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-027",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Effects and inherited control state",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-028",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Slider duration, tick generation and timing conversion",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-029",
+    "domain": "C. Timing and inherited properties",
+    "feature": "Original integer/floating-point conversion behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-030",
+    "domain": "D. Hit-object construction",
+    "feature": "Hit circles",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-031",
+    "domain": "D. Hit-object construction",
+    "feature": "Sliders",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-032",
+    "domain": "D. Hit-object construction",
+    "feature": "Spinners",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-033",
+    "domain": "D. Hit-object construction",
+    "feature": "Hold notes",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-034",
+    "domain": "D. Hit-object construction",
+    "feature": "Mode-dependent object interpretation",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-035",
+    "domain": "D. Hit-object construction",
+    "feature": "Combined hit-object flags",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-036",
+    "domain": "D. Hit-object construction",
+    "feature": "New-combo and combo-skip information",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-037",
+    "domain": "D. Hit-object construction",
+    "feature": "Hitsound bits and sample overrides",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-038",
+    "domain": "D. Hit-object construction",
+    "feature": "Object position and timestamp data",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-039",
+    "domain": "D. Hit-object construction",
+    "feature": "Repeat counts, lengths and endpoints",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-040",
+    "domain": "D. Hit-object construction",
+    "feature": "Object sorting and registration behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-041",
+    "domain": "D. Hit-object construction",
+    "feature": "Missing, malformed and unusual object records",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-042",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Linear",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-043",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "B\u00e9zier",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-044",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Perfect-circle",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-045",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Catmull-Rom",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-046",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Historical aliases and compatibility behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-047",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Duplicate control points",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-048",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Degenerate paths",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-049",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Invalid control points",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-050",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Curve subdivision",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-051",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Requested pixel length",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-052",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Truncation and extension",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-053",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Repeat traversal geometry",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-054",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Tail and checkpoint positions",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-055",
+    "domain": "E. Slider data and geometry preparation",
+    "feature": "Slider timing, ticks and inherited velocity",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-056",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "StackLeniency interpretation",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-057",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Stack discovery and propagation",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-058",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Stacking order",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-059",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Negative stack behavior where applicable",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-060",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Object-specific stacking rules",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-061",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Version-dependent stacking",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-062",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Coordinate displacement",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-063",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Original position versus prepared position",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-064",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Effective CS/AR/OD/HP preparation",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-065",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Timing-related preprocessing",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-066",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "New-combo and break grouping",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-067",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Object dependencies and registration",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-068",
+    "domain": "F. Stacking and gameplay preparation",
+    "feature": "Preparation under supported gameplay modifiers",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-069",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Break periods",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-070",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Background references",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-071",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Video references",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-072",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Storyboard/event declarations",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-073",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Colour declarations",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-074",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Sample references",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-075",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Filename and path interpretation",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-076",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Resource resolution and missing-resource behavior",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  },
+  {
+    "id": "C001-077",
+    "domain": "G. Events, breaks and resources",
+    "feature": "Event timing and ordering",
+    "original_evidence": "UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md",
+    "implementation": "PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required",
+    "independent_verification": "PENDING canonical production",
+    "original_runtime": "UNVERIFIED ORIGINAL-RUNTIME",
+    "disposition": "UNRESOLVED"
+  }
+]
