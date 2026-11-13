@@ -1,0 +1,60 @@
+[
+  {
+    "authority": "E004",
+    "tool": "check_beatmap_init.py",
+    "source_sha256": "bdac1747f3aeb53abd526ffba2037747a2a9d3263837e548f024c610a7ee96d3",
+    "packet": "04/initialization.json",
+    "pass": true
+  },
+  {
+    "authority": "E005",
+    "tool": "check_slider_timing.py",
+    "source_sha256": "a9a520c393f065f6ebf9e86f66bab78f756e698ddfd848ef5385dd2380873530",
+    "packet": "05/slider-timing.json",
+    "pass": true
+  },
+  {
+    "authority": "E006",
+    "tool": "check_linear_geometry.py",
+    "source_sha256": "cd12600632fa6b6a35e45eb71e8d348ff7c9d2b9c5db5f613a83db15f158fd24",
+    "packet": "06/linear-geometry.json",
+    "pass": true
+  },
+  {
+    "authority": "E023",
+    "tool": "check_aggregate_policy.py",
+    "source_sha256": "62f3b406867f01625d464b841af7dae59ddf78f8f2183f83af5176051c9d11ad",
+    "packet": "23/aggregate-policy.json",
+    "pass": true
+  },
+  {
+    "authority": "E032",
+    "tool": "check_bezier_geometry.py",
+    "source_sha256": "687236051d52bd833521bedbcc0be5c39420eae71306d237475d18d1667404d6",
+    "packet": "32/bezier-geometry.json",
+    "pass": true
+  },
+  {
+    "authority": "E033",
+    "tool": "check_score_accounting.py",
+    "source_sha256": "a81fba2b2fb07992a9dc121ed58798d94d1c88aa5d05652ade67269a0e9137a6",
+    "packet": "33/score-accounting.json",
+    "pass": true
+  },
+  {
+    "authority": "E034",
+    "tool": "check_chart_score_multiplier.py",
+    "source_sha256": "b44344b939170bf37c06bc0e2e3b97129633dc918822237d0bc4fd7f56151f80",
+    "packet": "34/chart-score-multiplier.json",
+    "pass": true
+  },
+  {
+    "authority": "E043",
+    "tool": "check_selectplay.py:relationships/projections/archive_audit",
+    "pass": true,
+    "literals": 73,
+    "projections": 19,
+    "original_byte_bodies": 277,
+    "boundary": "Pre-R16 reconstruction-source manifest intentionally not asserted against R16; original-static checks unchanged."
+  }
+]

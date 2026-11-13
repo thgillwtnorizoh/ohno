@@ -1872,3 +1872,124 @@ Recommendation only: retain Stars not calculated; a bounded independent circle
 history/evaluator study is the smallest mathematical continuation before slider
 nested integration. No R17, E045 or QA15 is started. Publish E044 through a
 verified non-force update of canonical main; exact publication SHA in handoff.
+
+
+## Expedition 045 — Circle-only star history mathematics — 2026-11-13
+
+Work1, authorized BOUNDED ORIGINAL-STATIC research. Research source and verified
+canonical main e44e63b2d2bf18c3ccb733b490d717dd8561d587. No exception. R16 and
+accepted QA14/owner qualification remain read-only context. No reconstruction,
+historical research, QA, development test or fixture changed. This entry only
+appends to the existing journal. No R17/E046/QA15 implementation or expedition.
+
+Objective: close E044's movement/angle, distinct velocity, backward rhythm and
+visibility-history dependencies for no-mod ordinary circles, without guessed
+neutral terms or another osu! version's algorithm. Competing interpretations:
+T0339 circle assignability versus true separate ancestry; one angle channel
+versus independent M11c1/M408c; drain-only duration prefix versus self-growing
+list; current versus following pair at M1e58. Static metadata, stack/call sites
+and independently expected finite controls discriminate these interpretations.
+
+Pinned archive78546961 bytes/18 entries SHA256
+7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738;
+osu!.exe4541728 bytes SHA256
+6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d.
+Both verified before parsing original instructions. Stable40/1.3.3.8 official
+dated-release identity remains unauthenticated. Python3.12 with existing dnfile,
+dncil/pefile; no original CLR/native/game calls or resource-byte export.
+
+CONFIRMED STATIC correction recorded only here and in E045: E044 prose stated
+"T0339 is a shared ancestor in circle/slider paths, not a sufficient test for a
+slider". Original metadata instead has circle T094c->T035a->T04c3 and slider
+T02af->T0339->T04c3. Circle does not assign to T0339. E044 packet ancestry was
+already correct; its historical wording is preserved. This proves exclusion of
+T0339 travel branches, rather than substituting unknown slider terms with zero.
+E005's corrected ordinary standard/Taiko factory identity is retained.
+
+RECONSTRUCTED circle-only projection now translates M11c1/M11c3 movement
+history, independent M408c/M408d angle/velocity contrast, M29f7/M19ea composite,
+M1744 and mutable T0326 pattern helpers M1746-M174f, M0d6c/M3690 interval and
+doubletap-like terms, M1e57-M1e65 no-mod visibility, M325d/M325f/M3260 state,
+and complete reached duration-envelope/first-minute aggregation. N-1 pairs
+remain constructed in registered order before current-start sorting. Raw Int32
+time subtraction, Max25-only strain floor and .2/.3/.8 state recurrences remain
+distinct. First two pair angles null; first angle requires four circles.
+
+Important original operations: M11c3 at most six predecessors; M408c exponent
+1.45 distinct from movement; rhythm capacity32 seed gives at most30 processed
+comparisons in dense normal inputs, strict5000ms bound, mutable saved aliases
+and strict tolerance; visibility3000ms bound, angle elapsed updated after an
+entry so first outside2000ms may be processed. M1e57:0028 M2cb6(0) leaves the
+following pair on the stack for M1e58:0069, not current pair. Component2 prefix
+counts equality at firstPair+60000 and transforms before descending sorting.
+M19ec appends20-unit transformed segments to the same list it consumes through
+4000 duration; appended copies can themselves be consumed before Skip/sort.
+An independent dequeue/append model verifies the index/append projection.
+
+Circle preparation is CONDITIONAL, not a universal raw-parser replacement.
+M28eb stacking calls M24b0(position,true), which writes prepared F252c. Raw
+reader requires explicit StackLeniency0, increasing circle start=end times,
+v14/Mode0/explicit CS-AR-OD, simple bounded rows, supplied viewport/time shift.
+Positive time gaps exceed the zero stack threshold before stack increments,
+so final positions equal raw positions for this subset. Missing/nonzero/NaN
+leniency and equal times are rejected. At CS/AR/OD5, viewport512x384: Single
+radius32.013118743896484, preempt1200, full window99. No universal radius,
+preempt, registration tie or provider state is invented.
+
+VERIFIED COMPONENT applies to research mathematics only:175 independent finite
+expected/actual controls PASS (135 mathematical,21 artificial helper,6 artificial
+pair,3 artificial-preempt,10 engineering admission). Separate6 larger integrated
+traces report intermediate states but have NO independent golden chart scalar
+and are not counted as extra controls. Two/three/four-circle raw finite fixtures
+independently close Double stars0.119846523006125,0.17843318764528587,
+0.22526837835848854 respectively under declared conditions. Single cache bits
+and promoted/floored display are separately checked. E044 final formula is
+retained, including its independently evaluated Decimal final expression.
+
+New independent byte verification PASS:354 MethodDefs/337 nonzero-RVA bodies,
+394 fields,65 types,23 declared slots,2515 focused call edges,3021 watched-field
+and1589 direct watched-call sites; whole scan19659 bodies/1739 zero-RVA/no errors.
+40 unchanged E044 literal controls plus40 E045 relationships, five independently
+decoded strings. Two identical extractions2639372 bytes SHA256
+294f25d53c9fcccc0074cea98a96c8612f40e1e551555287a00f9e9371e32756.
+27 conditional C predictions and58 E044 closure rows are not original runtime
+experiments or additional numerical controls. New Python syntax4 files PASS.
+
+Unchanged E044 checker PASS335 bodies/82 mathematical controls/294 historical
+body comparisons. Unchanged E004/E005/E006/E023/E032/E033/E034 PASS. Unchanged
+E043 relationship73/projection19/archive-body277 PASS; its pre-R16 production
+source manifest is not asserted against newer R16. Delivered historical runner
+reproduces the same static functions without changing earlier evidence.
+
+Preserved failure-01 includes first preflight input/source/traceback: H010 used
+an intended straight fixture but x=(i%5)*step wrapped at sixth object, making
+the observed angle0 correct. Only new fixture changed to literal straight x=i*40;
+semantic expectation/projection unchanged. Independent dot/cross reasoning and
+corrected controls are recorded. First143-control passed run retained; later
+M28eb inspection exposed its missing raw-stack precondition. Final175-control
+gate adds explicit guard and rejection controls. The169 intermediate pass is
+also retained. Neither event demonstrates a production or original-runtime defect.
+
+Artifacts: re/45-original-circle-star-history-mathematics.md;
+re/evidence/45/circle-star-history.json,controls/coverage/verification/execution,
+preservation, method-focus, strict source fixtures, four-circle trace, historical
+reruns, failed/corrected records and pass snapshots; re/tools/
+circle_star_history_evidence.py,check_circle_star_history.py,
+circle_star_history_projection.py. All inputs, outputs, method/field hashes,
+numeric instructions/branches, source fingerprints and reproduction commands
+are preserved.863 prior tracked files and475732-byte journal prefix SHA256
+800ef1e1f9e1f1d07bb93a717baa481a1504fc799c8a7ac2ce7b0956851102a7 verified.
+
+Readiness: movement and distinct velocity families ready within declared
+prepared-circle profile; bounded independent two/three/four-circle scalars
+ready only for stated cases. General rhythm saved-group histories (M1744:
+02ea-03dd) and dense mixed visibility (M1e5e/M1e57/M1e58) have translated code
+and finite subcontrols but lack independent whole-history golden scalar closure.
+General circle charts remain PARTIAL; arbitrary stacking/provider and runtime
+library/JIT/tie behavior conditional. Sliders/spinners/mods deferred; general
+R17 NOT READY and not authorized. Smallest further semantic validation: separately
+expand repeated-group rhythm and dense multi-angle visibility examples. R16's
+Stars not calculated default remains untouched. Original x86/native/provider,
+scheduler and audible/visible behavior remain UNVERIFIED ORIGINAL-RUNTIME.
+Historical2175 QA not rerun; E02017 remain NOT RUN. Safe non-force canonical-main
+publication only; exact publication SHA is in the verified completion handoff.

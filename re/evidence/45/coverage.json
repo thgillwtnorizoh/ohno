@@ -1,0 +1,2049 @@
+{
+  "source": "e44e63b2d2bf18c3ccb733b490d717dd8561d587",
+  "conditional_cases": [
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "N objects",
+      "id": "C01",
+      "initial_state": "N ordered circles",
+      "original_runtime": "NOT RUN",
+      "prediction": "N-1 pairs; source registration retained before current-start sorting",
+      "sites": [
+        "M0810",
+        "M3699"
+      ],
+      "executed_controls": [
+        "H001",
+        "H003",
+        "H005",
+        "H007",
+        "H009",
+        "H011"
+      ],
+      "actual_records": [
+        {
+          "id": "H001",
+          "expected": 1,
+          "actual": 1,
+          "pass": true
+        },
+        {
+          "id": "H003",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        },
+        {
+          "id": "H005",
+          "expected": 3,
+          "actual": 3,
+          "pass": true
+        },
+        {
+          "id": "H007",
+          "expected": 4,
+          "actual": 4,
+          "pass": true
+        },
+        {
+          "id": "H009",
+          "expected": 5,
+          "actual": 5,
+          "pass": true
+        },
+        {
+          "id": "H011",
+          "expected": 6,
+          "actual": 6,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "early returns",
+      "id": "C02",
+      "initial_state": "No two prior difficulty pairs",
+      "original_runtime": "NOT RUN",
+      "prediction": "First two angles null, M11c1/M408c index<=1 return0",
+      "sites": [
+        "M3694",
+        "M11c1:0014",
+        "M408c:0014"
+      ],
+      "executed_controls": [
+        "H034",
+        "H035"
+      ],
+      "actual_records": [
+        {
+          "id": "H034",
+          "expected": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "actual": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pass": true
+        },
+        {
+          "id": "H035",
+          "expected": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "actual": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "constant",
+      "id": "C03",
+      "initial_state": "Constant spacing, dt24/25/26/99/100/101/1000",
+      "original_runtime": "NOT RUN",
+      "prediction": "Raw dt retained; strain floor25; separate movement and velocity outputs",
+      "sites": [
+        "M11c1",
+        "M408c"
+      ],
+      "executed_controls": [
+        "H013",
+        "H014",
+        "H016",
+        "H017",
+        "H019",
+        "H020",
+        "H022",
+        "H023",
+        "H025",
+        "H026",
+        "H028",
+        "H029",
+        "H031",
+        "H032",
+        "H141",
+        "H142",
+        "H143"
+      ],
+      "actual_records": [
+        {
+          "id": "H013",
+          "expected": 14.652459422099048,
+          "actual": 14.652459422099048,
+          "pass": true
+        },
+        {
+          "id": "H014",
+          "expected": 7.464263932294459,
+          "actual": 7.464263932294459,
+          "pass": true
+        },
+        {
+          "id": "H016",
+          "expected": 14.652459422099048,
+          "actual": 14.652459422099048,
+          "pass": true
+        },
+        {
+          "id": "H017",
+          "expected": 7.464263932294459,
+          "actual": 7.464263932294459,
+          "pass": true
+        },
+        {
+          "id": "H019",
+          "expected": 13.787866861875328,
+          "actual": 13.787866861875328,
+          "pass": true
+        },
+        {
+          "id": "H020",
+          "expected": 7.051615852875847,
+          "actual": 7.051615852875847,
+          "pass": true
+        },
+        {
+          "id": "H022",
+          "expected": 1.865195894144907,
+          "actual": 1.8651958941449067,
+          "pass": true
+        },
+        {
+          "id": "H023",
+          "expected": 1.0146796906627913,
+          "actual": 1.0146796906627913,
+          "pass": true
+        },
+        {
+          "id": "H025",
+          "expected": 1.8386082148171452,
+          "actual": 1.8386082148171452,
+          "pass": true
+        },
+        {
+          "id": "H026",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H028",
+          "expected": 1.8126807131354385,
+          "actual": 1.8126807131354385,
+          "pass": true
+        },
+        {
+          "id": "H029",
+          "expected": 0.9856756047923317,
+          "actual": 0.9856756047923317,
+          "pass": true
+        },
+        {
+          "id": "H031",
+          "expected": 0.10309278350515465,
+          "actual": 0.10309278350515466,
+          "pass": true
+        },
+        {
+          "id": "H032",
+          "expected": 0.03548133892335755,
+          "actual": 0.03548133892335755,
+          "pass": true
+        },
+        {
+          "id": "H141",
+          "expected": 0.17843318764528585,
+          "actual": 0.17843318764528587,
+          "pass": true
+        },
+        {
+          "id": "H142",
+          "expected": 0.17843318764528585,
+          "actual": 0.17843318764528587,
+          "pass": true
+        },
+        {
+          "id": "H143",
+          "expected": 0.17843318764528585,
+          "actual": 0.17843318764528587,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "six-predecessor",
+      "id": "C04",
+      "initial_state": "More than six angle predecessors",
+      "original_runtime": "NOT RUN",
+      "prediction": "M11c3 inspects no more than six and applies repeated-angle weighting",
+      "sites": [
+        "M11c3"
+      ],
+      "executed_controls": [
+        "H042",
+        "H043",
+        "H044",
+        "H045"
+      ],
+      "actual_records": [
+        {
+          "id": "H042",
+          "expected": 0.8730566406250001,
+          "actual": 0.8730566406250001,
+          "pass": true
+        },
+        {
+          "id": "H043",
+          "expected": 0.8599664306640625,
+          "actual": 0.8599664306640625,
+          "pass": true
+        },
+        {
+          "id": "H044",
+          "expected": 0.8561068386501737,
+          "actual": 0.8561068386501737,
+          "pass": true
+        },
+        {
+          "id": "H045",
+          "expected": 0.8561068386501737,
+          "actual": 0.8561068386501737,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "angle branch",
+      "id": "C05",
+      "initial_state": "Straight or right-angle history",
+      "original_runtime": "NOT RUN",
+      "prediction": "Distinct movement and velocity-angle channels remain independently evaluated",
+      "sites": [
+        "M11c1",
+        "M408c"
+      ],
+      "executed_controls": [
+        "H046",
+        "H047",
+        "H048"
+      ],
+      "actual_records": [
+        {
+          "id": "H046",
+          "expected": 0.11422533591778304,
+          "actual": 0.11422533591778306,
+          "pass": true
+        },
+        {
+          "id": "H047",
+          "expected": 0.1262797890491261,
+          "actual": 0.12627978904912612,
+          "pass": true
+        },
+        {
+          "id": "H048",
+          "expected": 0.05190603566941789,
+          "actual": 0.05190603566941789,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "equal intervals",
+      "id": "C06",
+      "initial_state": "Equal rhythm intervals",
+      "original_runtime": "NOT RUN",
+      "prediction": "No rhythm transition sum; multiplier1",
+      "sites": [
+        "M1744"
+      ],
+      "executed_controls": [
+        "H049",
+        "H050",
+        "H051",
+        "H052",
+        "H053",
+        "H054",
+        "H055"
+      ],
+      "actual_records": [
+        {
+          "id": "H049",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H050",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H051",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H052",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H053",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H054",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H055",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "alternating",
+      "id": "C07",
+      "initial_state": "Alternating rhythm intervals",
+      "original_runtime": "NOT RUN",
+      "prediction": "Mutable group transition produces finite positive rhythm sum",
+      "sites": [
+        "M1744",
+        "M1746-M174f"
+      ],
+      "executed_controls": [
+        "H056",
+        "H057"
+      ],
+      "actual_records": [
+        {
+          "id": "H056",
+          "expected": 1.0644247272588137,
+          "actual": 1.0644247272588137,
+          "pass": true
+        },
+        {
+          "id": "H057",
+          "expected": 0.56,
+          "actual": 0.5599999999999999,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "capacity32",
+      "id": "C08",
+      "initial_state": "History length beyond32",
+      "original_runtime": "NOT RUN",
+      "prediction": "Seed traversal yields at most30 processed comparisons for dense normal inputs",
+      "sites": [
+        "M1744:0064-00c9"
+      ],
+      "executed_controls": [
+        "H058"
+      ],
+      "actual_records": [
+        {
+          "id": "H058",
+          "expected": 30,
+          "actual": 30,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "5000ms",
+      "id": "C09",
+      "initial_state": "History age at5000",
+      "original_runtime": "NOT RUN",
+      "prediction": "Strict traversal predicate distinguishes just-before and equality",
+      "sites": [
+        "M1744:009a-00a3"
+      ],
+      "executed_controls": [
+        "H059",
+        "H060",
+        "H061"
+      ],
+      "actual_records": [
+        {
+          "id": "H059",
+          "expected": 5,
+          "actual": 5,
+          "pass": true
+        },
+        {
+          "id": "H060",
+          "expected": 4,
+          "actual": 4,
+          "pass": true
+        },
+        {
+          "id": "H061",
+          "expected": 4,
+          "actual": 4,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "strict tolerance",
+      "id": "C10",
+      "initial_state": "Pattern interval difference equals tolerance",
+      "original_runtime": "NOT RUN",
+      "prediction": "Strict parity/equality comparisons reject equality",
+      "sites": [
+        "M174e",
+        "M174f"
+      ],
+      "executed_controls": [
+        "H062",
+        "H063",
+        "H064",
+        "H065",
+        "H066",
+        "H067"
+      ],
+      "actual_records": [
+        {
+          "id": "H062",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "id": "H063",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "id": "H064",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "id": "H065",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "id": "H066",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "id": "H067",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "visibility interval",
+      "id": "C11",
+      "initial_state": "Visibility fade-in and start endpoints",
+      "original_runtime": "NOT RUN",
+      "prediction": "No-mod visibility has explicit fade/preempt and after-start guard",
+      "sites": [
+        "M368f"
+      ],
+      "executed_controls": [
+        "H075",
+        "H076",
+        "H077",
+        "H078",
+        "H079",
+        "H080"
+      ],
+      "actual_records": [
+        {
+          "id": "H075",
+          "expected": 0.0,
+          "actual": 0.0,
+          "pass": true
+        },
+        {
+          "id": "H076",
+          "expected": 0.0,
+          "actual": 0.0,
+          "pass": true
+        },
+        {
+          "id": "H077",
+          "expected": 0.5,
+          "actual": 0.5,
+          "pass": true
+        },
+        {
+          "id": "H078",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H079",
+          "expected": 1.0,
+          "actual": 1.0,
+          "pass": true
+        },
+        {
+          "id": "H080",
+          "expected": 0.0,
+          "actual": 0.0,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "3000ms",
+      "id": "C12",
+      "initial_state": "Past/future history age3000",
+      "original_runtime": "NOT RUN",
+      "prediction": "Equality enters processing; later item terminates scan",
+      "sites": [
+        "M1e63",
+        "M1e5d"
+      ],
+      "executed_controls": [
+        "H158",
+        "H159",
+        "H160"
+      ],
+      "actual_records": [
+        {
+          "id": "H158",
+          "expected": [
+            1,
+            1
+          ],
+          "actual": [
+            1,
+            1
+          ],
+          "pass": true
+        },
+        {
+          "id": "H159",
+          "expected": [
+            1,
+            1
+          ],
+          "actual": [
+            1,
+            1
+          ],
+          "pass": true
+        },
+        {
+          "id": "H160",
+          "expected": [
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0
+          ],
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "2000ms",
+      "id": "C13",
+      "initial_state": "Angle-history elapsed2000",
+      "original_runtime": "NOT RUN",
+      "prediction": "The first outside entry can be processed before updated elapsed stops next iteration",
+      "sites": [
+        "M1e5e"
+      ],
+      "executed_controls": [
+        "H086",
+        "H087"
+      ],
+      "actual_records": [
+        {
+          "id": "H086",
+          "expected": 20,
+          "actual": 20,
+          "pass": true
+        },
+        {
+          "id": "H087",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "following",
+      "id": "C14",
+      "initial_state": "Following pair jump differs from current",
+      "original_runtime": "NOT RUN",
+      "prediction": "M1e58 uses next pair retained from M2cb6, not current pair",
+      "sites": [
+        "M1e57:0028-0069",
+        "M1e58"
+      ],
+      "executed_controls": [
+        "H088",
+        "H089",
+        "H090"
+      ],
+      "actual_records": [
+        {
+          "id": "H088",
+          "expected": 9.106946012956644,
+          "actual": 9.106946012956644,
+          "pass": true
+        },
+        {
+          "id": "H089",
+          "expected": 9.106946012956644,
+          "actual": 9.106946012956644,
+          "pass": true
+        },
+        {
+          "id": "H090",
+          "expected": 5.352721747014347,
+          "actual": 5.352721747014347,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "strict400",
+      "id": "C15",
+      "initial_state": "Envelope exact400",
+      "original_runtime": "NOT RUN",
+      "prediction": "Strict crossing; no interval close at equality",
+      "sites": [
+        "M3f34:00b2"
+      ],
+      "executed_controls": [
+        "H152",
+        "H153",
+        "H154"
+      ],
+      "actual_records": [
+        {
+          "id": "H152",
+          "expected": 0,
+          "actual": 0,
+          "pass": true
+        },
+        {
+          "id": "H153",
+          "expected": 0,
+          "actual": 0,
+          "pass": true
+        },
+        {
+          "id": "H154",
+          "expected": 1,
+          "actual": 1,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "duration prefix",
+      "id": "C16",
+      "initial_state": "Mutable4000-duration prefix",
+      "original_runtime": "NOT RUN",
+      "prediction": "Appended20-unit copies may themselves be consumed; Skip then descending sort",
+      "sites": [
+        "M19ec"
+      ],
+      "executed_controls": [
+        "H097",
+        "H098",
+        "H099",
+        "H100",
+        "H101",
+        "H102",
+        "H103",
+        "H104"
+      ],
+      "actual_records": [
+        {
+          "id": "H097",
+          "expected": 0.38471238220739934,
+          "actual": 0.38471238220739934,
+          "pass": true
+        },
+        {
+          "id": "H098",
+          "expected": [
+            181,
+            200,
+            20
+          ],
+          "actual": [
+            181,
+            200,
+            20
+          ],
+          "pass": true
+        },
+        {
+          "id": "H099",
+          "expected": 5.03535379826809,
+          "actual": 5.03535379826809,
+          "pass": true
+        },
+        {
+          "id": "H100",
+          "expected": [
+            133,
+            200,
+            70
+          ],
+          "actual": [
+            133,
+            200,
+            70
+          ],
+          "pass": true
+        },
+        {
+          "id": "H101",
+          "expected": 9.411268990988718,
+          "actual": 9.411268990988718,
+          "pass": true
+        },
+        {
+          "id": "H102",
+          "expected": [
+            2,
+            200,
+            200
+          ],
+          "actual": [
+            2,
+            200,
+            200
+          ],
+          "pass": true
+        },
+        {
+          "id": "H103",
+          "expected": 13.946218378776472,
+          "actual": 13.946218378776472,
+          "pass": true
+        },
+        {
+          "id": "H104",
+          "expected": [
+            1,
+            250,
+            250
+          ],
+          "actual": [
+            1,
+            250,
+            250
+          ],
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "first-minute",
+      "id": "C17",
+      "initial_state": "First60000ms boundary",
+      "original_runtime": "NOT RUN",
+      "prediction": "Count equality; transform positive prefix before descending sort",
+      "sites": [
+        "M3260",
+        "M325f",
+        "M1d08"
+      ],
+      "executed_controls": [
+        "H091",
+        "H092",
+        "H155",
+        "H156",
+        "H157"
+      ],
+      "actual_records": [
+        {
+          "id": "H091",
+          "expected": [
+            0.0,
+            0.6020599913279624,
+            7.605882360128311
+          ],
+          "actual": [
+            0.0,
+            0.6020599913279624,
+            7.605882360128311
+          ],
+          "pass": true
+        },
+        {
+          "id": "H092",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        },
+        {
+          "id": "H155",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        },
+        {
+          "id": "H156",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        },
+        {
+          "id": "H157",
+          "expected": 1,
+          "actual": 1,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "two-circle",
+      "id": "C18",
+      "initial_state": "Two circle complete finite result",
+      "original_runtime": "NOT RUN",
+      "prediction": "Interval-only closed scalar with instruction-derived adjusted timing",
+      "sites": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ],
+      "executed_controls": [
+        "H105",
+        "H106",
+        "H107",
+        "H108",
+        "H109",
+        "H110",
+        "H111"
+      ],
+      "actual_records": [
+        {
+          "id": "H105",
+          "expected": 1.0465595253340274,
+          "actual": 1.0465595253340276,
+          "pass": true
+        },
+        {
+          "id": "H106",
+          "expected": 1.0465595253340274,
+          "actual": 1.0465595253340276,
+          "pass": true
+        },
+        {
+          "id": "H107",
+          "expected": 1.0142349810893314,
+          "actual": 1.0142349810893314,
+          "pass": true
+        },
+        {
+          "id": "H108",
+          "expected": 0.3808972537916713,
+          "actual": 0.3808972537916713,
+          "pass": true
+        },
+        {
+          "id": "H109",
+          "expected": 0.3789879823511248,
+          "actual": 0.3789879823511248,
+          "pass": true
+        },
+        {
+          "id": "H110",
+          "expected": 0.37710713708201615,
+          "actual": 0.37710713708201626,
+          "pass": true
+        },
+        {
+          "id": "H111",
+          "expected": 0.119846523006125,
+          "actual": 0.119846523006125,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "small complete",
+      "id": "C19",
+      "initial_state": "Three circle complete finite result",
+      "original_runtime": "NOT RUN",
+      "prediction": "Positive temporal sum, zero reached movement/visibility in finite dt1000 controls",
+      "sites": [
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M1d08"
+      ],
+      "executed_controls": [
+        "H112",
+        "H113",
+        "H114",
+        "H115"
+      ],
+      "actual_records": [
+        {
+          "id": "H112",
+          "expected": 0.0,
+          "actual": 0.0,
+          "pass": true
+        },
+        {
+          "id": "H113",
+          "expected": 0.0,
+          "actual": 0.0,
+          "pass": true
+        },
+        {
+          "id": "H114",
+          "expected": 0.119846523006125,
+          "actual": 0.119846523006125,
+          "pass": true
+        },
+        {
+          "id": "H115",
+          "expected": 0.17843318764528585,
+          "actual": 0.17843318764528587,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "four-circle",
+      "id": "C20",
+      "initial_state": "Four straight circles dt1000",
+      "original_runtime": "NOT RUN",
+      "prediction": "First nonzero movement composite plus independent mutable duration oracle and temporal sum",
+      "sites": [
+        "M19ea",
+        "M19ec",
+        "M080a"
+      ],
+      "executed_controls": [
+        "H129",
+        "H130"
+      ],
+      "actual_records": [
+        {
+          "id": "H129",
+          "expected": [
+            2.9823906464869827,
+            3.927659248713498,
+            0.0
+          ],
+          "actual": [
+            2.9823906464869827,
+            3.9276592487134976,
+            0.0
+          ],
+          "pass": true
+        },
+        {
+          "id": "H130",
+          "expected": 0.22238298840277892,
+          "actual": 0.22238298840277892,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "coincident",
+      "id": "C21",
+      "initial_state": "Coincident circle positions",
+      "original_runtime": "NOT RUN",
+      "prediction": "No universal zero stars; interval component survives",
+      "sites": [
+        "M0d6c"
+      ],
+      "executed_controls": [
+        "H128",
+        "H151"
+      ],
+      "actual_records": [
+        {
+          "id": "H128",
+          "expected": 0.2205278002999479,
+          "actual": 0.2205278002999479,
+          "pass": true
+        },
+        {
+          "id": "H151",
+          "expected": 0.119846523006125,
+          "actual": 0.119846523006125,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "manager",
+      "id": "C22",
+      "initial_state": "Explicit CS5 AR5 OD5 viewport512x384",
+      "original_runtime": "NOT RUN",
+      "prediction": "Prepared radius32.013118743896484, preempt1200, full window99",
+      "sites": [
+        "M28be",
+        "M28b2",
+        "M28b3"
+      ],
+      "executed_controls": [
+        "H131"
+      ],
+      "actual_records": [
+        {
+          "id": "H131",
+          "expected": {
+            "radius": 32.013118743896484,
+            "preempt": 1200.0,
+            "full_window": 99.0
+          },
+          "actual": {
+            "radius": 32.013118743896484,
+            "preempt": 1200.0,
+            "full_window": 99.0
+          },
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "bounded osu-to-star",
+      "id": "C23",
+      "initial_state": "Strict admitted v14 source with StackLeniency0",
+      "original_runtime": "NOT RUN",
+      "prediction": "No-stack position proof; independent two/three/four-circle star scalar",
+      "sites": [
+        "M1bc1",
+        "M28eb",
+        "M24b0"
+      ],
+      "executed_controls": [
+        "H132",
+        "H135",
+        "H138"
+      ],
+      "actual_records": [
+        {
+          "id": "H132",
+          "expected": 0.119846523006125,
+          "actual": 0.119846523006125,
+          "pass": true
+        },
+        {
+          "id": "H135",
+          "expected": 0.17843318764528585,
+          "actual": 0.17843318764528587,
+          "pass": true
+        },
+        {
+          "id": "H138",
+          "expected": 0.22526837835848854,
+          "actual": 0.22526837835848854,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "bounded reader rejects",
+      "id": "C24",
+      "initial_state": "Missing/nonzero leniency or equal timestamps",
+      "original_runtime": "NOT RUN",
+      "prediction": "Research raw reader rejects; no guessed stack displacement",
+      "sites": [
+        "M28eb"
+      ],
+      "executed_controls": [
+        "H144",
+        "H145",
+        "H146",
+        "H147",
+        "H148",
+        "H149",
+        "H150"
+      ],
+      "actual_records": [
+        {
+          "id": "H144",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H145",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H146",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H147",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H148",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H149",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        },
+        {
+          "id": "H150",
+          "expected": "rejected",
+          "actual": "rejected",
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "registered order",
+      "id": "C25",
+      "initial_state": "Signed zero/negative/overflow pair delta artificial control",
+      "original_runtime": "NOT RUN",
+      "prediction": "Original Int32 subtraction occurs before Double; only strain clamped",
+      "sites": [
+        "M2cb4",
+        "M366d"
+      ],
+      "executed_controls": [
+        "H161",
+        "H163",
+        "H165"
+      ],
+      "actual_records": [
+        {
+          "id": "H161",
+          "expected": [
+            0.0
+          ],
+          "actual": [
+            0.0
+          ],
+          "pass": true
+        },
+        {
+          "id": "H163",
+          "expected": [
+            -100.0,
+            50.0
+          ],
+          "actual": [
+            -100.0,
+            50.0
+          ],
+          "pass": true
+        },
+        {
+          "id": "H165",
+          "expected": [
+            -1.0
+          ],
+          "actual": [
+            -1.0
+          ],
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "EXECUTED FINITE SUBSET",
+      "control_name_filter": "cache",
+      "id": "C26",
+      "initial_state": "Final Double near cache boundary",
+      "original_runtime": "NOT RUN",
+      "prediction": "Convert to Single before absolute/floor display",
+      "sites": [
+        "M1bd0",
+        "M1bd5",
+        "M2d7f"
+      ],
+      "executed_controls": [
+        "H133",
+        "H134",
+        "H136",
+        "H137",
+        "H139",
+        "H140"
+      ],
+      "actual_records": [
+        {
+          "id": "H133",
+          "expected": "1872f53d",
+          "actual": "1872f53d",
+          "pass": true
+        },
+        {
+          "id": "H134",
+          "expected": 0.11,
+          "actual": 0.11,
+          "pass": true
+        },
+        {
+          "id": "H136",
+          "expected": "31b7363e",
+          "actual": "31b7363e",
+          "pass": true
+        },
+        {
+          "id": "H137",
+          "expected": 0.17,
+          "actual": 0.17,
+          "pass": true
+        },
+        {
+          "id": "H139",
+          "expected": "c1ac663e",
+          "actual": "c1ac663e",
+          "pass": true
+        },
+        {
+          "id": "H140",
+          "expected": 0.22,
+          "actual": 0.22,
+          "pass": true
+        }
+      ],
+      "projection_trace_ids": [],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    },
+    {
+      "classification": "PARTIAL PROJECTION / NO GOLDEN SCALAR",
+      "control_name_filter": "TRACE ONLY",
+      "id": "C27",
+      "initial_state": "General dense circle history",
+      "original_runtime": "NOT RUN",
+      "prediction": "All translated components execute, but six large traces have no independent golden scalar",
+      "sites": [
+        "M11c1",
+        "M408c",
+        "M1744",
+        "M1e57"
+      ],
+      "executed_controls": [],
+      "actual_records": [],
+      "projection_trace_ids": [
+        "regular",
+        "alternating",
+        "perturbed",
+        "long-pauses",
+        "same-position",
+        "right-angles"
+      ],
+      "limitations": "No original runtime; artificial/engineering admission tags retained on each H control. Static row is not an extra executed test."
+    }
+  ],
+  "e044_boundary_closure": [
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "RETAINED STATIC",
+      "id": "D01",
+      "original_prediction": "M1bc6 constructs T011b -> T072f -> T0138. M08d9 itself is nonvirtual despite callvirt.",
+      "sites": [
+        "M1bc6:002c",
+        "M0801:0002",
+        "M3696:0002",
+        "M08d9"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "RETAINED STATIC",
+      "id": "D02",
+      "original_prediction": "Constructor can retain null F04d6; M08d9 returns -1 before its catch region.",
+      "sites": [
+        "M1bc0:0000-001b",
+        "M08d9:0000-0011"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "RETAINED STATIC",
+      "id": "D03",
+      "original_prediction": "M08d9 null-list guard returns0, not proof of a valid empty chart.",
+      "sites": [
+        "M08d7",
+        "M08d9:0049-005b"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "RETAINED STATIC",
+      "id": "D04",
+      "original_prediction": "Caught Exception returns0; prior mutations remain. Constructor exceptions outside the try are different.",
+      "sites": [
+        "M08d9:0013-009a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D05",
+      "original_prediction": "M080a returns a new result with default Double F1094=0; no skill aggregation required.",
+      "sites": [
+        "M3699:0017-002b",
+        "M080a:0000-0028"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D06",
+      "original_prediction": "No pair is built; normally returning fresh components aggregate0.",
+      "sites": [
+        "M0810:0053-00b0",
+        "M1d08",
+        "M19e9",
+        "M080a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D07",
+      "original_prediction": "Conditional projection in N-controls; movement and visibility early guards yield0, interval component yields1.16 before final conversion.",
+      "sites": [
+        "M11c1:0000-0032",
+        "M408c:0000-0032",
+        "M1e57:0000-001e",
+        "M3539",
+        "M080a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D08",
+      "original_prediction": "The bounded index0 early guards make the computed star equal for the stated two-circle preparation; not a claim for three or more objects.",
+      "sites": [
+        "M11c1",
+        "M408c",
+        "M1e57",
+        "M0810"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D09",
+      "original_prediction": "Finite two-circle projections vary interval operand with dt; no supplied .osu is executed.",
+      "sites": [
+        "M0d6c",
+        "M3539",
+        "M080a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D10",
+      "original_prediction": "Unchecked Int32 delta0 becomes Double0 then strain_time Max(0,25)=25; other fields still retain0.",
+      "sites": [
+        "M2cb4:001d-002d",
+        "M366d:0016-002a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D11",
+      "original_prediction": "Pair construction follows F04d8 order before OrderBy; negative delta clamps only the strain-time field. No universal successful import prediction.",
+      "sites": [
+        "M0810",
+        "M3699:002c-0056",
+        "M366d"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D12",
+      "original_prediction": "Sub occurs before conv.r8; signed wrap can create negative delta before Max25.",
+      "sites": [
+        "M2cb4:001d-002d"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D13",
+      "original_prediction": "F04d9 becomes Double100/100=1; pair timestamps divided by it.",
+      "sites": [
+        "M08d6:0048-0058",
+        "M2cb4"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D14",
+      "original_prediction": "Rate1.5 versus.75; if both artificial bits set,64 has priority. Normal mod enumeration excludes both.",
+      "sites": [
+        "M08d6",
+        "M08e8:0043-004f"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "RETAINED STATIC",
+      "id": "D15",
+      "original_prediction": "Manager may be reused after setting mods/configuration; components are freshly allocated in each M3699.",
+      "sites": [
+        "M0807",
+        "M08d9:005d-0084",
+        "M0811"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D16",
+      "original_prediction": "XOR&18 triggers object-manager reconstruction and new preparation.",
+      "sites": [
+        "M0807:0000-0018",
+        "M08d9:0039-0044"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D17",
+      "original_prediction": "Difficulty helper divides by2 before interpolation; HardRock separately multiplies/clamps if present.",
+      "sites": [
+        "M28b0:0000-005c",
+        "M28b3"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D18",
+      "original_prediction": "CS normalization uses1.3; hit-window/approach interpolation uses1.4.",
+      "sites": [
+        "M28b2",
+        "M28b3",
+        "M28b0"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D19",
+      "original_prediction": "M28b0 skips Easy/HardRock scalar changes; this is an external state boundary.",
+      "sites": [
+        "M28b0:0000-005b"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D20",
+      "original_prediction": "M0808 invokes M144a(false) then M1441; nested schedule and geometry feed T072e. General slider numerical result remains partial.",
+      "sites": [
+        "M0808:0015-002d",
+        "M1441",
+        "M3692"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D21",
+      "original_prediction": "M1441 changes tick-spacing inheritance at8; E005/E032 geometry/version branches still apply.",
+      "sites": [
+        "M1441:0000-0044",
+        "M144a"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D22",
+      "original_prediction": "M3692 consumes duration/effective traversals and mixed nested entries; do not replace with endpoint distance alone.",
+      "sites": [
+        "M3692:00b8-0124,0148-0234"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D23",
+      "original_prediction": "Hit-window-derived parameter is set0; movement geometry early-return paths and skill evaluators distinguish spinner.",
+      "sites": [
+        "M366d:006c-0088",
+        "M3691:0070-0089",
+        "M0d6c:0000-0016"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D24",
+      "original_prediction": "Under normal nonexceptional preparation, no-mod per-object contributions remain0. No bonus/rotation gameplay inputs enter this calculator.",
+      "sites": [
+        "M11c1",
+        "M29f7",
+        "M408c",
+        "M0d6c",
+        "M1e57"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D25",
+      "original_prediction": "General M11c1/M408c/M1744/M1e57 chain required; extracted but not a complete independently checked star projection.",
+      "sites": [
+        "M19e8",
+        "M3539",
+        "M325e"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D26",
+      "original_prediction": "Lazy slider position/travel and penultimate nested endpoint affect spacing/angle; retain Single vector operations.",
+      "sites": [
+        "M3691:0125-01d9",
+        "M3693",
+        "M3695"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D27",
+      "original_prediction": "Vector distance may be0; no universal difficulty0 because independent interval/history component exists.",
+      "sites": [
+        "M3691",
+        "M0d6c",
+        "M3539"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D28",
+      "original_prediction": "M080d Pow(raw,.63)*.02275 then M080b left-associated cube*4.",
+      "sites": [
+        "M080d:0000-0019",
+        "M080b:0000-0011"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D29",
+      "original_prediction": "Sqrt(raw)*.0675 then cube*4.",
+      "sites": [
+        "M080e",
+        "M1d09"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D30",
+      "original_prediction": "M0811 does not construct T084a; optional energy is0.",
+      "sites": [
+        "M0811:002b-004c",
+        "M080a:00aa-00c4"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D31",
+      "original_prediction": "T084a added; transformed optional value is squared*25 and combined asymmetrically with transformed channel2.",
+      "sites": [
+        "M0811:002b-0047",
+        "M3f4e",
+        "M080c"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D32",
+      "original_prediction": "M080c finite shortcut returns the other operand; NaN follows unordered combine arm.",
+      "sites": [
+        "M080c:0000-001b"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D33",
+      "original_prediction": "Generalized norm and final cube-root return0 in declared projection profile.",
+      "sites": [
+        "M080a:00ec-0114",
+        "M19d8",
+        "M080f"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D34",
+      "original_prediction": "Norm exponent1.1; multiply1.12 then Math.Pow(x, Double1/3). No rounding here.",
+      "sites": [
+        "M080a:00ec-0114",
+        "M080f",
+        "M19e2"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D35",
+      "original_prediction": "Envelope begins at pair start1000 and next1400; not a universal global multiple400.",
+      "sites": [
+        "M3f33:0008-0023"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D36",
+      "original_prediction": "Strict bgt in M3f34 does not close interval at equality; immediately above can close one or more.",
+      "sites": [
+        "M3f34:00a6-00b2"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D37",
+      "original_prediction": "M3f35 trims whole trailing segments while duration>11/(1-.9)*400; preceding mutations remain.",
+      "sites": [
+        "M3f31:002b-0046",
+        "M3f35:006d-0081"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D38",
+      "original_prediction": "M19ec filters value>0, applies initial4000 duration transform in20 slices, then descending sorting; M19e9 duration weights.",
+      "sites": [
+        "M19ec",
+        "M19e9"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D39",
+      "original_prediction": "M1d08 sorts positive object values; weight numerator1+s/(i+1), denominator Pow(i,.9)+1+s/(i+1); s20 for component1,1 for component2.",
+      "sites": [
+        "M1d08:0044-00df",
+        "M3536"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D40",
+      "original_prediction": "Retain both entries with successive weights; no deduplication.",
+      "sites": [
+        "M1d08:0095-00e3"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D41",
+      "original_prediction": "Ordered positive predicates exclude them; full-chart NaN propagation remains helper-specific.",
+      "sites": [
+        "M1d0d",
+        "M3263",
+        "M19ef"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D42",
+      "original_prediction": "M3260 counts through equality and stops on first later item; M325f scales earliest positive values with log interpolation.",
+      "sites": [
+        "M3260:000f-0069",
+        "M325f"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D43",
+      "original_prediction": "Six binary choices256,64,2,16,1024,8 with pair exclusions ->36 compatible masks including0, conditional on hash-based overlap filtering not colliding.",
+      "sites": [
+        "M0804",
+        "M08df",
+        "M08e8",
+        "M08f2"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D44",
+      "original_prediction": "Ordinary cache mask1370 removes these. Direct artificial calculator calls can contain additional bits tested by evaluators.",
+      "sites": [
+        "M0803",
+        "M0805",
+        "M08cf",
+        "M19e7",
+        "M325e"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D45",
+      "original_prediction": "Dictionary lookup shares that cache entry; not proof of identical unrestricted direct calculation.",
+      "sites": [
+        "M1bc7:0000-003b"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D46",
+      "original_prediction": "M1bd7 returns true; missing cached getter separately returns Double0.",
+      "sites": [
+        "M1bd7:0000-001d",
+        "M1bc7:001e-0027"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D47",
+      "original_prediction": "Not-busy allows scheduling; busy suppresses it; display takes positive magnitude.",
+      "sites": [
+        "M1bd7:001e-0042",
+        "M1bd5"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D48",
+      "original_prediction": "bge.un branches to false scheduling result; Abs remains NaN and ordered display gate differs.",
+      "sites": [
+        "M1bd7:0030-0042",
+        "M1bd5",
+        "E043 M1bdb"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D49",
+      "original_prediction": "Representation conversion Double->Single and old-key filtering versus direct Single dictionaries; no formula switch here.",
+      "sites": [
+        "M1bf2:0103-0174"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D50",
+      "original_prediction": "Store -Abs(Single) stale marker; magnitude is not recalculated by this branch.",
+      "sites": [
+        "M1bf2:0175-01d6"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "FINITE MATHEMATICAL SUBSET",
+      "id": "D51",
+      "original_prediction": "M1bd0 conv.r4 can move value across floor boundary; display is Abs(promoted cachedSingle) then Floor(*100)/100.",
+      "sites": [
+        "M1bd0:0026-002c",
+        "M1bc7:003a",
+        "M1bd5",
+        "M2d7f"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D52",
+      "original_prediction": "M1c1e sleeps1000 then rereads mode; no cancellation/fresh chart snapshot guaranteed.",
+      "sites": [
+        "M1c1e:000d-001f"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D53",
+      "original_prediction": "Clear in-progress before scheduling M1c23; merge key results into retained map then invoke completion.",
+      "sites": [
+        "M1c1e:00d4-0115",
+        "M1c23:0000-0031",
+        "M1bc9"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D54",
+      "original_prediction": "M1c23 writes retained map reference, not a fresh global selection; no hash/generation check in this callback.",
+      "sites": [
+        "M1c23:0000-001c",
+        "M25d1:0049-005c"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D55",
+      "original_prediction": "Worker does not wrap whole computation in a flag-clearing finally; F1014 may remain true, timeout callback separate.",
+      "sites": [
+        "M1c1e:0097-00ec",
+        "M1bd0"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D56",
+      "original_prediction": "M08cd disposes manager then clears field; no encompassing finally in M1bd0.",
+      "sites": [
+        "M1bd0:003b-0042",
+        "M08cd"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D57",
+      "original_prediction": "M1c1f clears F1014 and invokes completion before conditional task/scheduler actions. It does not itself prove an old worker cannot write later.",
+      "sites": [
+        "M1c1f:0000-00d4"
+      ]
+    },
+    {
+      "boundary": "Circle-only prepared finite controls do not execute original runtime, manager/provider, sliders/spinners, mods or worker lifecycle.",
+      "e045_status": "DEFERRED / UNCHANGED STATIC",
+      "id": "D58",
+      "original_prediction": "M1bb4 initializes mode cutoffs20260630/20260630/20260630/20231214 from F0c9a. These are cache policy constants, not authenticated release dates.",
+      "sites": [
+        "M1bb4:0000-0011",
+        "F0c9a RVA data"
+      ]
+    }
+  ],
+  "readiness": {
+    "aggregation": "READY translated finite envelope/queue-prefix/first-minute controls; equal-value library tie/JIT precision conditional",
+    "circle_input": "CONDITIONAL explicit viewport/time-shift, v14 no-stack strict source class; prepared final positions otherwise supplied",
+    "e044_final_formula": "RETAINED; independent Decimal finite checks",
+    "general_R17": "NOT READY. Recommend only a separately authorized tiny circle subset, or further independent repeated-rhythm/visibility scalar closure.",
+    "general_circle": "PARTIAL: integrated evaluator exists, six non-golden traces are not full independent semantic closure",
+    "movement_history": "READY for declared prepared circle profile; translated all reached arms with finite angle/spacing controls",
+    "rhythm_history": "PARTIAL independent validation: full circle translation, equal/alternating/group/window controls; arbitrary repeated-group histories lack independent chart golden",
+    "sliders_spinners_modifiers": "DEFERRED",
+    "three_four_circle": "READY only for independently closed finite cases, not all spatial/timing combinations",
+    "two_circle": "READY within admitted input and numerical profile",
+    "velocity_angle": "READY for declared prepared circle profile; independent early/full angle controls",
+    "visibility_history": "PARTIAL independent validation: full no-mod translation, following-pair and window controls; complex whole-chart golden remains absent"
+  },
+  "counts": {
+    "EXECUTED MATHEMATICAL CONTROL": 135,
+    "ARTIFICIAL HELPER CONTROL": 21,
+    "ENGINEERING ADMISSION CONTROL": 10,
+    "ARTIFICIAL PREEMPT CONTROL": 3,
+    "ARTIFICIAL PAIR INPUT": 6
+  }
+}

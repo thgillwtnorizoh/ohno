@@ -1,0 +1,123 @@
+{
+  "research_source": "e44e63b2d2bf18c3ccb733b490d717dd8561d587",
+  "date": "2026-11-13",
+  "timezone": "Asia/Bangkok",
+  "original_archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "original_exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "packet_bytes": 2639372,
+  "packet_sha256": "294f25d53c9fcccc0074cea98a96c8612f40e1e551555287a00f9e9371e32756",
+  "two_extractions_equal": true,
+  "stats": {
+    "audited_bodies": 337,
+    "scanned_bodies": 19659,
+    "field_sites": 3021,
+    "call_sites": 1589,
+    "literal_controls": 40,
+    "e045_literal_relationships": 40,
+    "circle_type_exclusion": true,
+    "finite_controls": 175,
+    "non_golden_traces": 6,
+    "preserved_files": 863,
+    "method_declarations": 354,
+    "field_declarations": 394,
+    "types": 65,
+    "virtual_resolutions": 23,
+    "focused_call_graph": 2515,
+    "conditional_cases": 27,
+    "e044_closure_rows": 58,
+    "strings": 5,
+    "syntax_checked_new_files": 4
+  },
+  "e044_rerun_stats": {
+    "audited_bodies": 335,
+    "scanned_bodies": 19659,
+    "field_sites": 3021,
+    "call_sites": 1503,
+    "literal_controls": 40,
+    "historical_body_comparisons": 294,
+    "protected_prior_files": 848,
+    "finite_mathematical_controls": 82
+  },
+  "historical_checks": [
+    {
+      "authority": "E004",
+      "tool": "check_beatmap_init.py",
+      "source_sha256": "bdac1747f3aeb53abd526ffba2037747a2a9d3263837e548f024c610a7ee96d3",
+      "packet": "04/initialization.json",
+      "pass": true
+    },
+    {
+      "authority": "E005",
+      "tool": "check_slider_timing.py",
+      "source_sha256": "a9a520c393f065f6ebf9e86f66bab78f756e698ddfd848ef5385dd2380873530",
+      "packet": "05/slider-timing.json",
+      "pass": true
+    },
+    {
+      "authority": "E006",
+      "tool": "check_linear_geometry.py",
+      "source_sha256": "cd12600632fa6b6a35e45eb71e8d348ff7c9d2b9c5db5f613a83db15f158fd24",
+      "packet": "06/linear-geometry.json",
+      "pass": true
+    },
+    {
+      "authority": "E023",
+      "tool": "check_aggregate_policy.py",
+      "source_sha256": "62f3b406867f01625d464b841af7dae59ddf78f8f2183f83af5176051c9d11ad",
+      "packet": "23/aggregate-policy.json",
+      "pass": true
+    },
+    {
+      "authority": "E032",
+      "tool": "check_bezier_geometry.py",
+      "source_sha256": "687236051d52bd833521bedbcc0be5c39420eae71306d237475d18d1667404d6",
+      "packet": "32/bezier-geometry.json",
+      "pass": true
+    },
+    {
+      "authority": "E033",
+      "tool": "check_score_accounting.py",
+      "source_sha256": "a81fba2b2fb07992a9dc121ed58798d94d1c88aa5d05652ade67269a0e9137a6",
+      "packet": "33/score-accounting.json",
+      "pass": true
+    },
+    {
+      "authority": "E034",
+      "tool": "check_chart_score_multiplier.py",
+      "source_sha256": "b44344b939170bf37c06bc0e2e3b97129633dc918822237d0bc4fd7f56151f80",
+      "packet": "34/chart-score-multiplier.json",
+      "pass": true
+    },
+    {
+      "authority": "E043",
+      "pass": true,
+      "tool": "check_selectplay.py:relationships/projections/archive_audit",
+      "literals": 73,
+      "projections": 19,
+      "original_byte_bodies": 277,
+      "boundary": "Pre-R16 reconstruction-source manifest not asserted against later R16; original-static functions unchanged."
+    }
+  ],
+  "python": "3.12.8",
+  "original_execution": "NOT RUN",
+  "historical2175_qa": "NOT RERUN \u2014 retained baseline",
+  "original_e020_17": "NOT RUN",
+  "production_changes": "NONE",
+  "r17_e046_qa15": "NOT STARTED",
+  "syntax_and_preservation": "PASS",
+  "preserved_files": 863,
+  "journal_prefix_bytes": 475732,
+  "journal_prefix_sha256": "800ef1e1f9e1f1d07bb93a717baa481a1504fc799c8a7ac2ce7b0956851102a7",
+  "source_sha256": {
+    "circle_star_history_evidence.py": "19027fce8e79e23ce89dc0fbdd056e4beed6cbd4b522ea070a87723f8faea33b",
+    "check_circle_star_history.py": "2eef220348feba161078d555bed86adba5d606be5bcf5e0d9b6a0919dc925d8d",
+    "circle_star_history_projection.py": "587eedae206324a8b727672cf5f540d8f1d4623e4edbbbba9933adc40e6f2a67"
+  },
+  "support_sha256": {
+    "re\\evidence\\45\\fixtures\\2-straight-v14.osu": "56de1938706b405052a56294cecd603128197a7f8a6d3129e105a632b3083e45",
+    "re\\evidence\\45\\fixtures\\3-straight-v14.osu": "03838aaa770216e6576598660ab78628f646cdbea60897a0ebd2991c0ca61f7d",
+    "re\\evidence\\45\\fixtures\\4-straight-v14.osu": "85c15a20a0fbe5b82326e29bbe4e02ef4f13e35d24a3cc7a30f03be42ce8391c"
+  },
+  "publication": "Normal canonical-main commit containing this file; exact full commit verified against origin and provided in handoff, no self-referential file hash",
+  "git_diff_check": "PASS after scoped native-log byte preservation; initial formatting findings retained in publication-checks.json"
+}

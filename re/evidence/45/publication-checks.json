@@ -1,0 +1,13 @@
+{
+  "initial_command": "git diff --cached --check",
+  "initial_exit_code": 1,
+  "findings": [
+    "method-focus.md new blank line at EOF",
+    "runs/first-byte-gate-143.txt native CRLF flagged as trailing whitespace",
+    "runs/second-byte-gate-169.txt native CRLF flagged as trailing whitespace"
+  ],
+  "disposition": "Removed only extra EOF blank line from new generated method-focus table. Preserved raw native stdout bytes using E045-scoped .gitattributes -text -diff for runs/*.txt. No source/math/oracle/evidence-result changes.",
+  "classification": "publication formatting gate, not mathematical or original/production failure",
+  "corrected_command": "git diff --cached --check",
+  "corrected_exit_code": 0
+}

@@ -1,0 +1,7 @@
+{
+  "first-byte-gate-143": "Actual passed original-byte/math run. Stored source hashes and expected/actuals retained. Raw reader then lacked an explicit stacking precondition.",
+  "preparation_finding": "Subsequent static M28eb/M24b0 inspection proved prepared F252c can differ from raw F152e. Missing/nonzero leniency and raw equal times were restricted, not assigned invented zero displacement.",
+  "second-byte-gate-169": "Actual passed gate with explicit StackLeniency0 strict source boundary.",
+  "final-gate-175": "Added independent duration-retention/duplicate-positive/nonpositive-entry controls; all pass. Changes only within E045 research.",
+  "no_original_or_production_failure_claim": true
+}

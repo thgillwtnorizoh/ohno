@@ -1,0 +1,2 @@
+# Preserve the actual native stdout bytes of the two earlier pass snapshots.
+runs/*.txt -text -diff

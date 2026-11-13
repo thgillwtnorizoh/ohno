@@ -1,0 +1,18 @@
+[
+  {
+    "command": "python re/tools/check_circle_star_history.py re/evidence/45/circle-star-history.json ../osubackup.zip re/evidence/45/controls.json",
+    "exit_code": 0,
+    "captured_stdout_sha256": "cb9d41d1210ae589a60971926f2186fd4938f0f692d56223316c31fc1afd8149",
+    "captured_stdout_base64": "UEFTUyBFMDQ1IHsiYXVkaXRlZF9ib2RpZXMiOiAzMzcsICJjYWxsX3NpdGVzIjogMTU4OSwgImNpcmNsZV90eXBlX2V4Y2x1c2lvbiI6IHRydWUsICJlMDQ1X2xpdGVyYWxfcmVsYXRpb25zaGlwcyI6IDQwLCAiZmllbGRfc2l0ZXMiOiAzMDIxLCAiZmluaXRlX2NvbnRyb2xzIjogMTc1LCAibGl0ZXJhbF9jb250cm9scyI6IDQwLCAibm9uX2dvbGRlbl90cmFjZXMiOiA2LCAicHJlc2VydmVkX2ZpbGVzIjogODYzLCAic2Nhbm5lZF9ib2RpZXMiOiAxOTY1OX0NCg==",
+    "human_log": "checker-output.txt",
+    "human_log_policy": "LF-normalized; exact native stdout bytes retained above"
+  },
+  {
+    "command": "python re/tools/check_star_difficulty.py re/evidence/44/star-difficulty.json ../osubackup.zip re/evidence/45/e044-rerun.json",
+    "exit_code": 0,
+    "captured_stdout_sha256": "8b7aa22d6ca3635c4d1cec6b1531a7b69145ebbc01f60dc1b72e2244ef1ce26c",
+    "captured_stdout_base64": "UEFTUyBFMDQ0IHsiYXVkaXRlZF9ib2RpZXMiOiAzMzUsICJjYWxsX3NpdGVzIjogMTUwMywgImZpZWxkX3NpdGVzIjogMzAyMSwgImZpbml0ZV9tYXRoZW1hdGljYWxfY29udHJvbHMiOiA4MiwgImhpc3RvcmljYWxfYm9keV9jb21wYXJpc29ucyI6IDI5NCwgImxpdGVyYWxfY29udHJvbHMiOiA0MCwgInByb3RlY3RlZF9wcmlvcl9maWxlcyI6IDg0OCwgInNjYW5uZWRfYm9kaWVzIjogMTk2NTl9DQo=",
+    "human_log": "e044-output.txt",
+    "human_log_policy": "LF-normalized; exact native stdout bytes retained above"
+  }
+]

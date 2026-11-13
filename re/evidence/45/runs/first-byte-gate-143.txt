@@ -1,0 +1,1 @@
+PASS E045 {"audited_bodies": 336, "call_sites": 1551, "circle_type_exclusion": true, "e045_literal_relationships": 33, "field_sites": 3021, "finite_controls": 143, "literal_controls": 40, "non_golden_traces": 6, "preserved_files": 863, "scanned_bodies": 19659}

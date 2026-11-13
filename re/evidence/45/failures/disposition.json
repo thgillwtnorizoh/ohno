@@ -1,0 +1,37 @@
+{
+  "failure": "failure-01.json",
+  "phase": "first finite preflight",
+  "classification": "incorrect independent fixture/oracle domain, not production or original defect",
+  "input": "n6 circles generated with x=(i%5)*100 at dt1000; sixth x resets400->0",
+  "expected_then": [
+    null,
+    null,
+    "pi",
+    "pi",
+    "pi"
+  ],
+  "actual_then": [
+    null,
+    null,
+    "pi",
+    "pi",
+    0.0
+  ],
+  "independent_reason": "At reversal, earlier-current vectors are both negative X: dot>0 and cross0, so Abs(Atan2(0,positive))=0. A straight fixture has opposing vectors and angle pi.",
+  "change": "Only new straight-angle fixture changed to x=i*40, n2..7; projection unchanged. Expected semantic rule unchanged.",
+  "preserved_sources_sha256": {
+    "check_circle_star_history.py": "01003f888aa4ff31661826c6dcca1f3b47c52e528c0fbe97ea1b40ebb9d12ca6",
+    "circle_star_history_projection.py": "fb6ab1e81460329fed61f4187f070009822e4789470a9a03338a37af51acf7ac"
+  },
+  "corrected_controls": [
+    "H002",
+    "H004",
+    "H006",
+    "H008",
+    "H010",
+    "H012"
+  ],
+  "final_gate": "175/175 mathematical/admission controls;337 original bodies",
+  "original_execution": "NOT RUN",
+  "production_changes": "NONE"
+}
