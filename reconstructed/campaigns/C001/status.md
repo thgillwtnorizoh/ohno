@@ -1,8 +1,15 @@
 # C001 current status
 
-Campaign OPEN. Work 2 checkpoint01 SOURCE READY, WINDOWS GATE PENDING.
+Campaign OPEN. Work 2 checkpoint01 SOURCE READY, INITIAL WINDOWS GATE FAILED; correction prepared.
 Baseline verified remote main:0421f9249f494b4a86fdf59c7dd76cd9a664688b.
-Last C001 verified commit: none yet. Historical independent baseline2309.
+Initial published source:333f6d1ff63ef89ddd8a50634e264ed2542b1eba.
+Windows run43450210907/job131970075774: WPF build passed; QA04 F01 caught
+v13 Bezier historical admission change. Retain test and restore compatibility
+API; C001 app/catalog use explicit LoadCanonical. C001 reached its corpus hash
+check, which failed because Windows checkout converted LF fixture bytes to CRLF;
+new path-scoped .gitattributes retains exact fixtures. No expected value changed.
+Full corrected gate pending.
+Last C001 fully verified commit: none yet. Historical independent baseline2309.
 
 Completed in source: shared syntax/provenance contract; gameplay/catalog/star/score
 projection delegation; version-aware5–14 B geometry; multi-control L geometry and

@@ -7,13 +7,15 @@ No exceptions. Work 1 owns independent C001 QA and original investigation.
 
 ## Implemented checkpoint
 
-OsuDocument provides ordered immutable source lines/section entries, optional exact
+OsuDocument provides ordered immutable source lines/section entries, defensively owned original byte snapshot and exact
 byte SHA256, format identity and encoding detection. Unknown sections/fields and
 all raw object/event/timing payloads survive. This is an ENGINEERING retention
 contract, not a claim that every retained property has original semantics. Raw mode
 identity remains in General entries; a fully typed raw model is still pending.
 
-Gameplay, catalog and strict R17 admission use the shared syntax. Gameplay attaches
+Gameplay, catalog and strict R17 admission use the shared syntax. The application
+and catalog now call Beatmap.LoadCanonical; Beatmap.Load preserves the historical
+v14-only Bezier admission boundary as a compatibility wrapper over the same core. Gameplay attaches
 the source document to its prepared Beatmap and passes it directly to fresh score
 metadata preparation. The headerless ReadFresh(lines,version) compatibility API
 remains for existing independent callers. No mutable cached document is shared

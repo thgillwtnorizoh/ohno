@@ -10,32 +10,36 @@ namespace Ohno.CircleGame.Gameplay;
 public sealed record OsuEntry(int LineNumber, string Section, string Text, string? Key, string? Value);
 public sealed class OsuDocument
 {
+    private readonly byte[]? sourceBytes;
     public int FormatVersion { get; }
     public string Header { get; }
     public string FirstLine { get; }
     public IReadOnlyList<string> SourceLines { get; }
     public IReadOnlyList<OsuEntry> Entries { get; }
     public string? SourceSha256 { get; }
+    public byte[]? CopySourceBytes() => sourceBytes?.ToArray();
     public string Compatibility => "C001.syntax-v1; semantic admission belongs to each prepared projection";
     private OsuDocument(int version, string header, string first, List<string> lines,
-        List<OsuEntry> entries, string? hash)
+        List<OsuEntry> entries, byte[]? bytes)
     {
         FormatVersion = version; Header = header; FirstLine = first;
-        SourceLines = lines.AsReadOnly(); Entries = entries.AsReadOnly(); SourceSha256 = hash;
+        SourceLines = lines.AsReadOnly(); Entries = entries.AsReadOnly(); sourceBytes = bytes;
+        SourceSha256 = bytes is null ? null : Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(bytes));
     }
     public static OsuDocument Read(byte[] bytes, CancellationToken token = default)
     {
         token.ThrowIfCancellationRequested();
-        using var stream = new MemoryStream(bytes, writable: false);
+        byte[] snapshot = bytes.ToArray();
+        using var stream = new MemoryStream(snapshot, writable: false);
         using var reader = new StreamReader(stream, System.Text.Encoding.UTF8, detectEncodingFromByteOrderMarks: true);
-        return ReadCore(reader, Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(bytes)), token);
+        return ReadCore(reader, snapshot, token);
     }
     public static OsuDocument Parse(string text, CancellationToken token = default)
     {
         using var reader = new StringReader(text);
         return ReadCore(reader, null, token);
     }
-    private static OsuDocument ReadCore(TextReader reader, string? hash, CancellationToken token)
+    private static OsuDocument ReadCore(TextReader reader, byte[]? bytes, CancellationToken token)
     {
         var lines = new List<string>(); var entries = new List<OsuEntry>();
         string section = "", header = ""; int version = 0;
@@ -59,7 +63,7 @@ public sealed class OsuDocument
         }
         token.ThrowIfCancellationRequested();
         if (header.Length == 0) throw new InvalidDataException("Missing osu format header.");
-        return new(version, header, lines[0], lines, entries, hash);
+        return new(version, header, lines[0], lines, entries, bytes);
     }
     // Duplicate keys and registration order remain visible through Entries.
     public IEnumerable<OsuEntry> Section(string name) => Entries.Where(e => e.Section == name);
@@ -597,8 +601,16 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     public IReadOnlyList<SliderDefinition> Sliders { get; init; } = Array.Empty<SliderDefinition>();
     public IReadOnlyList<SpinnerDefinition> Spinners { get; init; } = Array.Empty<SpinnerDefinition>();
 
-    // Deliberately narrow .osu reader, NOT stable's complete parser (E04/E05).
+    // Historical R02-R17 API keeps its admission boundary for existing callers.
     public static Beatmap Load(string path, CancellationToken token = default)
+        => LoadCore(path, token, extendedPaths: false);
+
+    // C001 application entry point. Both APIs share syntax and preparation;
+    // only the historical Bezier admission guard differs.
+    public static Beatmap LoadCanonical(string path, CancellationToken token = default)
+        => LoadCore(path, token, extendedPaths: true);
+
+    private static Beatmap LoadCore(string path, CancellationToken token, bool extendedPaths)
     {
         if (new FileInfo(path).Length > 2 * 1024 * 1024)
             throw new InvalidDataException("R02 accepts beatmaps up to 2 MB.");
@@ -668,6 +680,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 {
                     if (row.Length < 8) throw new InvalidDataException($"Line {lineNumber + 1}: slider needs path, span count and pixel length.");
                     string[] pathPoints = row[5].Split('|');
+                    if (isBezier && version != 14 && !extendedPaths)
+                        throw new InvalidDataException("Historical R06 API supports only format-v14 Bezier; use LoadCanonical for C001 versioned paths.");
                     if ((!isBezier && pathPoints[0] != "L") || pathPoints.Length < 2)
                         throw new InvalidDataException("Use L| or B| control points. Other curve types are not implemented.");
                     if (pathPoints.Length - 1 > SliderGeometryPreparation.MaxControls)

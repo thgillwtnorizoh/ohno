@@ -8,6 +8,8 @@
 | D004 | OPEN — original research dependency | Full recognized fields/defaults/duplicate/error/version domain and mode-specific loading/preparation. Lossless retention is not interpretation closure. |
 | D005 | OPEN — original/runtime dependency | Short timing sample/global defaults; old-format spinner audio/behavior and nonstandard factories. No fabricated defaults. |
 | D006 | OPEN — owner qualification | Windows actual application, original comparisons, physical input/rendering/audio and full acceptance require owner. E02017 cases remain NOT RUN. |
+| D015 | CORRECTED IN SOURCE; gate pending | C001 exact-byte fixture hashes changed under Windows autocrlf checkout. Path-scoped corpus/*.osu -text preserves manifest bytes; no input or expectation changed. |
+| D014 | CORRECTED IN SOURCE; gate pending | Initial Windows QA04 F01 expects historical Load to reject v13 Bezier. Preserve that compatibility API; canonical application/catalog entry uses LoadCanonical sharing the same core. Initial failed gate retained. |
 | D007 | CORRECTED IN SOURCE; gate pending | E006 L16: Linear control coordinates previously parsed Single without Int32 truncation. Now common Double→Int32→Single path; regression controls retain prior expectations. |
 | D008 | OPEN — engineering precision limit | Linear head still parses Single before clamp/truncate; Bezier uses Double. Extreme fractional head rounding needs common original-derived normalization and focused controls. |
 | D009 | OPEN — encoding/recovery research | BOM-aware UTF8/UTF16 retention is engineering; original encoding fallback and malformed-byte recovery not established. |

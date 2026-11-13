@@ -35,13 +35,18 @@ internal static class Program
                 var decoded = OsuDocument.Read(bytes);
                 Check(decoded.FormatVersion == 14 && decoded.SourceSha256 == Convert.ToHexString(SHA256.HashData(bytes)) && decoded.Section("[HitObjects]").Count() == 2, "encoding and exact byte hash " + encoding.WebName);
             }
+            byte[] callerBytes = Encoding.UTF8.GetBytes(text);
+            var owned = OsuDocument.Read(callerBytes); string originalHash = owned.SourceSha256!;
+            callerBytes[0] = 0; byte[] exported = owned.CopySourceBytes()!; exported[0] = 0;
+            Check(owned.CopySourceBytes()![0] == (byte)'o' && owned.SourceSha256 == originalHash, "document owns immutable byte snapshot and returns defensive copies");
+            Check(OsuDocument.Parse(text).CopySourceBytes() is null, "text input does not invent byte provenance");
             foreach (string newline in new[] { "\n", "\r\n", "\r" })
                 Check(OsuDocument.Parse(text.Replace("\n", newline)).Entries.Count == OsuDocument.Parse(text).Entries.Count, "line ending " + JsonSerializer.Serialize(newline));
             Reject<InvalidDataException>(() => OsuDocument.Parse("[General]\nMode:0"), "missing header rejects");
             using var cancelled = new CancellationTokenSource(); cancelled.Cancel();
             Reject<OperationCanceledException>(() => OsuDocument.Parse(text, cancelled.Token), "syntax cancellation");
             string path = Path.Combine(tmp, "map.osu"); File.WriteAllText(path, text);
-            Reject<OperationCanceledException>(() => Beatmap.Load(path, cancelled.Token), "gameplay cancellation propagates");
+            Reject<OperationCanceledException>(() => Beatmap.LoadCanonical(path, cancelled.Token), "gameplay cancellation propagates");
             var chart = LocalChartCatalog.Index(path); var map = chart.LoadGameplay();
             Check(map.Document?.SourceSha256 == chart.Fingerprint?.Sha256 && map.Circles.Count == 2, "catalog and prepared gameplay byte provenance");
             var admitted = StarAdmission.Parse(text);
@@ -58,7 +63,8 @@ internal static class Program
                 var geometry = SliderGeometryPreparation.Prepare(Vector2.Zero, controls, true, 2, version);
                 Check(version == 9 ? geometry.RawSegments.Count == 149 && geometry.RawSegments[^1].To.X < 2 : geometry.RawSegments.Count == 4 && geometry.RawSegments[^1].To == new Vector2(2,0), $"E032 v{version} raw sampler branch");
                 File.WriteAllText(path, Map(version, "0,0,1000,2,0,B|1:1|2:0,1,2"));
-                var parsed = Beatmap.Load(path);
+                if (version != 14) Reject<InvalidDataException>(() => Beatmap.Load(path), $"historical loader v{version} admission retained");
+                var parsed = Beatmap.LoadCanonical(path);
                 Check(parsed.Sliders.Single().Geometry.RawSegments.Count == geometry.RawSegments.Count && parsed.ScoreMetadata?.FormatVersion == version, $"v{version} Bezier reaches gameplay and score preparation");
             }
             Vector2[] joined = [new(0,0),new(1,1),new(2,0),new(2,0),new(3,-1),new(4,0)];
@@ -71,14 +77,14 @@ internal static class Program
             foreach (int version in Enumerable.Range(5,10))
             {
                 File.WriteAllText(path, Map(version, "0,0,1000,2,0,L|100:0|100:100,1,250"));
-                var linear = Beatmap.Load(path).Sliders.Single();
+                var linear = Beatmap.LoadCanonical(path).Sliders.Single();
                 Check(linear.Geometry.RawSegments.Count == 2 && linear.Geometry.RawSegments.All(s => s.IsLinear && s.IsSubcurveEnd) && linear.Tail == new Vector2(100,150) && linear.EndTime == 2250, $"E006 v{version} polyline extension and end time");
             }
             File.WriteAllText(path, Map(14, "0,0,1000,2,0,L|100.9:10.9,1,100"));
-            Check(Beatmap.Load(path).Sliders.Single().ControlPoints[^1] == new Vector2(100,10), "E006 L16 control truncation before Single storage");
+            Check(Beatmap.LoadCanonical(path).Sliders.Single().ControlPoints[^1] == new Vector2(100,10), "E006 L16 control truncation before Single storage");
             foreach (string fixture in Directory.EnumerateFiles(Path.Combine(repo, "reconstructed/CircleGame/Fixtures"), "*.osu"))
             {
-                var loaded = Beatmap.Load(fixture);
+                var loaded = Beatmap.LoadCanonical(fixture);
                 Check(loaded.Document is not null && loaded.Document.SourceSha256 is not null, "bundled fixture document " + Path.GetFileName(fixture));
             }
             using var manifest = JsonDocument.Parse(File.ReadAllText(Path.Combine(repo,"reconstructed/campaigns/C001/corpus-manifest.json")));
@@ -90,12 +96,12 @@ internal static class Program
                 Check(raw.SourceSha256!.Equals(fixture.GetProperty("sha256").GetString(), StringComparison.OrdinalIgnoreCase), "corpus hash " + Path.GetFileName(fixturePath));
                 if (fixture.GetProperty("expected_gameplay").GetBoolean())
                 {
-                    var prepared = Beatmap.Load(fixturePath);
+                    var prepared = Beatmap.LoadCanonical(fixturePath);
                     if (fixture.GetProperty("expected_prepared").TryGetProperty("end",out var expectedEnd))
                         Check(prepared.Sliders.Single().EndTime == expectedEnd.GetInt32() && prepared.Sliders.Single().Tail == new Vector2(228,342), "corpus polyline prepared " + Path.GetFileName(fixturePath));
                     else Check(prepared.Circles.Count + prepared.Sliders.Count == 1, "corpus gameplay " + Path.GetFileName(fixturePath));
                 }
-                else Reject<InvalidDataException>(() => Beatmap.Load(fixturePath), "raw retained but unsupported gameplay " + Path.GetFileName(fixturePath));
+                else Reject<InvalidDataException>(() => Beatmap.LoadCanonical(fixturePath), "raw retained but unsupported gameplay " + Path.GetFileName(fixturePath));
             }
             string resultPath = Path.Combine(repo, "reconstructed/campaigns/C001/development-results.json");
             File.WriteAllText(resultPath, JsonSerializer.Serialize(new { classification = "Work 2 production development checks; not independent QA or original runtime", groups = Results.Count, results = Results }, new JsonSerializerOptions { WriteIndented = true }));

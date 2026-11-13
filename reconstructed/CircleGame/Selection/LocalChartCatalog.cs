@@ -82,7 +82,7 @@ public sealed class CatalogChart(string path, ChartFingerprint? fingerprint, Cha
     }
     public Beatmap LoadGameplay(CancellationToken token = default)
     {
-        Verify(token); var map = Beatmap.Load(Path, token); Verify(token); return map; // Fresh authoritative parser, never cached Beatmap substitution.
+        Verify(token); var map = Beatmap.LoadCanonical(Path, token); Verify(token); return map; // Fresh authoritative parser, never cached Beatmap substitution.
     }
 }
 public sealed record CatalogSnapshot(long Generation, IReadOnlyList<CatalogChart> Charts, IReadOnlyList<string> Notices);

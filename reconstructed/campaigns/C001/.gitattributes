@@ -1,0 +1,2 @@
+# Exact fixture bytes are part of the compatibility contract on every host.
+corpus/*.osu -text

@@ -1351,3 +1351,28 @@ diff --check PASS. No local dotnet SDK available. Windows gate/tests/publish pen
 no original runtime, physical input/rendering/listening or human qualification.
 Next: publish expected-head checkpoint, inspect exact Windows gate and correct any
 failure without weakening historical expectations; then consume new Work 1 evidence.
+
+C001 checkpoint01 initial exact-source Windows run43450210907/job131970075774,
+source333f6d1ff63ef89ddd8a50634e264ed2542b1eba: WPF Release build0warnings/0errors;
+all retained steps except QA04 and new C001 checks passed. QA04:42pass/1fail F01
+historical v13 Bezier rejection. Corrected with historical Load admission adapter,
+sharing the same core as new LoadCanonical; application/catalog now explicitly use
+the canonical entry. Historical test unchanged. New C001 checks passed through
+bundled fixtures, then exact fixture hash failed from Windows checkout CRLF changes.
+Path-scoped .gitattributes preserves original fixture bytes; no expected hash/input
+changed. Windows publish skipped due failed gate. Full raw log2418109UTF8bytes
+SHA25657305aa98b27742e35cd792173caf42c5db0cb642a0800b5f79d9a2b78de77c2;
+all ordinary lines retained in verification/initial-summary.log; repeated long
+historical QA result packets omitted with exact line hashes/lengths in initial-gate.
+No original-runtime claims. Corrected source also defensively owns original bytes
+and returns copies, preventing caller mutation of document provenance. Add explicit
+historical/canonical coexistence and defensive-snapshot development controls.
+
+Before correction publication, fetched and fast-forward integrated Work 1 checkpoint
+ee83d5cb3960f327aa30be056b8e5970eee736eb. Read original-behavior/01-parser-boundaries
+and registers. Its277 static assertions PASS locally. New findings require separate
+metadata-refresh/runtime projections (raw filtering, unknown-section retention,
+colon handling), typed/order-sensitive difficulty defaults and Variables support.
+These are next C001 work, not equivalent to current engineering normalized Entries.
+Raw SourceLines and defensive bytes preserve the information required to implement
+them. Preserve Work 1 journal and evidence unchanged; no concurrent overwrite.
