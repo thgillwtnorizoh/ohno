@@ -1,0 +1,65 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 16 near-tolerance-outside
+TitleUnicode:QA15 16 near-tolerance-outside
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-16 near-tolerance-outside
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+448,64,300,1,0
+448,320,600,1,0
+64,320,700,1,0
+64,64,830,1,0
+448,64,1080,1,0
+448,320,1180,1,0
+64,320,1310,1,0
+64,64,1560,1,0
+448,64,1660,1,0
+448,320,1790,1,0
+64,320,2040,1,0
+64,64,2140,1,0
+448,64,2270,1,0
+448,320,2520,1,0
+64,320,2620,1,0
+64,64,2750,1,0
+448,64,3000,1,0
+448,320,3100,1,0
+64,320,3230,1,0
+64,64,3480,1,0

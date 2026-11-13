@@ -1,0 +1,65 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 15 inside-tolerance
+TitleUnicode:QA15 15 inside-tolerance
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-15 inside-tolerance
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+448,64,300,1,0
+448,320,600,1,0
+64,320,700,1,0
+64,64,829,1,0
+448,64,1079,1,0
+448,320,1179,1,0
+64,320,1308,1,0
+64,64,1558,1,0
+448,64,1658,1,0
+448,320,1787,1,0
+64,320,2037,1,0
+64,64,2137,1,0
+448,64,2266,1,0
+448,320,2516,1,0
+64,320,2616,1,0
+64,64,2745,1,0
+448,64,2995,1,0
+448,320,3095,1,0
+64,320,3224,1,0
+64,64,3474,1,0

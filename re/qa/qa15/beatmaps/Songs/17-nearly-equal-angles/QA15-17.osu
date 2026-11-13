@@ -1,0 +1,69 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 17 nearly-equal-angles
+TitleUnicode:QA15 17 nearly-equal-angles
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-17 nearly-equal-angles
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+101,125,100,1,0
+138,186,200,1,0
+175,247,300,1,0
+212,308,400,1,0
+249,119,500,1,0
+286,180,600,1,0
+323,241,700,1,0
+360,302,800,1,0
+397,113,900,1,0
+434,174,1000,1,0
+91,235,1100,1,0
+128,296,1200,1,0
+165,107,1300,1,0
+202,168,1400,1,0
+239,229,1500,1,0
+276,290,1600,1,0
+313,101,1700,1,0
+350,162,1800,1,0
+387,223,1900,1,0
+424,284,2000,1,0
+81,95,2100,1,0
+118,156,2200,1,0
+155,217,2300,1,0
+192,278,2400,1,0

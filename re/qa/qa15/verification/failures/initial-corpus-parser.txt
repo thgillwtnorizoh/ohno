@@ -1,0 +1,1 @@
+Initial QA15 adapter failed before producing corpus: read_osu attempted sections[''] for format header; KeyError ''. Fix: initialize header section. Oracle, production and research unchanged. This was test tooling, not a mathematical discrepancy.

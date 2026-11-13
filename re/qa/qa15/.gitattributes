@@ -1,0 +1,4 @@
+beatmaps/Songs/**/*.osu -text
+beatmaps/Songs/**/*.wav -text
+*.zip -text
+verification/*.gz.b64 text eol=lf

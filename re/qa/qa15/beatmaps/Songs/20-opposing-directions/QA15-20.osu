@@ -1,0 +1,69 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 20 opposing-directions
+TitleUnicode:QA15 20 opposing-directions
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-20 opposing-directions
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,192,0,1,0
+448,193,100,1,0
+64,194,200,1,0
+448,192,300,1,0
+64,193,400,1,0
+448,194,500,1,0
+64,192,600,1,0
+448,193,700,1,0
+64,194,800,1,0
+448,192,900,1,0
+64,193,1000,1,0
+448,194,1100,1,0
+64,192,1200,1,0
+448,193,1300,1,0
+64,194,1400,1,0
+448,192,1500,1,0
+64,193,1600,1,0
+448,194,1700,1,0
+64,192,1800,1,0
+448,193,1900,1,0
+64,194,2000,1,0
+448,192,2100,1,0
+64,193,2200,1,0
+448,194,2300,1,0
+64,192,2400,1,0

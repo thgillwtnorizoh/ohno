@@ -1,0 +1,57 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 18 next-jump-small
+TitleUnicode:QA15 18 next-jump-small
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-18 next-jump-small
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:10
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+448,64,100,1,0
+448,320,200,1,0
+64,320,300,1,0
+64,64,400,1,0
+448,64,500,1,0
+448,320,600,1,0
+64,320,700,1,0
+64,64,800,1,0
+448,64,900,1,0
+449,64,1000,1,0
+64,320,1100,1,0
+64,64,1200,1,0

@@ -1,0 +1,61 @@
+osu file format v14
+
+[General]
+AudioFilename:silence.wav
+AudioLeadIn:0
+PreviewTime:-1
+Countdown:0
+SampleSet:Normal
+Mode:0
+StackLeniency:0
+
+[Editor]
+DistanceSpacing:1
+BeatDivisor:4
+GridSize:4
+TimelineZoom:1
+
+[Metadata]
+Title:QA15 05 age-below
+TitleUnicode:QA15 05 age-below
+Artist:Project ohno independent controls
+ArtistUnicode:Project ohno independent controls
+Creator:Work1
+Version:QA15-05 age-below
+Source:Original generated test material
+Tags:QA15 circle comparison
+BeatmapID:0
+BeatmapSetID:-1
+
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1.4
+SliderTickRate:1
+
+[Events]
+// No background video storyboard or external assets
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+
+[HitObjects]
+64,64,0,1,0
+448,64,300,1,0
+448,320,400,1,0
+64,320,500,1,0
+64,64,700,1,0
+448,64,800,1,0
+448,320,900,1,0
+64,320,1100,1,0
+64,64,1200,1,0
+448,64,1300,1,0
+448,320,1500,1,0
+64,320,1600,1,0
+64,64,1700,1,0
+448,64,1900,1,0
+448,320,2000,1,0
+64,320,2100,1,0
+64,64,4099,1,0

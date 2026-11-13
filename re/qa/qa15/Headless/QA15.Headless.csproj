@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors><NuGetAudit>false</NuGetAudit></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../../reconstructed/CircleGame/Difficulty/*.cs" Link="Production/%(Filename)%(Extension)" />
+    <Compile Include="../../../../reconstructed/CircleGame/Selection/*.cs" Link="Production/%(Filename)%(Extension)" />
+    <Compile Include="../../../../reconstructed/CircleGame/Gameplay/Beatmap.cs" Link="Production/Beatmap.cs" />
+    <Compile Include="../../../../reconstructed/CircleGame/Gameplay/CircleSession.cs" Link="Production/CircleSession.cs" />
+    <Compile Include="../../../../reconstructed/CircleGame/Gameplay/CircleHitSounds.cs" Link="Production/CircleHitSounds.cs" />
+    <Compile Include="../../../../reconstructed/CircleGame/Gameplay/RankResults.cs" Link="Production/RankResults.cs" />
+    <Compile Include="../Evidence.cs" Link="Evidence.cs" />
+  </ItemGroup>
+</Project>

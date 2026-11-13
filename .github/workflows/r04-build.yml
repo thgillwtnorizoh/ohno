@@ -58,6 +58,7 @@ on:
       - re/qa/qa14/Windows/**
       - re/qa/qa14/Inputs/**
       - re/qa/qa14/Run-QA14.ps1
+      - re/qa/qa15/**
       - .github/workflows/r04-build.yml
 
 permissions:
@@ -388,4 +389,11 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R17WindowsChecks/R17WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
+          exit $LASTEXITCODE
+
+      - name: Execute independent QA15 corpus and calculator component verification
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa15/Run-QA15.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa15-results.json')
           exit $LASTEXITCODE
