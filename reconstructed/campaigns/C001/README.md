@@ -1,111 +1,90 @@
-# C001 — Complete .osu interpretation and preparation
+# C001 — Original-derived .osu interpretation and preparation
 
-Status: OPEN — Work 2 checkpoint 01, verification pending. Authority: authorization.md
-and UEP-001 (subsystem coverage, evidence integrity, continuous preservation and
-owner acceptance). Canonical main baseline: 0421f9249f494b4a86fdf59c7dd76cd9a664688b.
-No exceptions. Work 1 owns independent C001 QA and original investigation.
+**Campaign OPEN.** See status.md for the latest exact tested source, Windows gate
+and artifact. authorization.md and UEP-001 govern subsystem completion. A passing
+finite checkpoint does not close the remaining domains in coverage.md or Work 1's
+re/campaigns/C001/coverage-matrix.md.
 
-## Implemented checkpoint
+## Production contracts
 
-OsuDocument provides ordered immutable source lines/section entries, defensively owned original byte snapshot and exact
-byte SHA256, format identity and encoding detection. Unknown sections/fields and
-all raw object/event/timing payloads survive. This is an ENGINEERING retention
-contract, not a claim that every retained property has original semantics. Raw mode
-identity remains in General entries; a fully typed raw model is still pending.
+| Contract | Disposition |
+|---|---|
+| OsuDocument.Read / Parse | Immutable ordered source lines/entries and version; byte input owns a defensive original snapshot with exact SHA256. Normalized Entries are an ENGINEERING inspection view, not universal original semantics. |
+| OsuDocument.ReadStage | Distinct original-derived metadata-refresh and runtime-object projections: case-sensitive CLR section parsing, prior-section retention on failed conversion, Variables/numeric enum support, stage-specific whitespace and colon handling. |
+| OsuMetadataSettings.Prepare | Fresh defaults, version13 Byte/Single split, source-order OD-to-AR inheritance until explicit AR, mode-at-CS bounds, undefined-mode fallback, slider and StackLeniency clamps. Finite invariant parsing is an explicit engineering profile. |
+| Beatmap.LoadCanonical / Load(CanonicalBeatmapPath) | Canonical application preparation. Typed requests carry cancellation. The actual GameWindow uses this profile. Prepared Beatmap retains raw document and settings provenance. |
+| Beatmap.Load(string) | Historical admission compatibility over the shared core: explicit-field requirements and v14-only Bezier guard remain for existing callers. |
+| CatalogChart.LoadCanonicalGameplay / LoadGameplay | Explicit canonical versus historical admission, with revision verification before/after loading. No cached Beatmap substitution. |
+| LocalChartCatalog.Index | Metadata-stage interpretation with finite prepared defaults/clamps, exact masked category counts, separate runtime availability and PreparedSettings. Invalid-scalar nullable display and comment-tolerant indexing remain explicit ENGINEERING compatibility policies. |
+| StarAdmission | Shared document syntax, retained strict research profile and unchanged R17 mathematics. It does not claim full original parser/preparation support. |
 
-Gameplay, catalog and strict R17 admission use the shared syntax. The application
-uses Beatmap.Load(CanonicalBeatmapPath), carrying the selected canonical profile and
-cancellation; catalog calls LoadCanonical. String Beatmap.Load preserves historical
-v14-only Bezier admission boundary as a compatibility wrapper over the same core. Gameplay attaches
-the source document to its prepared Beatmap and passes it directly to fresh score
-metadata preparation. The headerless ReadFresh(lines,version) compatibility API
-remains for existing independent callers. No mutable cached document is shared
-between file revisions; catalog fingerprints verify captured loads before/after.
-No claim of a single cached parse across catalog/calculation/gameplay requests.
+Each request has its own deterministic document; this is not a claim of one cached
+parse across indexing, calculation and gameplay. Fingerprints prevent stale
+revision installation/cache publication under the retained tests.
 
-E032-derived Bezier sampler selection now covers admitted versions5–14: <=6 uses
-backward duplicate equality;7–8 adaptive without two-control bypass;9 uniform50*n
-samples without t=1 except two-control bypass;>=10 adaptive with bypass. Existing
-length adjustment/movement/checkpoint consumers retain their contracts. E006-derived
-Linear paths now accept multiple controls; every linear piece carries both original
-flags. Linear controls now use Double→Int32→Single, correcting the old Single-only
-endpoint path. Head Linear parsing still has the historical Single conversion;
-its extreme-rounding discrepancy is tracked, not hidden.
+## Implemented path and object families
 
-## Reproduction and evidence
+E006-derived Linear paths accept multiple controls, retain both flags on every
+piece, and parse controls through Double→Int32→Single. E032-derived Bezier branches
+cover admitted versions5–14: <=6 backward duplicate boundary;7–8 adaptive without
+two-control bypass;9 uniform50*n samples excluding t=1 except two-control bypass;
+>=10 adaptive weighted leaves with bypass. Common requested-length adjustment,
+Single segments, Double cumulative lengths, movements and checkpoints remain shared.
 
-- `python reconstructed/campaigns/C001/build_corpus.py --check`
-- `python re/tools/check_bezier_geometry.py re/evidence/32/bezier-geometry.json`
-- `dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- <repository>`
-- Existing Windows workflow `.github/workflows/r04-build.yml` runs every retained
-  historical suite, C001 development checks, Release build and portable publish.
-- `human-qualification.md` describes owner-only operation; all original runtime,
-  physical input/rendering/listening and final human acceptance remain pending.
+Canonical heads use Double→clamp→Int32→Single before Single rounding. Runtime type
+construction follows Circle→Slider→Spinner priority; metadata summary retains its
+separate exact-category switch. Raw type and actual registered type survive through
+health and NewCombo preparation. A retained hold category does not authorize its
+missing standard gameplay factory.
 
-Development checks are Work 2 component evidence, not new independent QA. Preserve
-all2309 historical named checks and all retained development suites. Passing them
-cannot prove the still-unimplemented coverage in coverage.md.
+Score metadata consumes the metadata stage; registration consumes the runtime
+stage, so counts can differ. Finite score-summary errors retain prior writes and
+expose PartialErrorLine/PartialError. This supports trailing comments without
+claiming complete original key/error/notification/bookkeeping recovery. Other
+incomplete metadata can still reject canonical gameplay under a documented finite
+engineering policy.
 
-## Data pipeline / reconstructed pseudocode
+## Verification and reproduction
 
-ENGINEERING: bytes → BOM-aware reader → version header + ordered OsuEntries + hash
-→ consumer-specific admitted projection; preserve all raw entries, including unused.
-RECONSTRUCTED E006/E032: admitted L/B object → version-specific ranges/sampler →
-raw Single segments → original-derived shared length adjustment → movements/ticks.
-RECONSTRUCTED E034–E041: original registration order → score/NewCombo/sound sidecars.
-ENGINEERING: captured file fingerprint verified before and after gameplay/calculation.
-UNRESOLVED: complete typed fields/defaults/errors, P/C paths, arbitrary stacks,
-equal-time registration and nonstandard preparation; see coverage and discrepancies.
+Work 1 authority: original-behavior/01-parser-boundaries.md, E004–006/E032–046 and
+verification/02-production-audit.md under re/campaigns/C001. Original evidence is
+static; actual production controls are component evidence; original Windows runtime
+and human input/rendering/listening remain unverified.
 
-## Coordination and recovery
+Run from repository root:
 
-Read status.md, coverage.md, discrepancies.md, consumer-inventory.md and both
-journals before continuing. Fetch remote main before publication, integrate any
-new Work 1 findings, use expected-head non-force publication. Work 2 does not edit
-historical research/QA. Work 1 can add research and independent verification under
-re/ and reference these contracts continuously. Checkpoint completion does not close
-C001; original-supported inventory itself still needs Work 1 closure.
+```sh
+python re/campaigns/C001/original-behavior/check.py re/campaigns/C001/original-behavior/static-inventory.json
+python re/campaigns/C001/corpus/build.py --check
+python reconstructed/campaigns/C001/build_corpus.py --check
+dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- <repo>
+dotnet run --project re/campaigns/C001/verification/Headless/C001.Headless.csproj -c Release -- <repo> <results.json>
+```
 
-## Work 1 checkpoint01 integration
+The unchanged independent suite has106 explicitly declared original-static fields,
+4 engineering controls and10 diagnostic probes. Probes are not semantic passes.
+Strict execution exits nonzero on any declared field gap. This finite corpus is
+not complete original behavior coverage. Preserve all2309 historical named QA and
+retained development suites; the Windows workflow runs them unchanged and publishes
+a self-contained x64 application plus evidence. Work 2 controls are not independent
+QA. Earlier failed gates remain under verification/ with their corrections recorded
+in the append-only implementation journal.
 
-Authority: re/campaigns/C001/original-behavior/01-parser-boundaries.md at
- ee83d5cb3960f327aa30be056b8e5970eee736eb;277 static assertions checked locally.
-OsuDocument.ReadStage separates metadata-refresh and runtime-object projections.
-Both use original case-sensitive CLR FileSection parsing, including Variables and
-numeric enum values, retaining prior section on failed conversion. Runtime filters
-raw SPACE/underscore/comment prefixes before trimming; metadata preserves the full
-first-colon remainder while runtime key values use only the second colon cell.
-Normalized Entries remain an explicitly separate engineering/raw inspection view.
+Persistent corpora:24 Work 2 fixtures here,49 Work 1 fixtures under re/campaigns/C001,
+and27 unchanged QA15 comparison charts. Every new fixture has reproducible source
+and exact bytes/hash; no original assets/music are distributed. See
+human-qualification.md for owner operation and matched original comparisons.
 
-OsuMetadataSettings models fresh defaults, finite version13 Byte/Single parsing,
-source-order OD→AR inheritance until explicit AR, mode-at-CS parse-time bounds,
-StackLeniency and slider clamps. A bad supported scalar records partial prior writes
-and stops this projection. Canonical gameplay rejects incomplete metadata rather
-than claiming complete original partial-recovery behavior. It consumes prepared
-CS/OD/AR and slider settings; catalog exposes PreparedSettings alongside display fields, using finite prepared
-defaults/clamps and stage-aware metadata. Invalid-scalar nullable display behavior
-remains an explicit engineering compatibility policy. Original metadata category
-counts use exact masked values; runtime priority combinations remain open. Score metadata uses the metadata stage;
-object registration uses the runtime stage, so counts can legitimately differ.
+## Remaining acceptance gates
 
-Still unresolved: original header recognition/default-version recovery, complete
-field dispatch/error side effects, F2c2b culture identity/native CLR exceptional
-parsing, resource/event semantics, general stacks, P/C and alternate factories.
-This finite implementation must not be described as full parser equivalence.
+Complete original version/field/default/error inventory; full P/C/alias/degenerate
+geometry; stacking/ties/transforms/modifiers; mode-specific factories/preparation;
+complete events/Variables/resource interpretation; native culture/exceptional
+conversion and general partial recovery; full independent branch/variant coverage;
+owner qualification. The19 reported R17 display mismatches and historical Joined
+Bezier discrepancy remain open without fitted multipliers or map patches.
 
-## Compatibility and registered identity
-
-Historical string Beatmap.Load and CatalogChart.LoadGameplay retain explicit-field
-and v14-Bezier admission. Their canonical counterparts and actual typed GameWindow
-request share the same document/preparation implementation with extended C001
-semantics. Canonical runtime construction follows original bit priority, while
-metadata summary counts exact masked values. Raw flags and actual registered type
-remain separate through NewCombo/health. A hold category preserved by the catalog
-still cannot become playable without its missing standard factory. Catalog ignores
-comment lines for its engineering index contract; complete original refresh error
-recovery is pending and is not certified by that policy.
-
-Canonical finite score-summary row recovery now retains writes before a metadata
-processing error and exposes PartialErrorLine/PartialError. This lets a trailing
-comment terminate that summary while the runtime loader independently skips it.
-It does not certify complete original partial-file recovery or notifications.
+Read status.md, both coverage matrices, consumer-inventory.md, discrepancies.md,
+Work 1's dependency/discrepancy registers and both journals before continuing.
+Fetch/reconcile canonical main and use an expected-head non-force update. Research
+and implementation exchange findings continuously; historical evidence stays intact.

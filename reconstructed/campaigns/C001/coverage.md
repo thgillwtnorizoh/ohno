@@ -1,6 +1,6 @@
 # C001 coverage matrix — OPEN
 
-Inventory disposition: preliminary complete domain categories, original branch-by-branch closure pending Work 1. No row is marked subsystem-complete. Raw retention does not prove semantic preparation. Independent C001 verification and original runtime are pending for every new row.
+Inventory disposition: preliminary complete domain categories, original branch-by-branch closure pending Work 1. No row is marked subsystem-complete. Raw retention does not prove semantic preparation. Finite independent verification at85ec7bf:106/106 declared fields plus4 engineering controls PASS; complete branch/variant verification remains pending. Original runtime remains unverified for every row.
 
 | Domain / feature | Evidence | Production checkpoint | Remaining coverage |
 |---|---|---|---|
@@ -26,7 +26,7 @@ Inventory disposition: preliminary complete domain categories, original branch-b
 | D Object construction: Sliders/repeats/samples | E005/006/016/021/022/032/039 | bounded L/B prepared data + sidecars | P/C/degenerate domain open |
 | D Object construction: Spinners | E024–026/041 | v14 standard bounded prep | older versions/alternate modes open |
 | D Object construction: Holds | E034 metadata only | raw payload retained; standard gameplay rejects | mode-specific construction/prep open |
-| D Object construction: Combined flags/combo skip/sample overrides | E036–041 partial | raw and prepared sidecars retained | all factory combinations open |
+| D Object construction: Combined flags/combo skip/sample overrides | E036–041 partial | raw flags and actual registered type retained through runtime/health/NewCombo | all factory combinations open |
 | D Object construction: Sorting/registration/equal times | E004/036 partial | raw order preserved; prepared current sort; equal time rejected | original tie rules and registration closure open |
 | E Geometry: Linear multi-control | E006 | implemented pair flags, Int32 controls, common adjustment | extreme/degenerate and head precision open |
 | E Geometry: Bezier5–6 | E032 | backward duplicate boundary + adaptive | runtime/edge closure open |
@@ -56,9 +56,9 @@ Inventory disposition: preliminary complete domain categories, original branch-b
 | I Integration/acceptance: Cancellation/failure isolation | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Revision/cache invalidation | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Catalog/gameplay/difficulty integration | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
-| I Integration/acceptance: Historical2309 independent QA + retained dev | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
-| I Integration/acceptance: Independent C001 production QA | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
-| I Integration/acceptance: Windows Release build/portable artifact | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
+| I Integration/acceptance: Historical2309 independent QA + retained dev | C001 authorization | exact Windows2309/2309 and all retained development steps PASS at85ec7bf | continue regression for remaining original domain |
+| I Integration/acceptance: Independent C001 production QA | Work1 unchanged independent suite | strict106/106 declared fields and4/4 engineering controls PASS at85ec7bf | complete original branch/variant coverage open;10 probes not passes |
+| I Integration/acceptance: Windows Release build/portable artifact | exact-source Windows run43455800196 | Release0warnings/0errors and self-contained artifact14053703311 PASS | owner actual application qualification pending |
 | I Integration/acceptance: Human application qualification | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Reproducible corpus/provenance | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Original R17 display discrepancy analysis | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
