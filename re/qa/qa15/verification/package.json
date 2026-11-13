@@ -1,0 +1,144 @@
+{
+  "archive": "QA15-comparison-beatmaps.zip",
+  "sha256": "be2168196216889faba4f60fef230f28bc6cbf3a39904338a81d06ec48a12499",
+  "bytes": 71707,
+  "charts": 27,
+  "osz": {
+    "QA15-01": {
+      "sha256": "8a50fb386a0d65cb15d71828c973b899c0d03c3d96b5bc58c1e43d1daf4ca3b1",
+      "bytes": 840,
+      "osu_sha256": "ef55d2c89f7aee19226daf771a4e1abed806e9968bb92f317a0710253a8ea5bb"
+    },
+    "QA15-02": {
+      "sha256": "1ffec9ec157fb34949d4edc4a28db96d5c793afa53d67276166e4174b394d3f1",
+      "bytes": 863,
+      "osu_sha256": "0b5284e63225d66f718475d67cbaca2ad3cdaba27dfb589290fbfca886a99efa"
+    },
+    "QA15-03": {
+      "sha256": "09cfd75335816046990463790cc1a240fb869c9ddc968a6f8199472e0080a656",
+      "bytes": 883,
+      "osu_sha256": "c68dacab226173cb8e496145d97e58d73e875544fcf7ea4c0d61f6a5a93a524d"
+    },
+    "QA15-04": {
+      "sha256": "5b7c9a6a67f7e8ae8838ae4a6bcc95a48821111b468835d70a0f666765270bac",
+      "bytes": 946,
+      "osu_sha256": "c66d5a1220517baf3468e53ade286bfa5c91663eb67f0d94087b1b4f3cd43a56"
+    },
+    "QA15-05": {
+      "sha256": "ea3356fcfb485ed34a7040f6b0c22bb339b4afbc66255b20a92f74e3be7c4fad",
+      "bytes": 947,
+      "osu_sha256": "09b664a23a4363264f19aaece368f734185c5e70fd6bcf5e57cb1dacdb3693ef"
+    },
+    "QA15-06": {
+      "sha256": "9486c02955dd20006dd16438f69e1c544690bf2d1c81763b97ed79d5157e3faa",
+      "bytes": 945,
+      "osu_sha256": "a1c396846059532f36cd3b12e7dea0320d779aa19471503816b3c2ad89124f4f"
+    },
+    "QA15-07": {
+      "sha256": "5fc10522d90b035059502df5a1b72c34a40c086b50f97a376806e651daaf0a24",
+      "bytes": 1045,
+      "osu_sha256": "0d98c8db4f35adeea93425d50f08476e96d694529e493c4f52d62136c61d67c2"
+    },
+    "QA15-08": {
+      "sha256": "542c90b8b43af5c69bb8a7340772a0e7a038c95399a96f2c3b7e10206bdcfad5",
+      "bytes": 1001,
+      "osu_sha256": "f4350561e58993711021ae5a7f6909e0b6204f05e2a7e72ccb3f1f97a5163c89"
+    },
+    "QA15-09": {
+      "sha256": "209952f3331ff23a0fca3d69c2446b88361d442b433b9e7269dcdc6b81fed8da",
+      "bytes": 939,
+      "osu_sha256": "e515b15b3f05537ffe7d23c1d893a09f38a9880c66b6316fe8b73d6023c4b2c3"
+    },
+    "QA15-10": {
+      "sha256": "cfb471f922baf09648d041dc5f69d9fd2b8b28cff013748ad1bebd77ef082173",
+      "bytes": 891,
+      "osu_sha256": "dccac7b35145759e9e70f61f9f6b593f1845699ca37cde100f3789649e820ab3"
+    },
+    "QA15-11": {
+      "sha256": "008d55ddabd78baf9e33c88c5d6907d68178726f9d5ffddcc85a255a9d7f8fc3",
+      "bytes": 922,
+      "osu_sha256": "5a76776a5164dbff3494092963581fda8b8269740860180b717d1de7812a0907"
+    },
+    "QA15-12": {
+      "sha256": "030c679f5d6b4b5d7e67d9fd256b472d217d1f23c388a23d9200d25cc8642b89",
+      "bytes": 930,
+      "osu_sha256": "a9bb44781d76c08f3f14d21b429af17de9dcaf6ee14c8f16c60d286ca4a81a04"
+    },
+    "QA15-13": {
+      "sha256": "55a3bb2a8daf6d1d9793564a6bd4d257a853f406bdfbe8ca7e96f683b982aa01",
+      "bytes": 948,
+      "osu_sha256": "1a30a2522d1b9e92e5082e44bcfa3bce013d23cfe59b4907e748005f3e00cb25"
+    },
+    "QA15-14": {
+      "sha256": "90a2deeaa839fdd92a634c1aedbfeef538e4aebee97fd91a0d55da5ef82f258f",
+      "bytes": 942,
+      "osu_sha256": "91157b548964ddd8543191ca527e257310785487f73f5f956f7675855799e873"
+    },
+    "QA15-15": {
+      "sha256": "e0c66707d6b89d9960e94052968164d7f5d1b3d6f2d4a8807e9045f04f1a1587",
+      "bytes": 978,
+      "osu_sha256": "6f53937a0894556f52a0ab76c55eced8b761b6c942d9e5dbbae586d87548bd5d"
+    },
+    "QA15-16": {
+      "sha256": "b05e0a17c39e6a14ac49c74b69e598cc5571816eff6fe60f76d09aae55da8470",
+      "bytes": 968,
+      "osu_sha256": "84d97f27e9a5590e46f8ed7ee3b62ac03cdda777c65cde3341891fb020f5d92b"
+    },
+    "QA15-17": {
+      "sha256": "2a0aa030efd6354e76eeb327e16d766dd033bde91476e1304304e8bd55e8ebd6",
+      "bytes": 1039,
+      "osu_sha256": "ef382d07c22a771d9a572dd410c40ed04d0bbc2138d8be78516a68b4a6095996"
+    },
+    "QA15-18": {
+      "sha256": "fb935fe10a160736c9aa793e7febec8efc25596bd40988bdab1630307b2876a7",
+      "bytes": 895,
+      "osu_sha256": "abce65ed503afb3aacbe5bf1e248b24d956989f3349b408f08140d0c4372793d"
+    },
+    "QA15-19": {
+      "sha256": "a43cbe5e09ce8032fafcf90da886f895657df7c05b6c9ceb1d324c4418e26512",
+      "bytes": 893,
+      "osu_sha256": "36ae6ac119ab898f4da834c079e08982bcde581bef5943a42fd30cce44a68aba"
+    },
+    "QA15-20": {
+      "sha256": "d9fc9485dd5868c0b03cd65d0a6afb8532439130474ccd2fc0d973f334191f66",
+      "bytes": 954,
+      "osu_sha256": "dc4be5b1840429451a6a6e00d4fa3582f896830bb647eb0adf9239c59ceccc57"
+    },
+    "QA15-21": {
+      "sha256": "31d4c4a8715b51e17f123d3448e0f5f1e747232e1424c06585a0a2f84a397945",
+      "bytes": 931,
+      "osu_sha256": "4fa2b7ecb47c87a990310142c7ca18ae63c7aa7f95df911122aa4c141f3b78d2"
+    },
+    "QA15-22": {
+      "sha256": "5110cfa8cd9a88587446ae271530ee5c78e68e52672c00f417f7dc1b4f9f2795",
+      "bytes": 930,
+      "osu_sha256": "fb814dfc214b7a8ddab90c5938f14a7d1cb2c3c97dc49cf56c46436389c501da"
+    },
+    "QA15-23": {
+      "sha256": "751a0b279628b1528f1f592f2ba7bd40de7688b6b95aae7bc25574a6c7b838f4",
+      "bytes": 1080,
+      "osu_sha256": "1708310ea2cfff13540f3fc92351070158eb5b0f8e57c2a1ba20c1193bf79f2b"
+    },
+    "QA15-24": {
+      "sha256": "82691192444ca494a78625487dd54977d2bc16530bc170b4dd097e9f61cfa4bd",
+      "bytes": 2207,
+      "osu_sha256": "43d1367ecc0e6ae7028adcbebd19c79dbee48a7c866c742358bf07532dd694b5"
+    },
+    "QA15-25": {
+      "sha256": "efe098f09599d48d48266855cf73bb2b3e915f4c4581700251f1ec52db02929e",
+      "bytes": 881,
+      "osu_sha256": "806e6d07464feec2217637dde30b52c482ecd676897d0f8f6deffadfae2194ee"
+    },
+    "QA15-26": {
+      "sha256": "aafec91978cf96eae6733e2faa67d7b255da360d75b916941478ef58a032b610",
+      "bytes": 910,
+      "osu_sha256": "d9beed74dedc7d6dc96f18d264ea6def04edfcf043d6e9aafa9bd13c46ad17b3"
+    },
+    "QA15-27": {
+      "sha256": "649ea5b2eeb078b75e0f6c8065dcf0b2e21f424b8078a5f1c261c3d940911592",
+      "bytes": 923,
+      "osu_sha256": "e58b4642b1a57218ccb704427ea92f6eca665033d457b79b545b1be37dc164ae"
+    }
+  },
+  "original_import": "NOT OBSERVED; documented-format/package validation only"
+}

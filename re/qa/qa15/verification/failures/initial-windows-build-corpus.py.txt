@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+"""QA15 deterministic original corpus / independent E046 expectation adapter.
+Imports only the immutable Work1 oracle; never imports Work2 or the subject model.
+--check recomputes without writing. Generation refuses populated human results.
+"""
+import ast,base64,csv,gzip,hashlib,importlib.util,io,json,math,struct,sys,wave,zipfile
+from pathlib import Path
+QA=Path(__file__).resolve().parent
+ROOT=QA.parents[2]
+B=QA/'beatmaps'
+def sha(b):return hashlib.sha256(b).hexdigest()
+def jbytes(x):return (json.dumps(x,ensure_ascii=False,indent=2,allow_nan=False)+'\n').encode()
+def load_oracle():
+    p=ROOT/'re/evidence/46/independent_oracle.py'
+    for node in ast.walk(ast.parse(p.read_text())):
+        if isinstance(node,(ast.Import,ast.ImportFrom)):
+            modules=[n.name for n in node.names] if isinstance(node,ast.Import) else [node.module]
+            assert all(n in ['math','struct','collections'] for n in modules),modules
+    spec=importlib.util.spec_from_file_location('qa15_independent_e046',p)
+    oracle=importlib.util.module_from_spec(spec);spec.loader.exec_module(oracle)
+    return oracle
+
+def read_osu(b):
+    sections={'':[]};section=''
+    for line in b.decode('utf-8').splitlines():
+        line=line.strip()
+        if not line or line.startswith('//'):continue
+        if line.startswith('['):section=line;sections.setdefault(section,[])
+        else:sections[section].append(line)
+    fields={s:dict(l.split(':',1) for l in lines) for s,lines in sections.items() if s in ['[General]','[Metadata]','[Difficulty]']}
+    objects=[list(map(int,l.split(','))) for l in sections['[HitObjects]']]
+    assert all(len(x)==5 and x[3] in [1,5] and x[4]==0 for x in objects)
+    assert all(0<=x[0]<=512 and 0<=x[1]<=384 and x[2]>=0 for x in objects)
+    assert all(a[2]<b[2] for a,b in zip(objects,objects[1:]))
+    return fields,[(x[2],x[0],x[1]) for x in objects],sections['[HitObjects]']
+
+def expected(oracle,circles,params):
+    r=oracle.chart(circles,*params)
+    # Only reached diagnostics are compared. Pair0 visibility returns before scans;
+    # the oracle expands dead diagnostics there. Movement early jump is independent.
+    terms=[oracle.movement_terms(r['pairs'],i) for i in range(len(r['pairs']))]
+    for i,t in enumerate(r['trace']):
+        t.pop('pair');rh=t['rhythm']
+        for k in ['heap','current','last','saved']:rh.pop(k)
+        t['visibility']={'raw':t['visibility']['raw']} if i==0 else t['visibility']
+        t['movement_terms']=list(terms[i]) if i>1 else [terms[i][0],terms[i][2]]
+    return r
+
+def generated(intervals,start=2500):
+    times=[start]
+    for x in intervals:times.append(times[-1]+x)
+    square=[(64,64),(448,64),(448,320),(64,320)]
+    return [(t,*square[i%4]) for i,t in enumerate(times)]
+
+def main():
+    oracle=load_oracle();outputs={};rows=[];references=[]
+    # All 22 strict raw E045/E046 fixtures are packaged, with hit-object lines intact.
+    sources=[('basic-two-circle','re/evidence/45/fixtures/2-straight-v14.osu'),
+             ('basic-three-circle','re/evidence/45/fixtures/3-straight-v14.osu'),
+             ('basic-four-circle','re/evidence/45/fixtures/4-straight-v14.osu')]
+    sources += [(p.stem,str(p.relative_to(ROOT))) for p in sorted((ROOT/'re/evidence/46/fixtures').glob('*.osu'))]
+    specs=[]
+    for name,path in sources:
+        b=(ROOT/path).read_bytes();fields,circles,lines=read_osu(b)
+        specs.append((name,circles,float(fields['[Difficulty]']['ApproachRate']),path,sha(b.replace(b'\r\n',b'\n')),lines))
+    # Additional raw cases are independently recomputed, never assigned guessed values.
+    specs += [('regular-rhythm-practice',generated([300]*24),5.,'QA15 generated: 24 equal 300ms intervals; square; start2500',None,None),
+              ('long-history-practice',generated([500]*128),5.,'QA15 generated: 128 equal 500ms intervals; square; start2500',None,None)]
+    for n in [2,3,4]:
+        c=[(2500+i*1000,i*100,192) for i in range(n)]
+        specs.append((f'practice-{n}-straight',c,5.,f'QA15 derived E045 {n}-straight: every object time +2500ms',None,None))
+    for i,(name,circles,ar,source,digest,lines) in enumerate(specs,1):
+        ident=f'QA15-{i:02d}';folder=f'{i:02d}-{name}';rel=f'Songs/{folder}/{ident}.osu'
+        objects='\n'.join(lines) if lines else '\n'.join(f'{x},{y},{t},1,0' for t,x,y in circles)
+        b=(f'osu file format v14\n\n[General]\nAudioFilename:silence.wav\nAudioLeadIn:0\nPreviewTime:-1\nCountdown:0\nSampleSet:Normal\nMode:0\nStackLeniency:0\n\n[Editor]\nDistanceSpacing:1\nBeatDivisor:4\nGridSize:4\nTimelineZoom:1\n\n[Metadata]\nTitle:QA15 {i:02d} {name}\nTitleUnicode:QA15 {i:02d} {name}\nArtist:Project ohno independent controls\nArtistUnicode:Project ohno independent controls\nCreator:Work1\nVersion:{ident} {name}\nSource:Original generated test material\nTags:QA15 circle comparison\nBeatmapID:0\nBeatmapSetID:-1\n\n[Difficulty]\nHPDrainRate:5\nCircleSize:5\nOverallDifficulty:5\nApproachRate:{ar:g}\nSliderMultiplier:1.4\nSliderTickRate:1\n\n[Events]\n// No background video storyboard or external assets\n\n[TimingPoints]\n0,500,4,1,0,100,1,0\n\n[HitObjects]\n{objects}\n').encode()
+        f,c,l=read_osu(b);assert c==circles
+        params=oracle.normalize(5,ar,5,512,384)
+        r=expected(oracle,circles,params)
+        raw=io.BytesIO()
+        audio_ms=circles[-1][0]+5000
+        with wave.open(raw,'wb') as wav:
+            wav.setparams((1,2,8000,0,'NONE','not compressed'))
+            wav.writeframes(bytes(audio_ms*8*2))
+        wavb=raw.getvalue();outputs[B/rel]=b;outputs[B/Path(rel).parent/'silence.wav']=wavb
+        display=f"{r['final']['display']:g}★"
+        row=dict(id=ident,name=name,path=rel,sha256=sha(b),format=14,mode=0,mods=0,circle_count=len(circles),CS=5,AR=ar,OD=5,HP=5,StackLeniency=0,
+            first_object_ms=circles[0][0],last_object_ms=circles[-1][0],chart_duration_ms=circles[-1][0]-circles[0][0],audio_duration_ms=audio_ms,
+            preparation_profile='CS5:OD5:AR5-or10:512x384:zero-stack:shift0:rate1:mods0',prepared_operands=list(params),
+            expected_r17_double=r['final']['double'],expected_cached_single=r['final']['single'],expected_cached_single_bits_le=r['final']['single_bits_le'],expected_r17_display=display,
+            original_game_displayed_stars='',comparison_status='PENDING HUMAN TEST',source=source,source_sha256_lf=digest,
+            numerical_input_preserved=lines is not None,evidence=['E044 aggregation/cache/display','E045 preparation/movement','E046 independent_oracle.py'],
+            audio=dict(path=str((Path(rel).parent/'silence.wav').as_posix()),sha256=sha(wavb),encoding='PCM16 mono 8000Hz all-zero samples',original_generated=True))
+        rows.append(row)
+        references.append(dict(id=ident,kind='packaged raw',path=rel,circles=circles,params=list(params),expected=r))
+    research=json.loads((ROOT/'re/evidence/46/results.json').read_bytes())
+    cases={c['name']:c for c in research['cases']}
+    # Nine artificial/prepared-only profiles are tested through the explicit seam;
+    # none is represented as an admitted raw comparison beatmap.
+    for chart in research['charts']:
+        if 'RAW' in chart['kind']:continue
+        inp=cases[chart['id']]['input'];params=inp['params'];circles=inp['circles']
+        references.append(dict(id='prepared/'+chart['id'],kind=chart['kind'],circles=circles,params=params,expected=expected(oracle,circles,params)))
+    man=dict(schema='QA15.comparison-corpus.v1',baseline='f1df469987ca184d28b66825718873a486a2cfc0',production='9ae1fbde06812adeaeac7df61de23c4d4268a51c',
+        human_gate='PENDING HUMAN TEST',original_import='NOT OBSERVED; documented-format validation only',files=rows)
+    outputs[B/'manifest.json']=jbytes(man)
+    fields=['id','path','sha256','expected_r17_double','expected_cached_single_bits_le','expected_r17_display','original_game_displayed_stars','observed_ohno_displayed_stars','displayed_difference_ohno_minus_original','comparison_status','original_exe_sha256','original_version','ohno_build_sha','mods','original_screenshot','ohno_screenshot','observer','observed_at','notes']
+    csvout=io.StringIO(newline='');writer=csv.DictWriter(csvout,fieldnames=fields,lineterminator='\n');writer.writeheader()
+    for row in rows:writer.writerow({k:row.get(k,'') for k in fields})
+    outputs[B/'comparison-results.csv']=csvout.getvalue().encode()
+    packet=dict(schema='QA15.independent-expectations.v1',oracle_sha256=sha((ROOT/'re/evidence/46/independent_oracle.py').read_bytes().replace(b'\r\n',b'\n')),oracle_imports=['math','struct','collections'],
+        tolerance=dict(relative=5e-12,absolute=5e-13,discrete='exact histories/identities/indices/branches/Single bits/display'),rows=references)
+    outputs[QA/'verification/expected.json.gz.b64']=base64.b64encode(gzip.compress(jbytes(packet),mtime=0))+b'\n'
+    if '--check' in sys.argv:
+        def semantic(a,b,path=''):
+            if isinstance(a,dict):
+                assert a.keys()==b.keys(),path
+                for k in a:semantic(a[k],b[k],path+'/'+k)
+            elif isinstance(a,list):
+                assert len(a)==len(b),path
+                for i,(x,y) in enumerate(zip(a,b)):semantic(x,y,path+'/'+str(i))
+            elif isinstance(a,float):assert math.isclose(a,b,rel_tol=5e-12,abs_tol=5e-13),(path,a,b)
+            else:assert a==b,(path,a,b)
+        for p,b in outputs.items():
+            got=p.read_bytes()
+            if p.name=='expected.json.gz.b64':semantic(json.loads(gzip.decompress(base64.b64decode(got))),json.loads(gzip.decompress(base64.b64decode(b))))
+            elif p.suffix=='.json':semantic(json.loads(got),json.loads(b))
+            elif p.suffix=='.csv':
+                want=list(csv.DictReader(io.StringIO(b.decode())));actual=list(csv.DictReader(io.StringIO(got.decode())))
+                for x in want+actual:x['expected_r17_double']=float(x['expected_r17_double'])
+                semantic(actual,want)
+            else:assert got==b,str(p)
+        print('PASS QA15 reproducible corpus / independent oracle:',len(rows),'packaged charts,',len(references),'numerical traces; exact bytes and blank original observations')
+        return
+    if (B/'comparison-results.csv').exists():
+        old=list(csv.DictReader((B/'comparison-results.csv').open()))
+        assert all(not r['original_game_displayed_stars'] and not r['observed_ohno_displayed_stars'] for r in old),'Refusing to overwrite human observations'
+    for p,b in outputs.items():p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
+    print('Generated QA15:',len(rows),'charts,',len(references),'oracle traces; original observation columns BLANK')
+
+if __name__=='__main__':main()

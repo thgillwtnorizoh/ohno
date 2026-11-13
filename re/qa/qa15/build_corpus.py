@@ -58,7 +58,7 @@ def main():
     sources=[('basic-two-circle','re/evidence/45/fixtures/2-straight-v14.osu'),
              ('basic-three-circle','re/evidence/45/fixtures/3-straight-v14.osu'),
              ('basic-four-circle','re/evidence/45/fixtures/4-straight-v14.osu')]
-    sources += [(p.stem,str(p.relative_to(ROOT))) for p in sorted((ROOT/'re/evidence/46/fixtures').glob('*.osu'))]
+    sources += [(p.stem,p.relative_to(ROOT).as_posix()) for p in sorted((ROOT/'re/evidence/46/fixtures').glob('*.osu'))]
     specs=[]
     for name,path in sources:
         b=(ROOT/path).read_bytes();fields,circles,lines=read_osu(b)
@@ -100,6 +100,19 @@ def main():
         if 'RAW' in chart['kind']:continue
         inp=cases[chart['id']]['input'];params=inp['params'];circles=inp['circles']
         references.append(dict(id='prepared/'+chart['id'],kind=chart['kind'],circles=circles,params=params,expected=expected(oracle,circles,params)))
+    # Exact temporal/capacity limits: prepared-only mathematical controls, not raw
+    # profile expansion. These inputs match independently derived E046 boundaries.
+    boundary=[]
+    for last in [999,1000,1001]:
+        times=[i*1000 for i in range(11)]+[10000+last]
+        boundary.append((f'seed5000/{last}',[(t,256,192) for t in times]))
+    for n in [32,33,34,35]:boundary.append((f'capacity32/{n}',[(t,256,192) for t in range(n)]))
+    for dt in [499,500,501,600]:
+        square=[(0,0),(200,0),(200,200),(0,200)]
+        boundary.append((f'angle2000/{dt}',[(i*dt,*square[i%4]) for i in range(13)]))
+    for name,circles in boundary:
+        params=[50.,1200.,99.]
+        references.append(dict(id='boundary/'+name,kind='PREPARED-ONLY EXACT HISTORY BOUNDARY',circles=circles,params=params,expected=expected(oracle,circles,params)))
     man=dict(schema='QA15.comparison-corpus.v1',baseline='f1df469987ca184d28b66825718873a486a2cfc0',production='9ae1fbde06812adeaeac7df61de23c4d4268a51c',
         human_gate='PENDING HUMAN TEST',original_import='NOT OBSERVED; documented-format validation only',files=rows)
     outputs[B/'manifest.json']=jbytes(man)

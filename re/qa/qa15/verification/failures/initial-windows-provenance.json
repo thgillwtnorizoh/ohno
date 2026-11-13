@@ -1,0 +1,9 @@
+{
+  "source": "b5aa6e6eade2886c6a0fdbbc9bf61b68108b9de1",
+  "run": 43381288711,
+  "job": 131739395393,
+  "conclusion": "failure",
+  "returned_log_bytes": 1983480,
+  "returned_log_sha256": "8f75280a5f0b00e12f60d52df1223d247ed089c8c1f69378f559ad07a4f83c48",
+  "reason": "QA15 generator used Windows backslash source paths; strict provenance comparison failed before QA15 C# ran. All retained QA2175 and development R17 82+12 passed. Fix: Path.as_posix; no mathematical expectation or production change."
+}

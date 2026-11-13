@@ -101,6 +101,13 @@ jobs:
           dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
           exit $LASTEXITCODE
 
+      - name: Execute independent QA15 corpus and calculator component verification
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./re/qa/qa15/Run-QA15.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa15-results.json')
+          exit $LASTEXITCODE
+
       - name: Execute unchanged QA01 headless suite
         if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
         shell: pwsh
@@ -389,11 +396,4 @@ jobs:
         shell: pwsh
         run: |
           dotnet run --project reconstructed/R17WindowsChecks/R17WindowsChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
-          exit $LASTEXITCODE
-
-      - name: Execute independent QA15 corpus and calculator component verification
-        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
-        shell: pwsh
-        run: |
-          & ./re/qa/qa15/Run-QA15.ps1 -ResultPath (Join-Path $env:RUNNER_TEMP 'qa15-results.json')
           exit $LASTEXITCODE
