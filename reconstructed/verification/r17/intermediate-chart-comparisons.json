@@ -1,0 +1,394 @@
+[
+  {
+    "id": "artificial-exact-tolerance/129",
+    "expectedDouble": 3.887469756437654,
+    "actualDouble": 3.887469756437654,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "4ecc7840",
+    "actualSingleBits": "4ecc7840",
+    "actualDisplay": "3.88★",
+    "actualAggregates": [
+      1317.1175236301124,
+      334.1183743927304,
+      459.2609285806217
+    ]
+  },
+  {
+    "id": "artificial-exact-tolerance/130",
+    "expectedDouble": 3.876976213114423,
+    "actualDouble": 3.876976213114423,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "61207840",
+    "actualSingleBits": "61207840",
+    "actualDisplay": "3.87★",
+    "actualAggregates": [
+      1315.1943724304506,
+      324.39922733804457,
+      457.5798715820813
+    ]
+  },
+  {
+    "id": "artificial-exact-tolerance/131",
+    "expectedDouble": 3.871835831751243,
+    "actualDouble": 3.871835831751243,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "29cc7740",
+    "actualSingleBits": "29cc7740",
+    "actualDisplay": "3.87★",
+    "actualAggregates": [
+      1313.2896240227603,
+      322.4918030941498,
+      455.90615269110776
+    ]
+  },
+  {
+    "id": "repeating-count2",
+    "expectedDouble": 5.4302855064859195,
+    "actualDouble": 5.4302855064859195,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "e6c4ad40",
+    "actualSingleBits": "e6c4ad40",
+    "actualDisplay": "5.43★",
+    "actualAggregates": [
+      2336.2016888390717,
+      435.7016415760794,
+      880.049574336289
+    ]
+  },
+  {
+    "id": "distinct-count2",
+    "expectedDouble": 4.698022059606429,
+    "actualDouble": 4.698022059606429,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "32569640",
+    "actualSingleBits": "32569640",
+    "actualDisplay": "4.69★",
+    "actualAggregates": [
+      1859.39623303116,
+      496.67102857587037,
+      518.0091504881417
+    ]
+  },
+  {
+    "id": "different-counts",
+    "expectedDouble": 4.533690017110783,
+    "actualDouble": 4.533690017110783,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "fd139140",
+    "actualSingleBits": "fd139140",
+    "actualDisplay": "4.53★",
+    "actualAggregates": [
+      1672.7026721258771,
+      544.1736844837923,
+      558.4351181316356
+    ]
+  },
+  {
+    "id": "repeat-after-nonmatch",
+    "expectedDouble": 4.160629075538004,
+    "actualDouble": 4.160629075538005,
+    "absoluteDoubleDifference": 8.881784197001252e-16,
+    "expectedSingleBits": "e0238540",
+    "actualSingleBits": "e0238540",
+    "actualDisplay": "4.16★",
+    "actualAggregates": [
+      1456.526833063511,
+      454.686592195832,
+      478.83428046646856
+    ]
+  },
+  {
+    "id": "inside-tolerance",
+    "expectedDouble": 5.320716727060625,
+    "actualDouble": 5.320716727060625,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "5043aa40",
+    "actualSingleBits": "5043aa40",
+    "actualDisplay": "5.32★",
+    "actualAggregates": [
+      2341.5695574881747,
+      375.477873892662,
+      717.2600129002518
+    ]
+  },
+  {
+    "id": "near-tolerance-outside",
+    "expectedDouble": 5.313025759643257,
+    "actualDouble": 5.313025759643257,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "4f04aa40",
+    "actualSingleBits": "4f04aa40",
+    "actualDisplay": "5.31★",
+    "actualAggregates": [
+      2337.7689989891724,
+      370.03040643374914,
+      714.7535910629325
+    ]
+  },
+  {
+    "id": "capacity-below",
+    "expectedDouble": 7.682399158840432,
+    "actualDouble": 7.6823991588404335,
+    "absoluteDoubleDifference": 1.7763568394002505e-15,
+    "expectedSingleBits": "37d6f540",
+    "actualSingleBits": "37d6f540",
+    "actualDisplay": "7.68★",
+    "actualAggregates": [
+      4231.558024883849,
+      583.3916505053058,
+      1525.0971879816254
+    ]
+  },
+  {
+    "id": "capacity-above",
+    "expectedDouble": 8.639178636128037,
+    "actualDouble": 8.639178636128037,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "133a0a41",
+    "actualSingleBits": "133a0a41",
+    "actualDisplay": "8.63★",
+    "actualAggregates": [
+      5135.57192642194,
+      634.287468568411,
+      1885.3705913945485
+    ]
+  },
+  {
+    "id": "age-below",
+    "expectedDouble": 5.2744312921533885,
+    "actualDouble": 5.274431292153389,
+    "absoluteDoubleDifference": 8.881784197001252e-16,
+    "expectedSingleBits": "24c8a840",
+    "actualSingleBits": "24c8a840",
+    "actualDisplay": "5.27★",
+    "actualAggregates": [
+      2321.058962192941,
+      368.38278777719444,
+      680.3716015488626
+    ]
+  },
+  {
+    "id": "age-equal",
+    "expectedDouble": 5.274426744364648,
+    "actualDouble": 5.274426744364648,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "1bc8a840",
+    "actualSingleBits": "1bc8a840",
+    "actualDisplay": "5.27★",
+    "actualAggregates": [
+      2321.058962192941,
+      368.3814349435548,
+      680.3640869634767
+    ]
+  },
+  {
+    "id": "age-above",
+    "expectedDouble": 5.298776738537817,
+    "actualDouble": 5.298776738537817,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "948fa940",
+    "actualSingleBits": "948fa940",
+    "actualDisplay": "5.29★",
+    "actualAggregates": [
+      2342.068208555797,
+      368.3800589757097,
+      680.3565740547349
+    ]
+  },
+  {
+    "id": "dense-right-angles",
+    "expectedDouble": 4.146836873215262,
+    "actualDouble": 4.146836873215261,
+    "absoluteDoubleDifference": 8.881784197001252e-16,
+    "expectedSingleBits": "e3b28440",
+    "actualSingleBits": "e3b28440",
+    "actualDisplay": "4.14★",
+    "actualAggregates": [
+      1394.4328207284923,
+      388.7722894741867,
+      608.8698093708562
+    ]
+  },
+  {
+    "id": "dense-short-preempt",
+    "expectedDouble": 5.227489448434895,
+    "actualDouble": 5.227489448434895,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "9847a740",
+    "actualSingleBits": "9847a740",
+    "actualDisplay": "5.22★",
+    "actualAggregates": [
+      2323.276063579977,
+      564.8373807905085,
+      394.9000975144367
+    ]
+  },
+  {
+    "id": "combined-repeat-visibility",
+    "expectedDouble": 5.119475874072683,
+    "actualDouble": 5.119475874072683,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "bfd2a340",
+    "actualSingleBits": "bfd2a340",
+    "actualDisplay": "5.11★",
+    "actualAggregates": [
+      2336.2016888390717,
+      435.7016415760794,
+      199.5590921792781
+    ]
+  },
+  {
+    "id": "nearly-equal-angles",
+    "expectedDouble": 4.751575127254562,
+    "actualDouble": 4.751575127254563,
+    "absoluteDoubleDifference": 8.881784197001252e-16,
+    "expectedSingleBits": "e70c9840",
+    "actualSingleBits": "e70c9840",
+    "actualDisplay": "4.75★",
+    "actualAggregates": [
+      1317.6381292497754,
+      692.0479567355272,
+      1117.0037932155221
+    ]
+  },
+  {
+    "id": "opposing-directions",
+    "expectedDouble": 6.195064032018704,
+    "actualDouble": 6.195064032018703,
+    "absoluteDoubleDifference": 8.881784197001252e-16,
+    "expectedSingleBits": "f73dc640",
+    "actualSingleBits": "f73dc640",
+    "actualDisplay": "6.19★",
+    "actualAggregates": [
+      2462.3969601872254,
+      692.0479567355272,
+      1716.2743865004397
+    ]
+  },
+  {
+    "id": "next-jump-zero",
+    "expectedDouble": 3.208522372800973,
+    "actualDouble": 3.208522372800973,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "6e584d40",
+    "actualSingleBits": "6e584d40",
+    "actualDisplay": "3.2★",
+    "actualAggregates": [
+      873.8448347942841,
+      388.7722894741867,
+      280.58770905488336
+    ]
+  },
+  {
+    "id": "next-jump-small",
+    "expectedDouble": 3.2085461068443983,
+    "actualDouble": 3.2085461068443983,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "d2584d40",
+    "actualSingleBits": "d2584d40",
+    "actualDisplay": "3.2★",
+    "actualAggregates": [
+      873.8448347942841,
+      388.7722894741867,
+      280.612628689446
+    ]
+  },
+  {
+    "id": "following-outside-window",
+    "expectedDouble": 4.621139173547889,
+    "actualDouble": 4.621139173547889,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "5fe09340",
+    "actualSingleBits": "5fe09340",
+    "actualDisplay": "4.62★",
+    "actualAggregates": [
+      1962.035790580704,
+      354.8146655554208,
+      254.99375707713222
+    ]
+  },
+  {
+    "id": "E045/regular",
+    "expectedDouble": 5.627450242938406,
+    "actualDouble": 5.627450242938406,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "1314b440",
+    "actualSingleBits": "1314b440",
+    "actualDisplay": "5.62★",
+    "actualAggregates": [
+      2107.690667765326,
+      885.0214777114165,
+      1210.5742746455253
+    ]
+  },
+  {
+    "id": "E045/alternating",
+    "expectedDouble": 4.829656052634754,
+    "actualDouble": 4.829656052634754,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "8b8c9a40",
+    "actualSingleBits": "8b8c9a40",
+    "actualDisplay": "4.82★",
+    "actualAggregates": [
+      1730.5108839745947,
+      692.4582933536209,
+      752.0648988854747
+    ]
+  },
+  {
+    "id": "E045/perturbed",
+    "expectedDouble": 5.97597028998677,
+    "actualDouble": 5.97597028998677,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "263bbf40",
+    "actualSingleBits": "263bbf40",
+    "actualDisplay": "5.97★",
+    "actualAggregates": [
+      2128.5362266981538,
+      849.9573115879182,
+      1701.6893148559107
+    ]
+  },
+  {
+    "id": "E045/long-pauses",
+    "expectedDouble": 1.7811920364433194,
+    "actualDouble": 1.7811920364433194,
+    "absoluteDoubleDifference": 0.0,
+    "expectedSingleBits": "1afee33f",
+    "actualSingleBits": "1afee33f",
+    "actualDisplay": "1.78★",
+    "actualAggregates": [
+      416.01026329210055,
+      91.54715699004909,
+      0
+    ]
+  },
+  {
+    "id": "E045/same-position",
+    "expectedDouble": 13.276890545898917,
+    "actualDouble": 13.276890545898922,
+    "absoluteDoubleDifference": 5.329070518200751e-15,
+    "expectedSingleBits": "256e5441",
+    "actualSingleBits": "256e5441",
+    "actualDisplay": "13.27★",
+    "actualAggregates": [
+      0,
+      14236.389501474698,
+      0
+    ]
+  },
+  {
+    "id": "E045/right-angles",
+    "expectedDouble": 0.8471012936611392,
+    "actualDouble": 0.8471012936611393,
+    "absoluteDoubleDifference": 1.1102230246251565e-16,
+    "expectedSingleBits": "a1db583f",
+    "actualSingleBits": "a1db583f",
+    "actualDisplay": "0.84★",
+    "actualAggregates": [
+      135.23669430585116,
+      12.736491069903966,
+      0
+    ]
+  }
+]

@@ -1,0 +1,4489 @@
+{
+  "schema": "R17.coverage.v1",
+  "testedSource": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+  "run": 43363603697,
+  "staticPredictionRows": 85,
+  "staticRowsNotExecutedTests": true,
+  "originalPredictionClassifications": {
+    "UNVERIFIED ORIGINAL-RUNTIME BEHAVIOR": 1,
+    "UNSUPPORTED INPUTS": 30,
+    "EXECUTED FINITE EQUIVALENCE": 37,
+    "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR": 9,
+    "ENGINEERING PREPARATION": 8
+  },
+  "originalPredictions": [
+    {
+      "authority": "E044",
+      "id": "D01",
+      "original": {
+        "id": "D01",
+        "initial_state": "Ordinary mode0 factory",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1bc6 constructs T011b -> T072f -> T0138. M08d9 itself is nonvirtual despite callvirt.",
+        "sites": [
+          "M1bc6:002c",
+          "M0801:0002",
+          "M3696:0002",
+          "M08d9"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNVERIFIED ORIGINAL-RUNTIME BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Static dispatch authority used; original runtime hierarchy/manager not instantiated.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D02",
+      "original": {
+        "id": "D02",
+        "initial_state": "Empty source filename/folder at M1bc0",
+        "original_runtime": "NOT RUN",
+        "prediction": "Constructor can retain null F04d6; M08d9 returns -1 before its catch region.",
+        "sites": [
+          "M1bc0:0000-001b",
+          "M08d9:0000-0011"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original manager/error0/-1 paths not emulated. Strict reader/typed failure state used; no fabricated numerical0.",
+      "controls": [
+        {
+          "group": 58,
+          "label": "strict raw admission rejects incomplete",
+          "result": "PASS"
+        },
+        {
+          "group": 66,
+          "label": "strict raw admission rejects one object",
+          "result": "PASS"
+        },
+        {
+          "group": 69,
+          "label": "missing file is unavailable rather than zero stars",
+          "result": "PASS"
+        },
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D03",
+      "original": {
+        "id": "D03",
+        "initial_state": "Non-null map clone, preparation cannot establish object list",
+        "original_runtime": "NOT RUN",
+        "prediction": "M08d9 null-list guard returns0, not proof of a valid empty chart.",
+        "sites": [
+          "M08d7",
+          "M08d9:0049-005b"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original manager/error0/-1 paths not emulated. Strict reader/typed failure state used; no fabricated numerical0.",
+      "controls": [
+        {
+          "group": 58,
+          "label": "strict raw admission rejects incomplete",
+          "result": "PASS"
+        },
+        {
+          "group": 66,
+          "label": "strict raw admission rejects one object",
+          "result": "PASS"
+        },
+        {
+          "group": 69,
+          "label": "missing file is unavailable rather than zero stars",
+          "result": "PASS"
+        },
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D04",
+      "original": {
+        "id": "D04",
+        "initial_state": "Reached helper throws inside M08d9 try",
+        "original_runtime": "NOT RUN",
+        "prediction": "Caught Exception returns0; prior mutations remain. Constructor exceptions outside the try are different.",
+        "sites": [
+          "M08d9:0013-009a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original manager/error0/-1 paths not emulated. Strict reader/typed failure state used; no fabricated numerical0.",
+      "controls": [
+        {
+          "group": 58,
+          "label": "strict raw admission rejects incomplete",
+          "result": "PASS"
+        },
+        {
+          "group": 66,
+          "label": "strict raw admission rejects one object",
+          "result": "PASS"
+        },
+        {
+          "group": 69,
+          "label": "missing file is unavailable rather than zero stars",
+          "result": "PASS"
+        },
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D05",
+      "original": {
+        "id": "D05",
+        "initial_state": "Valid prepared empty list",
+        "original_runtime": "NOT RUN",
+        "prediction": "M080a returns a new result with default Double F1094=0; no skill aggregation required.",
+        "sites": [
+          "M3699:0017-002b",
+          "M080a:0000-0028"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original manager/error0/-1 paths not emulated. Strict reader/typed failure state used; no fabricated numerical0.",
+      "controls": [
+        {
+          "group": 58,
+          "label": "strict raw admission rejects incomplete",
+          "result": "PASS"
+        },
+        {
+          "group": 66,
+          "label": "strict raw admission rejects one object",
+          "result": "PASS"
+        },
+        {
+          "group": 69,
+          "label": "missing file is unavailable rather than zero stars",
+          "result": "PASS"
+        },
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D06",
+      "original": {
+        "id": "D06",
+        "initial_state": "Exactly one valid prepared circle, no mods",
+        "original_runtime": "NOT RUN",
+        "prediction": "No pair is built; normally returning fresh components aggregate0.",
+        "sites": [
+          "M0810:0053-00b0",
+          "M1d08",
+          "M19e9",
+          "M080a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original manager/error0/-1 paths not emulated. Strict reader/typed failure state used; no fabricated numerical0.",
+      "controls": [
+        {
+          "group": 58,
+          "label": "strict raw admission rejects incomplete",
+          "result": "PASS"
+        },
+        {
+          "group": 66,
+          "label": "strict raw admission rejects one object",
+          "result": "PASS"
+        },
+        {
+          "group": 69,
+          "label": "missing file is unavailable rather than zero stars",
+          "result": "PASS"
+        },
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D07",
+      "original": {
+        "id": "D07",
+        "initial_state": "Two prepared circles, dt1000, positive radius, window99, no mods",
+        "original_runtime": "NOT RUN",
+        "prediction": "Conditional projection in N-controls; movement and visibility early guards yield0, interval component yields1.16 before final conversion.",
+        "sites": [
+          "M11c1:0000-0032",
+          "M408c:0000-0032",
+          "M1e57:0000-001e",
+          "M3539",
+          "M080a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Two-circle dt1000 independent E045 scalar, bits/display.",
+      "controls": [
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D08",
+      "original": {
+        "id": "D08",
+        "initial_state": "Same two circles at same versus distinct locations",
+        "original_runtime": "NOT RUN",
+        "prediction": "The bounded index0 early guards make the computed star equal for the stated two-circle preparation; not a claim for three or more objects.",
+        "sites": [
+          "M11c1",
+          "M408c",
+          "M1e57",
+          "M0810"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Spaced raw and same-position Windows/control examples; full generic pair-location theorem not separately enumerated.",
+      "controls": [
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 72,
+          "label": "actual asynchronous highlight completion, different-chart isolation and unchanged revision after refresh",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D09",
+      "original": {
+        "id": "D09",
+        "initial_state": "Two prepared circles at dt100/200/500/2000, window99",
+        "original_runtime": "NOT RUN",
+        "prediction": "Finite two-circle projections vary interval operand with dt; no supplied .osu is executed.",
+        "sites": [
+          "M0d6c",
+          "M3539",
+          "M080a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Instruction-ordered interval mathematics retained; all listed two-circle dt controls not individually rerun as production cases.",
+      "controls": [
+        {
+          "group": 35,
+          "label": "unchecked Int32 subtraction before Double and separate Max25 strain",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D10",
+      "original": {
+        "id": "D10",
+        "initial_state": "Identical raw start timestamps",
+        "original_runtime": "NOT RUN",
+        "prediction": "Unchecked Int32 delta0 becomes Double0 then strain_time Max(0,25)=25; other fields still retain0.",
+        "sites": [
+          "M2cb4:001d-002d",
+          "M366d:0016-002a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Raw equal times rejected; no original registration tie policy.",
+      "controls": [
+        {
+          "group": 60,
+          "label": "strict raw admission rejects equal time",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D11",
+      "original": {
+        "id": "D11",
+        "initial_state": "Raw starts out of order",
+        "original_runtime": "NOT RUN",
+        "prediction": "Pair construction follows F04d8 order before OrderBy; negative delta clamps only the strain-time field. No universal successful import prediction.",
+        "sites": [
+          "M0810",
+          "M3699:002c-0056",
+          "M366d"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Raw reversed order rejected; prepared pair topology remains distinct.",
+      "controls": [
+        {
+          "group": 62,
+          "label": "strict raw admission rejects out-of-order",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D12",
+      "original": {
+        "id": "D12",
+        "initial_state": "Int32 subtraction overflows",
+        "original_runtime": "NOT RUN",
+        "prediction": "Sub occurs before conv.r8; signed wrap can create negative delta before Max25.",
+        "sites": [
+          "M2cb4:001d-002d"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Actual unchecked positive-overflow discriminator; no universal raw overflow admission.",
+      "controls": [
+        {
+          "group": 35,
+          "label": "unchecked Int32 subtraction before Double and separate Max25 strain",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D13",
+      "original": {
+        "id": "D13",
+        "initial_state": "No-mod clock rate",
+        "original_runtime": "NOT RUN",
+        "prediction": "F04d9 becomes Double100/100=1; pair timestamps divided by it.",
+        "sites": [
+          "M08d6:0048-0058",
+          "M2cb4"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Rate1 fixed, no original rate-provider recreation.",
+      "controls": [
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D14",
+      "original": {
+        "id": "D14",
+        "initial_state": "DoubleTime64 versus HalfTime256",
+        "original_runtime": "NOT RUN",
+        "prediction": "Rate1.5 versus.75; if both artificial bits set,64 has priority. Normal mod enumeration excludes both.",
+        "sites": [
+          "M08d6",
+          "M08e8:0043-004f"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D15",
+      "original": {
+        "id": "D15",
+        "initial_state": "Repeated invocation with same CS-affecting bits",
+        "original_runtime": "NOT RUN",
+        "prediction": "Manager may be reused after setting mods/configuration; components are freshly allocated in each M3699.",
+        "sites": [
+          "M0807",
+          "M08d9:005d-0084",
+          "M0811"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D16",
+      "original": {
+        "id": "D16",
+        "initial_state": "Easy2 or HardRock16 changes between invocations",
+        "original_runtime": "NOT RUN",
+        "prediction": "XOR&18 triggers object-manager reconstruction and new preparation.",
+        "sites": [
+          "M0807:0000-0018",
+          "M08d9:0039-0044"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D17",
+      "original": {
+        "id": "D17",
+        "initial_state": "Scalar5, Easy2 outside Edit1",
+        "original_runtime": "NOT RUN",
+        "prediction": "Difficulty helper divides by2 before interpolation; HardRock separately multiplies/clamps if present.",
+        "sites": [
+          "M28b0:0000-005c",
+          "M28b3"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D18",
+      "original": {
+        "id": "D18",
+        "initial_state": "Scalar5, HardRock16 outside Edit1",
+        "original_runtime": "NOT RUN",
+        "prediction": "CS normalization uses1.3; hit-window/approach interpolation uses1.4.",
+        "sites": [
+          "M28b2",
+          "M28b3",
+          "M28b0"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D19",
+      "original": {
+        "id": "D19",
+        "initial_state": "Active application mode Edit1",
+        "original_runtime": "NOT RUN",
+        "prediction": "M28b0 skips Easy/HardRock scalar changes; this is an external state boundary.",
+        "sites": [
+          "M28b0:0000-005b"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D20",
+      "original": {
+        "id": "D20",
+        "initial_state": "Fresh valid slider parsed in calculator",
+        "original_runtime": "NOT RUN",
+        "prediction": "M0808 invokes M144a(false) then M1441; nested schedule and geometry feed T072e. General slider numerical result remains partial.",
+        "sites": [
+          "M0808:0015-002d",
+          "M1441",
+          "M3692"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D21",
+      "original": {
+        "id": "D21",
+        "initial_state": "Slider formats7 versus8 and above",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1441 changes tick-spacing inheritance at8; E005/E032 geometry/version branches still apply.",
+        "sites": [
+          "M1441:0000-0044",
+          "M144a"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D22",
+      "original": {
+        "id": "D22",
+        "initial_state": "Slider with repeated traversals",
+        "original_runtime": "NOT RUN",
+        "prediction": "M3692 consumes duration/effective traversals and mixed nested entries; do not replace with endpoint distance alone.",
+        "sites": [
+          "M3692:00b8-0124,0148-0234"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D23",
+      "original": {
+        "id": "D23",
+        "initial_state": "Current spinner in T072e",
+        "original_runtime": "NOT RUN",
+        "prediction": "Hit-window-derived parameter is set0; movement geometry early-return paths and skill evaluators distinguish spinner.",
+        "sites": [
+          "M366d:006c-0088",
+          "M3691:0070-0089",
+          "M0d6c:0000-0016"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D24",
+      "original": {
+        "id": "D24",
+        "initial_state": "All prepared objects spinners, finite ordered times",
+        "original_runtime": "NOT RUN",
+        "prediction": "Under normal nonexceptional preparation, no-mod per-object contributions remain0. No bonus/rotation gameplay inputs enter this calculator.",
+        "sites": [
+          "M11c1",
+          "M29f7",
+          "M408c",
+          "M0d6c",
+          "M1e57"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D25",
+      "original": {
+        "id": "D25",
+        "initial_state": "Three-plus circles, alternating angles/timing",
+        "original_runtime": "NOT RUN",
+        "prediction": "General M11c1/M408c/M1744/M1e57 chain required; extracted but not a complete independently checked star projection.",
+        "sites": [
+          "M19e8",
+          "M3539",
+          "M325e"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Semantic/finite validation blocker: original evaluators and history helpers listed in readiness matrix."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "E046 subsequently closes declared finite circle profiles; E044 historical partial text retained.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D26",
+      "original": {
+        "id": "D26",
+        "initial_state": "Circle after slider",
+        "original_runtime": "NOT RUN",
+        "prediction": "Lazy slider position/travel and penultimate nested endpoint affect spacing/angle; retain Single vector operations.",
+        "sites": [
+          "M3691:0125-01d9",
+          "M3693",
+          "M3695"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D27",
+      "original": {
+        "id": "D27",
+        "initial_state": "Identical coordinates",
+        "original_runtime": "NOT RUN",
+        "prediction": "Vector distance may be0; no universal difficulty0 because independent interval/history component exists.",
+        "sites": [
+          "M3691",
+          "M0d6c",
+          "M3539"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Coincident prepared chart keeps positive independent interval contribution.",
+      "controls": [
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D28",
+      "original": {
+        "id": "D28",
+        "initial_state": "Raw mathematical channel0 positive finite",
+        "original_runtime": "NOT RUN",
+        "prediction": "M080d Pow(raw,.63)*.02275 then M080b left-associated cube*4.",
+        "sites": [
+          "M080d:0000-0019",
+          "M080b:0000-0011"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Whole-chart q/final comparison exercises original ordered energy expression.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D29",
+      "original": {
+        "id": "D29",
+        "initial_state": "Raw mathematical channels1/2 positive finite",
+        "original_runtime": "NOT RUN",
+        "prediction": "Sqrt(raw)*.0675 then cube*4.",
+        "sites": [
+          "M080e",
+          "M1d09"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Whole-chart q/final comparison; no isolated new energy-control count.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D30",
+      "original": {
+        "id": "D30",
+        "initial_state": "No Flashlight bit",
+        "original_runtime": "NOT RUN",
+        "prediction": "M0811 does not construct T084a; optional energy is0.",
+        "sites": [
+          "M0811:002b-004c",
+          "M080a:00aa-00c4"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "No-mod norm with optional energy0; Flashlight rejected.",
+      "controls": [
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D31",
+      "original": {
+        "id": "D31",
+        "initial_state": "Flashlight1024 bit",
+        "original_runtime": "NOT RUN",
+        "prediction": "T084a added; transformed optional value is squared*25 and combined asymmetrically with transformed channel2.",
+        "sites": [
+          "M0811:002b-0047",
+          "M3f4e",
+          "M080c"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D32",
+      "original": {
+        "id": "D32",
+        "initial_state": "Combination with first or second operand nonpositive",
+        "original_runtime": "NOT RUN",
+        "prediction": "M080c finite shortcut returns the other operand; NaN follows unordered combine arm.",
+        "sites": [
+          "M080c:0000-001b"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only finite no-mod optional0 shortcut supported; generic NaN combine/native exception semantics excluded.",
+      "controls": [
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D33",
+      "original": {
+        "id": "D33",
+        "initial_state": "All final energies0",
+        "original_runtime": "NOT RUN",
+        "prediction": "Generalized norm and final cube-root return0 in declared projection profile.",
+        "sites": [
+          "M080a:00ec-0114",
+          "M19d8",
+          "M080f"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Formula supports zero accumulators; empty/one-object UI admission rejected rather than assigning stars.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D34",
+      "original": {
+        "id": "D34",
+        "initial_state": "Final transformed energies positive",
+        "original_runtime": "NOT RUN",
+        "prediction": "Norm exponent1.1; multiply1.12 then Math.Pow(x, Double1/3). No rounding here.",
+        "sites": [
+          "M080a:00ec-0114",
+          "M080f",
+          "M19e2"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "All28 independently expected final Doubles/exact cache bits/display.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D35",
+      "original": {
+        "id": "D35",
+        "initial_state": "Component0 initial pair at time1000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Envelope begins at pair start1000 and next1400; not a universal global multiple400.",
+        "sites": [
+          "M3f33:0008-0023"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Actual envelope first-pair origin1000.",
+      "controls": [
+        {
+          "group": 43,
+          "label": "duration envelope first-pair origin, strict400 boundary, single callback per pair",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D36",
+      "original": {
+        "id": "D36",
+        "initial_state": "Envelope next boundary equals current object time",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict bgt in M3f34 does not close interval at equality; immediately above can close one or more.",
+        "sites": [
+          "M3f34:00a6-00b2"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Equality1400 versus1401 crossing and single callback.",
+      "controls": [
+        {
+          "group": 43,
+          "label": "duration envelope first-pair origin, strict400 boundary, single callback per pair",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D37",
+      "original": {
+        "id": "D37",
+        "initial_state": "Component0 retained duration exceeds threshold",
+        "original_runtime": "NOT RUN",
+        "prediction": "M3f35 trims whole trailing segments while duration>11/(1-.9)*400; preceding mutations remain.",
+        "sites": [
+          "M3f31:002b-0046",
+          "M3f35:006d-0081"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "E045 long-pauses input spans54910ms; retained duration43605 shows actual trimming; processed list independently compared.",
+      "controls": [
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D38",
+      "original": {
+        "id": "D38",
+        "initial_state": "Component0 sorted processed segments",
+        "original_runtime": "NOT RUN",
+        "prediction": "M19ec filters value>0, applies initial4000 duration transform in20 slices, then descending sorting; M19e9 duration weights.",
+        "sites": [
+          "M19ec",
+          "M19e9"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Processed segments match independent queue formulation including newly appended prefix entries.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D39",
+      "original": {
+        "id": "D39",
+        "initial_state": "Component1/2 aggregation",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1d08 sorts positive object values; weight numerator1+s/(i+1), denominator Pow(i,.9)+1+s/(i+1); s20 for component1,1 for component2.",
+        "sites": [
+          "M1d08:0044-00df",
+          "M3536"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "s20/s1, i^.9 and exact positive ordering.",
+      "controls": [
+        {
+          "group": 41,
+          "label": "ordered i^.9 s20/s1 weights and repeated values not deduplicated",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D40",
+      "original": {
+        "id": "D40",
+        "initial_state": "Equal positive aggregation values",
+        "original_runtime": "NOT RUN",
+        "prediction": "Retain both entries with successive weights; no deduplication.",
+        "sites": [
+          "M1d08:0095-00e3"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Equal values retain successive weights.",
+      "controls": [
+        {
+          "group": 41,
+          "label": "ordered i^.9 s20/s1 weights and repeated values not deduplicated",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D41",
+      "original": {
+        "id": "D41",
+        "initial_state": "Nonpositive/NaN aggregation entries",
+        "original_runtime": "NOT RUN",
+        "prediction": "Ordered positive predicates exclude them; full-chart NaN propagation remains helper-specific.",
+        "sites": [
+          "M1d0d",
+          "M3263",
+          "M19ef"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Finite positive filtering retained; nonfinite admitted states rejected, not full native NaN behavior.",
+      "controls": [
+        {
+          "group": 41,
+          "label": "ordered i^.9 s20/s1 weights and repeated values not deduplicated",
+          "result": "PASS"
+        },
+        {
+          "group": 46,
+          "label": "nonfinite input or Single spacing rejected explicitly",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D42",
+      "original": {
+        "id": "D42",
+        "initial_state": "Component2 first60000ms density prefix",
+        "original_runtime": "NOT RUN",
+        "prediction": "M3260 counts through equality and stops on first later item; M325f scales earliest positive values with log interpolation.",
+        "sites": [
+          "M3260:000f-0069",
+          "M325f"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Explicit60000 equality and positive preprocessing-before-sort.",
+      "controls": [
+        {
+          "group": 42,
+          "label": "first-minute equality and earliest positive preprocessing precede descending sort",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D43",
+      "original": {
+        "id": "D43",
+        "initial_state": "Background mode0 modifier generation",
+        "original_runtime": "NOT RUN",
+        "prediction": "Six binary choices256,64,2,16,1024,8 with pair exclusions ->36 compatible masks including0, conditional on hash-based overlap filtering not colliding.",
+        "sites": [
+          "M0804",
+          "M08df",
+          "M08e8",
+          "M08f2"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "GetHashCode-based overlap tests are external runtime operands; no measured enumeration order/count."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D44",
+      "original": {
+        "id": "D44",
+        "initial_state": "NoFail1, TouchDevice4, Nightcore512 or Relax8192 raw lookup bits",
+        "original_runtime": "NOT RUN",
+        "prediction": "Ordinary cache mask1370 removes these. Direct artificial calculator calls can contain additional bits tested by evaluators.",
+        "sites": [
+          "M0803",
+          "M0805",
+          "M08cf",
+          "M19e7",
+          "M325e"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D45",
+      "original": {
+        "id": "D45",
+        "initial_state": "Same normalized key from distinct raw mods",
+        "original_runtime": "NOT RUN",
+        "prediction": "Dictionary lookup shares that cache entry; not proof of identical unrestricted direct calculation.",
+        "sites": [
+          "M1bc7:0000-003b"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [
+        {
+          "group": 50,
+          "label": "strict raw admission rejects slider",
+          "result": "PASS"
+        },
+        {
+          "group": 51,
+          "label": "strict raw admission rejects spinner",
+          "result": "PASS"
+        },
+        {
+          "group": 67,
+          "label": "modifiers viewport shift and rate outside independently verified raw profile rejected",
+          "result": "PASS"
+        },
+        {
+          "group": 79,
+          "label": "unsupported star chart remains playable without metadata/accounting mutation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D46",
+      "original": {
+        "id": "D46",
+        "initial_state": "Missing key0 and not in progress",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1bd7 returns true; missing cached getter separately returns Double0.",
+        "sites": [
+          "M1bd7:0000-001d",
+          "M1bc7:001e-0027"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D47",
+      "original": {
+        "id": "D47",
+        "initial_state": "Negative key0 with/without F1014",
+        "original_runtime": "NOT RUN",
+        "prediction": "Not-busy allows scheduling; busy suppresses it; display takes positive magnitude.",
+        "sites": [
+          "M1bd7:001e-0042",
+          "M1bd5"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D48",
+      "original": {
+        "id": "D48",
+        "initial_state": "NaN key0",
+        "original_runtime": "NOT RUN",
+        "prediction": "bge.un branches to false scheduling result; Abs remains NaN and ordered display gate differs.",
+        "sites": [
+          "M1bd7:0030-0042",
+          "M1bd5",
+          "E043 M1bdb"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D49",
+      "original": {
+        "id": "D49",
+        "initial_state": "DB version20250106 versus20250107",
+        "original_runtime": "NOT RUN",
+        "prediction": "Representation conversion Double->Single and old-key filtering versus direct Single dictionaries; no formula switch here.",
+        "sites": [
+          "M1bf2:0103-0174"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D50",
+      "original": {
+        "id": "D50",
+        "initial_state": "DB version below per-mode F0fbd cutoff",
+        "original_runtime": "NOT RUN",
+        "prediction": "Store -Abs(Single) stale marker; magnitude is not recalculated by this branch.",
+        "sites": [
+          "M1bf2:0175-01d6"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Only no-mod simple-circle mathematical profile; original modifier/provider/slider/spinner/database cache behavior excluded. R16 supplied contract retained separately.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D51",
+      "original": {
+        "id": "D51",
+        "initial_state": "Calculated Double at Single/display boundary",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1bd0 conv.r4 can move value across floor boundary; display is Abs(promoted cachedSingle) then Floor(*100)/100.",
+        "sites": [
+          "M1bd0:0026-002c",
+          "M1bc7:003a",
+          "M1bd5",
+          "M2d7f"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Original-derived Double -> Single -> promoted floor display; exact stored bits compared.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 31,
+          "label": "E045 independently closed 3-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 32,
+          "label": "E045 independently closed 4-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 68,
+          "label": "combined raw operational discriminator Double/binary32/floor display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D52",
+      "original": {
+        "id": "D52",
+        "initial_state": "Worker runs during Play2",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1c1e sleeps1000 then rereads mode; no cancellation/fresh chart snapshot guaranteed.",
+        "sites": [
+          "M1c1e:000d-001f"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Bounded worker cancels/gates; no original Play2 Sleep loop.",
+      "controls": [
+        {
+          "group": 73,
+          "label": "obsolete completion after refresh/selection switch cannot publish into newer chart reference",
+          "result": "PASS"
+        },
+        {
+          "group": 82,
+          "label": "SOURCE INSPECTION host highlight/refresh/Play/close generations and UI dispatcher publication",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D53",
+      "original": {
+        "id": "D53",
+        "initial_state": "Worker normally completes",
+        "original_runtime": "NOT RUN",
+        "prediction": "Clear in-progress before scheduling M1c23; merge key results into retained map then invoke completion.",
+        "sites": [
+          "M1c1e:00d4-0115",
+          "M1c23:0000-0031",
+          "M1bc9"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Process cache/dispatcher completion differs from native in-progress flags.",
+      "controls": [
+        {
+          "group": 70,
+          "label": "successful process-local content/profile cache reuses unchanged result and preserves provenance",
+          "result": "PASS"
+        },
+        {
+          "group": 71,
+          "label": "duplicate requests coalesce to one active calculator operation",
+          "result": "PASS"
+        },
+        {
+          "group": 72,
+          "label": "actual asynchronous highlight completion, different-chart isolation and unchanged revision after refresh",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D54",
+      "original": {
+        "id": "D54",
+        "initial_state": "Map replaced while worker pending",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1c23 writes retained map reference, not a fresh global selection; no hash/generation check in this callback.",
+        "sites": [
+          "M1c23:0000-001c",
+          "M25d1:0049-005c"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Reference/revision/generation veto deliberately stronger than original retained-map merge.",
+      "controls": [
+        {
+          "group": 73,
+          "label": "obsolete completion after refresh/selection switch cannot publish into newer chart reference",
+          "result": "PASS"
+        },
+        {
+          "group": 75,
+          "label": "same path changed content invalidates old cache identity; new revision can calculate",
+          "result": "PASS"
+        },
+        {
+          "group": 77,
+          "label": "stale catalog epoch and disposed controller reject publication",
+          "result": "PASS"
+        },
+        {
+          "group": 76,
+          "label": "revision changed while actual cache job is held fails post-calculation verification and cannot cache numeric result",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D55",
+      "original": {
+        "id": "D55",
+        "initial_state": "Exception escapes M1bd0/mod enumeration",
+        "original_runtime": "NOT RUN",
+        "prediction": "Worker does not wrap whole computation in a flag-clearing finally; F1014 may remain true, timeout callback separate.",
+        "sites": [
+          "M1c1e:0097-00ec",
+          "M1bd0"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Typed containment, no claim of original global flag partial failure.",
+      "controls": [
+        {
+          "group": 78,
+          "label": "file/calculator exceptions contained as typed nonnumeric states",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D56",
+      "original": {
+        "id": "D56",
+        "initial_state": "Cleanup after ordinary successful dictionary production",
+        "original_runtime": "NOT RUN",
+        "prediction": "M08cd disposes manager then clears field; no encompassing finally in M1bd0.",
+        "sites": [
+          "M1bd0:003b-0042",
+          "M08cd"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Managed preparation has no native manager; resources released after pending jobs drain.",
+      "controls": [
+        {
+          "group": 74,
+          "label": "stale completion after controller/cache disposal cannot notify or install resources",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D57",
+      "original": {
+        "id": "D57",
+        "initial_state": "Timeout callback reached",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1c1f clears F1014 and invokes completion before conditional task/scheduler actions. It does not itself prove an old worker cannot write later.",
+        "sites": [
+          "M1c1f:0000-00d4"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Cancellation/budget instead of original timeout callback.",
+      "controls": [
+        {
+          "group": 45,
+          "label": "bounded work and cooperative cancellation never manufacture a valid zero",
+          "result": "PASS"
+        },
+        {
+          "group": 74,
+          "label": "stale completion after controller/cache disposal cannot notify or install resources",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E044",
+      "id": "D58",
+      "original": {
+        "id": "D58",
+        "initial_state": "Default freshness cutoffs",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1bb4 initializes mode cutoffs20260630/20260630/20260630/20231214 from F0c9a. These are cache policy constants, not authenticated release dates.",
+        "sites": [
+          "M1bb4:0000-0011",
+          "F0c9a RVA data"
+        ],
+        "status": "RECONSTRUCTED STATIC PREDICTION",
+        "unresolved": "Unmeasured original x86 evaluation, helper failures and filesystem/worker scheduling remain conditional."
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "No database version/freshness cutoffs implemented.",
+      "controls": [],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C01",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "N objects",
+        "id": "C01",
+        "initial_state": "N ordered circles",
+        "original_runtime": "NOT RUN",
+        "prediction": "N-1 pairs; source registration retained before current-start sorting",
+        "sites": [
+          "M0810",
+          "M3699"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "N-1 reference history before sort.",
+      "controls": [
+        {
+          "group": 34,
+          "label": "registered N-1 pairs retain predecessor/following identity before sort and nullable early angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C02",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "early returns",
+        "id": "C02",
+        "initial_state": "No two prior difficulty pairs",
+        "original_runtime": "NOT RUN",
+        "prediction": "First two angles null, M11c1/M408c index<=1 return0",
+        "sites": [
+          "M3694",
+          "M11c1:0014",
+          "M408c:0014"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Early nullable angles and independent channel guards.",
+      "controls": [
+        {
+          "group": 34,
+          "label": "registered N-1 pairs retain predecessor/following identity before sort and nullable early angles",
+          "result": "PASS"
+        },
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 31,
+          "label": "E045 independently closed 3-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C03",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "constant",
+        "id": "C03",
+        "initial_state": "Constant spacing, dt24/25/26/99/100/101/1000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Raw dt retained; strain floor25; separate movement and velocity outputs",
+        "sites": [
+          "M11c1",
+          "M408c"
+        ]
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Max25 discriminator and dense prepared charts; not all listed dt scalars individually replayed.",
+      "controls": [
+        {
+          "group": 35,
+          "label": "unchecked Int32 subtraction before Double and separate Max25 strain",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C04",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "six-predecessor",
+        "id": "C04",
+        "initial_state": "More than six angle predecessors",
+        "original_runtime": "NOT RUN",
+        "prediction": "M11c3 inspects no more than six and applies repeated-angle weighting",
+        "sites": [
+          "M11c3"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Long histories compare movement output against independently limited oracle.",
+      "controls": [
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C05",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "angle branch",
+        "id": "C05",
+        "initial_state": "Straight or right-angle history",
+        "original_runtime": "NOT RUN",
+        "prediction": "Distinct movement and velocity-angle channels remain independently evaluated",
+        "sites": [
+          "M11c1",
+          "M408c"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Distinct movement/velocity channels separately compared.",
+      "controls": [
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C06",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "equal intervals",
+        "id": "C06",
+        "initial_state": "Equal rhythm intervals",
+        "original_runtime": "NOT RUN",
+        "prediction": "No rhythm transition sum; multiplier1",
+        "sites": [
+          "M1744"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Neutral scalar with different actual processed histories.",
+      "controls": [
+        {
+          "group": 39,
+          "label": "strict5000ms seed boundary yields5/4/4 comparisons independently of neutral scalar",
+          "result": "PASS"
+        },
+        {
+          "group": 40,
+          "label": "capacity32 is not32 synthetic comparisons;28/29/30/30 controls",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C07",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "alternating",
+        "id": "C07",
+        "initial_state": "Alternating rhythm intervals",
+        "original_runtime": "NOT RUN",
+        "prediction": "Mutable group transition produces finite positive rhythm sum",
+        "sites": [
+          "M1744",
+          "M1746-M174f"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Completed mutable groups and scalar traced.",
+      "controls": [
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 36,
+          "label": "closed repeated-group scalar and actual saved/last alias; repeats mutate1/2/3/4",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C08",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "capacity32",
+        "id": "C08",
+        "initial_state": "History length beyond32",
+        "original_runtime": "NOT RUN",
+        "prediction": "Seed traversal yields at most30 processed comparisons for dense normal inputs",
+        "sites": [
+          "M1744:0064-00c9"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "32/33/34/35 objects ->28/29/30/30 comparisons.",
+      "controls": [
+        {
+          "group": 40,
+          "label": "capacity32 is not32 synthetic comparisons;28/29/30/30 controls",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C09",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "5000ms",
+        "id": "C09",
+        "initial_state": "History age at5000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict traversal predicate distinguishes just-before and equality",
+        "sites": [
+          "M1744:009a-00a3"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Before/equality/after ->5/4/4.",
+      "controls": [
+        {
+          "group": 39,
+          "label": "strict5000ms seed boundary yields5/4/4 comparisons independently of neutral scalar",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C10",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "strict tolerance",
+        "id": "C10",
+        "initial_state": "Pattern interval difference equals tolerance",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict parity/equality comparisons reject equality",
+        "sites": [
+          "M174e",
+          "M174f"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Artificial prepared window100 isolates exact tolerance30; not raw OD profile.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C11",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "visibility interval",
+        "id": "C11",
+        "initial_state": "Visibility fade-in and start endpoints",
+        "original_runtime": "NOT RUN",
+        "prediction": "No-mod visibility has explicit fade/preempt and after-start guard",
+        "sites": [
+          "M368f"
+        ]
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Reached no-mod fade/preempt terms compared; direct after-start dead guard not separately invoked.",
+      "controls": [
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C12",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "3000ms",
+        "id": "C12",
+        "initial_state": "Past/future history age3000",
+        "original_runtime": "NOT RUN",
+        "prediction": "Equality enters processing; later item terminates scan",
+        "sites": [
+          "M1e63",
+          "M1e5d"
+        ]
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Following3001 stop executed; 3000 equality cannot generally isolate preempt under AR5/10. Predicate source-inspected.",
+      "controls": [
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C13",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "2000ms",
+        "id": "C13",
+        "initial_state": "Angle-history elapsed2000",
+        "original_runtime": "NOT RUN",
+        "prediction": "The first outside entry can be processed before updated elapsed stops next iteration",
+        "sites": [
+          "M1e5e"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "499/500/501/600 processed counts and angular scalar.",
+      "controls": [
+        {
+          "group": 38,
+          "label": "visibility2000ms tests prior elapsed then processes crossing term;499/500/501/600",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C14",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "following",
+        "id": "C14",
+        "initial_state": "Following pair jump differs from current",
+        "original_runtime": "NOT RUN",
+        "prediction": "M1e58 uses next pair retained from M2cb6, not current pair",
+        "sites": [
+          "M1e57:0028-0069",
+          "M1e58"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Next jump0/small/distant/absent operands independently compared.",
+      "controls": [
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C15",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "strict400",
+        "id": "C15",
+        "initial_state": "Envelope exact400",
+        "original_runtime": "NOT RUN",
+        "prediction": "Strict crossing; no interval close at equality",
+        "sites": [
+          "M3f34:00b2"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Strict400 boundary control.",
+      "controls": [
+        {
+          "group": 43,
+          "label": "duration envelope first-pair origin, strict400 boundary, single callback per pair",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C16",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "duration prefix",
+        "id": "C16",
+        "initial_state": "Mutable4000-duration prefix",
+        "original_runtime": "NOT RUN",
+        "prediction": "Appended20-unit copies may themselves be consumed; Skip then descending sort",
+        "sites": [
+          "M19ec"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Complete processed-prefix list comparisons; appended entries actually consumed.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C17",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "first-minute",
+        "id": "C17",
+        "initial_state": "First60000ms boundary",
+        "original_runtime": "NOT RUN",
+        "prediction": "Count equality; transform positive prefix before descending sort",
+        "sites": [
+          "M3260",
+          "M325f",
+          "M1d08"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Equality and original positive-prefix denominator.",
+      "controls": [
+        {
+          "group": 42,
+          "label": "first-minute equality and earliest positive preprocessing precede descending sort",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C18",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "two-circle",
+        "id": "C18",
+        "initial_state": "Two circle complete finite result",
+        "original_runtime": "NOT RUN",
+        "prediction": "Interval-only closed scalar with instruction-derived adjusted timing",
+        "sites": [
+          "M0d6c",
+          "M3539",
+          "M080a"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Independent E045 two-circle raw expected scalar/bits/display.",
+      "controls": [
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C19",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "small complete",
+        "id": "C19",
+        "initial_state": "Three circle complete finite result",
+        "original_runtime": "NOT RUN",
+        "prediction": "Positive temporal sum, zero reached movement/visibility in finite dt1000 controls",
+        "sites": [
+          "M11c1",
+          "M408c",
+          "M1e57",
+          "M1d08"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Independent E045 three-circle scalar/bits/display.",
+      "controls": [
+        {
+          "group": 31,
+          "label": "E045 independently closed 3-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C20",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "four-circle",
+        "id": "C20",
+        "initial_state": "Four straight circles dt1000",
+        "original_runtime": "NOT RUN",
+        "prediction": "First nonzero movement composite plus independent mutable duration oracle and temporal sum",
+        "sites": [
+          "M19ea",
+          "M19ec",
+          "M080a"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Independent E045 four-circle scalar/bits/display.",
+      "controls": [
+        {
+          "group": 32,
+          "label": "E045 independently closed 4-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C21",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "coincident",
+        "id": "C21",
+        "initial_state": "Coincident circle positions",
+        "original_runtime": "NOT RUN",
+        "prediction": "No universal zero stars; interval component survives",
+        "sites": [
+          "M0d6c"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Interval contribution survives coincident prepared coordinates.",
+      "controls": [
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C22",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "manager",
+        "id": "C22",
+        "initial_state": "Explicit CS5 AR5 OD5 viewport512x384",
+        "original_runtime": "NOT RUN",
+        "prediction": "Prepared radius32.013118743896484, preempt1200, full window99",
+        "sites": [
+          "M28be",
+          "M28b2",
+          "M28b3"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Exact radius and window/preempt.",
+      "controls": [
+        {
+          "group": 33,
+          "label": "original Single radius / AR interpolation / floored OD preparation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C23",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "bounded osu-to-star",
+        "id": "C23",
+        "initial_state": "Strict admitted v14 source with StackLeniency0",
+        "original_runtime": "NOT RUN",
+        "prediction": "No-stack position proof; independent two/three/four-circle star scalar",
+        "sites": [
+          "M1bc1",
+          "M28eb",
+          "M24b0"
+        ]
+      },
+      "classification": "ENGINEERING PREPARATION",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Strict reader and zero-stack proof, no original manager execution.",
+      "controls": [
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 31,
+          "label": "E045 independently closed 3-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 32,
+          "label": "E045 independently closed 4-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 33,
+          "label": "original Single radius / AR interpolation / floored OD preparation",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C24",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "bounded reader rejects",
+        "id": "C24",
+        "initial_state": "Missing/nonzero leniency or equal timestamps",
+        "original_runtime": "NOT RUN",
+        "prediction": "Research raw reader rejects; no guessed stack displacement",
+        "sites": [
+          "M28eb"
+        ]
+      },
+      "classification": "UNSUPPORTED INPUTS",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Missing/nonzero stacking/equal raw time rejected.",
+      "controls": [
+        {
+          "group": 52,
+          "label": "strict raw admission rejects missing stacking",
+          "result": "PASS"
+        },
+        {
+          "group": 53,
+          "label": "strict raw admission rejects nonzero stacking",
+          "result": "PASS"
+        },
+        {
+          "group": 60,
+          "label": "strict raw admission rejects equal time",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C25",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "registered order",
+        "id": "C25",
+        "initial_state": "Signed zero/negative/overflow pair delta artificial control",
+        "original_runtime": "NOT RUN",
+        "prediction": "Original Int32 subtraction occurs before Double; only strain clamped",
+        "sites": [
+          "M2cb4",
+          "M366d"
+        ]
+      },
+      "classification": "CONDITIONALLY SUPPORTED MATHEMATICAL BEHAVIOR",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Unchecked overflow and strain24/25 control; raw negative/equal inputs rejected; no blanket exceptional conversion admission.",
+      "controls": [
+        {
+          "group": 35,
+          "label": "unchecked Int32 subtraction before Double and separate Max25 strain",
+          "result": "PASS"
+        },
+        {
+          "group": 60,
+          "label": "strict raw admission rejects equal time",
+          "result": "PASS"
+        },
+        {
+          "group": 62,
+          "label": "strict raw admission rejects out-of-order",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C26",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "cache",
+        "id": "C26",
+        "initial_state": "Final Double near cache boundary",
+        "original_runtime": "NOT RUN",
+        "prediction": "Convert to Single before absolute/floor display",
+        "sites": [
+          "M1bd0",
+          "M1bd5",
+          "M2d7f"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Exact cache bits and promoted floor display across finite fixtures.",
+      "controls": [
+        {
+          "group": 2,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/129",
+          "result": "PASS"
+        },
+        {
+          "group": 3,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/130",
+          "result": "PASS"
+        },
+        {
+          "group": 4,
+          "label": "executed full independent intermediate/chart comparison artificial-exact-tolerance/131",
+          "result": "PASS"
+        },
+        {
+          "group": 5,
+          "label": "executed full independent intermediate/chart comparison repeating-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 6,
+          "label": "executed full independent intermediate/chart comparison distinct-count2",
+          "result": "PASS"
+        },
+        {
+          "group": 7,
+          "label": "executed full independent intermediate/chart comparison different-counts",
+          "result": "PASS"
+        },
+        {
+          "group": 8,
+          "label": "executed full independent intermediate/chart comparison repeat-after-nonmatch",
+          "result": "PASS"
+        },
+        {
+          "group": 9,
+          "label": "executed full independent intermediate/chart comparison inside-tolerance",
+          "result": "PASS"
+        },
+        {
+          "group": 10,
+          "label": "executed full independent intermediate/chart comparison near-tolerance-outside",
+          "result": "PASS"
+        },
+        {
+          "group": 11,
+          "label": "executed full independent intermediate/chart comparison capacity-below",
+          "result": "PASS"
+        },
+        {
+          "group": 12,
+          "label": "executed full independent intermediate/chart comparison capacity-above",
+          "result": "PASS"
+        },
+        {
+          "group": 13,
+          "label": "executed full independent intermediate/chart comparison age-below",
+          "result": "PASS"
+        },
+        {
+          "group": 14,
+          "label": "executed full independent intermediate/chart comparison age-equal",
+          "result": "PASS"
+        },
+        {
+          "group": 15,
+          "label": "executed full independent intermediate/chart comparison age-above",
+          "result": "PASS"
+        },
+        {
+          "group": 16,
+          "label": "executed full independent intermediate/chart comparison dense-right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 17,
+          "label": "executed full independent intermediate/chart comparison dense-short-preempt",
+          "result": "PASS"
+        },
+        {
+          "group": 18,
+          "label": "executed full independent intermediate/chart comparison combined-repeat-visibility",
+          "result": "PASS"
+        },
+        {
+          "group": 19,
+          "label": "executed full independent intermediate/chart comparison nearly-equal-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 20,
+          "label": "executed full independent intermediate/chart comparison opposing-directions",
+          "result": "PASS"
+        },
+        {
+          "group": 21,
+          "label": "executed full independent intermediate/chart comparison next-jump-zero",
+          "result": "PASS"
+        },
+        {
+          "group": 22,
+          "label": "executed full independent intermediate/chart comparison next-jump-small",
+          "result": "PASS"
+        },
+        {
+          "group": 23,
+          "label": "executed full independent intermediate/chart comparison following-outside-window",
+          "result": "PASS"
+        },
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        },
+        {
+          "group": 30,
+          "label": "E045 independently closed 2-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 31,
+          "label": "E045 independently closed 3-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 32,
+          "label": "E045 independently closed 4-circle raw fixture Double/bits/display",
+          "result": "PASS"
+        },
+        {
+          "group": 68,
+          "label": "combined raw operational discriminator Double/binary32/floor display",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    },
+    {
+      "authority": "E045",
+      "id": "C27",
+      "original": {
+        "classification": "RECONSTRUCTED STATIC PREDICTION",
+        "control_name_filter": "TRACE ONLY",
+        "id": "C27",
+        "initial_state": "General dense circle history",
+        "original_runtime": "NOT RUN",
+        "prediction": "All translated components execute, but six large traces have no independent golden scalar",
+        "sites": [
+          "M11c1",
+          "M408c",
+          "M1744",
+          "M1e57"
+        ]
+      },
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "production": "CircleGame/Difficulty + Program.cs + Rendering/SelectPlayView.cs",
+      "scope": "Subsequent E046 golden closure for six former traces, historical E045 non-golden classification unchanged.",
+      "controls": [
+        {
+          "group": 24,
+          "label": "executed full independent intermediate/chart comparison E045/regular",
+          "result": "PASS"
+        },
+        {
+          "group": 25,
+          "label": "executed full independent intermediate/chart comparison E045/alternating",
+          "result": "PASS"
+        },
+        {
+          "group": 26,
+          "label": "executed full independent intermediate/chart comparison E045/perturbed",
+          "result": "PASS"
+        },
+        {
+          "group": 27,
+          "label": "executed full independent intermediate/chart comparison E045/long-pauses",
+          "result": "PASS"
+        },
+        {
+          "group": 28,
+          "label": "executed full independent intermediate/chart comparison E045/same-position",
+          "result": "PASS"
+        },
+        {
+          "group": 29,
+          "label": "executed full independent intermediate/chart comparison E045/right-angles",
+          "result": "PASS"
+        }
+      ],
+      "nativeRuntime": "NOT RUN",
+      "source": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+      "numericProfile": "explicit Single stores / Double mathematics, not original x86/JIT"
+    }
+  ],
+  "behaviors": [
+    {
+      "behavior": "strict raw profile",
+      "authority": "E045 M28eb/M24b0; E046 raw profiles",
+      "classification": "ENGINEERING PREPARATION",
+      "headlessGroups": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "scope": "Reject unsupported preparation instead of guessed numeric output."
+    },
+    {
+      "behavior": "Single geometry / pair identity",
+      "authority": "M0810/M366d/M3691/M3694",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        33,
+        34,
+        35
+      ],
+      "scope": "Radius/time/vector stores; no gameplay positions reused."
+    },
+    {
+      "behavior": "movement six-history and velocity1.45",
+      "authority": "M11c1/M11c3/M29f7/M408c/M408d/M19ea",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "scope": "Independent movement terms plus whole composite."
+    },
+    {
+      "behavior": "group aliases / repeat mutation",
+      "authority": "M1744/M1746-M174f",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        5,
+        36,
+        37
+      ],
+      "scope": "Exact content/identity/branch comparisons; copy scalar alone not proof."
+    },
+    {
+      "behavior": "history capacity/window/tolerance",
+      "authority": "M1744",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        2,
+        3,
+        4,
+        39,
+        40
+      ],
+      "scope": "Strict tolerance equality separately artificial window100."
+    },
+    {
+      "behavior": "no-mod visibility and following jump",
+      "authority": "M1e57/M1e58/M1e5e/M368f",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        38
+      ],
+      "scope": "Every reached candidate/angle/cap/operand, raw and state; index0 early return retained."
+    },
+    {
+      "behavior": "three component recurrence states",
+      "authority": "M19e7/M3539/M325d",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "scope": "Distinct .2/.3/.8 and strain/raw delta compared."
+    },
+    {
+      "behavior": "duration envelope / growing prefix",
+      "authority": "M3f33-M3f39/M19ec/M19e9",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        27,
+        43,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        44
+      ],
+      "scope": "Origin/strict400, trimming and full processed-prefix list independently compared. Artificial fractional200.5/201.5 control executes actual round-even storage and unrounded retained duration; not a broader raw/rate profile."
+    },
+    {
+      "behavior": "per-object and first-minute ordering",
+      "authority": "M1d08/M325f/M3260",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        41,
+        42
+      ],
+      "scope": "s20/s1, Pow(i,.9), repeated values and prefix-before-sort."
+    },
+    {
+      "behavior": "Double/Single/floor distinctions",
+      "authority": "M080a/M1bd0/M1bc7/M1bd5/M2d7f",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        68
+      ],
+      "scope": "Exact Single bits and display; scalar tolerance only for binary64 arithmetic."
+    },
+    {
+      "behavior": "process cache / background scheduling",
+      "authority": "R17 engineering",
+      "classification": "ENGINEERING PREPARATION",
+      "headlessGroups": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        76
+      ],
+      "scope": "64 completed/32queued/one worker, cancellation and stale reference/revision publication."
+    },
+    {
+      "behavior": "SelectPlay binding",
+      "authority": "R17 host adapter",
+      "classification": "ENGINEERING PREPARATION",
+      "headlessGroups": [
+        72,
+        73,
+        77,
+        82
+      ],
+      "scope": "Windows1-6 executed unshown; full GameWindow dispatcher is source inspection."
+    },
+    {
+      "behavior": "Rank/Retry/gameplay preservation",
+      "authority": "R15/R16 + R17 metadata boundary",
+      "classification": "EXECUTED FINITE EQUIVALENCE",
+      "headlessGroups": [
+        79,
+        81
+      ],
+      "scope": "Windows7-9 actual unshown Rank/Retry; kernel sources unchanged."
+    },
+    {
+      "behavior": "nonzero stack / other profile / mods / object types",
+      "authority": "E045/E046 admission boundary",
+      "classification": "UNSUPPORTED INPUTS",
+      "headlessGroups": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "scope": "No broadening by helper acceptance."
+    },
+    {
+      "behavior": "x86 JIT/providers/full DB/native worker/UI",
+      "authority": "original-runtime boundary",
+      "classification": "UNVERIFIED ORIGINAL-RUNTIME BEHAVIOR",
+      "headlessGroups": [],
+      "scope": "Not executed, emulated or certified."
+    }
+  ],
+  "researchControlInventory": {
+    "E044": 82,
+    "E045": 175,
+    "E046": 88,
+    "status": "Read-only numerical authority. These are not new R17 independent QA; not all individually rerun."
+  },
+  "executedProduction": {
+    "headlessGroups": 82,
+    "headlessComponents": 80,
+    "headlessSourceInspections": 1,
+    "windowsGroups": 12,
+    "windowsComponents": 11,
+    "windowsSourceInspections": 1,
+    "chartReferences": 28,
+    "rawE046": 19,
+    "rawE045": 3,
+    "scalarComparisons": 89878,
+    "headlessReferenceIntegrity": 1,
+    "matchedGameplayPaths": 5
+  },
+  "precision": {
+    "relativeTolerance": 5e-12,
+    "absoluteTolerance": 5e-13,
+    "exact": "group identity/content, branches, indices, history lengths, Single bits, display",
+    "maxObservedChartDoubleDifference": 5.329070518200751e-15
+  },
+  "originalRuntime": "UNVERIFIED for every row",
+  "classificationClarification": "Group1 validates the pinned reference transport/data integrity. It is counted separately from actual production component and production source-inspection groups; no test assertion changed."
+}

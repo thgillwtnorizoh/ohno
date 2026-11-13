@@ -1,0 +1,12 @@
+{
+  "source": "4fed05378db3225df2fff9cc6830d597ea5687d3",
+  "run": 43361892216,
+  "job": 131677098653,
+  "classification": "new headless development harness compile-name ambiguity; zero R17 headless assertions executed",
+  "error": "CS0104 CircleDefinition ambiguous between new Difficulty and existing Gameplay types",
+  "correction": "new harness adds explicit Difficulty.CircleDefinition alias; no production/math/expected-value change",
+  "retainedGate": "WPF zero warnings/errors,2175 historical QA/all retained development suites and R17 Windows12 passed",
+  "fullLogBytes": 1949321,
+  "fullLogSha256": "746d8d3d12a9b0a50e485563e3818596bce7c1d14b612bd850cd154011f2bf83",
+  "additionalInstrumentation": "new harness emits per-chart actual Double/Single bits/display and explicitly compares LF-normalized source transport hash; mathematical expected records unchanged"
+}

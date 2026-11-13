@@ -1,0 +1,222 @@
+2026-11-13T03:58:37.5508277Z     0 Warning(s)
+2026-11-13T03:58:37.5508607Z     0 Error(s)
+2026-11-13T03:58:39.9277234Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-13T03:58:42.3907516Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-13T03:58:46.9855933Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-13T03:58:49.2209205Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-13T03:58:51.3856663Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-13T03:58:53.4584020Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-13T03:58:55.6653395Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-13T03:58:57.7688277Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-13T03:59:00.1469174Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-13T03:59:02.1616660Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-13T03:59:04.1312594Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-13T03:59:06.1131133Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-13T03:59:08.1004630Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-13T03:59:10.2098615Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-13T03:59:13.5472582Z PASS R17 skin first existing decoder result 0
+2026-11-13T03:59:13.5473076Z PASS R17 skin first existing decoder result -1
+2026-11-13T03:59:13.5473610Z PASS R17 skin first existing decoder result 700
+2026-11-13T03:59:14.6764075Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-13T03:59:17.5235569Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-13T03:59:20.6023854Z PASS R17 no direct parent custom branch
+2026-11-13T03:59:21.1011851Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-13T03:59:24.0847625Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-13T03:59:29.9346487Z PASS R17 negative index and bank table mapping
+2026-11-13T03:59:30.6643850Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-13T03:59:32.4959445Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-13T03:59:32.4981010Z QA11 WINDOWS SHA256 2a9d36b9d3f2bf867aac7753693279efc15c64b5b057c7ffff5bfd4377b1da74
+2026-11-13T03:59:32.5042839Z QA11 WINDOWS EVIDENCE H4sIAAAAAAACCq2TzW7bMBCEX2XBs6pY8m98KxwdfIjk1g6cIuiBIlcNUYpkScquEeTdu1KMpLnrRhHc/WZntC8siGdsOVuzb1+zLD0qI+05pNi6eElPGUtYsJ0XuH/u38g8E8s5zrJsird5vZSLfDEXq1lT59myuc14vVqhkEsq852JqkUqSsviAKt0kk6ndI9/UXQRJVsvEuZ4CNdjw5Xuj5OECR4wsPXTCzN86HAsJhkMksB5dNzzqKwB69AEMBY8vokM1F9o6qkaJYY3VFw8FpuHQ3EHx215Vx33UNzvDj9gU93vqrIoD+xDRvQdvib/Y3NoFbUzv4CLP50KagAHpNkM6vF50w9ejF7V5FQAYU3kxJOj42bvOKc5mcu7gBCidWRpS0joDD9RMLzWODp8fo1UcCNQU/ifwpUW+2wjNLz2PRFBorASPZyt/z26mgWN7JAwEqQKzgaugRvSZEP88n5zjaKlH2AMBT8TplWrIpWWFlqUikN96TMPnXNaoUyGZNDfXIe/OQ8bSp8nJXAwqF8DlCmU1rwZel1i0KpBcREaYV89fN8UsC33u2Jz2FYlWKMvKXv9B0XV1FEABAAA
+2026-11-13T03:59:34.4072012Z R13-C01 G08 control: expected0.1/0.1 actual=0.1/0.1
+2026-11-13T03:59:34.4105002Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-13T03:59:37.4622817Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-13T03:59:45.6855429Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-13T03:59:45.6865188Z QA12 WINDOWS SHA256 6372ac74086169f1c811b85f0fe9f689b6717296c281622c0203ac724ebb34b1
+2026-11-13T03:59:45.6887994Z QA12 WINDOWS EVIDENCE H4sIAAAAAAACCu1YS28aMRC+V+p/GO05PHYDAdpTDzlE6iM9VD1UPRh7Ftwae2t7SWiU/97xPoBNiwTKJiVKJKTFHntsf9+87JvXrwAix+e4YNEbiD6/i5PuV6mFuXLdZRydlHKTW45BLpKYj4Y4iONTnCTTkThLzoZ8PEinSTxKJzGbjsfIxaiaiNfIc4+CpsZJ2ZUx5xodKZOq6OiXbc4cOmp+Cy2Am/JDAhkGRV/P+zHgIvMryCxmzDIvjQZtwGK5T1cuXszhipaTqeTFqDD/vNoSVKcsdXXqycDNIjMatd/Sst6ztzluus3UoV0Wmrc23Nh0MQ6vM+R+64xrCeM+Zyr0b7pvT/bQo3OldqgKoi1t9d/vm32jtcY2RtZr/gPsBBjnOaGMkGuXZ5mxAb3U4q8cNV8B0yKgr1DP/PyIoY934BU/GPQv2ra1NQhsaguiFk32FBaSTE/PQAqyJuklOooOCyY12TBbUsBhU4XPIEy86Hlaeh4vrA8gY7nDkDQ9s77j/EqRVTOlXBHRhXSZcbTyi5McG3kXVACVmqFEDUWHz5melfxNGf95GGv1LLiSfk4WwY0VIXqGPtTiQciL3t+pF5qA1eIDKWgrx/e7/WQ8HMWDZLLLODYjWiQ2qYldmKKqXTMjMEXr4FKx1fFzmzLldqX6QvafWI2a8N2xuEJ4oMZDTnpf2zitbeM3WtP5Alwh03kGVJxbCrFAYXyG/gl4/mVIPLtpKKQH8jCJd/kpSVrkYFBzEDKbwtJHKx6mmBqLQFmTCs4lwtyYJxCH2/Kt9nz0MOu4L6NDcOg9oexCyROuBRAuuVTCONxiJJREFlEXAzK0C+nd8ZPbVmWzD7n3JeIMZqixes3hTHNUqmzQr6pSn487tcXc/pfuY7rCX/RHNUsQngdziqsVGcH/gjNyoz3d51Ecv008Hmrj6lLnkVk6rq7CVobMv1zomnr2gzp8yhGRkhTzC4yKt+eqDqhxWr89vwWpfxQb+du6gAqEjQVK7dFS7bAMyacLHw18QCFZKEPRBvt2BCgP+PU+Zah7SjqPmgb3ropFewKXkgeyne9SSrz9AwtLXaPMFwAA
+2026-11-13T03:59:48.9283596Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-13T03:59:51.1137858Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-13T03:59:55.9154436Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback
+2026-11-13T03:59:58.7417839Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-13T04:00:00.8510399Z PASS QA13 WINDOWS W01 fresh actual host alias 
+2026-11-13T04:00:00.8632159Z PASS QA13 WINDOWS W02 admitted not presented 
+2026-11-13T04:00:00.8646105Z PASS QA13 WINDOWS W03 commit cleanup first frame 
+2026-11-13T04:00:00.8670689Z PASS QA13 WINDOWS W04 initialize second frame 
+2026-11-13T04:00:00.8671918Z PASS QA13 WINDOWS W05 third frame permits view 
+2026-11-13T04:00:00.8677730Z PASS QA13 WINDOWS W06 results frames freeze gameplay 
+2026-11-13T04:00:00.8738188Z PASS QA13 WINDOWS W07 unshown view initially collapsed 
+2026-11-13T04:00:00.9365008Z PASS QA13 WINDOWS W08 actual presentation binds independently 
+2026-11-13T04:00:00.9366339Z PASS QA13 WINDOWS W09 same reference reveal updates 
+2026-11-13T04:00:00.9375892Z PASS QA13 WINDOWS W10 hide and rebind same score widget 
+2026-11-13T04:00:00.9386325Z PASS QA13 WINDOWS W11 replacement presentation frozen fields 
+2026-11-13T04:00:00.9392097Z PASS QA13 WINDOWS W12 unavailable view no invented grade 
+2026-11-13T04:00:00.9431220Z PASS QA13 WINDOWS W13 supplied callbacks component event only 
+2026-11-13T04:00:00.9437592Z PASS QA13 WINDOWS W14 host reveal skip no restart 
+2026-11-13T04:00:00.9440563Z PASS QA13 WINDOWS W15 held buttons suppressed in Rank 
+2026-11-13T04:00:00.9442656Z PASS QA13 WINDOWS W16 actual Back commits selection 
+2026-11-13T04:00:00.9450296Z PASS QA13 WINDOWS W17 rejected Retry creates no session 
+2026-11-13T04:00:00.9462011Z PASS QA13 WINDOWS W18 actual fresh Retry 
+2026-11-13T04:00:00.9477766Z PASS QA13 WINDOWS W19 map replacement discards Rank 
+2026-11-13T04:00:00.9479799Z PASS QA13 WINDOWS W20 repeat host disposal 
+2026-11-13T04:00:00.9929486Z PASS QA13 WINDOWS W21 effects empty resource preparation 
+2026-11-13T04:00:00.9978909Z PASS QA13 WINDOWS W22 pending shared starts cancelled at results 
+2026-11-13T04:00:00.9982184Z PASS QA13 WINDOWS W23 no duplicate score through effects cleanup 
+2026-11-13T04:00:00.9994883Z PASS QA13 WINDOWS W24 disposed effects remain bounded 
+2026-11-13T04:00:01.0706216Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-13T04:00:01.0711452Z QA13 WINDOWS SHA256 c921c132df5f9cddbd422ded5e147d38d7c6f46974d4cb58c034b8091c4c1bf5
+2026-11-13T04:00:03.3714605Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input
+2026-11-13T04:00:05.8360709Z R16 WINDOWS: 12/12 groups passed; final1 source inspection; unshown components only; no Window/show/render/OS input/nonempty media
+2026-11-13T04:00:42.2730060Z QA14 HEADLESS: 234 passed, 0 failed, 234 named controls
+2026-11-13T04:00:51.3952986Z PASS QA14 WINDOWS W01-construction 
+2026-11-13T04:00:51.3978482Z PASS QA14 WINDOWS W02-empty 
+2026-11-13T04:00:51.4057904Z PASS QA14 WINDOWS W03-song-difficulty-binding 
+2026-11-13T04:00:51.4108871Z PASS QA14 WINDOWS W04-highlight-versus-selected-label 
+2026-11-13T04:00:51.4140169Z PASS QA14 WINDOWS W05-commit-button 
+2026-11-13T04:00:51.4169027Z PASS QA14 WINDOWS W06-play-button 
+2026-11-13T04:00:51.4203926Z PASS QA14 WINDOWS W07-row-first-repeat 
+2026-11-13T04:00:51.4221138Z PASS QA14 WINDOWS W08-refresh-callback 
+2026-11-13T04:00:51.4235732Z PASS QA14 WINDOWS W09-open-callback-no-dialog 
+2026-11-13T04:00:51.4249784Z PASS QA14 WINDOWS W10-back-callback 
+2026-11-13T04:00:51.4264514Z PASS QA14 WINDOWS W11-status 
+2026-11-13T04:00:51.4295060Z PASS QA14 WINDOWS W12-unavailable-row 
+2026-11-13T04:00:51.4320541Z PASS QA14 WINDOWS W13-no-star-fabrication 
+2026-11-13T04:00:51.4365828Z PASS QA14 WINDOWS W14-same-folder-list-event 
+2026-11-13T04:00:51.4404383Z PASS QA14 WINDOWS W15-callback-error-visible 
+2026-11-13T04:00:51.4473747Z PASS QA14 WINDOWS W16-stale-generation 
+2026-11-13T04:00:51.4510652Z PASS QA14 WINDOWS W17-disposed-supported-callbacks 
+2026-11-13T04:00:51.4571343Z PASS QA14 WINDOWS W18-model-event-unregistered 
+2026-11-13T04:00:51.4600935Z PASS QA14 WINDOWS W19-rebind-no-feedback-loop 
+2026-11-13T04:00:51.4643085Z PASS QA14 WINDOWS W20-retained-reference-group 
+2026-11-13T04:00:51.4688601Z PASS QA14 WINDOWS W21-missing-reference-recovery 
+2026-11-13T04:00:51.4744368Z PASS QA14 WINDOWS W22-new-revision-explicit-commit 
+2026-11-13T04:00:51.5323916Z PASS QA14 WINDOWS W23-browser-does-not-update-play 
+2026-11-13T04:00:51.5513369Z PASS QA14 WINDOWS W24-real-rank-back 
+2026-11-13T04:00:51.5560738Z PASS QA14 WINDOWS W25-real-fresh-retry-captured-map 
+2026-11-13T04:00:51.5635817Z PASS QA14 WINDOWS W26-final-validation-retains-host 
+2026-11-13T04:00:51.5660628Z PASS QA14 WINDOWS W27-missing-required-audio 
+2026-11-13T04:00:51.6663000Z PASS QA14 WINDOWS W28-empty-effects 
+2026-11-13T04:00:51.6698949Z PASS QA14 WINDOWS W29-results-do-not-score 
+2026-11-13T04:00:51.6728390Z PASS QA14 WINDOWS W30-bound-detail-metadata 
+2026-11-13T04:00:51.7284653Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only
+2026-11-13T04:00:51.7285495Z QA14 WINDOWS SHA256 15ea15e4d600139ec96484e3684ca9cedb1163df04b71a460f5b3d2c2cf661c5
+2026-11-13T04:00:54.4250736Z PASS R17 001 pinned independent E046 expected reference;28 are fixtures, not automatic passing checks
+2026-11-13T04:00:54.4814516Z R17 CHART artificial-exact-tolerance/129: Double=3.887469756437654 SingleLE=4ecc7840 display=3.88★
+2026-11-13T04:00:54.4815246Z PASS R17 002 executed full independent intermediate/chart comparison artificial-exact-tolerance/129
+2026-11-13T04:00:54.4872818Z R17 CHART artificial-exact-tolerance/130: Double=3.876976213114423 SingleLE=61207840 display=3.87★
+2026-11-13T04:00:54.4873597Z PASS R17 003 executed full independent intermediate/chart comparison artificial-exact-tolerance/130
+2026-11-13T04:00:54.4927537Z R17 CHART artificial-exact-tolerance/131: Double=3.871835831751243 SingleLE=29cc7740 display=3.87★
+2026-11-13T04:00:54.4928319Z PASS R17 004 executed full independent intermediate/chart comparison artificial-exact-tolerance/131
+2026-11-13T04:00:54.4993039Z R17 CHART repeating-count2: Double=5.4302855064859195 SingleLE=e6c4ad40 display=5.43★
+2026-11-13T04:00:54.5229813Z PASS R17 005 executed full independent intermediate/chart comparison repeating-count2
+2026-11-13T04:00:54.5286023Z R17 CHART distinct-count2: Double=4.698022059606429 SingleLE=32569640 display=4.69★
+2026-11-13T04:00:54.5303766Z PASS R17 006 executed full independent intermediate/chart comparison distinct-count2
+2026-11-13T04:00:54.5338011Z R17 CHART different-counts: Double=4.533690017110783 SingleLE=fd139140 display=4.53★
+2026-11-13T04:00:54.5347440Z PASS R17 007 executed full independent intermediate/chart comparison different-counts
+2026-11-13T04:00:54.5374935Z R17 CHART repeat-after-nonmatch: Double=4.160629075538005 SingleLE=e0238540 display=4.16★
+2026-11-13T04:00:54.5384117Z PASS R17 008 executed full independent intermediate/chart comparison repeat-after-nonmatch
+2026-11-13T04:00:54.5436336Z R17 CHART inside-tolerance: Double=5.320716727060625 SingleLE=5043aa40 display=5.32★
+2026-11-13T04:00:54.5446945Z PASS R17 009 executed full independent intermediate/chart comparison inside-tolerance
+2026-11-13T04:00:54.5499202Z R17 CHART near-tolerance-outside: Double=5.313025759643257 SingleLE=4f04aa40 display=5.31★
+2026-11-13T04:00:54.5510547Z PASS R17 010 executed full independent intermediate/chart comparison near-tolerance-outside
+2026-11-13T04:00:54.5638181Z R17 CHART capacity-below: Double=7.6823991588404335 SingleLE=37d6f540 display=7.68★
+2026-11-13T04:00:54.5663146Z PASS R17 011 executed full independent intermediate/chart comparison capacity-below
+2026-11-13T04:00:54.6028937Z R17 CHART capacity-above: Double=8.639178636128037 SingleLE=133a0a41 display=8.63★
+2026-11-13T04:00:54.6048489Z PASS R17 012 executed full independent intermediate/chart comparison capacity-above
+2026-11-13T04:00:54.6087243Z R17 CHART age-below: Double=5.274431292153389 SingleLE=24c8a840 display=5.27★
+2026-11-13T04:00:54.6098795Z PASS R17 013 executed full independent intermediate/chart comparison age-below
+2026-11-13T04:00:54.6135232Z R17 CHART age-equal: Double=5.274426744364648 SingleLE=1bc8a840 display=5.27★
+2026-11-13T04:00:54.6146063Z PASS R17 014 executed full independent intermediate/chart comparison age-equal
+2026-11-13T04:00:54.6184319Z R17 CHART age-above: Double=5.298776738537817 SingleLE=948fa940 display=5.29★
+2026-11-13T04:00:54.6194805Z PASS R17 015 executed full independent intermediate/chart comparison age-above
+2026-11-13T04:00:54.6213966Z R17 CHART dense-right-angles: Double=4.146836873215261 SingleLE=e3b28440 display=4.14★
+2026-11-13T04:00:54.6225630Z PASS R17 016 executed full independent intermediate/chart comparison dense-right-angles
+2026-11-13T04:00:54.6272941Z R17 CHART dense-short-preempt: Double=5.227489448434895 SingleLE=9847a740 display=5.22★
+2026-11-13T04:00:54.6286703Z PASS R17 017 executed full independent intermediate/chart comparison dense-short-preempt
+2026-11-13T04:00:54.6349358Z R17 CHART combined-repeat-visibility: Double=5.119475874072683 SingleLE=bfd2a340 display=5.11★
+2026-11-13T04:00:54.6365233Z PASS R17 018 executed full independent intermediate/chart comparison combined-repeat-visibility
+2026-11-13T04:00:54.6466737Z R17 CHART nearly-equal-angles: Double=4.751575127254563 SingleLE=e70c9840 display=4.75★
+2026-11-13T04:00:54.6485548Z PASS R17 019 executed full independent intermediate/chart comparison nearly-equal-angles
+2026-11-13T04:00:54.6579343Z R17 CHART opposing-directions: Double=6.195064032018703 SingleLE=f73dc640 display=6.19★
+2026-11-13T04:00:54.6598100Z PASS R17 020 executed full independent intermediate/chart comparison opposing-directions
+2026-11-13T04:00:54.6624674Z R17 CHART next-jump-zero: Double=3.208522372800973 SingleLE=6e584d40 display=3.2★
+2026-11-13T04:00:54.6638393Z PASS R17 021 executed full independent intermediate/chart comparison next-jump-zero
+2026-11-13T04:00:54.6664206Z R17 CHART next-jump-small: Double=3.2085461068443983 SingleLE=d2584d40 display=3.2★
+2026-11-13T04:00:54.6677977Z PASS R17 022 executed full independent intermediate/chart comparison next-jump-small
+2026-11-13T04:00:54.6713242Z R17 CHART following-outside-window: Double=4.621139173547889 SingleLE=5fe09340 display=4.62★
+2026-11-13T04:00:54.6726941Z PASS R17 023 executed full independent intermediate/chart comparison following-outside-window
+2026-11-13T04:00:54.6929504Z R17 CHART E045/regular: Double=5.627450242938406 SingleLE=1314b440 display=5.62★
+2026-11-13T04:00:54.6930231Z PASS R17 024 executed full independent intermediate/chart comparison E045/regular
+2026-11-13T04:00:54.7180212Z R17 CHART E045/alternating: Double=4.829656052634754 SingleLE=8b8c9a40 display=4.82★
+2026-11-13T04:00:54.7180792Z PASS R17 025 executed full independent intermediate/chart comparison E045/alternating
+2026-11-13T04:00:54.7333625Z R17 CHART E045/perturbed: Double=5.97597028998677 SingleLE=263bbf40 display=5.97★
+2026-11-13T04:00:54.7334628Z PASS R17 026 executed full independent intermediate/chart comparison E045/perturbed
+2026-11-13T04:00:54.7397056Z R17 CHART E045/long-pauses: Double=1.7811920364433194 SingleLE=1afee33f display=1.78★
+2026-11-13T04:00:54.7397792Z PASS R17 027 executed full independent intermediate/chart comparison E045/long-pauses
+2026-11-13T04:00:54.7576232Z R17 CHART E045/same-position: Double=13.276890545898922 SingleLE=256e5441 display=13.27★
+2026-11-13T04:00:54.7576964Z PASS R17 028 executed full independent intermediate/chart comparison E045/same-position
+2026-11-13T04:00:54.7622418Z R17 CHART E045/right-angles: Double=0.8471012936611393 SingleLE=a1db583f display=0.84★
+2026-11-13T04:00:54.7623163Z PASS R17 029 executed full independent intermediate/chart comparison E045/right-angles
+2026-11-13T04:00:54.7842184Z PASS R17 030 E045 independently closed 2-circle raw fixture Double/bits/display
+2026-11-13T04:00:54.7849642Z PASS R17 031 E045 independently closed 3-circle raw fixture Double/bits/display
+2026-11-13T04:00:54.7857955Z PASS R17 032 E045 independently closed 4-circle raw fixture Double/bits/display
+2026-11-13T04:00:54.7876084Z PASS R17 033 original Single radius / AR interpolation / floored OD preparation
+2026-11-13T04:00:54.7876917Z PASS R17 034 registered N-1 pairs retain predecessor/following identity before sort and nullable early angles
+2026-11-13T04:00:54.7878532Z PASS R17 035 unchecked Int32 subtraction before Double and separate Max25 strain
+2026-11-13T04:00:54.7907912Z PASS R17 036 closed repeated-group scalar and actual saved/last alias; repeats mutate1/2/3/4
+2026-11-13T04:00:54.7911202Z PASS R17 037 identity graph discriminates equal-valued copy; retained oracle confirms scalar is a non-discriminator
+2026-11-13T04:00:54.7928909Z PASS R17 038 visibility2000ms tests prior elapsed then processes crossing term;499/500/501/600
+2026-11-13T04:00:54.7949961Z PASS R17 039 strict5000ms seed boundary yields5/4/4 comparisons independently of neutral scalar
+2026-11-13T04:00:54.7952542Z PASS R17 040 capacity32 is not32 synthetic comparisons;28/29/30/30 controls
+2026-11-13T04:00:54.7957841Z PASS R17 041 ordered i^.9 s20/s1 weights and repeated values not deduplicated
+2026-11-13T04:00:54.7959972Z PASS R17 042 first-minute equality and earliest positive preprocessing precede descending sort
+2026-11-13T04:00:54.7961513Z PASS R17 043 duration envelope first-pair origin, strict400 boundary, single callback per pair
+2026-11-13T04:00:54.7978113Z PASS R17 044 bounded work and cooperative cancellation never manufacture a valid zero
+2026-11-13T04:00:54.7980369Z PASS R17 045 nonfinite input or Single spacing rejected explicitly
+2026-11-13T04:00:54.7982163Z PASS R17 046 strict raw admission rejects format
+2026-11-13T04:00:54.7982696Z PASS R17 047 strict raw admission rejects mode
+2026-11-13T04:00:54.7983174Z PASS R17 048 strict raw admission rejects missing mode
+2026-11-13T04:00:54.7983641Z PASS R17 049 strict raw admission rejects slider
+2026-11-13T04:00:54.7984080Z PASS R17 050 strict raw admission rejects spinner
+2026-11-13T04:00:54.7984585Z PASS R17 051 strict raw admission rejects missing stacking
+2026-11-13T04:00:54.7985118Z PASS R17 052 strict raw admission rejects nonzero stacking
+2026-11-13T04:00:54.7985648Z PASS R17 053 strict raw admission rejects invalid scalar
+2026-11-13T04:00:54.7986477Z PASS R17 054 strict raw admission rejects unverified CS
+2026-11-13T04:00:54.7986976Z PASS R17 055 strict raw admission rejects unverified OD
+2026-11-13T04:00:54.7987471Z PASS R17 056 strict raw admission rejects unverified AR
+2026-11-13T04:00:54.7987934Z PASS R17 057 strict raw admission rejects incomplete
+2026-11-13T04:00:54.7988456Z PASS R17 058 strict raw admission rejects extra sample operands
+2026-11-13T04:00:54.7989260Z PASS R17 059 strict raw admission rejects equal time
+2026-11-13T04:00:54.7989749Z PASS R17 060 strict raw admission rejects negative time
+2026-11-13T04:00:54.7990238Z PASS R17 061 strict raw admission rejects out-of-order
+2026-11-13T04:00:54.7990734Z PASS R17 062 strict raw admission rejects coordinate
+2026-11-13T04:00:54.7991229Z PASS R17 063 strict raw admission rejects noninteger
+2026-11-13T04:00:54.7991743Z PASS R17 064 strict raw admission rejects overflow time
+2026-11-13T04:00:54.7992242Z PASS R17 065 strict raw admission rejects one object
+2026-11-13T04:00:54.7992988Z PASS R17 066 modifiers viewport shift and rate outside independently verified raw profile rejected
+2026-11-13T04:00:54.8020786Z PASS R17 067 combined raw operational discriminator Double/binary32/floor display
+2026-11-13T04:00:54.8118215Z PASS R17 068 missing file is unavailable rather than zero stars
+2026-11-13T04:00:54.8154381Z PASS R17 069 successful process-local content/profile cache reuses unchanged result and preserves provenance
+2026-11-13T04:00:54.8206329Z PASS R17 070 duplicate requests coalesce to one active calculator operation
+2026-11-13T04:00:54.8279864Z PASS R17 071 actual asynchronous highlight completion, different-chart isolation and unchanged revision after refresh
+2026-11-13T04:00:54.8308101Z PASS R17 072 obsolete completion after refresh/selection switch cannot publish into newer chart reference
+2026-11-13T04:00:54.8331744Z PASS R17 073 stale completion after controller/cache disposal cannot notify or install resources
+2026-11-13T04:00:54.8395757Z PASS R17 074 same path changed content invalidates old cache identity; new revision can calculate
+2026-11-13T04:00:54.8415378Z PASS R17 075 stale catalog epoch and disposed controller reject publication
+2026-11-13T04:00:54.8424784Z PASS R17 076 file/calculator exceptions contained as typed nonnumeric states
+2026-11-13T04:00:54.8719218Z PASS R17 077 unsupported star chart remains playable without metadata/accounting mutation
+2026-11-13T04:00:54.9712599Z PASS R17 078 completed cache eviction is bounded to64 process-local entries
+2026-11-13T04:00:55.2002610Z PASS R17 079 four matched before/after metadata calculation sessions preserve parser K events judgement HP audio Rank histories
+2026-11-13T04:00:55.2003719Z PASS R17 080 SOURCE INSPECTION host highlight/refresh/Play/close generations and UI dispatcher publication
+2026-11-13T04:00:55.2004535Z R17 DEVELOPMENT: 80 groups passed; 89876 finite scalar comparisons; last1 source inspection; research controls not added to independent QA
+2026-11-13T04:00:57.9634873Z PASS R17 WINDOWS 01 unshown actual browser accepts calculated provenance adapter without committing chart
+2026-11-13T04:00:57.9893210Z PASS R17 WINDOWS 02 actual Windows calculator/cache completion displays correct E0465.11 and calculated provenance
+2026-11-13T04:00:57.9941652Z PASS R17 WINDOWS 03 switching difficulty replaces rating with that chart's own result and reference
+2026-11-13T04:00:58.0247230Z PASS R17 WINDOWS 04 unsupported numerical profile remains selectable/playable and receives no calculated number
+2026-11-13T04:00:58.0278207Z PASS R17 WINDOWS 05 changed file revision rejects cached rating and exposes stale status
+2026-11-13T04:00:58.0314504Z PASS R17 WINDOWS 06 explicit replacement revision can calculate without changing authoritative selection semantics
+2026-11-13T04:00:58.0570060Z PASS R17 WINDOWS 07 metadata binding does not advance gameplay time, health or score
+2026-11-13T04:00:58.0716111Z PASS R17 WINDOWS 08 real unshown Rank Back preserves selected chart and its calculated cache identity
+2026-11-13T04:00:58.0729560Z PASS R17 WINDOWS 09 existing actual Retry remains fresh and independent of later browser rating selection
+2026-11-13T04:00:58.0761264Z PASS R17 WINDOWS 10 legacy unconfigured widget and supplied cache compatibility remain semantically separate
+2026-11-13T04:00:58.0768057Z PASS R17 WINDOWS 11 disposed widget/controller/host safely ignore supported late callbacks; no Window/media opened
+2026-11-13T04:00:58.0770849Z PASS R17 WINDOWS 12 SOURCE INSPECTION GameWindow dispatcher and close wiring; no Window instantiated
+2026-11-13T04:00:58.0771879Z R17 WINDOWS: 12/12 groups passed; last1 source inspection; other controls unshown components; no Window/show/render/OS input/nonempty media

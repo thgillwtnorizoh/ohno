@@ -1,4 +1,4 @@
-# R16 — Local SelectPlay Practice for Windows
+# R17 — Restricted Circle Stars and Local SelectPlay
 
 A minimal desktop osu!standard reconstruction using **C# / WPF / .NET 8**.
 Move a real mouse and physically press **Z or X** to hit circles. No autoplay,
@@ -889,3 +889,66 @@ and Refresh to check recovery. No agent has shown the window, injected physical 
 listened or claimed visual/audible equivalence. See
 [`R16-original-derived-selectplay.md`](../R16-original-derived-selectplay.md) for the
 exact-source gate and the separate development/Windows coverage inventory.
+
+
+## R17 original-derived restricted circle stars
+
+SelectPlay now calculates local stars for a deliberately narrow, independently
+checked mathematical profile. These are **original-derived mathematical results**,
+not measurements from the original x86 game, a general stable calculator or pp.
+No additional runtime/dependency/install or online service is used.
+
+A calculation requires format14, explicit Mode0 and StackLeniency0, CS5/OD5 with
+AR5 or AR10, increasing nonnegative Int32 circle times, integer X/Y in0..512, and
+complete simple five-column `x,y,time,type,0` circle rows (type1 or5). The fixed
+mathematical preparation is512×384, shift0, rate1, mods0. The viewport is a
+calculation operand, not your current window size. Sliders, spinners, mods, sample
+overrides/extra columns, missing/nonzero stacking, equal-time objects, invalid or
+unverified preparation scalars remain **Stars not calculated · unsupported**.
+They remain playable wherever the existing gameplay parser supports them.
+
+Highlighting a chart requests background calculation. Pending, cancelled, stale,
+failed, unsupported and calculated states are explicit. A successful row shows e.g.
+**5.11★ · original-derived restricted calculation · E044–E046 mathematical profile**.
+This supersedes R16's unavailable default only for admitted calculations; the R16
+external `SuppliedStar` compatibility contract remains separate. The calculator
+uses no score multiplier, score, combo, accuracy, health or audio inputs.
+
+The process cache holds at most64 completed entries and32 pending jobs with one
+calculator worker. Its key includes contentSHA256/calculator version/mode/mods/
+preparation. Duplicate pending requests coalesce. Source revisions are checked
+before/after computation and even on cache hits. Refresh cancels old publication;
+changed bytes require a new catalog row and explicit commit under R16's identity
+policy. Unchanged content can reuse a calculation after refresh or Rank Back.
+Nothing is saved to osu!.db or a disk star database. Restart clears the cache.
+
+Engineering limits are4MiB per chart,100,000 reader lines,4,096 circles and2million
+counted calculation steps. Exceeding a limit displays unsupported, never guessed0.
+Only the documented circle profile is admitted; a strict raw reader and typed
+prepared verification seam do not reconstruct the complete original manager.
+Single stores and original-derived recurrences are preserved; original x86/JIT,
+Math last bits, library tie behavior and native worker scheduling are unverified.
+
+Owner-only Windows checklist (prepared; no agent-operated window/listening):
+
+1. Build/run and confirm SelectPlay still opens normally.
+2. Open `re/evidence/46/fixtures/combined-repeat-visibility.osu`, then use SelectPlay.
+   Expected supported display: **5.11★**. The file is in the source checkout,
+   not an embedded proprietary asset or newly bundled song pack.
+3. Open `re/evidence/45/fixtures/2-straight-v14.osu`; expected **0.11★**.
+   Three/four straight fixtures give **0.17★ /0.22★**. Verify each row has its own
+   value while navigating quickly.
+4. Select an established slider/spinner fixture; stars remain explicitly unsupported
+   and Play still works. On an owned copy of a supported circle chart, remove
+   StackLeniency or set it to.7, Refresh and commit the replacement; no number should
+   be assigned. Restore0 and Refresh to calculate the new revision.
+5. Verify changing a selected file invalidates the old rating and obsolete work cannot
+   label another difficulty. Refresh retains R16's explicit revision recovery.
+6. Physically play established practice maps, verify existing score/HP/audio behavior,
+   complete to Rank, Back and confirm selection/rating state; Retry remains fresh
+   from the captured Play map. Rank Enter/Space still only skip score reveal.
+
+See [`R17-original-derived-circle-star-calculator.md`](../R17-original-derived-circle-star-calculator.md)
+for exact-source Windows verification, numerical evidence, engineering boundaries
+and preserved initial development failure. No slider/spinner/mod/stack difficulty,
+modern/lazer substitute, performance points, online service or general star claim.

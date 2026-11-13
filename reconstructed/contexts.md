@@ -1201,3 +1201,115 @@ getter, no executable change. No original research/QA/historical reports rewritt
 Final report/README/journal/evidence/coverage-only child retains tested source exactly;
 latest main expected-head rechecked for safe non-force publication. No authorized
 exception, deferred score discrepancy untouched. StopR16; noQA14/E044/R17.
+
+## R17 — Restricted original-derived circle-star calculator — 2026-11-13
+
+Work2 authorized R17 only. Verified/synced canonical main
+8a108427d0872f0feb5d5b4d4abeebe8e56f9990, clean baseline. Read standing
+AGENTS/Instruction, both journals/new QA14/E044-E046 entries, E043 cache/display,
+full E044/E045/E046 reports, fully parsed original-static packets, E046 independent
+oracle/retained results28 charts/88 controls, E045 mathematical projection and
+preserved correction/failure history, R16 report/current parser/catalog/model/view/
+host/audio interfaces and current Windows workflow. No RTK file present. No original
+archive extraction/binary execution, new research, Window/show, OS input, listening,
+preview, new SDK or local.NET execution. No authorized exception.
+
+Added independent C# Difficulty subsystem: strict v14/Mode0/simple circles/sound0/
+StackLeniency0, increasing bounded Int32 times, CS5/OD5/AR5-or10,512x384/shift0/
+rate1/mods0; original Single preparation and zero-stack proof; registered-order
+N-1 pair/history before sort; movement and distinct1.45 velocity-angle channels;
+mutable rhythm group identities/repeats; ordered visibility/following jump;
+three recurrences, original duration envelope/mutable appended prefix and sorted
+s20/s1 weights; exact final Double, Single bits and floor display separately.
+Engineering4096-circle/2million-work limit, separate prepared-input verification seam.
+No score/K/HP/clock/audio inputs. All gameplay/parser/Rank/audio sources unchanged.
+
+Added process-local calculated-star cache64 completed/32queued, one worker, content/
+profile/mode/mod/preparation key, duplicate coalescing, cancellation/revision guards;
+controller reference/catalog/request generations and optional WPF text adapter.
+Only production host opts into calculated stars; old supplied-cache contract and
+unconfigured widget behavior remain separate. Calculated/pending/unsupported/stale/
+failed/cancelled/not-requested explicit. UI metadata failure never changes playable
+admission. Rank Back/Retry and old lifecycle remain unchanged.
+
+New R17 development harness links actual components and compares all28 E046 whole
+chart references at pairs, reached histories/identities/flags, components, envelope,
+aggregates, Double, exact Single bits and display; 19 admitted raw files also execute
+through strict reader. E0452/3/4 raw controls, independent scalar/window/identity
+anchors, rejected input, cancellation/cache/races, four matched gameplay paths and
+unshown Windows view/Rank/Retry controls added. Research82/175/88 and reference files
+are not new independent QA. Required historical2175 and every retained dev suite,
+including R1652+Windows12, remain unchanged. Minimal CI adds2 paths/2steps.
+
+Initial source4fed05378db3225df2fff9cc6830d597ea5687d3 submitted to existing
+ci/verification by expected-head non-force update; exact Windows verification
+pending. Preserve any initial failure/log/source. README/new report/coverage/evidence
+will record exact gate and counts; canonical publication only after successful gate.
+No local SDK/run claim. Deferred JoinedBezier discrepancy untouched. Stop afterR17;
+noQA15/E047/R18, original runtime/slider/spinner/mod/stack/general calculator claim.
+
+R17 initial Windows gate43361892216/job131677098653 at4fed05378db3225df2fff9cc6830d597ea5687d3:
+WPF0 warnings/errors; all2175 historical independent checks/all retained dev and new
+Windows12 pass. New headless harness compilation fails CS0104 CircleDefinition name
+collision with Gameplay.CircleDefinition; zero new headless assertions execute.
+Preserve full decoded log1949321bytes SHA256
+746d8d3d12a9b0a50e485563e3818596bce7c1d14b612bd850cd154011f2bf83,
+initial harness snapshot and disposition under verification/r17. Correct only new
+harness with explicit Difficulty.CircleDefinition alias. Production/math/expected
+values unchanged. Add per-chart actual Double/Single bits/display evidence and
+explicit LF-normalized research source-transport hash policy (no JSON value changes).
+Corrected source d21c75e4113e92b7d6265c84fb217f91ab88ecd7 submitted for full rerun.
+
+R17 corrected gate43362390795/job131678713908/source
+d21c75e4113e92b7d6265c84fb217f91ab88ecd7 PASS: WPF0/0,2175 historical QA/all
+retained dev, R1780/80(79component1source), Windows12/12. All28 E046 reference
+charts including19 strict raw fixtures pass complete reached intermediate comparisons;
+89876 finite scalar comparisons are not independent QA counts. Combined C#Double
+5.119475874072683, exact SingleLEbfd2a340, display5.11; largest chart Double
+oracle difference5.329070518200751e-15; all Single bits/display exact. E0452/3/4
+raw controls pass. Full log1980511bytes SHA256
+932ed7d057c904ad618b515a773194ef5a283256d9fd7b4d879d53e8d094c087,
+structured results, per-chart numerical records and gate summary preserved.
+
+Verification audit identified bounded remaining controls before final publication:
+actual fractional duration round-even/unrounded-retained storage; chart deletion
+after indexing; file mutation while calculation held; matched actual supported
+calculation alongside circle/slider/spinner/mixed gameplay histories. Strengthen only
+new headless harness, no production/math/expected-value changes. Preserve80-group
+passing checkpoint as intermediate evidence. Source9ae1fbde06812adeaeac7df61de23c4d4268a51c
+submitted for full Windows gate; planned82groups/five matched gameplay paths.
+
+R17 final strengthened exact-source gate43363603697/job131682658488 at
+9ae1fbde06812adeaeac7df61de23c4d4268a51c PASS,2026-11-13 04:09:05–04:11:08UTC /
+11:09:05–11:11:08Asia/Bangkok. Windows2022/installedSDK8.0.427; WPF Release win-x64
+zero compiler warnings/errors; all2175/2175 historical independent QA/all retained
+development suites pass unchanged, QA11G08 expected0.1/0.1 actual0.1/0.1, R1652+
+Windows12 retained. New82/82 headless groups and Windows12/12. Conservative final
+classification82=80 actual production-component groups +1 pinned-reference-integrity
+group +1 production-source audit; Windows11unshown components+1source. The earlier
+intermediate broad component label included group1; this clarification changes no
+assertion/evidence.89878 scalar comparisons and28reference charts are not extra QA.
+
+All28 E046 full numerical histories,19raw E046 paths and3 independently closed E045
+raw paths pass, including actual aliases/repeats/window boundaries/following jump,
+three states/envelope/firstminute/final/bits/display. Fractional duration200.5/201.5
+stores200/202 while retaining unrounded duration. In-flight changed file cannot
+publish/cache a number; deletion-after-index returnsstale. Five matched gameplay
+paths include actual admitted calculation and preserve K/score/judgement/accuracy/
+combo/slider/spinner/HP/audio/Rank histories; actual unshown Rank Back/Retry pass.
+C# combinedDouble exactly5.119475874072683; Single5.119475841522217,LEbfd2a340,
+display5.11. Largest chart Double oracle difference5.329070518200751e-15; all bits/
+display exact under declared binary32/64 profile, no original x86/JIT equivalence.
+
+Final full decoded log1981226bytes SHA256
+1838c8b78667bacbf164a30290895eebeb59c72d7a94d97ad7975ff093456340 retained gzip/base64;
+initial failure and passing intermediate log/source/results remain intact. New report,
+README, per-chart actual/expected values, source/gate manifests, coverage and owner-only
+checklist complete.85 old static prediction rows preserved/classified37finite,
+9conditional math,8engineering,30unsupported,1originalruntime dependency; all runtime
+unverified and no static row counted as a test. E04482/E045175/E04688 remain research
+authorities, not new independent production QA. No historical research/QA/old journal
+prefix rewritten. Final publication is documentation/evidence-only child of exact
+tested source, expected-head non-force main update after remote recheck. No original
+binary/Window/physical input/nonempty media/listening/manual qualification. No exception.
+Stop afterR17, noQA15/E047/R18 or deferred JoinedBezier investigation.

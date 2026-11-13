@@ -1,0 +1,88 @@
+{
+  "schema": "R17.Windows.gate.v1",
+  "baseline": "8a108427d0872f0feb5d5b4d4abeebe8e56f9990",
+  "testedSource": "9ae1fbde06812adeaeac7df61de23c4d4268a51c",
+  "run": "https://github.com/thgillwtnorizoh/ohno/actions/runs/43363603697",
+  "job": 131682658488,
+  "result": "PASS",
+  "sdk": "8.0.427",
+  "os": "Windows2022",
+  "utcInterval": "2026-11-13T04:09:05Z/2026-11-13T04:11:08Z",
+  "build": {
+    "configuration": "Release",
+    "rid": "win-x64",
+    "warnings": 0,
+    "errors": 0
+  },
+  "independentQA": {
+    "QA01": 90,
+    "QA03": 56,
+    "QA04": 43,
+    "QA05": 66,
+    "QA06": 99,
+    "QA07": 159,
+    "QA08": 115,
+    "QA09": 234,
+    "QA10": 229,
+    "QA11": 253,
+    "QA12": 286,
+    "QA13": 281,
+    "QA14": 264,
+    "total": 2175
+  },
+  "R17": {
+    "headlessGroups": 82,
+    "headlessComponents": 80,
+    "headlessSourceInspections": 1,
+    "windowsGroups": 12,
+    "windowsComponents": 11,
+    "windowsSourceInspections": 1,
+    "scalarComparisons": 89878,
+    "referenceCharts": 28,
+    "rawE046Fixtures": 19,
+    "rawE045Fixtures": 3,
+    "matchedGameplayPaths": 5,
+    "headlessReferenceIntegrity": 1
+  },
+  "productionHarnessWorkflowSha256": {
+    "reconstructed/CircleGame/Difficulty/CalculatedStars.cs": "0c3ad78c2cc1825c6d7d6688fe7db0919690f1d8727fcf5d1a51c35c8ca19610",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "7d572caa0be23cd75c326ff18d83a5e2b836f8a6e64d82e959042f03add5e927",
+    "reconstructed/CircleGame/Difficulty/CircleStarCalculator.cs": "c71724d56db019391209053bc6ef0fc493e1dacd43098c8dbc5f4c9433caf8c4",
+    "reconstructed/CircleGame/Difficulty/DifficultyAggregation.cs": "bf8f40f60b7e75d3746cddc514931e656221cb9013932c67318c477931c1f3e4",
+    "reconstructed/R17DevelopmentChecks/Program.cs": "81ae51a8470fe1dcb030823df35b334f292ab6b20e1f9d7792ba4cc72c5afa99",
+    "reconstructed/R17DevelopmentChecks/R17DevelopmentChecks.csproj": "5ab8a1a483c72ba8fdbff95a303a60816a439c74123668949572cb703df46b8b",
+    "reconstructed/R17DevelopmentChecks/build_reference.py": "798a08b90c63fd05f7a0c31954bf77d78d06bf6da090dd38231dd436b0afd1e9",
+    "reconstructed/R17DevelopmentChecks/reference-inputs.json": "67961dd52e45ed9a5011dafbcb45c52fe3cc2abc2f80d5daf51d7192d9bac18b",
+    "reconstructed/R17WindowsChecks/Program.cs": "e145d23d25b37fe925283663a758a8dcf6dd5c3de224928936f6461c783d0072",
+    "reconstructed/R17WindowsChecks/R17WindowsChecks.csproj": "62f3ac1250d3b179572a5181d2734f301d2782aa89b11fdc3044d0c2eaba2594",
+    ".github/workflows/r04-build.yml": "6a259b68e831617a29d0f94d91d902781a4bab1c60e05b6489b4112681e183e8",
+    "reconstructed/CircleGame/Program.cs": "171d7a424eceb62b808b70e2442808747d13174b2139b13d5130d7f034db804a",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "edce25f1f70def0fa5204112190ed584fa9d680c06e767f27c6c7f74abe133be"
+  },
+  "decodedFullLog": {
+    "bytes": 1981226,
+    "sha256": "1838c8b78667bacbf164a30290895eebeb59c72d7a94d97ad7975ff093456340",
+    "transport": "original UTF8/BOM/CRLF; gzip mtime0 then base64"
+  },
+  "initialFailedSource": "4fed05378db3225df2fff9cc6830d597ea5687d3",
+  "initialFailedRun": 43361892216,
+  "humanWindowMediaInputListening": "NOT RUN",
+  "historicalResearchQAUnchanged": true,
+  "researchControlsNotNewQA": true,
+  "combinedResult": {
+    "expectedDouble": 5.119475874072683,
+    "actualDouble": 5.119475874072683,
+    "cachedSingleAsDouble": 5.119475841522217,
+    "singleBitsLittleEndian": "bfd2a340",
+    "display": "5.11★",
+    "actualAggregates": [
+      2336.2016888390717,
+      435.7016415760794,
+      199.5590921792781
+    ]
+  },
+  "referenceHashPolicy": "LF-normalized UTF8 Git-source bytes; mathematical JSON values unchanged",
+  "intermediatePassingSource": "d21c75e4113e92b7d6265c84fb217f91ab88ecd7",
+  "intermediatePassingRun": 43362390795,
+  "classificationClarification": "Group1 validates the pinned reference transport/data integrity. It is counted separately from actual production component and production source-inspection groups; no test assertion changed."
+}
