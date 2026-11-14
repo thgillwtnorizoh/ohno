@@ -1636,3 +1636,16 @@ corrected only test object order, keeping production stacking unchanged. Local
 compressed results/summary retained. No original research repeated or old evidence
 changed. Next: exact-source integrated Windows gate and sealed delivery. Work1
 independent new-source QA and owner/original runtime remain pending. C001 OPEN.
+
+Issue#3 exact-source Windows gate VERIFIED at2d776dac175c608e213dbd523c9d237c9411ec8c:
+43595153711/job132447966714 SUCCESS, actualSDK8.0.428/runtime8.0.34,Release0warnings/
+0errors,full2309historical named QA/0fail. C4375/4375;retained P299,C001264,
+stack43heads+394integration and finite106+4PASS. Local independent P1093PASS.
+Artifact14113958938,67870674bytes,digest6c5d308fcaf78856c4840957e4d0fccc8597ff56483af610d0c76afef78bd390;
+https://github.com/thgillwtnorizoh/ohno/actions/runs/43595153711/artifacts/14113958938.
+Selected raw log/step/count/runtime/artifact evidence sealed in windows.json; full
+log remains GitHub-hosted, artifact not launched. Final evidence-only child changes
+no source/test/fixture/workflow and skips redundant CI. Updated report/status/
+coverage/dependency/discrepancy; historical prefixes preserved. Work1 independent
+C actual-source QA next, owner/runtime NOT RUN, C001 OPEN. Bounded execution stops
+at successful integrated delivery, with no unrelated investigation or scope waiver.

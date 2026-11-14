@@ -98,3 +98,9 @@ retained C001264/264, historical2309 and retained suites, stacking43+394 and fin
 106+4 regression PASS. Work1's original fixture values remain unchanged; v9 P4
 oracle scope is dispatch only. Independent new-source P QA and owner/runtime remain
 PENDING. No Catmull, full legacy/editor/exceptional/zero-path or star expansion.
+
+Issue#3 C delta: explicit Catmull0, original Single polynomial/asymmetric stencils,
+50 endpoint pairs per control span with preserved duplicates/flags, shared tail/
+cumulative/traversal/checkpoint/stack/input/sound/health/NewCombo integrated at
+2d776dac.4375development+exactWindows full gate PASS.13admitted/6engineering rejects;
+independent C and owner/runtime qualification PENDING; comprehensive C001 OPEN.

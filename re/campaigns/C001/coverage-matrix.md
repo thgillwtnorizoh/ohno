@@ -129,3 +129,11 @@ No comprehensive slider/C001 closure. See verification/06-perfect-circle-product
 
 Machine-readable delta: catmull/coverage-delta.json. Historical base coverage.json
 and earlier rows preserved; no comprehensive feature/version/slider row closed.
+
+## Issue#3 Work2 implementation delta — 2026-11-14
+
+Finite C implementation2d776dac now supplies Catmull0 and shared prepared consumers.
+Development4375PASS/19dispositions (13admissions,6engineering exclusions); exact
+Windows full gate43595153711 PASS. Work1 original19fixtures/evidence unchanged.
+INDEPENDENT C new-source verification PENDING; original-runtime/owner NOT RUN.
+No full legacy/editor/exceptional/all-slider or C001 closure implied.

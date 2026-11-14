@@ -75,3 +75,9 @@ original-behavior/07-catmull-rom.md. Work2 integration and independent QA requir
 Native x86 arithmetic is NOT VERIFIED; projected large-coordinate knot gaps are a
 precision diagnostic, not an observed original-runtime discrepancy. Prior D14,
 Joined Bézier and19 owner star discrepancies preserved without revision.
+
+Issue#3 finite C gap follow-up: production2d776dac admits13finite corpus controls
+and rejects6explicit engineering cases;4375development and exact Windows gate pass.
+No new development discrepancy retained after correcting test-only positive-stack
+object order. Original research/test expectations unchanged. Independent C verdict
+and original runtime remain pending; no broad C001 discrepancy closure claimed.

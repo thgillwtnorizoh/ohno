@@ -61,3 +61,15 @@ against unchanged05-perfect-circle/21 fixtures. Return reproduced discrepancies 
 Work2 under Issue #2. Owner qualifies the real package later. No unrelated C001
 research loop or new campaign starts here. Read the compact numbered report and
 both journals/matrices/registers; fetch/reconcile main before a non-force publication.
+
+## Issue#3 finite C checkpoint — 2026-11-14
+
+Source2d776dac175c608e213dbd523c9d237c9411ec8c VERIFIED development/Windows delivery.
+C4375/4375 across19dispositions=13admissions+6explicit engineering rejections;
+Windows43595153711/job132447966714 SUCCESS, SDK8.0.428/runtime8.0.34,Release0/0;
+all2309historical QA and retained C001264/P299/stack43+394/finite106+4PASS.
+Portable artifact14113958938 available; see08-issue3-catmull-integration.md and
+catmull-development/windows.json. Local retained independent P1093PASS.
+No original runtime/owner acceptance; Work1 independent C actual-source QA pending.
+Finite C integrates shared geometry/time/identity/consumers; excluded precision/
+empty/error/editor/legacy variants remain disclosed. C001 OPEN.
