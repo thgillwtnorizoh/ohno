@@ -62,3 +62,9 @@ Issue#3 Work2 handoff: source2d776dac and08-issue3-catmull-integration implement
 finite C dependency with4375development/Windows full gate PASS. Next dependency:
 Work1 independently checks actual C production against unchanged19fixture packet.
 Coordinate/zero/empty/exception/editor/legacy and owner-runtime limitations remain.
+
+C001 checkpoint08 C reference QA: exact2d776dac,5782/5782PASS (13admissions,
+6engineering exclusions),retained P1093PASS. No new finite discrepancy; original
+19fixtures unchanged. Same session previously implemented C; separate-reviewer
+authorship NOT VERIFIED and remains an acceptance dependency. See verification/
+08-catmull-production.md. Original/owner runtime and broader C001 remain OPEN.

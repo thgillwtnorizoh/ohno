@@ -81,3 +81,9 @@ and rejects6explicit engineering cases;4375development and exact Windows gate pa
 No new development discrepancy retained after correcting test-only positive-stack
 object order. Original research/test expectations unchanged. Independent C verdict
 and original runtime remain pending; no broad C001 discrepancy closure claimed.
+
+C001 checkpoint08 C reference QA: exact2d776dac,5782/5782PASS (13admissions,
+6engineering exclusions),retained P1093PASS. No new finite discrepancy; original
+19fixtures unchanged. Same session previously implemented C; separate-reviewer
+authorship NOT VERIFIED and remains an acceptance dependency. See verification/
+08-catmull-production.md. Original/owner runtime and broader C001 remain OPEN.

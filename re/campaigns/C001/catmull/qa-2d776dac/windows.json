@@ -1,0 +1,115 @@
+{
+  "source": "2d776dac175c608e213dbd523c9d237c9411ec8c",
+  "run": 43595153711,
+  "job": 132447966714,
+  "suites": [
+    {
+      "suite": "QA15 HEADLESS",
+      "passed": 95,
+      "failed": 0
+    },
+    {
+      "suite": "QA15 WINDOWS",
+      "passed": 39,
+      "failed": 0
+    },
+    {
+      "suite": "HEADLESS COMPONENT TESTS",
+      "passed": 90,
+      "failed": 0
+    },
+    {
+      "suite": "QA03 SLIDER TESTS",
+      "passed": 56,
+      "failed": 0
+    },
+    {
+      "suite": "QA04 GEOMETRY TESTS",
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "suite": "QA05 SPINNER TESTS",
+      "passed": 66,
+      "failed": 0
+    },
+    {
+      "suite": "QA06 ACCOUNTING TESTS",
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "suite": "QA07 HEALTH TESTS",
+      "passed": 159,
+      "failed": 0
+    },
+    {
+      "suite": "QA08 NEWCOMBO TESTS",
+      "passed": 115,
+      "failed": 0
+    },
+    {
+      "suite": "QA09 HITSOUND TESTS",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "suite": "QA10 SLIDER SOUND TESTS",
+      "passed": 229,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 CONTINUOUS TESTS",
+      "passed": 247,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 WINDOWS EMPTY",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "QA12",
+      "passed": 274,
+      "failed": 0
+    },
+    {
+      "suite": "QA12 WINDOWS",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 HEADLESS",
+      "passed": 257,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 WINDOWS",
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 HEADLESS",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 WINDOWS",
+      "passed": 30,
+      "failed": 0
+    }
+  ],
+  "passed": 2309,
+  "selected": [
+    "2026-11-14T12:30:33.5328161Z 8.0.428 [C:\\Program Files\\dotnet\\sdk]\r",
+    "2026-11-14T12:30:35.8050842Z 8.0.428\r",
+    "2026-11-14T12:30:55.6139973Z     0 Warning(s)\r",
+    "2026-11-14T12:30:55.6140327Z     0 Error(s)\r",
+    "2026-11-14T12:33:44.9997992Z C001 DEVELOPMENT: 264/264 PASS\r",
+    "2026-11-14T12:33:46.7477682Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution\r",
+    "2026-11-14T12:33:48.5758345Z C001 stacking actual production: 18/18 loaded; 43 head checks; 0 gaps\r",
+    "2026-11-14T12:33:50.1085351Z C001 independent integration: 394/394 PASS; 0 failures\r",
+    "2026-11-14T12:33:51.9970082Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions\r",
+    "2026-11-14T12:34:02.9320887Z C001: 106/106 original-contract fields match; 0 gaps; 4/4 engineering controls PASS; 10 diagnostic-only probes; original runtime NOT RUN\r"
+  ]
+}

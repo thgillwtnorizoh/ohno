@@ -137,3 +137,9 @@ Development4375PASS/19dispositions (13admissions,6engineering exclusions); exact
 Windows full gate43595153711 PASS. Work1 original19fixtures/evidence unchanged.
 INDEPENDENT C new-source verification PENDING; original-runtime/owner NOT RUN.
 No full legacy/editor/exceptional/all-slider or C001 closure implied.
+
+C001 checkpoint08 C reference QA: exact2d776dac,5782/5782PASS (13admissions,
+6engineering exclusions),retained P1093PASS. No new finite discrepancy; original
+19fixtures unchanged. Same session previously implemented C; separate-reviewer
+authorship NOT VERIFIED and remains an acceptance dependency. See verification/
+08-catmull-production.md. Original/owner runtime and broader C001 remain OPEN.

@@ -117,3 +117,9 @@ bodies/regions,61 assertions/13 inherited hashes PASS; repeat extraction identic
 Original x86 precision/zero scheduling/legacy/editor/exceptional breadth NOT VERIFIED.
 Production untouched; no Windows/full regression repeated. Work2 finite C integration
 is next, then independent actual-source QA. C001 and owner/runtime gates remain OPEN.
+
+C001 checkpoint08 C reference QA: exact2d776dac,5782/5782PASS (13admissions,
+6engineering exclusions),retained P1093PASS. No new finite discrepancy; original
+19fixtures unchanged. Same session previously implemented C; separate-reviewer
+authorship NOT VERIFIED and remains an acceptance dependency. See verification/
+08-catmull-production.md. Original/owner runtime and broader C001 remain OPEN.

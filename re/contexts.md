@@ -2572,3 +2572,20 @@ remain unresolved. Next bounded actor Work2: finite C integration using shared
 L/B/P consumers/stack contracts and Windows gate; then Work1 independent actual-source
 QA. Stop this research at verified published handoff. C001 subsystem OPEN; original
 runtime equivalence and owner qualification unverified; no acceptance claim.
+
+## C001 Work1 checkpoint08 — finite C reference QA — 2026-11-14
+
+Starting d7572749011bf10bf82c3fe42377ee793f035e58; exact production2d776dac175c608e213dbd523c9d237c9411ec8c
+in detached worktree. Reused original07 report/19 unchanged c353b83 fixtures; no
+original extraction. New reference-only helper5782/5782PASS,13admissions/6engineering
+exclusions; retained P1093PASS,19fixture regeneration PASS. Linux8.0.427/8.0.33.
+Every expected pair/flag/length/control, movement/time/repeat/checkpoint identity,
+actual session/sound/health/NewCombo/resource and C stack probes checked. No new
+finite discrepancy. Existing Windows43595153711 corroborated2309historical QA/
+0fail and retained stages; no full rerun or new runtime/GUI/audio/owner claim.
+Reviewer continuity explicitly disclosed: this session authored C in previous Work2
+turn. Independent pre-production expectations used, no copied polynomial oracle;
+separate-reviewer authorship NOT VERIFIED. Fresh reviewer remains an acceptance
+dependency. Report verification/08-catmull-production.md and new helper/compressed
+results published; historical evidence and journal prefixes retained. C001 OPEN;
+stop bounded reference QA here; no production changes or unrelated expansion.
