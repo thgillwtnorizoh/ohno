@@ -136,3 +136,10 @@ Separate-reviewer gate now has independent evidence; Headquarters/owner acceptan
 is not implied. Earlier continuity limitation remains historical. Original native
 runtime/GUI/audio/physical input/owner and broader compatibility remain NOT VERIFIED.
 No production changes or Windows/full rerun; C001 and subsystem OPEN.
+
+Issue#5 independent QA checkpoint10 (2026-11-14): exact8c5ba835,9/10 focused
+assertions PASS/1FAIL. Stable malformed CircleSize containing "changed since
+indexing" is falsely reported changed-input/fingerprint-changed. Actual hashes and
+bytes unchanged; two default JSON scans deterministic. See verification/10-corpus-
+audit-diagnostic.md and corpus-audit-qa/. Work2 taxonomy correction required before
+Issue#5 closure; remaining independent scope pending. No production edits; C001 OPEN.

@@ -2619,3 +2619,24 @@ audit and new report; append-only registers/status/coverage/journal only. Publis
 SHA is introducing Git commit. No authorized exception needed. C001 OPEN; subsystem
 OPEN. Next Headquarters checkpoint review and owner matched-runtime qualification;
 stop this bounded separate review, no new research/implementation scope.
+
+## C001 Work1 checkpoint10 — CorpusAudit diagnostic discrepancy — 2026-11-14
+
+Issue#5;starting55cb969e3e300b5905867235ed34af9d8197e824,exact successful source
+8c5ba835f260401a56dea27367c6a6e9c55e9d84 in clean detached checkout. Read rules,
+issue,README/Work2checkpoint and actual tool links/stages. No production changes.
+Self-authored3synthetic charts through real CLI:10assertions,9PASS/1FAIL on Linux
+SDK8.0.427/runtime8.0.33. CircleSize:"changed since indexing" (invalid numeric)
+falsely labels canonical changed-input/fingerprint-changed; normal invalid numeric
+labels malformed. Inputs/hash snapshots unchanged. Root cause arbitrary exception
+message substring checked before typed/stage classification. Minimal probe/data/
+results and report10 published; no copied Work2 oracle or expected-value rewrite.
+Default canary privacy/private-path opt-in, deterministic repeat, exact clean source,
+read hash and stage denominator checks PASS. Existing focused CI43611606831 exact
+source SUCCESS corroborated;239per-platform evidence reused, not new independent
+execution. Stop at reproducible discrepancy; remaining mode/object/duplicate/
+resource/cancellation/symlink/mutation independent challenges NOT RUN this cycle.
+Work2 correction and Work1 recheck required; Issue#5 not ready for closure. Owner
+collection absent,Issue#4 runtime/GUI/audio/physical input/health calibration NOT
+VERIFIED. Late offset untouched,C001 OPEN. Historical records preserved except
+append-only current register/journal tails. No proprietary corpus or media used.
