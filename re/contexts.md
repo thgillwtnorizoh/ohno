@@ -2589,3 +2589,33 @@ separate-reviewer authorship NOT VERIFIED. Fresh reviewer remains an acceptance
 dependency. Report verification/08-catmull-production.md and new helper/compressed
 results published; historical evidence and journal prefixes retained. C001 OPEN;
 stop bounded reference QA here; no production changes or unrelated expansion.
+
+## C001 Work1 checkpoint09 — fresh separate Catmull reviewer — 2026-11-14
+
+Starting/live main dff713ba1c118c9164e990606d3717b150c239d8; exact tested production
+2d776dac175c608e213dbd523c9d237c9411ec8c in detached worktree. Fresh delegated reviewer
+authored neither production nor prior5782 verifier and requested no author reasoning.
+Read instructions/Issue3/original07/static packet/manifest/actual source/prior08 and
+records. Separate source-and-test verdict VERIFIED CHECKPOINT for finite C; no new
+production defect reproduced.13 prior admissions/6engineering exclusions retained.
+
+New22/22 targeted checks PASS (300 signed/duplicate endpoints in one Hermite-basis
+aggregate; leading duplicate lobe, flags, both trim threshold sides,64/65 controls/
+head insertion, coordinate cap, signed fractions, pre-cancel, historical/marker
+boundary and exact three-traversal checkpoint schedule). Debian13 Linux x64
+SDK8.0.427/runtime8.0.33. Initial21/22 invalid exact midpoint assumption preserved;
+inherited per-piece integer clock explains sub-ms position shifts; revised explicit
+clock-resolution bound passes, no production/old expectation edit. Prior5782 seal,
+unchanged c353b83 nineteen-fixture packet and exact production-source hashes PASS.
+
+Critiqued verifier correlated movement/checkpoint/producer comparisons, count versus
+profile breadth, six errors versus original behavior, native precision, sparse
+consumer boundaries and source lease; report09-catmull-fresh-review.md documents
+limits. Reused stored Windows43595153711/2309historical QA0fail and prior P1093;
+no new Windows/full gate, original extraction/client, GUI/audio/physical input or
+owner run. Source pair/flags/length/consumer/renderer contracts reviewed; no runtime
+equivalence beyond component execution. Added FreshReview helper/results/provenance/
+audit and new report; append-only registers/status/coverage/journal only. Publishing
+SHA is introducing Git commit. No authorized exception needed. C001 OPEN; subsystem
+OPEN. Next Headquarters checkpoint review and owner matched-runtime qualification;
+stop this bounded separate review, no new research/implementation scope.

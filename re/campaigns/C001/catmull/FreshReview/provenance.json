@@ -1,0 +1,32 @@
+{
+  "startingSha": "dff713ba1c118c9164e990606d3717b150c239d8",
+  "exactTestedProduction": "2d776dac175c608e213dbd523c9d237c9411ec8c",
+  "reviewerSeparation": "Fresh delegated reviewer did not author production or prior verifier; no author reasoning requested. Repository evidence and original-static packet were the basis.",
+  "reusedPrior5782ResultSha256": "7f2050b0dbef5fd5f570fe66beecc0398a41544c9a13b4a1077e02e66781198a",
+  "reusedWindowsRun": 43595153711,
+  "reusedWindowsJob": 132447966714,
+  "reusedWindowsCounts": "2309 historical QA, 0 failures; stored corroboration reused, no new remote raw-log retrieval",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "host": "Debian13 Linux x64",
+  "productionAndResearchBytePreservation": true,
+  "newChecks": 22,
+  "newFailures": 0,
+  "originalRuntime": "NOT RUN",
+  "sourceSha256": {
+    "re/campaigns/C001/catmull/Independent/Program.cs": "890ab7e2c01182cfba611ec5dd031d180c6a057c8bf315a7f01d9ed02c750f5d",
+    "re/campaigns/C001/catmull/manifest.json": "e611919b297c90ed79f3a8fd6706fc55312bb32898f5481b013e39c68b296f9d",
+    "re/campaigns/C001/catmull/static-evidence.json": "12585e16584e1b77f1fbb8f917274df102281d1f7563e5ef9dff851aa68fffd3",
+    "reconstructed/CircleGame/Difficulty/CalculatedStars.cs": "0c3ad78c2cc1825c6d7d6688fe7db0919690f1d8727fcf5d1a51c35c8ca19610",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "cca7c29f9275bbbe355d1cea208b32099a4ba2ee820d6557f61829c17febfb6e",
+    "reconstructed/CircleGame/Difficulty/CircleStarCalculator.cs": "c71724d56db019391209053bc6ef0fc493e1dacd43098c8dbc5f4c9433caf8c4",
+    "reconstructed/CircleGame/Difficulty/DifficultyAggregation.cs": "bf8f40f60b7e75d3746cddc514931e656221cb9013932c67318c477931c1f3e4",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "514ed74f58aa1c0ad65dfe08f47a6e2ed90538c8fac708a085d60df9f277378f",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "cbb5a7556c02b73a690e2e17537cb5e0c57c653d0df10dab3e5eff8e45bc77b5",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "483e4f3e6665e4922bb891d4f3606a584ff55f997b45be03ef77533279dd5faa",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487"
+  }
+}

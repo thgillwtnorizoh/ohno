@@ -1,0 +1,23 @@
+PASS leading head and interior duplicate retained:150 pairs
+PASS all300 signed/duplicate endpoints vs independent Hermite basis
+PASS flags at49/99/149 only
+PASS duplicate span has curved interior rather than zero shortcut
+PASS leading duplicate lobe midpoint=-1
+PASS trim inside1e-4 threshold removes final marked pair
+PASS trim outside1e-4 threshold retains tiny marked pair
+PASS 64 normalized controls produce3150 pairs
+PASS 65 controls reject
+PASS head insertion exceeding64 rejects
+PASS inclusive positive coordinate admission boundary
+PASS inclusive negative coordinate admission boundary
+PASS one float beyond coordinate bound rejects
+PASS nonfinite controls reject
+PASS cancelled preparation throws
+PASS three traversals keep tick phase across50 pieces:1500/2000/2500/3000/3500/3964
+PASS three traversal checkpoint kinds
+MIDPOINT OBSERVATIONS <100.161705, 0>;<99.96237, 0>;<100.161705, 0>
+PASS forward/reverse midpoint positions within two integer-clock milliseconds
+PASS three traversal duration and odd endpoint
+PASS signed fractional parsing truncates toward zero
+PASS lowercase c excluded by explicit marker engineering profile
+PASS historical Load still excludes C

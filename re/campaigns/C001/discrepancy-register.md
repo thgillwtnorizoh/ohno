@@ -87,3 +87,16 @@ C001 checkpoint08 C reference QA: exact2d776dac,5782/5782PASS (13admissions,
 19fixtures unchanged. Same session previously implemented C; separate-reviewer
 authorship NOT VERIFIED and remains an acceptance dependency. See verification/
 08-catmull-production.md. Original/owner runtime and broader C001 remain OPEN.
+
+## Checkpoint09 — separate-reviewer finite C assessment — 2026-11-14
+
+Fresh reviewer authored neither production nor prior verifier. Exact2d776dac source
+review +22/22 focused actual-production checks PASS, including independent Hermite
+endpoints, signed/duplicate/trim/engineering boundaries and fixed three-traversal
+checkpoint schedule. No finite defect reproduced; prior5782 result seal and original
+19fixture packet/source identities verified;13admissions/6engineering exclusions
+unchanged. See verification/09-catmull-fresh-review.md and catmull/FreshReview/.
+Separate-reviewer gate now has independent evidence; Headquarters/owner acceptance
+is not implied. Earlier continuity limitation remains historical. Original native
+runtime/GUI/audio/physical input/owner and broader compatibility remain NOT VERIFIED.
+No production changes or Windows/full rerun; C001 and subsystem OPEN.

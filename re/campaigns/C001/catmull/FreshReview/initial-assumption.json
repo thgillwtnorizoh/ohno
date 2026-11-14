@@ -1,0 +1,99 @@
+{
+  "testedProduction": "2d776dac175c608e213dbd523c9d237c9411ec8c",
+  "runtime": "8.0.33",
+  "separateReviewer": true,
+  "originalRuntime": "NOT RUN",
+  "maxHermiteEndpointError": 2.6973982585332124E-06,
+  "checks": 22,
+  "failed": 1,
+  "results": [
+    {
+      "name": "leading head and interior duplicate retained:150 pairs",
+      "pass": true
+    },
+    {
+      "name": "all300 signed/duplicate endpoints vs independent Hermite basis",
+      "pass": true
+    },
+    {
+      "name": "flags at49/99/149 only",
+      "pass": true
+    },
+    {
+      "name": "duplicate span has curved interior rather than zero shortcut",
+      "pass": true
+    },
+    {
+      "name": "leading duplicate lobe midpoint=-1",
+      "pass": true
+    },
+    {
+      "name": "trim inside1e-4 threshold removes final marked pair",
+      "pass": true
+    },
+    {
+      "name": "trim outside1e-4 threshold retains tiny marked pair",
+      "pass": true
+    },
+    {
+      "name": "64 normalized controls produce3150 pairs",
+      "pass": true
+    },
+    {
+      "name": "65 controls reject",
+      "pass": true
+    },
+    {
+      "name": "head insertion exceeding64 rejects",
+      "pass": true
+    },
+    {
+      "name": "inclusive positive coordinate admission boundary",
+      "pass": true
+    },
+    {
+      "name": "inclusive negative coordinate admission boundary",
+      "pass": true
+    },
+    {
+      "name": "one float beyond coordinate bound rejects",
+      "pass": true
+    },
+    {
+      "name": "nonfinite controls reject",
+      "pass": true
+    },
+    {
+      "name": "cancelled preparation throws",
+      "pass": true
+    },
+    {
+      "name": "three traversals keep tick phase across50 pieces:1500/2000/2500/3000/3500/3964",
+      "pass": true
+    },
+    {
+      "name": "three traversal checkpoint kinds",
+      "pass": true
+    },
+    {
+      "name": "forward/reverse analytic midpoint positions",
+      "pass": false
+    },
+    {
+      "name": "three traversal duration and odd endpoint",
+      "pass": true
+    },
+    {
+      "name": "signed fractional parsing truncates toward zero",
+      "pass": true
+    },
+    {
+      "name": "lowercase c excluded by explicit marker engineering profile",
+      "pass": true
+    },
+    {
+      "name": "historical Load still excludes C",
+      "pass": true
+    }
+  ]
+}
