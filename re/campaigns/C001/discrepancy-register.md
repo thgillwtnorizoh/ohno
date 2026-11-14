@@ -42,3 +42,12 @@ RESOLVED for the tested finite profile, with historical failure files unchanged.
 No new stacking discrepancy found. early-time-break still fails the same historical
 and canonical HealthChart nonoverlap guard; no health acceptance for that fixture.
 General C001/owner/runtime and all unrelated discrepancies remain OPEN.
+
+## C001-D13 — Perfect-circle admission/preparation gap, 2026-11-14
+
+OPEN: pinned original recognizes P and has exact-three circular sampling plus
+count/collinear L/B fallbacks. Current canonical geometry uses Boolean L/B and
+rejects P; source-inspected at b413f6f (no new production execution). Finite original
+handoff/21 mathematical fixtures now published. No runtime equivalence or zero/
+editor/exceptional closure. Sampled chord G differs from analytic arc length;
+Work2 must not substitute requested length/circular extension or fitted math.

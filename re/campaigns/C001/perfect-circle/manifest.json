@@ -1,0 +1,2199 @@
+{
+  "arithmetic": "Projected binary32 stores, Python binary64 atan2/sin/cos/sqrt; original x86 intermediate/JIT/transcendental precision NOT VERIFIED",
+  "cases": [
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 99.99999904632568,
+        "analyticLengthUsedOnlyForSampling": 100.53096491487338,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.353678703308105,
+          16.707350730895996,
+          25.061028480529785,
+          33.414706230163574,
+          41.768378257751465,
+          50.12205696105957,
+          58.475735664367676,
+          66.82940769195557,
+          75.18308544158936,
+          83.53676319122314,
+          91.89043521881104,
+          99.99999904632568
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          68.0318603515625,
+          100.24202728271484
+        ],
+        "preparedSegments": [
+          [
+            [
+              132,
+              100
+            ],
+            [
+              130.9096221923828,
+              108.28221130371094
+            ]
+          ],
+          [
+            [
+              130.9096221923828,
+              108.28221130371094
+            ],
+            [
+              127.71281433105469,
+              116.0
+            ]
+          ],
+          [
+            [
+              127.71281433105469,
+              116.0
+            ],
+            [
+              122.6274185180664,
+              122.6274185180664
+            ]
+          ],
+          [
+            [
+              122.6274185180664,
+              122.6274185180664
+            ],
+            [
+              116.0,
+              127.71281433105469
+            ]
+          ],
+          [
+            [
+              116.0,
+              127.71281433105469
+            ],
+            [
+              108.28221130371094,
+              130.9096221923828
+            ]
+          ],
+          [
+            [
+              108.28221130371094,
+              130.9096221923828
+            ],
+            [
+              100.0,
+              132.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              132.0
+            ],
+            [
+              91.71778869628906,
+              130.9096221923828
+            ]
+          ],
+          [
+            [
+              91.71778869628906,
+              130.9096221923828
+            ],
+            [
+              84.0,
+              127.71281433105469
+            ]
+          ],
+          [
+            [
+              84.0,
+              127.71281433105469
+            ],
+            [
+              77.3725814819336,
+              122.6274185180664
+            ]
+          ],
+          [
+            [
+              77.3725814819336,
+              122.6274185180664
+            ],
+            [
+              72.28718566894531,
+              116.0
+            ]
+          ],
+          [
+            [
+              72.28718566894531,
+              116.0
+            ],
+            [
+              69.09037780761719,
+              108.28221130371094
+            ]
+          ],
+          [
+            [
+              69.09037780761719,
+              108.28221130371094
+            ],
+            [
+              68.0318603515625,
+              100.24202728271484
+            ]
+          ]
+        ],
+        "radius": 32.0,
+        "rawSegmentCount": 12,
+        "rawVertices": [
+          [
+            132,
+            100
+          ],
+          [
+            130.9096221923828,
+            108.28221130371094
+          ],
+          [
+            127.71281433105469,
+            116.0
+          ],
+          [
+            122.6274185180664,
+            122.6274185180664
+          ],
+          [
+            116.0,
+            127.71281433105469
+          ],
+          [
+            108.28221130371094,
+            130.9096221923828
+          ],
+          [
+            100.0,
+            132.0
+          ],
+          [
+            91.71778869628906,
+            130.9096221923828
+          ],
+          [
+            84.0,
+            127.71281433105469
+          ],
+          [
+            77.3725814819336,
+            122.6274185180664
+          ],
+          [
+            72.28718566894531,
+            116.0
+          ],
+          [
+            69.09037780761719,
+            108.28221130371094
+          ],
+          [
+            68,
+            100
+          ]
+        ],
+        "samplingInteger": 12,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 100.24411392211914
+      },
+      "id": "semicircle-positive",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/semicircle-positive.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 100,
+      "sha256": "511e53627d7491222cc6259ef02e34081340dd950e16ace77b8240b923f87947",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 100.00000190734863,
+        "analyticLengthUsedOnlyForSampling": 100.53097050993131,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.353678703308105,
+          16.707350730895996,
+          25.061028480529785,
+          33.414706230163574,
+          41.768381118774414,
+          50.1220588684082,
+          58.47573757171631,
+          66.8294095993042,
+          75.18309211730957,
+          83.53676414489746,
+          91.89044666290283,
+          100.00000190734863
+        ],
+        "endAngle": -3.1415928284353534,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          68.0318603515625,
+          99.75797271728516
+        ],
+        "preparedSegments": [
+          [
+            [
+              132,
+              100
+            ],
+            [
+              130.9096221923828,
+              91.71778869628906
+            ]
+          ],
+          [
+            [
+              130.9096221923828,
+              91.71778869628906
+            ],
+            [
+              127.71281433105469,
+              84.0
+            ]
+          ],
+          [
+            [
+              127.71281433105469,
+              84.0
+            ],
+            [
+              122.6274185180664,
+              77.3725814819336
+            ]
+          ],
+          [
+            [
+              122.6274185180664,
+              77.3725814819336
+            ],
+            [
+              116.0,
+              72.28718566894531
+            ]
+          ],
+          [
+            [
+              116.0,
+              72.28718566894531
+            ],
+            [
+              108.28221130371094,
+              69.09037017822266
+            ]
+          ],
+          [
+            [
+              108.28221130371094,
+              69.09037017822266
+            ],
+            [
+              100.0,
+              68.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              68.0
+            ],
+            [
+              91.71778869628906,
+              69.09037780761719
+            ]
+          ],
+          [
+            [
+              91.71778869628906,
+              69.09037780761719
+            ],
+            [
+              84.0,
+              72.28718566894531
+            ]
+          ],
+          [
+            [
+              84.0,
+              72.28718566894531
+            ],
+            [
+              77.3725814819336,
+              77.37258911132812
+            ]
+          ],
+          [
+            [
+              77.3725814819336,
+              77.37258911132812
+            ],
+            [
+              72.28718566894531,
+              84.0
+            ]
+          ],
+          [
+            [
+              72.28718566894531,
+              84.0
+            ],
+            [
+              69.09037017822266,
+              91.7177963256836
+            ]
+          ],
+          [
+            [
+              69.09037017822266,
+              91.7177963256836
+            ],
+            [
+              68.0318603515625,
+              99.75797271728516
+            ]
+          ]
+        ],
+        "radius": 32.0,
+        "rawSegmentCount": 12,
+        "rawVertices": [
+          [
+            132,
+            100
+          ],
+          [
+            130.9096221923828,
+            91.71778869628906
+          ],
+          [
+            127.71281433105469,
+            84.0
+          ],
+          [
+            122.6274185180664,
+            77.3725814819336
+          ],
+          [
+            116.0,
+            72.28718566894531
+          ],
+          [
+            108.28221130371094,
+            69.09037017822266
+          ],
+          [
+            100.0,
+            68.0
+          ],
+          [
+            91.71778869628906,
+            69.09037780761719
+          ],
+          [
+            84.0,
+            72.28718566894531
+          ],
+          [
+            77.3725814819336,
+            77.37258911132812
+          ],
+          [
+            72.28718566894531,
+            84.0
+          ],
+          [
+            69.09037017822266,
+            91.7177963256836
+          ],
+          [
+            68,
+            100
+          ]
+        ],
+        "samplingInteger": 12,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": -3.1415928284353534,
+        "unadjustedChordLength": 100.24411678314209
+      },
+      "id": "semicircle-negative",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/semicircle-negative.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 100,
+      "sha256": "ad8da25bd8f5e9169ff748550f1ba12b0eca3f4b201b1cb2357a6825be943842",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 26.0000057220459,
+        "analyticLengthUsedOnlyForSampling": 28.2743349313815,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          16.970561981201172,
+          26.0000057220459
+        ],
+        "endAngle": -4.71238915523025,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          100.38478088378906,
+          106.38478088378906
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              94.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              94.0
+            ],
+            [
+              94.0,
+              100.0
+            ]
+          ],
+          [
+            [
+              94.0,
+              100.0
+            ],
+            [
+              100.38478088378906,
+              106.38478088378906
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 3,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            94.0
+          ],
+          [
+            94.0,
+            100.0
+          ],
+          [
+            100,
+            106
+          ]
+        ],
+        "samplingInteger": 3,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": -4.71238915523025,
+        "unadjustedChordLength": 25.455842971801758
+      },
+      "id": "major-negative",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/major-negative.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 26,
+      "sha256": "63d188532535dc7392f2de77e86f64a894be6638f4de0a3582f2459813031eee",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 4.0,
+        "analyticLengthUsedOnlyForSampling": 6.283185307179586,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          4.0
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          98.0,
+          100.0
+        ],
+        "preparedSegments": [
+          [
+            [
+              102,
+              100
+            ],
+            [
+              98.0,
+              100.0
+            ]
+          ]
+        ],
+        "radius": 2.0,
+        "rawSegmentCount": 1,
+        "rawVertices": [
+          [
+            102,
+            100
+          ],
+          [
+            98,
+            100
+          ]
+        ],
+        "samplingInteger": 0,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 4.0
+      },
+      "id": "sampling-zero",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/sampling-zero.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 4,
+      "sha256": "30fc5e2405228dd8a4acba99769ec4014213e41f04d2c99958044da8c30e0f1b",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 6.0,
+        "analyticLengthUsedOnlyForSampling": 9.42477796076938,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          6.0
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          97.0,
+          100.0
+        ],
+        "preparedSegments": [
+          [
+            [
+              103,
+              100
+            ],
+            [
+              97.0,
+              100.0
+            ]
+          ]
+        ],
+        "radius": 3.0,
+        "rawSegmentCount": 1,
+        "rawVertices": [
+          [
+            103,
+            100
+          ],
+          [
+            97,
+            100
+          ]
+        ],
+        "samplingInteger": 1,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 6.0
+      },
+      "id": "sampling-one",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/sampling-one.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 6,
+      "sha256": "844100e815ba5bd959ac92df97d2029d4d08185612830de733803b313942a156",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.000001668930054,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          12.000001668930054
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          97.51471710205078,
+          103.51471710205078
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              106.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              106.0
+            ],
+            [
+              97.51471710205078,
+              103.51471710205078
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "sampling-two-trim",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/sampling-two-trim.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 12,
+      "sha256": "304854b80bf05742f3160cc2d58ece6ed6ed0f3ee47d6ae91c1fb17416346f04",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 24.000003814697266,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          24.000003814697266
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          89.02943420410156,
+          95.02943420410156
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              106.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              106.0
+            ],
+            [
+              89.02943420410156,
+              95.02943420410156
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "chord-extension",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/chord-extension.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 24,
+      "sha256": "d6ee6eba2831787447051d6db8fac1d3e5953d562ac04ba9d8a74f849e66e29f",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 0.0,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": false,
+        "preparedEnd": null,
+        "preparedSegments": [],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "vanishing-length",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/vanishing-length.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 5e-05,
+      "sha256": "4a3ea43bba5b4b1ddead3fdca9dbe246e7b2e339b50618117b8012ed0218f443",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 199.99999380111694,
+        "analyticLengthUsedOnlyForSampling": 200.0058333166621,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          150,
+          10100.5
+        ],
+        "cumulativeLengths": [
+          8.000238418579102,
+          16.000463485717773,
+          24.000696182250977,
+          32.00092887878418,
+          40.001166343688965,
+          48.00139617919922,
+          56.001625061035156,
+          64.00185775756836,
+          72.00209999084473,
+          80.00232410430908,
+          88.00255393981934,
+          96.0027904510498,
+          104.00302791595459,
+          112.00325679779053,
+          120.00349140167236,
+          128.00372791290283,
+          136.0039644241333,
+          144.0041904449463,
+          152.0044288635254,
+          160.00468158721924,
+          168.00489139556885,
+          176.0051212310791,
+          184.00536346435547,
+          192.0055751800537,
+          199.99999380111694
+        ],
+        "endAngle": -1.555796701774273,
+        "exactCenter": [
+          "150",
+          "20201/2"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          299.9941711425781,
+          100.99991607666016
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              108.00015258789062,
+              99.962890625
+            ]
+          ],
+          [
+            [
+              108.00015258789062,
+              99.962890625
+            ],
+            [
+              116.00032043457031,
+              99.9326171875
+            ]
+          ],
+          [
+            [
+              116.00032043457031,
+              99.9326171875
+            ],
+            [
+              124.00051879882812,
+              99.9091796875
+            ]
+          ],
+          [
+            [
+              124.00051879882812,
+              99.9091796875
+            ],
+            [
+              132.000732421875,
+              99.8916015625
+            ]
+          ],
+          [
+            [
+              132.000732421875,
+              99.8916015625
+            ],
+            [
+              140.00096130371094,
+              99.8798828125
+            ]
+          ],
+          [
+            [
+              140.00096130371094,
+              99.8798828125
+            ],
+            [
+              148.00119018554688,
+              99.875
+            ]
+          ],
+          [
+            [
+              148.00119018554688,
+              99.875
+            ],
+            [
+              156.0014190673828,
+              99.876953125
+            ]
+          ],
+          [
+            [
+              156.0014190673828,
+              99.876953125
+            ],
+            [
+              164.00164794921875,
+              99.884765625
+            ]
+          ],
+          [
+            [
+              164.00164794921875,
+              99.884765625
+            ],
+            [
+              172.0018768310547,
+              99.8994140625
+            ]
+          ],
+          [
+            [
+              172.0018768310547,
+              99.8994140625
+            ],
+            [
+              180.0020751953125,
+              99.919921875
+            ]
+          ],
+          [
+            [
+              180.0020751953125,
+              99.919921875
+            ],
+            [
+              188.00225830078125,
+              99.947265625
+            ]
+          ],
+          [
+            [
+              188.00225830078125,
+              99.947265625
+            ],
+            [
+              196.00242614746094,
+              99.98046875
+            ]
+          ],
+          [
+            [
+              196.00242614746094,
+              99.98046875
+            ],
+            [
+              204.0025634765625,
+              100.0205078125
+            ]
+          ],
+          [
+            [
+              204.0025634765625,
+              100.0205078125
+            ],
+            [
+              212.00265502929688,
+              100.0673828125
+            ]
+          ],
+          [
+            [
+              212.00265502929688,
+              100.0673828125
+            ],
+            [
+              220.00271606445312,
+              100.1201171875
+            ]
+          ],
+          [
+            [
+              220.00271606445312,
+              100.1201171875
+            ],
+            [
+              228.0027313232422,
+              100.1796875
+            ]
+          ],
+          [
+            [
+              228.0027313232422,
+              100.1796875
+            ],
+            [
+              236.00270080566406,
+              100.2451171875
+            ]
+          ],
+          [
+            [
+              236.00270080566406,
+              100.2451171875
+            ],
+            [
+              244.0026092529297,
+              100.31640625
+            ]
+          ],
+          [
+            [
+              244.0026092529297,
+              100.31640625
+            ],
+            [
+              252.00245666503906,
+              100.3955078125
+            ]
+          ],
+          [
+            [
+              252.00245666503906,
+              100.3955078125
+            ],
+            [
+              260.00225830078125,
+              100.48046875
+            ]
+          ],
+          [
+            [
+              260.00225830078125,
+              100.48046875
+            ],
+            [
+              268.001953125,
+              100.5712890625
+            ]
+          ],
+          [
+            [
+              268.001953125,
+              100.5712890625
+            ],
+            [
+              276.0015869140625,
+              100.6689453125
+            ]
+          ],
+          [
+            [
+              276.0015869140625,
+              100.6689453125
+            ],
+            [
+              284.00115966796875,
+              100.7724609375
+            ]
+          ],
+          [
+            [
+              284.00115966796875,
+              100.7724609375
+            ],
+            [
+              292.0006103515625,
+              100.8828125
+            ]
+          ],
+          [
+            [
+              292.0006103515625,
+              100.8828125
+            ],
+            [
+              299.9941711425781,
+              100.99991607666016
+            ]
+          ]
+        ],
+        "radius": 10000.625,
+        "rawSegmentCount": 25,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            108.00015258789062,
+            99.962890625
+          ],
+          [
+            116.00032043457031,
+            99.9326171875
+          ],
+          [
+            124.00051879882812,
+            99.9091796875
+          ],
+          [
+            132.000732421875,
+            99.8916015625
+          ],
+          [
+            140.00096130371094,
+            99.8798828125
+          ],
+          [
+            148.00119018554688,
+            99.875
+          ],
+          [
+            156.0014190673828,
+            99.876953125
+          ],
+          [
+            164.00164794921875,
+            99.884765625
+          ],
+          [
+            172.0018768310547,
+            99.8994140625
+          ],
+          [
+            180.0020751953125,
+            99.919921875
+          ],
+          [
+            188.00225830078125,
+            99.947265625
+          ],
+          [
+            196.00242614746094,
+            99.98046875
+          ],
+          [
+            204.0025634765625,
+            100.0205078125
+          ],
+          [
+            212.00265502929688,
+            100.0673828125
+          ],
+          [
+            220.00271606445312,
+            100.1201171875
+          ],
+          [
+            228.0027313232422,
+            100.1796875
+          ],
+          [
+            236.00270080566406,
+            100.2451171875
+          ],
+          [
+            244.0026092529297,
+            100.31640625
+          ],
+          [
+            252.00245666503906,
+            100.3955078125
+          ],
+          [
+            260.00225830078125,
+            100.48046875
+          ],
+          [
+            268.001953125,
+            100.5712890625
+          ],
+          [
+            276.0015869140625,
+            100.6689453125
+          ],
+          [
+            284.00115966796875,
+            100.7724609375
+          ],
+          [
+            292.0006103515625,
+            100.8828125
+          ],
+          [
+            300,
+            101
+          ]
+        ],
+        "samplingInteger": 25,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": -1.5757960351476035,
+        "storedPreparedKind": 3,
+        "sweep": 0.019999333373330375,
+        "unadjustedChordLength": 200.00582313537598
+      },
+      "id": "near-collinear",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/near-collinear.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 200,
+      "sha256": "9593cc6d4e589bdf2c8772ed2c9eb4de175b310510bbf12db842694065841c54",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.000001668930054,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          12.000001668930054
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          97.51471710205078,
+          103.51471710205078
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              106.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              106.0
+            ],
+            [
+              97.51471710205078,
+              103.51471710205078
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "version-5-arc",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/version-5-arc.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 12,
+      "sha256": "c0d974370467f09e131f76fe039894b9c73d4574420f94e56471ff65cf551daf",
+      "version": 5
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.000001668930054,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          12.000001668930054
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          97.51471710205078,
+          103.51471710205078
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              106.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              106.0
+            ],
+            [
+              97.51471710205078,
+              103.51471710205078
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "version-9-arc",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/version-9-arc.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 12,
+      "sha256": "fd3642a82b5421bbdef0713859a10e7eae5724ba1d2bec3d0d83b719554a149d",
+      "version": 9
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.000001668930054,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [
+          8.485280990600586,
+          12.000001668930054
+        ],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          97.51471710205078,
+          103.51471710205078
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100.0,
+              106.0
+            ]
+          ],
+          [
+            [
+              100.0,
+              106.0
+            ],
+            [
+              97.51471710205078,
+              103.51471710205078
+            ]
+          ]
+        ],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "repeat-two",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/repeat-two.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 2,
+      "requested": 12,
+      "sha256": "44e0ddf20a13ab8fc17c27b34a168b3176e624fe49016b1e12fbfcf41a5916e1",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 8.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          4.0,
+          8.0
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ],
+          [
+            104,
+            100
+          ],
+          [
+            102,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          100.0,
+          100.0
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              104,
+              100
+            ]
+          ],
+          [
+            [
+              104,
+              100
+            ],
+            [
+              100.0,
+              100.0
+            ]
+          ]
+        ],
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            104,
+            100
+          ],
+          [
+            102,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 3,
+        "unadjustedChordLength": 6.0
+      },
+      "id": "collinear-backtrack",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/collinear-backtrack.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 8,
+      "sha256": "9e96f8ec92d997a9e07a3a4c979e46022d69fba892ec150c1cf1f9e0c03092b4",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.000001668930054,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          8.485280990600586,
+          12.000001668930054
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            106,
+            100
+          ],
+          [
+            100,
+            106
+          ],
+          [
+            106,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          102.48528289794922,
+          103.51471710205078
+        ],
+        "preparedSegments": [
+          [
+            [
+              106,
+              100
+            ],
+            [
+              100,
+              106
+            ]
+          ],
+          [
+            [
+              100,
+              106
+            ],
+            [
+              102.48528289794922,
+              103.51471710205078
+            ]
+          ]
+        ],
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100,
+            106
+          ],
+          [
+            106,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 3,
+        "unadjustedChordLength": 16.970561981201172
+      },
+      "id": "closed-degenerate",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/closed-degenerate.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 12,
+      "sha256": "7e27606ea8b5efb327a28cd54268303d8270f44739cc0aae3dc263be22d5c955",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 0.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          0.0,
+          0.0
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          100,
+          100
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              100,
+              100
+            ]
+          ],
+          [
+            [
+              100,
+              100
+            ],
+            [
+              100,
+              100
+            ]
+          ]
+        ],
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 3,
+        "unadjustedChordLength": 0.0
+      },
+      "id": "all-coincident",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/all-coincident.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 1,
+      "sha256": "5c234bb42aa444e0e8bf48ae0adff2ad20d4c1737e349c3abe70991496163b50",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 12.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          12.0
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ],
+          [
+            104,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          112.0,
+          100.0
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              112.0,
+              100.0
+            ]
+          ]
+        ],
+        "rawSegmentCount": 1,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            104,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 2,
+        "unadjustedChordLength": 4.0
+      },
+      "id": "two-controls",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/two-controls.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 12,
+      "sha256": "5c1a7487d39485e8fbbc88c4685f9843e5c636f2ad860a14d3cbd76eb88df1a7",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 0.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": false,
+        "preparedEnd": null,
+        "preparedSegments": [],
+        "rawSegmentCount": 0,
+        "rawVertices": [
+          [
+            100,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 2,
+        "unadjustedChordLength": 0
+      },
+      "id": "singleton",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/singleton.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 1,
+      "sha256": "358081fe869f335e1317e034ad6c92595c8128a2d83cb2ab443775c29b7ca688",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 2.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          1.0,
+          2.0
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ],
+          [
+            101,
+            100
+          ],
+          [
+            102,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          102.0,
+          100.0
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              101,
+              100
+            ]
+          ],
+          [
+            [
+              101,
+              100
+            ],
+            [
+              102.0,
+              100.0
+            ]
+          ]
+        ],
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            101,
+            100
+          ],
+          [
+            102,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 3,
+        "unadjustedChordLength": 2.0
+      },
+      "id": "fractional-collinear",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/fractional-collinear.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 2,
+      "sha256": "25ef03a90889774d9844ba6621006e31cd8e1f26650af8db0be2aa52dc64f1bb",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "adjustedLength": 4.000003695487976,
+        "branch": "Bezier-fallback",
+        "cumulativeLengths": [
+          0.6542006731033325,
+          1.2132176756858826,
+          1.7192844152450562,
+          2.2253511548042297,
+          2.78436815738678,
+          4.000003695487976
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "helper": "M2d62, E032 cubic",
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          103.4291000366211,
+          99.63794708251953
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              100.5,
+              100.421875
+            ]
+          ],
+          [
+            [
+              100.5,
+              100.421875
+            ],
+            [
+              101,
+              100.671875
+            ]
+          ],
+          [
+            [
+              101,
+              100.671875
+            ],
+            [
+              101.5,
+              100.75
+            ]
+          ],
+          [
+            [
+              101.5,
+              100.75
+            ],
+            [
+              102,
+              100.671875
+            ]
+          ],
+          [
+            [
+              102,
+              100.671875
+            ],
+            [
+              102.5,
+              100.421875
+            ]
+          ],
+          [
+            [
+              102.5,
+              100.421875
+            ],
+            [
+              103.4291000366211,
+              99.63794708251953
+            ]
+          ]
+        ],
+        "rawSegmentCount": 6,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            100.5,
+            100.421875
+          ],
+          [
+            101,
+            100.671875
+          ],
+          [
+            101.5,
+            100.75
+          ],
+          [
+            102,
+            100.671875
+          ],
+          [
+            102.5,
+            100.421875
+          ],
+          [
+            103,
+            100
+          ]
+        ],
+        "storedPreparedKind": 1,
+        "unadjustedChordLength": 3.4385688304901123
+      },
+      "id": "four-controls-modern",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/four-controls-modern.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 4,
+      "sha256": "ce0baaa6d103abcbe593928fbcd9934bd18f2015446468226af08f7b56097c8f",
+      "version": 14
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "branch": "Bezier-fallback",
+        "helper": "M2d64, inherited E032 only",
+        "lastParameter": "Single(199)/Single(200)",
+        "preparedGeometry": "NOT VERIFIED by this finite fixture; compatibility dispatch only",
+        "storedPreparedKind": 1,
+        "uniformSampleCount": 200
+      },
+      "id": "four-controls-v9-dispatch",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/four-controls-v9-dispatch.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 4,
+      "sha256": "8e310f132ab2df76dc6889800019ba4133e76c18ff184c054669d96e4936e890",
+      "version": 9
+    },
+    {
+      "classification": "RECONSTRUCTED finite mathematical prediction from CONFIRMED ORIGINAL static sites",
+      "expected": {
+        "branch": "runtime-row-error",
+        "normalCaller": "row error rethrown; validation/skip caller can skip row",
+        "preparedGeometry": "NOT PRODUCED; CLR exception identity NOT VERIFIED RUNTIME",
+        "site": "M28f7:1775 reads missing Y cell after successful X parse; token lacks colon"
+      },
+      "id": "malformed-coordinate",
+      "originalRuntime": "NOT RUN",
+      "path": "fixtures/malformed-coordinate.osu",
+      "production": "P path currently rejected; Work2 implementation pending",
+      "repeats": 1,
+      "requested": 4,
+      "sha256": "b40b7a315e80389c0e393e805ed0c7e6c0fab6b3588ed1e44895d604a2b4474c",
+      "version": 14
+    }
+  ],
+  "coordinateComparisonTolerance": 0.0001,
+  "lengthComparisonTolerance": 0.0001,
+  "schema": 1,
+  "source": "build_fixtures.py; exact rational centers and independent finite math"
+}

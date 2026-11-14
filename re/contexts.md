@@ -2477,3 +2477,34 @@ editor,other modes,P/C,19star differences,JoinedBezier and owner/runtime gates O
 Cycle stops at verified finite integration checkpoint; no unrelated research loop.
 Publication serialized against latest remote main; see committing Git history for
 exact checkpoint SHA. No rewrite/force-push; shared issue receives concise handoff.
+
+## C001 Work1 checkpoint05 — bounded Perfect-circle research — 2026-11-14
+
+UEP-001 rev2.1; user assignment starting/current main b413f6fdd0fa363be4e4c69572e3a7375c8bf4e5.
+Read standing/campaign records, reused E006/E032 and pinned C001 parser literal;
+inspected canonical Boolean L/B geometry contract only. No stacking repeat, Catmull,
+full legacy/star expansion, production edit or original/Windows runtime execution.
+
+CONFIRMED ORIGINAL static: P enum3, count<3 Linear/count>3 existing Bezier; exact
+three Single-cross zero uses Linear but retains preparedKind3. Recovered M2d6a/b/c
+circumcenter/radius/angles, Double wrap literal6.2831854820251465, analytic-length/8
+truncated sampling, n0/1 single chord, forced original endpoint and default flags.
+Shared E006 pass replaces analytic temporary with chord sum; final-chord trim/
+extension, empty output and zero-segment distinction preserved. Editor-only bounds
+and original precision/config/error uncertainties explicitly disclosed.
+
+Focused Python/Linux collection decoded15 selected bodies/regions,73 decisive site
+assertions and20 inherited hash comparisons PASS; repeat extraction byte-identical.
+21 exact synthetic fixtures plus rational-center/binary32 projection/discriminator
+checks PASS. Stored E006/E032 evidence checkers and new Python compilation PASS;
+no whole-EXE scan or full regression repeated. One transcribed640-literal offset
+0700 corrected to0701 after assertion failed, before successful generation.
+
+Added original-behavior/05-perfect-circle.md and perfect-circle/ tools, evidence,
+fixture manifest, exact bytes and handoff. Appended current matrices/registers and
+this journal only; historical evidence/tests/fixtures and old prefixes preserved.
+RECONSTRUCTED mathematical predictions are not original traces or production QA.
+Normal finite P implementation may proceed as Work2; independent actual-source QA
+follows. Zero/config/editor/legacy/exceptional and zero-path scheduling remain NOT
+VERIFIED; runtime/owner qualification pending. C001 OPEN. Stop at published verified
+research packet; no implementation in this execution. Publication SHA is in Git.

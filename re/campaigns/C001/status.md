@@ -78,3 +78,16 @@ nonoverlap rejection in both adapters; other17 fixtures have health identity che
 New verifier/helper and records only; no production or historical evidence edits.
 C001 and owner/runtime qualification OPEN; wider profiles/unrelated gaps unchanged.
 This bounded cycle ends at verified finite integration checkpoint; no new research.
+
+## Checkpoint05 — bounded Perfect-circle original research (2026-11-14)
+
+At starting b413f6f, no newer remote checkpoint. Published finite P handoff in
+original-behavior/05-perfect-circle.md and perfect-circle/:15 targeted original
+bodies,73 site assertions,20 inherited identity checks;21 hashed synthetic fixtures
+and finite mathematical expectations PASS. No production or original runtime run.
+P exact-three center/angle/sampling, count/collinear fallback, default flags and
+shared chord-length trim/extension recovered; conditional editor bounds disclosed.
+Work2 implementation/consumer QA is next. General legacy/editor/exceptional/zero-
+request and zero-path scheduling remain NOT VERIFIED; full C001 OPEN. No stacking
+repeat, Catmull, star investigation or redundant Windows gate. Historical records
+preserved; this is a research checkpoint, not subsystem/owner acceptance.

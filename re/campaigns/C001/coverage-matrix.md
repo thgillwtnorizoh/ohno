@@ -103,3 +103,12 @@ remain OPEN. Implementation source review and integrated Windows gate pending.
 No broader row is marked complete. Historical17-gap results and pending statements
 remain chronological evidence. Latest finite component verdict is in verification/
 04-stacking-integration.md; full campaign remains OPEN.
+
+## Perfect-circle delta — checkpoint05, 2026-11-14
+
+| Feature IDs | Original evidence | Implementation / QA | Runtime |
+|---|---|---|---|
+| 044,046–055: finite P interpretation and geometry dependencies | Exact-three circumcircle, sign/literal wrap, count-based sampling, L/B fallback/flags, shared tail output;73 targeted assertions and21 mathematical fixtures | Handoff published; P still rejected by current production. Work2 integration and independent actual-source QA pending | NOT RUN |
+
+No broad slider/legacy row is closed. Zero/config/editor/exceptional and downstream
+zero-path boundaries remain explicit. See original-behavior/05-perfect-circle.md.

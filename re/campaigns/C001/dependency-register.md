@@ -29,3 +29,12 @@ strict43/43heads plus394 supplemental invariants/input checks. Exact-source exis
 Windows gate corroborated. No new Work2 correction required by this bounded cycle.
 DEP05 remains OPEN for broader geometry/profiles; DEP09 owner qualification remains
 pending. Existing overlapping-health admission is retained and explicitly disclosed.
+
+## DEP05 Perfect-circle handoff — 2026-11-14
+
+Finite fresh ordinary P mechanism and21 reference fixtures are available under
+original-behavior/05-perfect-circle.md and perfect-circle/. Work2 must extend the
+current Boolean geometry-kind contract and share existing segment/cumulative/
+traversal/time/identity consumers. Full legacy/editor/exceptional and zero-request/
+zero-path scheduling remain NOT VERIFIED; no modern fallback or original safe
+sample-count cap is justified. Next gate is finite production implementation/QA.
