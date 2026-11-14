@@ -64,3 +64,14 @@ Work2 Windows prose saysSDK8.0.427/runtime8.0.33 and windows.json sdk says8.0.42
 retrieved job43575301213/132388122215 selected8.0.428, actual result JSON8.0.34.
 See perfect-circle/verification-a6c7dabc/windows-corroboration.json. No historical
 rewrite, altered test result or production change. Local Linux QA is8.0.427/8.0.33.
+
+## C001-D15 — finite C implementation gap — 2026-11-14
+
+OPEN, SOURCE-INSPECTED at bbd59f0 (not production execution): canonical path-kind
+and marker admission support L/B/P but not C. Pinned original C emits50 uniform
+Catmull pieces per adjacent normalized pair, preserving duplicate spans and flags.
+Finite handoff/19 independent mathematical fixtures now available in catmull/ and
+original-behavior/07-catmull-rom.md. Work2 integration and independent QA required.
+Native x86 arithmetic is NOT VERIFIED; projected large-coordinate knot gaps are a
+precision diagnostic, not an observed original-runtime discrepancy. Prior D14,
+Joined Bézier and19 owner star discrepancies preserved without revision.

@@ -120,3 +120,12 @@ zero-path boundaries remain explicit. See original-behavior/05-perfect-circle.md
 | Finite canonical ordinary P and shared consumers | a6c7dabc65372f83641926b89384cd14b3813a71 | 1093/1093 assertions;17 admitted cases+4 explicit engineering rejections;retained43+394stacking PASS;existing Windows gate corroborated | v9P4 dispatch-only oracle;zero/empty/editor/legacy/exceptional/mode breadth and owner/runtime NOT VERIFIED |
 
 No comprehensive slider/C001 closure. See verification/06-perfect-circle-production.md.
+
+## Catmull-Rom research delta — checkpoint07, 2026-11-14
+
+| Feature / Dependencies | Original evidence | Implementation / QA | Runtime |
+|---|---|---|---|
+| C001-045; shared046–055 | C enum0; constructor normalization; asymmetric endpoint stencil; uniform polynomial,50 pieces per span; precision/order/flags; duplicate/zero/trim boundaries.8 bodies/61 sites/13 inherited hashes;19 mathematical fixtures PASS | Finite handoff available; Work2 implementation/consumer integration and independent actual-source verification PENDING | Original/owner NOT RUN |
+
+Machine-readable delta: catmull/coverage-delta.json. Historical base coverage.json
+and earlier rows preserved; no comprehensive feature/version/slider row closed.

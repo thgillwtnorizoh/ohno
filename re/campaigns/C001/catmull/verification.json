@@ -1,0 +1,48 @@
+{
+  "actor": "Work 1",
+  "assignment": "https://github.com/thgillwtnorizoh/ohno/issues/3",
+  "campaign": "C001",
+  "confidence": [
+    "CONFIRMED ORIGINAL static",
+    "RECONSTRUCTED finite mathematical predictions",
+    "ENGINEERING binary32 projection and tolerance"
+  ],
+  "environment": {
+    "dependencies": {
+      "dncil": "1.0.2",
+      "dnfile": "0.18.0",
+      "pefile": "2024.8.26"
+    },
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "exactInspectedSHA": "bbd59f0a4f709688fcb791abb0e5783649d952fe",
+  "failedAttempts": [
+    "Private inspection script named inspect.py shadowed stdlib inspect; renamed before successful collection, no accepted data generated"
+  ],
+  "notRun": [
+    "original CLR/client",
+    "Work2 C implementation",
+    "Windows build/full regression",
+    "GUI/audio/physical input",
+    "owner qualification"
+  ],
+  "publication": "Introducing Git commit; final remote verification checks published bytes",
+  "results": [
+    "recover.py pinned.zip static-evidence.json: PASS 61 sites / 8 selected methods / 13 inherited hashes",
+    "recover.py pinned.zip /tmp/catmull-repeat.json: PASS; cmp static-evidence.json /tmp/catmull-repeat.json: exit0",
+    "check.py /tmp/catmull-repeat.json: PASS 19 fixture hashes and finite/rational/projection/degenerate discriminators",
+    "build_fixtures.py --check: PASS19 (also invoked by check.py)",
+    "python -m py_compile re/campaigns/C001/catmull/*.py: exit0"
+  ],
+  "sourceAndEvidenceSHA256": {
+    "build_fixtures.py": "046f8c7bd94b0c1901e1589fdf689a3db2fac92ee8a00066010ca6d9773cdc92",
+    "check.py": "5008dd630149842e799e8b4d00df9d41eedcf00ea5794966a713674613b81655",
+    "manifest.json": "e611919b297c90ed79f3a8fd6706fc55312bb32898f5481b013e39c68b296f9d",
+    "recover.py": "83ff8145abae49cae9cdd18728e792cfa6800f6bb3846b49f49da39ca6b0e933",
+    "static-evidence.json": "12585e16584e1b77f1fbb8f917274df102281d1f7563e5ef9dff851aa68fffd3"
+  },
+  "startingSHA": "bbd59f0a4f709688fcb791abb0e5783649d952fe",
+  "status": "VERIFIED CHECKPOINT",
+  "subsystem": "OPEN"
+}

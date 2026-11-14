@@ -1,0 +1,21 @@
+osu file format v14
+
+[General]
+Mode:0
+StackLeniency:0
+[Metadata]
+Title:C001 C fractional-controls
+Artist:Independent mathematical control
+Creator:Project ohno Work 1
+Version:Catmull research
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+100,100,1000,2,0,C|100:100|101.9:100.9|102.9:100.1,1,2

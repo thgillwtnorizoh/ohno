@@ -105,3 +105,15 @@ Windows host SDK/runtime is8.0.428/8.0.34 (prose previously misstated); append-o
 correction in verification/06-perfect-circle-production.md. Local QA8.0.427/8.0.33.
 No original extraction, production changes or redundant Windows gate. Owner/runtime,
 v9P4 full oracle and broader excluded semantics remain pending. C001 OPEN.
+
+## Issue #3 — checkpoint07 finite Catmull-Rom handoff — 2026-11-14
+
+Work1 verified latest main bbd59f0a4f709688fcb791abb0e5783649d952fe and Issue#3.
+Original C enum0, normalized stencils, uniform polynomial/50 pieces per span,
+Single operation sites, span-end flags, no count/version fallback, and inherited
+length pass now documented at original-behavior/07-catmull-rom.md. Eight targeted
+bodies/regions,61 assertions/13 inherited hashes PASS; repeat extraction identical.
+19 synthetic hashed fixtures/rational and binary32 projected discriminators PASS.
+Original x86 precision/zero scheduling/legacy/editor/exceptional breadth NOT VERIFIED.
+Production untouched; no Windows/full regression repeated. Work2 finite C integration
+is next, then independent actual-source QA. C001 and owner/runtime gates remain OPEN.

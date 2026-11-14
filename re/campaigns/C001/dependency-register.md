@@ -46,3 +46,14 @@ unchanged stack43+394 PASS. No Work2 production correction required by this QA.
 DEP05 remains open for excluded compatibility/exceptional/zero-path families;
 DEP09 remains owner-only. Exact Windows host provenance corrected append-only to
 SDK8.0.428/runtime8.0.34; Linux independent QA8.0.427/8.0.33. No new CI requested.
+
+## DEP05 Catmull-Rom finite research handoff — 2026-11-14
+
+Issue#3 at bbd59f0: original-behavior/07-catmull-rom.md and catmull/19-fixture
+packet supply finite C mechanism. Work2 extends existing path-kind0 dispatch,
+raw/prepared identity and paired segments, preserves span-end flags and shared
+length/traversal/checkpoints/stack/input/audio/health/NewCombo consumers. Current
+L/B/P production preserved. Next gate: finite implementation and integrated Windows
+regression/build, followed by Work1 independent exact-source QA. No safe original
+allocation bound or x86 bit identity inferred; full exceptional/legacy/runtime and
+DEP09 owner qualification remain OPEN. No new P/stack research dependency.

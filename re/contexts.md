@@ -2540,3 +2540,35 @@ C001 OPEN; no owner/original runtime/GUI/audio/physical input, broad legacy/edit
 exceptional/zero-output/modes or star/JoinedBezier closure. Stop this bounded QA
 at finite independently verified checkpoint. Headquarters/owner qualification is
 next coordination dependency, not another automatic research/implementation loop.
+
+## C001 Work1 checkpoint07 — Issue #3 finite Catmull-Rom handoff — 2026-11-14
+
+Project ohno/C001/Work1/Issue#3;UEP-001rev2.1. Status VERIFIED CHECKPOINT (research).
+Starting/exact inspected main bbd59f0a4f709688fcb791abb0e5783649d952fe; published
+SHA is this entry's introducing Git commit and final handoff. Read rules/campaign/
+Issue#3/E006/E032/P/stack evidence; no Work2 production or historical file edits.
+
+CONFIRMED ORIGINAL: C literal->enum0; inherited truncation/head insertion preserves
+duplicates; no count or version fallback; p0 first duplicate,p3 final extrapolated;
+uniform Catmull polynomial and Single arithmetic sites;50 endpoint-pair pieces per
+span, every50th IsSubcurveEnd true/IsLinear false. No endpoint forcing. Common E006
+chord sum/trim/extension/zero-tail behavior reused. RECONSTRUCTED Fraction basis
+and explicit binary32 predictions discriminate asymmetric midpoint, duplicates,
+nonuniform spacing, overshoot, precision, trim/extension and zero/empty boundaries.
+
+Python3.12/Linux dnfile0.18.0/dncil1.0.2/pefile2024.8.26:61 original-site assertions,
+8 targeted methods/regions,13 inherited hashes PASS; twice-extracted evidence
+identical;19 exact fixture bytes and finite rational/projection checks PASS;Python
+compilation PASS. Private inspect.py name collision fixed before collection; no
+accepted evidence from failed attempt. Commands/hash provenance in catmull/verification.
+No full EXE scan, redundant P/stack tests, Windows/full regression, production C,
+original-runtime, GUI/audio/physical input or owner execution. NOT VERIFIED.
+
+Added original-behavior/07-catmull-rom.md,catmull tools/evidence/19fixtures/manifest/
+coverage delta; appended current registers/status/matrix and this journal. Production,
+historical tests/evidence and journal prefixes preserved. D15 C integration gap OPEN.
+Native x86 precision, legacy/editor/exceptional/zero scheduling and full compatibility
+remain unresolved. Next bounded actor Work2: finite C integration using shared
+L/B/P consumers/stack contracts and Windows gate; then Work1 independent actual-source
+QA. Stop this research at verified published handoff. C001 subsystem OPEN; original
+runtime equivalence and owner qualification unverified; no acceptance claim.

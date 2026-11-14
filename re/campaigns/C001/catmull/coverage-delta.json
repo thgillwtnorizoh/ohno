@@ -1,0 +1,21 @@
+{
+  "feature": "C001-045",
+  "related": [
+    "C001-046",
+    "C001-047",
+    "C001-048",
+    "C001-049",
+    "C001-050",
+    "C001-051",
+    "C001-052",
+    "C001-053",
+    "C001-054",
+    "C001-055"
+  ],
+  "original_evidence": "07-catmull-rom.md; static8 methods/61 sites/13 inherited identities",
+  "fixtures": "manifest.json;19 hashes and independent rational/projected expectations",
+  "implementation": "PENDING Work2; no production changes",
+  "independent_production_QA": "NOT RUN; depends on Work2",
+  "original_runtime": "NOT RUN",
+  "disposition": "FINITE RESEARCH HANDOFF; broader C001 OPEN"
+}
