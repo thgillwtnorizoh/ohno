@@ -94,3 +94,14 @@ for each .osu occurrence:
 group source cohorts; count duplicate captured hashes without skipping occurrences
 emit deterministic path-private JSON and summary; disclose partial scans
 ```
+
+## Verified publication seal — 2026-11-14
+
+Successful exact-source focused CI8c5ba835:239/239PASS on Windows and Linux,
+SDK8.0.428/runtime8.0.34,0skipped/0compiler warnings/errors. Downloaded artifact
+hashes/source markers and12fixture report seals verified. Full mandatory checkpoint
+and package links: ../campaigns/C001/09-issue5-corpus-audit.md relative to the
+reconstructed root (canonical path reconstructed/campaigns/C001/09-issue5-corpus-audit.md).
+Initial SDK-selection CI failure preserved; no tool/production/test weakening.
+Owner/original runtime and C001 remain OPEN. This supersedes initial CI-pending
+statements chronologically without rewriting the record.

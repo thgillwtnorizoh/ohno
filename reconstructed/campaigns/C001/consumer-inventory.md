@@ -30,3 +30,12 @@ parse, M28ff timing, M28ea postprocess, M28eb/M28ec stacks, M144a geometry/timin
 M2d62/M2d64 samplers, M2902 NewCombo, M48de/M48e0 ordinary factory. Their general
 mode/default/malformed branches still require Work 1 inventory. E005 corrects
 E004's historical Taiko/standard dispatch attribution; do not use E004 alone.
+
+## Issue #5 diagnostic consumer — 2026-11-14
+
+CorpusAudit links unchanged production ChartFingerprint/LocalChartCatalog.Index,
+OsuDocument/ReadStage/type priority and CatalogChart.LoadCanonicalGameplay; legacy
+Load(string) is not audit admission. Actual ScoreConfiguration, fresh session with
+health disabled and HealthChart.FromMap/Validate are independent readiness stages.
+No UI/audio/clock/offset or R17 math change. Exact8c5ba835 focused Windows/Linux
+239PASS each; owner/independent Work1 tool QA pending. See09-issue5-corpus-audit.md.

@@ -1687,3 +1687,28 @@ no installed SDK. No tool/test execution or artifacts in that run; local exact-s
 239/239PASS with clean build stamp. Corrected only new workflow pattern to explicit
 [.] and[0-9] classes; local installed-SDK output discriminator PASS. Prior failure
 preserved, no source/expectation weakening; next focused CI must build/test/package.
+
+Issue#5 final UEP-001 VERIFIED CHECKPOINT: exact successful source8c5ba835f260401a56dea27367c6a6e9c55e9d84,
+following initial75bac849 tool and workflow-only SDK fix. Focused CI43611606831:
+Windowsjob132497651512/Linux132497651761 bothSUCCESS,239/239PASS EACH,0skipped,
+SDK8.0.428/runtime8.0.34 read from actual downloaded result files (dotnet--info
+host11.0.0 is not app runtime),0compiler warnings/errors; packages published.
+Downloaded Windowsartifact14120870195/309007bytes SHA256
+ceacd685f3bc3696922c1ed40dd67ff7130d556d2ee6fb71f3ac7ac5e9e14189;
+Linux14120093328/271913bytes SHA256
+f88b031058024ccd9fd69e8f68076a846a4ae88ef76e0f78455db3dd9f859b94.
+Both digests/sizes/clean source markers/runtime and12fixture report seals PASS.
+Actual downloaded Linux managed package executes QA1527/27canonical+consumer-ready
+on localruntime8.0.33; no original/game GUI execution. Exact local75bac849239PASS
+also sealed; first CI SDK-bootstrap failure retained, no source/test weakening.
+
+Final evidence-only publication changes no tool/test/production/workflow and skips
+redundant CI. Added final09-issue5-corpus-audit mandatory checkpoint and CI/result/
+coverage/dependency seals; appended campaign status/coverage/discrepancy/consumer
+inventory and this journal. Production/all historical fixtures and old journal
+prefixes preserved. Standalone tool and owner guide are runnable; no owner data
+redistributed. Work1 independent tool QA pending; owner larger corpus NOT PROVIDED/
+NOT RUN; Headquarters chooses one supported gap only after actual results. Timing
+observation deferred, R17/JoinedBezier unchanged. C001 subsystemOPEN; Issue#4 owner
+runtime remains separate, original equivalence/acceptance NOT VERIFIED. Stop at
+this verified functional audit delivery. Published SHA in introducing Git history.

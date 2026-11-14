@@ -104,3 +104,14 @@ Issue#3 C delta: explicit Catmull0, original Single polynomial/asymmetric stenci
 cumulative/traversal/checkpoint/stack/input/sound/health/NewCombo integrated at
 2d776dac.4375development+exactWindows full gate PASS.13admitted/6engineering rejects;
 independent C and owner/runtime qualification PENDING; comprehensive C001 OPEN.
+
+## Issue #5 audit instrumentation delta — 2026-11-14
+
+| Coverage | Evidence / Scope | Remaining |
+|---|---|---|
+| Read-only real-directory audit of actual indexing/canonical preparation | Exact8c5ba835;239focused checks each Windows/Linux; hashes, source features, primary no-spinner cohort, other modes/spinners, stage outcomes, safe error families, duplicates/resource/change/cancellation/bounds/privacy/CLI | Work1 independently verifies tool; owner collection NOT RUN |
+| Existing L/B/P/C/stack preparation exercised through tool |158unchanged synthetic charts/135canonical successes; six roots, duplicate runs byte-identical per build/platform;16mixed controls separate | No new semantic admission/compatibility or original-runtime coverage claimed |
+
+Canonical success and post-preparation consumer readiness remain distinct, including
+existing health-overlap exclusions. Machine-readable audit coverage and CI evidence
+are under reconstructed/CorpusAudit/. All broader C001/runtime gates remain OPEN.

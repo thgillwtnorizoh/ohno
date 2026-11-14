@@ -32,3 +32,15 @@ weaken old expectations silently.
 | D020 | VERIFIED COMPONENT / independent QA PENDING — `52c300a` | Work 1's 18 hashed fixtures provided 43 hand-derived prepared-head expectations, with 17 gaps on prior production. New Work 2 finite >5 CS5/AR5 ordinary full-range stack pass now yields 43/43 matching development assertions and 20 slider consumer checks in successful Windows run43540928098. Work 1's unchanged independent stacking runner has NOT been re-executed against the new source. This record supersedes D019's research blocker only for the declared finite profile; remaining modes/configurations and original runtime stay OPEN. |
 
 | D020 | VERIFIED COMPONENT / retained scheduling observation | P sampling-two-trim exposes inherited [1060,1030] checkpoint ordering and parentend1060, with one checkpoint credited by retained per-update completion. No timing fix or fixture edit; actual paired shared-contract histories match. Original runtime/owner comparison remains unverified. |
+
+## Issue #5 diagnostic dispositions — 2026-11-14
+
+| ID / Status | Evidence / Disposition |
+|---|---|
+| D021 — RESOLVED tooling bootstrap | First focused CI43611466103 at75bac849 failed before compilation due incorrect SDK regex; workflow-only correction8c5ba835 yields Windows/Linux239PASS each. Failed source/run/log hashes retained; no production defect inferred |
+| D022 — OPEN tool-verification/owner evidence | Corpus audit instrumentation verified by Work2, independent Work1 tool QA pending; actual owner collection not provided/run. No real-world compatibility rate inferred from synthetic fixtures |
+| Existing health-overlap boundary — OBSERVED, UNCHANGED |18stack fixtures canonically prepare, one fresh-health-source validation rejects overlap. Audit exposes independent stages; no compatibility repair or timing-offset diagnosis |
+
+Exception-code taxonomy is engineering and conservative; unknown production errors
+remain unclassified. No original-runtime error behavior inferred. R17/19 owner star
+differences/JoinedBezier remain untouched and OPEN. C001 remains OPEN.

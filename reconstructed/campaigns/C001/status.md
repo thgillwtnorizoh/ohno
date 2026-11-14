@@ -73,3 +73,21 @@ catmull-development/windows.json. Local retained independent P1093PASS.
 No original runtime/owner acceptance; Work1 independent C actual-source QA pending.
 Finite C integrates shared geometry/time/identity/consumers; excluded precision/
 empty/error/editor/legacy variants remain disclosed. C001 OPEN.
+
+## Issue #5 — verified read-only corpus audit — 2026-11-14
+
+Latest Work2 checkpoint: VERIFIED functional diagnostic tool, exact successful
+CI8c5ba835f260401a56dea27367c6a6e9c55e9d84; starting3a26667. Run43611606831:
+Windows/Linux239/239PASS each,0skipped,SDK8.0.428/runtime8.0.34,Release0warnings/
+0errors. Both downloaded packages and12fixture report seals verified; runnable
+owner procedure at reconstructed/CorpusAudit/README.md. Full UEP checkpoint09-
+issue5-corpus-audit.md. Initial75bac849 SDK-selection CI failed before compilation,
+then workflow-only corrected; evidence retained. No production behavior changed,
+so no redundant full historical Windows gate. Synthetic158fixtures/135canonical
+preparations plus16mixed controls; these are not owner's real collection statistics.
+
+Stop this bounded task. Work1 independent tool QA PENDING; owner actual collection
+NOT PROVIDED/NOT RUN; owner/original runtime/Issue#4 remain OPEN. Headquarters next
+selects one supported failure family from real results. Timing-offset investigation
+deferred, R17/JoinedBezier untouched. This latest diagnostic status supersedes prior
+pending implementation statements only within its declared scope; C001 OPEN.

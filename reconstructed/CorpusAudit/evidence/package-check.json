@@ -1,0 +1,24 @@
+{
+  "sourceHashes": {
+    "reconstructed/CorpusAudit/AuditRunner.cs": "5f8f9442595214436227fc85dc2f9532d0b942114b5518725ce665a95ee069e9",
+    "reconstructed/CorpusAudit/Program.cs": "6156fb9b825fe827afb836a99499689bf35b66012dace8364b871f847eed5012",
+    "reconstructed/CorpusAudit/CorpusAudit.csproj": "b1f6d38c8e0955740e2d91f38ee2dac3c5005efa69ba912de6f1f798cbb03eba",
+    "reconstructed/CorpusAuditChecks/Program.cs": "d6383f6fe18cb5bdf28499294faa70f5311667a5fc9637ffb6ace2cd78b97fb9",
+    "reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj": "f46ef6e1f296063832d0a250e11fcce3774ff73f2d1d00a2fb2a3152382e06f7",
+    ".github/workflows/corpus-audit.yml": "fdbca3c6132f90ad381e623f783fae4295cac61bdcbf1a42cb5716356c3f3803"
+  },
+  "downloadedLinuxPackageQA15": {
+    "exitCode": 0,
+    "canonicalSuccess": 27,
+    "consumerReady": 27,
+    "source": "8c5ba835f260401a56dea27367c6a6e9c55e9d84",
+    "localRuntime": "8.0.33",
+    "reportSHA256": "eb9b7a873565ee9ed3d76f365ebbe7f75c1f12301e0c4179cef8b3cc030718cd"
+  },
+  "productionUnchangedFrom": "3a26667bb80e085b17e0bfb6754176bbadd4d180",
+  "notRun": [
+    "owner collection",
+    "original runtime",
+    "Windows packaged DLL launch after publish (pre-publish actual Windows build tested)"
+  ]
+}

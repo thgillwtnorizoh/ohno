@@ -1,0 +1,2 @@
+# Preserve the exact downloaded Windows result bytes, including CRLF.
+evidence/windows-results.json -text whitespace=cr-at-eol
