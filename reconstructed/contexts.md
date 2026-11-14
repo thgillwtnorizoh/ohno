@@ -1549,3 +1549,38 @@ Joined Bézier. Full C001 OPEN. Next: Work 1 must independently execute its
 original stacking runner and review actual source/consumer mapping; corrections
 remain in Issue #1, avoiding a broad renewed research cycle. See
 `reconstructed/campaigns/C001/05-issue1-stacking-integration.md`.
+
+## C001 Work2 / Issue #2 — finite Perfect-circle integration, pre-Windows checkpoint
+
+Date2026-11-14; UEP-001rev2.1. Verified starting/currentmain702b81ff2f1cbfc64861fdc54072f2861babee2b.
+Read Issue#2, AGENTS/re Instruction, campaign records, Work1's05-perfect-circle and
+21-fixture packet; reused independently verified52c300a9 stacking/b413f6f evidence.
+One bounded deliverable: fresh finite P preparation through canonical consumers.
+No Catmull/editor/exceptional/general legacy/star expansion or original execution.
+
+Implemented enum path-kind overload with unchanged bool L/B adapter and historical
+string-loader admission. SourceKind/PreparedKind, normalized SourceControls, source
+circle operands and RawPath retain identity; existing stacking moves only prepared
+controls/segments/movements/checkpoints and remaps sidecars. P count fallbacks,
+exact Single cross, ordered Single center/radius, Double angles/wrap literal,
+n0/1 chord and bounded n-sampling join shared E006 length and existing traversal/
+tick/checkpoint/sound/health/NewCombo paths. Guards64controls/8192segments, finite
+positive output and cancellation are ENGINEERING, not original exceptional rules.
+
+Focused Linux SDK8.0.427/runtime8.0.33: new299/299 development checks,21 fixture
+dispositions (17finite gameplay/4explicit unsupported/malformed); retainedC001264/264;
+QA0443/43; unchanged independent stacking18/18loads43heads0gaps and394/394 integration;
+unchanged finite contract106/106+4/4,10probes not semantic passes. Fixture hashes/
+expected values unchanged. Local modified-tree hashes and commands recorded under
+perfect-development; emitted ancestry SHAs are not claims of a committed local test.
+Initial new-harness compile failed on missing CircleSoundPolicy operands/nullability,
+corrected only new harness. Initial 'all checkpoints succeed' assumption failed on
+sampling-two-trim: inherited schedule[1060,1030], parentend1060, one success/two due.
+Retained production behavior per E016/E022 and compared paired actual shared-contract
+session histories; no historical expectation, fixture, geometry or schedule changed.
+Both initial findings retained in compact records. These are Work2 checks; Work1's
+subsequent independent actual-source P verification remains pending.
+
+Next: one integrated exact-source Windows historical regression/Release/portable gate,
+including new P checks and retained stacking suites; then publish exact results,
+coverage/register delta and UEP checkpoint. Owner/original runtime NOT RUN. C001 OPEN.

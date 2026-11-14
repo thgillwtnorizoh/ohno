@@ -1,0 +1,770 @@
+{
+  "source": "702b81ff2f1cbfc64861fdc54072f2861babee2b",
+  "productionSource": "52c300a9b508567987331c54f51a0944f9c5b8fd",
+  "production": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "112519d7c38b7da8c9a4e61740e56b95b9d032fe50f99e256ece48587895714f",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "cbb5a7556c02b73a690e2e17537cb5e0c57c653d0df10dab3e5eff8e45bc77b5"
+  },
+  "runtime": ".NET 8.0.33",
+  "os": "Debian GNU/Linux 13 (trixie)",
+  "fixtures": 18,
+  "loaded": 18,
+  "checks": 43,
+  "gaps": 0,
+  "radius": 32.01312,
+  "step": 3.2013118,
+  "originalExecuted": false,
+  "humanQualification": "PENDING",
+  "results": [
+    {
+      "id": "circle-chain",
+      "sha256": "8bf14ba1762032ef2de1a1138e9f2d9f5e682369a4c0dd54387b6386382a27bf",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 2,
+          "expected": [
+            93.597374,
+            93.597374
+          ],
+          "actual": [
+            93.597374,
+            93.597374
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 1200,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "distance-equal-three",
+      "sha256": "c5d12f76c7d73ed76e462d576e3f417b3c1d61513c93fe3e0bbfcb9cae5cbe97",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 0,
+          "expected": [
+            103,
+            100
+          ],
+          "actual": [
+            103,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "distance-inside",
+      "sha256": "d458f3337135318595a0ecdeef773618d04d1d248f95c045b58cb1508981fa9b",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 0,
+          "expected": [
+            102,
+            100
+          ],
+          "actual": [
+            102,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "sha256": "e4897a777854b1dc70d857e2980421250b4c9221d6d8d42a162eb55d9210d5b2",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 0,
+          "expected": [
+            102,
+            103
+          ],
+          "actual": [
+            102,
+            103
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "time-equal",
+      "sha256": "39f53faae431f8f2c6bb3d4126e56c0b4db94b9417d7fd9e4d538e5fdce25df2",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1600,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "time-outside",
+      "sha256": "2549a3b9f8c20533fa3fb03ee069c448fe832f343a7c2dedcf82d97d625308ec",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1601,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "moving-anchor",
+      "sha256": "f21e20cc6c33f212c270c7b82e7c57a41e508e5bddd98a032e6dd1e805ed4afb",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 2,
+          "expected": [
+            93.597374,
+            93.597374
+          ],
+          "actual": [
+            93.597374,
+            93.597374
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1500,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 2000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "zero-leniency",
+      "sha256": "035c6e84c78c20c8ca6a2a8b2ca3f9265e4900f1e2bd58524b2321c594deb415",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "tail-negative",
+      "sha256": "3677038fab9effd652448183e3976ba00bcc4a4aaf042b518d9cec9b94c61bfe",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1600,
+          "heightPrediction": -1,
+          "expected": [
+            203.20131,
+            103.20131
+          ],
+          "actual": [
+            203.20131,
+            103.20131
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 1700,
+          "heightPrediction": -2,
+          "expected": [
+            206.40262,
+            106.402626
+          ],
+          "actual": [
+            206.40262,
+            106.402626
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "tail-selective",
+      "sha256": "064a4e1899e670c17ae48a9c3bc10ee9833e53ca904bb372341aa16ada2548d2",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1600,
+          "heightPrediction": -1,
+          "expected": [
+            203.20131,
+            103.20131
+          ],
+          "actual": [
+            203.20131,
+            103.20131
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 1650,
+          "heightPrediction": 0,
+          "expected": [
+            300,
+            100
+          ],
+          "actual": [
+            300,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 3,
+          "start": 1700,
+          "heightPrediction": -2,
+          "expected": [
+            206.40262,
+            106.402626
+          ],
+          "actual": [
+            206.40262,
+            106.402626
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "circle-before-slider",
+      "sha256": "2444fb47a4366d00d83bb0fc074820ee3a76236bd8f0e6ae009540784d5360f1",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "slider-chain",
+      "sha256": "cb1b81ab887f09342f57374b3a295e45eb472088cb30fad93ef084e7f8506112",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1600,
+          "heightPrediction": 0,
+          "expected": [
+            200,
+            100
+          ],
+          "actual": [
+            200,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "slider-start-boundary",
+      "sha256": "fcb0cd80db20de115c7319f747511d7d728ca078bd6912bd98ef6142509e745c",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 2100,
+          "heightPrediction": 0,
+          "expected": [
+            300,
+            100
+          ],
+          "actual": [
+            300,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "tail-even-repeat",
+      "sha256": "2723b3b193bc39b10469fcf4e0e0093e3f667dcdbe84e8c342d353083fb875b0",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 2100,
+          "heightPrediction": -1,
+          "expected": [
+            103.20131,
+            103.20131
+          ],
+          "actual": [
+            103.20131,
+            103.20131
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "early-time-break",
+      "sha256": "d22b146d95e850edad64e5e12b5947507a661b710f1112e81922af98af0f71f1",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            0,
+            100
+          ],
+          "actual": [
+            0,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1300,
+          "heightPrediction": 0,
+          "expected": [
+            300,
+            100
+          ],
+          "actual": [
+            300,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 2000,
+          "heightPrediction": 0,
+          "expected": [
+            200,
+            100
+          ],
+          "actual": [
+            200,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "bezier-tail",
+      "sha256": "a5840641017d20773f9674a4dd1d425bae6642047173bd0c3728402585281333",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1600,
+          "heightPrediction": -1,
+          "expected": [
+            203.20131,
+            103.20131
+          ],
+          "actual": [
+            203.20131,
+            103.20131
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "v6-circle-chain",
+      "sha256": "84307635379a12e1a0b6bdd84c3d2ab1de3e4b12b53c0c1c2d190ba93fba61aa",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 2,
+          "expected": [
+            93.597374,
+            93.597374
+          ],
+          "actual": [
+            93.597374,
+            93.597374
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "start": 1100,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 2,
+          "start": 1200,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    },
+    {
+      "id": "spinner-skip",
+      "sha256": "7565e3e6a08cb7a383fc50f359e7edea16caa04fecc26461f0e6e18eff69722e",
+      "error": null,
+      "observed": [
+        {
+          "index": 0,
+          "start": 1000,
+          "heightPrediction": 1,
+          "expected": [
+            96.79869,
+            96.79869
+          ],
+          "actual": [
+            96.79869,
+            96.79869
+          ],
+          "pass": true
+        },
+        {
+          "index": 1,
+          "skipped": "Spinner has no prepared-position field in production API"
+        },
+        {
+          "index": 2,
+          "start": 1200,
+          "heightPrediction": 0,
+          "expected": [
+            100,
+            100
+          ],
+          "actual": [
+            100,
+            100
+          ],
+          "pass": true
+        }
+      ],
+      "gaps": 0
+    }
+  ]
+}

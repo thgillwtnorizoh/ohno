@@ -6,6 +6,8 @@ on:
     paths:
       - reconstructed/campaigns/C001/**
       - reconstructed/C001DevelopmentChecks/**
+      - reconstructed/C001PerfectChecks/**
+      - re/campaigns/C001/perfect-circle/**
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
       - reconstructed/R07DevelopmentChecks/**
@@ -407,6 +409,22 @@ jobs:
           dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
 
+      - name: Check C001 finite Perfect-circle geometry and consumers
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001PerfectChecks/C001PerfectChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-perfect-results.json"
+          exit $LASTEXITCODE
+
+      - name: Preserve independent finite stacking regression
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project re/campaigns/C001/stacking/Headless/C001.Stacking.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-stacking-heads.json"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet run --project re/campaigns/C001/stacking/Integration/C001.StackingIntegration.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-stacking-integration.json"
+          exit $LASTEXITCODE
+
       - name: Publish C001 Windows x64 application for owner qualification
         if: ${{ success() }}
         shell: pwsh
@@ -416,6 +434,9 @@ jobs:
           git rev-parse HEAD | Set-Content "${{ runner.temp }}/ohno-c001-windows/SOURCE-COMMIT.txt"
           Copy-Item reconstructed/campaigns/C001/corpus "${{ runner.temp }}/ohno-c001-windows/C001Corpus" -Recurse
           Copy-Item reconstructed/campaigns/C001/corpus-manifest.json "${{ runner.temp }}/ohno-c001-windows/"
+          Copy-Item re/campaigns/C001/perfect-circle/fixtures "${{ runner.temp }}/ohno-c001-windows/C001PerfectCorpus" -Recurse
+          Copy-Item re/campaigns/C001/perfect-circle/manifest.json "${{ runner.temp }}/ohno-c001-windows/PERFECT-MANIFEST.json"
+          Copy-Item reconstructed/campaigns/C001/perfect-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/PERFECT-QUALIFICATION.md"
           Copy-Item reconstructed/campaigns/C001/human-qualification.md "${{ runner.temp }}/ohno-c001-windows/"
 
       - name: Verify independent C001 finite original-contract predictions
@@ -434,4 +455,7 @@ jobs:
             ${{ runner.temp }}/ohno-c001-windows/
             reconstructed/campaigns/C001/development-results.json
             ${{ runner.temp }}/c001-independent-results.json
+            ${{ runner.temp }}/c001-perfect-results.json
+            ${{ runner.temp }}/c001-stacking-heads.json
+            ${{ runner.temp }}/c001-stacking-integration.json
           if-no-files-found: warn

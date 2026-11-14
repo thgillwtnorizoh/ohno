@@ -1,0 +1,17 @@
+{
+  "fixture": "sampling-two-trim",
+  "initial_assumption": "Perfectly following ball necessarily succeeds on every scheduled checkpoint",
+  "actual": {
+    "head": "Hit300",
+    "successful": 1,
+    "total": 2,
+    "endTime": 1060,
+    "checkpointTimes": [
+      1060,
+      1030
+    ],
+    "soundEvents": 2
+  },
+  "authority": "Retained E016/E022 one reached checkpoint per frame and parent completion independent of all checkpoints; P research explicitly leaves scheduling to shared contracts",
+  "disposition": "Preserve production scheduling and original fixture. Replace only new overstrong consumer assumption with paired actual-session contract histories; no historical expectation or geometry expectation changed"
+}

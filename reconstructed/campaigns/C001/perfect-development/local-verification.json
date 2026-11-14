@@ -1,0 +1,50 @@
+{
+  "starting_head": "702b81ff2f1cbfc64861fdc54072f2861babee2b",
+  "local_profile": "Modified working tree; hashes pin the compiled files. Git-head fields emitted by retained independent tools identify committed ancestry, not this uncommitted implementation.",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "environment": "Linux; headless component execution only",
+  "source_hashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "112519d7c38b7da8c9a4e61740e56b95b9d032fe50f99e256ece48587895714f",
+    "reconstructed/C001PerfectChecks/Program.cs": "ad42aaddff92df3aa98daa070b5c3ac14f01bbb18fb8a125edeb7e7b45f13fa5",
+    "reconstructed/C001PerfectChecks/C001PerfectChecks.csproj": "97e1ef470122d8f45ca9184c22155e6ffca93840cbfd4d2d2e4349a6fb8f35c5"
+  },
+  "commands": [
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project reconstructed/C001PerfectChecks/C001PerfectChecks.csproj -c Release -- <repo> <results>",
+      "result": "299/299 PASS, 21 dispositions:17 finite gameplay admissions and4 explicit rejections"
+    },
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- <repo>",
+      "result": "264/264 PASS"
+    },
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project re/qa/qa04/Headless/QA04.Headless.csproj -c Release -- <repo>",
+      "result": "43/43 PASS"
+    },
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project re/campaigns/C001/stacking/Headless/C001.Stacking.csproj -c Release -- <repo> <results>",
+      "result": "18/18 fixtures load;43 heads;0 gaps"
+    },
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project re/campaigns/C001/stacking/Integration/C001.StackingIntegration.csproj -c Release -- <repo> <results>",
+      "result": "394/394 PASS"
+    },
+    {
+      "command": "/tmp/ohno-dotnet-8/dotnet run --project re/campaigns/C001/verification/Headless/C001.Headless.csproj -c Release -- <repo> <results>",
+      "result": "106/106 finite fields;4/4 engineering controls;10 diagnostic-only probes, not semantic passes"
+    },
+    {
+      "command": "python re/campaigns/C001/perfect-circle/check.py re/campaigns/C001/perfect-circle/static-evidence.json",
+      "result": "73 static assertions,20 inherited identities,21 hashed fixtures PASS"
+    }
+  ],
+  "classification": "Work2 development plus replayed unchanged independent regression expectations; subsequent Work1 independent P actual-source QA pending",
+  "not_run": [
+    "Original executable",
+    "GUI rendering",
+    "Physical input",
+    "Audio listening",
+    "Owner qualification"
+  ]
+}

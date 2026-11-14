@@ -1,0 +1,1982 @@
+{
+  "source": "702b81ff2f1cbfc64861fdc54072f2861babee2b",
+  "productionSource": "52c300a9b508567987331c54f51a0944f9c5b8fd",
+  "productionHash": "112519D7C38B7DA8C9A4E61740E56B95B9D032FE50F99E256ECE48587895714F",
+  "runtime": ".NET 8.0.33",
+  "checks": 394,
+  "failed": 0,
+  "originalExecuted": false,
+  "ownerQualification": "PENDING",
+  "results": [
+    {
+      "id": "circle-chain",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle sound sidecar identity #1200",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "circle resource operand identity #1200",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "reload has no cumulative displacement #1200",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "circle-chain",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-equal-three",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "distance-inside",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "distance-diagonal-outside",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "circle sound sidecar identity #1600",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "circle resource operand identity #1600",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "reload has no cumulative displacement #1600",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "time-equal",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "circle sound sidecar identity #1601",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "circle resource operand identity #1601",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "reload has no cumulative displacement #1601",
+      "pass": true
+    },
+    {
+      "id": "time-outside",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle sound sidecar identity #1500",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle resource operand identity #1500",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "reload has no cumulative displacement #1500",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle sound sidecar identity #2000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "circle resource operand identity #2000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "reload has no cumulative displacement #2000",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "moving-anchor",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "zero-leniency",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "circle sound sidecar identity #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "circle resource operand identity #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "reload has no cumulative displacement #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "circle sound sidecar identity #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "circle resource operand identity #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "reload has no cumulative displacement #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "tail-negative",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "NewCombo exact registered identity #3",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle sound sidecar identity #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle resource operand identity #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "reload has no cumulative displacement #1600",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle sound sidecar identity #1650",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle resource operand identity #1650",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "reload has no cumulative displacement #1650",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle sound sidecar identity #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "circle resource operand identity #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "reload has no cumulative displacement #1700",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "tail-selective",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "circle-before-slider",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "slider-chain",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "slider-start-boundary",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "circle sound sidecar identity #2100",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "circle resource operand identity #2100",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "reload has no cumulative displacement #2100",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "tail-even-repeat",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "retained health admission limitation: Health unavailable: R09 needs ordered nonoverlapping prepared objects; no sorting/repair.",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "circle sound sidecar identity #1300",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "circle resource operand identity #1300",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "reload has no cumulative displacement #1300",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "circle sound sidecar identity #2000",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "circle resource operand identity #2000",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "reload has no cumulative displacement #2000",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "early-time-break",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "circle sound sidecar identity #1600",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "circle resource operand identity #1600",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "reload has no cumulative displacement #1600",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "slider resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "original raw geometry segments unchanged",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "geometry lengths unchanged",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "slider duration and traversal operands unchanged",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "sound schedule unchanged",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "all public controls translated",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "all geometry controls translated",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "all render path segments translated",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "all input movement segments translated, times retained",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "all checkpoint positions translated, metadata retained",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "far tail and final traversal endpoint translated",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "input and presentation interpolation translated",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "slider reload displacement stable",
+      "pass": true
+    },
+    {
+      "id": "bezier-tail",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle sound sidecar identity #1100",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle resource operand identity #1100",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "reload has no cumulative displacement #1100",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle sound sidecar identity #1200",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "circle resource operand identity #1200",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "reload has no cumulative displacement #1200",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "v6-circle-chain",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "unchanged fixture bytes",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "raw source bytes retained",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "fresh health owner bound after translation",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "score metadata invariant under stacking",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "NewCombo count preserved",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "NewCombo exact registered identity #0",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "NewCombo exact registered identity #1",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "NewCombo exact registered identity #2",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "circle sound sidecar identity #1000",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "circle resource operand identity #1000",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "reload has no cumulative displacement #1000",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "circle sound sidecar identity #1200",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "circle resource operand identity #1200",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "reload has no cumulative displacement #1200",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "session uses exact prepared definitions",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "input probe outside original head radius",
+      "pass": true
+    },
+    {
+      "id": "spinner-skip",
+      "contract": "actual input accepts translated head at discriminating edge",
+      "pass": true
+    }
+  ]
+}

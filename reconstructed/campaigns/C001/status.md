@@ -16,7 +16,18 @@
 **OPEN — verified functional checkpoint; subsystem acceptance not complete.**
 Work 2. UEP-001 and authorization.md remain fully applicable. No exceptions.
 
-## Current bounded execution — issue #1, 2026-11-14
+## Current bounded execution — Issue #2 finite Perfect-circle integration
+
+Starting source702b81ff2f1cbfc64861fdc54072f2861babee2b verified. P implementation
+and local focused checks ready; exact Windows integrated gate PENDING. New enum
+kind/source provenance, count/determinant fallbacks, original finite arc sampling,
+shared tail/timing/consumer integration. Local299P/264C001/43QA04 checks pass;
+retained stacking43heads+394integration and finite106+4 regression pass. Work1
+independent P actual-source QA and owner runtime remain PENDING. See
+perfect-development/local-verification.json. Historical status entries below retain
+their own provenance; the earlier Issue#1 blocker was resolved by52c300a9/b413f6f.
+
+## Historical issue #1 pre-handoff status, 2026-11-14
 
 **BLOCKED ON TARGETED ORIGINAL EVIDENCE; no production change.** Reviewed main
 86c1ac37d48b251428d0d709fa290372a5120719. Issue #1 permits this stop condition.

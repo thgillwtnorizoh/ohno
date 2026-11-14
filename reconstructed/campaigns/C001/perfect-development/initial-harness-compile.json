@@ -1,0 +1,10 @@
+{
+  "command": "/tmp/ohno-dotnet-8/dotnet run --project reconstructed/C001PerfectChecks/C001PerfectChecks.csproj -c Release -- <repo> /tmp/ohno-p-results.json",
+  "source_sha256": "abc1a4b47afddd7874bbbc13dabc59caef2bc0b5d042fd60622cc6f847a0f528",
+  "result": "FAILED: new development harness compilation; no assertions executed",
+  "diagnostics": [
+    "CS7036: CircleSoundPolicy requires RateMatching and remaining policy operands",
+    "CS8602: nullable CircleSounds access"
+  ],
+  "correction": "Supply all eight existing policy operands and explicit sidecar null assertion in new harness; no production behavior, fixture or expectation changed"
+}
