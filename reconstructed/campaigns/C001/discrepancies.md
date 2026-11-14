@@ -26,3 +26,5 @@ weaken old expectations silently.
 
 | D017 | OPEN — original refresh recovery versus engineering index | Metadata-stage comments terminate the finite score summary at its implemented processing-error boundary, retaining prior writes and error provenance. Canonical trailing-comment control passes. Catalog preserves comment-tolerant indexing, explicitly ENGINEERING; complete key/error/notification recovery remains open. |
 | D018 | VERIFIED COMPONENT —85ec7bf | f6f1203 exposed hold category as playable and comment rows invalidated fresh catalog revisions; restore separate runtime admission and engineering comment policy. Preserve compatibility LoadGameplay; expose canonical API explicitly. |
+
+| D019 | BLOCKED — issue #1 targeted >5 stacking handoff | Existing E006/E045/C001 boundaries and zero-stack proof do not specify complete height propagation or F0ae1 displacement. B1–B3 in 04-issue1-stacking-evidence-blocker.md identify the exact Work1 packet needed. No production change/new stack coverage; issue stop condition used. |

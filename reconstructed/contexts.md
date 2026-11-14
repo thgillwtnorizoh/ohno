@@ -1488,3 +1488,36 @@ implementation, full coverage/independent acceptance and owner gates. No complet
 subsystem declaration. Next internal work consumes newly justified Work1 families;
 P/C/stacks/full mode/field/error/event/resource semantics cannot be guessed from
 these106 finite fields. Both coverage matrices and registers remain active.
+
+## C001 Work2 — issue #1 bounded >5 stacking cycle — 2026-11-14
+
+Authority: https://github.com/thgillwtnorizoh/ohno/issues/1, resource-bounded packet.
+Reviewed latest canonical86c1ac37d48b251428d0d709fa290372a5120719; last tested
+production85ec7bffc108e966f373da40a2f5cc495f11f77b unchanged. Read applicable rules,
+relevant journal/matrix portions, E006/E045 and C001 parser-boundary report; inspected
+canonical preparation and rendering/input/health/NewCombo consumers.
+
+Issue explicitly permits stopping for a precise original-evidence blocker. Existing
+records establish >5 geometry-before-stack order, strict boundaries and zero-stack
+profile, but not full height propagation or F0ae1's displacement value/sign/producer.
+No targeted Work1 stacking fixture/reference packet is published at reviewed head.
+B1–B3 and consumer integration map recorded in04-issue1-stacking-evidence-blocker.md.
+The original binary is available; this is a targeted Work1 behavior-handoff dependency,
+not unavailable bytes or owner permission. No modern algorithm or guessed offset.
+
+Focused existing-evidence audit10 checks PASS: four method hashes, geometry/stack/
+position call/write relationships and F0ae1 Single type. Initial lookup found M1457
+absent from bounded C001 packet; resolved from existing E006 packet. No broad binary
+inventory, original runtime or production C# test performed; these checks do not
+verify positive/negative stacking. Rendering/input share prepared definitions, while
+slider movement/checkpoint endpoints and identity sidecars require consistent remap.
+
+Added concise numbered report and evidence-audit JSON; updated live status, coverage
+delta and D019 blocker. No code, tests, fixtures, workflow or historical reports
+changed; old journal prefixes retained. No new functional coverage/completion claim.
+No full Windows rerun for evidence-only publication; previous2309/165/106+4 results
+remain historical. Final remote recheck before expected-head publication; if targeted
+Work1 findings arrive, integrate rather than overwrite them. Next action: consume
+focused B1–B3 handoff, implement supported >5 family, run focused controls and one
+integrated historical/full Windows gate. Stop this execution at the issue's precise
+blocker; no unrelated C001 loop, new campaign, waiver or permission question.

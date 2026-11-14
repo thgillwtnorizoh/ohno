@@ -1,0 +1,54 @@
+{
+  "issue": "https://github.com/thgillwtnorizoh/ohno/issues/1",
+  "source": "86c1ac37d48b251428d0d709fa290372a5120719",
+  "date": "2026-11-14",
+  "classification": "Focused existing-evidence identity/relationship audit ONLY; not original execution or stacking correctness verification",
+  "checks": [
+    "0x60028ea pinned existing method identity",
+    "0x60028eb pinned existing method identity",
+    "0x60024b0 pinned existing method identity",
+    "0x6001457 pinned existing method identity",
+    "M28ea:002e geometry dispatch exists",
+    "M28ea:004f stacking call exists",
+    "M28eb:0324 prepared position dispatch exists",
+    "M24b0:0002 prepared position write exists",
+    "M1457:0087/00a9 segment endpoint writes exist",
+    "F0ae1 is Single metadata field; value/sign formula not thereby established"
+  ],
+  "methods": {
+    "0x60028ea": {
+      "body_sha256": "c3bcef6a2c5b6e40a897fec40db989154b9256c264529a2b7f9d8cb7d2cca9e5",
+      "source_packet": "re/campaigns/C001/original-behavior/static-inventory.json"
+    },
+    "0x60028eb": {
+      "body_sha256": "09b23622d69a0297586fb1bc778bef752ca4e817ca5c740e59b8cd473eb4d9aa",
+      "source_packet": "re/campaigns/C001/original-behavior/static-inventory.json"
+    },
+    "0x60024b0": {
+      "body_sha256": "c1aea555fd64810dcb82a91ec3a7ec201ca7afc8d60fb04f6031668c99323fcb",
+      "source_packet": "re/campaigns/C001/original-behavior/static-inventory.json"
+    },
+    "0x6001457": {
+      "body_sha256": "ef172ad4ea704f6644595f38869ceb2ad19118e5483b3a89600703bc69110d03",
+      "source_packet": "re/evidence/06/linear-geometry.json"
+    }
+  },
+  "original_runtime": "NOT RUN",
+  "positive_stack_oracle": "NOT PUBLISHED in current tracked evidence",
+  "blockers": [
+    "B1 Complete >5 M28eb height propagation, reverse traversal and slider-tail negative-stack rules, with discriminating expected heights",
+    "B2 F0ae1 original producer/CS dependence, sign, arithmetic/conversion order and per-object offset application",
+    "B3 Original early-exit/reset conditions and a complete supported circle/L/B fixture-to-final-coordinate reference packet"
+  ],
+  "notes": [
+    "M1457 is absent from the bounded C001 root inventory; its existing E006 record supplies the identity and endpoint-write checks.",
+    "Partial branch-site inventories do not establish the missing algorithms.",
+    "No original binary decode, broad method inventory, C# production change or Windows rerun performed."
+  ],
+  "consumer_sites": {
+    "render": "Rendering/PlayfieldView.cs reads circle.Definition.Position and checkpoint.Definition.Position",
+    "input": "Gameplay/CircleSession.cs compares pointer against circle.Definition.Position and slider.Definition.RequiredPosition(time)",
+    "identity": "CircleSounds and health/NewCombo bind prepared object identities; replacements must be remapped before fresh-owner binding",
+    "star": "Difficulty/CircleDifficultyPreparation.cs retains explicit StackLeniency0 strict admission"
+  }
+}

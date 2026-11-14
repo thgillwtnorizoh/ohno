@@ -3,6 +3,24 @@
 **OPEN — verified functional checkpoint; subsystem acceptance not complete.**
 Work 2. UEP-001 and authorization.md remain fully applicable. No exceptions.
 
+## Current bounded execution — issue #1, 2026-11-14
+
+**BLOCKED ON TARGETED ORIGINAL EVIDENCE; no production change.** Reviewed main
+86c1ac37d48b251428d0d709fa290372a5120719. Issue #1 permits this stop condition.
+Existing records establish some boundaries and a zero-stack proof, not the complete
+>5 stack-height algorithm or F0ae1 displacement producer/sign/order. Work 1 must
+publish the focused B1–B3 handoff and expected heights/coordinates identified in
+04-issue1-stacking-evidence-blocker.md. One focused10-check evidence consistency
+audit passed; no behavioral pass/new functional coverage is claimed. No broad
+inventory or Windows rerun. Last actual tested production below remains unchanged.
+
+Next action for this execution: consume that targeted packet, implement the existing
+canonical consumer path and run focused tests before one integrated full Windows
+gate. Do not loop into other C001 domains or substitute modern stacking. <=5,
+nonstandard modes/modifiers/ties and the existing star/Joined Bezier discrepancies
+stay OPEN. Historical evidence/journal prefixes preserved; no waiver or approval
+request. This evidence-only publication records the issue's explicit blocker exit.
+
 ## Exact verified source and delivery
 
 - Production/tests/workflow:85ec7bffc108e966f373da40a2f5cc495f11f77b.

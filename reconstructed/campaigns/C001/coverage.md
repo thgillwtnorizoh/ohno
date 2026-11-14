@@ -62,3 +62,12 @@ Inventory disposition: preliminary complete domain categories, original branch-b
 | I Integration/acceptance: Human application qualification | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Reproducible corpus/provenance | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
 | I Integration/acceptance: Original R17 display discrepancy analysis | C001 authorization | see consumer-inventory and status | pending complete campaign gate |
+
+## Issue #1 bounded-cycle delta — 2026-11-14
+
+>5 standard stacking remains **BLOCKED / NOT IMPLEMENTED**, pending targeted Work1
+B1–B3 height propagation, displacement operands and expected final-coordinate
+fixtures. Existing zero-stack proof remains bounded to its prior profile. No new
+coverage row is marked complete. Focused existing-evidence audit passed10 consistency
+checks; it is not new functional/independent production coverage. See
+04-issue1-stacking-evidence-blocker.md. <=5/modes/modifiers/ties remain OPEN.
