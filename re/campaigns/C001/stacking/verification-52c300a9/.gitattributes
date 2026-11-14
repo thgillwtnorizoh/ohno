@@ -1,0 +1,2 @@
+# Preserve the captured SDK banner's CRLF bytes without whitespace diagnostics.
+heads.log -diff

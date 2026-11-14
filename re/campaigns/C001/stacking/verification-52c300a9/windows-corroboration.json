@@ -1,0 +1,16 @@
+{
+  "run": 43540928098,
+  "job": 132281072732,
+  "source": "52c300a9b508567987331c54f51a0944f9c5b8fd",
+  "runConclusion": "success",
+  "returnedLogCharacters": 2499497,
+  "selectedLines": [
+    "2026-11-14T01:29:56.9970287Z Version: 20261103.629\r",
+    "2026-11-14T01:29:56.9980309Z Version: 20261112.366.7\r",
+    "2026-11-14T01:30:23.8094674Z Build succeeded.\r",
+    "2026-11-14T01:30:23.8095619Z     0 Warning(s)\r",
+    "2026-11-14T01:30:23.8095831Z     0 Error(s)\r",
+    "2026-11-14T01:32:40.3468355Z C001 DEVELOPMENT: 264/264 PASS\r",
+    "2026-11-14T01:32:50.8898557Z C001: 106/106 original-contract fields match; 0 gaps; 4/4 engineering controls PASS; 10 diagnostic-only probes; original runtime NOT RUN\r"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "testedSource": "52c300a9b508567987331c54f51a0944f9c5b8fd",
+  "publicationParent": "83dc9fe0be212ddcc127e329b0e2bdc326e8d031",
+  "classification": "independent finite component acceptance; original runtime/owner pending",
+  "checks": {
+    "heads": 43,
+    "integration": 394,
+    "fixtures": 18,
+    "healthIdentityFixtures": 17,
+    "actualInputProbes": 8
+  },
+  "preservation": "Every pre-existing tracked file unchanged except five append-only tails; exact tested production clean",
+  "appendOnlyPaths": [
+    "re/campaigns/C001/coverage-matrix.md",
+    "re/campaigns/C001/dependency-register.md",
+    "re/campaigns/C001/discrepancy-register.md",
+    "re/campaigns/C001/status.md",
+    "re/contexts.md"
+  ],
+  "helperHashes": {
+    "re/campaigns/C001/stacking/Headless/Program.cs": "b67cd84303567182511915340dca18bd22b1f4657951e493507189d24f01f378",
+    "re/campaigns/C001/stacking/Headless/C001.Stacking.csproj": "9abda290640edc596cfd351eba2ff720b86635f629b2e2f19484c57ff456e397",
+    "re/campaigns/C001/stacking/Integration/Program.cs": "987bacd3dc519551d595bb53b6af59d75442980e1a27db37c11503bc2bdf4db2",
+    "re/campaigns/C001/stacking/Integration/C001.StackingIntegration.csproj": "9abda290640edc596cfd351eba2ff720b86635f629b2e2f19484c57ff456e397"
+  },
+  "evidenceHashes": {
+    "windows-corroboration.json": "4cde3dc1b47d4e9a67db6321b9afe9f5e4bbcb78fbd09cd6efe7699b2523d002",
+    "heads.json": "b80cd454607ca0998e8970dea565651e6212a88cd5090095e8fae4def502e10a",
+    "heads.log": "e9d33d48e3fef08a6d23272d1733138fb32d7144e5e2d89ca3f37b2a43dfe19d",
+    "integration.log": "941b250377d7de3c171d9f315bed85c03b994ab40439c07136fa496500390803",
+    "integration.json": "0d8fd00f2a31e4d243efb5bc36159bf4b7b29a92921cd5ced5170ba1c9e2dc5a"
+  }
+}

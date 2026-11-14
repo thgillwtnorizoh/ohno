@@ -33,3 +33,12 @@ exists at shared e6881e1; source review agrees with runtime audit. New independe
 strict runner retains failure and returns1. B1–B3 research dependency is now answered
 for normal >5 standard full-range/no-mod loading; production integration remains
 pending. No star mismatch is explained by this result and no old failure is waived.
+
+## C001-D12 follow-up — 2026-11-14 independent verification
+
+Finite17/43 missing-displacement gaps at85ec7bf no longer reproduce at52c300a9:
+unchanged strict43/43 PASS. Supplemental394/394 integration checks PASS. D12 is
+RESOLVED for the tested finite profile, with historical failure files unchanged.
+No new stacking discrepancy found. early-time-break still fails the same historical
+and canonical HealthChart nonoverlap guard; no health acceptance for that fixture.
+General C001/owner/runtime and all unrelated discrepancies remain OPEN.

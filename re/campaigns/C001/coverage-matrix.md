@@ -93,3 +93,13 @@ Original evidence, production execution and human qualification are separate gat
 This finite delta does not close the broader feature rows. <=5, partial editor,
 equal-time admission, general modifier/configuration and non-standard preparation
 remain OPEN. Implementation source review and integrated Windows gate pending.
+
+## Issue #1 independent integration delta — checkpoint04, 2026-11-14
+
+| Coverage | Production | Independent verification | Remaining gate |
+|---|---|---|---|
+| Finite >5 standard full-range CS5/AR5 no-mod512x384 stacking and prepared consumers | 52c300a9b508567987331c54f51a0944f9c5b8fd | Existing18 fixtures/43 heads PASS; supplemental394 invariants/input assertions PASS; exact Windows gate corroborated | Owner/original runtime; unsupported profiles; existing overlapping-health admission boundary |
+
+No broader row is marked complete. Historical17-gap results and pending statements
+remain chronological evidence. Latest finite component verdict is in verification/
+04-stacking-integration.md; full campaign remains OPEN.

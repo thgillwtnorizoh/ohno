@@ -63,3 +63,18 @@ Next activation should consume this packet, then publish integration for Work1 r
 <=5, partial-editor calls, ties, general mods/configurations, alternate modes, P/C,
 19 star differences and Joined Bezier remain OPEN. Do not expand this bounded cycle
 into other C001 domains or label a passing head check complete consumer coverage.
+
+## Checkpoint04 — independent stacking integration verification (2026-11-14)
+
+Exact production52c300a9b508567987331c54f51a0944f9c5b8fd independently VERIFIED for
+finite >5 standard/full-range/CS5/AR5/no-mod512x384 profile. Unchanged strict fixture
+runner18/18 loads,43/43 heads,0gaps. Added independent integration394/394PASS,
+including8 actual displaced-head input probes.17 prior head gaps no longer reproduce;
+old failed baseline preserved. See verification/04-stacking-integration.md.
+GitHub exact-source Windows gate43540928098 independently corroborated SUCCESS,
+0warnings/errors,264 development and106+4 finite controls; no redundant rerun.
+No new production discrepancy found. early-time-break retains pre-existing health
+nonoverlap rejection in both adapters; other17 fixtures have health identity checks.
+New verifier/helper and records only; no production or historical evidence edits.
+C001 and owner/runtime qualification OPEN; wider profiles/unrelated gaps unchanged.
+This bounded cycle ends at verified finite integration checkpoint; no new research.

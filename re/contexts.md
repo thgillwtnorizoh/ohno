@@ -2426,3 +2426,54 @@ not an integrated stacking acceptance or complete C001. Owner Windows/original
 qualification NOT RUN; no physical input/render/audio or star-cause claim.19 QA15
 owner differences and Joined Bezier remain open. Recheck remote before serialized
 main publication; exact publication commit is identified by this entry's Git commit.
+
+## C001 Work1 checkpoint04 — independent52c300a9 stacking verification — 2026-11-14
+
+User authorized one bounded verification cycle using issue#1 and existing fixture
+runner; no repeat of completed original research. Read current issue/comments,
+AGENTS/standing contract, relevant journals/status/matrices and Work2 diff/report.
+Synced latest83dc9fe0be212ddcc127e329b0e2bdc326e8d031; exact tested production
+52c300a9b508567987331c54f51a0944f9c5b8fd in detached/tmp/c001-verify52 worktree.
+Compared tracked production/verifier/fixture bytes with latest doc-only head:equal.
+No original collection, source substitutions, expectation changes or exceptions.
+
+Existing unchanged independent stacking runner STRICT18/18 loaded,43/43heads,
+0gaps exit0. Old17-gap baseline remains byte-identical. Supplemental integration
+helper tests actual production with original fixture bytes and historical unstacked
+geometry as translation control (not original stack oracle):394/394PASS, including
+raw byte retention, every control/segment/movement/checkpoint translation, invariant
+lengths/timing/sample schedules, fresh owner and exact NewCombo/sound/session
+identities, reload stability and8 actual Press probes outside raw but inside moved
+head radius. Health/NewCombo checks execute on17fixtures. early-time-break still
+hits historical R09 nonoverlap guard; both old/canonical errors match. This retained
+limitation is disclosed and not accepted as successful health integration.
+
+Local SDK8.0.427/runtime8.0.33. Initial supplemental build had extra serialization
+parenthesis; corrected. Initial execution stopped on pre-existing health guard;
+added explicit matching historical/canonical rejection observation, kept old fixture
+and all expectations. Final Release runner394PASS. No production changes required.
+Source inspection confirms fixed outer-kind, anchors, time/proximity boundaries,
+negative range and displacement per existing report; prepares after geometry before
+fresh owner binding; sound sidecars remap by reference identity. Render path/ticks/
+ball/circle positions and session pointer/follow input consume prepared definitions.
+This is headless source/component verification, not original/GPU/physical playtest.
+
+Independently retrieved GitHub run43540928098 and job132281072732 metadata/steps/log:
+head exactly52c300a9,all historical workflow steps SUCCESS; selected raw log lines
+confirm0warnings/0errors,264/264Work2 development,106/106fields+4/4controls. Selected
+lines/returned character count retained in windows-corroboration.json; full log
+remains at source GitHub job (not claimed archived in this checkpoint). No new
+Windows/full2309 rerun; added helper's execution is Linux, not Windows. Existing
+Windows gate corroboration and new independent local results kept distinct.
+
+Added verification/04-stacking-integration.md, stacking/Integration helper and new
+verification-52c300a9 evidence folder; append-only status/coverage/dependency/
+discrepancy/journal deltas. No changes to original research, historical tests,
+fixtures, baseline evidence, production, workflow or either old journal prefix.
+Finite component verdict VERIFIED/ACCEPTED at52c300a9; C001-D12 finite17head gaps
+resolved, historical failure preserved. No new stacking discrepancy in this cycle.
+Not full C001 acceptance:CS/AR/viewport/mods outside finite profile,<=5,ties,partial
+editor,other modes,P/C,19star differences,JoinedBezier and owner/runtime gates OPEN.
+Cycle stops at verified finite integration checkpoint; no unrelated research loop.
+Publication serialized against latest remote main; see committing Git history for
+exact checkpoint SHA. No rewrite/force-push; shared issue receives concise handoff.
