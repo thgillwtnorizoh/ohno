@@ -1618,3 +1618,21 @@ and21-fixture expectations, including consumers/precision/tail/traversal; correc
 remain inIssue#2. Owner runtime/GUI/listening/physical input and original x86 behavior
 NOT RUN. C001 OPEN; no all-slider/legacy/editor/exceptional/zero-output or Catmull
 claim, no19-star-difference/JoinedBezier resolution, no owner acceptance or waiver.
+
+## C001 Work2 Issue#3 — finite Catmull integration — 2026-11-14
+
+Starting c353b83e2dfb5e6da7cfe20053f15a6afdc3626f. Read instructions/Issue#3,
+07-catmull-rom and19 unchanged fixtures. Added canonical explicit C kind0,
+original Single polynomial/order/asymmetric stencils and50 separately evaluated
+segments per pair, duplicate preservation and span flags. Shared tail/cumulative/
+traversal/stack/render/input/sound/health/NewCombo contracts reused without rewrites.
+Historical loader and R17 remain restricted. ENGINEERING C coordinate magnitude
+limit131072 excludes diagnostic1e7; inherited64controls/8192pieces, cancellation,
+positive nonzero geometry admission remain explicit, not original-runtime claims.
+Local SDK8.0.427/runtime8.0.33:4375/4375 development PASS,19 dispositions=13admitted+
+6engineering rejections; retained P299/299PASS;19fixture regeneration PASS.
+Initial positive-stack test assumption failed (preceding circle itself shifts);
+corrected only test object order, keeping production stacking unchanged. Local
+compressed results/summary retained. No original research repeated or old evidence
+changed. Next: exact-source integrated Windows gate and sealed delivery. Work1
+independent new-source QA and owner/original runtime remain pending. C001 OPEN.

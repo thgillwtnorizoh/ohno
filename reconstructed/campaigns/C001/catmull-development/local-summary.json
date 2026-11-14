@@ -1,0 +1,19 @@
+{
+  "checks": 4375,
+  "fixtures": 19,
+  "admitted": 13,
+  "engineeringRejected": [
+    "all-coincident",
+    "singleton",
+    "bare-marker",
+    "vanishing-request",
+    "malformed-coordinate",
+    "precision-diagnostic"
+  ],
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "resultsSha256": "e9cef4094ecfa8c86c14e0cd44a1491949cc59c2a783b743ecdbf8c33371cda9",
+  "priorPChecks": 299,
+  "initialFailure": "Development stacking fixture incorrectly expected a preceding circle to shift a following slider; corrected test to use a following head-overlap circle. Production stacking unchanged.",
+  "classification": "Work2 development; independent QA pending"
+}

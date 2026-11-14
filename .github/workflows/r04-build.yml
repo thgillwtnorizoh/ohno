@@ -7,6 +7,8 @@ on:
       - reconstructed/campaigns/C001/**
       - reconstructed/C001DevelopmentChecks/**
       - reconstructed/C001PerfectChecks/**
+      - reconstructed/C001CatmullChecks/**
+      - re/campaigns/C001/catmull/**
       - re/campaigns/C001/perfect-circle/**
       - reconstructed/CircleGame/**
       - reconstructed/R06PreparationChecks/**
@@ -425,6 +427,13 @@ jobs:
           dotnet run --project re/campaigns/C001/stacking/Integration/C001.StackingIntegration.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-stacking-integration.json"
           exit $LASTEXITCODE
 
+      - name: Check finite Catmull paths and shared consumers
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001CatmullChecks/C001CatmullChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-catmull-results.json"
+          exit $LASTEXITCODE
+
       - name: Publish C001 Windows x64 application for owner qualification
         if: ${{ success() }}
         shell: pwsh
@@ -437,6 +446,7 @@ jobs:
           Copy-Item re/campaigns/C001/perfect-circle/fixtures "${{ runner.temp }}/ohno-c001-windows/C001PerfectCorpus" -Recurse
           Copy-Item re/campaigns/C001/perfect-circle/manifest.json "${{ runner.temp }}/ohno-c001-windows/PERFECT-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/perfect-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/PERFECT-QUALIFICATION.md"
+          Copy-Item re/campaigns/C001/catmull "${{ runner.temp }}/ohno-c001-windows/CatmullCorpus" -Recurse
           Copy-Item reconstructed/campaigns/C001/human-qualification.md "${{ runner.temp }}/ohno-c001-windows/"
 
       - name: Verify independent C001 finite original-contract predictions
@@ -456,6 +466,7 @@ jobs:
             reconstructed/campaigns/C001/development-results.json
             ${{ runner.temp }}/c001-independent-results.json
             ${{ runner.temp }}/c001-perfect-results.json
+            ${{ runner.temp }}/c001-catmull-results.json
             ${{ runner.temp }}/c001-stacking-heads.json
             ${{ runner.temp }}/c001-stacking-integration.json
           if-no-files-found: warn

@@ -159,7 +159,7 @@ public sealed record CircleDefinition(Vector2 Position, int StartTime);
 public sealed record SpinnerDefinition(int StartTime, int EndTime, int HitSound, string? HitSample);
 
 public sealed record SliderSegment(Vector2 From, Vector2 To, bool IsSubcurveEnd, bool IsLinear);
-public enum SliderPathKind { Bezier = 1, Linear = 2, Perfect = 3 }
+public enum SliderPathKind { Catmull = 0, Bezier = 1, Linear = 2, Perfect = 3 }
 public sealed record PerfectCircleSource(Vector2 Center, float Radius, double StartAngle, double EndAngle, int SamplingCount);
 
 public sealed record SliderGeometry(IReadOnlyList<Vector2> Controls, IReadOnlyList<SliderSegment> RawSegments,
@@ -210,7 +210,8 @@ public static class SliderGeometryPreparation
             }
         }
         int work = 0;
-        if (circle is null && !bezier) Emit(controls, true);
+        if (kind == SliderPathKind.Catmull) EmitCatmull(controls, raw, token);
+        else if (circle is null && !bezier) Emit(controls, true);
         else if (bezier)
         {
             // E032: <=6 includes the second duplicate in the preceding subcurve;
@@ -267,6 +268,36 @@ public static class SliderGeometryPreparation
                     new(a, b, j == points.Count - 1, false));
             }
         }
+    }
+
+    // C001 M144a:00ce and M4ee0. Explicit engineering bound excludes the
+    // large-coordinate precision diagnostic; no original x86 equivalence claim.
+    private static void EmitCatmull(IReadOnlyList<Vector2> p, List<SliderSegment> output, CancellationToken token)
+    {
+        if (p.Any(v => Math.Abs(v.X) > 131072f || Math.Abs(v.Y) > 131072f))
+            throw new InvalidDataException("Catmull coordinates exceed the finite engineering profile (131072 per axis).");
+        for (int i = 0; i < p.Count - 1; i++)
+        {
+            Vector2 p0 = p[Math.Max(0, i - 1)], p1 = p[i], p2 = p[i + 1];
+            Vector2 p3 = i + 2 < p.Count ? p[i + 2] : p2 + (p2 - p1);
+            for (int j = 0; j < 50; j++)
+            {
+                token.ThrowIfCancellationRequested();
+                if (output.Count >= MaxSegments) throw new InvalidDataException("Catmull segment engineering limit exceeded.");
+                output.Add(new(Catmull(p0, p1, p2, p3, (float)j / 50f),
+                    Catmull(p0, p1, p2, p3, (float)(j + 1) / 50f), j == 49, false));
+            }
+        }
+    }
+
+    private static Vector2 Catmull(Vector2 p0, Vector2 p1, Vector2 p2, Vector2 p3, float t)
+    {
+        float t2 = t * t, t3 = t * t2;
+        static float Coordinate(float a, float b, float c, float d, float t, float t2, float t3)
+            => .5f * (((2f * b + (-a + c) * t) + (((2f * a - 5f * b) + 4f * c) - d) * t2)
+                + (((-a + 3f * b) - 3f * c) + d) * t3);
+        return new(Coordinate(p0.X, p1.X, p2.X, p3.X, t, t2, t3),
+            Coordinate(p0.Y, p1.Y, p2.Y, p3.Y, t, t2, t3));
     }
 
     // C001 M2d6a/b/c: finite ordinary Play only. No editor bounds or modern sampler.
@@ -885,7 +916,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                     {
                         "L" => SliderPathKind.Linear, "B" => SliderPathKind.Bezier,
                         "P" when extendedPaths => SliderPathKind.Perfect,
-                        _ => throw new InvalidDataException("Use supported L/B paths, or canonical finite P paths.")
+                        "C" when extendedPaths => SliderPathKind.Catmull,
+                        _ => throw new InvalidDataException("Use supported L/B paths, or canonical finite P/C paths.")
                     };
                     if (pathPoints.Length < 2) throw new InvalidDataException("Slider path needs explicit controls.");
                     if (pathPoints.Length - 1 > SliderGeometryPreparation.MaxControls)
