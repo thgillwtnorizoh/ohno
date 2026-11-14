@@ -1,0 +1,34 @@
+{
+  "startingSha": "5688f205505256e9a103faac793097dfbd427554",
+  "exactTestedSource": "a6c7dabc65372f83641926b89384cd14b3813a71",
+  "researchAuthority": "702b81ff2f1cbfc64861fdc54072f2861babee2b",
+  "classification": "INDEPENDENTLY VERIFIED finite component; subsystem OPEN",
+  "localSdk": "8.0.427",
+  "localRuntime": "8.0.33",
+  "newPChecks": 1093,
+  "finiteAdmissions": 17,
+  "engineeringRejections": 4,
+  "retainedStackHeads": 43,
+  "retainedStackIntegration": 394,
+  "windowsSdk": "8.0.428",
+  "windowsRuntime": "8.0.34",
+  "originalExecution": false,
+  "ownerQualification": "NOT RUN",
+  "originalExtraction": "NOT REPEATED",
+  "productionChanges": false,
+  "historicalPreservation": "all prior tracked bytes unchanged except five append-only tails",
+  "helperHashes": {
+    "re/campaigns/C001/perfect-circle/Independent/Program.cs": "349851dd98abc3f8b0fc5d6b1417a3c7fe359877129349ab0650614484b006b6",
+    "re/campaigns/C001/perfect-circle/Independent/C001.PerfectIndependent.csproj": "9abda290640edc596cfd351eba2ff720b86635f629b2e2f19484c57ff456e397"
+  },
+  "evidenceHashes": {
+    "stacking-heads.json": "d8a08d130d3fa1a4f9e044d32f4ef9f33253c52f1e140446750225db25197458",
+    "stacking-integration.json": "d8035ff3447d50ce25d6bdcb7eaf79d5142b60e63a5579e9f16db009b0cd7558",
+    "stacking-integration.log": "941b250377d7de3c171d9f315bed85c03b994ab40439c07136fa496500390803",
+    "results.json": "b244df5854f6104a6f492d77ee9f8f3d3f559c8712bf628218bb5ba52088812e",
+    "initial-harness-compile.log": "b170d1314685ca91a88f767fcac2b8e8080376c5e6939e80e9bd577f22031b72",
+    "windows-corroboration.json": "d657a8c38947174fe05dff9a4fb47b40af92b767afb35d511ec96a263a9c2512",
+    "run.log": "9da2bcc2810e9e730af637fd4a6eb84b4b4e07bb2724dfb3e0af5eecaf9aca12",
+    "stacking-heads.log": "97cbe7cbb753699dd828949768596f28bc37f6d435549ed08b25e0b032c8d86e"
+  }
+}

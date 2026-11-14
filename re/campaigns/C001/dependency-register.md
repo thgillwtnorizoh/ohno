@@ -38,3 +38,11 @@ current Boolean geometry-kind contract and share existing segment/cumulative/
 traversal/time/identity consumers. Full legacy/editor/exceptional and zero-request/
 zero-path scheduling remain NOT VERIFIED; no modern fallback or original safe
 sample-count cap is justified. Next gate is finite production implementation/QA.
+
+## DEP05 finite P independent gate — 2026-11-14
+
+At a6c7dabc, finite geometry and shared consumer path independently PASS1093;
+unchanged stack43+394 PASS. No Work2 production correction required by this QA.
+DEP05 remains open for excluded compatibility/exceptional/zero-path families;
+DEP09 remains owner-only. Exact Windows host provenance corrected append-only to
+SDK8.0.428/runtime8.0.34; Linux independent QA8.0.427/8.0.33. No new CI requested.

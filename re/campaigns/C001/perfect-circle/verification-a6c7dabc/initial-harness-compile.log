@@ -1,0 +1,1 @@
+/tmp/ohno-pqa-exact/re/campaigns/C001/perfect-circle/Independent/Program.cs(18,244): error CS0104: 'CircleDefinition' is an ambiguous reference between 'Ohno.CircleGame.Difficulty.CircleDefinition' and 'Ohno.CircleGame.Gameplay.CircleDefinition' [/tmp/ohno-pqa-exact/re/campaigns/C001/perfect-circle/Independent/C001.PerfectIndependent.csproj]

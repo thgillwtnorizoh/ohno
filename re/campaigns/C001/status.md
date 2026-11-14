@@ -91,3 +91,17 @@ Work2 implementation/consumer QA is next. General legacy/editor/exceptional/zero
 request and zero-path scheduling remain NOT VERIFIED; full C001 OPEN. No stacking
 repeat, Catmull, star investigation or redundant Windows gate. Historical records
 preserved; this is a research checkpoint, not subsystem/owner acceptance.
+
+## Checkpoint06 — Issue#2 independent P production QA (2026-11-14)
+
+Exact production a6c7dabc65372f83641926b89384cd14b3813a71 independently VERIFIED:
+1093/1093 P assertions,21 dispositions=17 admissions+4 explicit engineering rejects.
+Retained stacking43/43heads and394/394integration PASS. Source/geometry/traversal/
+checkpoint/stack/input/sound/health/NewCombo reviewed/exercised; no new finite
+production defect. D13 resolved for this tested profile, not complete P compatibility.
+Existing Windows43575301213 corroborated:2309 historical named QA pass,0fail;
+0compiler warnings/errors,264development/299P/106+4finite controls PASS. Correct
+Windows host SDK/runtime is8.0.428/8.0.34 (prose previously misstated); append-only
+correction in verification/06-perfect-circle-production.md. Local QA8.0.427/8.0.33.
+No original extraction, production changes or redundant Windows gate. Owner/runtime,
+v9P4 full oracle and broader excluded semantics remain pending. C001 OPEN.

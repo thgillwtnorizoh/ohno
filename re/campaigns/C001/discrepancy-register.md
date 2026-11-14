@@ -51,3 +51,16 @@ rejects P; source-inspected at b413f6f (no new production execution). Finite ori
 handoff/21 mathematical fixtures now published. No runtime equivalence or zero/
 editor/exceptional closure. Sampled chord G differs from analytic arc length;
 Work2 must not substitute requested length/circular extension or fitted math.
+
+## C001-D13 finite resolution / C001-D14 provenance correction — 2026-11-14
+
+D13 finite P preparation gap RESOLVED at a6c7dabc:independent1093/1093PASS across
+17 finite admissions+4 engineering rejections. Full compatibility/runtime remains
+OPEN; four exclusions/v9P4 dispatch-only oracle and nonmonotone final schedule
+explicitly retained. No new actionable finite production mismatch found.
+
+D14 documentation discrepancy CORROBORATED/CORRECTED BY APPENDED EVIDENCE:
+Work2 Windows prose saysSDK8.0.427/runtime8.0.33 and windows.json sdk says8.0.427;
+retrieved job43575301213/132388122215 selected8.0.428, actual result JSON8.0.34.
+See perfect-circle/verification-a6c7dabc/windows-corroboration.json. No historical
+rewrite, altered test result or production change. Local Linux QA is8.0.427/8.0.33.

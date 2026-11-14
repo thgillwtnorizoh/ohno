@@ -2508,3 +2508,35 @@ Normal finite P implementation may proceed as Work2; independent actual-source Q
 follows. Zero/config/editor/legacy/exceptional and zero-path scheduling remain NOT
 VERIFIED; runtime/owner qualification pending. C001 OPEN. Stop at published verified
 research packet; no implementation in this execution. Publication SHA is in Git.
+
+## C001 Work1 checkpoint06 — independent P integration QA — 2026-11-14
+
+Issue#2/UEP-001rev2.1; starting/current main5688f205505256e9a103faac793097dfbd427554.
+Exact production a6c7dabc65372f83641926b89384cd14b3813a71 in detached worktree;
+production matches main. Read rules/campaign/Work2 checkpoint and reused original
+05-perfect-circle/21fixtures at702b81f unchanged. No new original extraction.
+
+New independent actual-source verifier1093/1093PASS,17finite admissions+4engineering
+rejections. Checks immutable expected classification/center/radius/angles/count,
+raw/adjusted endpoints/lengths/flags, truncation and chord extension, movement/time/
+repeat/checkpoint order, stack source/prepared geometry, sound/health/NewCombo/
+session identities, actual head/arc-follow input, reload and guards. v9P4 oracle is
+explicitly dispatch-only. Rejections are not original equivalence. Existing
+sampling-two-trim schedule[1060,1030] retained, not sorted or assumed all-success.
+Retained independent stacking43heads/0gaps+394/394PASS;21fixture regeneration PASS.
+Local SDK8.0.427/runtime8.0.33. New helper initial CS0104 import ambiguity corrected;
+initial compiler log retained, no production/test-expectation edits.
+
+Independently retrieved existing exact-source Windows43575301213/job132388122215:
+47steps success,2309named QA counted from19raw summaries/0failed,0warnings/errors,
+264C001/299P/43+394stack/106+4finite PASS. Artifact metadata matches prior sealed
+67MB package/digest; no redundant download/build. Retrieved SDK selection8.0.428
+and finite-result runtime8.0.34 correct Work2 prose8.0.427/8.0.33 (and sdk field in
+windows.json) through appended D14 provenance note, preserving historical files.
+No new finite production defect;D13 finite gap resolved. Added Independent helper,
+verification-a6c7dabc packets and verification/06 report; appended status/registers/
+journal only. All prior tracked bytes/old prefixes, fixtures and research preserved.
+C001 OPEN; no owner/original runtime/GUI/audio/physical input, broad legacy/editor/
+exceptional/zero-output/modes or star/JoinedBezier closure. Stop this bounded QA
+at finite independently verified checkpoint. Headquarters/owner qualification is
+next coordination dependency, not another automatic research/implementation loop.

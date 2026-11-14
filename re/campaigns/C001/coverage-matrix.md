@@ -112,3 +112,11 @@ remain chronological evidence. Latest finite component verdict is in verificatio
 
 No broad slider/legacy row is closed. Zero/config/editor/exceptional and downstream
 zero-path boundaries remain explicit. See original-behavior/05-perfect-circle.md.
+
+## Perfect-circle independent delta — checkpoint06, 2026-11-14
+
+| Profile | Production | Independent result | Remaining boundary |
+|---|---|---|---|
+| Finite canonical ordinary P and shared consumers | a6c7dabc65372f83641926b89384cd14b3813a71 | 1093/1093 assertions;17 admitted cases+4 explicit engineering rejections;retained43+394stacking PASS;existing Windows gate corroborated | v9P4 dispatch-only oracle;zero/empty/editor/legacy/exceptional/mode breadth and owner/runtime NOT VERIFIED |
+
+No comprehensive slider/C001 closure. See verification/06-perfect-circle-production.md.
