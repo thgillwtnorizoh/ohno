@@ -1,0 +1,434 @@
+{
+  "archive_sha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "assertion_count": 61,
+  "assertions": [
+    {
+      "method": "M28ea",
+      "offset": "000c",
+      "opcode": "ble.s",
+      "operand": 85
+    },
+    {
+      "method": "M28ea",
+      "offset": "002e",
+      "opcode": "callvirt",
+      "operand": 100668490
+    },
+    {
+      "method": "M28ea",
+      "offset": "004f",
+      "opcode": "call",
+      "operand": 100673771
+    },
+    {
+      "method": "M28eb",
+      "offset": "0006",
+      "opcode": "callvirt",
+      "operand": 100670394
+    },
+    {
+      "method": "M28eb",
+      "offset": "000b",
+      "opcode": "brfalse.s",
+      "operand": 14
+    },
+    {
+      "method": "M28eb",
+      "offset": "001f",
+      "opcode": "ldfld",
+      "operand": 67111649
+    },
+    {
+      "method": "M28eb",
+      "offset": "0025",
+      "opcode": "ldfld",
+      "operand": 67111649
+    },
+    {
+      "method": "M28eb",
+      "offset": "0030",
+      "opcode": "ldfld",
+      "operand": 67111643
+    },
+    {
+      "method": "M28eb",
+      "offset": "003c",
+      "opcode": "ldfld",
+      "operand": 67112964
+    },
+    {
+      "method": "M28eb",
+      "offset": "0041",
+      "opcode": "mul",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "0057",
+      "opcode": "stfld",
+      "operand": 67118381
+    },
+    {
+      "method": "M28eb",
+      "offset": "00c6",
+      "opcode": "bgt.s",
+      "operand": 292
+    },
+    {
+      "method": "M28eb",
+      "offset": "00e0",
+      "opcode": "blt.s",
+      "operand": 261
+    },
+    {
+      "method": "M28eb",
+      "offset": "0103",
+      "opcode": "bge.un.s",
+      "operand": 273
+    },
+    {
+      "method": "M28eb",
+      "offset": "0168",
+      "opcode": "brtrue",
+      "operand": 743
+    },
+    {
+      "method": "M28eb",
+      "offset": "017e",
+      "opcode": "brfalse",
+      "operand": 640
+    },
+    {
+      "method": "M28eb",
+      "offset": "01a7",
+      "opcode": "ldfld",
+      "operand": 67118372
+    },
+    {
+      "method": "M28eb",
+      "offset": "01b0",
+      "opcode": "bgt",
+      "operand": 743
+    },
+    {
+      "method": "M28eb",
+      "offset": "01cd",
+      "opcode": "callvirt",
+      "operand": 100672668
+    },
+    {
+      "method": "M28eb",
+      "offset": "01e2",
+      "opcode": "bge.un.s",
+      "operand": 587
+    },
+    {
+      "method": "M28eb",
+      "offset": "01f0",
+      "opcode": "sub",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "01f2",
+      "opcode": "add",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "0235",
+      "opcode": "sub",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "0236",
+      "opcode": "stfld",
+      "operand": 67118381
+    },
+    {
+      "method": "M28eb",
+      "offset": "0244",
+      "opcode": "ble.s",
+      "operand": 508
+    },
+    {
+      "method": "M28eb",
+      "offset": "026b",
+      "opcode": "add",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "0272",
+      "opcode": "stloc.0",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "02a9",
+      "opcode": "ldfld",
+      "operand": 67118371
+    },
+    {
+      "method": "M28eb",
+      "offset": "02b2",
+      "opcode": "bgt.s",
+      "operand": 743
+    },
+    {
+      "method": "M28eb",
+      "offset": "02b6",
+      "opcode": "callvirt",
+      "operand": 100672668
+    },
+    {
+      "method": "M28eb",
+      "offset": "02d6",
+      "opcode": "add",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "02de",
+      "opcode": "stloc.0",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "02ed",
+      "opcode": "bgt",
+      "operand": 339
+    },
+    {
+      "method": "M28eb",
+      "offset": "0316",
+      "opcode": "conv.r4",
+      "operand": null
+    },
+    {
+      "method": "M28eb",
+      "offset": "0319",
+      "opcode": "call",
+      "operand": 100683521
+    },
+    {
+      "method": "M28eb",
+      "offset": "031e",
+      "opcode": "call",
+      "operand": 100683518
+    },
+    {
+      "method": "M28eb",
+      "offset": "0324",
+      "opcode": "callvirt",
+      "operand": 100672688
+    },
+    {
+      "method": "M24b0",
+      "offset": "0002",
+      "opcode": "stfld",
+      "operand": 67118380
+    },
+    {
+      "method": "M24b0",
+      "offset": "0008",
+      "opcode": "brtrue.s",
+      "operand": 24
+    },
+    {
+      "method": "M24b0",
+      "offset": "000c",
+      "opcode": "stfld",
+      "operand": 67114286
+    },
+    {
+      "method": "M28be",
+      "offset": "012d",
+      "opcode": "conv.i4",
+      "operand": null
+    },
+    {
+      "method": "M28be",
+      "offset": "012e",
+      "opcode": "stfld",
+      "operand": 67111643
+    },
+    {
+      "method": "M28be",
+      "offset": "018a",
+      "opcode": "ldc.r4",
+      "operand": 1.0004099607467651
+    },
+    {
+      "method": "M28be",
+      "offset": "0190",
+      "opcode": "stfld",
+      "operand": 67111642
+    },
+    {
+      "method": "M28be",
+      "offset": "01e6",
+      "opcode": "ldfld",
+      "operand": 67111642
+    },
+    {
+      "method": "M28be",
+      "offset": "01eb",
+      "opcode": "ldc.r4",
+      "operand": 10.0
+    },
+    {
+      "method": "M28be",
+      "offset": "01f0",
+      "opcode": "div",
+      "operand": null
+    },
+    {
+      "method": "M28be",
+      "offset": "01f1",
+      "opcode": "stfld",
+      "operand": 67111649
+    },
+    {
+      "method": "M1444",
+      "offset": "0001",
+      "opcode": "ldfld",
+      "operand": 67111904
+    },
+    {
+      "method": "M249c",
+      "offset": "0001",
+      "opcode": "callvirt",
+      "operand": 100679256
+    },
+    {
+      "method": "M249c",
+      "offset": "0012",
+      "opcode": "call",
+      "operand": 100683518
+    },
+    {
+      "method": "M249c",
+      "offset": "0017",
+      "opcode": "call",
+      "operand": 100683518
+    },
+    {
+      "method": "M1457",
+      "offset": "000e",
+      "opcode": "call",
+      "operand": 100683518
+    },
+    {
+      "method": "M1457",
+      "offset": "001b",
+      "opcode": "call",
+      "operand": 100672688
+    },
+    {
+      "method": "M1457",
+      "offset": "0087",
+      "opcode": "stfld",
+      "operand": 67111474
+    },
+    {
+      "method": "M1457",
+      "offset": "00a9",
+      "opcode": "stfld",
+      "operand": 67111475
+    },
+    {
+      "method": "M1457",
+      "offset": "0264",
+      "opcode": "callvirt",
+      "operand": 100679257
+    },
+    {
+      "method": "M144a",
+      "offset": "136f",
+      "opcode": "callvirt",
+      "operand": 100679257
+    },
+    {
+      "method": "M144a",
+      "offset": "1378",
+      "opcode": "stfld",
+      "operand": 67118372
+    },
+    {
+      "method": "M28e9",
+      "offset": "001b",
+      "opcode": "call",
+      "operand": 100673770
+    },
+    {
+      "method": "M28d2",
+      "offset": "00cb",
+      "opcode": "callvirt",
+      "operand": 167776434
+    }
+  ],
+  "exe_sha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "historical_hash_matches": 12,
+  "methods": {
+    "M1444": {
+      "body_sha256": "9467e26ad52a96af0d9f5adca63bbe6d2938ef1cc0abaf6e47f9662ae86e33c1",
+      "code_bytes": 7
+    },
+    "M144a": {
+      "body_sha256": "d58260ebed39834edc228b1b21995da8481e87bbc342223db2b812c7c9b7ceef",
+      "code_bytes": 5632
+    },
+    "M1457": {
+      "body_sha256": "ef172ad4ea704f6644595f38869ceb2ad19118e5483b3a89600703bc69110d03",
+      "code_bytes": 618
+    },
+    "M249c": {
+      "body_sha256": "dcefbfe4faddcd3a6bc304d9af89a4b4387f1fdd6274970fb4051d9925bbf28b",
+      "code_bytes": 29
+    },
+    "M24b0": {
+      "body_sha256": "c1aea555fd64810dcb82a91ec3a7ec201ca7afc8d60fb04f6031668c99323fcb",
+      "code_bytes": 25
+    },
+    "M28b2": {
+      "body_sha256": "e57918c95cdfad4ac5b5b390e354ab4341fb009314b52879c01edf68f108fc3a",
+      "code_bytes": 47
+    },
+    "M28be": {
+      "body_sha256": "f9e1de22a60ae85deecb2bd1647972fc2fa5219e48e45cc50ac7479ccf326357",
+      "code_bytes": 513
+    },
+    "M28d2": {
+      "body_sha256": "fdbb666fb1180fde528b7b89c7c4ea5ec948c37fc20692f6a795e518e4639f7f",
+      "code_bytes": 268
+    },
+    "M28e9": {
+      "body_sha256": "34183e486cc07fb4f3f0b9d34eb12e1115988be2cc34613f085244286799bc71",
+      "code_bytes": 41
+    },
+    "M28ea": {
+      "body_sha256": "c3bcef6a2c5b6e40a897fec40db989154b9256c264529a2b7f9d8cb7d2cca9e5",
+      "code_bytes": 92
+    },
+    "M28eb": {
+      "body_sha256": "09b23622d69a0297586fb1bc778bef752ca4e817ca5c740e59b8cd473eb4d9aa",
+      "code_bytes": 821
+    },
+    "M4ecb": {
+      "body_sha256": "37b64d45af9753a8dd5aa85c8f5ab1211da68eef06d8c6eb270bfbf2de1654ee",
+      "code_bytes": 41
+    },
+    "M4efe": {
+      "body_sha256": "fb6a2bfac45c443a2e949a5a605222041c8ade8c2921b9354c986bbb2f92f708",
+      "code_bytes": 42
+    },
+    "M4f01": {
+      "body_sha256": "dac474bc53a817ee0ccb476a7430a1c4563b6094be7ef206afea973a1c942028",
+      "code_bytes": 32
+    }
+  },
+  "originalExecuted": false,
+  "scope": "targeted >5 standard full-range no-mod stacking; not an exhaustive callgraph"
+}

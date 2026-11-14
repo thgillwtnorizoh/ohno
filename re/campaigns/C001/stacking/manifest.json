@@ -1,0 +1,524 @@
+{
+  "authority": "../original-behavior/03-standard-stacking.md",
+  "cases": [
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        2,
+        1,
+        0
+      ],
+      "feature": "reverse anchor propagation",
+      "id": "circle-chain",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/circle-chain.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1100,1,0",
+        "100,100,1200,1,0"
+      ],
+      "sha256": "8bf14ba1762032ef2de1a1138e9f2d9f5e682369a4c0dd54387b6386382a27bf"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0
+      ],
+      "feature": "distance ==3 excluded",
+      "id": "distance-equal-three",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          103,
+          100
+        ]
+      ],
+      "path": "fixtures/distance-equal-three.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "103,100,1100,1,0"
+      ],
+      "sha256": "c5d12f76c7d73ed76e462d576e3f417b3c1d61513c93fe3e0bbfcb9cae5cbe97"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        1,
+        0
+      ],
+      "feature": "distance 2 included",
+      "id": "distance-inside",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          102,
+          100
+        ]
+      ],
+      "path": "fixtures/distance-inside.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "102,100,1100,1,0"
+      ],
+      "sha256": "d458f3337135318595a0ecdeef773618d04d1d248f95c045b58cb1508981fa9b"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0
+      ],
+      "feature": "Euclidean distance not per-axis",
+      "id": "distance-diagonal-outside",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          102,
+          103
+        ]
+      ],
+      "path": "fixtures/distance-diagonal-outside.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "102,103,1100,1,0"
+      ],
+      "sha256": "e4897a777854b1dc70d857e2980421250b4c9221d6d8d42a162eb55d9210d5b2"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        1,
+        0
+      ],
+      "feature": "600 == Single(1200)*.5 included",
+      "id": "time-equal",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/time-equal.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1600,1,0"
+      ],
+      "sha256": "39f53faae431f8f2c6bb3d4126e56c0b4db94b9417d7fd9e4d538e5fdce25df2"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0
+      ],
+      "feature": "601 >600 exits",
+      "id": "time-outside",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/time-outside.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1601,1,0"
+      ],
+      "sha256": "2549a3b9f8c20533fa3fb03ee069c448fe832f343a7c2dedcf82d97d625308ec"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        2,
+        1,
+        0
+      ],
+      "feature": "compare to updated anchor, not outer object",
+      "id": "moving-anchor",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/moving-anchor.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1500,1,0",
+        "100,100,2000,1,0"
+      ],
+      "sha256": "f21e20cc6c33f212c270c7b82e7c57a41e508e5bddd98a032e6dd1e805ed4afb"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0
+      ],
+      "feature": "distinct times, threshold0",
+      "id": "zero-leniency",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/zero-leniency.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1100,1,0"
+      ],
+      "sha256": "035c6e84c78c20c8ca6a2a8b2ca3f9265e4900f1e2bd58524b2321c594deb415"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        -1,
+        -2
+      ],
+      "feature": "tail offset height(anchor)-height(slider)+1",
+      "id": "tail-negative",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          200,
+          100
+        ],
+        [
+          200,
+          100
+        ]
+      ],
+      "path": "fixtures/tail-negative.osu",
+      "rows": [
+        "100,100,1000,2,0,L|200:100,1,100",
+        "200,100,1600,1,0",
+        "200,100,1700,1,0"
+      ],
+      "sha256": "3677038fab9effd652448183e3976ba00bcc4a4aaf042b518d9cec9b94c61bfe"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        -1,
+        0,
+        -2
+      ],
+      "feature": "negative range only points within3 of tail",
+      "id": "tail-selective",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          200,
+          100
+        ],
+        [
+          300,
+          100
+        ],
+        [
+          200,
+          100
+        ]
+      ],
+      "path": "fixtures/tail-selective.osu",
+      "rows": [
+        "100,100,1000,2,0,L|200:100,1,100",
+        "200,100,1600,1,0",
+        "300,100,1650,1,0",
+        "200,100,1700,1,0"
+      ],
+      "sha256": "064a4e1899e670c17ae48a9c3bc10ee9833e53ca904bb372341aa16ada2548d2"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        1,
+        0
+      ],
+      "feature": "slider backward endpoint-to-head match",
+      "id": "circle-before-slider",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/circle-before-slider.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1100,2,0,L|200:100,1,100"
+      ],
+      "sha256": "2444fb47a4366d00d83bb0fc074820ee3a76236bd8f0e6ae009540784d5360f1"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        1,
+        0
+      ],
+      "feature": "earlier slider end matches later slider head",
+      "id": "slider-chain",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          200,
+          100
+        ]
+      ],
+      "path": "fixtures/slider-chain.osu",
+      "rows": [
+        "100,100,1000,2,0,L|200:100,1,100",
+        "200,100,1600,2,0,L|300:100,1,100"
+      ],
+      "sha256": "cb1b81ab887f09342f57374b3a295e45eb472088cb30fad93ef084e7f8506112"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0
+      ],
+      "feature": "slider branch uses start-start, not earlier end",
+      "id": "slider-start-boundary",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          300,
+          100
+        ]
+      ],
+      "path": "fixtures/slider-start-boundary.osu",
+      "rows": [
+        "100,100,1000,2,0,L|300:100,1,200",
+        "300,100,2100,2,0,L|400:100,1,100"
+      ],
+      "sha256": "fcb0cd80db20de115c7319f747511d7d728ca078bd6912bd98ef6142509e745c"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        -1
+      ],
+      "feature": "final traversal endpoint returns to head",
+      "id": "tail-even-repeat",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/tail-even-repeat.osu",
+      "rows": [
+        "100,100,1000,2,0,L|200:100,2,100",
+        "100,100,2100,1,0"
+      ],
+      "sha256": "2723b3b193bc39b10469fcf4e0e0093e3f667dcdbe84e8c342d353083fb875b0"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        0,
+        0
+      ],
+      "feature": "far intervening circle causes time break before long slider",
+      "id": "early-time-break",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          0,
+          100
+        ],
+        [
+          300,
+          100
+        ],
+        [
+          200,
+          100
+        ]
+      ],
+      "path": "fixtures/early-time-break.osu",
+      "rows": [
+        "0,100,1000,2,0,L|200:100,1,200",
+        "300,100,1300,1,0",
+        "200,100,2000,1,0"
+      ],
+      "sha256": "d22b146d95e850edad64e5e12b5947507a661b710f1112e81922af98af0f71f1"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        0,
+        -1
+      ],
+      "feature": "straight Bezier uses prepared tail too",
+      "id": "bezier-tail",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          200,
+          100
+        ]
+      ],
+      "path": "fixtures/bezier-tail.osu",
+      "rows": [
+        "100,100,1000,2,0,B|200:100,1,100",
+        "200,100,1600,1,0"
+      ],
+      "sha256": "a5840641017d20773f9674a4dd1d425bae6642047173bd0c3728402585281333"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        2,
+        1,
+        0
+      ],
+      "feature": ">5 version boundary",
+      "id": "v6-circle-chain",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/v6-circle-chain.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "100,100,1100,1,0",
+        "100,100,1200,1,0"
+      ],
+      "sha256": "84307635379a12e1a0b6bdd84c3d2ab1de3e4b12b53c0c1c2d190ba93fba61aa"
+    },
+    {
+      "confidence": "RECONSTRUCTED from CONFIRMED STATIC",
+      "expected_heights": [
+        1,
+        0,
+        0
+      ],
+      "feature": "spinner skipped before time test",
+      "id": "spinner-skip",
+      "originalRuntime": "NOT RUN",
+      "original_heads": [
+        [
+          100,
+          100
+        ],
+        [
+          256,
+          192
+        ],
+        [
+          100,
+          100
+        ]
+      ],
+      "path": "fixtures/spinner-skip.osu",
+      "rows": [
+        "100,100,1000,1,0",
+        "256,192,1100,8,0,1150",
+        "100,100,1200,1,0"
+      ],
+      "sha256": "7565e3e6a08cb7a383fc50f359e7edea16caa04fecc26461f0e6e18eff69722e"
+    }
+  ],
+  "coordinate_contract": "prepared = raw - height * Single(radius/10) per component; viewport512x384, CS5, no mods radius=32.013118743896484; tolerance .00003",
+  "generator": "build_fixtures.py",
+  "schema": 1
+}

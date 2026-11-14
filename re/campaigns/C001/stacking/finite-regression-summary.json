@@ -1,0 +1,22 @@
+{
+  "campaign": "C001",
+  "source": "85ec7bffc108e966f373da40a2f5cc495f11f77b",
+  "production": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "9f4dba7e3a4efb6717f11c8d657258b089c5ba6db9a78e105dc21846bc9967fd",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "483e4f3e6665e4922bb891d4f3606a584ff55f997b45be03ef77533279dd5faa",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "cca7c29f9275bbbe355d1cea208b32099a4ba2ee820d6557f61829c17febfb6e"
+  },
+  "runtime": "8.0.33",
+  "os": "Debian GNU/Linux 13 (trixie)",
+  "originalExecuted": false,
+  "humanQualification": "PENDING",
+  "mode": "ORIGINAL CONTRACT CONFORMANCE",
+  "fixtures": 49,
+  "diagnosticOnly": 10,
+  "checks": 106,
+  "matches": 106,
+  "gaps": 0,
+  "engineeringControls": 4,
+  "result_packet_sha256": "cd3fca7641064a60ee1bac3918bfbaf5bd31eb47c877b244ab29667542d6b76b",
+  "note": "New Linux execution of unchanged 49-file suite; not a new Windows/historical full run."
+}

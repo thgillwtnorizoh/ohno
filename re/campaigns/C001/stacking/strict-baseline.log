@@ -1,0 +1,19 @@
+circle-chain: 2 gaps
+distance-equal-three: 0 gaps
+distance-inside: 1 gaps
+distance-diagonal-outside: 0 gaps
+time-equal: 1 gaps
+time-outside: 0 gaps
+moving-anchor: 2 gaps
+zero-leniency: 0 gaps
+tail-negative: 2 gaps
+tail-selective: 2 gaps
+circle-before-slider: 1 gaps
+slider-chain: 1 gaps
+slider-start-boundary: 0 gaps
+tail-even-repeat: 1 gaps
+early-time-break: 0 gaps
+bezier-tail: 1 gaps
+v6-circle-chain: 2 gaps
+spinner-skip: 1 gaps
+C001 stacking actual production: 18/18 loaded; 43 head checks; 17 gaps

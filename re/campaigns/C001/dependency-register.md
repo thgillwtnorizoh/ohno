@@ -12,3 +12,12 @@
 | DEP08 | Full Windows regression | Historical QA15 evidence passes preserved; C001 must rerun exact changed production | Work 1 CI after production integration |
 | DEP09 | Owner Windows qualification | No original execution available in this Linux analysis environment | Owner-only final gate, not a reason to label static gaps complete |
 | DEP10 | Shared-main publication | Recheck remote immediately before push; never overwrite Work 2 | Both workstreams |
+
+## Issue #1 targeted DEP05 handoff — 2026-11-14
+
+B1–B3 in Work2's04-issue1-stacking-evidence-blocker.md have finite full-range no-mod
+answers in original-behavior/03-standard-stacking.md and stacking/. Precise radius
+operand dependence and partial-call boundaries remain disclosed. Actual production
+still lacks displacement (17/44 prepared-head gaps). Next dependency is Work2
+implementation followed by independent consumer review and integrated Windows gate;
+this research packet alone does not close DEP05 or any owner qualification gate.

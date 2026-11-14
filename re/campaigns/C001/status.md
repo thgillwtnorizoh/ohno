@@ -40,3 +40,26 @@ Local Work2 development115/115 PASS. Exact Windows333f6d1 FAILED QA04 F01 admiss
 expectation and C001 corpus hash. See verification/02-production-audit.md. Preserve
 historical failure; Headquarters disposition and raw Windows byte corroboration
 required. No original/human runtime accepted. Continue research and canonical fixes.
+
+## Checkpoint03 — issue #1 targeted >5 stacking handoff (2026-11-14)
+
+Latest Work1 checkpoint supersedes earlier pending statements for this finite family.
+Reviewed shared head e6881e1a65601703dce5fb82d029aa6bb251ea09, including Work2's B1–B3
+blocker. Recovered exact traversal/anchor/negative-tail rules, radius/10 Single step,
+negative displacement sign, raw/prepared separation, endpoint and translation order.
+See original-behavior/03-standard-stacking.md and stacking/README.md.
+61 decisive original-byte sites PASS;14 targeted method hashes,12 historical overlaps.
+18 exact independent fixtures PASS reproduction. Actual unchanged production
+85ec7bf:18/18 load,43 prepared-head comparisons,17 mismatches (26 matches); strict
+runner returns1. This is verified missing stacking, not new functional equivalence.
+Unchanged independent finite parser suite newly executes on Linux:106/106 fields,
+4/4 engineering controls PASS. SDK8.0.427/runtime8.0.33. No production modifications,
+Windows/full2309 rerun, original execution or owner qualification in this checkpoint.
+
+B1–B3 finite no-mod/full-range research handoff is available; Work2 integration and
+independent inspection of its eventual source remain PENDING. Work2 had stopped at
+its explicit handoff blocker; no new stacking implementation exists at audited head.
+Next activation should consume this packet, then publish integration for Work1 review.
+<=5, partial-editor calls, ties, general mods/configurations, alternate modes, P/C,
+19 star differences and Joined Bezier remain OPEN. Do not expand this bounded cycle
+into other C001 domains or label a passing head check complete consumer coverage.

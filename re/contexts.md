@@ -2371,3 +2371,58 @@ Still62/106/44 plus4/4 engineering PASS. Original333f6d1 packet retained separat
 Path-specific exact-byte attributes and defensive source snapshot/copy added by
 Work2. Local QA04 rerun43/43 PASS; no approval exception needed if corrected full
 gate passes. Windows confirmation and remaining research/production gaps stay OPEN.
+
+## C001 Work1 checkpoint03 — issue #1 targeted modern standard stacking — 2026-11-14
+
+Objective: resolve Work2's exact B1–B3 original handoff, using resource-bounded
+issue#1 rather than rescanning the C001 inventory. Starting shared86c1ac3; fetched
+and fast-forwarded concurrent Work2 e6881e1a65601703dce5fb82d029aa6bb251ea09 before
+editing. Read AGENTS, re/Instruction, full supplied authorization, relevant both
+journals/matrices, E004/E006/E036/E045 inherited evidence and actual production.
+No exception. Pinned supplied archive7089d49f… and EXE6e182c10… unchanged; full
+hashes in stacking/static-evidence.json. Linux static analysis, no original CLR/UI.
+
+CONFIRMED STATIC: >5 geometry-before-stack; standard-mode early return; full-range
+height reset; Single(preempt)*Single(leniency); reverse outer scan and fixed outer
+branch identity while anchor changes; circle start-minus-earlier-end versus slider
+start-minus-earlier-start; spinner skipping; strict distance<3 and time>threshold
+exits; exact negative-tail range/delta; Single(radius/10) displacement step and raw
+minus height*step sign. Position true setter preserves raw/height. Slider virtual
+setter translates dependent geometry and final endpoint. Endpoint helper removes
+existing translation; even traversals end at head. General ties/mods/partial editor
+and <=5 remain outside finite packet, explicitly open.
+
+Competing explanations separated by18 explicit fixtures: time equality vs strict,
+Euclidean vs per-axis distance, moving vs fixed anchor, tail vs head, start vs end
+time, selective negative range, repeat final endpoint, spinner skip and early exit.
+Expectations are hand-derived RECONSTRUCTED predictions, not original observations
+or a copied stacking oracle. No proprietary assets. Source/generator/hash and actual
+expected/observed head coordinates retained. Test raw geometry/sidecar propagation
+only after Work2 implements; head checks alone cannot qualify consumer integration.
+
+New recover.py checked61 decisive byte sites and14 targeted method identities,
+12 agreeing with historical C001 body hashes. First assertions caught3 transcription
+offsets; corrected before successful evidence generation. Fixture reproduction18/18
+PASS. Installed local SDK8.0.427/runtime8.0.33 for actual production audit. Initial
+new runner build CS1061 missing tuple Position name corrected; final Release build
+succeeds. At unchanged production85ec7bffc108e966f373da40a2f5cc495f11f77b,18/18
+fixtures load;43 prepared-head checks,26 matches and17 gaps. Audit mode preserves
+failures; identical strict run returns1. These are verified missing behavior, NOT
+stack equivalence. New unchanged finite independent run106/106 fields,4/4engineering
+PASS,10diagnostic probes not semantic passes. No new full2309/historical Windows
+run for unchanged production; previous Windows evidence remains historical.
+
+Created original-behavior/03-standard-stacking.md, targeted stacking collector,
+independent corpus/generator, headless production audit and sealed results/readme.
+Appended coverage/dependency/discrepancy/status deltas and this journal; preserved
+all tracked pre-existing byte content except append-only tails. No production,
+workflow, old fixtures, old numbered reports or old expectations changed.
+
+Work2 had stopped at handoff blocker and no stacking implementation was available
+for independent inspection at e6881e1. Packet answers finite B1–B3; next Work2
+activation must implement and publish for independent actual-source consumer QA and
+one integrated full Windows gate. This is a verified research/audit checkpoint,
+not an integrated stacking acceptance or complete C001. Owner Windows/original
+qualification NOT RUN; no physical input/render/audio or star-cause claim.19 QA15
+owner differences and Joined Bezier remain open. Recheck remote before serialized
+main publication; exact publication commit is identified by this entry's Git commit.

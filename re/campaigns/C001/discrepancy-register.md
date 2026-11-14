@@ -24,3 +24,12 @@ application/catalog LoadCanonical, without historical test edits. Local QA04 43/
 PASS; corrected Windows confirmation pending. D10 path-specific fixture attributes
 added; exact Windows byte confirmation pending. Original44 semantic gaps unchanged
 under actual canonical API; do not close them because legacy regression passes.
+
+## Issue #1 original-derived stacking audit — 2026-11-14
+
+C001-D12 OPEN / VERIFIED COMPONENT: production85ec7bf accepts all18 new finite
+stacking charts but has17 mismatching prepared heads out of43. No stacking pass
+exists at shared e6881e1; source review agrees with runtime audit. New independent
+strict runner retains failure and returns1. B1–B3 research dependency is now answered
+for normal >5 standard full-range/no-mod loading; production integration remains
+pending. No star mismatch is explained by this result and no old failure is waived.

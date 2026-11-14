@@ -83,3 +83,13 @@ Original evidence, production execution and human qualification are separate gat
 | C001-075 | G. Events, breaks and resources: Filename and path interpretation | UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md | PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required | PENDING canonical production | UNVERIFIED ORIGINAL-RUNTIME |
 | C001-076 | G. Events, breaks and resources: Resource resolution and missing-resource behavior | UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md | PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required | PENDING canonical production | UNVERIFIED ORIGINAL-RUNTIME |
 | C001-077 | G. Events, breaks and resources: Event timing and ordering | UNRESOLVED; see original-behavior/static-inventory.json and inherited-research.md | PARTIAL HISTORICAL or NOT IMPLEMENTED; Work 2 inventory required | PENDING canonical production | UNVERIFIED ORIGINAL-RUNTIME |
+
+## Issue #1 delta — Work1 checkpoint03, 2026-11-14
+
+| Feature IDs | Original static evidence | Reconstruction | Independent verification | Runtime |
+|---|---|---|---|---|
+| 056–063,067: >5 standard full-range no-mod stacking | Targeted traversal, negative propagation, threshold/proximity, radius/10 scale, sign, original/prepared separation and geometry ordering recovered in original-behavior/03-standard-stacking.md;61 decisive sites checked | Missing at85ec7bf; Work2 B1–B3 handoff now available | 18 independent fixtures load;43 prepared-head checks,17 mismatches; heads only, not full geometry/sidecar verification | NOT RUN |
+
+This finite delta does not close the broader feature rows. <=5, partial editor,
+equal-time admission, general modifier/configuration and non-standard preparation
+remain OPEN. Implementation source review and integrated Windows gate pending.
