@@ -3,7 +3,7 @@
 | ID | Status / classification | Evidence and required disposition |
 |---|---|---|
 | D001 | OPEN — owner-reported runtime | QA15:8 matching displays,19 mismatches, none lower in ohno. Original executable/chart hash/cache corroboration missing. No causal finding; do not fit R17 math. |
-| D002 | OPEN — original research dependency | P/C samplers and historical aliases not sufficiently specified by E006/E032; preserve raw data, gameplay rejects. Work 1 recover branches/helpers. |
+| D002 | PARTIAL — finite P implemented a6c7dab; new P independent QA pending | Work1 05-perfect-circle supports finite P now integrated/tested. Catmull, remaining aliases, general legacy/editor/exceptional and zero-output behavior remain OPEN; no blanket slider compatibility. |
 | D003 | OPEN — original research dependency | General stacking/equal-time registration/version5–6 preparation order and modifier transforms. Preserve raw ordering; do not replace with modern algorithm. |
 | D004 | PARTIAL — C001 Work 1 checkpoint01 integrated | Stage-specific whitespace/unknown-section/colon rules and fresh difficulty defaults/order/version/clamps implemented. Remaining recognized fields, header/error recovery and mode-specific loading/preparation stay open. |
 | D005 | OPEN — original/runtime dependency | Short timing sample/global defaults; old-format spinner audio/behavior and nonstandard factories. No fabricated defaults. |
@@ -30,3 +30,5 @@ weaken old expectations silently.
 | D019 | BLOCKED — issue #1 targeted >5 stacking handoff | Existing E006/E045/C001 boundaries and zero-stack proof do not specify complete height propagation or F0ae1 displacement. B1–B3 in 04-issue1-stacking-evidence-blocker.md identify the exact Work1 packet needed. No production change/new stack coverage; issue stop condition used. |
 
 | D020 | VERIFIED COMPONENT / independent QA PENDING — `52c300a` | Work 1's 18 hashed fixtures provided 43 hand-derived prepared-head expectations, with 17 gaps on prior production. New Work 2 finite >5 CS5/AR5 ordinary full-range stack pass now yields 43/43 matching development assertions and 20 slider consumer checks in successful Windows run43540928098. Work 1's unchanged independent stacking runner has NOT been re-executed against the new source. This record supersedes D019's research blocker only for the declared finite profile; remaining modes/configurations and original runtime stay OPEN. |
+
+| D020 | VERIFIED COMPONENT / retained scheduling observation | P sampling-two-trim exposes inherited [1060,1030] checkpoint ordering and parentend1060, with one checkpoint credited by retained per-update completion. No timing fix or fixture edit; actual paired shared-contract histories match. Original runtime/owner comparison remains unverified. |

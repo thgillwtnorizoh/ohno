@@ -88,3 +88,14 @@ Read status.md, both coverage matrices, consumer-inventory.md, discrepancies.md,
 Work 1's dependency/discrepancy registers and both journals before continuing.
 Fetch/reconcile canonical main and use an expected-head non-force update. Research
 and implementation exchange findings continuously; historical evidence stays intact.
+
+## Issue #2 finite P checkpoint (2026-11-14)
+
+Canonical finite P now implemented/tested at a6c7dabc65372f83641926b89384cd14b3813a71.
+See06-issue2-perfect-integration.md and current status. SliderPathKind overload
+retains bool L/B adapter; SourceKind/PreparedKind/SourceControls/source-circle and
+RawPath distinguish original identity from prepared fallback/translated geometry.
+Existing shared tail/traversal/consumer and finite stacking contracts are reused.
+Windows P299 checks and all retained gates pass; new independent P QA remains
+Work1's next task. Prior statements about unimplemented P describe earlier/full
+coverage; Catmull/general legacy/editor/exceptional/zero-output behavior remain open.

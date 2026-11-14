@@ -1,0 +1,11 @@
+{
+  "source": "a6c7dabc65372f83641926b89384cd14b3813a71",
+  "artifact_id": 14105833964,
+  "zip_bytes": 67756901,
+  "zip_sha256": "32803501a193b123c702e718f72a8ee453f9213dda77c35e35d0ba182484e8aa",
+  "entries": 77,
+  "executable": "_temp/ohno-c001-windows/Ohno.CircleGame.exe",
+  "p_corpus_files": 21,
+  "all_original_fixture_hashes_match": true,
+  "result": "PASS source commit, executable presence, raw fixture package hashes and results retrieval; no application execution"
+}

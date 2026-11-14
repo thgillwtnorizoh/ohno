@@ -1,0 +1,1989 @@
+{
+  "classification": "Work2 production development; Work1 fixture predictions reused, subsequent independent actual-source QA pending",
+  "originalRuntime": "NOT RUN",
+  "source": "a6c7dabc65372f83641926b89384cd14b3813a71",
+  "runtime": "8.0.34",
+  "productionSha256": "80FA2D810C1428FDE6B59E0F8B1443CF6C4DC6C78793C52D25BE927CC02E0CE8",
+  "testSha256": "18BFB136A6A5A0FC69C46FC5FC3B147801B55922C818B96FF57996F73CC62DFF",
+  "groups": 299,
+  "fixtureCount": 21,
+  "results": [
+    {
+      "id": "semicircle-positive",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "semicircle-positive",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "semicircle-negative",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "major-negative",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "sampling-zero",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "sampling-one",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "sampling-two-trim",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "chord-extension",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "vanishing-length",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "vanishing-length",
+      "label": "explicit unsupported/malformed gameplay disposition",
+      "pass": true
+    },
+    {
+      "id": "vanishing-length",
+      "label": "empty adjusted collection remains explicit unsupported output",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "near-collinear",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "version-5-arc",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "version-9-arc",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "circumcenter/radius/signed angles/sample count against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "original endpoint and non-2pi angle wrap literal",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "repeat-two",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "collinear-backtrack",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "closed-degenerate",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "all-coincident",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "all-coincident",
+      "label": "explicit unsupported/malformed gameplay disposition",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "two-controls",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "singleton",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "singleton",
+      "label": "explicit unsupported/malformed gameplay disposition",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "original segment flags",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "fractional-collinear",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "all raw chord vertices against Work1 finite predictions",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "all adjusted segment endpoints against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "ordered Single chord/Double cumulative lengths against Work1 predictions",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "four-controls-modern",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "source bytes/hash and raw P path retained",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "original count/determinant fallback kind",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "normalized source controls preserved before stacking",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "v9 P4 delegates unchanged version-aware Bezier (dispatch-only authority)",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "shared traversal count and odd/even endpoint",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "sample schedule and stable reload (no cumulative preparation)",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "fresh ownership and resource operand identity",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "health checkpoint contract and NewCombo registered identity",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "existing slider sound metadata selection",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "actual render/input layout transforms consume prepared ball coordinates",
+      "pass": true
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "label": "actual P session preserves shared prepared-contract judgement/score/checkpoint/sound history (including nonmonotone final scheduling)",
+      "pass": true
+    },
+    {
+      "id": "malformed-coordinate",
+      "label": "unchanged Work1 fixture SHA256",
+      "pass": true
+    },
+    {
+      "id": "malformed-coordinate",
+      "label": "explicit unsupported/malformed gameplay disposition",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "input follows sampled arc rather than first-last chord",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "historical string loader still rejects P",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "R17 strict admission unchanged",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "canonical P cancellation",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "geometry cancellation before allocation",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "engineering sample allocation bound",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "ordinary Play does not impose editor 640 bounds",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "existing positive stacking translates P while preserving raw geometry",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "stacked P controls/movement/resource/health identities stay coherent",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "stacked P reload does not accumulate offsets",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "existing negative slider-tail stack uses prepared P tail",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "mixed P/L/B registration in existing consumers",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "malformed replacement rejects",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "failed replacement leaves existing session untouched",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "head insertion precedes P count dispatch",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "single supplied endpoint plus inserted head selects Linear fallback",
+      "pass": true
+    },
+    {
+      "id": "extra-contracts",
+      "label": "SOURCE REVIEW render path/ball already consume shared prepared geometry; no GUI execution",
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "semicircle-positive",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 12,
+      "preparedSegments": 12,
+      "preparedKind": 3,
+      "EndTime": 1499,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1464
+      ],
+      "end": [
+        68.03186,
+        100.24203
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "semicircle-negative",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 12,
+      "preparedSegments": 12,
+      "preparedKind": 3,
+      "EndTime": 1500,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1464
+      ],
+      "end": [
+        68.03186,
+        99.75797
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "major-negative",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 3,
+      "preparedSegments": 3,
+      "preparedKind": 3,
+      "EndTime": 1130,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1094
+      ],
+      "end": [
+        100.38478,
+        106.38478
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "sampling-zero",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 1,
+      "preparedSegments": 1,
+      "preparedKind": 3,
+      "EndTime": 1020,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1010
+      ],
+      "end": [
+        98,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "sampling-one",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 1,
+      "preparedSegments": 1,
+      "preparedKind": 3,
+      "EndTime": 1030,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1015
+      ],
+      "end": [
+        97,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "sampling-two-trim",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1060,
+      "successful": 1,
+      "scheduled": 2,
+      "checkpointTimes": [
+        1060,
+        1030
+      ],
+      "end": [
+        97.51472,
+        103.51472
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "chord-extension",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1120,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1084
+      ],
+      "end": [
+        89.029434,
+        95.029434
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "vanishing-length",
+      "disposition": "REJECTED by finite engineering admission; not original-runtime equivalence",
+      "expected": {
+        "adjustedLength": 0.0,
+        "analyticLengthUsedOnlyForSampling": 18.84955592153876,
+        "angleWrapLiteral": 6.2831854820251465,
+        "branch": "Perfect-three",
+        "center": [
+          100,
+          100
+        ],
+        "cumulativeLengths": [],
+        "endAngle": 3.141592653589793,
+        "exactCenter": [
+          "100",
+          "100"
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "preparedCollectionWritten": false,
+        "preparedEnd": null,
+        "preparedSegments": [],
+        "radius": 6.0,
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            106,
+            100
+          ],
+          [
+            100.0,
+            106.0
+          ],
+          [
+            94,
+            100
+          ]
+        ],
+        "samplingInteger": 2,
+        "segmentFlags": {
+          "IsLinear": false,
+          "IsSubcurveEnd": false
+        },
+        "startAngle": 0.0,
+        "storedPreparedKind": 3,
+        "sweep": 3.141592653589793,
+        "unadjustedChordLength": 16.970561981201172
+      }
+    },
+    {
+      "id": "near-collinear",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 25,
+      "preparedSegments": 25,
+      "preparedKind": 3,
+      "EndTime": 1999,
+      "successful": 2,
+      "scheduled": 2,
+      "checkpointTimes": [
+        1500,
+        1964
+      ],
+      "end": [
+        299.99417,
+        100.999916
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "version-5-arc",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1060,
+      "successful": 1,
+      "scheduled": 2,
+      "checkpointTimes": [
+        1060,
+        1030
+      ],
+      "end": [
+        97.51472,
+        103.51472
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "version-9-arc",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1060,
+      "successful": 1,
+      "scheduled": 2,
+      "checkpointTimes": [
+        1060,
+        1030
+      ],
+      "end": [
+        97.51472,
+        103.51472
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "repeat-two",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1120,
+      "successful": 4,
+      "scheduled": 4,
+      "checkpointTimes": [
+        1060,
+        1060,
+        1060,
+        1084
+      ],
+      "end": [
+        106,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "collinear-backtrack",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1040,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1020
+      ],
+      "end": [
+        100,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "closed-degenerate",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1060,
+      "successful": 1,
+      "scheduled": 2,
+      "checkpointTimes": [
+        1060,
+        1030
+      ],
+      "end": [
+        102.48528,
+        103.51472
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "all-coincident",
+      "disposition": "REJECTED by finite engineering admission; not original-runtime equivalence",
+      "expected": {
+        "adjustedLength": 0.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [
+          0.0,
+          0.0
+        ],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": true,
+        "preparedEnd": [
+          100,
+          100
+        ],
+        "preparedSegments": [
+          [
+            [
+              100,
+              100
+            ],
+            [
+              100,
+              100
+            ]
+          ],
+          [
+            [
+              100,
+              100
+            ],
+            [
+              100,
+              100
+            ]
+          ]
+        ],
+        "rawSegmentCount": 2,
+        "rawVertices": [
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ],
+          [
+            100,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 3,
+        "unadjustedChordLength": 0.0
+      }
+    },
+    {
+      "id": "two-controls",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 1,
+      "preparedSegments": 1,
+      "preparedKind": 2,
+      "EndTime": 1060,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1030
+      ],
+      "end": [
+        112,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "singleton",
+      "disposition": "REJECTED by finite engineering admission; not original-runtime equivalence",
+      "expected": {
+        "adjustedLength": 0.0,
+        "branch": "Linear-fallback",
+        "cumulativeLengths": [],
+        "finalSchedule": "Shared E005/E016/E021, not separately emulated here",
+        "normalizedControls": [
+          [
+            100,
+            100
+          ]
+        ],
+        "preparedCollectionWritten": false,
+        "preparedEnd": null,
+        "preparedSegments": [],
+        "rawSegmentCount": 0,
+        "rawVertices": [
+          [
+            100,
+            100
+          ]
+        ],
+        "segmentFlags": {
+          "IsLinear": true,
+          "IsSubcurveEnd": true
+        },
+        "storedPreparedKind": 2,
+        "unadjustedChordLength": 0
+      }
+    },
+    {
+      "id": "fractional-collinear",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 2,
+      "preparedSegments": 2,
+      "preparedKind": 3,
+      "EndTime": 1010,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1005
+      ],
+      "end": [
+        102,
+        100
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "four-controls-modern",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 6,
+      "preparedSegments": 6,
+      "preparedKind": 1,
+      "EndTime": 1020,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1010
+      ],
+      "end": [
+        103.4291,
+        99.63795
+      ],
+      "oracleScope": "declared finite coordinate/length expectations"
+    },
+    {
+      "id": "four-controls-v9-dispatch",
+      "disposition": "finite gameplay loaded",
+      "rawSegments": 199,
+      "preparedSegments": 199,
+      "preparedKind": 1,
+      "EndTime": 1020,
+      "successful": 1,
+      "scheduled": 1,
+      "checkpointTimes": [
+        1010
+      ],
+      "end": [
+        103.39669,
+        99.60952
+      ],
+      "oracleScope": "dispatch only"
+    },
+    {
+      "id": "malformed-coordinate",
+      "disposition": "REJECTED by finite engineering admission; not original-runtime equivalence",
+      "expected": {
+        "branch": "runtime-row-error",
+        "normalCaller": "row error rethrown; validation/skip caller can skip row",
+        "preparedGeometry": "NOT PRODUCED; CLR exception identity NOT VERIFIED RUNTIME",
+        "site": "M28f7:1775 reads missing Y cell after successful X parse; token lacks colon"
+      }
+    }
+  ]
+}

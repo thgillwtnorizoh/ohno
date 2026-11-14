@@ -1,0 +1,19 @@
+{
+  "start": "702b81ff2f1cbfc64861fdc54072f2861babee2b",
+  "production": "a6c7dabc65372f83641926b89384cd14b3813a71",
+  "result": "PASS",
+  "protected_paths": [
+    "re",
+    "reconstructed/C001DevelopmentChecks",
+    "reconstructed/R06PreparationChecks",
+    "reconstructed/R17DevelopmentChecks",
+    "reconstructed/CircleGame/Difficulty",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+    "reconstructed/CircleGame/Rendering",
+    "reconstructed/CircleGame/Selection",
+    "reconstructed/CircleGame/Program.cs"
+  ],
+  "journal_prefix_sha256": "1ddba0194d708f3174f28e555bdddf00c7d33d54f0f5bec7b1df504fc95b1181",
+  "statement": "Original research/fixtures and existing tests/consumer/math sources untouched; implementation journal retains exact prefix. No original runtime inference."
+}

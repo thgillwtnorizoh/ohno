@@ -33,7 +33,8 @@ Inventory disposition: preliminary complete domain categories, original branch-b
 | E Geometry: Bezier7–8 | E032 | forward duplicates, adaptive no pair bypass | runtime/edge closure open |
 | E Geometry: Bezier9 | E032 | 50*n sampler excludes endpoint, pair bypass | runtime/edge closure open |
 | E Geometry: Bezier10–14 | E032 | adaptive weighted leaf + pair bypass | runtime/edge closure open |
-| E Geometry: Perfect-circle/Catmull/aliases | E006 branch inventory only | raw retained; gameplay rejects | Work 1 helper research required |
+| E Geometry: Perfect-circle finite P | Work1 05-perfect-circle /21 exact fixtures | a6c7dab canonical source/prepared kinds, L/B fallbacks, arc sampling/flags and shared tail/consumers;299 development checks PASS | subsequent Work1 independent P QA; editor/exceptional/zero-output/general legacy remain open |
+| E Geometry: Catmull/remaining aliases | separate original research required | unsupported; unchanged explicit rejection | outside Issue #2; OPEN |
 | E Geometry: Length/truncation/extension/cumulative | E006 | shared Single-segment/Double cumulative pass | all exceptional states open |
 | E Geometry: Traversal/movements/checkpoints | E005/016/021/022 | shared existing typed definitions | full malformed/extreme branch closure open |
 | F Preparation: StackLeniency/threshold | E004/006/036/045 partial | raw/prepared distinction preserved; existing restrictions explicit | original general algorithm/relevant variants open |
@@ -88,3 +89,12 @@ PASS, historical workflow stages PASS, Release0 warnings/errors. The historical
 **OPEN:** Independent Work 1 production stacking verification (original runner),
 <=5/partial editor, variable CS/AR/mod/viewport, ties, other modes, original
 runtime/human qualification, all other C001 rows. No subsystem completion claim.
+
+## Issue #2 verified finite P delta — 2026-11-14
+
+Actual sourcea6c7dabc65372f83641926b89384cd14b3813a71; Windows43575301213 PASS.
+P299/299 development,21 fixture dispositions (17finite/4explicit rejections),
+retained C001264/264, historical2309 and retained suites, stacking43+394 and finite
+106+4 regression PASS. Work1's original fixture values remain unchanged; v9 P4
+oracle scope is dispatch only. Independent new-source P QA and owner/runtime remain
+PENDING. No Catmull, full legacy/editor/exceptional/zero-path or star expansion.

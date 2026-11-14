@@ -1584,3 +1584,37 @@ subsequent independent actual-source P verification remains pending.
 Next: one integrated exact-source Windows historical regression/Release/portable gate,
 including new P checks and retained stacking suites; then publish exact results,
 coverage/register delta and UEP checkpoint. Owner/original runtime NOT RUN. C001 OPEN.
+
+C001 Work2 Issue#2 VERIFIED production checkpoint:
+a6c7dabc65372f83641926b89384cd14b3813a71, starting702b81ff2f1cbfc64861fdc54072f2861babee2b.
+One integrated Windows gate43575301213/job132388122215 SUCCESS, SDK8.0.427/runtime8.0.33,
+Release0compiler warnings/0errors; self-contained win-x64 publish PASS. P299/299
+checks/21 dispositions (17finite admitted,4explicit engineering rejections), retained
+C001264/264, all2309 historical named QA and retained development steps PASS;
+unchanged stacking18/18loads43heads0gaps and394/394integration; strict finite106/106+
+4/4controls,10diagnostic-only probes not semantic passes. No historical fixture or
+expectation changed. Work2 replay of independent regression is not a new independent
+P verdict. Work1 subsequent actual-source P QA remains pending.
+
+Raw Windows returned log2502927bytes SHA256
+a2c97c8d674616d9d0987beb19f756ffd48cceb8282b7ea33f911b7251145db7;
+ordinary lines compressed, repeated old evidence payloads hash-addressed using the
+existing capture helper. Actual Windows P/stacking/finite packets downloaded and
+sealed. Artifact14105833964,67756901bytes, SHA256
+32803501a193b123c702e718f72a8ee453f9213dda77c35e35d0ba182484e8aa,
+https://github.com/thgillwtnorizoh/ohno/actions/runs/43575301213/artifacts/14105833964.
+Downloaded ZIP digest matches metadata; package contains exact SOURCE-COMMIT,
+executable and21 unchanged P fixture hashes. No app execution in inspection.
+
+Updated06-issue2-perfect-integration (full UEP checkpoint), live recovery status,
+implementation coverage/D002/D020, dependency table, source/Windows/local records and
+qualification protocol. Final evidence-only child changes no production/tests/
+fixtures/workflow; CI skip prevents redundant documentation-only full rerun, waives
+no production gate. Original research/old tests and journal prefixes preserved.
+
+Stop this bounded execution at verified integrated finite P delivery perIssue#2.
+Next actorWork1 independently verifies actuala6c7dab against original05-perfect-circle
+and21-fixture expectations, including consumers/precision/tail/traversal; corrections
+remain inIssue#2. Owner runtime/GUI/listening/physical input and original x86 behavior
+NOT RUN. C001 OPEN; no all-slider/legacy/editor/exceptional/zero-output or Catmull
+claim, no19-star-difference/JoinedBezier resolution, no owner acceptance or waiver.
