@@ -1,0 +1,55 @@
+name: C001 corpus audit focused Release gate
+on:
+  push:
+    branches: [main]
+    paths:
+      - reconstructed/CorpusAudit/**
+      - reconstructed/CorpusAuditChecks/**
+      - .github/workflows/corpus-audit.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Pin an installed .NET 8 SDK
+        shell: pwsh
+        run: |
+          $versions = @(dotnet --list-sdks | ForEach-Object { if ($_ -match '^(8.0.d+)s') { [version]$Matches[1] } } | Sort-Object -Descending)
+          if ($versions.Count -eq 0) { throw 'No installed .NET 8 SDK; focused gate blocked.' }
+          @{sdk=@{version=$versions[0].ToString();rollForward='disable';allowPrerelease=$false}} | ConvertTo-Json | Set-Content -Encoding utf8 global.json
+          dotnet --info
+      - name: Build actual linked production and audit in Release
+        shell: pwsh
+        run: |
+          dotnet build reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --nologo
+          exit $LASTEXITCODE
+      - name: Mixed inputs and preserved C001 QA15 L B P C stacking fixtures
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --no-build -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/corpus-audit-results"
+          exit $LASTEXITCODE
+      - name: Package locally runnable audit
+        shell: pwsh
+        run: |
+          dotnet publish reconstructed/CorpusAudit/CorpusAudit.csproj -c Release --no-restore -o "${{ runner.temp }}/corpus-audit-tool"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Copy-Item reconstructed/CorpusAudit/README.md "${{ runner.temp }}/corpus-audit-tool/"
+          git rev-parse HEAD | Set-Content "${{ runner.temp }}/corpus-audit-tool/SOURCE-COMMIT.txt"
+      - name: Preserve synthetic-only focused evidence and tool
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ohno-corpus-audit-${{ matrix.os }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/corpus-audit-results/
+            ${{ runner.temp }}/corpus-audit-tool/
+          if-no-files-found: warn

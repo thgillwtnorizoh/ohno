@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../CircleGame/Gameplay/Beatmap.cs" Link="Production/Beatmap.cs" />
+    <Compile Include="../CircleGame/Gameplay/CircleSession.cs" Link="Production/CircleSession.cs" />
+    <Compile Include="../CircleGame/Gameplay/CircleHitSounds.cs" Link="Production/CircleHitSounds.cs" />
+    <Compile Include="../CircleGame/Gameplay/RankResults.cs" Link="Production/RankResults.cs" />
+    <Compile Include="../CircleGame/Selection/LocalChartCatalog.cs" Link="Production/LocalChartCatalog.cs" />
+    <InternalsVisibleTo Include="CorpusAuditChecks" />
+  </ItemGroup>
+  <Target Name="StampAuditSource" BeforeTargets="GetAssemblyAttributes">
+    <Exec Command="git -C &quot;$(MSBuildProjectDirectory)&quot; rev-parse HEAD" ConsoleToMSBuild="true" StandardOutputImportance="Low"><Output TaskParameter="ConsoleOutput" PropertyName="AuditSourceCommit" /></Exec>
+    <Exec Command="git -C &quot;$(MSBuildProjectDirectory)/../..&quot; status --porcelain -- reconstructed/CorpusAudit reconstructed/CircleGame" ConsoleToMSBuild="true" StandardOutputImportance="Low"><Output TaskParameter="ConsoleOutput" PropertyName="AuditSourceChanges" /></Exec>
+    <GetFileHash Files="@(Compile);$(MSBuildProjectFullPath)" Algorithm="SHA256"><Output TaskParameter="Items" ItemName="AuditSourceHash" /></GetFileHash>
+    <ItemGroup>
+      <AssemblyMetadata Include="SourceCommit" Value="$(AuditSourceCommit)" />
+      <AssemblyMetadata Include="SourceState" Value="clean" Condition="'$(AuditSourceChanges)' == ''" />
+      <AssemblyMetadata Include="SourceState" Value="modified" Condition="'$(AuditSourceChanges)' != ''" />
+      <AssemblyMetadata Include="SourceHash.%(AuditSourceHash.Filename)%(AuditSourceHash.Extension)" Value="%(AuditSourceHash.FileHash)" />
+    </ItemGroup>
+  </Target>
+</Project>

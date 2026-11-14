@@ -1649,3 +1649,34 @@ no source/test/fixture/workflow and skips redundant CI. Updated report/status/
 coverage/dependency/discrepancy; historical prefixes preserved. Work1 independent
 C actual-source QA next, owner/runtime NOT RUN, C001 OPEN. Bounded execution stops
 at successful integrated delivery, with no unrelated investigation or scope waiver.
+
+## C001 Work2 Issue#5 — read-only corpus audit runner — 2026-11-14
+
+UEP-001rev2.1; verified starting main3a26667bb80e085b17e0bfb6754176bbadd4d180.
+Read AGENTS/standing rules/Issue#5/current C001 and canonical catalog/preparation/
+consumer contracts; accepted finite L/B/P/C and stacking preserved. Added standalone
+CorpusAudit plus friend development checks and focused Windows/Linux Release CI.
+Bounded deterministic read-only traversal -> actual ChartFingerprint/LocalChartCatalog
+Index -> fingerprint-verified LoadCanonicalGameplay. Feature projection uses actual
+OsuDocument/ReadStage/metadata/type priority. Per-stage read/index/canonical/consumer/
+audio results, exact hashes, private keys, duplicate counts, primary no-spinner cohort,
+other profiles, safe failure families and cancellation/limit notices are separate.
+Default JSON excludes user paths/content/metadata/messages; relative paths opt-in
+owner-local only. No original/client/media decoding/upload or .osz extraction.
+
+VERIFIED COMPONENT local LinuxSDK8.0.427/runtime8.0.33:239/239 focused PASS,0 skipped;
+Release0warnings/0errors;6 unchanged synthetic roots158files/135canonical successes,
+plus16mixed inputs; deterministic JSON/read-only source stamps/actual production
+linkage/CLI/bounds/symlink/changed/missing/sharing-blocked/unexpected/cancel controls.
+P17/C13/stack18 admissions retained. One stacking canonical success separately fails
+existing health overlap admission. Details/tool usage/local evidence under CorpusAudit/.
+No production/test expectation/original research changed; full historical Windows
+regression not repeated because diagnostic-only. Exact-source focused CI pending
+this initial publication; final checkpoint/seal follows its result. Source commit
+is introducing Git history; local evidence identifies modified starting tree/hashes.
+
+Owner collection NOT PROVIDED/NOT RUN. Original runtime/ownerGUI/input/audio decoding/
+health calibration NOT VERIFIED. Late perceived offset remains deferred; no clock/
+offset/audio compensation or R17/JoinedBezier change. Work1 independent tool QA next;
+owner runs local collection, Headquarters selects one evidence-supported correction.
+C001 subsystem OPEN; stop at verified tool/CI checkpoint, not compatibility completion.
