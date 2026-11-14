@@ -158,6 +158,51 @@ internal static class Program
             File.WriteAllText(path,Map(14,"64,64,1000,1,0\n128,128,2000,1,0")+"// revision\n");
             var commented = Beatmap.LoadCanonical(path);
             Check(commented.Circles.Count == 2 && commented.ScoreMetadata?.RowCount == 2 && commented.ScoreMetadata.PartialErrorLine is not null, "canonical score refresh retains prior rows at partial error while runtime skips comment");
+
+            // Work 1 independently constructed these exact-byte fixtures from
+            // pinned original static sites. Head checks are no substitute for
+            // original-client runtime or for translated consumer verification.
+            string stackRoot = Path.Combine(repo, "re/campaigns/C001/stacking");
+            using var stackingManifest = JsonDocument.Parse(
+                File.ReadAllText(Path.Combine(stackRoot, "manifest.json")));
+            const float stackStep = 3.2013118267059326f;
+            foreach (var fixture in stackingManifest.RootElement.GetProperty("cases").EnumerateArray())
+            {
+                string id = fixture.GetProperty("id").GetString()!;
+                string file = Path.Combine(stackRoot, fixture.GetProperty("path").GetString()!);
+                string sha = Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(file)));
+                Check(sha.Equals(fixture.GetProperty("sha256").GetString(), StringComparison.OrdinalIgnoreCase),
+                    "Work1 stacking fixture hash " + id);
+                var stacked = Beatmap.LoadCanonical(file);
+                var heads = stacked.Circles.Select(c => (Time:c.StartTime, Point:c.Position, Spinner:false))
+                    .Concat(stacked.Sliders.Select(s => (Time:s.Head.StartTime, Point:s.Head.Position, Spinner:false)))
+                    .Concat(stacked.Spinners.Select(s => (Time:s.StartTime, Point:Vector2.Zero, Spinner:true)))
+                    .OrderBy(o => o.Time).ToArray();
+                var predicted = fixture.GetProperty("expected_heights");
+                var rawHeads = fixture.GetProperty("original_heads");
+                Check(heads.Length == predicted.GetArrayLength() && heads.Length == rawHeads.GetArrayLength(),
+                    "Work1 stacking count " + id);
+                for (int i = 0; i < heads.Length; i++)
+                {
+                    if (heads[i].Spinner) continue;
+                    var raw = rawHeads[i];
+                    Vector2 head = new(raw[0].GetSingle(), raw[1].GetSingle());
+                    Vector2 expected = head - new Vector2((float)predicted[i].GetInt32() * stackStep);
+                    Check(Vector2.Distance(expected, heads[i].Point) < .00003f,
+                        "Work1 stacking prepared position " + id + "#" + i);
+                }
+                foreach (var slider in stacked.Sliders)
+                {
+                    // Rendering uses checkpoints, while input uses movement
+                    // interpolation. Both must track the moved head.
+                    Check(Vector2.Distance(slider.Head.Position, slider.Movements[0].From) < .00003f,
+                        "stacked slider first movement " + id);
+                    Check(slider.Checkpoints.All(c => Vector2.Distance(c.Position,
+                        c.Kind == SliderCheckpointKind.Interior ? slider.RequiredPosition(c.Time) :
+                        slider.TraversalEndMovement(c.Traversal).To) < .00003f),
+                        "stacked slider checkpoint/consumer agreement " + id);
+                }
+            }
             string resultPath = Path.Combine(repo, "reconstructed/campaigns/C001/development-results.json");
             File.WriteAllText(resultPath, JsonSerializer.Serialize(new { classification = "Work 2 production development checks; not independent QA or original runtime", groups = Results.Count, results = Results }, new JsonSerializerOptions { WriteIndented = true }));
             Console.WriteLine($"C001 DEVELOPMENT: {Results.Count}/{Results.Count} PASS"); return 0;

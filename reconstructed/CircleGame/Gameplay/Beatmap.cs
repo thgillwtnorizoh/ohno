@@ -915,6 +915,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             maximumEnd = Math.Max(maximumEnd, interval.End);
             if (interval.Spinner) spinnerEnd = interval.End;
         }
+        if (extendedPaths) PrepareFiniteStandardStacking(version, settings!, circles, sliders,
+            circleSamples, sampleOperands, token);
         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
         string? audioPath = null;
         if (fields.TryGetValue("[General]AudioFilename", out string? audioName) && !string.IsNullOrWhiteSpace(audioName))
@@ -958,6 +960,128 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             if (value < 0 || value > 10) throw new InvalidDataException($"{name} must be within 0–10.");
             return value;
         }
+    }
+
+
+    // C001 Issue #1, finite original-static M28ea/M28eb profile. Only full-range,
+    // no-mod ordinary 512x384, CS5/AR5 preparation is established by Work 1's
+    // independent fixture operands. Other settings and partial-editor calls OPEN.
+    // This pass runs before sound/health/NewCombo identity owners are finalized.
+    private sealed class StackingSource(SamplePreparationOperand source)
+    {
+        public CircleDefinition? Circle { get; } = source.Circle;
+        public SliderDefinition? Slider { get; } = source.Slider;
+        public SpinnerDefinition? Spinner { get; } = source.Spinner;
+        public int Height { get; set; }
+        public int Start => Circle?.StartTime ?? Slider?.Head.StartTime ?? Spinner!.StartTime;
+        public int End => Circle?.StartTime ?? Slider?.EndTime ?? Spinner!.EndTime;
+        public Vector2 RawHead => Circle?.Position ?? Slider?.Head.Position ?? new Vector2(256, 192);
+        // The virtual end is the last *traversal* endpoint (even repeats end
+        // at the head); translate only after discovery has consumed this value.
+        public Vector2 RawEnd => Slider?.EndPosition ?? RawHead;
+    }
+
+    private static void PrepareFiniteStandardStacking(int version, OsuMetadataSettings settings,
+        List<CircleDefinition> circles, List<SliderDefinition> sliders,
+        List<CircleSampleMetadata> circleSamples, List<SamplePreparationOperand> operands,
+        CancellationToken token)
+    {
+        // Precise F0ae1 radius producer is established at CS5 in Work 1's
+        // viewport/no-mod reference conditions, not for arbitrary viewport/mods.
+        if (version <= 5 || settings.Mode != 0 || settings.Cs != 5f ||
+            settings.Ar != 5f || settings.StackLeniency <= 0f) return;
+        StackingSource[] objects = operands.Select(o => new StackingSource(o))
+            .OrderBy(o => o.Start).ToArray();
+        float threshold = 1200f * settings.StackLeniency; // AR5 preempt Int32 1200
+        for (int i = objects.Length - 1; i > 0; i--)
+        {
+            token.ThrowIfCancellationRequested();
+            StackingSource outer = objects[i];
+            if (outer.Height != 0 || outer.Spinner is not null) continue;
+            bool circleBranch = outer.Circle is not null; // fixed when anchor moves
+            if (!circleBranch && outer.Slider is null) continue;
+            StackingSource anchor = outer;
+            for (int n = i - 1; n >= 0; n--)
+            {
+                StackingSource earlier = objects[n];
+                if (earlier.Spinner is not null) continue;
+                int gap = circleBranch ? anchor.Start - earlier.End :
+                    anchor.Start - earlier.Start; // original Int32 subtraction
+                if ((float)gap > threshold) break; // equality remains eligible
+                if (circleBranch && earlier.Slider is not null &&
+                    StackingClose(earlier.RawEnd, anchor.RawHead))
+                {
+                    int difference = anchor.Height - earlier.Height + 1;
+                    for (int j = n + 1; j <= i; j++)
+                        if (StackingClose(earlier.RawEnd, objects[j].RawHead))
+                            objects[j].Height -= difference;
+                    break;
+                }
+                if (StackingClose(circleBranch ? earlier.RawHead : earlier.RawEnd, anchor.RawHead))
+                {
+                    earlier.Height = anchor.Height + 1;
+                    anchor = earlier;
+                }
+            }
+        }
+        // F0ae1 = Single(radius/10f), radius=32.013118743896484 in the
+        // original-derived fixture profile. Preserve Single arithmetic/order.
+        const float step = 3.2013118267059326f;
+        var circleMoves = new Dictionary<CircleDefinition, CircleDefinition>(ReferenceEqualityComparer.Instance);
+        var sliderMoves = new Dictionary<SliderDefinition, SliderDefinition>(ReferenceEqualityComparer.Instance);
+        foreach (StackingSource source in objects)
+        {
+            token.ThrowIfCancellationRequested();
+            if (source.Height == 0) continue;
+            Vector2 prepared = source.RawHead - new Vector2((float)source.Height * step);
+            if (source.Circle is { } circle)
+                circleMoves.Add(circle, circle with { Position = prepared });
+            else if (source.Slider is { } slider)
+                sliderMoves.Add(slider, TranslateStackedSlider(slider, prepared));
+        }
+        for (int i = 0; i < circles.Count; i++)
+            if (circleMoves.TryGetValue(circles[i], out var updated)) circles[i] = updated;
+        for (int i = 0; i < sliders.Count; i++)
+            if (sliderMoves.TryGetValue(sliders[i], out var updated)) sliders[i] = updated;
+        for (int i = 0; i < circleSamples.Count; i++)
+            if (circleMoves.TryGetValue(circleSamples[i].Object, out var updated))
+                circleSamples[i] = circleSamples[i] with { Object = updated };
+        for (int i = 0; i < operands.Count; i++)
+        {
+            var entry = operands[i];
+            if (entry.Circle is { } circle && circleMoves.TryGetValue(circle, out var newCircle))
+                operands[i] = entry with { Circle = newCircle };
+            else if (entry.Slider is { } slider && sliderMoves.TryGetValue(slider, out var newSlider))
+                operands[i] = entry with { Slider = newSlider };
+        }
+    }
+
+    private static bool StackingClose(Vector2 a, Vector2 b)
+    {
+        float dx = a.X - b.X, dy = a.Y - b.Y;
+        return (float)Math.Sqrt((double)(dx * dx + dy * dy)) < 3f;
+    }
+
+    private static SliderDefinition TranslateStackedSlider(SliderDefinition original, Vector2 newHead)
+    {
+        Vector2 delta = newHead - original.Head.Position;
+        var geometry = original.Geometry with
+        {
+            // RawSegments remain original, while all prepared traversals move.
+            Controls = original.Geometry.Controls.Select(p => p + delta).ToArray(),
+            Segments = original.Geometry.Segments.Select(s =>
+                s with { From = s.From + delta, To = s.To + delta }).ToArray()
+        };
+        return original with
+        {
+            Head = original.Head with { Position = newHead },
+            Tail = original.Tail + delta,
+            ControlPoints = original.ControlPoints.Select(p => p + delta).ToArray(),
+            Movements = original.Movements.Select(m =>
+                m with { From = m.From + delta, To = m.To + delta }).ToArray(),
+            Checkpoints = original.Checkpoints.Select(c => c with { Position = c.Position + delta }).ToArray(),
+            Geometry = geometry
+        };
     }
 
     private static float Number(string text, string name)
