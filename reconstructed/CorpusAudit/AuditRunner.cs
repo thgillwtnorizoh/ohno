@@ -156,13 +156,13 @@ public static class AuditRunner
     private static AuditRow AuditFile(string path,string relative,string key,AuditOptions options,CancellationToken token,AuditHooks? hooks)
     {
         var row = new AuditRow { EntryKey=key,RelativePath=options.IncludeRelativePaths?relative:null };
-        CatalogChart chart;
+        CatalogChart chart; bool metadataRejected = false;
         try
         {
             var read = ChartFingerprint.Read(path,token); row.Sha256=read.Fingerprint.Sha256;row.Bytes=read.Bytes.Length;row.Read=new("success","exact-bytes-sha256");
             // Source-stage feature projection is diagnostic only: production document,
             // section readers, metadata normalization and runtime type priority are used.
-            try { row.Features=Classify(OsuDocument.Read(read.Bytes,token),token); row.FeatureProjection=new("success","production-document-runtime-stage"); }
+            try { row.Features=Classify(OsuDocument.Read(read.Bytes,token),token,out metadataRejected); row.FeatureProjection=new("success","production-document-runtime-stage"); }
             catch (Exception e) when (Recoverable(e)) { row.FeatureProjection=Failure(e); }
             chart=LocalChartCatalog.Index(path,token:token);
             row.Index=chart.Availability switch { ChartAvailability.Indexed=>new("success","catalog-indexed"),
@@ -184,13 +184,14 @@ public static class AuditRunner
             // Unsupported/Invalid but has a fingerprint. Index != gameplay admission.
             hooks?.AfterIndex?.Invoke(path,chart);
             map=chart.LoadCanonicalGameplay(token);
-            if (map.Document?.SourceSha256 != row.Sha256) { row.Canonical=new("changed-input","prepared-bytes-mismatch");return row; }
+            if (map.Document?.SourceSha256 is not { } preparedHash) { row.Canonical=new("unexpected-failure","prepared-source-hash-missing");return row; }
+            if (preparedHash != row.Sha256) { row.Canonical=new("changed-input","prepared-bytes-mismatch");return row; }
             row.Canonical=new("success","canonical-prepared");
             row.PreparedObjects=map.Circles.Count+map.Sliders.Count+map.Spinners.Count;
             row.PreparedSegments=map.Sliders.Sum(s=>s.Geometry.Segments.Count);
         }
         catch (OperationCanceledException) { throw; }
-        catch (Exception e) when (Recoverable(e)) { row.Canonical=Failure(e);return row; }
+        catch (Exception e) when (Recoverable(e)) { row.Canonical=CanonicalFailure(chart,e,metadataRejected,token);return row; }
         row.Consumers["structure"]=Try(()=>CheckStructure(map,token));
         ScoreConfiguration? score=null; CircleSession? session=null;
         row.Consumers["automatic-score"]=Try(()=>score=ScoreConfiguration.FromBeatmap(map));
@@ -200,6 +201,22 @@ public static class AuditRunner
         else row.Audio=Try(()=> { CatalogPaths.Canonical(map.AudioPath);if(!File.Exists(map.AudioPath))throw new FileNotFoundException(); },"audio-present-not-decoded");
         return row;
     }
+    private static Outcome CanonicalFailure(CatalogChart chart,Exception failure,bool metadataRejected,CancellationToken token)
+    {
+        // Catalog verification is retained, but its exception text is not trusted
+        // provenance. Observe the revision independently even when loading failed.
+        try
+        {
+            if (ChartFingerprint.Read(chart.Path,token).Fingerprint != chart.Fingerprint)
+                return new("changed-input","fingerprint-changed");
+        }
+        catch(OperationCanceledException){throw;}
+        catch(Exception observation)when(Recoverable(observation)){return Failure(observation);}
+        // The same captured document failed production metadata preparation.
+        // Never select a reason from the offending value embedded in its error.
+        return metadataRejected && failure is InvalidDataException
+            ? new("malformed-input","metadata-syntax",nameof(InvalidDataException)) : Failure(failure);
+    }
     private static Outcome Try(Action action,string success="checked")
     { try { action();return new("success",success); }catch(OperationCanceledException){throw;}catch(Exception e)when(Recoverable(e)){return Failure(e);} }
     private static bool Recoverable(Exception e)=>e is not OutOfMemoryException and not StackOverflowException and not AccessViolationException;
@@ -208,7 +225,6 @@ public static class AuditRunner
         string name=e.GetType().Name;string m=e.Message.ToLowerInvariant();
         if(e is FileNotFoundException or DirectoryNotFoundException)return new("missing-resource","file-missing",name);
         if(e is UnauthorizedAccessException)return new("read-error","access-denied",name);
-        if(m.Contains("changed since indexing"))return new("changed-input","fingerprint-changed",name);
         if(e is FormatException or OverflowException)return new("malformed-input","numeric-or-format",name);
         if(e is InvalidDataException)
         {
@@ -242,9 +258,9 @@ public static class AuditRunner
             ("no playable", "no-playable-objects"),("no indexed", "no-indexed-objects")];
         return rules.FirstOrDefault(r=>m.Contains(r.Pattern,StringComparison.Ordinal)).Code??fallback;
     }
-    private static Features Classify(OsuDocument doc,CancellationToken token)
+    private static Features Classify(OsuDocument doc,CancellationToken token,out bool metadataRejected)
     {
-        var settings=OsuMetadataSettings.Prepare(doc,token);int rows=0,circles=0,sliders=0,spinners=0,other=0,unknown=0,unknownRepeats=0,timing=0,bases=0,inherited=0,unknownTiming=0;
+        var settings=OsuMetadataSettings.Prepare(doc,token);metadataRejected=settings.Error is not null;int rows=0,circles=0,sliders=0,spinners=0,other=0,unknown=0,unknownRepeats=0,timing=0,bases=0,inherited=0,unknownTiming=0;
         int? min=null,max=null;var beats=new HashSet<double>();var paths=new SortedDictionary<string,int>(StringComparer.Ordinal);
         foreach(var entry in doc.ReadStage(OsuReadStage.RuntimeObjects,token))
         {

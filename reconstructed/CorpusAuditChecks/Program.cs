@@ -85,10 +85,31 @@ SliderTickRate:1
             Check(Row(report,"secret-name.osu").Consumers.Values.All(x=>x.Status=="success"),"actual score, fresh-health-source and session construction pass");
             File.WriteAllText(Path.Combine(output,"mixed.json"),json);
 
+            // Immutable diagnostic strings are data, never revision evidence.
+            string spoof=Path.Combine(temp,"spoof.osu");
+            foreach(string phrase in new[]{"changed since indexing","CHANGED SINCE INDEXING","Chart changed since indexing; refresh and commit its new row: private.osu","unsupported mode: fingerprint-changed"})
+            {
+                File.WriteAllText(spoof,circles.Replace("CircleSize:5","CircleSize:"+phrase));
+                string hash=Hash(File.ReadAllBytes(spoof));long stamp=File.GetLastWriteTimeUtc(spoof).Ticks;
+                var immutable=AuditRunner.Run(temp);var rejected=Row(immutable,"spoof.osu");string privateSafe=AuditRunner.Json(immutable);
+                Check(rejected.Canonical.Status=="malformed-input"&&rejected.Canonical.Code=="metadata-syntax","immutable metadata phrase rejected by trusted stage: "+phrase);
+                Check(rejected.Sha256==hash&&Hash(File.ReadAllBytes(spoof))==hash&&File.GetLastWriteTimeUtc(spoof).Ticks==stamp,"immutable spoof bytes/hash/stamp preserved: "+phrase);
+                Check(!privateSafe.Contains(phrase,StringComparison.Ordinal)&&!privateSafe.Contains("spoof.osu")&&privateSafe==AuditRunner.Json(AuditRunner.Run(temp)),"spoof privacy and deterministic report: "+phrase);
+                Check(immutable.StageOutcomes.Values.All(c=>c.Values.Sum()==17),"spoof retains every stage denominator: "+phrase);
+            }
+            File.Delete(spoof);
+            Check(AuditRunner.Failure(new InvalidDataException("changed since indexing")).Status=="unclassified-rejection","arbitrary phrase cannot assert revision evidence");
+            var forged=AuditRunner.RunCore(temp,new(),default,new((path,_)=>{if(Path.GetFileName(path)=="C.osu")throw new InvalidDataException("Chart changed since indexing; refresh and commit its new row: private.osu");}));
+            Check(Row(forged,"C.osu").Canonical.Status=="unclassified-rejection","even forged exact catalog message is not mutation proof");
             // Tests deliberately mutate their synthetic source through internal hooks;
             // production runner exposes no CLI mutation operation.
             var changed=AuditRunner.RunCore(temp,new(),default,new((path,_)=>{if(Path.GetFileName(path)=="C.osu")File.AppendAllText(path,"\n// deliberate change");}));
             Check(Row(changed,"C.osu").Canonical.Status=="changed-input"&&Row(changed,"L.osu").Canonical.Status=="success","changed file detected; subsequent files isolated");
+            File.WriteAllText(Path.Combine(temp,"C.osu"),files["C.osu"]);
+            var stampOnly=AuditRunner.RunCore(temp,new(),default,new((path,_)=>{if(Path.GetFileName(path)=="C.osu")File.SetLastWriteTimeUtc(path,File.GetLastWriteTimeUtc(path).AddSeconds(2));}));
+            Check(Row(stampOnly,"C.osu").Canonical.Status=="changed-input"&&Row(stampOnly,"C.osu").Sha256==Hash(File.ReadAllBytes(Path.Combine(temp,"C.osu"))),"real timestamp-only catalog revision preserved");
+            var mutatedMetadata=AuditRunner.RunCore(temp,new(),default,new((path,_)=>{if(Path.GetFileName(path)=="C.osu")File.WriteAllText(path,files["C.osu"].Replace("CircleSize:5","CircleSize:changed since indexing"));}));
+            Check(Row(mutatedMetadata,"C.osu").Canonical.Status=="changed-input","actual mutation to malformed metadata uses observed fingerprint transition");
             File.WriteAllText(Path.Combine(temp,"C.osu"),files["C.osu"]);
             var missing=AuditRunner.RunCore(temp,new(),default,new((path,_)=>{if(Path.GetFileName(path)=="C.osu")File.Delete(path);}));
             Check(Row(missing,"C.osu").Canonical.Status=="missing-resource","file disappears after indexing");File.WriteAllText(Path.Combine(temp,"C.osu"),files["C.osu"]);

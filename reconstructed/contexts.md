@@ -1712,3 +1712,23 @@ NOT RUN; Headquarters chooses one supported gap only after actual results. Timin
 observation deferred, R17/JoinedBezier unchanged. C001 subsystemOPEN; Issue#4 owner
 runtime remains separate, original equivalence/acceptance NOT VERIFIED. Stop at
 this verified functional audit delivery. Published SHA in introducing Git history.
+
+## C001 Work2 Issue#5 C01 — trusted mutation diagnostics — 2026-11-14
+
+Starting/current main6e959fef9cdf62e230db79c42a7b43f4bc2b6375 verified; read rules,
+Issue#5 and independent10-corpus-audit-diagnostic plus unchanged probe/fixtures.
+Corrected CorpusAudit only: removed message-substring mutation detection; retain
+actual CatalogChart revision verification/LoadCanonicalGameplay, observe production
+ChartFingerprint after load failure, classify immutable failed metadata by its known
+production stage. Missing prepared source hash is an unexpected invariant failure,
+not invented mutation. Gameplay/offset/sliders/R17 and historical expectations intact.
+Added20 discriminators to existing239checks: local LinuxSDK8.0.427/runtime8.0.33
+259/259PASS,0skipped. Original Work1 probe executed unchanged9/10PASS; corrected
+malformed-phrase assertion PASS, sole failed assertion now hardcoded clean8c5ba835
+identity, impossible for honest corrected-source provenance. Do not forge SHA or
+modify/waive independent probe. Publish correction, exact Windows/Linux focused CI
+and blocker evidence; all-ten acceptance remains BLOCKED pending Work1 provenance
+parameterization/authorization. This is not a10/10pass or independent Work1 verdict.
+C001/Issue#5 OPEN; original/owner/GUI/audio/healthcalibration and private corpus
+NOT RUN. Next Work1 rechecks correction and remaining independent scope; Issue#4
+owner runtime remains separate. Initial source commit in introducing Git history.
