@@ -1,5 +1,18 @@
 # C001 current implementation and acceptance status
 
+**OPEN — Work 2 finite standard stacking implementation verified in Windows; independent Work 1 stacking QA and owner qualification pending.**
+
+## Current checkpoint — Issue #1 stacking integration, 2026-11-14
+
+- Exact code and new development test source: `52c300a9b508567987331c54f51a0944f9c5b8fd`, Windows run 43540928098 SUCCESS.
+- 264/264 C001 development checks PASS, including 43/43 Work 1 expected prepared heads, 18 hashed fixtures, 18 object-count controls and 20 slider movement/checkpoint controls.
+- All historical Windows workflow regression steps PASS; unchanged independent C001 contract 106/106 + 4/4 PASS; Release 0 warnings/errors.
+- Portable artifact 14092450589; original-client runtime NOT RUN.
+- Profile limited to >5 ordinary standard, full-range, CS5/AR5, no mods and declared viewport; Work 1 independent NEW-SOURCE stacking runner still pending.
+- See `05-issue1-stacking-integration.md` for full evidence and outstanding boundaries.
+
+## Historical checkpoints (preserved)
+
 **OPEN — verified functional checkpoint; subsystem acceptance not complete.**
 Work 2. UEP-001 and authorization.md remain fully applicable. No exceptions.
 

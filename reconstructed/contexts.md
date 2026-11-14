@@ -1521,3 +1521,31 @@ Work1 findings arrive, integrate rather than overwrite them. Next action: consum
 focused B1–B3 handoff, implement supported >5 family, run focused controls and one
 integrated historical/full Windows gate. Stop this execution at the issue's precise
 blocker; no unrelated C001 loop, new campaign, waiver or permission question.
+
+
+## C001 Work 2 Issue #1 — finite standard stacking implementation and Windows gate
+
+Date: 2026-11-14. Exact implementation/development source `52c300a9b508567987331c54f51a0944f9c5b8fd`, following
+Work 1's pinned original-static stacking handoff at `93c86a7`. Original
+disassembly/evidence and 18 fixture hashes were not modified. New canonical
+>5 ordinary full-range CS5/AR5 no-mod stacking pass uses fixed outer-kind,
+reverse moving-anchor propagation, strict proximity/time rules, selective
+negative slider-tail correction and Single radius/10 raw-head displacement.
+Translated prepared slider controls/segments/movements/checkpoints and
+circle/slider sample operands before map/health/NewCombo ownership; retained
+raw document bytes and historical loader/R17 admission.
+
+Actual exact-source Windows workflow43540928098/job132281072732 SUCCESS;
+.NET8 Release0 warnings/0 errors; C001 development264/264 PASS
+(includes18 hashed fixtures,18 object counts,43 predicted heads and20 slider
+consumer coherency assertions); historical workflow suites PASS;
+unchanged independent C001 finite contract106/106 and4/4 controls PASS.
+Portable artifact14092450589 digest
+sha256:8288f7d18eb69ff077581127fff4f1bd3575f6fd4bd395ac7d38551b6d7a118d.
+This is Work 2 development verification, NOT an independent new-source Work 1
+stacking verdict. Original runtime, input/render/audio and owner qualification
+NOT RUN. No adjustment to R17 mathematics, QA15's19 star discrepancies or
+Joined Bézier. Full C001 OPEN. Next: Work 1 must independently execute its
+original stacking runner and review actual source/consumer mapping; corrections
+remain in Issue #1, avoiding a broad renewed research cycle. See
+`reconstructed/campaigns/C001/05-issue1-stacking-integration.md`.

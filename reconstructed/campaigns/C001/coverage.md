@@ -71,3 +71,20 @@ fixtures. Existing zero-stack proof remains bounded to its prior profile. No new
 coverage row is marked complete. Focused existing-evidence audit passed10 consistency
 checks; it is not new functional/independent production coverage. See
 04-issue1-stacking-evidence-blocker.md. <=5/modes/modifiers/ties remain OPEN.
+
+## Issue #1 verified implementation delta — 2026-11-14 (supersedes earlier blocker for finite scope)
+
+Work 1's published `03-standard-stacking.md` and 18-fixture corpus resolved the
+B1–B3 research blocker for finite >5/standard/CS5/AR5/full-range/no-mod/512x384
+preparation. Work 2 implementation `52c300a9b508567987331c54f51a0944f9c5b8fd` integrates height computation and
+coordinate translation across circle heads, prepared slider controls/segments,
+movements, endpoints, checkpoints and registered sample operands. Exact-source
+Windows run43540928098: 43/43 independent-fixture-derived **development**
+head assertions PASS, 20 slider consumer controls PASS, all 264 C001 development
+checks PASS; unchanged finite Work 1 independent fields106/106 and controls4/4
+PASS, historical workflow stages PASS, Release0 warnings/errors. The historical
+'BLOCKED' row above is a preserved chronology, not the current status.
+
+**OPEN:** Independent Work 1 production stacking verification (original runner),
+<=5/partial editor, variable CS/AR/mod/viewport, ties, other modes, original
+runtime/human qualification, all other C001 rows. No subsystem completion claim.
