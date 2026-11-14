@@ -1680,3 +1680,10 @@ health calibration NOT VERIFIED. Late perceived offset remains deferred; no cloc
 offset/audio compensation or R17/JoinedBezier change. Work1 independent tool QA next;
 owner runs local collection, Headquarters selects one evidence-supported correction.
 C001 subsystem OPEN; stop at verified tool/CI checkpoint, not compatibility completion.
+
+Issue#5 initial exact tool75bac849 CI43611466103 FAILED both hosts before compilation:
+SDK selection pattern had lost backslashes during command construction and matched
+no installed SDK. No tool/test execution or artifacts in that run; local exact-source
+239/239PASS with clean build stamp. Corrected only new workflow pattern to explicit
+[.] and[0-9] classes; local installed-SDK output discriminator PASS. Prior failure
+preserved, no source/expectation weakening; next focused CI must build/test/package.

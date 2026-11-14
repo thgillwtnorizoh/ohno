@@ -23,7 +23,7 @@ jobs:
       - name: Pin an installed .NET 8 SDK
         shell: pwsh
         run: |
-          $versions = @(dotnet --list-sdks | ForEach-Object { if ($_ -match '^(8.0.d+)s') { [version]$Matches[1] } } | Sort-Object -Descending)
+          $versions = @(dotnet --list-sdks | ForEach-Object { if ($_ -match '^(8[.]0[.][0-9]+) ') { [version]$Matches[1] } } | Sort-Object -Descending)
           if ($versions.Count -eq 0) { throw 'No installed .NET 8 SDK; focused gate blocked.' }
           @{sdk=@{version=$versions[0].ToString();rollForward='disable';allowPrerelease=$false}} | ConvertTo-Json | Set-Content -Encoding utf8 global.json
           dotnet --info
