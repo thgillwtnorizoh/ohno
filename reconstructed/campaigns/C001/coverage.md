@@ -115,3 +115,13 @@ independent C and owner/runtime qualification PENDING; comprehensive C001 OPEN.
 Canonical success and post-preparation consumer readiness remain distinct, including
 existing health-overlap exclusions. Machine-readable audit coverage and CI evidence
 are under reconstructed/CorpusAudit/. All broader C001/runtime gates remain OPEN.
+
+## Issue #5 C01 taxonomy/provenance coverage — 2026-11-14
+
+Exact2369b406: retained239 plus20 diagnostic discriminator checks,259PASS on both
+Windows/Linux. Trusted observed revisions distinguish real byte/timestamp mutation
+from immutable malformed numeric diagnostic phrases; known-stage classification,
+privacy/determinism/stage totals and original158fixture admissions preserved.
+No new original behavior/admission coverage. Unchanged Work1 probe9/10PASS with
+corrected spoof assertion; sole old-source pin failure blocks all-ten acceptance.
+Independent recheck and remaining scope pending; Issue#5/C001 OPEN.

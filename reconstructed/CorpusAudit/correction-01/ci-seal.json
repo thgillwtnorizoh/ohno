@@ -1,0 +1,143 @@
+{
+  "status": "focused CI PASS; unchanged probe source-identity acceptance BLOCKED",
+  "source": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+  "run": 43618348530,
+  "jobs": [
+    {
+      "id": 132518255285,
+      "name": "audit (ubuntu-latest)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "conclusion": "success"
+        },
+        {
+          "name": "Pin an installed .NET 8 SDK",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build actual linked production and audit in Release",
+          "conclusion": "success"
+        },
+        {
+          "name": "Mixed inputs and preserved C001 QA15 L B P C stacking fixtures",
+          "conclusion": "success"
+        },
+        {
+          "name": "Package locally runnable audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve synthetic-only focused evidence and tool",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "sdk": "8.0.428",
+      "rawLogSHA256": "a5347777c769628e840e79c650e28551088f0c4a61a82c7f0924db14b5834cb3",
+      "focusedPass": 259,
+      "focusedFail": 0,
+      "compilerWarnings": 0,
+      "compilerErrors": 0
+    },
+    {
+      "id": 132518255539,
+      "name": "audit (windows-2022)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "conclusion": "success"
+        },
+        {
+          "name": "Pin an installed .NET 8 SDK",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build actual linked production and audit in Release",
+          "conclusion": "success"
+        },
+        {
+          "name": "Mixed inputs and preserved C001 QA15 L B P C stacking fixtures",
+          "conclusion": "success"
+        },
+        {
+          "name": "Package locally runnable audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve synthetic-only focused evidence and tool",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "sdk": "8.0.428",
+      "rawLogSHA256": "35b473e88c585c95ad4c61cc4731d1e05ef656b5da6e3c96ea24defbed958450",
+      "focusedPass": 259,
+      "focusedFail": 0,
+      "compilerWarnings": 0,
+      "compilerErrors": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 14123026545,
+      "name": "ohno-corpus-audit-ubuntu-latest-2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+      "bytes": 272578,
+      "digest": "sha256:adcc5d6105e6854e0d7629935fe3a14402d8d23176e1ae52ac4dce1ca61a04b5",
+      "downloadedDigestVerified": true,
+      "runtime": "8.0.34",
+      "rawResultsSHA256": "ddfe65bdb5988b8798c123f1e08386b24ce2797edbfd5f485cb58170c3774267",
+      "repositoryResultsCopy": "parsed JSON normalized to LF; original bytes sealed by ZIP and rawResultsSHA256",
+      "reportSeals": {
+        "C001-24": "4C0EED2425911E0646424C66C8CE4133D6C641FAF82C17CF7275EEF57CBD38A9",
+        "C001-49": "A29C0350B7A7EB50433FED1713D90AEA0AAB339A9F05735C2F5B6AF55632428D",
+        "P21": "5821B99D968339E1A9ADDCDC8277E54FC68040125AAF86D45A99F991D44BC7D0",
+        "C19": "9659668DFD70F907D4D609D003D282462347A23745C7A55800CA1DFBDD647870",
+        "stacking18": "E686F8ABFD93096CFD431E5E4B3CD754BE24E50160A9A6E63058ECDAB09AE3D7",
+        "QA15": "9F9C2C0D958EA4A10D8D47DBF8D17777A984ADE95A37CECFBC1C4F37163D851C"
+      }
+    },
+    {
+      "id": 14121979975,
+      "name": "ohno-corpus-audit-windows-2022-2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+      "bytes": 309650,
+      "digest": "sha256:0c77eab5acc2999796c92eed41da9b6c25f0427c5818ecaa3aac736fd1e0c322",
+      "downloadedDigestVerified": true,
+      "runtime": "8.0.34",
+      "rawResultsSHA256": "dc4b0c2acd4a57aaee68786dbdb9e640ef9684b10bda9d4e7c8fa4b5dcb05e93",
+      "repositoryResultsCopy": "parsed JSON normalized to LF; original bytes sealed by ZIP and rawResultsSHA256",
+      "reportSeals": {
+        "C001-24": "EAF9FB232D8508E073800B060B89C6C0E137F11E54F2231AD80B7FE32CA77FF7",
+        "C001-49": "4433EBE00446AF05FA53E32515EB7234C0116E34A856E21CF94E62298C1023FB",
+        "P21": "04D3889F484FFE8412A7443D15C4D8AD348DC0FAD94D1917B2A095E9F9CC581A",
+        "C19": "B33B4E51A2F8CA7AB1CC3C2662B1D3C250C70DF78E00D46BCE101427D4C0383D",
+        "stacking18": "A2F21F94E1816AC97B138281C2497548087E289AEB4396001119E0FA07777F93",
+        "QA15": "81BE99613719BBA0E5AC084BA7C8C9D6BB26EC36A5C7FC07569659E03A36461D"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "BLOCKED: unchanged probe pins defective source identity",
+  "correctedSource": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+  "independentProbeExitCode": 1,
+  "unchangedProbePass": 9,
+  "unchangedProbeFail": 1,
+  "failedAssertion": "exact clean source identity",
+  "pinnedDefectiveSHA": "8c5ba835f260401a56dea27367c6a6e9c55e9d84",
+  "metadataSpoofRegression": "PASS malformed-input/metadata-syntax",
+  "notClaimed": "10/10 unchanged probe acceptance",
+  "preservedIndependentFiles": {
+    "re/campaigns/C001/corpus-audit-qa/probe.py": "832f4bce70e880a36961dbcdf13147d1cba2afc6dd88a451c56f8867a3c260cc",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/control.osu": "50f84c7fa6bf005a0b7bfa1d869bfa019b358a5aac1e4c19201aefff554457ac",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/malformed.osu": "f74c5632ccffa799af8de429a3064d33293e7d7a5ef29cafd86655011e45bd1c",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/spoof.osu": "f085cf47ad45063dd152f8a78e23629e7e1d1c93bbf7d31102d103fec195365d"
+  },
+  "requiredNext": "Work1 authorizes/parameterizes truthful corrected-source provenance and rechecks; do not forge tool SHA or weaken fixtures",
+  "productionSourceHashes": {
+    "reconstructed/CircleGame/Program.cs": "95fdf84bc481bf65985422dc0ec02f4d97476f18e08e16923f1d13c3f2005815",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "514ed74f58aa1c0ad65dfe08f47a6e2ed90538c8fac708a085d60df9f277378f",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "cbb5a7556c02b73a690e2e17537cb5e0c57c653d0df10dab3e5eff8e45bc77b5",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "cca7c29f9275bbbe355d1cea208b32099a4ba2ee820d6557f61829c17febfb6e",
+    "reconstructed/CircleGame/Difficulty/CircleStarCalculator.cs": "c71724d56db019391209053bc6ef0fc493e1dacd43098c8dbc5f4c9433caf8c4",
+    "reconstructed/CircleGame/Difficulty/DifficultyAggregation.cs": "bf8f40f60b7e75d3746cddc514931e656221cb9013932c67318c477931c1f3e4",
+    "reconstructed/CircleGame/Difficulty/CalculatedStars.cs": "0c3ad78c2cc1825c6d7d6688fe7db0919690f1d8727fcf5d1a51c35c8ca19610",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "edce25f1f70def0fa5204112190ed584fa9d680c06e767f27c6c7f74abe133be",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "483e4f3e6665e4922bb891d4f3606a584ff55f997b45be03ef77533279dd5faa",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "627771ee1d620a6a2a39b0ba4d501663dec72663b3db72513ee5067cf9eb0877",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4"
+  }
+}

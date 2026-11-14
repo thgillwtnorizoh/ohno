@@ -1,0 +1,388 @@
+{
+  "source": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+  "sourceState": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Beatmap.cs": "514ED74F58AA1C0AD65DFE08F47A6E2ED90538C8FAC708A085D60DF9F277378F",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "483E4F3E6665E4922BB891D4F3606A584FF55F997B45BE03EF77533279DD5FAA",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "checks": [
+    {
+      "name": "exact clean source identity",
+      "pass_": false
+    },
+    {
+      "name": "valid control canonical success",
+      "pass_": true
+    },
+    {
+      "name": "ordinary numeric error is malformed",
+      "pass_": true
+    },
+    {
+      "name": "chart-supplied phrase cannot impersonate mutation",
+      "pass_": true
+    },
+    {
+      "name": "exact bytes never changed",
+      "pass_": true
+    },
+    {
+      "name": "read hashes match unchanged bytes",
+      "pass_": true
+    },
+    {
+      "name": "default privacy canaries absent",
+      "pass_": true
+    },
+    {
+      "name": "repeat default JSON byte-identical",
+      "pass_": true
+    },
+    {
+      "name": "private paths opt-in only",
+      "pass_": true
+    },
+    {
+      "name": "complete finite scan and stage denominators",
+      "pass_": true
+    }
+  ],
+  "passed": 9,
+  "failed": 1,
+  "fixtureHashes": {
+    "spoof.osu": "f085cf47ad45063dd152f8a78e23629e7e1d1c93bbf7d31102d103fec195365d",
+    "malformed.osu": "f74c5632ccffa799af8de429a3064d33293e7d7a5ef29cafd86655011e45bd1c",
+    "control.osu": "50f84c7fa6bf005a0b7bfa1d869bfa019b358a5aac1e4c19201aefff554457ac"
+  },
+  "complete": true,
+  "observations": {
+    "spoof.osu": {
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "malformed-input",
+        "code": "metadata-syntax",
+        "exceptionType": "InvalidDataException"
+      }
+    },
+    "malformed.osu": {
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "malformed-input",
+        "code": "metadata-syntax",
+        "exceptionType": "InvalidDataException"
+      }
+    },
+    "control.osu": {
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      }
+    }
+  },
+  "defaultReport": {
+    "schemaVersion": 1,
+    "tool": "ohno-corpus-audit/1",
+    "sourceCommit": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+    "sourceState": "clean",
+    "sourceHashes": {
+      ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+      "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+      "Beatmap.cs": "514ED74F58AA1C0AD65DFE08F47A6E2ED90538C8FAC708A085D60DF9F277378F",
+      "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+      "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+      "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+      "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+      "LocalChartCatalog.cs": "483E4F3E6665E4922BB891D4F3606A584FF55F997B45BE03EF77533279DD5FAA",
+      "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+      "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+    },
+    "limits": {
+      "maxCharts": 10000,
+      "maxDirectories": 4096,
+      "maxEntries": 50000,
+      "maxDepth": 32,
+      "includeRelativePaths": false
+    },
+    "complete": true,
+    "directories": 1,
+    "entries": 3,
+    "nonChartFiles": 0,
+    "noticesOmitted": 0,
+    "notices": [],
+    "charts": [
+      {
+        "entryKey": "18D37DE24384B0071C1DB0B5BD88281FB330989C22CFFEE7D527BD442DE3AFFC",
+        "sha256": "50F84C7FA6BF005A0B7BFA1D869BFA019B358A5AAC1E4C19201AEFFF554457AC",
+        "bytes": 288,
+        "cohort": "standard-no-spinner",
+        "features": {
+          "format": 14,
+          "mode": 0,
+          "runtimeRows": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0,
+          "otherObjects": 0,
+          "unclassifiedRows": 0,
+          "sliderPaths": {},
+          "unknownRepeats": 0,
+          "timingRows": 1,
+          "distinctBeatLengths": 1,
+          "explicitBaseTimingRows": 1,
+          "explicitInheritedTimingRows": 0,
+          "unparsedBeatLengthRows": 0,
+          "stackingProfile": "disabled"
+        },
+        "indexedFeatures": {
+          "format": 14,
+          "mode": 0,
+          "objects": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0
+        },
+        "read": {
+          "status": "success",
+          "code": "exact-bytes-sha256"
+        },
+        "featureProjection": {
+          "status": "success",
+          "code": "production-document-runtime-stage"
+        },
+        "index": {
+          "status": "success",
+          "code": "catalog-indexed"
+        },
+        "canonical": {
+          "status": "success",
+          "code": "canonical-prepared"
+        },
+        "consumers": {
+          "automatic-score": {
+            "status": "success",
+            "code": "checked"
+          },
+          "fresh-health-source": {
+            "status": "success",
+            "code": "checked"
+          },
+          "session-without-health-calibration": {
+            "status": "success",
+            "code": "checked"
+          },
+          "structure": {
+            "status": "success",
+            "code": "checked"
+          }
+        },
+        "audio": {
+          "status": "not-declared",
+          "code": "audio-not-declared"
+        },
+        "preparedObjects": 2,
+        "preparedSegments": 0
+      },
+      {
+        "entryKey": "C7A9146E47979AC9FB74D1825174E6C56677C701D5342B276BFB45AECC5954EA",
+        "sha256": "F74C5632CCFFA799AF8DE429A3064D33293E7D7A5EF29CAFD86655011E45BD1C",
+        "bytes": 299,
+        "cohort": "unknown",
+        "features": {
+          "format": 14,
+          "runtimeRows": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0,
+          "otherObjects": 0,
+          "unclassifiedRows": 0,
+          "sliderPaths": {},
+          "unknownRepeats": 0,
+          "timingRows": 1,
+          "distinctBeatLengths": 1,
+          "explicitBaseTimingRows": 1,
+          "explicitInheritedTimingRows": 0,
+          "unparsedBeatLengthRows": 0,
+          "stackingProfile": "unknown"
+        },
+        "indexedFeatures": {
+          "format": 14,
+          "mode": 0,
+          "objects": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0
+        },
+        "read": {
+          "status": "success",
+          "code": "exact-bytes-sha256"
+        },
+        "featureProjection": {
+          "status": "success",
+          "code": "production-document-runtime-stage"
+        },
+        "index": {
+          "status": "success",
+          "code": "catalog-indexed"
+        },
+        "canonical": {
+          "status": "malformed-input",
+          "code": "metadata-syntax",
+          "exceptionType": "InvalidDataException"
+        },
+        "consumers": {},
+        "audio": {
+          "status": "unknown",
+          "code": "canonical-not-prepared"
+        }
+      },
+      {
+        "entryKey": "6BA290F541CAD4DA18B610B5FFF97735CB10A1EB6D7C3E124B8E6272A1EB44A6",
+        "sha256": "F085CF47AD45063DD152F8A78E23629E7E1D1C93BBF7D31102D103FEC195365D",
+        "bytes": 309,
+        "cohort": "unknown",
+        "features": {
+          "format": 14,
+          "runtimeRows": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0,
+          "otherObjects": 0,
+          "unclassifiedRows": 0,
+          "sliderPaths": {},
+          "unknownRepeats": 0,
+          "timingRows": 1,
+          "distinctBeatLengths": 1,
+          "explicitBaseTimingRows": 1,
+          "explicitInheritedTimingRows": 0,
+          "unparsedBeatLengthRows": 0,
+          "stackingProfile": "unknown"
+        },
+        "indexedFeatures": {
+          "format": 14,
+          "mode": 0,
+          "objects": 2,
+          "circles": 2,
+          "sliders": 0,
+          "spinners": 0
+        },
+        "read": {
+          "status": "success",
+          "code": "exact-bytes-sha256"
+        },
+        "featureProjection": {
+          "status": "success",
+          "code": "production-document-runtime-stage"
+        },
+        "index": {
+          "status": "success",
+          "code": "catalog-indexed"
+        },
+        "canonical": {
+          "status": "malformed-input",
+          "code": "metadata-syntax",
+          "exceptionType": "InvalidDataException"
+        },
+        "consumers": {},
+        "audio": {
+          "status": "unknown",
+          "code": "canonical-not-prepared"
+        }
+      }
+    ],
+    "cohorts": {
+      "standard-no-spinner": {
+        "files": 1,
+        "canonicalAttempts": 1,
+        "canonicalSuccess": 1,
+        "indexed": 1,
+        "consumerReady": 1,
+        "missingAudio": 0,
+        "uniqueHashes": 1
+      },
+      "unknown": {
+        "files": 2,
+        "canonicalAttempts": 2,
+        "canonicalSuccess": 0,
+        "indexed": 2,
+        "consumerReady": 0,
+        "missingAudio": 0,
+        "uniqueHashes": 2
+      }
+    },
+    "canonicalOutcomes": {
+      "malformed-input": 2,
+      "success": 1
+    },
+    "canonicalFailureFamilies": {
+      "malformed-input/metadata-syntax": 2
+    },
+    "stageOutcomes": {
+      "audio": {
+        "not-declared": 1,
+        "unknown": 2
+      },
+      "automatic-score": {
+        "not-run": 2,
+        "success": 1
+      },
+      "canonical": {
+        "malformed-input": 2,
+        "success": 1
+      },
+      "feature-projection": {
+        "success": 3
+      },
+      "fresh-health-source": {
+        "not-run": 2,
+        "success": 1
+      },
+      "index": {
+        "success": 3
+      },
+      "read": {
+        "success": 3
+      },
+      "session-without-health-calibration": {
+        "not-run": 2,
+        "success": 1
+      },
+      "structure": {
+        "not-run": 2,
+        "success": 1
+      }
+    },
+    "boundary": "Headless finite indexing/preparation/structural checks only; health calibration, media decoding, original runtime and owner playability NOT VERIFIED."
+  },
+  "classification": "Work1 independent tool verification; reproducible diagnostic mismatch; not compatibility statistics",
+  "originalRuntime": "NOT RUN"
+}

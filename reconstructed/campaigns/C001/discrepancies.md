@@ -44,3 +44,13 @@ weaken old expectations silently.
 Exception-code taxonomy is engineering and conservative; unknown production errors
 remain unclassified. No original-runtime error behavior inferred. R17/19 owner star
 differences/JoinedBezier remain untouched and OPEN. C001 remains OPEN.
+
+## Issue #5 C01 diagnostic correction — 2026-11-14
+
+| Disposition | Evidence |
+|---|---|
+| False immutable-metadata mutation — VERIFIED COMPONENT correction, independent closure PENDING | Exact2369b406 uses observed revisions/known metadata stage; Windows/Linux259PASS each; unchanged Work1 probe spoof classification now PASS |
+| Probe provenance pin — BLOCKED | Unchanged probe requires clean defective8c5ba835; truthful corrected2369b406 fails only source identity,9/10PASS/exit1. No probe edit/waiver/stamp forgery; Work1 corrected-source expectation needed |
+
+Original failure report/results/fixtures, previous239passes and all gameplay research
+remain intact. No timing/offset/R17/slider/JoinedBezier or private collection work.

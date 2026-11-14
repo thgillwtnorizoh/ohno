@@ -1732,3 +1732,25 @@ parameterization/authorization. This is not a10/10pass or independent Work1 verd
 C001/Issue#5 OPEN; original/owner/GUI/audio/healthcalibration and private corpus
 NOT RUN. Next Work1 rechecks correction and remaining independent scope; Issue#4
 owner runtime remains separate. Initial source commit in introducing Git history.
+
+Issue#5 C01 final bounded checkpoint: diagnostic correction VERIFIED COMPONENT;
+all-ten independent probe acceptance BLOCKED on preserved obsolete source pin.
+Exact corrected source2369b406b09ec34cf07f33f8278a155afc6a4ebf; focused CI43618348530
+Linuxjob132518255285/Windows132518255539 SUCCESS,259/259EACH,0skipped,SDK8.0.428/
+runtime8.0.34 from downloaded results,0compiler warnings/errors. Windowsartifact
+14121979975/309650bytes SHA2560c77eab5acc2999796c92eed41da9b6c25f0427c5818ecaa3aac736fd1e0c322;
+Linux14123026545/272578bytes SHA256adcc5d6105e6854e0d7629935fe3a14402d8d23176e1ae52ac4dce1ca61a04b5.
+Both actual ZIP digests/sizes/source/clean stamps and12corpus report seals PASS.
+Unchanged Work1 probe replayed on clean exact local build and downloaded Linux
+package9/10PASS/exit1: original spoof assertion PASS, only pinned defective8c5ba835
+identity FAIL. Corrected source stamp is truthful, not altered to game the probe.
+
+Added10-issue5-diagnostic-correction UEP checkpoint and correction-01 results/CI/
+probe/blocker seals, appended guide/status/coverage/discrepancy/journal. Evidence-only
+final publication changes no tested tool/tests/workflow and skips redundant CI.
+Work1 original probe/fixtures/all historical bytes and journal prefixes preserved;
+no production gameplay or original research changes, so full gameplay gate NOT RUN.
+Owner collection/original client/GUI/audio/input/health calibration/late-offset NOT RUN.
+Work1 must authorize/parameterize truthful corrected-source provenance, independently
+recheck correction and remaining audit scope. Stop at this reproducible verification
+blocker; C001/Issue#5 OPEN, owner/runtimeIssue#4 separate. Not10/10 or owner acceptance.

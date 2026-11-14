@@ -137,3 +137,12 @@ and share only an authorized summary/report. Headquarters then selects one suppo
 failure family; Work1 independently verifies this runner and supplies original
 research where needed. Late timing-offset investigation is explicitly deferred;
 clock/offset/audio compensation and R17 mathematics are unchanged.
+
+## C01 diagnostic correction
+
+At corrected source2369b406, changed-input requires an observed fingerprint/hash
+transition; exception phrases are never mutation evidence. Immutable failed numeric
+metadata is classified by its production stage. See correction-01/README.md and
+../campaigns/C001/10-issue5-diagnostic-correction.md. Both platform development gates
+pass259 checks. The unchanged independent probe's9/10 result is blocked solely by
+its hardcoded defective-source SHA; that acceptance requirement is not waived.

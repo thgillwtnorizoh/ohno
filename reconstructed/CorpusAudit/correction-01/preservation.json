@@ -1,0 +1,11 @@
+{
+  "exactTestedSource": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+  "testedFileSHA256": {
+    "reconstructed/CorpusAudit/AuditRunner.cs": "000e45dcb3d9823930ffeedb3e2e724a6b43db0cd3cac2ffcacc2e069101eb20",
+    "reconstructed/CorpusAuditChecks/Program.cs": "2e988faa73ced58f813e0f0be3a77361dfd0c751e0383a3d34703af54b721442",
+    ".github/workflows/corpus-audit.yml": "fdbca3c6132f90ad381e623f783fae4295cac61bdcbf1a42cb5716356c3f3803"
+  },
+  "productionAndOriginalResearchChanged": false,
+  "independentProbeAndFixturesChanged": false,
+  "allTenProbeAcceptance": "BLOCKED, do not claim pass"
+}

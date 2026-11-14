@@ -91,3 +91,18 @@ NOT PROVIDED/NOT RUN; owner/original runtime/Issue#4 remain OPEN. Headquarters n
 selects one supported failure family from real results. Timing-offset investigation
 deferred, R17/JoinedBezier untouched. This latest diagnostic status supersedes prior
 pending implementation statements only within its declared scope; C001 OPEN.
+
+## Issue #5 C01 — corrected diagnostic; probe provenance BLOCKED — 2026-11-14
+
+Starting6e959fef; exact corrected source2369b406b09ec34cf07f33f8278a155afc6a4ebf.
+Removed message-based mutation inference; observed production fingerprint or nonnull
+prepared hash mismatch required. Immutable metadata failure now malformed-input/
+metadata-syntax. Actual catalog verification/canonical pipeline unchanged.
+Local259/259PASS; exact focused CI43618348530 Windows/Linux259PASS EACH,0skipped/
+0compiler warnings/errors,SDK8.0.428/runtime8.0.34; downloaded artifacts/seals verified.
+Unchanged independent probe executed on clean corrected source/package9/10PASS,
+exit1: only obsolete exact8c5ba835 source pin fails; original spoof assertion passes.
+Overall requested all-ten acceptance BLOCKED, no stamp forgery/probe modification.
+Full UEP checkpoint10-issue5-diagnostic-correction.md. Work1 must resolve provenance
+expectation, recheck correction and complete independent scope. C001/Issue#5 OPEN;
+Issue#4 original/owner runtime separate. Private corpus NOT RUN; no gameplay changes.
