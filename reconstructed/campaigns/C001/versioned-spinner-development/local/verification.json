@@ -1,0 +1,69 @@
+{
+  "startingSHA": "7fc7636ae5cbc5d92472d280690b56dcdb9fca44",
+  "originalProductionBaseline": "782c00771a436b2a2950680d4f5de379a791d9dd",
+  "sourceSHA": "Introducing production Git commit; local modified tree hashes",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "newDevelopmentPass": 650,
+  "admitted": 23,
+  "excluded": 10,
+  "retained": {
+    "C001": 264,
+    "Perfect": 299,
+    "R07Groups": 8,
+    "CorpusAudit": 259
+  },
+  "failures": [
+    "R07 initially wrong root argument; invocation corrected",
+    "Audit child dotnet initially missing PATH; environment corrected"
+  ],
+  "sourceHashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "2cd8f3607247f293643bb14dafa45cebca0ba7c5c73273bdbfe37dbc542b68d4",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "4d8ff1ef3c62eed425e09ce116ae6b5acb1db805be0043eeaf46f666603c6d3c",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "a7ec83d0be285a2d6636aa91d98acb6af8896b4258188f8d75ebb06f10832789",
+    "reconstructed/C001VersionedSpinnerChecks/Program.cs": "0d455278d0313ce5bcb2b1f31c252c615e19e9bae7963d67e3c2edd356fcaae2",
+    ".github/workflows/r04-build.yml": "98c891a8c98095e7003f28d1ca5a859a51751f6108804b59086ccf0bc7b439f0"
+  },
+  "authorityFixtureHashes": {
+    "re/campaigns/C001/versioned-spinners/fixtures/v14-single.osu": "9f617a8ff86949c73f38493d22ddb2961d91c99f3f24459992c6667cdcca31cb",
+    "re/campaigns/C001/versioned-spinners/fixtures/v10-mixed.osu": "5032d572063009eace5d615e1346975449e233aa5e34282df962eea3d9105716",
+    "re/campaigns/C001/versioned-spinners/fixtures/v05-single.osu": "348e482aeebe488c5baa8ebd00ee5827fecbe2535b6e71deb48ab1d4380ad9e5",
+    "re/campaigns/C001/versioned-spinners/fixtures/negative-mode1-v14.osu": "eb94112b60a22ec4c5d41cea26fe3b2e1c36b6908feeb00dd3ff9d163dedf86f",
+    "re/campaigns/C001/versioned-spinners/fixtures/v12-mixed.osu": "c9059cdee7839720077259698aea53dc860eb0c880e8b05f7d455ad23998997e",
+    "re/campaigns/C001/versioned-spinners/fixtures/v06-sample-two.osu": "deacd3d65acef0395bda5b0c14eafe84261b786119150c149ae985bff1d70e05",
+    "re/campaigns/C001/versioned-spinners/fixtures/v14-sample-full.osu": "31b2e36fbdb99f12593e713876b88ff48fced18805a67789526077fc7fddeda2",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-sample-full.osu": "126ec2d464ec2275d6e3ee6c2aeea2c5ce7324e4ad4634f871b092673d8ad654",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-zero-duration.osu": "2ae9b37e0035883adc13f8ffd685d7e23f26f378b1e2146c42e2de504dd4901e",
+    "re/campaigns/C001/versioned-spinners/fixtures/v10-single.osu": "77673d711aa58807466720a07ac1ed9d7567d97767e2b956b520e2fe1cb96524",
+    "re/campaigns/C001/versioned-spinners/fixtures/v06-mixed.osu": "741456533658041c6b50b99d85f0bc18181487c28368707e1fcf76a40e673b79",
+    "re/campaigns/C001/versioned-spinners/fixtures/v05-fractional.osu": "5feffd2a1319e4120f83f4e2afc35dc125c9b38681acc28a3a025a86a02e1857",
+    "re/campaigns/C001/versioned-spinners/fixtures/v09-invalid-end.osu": "bbdab9ac1f92d27314dc913a2ef7ce826f721abf2076ab7ce76805c139472e22",
+    "re/campaigns/C001/versioned-spinners/fixtures/negative-mode1-v9.osu": "bb7224a8f16121eea0eeed2a7bf4af85e34df1f454d96e9c39d0c631b3bc7b85",
+    "re/campaigns/C001/versioned-spinners/fixtures/v14-mixed.osu": "fc85e5f01e1b24c0c838364c8912273ccf134915d2ed8e08c3a36271ea1fd671",
+    "re/campaigns/C001/versioned-spinners/fixtures/v09-single.osu": "946c77e301aa306a6672b8385f463ebaa95900c6d853c13b6131d614b67f3f24",
+    "re/campaigns/C001/versioned-spinners/fixtures/v12-single.osu": "40a6c3b1ecba43349681349a950dba835dd90f761f4e0e59057b0f2e0fb913e2",
+    "re/campaigns/C001/versioned-spinners/fixtures/v05-bit4.osu": "7c003dfe79148d0eb366ce8b38b66a6cd0c224c984aa8c0d2ee721c5641bc73d",
+    "re/campaigns/C001/versioned-spinners/fixtures/v05-sample-full.osu": "62fbca9279f1e9486c0c8232cd7dc634e470c62b06e9b8febc1f29a51b05749f",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-conditional-end-cap.osu": "2b748e247526f620e696488470e1243189856bfffefba42c902886a2e5fa1f9b",
+    "re/campaigns/C001/versioned-spinners/fixtures/v09-bit4.osu": "0ff52d62e4fcc27f3272aace6dea7faa07eb6b00df2ea01074ef0ecbc4a7c79f",
+    "re/campaigns/C001/versioned-spinners/fixtures/v14-bit4.osu": "0fe0730e931f6758be100a95790b303f5e57122924d1736b3647513f24956eae",
+    "re/campaigns/C001/versioned-spinners/fixtures/v14-missing-end.osu": "0879f5040431c533f4beb57fbc81bce69d9eaac75bb4688803afcfbd0f1a6f0b",
+    "re/campaigns/C001/versioned-spinners/fixtures/v09-mixed.osu": "8f76f719c7a7326e3a99d7421061f6a5a65798cca162502eb86c928e669b2ca2",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-mixed.osu": "d6884fc8e7ec5c430be3befcb38158899d82f473ab13a79fba261ab793425021",
+    "re/campaigns/C001/versioned-spinners/fixtures/v06-single.osu": "44e7bd7c77ef8d818e3253b4c5fc3220b5ec17b6ccea390c3dca3775959cfd3b",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-single.osu": "e214612aa04fcf1f107512bdf4f2bce0af881161f0c62f59dd37157666c17580",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-end-before-start.osu": "45acc0df0af692584fcfb6a2ffd49e5cd87106f25678ab4767ef1d20eabcef54",
+    "re/campaigns/C001/versioned-spinners/fixtures/negative-format-128.osu": "7679eb686416c0d051b108bdf24e65390926a35d5096695e5084ad2673ed485e",
+    "re/campaigns/C001/versioned-spinners/fixtures/v05-mixed.osu": "09f1e93b0464ca6f8e7f9d9ef49a5da0630dd6fcf7b054e9b00b424cf8ebf017",
+    "re/campaigns/C001/versioned-spinners/fixtures/v06-bit4.osu": "35432006064fb77780047e008586537fbec5334d696e86254e9e0cc7f22b4246",
+    "re/campaigns/C001/versioned-spinners/fixtures/negative-format-3.osu": "3398071010a303e2beb9ad9e3429b8433e05a6d43df12876d658d38f56658973",
+    "re/campaigns/C001/versioned-spinners/fixtures/v13-fractional.osu": "f885bfafc1bee375c66fac782fee89d4d8855cff8d9f77e732dc0e29137c9689"
+  },
+  "notRun": [
+    "original runtime",
+    "owner/private corpus",
+    "host cap (no provider)",
+    "GUI/audible/physical input"
+  ],
+  "WindowsGate": "PENDING"
+}

@@ -156,7 +156,25 @@ public sealed record OsuMetadataSettings(int Mode, float Hp, float Cs, float Od,
 }
 
 public sealed record CircleDefinition(Vector2 Position, int StartTime);
-public sealed record SpinnerDefinition(int StartTime, int EndTime, int HitSound, string? HitSample);
+public enum SpinnerEndpointPolicy { EngineeringUncappedHostLengthUnavailable }
+public enum SpinnerCompatibilityPolicy { ModernWithoutRecordedSource }
+public sealed record SpinnerPreparationProvenance(int Format, int RawType, int ConstructorFlags, int ParserFlags,
+    SpinnerEndpointPolicy EndpointPolicy, SpinnerCompatibilityPolicy CompatibilityPolicy);
+public sealed record SpinnerDefinition(int StartTime, int EndTime, int HitSound, string? HitSample)
+{
+    public Vector2 Center => new(256, 192);
+    public SpinnerPreparationProvenance? Preparation { get; init; }
+    internal static SpinnerDefinition PrepareFresh(int start, int end, int sound, string? sample, int format, int rawType)
+    {
+        // C001 Issue7 M3201, then M28f7/M3e57: constructor flags are an
+        // intermediate state. The parser overwrites bit4 before registration.
+        int constructor = 8 | (format <= 8 ? 4 : 0);
+        int parsed = (constructor & ~4) | (rawType & 4);
+        return new(start, end, sound, sample) { Preparation = new(format, rawType, constructor, parsed,
+            SpinnerEndpointPolicy.EngineeringUncappedHostLengthUnavailable,
+            SpinnerCompatibilityPolicy.ModernWithoutRecordedSource) };
+    }
+}
 
 public sealed record SliderSegment(Vector2 From, Vector2 To, bool IsSubcurveEnd, bool IsLinear);
 public enum SliderPathKind { Catmull = 0, Bezier = 1, Linear = 2, Perfect = 3 }
@@ -859,6 +877,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         var sampleTiming = new List<SampleTiming>();
         var spinnerSamples = new List<SpinnerSampleMetadata>();
         string? sampleTimingError = null;
+        bool explicitSpinnerTiming = true;
         int timingSourceOrder = 0;
         foreach (var entry in extendedPaths ? document.ReadStage(OsuReadStage.RuntimeObjects, token) : document.Entries)
         {
@@ -891,11 +910,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 sampleOperands.Add(new(!isSlider && !isSpinner ? head : null, sample.Index, sample.Filename, sample.Error));
                 if (isSpinner)
                 {
-                    if (version != 14) throw new InvalidDataException("R07 supports only modern-policy, format-v14 spinners.");
+                    if (!extendedPaths && version != 14) throw new InvalidDataException("R07 supports only modern-policy, format-v14 spinners.");
+                    if (version < 14 && (time <= 0 || (type & -113) is not (8 or 12) ||
+                        sample.Error is not null || (row.Length > 6 && string.IsNullOrEmpty(row[6]))))
+                        throw new InvalidDataException("Versioned spinner requires positive integer time, ordinary flags and valid explicit sample operands.");
                     if (row.Length < 6 || !int.TryParse(row[5], NumberStyles.Integer, CultureInfo.InvariantCulture, out int end) ||
                         end <= time || end > 3_600_000 || end - time > 60_000)
                         throw new InvalidDataException($"Line {lineNumber + 1}: spinner end must follow start, duration <=60000 ms, end <=3600000 ms.");
-                    var spinner = new SpinnerDefinition(time, end, hitSound, row.Length > 6 ? row[6] : null);
+                    var spinner = SpinnerDefinition.PrepareFresh(time, end, hitSound, row.Length > 6 ? row[6] : null, version, type);
                     spinners.Add(spinner);
                     var payload = sample with { Object = new CircleDefinition(new(256, 192), end), StoredMask = hitSound };
                     spinnerSamples.Add(new(spinner, healthRows.Count - 1, payload));
@@ -954,6 +976,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             else if (section == "[TimingPoints]")
             {
                 string[] row = line.Split(',');
+                if (row.Length < 8) explicitSpinnerTiming = false;
                 if (row.Length < 2) throw new InvalidDataException("Timing point needs time and beat length.");
                 double t = DoubleNumber(row[0], "timing time"), beat = DoubleNumber(row[1], "beat length");
                 if (t < -3_600_000 || t > 3_600_000) throw new InvalidDataException("Timing time is outside R04's supported range.");
@@ -985,6 +1008,17 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         if (extendedPaths ? settings!.Mode != 0 : !fields.TryGetValue("[General]Mode", out string? mode) || mode != "0")
             throw new InvalidDataException("R02 requires explicit Mode: 0 (osu!standard).");
         if (circles.Count + sliderRows.Count + spinners.Count == 0) throw new InvalidDataException("No playable objects found.");
+        if (extendedPaths && version < 14 && spinners.Count > 0)
+        {
+            // Finite first integration profile from Work1 Issue7. These guards
+            // are ENGINEERING exclusions, not claims about original rejection.
+            if (!explicitSpinnerTiming || timing.Count == 0 || sampleTimingError is not null)
+                throw new InvalidDataException("Versioned spinner requires full explicit finite timing/sample rows.");
+            if (settings!.StackLeniency != 0 || healthBreaks.Count > 0)
+                throw new InvalidDataException("Versioned spinner first profile requires no stacking or breaks.");
+            if (healthRows.Zip(healthRows.Skip(1)).Any(p => p.First.Start >= p.Second.Start))
+                throw new InvalidDataException("Versioned spinner requires strictly increasing registered source order.");
+        }
         circles.Sort((a, b) => a.StartTime.CompareTo(b.StartTime));
         var starts = circles.Select(c => c.StartTime).Concat(sliderRows.Select(s => s.Head.StartTime))
             .Concat(spinners.Select(s => s.StartTime)).Order().ToArray();
@@ -1023,6 +1057,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             .Concat(spinners.Select(s => (Start: s.StartTime, End: s.EndTime, Spinner: true))).OrderBy(v => v.Start);
         foreach (var interval in intervals)
         {
+            if (extendedPaths && version < 14 && spinners.Count > 0 && interval.Start <= maximumEnd)
+                throw new InvalidDataException("Versioned spinner first profile requires separated object intervals.");
             if ((interval.Spinner && interval.Start <= maximumEnd) || interval.Start <= spinnerEnd)
                 throw new InvalidDataException("R07 spinner intervals must be separate from all other objects, including shared endpoints.");
             maximumEnd = Math.Max(maximumEnd, interval.End);

@@ -321,7 +321,13 @@ public sealed class HitSoundLibrary : IDisposable
         if (map.Spinners.Count == 0) return null;
         if (map.HealthSource is null || !map.HealthSource.IsFreshFor(map)) return "spinner audio requires proven fresh map identity";
         var source = map.CircleSounds;
-        if (source is null || source.Format != 14 || source.TimingError is not null) return "spinner audio requires format14 supported sample metadata";
+        // Preserve the historical/artificial format defense; only a canonically
+        // prepared, same-version ordinary spinner may use the finite old slice.
+        bool versioned = source is { Format: >= 5 and <= 13 } && map.Document?.FormatVersion == source.Format &&
+            map.HealthSource.Version == source.Format && map.Spinners.All(s => s.Preparation is { } p &&
+                p.Format == source.Format && p.CompatibilityPolicy == SpinnerCompatibilityPolicy.ModernWithoutRecordedSource);
+        if (source is null || (source.Format != 14 && !versioned) || source.TimingError is not null)
+            return "spinner audio requires format14 or canonical finite versioned supported sample metadata";
         if (source.Spinners.Count != map.Spinners.Count || map.Spinners.Any(s => !source.Spinners.Any(p => ReferenceEquals(p.Object, s)))) return "spinner source identity unavailable";
         if (source.Spinners.Any(s => s.Payload.Error is not null || s.Payload.BaseSet is < 0 or > 3 || s.Payload.AdditionSet is < 0 or > 3 || s.Payload.Index < 0)) return "unsupported spinner sample operands";
         if (source.Timing.Count == 0 || source.Timing.Any(t => !double.IsFinite(t.Time) || t.Set is < 0 or > 3 || t.Index < 0)) return "unsupported spinner global timing";

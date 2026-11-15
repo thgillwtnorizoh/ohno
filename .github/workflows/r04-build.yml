@@ -8,6 +8,7 @@ on:
       - reconstructed/C001DevelopmentChecks/**
       - reconstructed/C001PerfectChecks/**
       - reconstructed/C001CatmullChecks/**
+      - reconstructed/C001VersionedSpinnerChecks/**
       - re/campaigns/C001/catmull/**
       - re/campaigns/C001/perfect-circle/**
       - reconstructed/CircleGame/**
@@ -434,6 +435,20 @@ jobs:
           dotnet run --project reconstructed/C001CatmullChecks/C001CatmullChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-catmull-results.json"
           exit $LASTEXITCODE
 
+      - name: Check finite versioned spinner admission and real consumers
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001VersionedSpinnerChecks/C001VersionedSpinnerChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-versioned-spinner"
+          exit $LASTEXITCODE
+
+      - name: Preserve actual canonical CorpusAudit development checks
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/corpus-audit-retained"
+          exit $LASTEXITCODE
+
       - name: Publish C001 Windows x64 application for owner qualification
         if: ${{ success() }}
         shell: pwsh
@@ -447,6 +462,9 @@ jobs:
           Copy-Item re/campaigns/C001/perfect-circle/manifest.json "${{ runner.temp }}/ohno-c001-windows/PERFECT-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/perfect-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/PERFECT-QUALIFICATION.md"
           Copy-Item re/campaigns/C001/catmull "${{ runner.temp }}/ohno-c001-windows/CatmullCorpus" -Recurse
+          Copy-Item re/campaigns/C001/versioned-spinners/fixtures "${{ runner.temp }}/ohno-c001-windows/VersionedSpinnerCorpus" -Recurse
+          Copy-Item re/campaigns/C001/versioned-spinners/manifest.json "${{ runner.temp }}/ohno-c001-windows/VERSIONED-SPINNER-MANIFEST.json"
+          Copy-Item reconstructed/campaigns/C001/versioned-spinner-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/VERSIONED-SPINNER-QUALIFICATION.md"
           Copy-Item reconstructed/campaigns/C001/human-qualification.md "${{ runner.temp }}/ohno-c001-windows/"
 
       - name: Verify independent C001 finite original-contract predictions
@@ -469,4 +487,6 @@ jobs:
             ${{ runner.temp }}/c001-catmull-results.json
             ${{ runner.temp }}/c001-stacking-heads.json
             ${{ runner.temp }}/c001-stacking-integration.json
+            ${{ runner.temp }}/c001-versioned-spinner/
+            ${{ runner.temp }}/corpus-audit-retained/
           if-no-files-found: warn

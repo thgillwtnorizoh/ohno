@@ -1754,3 +1754,34 @@ Owner collection/original client/GUI/audio/input/health calibration/late-offset 
 Work1 must authorize/parameterize truthful corrected-source provenance, independently
 recheck correction and remaining audit scope. Stop at this reproducible verification
 blocker; C001/Issue#5 OPEN, owner/runtimeIssue#4 separate. Not10/10 or owner acceptance.
+
+## C001 Work2 Issue#7 — finite versioned spinner integration — 2026-11-15
+
+Verified main7fc7636ae5cbc5d92472d280690b56dcdb9fca44, unchanged production baseline
+782c007; read rules/Issue#7/HQ authorization/full09handoff/33manifest/C001 consumers.
+Added canonical Mode0v5–v13 spinner admission with finite positive integer/valid
+sample/fulltiming/registered-order/separated/no-stack/no-break guards; historical
+Load(string) staysv14-only. Catalog old-spinner metadata indexed separately from
+canonical admission. Immutable SpinnerDefinition provenance preserves <=8constructor
+NewCombo then parser overwrite, format/raw type, ENGINEERING uncapped endpoint and
+modern/no-recorded-source policy. Same references feed score/health/NewCombo/samples/
+actual session/input/results. Audio library admits only matching canonical finite
+old provenance; Windows bridge reused, slider-loop restrictions unchanged.
+
+Local LinuxSDK8.0.427/runtime8.0.33:650/650new development PASS,23admitted/10excluded,
+33unchanged authority fixtures. Actual calibrated health/scoring, paired v14-modern
+input/results/audio histories, end-time sample discrimination/raw sound, generated
+scratch PCM resources/recording Play-Pause hooks PASS. Retained C001264/P299/R07eight
+and CorpusAudit259PASS;33fixture regenerationPASS. Initial retained R07 wrong root
+and Audit missing child-dotnet PATH were invocation failures corrected without
+production/test weakening. No original179characterization rerun or relabeling.
+Next exact-source integrated fullWindows regression/build/package; pending this
+initial publication. Full UEP report11-issue7-versioned-spinner-integration.md.
+
+Original host-length cap NOT INTEGRATED (no provider); v13conditional cap fixture
+keepsENGINEERINGend5000 versus original-static3950 underL4000. No guessed duration,
+source-record legacy mode, timing/offset/audio-clock/R17/slider-math changes. Broad
+stack/break/parser/mode/profile exclusions and owner recovery counts remain open.
+Original/GUI/audibleaudio/physical input/private corpus NOT RUN. Work1 independent
+new-source QA next; owner corpus rescan only afterward. C001/Issue#7OPEN; initial
+source SHA in introducing Git history, final CI seal follows. No owner acceptance.
