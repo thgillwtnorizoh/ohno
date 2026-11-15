@@ -2660,3 +2660,42 @@ production changes. Linux SDK8.0.427/runtime8.0.33; verify.py exact clean checko
 reproduces34/34 final assertions. NOT RUN: owner collection, original client,
 GUI/audio/physical input/owner qualification, full Windows/gameplay regression.
 Next: Headquarters accepts tool evidence; owner scans authorized local collection.
+
+## C001 Work1 Issue#7 — versioned ordinary spinner handoff — 2026-11-15
+
+UEP-001rev2.1; starting/exact tested main782c00771a436b2a2950680d4f5de379a791d9dd,
+latest GitHub verified. Read rules/Issue#7/HQ kickoff/owner aggregate clarification,
+C001 and E024–026/E034/E036/E041; pinned ZIP7089d49f/EXE6e182c10 freshly verified.
+Research only, no production edits. Original spinner parser/factory has no v14 gate;
+constructor<=8 NewCombo4 is overwritten by parser file bit before same-reference
+registration. Shared Double→Int32 start/end, zero v5+offset, ordinary Min(provider-50,
+end), sample defaults/clamp/filename and N preparation recorded. Source-date legacy
+predicate is not .osu version. Existing health/score/sound/NewCombo contracts reused.
+
+CONFIRMED ORIGINAL16targeted bodies/regions62decisive sites/40inherited identities
+PASS; repeat extraction identical. RECONSTRUCTED33hashed synthetic fixtures/rational
+conditional expectations PASS; integer separated no-stack/no-break/modern-null-source
+finite handoff with explicit host-length precondition. VERIFIED COMPONENT actual
+current production179assertions PASS,source782c007clean/compiled Beatmap hash pinned;
+4v14 preparations29rejections. Fractional starts fail earlier Int32 row-syntax gate
+also labeled format-profile; old Mode1 hits spinner gate before final mode check.
+Pure versioned NewCombo component exercised separately, never claimed old-map prep.
+
+LinuxPython3.12/dnfile0.18.0/dncil1.0.2/pefile2024.8.26; .NETSDK8.0.427/runtime8.0.33.
+Historical E024/025/026 stored checks PASS211/216/288hashes. E036/041 full-tree checks
+FAIL AttributeError on five newer E044–046 list summaries; no edits. Byte-identical
+schema-envelope copies excluding only no-method lists PASS349/466hashes. New probe
+initial extra-parenthesis compile and later nullable guard failures corrected;
+fractional-site assumption corrected after actual rejection, preserving original
+expectations. All partial findings disclosed. Python compile/focused checks PASS.
+No whole-EXE scan/newCI/fullWindows gate/original CLR/client/audio/input/owner/private
+maps; exceptional/editor/legacy-source/fullold-stack/zero downstream NOT VERIFIED.
+
+Added09-versioned-spinners report plusversioned-spinners/tools/static/evidence/33
+fixtures/manifest/ProductionProbe/results/verification; appended current registers/
+status/matrix and journal only. Original code/assets not redistributed; old bytes/
+journal prefixes preserved. Owner-reported113standard candidate charts are not a
+promised recovery count. Next Work2 finite versioned spinner integration satisfying
+packet acceptance, Windows regression/build then Work1 new-source QA; ownerIssue#4
+separate. Stop at verified original-static handoff. C001/Issue#7 subsystemOPEN;
+original equivalence/owner acceptance unverified. Published SHA in introducing Git.

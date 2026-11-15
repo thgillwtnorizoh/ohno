@@ -122,3 +122,21 @@ verification/11-corpus-audit-correction.md and corpus-audit-qa-v2/. Windows/Linu
 CI43618348530 SUCCESS corroborated;259/platform reused, not rerun. Independent
 tool gate ready for Headquarters review; Issue#5 remains OPEN pending acceptance,
 owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.
+
+## Issue #7 — old-spinner gates and format-family ambiguity — 2026-11-15
+
+OPEN implementation gap, exact782c007: integer Mode0 v5–v13 spinner rows rejected
+by canonical version!=14 and catalog object/format admission, while pinned original
+ordinary factory/parser has no such guard. Finite static handoff now available;
+source-policy and host-length prerequisites explicitly conditional. Not fixed here.
+
+Diagnostic limitation CONFIRMED: fractional starts stop at earlier Int32 time/type
+syntax message containing format-v14 and also map to unsupported/format-profile.
+Thus owner aggregate134/standard candidates113 does not prove one exception source
+or a guaranteed recovery count. Raw source v3/v128 and other modes remain separate
+engineering exclusions. No new owner-chart execution or original runtime claim.
+
+Historical E036/E041 checker compatibility issue: full-tree runs crash on five
+later list-valued summary JSONs; preserved unchanged. Byte-identical checker/tool/
+dictionary-evidence envelope passes original semantic assertions and349/466hashes;
+new packet independently authenticates selected16bodies. No historical file edited.

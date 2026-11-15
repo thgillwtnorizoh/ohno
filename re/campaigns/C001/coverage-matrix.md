@@ -178,3 +178,13 @@ verification/11-corpus-audit-correction.md and corpus-audit-qa-v2/. Windows/Linu
 CI43618348530 SUCCESS corroborated;259/platform reused, not rerun. Independent
 tool gate ready for Headquarters review; Issue#5 remains OPEN pending acceptance,
 owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.
+
+## Issue #7 versioned ordinary spinner delta — 2026-11-15
+
+| Family | Original-static / Independent fixtures | Actual current reconstruction | Remaining |
+|---|---|---|---|
+| Ordinary v5–v13 spinner construction/preparation; v14 control |16targeted bodies/62sites/40hash overlaps;33 independent charts; parser/factory/end-cap/samples/NewCombo order and source-policy split |179assertions on exact782c007;4v14 canonical preparations,29rejections across all controls; legacy NewCombo component order already supported | Work2 finite integration; independent new-source QA; Windows and owner/original runtime |
+
+Finite scope and explicit host-length/source-policy assumptions in09-versioned-
+spinners.md. v3/v128/other-mode are engineering negative controls, not new original
+unsupported claims. No comprehensive format/spinner/C001 row closed.

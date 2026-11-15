@@ -1,0 +1,890 @@
+{
+  "classification": "Work1 actual production characterization, not original-runtime observations",
+  "exactTestedMain": "782c00771a436b2a2950680d4f5de379a791d9dd",
+  "productionBaselineSHA": "782c00771a436b2a2950680d4f5de379a791d9dd",
+  "runtime": "8.0.33",
+  "checks": 179,
+  "pass": 179,
+  "fail": 0,
+  "cases": [
+    {
+      "id": "v05-single",
+      "hash": "348E482AEEBE488C5BAA8EBD00EE5827FECBE2535B6E71DEB48AB1D4380AD9E5",
+      "version": 5,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v05-mixed",
+      "hash": "09F1E93B0464CA6F8E7F9D9EF49A5DA0630DD6FCF7B054E9B00B424CF8EBF017",
+      "version": 5,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v06-single",
+      "hash": "44E7BD7C77EF8D818E3253B4C5FC3220B5EC17B6CCEA390C3DCA3775959CFD3B",
+      "version": 6,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v06-mixed",
+      "hash": "741456533658041C6B50B99D85F0BC18181487C28368707E1FCF76A40E673B79",
+      "version": 6,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v09-single",
+      "hash": "946C77E301AA306A6672B8385F463EBAA95900C6D853C13B6131D614B67F3F24",
+      "version": 9,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v09-mixed",
+      "hash": "8F76F719C7A7326E3A99D7421061F6A5A65798CCA162502EB86C928E669B2CA2",
+      "version": 9,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v10-single",
+      "hash": "77673D711AA58807466720A07AC1ED9D7567D97767E2B956B520E2FE1CB96524",
+      "version": 10,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v10-mixed",
+      "hash": "5032D572063009EACE5D615E1346975449E233AA5E34282DF962EEA3D9105716",
+      "version": 10,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v12-single",
+      "hash": "40A6C3B1ECBA43349681349A950DBA835DD90F761F4E0E59057B0F2E0FB913E2",
+      "version": 12,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v12-mixed",
+      "hash": "C9059CDEE7839720077259698AEA53DC860EB0C880E8B05F7D455AD23998997E",
+      "version": 12,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v13-single",
+      "hash": "E214612AA04FCF1F107512BDF4F2BCE0AF881161F0C62F59DD37157666C17580",
+      "version": 13,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-mixed",
+      "hash": "D6884FC8E7EC5C430BE3BEFCB38158899D82F473AB13A79FBA261AB793425021",
+      "version": 13,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v14-single",
+      "hash": "9F617A8FF86949C73F38493D22DDB2961D91C99F3F24459992C6667CDCCA31CB",
+      "version": 14,
+      "mode": 0,
+      "index": "Indexed",
+      "indexedSpinnerCount": 1,
+      "canonical": "prepared",
+      "prepared": {
+        "startTime": 2000,
+        "endTime": 5000,
+        "required": 15,
+        "acceleration": 0.00108,
+        "healthFlags": [
+          false
+        ],
+        "scoreK": 4,
+        "sessionObjects": 1
+      },
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v14-mixed",
+      "hash": "FC85E5F01E1B24C0C838364C8912273CCF134915D2ED8E08C3A36271EA1FD671",
+      "version": 14,
+      "mode": 0,
+      "index": "Indexed",
+      "indexedSpinnerCount": 1,
+      "canonical": "prepared",
+      "prepared": {
+        "startTime": 2000,
+        "endTime": 5000,
+        "required": 15,
+        "acceleration": 0.00108,
+        "healthFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "scoreK": 3,
+        "sessionObjects": 4
+      },
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "id": "v05-bit4",
+      "hash": "7C003DFE79148D0EB366CE8B38B66A6CD0C224C984AA8C0D2EE721C5641BC73D",
+      "version": 5,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": true,
+        "flags": [
+          true
+        ]
+      }
+    },
+    {
+      "id": "v06-bit4",
+      "hash": "35432006064FB77780047E008586537FBEC5334D696E86254E9E0CC7F22B4246",
+      "version": 6,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": true,
+        "flags": [
+          true
+        ]
+      }
+    },
+    {
+      "id": "v09-bit4",
+      "hash": "0FF52D62E4FCC27F3272AACE6DEA7FAA07EB6B00DF2EA01074EF0ECBC4A7C79F",
+      "version": 9,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": true,
+        "flags": [
+          true
+        ]
+      }
+    },
+    {
+      "id": "v14-bit4",
+      "hash": "0FE0730E931F6758BE100A95790B303F5E57122924D1736B3647513F24956EAE",
+      "version": 14,
+      "mode": 0,
+      "index": "Indexed",
+      "indexedSpinnerCount": 1,
+      "canonical": "prepared",
+      "prepared": {
+        "startTime": 2000,
+        "endTime": 5000,
+        "required": 15,
+        "acceleration": 0.00108,
+        "healthFlags": [
+          true
+        ],
+        "scoreK": 4,
+        "sessionObjects": 1
+      },
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": true,
+        "flags": [
+          true
+        ]
+      }
+    },
+    {
+      "id": "v05-sample-full",
+      "hash": "62FBCA9279F1E9486C0C8232CD7DC634E470C62B06E9B8FEBC1F29A51B05749F",
+      "version": 5,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v05-fractional",
+      "hash": "5FEFFD2A1319E4120F83F4E2AFC35DC125C9B38681ACC28A3A025A86A02E1857",
+      "version": 5,
+      "mode": 0,
+      "index": "Invalid",
+      "indexRule": "Malformed object metadata.",
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: row Int32 time/type syntax gate",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-sample-full",
+      "hash": "126EC2D464EC2275D6E3EE6C2AEEA2C5CE7324E4AD4634F871B092673D8AD654",
+      "version": 13,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-fractional",
+      "hash": "F885BFAFC1BEE375C66FAC782FEE89D4D8855CFF8D9F77E732DC0E29137C9689",
+      "version": 13,
+      "mode": 0,
+      "index": "Invalid",
+      "indexRule": "Malformed object metadata.",
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: row Int32 time/type syntax gate",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v14-sample-full",
+      "hash": "31B2E36FBDB99F12593E713876B88FF48FCED18805A67789526077FC7FDDEDA2",
+      "version": 14,
+      "mode": 0,
+      "index": "Indexed",
+      "indexedSpinnerCount": 1,
+      "canonical": "prepared",
+      "prepared": {
+        "startTime": 2000,
+        "endTime": 5000,
+        "required": 15,
+        "acceleration": 0.00108,
+        "healthFlags": [
+          false
+        ],
+        "scoreK": 4,
+        "sessionObjects": 1
+      },
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v06-sample-two",
+      "hash": "DEACD3D65ACEF0395BDA5B0C14EAFE84261B786119150C149AE985BFF1D70E05",
+      "version": 6,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": true,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-conditional-end-cap",
+      "hash": "2B748E247526F620E696488470E1243189856BFFFEFBA42C902886A2E5FA1F9B",
+      "version": 13,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-end-before-start",
+      "hash": "45ACC0DF0AF692584FCFB6A2FFD49E5CD87106F25678AB4767EF1D20EABCEF54",
+      "version": 13,
+      "mode": 0,
+      "index": "Invalid",
+      "indexRule": "Malformed spinner end metadata.",
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v13-zero-duration",
+      "hash": "2AE9B37E0035883ADC13F8FFD685D7E23F26F378B1E2146C42E2DE504DD4901E",
+      "version": 13,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Unsupported gameplay object/format.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException",
+      "component": {
+        "confidence": "VERIFIED COMPONENT only; synthetic registered identities, not canonical old-map success",
+        "constructor": false,
+        "parser": false,
+        "flags": [
+          false
+        ]
+      }
+    },
+    {
+      "id": "v09-invalid-end",
+      "hash": "BBDAB9AC1F92D27314DC913A2EF7CE826F721ABF2076AB7CE76805C139472E22",
+      "version": 9,
+      "mode": 0,
+      "index": "Invalid",
+      "indexRule": "Malformed spinner end metadata.",
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "id": "v14-missing-end",
+      "hash": "0879F5040431C533F4BEB57FBC81BCE69D9EAAC75BB4688803AFCFBD0F1A6F0B",
+      "version": 14,
+      "mode": 0,
+      "index": "Invalid",
+      "indexRule": "Malformed spinner end metadata.",
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner end syntax/duration engineering guard",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "id": "negative-format-3",
+      "hash": "3398071010A303E2BEB9AD9E3429B8433E05A6D43DF12876D658D38F56658973",
+      "version": 3,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Gameplay format unsupported.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: outer format \u003C5 or \u003E14 guard",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "id": "negative-format-128",
+      "hash": "7679EB686416C0D051B108BDF24E65390926A35D5096695E5084AD2673ED485E",
+      "version": 128,
+      "mode": 0,
+      "index": "Unsupported",
+      "indexRule": "Gameplay format unsupported.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: outer format \u003C5 or \u003E14 guard",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "id": "negative-mode1-v9",
+      "hash": "BB7224A8F16121EEA0EEED2A7BF4AF85E34DF1F454D96E9C39D0C631B3BC7B85",
+      "version": 9,
+      "mode": 1,
+      "index": "Unsupported",
+      "indexRule": "Only ordinary ruleset0 supported.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: spinner version !=14 guard",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "id": "negative-mode1-v14",
+      "hash": "EB94112B60A22EC4C5D41CEA26FE3B2E1C36B6908FEEB00DD3FF9D163DEDF86F",
+      "version": 14,
+      "mode": 1,
+      "index": "Unsupported",
+      "indexRule": "Only ordinary ruleset0 supported.",
+      "indexedSpinnerCount": 1,
+      "canonical": "rejected",
+      "site": "Beatmap.LoadCore: standard-mode guard",
+      "exceptionType": "InvalidDataException"
+    }
+  ],
+  "formatLiteralSites": [
+    {
+      "line": 59,
+      "text": "throw new InvalidDataException(\u0022Missing osu format header.\u0022);"
+    },
+    {
+      "line": 69,
+      "text": "if (header.Length == 0) throw new InvalidDataException(\u0022Missing osu format header.\u0022);"
+    },
+    {
+      "line": 514,
+      "text": "if (version \u003C 5 || version \u003E 14) throw new InvalidDataException(\u0022Unsupported metadata format version.\u0022);"
+    },
+    {
+      "line": 841,
+      "text": "throw new InvalidDataException(\u0022Use an osu file format v5\u2013v14 supported circle/Linear-slider map.\u0022);"
+    },
+    {
+      "line": 873,
+      "text": "throw new InvalidDataException($\u0022Line {lineNumber \u002B 1}: use supported circles, sliders or format-v14 spinners.\u0022);"
+    },
+    {
+      "line": 894,
+      "text": "if (version != 14) throw new InvalidDataException(\u0022R07 supports only modern-policy, format-v14 spinners.\u0022);"
+    },
+    {
+      "line": 914,
+      "text": "throw new InvalidDataException(\u0022Historical R06 API supports only format-v14 Bezier; use LoadCanonical for C001 versioned paths.\u0022);"
+    }
+  ],
+  "sourceHashes": {
+    "Beatmap.cs": "514ED74F58AA1C0AD65DFE08F47A6E2ED90538C8FAC708A085D60DF9F277378F",
+    "LocalChartCatalog.cs": "483E4F3E6665E4922BB891D4F3606A584FF55F997B45BE03EF77533279DD5FAA"
+  },
+  "results": [
+    "v05-single immutable source hash",
+    "v05-single current canonical disposition",
+    "v05-single exact spinner-only format site (including mode-before-final-check)",
+    "v05-single existing component preserves constructor/parser order",
+    "v05-single source not written",
+    "v05-mixed immutable source hash",
+    "v05-mixed current canonical disposition",
+    "v05-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v05-mixed existing component preserves constructor/parser order",
+    "v05-mixed source not written",
+    "v06-single immutable source hash",
+    "v06-single current canonical disposition",
+    "v06-single exact spinner-only format site (including mode-before-final-check)",
+    "v06-single existing component preserves constructor/parser order",
+    "v06-single source not written",
+    "v06-mixed immutable source hash",
+    "v06-mixed current canonical disposition",
+    "v06-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v06-mixed existing component preserves constructor/parser order",
+    "v06-mixed source not written",
+    "v09-single immutable source hash",
+    "v09-single current canonical disposition",
+    "v09-single exact spinner-only format site (including mode-before-final-check)",
+    "v09-single existing component preserves constructor/parser order",
+    "v09-single source not written",
+    "v09-mixed immutable source hash",
+    "v09-mixed current canonical disposition",
+    "v09-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v09-mixed existing component preserves constructor/parser order",
+    "v09-mixed source not written",
+    "v10-single immutable source hash",
+    "v10-single current canonical disposition",
+    "v10-single exact spinner-only format site (including mode-before-final-check)",
+    "v10-single existing component preserves constructor/parser order",
+    "v10-single source not written",
+    "v10-mixed immutable source hash",
+    "v10-mixed current canonical disposition",
+    "v10-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v10-mixed existing component preserves constructor/parser order",
+    "v10-mixed source not written",
+    "v12-single immutable source hash",
+    "v12-single current canonical disposition",
+    "v12-single exact spinner-only format site (including mode-before-final-check)",
+    "v12-single existing component preserves constructor/parser order",
+    "v12-single source not written",
+    "v12-mixed immutable source hash",
+    "v12-mixed current canonical disposition",
+    "v12-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v12-mixed existing component preserves constructor/parser order",
+    "v12-mixed source not written",
+    "v13-single immutable source hash",
+    "v13-single current canonical disposition",
+    "v13-single exact spinner-only format site (including mode-before-final-check)",
+    "v13-single existing component preserves constructor/parser order",
+    "v13-single source not written",
+    "v13-mixed immutable source hash",
+    "v13-mixed current canonical disposition",
+    "v13-mixed exact spinner-only format site (including mode-before-final-check)",
+    "v13-mixed existing component preserves constructor/parser order",
+    "v13-mixed source not written",
+    "v14-single immutable source hash",
+    "v14-single current canonical disposition",
+    "v14-single prepared start/end",
+    "v14-single E026 requirement",
+    "v14-single actual sample/health reference ownership",
+    "v14-single real prepared no-break NewCombo",
+    "v14-single actual end-time sample/raw sound contract",
+    "v14-single existing component preserves constructor/parser order",
+    "v14-single source not written",
+    "v14-mixed immutable source hash",
+    "v14-mixed current canonical disposition",
+    "v14-mixed prepared start/end",
+    "v14-mixed E026 requirement",
+    "v14-mixed actual sample/health reference ownership",
+    "v14-mixed real prepared no-break NewCombo",
+    "v14-mixed actual end-time sample/raw sound contract",
+    "v14-mixed existing component preserves constructor/parser order",
+    "v14-mixed source not written",
+    "v05-bit4 immutable source hash",
+    "v05-bit4 current canonical disposition",
+    "v05-bit4 exact spinner-only format site (including mode-before-final-check)",
+    "v05-bit4 existing component preserves constructor/parser order",
+    "v05-bit4 source not written",
+    "v06-bit4 immutable source hash",
+    "v06-bit4 current canonical disposition",
+    "v06-bit4 exact spinner-only format site (including mode-before-final-check)",
+    "v06-bit4 existing component preserves constructor/parser order",
+    "v06-bit4 source not written",
+    "v09-bit4 immutable source hash",
+    "v09-bit4 current canonical disposition",
+    "v09-bit4 exact spinner-only format site (including mode-before-final-check)",
+    "v09-bit4 existing component preserves constructor/parser order",
+    "v09-bit4 source not written",
+    "v14-bit4 immutable source hash",
+    "v14-bit4 current canonical disposition",
+    "v14-bit4 prepared start/end",
+    "v14-bit4 E026 requirement",
+    "v14-bit4 actual sample/health reference ownership",
+    "v14-bit4 real prepared no-break NewCombo",
+    "v14-bit4 actual end-time sample/raw sound contract",
+    "v14-bit4 existing component preserves constructor/parser order",
+    "v14-bit4 source not written",
+    "v05-sample-full immutable source hash",
+    "v05-sample-full current canonical disposition",
+    "v05-sample-full exact spinner-only format site (including mode-before-final-check)",
+    "v05-sample-full existing component preserves constructor/parser order",
+    "v05-sample-full source not written",
+    "v05-fractional immutable source hash",
+    "v05-fractional current canonical disposition",
+    "v05-fractional fractional start stops before spinner guard",
+    "v05-fractional existing component preserves constructor/parser order",
+    "v05-fractional source not written",
+    "v13-sample-full immutable source hash",
+    "v13-sample-full current canonical disposition",
+    "v13-sample-full exact spinner-only format site (including mode-before-final-check)",
+    "v13-sample-full existing component preserves constructor/parser order",
+    "v13-sample-full source not written",
+    "v13-fractional immutable source hash",
+    "v13-fractional current canonical disposition",
+    "v13-fractional fractional start stops before spinner guard",
+    "v13-fractional existing component preserves constructor/parser order",
+    "v13-fractional source not written",
+    "v14-sample-full immutable source hash",
+    "v14-sample-full current canonical disposition",
+    "v14-sample-full prepared start/end",
+    "v14-sample-full E026 requirement",
+    "v14-sample-full actual sample/health reference ownership",
+    "v14-sample-full real prepared no-break NewCombo",
+    "v14-sample-full actual end-time sample/raw sound contract",
+    "v14-sample-full existing component preserves constructor/parser order",
+    "v14-sample-full source not written",
+    "v06-sample-two immutable source hash",
+    "v06-sample-two current canonical disposition",
+    "v06-sample-two exact spinner-only format site (including mode-before-final-check)",
+    "v06-sample-two existing component preserves constructor/parser order",
+    "v06-sample-two source not written",
+    "v13-conditional-end-cap immutable source hash",
+    "v13-conditional-end-cap current canonical disposition",
+    "v13-conditional-end-cap exact spinner-only format site (including mode-before-final-check)",
+    "v13-conditional-end-cap existing component preserves constructor/parser order",
+    "v13-conditional-end-cap source not written",
+    "v13-end-before-start immutable source hash",
+    "v13-end-before-start current canonical disposition",
+    "v13-end-before-start exact spinner-only format site (including mode-before-final-check)",
+    "v13-end-before-start existing component preserves constructor/parser order",
+    "v13-end-before-start source not written",
+    "v13-zero-duration immutable source hash",
+    "v13-zero-duration current canonical disposition",
+    "v13-zero-duration exact spinner-only format site (including mode-before-final-check)",
+    "v13-zero-duration existing component preserves constructor/parser order",
+    "v13-zero-duration source not written",
+    "v09-invalid-end immutable source hash",
+    "v09-invalid-end current canonical disposition",
+    "v09-invalid-end exact spinner-only format site (including mode-before-final-check)",
+    "v09-invalid-end source not written",
+    "v14-missing-end immutable source hash",
+    "v14-missing-end current canonical disposition",
+    "v14-missing-end actual malformed end site",
+    "v14-missing-end source not written",
+    "negative-format-3 immutable source hash",
+    "negative-format-3 current canonical disposition",
+    "negative-format-3 exact outer format site",
+    "negative-format-3 source not written",
+    "negative-format-128 immutable source hash",
+    "negative-format-128 current canonical disposition",
+    "negative-format-128 exact outer format site",
+    "negative-format-128 source not written",
+    "negative-mode1-v9 immutable source hash",
+    "negative-mode1-v9 current canonical disposition",
+    "negative-mode1-v9 exact spinner-only format site (including mode-before-final-check)",
+    "negative-mode1-v9 source not written",
+    "negative-mode1-v14 immutable source hash",
+    "negative-mode1-v14 current canonical disposition",
+    "negative-mode1-v14 actual standard mode site",
+    "negative-mode1-v14 source not written",
+    "actual audit twice deterministic",
+    "actual audit complete denominator",
+    "actual referenced canonical production clean and all baseline source bytes pinned",
+    "compiled actual preparation source hash"
+  ],
+  "originalRuntime": "NOT RUN"
+}

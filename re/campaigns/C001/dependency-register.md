@@ -103,3 +103,16 @@ verification/11-corpus-audit-correction.md and corpus-audit-qa-v2/. Windows/Linu
 CI43618348530 SUCCESS corroborated;259/platform reused, not rerun. Independent
 tool gate ready for Headquarters review; Issue#5 remains OPEN pending acceptance,
 owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.
+
+## Issue #7 versioned spinner integration handoff — 2026-11-15
+
+Original bounded packet09-versioned-spinners.md/versioned-spinners/ available.
+Work2 must address both catalog and canonical old-spinner gates, preserve versioned
+source provenance and <=8 constructor→parser overwrite, attach same sample/health/
+score/NewCombo/session identities, and declare host-length/source-policy decisions.
+Existing R07 modern physics is applicable only to absent/false source compatibility,
+not inferred from .osu version. Source-policy legacy/replay, full old stacks/editor/
+exceptional and original runtime stay OPEN. Positive integer separated ordinary
+rows form first finite integration profile; fractional/degenerate fixtures are
+explicit boundary observations. Next exact-source Windows regression and Work1 QA,
+then owner qualificationIssue#4; no private-map recovery count assumed.

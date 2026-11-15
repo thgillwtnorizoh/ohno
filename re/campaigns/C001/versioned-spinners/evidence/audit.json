@@ -1,0 +1,1971 @@
+{
+  "schemaVersion": 1,
+  "tool": "ohno-corpus-audit/1",
+  "sourceCommit": "782c00771a436b2a2950680d4f5de379a791d9dd",
+  "sourceState": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Beatmap.cs": "514ED74F58AA1C0AD65DFE08F47A6E2ED90538C8FAC708A085D60DF9F277378F",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "483E4F3E6665E4922BB891D4F3606A584FF55F997B45BE03EF77533279DD5FAA",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "limits": {
+    "maxCharts": 10000,
+    "maxDirectories": 4096,
+    "maxEntries": 50000,
+    "maxDepth": 32,
+    "includeRelativePaths": false
+  },
+  "complete": true,
+  "directories": 1,
+  "entries": 33,
+  "nonChartFiles": 0,
+  "noticesOmitted": 0,
+  "notices": [],
+  "charts": [
+    {
+      "entryKey": "25D3DDACCEBC5BFDCCF30B0D10E07A63461138891AD3E7C0F9ED66599BC8ECD2",
+      "sha256": "7679EB686416C0D051B108BDF24E65390926A35D5096695E5084AD2673ED485E",
+      "bytes": 333,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 128,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 128,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "EB401C255F979508E43C9C7D408D049D5228A72A17FC6FB2A56B789AD7708C4A",
+      "sha256": "3398071010A303E2BEB9AD9E3429B8433E05A6D43DF12876D658D38F56658973",
+      "bytes": 329,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 3,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 3,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "43125CA3BDD33AF172FE8D96C64A68BDAD9A8C37AF02C2E11B208C4798BACDFC",
+      "sha256": "EB94112B60A22EC4C5D41CEA26FE3B2E1C36B6908FEEB00DD3FF9D163DEDF86F",
+      "bytes": 331,
+      "cohort": "other-mode",
+      "features": {
+        "format": 14,
+        "mode": 1,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 1,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "B089816E657B4ACF9B9D635145DCBAF4F05419E3DA10120A1E8B21DE224ED71E",
+      "sha256": "BB7224A8F16121EEA0EEED2A7BF4AF85E34DF1F454D96E9C39D0C631B3BC7B85",
+      "bytes": 329,
+      "cohort": "other-mode",
+      "features": {
+        "format": 9,
+        "mode": 1,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 1,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "6D7895301F03211B1F36CE2A9777B3BA5CFCDB9A2A16A9E68238B6DEF48AFB34",
+      "sha256": "7C003DFE79148D0EB366CE8B38B66A6CD0C224C984AA8C0D2EE721C5641BC73D",
+      "bytes": 321,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "3F25229B65A8F47F10A18EBAB48919D3DA9266D5928BB27768A2CF013333D121",
+      "sha256": "5FEFFD2A1319E4120F83F4E2AFC35DC125C9B38681ACC28A3A025A86A02E1857",
+      "bytes": 330,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "production-syntax",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "6C077824E83E30997F4BA23B831C5B41B1AF413C2B9060E22F5808E267234977",
+      "sha256": "09F1E93B0464CA6F8E7F9D9EF49A5DA0630DD6FCF7B054E9B00B424CF8EBF017",
+      "bytes": 386,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "EAE28D9D02B8800608B14464D87D4CF9CC98CFA4D1637A04D6EE6B809A1398F9",
+      "sha256": "62FBCA9279F1E9486C0C8232CD7DC634E470C62B06E9B8FEBC1F29A51B05749F",
+      "bytes": 351,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "25BF5F3ADA6D13F07340F8C0A177617FB27DA506FE1B0D9F60A860CA74020CD8",
+      "sha256": "348E482AEEBE488C5BAA8EBD00EE5827FECBE2535B6E71DEB48AB1D4380AD9E5",
+      "bytes": 322,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "EA3A87D8334B348B5221204C1862232B9062D7F7717C23FB8938515CE0E0E409",
+      "sha256": "35432006064FB77780047E008586537FBEC5334D696E86254E9E0CC7F22B4246",
+      "bytes": 321,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "82839A2B299CCC64D905ADB5875F9D35FD9F04834D680C5211C4AC212B865B47",
+      "sha256": "741456533658041C6B50B99D85F0BC18181487C28368707E1FCF76A40E673B79",
+      "bytes": 386,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "D79C3C318EB3645F4257704DB5612093B76EA1F73464DE9819769A58CD0C653D",
+      "sha256": "DEACD3D65ACEF0395BDA5B0C14EAFE84261B786119150C149AE985BFF1D70E05",
+      "bytes": 330,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "9521AD24F6A8D1DC1F5EE652AAF9954D4FD73D6C97FAEDD1A75C771AF983ED1A",
+      "sha256": "44E7BD7C77EF8D818E3253B4C5FC3220B5EC17B6CCEA390C3DCA3775959CFD3B",
+      "bytes": 322,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "935FA98473DC24C9821A5E08BE9557E619A85DE0EAC1666C1B973DA7112439AC",
+      "sha256": "0FF52D62E4FCC27F3272AACE6DEA7FAA07EB6B00DF2EA01074EF0ECBC4A7C79F",
+      "bytes": 321,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "1FA7E0A1F44832EC702270B857BF79B0504C2F358F47E272731F3871C0F13E38",
+      "sha256": "BBDAB9AC1F92D27314DC913A2EF7CE826F721ABF2076AB7CE76805C139472E22",
+      "bytes": 335,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "spinner-duration",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "B5079D4B7CFB638E1CA6A1121C610E0F97E4C29EAD46C48F9DC654CF5B21B550",
+      "sha256": "8F76F719C7A7326E3A99D7421061F6A5A65798CCA162502EB86C928E669B2CA2",
+      "bytes": 386,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "08FF92E29B9A6D149E89C4F09955E5FD43A133124DE29DD5D3E7C3B22E881F56",
+      "sha256": "946C77E301AA306A6672B8385F463EBAA95900C6D853C13B6131D614B67F3F24",
+      "bytes": 322,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "8E6132AE86A978C63B8EF1EDCB905ADA4BCAB2180A3D70880059F107651E6444",
+      "sha256": "5032D572063009EACE5D615E1346975449E233AA5E34282DF962EEA3D9105716",
+      "bytes": 387,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 10,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 10,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "3A4B94F217CE0562F109CFCA463A3C1AD38EDB7D18D5EA0F91AA133B8204A2A9",
+      "sha256": "77673D711AA58807466720A07AC1ED9D7567D97767E2B956B520E2FE1CB96524",
+      "bytes": 323,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 10,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 10,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "F9D19FB4470D851456CA3D78949DF4A8B1F761EF9D4004CE5BA5DEA27EED6F62",
+      "sha256": "C9059CDEE7839720077259698AEA53DC860EB0C880E8B05F7D455AD23998997E",
+      "bytes": 387,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 12,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 12,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "82E8CAAFBD9D92A0775441D85632832B05E8D74087874E6D26C95D0B38CCFBDB",
+      "sha256": "40A6C3B1ECBA43349681349A950DBA835DD90F761F4E0E59057B0F2E0FB913E2",
+      "bytes": 323,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 12,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 12,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "EADEAFC348C1113F796B13E936081F4DA6906EF2A029FDD56E5C903196AD6E7D",
+      "sha256": "2B748E247526F620E696488470E1243189856BFFFEFBA42C902886A2E5FA1F9B",
+      "bytes": 336,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "3C5494A580ECB676B685B5F6C4AE75EE14132ACC1C8C700A7EDE4795E61372A1",
+      "sha256": "45ACC0DF0AF692584FCFB6A2FFD49E5CD87106F25678AB4767EF1D20EABCEF54",
+      "bytes": 333,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "spinner-duration",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "08A97FF3BB5963BEED8247E67967187683100AEDA51505C5E470609C472AA853",
+      "sha256": "F885BFAFC1BEE375C66FAC782FEE89D4D8855CFF8D9F77E732DC0E29137C9689",
+      "bytes": 331,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "production-syntax",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "AE24EC36D201DFEB06336BCDBDD8181D4709565994EBD61D35475BC5450B10F3",
+      "sha256": "D6884FC8E7EC5C430BE3BEFCB38158899D82F473AB13A79FBA261AB793425021",
+      "bytes": 387,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "FAFD913DDA9CF5F3E59450ACF7B935AF12D535E118BA836B69CE356FF0D0FE37",
+      "sha256": "126EC2D464EC2275D6E3EE6C2AEEA2C5CE7324E4AD4634F871B092673D8AD654",
+      "bytes": 352,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "1AA724D833A9E6DB48E030B1C10677A51435B78ADF1E5D99898D7BA516C8D845",
+      "sha256": "E214612AA04FCF1F107512BDF4F2BCE0AF881161F0C62F59DD37157666C17580",
+      "bytes": 323,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "8409BD40085537CC26ADCEDBA8C9AC4413F149B1ED12B02E37E386817E018A84",
+      "sha256": "2AE9B37E0035883ADC13F8FFD685D7E23F26F378B1E2146C42E2DE504DD4901E",
+      "bytes": 330,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "79A24E3A26433DC12AE57CDD5720C23E56B2AC12CF4D96AA1ADABBD874BA3F68",
+      "sha256": "0FE0730E931F6758BE100A95790B303F5E57122924D1736B3647513F24956EAE",
+      "bytes": 322,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "D2BE3850D9AD1E9525E61D8035D41B47120AD660972DA641EE08B8D21B65C101",
+      "sha256": "0879F5040431C533F4BEB57FBC81BCE69D9EAAC75BB4688803AFCFBD0F1A6F0B",
+      "bytes": 323,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "spinner-duration",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "spinner-duration",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "FD0BFD0CABE3BB51F54EE09FD589F78CF76B92384057DEE93DCFC3A123828A97",
+      "sha256": "FC85E5F01E1B24C0C838364C8912273CCF134915D2ED8E08C3A36271EA1FD671",
+      "bytes": 387,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 4,
+        "circles": 2,
+        "sliders": 1,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 4,
+      "preparedSegments": 1
+    },
+    {
+      "entryKey": "FD7015D3E1EE98FB04265710609E1692947BCC04DADF3410933E72E4DF0637C6",
+      "sha256": "31B2E36FBDB99F12593E713876B88FF48FCED18805A67789526077FC7FDDEDA2",
+      "bytes": 352,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "DBE80784915FCC3827F70B6A324951CF725421E681AFB658989DFBE6C1945645",
+      "sha256": "9F617A8FF86949C73F38493D22DDB2961D91C99F3F24459992C6667CDCCA31CB",
+      "bytes": 323,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 0
+    }
+  ],
+  "cohorts": {
+    "other-mode": {
+      "files": 2,
+      "canonicalAttempts": 2,
+      "canonicalSuccess": 0,
+      "indexed": 0,
+      "consumerReady": 0,
+      "missingAudio": 0,
+      "uniqueHashes": 2
+    },
+    "standard-with-spinner": {
+      "files": 31,
+      "canonicalAttempts": 31,
+      "canonicalSuccess": 4,
+      "indexed": 4,
+      "consumerReady": 4,
+      "missingAudio": 0,
+      "uniqueHashes": 31
+    }
+  },
+  "canonicalOutcomes": {
+    "success": 4,
+    "unsupported-admission": 29
+  },
+  "canonicalFailureFamilies": {
+    "unsupported-admission/format-profile": 27,
+    "unsupported-admission/mode-profile": 1,
+    "unsupported-admission/spinner-duration": 1
+  },
+  "stageOutcomes": {
+    "audio": {
+      "not-declared": 4,
+      "unknown": 29
+    },
+    "automatic-score": {
+      "not-run": 29,
+      "success": 4
+    },
+    "canonical": {
+      "success": 4,
+      "unsupported-admission": 29
+    },
+    "feature-projection": {
+      "success": 33
+    },
+    "fresh-health-source": {
+      "not-run": 29,
+      "success": 4
+    },
+    "index": {
+      "malformed-input": 5,
+      "success": 4,
+      "unsupported-admission": 24
+    },
+    "read": {
+      "success": 33
+    },
+    "session-without-health-calibration": {
+      "not-run": 29,
+      "success": 4
+    },
+    "structure": {
+      "not-run": 29,
+      "success": 4
+    }
+  },
+  "boundary": "Headless finite indexing/preparation/structural checks only; health calibration, media decoding, original runtime and owner playability NOT VERIFIED."
+}

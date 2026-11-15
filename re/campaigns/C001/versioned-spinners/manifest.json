@@ -1,0 +1,1479 @@
+{
+  "schema": 1,
+  "source": "Work1 independent generator; Fraction mathematics on deliberately exact representable 3-second durations",
+  "versions": [
+    5,
+    6,
+    9,
+    10,
+    12,
+    13,
+    14
+  ],
+  "limits": [
+    "No original execution",
+    "Source date compatibility is not format version",
+    "End=min(globalLength-50,truncated end)+F100b for nonvalidation caller",
+    "M3201 directly stores supplied end; end setters are different paths",
+    "v3/v128 and other modes are negative engineering controls, not original rejection claims",
+    "Audio/host length/current global settings not exercised; supplying a .osu file does not prove original import",
+    "Integer/floating overflow/NaN and degenerate downstream behavior NOT VERIFIED"
+  ],
+  "cases": [
+    {
+      "id": "v05-single",
+      "version": 5,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v05-single.osu",
+      "sha256": "348e482aeebe488c5baa8ebd00ee5827fecbe2535b6e71deb48ab1d4380ad9e5",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v05-mixed",
+      "version": 5,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v05-mixed.osu",
+      "sha256": "09f1e93b0464ca6f8e7f9d9ef49a5da0630dd6fcf7b054e9b00b424cf8ebf017",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v06-single",
+      "version": 6,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v06-single.osu",
+      "sha256": "44e7bd7c77ef8d818e3253b4c5fc3220b5ec17b6ccea390c3dca3775959cfd3b",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v06-mixed",
+      "version": 6,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v06-mixed.osu",
+      "sha256": "741456533658041c6b50b99d85f0bc18181487c28368707e1fcf76a40e673b79",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v09-single",
+      "version": 9,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v09-single.osu",
+      "sha256": "946c77e301aa306a6672b8385f463ebaa95900c6d853c13b6131d614b67f3f24",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v09-mixed",
+      "version": 9,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v09-mixed.osu",
+      "sha256": "8f76f719c7a7326e3a99d7421061f6a5a65798cca162502eb86c928e669b2ca2",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v10-single",
+      "version": 10,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v10-single.osu",
+      "sha256": "77673d711aa58807466720a07ac1ed9d7567d97767e2b956b520e2fe1cb96524",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v10-mixed",
+      "version": 10,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v10-mixed.osu",
+      "sha256": "5032d572063009eace5d615e1346975449e233aa5e34282df962eea3d9105716",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v12-single",
+      "version": 12,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v12-single.osu",
+      "sha256": "40a6c3b1ecba43349681349a950dba835dd90f761f4e0e59057b0f2e0fb913e2",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v12-mixed",
+      "version": 12,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v12-mixed.osu",
+      "sha256": "c9059cdee7839720077259698aea53dc860eb0c880e8b05f7d455ad23998997e",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-single",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v13-single.osu",
+      "sha256": "e214612aa04fcf1f107512bdf4f2bce0af881161f0c62f59dd37157666c17580",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-mixed",
+      "version": 13,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v13-mixed.osu",
+      "sha256": "d6884fc8e7ec5c430be3befcb38158899d82f473ab13a79fba261ab793425021",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v14-single",
+      "version": 14,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": true,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v14-single.osu",
+      "sha256": "9f617a8ff86949c73f38493d22ddb2961d91c99f3f24459992c6667cdcca31cb",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v14-mixed",
+      "version": 14,
+      "mode": 0,
+      "mixed": true,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": true,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": true
+      },
+      "path": "fixtures/v14-mixed.osu",
+      "sha256": "fc85e5f01e1b24c0c838364c8912273ccf134915d2ed8e08c3a36271ea1fd671",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v05-bit4",
+      "version": 5,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": true,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": true,
+        "finalNoBreakFlags": [
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v05-bit4.osu",
+      "sha256": "7c003dfe79148d0eb366ce8b38b66a6cd0c224c984aa8c0d2ee721c5641bc73d",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v06-bit4",
+      "version": 6,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": true,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": true,
+        "finalNoBreakFlags": [
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v06-bit4.osu",
+      "sha256": "35432006064fb77780047e008586537fbec5334d696e86254e9e0cc7f22b4246",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v09-bit4",
+      "version": 9,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": true,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": true,
+        "finalNoBreakFlags": [
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v09-bit4.osu",
+      "sha256": "0ff52d62e4fcc27f3272aace6dea7faa07eb6b00df2ea01074ef0ecbc4a7c79f",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v14-bit4",
+      "version": 14,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": true,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": true,
+        "finalNoBreakFlags": [
+          true
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": true,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v14-bit4.osu",
+      "sha256": "0fe0730e931f6758be100a95790b303f5e57122924d1736b3647513f24956eae",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v05-sample-full",
+      "version": 5,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 2,
+          "addition": 3,
+          "index": 2,
+          "volume": 100,
+          "filename": "synthetic.wav"
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v05-sample-full.osu",
+      "sha256": "62fbca9279f1e9486c0c8232cd7dc634e470c62b06e9b8febc1f29a51b05749f",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v05-fractional",
+      "version": 5,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v05-fractional.osu",
+      "sha256": "5feffd2a1319e4120f83f4e2afc35dc125c9b38681acc28a3a025a86a02e1857",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-sample-full",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 2,
+          "addition": 3,
+          "index": 2,
+          "volume": 100,
+          "filename": "synthetic.wav"
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v13-sample-full.osu",
+      "sha256": "126ec2d464ec2275d6e3ee6c2aeea2c5ce7324e4ad4634f871b092673d8ad654",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-fractional",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v13-fractional.osu",
+      "sha256": "f885bfafc1bee375c66fac782fee89d4d8855cff8d9f77e732dc0e29137c9689",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v14-sample-full",
+      "version": 14,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 2,
+          "addition": 3,
+          "index": 2,
+          "volume": 100,
+          "filename": "synthetic.wav"
+        },
+        "currentCanonicalSuccess": true,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v14-sample-full.osu",
+      "sha256": "31b2e36fbdb99f12593e713876b88ff48fced18805a67789526077fc7fddeda2",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v06-sample-two",
+      "version": 6,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 5000,
+        "duration": 3000,
+        "constructorNewCombo": true,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 2,
+          "addition": 3,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 15,
+        "accelerationExact": "27/25000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v06-sample-two.osu",
+      "sha256": "deacd3d65acef0395bda5b0c14eafe84261b786119150c149ae985bff1d70e05",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-conditional-end-cap",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "finite supported construction",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 4000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 3950,
+        "duration": 1950,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false,
+        "requiredAtOD5": 9,
+        "accelerationExact": "321/200000",
+        "newComboAfterSpinner": "No following object in fixture"
+      },
+      "path": "fixtures/v13-conditional-end-cap.osu",
+      "sha256": "2b748e247526f620e696488470e1243189856bfffefba42c902886a2e5fa1f9b",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-end-before-start",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "ORIGINAL STATIC degenerate duration; downstream NOT VERIFIED",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 1000,
+        "duration": -1000,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/v13-end-before-start.osu",
+      "sha256": "45acc0df0af692584fcfb6a2ffd49e5cd87106f25678ab4767ef1d20eabcef54",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v13-zero-duration",
+      "version": 13,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "ORIGINAL STATIC degenerate duration; downstream NOT VERIFIED",
+        "conditionalInputs": {
+          "F100b": 0,
+          "globalLengthProviderMilliseconds": 10000,
+          "M28f7ValidationArgument": false,
+          "modifiers": "none",
+          "ordinaryOD": 5,
+          "sourceCompatibility": "null source, or independently supplied modern predicate=false"
+        },
+        "originalFactory": "M1872 -> M48e1 -> M05ea -> M3201",
+        "storedCenter": [
+          256,
+          192
+        ],
+        "rawXYNotForwarded": [
+          11,
+          23
+        ],
+        "start": 2000,
+        "end": 2000,
+        "duration": 0,
+        "constructorNewCombo": false,
+        "parserNewCombo": false,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "rawSound": 2,
+        "storedSample": {
+          "base": 0,
+          "addition": 0,
+          "index": 0,
+          "volume": 0,
+          "filename": ""
+        },
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/v13-zero-duration.osu",
+      "sha256": "2ae9b37e0035883adc13f8ffd685d7e23f26f378b1e2146c42e2de504dd4901e",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v09-invalid-end",
+      "version": 9,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "ORIGINAL STATIC row-error boundary",
+        "originalConstruction": "M28f7 column5 access or M09e4 Double.Parse fails before factory; ordinary nonvalidation caller rethrows",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/v09-invalid-end.osu",
+      "sha256": "bbdab9ac1f92d27314dc913a2ef7ce826f721abf2076ab7ce76805c139472e22",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "v14-missing-end",
+      "version": 14,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "ORIGINAL STATIC row-error boundary",
+        "originalConstruction": "M28f7 column5 access or M09e4 Double.Parse fails before factory; ordinary nonvalidation caller rethrows",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/v14-missing-end.osu",
+      "sha256": "0879f5040431c533f4beb57fbc81bce69d9eaac75bb4688803afcfbd0f1a6f0b",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "negative-format-3",
+      "version": 3,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "NEGATIVE CONTROL: outside finite standard v5-v14 handoff",
+        "originalConstruction": "NOT ASSERTED for this profile",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/negative-format-3.osu",
+      "sha256": "3398071010a303e2beb9ad9e3429b8433e05a6d43df12876d658d38f56658973",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "negative-format-128",
+      "version": 128,
+      "mode": 0,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "NEGATIVE CONTROL: outside finite standard v5-v14 handoff",
+        "originalConstruction": "NOT ASSERTED for this profile",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/negative-format-128.osu",
+      "sha256": "7679eb686416c0d051b108bdf24e65390926a35d5096695e5084ad2673ed485e",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "negative-mode1-v9",
+      "version": 9,
+      "mode": 1,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "NEGATIVE CONTROL: outside finite standard v5-v14 handoff",
+        "originalConstruction": "NOT ASSERTED for this profile",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/negative-mode1-v9.osu",
+      "sha256": "bb7224a8f16121eea0eeed2a7bf4af85e34df1f454d96e9c39d0c631b3bc7b85",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    },
+    {
+      "id": "negative-mode1-v14",
+      "version": 14,
+      "mode": 1,
+      "mixed": false,
+      "fileBit4": false,
+      "expected": {
+        "profile": "NEGATIVE CONTROL: outside finite standard v5-v14 handoff",
+        "originalConstruction": "NOT ASSERTED for this profile",
+        "currentCanonicalSuccess": false
+      },
+      "path": "fixtures/negative-mode1-v14.osu",
+      "sha256": "eb94112b60a22ec4c5d41cea26fe3b2e1c36b6908feeb00dd3ff9d163dedf86f",
+      "confidence": "RECONSTRUCTED from CONFIRMED ORIGINAL static; conditional host operands, not observed original runtime"
+    }
+  ]
+}

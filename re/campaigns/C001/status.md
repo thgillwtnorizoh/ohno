@@ -158,3 +158,19 @@ verification/11-corpus-audit-correction.md and corpus-audit-qa-v2/. Windows/Linu
 CI43618348530 SUCCESS corroborated;259/platform reused, not rerun. Independent
 tool gate ready for Headquarters review; Issue#5 remains OPEN pending acceptance,
 owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.
+
+## Issue #7 — finite versioned spinner original handoff — 2026-11-15
+
+Work1 starting/tested782c007; original archive/EXE authenticated. New16targeted
+bodies/regions62sites/40inherited hashes PASS;33 hashed synthetic fixtures and
+179actual-production checks PASS. v5–v13 integer spinner gate confirmed; fractional
+starts hit earlier row-syntax format-family confounder. Original factory/parser has
+no v14 gate: <=8 constructor NewCombo is overwritten by file bit; end parse/truncation,
+provider Min(L-50,end)+offset and optional sample fields documented. Source-record
+legacy predicate is independent of .osu version. Handoff09-versioned-spinners.md
+and versioned-spinners/ include concrete finite acceptance and limits.
+Current production4v14 preparations/29rejections, not new compatibility. No production
+edits or original runtime. E024–026 old checks PASS;E036/041 full-tree schema failures
+preserved, unchanged schema-envelope semantic checks PASS. Work2 finite integration
+next, then independent actual-source QA/Windows/owner gates. Issue#7/C001 OPEN;
+owner113candidate count is not recovery forecast; no private-map/offset/R17 work.
