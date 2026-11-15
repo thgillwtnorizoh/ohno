@@ -1796,3 +1796,22 @@ because full regression failed. Raw log digest/retained ordinary lines sealed in
 versioned-spinner-development/initial-gate. Added explicit/default stack catalog
 controls; rerun focused checks and exact full Windows gate on corrected source.
 No exception to historical verification or change of test expectation authorized.
+
+
+## Issue #7 finite v5–v13 spinner verified integration — 2026-11-15
+
+Exact production2a2e29177d5f1173c711cf3d12d70be2f1759e09, starting7fc7636.
+Windows43711842075/job132804890163 SUCCESS; SDK8.0.428/runtime8.0.34,Release0/0,
+self-contained win-x64 package14160976919 verified by download/source/hash inspection.
+New653/653 Work2 checks,33 unchanged fixtures=23admissions/10exclusions; retained
+2309historical QA,C001264/P299/C4375,stack43+394,finite106+4,Audit259PASS.
+Initial8a7e7b9 gate failed one unchanged QA14 old-spinner catalog control; corrected
+nonzero/default stackleniency admission and added three controls; initial failure
+retained. Full mandatory checkpoint12-issue7-verified-integration.md, evidence under
+versioned-spinner-development. Constructor<=8NewCombo then parser overwrite, raw
+times/samples and matching real score/health/session/results/audio owners integrated.
+Historical API,v14,source-compatibility physics,R17,sliders/timing/offset unchanged.
+Host cap remains ENGINEERING uncapped without provider; v3/v128/other-mode/fractional/
+degenerate and broader stack/break/parser profiles explicitly excluded. Original/GUI/
+audibleaudio/physicalinput/privatecorpus NOT RUN. Work1 independent new-source QA
+next; owner CorpusAudit only afterward. C001/Issue#7 OPEN; no owner acceptance.

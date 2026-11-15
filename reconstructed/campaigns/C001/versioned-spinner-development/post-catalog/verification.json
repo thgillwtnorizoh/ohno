@@ -1,0 +1,14 @@
+{
+  "localExactFilesMatch": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "checks": 653,
+  "sourceHashes": {
+    "Gameplay/Beatmap.cs": "2CD8F3607247F293643BB14DAFA45CEBCA0BA7C5C73273BDBFE37DBC542B68D4",
+    "Selection/LocalChartCatalog.cs": "41CDD2C82884BD0453D0DC57709495D043192C6427EC1984BBEEF6A7A615460F",
+    "Platform/LocalHitSoundAssets.cs": "A7EC83D0BE285A2D6636AA91D98ACB6AF8896B4258188F8D75EBB06F10832789"
+  },
+  "historicalTestsEdited": false,
+  "original179ProbeRerun": false,
+  "originalRuntime": "NOT RUN"
+}
