@@ -1,0 +1,28 @@
+{
+  "exactSource": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "baseline": "782c00771a436b2a2950680d4f5de379a791d9dd",
+  "changedGameplayFiles": [
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs"
+  ],
+  "historicalWindowsPassed": 2309,
+  "historicalWindowsFailed": 0,
+  "sourceMarker": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "run": 43711842075,
+  "job": 132804890163,
+  "artifact": 14160976919,
+  "artifactDigest": "c7588a02b31f4e28b7a3ac5d8fd2218af42d097fb2581f72bf26a9a0a63b607f",
+  "publishedExeDigest": "07a1e55f3e3b7818c62c18a6c32d9cc0e87b12927e480ef75c4cee49329de820",
+  "normalizedPacketsVerified": true,
+  "summaryHashVerified": true,
+  "independentFullRegression": "NOT RERUN",
+  "fixtureAuthorityPreserved": true,
+  "windowsCRLFSourceHashesVerified": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "6A8CB8F947F41A562841851342A912B6EC2EF7D0D1CD079A68B9041B81222416",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "799EA7EF9BC184EDCEB64834553254FB520F5EE4DDE5A69D6A41136A453F2B94",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "d10e8b82fa61181711912e23949dc539fb5b2e4795c8de80b40e504ca0b4f379",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "BDBFC6F25258F8862559030BC1A703EA9AC01775C2773B398A81778F15505490"
+  },
+  "actualFetchedJobLogHistoricalSummaries": "ci-log-extract.json: 19 suites, 2309 PASS, 0 FAIL"
+}

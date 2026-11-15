@@ -1,0 +1,105 @@
+{
+  "source": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "run": 43711842075,
+  "job": 132804890163,
+  "basis": "Independently fetched GitHub job log; historical QA summaries only, development suites excluded",
+  "passed": 2309,
+  "failed": 0,
+  "summaries": [
+    {
+      "line": "2026-11-15T12:03:30.9536643Z QA15 HEADLESS: 95 passed, 0 failed",
+      "passed": 95,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:36.9135557Z QA15 WINDOWS: 39 passed, 0 failed",
+      "passed": 39,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:39.5418982Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed",
+      "passed": 90,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:41.8831543Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed",
+      "passed": 56,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:46.3300333Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed",
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:50.7923295Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed",
+      "passed": 66,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:03:59.1335609Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed",
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:03.2434576Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed",
+      "passed": 159,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:07.4872726Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed",
+      "passed": 115,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:14.6571666Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:21.9336102Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed",
+      "passed": 229,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:31.3740638Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed",
+      "passed": 247,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:33.2450649Z QA11 WINDOWS EMPTY: 6 passed, 0 failed",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:44.7977195Z QA12: 274 passed, 0 failed, 274 executed",
+      "passed": 274,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:46.9233698Z QA12 WINDOWS: 12 passed, 0 failed",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:04:58.4440410Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls",
+      "passed": 257,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:05:00.7793614Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls",
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:05:55.2199112Z QA14 HEADLESS: 234 passed, 0 failed, 234 named controls",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "line": "2026-11-15T12:06:07.6470110Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only",
+      "passed": 30,
+      "failed": 0
+    }
+  ]
+}

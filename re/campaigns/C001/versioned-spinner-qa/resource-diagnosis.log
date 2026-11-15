@@ -1,0 +1,3 @@
+{"SpinnerLimitation":null,"SpinHandle":0,"BonusHandle":0,"Error":"Native short-sample creation unsupported: drum-hitnormal.wav; Native short-sample creation unsupported: drum-hitwhistle.wav; Native short-sample creation unsupported: spinnerspin.wav","count":1,"same":true}
+FAIL actual finite old spinner resource admission and identity
+Independent versioned spinner checks: 540/541 PASS; 1 FAIL

@@ -1,0 +1,25 @@
+{
+  "source": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "paths": [
+    "reconstructed/CorpusAudit/AuditRunner.cs",
+    "reconstructed/CorpusAudit/Program.cs",
+    "reconstructed/CorpusAudit/CorpusAudit.csproj",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs"
+  ],
+  "hashes": {
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "Beatmap.cs": "2CD8F3607247F293643BB14DAFA45CEBCA0BA7C5C73273BDBFE37DBC542B68D4",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999",
+    "LocalChartCatalog.cs": "41CDD2C82884BD0453D0DC57709495D043192C6427EC1984BBEEF6A7A615460F",
+    "LocalHitSoundAssets.cs": "A7EC83D0BE285A2D6636AA91D98ACB6AF8896B4258188F8D75EBB06F10832789"
+  }
+}

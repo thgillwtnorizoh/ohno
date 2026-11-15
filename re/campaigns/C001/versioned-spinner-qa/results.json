@@ -1,0 +1,2450 @@
+{
+  "source": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "sourceState": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Beatmap.cs": "2CD8F3607247F293643BB14DAFA45CEBCA0BA7C5C73273BDBFE37DBC542B68D4",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "41CDD2C82884BD0453D0DC57709495D043192C6427EC1984BBEEF6A7A615460F",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "runtime": "8.0.33",
+  "passed": 548,
+  "failed": 0,
+  "admissions": 23,
+  "exclusions": 10,
+  "tests": [
+    {
+      "name": "exact clean compiled source identity",
+      "pass": true
+    },
+    {
+      "name": "compiled hash AuditRunner.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash Program.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash CorpusAudit.csproj",
+      "pass": true
+    },
+    {
+      "name": "compiled hash Beatmap.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash CircleSession.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash CircleHitSounds.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash RankResults.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled hash LocalChartCatalog.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled asset integration hash",
+      "pass": true
+    },
+    {
+      "name": "complete actual audit 33 immutable occurrences",
+      "pass": true
+    },
+    {
+      "name": "v05-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v05-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v05-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v05-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v05-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v05-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v05-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v05-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v05-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v05-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v05-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v05-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v05-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v05-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v06-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v06-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v06-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v06-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v06-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v06-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v06-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v06-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v06-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v06-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v06-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v06-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v06-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v09-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v09-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v09-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v09-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v09-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v09-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v09-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v09-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v09-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v09-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v09-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v09-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v09-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v10-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v10-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v10-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v10-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v10-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v10-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v10-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v10-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v10-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v10-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v10-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v10-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v10-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v10-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v10-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v10-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v10-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v10-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v10-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v10-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v12-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v12-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v12-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v12-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v12-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v12-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v12-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v12-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v12-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v12-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v12-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v12-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v12-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v12-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v13-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v13-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v13-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v13-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v13-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v13-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v13-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v13-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v13-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v13-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v13-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v13-single historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v13-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-single catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-single indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v14-single retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v14-single integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v14-single constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-single explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-single raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v14-single independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v14-single actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-single rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v14-single old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v14-single calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v14-single original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-single real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v14-single score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v14-single event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v14-single no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v14-single historical v14 spinner remains admitted",
+      "pass": true
+    },
+    {
+      "name": "v14-single source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed historical v14 spinner remains admitted",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 historical v14 spinner remains admitted",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full historical v14 spinner remains admitted",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap indexed original format",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap retained source versions",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap integer construction independent of raw XY",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap constructor then parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap explicit uncapped modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap conditional original cap distinct from actual uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap raw sound and end-time sample ownership",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap independently stored sample operands",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap actual audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap rational 3s OD5 requirement and acceleration",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap old version retains modern first-angle reference",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap calibrated real fresh session identity",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap original-derived final NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap real health constructor/parser provenance",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap score and health prepared spinner count",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap event prepared identity",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap no-input result and cleanup hook",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap historical string loader remains excluded",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 catalog/direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 finite engineering exclusion retained",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 source unchanged after consumers",
+      "pass": true
+    },
+    {
+      "name": "23 finite admissions / 10 exclusions",
+      "pass": true
+    },
+    {
+      "name": "additional-version-7 index boundary",
+      "pass": true
+    },
+    {
+      "name": "additional-version-7 canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "additional-version-8 index boundary",
+      "pass": true
+    },
+    {
+      "name": "additional-version-8 canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "additional-version-11 index boundary",
+      "pass": true
+    },
+    {
+      "name": "additional-version-11 canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "v8 constructor boundary overwritten before registration",
+      "pass": true
+    },
+    {
+      "name": "explicit-stack07 index boundary",
+      "pass": true
+    },
+    {
+      "name": "explicit-stack07 canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "implicit-stack07 index boundary",
+      "pass": true
+    },
+    {
+      "name": "implicit-stack07 canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "break index boundary",
+      "pass": true
+    },
+    {
+      "name": "break canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "malformed-sample index boundary",
+      "pass": true
+    },
+    {
+      "name": "malformed-sample canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "short-sample index boundary",
+      "pass": true
+    },
+    {
+      "name": "short-sample canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "empty-sample index boundary",
+      "pass": true
+    },
+    {
+      "name": "empty-sample canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "missing-timing-operands index boundary",
+      "pass": true
+    },
+    {
+      "name": "missing-timing-operands canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "overlap index boundary",
+      "pass": true
+    },
+    {
+      "name": "overlap canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "shared-end index boundary",
+      "pass": true
+    },
+    {
+      "name": "shared-end canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "registration-order index boundary",
+      "pass": true
+    },
+    {
+      "name": "registration-order canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "start-zero index boundary",
+      "pass": true
+    },
+    {
+      "name": "start-zero canonical boundary",
+      "pass": true
+    },
+    {
+      "name": "actual finite old spinner resource admission and identity",
+      "pass": true
+    },
+    {
+      "name": "completion selects stored end timing row rather than start",
+      "pass": true
+    },
+    {
+      "name": "completion requests retain spinner identity",
+      "pass": true
+    },
+    {
+      "name": "session input movement reaches real recording channel hooks",
+      "pass": true
+    },
+    {
+      "name": "input completion reaches actual score ledger/result",
+      "pass": true
+    },
+    {
+      "name": "actual session input accumulates spinner progress",
+      "pass": true
+    }
+  ],
+  "dispositions": [
+    {
+      "id": "v05-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v10-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v10-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-single",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-bit4",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-bit4",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-bit4",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-bit4",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-sample-full",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-fractional",
+      "index": "Invalid",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: use supported circles, sliders or format-v14 spinners."
+    },
+    {
+      "id": "v13-sample-full",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-fractional",
+      "index": "Invalid",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: use supported circles, sliders or format-v14 spinners."
+    },
+    {
+      "id": "v14-sample-full",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-sample-two",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-conditional-end-cap",
+      "index": "Indexed",
+      "prepared": true,
+      "actualPrepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-end-before-start",
+      "index": "Invalid",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: spinner end must follow start, duration \u003C=60000 ms, end \u003C=3600000 ms."
+    },
+    {
+      "id": "v13-zero-duration",
+      "index": "Indexed",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: spinner end must follow start, duration \u003C=60000 ms, end \u003C=3600000 ms."
+    },
+    {
+      "id": "v09-invalid-end",
+      "index": "Invalid",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: spinner end must follow start, duration \u003C=60000 ms, end \u003C=3600000 ms."
+    },
+    {
+      "id": "v14-missing-end",
+      "index": "Invalid",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Line 18: spinner end must follow start, duration \u003C=60000 ms, end \u003C=3600000 ms."
+    },
+    {
+      "id": "negative-format-3",
+      "index": "Unsupported",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Use an osu file format v5\u2013v14 supported circle/Linear-slider map."
+    },
+    {
+      "id": "negative-format-128",
+      "index": "Unsupported",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "Use an osu file format v5\u2013v14 supported circle/Linear-slider map."
+    },
+    {
+      "id": "negative-mode1-v9",
+      "index": "Unsupported",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "R02 requires explicit Mode: 0 (osu!standard)."
+    },
+    {
+      "id": "negative-mode1-v14",
+      "index": "Unsupported",
+      "prepared": false,
+      "actualPrepared": false,
+      "failure": "R02 requires explicit Mode: 0 (osu!standard)."
+    }
+  ],
+  "originalRuntime": "NOT RUN",
+  "audibleOutput": "NOT RUN"
+}

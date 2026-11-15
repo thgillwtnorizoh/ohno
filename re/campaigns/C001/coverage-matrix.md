@@ -188,3 +188,21 @@ owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.
 Finite scope and explicit host-length/source-policy assumptions in09-versioned-
 spinners.md. v3/v128/other-mode are engineering negative controls, not new original
 unsupported claims. No comprehensive format/spinner/C001 row closed.
+
+
+## Issue #7 independent finite spinner checkpoint 12 — 2026-11-15
+
+Work1 starting55fdfb0, exact tested2a2e291: independently authored548/548 actual
+production assertions PASS,23 immutable fixture admissions/10 finite exclusions.
+33 hashes preserved; exact clean source/nine compiled identities and binary linkage
+verified. Static packet consistency62sites/40inherited identities PASS, no extraction.
+Constructor/parser flags, samples, source version, fresh score/health/NewCombo/session,
+modern first angle, results, end-time sound and recording hooks verified. Additional
+v7/v8/v11 and catalog/default0.7/break/order/overlap/sample/timing guards challenged.
+Host cap remains explicit ENGINEERING uncapped, original L4000/E3950 NOT EXECUTED.
+Initial compile/resource harness failures preserved; no production discrepancy found.
+Windows run43711842075 exact source SUCCESS; fetched job's19 historical summaries
+2309PASS/0FAIL and source/packet/artifact identities corroborated, not rerun.
+See verification/12-versioned-spinner-production.md and versioned-spinner-qa/.
+Independent gate returned to Headquarters for acceptance; Issue#7 remains OPEN,
+owner rescan only after acceptance. Issue#4/original/runtime separate; C001 OPEN.

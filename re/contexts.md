@@ -2699,3 +2699,26 @@ promised recovery count. Next Work2 finite versioned spinner integration satisfy
 packet acceptance, Windows regression/build then Work1 new-source QA; ownerIssue#4
 separate. Stop at verified original-static handoff. C001/Issue#7 subsystemOPEN;
 original equivalence/owner acceptance unverified. Published SHA in introducing Git.
+
+
+## Issue #7 independent finite spinner checkpoint 12 — 2026-11-15
+
+Work1 starting55fdfb0, exact tested2a2e291: independently authored548/548 actual
+production assertions PASS,23 immutable fixture admissions/10 finite exclusions.
+33 hashes preserved; exact clean source/nine compiled identities and binary linkage
+verified. Static packet consistency62sites/40inherited identities PASS, no extraction.
+Constructor/parser flags, samples, source version, fresh score/health/NewCombo/session,
+modern first angle, results, end-time sound and recording hooks verified. Additional
+v7/v8/v11 and catalog/default0.7/break/order/overlap/sample/timing guards challenged.
+Host cap remains explicit ENGINEERING uncapped, original L4000/E3950 NOT EXECUTED.
+Initial compile/resource harness failures preserved; no production discrepancy found.
+Windows run43711842075 exact source SUCCESS; fetched job's19 historical summaries
+2309PASS/0FAIL and source/packet/artifact identities corroborated, not rerun.
+See verification/12-versioned-spinner-production.md and versioned-spinner-qa/.
+Independent gate returned to Headquarters for acceptance; Issue#7 remains OPEN,
+owner rescan only after acceptance. Issue#4/original/runtime separate; C001 OPEN.
+Linux SDK8.0.427/runtime8.0.33; verify.py reproduction in report. Reuses Work1
+09-versioned-spinners original-static authority; no original/runtime/GUI/listening/
+physical input/owner collection qualification or timing/R17 work. Historical research,
+fixtures, QA and both initial/final Work2 evidence preserved. No authorized exception.
+Next actor Headquarters, then owner-local aggregate-only CorpusAudit rescan on acceptance.
