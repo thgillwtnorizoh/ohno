@@ -1785,3 +1785,14 @@ stack/break/parser/mode/profile exclusions and owner recovery counts remain open
 Original/GUI/audibleaudio/physical input/private corpus NOT RUN. Work1 independent
 new-source QA next; owner corpus rescan only afterward. C001/Issue#7OPEN; initial
 source SHA in introducing Git history, final CI seal follows. No owner acceptance.
+
+Issue#7 initial exact-source Windows43711270555/job132803128368 at8a7e7b9
+FAILED one preserved QA14 control C/spinner-old: expectedUnsupported,actualIndexed.
+That historical fixture omits StackLeniency (default0.7), outside the newly declared
+no-stack profile; canonical already excludes it. Corrected catalog metadata admission
+for pre14spinner rows with nonzero/default stackleniency, preserving QA14 untouched.
+New650/P299/C4375/C001264/Audit259 and other gate stages passed; publish skipped
+because full regression failed. Raw log digest/retained ordinary lines sealed in
+versioned-spinner-development/initial-gate. Added explicit/default stack catalog
+controls; rerun focused checks and exact full Windows gate on corrected source.
+No exception to historical verification or change of test expectation authorized.
