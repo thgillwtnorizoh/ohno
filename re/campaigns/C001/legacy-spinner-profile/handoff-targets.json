@@ -1,0 +1,574 @@
+{
+  "classification": "PROPOSED Work2 acceptance targets; NOT current production outcomes or owner recovery forecast",
+  "currentPrepared": 26,
+  "proposedFinitePrepared": 66,
+  "cases": [
+    {
+      "id": "v05-default-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-default-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v05-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v05-point7-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-point7-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-cs4-ar8-isolated",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-cs7-ar3-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-default-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-default-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v06-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v06-point7-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-point7-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-cs4-ar8-isolated",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v06-cs7-ar3-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-default-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-default-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v09-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v09-point7-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-point7-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-cs4-ar8-isolated",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v09-cs7-ar3-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-default-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-default-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v12-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v12-point7-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-point7-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-cs4-ar8-isolated",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v12-cs7-ar3-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-default-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-default-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v13-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v13-point7-single",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-point7-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-cs4-ar8-isolated",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v13-cs7-ar3-mixed",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-default-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-default-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-zero-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v14-zero-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "retained-zero-setting"
+    },
+    {
+      "id": "v14-point7-single",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-point7-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-cs4-ar8-isolated",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v14-cs7-ar3-mixed",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "geometric-no-op"
+    },
+    {
+      "id": "v05-circle-pair",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-early-actual-stack"
+    },
+    {
+      "id": "v05-spinner-before",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-early-certificate"
+    },
+    {
+      "id": "v05-spinner-after",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-early-actual-stack"
+    },
+    {
+      "id": "v06-circle-pair",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v06-spinner-before",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v06-spinner-after",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-circle-pair",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-spinner-before",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-spinner-after",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v05-even-tail",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-early-actual-stack"
+    },
+    {
+      "id": "v06-even-tail",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-even-tail",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v06-tail-center",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v06-tail-away",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-tail-center",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v14-tail-away",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "reuse-modern-cs5-ar5"
+    },
+    {
+      "id": "v09-break-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-breaks"
+    },
+    {
+      "id": "v09-overlap-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-overlap"
+    },
+    {
+      "id": "v09-order-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "excluded-source-order"
+    },
+    {
+      "id": "v09-timing2-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing2-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing3-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing3-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing4-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing4-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing5-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing5-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": false,
+      "acceptance": "retain explicit engineering exclusion; not original rejection",
+      "profile": "deferred-timing-defaults"
+    },
+    {
+      "id": "v09-timing6-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    },
+    {
+      "id": "v09-timing6-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    },
+    {
+      "id": "v09-timing7-default",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    },
+    {
+      "id": "v09-timing7-zero",
+      "currentPrepared": false,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    },
+    {
+      "id": "v14-timing6",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    },
+    {
+      "id": "v14-timing7",
+      "currentPrepared": true,
+      "proposedFinitePrepared": true,
+      "acceptance": "prepared coordinates/flags/sample/consumer expectations in immutable manifest",
+      "profile": "explicit-sample-short-timing"
+    }
+  ]
+}

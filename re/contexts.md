@@ -2722,3 +2722,33 @@ Linux SDK8.0.427/runtime8.0.33; verify.py reproduction in report. Reuses Work1
 physical input/owner collection qualification or timing/R17 work. Historical research,
 fixtures, QA and both initial/final Work2 evidence preserved. No authorized exception.
 Next actor Headquarters, then owner-local aggregate-only CorpusAudit rescan on acceptance.
+
+
+## Issue #9 — legacy spinner stacking/timing research checkpoint — 2026-11-15
+
+Work1 starting ee4a335, exact production 2a2e291 clean. Targeted original-static
+recovery55sites/13bodies/10inherited identities PASS; repeated final packet identical.
+Ordinary spinner M0603 position override is ret: internal height need not move center.
+<=5 forward pass includes spinner comparisons; >5 skips anchors/candidates. Early
+slider getter F0bfd geometric end differs from modern final traversal endpoint.
+81 independent hashed fixtures;775/775 actual-production characterization assertions
+PASS:26 preparations/55 rejections,40 temporary zero-setting diagnostic controls.
+Defaults/nonzero settings are not computed stacks; audit labels are not throw sites.
+Finite Work2 handoff: reuse modern CS5/AR5 stacking, conservative zero-displacement
+certificate for other CS/AR/v5, retain unsupported early actual stacks/breaks/order/
+overlap; prove six/seven-column explicit-sample timing defaults only. Two-to-five
+fields retain caller/global/error dependencies. No production edits or compatibility
+gain claim; owner113 matched candidates had zero preparations per HQ update.
+See original-behavior/11-legacy-spinner-stacking-timing.md and legacy-spinner-profile/.
+Prior33 fixtures/548 seals checked unchanged;2309 Windows baseline preserved, no
+full rerun. Original/runtime/GUI/audio/physical input/owner maps/host cap NOT RUN.
+Next Headquarters authorizes Work2 bounded integration and Windows gate, then
+independent new-source QA. Issue#9/C001/subsystem OPEN; Issue#4 separate.
+Environment Linux Python3.12 with dnfile0.18.0/dncil1.0.2/pefile2024.8.26,
+.NET SDK8.0.427/runtime8.0.33. Reproduce via legacy-spinner-profile/verify.py with
+clean exact worktree and optional pinned archive. Historical records are unchanged.
+No new owner actions requested; no authorized exceptions. No R17, offset, other-mode,
+unsupported-format or slider-repeat admission change. Proposed synthetic66/81
+acceptance targets are NOT current production/owner recovery statistics.
+Headquarters Issue9 refinement records Issue7/8 CLOSED; earlier checkpoint
+entries remain historical. Owner manual actions for this assignment are complete.

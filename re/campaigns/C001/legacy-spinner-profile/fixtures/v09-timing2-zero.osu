@@ -1,0 +1,20 @@
+osu file format v9
+[General]
+Mode:0
+StackLeniency:0
+[Metadata]
+Title:C001 independent Issue9 v09-timing2-zero
+Creator:Project ohno Work1
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+
+[TimingPoints]
+0,500
+[HitObjects]
+11,23,2000,8,2,5000

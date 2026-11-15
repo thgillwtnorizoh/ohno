@@ -1,0 +1,3711 @@
+{
+  "schema": 1,
+  "source": "Work1 independent finite Issue9 discriminators; no imported production/reference algorithm",
+  "conditions": [
+    "ordinary no mods, fresh map, no recorded source legacy",
+    "host length high enough not to activate end cap; original not executed",
+    "CS5 AR5 step=3.2013118267059326 for nonzero coordinate predictions",
+    "Other CS/AR predictions assert zero displacement only, no radius extrapolation"
+  ],
+  "cases": [
+    {
+      "id": "v05-default-single",
+      "version": 5,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-default-single.osu",
+      "sha256": "24dfd70ef56a22af4aab363f8537aa7b3d212635e8797f6c333a93d2c615f8f9",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-default-mixed",
+      "version": 5,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-default-mixed.osu",
+      "sha256": "3c4173d44b107f58ef7326d60f0031935546e3c2242600374b7586cd85a9c60e",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-zero-single",
+      "version": 5,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-zero-single.osu",
+      "sha256": "ea044633a3561896ca639726e74c06ebb11731cec2241584a4ee40d5fe5a42a1",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-zero-mixed",
+      "version": 5,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-zero-mixed.osu",
+      "sha256": "e10c7683cc5e2f5d9db97889e768a8ed217c31ccaf59050a8e3942eee1f38258",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-point7-single",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-point7-single.osu",
+      "sha256": "db98a133c6d224f85b9c602d274e125ec6614eb9c17a2cc41f5cfb56482e6915",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-point7-mixed",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-point7-mixed.osu",
+      "sha256": "d54060476b89d2381677074e5715b32c00077c654d15248fd6fab8b446e9725b",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-cs4-ar8-isolated",
+      "version": 5,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-cs4-ar8-isolated.osu",
+      "sha256": "6fe17aa11dfca99371044a2b6c4e7f342b8201b5e9d11038909ce6d8da2453ac",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-cs7-ar3-mixed",
+      "version": 5,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-cs7-ar3-mixed.osu",
+      "sha256": "ae61efea8d8968c858b53b8ffe90397496298658a5e2e69519b2f0572c8eeeab",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-default-single",
+      "version": 6,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-default-single.osu",
+      "sha256": "a75f2535b90215d509b36316fe7aa921e81435aeb6e91de435aa8dda55553768",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-default-mixed",
+      "version": 6,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-default-mixed.osu",
+      "sha256": "f98425792852d75f9dc25c470132eb534025a67b4124a9d23d469efa0a0e1634",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-zero-single",
+      "version": 6,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-zero-single.osu",
+      "sha256": "024b47dc327fd7c73a525014ebed593bece4b1de8d640dd578b5393e50a891ba",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-zero-mixed",
+      "version": 6,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-zero-mixed.osu",
+      "sha256": "21cfebafce4d453970dbe6b9ae8dda33eb1598b5d9a9bde1bc2ceb37699c28d6",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-point7-single",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-point7-single.osu",
+      "sha256": "f2539f68c87ad869254bdd0de8b4ff02ded3a54d83b3b288c37d0827ec170daf",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-point7-mixed",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-point7-mixed.osu",
+      "sha256": "55baf64e4fcd34fe6bfde5d23878b2d5045bc2660d9e2049c31c4768bbb9f6e0",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-cs4-ar8-isolated",
+      "version": 6,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-cs4-ar8-isolated.osu",
+      "sha256": "4a81527bc5993f0bfdf7be7f7c87d03cf027a731fa9c112a497c533b36d021c3",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-cs7-ar3-mixed",
+      "version": 6,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-cs7-ar3-mixed.osu",
+      "sha256": "38c6ca809d826342cc64dc150176307a27a7e81b8db715ff8f726a903058a3f8",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-default-single",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-default-single.osu",
+      "sha256": "2bd93725207ca9839c61d5f837293083db0c8170441d982dcb20a5bd0c4cb026",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-default-mixed",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-default-mixed.osu",
+      "sha256": "318219b099d4c215620ede6680dd61b6bcbf541bb23d9bc43be7992b173ec473",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-zero-single",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-zero-single.osu",
+      "sha256": "0650301ecb4b05e43ddfcee6e65a34b0b7bde52f5299e1bb33fc1a91077fa9d4",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-zero-mixed",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-zero-mixed.osu",
+      "sha256": "896aae15abe8289ab104c56494b9ef68a0153f4cc06ebc15f2e3ce8e83bbb74c",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-point7-single",
+      "version": 9,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-point7-single.osu",
+      "sha256": "d23d2d776b52f5bce794c3aeb359c10eaf36be31b8641eda6e7f7ce92583a0d8",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-point7-mixed",
+      "version": 9,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-point7-mixed.osu",
+      "sha256": "f2ca6f695f5ab2380916e610dd9a20c9ff1de6421a127b54c1ce7430ad7ddf7b",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-cs4-ar8-isolated",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-cs4-ar8-isolated.osu",
+      "sha256": "5be175d0649867ea8bb9c1e8419b4c894c36936f0f9f5e1949f7986adb547f6e",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-cs7-ar3-mixed",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-cs7-ar3-mixed.osu",
+      "sha256": "719ce5d3bd4a365516daa18c3d2cb632ea30000b73df3a1f9ad6bc9f749134e9",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-default-single",
+      "version": 12,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-default-single.osu",
+      "sha256": "6530d2ebfc7ec0436033c6e9fb002ad6c09faa01543668e0eb1583a9fc22c1fb",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-default-mixed",
+      "version": 12,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-default-mixed.osu",
+      "sha256": "1e21908ceb01ce7c1c5d351023a551d4cb98cfd5f861e988a84c3274846e4875",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-zero-single",
+      "version": 12,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-zero-single.osu",
+      "sha256": "584792ef9713d433d6db38d638259c5f87ec305600e0bbbf5c767097631912e6",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-zero-mixed",
+      "version": 12,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-zero-mixed.osu",
+      "sha256": "76cd41e6f185b288343dd3fe99c42c860273a14a4f60b5d1bf40800f4d851e10",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-point7-single",
+      "version": 12,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-point7-single.osu",
+      "sha256": "eb88519f12ac1ae5aff85a5290ad74545785733a349beb040869cb85db4ef357",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-point7-mixed",
+      "version": 12,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-point7-mixed.osu",
+      "sha256": "f127c02602a6c199580654c69c18f48ceb33786ec66aa382a8e0c0169484d8f0",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-cs4-ar8-isolated",
+      "version": 12,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-cs4-ar8-isolated.osu",
+      "sha256": "b33083074a9dd2e10ea037853db0f47b340d76c60db39615fabba44a2f6598f8",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-cs7-ar3-mixed",
+      "version": 12,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v12-cs7-ar3-mixed.osu",
+      "sha256": "2db04fbe3057adc5271645007d0e488fd40232a41c8f2a9673d01c9a74825353",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-default-single",
+      "version": 13,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-default-single.osu",
+      "sha256": "4e8ed7f636161ab38ec313b51f7fc1d2e87b3134578c39e23ff397b6f3cd425e",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-default-mixed",
+      "version": 13,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-default-mixed.osu",
+      "sha256": "43fe91c890d9dc7bf6feedaa284773d6c3094b76c257bb6fc7b1c290ead897c5",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-zero-single",
+      "version": 13,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-zero-single.osu",
+      "sha256": "54535a280fa8d69c8cba5f2b48036b9452ca81b3ff98bd850c862a8e06a6afd6",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-zero-mixed",
+      "version": 13,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-zero-mixed.osu",
+      "sha256": "f1cbe044c9460d05d45a730ee4d9606d2ba96798bd20b78dcc7f2f03c328bab9",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-point7-single",
+      "version": 13,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-point7-single.osu",
+      "sha256": "d6e7c46cb241150c726555a9e6674caaa41e37638ae8bf21499e7f334ebcbd64",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-point7-mixed",
+      "version": 13,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-point7-mixed.osu",
+      "sha256": "a231b30231ba13211b42a38edf0c3c6ea13fd9f6bba0c5d18b30ffd3d8f11282",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-cs4-ar8-isolated",
+      "version": 13,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-cs4-ar8-isolated.osu",
+      "sha256": "2f31f8f596d13c3efbfcb3b5b8c87036aa089b57650937eed191b93cc313b956",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-cs7-ar3-mixed",
+      "version": 13,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v13-cs7-ar3-mixed.osu",
+      "sha256": "2cce311f5ecffb398c965db6dc1dae4e8b3de298a471cd278f6facb9bde70df9",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-default-single",
+      "version": 14,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-default-single.osu",
+      "sha256": "0d2f31bf944e33c951215fd946f3a9763f1bed205d9a316f4b6f44caa54347ec",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-default-mixed",
+      "version": 14,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-default-mixed.osu",
+      "sha256": "868c3a2442c4913581db264aacd7d36a8a633c73abf28f04591293b993ec12ba",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-zero-single",
+      "version": 14,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-zero-single.osu",
+      "sha256": "5f98718907fd0c8b071204655fe623e8b62d384ad99578276cd613b9cb7f4e5e",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-zero-mixed",
+      "version": 14,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-zero-mixed.osu",
+      "sha256": "96da4c0490f2dcfc49858c0999e97276f2fe703001e0a2094a0771846e0acc36",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-point7-single",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-point7-single.osu",
+      "sha256": "4fcdc7aa370d8e59bd5b60d900d5714d9d6a654d1faf6db2c019e0b5607a6e64",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-point7-mixed",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-point7-mixed.osu",
+      "sha256": "9cd166559688aced571cf52ffee2aa0672cdebcda4dedd28f43858d7201a707a",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-cs4-ar8-isolated",
+      "version": 14,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 4,
+      "ar": 8,
+      "timingColumns": 8,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-cs4-ar8-isolated.osu",
+      "sha256": "542d0719b6a0cc4ad2052b7dd991df8303d04fd4ec5969f5fdbb102d93a33745",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-cs7-ar3-mixed",
+      "version": 14,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 7,
+      "ar": 3,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-cs7-ar3-mixed.osu",
+      "sha256": "e17922bc1dd55c6194db2b5c937cf5d3a5139633860edcfb9d9dea02e4f3626d",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-circle-pair",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "circle-pair",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-circle-pair.osu",
+      "sha256": "7e911889bf16948a6e07908277af0dff3740332189bff4c338f0f7aa4d75ad28",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v05-spinner-before",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-before",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-spinner-before.osu",
+      "sha256": "7d29e7531e0be9ec85eee437c94e1d49029eda536676558f3ee3c18b1268e9ff",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-certificate",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-spinner-after",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-after",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-spinner-after.osu",
+      "sha256": "e5414309f856e5d7a0391c009126ecb9c11e7f0c497de2cee48ca1949ae1b0e5",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-circle-pair",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "circle-pair",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-circle-pair.osu",
+      "sha256": "ae773e7637bb863c2f461dc63318b6a7cf18f84b4ed54de621cc3894710a4d3d",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-spinner-before",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-before",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-spinner-before.osu",
+      "sha256": "3888dd7470abdad351973df6e2bbbfffc90ad4222de65fe258d4ea8b7ec8831f",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-spinner-after",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-after",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-spinner-after.osu",
+      "sha256": "f267d606b7c76ea39fee8e8e13f999a3a96eabc20958e7199c6f40b344d9d0db",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-circle-pair",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "circle-pair",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-circle-pair.osu",
+      "sha256": "1aac3cabbd384edc942d296771bfcbf85251fbbffaaa29bf7b323077f152756f",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-spinner-before",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-before",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-spinner-before.osu",
+      "sha256": "61b1c23a8e5ab18385274f992444e83987a674d5b448513fd54551fe90daa8c2",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-spinner-after",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "spinner-after",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-spinner-after.osu",
+      "sha256": "c43ece3dc6214dcf1c928ab9f690b24eab98b721583e69b2324135ed305e521b",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-even-tail",
+      "version": 5,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "even-tail",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v05-even-tail.osu",
+      "sha256": "58b8a1f44239ef39f58533f86f632e9bc0b5de8995a4927c1c64cba01ed570b0",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-even-tail",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "even-tail",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-even-tail.osu",
+      "sha256": "b1f68fd2d5cd8d2492e3a8ac449851259376294963beed8457e7e972e8c5f746",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            228,
+            128
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-even-tail",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "even-tail",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-even-tail.osu",
+      "sha256": "4bc4ccea5758efe8e1b81444007d299e4fb44bb824a5e6fbf0aeff21d651fa3a",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            228,
+            128
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-tail-center",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "tail-center",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-tail-center.osu",
+      "sha256": "4c15c28b21b1bb5a3b444fd597ba0f7fe4184b688379f38642e33e5528a20ec6",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            192
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-tail-away",
+      "version": 6,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "tail-away",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v06-tail-away.osu",
+      "sha256": "bb5943b18185c8fa2fb7c2b6db61c989bc0deb6099069e69b0b12d75c07cbac2",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-tail-center",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "tail-center",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-tail-center.osu",
+      "sha256": "03126034eb76255700fe0cf8139423733e4e63cfffbc89a0e11464791608f6cb",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            192
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-tail-away",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "tail-away",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-tail-away.osu",
+      "sha256": "448d74d6e2b9ed31a17d0941ffd880cbac8c1c66f5528346e9cef70347609d13",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v09-break-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": true,
+      "sourceOrder": true,
+      "path": "fixtures/v09-break-zero.osu",
+      "sha256": "9ac65c2f4dd493f76a3de7c7e958ca70988c5521fd3cc4cb9894257f82973952",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "stack-setting-or-break"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": null,
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-breaks",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-overlap-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "overlap",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-overlap-zero.osu",
+      "sha256": "91058911fb8cd92a864edd6216d68c585f0d68dcb1a31d311e7e25fdc004b704",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "separated-intervals"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": null,
+        "relation": "overlapping spinner interval",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-overlap",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-order-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 8,
+      "shape": "mixed",
+      "breaks": false,
+      "sourceOrder": false,
+      "path": "fixtures/v09-order-zero.osu",
+      "sha256": "da468422df2ad859efb57a2691cf5f7a4632fe16d82c1e4734738a8505420baf",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "registered-order"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": null,
+        "relation": "out of chronological source order",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-source-order",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing2-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 2,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing2-default.osu",
+      "sha256": "bf9efc41eb3665b7aef52a2b6a4512e60d77c456f2df5c3b449c3c7c57f50798",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "map sample set + M3b3c index; volume100",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing2-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 2,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing2-zero.osu",
+      "sha256": "1645c2fe30104d0a59b7d062b1ed434cfacb07927e2002564c3a8a25180e6e80",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "map sample set + M3b3c index; volume100",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing3-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 3,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing3-default.osu",
+      "sha256": "f48f8266168a49fe4941f7d8a86420767e9a599e730d23dc112113db0d0ecbe1",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "M28ff catches missing row[3], returns null",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing3-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 3,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing3-zero.osu",
+      "sha256": "38195a019bbdd8102c1f0dda6e1a650f5104a9293ba82e7b25a5418c592ee85c",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "M28ff catches missing row[3], returns null",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing4-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 4,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing4-default.osu",
+      "sha256": "aa9e5024c0ab1951bc69326cf950d14e3b42d8877428a5b6ee46d3b0a0fbaced",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing4-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 4,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing4-zero.osu",
+      "sha256": "0196bb3d4552919635661ab1af6008232510a8a0270049969fc69bfd964bc20e",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing5-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 5,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing5-default.osu",
+      "sha256": "412d4e642e6e55bda9a44d45f051ef8b73bd1042435fd7fb4a3c616fd8229b6c",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing5-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 5,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing5-zero.osu",
+      "sha256": "2286e5d4bbdc1ef4c7440095b61d47ade83eef8ca10396e58ee2fc8bb6fe2e2a",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing6-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 6,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing6-default.osu",
+      "sha256": "c3a74e8b7b7661ca79fcba852a9bc5e373ecc50836b6062b95c407e462debc71",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing6-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 6,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing6-zero.osu",
+      "sha256": "4aee41efbd75daef8226f4728d3478631ff47067050a5c2c20c6c6ce44233ae7",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing7-default",
+      "version": 9,
+      "stack": null,
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 7,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing7-default.osu",
+      "sha256": "2a202c276e8d4c967204617c8a456c15a644cea6620c24581237b3814cbecf07",
+      "current": {
+        "index": "Unsupported",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing7-zero",
+      "version": 9,
+      "stack": "0",
+      "expectedSetting": 0.0,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 7,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v09-timing7-zero.osu",
+      "sha256": "d3115572776bd4dcc3f41fdfdbd194151777901bc7a6219f4d39ae5aa9ac3cb7",
+      "current": {
+        "index": "Indexed",
+        "canonical": false,
+        "guard": "explicit-timing"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-timing6",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 6,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-timing6.osu",
+      "sha256": "d8f8daf62d81a93637844aa61ca3632424ba0a823ead7b11da6bde6d42bb4126",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-timing7",
+      "version": 14,
+      "stack": "0.7",
+      "expectedSetting": 0.7,
+      "cs": 5,
+      "ar": 5,
+      "timingColumns": 7,
+      "shape": "single",
+      "breaks": false,
+      "sourceOrder": true,
+      "path": "fixtures/v14-timing7.osu",
+      "sha256": "a6abc5cfa0cfad8f79940d9dcc95755f20b3e58d26c42c2125730f0463ed46a6",
+      "current": {
+        "index": "Indexed",
+        "canonical": true,
+        "guard": "none"
+      },
+      "original": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    }
+  ]
+}

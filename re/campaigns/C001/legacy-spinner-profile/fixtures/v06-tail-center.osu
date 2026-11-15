@@ -1,0 +1,22 @@
+osu file format v6
+[General]
+Mode:0
+StackLeniency:0.7
+[Metadata]
+Title:C001 independent Issue9 v06-tail-center
+Creator:Project ohno Work1
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+128,192,1000,2,0,L|256:192,1,128
+11,23,1700,8,2,1800
+256,192,1900,1,0

@@ -1,0 +1,21 @@
+osu file format v14
+[General]
+Mode:0
+StackLeniency:0.7
+[Metadata]
+Title:C001 independent Issue9 v14-spinner-before
+Creator:Project ohno Work1
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+11,23,2000,8,2,5000
+256,192,5100,1,0

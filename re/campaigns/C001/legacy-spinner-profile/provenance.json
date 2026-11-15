@@ -1,0 +1,37 @@
+{
+  "source": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "state": "clean",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "platform": "linux",
+  "linkedHashes": {
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "Beatmap.cs": "2CD8F3607247F293643BB14DAFA45CEBCA0BA7C5C73273BDBFE37DBC542B68D4",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999",
+    "LocalChartCatalog.cs": "41CDD2C82884BD0453D0DC57709495D043192C6427EC1984BBEEF6A7A615460F",
+    "LocalHitSoundAssets.cs": "A7EC83D0BE285A2D6636AA91D98ACB6AF8896B4258188F8D75EBB06F10832789"
+  },
+  "productionBinarySha256": "6a87ad6fd0c7ee9345bbe736662097925258b020a803a4d068bec8e267ab34b5",
+  "characterizationAssemblySha256": "f06a2a2ad0951db51adbf7aa5c5835008d52c62a6c3c7b24e2cdbf65af01f0fc",
+  "sourcePacketHashes": {
+    "recover.py": "e1fbbc9b73641449f9cffa12b15b049d3f8aa99f25e23f1f0ed5c10eba1ff438",
+    "build_fixtures.py": "18f3732d59023011d73ac99d115d13cb79cc3e97f55280a1abde60f8ac1e4e40",
+    "check.py": "a5448b20fc6a8289dd19ac58c1409ce456811000f12edf170a168023542373ba",
+    "verify.py": "b7da160796c191240b9f7918af9936f27a84d8e2dfc6931bb8da55425633eacd",
+    "expected-sources.json": "eb6e22755282f08838ea49c6cdde94b14a73968f5704c07c4af7efdf11b166ba",
+    "manifest.json": "0a00c2453664c7615afec4416511f7c2b99faf2fc197c9a48a80507fbda64407",
+    "static-evidence.json": "e83d1c2c37a91ec9d46f029733b12e9d0d29c9341ea2d7684a97c3edafddf7f1",
+    "Characterization/Program.cs": "b04a67524b62267dc7de4861c9e402108f1c4079830b6c9ccbd21b44c174f1ef",
+    "Characterization/Characterization.csproj": "7f9e37c63920b56741982828e601f025191847d4627db5343f2af83bb487f0b2"
+  },
+  "resultHashes": {
+    "results.json": "bf76a57ca3f8f32654032e2a6c541773e343369ec50b9022a1dc7584fb46846c",
+    "audit.json": "b3186e5c61c588dd130dd3a9b47300a54187cca0508fe216c7cd556a3df3f250"
+  },
+  "originalExtraction": "MATCHES pinned packet",
+  "originalRuntime": "NOT RUN"
+}

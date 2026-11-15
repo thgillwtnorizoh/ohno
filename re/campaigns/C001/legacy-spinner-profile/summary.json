@@ -1,0 +1,34 @@
+{
+  "startingMain": "ee4a3358851f650a795ccb6a2a7ed21922d9772a",
+  "exactProduction": "2a2e29177d5f1173c711cf3d12d70be2f1759e09",
+  "classification": "current-production characterization; proposed admission is NOT IMPLEMENTED",
+  "fixtures": 81,
+  "passed": 775,
+  "failed": 0,
+  "currentPrepared": 26,
+  "currentRejected": 55,
+  "diagnosticZeroSettingCopies": 40,
+  "reachedGuards": {
+    "stack-setting-or-break": 41,
+    "none": 26,
+    "separated-intervals": 1,
+    "registered-order": 1,
+    "explicit-timing": 12
+  },
+  "auditCodes": {
+    "production-profile": 43,
+    "canonical-prepared": 26,
+    "timing-profile": 12
+  },
+  "originalSites": 55,
+  "retainedBodies": 13,
+  "inheritedIdentities": 10,
+  "ownerEvidence": "Issue9 Headquarters update6897775658: OWNER-REPORTED matched aggregate only; no private data replay",
+  "notRun": [
+    "original executable/runtime",
+    "GUI/audible/physical input",
+    "owner collection",
+    "host length cap",
+    "full Windows regression rerun"
+  ]
+}
