@@ -88,3 +88,18 @@ indexing" is falsely reported changed-input/fingerprint-changed. Actual hashes a
 bytes unchanged; two default JSON scans deterministic. See verification/10-corpus-
 audit-diagnostic.md and corpus-audit-qa/. Work2 taxonomy correction required before
 Issue#5 closure; remaining independent scope pending. No production edits; C001 OPEN.
+
+
+## Issue #5 correction independent checkpoint 11 — 2026-11-15
+
+Exact corrected2369b406 independently verified: versioned profile10/10 and focused
+scan24/24 PASS; clean source and eight linked file hashes enforced. Historical
+probe/fixtures/results, including obsolete-pin9/10, preserved. Real byte and
+timestamp-only mutation, diagnostic stages/cohorts/counts/duplicates/privacy,
+determinism, blocked reads/isolation, cancellation and finite limits checked.
+Initial new harness22/23 preserved with documented conservative-classification
+expectation correction; no production edit or new actionable defect. See
+verification/11-corpus-audit-correction.md and corpus-audit-qa-v2/. Windows/Linux
+CI43618348530 SUCCESS corroborated;259/platform reused, not rerun. Independent
+tool gate ready for Headquarters review; Issue#5 remains OPEN pending acceptance,
+owner corpus NOT PROVIDED/NOT RUN, Issue#4 separate, C001/subsystem OPEN.

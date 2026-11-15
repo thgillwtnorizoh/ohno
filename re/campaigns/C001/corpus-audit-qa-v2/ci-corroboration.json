@@ -1,0 +1,9 @@
+{
+  "source": "2369b406b09ec34cf07f33f8278a155afc6a4ebf",
+  "run": 43618348530,
+  "linuxJob": 132518255285,
+  "windowsJob": 132518255539,
+  "jobsConclusion": "success",
+  "basis": "GitHub run and job metadata independently retrieved; existing 259/259-per-platform test packets reused, not re-executed",
+  "ownerCorpus": "NOT PROVIDED / NOT RUN"
+}

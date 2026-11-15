@@ -1,0 +1,105 @@
+{
+  "tests": [
+    {
+      "name": "finite complete scan occurrence count",
+      "pass": true
+    },
+    {
+      "name": "canonical and four actual consumers",
+      "pass": true
+    },
+    {
+      "name": "separate cohort classifications",
+      "pass": true
+    },
+    {
+      "name": "spinner not universally unsupported",
+      "pass": true
+    },
+    {
+      "name": "mode/unknown restrictions not silently passed",
+      "pass": true
+    },
+    {
+      "name": "index success independent of conservatively unclassified canonical restriction",
+      "pass": true
+    },
+    {
+      "name": "missing audio independent of canonical",
+      "pass": true
+    },
+    {
+      "name": "duplicates scanned rather than skipped",
+      "pass": true
+    },
+    {
+      "name": "denominators conserve occurrences",
+      "pass": true
+    },
+    {
+      "name": "deterministic unchanged run",
+      "pass": true
+    },
+    {
+      "name": "normal scan leaves exact sources unchanged",
+      "pass": true
+    },
+    {
+      "name": "default privacy with metadata/media/path canaries",
+      "pass": true
+    },
+    {
+      "name": "private output relative paths only",
+      "pass": true
+    },
+    {
+      "name": "actual byte fingerprint mutation",
+      "pass": true
+    },
+    {
+      "name": "timestamp-only revision with identical bytes",
+      "pass": true
+    },
+    {
+      "name": "unexpected individual error isolation/privacy",
+      "pass": true
+    },
+    {
+      "name": "forged mutation exception on unchanged bytes",
+      "pass": true
+    },
+    {
+      "name": "actual sharing-blocked file isolated",
+      "pass": true
+    },
+    {
+      "name": "cancelled report explicitly incomplete",
+      "pass": true
+    },
+    {
+      "name": "cancellation after indexing incomplete",
+      "pass": true
+    },
+    {
+      "name": "chart cap incomplete",
+      "pass": true
+    },
+    {
+      "name": "oversized directory excludes whole entry budget",
+      "pass": true
+    },
+    {
+      "name": "depth exclusion explicit",
+      "pass": true
+    },
+    {
+      "name": "actual symlink excluded",
+      "pass": true
+    }
+  ],
+  "passed": 24,
+  "failed": 0,
+  "runtime": "8.0.33",
+  "originalRuntime": "NOT RUN",
+  "limits": "Sharing-block control is not an OS-ACL test; no hostile atomic-FS guarantee"
+}
