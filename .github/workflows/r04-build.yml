@@ -10,6 +10,7 @@ on:
       - reconstructed/C001CatmullChecks/**
       - reconstructed/C001VersionedSpinnerChecks/**
       - reconstructed/C001LegacySpinnerChecks/**
+      - re/campaigns/C001/legacy-spinner-profile/**
       - re/campaigns/C001/catmull/**
       - re/campaigns/C001/perfect-circle/**
       - reconstructed/CircleGame/**
