@@ -1,0 +1,14 @@
+FAIL QA14 C/spinner-old System.Exception:  expected=Unsupported actual=Indexed
+   at Ohno.QA14.Tests.Eq[T](T actual, T expected, String label) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 18
+   at Ohno.QA14.Tests.<>c__DisplayClass1_3.<Catalog>b__21() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/CatalogIdentity.cs:line 19
+   at Ohno.QA14.Tests.<>c__DisplayClass10_0.<Add>b__0() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 16
+   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 54
+Unhandled exception. System.IO.DirectoryNotFoundException: Could not find a part of the path '/tmp/i9-qa14-root/reconstructed/CircleGame'.
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 58
+   at Ohno.QA14.Tests.<Main>(String[] args)

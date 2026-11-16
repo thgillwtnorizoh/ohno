@@ -1,0 +1,2 @@
+# Exact patch context contains blank context-marker lines; retain artifact bytes.
+candidate.patch -whitespace

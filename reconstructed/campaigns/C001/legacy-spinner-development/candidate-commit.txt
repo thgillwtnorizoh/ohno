@@ -1,0 +1,6 @@
+tree b33555ac6aa661cd526f7a658fc61084472190b9
+parent f9cce9e085735668f86509b89845e0001929186d
+author Codex <codex@openai.com> 1794798312 +0700
+committer Codex <codex@openai.com> 1794798312 +0700
+
+C001 Issue9 candidate: finite stacking and timing; BLOCKED by preserved admission gates

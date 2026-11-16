@@ -125,3 +125,26 @@ Host cap remains ENGINEERING uncapped without provider; v3/v128/other-mode/fract
 degenerate and broader stack/break/parser profiles explicitly excluded. Original/GUI/
 audibleaudio/physicalinput/privatecorpus NOT RUN. Work1 independent new-source QA
 next; owner CorpusAudit only afterward. C001/Issue#7 OPEN; no owner acceptance.
+
+
+## Issue #9 Work2 — reproducible gate contradiction — 2026-11-16
+
+Starting f9cce9e; exact detached candidate2c212abd963cdc5473d72d06bfc4207f74b56ca7
+retained as patch/thin Git bundle, NOT integrated into main. Candidate Route M reuses
+modern pass unchanged; Route Z checks actual heads/both endpoints with original strict
+Single distance primitive, cancellation and1million pair bound; six/seven timing floor.
+Debian13 SDK8.0.427/runtime8.0.33:801/801 new development PASS,81immutablefixtures=
+66prepared/15excluded individually; actual score/calibrated health/NewCombo/session/
+sample identities/audio admission/coordinates checked. No claimed owner-chart gain.
+BLOCKED: unchanged QA14 C/spinner-old requires Unsupported, while HQ Issue9 explicitly
+requires Indexed metadata candidacy; exact filtered check0PASS/1FAIL(exit1). Preserved
+Issue7 suite also aborts at obsolete blanket nonzero-stack exclusion. No checker
+changed, no special-case production rejection. Main production remains2a2e291.
+Full Windows2309 regression/Release application package/additional integrated QA
+NOT RUN after focused blocker; original/GUI/audible/physical/privatecorpus NOT RUN.
+Fixture81+33 regeneration/static55/prior548seal checksPASS. Initial new harness
+CS0103 and QA14 incomplete scratch-root packet invocation failures retained/corrected.
+Full UEP13-issue9-integration-blocker.md, source/results/hashes/reproduction under
+legacy-spinner-development. Headquarters next resolves versioned acceptance gates
+without rewriting historical evidence; Work2 then completes full integration gates,
+Work1 independent new-source QA afterward. C001/Issue9/subsystemOPEN; no owner action.

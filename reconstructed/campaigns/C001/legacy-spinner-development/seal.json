@@ -1,0 +1,58 @@
+{
+  "starting": "f9cce9e085735668f86509b89845e0001929186d",
+  "exactTestedCandidate": "2c212abd963cdc5473d72d06bfc4207f74b56ca7",
+  "candidateTree": "b33555ac6aa661cd526f7a658fc61084472190b9",
+  "candidateProductionPublishedToMain": false,
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "os": "Debian GNU/Linux13 x64",
+  "newDevelopment": {
+    "passed": 801,
+    "failed": 0,
+    "prepared": 66,
+    "excluded": 15,
+    "fixtures": 81
+  },
+  "unchangedQa14Filtered": {
+    "passed": 0,
+    "failed": 1,
+    "exit": 1,
+    "control": "C/spinner-old"
+  },
+  "sourceHashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "ba73cff8a8e37c91d7e82e3de10adc063c29ead32e7b4ae44e8310745beb77fc",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "4d8ff1ef3c62eed425e09ce116ae6b5acb1db805be0043eeaf46f666603c6d3c",
+    "reconstructed/C001LegacySpinnerChecks/Program.cs": "86a6bd223c787d0759c4e1a6fdebd98a772037e86dec1548fec439ce3a089677",
+    "reconstructed/C001LegacySpinnerChecks/C001LegacySpinnerChecks.csproj": "30e30a8f3f14b5c091a01c05d00b59f25bedbbc002aecfe347d5b90cb1c19e22"
+  },
+  "binaryHashes": {
+    "reconstructed/C001LegacySpinnerChecks/bin/Release/net8.0/C001LegacySpinnerChecks.dll": "9ca4ca579402e8c4d3c530369810af20a9aa70d7b99b7dd151b083b8bb5c184f"
+  },
+  "artifactHashes": {
+    "run.log": "49787b5037ee865cf603e3ada198cb700b3b172628f21ea467c46f37113dd8d0",
+    "exact-qa14.json": "34dccb0f0a0a8e6ea92e9cb0952d3eacfb6cd94e2dba1fb60372fa98dc6ba555",
+    "candidate.bundle.b64": "410762353bf3d7b0a3b9424037fff9cfa22d9a900f3b9ed7d5f996ad7d5fb187",
+    "retained-issue7-failure.log": "52dbf2be7c19116bdd9404ae33bee6f2f3cf9b38e240bd6e1799bc375e579a4f",
+    "exact-run.log": "49787b5037ee865cf603e3ada198cb700b3b172628f21ea467c46f37113dd8d0",
+    "qa14.log": "6f2cd289ff83b23a7c7c1adbde7f1f42eab45e7a7ea0ced323b92e4758c54f18",
+    "initial-build-failure.txt": "94140840a11b866a31d79fd949f2f60eff65a6c5093c38662489d573ecaadcee",
+    "candidate-commit.txt": "5794eb675eaba778276c693036aeac003bc8fbd1a7d4305fa622f7c02b636cb4",
+    "candidate.patch": "49665665484a88880f0e334469ad4c52970467cff422f784b33519f0469c399f",
+    "exact-results.json": "77026b4726086466eae282582b3c282009b2fe59333ae1a19520f4d712f57fe3",
+    "initial-qa14-invocation.log": "7e517d5fccd4ebe24cd63b27dbc49ff4d7b1ffe615c4d9f23fe4a678d5adfb45",
+    "exact-qa14.log": "94e6e310b3e5c35fd0f25986b75ba182534618c7aa4696a1540d7b9f5afb3523",
+    "results.json": "77026b4726086466eae282582b3c282009b2fe59333ae1a19520f4d712f57fe3",
+    "qa14.json": "a28224a18229af5b6042f6ab0206bd3f5108752648d69060210ebc698ed99df9"
+  },
+  "notRun": [
+    "Full Windows2309 historical regression",
+    "Windows Release application build",
+    "Additional C001 integration QA",
+    "Original runtime",
+    "GUI",
+    "Audible playback",
+    "Physical input",
+    "Private owner corpus"
+  ],
+  "blocker": "Issue9 requires metadata-valid legacy spinner Indexed; unchanged QA14 requires same candidate Unsupported. Prior Issue7 blanket nonzero-stack assertions also exclude newly required admitted profile."
+}

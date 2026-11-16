@@ -1,0 +1,64 @@
+{
+  "schema": "QA14.v1",
+  "source": "local-preflight",
+  "production": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "runtime": ".NET 8.0.33",
+  "filter": "C/spinner-old",
+  "named": 1,
+  "passed": 0,
+  "failed": 1,
+  "classifications": {
+    "EXECUTED COMPONENT": 1
+  },
+  "cases": [
+    {
+      "id": "C/spinner-old",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": false,
+      "observations": [
+        {
+          "fixture": "song/chart.osu",
+          "sha256": "766deea308a7aa1361a194312a8d8c7774746bfcaa4232e7a3a5268875f23e01",
+          "length": 298,
+          "encoding": "utf-8"
+        },
+        {
+          "label": "",
+          "expected": 3,
+          "actual": 0
+        }
+      ],
+      "error": "System.Exception:  expected=Unsupported actual=Indexed\n   at Ohno.QA14.Tests.Eq[T](T actual, T expected, String label) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 18\n   at Ohno.QA14.Tests.\u003C\u003Ec__DisplayClass1_3.\u003CCatalog\u003Eb__21() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/CatalogIdentity.cs:line 19\n   at Ohno.QA14.Tests.\u003C\u003Ec__DisplayClass10_0.\u003CAdd\u003Eb__0() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 16\n   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 54"
+    }
+  ],
+  "manifest": {
+    "reconstructed/CircleGame/Program.cs": "95fdf84bc481bf65985422dc0ec02f4d97476f18e08e16923f1d13c3f2005815",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "a7ec83d0be285a2d6636aa91d98acb6af8896b4258188f8d75ebb06f10832789",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "4d8ff1ef3c62eed425e09ce116ae6b5acb1db805be0043eeaf46f666603c6d3c",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "edce25f1f70def0fa5204112190ed584fa9d680c06e767f27c6c7f74abe133be",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "reconstructed/CircleGame/Difficulty/CalculatedStars.cs": "0c3ad78c2cc1825c6d7d6688fe7db0919690f1d8727fcf5d1a51c35c8ca19610",
+    "reconstructed/CircleGame/Difficulty/DifficultyAggregation.cs": "bf8f40f60b7e75d3746cddc514931e656221cb9013932c67318c477931c1f3e4",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "cca7c29f9275bbbe355d1cea208b32099a4ba2ee820d6557f61829c17febfb6e",
+    "reconstructed/CircleGame/Difficulty/CircleStarCalculator.cs": "c71724d56db019391209053bc6ef0fc493e1dacd43098c8dbc5f4c9433caf8c4",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "cbb5a7556c02b73a690e2e17537cb5e0c57c653d0df10dab3e5eff8e45bc77b5",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "ba73cff8a8e37c91d7e82e3de10adc063c29ead32e7b4ae44e8310745beb77fc",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "re/qa/qa14/Headless/SelectionEntry.cs": "3d10c4dff39ff5cf627b51a90d2c4b2e0d12958c6809acd5e300889bb4fb02e6",
+    "re/qa/qa14/Headless/Harness.cs": "54d146460564c8c634974d30b33457149c210445c04522d6e2ea86651e0b212e",
+    "re/qa/qa14/Headless/SessionsAudit.cs": "0e14f9286b25db3350dca573ee25e00afb5118837e51da0b3f33a0d491a7793f",
+    "re/qa/qa14/Headless/CatalogIdentity.cs": "4df2c71daf6c631dbbaee9c0c895a2dcb486f81100a4f8a03354b1b8b54efda6",
+    "re/qa/qa14/Headless/MetadataStars.cs": "0483b1742a75a3e65f146106598d8115cb903381e9bcc9721f0196b020b8e14d"
+  }
+}

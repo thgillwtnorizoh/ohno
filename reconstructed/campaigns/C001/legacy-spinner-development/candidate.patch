@@ -1,0 +1,169 @@
+diff --git a/reconstructed/C001LegacySpinnerChecks/.gitignore b/reconstructed/C001LegacySpinnerChecks/.gitignore
+new file mode 100644
+index 0000000..cd42ee3
+--- /dev/null
++++ b/reconstructed/C001LegacySpinnerChecks/.gitignore
+@@ -0,0 +1,2 @@
++bin/
++obj/
+diff --git a/reconstructed/C001LegacySpinnerChecks/C001LegacySpinnerChecks.csproj b/reconstructed/C001LegacySpinnerChecks/C001LegacySpinnerChecks.csproj
+new file mode 100644
+index 0000000..d4a7f16
+--- /dev/null
++++ b/reconstructed/C001LegacySpinnerChecks/C001LegacySpinnerChecks.csproj
+@@ -0,0 +1,12 @@
++<Project Sdk="Microsoft.NET.Sdk">
++  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><TreatWarningsAsErrors>true</TreatWarningsAsErrors></PropertyGroup>
++  <ItemGroup>
++    <Compile Include="../CircleGame/Difficulty/*.cs" Link="Production/%(Filename)%(Extension)" />
++    <Compile Include="../CircleGame/Gameplay/Beatmap.cs" Link="Production/Beatmap.cs" />
++    <Compile Include="../CircleGame/Gameplay/CircleSession.cs" Link="Production/CircleSession.cs" />
++    <Compile Include="../CircleGame/Gameplay/CircleHitSounds.cs" Link="Production/CircleHitSounds.cs" />
++    <Compile Include="../CircleGame/Gameplay/RankResults.cs" Link="Production/RankResults.cs" />
++    <Compile Include="../CircleGame/Selection/*.cs" Link="Production/%(Filename)%(Extension)" />
++    <Compile Include="../CircleGame/Platform/LocalHitSoundAssets.cs" Link="Production/LocalHitSoundAssets.cs" />
++  </ItemGroup>
++</Project>
+diff --git a/reconstructed/C001LegacySpinnerChecks/Program.cs b/reconstructed/C001LegacySpinnerChecks/Program.cs
+new file mode 100644
+index 0000000..489af68
+--- /dev/null
++++ b/reconstructed/C001LegacySpinnerChecks/Program.cs
+@@ -0,0 +1,51 @@
++using System.Reflection;
++using System.Numerics;
++using System.Security.Cryptography;
++using System.Text.Json;
++using Ohno.CircleGame.Gameplay;
++using Ohno.CircleGame.Selection;
++using Ohno.CircleGame.Platform;
++
++
++class Program {
++ static List<object> tests=new();static List<object> outcomes=new();
++ static void Check(bool ok,string name){tests.Add(new{name,pass=ok});if(!ok)Console.WriteLine("FAIL "+name);}
++ static string Hash(string p)=>Convert.ToHexString(SHA256.HashData(File.ReadAllBytes(p)));
++ static string Site(Exception e)=>e.Message switch {
++ "Versioned spinner requires full explicit finite timing/sample rows."=>"explicit-timing",
++ "Versioned spinner first profile requires no stacking or breaks."=>"stack-setting-or-break",
++ "Versioned spinner requires strictly increasing registered source order."=>"registered-order",
++ "Versioned spinner first profile requires separated object intervals."=>"separated-intervals",
++ _=>"OTHER: "+e.GetType().Name+": "+e.Message};
++ static void Main(string[] args){
++ string repo=Path.GetFullPath(args[0]),outdir=Path.GetFullPath(args[1]),folder=Path.Combine(repo,"re/campaigns/C001/legacy-spinner-profile");Directory.CreateDirectory(outdir);
++ var manifest=JsonDocument.Parse(File.ReadAllText(Path.Combine(folder,"manifest.json"))).RootElement.GetProperty("cases");
++ var targets=JsonDocument.Parse(File.ReadAllText(Path.Combine(folder,"handoff-targets.json"))).RootElement.GetProperty("cases").EnumerateArray().ToDictionary(c=>c.GetProperty("id").GetString()!,c=>c.GetProperty("proposedFinitePrepared").GetBoolean());
++ string temp=Path.Combine(Path.GetTempPath(),"ohno-i9-probe-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(temp);
++ int admissions=0,zeroControls=0;
++ try { foreach(var c in manifest.EnumerateArray()){
++  string id=c.GetProperty("id").GetString()!,path=Path.Combine(folder,c.GetProperty("path").GetString()!);int version=c.GetProperty("version").GetInt32();bool wanted=targets[id];
++  Check(Hash(path).Equals(c.GetProperty("sha256").GetString(),StringComparison.OrdinalIgnoreCase),id+" immutable hash");
++  var settings=OsuMetadataSettings.Prepare(OsuDocument.Read(File.ReadAllBytes(path)));
++  Check(settings.Error is null&&settings.StackLeniency==(float)c.GetProperty("expectedSetting").GetDouble(),id+" actual metadata scalar distinct from displacement");
++  var chart=LocalChartCatalog.Index(path);Check(chart.Availability==ChartAvailability.Indexed,id+" catalog candidate independent of canonical qualification");
++  Beatmap? map=null;string guard="none";try{map=chart.LoadCanonicalGameplay();}catch(InvalidDataException e){guard=Site(e);}
++  Beatmap? direct=null;try{direct=Beatmap.LoadCanonical(path);}catch(InvalidDataException){}
++  Check((map is not null)==wanted&&(direct is not null)==wanted,id+" independent current canonical disposition");
++  object? consumers=null;
++  if(map is not null){admissions++;var score=ScoreConfiguration.FromBeatmap(map);var session=CircleSession.CreateFreshOrdinary(map,score);var health=HealthChart.FromMap(map,session.Approach,HealthPreparationPolicy.E036FreshOrdinary);
++   Check(map.HealthSource!.IsFreshFor(map)&&session.Health is not null&&health.Objects.Count==map.HealthSource.Rows.Count,id+" fresh calibrated health and registration");
++   var flags=c.GetProperty("original").GetProperty("finalNoBreakFlags");if(flags.ValueKind==JsonValueKind.Array)Check(health.NewComboProvenance.Select(x=>x.FinalFlag).SequenceEqual(flags.EnumerateArray().Select(x=>x.GetBoolean())),id+" original-derived registration NewCombo sequence");
++   Check(map.Spinners.All(s=>map.CircleSounds!.Spinners.Any(p=>ReferenceEquals(p.Object,s))&&session.Spinners.Any(p=>ReferenceEquals(p.Definition,s))),id+" real sample/session spinner identities");
++   Check(HitSoundLibrary.SpinnerAdmission(map) is null,id+" actual spinner audio admission");
++   Check(map.Spinners.All(s=>s.Center==new Vector2(256,192)&&s.Preparation!.CompatibilityPolicy==SpinnerCompatibilityPolicy.ModernWithoutRecordedSource&&s.Preparation.EndpointPolicy==SpinnerEndpointPolicy.EngineeringUncappedHostLengthUnavailable),id+" fixed center and disclosed policies");
++   var rawPositions=c.GetProperty("original").GetProperty("preparedHeads");
++   if(rawPositions.ValueKind==JsonValueKind.Array){var heads=map.Circles.Select(x=>(time:x.StartTime,pos:x.Position)).Concat(map.Sliders.Select(x=>(time:x.Head.StartTime,pos:x.Head.Position))).Concat(map.Spinners.Select(x=>(time:x.StartTime,pos:x.Center))).OrderBy(x=>x.time).ToArray();var target=rawPositions.EnumerateArray().ToArray();Check(heads.Length==target.Length&&heads.Select((x,i)=>Vector2.Distance(x.pos,new(target[i][0].GetSingle(),target[i][1].GetSingle()))).All(x=>x<0.00004f),id+" original-derived prepared head coordinates");}
++   consumers=new{score.K,healthObjects=health.Objects.Count,flags=health.NewComboProvenance.Select(p=>p.FinalFlag),sessionHealth=session.Health is not null,preparedHeads=map.Circles.Select(x=>new{x.StartTime,x.Position.X,x.Position.Y}),spinnerCenters=map.Spinners.Select(x=>new{x.StartTime,x.Center.X,x.Center.Y}),audio=HitSoundLibrary.SpinnerAdmission(map)??"admitted"};
++  }
++  Check(Hash(path).Equals(c.GetProperty("sha256").GetString(),StringComparison.OrdinalIgnoreCase),id+" unchanged source after consumers");
++  outcomes.Add(new{id,index=chart.Availability.ToString(),reachedGuard=guard,prepared=map is not null,consumers,originalPrediction=c.GetProperty("original").Clone(),handoff=c.GetProperty("handoff").Clone()});
++ }}finally{Directory.Delete(temp,true);}
++ int failed=tests.Count(x=>!JsonSerializer.SerializeToElement(x).GetProperty("pass").GetBoolean());File.WriteAllText(Path.Combine(outdir,"results.json"),JsonSerializer.Serialize(new{actor="Work2 new-production development; independent QA pending",source=Environment.GetEnvironmentVariable("GITHUB_SHA")??"local candidate; source hashes in source.json",runtime=Environment.Version.ToString(),passed=tests.Count-failed,failed,fixtures=manifest.GetArrayLength(),admissions,rejections=manifest.GetArrayLength()-admissions,zeroControls,tests,outcomes,originalRuntime="NOT RUN"},new JsonSerializerOptions{WriteIndented=true}));Console.WriteLine($"Issue9 new development: {tests.Count-failed}/{tests.Count} PASS; {admissions} prepared; {zeroControls} isolated scalar controls");Environment.ExitCode=failed==0?0:1;
++ }
++}
+diff --git a/reconstructed/CircleGame/Gameplay/Beatmap.cs b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+index bf48cd0..bad4061 100644
+--- a/reconstructed/CircleGame/Gameplay/Beatmap.cs
++++ b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+@@ -976,7 +976,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+             else if (section == "[TimingPoints]")
+             {
+                 string[] row = line.Split(',');
+-                if (row.Length < 8) explicitSpinnerTiming = false;
++                if (row.Length < 6) explicitSpinnerTiming = false;
+                 if (row.Length < 2) throw new InvalidDataException("Timing point needs time and beat length.");
+                 double t = DoubleNumber(row[0], "timing time"), beat = DoubleNumber(row[1], "beat length");
+                 if (t < -3_600_000 || t > 3_600_000) throw new InvalidDataException("Timing time is outside R04's supported range.");
+@@ -1013,9 +1013,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+             // Finite first integration profile from Work1 Issue7. These guards
+             // are ENGINEERING exclusions, not claims about original rejection.
+             if (!explicitSpinnerTiming || timing.Count == 0 || sampleTimingError is not null)
+-                throw new InvalidDataException("Versioned spinner requires full explicit finite timing/sample rows.");
+-            if (settings!.StackLeniency != 0 || healthBreaks.Count > 0)
+-                throw new InvalidDataException("Versioned spinner first profile requires no stacking or breaks.");
++                throw new InvalidDataException("Versioned spinner requires six or more explicit finite timing/sample fields.");
++            if (healthBreaks.Count > 0)
++                throw new InvalidDataException("Versioned spinner profile requires no breaks.");
+             if (healthRows.Zip(healthRows.Skip(1)).Any(p => p.First.Start >= p.Second.Start))
+                 throw new InvalidDataException("Versioned spinner requires strictly increasing registered source order.");
+         }
+@@ -1064,6 +1064,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+             maximumEnd = Math.Max(maximumEnd, interval.End);
+             if (interval.Spinner) spinnerEnd = interval.End;
+         }
++        // Issue9: qualify geometry before identity owners are finalized. Route M
++        // reuses the unchanged modern pass; Route Z proves displacement unnecessary.
++        if (extendedPaths && version < 14 && spinners.Count > 0 && settings!.StackLeniency > 0 &&
++            !(version > 5 && settings.Cs == 5f && settings.Ar == 5f))
++            CertifyLegacySpinnerZeroDisplacement(sampleOperands, token);
+         if (extendedPaths) PrepareFiniteStandardStacking(version, settings!, circles, sliders,
+             circleSamples, sampleOperands, token);
+         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
+@@ -1205,6 +1210,34 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         }
+     }
+ 
++    // Sufficient fresh zero-height proof, not the unimplemented <=5 forward
++    // algorithm. Preserve Single subtraction/products/sum -> Double sqrt -> Single
++    // strict <3 via the shared original-derived comparison primitive.
++    private static void CertifyLegacySpinnerZeroDisplacement(
++        List<SamplePreparationOperand> operands, CancellationToken token)
++    {
++        var objects = operands.Select(o => new StackingSource(o)).OrderBy(o => o.Start).ToArray();
++        // Engineering work bound: never expose the loader to unbounded pair work.
++        const long maximumPairs = 1_000_000;
++        if ((long)objects.Length * (objects.Length - 1) / 2 > maximumPairs)
++            throw new InvalidDataException("Legacy spinner zero-displacement certificate exceeds pair work limit.");
++        for (int i = 0; i < objects.Length; i++)
++        {
++            token.ThrowIfCancellationRequested();
++            var earlier = objects[i];
++            Vector2 geometricEnd = earlier.Slider is { } slider
++                ? slider.Geometry.Segments[^1].To : earlier.RawHead;
++            for (int j = i + 1; j < objects.Length; j++)
++            {
++                token.ThrowIfCancellationRequested();
++                Vector2 laterHead = objects[j].RawHead;
++                if (StackingClose(earlier.RawHead, laterHead) ||
++                    StackingClose(geometricEnd, laterHead) || StackingClose(earlier.RawEnd, laterHead))
++                    throw new InvalidDataException("Legacy spinner stack profile lacks a zero-displacement certificate.");
++            }
++        }
++    }
++
+     private static bool StackingClose(Vector2 a, Vector2 b)
+     {
+         float dx = a.X - b.X, dy = a.Y - b.Y;
+diff --git a/reconstructed/CircleGame/Selection/LocalChartCatalog.cs b/reconstructed/CircleGame/Selection/LocalChartCatalog.cs
+index 0a7c25a..e08d111 100644
+--- a/reconstructed/CircleGame/Selection/LocalChartCatalog.cs
++++ b/reconstructed/CircleGame/Selection/LocalChartCatalog.cs
+@@ -209,7 +209,7 @@ public sealed class LocalChartCatalog : IDisposable
+             float? Scalar(string key) => preparedSettings.Error is null ? key switch { "HPDrainRate" => preparedSettings.Hp, "CircleSize" => preparedSettings.Cs, "OverallDifficulty" => preparedSettings.Od, "ApproachRate" => preparedSettings.Ar, _ => null } : float.TryParse(Get("[Difficulty]" + key), NumberStyles.Float, CultureInfo.InvariantCulture, out float f) && float.IsFinite(f) ? f : null;
+             string title = (preferUnicode ? Get("[Metadata]TitleUnicode") : null) ?? Get("[Metadata]Title") ?? System.IO.Path.GetFileNameWithoutExtension(path);
+             var metadata = new ChartMetadata(title, (preferUnicode ? Get("[Metadata]ArtistUnicode") : null) ?? Get("[Metadata]Artist"), Get("[Metadata]Creator"), Get("[Metadata]Version"), format, preparedSettings.Error is null ? preparedSettings.Mode : Int("[General]Mode", 0), Scalar("HPDrainRate"), Scalar("CircleSize"), Scalar("OverallDifficulty"), Scalar("ApproachRate"), objects, circles, sliders, spinners, bpm.Count == 0 ? null : bpm.Min(), bpm.Count == 0 ? null : bpm.Max(), sliders == 0 ? end : null, Int("[Metadata]BeatmapID", 0), Int("[Metadata]BeatmapSetID", 0), Get("[General]AudioFilename")) { PreparedSettings = preparedSettings };
+-            string? limitation = format is < 5 or > 14 ? "Gameplay format unsupported." : metadata.Ruleset != 0 ? "Only ordinary ruleset0 supported." : unsupportedObject ? "Unsupported gameplay object/format." : spinners > 0 && format < 14 && preparedSettings.StackLeniency != 0 ? "Versioned spinner first profile requires no stacking." : objects == 0 ? "No indexed objects." : null;
++            string? limitation = format is < 5 or > 14 ? "Gameplay format unsupported." : metadata.Ruleset != 0 ? "Only ordinary ruleset0 supported." : unsupportedObject ? "Unsupported gameplay object/format." : objects == 0 ? "No indexed objects." : null;
+             return new(path, fingerprint, metadata, limitation is null ? ChartAvailability.Indexed : ChartAvailability.Unsupported, limitation);
+         }
+         catch (Exception e) when (e is IOException or InvalidDataException or UnauthorizedAccessException or ArgumentException)

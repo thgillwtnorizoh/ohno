@@ -1,0 +1,1 @@
+Initial new harness compilation failed CS0103 at Program.cs:47: three stale audit result references (ar) after adapting the separate development harness. Removed those references; no original test or expected result changed.

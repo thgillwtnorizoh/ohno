@@ -1,0 +1,4 @@
+Unhandled exception. System.Exception: Unexpected admission: finite legacy exclusion stack
+   at Program.Reject(Action run, String why) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/C001VersionedSpinnerChecks/Program.cs:line 14
+   at Program.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/C001VersionedSpinnerChecks/Program.cs:line 98
+   at Program.<Main>(String[] args)
