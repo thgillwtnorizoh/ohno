@@ -1,0 +1,40 @@
+{
+  "authority": "Original static M4ecb: Single differences/products/sum; Double sqrt; Single result; strict <3. No production oracle.",
+  "cases": [
+    {
+      "xBits": 0,
+      "yBits": 0,
+      "distanceBits": 0,
+      "close": true,
+      "doubleOnlyClose": true
+    },
+    {
+      "xBits": 1077936128,
+      "yBits": 0,
+      "distanceBits": 1077936128,
+      "close": false,
+      "doubleOnlyClose": false
+    },
+    {
+      "xBits": 1077936127,
+      "yBits": 0,
+      "distanceBits": 1077936127,
+      "close": true,
+      "doubleOnlyClose": true
+    },
+    {
+      "xBits": 1077936129,
+      "yBits": 0,
+      "distanceBits": 1077936129,
+      "close": false,
+      "doubleOnlyClose": false
+    },
+    {
+      "xBits": 1008981770,
+      "yBits": 1077936058,
+      "distanceBits": 1077936128,
+      "close": false,
+      "doubleOnlyClose": true
+    }
+  ]
+}

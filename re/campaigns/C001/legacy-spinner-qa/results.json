@@ -1,0 +1,5891 @@
+{
+  "actor": "Work1 independent new-source verification",
+  "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "state": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "000E45DCB3D9823930FFEEDB3E2E724A6B43DB0CD3CAC2FFCACC2E069101EB20",
+    "Beatmap.cs": "BA73CFF8A8E37C91D7E82E3DE10ADC063C29EAD32E7B4AE44E8310745BEB77FC",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "runtime": "8.0.33",
+  "passed": 1344,
+  "failed": 0,
+  "admitted": 66,
+  "excluded": 15,
+  "prior33Admitted": 23,
+  "checks": [
+    {
+      "name": "exact clean compiled source",
+      "pass": true
+    },
+    {
+      "name": "compiled AuditRunner.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled Program.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled CorpusAudit.csproj",
+      "pass": true
+    },
+    {
+      "name": "compiled Beatmap.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled CircleSession.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled CircleHitSounds.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled RankResults.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled LocalChartCatalog.cs",
+      "pass": true
+    },
+    {
+      "name": "compiled asset source hash",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 independent disposition agrees with research handoff",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 immutable fixture",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 metadata candidate independent of geometry",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 actual canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 direct canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 preserve real metadata and source identity",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 real calibrated fresh health and score/session owners",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 actual audio and spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 fixed center, explicit uncapped/modern policy",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 independently predicted NewCombo",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 hand-derived original prepared coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 remapped circle/slider sound identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 historical loader version contract",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 format never selects recorded-source first-angle policy",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 audit canonical stage",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 original bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "81 complete cases: 66 admissions/15 exclusions",
+      "pass": true
+    },
+    {
+      "name": "v05-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v05-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v05-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v05-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v06-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v06-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v06-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v06-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v09-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v09-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v09-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v09-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v10-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v10-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v10-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v10-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v10-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v10-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v12-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v12-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v12-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v12-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v12-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v12-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v13-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v13-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v14-single prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v14-single prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-single previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v14-single original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-single prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-mixed prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-bit4 prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-bit4 prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v09-bit4 prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-bit4 prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v05-sample-full prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v05-fractional prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-sample-full prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-fractional prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v14-sample-full prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v06-sample-two prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap previous construction and uncapped endpoint",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap original constructor/parser overwrite",
+      "pass": true
+    },
+    {
+      "name": "v13-conditional-end-cap prior stored sample fields",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-end-before-start prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-duration prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v09-invalid-end prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "v14-missing-end prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "negative-format-3 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "negative-format-128 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v9 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 prior33 immutable",
+      "pass": true
+    },
+    {
+      "name": "negative-mode1-v14 prior33 independent admission",
+      "pass": true
+    },
+    {
+      "name": "prior33 retain23 admissions10 exclusions",
+      "pass": true
+    },
+    {
+      "name": "RouteZ near head rejected",
+      "pass": true
+    },
+    {
+      "name": "RouteZ exact distance3 admitted",
+      "pass": true
+    },
+    {
+      "name": "RouteZ just outside admitted",
+      "pass": true
+    },
+    {
+      "name": "certificate uses constructor center not file XY",
+      "pass": true
+    },
+    {
+      "name": "all distinct pairs, not adjacent-only",
+      "pass": true
+    },
+    {
+      "name": "inconclusive proximity rejected even beyond stack time window",
+      "pass": true
+    },
+    {
+      "name": "actual distance primitive bit case 0",
+      "pass": true
+    },
+    {
+      "name": "actual distance primitive bit case 1077936128",
+      "pass": true
+    },
+    {
+      "name": "actual distance primitive bit case 1077936127",
+      "pass": true
+    },
+    {
+      "name": "actual distance primitive bit case 1077936129",
+      "pass": true
+    },
+    {
+      "name": "actual distance primitive bit case 1008981770",
+      "pass": true
+    },
+    {
+      "name": "canonical pair work just under1m accepted",
+      "pass": true
+    },
+    {
+      "name": "canonical pair work over1m rejected",
+      "pass": true
+    },
+    {
+      "name": "canonical honors cancelled token",
+      "pass": true
+    },
+    {
+      "name": "certificate observes cancellation requested during bounded invocation",
+      "pass": true
+    },
+    {
+      "name": "timing order/base/inherited 6",
+      "pass": true
+    },
+    {
+      "name": "stored-end timing selection 6",
+      "pass": true
+    },
+    {
+      "name": "timing order/base/inherited 7",
+      "pass": true
+    },
+    {
+      "name": "stored-end timing selection 7",
+      "pass": true
+    },
+    {
+      "name": "timing order/base/inherited 8",
+      "pass": true
+    },
+    {
+      "name": "stored-end timing selection 8",
+      "pass": true
+    },
+    {
+      "name": "retained negative mode",
+      "pass": true
+    },
+    {
+      "name": "retained negative format",
+      "pass": true
+    },
+    {
+      "name": "retained negative bad-sample",
+      "pass": true
+    },
+    {
+      "name": "retained negative empty-sample",
+      "pass": true
+    },
+    {
+      "name": "RouteM translated slider head and segments",
+      "pass": true
+    },
+    {
+      "name": "RouteM checkpoint and sound owner propagation",
+      "pass": true
+    },
+    {
+      "name": "translation preserves raw controls, cumulative lengths and timing",
+      "pass": true
+    },
+    {
+      "name": "all movement/checkpoint geometry translated",
+      "pass": true
+    },
+    {
+      "name": "translated map owns actual prepared resource sidecars",
+      "pass": true
+    },
+    {
+      "name": "real stored-end completion selection and tag 6",
+      "pass": true
+    },
+    {
+      "name": "real stored-end completion selection and tag 7",
+      "pass": true
+    },
+    {
+      "name": "timing source order retained; last qualifying source row wins",
+      "pass": true
+    },
+    {
+      "name": "actual audio resource ownership",
+      "pass": true
+    },
+    {
+      "name": "actual spinner input/final score result",
+      "pass": true
+    },
+    {
+      "name": "actual session recording sound hooks",
+      "pass": true
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "v05-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v12-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v13-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-default-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-default-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-zero-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-zero-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-point7-single",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-point7-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-cs4-ar8-isolated",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-cs7-ar3-mixed",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-circle-pair",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Legacy spinner stack profile lacks a zero-displacement certificate."
+    },
+    {
+      "id": "v05-spinner-before",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Legacy spinner stack profile lacks a zero-displacement certificate."
+    },
+    {
+      "id": "v05-spinner-after",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Legacy spinner stack profile lacks a zero-displacement certificate."
+    },
+    {
+      "id": "v06-circle-pair",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-spinner-before",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-spinner-after",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-circle-pair",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-spinner-before",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-spinner-after",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v05-even-tail",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Legacy spinner stack profile lacks a zero-displacement certificate."
+    },
+    {
+      "id": "v06-even-tail",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-even-tail",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-tail-center",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v06-tail-away",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-tail-center",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-tail-away",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-break-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner profile requires no breaks."
+    },
+    {
+      "id": "v09-overlap-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner first profile requires separated object intervals."
+    },
+    {
+      "id": "v09-order-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires strictly increasing registered source order."
+    },
+    {
+      "id": "v09-timing2-default",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing2-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing3-default",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing3-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing4-default",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing4-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing5-default",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing5-zero",
+      "index": "Indexed",
+      "prepared": false,
+      "failure": "Versioned spinner requires six or more explicit finite timing/sample fields."
+    },
+    {
+      "id": "v09-timing6-default",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-timing6-zero",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-timing7-default",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v09-timing7-zero",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-timing6",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    },
+    {
+      "id": "v14-timing7",
+      "index": "Indexed",
+      "prepared": true,
+      "failure": null
+    }
+  ],
+  "originalRuntime": "NOT RUN",
+  "audibleOutput": "NOT RUN"
+}

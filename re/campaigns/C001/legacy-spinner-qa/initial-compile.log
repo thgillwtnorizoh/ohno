@@ -1,0 +1,4 @@
+/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/legacy-spinner-qa/Checks/Program.cs(20,117): error CS1061: 'CircleSoundMap' does not contain a definition for 'Sliders' and no accessible extension method 'Sliders' accepting a first argument of type 'CircleSoundMap' could be found (are you missing a using directive or an assembly reference?) [/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/legacy-spinner-qa/Checks/Checks.csproj]
+/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/legacy-spinner-qa/Checks/Program.cs(68,109): error CS1061: 'CircleSoundMap' does not contain a definition for 'Sliders' and no accessible extension method 'Sliders' accepting a first argument of type 'CircleSoundMap' could be found (are you missing a using directive or an assembly reference?) [/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/legacy-spinner-qa/Checks/Checks.csproj]
+
+The build failed. Fix the build errors and run again.

@@ -1,0 +1,32 @@
+{
+  "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "modernMethodSha256": "bd5195e02f779ac8458f91018aed77bf49d3758669cf97650d475b0574182656",
+  "unchangedProduction": [
+    "Gameplay/CircleSession.cs",
+    "Gameplay/CircleHitSounds.cs",
+    "Platform/WindowsCircleEffects.cs",
+    "Platform/LocalHitSoundAssets.cs"
+  ],
+  "unchangedR17": true,
+  "supersession": [
+    {
+      "path": "re/qa/qa14/Headless/CatalogIdentity.cs",
+      "source": "d66cc28c791dc58b0c8b1401c8804a0672fee519",
+      "blob": "6c9dfe1fb16904ead995a723db15fff9dc21672b",
+      "snapshotSha256": "4df2c71daf6c631dbbaee9c0c895a2dcb486f81100a4f8a03354b1b8b54efda6"
+    },
+    {
+      "path": "reconstructed/C001VersionedSpinnerChecks/Program.cs",
+      "source": "d66cc28c791dc58b0c8b1401c8804a0672fee519",
+      "blob": "2b4fb0cf5625cbc1728493d22b54de0289f10c10",
+      "snapshotSha256": "936da963c0dbc929abf095f0f086856d92955d1adb82075c7f7f1070240a3679"
+    }
+  ],
+  "qa14OnlyAuthorizedChanges": true,
+  "issue7OnlyAuthorizedBlockChanged": true,
+  "allResearchFixturesAndOldEvidenceUnchanged": true,
+  "attributes": "-text only; fixture blobs unchanged",
+  "initialCRLFFailurePreserved": true,
+  "windowsHistorical": 2312,
+  "fullRegression": "REUSED, NOT RERUN"
+}

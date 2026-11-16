@@ -182,3 +182,23 @@ Next Headquarters authorizes Work2 bounded integration and Windows gate, then
 independent new-source QA. Issue#9/C001/subsystem OPEN; Issue#4 separate.
 Headquarters Issue9 refinement records Issue7/8 CLOSED; earlier checkpoint
 entries remain historical. No additional owner actions are part of this research.
+
+
+## Issue #9 independent integration verification — 2026-11-16
+
+Work1 starting7564b0e, exact tested9ed9eb5 clean:1344/1344 independent assertions
+PASS;81 immutable Issue9 cases66/15; prior33 cases23/10. Nine compiled identities
+and linked binary verified. RouteM displacement/geometry/consumer ownership, fixed
+spinner center with source-derived internal correction, RouteZ strict numeric
+boundaries/both endpoints/all pairs/1m work/cancellation, six/seven timing, stored-end
+samples/source order, score/calibrated health/NewCombo/session/input/resources and
+recording hooks checked. No actionable finite discrepancy found. Supersession review
+restores archived QA14 exactly except authorized change+3new controls; Issue7 only
+authorized block changed. Historical sources/775/548/fixtures/failures unchanged.
+Actual Windows ZIP/EXE/source marker/801+656 packet seals checked; fetched exact-source
+run43813166021/job13311914918651steps SUCCESS;19 historical summaries2312PASS/0FAIL.
+Initial CRLF162 failures and -text correction preserved; no repeated full regression.
+See verification/13-legacy-spinner-integration.md and legacy-spinner-qa/. No production
+edits; no private owner collection, original runtime, GUI/audible/physical input or
+host cap qualification. Next Headquarters acceptance review/potential Issue9 closure;
+no owner scan requested now. C001/Issue9/subsystem OPEN; Issue4 separate.

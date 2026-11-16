@@ -1,0 +1,28 @@
+{
+  "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "run": 43813166021,
+  "job": 133119149186,
+  "jobSteps": 51,
+  "conclusion": "success",
+  "artifact": 14201431678,
+  "artifactBytes": 67982328,
+  "artifactSha256": "574c0a57d678fa50210f5cfb686796b9a0c8ae3eb0cec1a38ee07224f671294c",
+  "exeSha256": "b0c0baa5d1d8461438089d85dbe98e0490a41ce73343bd1b2f29723946765436",
+  "exeBytes": 154041616,
+  "actualSourceMarkerVerified": true,
+  "actualWindowsPacketsEqualPublished": true,
+  "windowsCRLFSourceHashesVerified": true,
+  "packets": {
+    "windows-issue7.json": {
+      "rawSha256": "b55780cacc1ae114fe17e5d1bb923c5af70f6d3a8a9c059e115d2068415d420e",
+      "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44"
+    },
+    "windows-issue9.json": {
+      "rawSha256": "6ea2f5e8476e3bd52adddd3d0dd901f67c285606565950b7e234e01c8c4ed9a3",
+      "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44"
+    }
+  },
+  "fullHistoricalPassed": 2312,
+  "fullHistoricalFailed": 0,
+  "executedExe": false
+}
