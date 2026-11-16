@@ -1,0 +1,567 @@
+{
+  "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "run": 43813166021,
+  "job": 133119149186,
+  "conclusion": "success",
+  "sdk": "8.0.428",
+  "runtime": "8.0.34",
+  "historical": [
+    {
+      "suite": "QA15 HEADLESS",
+      "passed": 95,
+      "failed": 0
+    },
+    {
+      "suite": "QA15 WINDOWS",
+      "passed": 39,
+      "failed": 0
+    },
+    {
+      "suite": "HEADLESS COMPONENT TESTS",
+      "passed": 90,
+      "failed": 0
+    },
+    {
+      "suite": "QA03 SLIDER TESTS",
+      "passed": 56,
+      "failed": 0
+    },
+    {
+      "suite": "QA04 GEOMETRY TESTS",
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "suite": "QA05 SPINNER TESTS",
+      "passed": 66,
+      "failed": 0
+    },
+    {
+      "suite": "QA06 ACCOUNTING TESTS",
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "suite": "QA07 HEALTH TESTS",
+      "passed": 159,
+      "failed": 0
+    },
+    {
+      "suite": "QA08 NEWCOMBO TESTS",
+      "passed": 115,
+      "failed": 0
+    },
+    {
+      "suite": "QA09 HITSOUND TESTS",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "suite": "QA10 SLIDER SOUND TESTS",
+      "passed": 229,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 CONTINUOUS TESTS",
+      "passed": 247,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 WINDOWS EMPTY",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "QA12",
+      "passed": 274,
+      "failed": 0
+    },
+    {
+      "suite": "QA12 WINDOWS",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 HEADLESS",
+      "passed": 257,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 WINDOWS",
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 HEADLESS",
+      "passed": 237,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 WINDOWS",
+      "passed": 30,
+      "failed": 0
+    }
+  ],
+  "historicalPassed": 2312,
+  "historicalFailed": 0,
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-16T05:53:45Z",
+      "completed_at": "2026-11-16T05:53:46Z"
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-16T05:53:46Z",
+      "completed_at": "2026-11-16T05:53:53Z"
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-16T05:53:53Z",
+      "completed_at": "2026-11-16T05:53:57Z"
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4,
+      "started_at": "2026-11-16T05:53:57Z",
+      "completed_at": "2026-11-16T05:54:16Z"
+    },
+    {
+      "name": "Execute independent QA15 corpus and calculator component verification",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-11-16T05:54:16Z",
+      "completed_at": "2026-11-16T05:54:32Z"
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6,
+      "started_at": "2026-11-16T05:54:32Z",
+      "completed_at": "2026-11-16T05:54:34Z"
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7,
+      "started_at": "2026-11-16T05:54:34Z",
+      "completed_at": "2026-11-16T05:54:37Z"
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-11-16T05:54:37Z",
+      "completed_at": "2026-11-16T05:54:39Z"
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-11-16T05:54:39Z",
+      "completed_at": "2026-11-16T05:54:41Z"
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10,
+      "started_at": "2026-11-16T05:54:41Z",
+      "completed_at": "2026-11-16T05:54:44Z"
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11,
+      "started_at": "2026-11-16T05:54:44Z",
+      "completed_at": "2026-11-16T05:54:46Z"
+    },
+    {
+      "name": "Check R08 bounded legacy ledger controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-16T05:54:46Z",
+      "completed_at": "2026-11-16T05:54:48Z"
+    },
+    {
+      "name": "Check R08-C01 spinner presentation and input continuity",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-16T05:54:48Z",
+      "completed_at": "2026-11-16T05:54:50Z"
+    },
+    {
+      "name": "Check R08-C02 automatic chart score multiplier",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14,
+      "started_at": "2026-11-16T05:54:50Z",
+      "completed_at": "2026-11-16T05:54:52Z"
+    },
+    {
+      "name": "Execute independent QA06 ledger multiplier and presentation suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15,
+      "started_at": "2026-11-16T05:54:52Z",
+      "completed_at": "2026-11-16T05:54:54Z"
+    },
+    {
+      "name": "Check R09 bounded health calibration and integration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16,
+      "started_at": "2026-11-16T05:54:54Z",
+      "completed_at": "2026-11-16T05:54:56Z"
+    },
+    {
+      "name": "Execute independent QA07 health calibration drain and failure suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17,
+      "started_at": "2026-11-16T05:54:56Z",
+      "completed_at": "2026-11-16T05:54:58Z"
+    },
+    {
+      "name": "Check R10 fresh ordinary NewCombo preparation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 18,
+      "started_at": "2026-11-16T05:54:58Z",
+      "completed_at": "2026-11-16T05:55:01Z"
+    },
+    {
+      "name": "Execute independent QA08 NewCombo and fresh health integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 19,
+      "started_at": "2026-11-16T05:55:01Z",
+      "completed_at": "2026-11-16T05:55:03Z"
+    },
+    {
+      "name": "Check R11 circle hitsound selection resources and lifecycle",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 20,
+      "started_at": "2026-11-16T05:55:03Z",
+      "completed_at": "2026-11-16T05:55:06Z"
+    },
+    {
+      "name": "Execute independent QA09 circle hitsound suite without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 21,
+      "started_at": "2026-11-16T05:55:06Z",
+      "completed_at": "2026-11-16T05:55:10Z"
+    },
+    {
+      "name": "Check R12 discrete slider hitsounds without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 22,
+      "started_at": "2026-11-16T05:55:10Z",
+      "completed_at": "2026-11-16T05:55:13Z"
+    },
+    {
+      "name": "Execute independent QA10 discrete slider suite without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 23,
+      "started_at": "2026-11-16T05:55:13Z",
+      "completed_at": "2026-11-16T05:55:18Z"
+    },
+    {
+      "name": "Check R13 shared continuing channels without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 24,
+      "started_at": "2026-11-16T05:55:18Z",
+      "completed_at": "2026-11-16T05:55:21Z"
+    },
+    {
+      "name": "Check R13 Windows empty-resource lifecycle without opening media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 25,
+      "started_at": "2026-11-16T05:55:21Z",
+      "completed_at": "2026-11-16T05:55:23Z"
+    },
+    {
+      "name": "Execute independent QA11 shared channels without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 26,
+      "started_at": "2026-11-16T05:55:23Z",
+      "completed_at": "2026-11-16T05:55:29Z"
+    },
+    {
+      "name": "Check R13-C01 captured settings gain without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 27,
+      "started_at": "2026-11-16T05:55:29Z",
+      "completed_at": "2026-11-16T05:55:31Z"
+    },
+    {
+      "name": "Check R14 spinner audio with recording channels and independent assets",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 28,
+      "started_at": "2026-11-16T05:55:31Z",
+      "completed_at": "2026-11-16T05:55:35Z"
+    },
+    {
+      "name": "Check R14 Windows unsupported-frequency capability without media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 29,
+      "started_at": "2026-11-16T05:55:35Z",
+      "completed_at": "2026-11-16T05:55:37Z"
+    },
+    {
+      "name": "Execute independent QA12 spinner audio without media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 30,
+      "started_at": "2026-11-16T05:55:37Z",
+      "completed_at": "2026-11-16T05:55:43Z"
+    },
+    {
+      "name": "Check R14-Q01 routing and diagnostics without opening media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 31,
+      "started_at": "2026-11-16T05:55:43Z",
+      "completed_at": "2026-11-16T05:55:47Z"
+    },
+    {
+      "name": "Check R15 original-derived Rank model without media or windows",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 32,
+      "started_at": "2026-11-16T05:55:47Z",
+      "completed_at": "2026-11-16T05:55:50Z"
+    },
+    {
+      "name": "Check R15 WPF host and widgets without showing a Window",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 33,
+      "started_at": "2026-11-16T05:55:50Z",
+      "completed_at": "2026-11-16T05:55:52Z"
+    },
+    {
+      "name": "Execute independent QA13 Rank results without windows or media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 34,
+      "started_at": "2026-11-16T05:55:52Z",
+      "completed_at": "2026-11-16T05:55:57Z"
+    },
+    {
+      "name": "Check R16 local catalog selection and Play capture without windows/media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 35,
+      "started_at": "2026-11-16T05:55:57Z",
+      "completed_at": "2026-11-16T05:56:00Z"
+    },
+    {
+      "name": "Check R16 unshown SelectPlay widgets and Rank-return host boundaries",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 36,
+      "started_at": "2026-11-16T05:56:00Z",
+      "completed_at": "2026-11-16T05:56:03Z"
+    },
+    {
+      "name": "Execute independent QA14 catalog selection and entry controls without windows/media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 37,
+      "started_at": "2026-11-16T05:56:03Z",
+      "completed_at": "2026-11-16T05:57:04Z"
+    },
+    {
+      "name": "Check R17 restricted circle mathematics against independent E045 E046 data",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 38,
+      "started_at": "2026-11-16T05:57:04Z",
+      "completed_at": "2026-11-16T05:57:09Z"
+    },
+    {
+      "name": "Check R17 unshown calculated-star browser and Rank boundaries",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 39,
+      "started_at": "2026-11-16T05:57:09Z",
+      "completed_at": "2026-11-16T05:57:11Z"
+    },
+    {
+      "name": "Check C001 canonical syntax and versioned Bezier preparation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 40,
+      "started_at": "2026-11-16T05:57:11Z",
+      "completed_at": "2026-11-16T05:57:14Z"
+    },
+    {
+      "name": "Check C001 finite Perfect-circle geometry and consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 41,
+      "started_at": "2026-11-16T05:57:14Z",
+      "completed_at": "2026-11-16T05:57:16Z"
+    },
+    {
+      "name": "Preserve independent finite stacking regression",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 42,
+      "started_at": "2026-11-16T05:57:16Z",
+      "completed_at": "2026-11-16T05:57:20Z"
+    },
+    {
+      "name": "Check finite Catmull paths and shared consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 43,
+      "started_at": "2026-11-16T05:57:20Z",
+      "completed_at": "2026-11-16T05:57:23Z"
+    },
+    {
+      "name": "Check Issue9 finite stacking timing and consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 44,
+      "started_at": "2026-11-16T05:57:23Z",
+      "completed_at": "2026-11-16T05:57:25Z"
+    },
+    {
+      "name": "Check finite versioned spinner admission and real consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 45,
+      "started_at": "2026-11-16T05:57:25Z",
+      "completed_at": "2026-11-16T05:57:28Z"
+    },
+    {
+      "name": "Preserve actual canonical CorpusAudit development checks",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 46,
+      "started_at": "2026-11-16T05:57:28Z",
+      "completed_at": "2026-11-16T05:57:34Z"
+    },
+    {
+      "name": "Publish C001 Windows x64 application for owner qualification",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 47,
+      "started_at": "2026-11-16T05:57:34Z",
+      "completed_at": "2026-11-16T05:57:44Z"
+    },
+    {
+      "name": "Verify independent C001 finite original-contract predictions",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 48,
+      "started_at": "2026-11-16T05:57:44Z",
+      "completed_at": "2026-11-16T05:57:47Z"
+    },
+    {
+      "name": "Preserve C001 development evidence and Windows application",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 49,
+      "started_at": "2026-11-16T05:57:47Z",
+      "completed_at": "2026-11-16T05:57:54Z"
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 98,
+      "started_at": "2026-11-16T05:57:54Z",
+      "completed_at": "2026-11-16T05:57:55Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 99,
+      "started_at": "2026-11-16T05:57:55Z",
+      "completed_at": "2026-11-16T05:57:55Z"
+    }
+  ],
+  "artifact": {
+    "id": 14201431678,
+    "node_id": "MDg6QXJ0aWZhY3QxNDIwMTQzMTY3OA==",
+    "name": "ohno-C001-9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+    "size_in_bytes": 67982328,
+    "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14201431678",
+    "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14201431678/zip",
+    "expired": false,
+    "digest": "sha256:574c0a57d678fa50210f5cfb686796b9a0c8ae3eb0cec1a38ee07224f671294c",
+    "created_at": "2026-11-16T05:57:53Z",
+    "updated_at": "2026-11-16T05:57:53Z",
+    "expires_at": "2027-02-14T05:53:41Z",
+    "workflow_run": {
+      "id": 43813166021,
+      "repository_id": 1431318446,
+      "head_repository_id": 1431318446,
+      "head_branch": "main",
+      "head_sha": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44"
+    }
+  },
+  "zipSha256": "574c0a57d678fa50210f5cfb686796b9a0c8ae3eb0cec1a38ee07224f671294c",
+  "exeSha256": "b0c0baa5d1d8461438089d85dbe98e0490a41ce73343bd1b2f29723946765436",
+  "exeBytes": 154041616,
+  "results": {
+    "windows-issue9.json": {
+      "rawSha256": "6ea2f5e8476e3bd52adddd3d0dd901f67c285606565950b7e234e01c8c4ed9a3",
+      "runtime": "8.0.34"
+    },
+    "windows-issue7.json": {
+      "rawSha256": "b55780cacc1ae114fe17e5d1bb923c5af70f6d3a8a9c059e115d2068415d420e",
+      "runtime": "8.0.34"
+    }
+  },
+  "selectedLines": [
+    "2026-11-16T05:54:15.9672717Z     0 Warning(s)",
+    "2026-11-16T05:54:15.9673026Z     0 Error(s)",
+    "2026-11-16T05:55:47.4548833Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window",
+    "2026-11-16T05:55:49.8596258Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime",
+    "2026-11-16T05:56:00.2660861Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input",
+    "2026-11-16T05:57:08.3924895Z R17 DEVELOPMENT: 82 groups passed; 89878 finite scalar comparisons; last1 source inspection; research controls not added to independent QA",
+    "2026-11-16T05:57:13.9866618Z C001 DEVELOPMENT: 264/264 PASS",
+    "2026-11-16T05:57:16.2347525Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution",
+    "2026-11-16T05:57:18.6227092Z C001 stacking actual production: 18/18 loaded; 43 head checks; 0 gaps",
+    "2026-11-16T05:57:20.6076660Z C001 independent integration: 394/394 PASS; 0 failures",
+    "2026-11-16T05:57:23.0176003Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions",
+    "2026-11-16T05:57:25.4332276Z Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls",
+    "2026-11-16T05:57:28.8034408Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures",
+    "2026-11-16T05:57:34.4944565Z CORPUS AUDIT DEVELOPMENT: 259/259 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN",
+    "2026-11-16T05:57:46.9806079Z C001: 106/106 original-contract fields match; 0 gaps; 4/4 engineering controls PASS; 10 diagnostic-only probes; original runtime NOT RUN"
+  ]
+}

@@ -96,3 +96,22 @@ Full UEP13-issue9-integration-blocker.md, source/results/hashes/reproduction und
 legacy-spinner-development. Headquarters next resolves versioned acceptance gates
 without rewriting historical evidence; Work2 then completes full integration gates,
 Work1 independent new-source QA afterward. C001/Issue9/subsystemOPEN; no owner action.
+
+
+## Issue9-C01 verified integrated checkpoint — 2026-11-16
+Startingd66cc28, recovered2c212abd; actual tested/publishedsource9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44.
+HQ6908226762 supersession snapshots/ledger preserve old QA14/Issue7 assertions.
+Active QA14 gains3controls; Windows2312/2312active historical PASS,QA14headless237/
+Windows30. Issue7 656PASS; Issue9 801PASS/81immutablefixtures=66admitted15excluded.
+Full Windows43813166021/job133119149186 SUCCESS,SDK8.0.428/runtime8.0.34,Release0/0
+and portable app publish; downloaded artifact14201431678 source/hash/packets verified.
+Retained C001264/P299/C4375,stack43+394,finite106+4,CorpusAudit259PASS.
+Initial Windows6f831c2 failed162byte assertions due checkoutCRLF; all66/15 semantics
+matched. Added -text fixture policy (bytes unchanged) and workflow trigger, rerunPASS;
+failed log sealed, no hidden failure/expectation edit. Linux QA14 threeWindows-only
+failures preserved, native rerunPASS. Full UEP14-issue9-c01-integration.md and
+legacy-spinner-c01/windows.json. Coverage: finite nonzero/default legacy stacking
+RouteM/RouteZ and six/seven explicit-sample timing now integrated; no owner gain count.
+No early actual v5/general stacks/short2–5/global defaults/host cap/replay expansion.
+Original/GUI/audible/physical/privatecorpus NOT RUN. Work1 independent exactnewsource
+QA next. C001/Issue9/subsystemOPEN; no additional owner manual action requested.

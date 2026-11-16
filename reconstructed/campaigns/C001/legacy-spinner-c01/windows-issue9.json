@@ -1,0 +1,7297 @@
+{
+  "actor": "Work2 new-production development; independent QA pending",
+  "source": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "runtime": "8.0.34",
+  "passed": 801,
+  "failed": 0,
+  "fixtures": 81,
+  "admissions": 66,
+  "rejections": 15,
+  "zeroControls": 0,
+  "tests": [
+    {
+      "name": "v05-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v05-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v12-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v13-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-default-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-default-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-zero-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-single unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-point7-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-cs4-ar8-isolated unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-cs7-ar3-mixed unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-circle-pair unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-before unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-spinner-after unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-circle-pair unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-before unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-spinner-after unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-circle-pair unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-before unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-spinner-after unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v05-even-tail unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-even-tail unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-even-tail unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-center unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v06-tail-away unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-center unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-tail-away unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-break-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-overlap-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-order-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing2-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing3-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing4-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing5-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing6-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-default unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v09-timing7-zero unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-timing6 unchanged source after consumers",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 immutable hash",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 actual metadata scalar distinct from displacement",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 catalog candidate independent of canonical qualification",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 independent current canonical disposition",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 fresh calibrated health and registration",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 original-derived registration NewCombo sequence",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 real sample/session spinner identities",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 actual spinner audio admission",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 fixed center and disclosed policies",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 original-derived prepared head coordinates",
+      "pass": true
+    },
+    {
+      "name": "v14-timing7 unchanged source after consumers",
+      "pass": true
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "v05-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v12-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v13-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-default-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-default-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-zero-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-zero-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "retained-zero-setting",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-point7-single",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-point7-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-cs4-ar8-isolated",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-cs7-ar3-mixed",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1000,
+            "X": 64,
+            "Y": 64
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "geometric-no-op",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-circle-pair",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Legacy spinner stack profile lacks a zero-displacement certificate.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v05-spinner-before",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Legacy spinner stack profile lacks a zero-displacement certificate.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-certificate",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-spinner-after",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Legacy spinner stack profile lacks a zero-displacement certificate.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-circle-pair",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          false,
+          true,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 6000,
+            "X": 124.79869,
+            "Y": 124.79869
+          },
+          {
+            "StartTime": 6100,
+            "X": 128,
+            "Y": 128
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-spinner-before",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 2,
+        "flags": [
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 5100,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-spinner-after",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 2,
+        "flags": [
+          true,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-circle-pair",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          false,
+          true,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 6000,
+            "X": 124.79869,
+            "Y": 124.79869
+          },
+          {
+            "StartTime": 6100,
+            "X": 128,
+            "Y": 128
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128,
+            128
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true,
+          false
+        ],
+        "relation": "ordinary head/head",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-spinner-before",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 2,
+        "flags": [
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 5100,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false,
+          true
+        ],
+        "relation": "spinner internal height may change, M0603 ignores position",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-spinner-after",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 2,
+        "flags": [
+          true,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false
+        ],
+        "relation": "circle before spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v05-even-tail",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Legacy spinner stack profile lacks a zero-displacement certificate.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-early-actual-stack",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-even-tail",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 2100,
+            "X": 228,
+            "Y": 128
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 4000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            228,
+            128
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-even-tail",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 3,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 2100,
+            "X": 228,
+            "Y": 128
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 4000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            228,
+            128
+          ],
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          false
+        ],
+        "relation": "legacy geometric path end versus modern final traversal endpoint",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v06-tail-center",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 259.20132,
+            "Y": 195.20131
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 1700,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            192
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v06-tail-away",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 231.20131,
+            "Y": 131.20131
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 1700,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-tail-center",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 259.20132,
+            "Y": 195.20131
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 1700,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            192
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v14-tail-away",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 3,
+        "flags": [
+          true,
+          false,
+          true
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [
+          {
+            "StartTime": 1900,
+            "X": 231.20131,
+            "Y": 131.20131
+          }
+        ],
+        "spinnerCenters": [
+          {
+            "StartTime": 1700,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128,
+            128
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ]
+        ],
+        "finalNoBreakFlags": [
+          true,
+          false,
+          true
+        ],
+        "relation": "negative slider-tail correction including spinner height; fixed spinner center",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "reuse-modern-cs5-ar5",
+        "actualOrdinaryStack": true
+      }
+    },
+    {
+      "id": "v09-break-zero",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner profile requires no breaks.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64,
+            64
+          ],
+          [
+            256,
+            192
+          ],
+          [
+            400,
+            300
+          ]
+        ],
+        "finalNoBreakFlags": null,
+        "relation": "no relationships",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-breaks",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-overlap-zero",
+      "index": "Indexed",
+      "reachedGuard": "separated-intervals",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": null,
+        "relation": "overlapping spinner interval",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-overlap",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-order-zero",
+      "index": "Indexed",
+      "reachedGuard": "registered-order",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": null,
+        "relation": "out of chronological source order",
+        "timing": "full explicit",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "excluded-source-order",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing2-default",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "map sample set + M3b3c index; volume100",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing2-zero",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "map sample set + M3b3c index; volume100",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing3-default",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "M28ff catches missing row[3], returns null",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing3-zero",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "M28ff catches missing row[3], returns null",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing4-default",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing4-zero",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing5-default",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing5-zero",
+      "index": "Indexed",
+      "reachedGuard": "OTHER: InvalidDataException: Versioned spinner requires six or more explicit finite timing/sample fields.",
+      "prepared": false,
+      "consumers": null,
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": null,
+        "preparedHeads": null,
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "caller F1000 volume",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "deferred-timing-defaults",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing6-default",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing6-zero",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing7-default",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v09-timing7-zero",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-timing6",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "base=true effects=0; explicit samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    },
+    {
+      "id": "v14-timing7",
+      "index": "Indexed",
+      "reachedGuard": "none",
+      "prepared": true,
+      "consumers": {
+        "K": 4,
+        "healthObjects": 1,
+        "flags": [
+          false
+        ],
+        "sessionHealth": true,
+        "preparedHeads": [],
+        "spinnerCenters": [
+          {
+            "StartTime": 2000,
+            "X": 256,
+            "Y": 192
+          }
+        ],
+        "audio": "admitted"
+      },
+      "originalPrediction": {
+        "classification": "RECONSTRUCTED from pinned original static, conditional host length/source policy",
+        "heights": [
+          0
+        ],
+        "preparedHeads": [
+          [
+            256,
+            192
+          ]
+        ],
+        "finalNoBreakFlags": [
+          false
+        ],
+        "relation": "no relationships",
+        "timing": "effects=0; explicit base/samples",
+        "spinnerCenterSetter": "M0603 ret"
+      },
+      "handoff": {
+        "profile": "explicit-sample-short-timing",
+        "actualOrdinaryStack": false
+      }
+    }
+  ],
+  "originalRuntime": "NOT RUN"
+}

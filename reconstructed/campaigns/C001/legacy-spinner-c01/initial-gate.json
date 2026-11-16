@@ -1,0 +1,388 @@
+{
+  "source": "6f831c20a85f2c3d08b03629828898c03361be19",
+  "run": 43812667342,
+  "job": 133117594708,
+  "raw_log_bytes": 2516528,
+  "raw_log_sha256": "e668ad499691f458d3ad265d308ac4be78c56cd24609f4bbe0879f83e6bc7c95",
+  "summary_sha256": "c1dd4bf78744507f1d251a9bc90eacfb717e783a18dec0ff6ed8b2f685046642",
+  "retention": "All ordinary log lines retained; repeated historical result packets omitted with exact line hashes. Full log via Actions job ID.",
+  "omitted_payloads": [
+    {
+      "line": 246,
+      "bytes": 412282,
+      "sha256": "081fbc890e8718d0f337dbf50aa15c473fd42a809d292283077fefc04be2eb7b",
+      "prefix": "2026-11-16T05:49:37.9808561Z QA15 HEADLESS EVIDENCE H4sIAAAAAAACCuy963LjSJIm+iqy3L9KVHiEx63+5VZX2Zxj"
+    },
+    {
+      "line": 287,
+      "bytes": 6313,
+      "sha256": "102cc4f31731d5cceded9cb756666135236ae3a8c8aaa2f241313c4540d1ae23",
+      "prefix": "2026-11-16T05:49:44.1578788Z QA15 WINDOWS EVIDENCE H4sIAAAAAAACCu1dbVPbyLL+Kyo+3VsVwbyPxPmUJexmqzaEC"
+    },
+    {
+      "line": 1417,
+      "bytes": 6049,
+      "sha256": "a4162bb2aef81145f6a80239c9ef8e8759efeae450892af6d58d46e5ec3eceea",
+      "prefix": "2026-11-16T05:50:18.0803687Z QA09 EVIDENCE 1/6 H4sIAAAAAAACCuy9WZvjNpIu/Ff45fNd5oJ9ST/nwku17RmXXePy9"
+    },
+    {
+      "line": 1418,
+      "bytes": 6049,
+      "sha256": "2b675c53ba9a8fb8dccc7c4a054fe2d52f30dd8cf59472535f55e40ce3c36904",
+      "prefix": "2026-11-16T05:50:18.0859631Z QA09 EVIDENCE 2/6 fPmo/BuAr7GRY2MHxx+9I0M+15Ghq5GpGTTFu0dGPeLIbGyZIf0jw"
+    },
+    {
+      "line": 1419,
+      "bytes": 6049,
+      "sha256": "a0be9b544522401e4930849ea11bd6600a5f103096bbd120ae445764f366258d",
+      "prefix": "2026-11-16T05:50:18.0920724Z QA09 EVIDENCE 3/6 9IjH9DrWq2hmF7P5+LaKyRUGw2VIk7ZgP7z2aoz3teytGLUa+vIBC"
+    },
+    {
+      "line": 1420,
+      "bytes": 6049,
+      "sha256": "dafe768b9a84c1bfb4bfb6641ea5915a24ca6466a17d9527c7069561a25e1f69",
+      "prefix": "2026-11-16T05:50:18.0976036Z QA09 EVIDENCE 4/6 LAAGQ6cWzo+qlPtqzT38Y+eH4KuqyYbaOgJcXzRGTdFRoF/DuBhZa"
+    },
+    {
+      "line": 1421,
+      "bytes": 6049,
+      "sha256": "dd6fdd78172c2399deb11b6d948d058d99a1ed02ebc0912bf1a188cb88c9f0fa",
+      "prefix": "2026-11-16T05:50:18.1030276Z QA09 EVIDENCE 5/6 /Wd2mpFdpDz2P/xDNpk534OZs93MHKNNal78/ky5OWpyc74XN2cvi"
+    },
+    {
+      "line": 1422,
+      "bytes": 3501,
+      "sha256": "f3b38e87d79d81d88d5d32ff72f7ece57126f129042ea4fe46e6b28bc59cc873",
+      "prefix": "2026-11-16T05:50:18.1074084Z QA09 EVIDENCE 6/6 rfIPXH6sq/xRVzKPUbWayh+hbqOOhZdk5O9t5HcSq5W2P9SBW9P24"
+    },
+    {
+      "line": 1753,
+      "bytes": 6049,
+      "sha256": "1a4a48a4b561e03a7f8421524547bf0eb5391fc2bd176b79d77dae70149f016b",
+      "prefix": "2026-11-16T05:50:24.3154834Z QA10 EVIDENCE 1/8 H4sIAAAAAAACCuy92XIbR7aG+yoVvNo7gkPOAxTnQi3Tts62bLWo7"
+    },
+    {
+      "line": 1754,
+      "bytes": 6049,
+      "sha256": "ff10a2877bd67a0b4456eee5eeb5cfca043cf9ab5277b2c5c6075544a516c1f2",
+      "prefix": "2026-11-16T05:50:24.3204646Z QA10 EVIDENCE 2/8 4IT5yzZxCPGwYipVqk5OCaMndeyeEXpyxkirOCuqi3YJ12Ognsvqs"
+    },
+    {
+      "line": 1755,
+      "bytes": 6049,
+      "sha256": "0c916d5fefeadaa749fbcdca32c8812548be7ce7b559209a9b468d99e4464812",
+      "prefix": "2026-11-16T05:50:24.3257330Z QA10 EVIDENCE 3/8 v5QfXPc8re4iUXN88dlVRW84KHpl0c/7HhfvhtWg8Kno9rpH3XQOV"
+    },
+    {
+      "line": 1756,
+      "bytes": 6049,
+      "sha256": "6e01ee0718abbd20d0f9d7b0e7f2bf3f2d0f6c8cdfa6138377d0237a1a4863ca",
+      "prefix": "2026-11-16T05:50:24.3307682Z QA10 EVIDENCE 4/8 yob7Da4zeS6jkd1VMeyGC9c9h3MsPEo9emhAke2YGfqqn0KKqRtSM"
+    },
+    {
+      "line": 1757,
+      "bytes": 6049,
+      "sha256": "b6ac975798e6faa6938023f000290b6e1e98293204f293900abc3119e72e640c",
+      "prefix": "2026-11-16T05:50:24.3355453Z QA10 EVIDENCE 5/8 Am3tJPgbHLYgfVb8N/V7M1k/5PJlrgNr5uRZnddrlDrOJrImCOblx"
+    },
+    {
+      "line": 1758,
+      "bytes": 6049,
+      "sha256": "0252c2e40acd5911b566d145746f5788ef20ce76c1e21dc96df93df351cd7d6a",
+      "prefix": "2026-11-16T05:50:24.3404644Z QA10 EVIDENCE 6/8 gmc/ZAKZQCaH3G6yiU0mUyZO6YR/A53wep3wFTrhtTNv7jzxJnv4x"
+    },
+    {
+      "line": 1759,
+      "bytes": 6049,
+      "sha256": "d9d75ff11b7fefee7dfcfcf1599898cc0e498796aca4f83fcc8343ac6b75faae",
+      "prefix": "2026-11-16T05:50:24.3452988Z QA10 EVIDENCE 7/8 BCFBSBAShAQhQUgQEjzkSam5dVorJ7nidjzEczIptWzFjjNHZaCVs"
+    },
+    {
+      "line": 2130,
+      "bytes": 6050,
+      "sha256": "8c0a9753eafeb6e361e32590f948950203b1206d63c9a7a2826068d3794d0b46",
+      "prefix": "2026-11-16T05:50:33.1631444Z QA11 EVIDENCE 1/10 H4sIAAAAAAACCuy92XbjRrau+yo4ulprDDXRoVOOc+FKp+0822ln"
+    },
+    {
+      "line": 2131,
+      "bytes": 6050,
+      "sha256": "b89e4ae158dac6c3add7fcde535e3c90d40841c86d63d8a22d3c468bd97e1031",
+      "prefix": "2026-11-16T05:50:33.1680471Z QA11 EVIDENCE 2/10 249vPjkn120+vsW7idbjMwc+A5+Bz8Dn88fnlShpDd0unwqIfiaI"
+    },
+    {
+      "line": 2132,
+      "bytes": 6050,
+      "sha256": "5871bb65bfb357f3b4adbd262879dff1d8ef7a58eb6058c3c232865601c57ac2",
+      "prefix": "2026-11-16T05:50:33.1746228Z QA11 EVIDENCE 3/10 PlXfSsstrbQ8mJWWu7FYkvHzfqPeBj3m2U/V93Fb9hh+sB7Dd9Rj"
+    },
+    {
+      "line": 2133,
+      "bytes": 6050,
+      "sha256": "e1941aa410d0501b201988f8d8bdfbf70c2e1ebd67efc948279c3d70408a03aa",
+      "prefix": "2026-11-16T05:50:33.1824734Z QA11 EVIDENCE 4/10 gLYEOvPrLKWbJb/8hc797uPXFZntn+hR7WXeZhUZhJ+zf5lb9+/F"
+    },
+    {
+      "line": 2134,
+      "bytes": 6050,
+      "sha256": "3f9da235d02ecf79c029ab3ecd961e9c73dbf65b622f45f4f0519dc1f908448c",
+      "prefix": "2026-11-16T05:50:33.1875277Z QA11 EVIDENCE 5/10 8zlr7u01u9c41mQ9kmVLIrtXMo5/NCzikh7cdieN9zFi3SPWPWLd"
+    },
+    {
+      "line": 2135,
+      "bytes": 6050,
+      "sha256": "9ab482ec9505754c0422787f859177e2f94f159f42253d92fc981e690e8e356a",
+      "prefix": "2026-11-16T05:50:33.1939337Z QA11 EVIDENCE 6/10 lAfKI9YLJAQSAgmBhEBCICGQEEgIJESOKLAQWAgsBBYCC4GFwEJg"
+    },
+    {
+      "line": 2136,
+      "bytes": 6050,
+      "sha256": "f6de8fb26499818ce16a700877171b173dd370d1670bc1de91cbb6b841a497f7",
+      "prefix": "2026-11-16T05:50:33.1992910Z QA11 EVIDENCE 7/10 XemlG0ovRnpHLj1zCCk9lIfyUB7KQ3mwDOWhPJR3FMojn4f0kB7S"
+    },
+    {
+      "line": 2137,
+      "bytes": 6050,
+      "sha256": "cbede9fe1917a29a514a467a55e6e6f737413dcb0f1a332965d68e6e719c7c62",
+      "prefix": "2026-11-16T05:50:33.2042272Z QA11 EVIDENCE 8/10 +gME/RbF+f3HB08H9GnDKad1CEmQoxgvdzfvG864RFuTKO+sXupv"
+    },
+    {
+      "line": 2138,
+      "bytes": 6050,
+      "sha256": "2c90febd91e74f716daf3776cfefb0af0dc02bcc9725e1fcea57afaa3fbc37ec",
+      "prefix": "2026-11-16T05:50:33.2090553Z QA11 EVIDENCE 9/10 7V9eycKl+jzpT7ajHHImO7wxGF3J9OP897EMli9RR07ZSOD2KRtH"
+    },
+    {
+      "line": 2139,
+      "bytes": 3779,
+      "sha256": "30033863ee42f15035b140629aa8501dfb7280c31fc9fa4e6ce9c782b96308d8",
+      "prefix": "2026-11-16T05:50:33.2129317Z QA11 EVIDENCE 10/10 2m3rXN5MjAkmzVt5p1kgQcVZxwbd6mRSc6ThZOHRiY1ag/54OOj"
+    },
+    {
+      "line": 2566,
+      "bytes": 92405,
+      "sha256": "ee83c223ba80c49f4db4a69d14a2dcd8017c93139e241ae16737a4be64f32625",
+      "prefix": "2026-11-16T05:50:45.4592952Z QA12 EVIDENCE H4sIAAAAAAACCuzdW3PjRrqo6fuJmP+AqKu9Y1ysPB/cMRdur3Iv773t7"
+    },
+    {
+      "line": 2581,
+      "bytes": 1149,
+      "sha256": "741f2282e90b66dbd8dbef1c1ede0f0e5fa483d6ce35f0f265eece16eb2252d9",
+      "prefix": "2026-11-16T05:50:47.2242437Z QA12 WINDOWS EVIDENCE H4sIAAAAAAACCu1YS28aMRC+V+p/GO05wO6SkKU99ZBDpD7SQ"
+    },
+    {
+      "line": 2632,
+      "bytes": 7751,
+      "sha256": "2464e3afb6c5dd2225fe6a7f19465f0484ae9bc37a3d3b4348439fc3c9d1e471",
+      "prefix": "2026-11-16T05:50:50.4785173Z R14-Q01 DIAGNOSTICS ew0KICAic2NoZW1hIjogIm9obm8uUjE0LVEwMS5hdWRpby52MSI"
+    },
+    {
+      "line": 2718,
+      "bytes": 11032,
+      "sha256": "cc01daf6e65c88d50bd8e9a4e748b00de4e07af3c1923c9900ff832047778199",
+      "prefix": "2026-11-16T05:50:52.7148561Z R15 EVIDENCE eyJzY2hlbWEiOiJSMTUuZGV2ZWxvcG1lbnQudjEiLCJncm91cHMiOjc5LC"
+    },
+    {
+      "line": 2997,
+      "bytes": 344473,
+      "sha256": "8de45a15e06e99015794c4c5617063f94c7762c78f87b756e31983eaa0799e4a",
+      "prefix": "2026-11-16T05:50:57.9589042Z QA13 EVIDENCE H4sIAAAAAAACCuy9a3MbR5I2+v1EnP+AUMT5csKQ6n6xYz/YGnnt3bU8r"
+    },
+    {
+      "line": 3024,
+      "bytes": 1545,
+      "sha256": "dc8fe5de1c13535c939183965524f4a44d3980f74fad256b249f8669fc1ee15f",
+      "prefix": "2026-11-16T05:50:59.9736046Z QA13 WINDOWS EVIDENCE H4sIAAAAAAACCu1aS2/jNhC+F+h/GPgcpHrYjt2e9pECe2jSZ"
+    },
+    {
+      "line": 3083,
+      "bytes": 7924,
+      "sha256": "168891fd74f7b7385a189825a8c44c77156226f957a5ad4c83ad3ea823077b01",
+      "prefix": "2026-11-16T05:51:02.2750821Z R16 EVIDENCE eyJzY2hlbWEiOiJSMTYuZGV2ZWxvcG1lbnQudjEiLCJncm91cHMiOjUyLC"
+    },
+    {
+      "line": 3346,
+      "bytes": 1056165,
+      "sha256": "e1c816984c181aa467d7916ad7d0dc5a06efdcfb587ebbaa3dbc75a694fd1911",
+      "prefix": "2026-11-16T05:51:45.6613740Z QA14 EVIDENCE H4sIAAAAAAACCuy9a3McN5I2+v1EnP9QoTgf3jfCLeJ+0cR+kGR51vtat"
+    },
+    {
+      "line": 3379,
+      "bytes": 3561,
+      "sha256": "d2830f0aa9f43572b58f6496061d785e512bafacbfec9aabcdc5202a019eab38",
+      "prefix": "2026-11-16T05:51:56.7799444Z QA14 WINDOWS EVIDENCE H4sIAAAAAAACCu1cWXPcxhF+T1X+wxafBXHuQ28KJcepsmVal"
+    },
+    {
+      "line": 3496,
+      "bytes": 19772,
+      "sha256": "100732a6a12429160e5e67810b33c7f40fa9a8a38138e1c0dfe073abb4625aca",
+      "prefix": "2026-11-16T05:52:00.3155787Z R17 EVIDENCE eyJncm91cHMiOjgyLCJjb21wYXJpc29ucyI6ODk4NzgsInJlc3VsdHMiOl"
+    }
+  ],
+  "notable_lines": [
+    "2026-11-16T05:49:29.6781675Z     0 Warning(s)",
+    "2026-11-16T05:49:29.6782096Z     0 Error(s)",
+    "2026-11-16T05:52:05.0238608Z C001 DEVELOPMENT: 264/264 PASS",
+    "2026-11-16T05:52:14.8414356Z FAIL v05-default-single immutable hash",
+    "2026-11-16T05:52:14.9124731Z FAIL v05-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9127383Z FAIL v05-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9299688Z FAIL v05-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9300131Z FAIL v05-zero-single immutable hash",
+    "2026-11-16T05:52:14.9308290Z FAIL v05-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9308798Z FAIL v05-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9317279Z FAIL v05-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9317678Z FAIL v05-point7-single immutable hash",
+    "2026-11-16T05:52:14.9326636Z FAIL v05-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9327039Z FAIL v05-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9335656Z FAIL v05-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9336064Z FAIL v05-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9343244Z FAIL v05-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9343661Z FAIL v05-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9351804Z FAIL v05-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9352525Z FAIL v06-default-single immutable hash",
+    "2026-11-16T05:52:14.9360784Z FAIL v06-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9361296Z FAIL v06-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9369998Z FAIL v06-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9370624Z FAIL v06-zero-single immutable hash",
+    "2026-11-16T05:52:14.9377834Z FAIL v06-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9378314Z FAIL v06-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9386395Z FAIL v06-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9387381Z FAIL v06-point7-single immutable hash",
+    "2026-11-16T05:52:14.9394253Z FAIL v06-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9394639Z FAIL v06-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9403051Z FAIL v06-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9403474Z FAIL v06-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9410562Z FAIL v06-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9411030Z FAIL v06-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9419015Z FAIL v06-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9419418Z FAIL v09-default-single immutable hash",
+    "2026-11-16T05:52:14.9426839Z FAIL v09-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9427220Z FAIL v09-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9435326Z FAIL v09-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9435771Z FAIL v09-zero-single immutable hash",
+    "2026-11-16T05:52:14.9443152Z FAIL v09-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9443564Z FAIL v09-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9451743Z FAIL v09-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9452241Z FAIL v09-point7-single immutable hash",
+    "2026-11-16T05:52:14.9459308Z FAIL v09-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9459685Z FAIL v09-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9468017Z FAIL v09-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9468389Z FAIL v09-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9479437Z FAIL v09-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9480156Z FAIL v09-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9488759Z FAIL v09-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9489247Z FAIL v12-default-single immutable hash",
+    "2026-11-16T05:52:14.9496911Z FAIL v12-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9497344Z FAIL v12-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9505686Z FAIL v12-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9506061Z FAIL v12-zero-single immutable hash",
+    "2026-11-16T05:52:14.9513252Z FAIL v12-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9513628Z FAIL v12-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9521796Z FAIL v12-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9522170Z FAIL v12-point7-single immutable hash",
+    "2026-11-16T05:52:14.9529482Z FAIL v12-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9529840Z FAIL v12-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9538273Z FAIL v12-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9538640Z FAIL v12-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9546059Z FAIL v12-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9546454Z FAIL v12-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9554590Z FAIL v12-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9554948Z FAIL v13-default-single immutable hash",
+    "2026-11-16T05:52:14.9562393Z FAIL v13-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9562960Z FAIL v13-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9571258Z FAIL v13-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9571608Z FAIL v13-zero-single immutable hash",
+    "2026-11-16T05:52:14.9578810Z FAIL v13-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9579164Z FAIL v13-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9587196Z FAIL v13-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9588200Z FAIL v13-point7-single immutable hash",
+    "2026-11-16T05:52:14.9595825Z FAIL v13-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9596187Z FAIL v13-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9604500Z FAIL v13-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9604857Z FAIL v13-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9612271Z FAIL v13-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9612661Z FAIL v13-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9620809Z FAIL v13-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9621153Z FAIL v14-default-single immutable hash",
+    "2026-11-16T05:52:14.9628479Z FAIL v14-default-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9628844Z FAIL v14-default-mixed immutable hash",
+    "2026-11-16T05:52:14.9637552Z FAIL v14-default-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9637891Z FAIL v14-zero-single immutable hash",
+    "2026-11-16T05:52:14.9645132Z FAIL v14-zero-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9645483Z FAIL v14-zero-mixed immutable hash",
+    "2026-11-16T05:52:14.9653499Z FAIL v14-zero-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9653841Z FAIL v14-point7-single immutable hash",
+    "2026-11-16T05:52:14.9661101Z FAIL v14-point7-single unchanged source after consumers",
+    "2026-11-16T05:52:14.9661475Z FAIL v14-point7-mixed immutable hash",
+    "2026-11-16T05:52:14.9669697Z FAIL v14-point7-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9670088Z FAIL v14-cs4-ar8-isolated immutable hash",
+    "2026-11-16T05:52:14.9677415Z FAIL v14-cs4-ar8-isolated unchanged source after consumers",
+    "2026-11-16T05:52:14.9677810Z FAIL v14-cs7-ar3-mixed immutable hash",
+    "2026-11-16T05:52:14.9685971Z FAIL v14-cs7-ar3-mixed unchanged source after consumers",
+    "2026-11-16T05:52:14.9686335Z FAIL v05-circle-pair immutable hash",
+    "2026-11-16T05:52:14.9696190Z FAIL v05-circle-pair unchanged source after consumers",
+    "2026-11-16T05:52:14.9696675Z FAIL v05-spinner-before immutable hash",
+    "2026-11-16T05:52:14.9703820Z FAIL v05-spinner-before unchanged source after consumers",
+    "2026-11-16T05:52:14.9704140Z FAIL v05-spinner-after immutable hash",
+    "2026-11-16T05:52:14.9709188Z FAIL v05-spinner-after unchanged source after consumers",
+    "2026-11-16T05:52:14.9709572Z FAIL v06-circle-pair immutable hash",
+    "2026-11-16T05:52:14.9732367Z FAIL v06-circle-pair unchanged source after consumers",
+    "2026-11-16T05:52:14.9732885Z FAIL v06-spinner-before immutable hash",
+    "2026-11-16T05:52:14.9741352Z FAIL v06-spinner-before unchanged source after consumers",
+    "2026-11-16T05:52:14.9741742Z FAIL v06-spinner-after immutable hash",
+    "2026-11-16T05:52:14.9749642Z FAIL v06-spinner-after unchanged source after consumers",
+    "2026-11-16T05:52:14.9750026Z FAIL v14-circle-pair immutable hash",
+    "2026-11-16T05:52:14.9758248Z FAIL v14-circle-pair unchanged source after consumers",
+    "2026-11-16T05:52:14.9758585Z FAIL v14-spinner-before immutable hash",
+    "2026-11-16T05:52:14.9766453Z FAIL v14-spinner-before unchanged source after consumers",
+    "2026-11-16T05:52:14.9766808Z FAIL v14-spinner-after immutable hash",
+    "2026-11-16T05:52:14.9774102Z FAIL v14-spinner-after unchanged source after consumers",
+    "2026-11-16T05:52:14.9774452Z FAIL v05-even-tail immutable hash",
+    "2026-11-16T05:52:14.9784504Z FAIL v05-even-tail unchanged source after consumers",
+    "2026-11-16T05:52:14.9785021Z FAIL v06-even-tail immutable hash",
+    "2026-11-16T05:52:14.9796989Z FAIL v06-even-tail unchanged source after consumers",
+    "2026-11-16T05:52:14.9797424Z FAIL v14-even-tail immutable hash",
+    "2026-11-16T05:52:14.9806176Z FAIL v14-even-tail unchanged source after consumers",
+    "2026-11-16T05:52:14.9806804Z FAIL v06-tail-center immutable hash",
+    "2026-11-16T05:52:14.9819877Z FAIL v06-tail-center unchanged source after consumers",
+    "2026-11-16T05:52:14.9820411Z FAIL v06-tail-away immutable hash",
+    "2026-11-16T05:52:14.9829312Z FAIL v06-tail-away unchanged source after consumers",
+    "2026-11-16T05:52:14.9829796Z FAIL v14-tail-center immutable hash",
+    "2026-11-16T05:52:14.9838051Z FAIL v14-tail-center unchanged source after consumers",
+    "2026-11-16T05:52:14.9838522Z FAIL v14-tail-away immutable hash",
+    "2026-11-16T05:52:14.9847002Z FAIL v14-tail-away unchanged source after consumers",
+    "2026-11-16T05:52:14.9847460Z FAIL v09-break-zero immutable hash",
+    "2026-11-16T05:52:14.9854283Z FAIL v09-break-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9854846Z FAIL v09-overlap-zero immutable hash",
+    "2026-11-16T05:52:14.9860865Z FAIL v09-overlap-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9861330Z FAIL v09-order-zero immutable hash",
+    "2026-11-16T05:52:14.9867059Z FAIL v09-order-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9867547Z FAIL v09-timing2-default immutable hash",
+    "2026-11-16T05:52:14.9873164Z FAIL v09-timing2-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9873632Z FAIL v09-timing2-zero immutable hash",
+    "2026-11-16T05:52:14.9878913Z FAIL v09-timing2-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9879392Z FAIL v09-timing3-default immutable hash",
+    "2026-11-16T05:52:14.9884421Z FAIL v09-timing3-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9884867Z FAIL v09-timing3-zero immutable hash",
+    "2026-11-16T05:52:14.9890122Z FAIL v09-timing3-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9890576Z FAIL v09-timing4-default immutable hash",
+    "2026-11-16T05:52:14.9895764Z FAIL v09-timing4-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9896229Z FAIL v09-timing4-zero immutable hash",
+    "2026-11-16T05:52:14.9901874Z FAIL v09-timing4-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9902299Z FAIL v09-timing5-default immutable hash",
+    "2026-11-16T05:52:14.9907657Z FAIL v09-timing5-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9908185Z FAIL v09-timing5-zero immutable hash",
+    "2026-11-16T05:52:14.9913506Z FAIL v09-timing5-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9914045Z FAIL v09-timing6-default immutable hash",
+    "2026-11-16T05:52:14.9921554Z FAIL v09-timing6-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9922070Z FAIL v09-timing6-zero immutable hash",
+    "2026-11-16T05:52:14.9929616Z FAIL v09-timing6-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9929927Z FAIL v09-timing7-default immutable hash",
+    "2026-11-16T05:52:14.9936647Z FAIL v09-timing7-default unchanged source after consumers",
+    "2026-11-16T05:52:14.9937049Z FAIL v09-timing7-zero immutable hash",
+    "2026-11-16T05:52:14.9944035Z FAIL v09-timing7-zero unchanged source after consumers",
+    "2026-11-16T05:52:14.9944422Z FAIL v14-timing6 immutable hash",
+    "2026-11-16T05:52:14.9952486Z FAIL v14-timing6 unchanged source after consumers",
+    "2026-11-16T05:52:14.9952846Z FAIL v14-timing7 immutable hash",
+    "2026-11-16T05:52:14.9959856Z FAIL v14-timing7 unchanged source after consumers"
+  ]
+}

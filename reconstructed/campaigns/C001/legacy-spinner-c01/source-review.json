@@ -1,0 +1,13 @@
+{
+  "source": "6f831c20a85f2c3d08b03629828898c03361be19",
+  "modernPassByteIdentical": true,
+  "methodSha256": "c1b2724c45a24ad0cf69b741054783984c32d16f7844e9aab197f4b2fa2b3b85",
+  "routeZMaximumPairs": 1000000,
+  "historicalSource": "d66cc28c791dc58b0c8b1401c8804a0672fee519",
+  "policy": "Original strict float difference/product/sum -> double sqrt -> float result <3; spinner constructor center; both prepared path endpoints",
+  "unchanged": [
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs"
+  ]
+}
