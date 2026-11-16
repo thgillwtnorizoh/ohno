@@ -1,0 +1,22 @@
+{
+  "authority": "Issue9 comment6908226762",
+  "historical": [
+    {
+      "path": "re/qa/qa14/Headless/CatalogIdentity.cs",
+      "source": "d66cc28c791dc58b0c8b1401c8804a0672fee519",
+      "blob": "6c9dfe1fb16904ead995a723db15fff9dc21672b",
+      "sha256": "4df2c71daf6c631dbbaee9c0c895a2dcb486f81100a4f8a03354b1b8b54efda6"
+    },
+    {
+      "path": "reconstructed/C001VersionedSpinnerChecks/Program.cs",
+      "source": "d66cc28c791dc58b0c8b1401c8804a0672fee519",
+      "blob": "2b4fb0cf5625cbc1728493d22b54de0289f10c10",
+      "sha256": "936da963c0dbc929abf095f0f086856d92955d1adb82075c7f7f1070240a3679"
+    }
+  ],
+  "changes": [
+    "QA14 C/spinner-old Unsupported -> Indexed; add canonical and invalid controls",
+    "Issue7 isolated explicit/default .7 rejection -> RouteZ canonical success with consumers; retain unsupported proximity controls"
+  ],
+  "originalEvidenceChanged": false
+}

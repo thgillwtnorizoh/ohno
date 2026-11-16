@@ -976,7 +976,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             else if (section == "[TimingPoints]")
             {
                 string[] row = line.Split(',');
-                if (row.Length < 8) explicitSpinnerTiming = false;
+                if (row.Length < 6) explicitSpinnerTiming = false;
                 if (row.Length < 2) throw new InvalidDataException("Timing point needs time and beat length.");
                 double t = DoubleNumber(row[0], "timing time"), beat = DoubleNumber(row[1], "beat length");
                 if (t < -3_600_000 || t > 3_600_000) throw new InvalidDataException("Timing time is outside R04's supported range.");
@@ -1013,9 +1013,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             // Finite first integration profile from Work1 Issue7. These guards
             // are ENGINEERING exclusions, not claims about original rejection.
             if (!explicitSpinnerTiming || timing.Count == 0 || sampleTimingError is not null)
-                throw new InvalidDataException("Versioned spinner requires full explicit finite timing/sample rows.");
-            if (settings!.StackLeniency != 0 || healthBreaks.Count > 0)
-                throw new InvalidDataException("Versioned spinner first profile requires no stacking or breaks.");
+                throw new InvalidDataException("Versioned spinner requires six or more explicit finite timing/sample fields.");
+            if (healthBreaks.Count > 0)
+                throw new InvalidDataException("Versioned spinner profile requires no breaks.");
             if (healthRows.Zip(healthRows.Skip(1)).Any(p => p.First.Start >= p.Second.Start))
                 throw new InvalidDataException("Versioned spinner requires strictly increasing registered source order.");
         }
@@ -1064,6 +1064,11 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             maximumEnd = Math.Max(maximumEnd, interval.End);
             if (interval.Spinner) spinnerEnd = interval.End;
         }
+        // Issue9: qualify geometry before identity owners are finalized. Route M
+        // reuses the unchanged modern pass; Route Z proves displacement unnecessary.
+        if (extendedPaths && version < 14 && spinners.Count > 0 && settings!.StackLeniency > 0 &&
+            !(version > 5 && settings.Cs == 5f && settings.Ar == 5f))
+            CertifyLegacySpinnerZeroDisplacement(sampleOperands, token);
         if (extendedPaths) PrepareFiniteStandardStacking(version, settings!, circles, sliders,
             circleSamples, sampleOperands, token);
         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
@@ -1202,6 +1207,34 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 operands[i] = entry with { Circle = newCircle };
             else if (entry.Slider is { } slider && sliderMoves.TryGetValue(slider, out var newSlider))
                 operands[i] = entry with { Slider = newSlider };
+        }
+    }
+
+    // Sufficient fresh zero-height proof, not the unimplemented <=5 forward
+    // algorithm. Preserve Single subtraction/products/sum -> Double sqrt -> Single
+    // strict <3 via the shared original-derived comparison primitive.
+    private static void CertifyLegacySpinnerZeroDisplacement(
+        List<SamplePreparationOperand> operands, CancellationToken token)
+    {
+        var objects = operands.Select(o => new StackingSource(o)).OrderBy(o => o.Start).ToArray();
+        // Engineering work bound: never expose the loader to unbounded pair work.
+        const long maximumPairs = 1_000_000;
+        if ((long)objects.Length * (objects.Length - 1) / 2 > maximumPairs)
+            throw new InvalidDataException("Legacy spinner zero-displacement certificate exceeds pair work limit.");
+        for (int i = 0; i < objects.Length; i++)
+        {
+            token.ThrowIfCancellationRequested();
+            var earlier = objects[i];
+            Vector2 geometricEnd = earlier.Slider is { } slider
+                ? slider.Geometry.Segments[^1].To : earlier.RawHead;
+            for (int j = i + 1; j < objects.Length; j++)
+            {
+                token.ThrowIfCancellationRequested();
+                Vector2 laterHead = objects[j].RawHead;
+                if (StackingClose(earlier.RawHead, laterHead) ||
+                    StackingClose(geometricEnd, laterHead) || StackingClose(earlier.RawEnd, laterHead))
+                    throw new InvalidDataException("Legacy spinner stack profile lacks a zero-displacement certificate.");
+            }
         }
     }
 

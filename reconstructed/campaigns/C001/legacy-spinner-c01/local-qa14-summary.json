@@ -1,0 +1,1941 @@
+{
+  "schema": "QA14.v1",
+  "source": "local-preflight",
+  "production": "19bb644e01c646ca8850f0751ec03f7ef881d766",
+  "runtime": ".NET 8.0.33",
+  "filter": null,
+  "named": 237,
+  "passed": 234,
+  "failed": 3,
+  "classifications": {
+    "EXECUTED COMPONENT": 229,
+    "SOURCE INSPECTION": 8
+  },
+  "cases": [
+    {
+      "id": "C/empty",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "62f3a0bca204c01508a13ebcebaa8319cc3139ac82230d22369ab206b97e1d22"
+    },
+    {
+      "id": "C/missing-root",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "dc7f383749c4bbcdbf1eb988fb6b3b4cae18e23944df9533f438db0433bffbf7"
+    },
+    {
+      "id": "C/one",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3a4d4770f47e779f9eab1b650a0d7a77c7d87db46fedd287e4609eb54202fdc2"
+    },
+    {
+      "id": "C/folders-and-difficulties",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "26d7534075eb77488667402ac7a72634e4cdaa6e701631f1282117c84b4e933d"
+    },
+    {
+      "id": "C/duplicate-filenames",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "c9abae5906f6646ddc7331c813a9b7e9d0fd798a9059af77b1c757432b22a0f4"
+    },
+    {
+      "id": "C/duplicate-BeatmapID",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "e15768b4d6e3263aa09de48db85b74860267260a7b8ae6ee145a6f7329a6f79e"
+    },
+    {
+      "id": "C/duplicate-BeatmapSetID",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1a3516668b88525395df5880e3e0d40d8f381873ab4e001152a37d1dcc93db9a"
+    },
+    {
+      "id": "C/format-4",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d559de604a39b62eb33667a8f3ecece314637bc60196975e1d0935370bda4c1e"
+    },
+    {
+      "id": "C/format-5",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "277463ef77cd046b5dc7f6f6f17b9aa1afe52fedccdfe179fe17207b54239eb2"
+    },
+    {
+      "id": "C/format-14",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bc7f215a9e73ade54944d1037fb33cae301a7971e0d048ca511462f865e669e1"
+    },
+    {
+      "id": "C/format-15",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "50e497471a468bcf35b5a92a559767ad62848ec4c6fd065e68b99c8dde25d369"
+    },
+    {
+      "id": "C/mode-0",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9baa65a32157c75efc09b2d0aedabf507ee46b4a112488a527847fc055b78001"
+    },
+    {
+      "id": "C/mode-1",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "686432d838bf3abd4a3013a6e0b9b38beaad2b6a4f96e6b6f5c55144d5454bff"
+    },
+    {
+      "id": "C/mode-2",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "284bf4949bbbfdfd073007eac85c44ffd350e8199d89738b79000b4a5b411caf"
+    },
+    {
+      "id": "C/mode-3",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "4f3e9840047b977865263afa01966a3248d21bb96ffc34301b564456f3a9cea8"
+    },
+    {
+      "id": "C/invalid-empty",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "090f2efa6c7c4814bfa64a37b19a1196c1aecac186189d2db91551f92d1ec08c"
+    },
+    {
+      "id": "C/header",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "17afb980b317d3117c7b578efd58ea9037d86eb5920767622bd563ffbce741cd"
+    },
+    {
+      "id": "C/objects-empty",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9d88ce4e7e7ad0d5bf37a2cdff3845d6eecd7562c10bc08c7a2e373b91ee7ffd"
+    },
+    {
+      "id": "C/object-short",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0a96876a9466c3db88cfd5e2e7348fe3a1a7dda79b74bc251ff8547d61289795"
+    },
+    {
+      "id": "C/negative-time",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889b5a2a62710b1eeef3dfb0ffe7247d51817df8da791ea4f505b1e4218424b9"
+    },
+    {
+      "id": "C/unknown-type",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b287b0314f67186440b022195cab3f6ddb67e08f40464b2f20f29fb604aea384"
+    },
+    {
+      "id": "C/spinner-old",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "193d99ef47d103cb38b0cc85b957176daa2cb1d1909caf822f39022fb94444fd"
+    },
+    {
+      "id": "C/spinner-backwards",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "68cf1da889052519b7661cf10fc3469e73c85304984b6e1e23cae9e4d13bb8b9"
+    },
+    {
+      "id": "C/spinner-old-canonical",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "363bb353f2afea3794a65e62c92f9e93f3f94262df0547261850d2370a92b61f"
+    },
+    {
+      "id": "C/spinner-old-candidate-rejected",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "4c28fff9c58495cb4fe6e83d90983a3263d1acce6c076e368134e92639212861"
+    },
+    {
+      "id": "C/spinner-old-geometric-qualification",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0799ac63829c76dbb6e27dae9e4c9a6fd591b24d6fb6cb3b9e3b9b9562907502"
+    },
+    {
+      "id": "C/encoding-utf8",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9df50ad83d9abba70f975ab5a14fadbd37eabfe7b2406a2fdd8b8aa642a96cb6"
+    },
+    {
+      "id": "C/encoding-utf8bom",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "48cbaf0e6357bcd4f6d3adefc8c178e6f93970bf1198138e847051e85b8c5de5"
+    },
+    {
+      "id": "C/encoding-utf16le",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1f586624b0c6420409320230c8e3ea223e52ec96c00dc1629177986c362b0a39"
+    },
+    {
+      "id": "C/encoding-utf16be",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "481a52975b3de4b4e9ead6e60c2a6c5253657c4d5d29b58b4fc27cfcb46e4d07"
+    },
+    {
+      "id": "C/wrong-extension",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b6be62f44362a969d5d623ab80e0100799247b4f332f444eeacd8197f34b5ddc"
+    },
+    {
+      "id": "C/external-path",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "95e5c910b15f1fb8c87eb902b056815259e2144842319849a88d29e1f177bd28"
+    },
+    {
+      "id": "C/root-deduplication",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9eb313fa6d65baedd1d1fe30a2c9fbdd0c4418aadbd782e66ccb669398756fa2"
+    },
+    {
+      "id": "C/external-count-9999",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "32c639d11b736e71dd5caa5d408f019cd2b1413660092e1f6af1ce616e0308ca"
+    },
+    {
+      "id": "C/external-count-10000",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a4a4b29c090cba9e19dd7c359323eb40c189f85546e7c363e8d7b96ac91e54cd"
+    },
+    {
+      "id": "C/external-count-10001",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "51bcc359af1f1dc4c4d577bb660eb93b2e59d3971abafe2e3daa43544e94be7b"
+    },
+    {
+      "id": "C/cancelled-refresh",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "19cbccc6f0aefbb66fdc5fc1b1778f801fbfc49993ebef9ade46c3045d3ab9cf"
+    },
+    {
+      "id": "C/superseded-scan",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "8682c3266fdb86ec0738ca66647e8fdbe0767be0861dc92b393917346dd7b6e7"
+    },
+    {
+      "id": "C/dispose-awaiting-publication",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d9f506c26c032918eecce51d3dba918bd7217e84d8f7d8277140cba8f5643cd3"
+    },
+    {
+      "id": "C/byte-limit-4194303",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5f58e3ebc15b2e56a63304a8476e9daaf7cce0f2e4efbcd2eb0094fcb6f47ddf"
+    },
+    {
+      "id": "C/byte-limit-4194304",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1f3f8445c36f6fd9fc11e3a08db59bb8b09f70af42de79613b55b2f8f18f6ba5"
+    },
+    {
+      "id": "C/byte-limit-4194305",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "750c7464cd0edc33458d11f51cf1ec2d131dd1916b89bf608e7bf2b85f55ece2"
+    },
+    {
+      "id": "C/line-limit-99999",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "fc85a403ecf670c9fff6aeb3009c075a98a8c13eea4450227f8e0794428b8f93"
+    },
+    {
+      "id": "C/line-limit-100000",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "c365c325074ada3145917efad51b9f11d3c0b11f4fc5078cdcb586106868ff79"
+    },
+    {
+      "id": "C/line-limit-100001",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "c40212917fe7c9ec230f8a44a4c6f650deaa5cdfb16d3d1768c81d812319dbfb"
+    },
+    {
+      "id": "C/time-limit-3599999",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1665c240e73e29bad8757f2f8e683d2ae553cd7ec53bef00222bff8fe8a12105"
+    },
+    {
+      "id": "C/time-limit-3600000",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "df30762ed4b49d99fbeb4ce6a09cdfcb923d7cf45f1ac11d980cd3a0d57684a9"
+    },
+    {
+      "id": "C/time-limit-3600001",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "549a758d3b11264af674bdc08e58169e43090a170e40cd272fe26fdd9a3ac58a"
+    },
+    {
+      "id": "C/depth-32-and-33",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ebeb20415615360a9ed153a0a91719b4a44b547ed62f2f358f32f6f397928c67"
+    },
+    {
+      "id": "C/directory-limit-4095",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "2008456155aaaa4927cb512a7054198a7dd21abfa83e55d01429714691e548d0"
+    },
+    {
+      "id": "C/directory-limit-4096",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7c501320e60868da6b546f20b68bbaba743582aeba68c31743f77ee4583f3fe5"
+    },
+    {
+      "id": "C/chart-cap-and-candidate-truncation",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "43625f0df2bf2051ea267e3d77815f828319079cc6430474abad3163f0593541"
+    },
+    {
+      "id": "C/file-candidate-50000",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "4732db4e393d6fc7713734e743727d1375c3a3ccdc3cf8815c821c680fdfd925"
+    },
+    {
+      "id": "C/reparse-ancestry",
+      "authority": "E043 P09/P21-P27; R16 declared bounded canonical-path metadata index (ENGINEERING)",
+      "classification": "EXECUTED COMPONENT",
+      "passed": false,
+      "error": "System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'cmd.exe' with working directory '/workspace/scratch/b1ffc6429d98/ohno'. No such file or directory\n   at System.Diagnostics.Process.ForkAndExecProcess(ProcessStartInfo startInfo, String resolvedFilename, String[] argv, String[] envp, String cwd, Boolean setCredentials, UInt32 userId, UInt32 groupId, UInt32[] groups, Int32& stdinFd, Int32& stdoutFd, Int32& stderrFd, Boolean usesTerminal, Boolean throwOnNoExec)\n   at System.Diagnostics.Process.StartCore(ProcessStartInfo startInfo)\n   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)\n   at Ohno.QA14.Tests.<>c.<Catalog>b__1_17() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/CatalogIdentity.cs:line 39\n   at Ohno.QA14.Tests.<>c__DisplayClass10_0.<Add>b__0() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 16\n   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 54",
+      "observationsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "id": "I/exact-path",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "34721ddc16795755b04be16663df18bec4631692f5736d55534fc9b06bf55e18"
+    },
+    {
+      "id": "I/windows-path-case",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": false,
+      "error": "System.Exception: Windows-specific identity control expected=True actual=False\n   at Ohno.QA14.Tests.Eq[T](T actual, T expected, String label) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 18\n   at Ohno.QA14.Tests.Yes(Boolean actual, String label) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 19\n   at Ohno.QA14.Tests.<>c.<Identity>b__2_1() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/CatalogIdentity.cs:line 45\n   at Ohno.QA14.Tests.<>c__DisplayClass10_0.<Add>b__0() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 16\n   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 54",
+      "observationsSha256": "b8cde7cf4320411b440e26308bdcf5ae4a2fa5ae11813020e9bd56523af6e722"
+    },
+    {
+      "id": "I/unchanged-reference",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "f3f7c97b98b63091f5342d69d9956b64b3da539afc2632f245b9ea2845c57de7"
+    },
+    {
+      "id": "I/revision-content",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "75e9711e26da828789b6f7d627f4c5f1e251c1e3c97cece0a9650aea770ce19b"
+    },
+    {
+      "id": "I/revision-length",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "75e9711e26da828789b6f7d627f4c5f1e251c1e3c97cece0a9650aea770ce19b"
+    },
+    {
+      "id": "I/revision-time",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "75e9711e26da828789b6f7d627f4c5f1e251c1e3c97cece0a9650aea770ce19b"
+    },
+    {
+      "id": "I/revision-hash-hidden-by-stamp",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3b16de4acddfa4c8f415678a2941a447e42bbbafa43f29d345728d65fe6eb712"
+    },
+    {
+      "id": "I/delete-and-reintroduce",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "cfb1e0cc3d1f2fffa942a6e71ff6b6c02397d6210ab8e11971489790b4ed081d"
+    },
+    {
+      "id": "I/failed-revision-retry",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "e8e65c6861529f1119c10ad446be6cbabb8dc7f2522c18a1d899dfffcf48435d"
+    },
+    {
+      "id": "I/success-then-invalidated",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7a6c7edcddd9a3cf72e3bec91deae0057f66fb8d4fc0fbeb3732f0ec3b010eed"
+    },
+    {
+      "id": "I/path-replaced-invalid",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "afa80776977aa7fead8d8502a93dc303c916dbda342ce66e9b2b0819a17b359c"
+    },
+    {
+      "id": "I/fresh-parser-per-load",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3fc8b63c8ca0cd56f004481016bb221bb0d48f37e2de657a553453c0ce3a6e44"
+    },
+    {
+      "id": "I/cancel-fingerprint",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "6618bbd5fc591d1c497e5a7c6e71cad9c4b9a2a3817775078e45780071b524cd"
+    },
+    {
+      "id": "I/canonical-unc-rejected",
+      "authority": "E043 P14-P16/P20/P22/P26; R16 length/time/SHA256 revision policy ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": false,
+      "error": "System.Exception: Expected InvalidDataException\n   at Ohno.QA14.Tests.Throws[T](Action body) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 23\n   at Ohno.QA14.Tests.<>c.<Identity>b__2_9() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/CatalogIdentity.cs:line 54\n   at Ohno.QA14.Tests.<>c__DisplayClass10_0.<Add>b__0() in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 16\n   at Ohno.QA14.Tests.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/re/qa/qa14/Headless/Harness.cs:line 54",
+      "observationsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "id": "G/one",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "96c22feb774799b73268312696c9b43c0eda4da98eb24dc42cf564429249334e"
+    },
+    {
+      "id": "G/one-folder-many",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b395de03b95db4de4030564fafd818abd2dd7f0aa28b691eab83781627f8c873"
+    },
+    {
+      "id": "G/interleaved-order",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1748b6ac30f0dbe88f50878cd8a0ba03076d81e92e985a2d46cd9fcf36bb82bc"
+    },
+    {
+      "id": "G/unavailable-splits-run",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "41fcb3823aa1f3ebf177f3dd056137d7ab9081de9019fdb00addbbca4e6a47b8"
+    },
+    {
+      "id": "G/no-metadata-in-run",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d40fdbc4e9c26e54a514a373f2ac37d3ad32e277d42771bdb9a1d9bded4cd664"
+    },
+    {
+      "id": "G/engineering-sort",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "927b97db0e380351478bc5cd95d76da5f43a07537e93e15d6a5a110e7cecb20a"
+    },
+    {
+      "id": "G/row-indexes",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9a89181f109da34890290b48a7540a1bbeca7610b407862a88e4d0889ec06dc6"
+    },
+    {
+      "id": "G/no-set-id-coalescing",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1e091bd5051e4c28a446f43964f9f7a2d9ad0820e1be394dd1cfbab230e3a597"
+    },
+    {
+      "id": "G/all-unavailable",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a020b21d6afb521fb59184b92230a0fc14732eb6c0239c943ef17eb3477cbf97"
+    },
+    {
+      "id": "G/clamp--100",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889250655b448c4614fe03af81b3ba07a6146a7776347fa83f888a417d757031"
+    },
+    {
+      "id": "G/clamp--1",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889250655b448c4614fe03af81b3ba07a6146a7776347fa83f888a417d757031"
+    },
+    {
+      "id": "G/clamp-0",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889250655b448c4614fe03af81b3ba07a6146a7776347fa83f888a417d757031"
+    },
+    {
+      "id": "G/clamp-1",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889250655b448c4614fe03af81b3ba07a6146a7776347fa83f888a417d757031"
+    },
+    {
+      "id": "G/clamp-100",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "889250655b448c4614fe03af81b3ba07a6146a7776347fa83f888a417d757031"
+    },
+    {
+      "id": "G/group-pending-commit",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "8f27343b3650690968318eb351695b850b4b9e2a8cfe234da274a24339a74ba9"
+    },
+    {
+      "id": "G/page-movement-skips-unavailable",
+      "authority": "E043 M3ea7:005f-00b5/P09-P11; R16 ordinal full-path sorting/clamped navigation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5dd9ee023be6aff6efdc3adfc29f036dad3cd9375c0f0dbb48992650c7e6375a"
+    },
+    {
+      "id": "S/null-initial",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "6a1c981aae2a2107dfdb89e97bc13052528ab8b8051268653431a32b8a9bc238"
+    },
+    {
+      "id": "S/same-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "8860432faee7d5d75580749fdb86211dee3752b34105e63e4fa0cb4e4fee0c85"
+    },
+    {
+      "id": "S/null-retains-map",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bb3a7ba547a6f1e7e9601b9e9d61cb42d41a795d828abdd8e2b35847089e5b85"
+    },
+    {
+      "id": "S/cleanup-before-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b4163c302fcd0ae0baada565de9cbd009475677b153c7b10b63e978a98bc3eab"
+    },
+    {
+      "id": "S/cleanup-throws",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "e9e7179c037b76ee748f8efaaca68e58294fb0fa7de696c96cd58a2e14dbfad0"
+    },
+    {
+      "id": "S/first-highlight-only",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "dab314b844b4966c797b282711c97a9aa8a6f3444d2a7023199e6d120b058228"
+    },
+    {
+      "id": "S/same-run-highlight-commits",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "6b3ca90f783169fba706c5708eeb420501508b5b97f26098e8499d310b1c0bb5"
+    },
+    {
+      "id": "S/different-run-pending",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "aa12987040b8782aea0a674fcd106b1c167c65ce3914b64f524a89fed41c3404"
+    },
+    {
+      "id": "S/row-before-callback",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "fa731428322b27c115e60901efa92312df31c2cdbfe333d8c46b24fb4ef5642a"
+    },
+    {
+      "id": "S/callback-throws-before-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b4f1e0c764baf56948767a7e87783c508b5140e85ac8f31f04bd9be5321e20a"
+    },
+    {
+      "id": "S/callback-throws-after-store",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5d00b76506aec80fc09ba7fdd195c6644c90b35bc242490b4b0b0d4560e6db3c"
+    },
+    {
+      "id": "S/callback-null",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7e4e664f6320116a07cc79b2a5db2b50ddb0d994b68ae31ec039671f069d760f"
+    },
+    {
+      "id": "S/repeated-commit-stable-selection",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "807fe8f1103a48777c62d219705924385968ff8b12f67fe9c4431d8f10c60f54"
+    },
+    {
+      "id": "S/unavailable-commit-rejected",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "051c079c5e143652ca8dd80984d71859d430954d5308f5a21fdc59a1f4ec7fc7"
+    },
+    {
+      "id": "S/rebuild-retained-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "031210d71a376028be08c5d5a74a35cb170bb1e4427f4d815531e3fd0f5cbf75"
+    },
+    {
+      "id": "S/rebuild-missing-reference",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5ed4fe118734bbfa7ef5930a3614614bd84ba141ac0bd43a259c118b17232346"
+    },
+    {
+      "id": "S/new-revision-no-substitution",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "4343d366c5d6dd753a953a8331933947ea7b3502d60fc38f72859fc1cb084712"
+    },
+    {
+      "id": "S/stale-generation-rejected",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "829c8e0550ac7345c30ad2db1ee78bda436694cd78a2909da3dd8640328e60cb"
+    },
+    {
+      "id": "S/same-generation-status-refresh",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "e48aa21317de0c9345d07c38b86281d0243b851a303ec775158d528080cacfc8"
+    },
+    {
+      "id": "S/obsolete-row-callback",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "e998b07e0302171cb9786a9716772d82066e7d83aee95459bb60c463be7bdffb"
+    },
+    {
+      "id": "S/confirmation-two-stages",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d3e05cde322f39023bddd30e07fe5e188e6ada2e48f61ee2df02cb7857170b27"
+    },
+    {
+      "id": "S/mouse-first-and-repeat",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "954bbe7cf942c8ace505c54a9aa28abb11d41722bce2f4bd0b69ba8f93fadd24"
+    },
+    {
+      "id": "S/no-available-confirmation",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "f6320cfc5d43dfb675a0f3e0ff8f1c720c3dfc4ae13fb8367fe7e10aa2a29fea"
+    },
+    {
+      "id": "S/empty-return-no-replacement",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "27df1667d6d946213787fb1f793849520ec59379458eff67ba43f1e4adeacde8"
+    },
+    {
+      "id": "S/live-selection-after-rebuild",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "8f27343b3650690968318eb351695b850b4b9e2a8cfe234da274a24339a74ba9"
+    },
+    {
+      "id": "S/return-after-cancelled-refresh",
+      "authority": "E043 M2c64/M2581/M3ebc/M3ec7/P12-P20/P28-P29; R16 explicit containment/generation policy",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b6afc9a53e09dd33c620d67500ae54df4f29a554b001273834691a4c9a97f50c"
+    },
+    {
+      "id": "E/fresh-stage",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "94e28d6f128b8679f6a2f185fbf1a8f6c61dd0fc821773120231da189a0d6c19"
+    },
+    {
+      "id": "E/no-selection",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "709477f70bd6291d4a443236d450e1bd0dbb5bd78a7427a58b4463faf114c0dc"
+    },
+    {
+      "id": "E/phase--1",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9eb313fa6d65baedd1d1fe30a2c9fbdd0c4418aadbd782e66ccb669398756fa2"
+    },
+    {
+      "id": "E/phase-0",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9eb313fa6d65baedd1d1fe30a2c9fbdd0c4418aadbd782e66ccb669398756fa2"
+    },
+    {
+      "id": "E/phase-1",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9eb313fa6d65baedd1d1fe30a2c9fbdd0c4418aadbd782e66ccb669398756fa2"
+    },
+    {
+      "id": "E/phase-2",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bc7f215a9e73ade54944d1037fb33cae301a7971e0d048ca511462f865e669e1"
+    },
+    {
+      "id": "E/phase-3",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9eb313fa6d65baedd1d1fe30a2c9fbdd0c4418aadbd782e66ccb669398756fa2"
+    },
+    {
+      "id": "E/temporary-selection",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "52cdf65bf3586d045279efcd9282c80cd30afe57e1386204851e895108a43e43"
+    },
+    {
+      "id": "E/accepted-not-committed",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ed69e4c4df942300135e47f0edf3cd19b291d4b32d0d4d056752f6c24406e60b"
+    },
+    {
+      "id": "E/live-before-capture",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7942c6addb66db0985cbe1a977df9cdbcf0262c2e6338de3a897f399bdbe5bcf"
+    },
+    {
+      "id": "E/after-capture-retained",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "96376351307cdb6c28f2c501fd464880b6e1b41d1c833c408a9d375837d6eac6"
+    },
+    {
+      "id": "E/duplicate-StartRequested",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7c0c8a57f65e0b7699834723be1b84cfb0ddd2bc8f7676ba9a4e1d4144c859f0"
+    },
+    {
+      "id": "E/duplicate-Accepted",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "169a75cfff0bd22f617c2431781468d36b9470f8ee3b62b827c2f7c2bd10152c"
+    },
+    {
+      "id": "E/duplicate-PendingPlay",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "711d3159bd0cd4c0c2269b79884907987fee4b7f4104c71e154c32dd16d4b5f7"
+    },
+    {
+      "id": "E/duplicate-PlayCommitted",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "579d55a57489290199e4134571e724482894d901574306647e20d0f2f94e6efc"
+    },
+    {
+      "id": "E/duplicate-Captured",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "317d0678dbb8427191b2e47ca7b07efebea4141f64bbbc1b9ea8dd0083e03499"
+    },
+    {
+      "id": "E/duplicate-Loading",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1109ec5e2902214ee27fe6e6fe8d1219867751ff0d1446bd3dee40a4b6cc5c3d"
+    },
+    {
+      "id": "E/invalid-order",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3ab6e9fffeaf089d37649d00e5c0c47a1e513df6aa88368e79e2af7f8e8d8501"
+    },
+    {
+      "id": "E/cancel-pending",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d75d12be074c89b78c050fea6dce1235e37eb52cea9f0e8806b49acab9737313"
+    },
+    {
+      "id": "E/stale-ready",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "89a1d4e356af44940af96a1f930c483fdf482ac863e324759559d503c3042223"
+    },
+    {
+      "id": "E/old-failure-cannot-overwrite-new",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "83afb5107fe91b763289bedd19929c89e7e43e5c034e3387dff4e9f91034a8d6"
+    },
+    {
+      "id": "E/current-failure-not-ready",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "adf5cfe6e5729bd27bdb99dcdbef4b374062bdd833738cd2d5dbfb6d718fdeb9"
+    },
+    {
+      "id": "E/retry-after-failure",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ff3c38be106ee4c2bf2de4a19ad391d2b14facb8be640b197ac84f7ca299b544"
+    },
+    {
+      "id": "E/disposed-rejects",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "515ca5c6b5f19e543d1ead7256483411f499a2e37da372ec76edd4bb601014f7"
+    },
+    {
+      "id": "E/duplicate-browser-confirm-single-flow",
+      "authority": "E043 M2578/M46ae/M4711/M2237/P30-P37; R16 queue generation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "de5b87e6cc6e94d2b9d23c1fb79b729fb7439f7468937859f7376c5f9617f87b"
+    },
+    {
+      "id": "R/missing-before-request",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0b94fd7275612eb8500a9fbd42072693abd1e72d60246ef0e81ab552c20d045d"
+    },
+    {
+      "id": "R/missing-before-capture",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0c32eb3c1bb839a6568706d6e0de9ac7ca824dc79de70228908ef8164408a563"
+    },
+    {
+      "id": "R/missing-before-parsing",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "07197c9fa1383c8ca3db04ca51de5e0bef97f3e7b1f3a33e70806fe73a75fb73"
+    },
+    {
+      "id": "R/changed-after-parse-delete",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "eebb64c2e50a82a246f9f7a417f0f5c37e69f5b12db96fe12d3a0b4b33959932"
+    },
+    {
+      "id": "R/changed-after-parse-append",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "eebb64c2e50a82a246f9f7a417f0f5c37e69f5b12db96fe12d3a0b4b33959932"
+    },
+    {
+      "id": "R/changed-after-parse-same-length-stamp",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "eebb64c2e50a82a246f9f7a417f0f5c37e69f5b12db96fe12d3a0b4b33959932"
+    },
+    {
+      "id": "R/cancel-during-preparation-refresh",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "81c8072aa01a7e8ff0cca263732ceaa861bc6182433e32d16d96998a5b725bc7"
+    },
+    {
+      "id": "R/cancel-during-preparation-back",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "81c8072aa01a7e8ff0cca263732ceaa861bc6182433e32d16d96998a5b725bc7"
+    },
+    {
+      "id": "R/cancel-during-preparation-shutdown",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "454b37d39454a2a087a7d3081fd73ea7d79af258a9a39bb6b3689636c965fe1a"
+    },
+    {
+      "id": "R/newer-completes-before-old",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0a6a68f0a44f7982cd3753cc31bf5b782b49366c378e1267d1bad76df1cde69b"
+    },
+    {
+      "id": "R/cancelled-preparation-throws",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b2a135c06ba5f339754e2672939b45081b68198daeeeb273d2359ed25d1fb1db"
+    },
+    {
+      "id": "R/index-is-not-parser",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "33e5919ee7c4483cd26a4aa7393ac2261275670ff0795a7f82f71fb8132df9a6"
+    },
+    {
+      "id": "R/index-size-is-not-parser-size",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7968807baaa0c587ee128d0a738e8bee8024c5b2060ab97ef2f1ffa1a6fd89c5"
+    },
+    {
+      "id": "R/changed-after-final-check-in-memory",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ea7f098cd4bc37859de794621743f65da0f89c247af9183ee55e32f464940b31"
+    },
+    {
+      "id": "R/prior-session-retained-on-parser-failure",
+      "authority": "E043 P28-P37; R16 two-fingerprint validation and generation policy; component composition, host wiring audited separately",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bea123a60338c30e7f35a5b0ff73dee085a9d64469b60443b4e3cedaefa8d8e3"
+    },
+    {
+      "id": "M/all-text",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "890d3fc4fc3397b05b9702f00841798506a5d92204c25d12ebe722e4962be610"
+    },
+    {
+      "id": "M/unicode-preference-False",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "29b093a59cb517280a87b2bc9d5976b7da19bc41cbaf215c3171a16fc1cef720"
+    },
+    {
+      "id": "M/unicode-preference-True",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "517e2417973e6a98d1a78311403e98fd9018759214e6ec5dca05957108033ce0"
+    },
+    {
+      "id": "M/unicode-empty-fallback",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "946ea24c4bbd145846f05cffa610d0c799a1bfb1995cd8a2eb1750ae454061e1"
+    },
+    {
+      "id": "M/missing-title-filename",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a7a066499e4e7bc6f179e2e20506822439e32fa23fc29bbb5de135d9dc55a210"
+    },
+    {
+      "id": "M/scalars",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bd26f12a404fd8c33fd284923f65d8ef8ab6d39f5133ec539f4b9a5dd1f247aa"
+    },
+    {
+      "id": "M/nonfinite-scalar-invalid",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "6701be022a532de87e7b58193c887cc6c04ecc1c4c70e5fed4ba3d5a39b72d1e"
+    },
+    {
+      "id": "M/nonfinite-scalar-NaN",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "318f6f2be8f16c1fe279d36a2b3fe395ed4a51a05f18e6b3d818dde571dedacb"
+    },
+    {
+      "id": "M/nonfinite-scalar-Infinity",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "c411750f79b3b686f8d5c02ababec48f3bfda7df7238ffdabc8644ec29066691"
+    },
+    {
+      "id": "M/nonfinite-scalar--Infinity",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "39bde5c751224aebd61360c4ecc8e6522d0c65ff7a2fd525efcd059527b26113"
+    },
+    {
+      "id": "M/counts-and-stored-end",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5cdf3881e09b56a11b819b3ba0534d60f61fc5beec331bb096d4f55460d6edfd"
+    },
+    {
+      "id": "M/slider-duration-unavailable",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ec7b0a72669c0c1f502ab199501774b8050919dd54b8b8bfb4387960a81166b6"
+    },
+    {
+      "id": "M/base-bpm-filter",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5e73217b9d55b9f821a690f71c83a3f93036db7c499fa9a9879a810d07231cc2"
+    },
+    {
+      "id": "M/no-bpm-empty",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "f8c761ccc6c8243c2ae24b431afe5ecd71accf397244f2a3ec1651b69c95fc84"
+    },
+    {
+      "id": "M/no-bpm-0",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b745888de6db71a4a40df6876942b8729e60ae0bc6cb6ae9d391bfd3aef28615"
+    },
+    {
+      "id": "M/no-bpm-NaN",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b2550a9965894d01f8eb6dce0ff5f3caf6e1c06593b11a9f09bc728a38f1c59b"
+    },
+    {
+      "id": "M/no-bpm-Infinity",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1fc7338417462429bd4d3159654506c60a27d7fbeb4eabc18f313b1cd5fc91cb"
+    },
+    {
+      "id": "M/invariant-details",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "40458668669bf35277ab90860b8387e97931af618ac9523603efe58069ca5d71"
+    },
+    {
+      "id": "M/changed-display-same-path",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1d8e93f806327defff4e9bde4c14d8df9bee1e5e289b215295f708de17ff287a"
+    },
+    {
+      "id": "M/no-gameplay-side-effects",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "2a480884c21ed62794fe1869ddd0af2d29a4e9bbf6265b88e58a864650dc4c79"
+    },
+    {
+      "id": "M/settings-default",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "fba3b30474c7761ea17dfe07ffb05b7899db12ee6b64fe21932cfd6ce8ae3be4"
+    },
+    {
+      "id": "M/settings-explicit",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "527b4c7982809c634ff4282b82d4d9516b35306a77bd257f004dd151b5c8a860"
+    },
+    {
+      "id": "M/settings-invalid-4",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9189a262e5fc37c093f5002ff7f80388cbbb5b831478fb1e93b6fb74890b8f1e"
+    },
+    {
+      "id": "M/settings-invalid-1",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b7ae6ab3fc84cf7059f8615967f6813307b71bc4b45263c71965415b48f881d8"
+    },
+    {
+      "id": "M/settings-invalid-24",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "54d2461610b360f05a361897b9ddf3bbf2e8b0e4cbf4eaeba183ac2671a65055"
+    },
+    {
+      "id": "M/settings-limit-16383",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3f050a5d92a1d3703d4c65ba161f4295f411495614beba9ed7f1bb30713ca516"
+    },
+    {
+      "id": "M/settings-limit-16384",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3f050a5d92a1d3703d4c65ba161f4295f411495614beba9ed7f1bb30713ca516"
+    },
+    {
+      "id": "M/settings-limit-16385",
+      "authority": "E043 P42-P44/P50; R16 finite metadata index and invariant presentation ENGINEERING",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9a41ff0ea61e1f0a723ac391199bc1e7c4fab3e33f6d998381595073380c2e75"
+    },
+    {
+      "id": "T/no-cache",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b9c5dec57859751cd645fba8b929aa50584dd4398bbd72422ec018fab972eabe"
+    },
+    {
+      "id": "T/compatible",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "1c218e34edbc9206e44ad1ba9228c716e00086ed3dd6d85c47041bd3af299fd5"
+    },
+    {
+      "id": "T/null-source",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/missing-source-0-0",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/missing-source-1-32",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/missing-source-1-9",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/wrong-compatibility-other",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/wrong-compatibility-osu-stable:E043:cache-v2",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5b694840a7a74b29d3371367a6afd5d742ded665798841c521c0e34a80f7df4f"
+    },
+    {
+      "id": "T/hash-mismatch",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7128d2069fff504e482309da15f86b81bf89f8599adf2ecda2ace9307d9c180d"
+    },
+    {
+      "id": "T/changed-chart-cache",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "4f0e3b383dd892c24475ec8aafe8e251468d8dd89412b2f93ff0ae198d6dd01a"
+    },
+    {
+      "id": "T/mode-1-1",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/mode-0-1",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/mode-2-0",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/mods-0-0",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5be89d4a361395abecf19e8baa18d3ee3d19c9e659003606d98742997b1876a9"
+    },
+    {
+      "id": "T/mods-1-0",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5be89d4a361395abecf19e8baa18d3ee3d19c9e659003606d98742997b1876a9"
+    },
+    {
+      "id": "T/mods-8-8",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5be89d4a361395abecf19e8baa18d3ee3d19c9e659003606d98742997b1876a9"
+    },
+    {
+      "id": "T/mods-1371-1370",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "5be89d4a361395abecf19e8baa18d3ee3d19c9e659003606d98742997b1876a9"
+    },
+    {
+      "id": "T/mods-8-0",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/mods-0-8",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/mods-1-1",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d2c0cc5066444cf56f109321321a0af482b42f37883ad434b6f4b3873336cc5e"
+    },
+    {
+      "id": "T/value-zero",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "bc4231d427146c148642196f74c48e21b6de20bc1695121630ac5e70e15d6900"
+    },
+    {
+      "id": "T/value-ordinary",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "69bd56b39a2c93834720da3d394c5ae5a069dec2b7ec02ce5058d54826b0196a"
+    },
+    {
+      "id": "T/value-below-decimal",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ab06d8d18f4be1514c813903eae62d6d51a784dfbdadcfd0170fd36d41223ac6"
+    },
+    {
+      "id": "T/value-one-cent",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a9e547124df4202bda59f6877feb8e6b015cdd24eca2ccb599320c3e10440cfb"
+    },
+    {
+      "id": "T/value-two675",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0b493894c03bef1ba66256ad116c4e0650f369279aedc2c62cc7919e86eb778e"
+    },
+    {
+      "id": "T/value-negative",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "3fa16a898c7f4e9495b0ba04b40120249690dc37845b5d1f137fde01e82bb0b9"
+    },
+    {
+      "id": "T/value-negative-boundary",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7d011e143fe82a81d9ee2924bdf6bf548b3539f9e0de877b5888e97ee77ac3bd"
+    },
+    {
+      "id": "T/value-explicit-stale",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9d6de55fe63501944c1d34dfed40abb548dd6d84ee05fd7161350422214a6bc9"
+    },
+    {
+      "id": "T/nan",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d80a1f29d9f391ac5d4f9d751d55125d444525995dd1b26340f5b471f83272ec"
+    },
+    {
+      "id": "T/positive-infinity",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "0f4500f479a2dbc679080da445618cdaa675e9a6600f07a34ea6ac9de79623ef"
+    },
+    {
+      "id": "T/negative-infinity",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "78a0ec76ae8ba014e2735ee13e9216af18b1ae27677be1c7814f97e3ccbfb0fd"
+    },
+    {
+      "id": "T/invariant-format",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9a1d7ef1e14cf0b3f4371e307cd9744b7959b2e0f6b278c49d3eead073cad1b0"
+    },
+    {
+      "id": "T/tag-not-calculator-certification",
+      "authority": "E043 M1bc7/M1bd5/M1bdb/M2d7f/P51-P57; R16 supplied-cache admission ENGINEERING, no calculator",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "c10e3bd904be63e5ba1ef6ba02a943ba1ef2d3fd4a26a123ed824c1ac4aa6bad"
+    },
+    {
+      "id": "P/matched-circles-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "43d8b63d518feef13c504098c437f69f814fa881327c3705940b8bc560d3b263"
+    },
+    {
+      "id": "P/matched-circles-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a1352eb9fbaf6a214dcfe13c886964ad09a2fa4331574cb750f4f6f96225654c"
+    },
+    {
+      "id": "P/matched-straight-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "81bdc230c60886f8d126428284ed92e9168c5c348b4bd73e81ee8c5d9b1a8762"
+    },
+    {
+      "id": "P/matched-straight-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "b1b4c036591861db5d4a45b1fe6a0bf86eab189db54df90283218b2f4b6cada5"
+    },
+    {
+      "id": "P/matched-repeat-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "15ab2d05685d137735e35794e025344fa8b376da666688f04e25b59a3895ef55"
+    },
+    {
+      "id": "P/matched-repeat-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "639ce8796af488f15d27cbad203b5fa60a516b3026ee82aae23475d255a01466"
+    },
+    {
+      "id": "P/matched-bezier-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "50b1e777dad8eabe60aedfa724f96e4c9b8b5fa33365cff6b1c168474adf772f"
+    },
+    {
+      "id": "P/matched-bezier-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a26868ca9504ff803af7d4cfb0cb961320677cc26bfba4ca9095874752848dca"
+    },
+    {
+      "id": "P/matched-joined-bezier-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ebe2d022735299f3933b065f186dd7546d0280472420bcd191049e483a9ca372"
+    },
+    {
+      "id": "P/matched-joined-bezier-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "387aa41e73d99623fc00aa120d73e421c014e5fbf456ee6b477c38d199dbda10"
+    },
+    {
+      "id": "P/matched-spinner-reducedFalse",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "69198cdef6699fdb9e79e9b355c2b023530f56f6cfe62928953dcb7601890a42"
+    },
+    {
+      "id": "P/matched-spinner-reducedTrue",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "125e0351aabb9b4e05483f6777ebde7ec940fd460b204722ca31c1d1e03c3c66"
+    },
+    {
+      "id": "P/rank-return-unchanged",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "2fd8e777c7aabe836906c6aa10a7f12993a70d60987693f239f837856033601d"
+    },
+    {
+      "id": "P/rank-return-deleted",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7b7d4506aa661aceb392667c9681af225a9f1172a252c5eb7190acfbd7ad5a4b"
+    },
+    {
+      "id": "P/rank-return-changed",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7b7d4506aa661aceb392667c9681af225a9f1172a252c5eb7190acfbd7ad5a4b"
+    },
+    {
+      "id": "P/rank-return-unavailable",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7b7d4506aa661aceb392667c9681af225a9f1172a252c5eb7190acfbd7ad5a4b"
+    },
+    {
+      "id": "P/retry-captured-not-browser",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "86a81fca49e0adfd6af065e4d5ebc4c06bc13d0a177cfb46dcf1099e5a5fcc86"
+    },
+    {
+      "id": "P/health-recovery-and-grouping-preserved",
+      "authority": "E043 P36/P37/P42/P50; E033/E034/E035/E036/E042 retained kernels; matched production parser/session/selection/audio components",
+      "classification": "EXECUTED COMPONENT",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "9c74c5e719bac07601c06392b0b50190a447853479f003f0199b70951269831d"
+    },
+    {
+      "id": "A/queued-host-capture",
+      "authority": "E043 M46ae/M2237; R16 dispatcher engineering",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "7af6eb546ea5a843fcf45862ea5cbcbb01f7c65c8033cd888fc4fef6865be82b"
+    },
+    {
+      "id": "A/validation-install-order",
+      "authority": "R16 fingerprint/loading ENGINEERING contract",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "fa7e08742ebbd06feaf3b1b8d33feab5408f6da5020802559c08a7a007b7bdb2"
+    },
+    {
+      "id": "A/failure-retention",
+      "authority": "R16 prior-session and optional-effects ENGINEERING",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "d6d8fb53f85fb2489d5eaed76b8d79642133cf62635b84839f564ec6e51a504b"
+    },
+    {
+      "id": "A/browser-rank-key-isolation",
+      "authority": "E043 commands/E042 reveal; ENGINEERING key routing",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "409273fb58785b93583cff021cc1369a6befc0372113f1fe8dce433837881066"
+    },
+    {
+      "id": "A/refresh-back-close-cancellation",
+      "authority": "R16 generation/shutdown ENGINEERING",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "ec569b929b5f4186ceb64f6169f9bca980464e0ae0f7ecd410e11787e65ef065"
+    },
+    {
+      "id": "A/silent-no-calculator",
+      "authority": "E043 bounded producer boundary; R16 no preview/star engine",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "a25f71714d7c11f344347e17a839ce76c536f19a8862c041dcd3cde0e15930a5"
+    },
+    {
+      "id": "A/windows-view-wiring",
+      "authority": "R16 unshown view events ENGINEERING; no physical input",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "59d7b309f275b471d87ab8f4cdfb30ebd20af0a367308844bbc85ea43e220ac0"
+    },
+    {
+      "id": "A/production-history",
+      "authority": "R16 chronology: no invented failed development gate",
+      "classification": "SOURCE INSPECTION",
+      "passed": true,
+      "error": null,
+      "observationsSha256": "fc76b9ff57dd08300b766d910ff95ef5cf7eb771bd8b2d1a4714cd2b2a328ae3"
+    }
+  ],
+  "manifest": {
+    "reconstructed/CircleGame/Program.cs": "95fdf84bc481bf65985422dc0ec02f4d97476f18e08e16923f1d13c3f2005815",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "4d8ff1ef3c62eed425e09ce116ae6b5acb1db805be0043eeaf46f666603c6d3c",
+    "reconstructed/CircleGame/Selection/SelectPlayModel.cs": "c0997ecae005e9f163f8619d8a186fd5dfb431aea0734a0935a50effbc604487",
+    "reconstructed/CircleGame/Rendering/PlayfieldLayout.cs": "76f6f0df7ccaf99819f3a2f9aad4c161f48d5d7940bb2d0cf6b3b8f949ec0fc3",
+    "reconstructed/CircleGame/Rendering/SelectPlayView.cs": "edce25f1f70def0fa5204112190ed584fa9d680c06e767f27c6c7f74abe133be",
+    "reconstructed/CircleGame/Rendering/RankResultsView.cs": "26a2a9ef2b374e6fceb7d42016d5eed6d54303ca1e0ac940fe2cf0e739974380",
+    "reconstructed/CircleGame/Rendering/PlayfieldView.cs": "3c6cfb8ff832e9df7d7d9bb3ee3d21463df4d7b994038eb53926b6398937f0c2",
+    "reconstructed/CircleGame/Rendering/SpinnerPresentation.cs": "16bf60a1e1edcba6814cef73a3035b3701203ce40c9a4dd41babe520aed495fa",
+    "reconstructed/CircleGame/Difficulty/CircleDifficultyPreparation.cs": "cca7c29f9275bbbe355d1cea208b32099a4ba2ee820d6557f61829c17febfb6e",
+    "reconstructed/CircleGame/Difficulty/DifficultyAggregation.cs": "bf8f40f60b7e75d3746cddc514931e656221cb9013932c67318c477931c1f3e4",
+    "reconstructed/CircleGame/Difficulty/CircleStarCalculator.cs": "c71724d56db019391209053bc6ef0fc493e1dacd43098c8dbc5f4c9433caf8c4",
+    "reconstructed/CircleGame/Difficulty/CalculatedStars.cs": "0c3ad78c2cc1825c6d7d6688fe7db0919690f1d8727fcf5d1a51c35c8ca19610",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "ba73cff8a8e37c91d7e82e3de10adc063c29ead32e7b4ae44e8310745beb77fc",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "0ad3a11c2d2b77433be5045122c91ea95bac4d67226e8217a7614949ed8d702e",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "cbb5a7556c02b73a690e2e17537cb5e0c57c653d0df10dab3e5eff8e45bc77b5",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "22a4066dfcb16f34906b571721548597caf6ee749cadcc4f64e3bf5611c5a999",
+    "reconstructed/CircleGame/Platform/WindowsSliderLoops.cs": "231c9a85fb2fddf79018ccce952fe36d886cbfdd93fa11a21dadec2d1f4fd361",
+    "reconstructed/CircleGame/Platform/BeatmapAudio.cs": "dca011aa1e6b910b9016069575a8fadfacfb1111735c07f8bcd303d5da04b305",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "a7ec83d0be285a2d6636aa91d98acb6af8896b4258188f8d75ebb06f10832789",
+    "reconstructed/CircleGame/Platform/GameplayClock.cs": "522c98faacc51d90b0d33e86de54db88f391f336d62812bbb6c879ea023b76c7",
+    "reconstructed/CircleGame/Platform/PracticeFixture.cs": "d55a836bc15702a7749df0d52f6b18f332d790023e7182efe4dcc606b1d930c4",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "3d3fc28493a48069fbaa213e22088579e2273886c5dfe92a40e9aebafb3efb1f",
+    "re/qa/qa14/Headless/Harness.cs": "54d146460564c8c634974d30b33457149c210445c04522d6e2ea86651e0b212e",
+    "re/qa/qa14/Headless/SessionsAudit.cs": "0e14f9286b25db3350dca573ee25e00afb5118837e51da0b3f33a0d491a7793f",
+    "re/qa/qa14/Headless/MetadataStars.cs": "0483b1742a75a3e65f146106598d8115cb903381e9bcc9721f0196b020b8e14d",
+    "re/qa/qa14/Headless/CatalogIdentity.cs": "a8e127419d213a3ec9863ad4d56d3ad9fb2a66b675dcb202a277251f78bbb73b",
+    "re/qa/qa14/Headless/SelectionEntry.cs": "3d10c4dff39ff5cf627b51a90d2c4b2e0d12958c6809acd5e300889bb4fb02e6"
+  }
+}

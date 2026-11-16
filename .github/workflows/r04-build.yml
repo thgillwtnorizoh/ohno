@@ -9,6 +9,7 @@ on:
       - reconstructed/C001PerfectChecks/**
       - reconstructed/C001CatmullChecks/**
       - reconstructed/C001VersionedSpinnerChecks/**
+      - reconstructed/C001LegacySpinnerChecks/**
       - re/campaigns/C001/catmull/**
       - re/campaigns/C001/perfect-circle/**
       - reconstructed/CircleGame/**
@@ -435,6 +436,11 @@ jobs:
           dotnet run --project reconstructed/C001CatmullChecks/C001CatmullChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-catmull-results.json"
           exit $LASTEXITCODE
 
+      - name: Check Issue9 finite stacking timing and consumers
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001LegacySpinnerChecks -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-legacy-spinner"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Check finite versioned spinner admission and real consumers
         if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
         shell: pwsh
@@ -488,5 +494,6 @@ jobs:
             ${{ runner.temp }}/c001-stacking-heads.json
             ${{ runner.temp }}/c001-stacking-integration.json
             ${{ runner.temp }}/c001-versioned-spinner/
+            ${{ runner.temp }}/c001-legacy-spinner/
             ${{ runner.temp }}/corpus-audit-retained/
           if-no-files-found: warn

@@ -95,8 +95,15 @@ internal static class Program
             {
                 string variant=pair.Item1=="break"?text.Replace("[HitObjects]","[Events]\n2,100,200\n[HitObjects]"):text.Replace("5000",pair.Item2);File.WriteAllText(path,variant);Reject(()=>Beatmap.LoadCanonical(path),"finite legacy exclusion "+pair.Item1);
             }
-            foreach(var pair in new[]{("stack",text.Replace("StackLeniency:0","StackLeniency:0.7")),("short timing",text.Replace("0,500,4,1,0,100,1,0","0,500")),("start zero",text.Replace("2000,8","0,8"))}){File.WriteAllText(path,pair.Item2);Reject(()=>Beatmap.LoadCanonical(path),"finite legacy exclusion "+pair.Item1);if(pair.Item1=="stack")C(LocalChartCatalog.Index(path).Availability==ChartAvailability.Unsupported,"catalog respects declared old-spinner no-stack profile");}
-            File.WriteAllText(path,text.Replace("StackLeniency:0",string.Empty));C(LocalChartCatalog.Index(path).Availability==ChartAvailability.Unsupported,"catalog excludes implicit default0.7 legacy stack profile");Reject(()=>Beatmap.LoadCanonical(path),"implicit legacy stack profile excluded canonically");
+            foreach(var pair in new[]{("short timing",text.Replace("0,500,4,1,0,100,1,0","0,500")),("start zero",text.Replace("2000,8","0,8"))}){File.WriteAllText(path,pair.Item2);Reject(()=>Beatmap.LoadCanonical(path),"finite legacy exclusion "+pair.Item1);}
+            foreach(var variant in new[]{text.Replace("StackLeniency:0","StackLeniency:0.7"),text.Replace("StackLeniency:0",string.Empty)})
+            {
+                File.WriteAllText(path,variant);var candidate=LocalChartCatalog.Index(path);var qualified=candidate.LoadCanonicalGameplay();
+                C(candidate.Availability==ChartAvailability.Indexed&&qualified.MetadataSettings!.StackLeniency==.7f,"superseded scalar exclusion: genuine .7 RouteZ candidate");
+                C(Beatmap.LoadCanonical(path).Spinners.Count==1&&CircleSession.CreateFreshOrdinary(qualified,ScoreConfiguration.FromBeatmap(qualified)).Health is not null,"RouteZ direct canonical and calibrated consumers");
+                C(HitSoundLibrary.SpinnerAdmission(qualified) is null&&qualified.CircleSounds!.Spinners.Any(x=>ReferenceEquals(x.Object,qualified.Spinners.Single())),"RouteZ sample/audio identities");
+            }
+            File.WriteAllText(path,text.Replace("StackLeniency:0","StackLeniency:0.7").Replace("[HitObjects]","[HitObjects]\n256,192,1000,1,0"));Reject(()=>Beatmap.LoadCanonical(path),"RouteZ constructor-head proximity excluded");
             File.WriteAllText(path,text.Replace("8,2","136,2"));Reject(()=>Beatmap.LoadCanonical(path),"legacy mixed factory flags excluded");
             foreach(int format in new[]{7,8,11}){File.WriteAllText(path,text.Replace("format v5","format v"+format));var map=Beatmap.LoadCanonical(path);C(map.Spinners.Single().Preparation!.ConstructorFlags==(format<=8?12:8),"additional format boundary "+format);}
             File.WriteAllText(path,text.Replace("8,2,5000","8,17,5000"));var rawMap=Beatmap.LoadCanonical(path);

@@ -1838,3 +1838,7 @@ Full UEP13-issue9-integration-blocker.md, source/results/hashes/reproduction und
 legacy-spinner-development. Headquarters next resolves versioned acceptance gates
 without rewriting historical evidence; Work2 then completes full integration gates,
 Work1 independent new-source QA afterward. C001/Issue9/subsystemOPEN; no owner action.
+
+
+## Issue9-C01 resumed integration — 2026-11-16
+Startingd66cc28; recovered verified bundle2c212abd/treeb33555a. HQ6908226762 authorizes active QA14 metadata Indexed and Issue7 isolated .7 RouteZ admissions. Exact old files/blob/source pins and supersession ledger retained under legacy-spinner-c01; original fixtures/results untouched. Candidate RouteM/RouteZ/six-seven timing recovered. Linux SDK8.0.427/runtime8.0.33 Issue7 656PASS,Issue9 801PASS/66admitted15excluded; QA14 234PASS3Windows-platform failures (cmd.exe,case,UNC), retained unchanged pending native gate. Initial editing helper failed before Issue7 rewrite and reran old stack assertion; corrected narrow rewrite then656PASS. Full Windows gate/build pending this source publication; no integration completion claimed.
