@@ -1883,3 +1883,7 @@ chart access/scan request; which owner33 cases reach these throws NOT VERIFIED.
 No original/runtime/GUI/audible/physical/private corpus execution or compatibility
 gain. Next Headquarters assigns independent Work1 new-source diagnostic QA;
 Issue11/C001/subsystemOPEN. Prior fixtures/tests/failure results preserved.
+
+
+## Issue15 initial finite integration — 2026-11-20
+Verified main61e8981/HQIssue15/accepted d013dc18 research; fresh workspace recloned and SDK8.0.427 recovered. Canonical qualified predicate from actual circles/sliders/spinners; only circle-free Mode0v5 spinner+slider positive-leniency RouteZ skips earlier spinner tests. All-object1m bound precedes exemption; start/outer/inner cancellation retained. Old wrapper remains live for unqualified profiles and historical cancellation adapter. No internal spinner height modeled or zeroed. Added separately versioned C001NearSpinnerChecks;100unchanged fixtures59/41 with exactly12individual transitions. Local initial1429 and final1502PASS; real samples/score/calibrated health/NewCombo/input/result/recording-hook controls; retained801/656/295PASS. Added -text policy for new immutable fixture corpus (bytes unchanged). Fresh fullWindows gate/package next; NOT completed before CI. C001/Issue15/Issue4OPEN; next HQ then Work1 independent QA, no owner action.

@@ -1,0 +1,15 @@
+{
+  "starting": "61e898109db47f3fcaac9027b97416f1943aa827",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "newChecks": 1502,
+  "prepared": 59,
+  "excluded": 41,
+  "changed": 12,
+  "localTree": "modified before initial publication",
+  "hashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "4e0b867a76b85102939113c0b5465b2eab62efd4335c901e70563bbca4382043",
+    "reconstructed/C001NearSpinnerChecks/Program.cs": "65676566c7c713175bb5a14cf34ad098d600c98d03876efd049db60cdcfd9f21",
+    "reconstructed/C001NearSpinnerChecks/Integration.cs": "10d00be3814a1098363aa5b55befd6cdb768d156725975beb44c3199bc715401"
+  }
+}

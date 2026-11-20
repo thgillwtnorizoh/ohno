@@ -10,6 +10,8 @@ on:
       - reconstructed/C001CatmullChecks/**
       - reconstructed/C001VersionedSpinnerChecks/**
       - reconstructed/C001LegacySpinnerChecks/**
+      - reconstructed/C001NearSpinnerChecks/**
+      - re/campaigns/C001/near-spinner/**
       - re/campaigns/C001/legacy-spinner-profile/**
       - re/campaigns/C001/catmull/**
       - re/campaigns/C001/perfect-circle/**
@@ -437,6 +439,12 @@ jobs:
           dotnet run --project reconstructed/C001CatmullChecks/C001CatmullChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-catmull-results.json"
           exit $LASTEXITCODE
 
+      - name: Check Issue15 circle-free v5 near-spinner integration
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001NearSpinnerChecks -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-near-spinner"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Check Issue9 finite stacking timing and consumers
         shell: pwsh
         run: |
@@ -469,6 +477,9 @@ jobs:
           Copy-Item re/campaigns/C001/perfect-circle/manifest.json "${{ runner.temp }}/ohno-c001-windows/PERFECT-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/perfect-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/PERFECT-QUALIFICATION.md"
           Copy-Item re/campaigns/C001/catmull "${{ runner.temp }}/ohno-c001-windows/CatmullCorpus" -Recurse
+          Copy-Item re/campaigns/C001/near-spinner/fixtures "${{ runner.temp }}/ohno-c001-windows/NearSpinnerCorpus" -Recurse
+          Copy-Item re/campaigns/C001/near-spinner/manifest.json "${{ runner.temp }}/ohno-c001-windows/NEAR-SPINNER-MANIFEST.json"
+          Copy-Item reconstructed/campaigns/C001/issue15-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/NEAR-SPINNER-PROFILE.md"
           Copy-Item re/campaigns/C001/versioned-spinners/fixtures "${{ runner.temp }}/ohno-c001-windows/VersionedSpinnerCorpus" -Recurse
           Copy-Item re/campaigns/C001/versioned-spinners/manifest.json "${{ runner.temp }}/ohno-c001-windows/VERSIONED-SPINNER-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/versioned-spinner-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/VERSIONED-SPINNER-QUALIFICATION.md"
@@ -496,5 +507,6 @@ jobs:
             ${{ runner.temp }}/c001-stacking-integration.json
             ${{ runner.temp }}/c001-versioned-spinner/
             ${{ runner.temp }}/c001-legacy-spinner/
+            ${{ runner.temp }}/c001-near-spinner/
             ${{ runner.temp }}/corpus-audit-retained/
           if-no-files-found: warn
