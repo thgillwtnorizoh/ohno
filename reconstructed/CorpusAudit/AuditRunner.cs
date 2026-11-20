@@ -228,6 +228,12 @@ public static class AuditRunner
         if(e is FormatException or OverflowException)return new("malformed-input","numeric-or-format",name);
         if(e is InvalidDataException)
         {
+            // Issue11: fixed production Route Z guards only. Match original text
+            // ordinally; chart-controlled fragments/case variants are not evidence.
+            if(e.Message == "Legacy spinner stack profile lacks a zero-displacement certificate.")
+                return new("unsupported-admission","stack-certificate-unproven",name);
+            if(e.Message == "Legacy spinner zero-displacement certificate exceeds pair work limit.")
+                return new("unsupported-admission","stack-certificate-work-limit",name);
             if(new[]{"malformed","missing osu format header","must be an integer","needs path","invalid slider control","invalid int32","invalid finite number","invalid automatic score","needs start/end","needs int32","needs time and beat","timing uninherited","short timing","must be 0 or 1","metadata line"}.Any(m.Contains))
                 return new("malformed-input",RejectionCode(m,"production-syntax"),name);
             if(new[]{"limit","exceed","at most","up to","requires","supports","supported","unsupported","outside","finite","must be greater","must follow","must be separate","must stay","must be a local","only ordinary","only standard","use supported","use an osu","no playable","no indexed","needs explicit controls","needs ordered","needs nonempty","newcombo input is unresolved","unreconstructed"}.Any(m.Contains))

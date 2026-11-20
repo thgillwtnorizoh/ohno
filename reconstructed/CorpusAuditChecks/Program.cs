@@ -5,7 +5,7 @@ using Ohno.CorpusAudit;
 using Ohno.CircleGame.Gameplay;
 using Ohno.CircleGame.Selection;
 
-internal static class Program
+internal static partial class Program
 {
     private static readonly List<string> checks=[];
     private static void Check(bool value,string label){if(!value)throw new InvalidOperationException("CHECK FAILED: "+label);checks.Add(label);}
@@ -39,6 +39,8 @@ SliderTickRate:1
         var corpusResults=new List<object>();var notRun=new List<string>();
         try
         {
+            if(args.Length>2 && args[2]=="--route-z-baseline") { RouteZChecks(repo,output,temp,true);Console.WriteLine($"ROUTE Z BASELINE: {checks.Count}/{checks.Count} PASS");return 0; }
+            RouteZChecks(repo,output,temp,false);
             string circles=Map("100,100,1000,1,0\n200,200,3000,1,0\n300,200,5000,1,0");
             var files=new Dictionary<string,string>{{"secret-name.osu",circles},{"duplicate.OSU",circles},
                 {"mode1.osu",Map("100,100,1000,1,0",mode:1)},

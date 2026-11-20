@@ -146,3 +146,7 @@ metadata is classified by its production stage. See correction-01/README.md and
 ../campaigns/C001/10-issue5-diagnostic-correction.md. Both platform development gates
 pass259 checks. The unchanged independent probe's9/10 result is blocked solely by
 its hardcoded defective-source SHA; that acceptance requirement is not waived.
+
+## Issue11 Route Z diagnostics
+
+`unsupported-admission/stack-certificate-unproven` means the conservative zero-displacement proof is inconclusive. `unsupported-admission/stack-certificate-work-limit` means its bounded pair work was refused. Neither implies original chart invalidity or changes canonical admission. Only exact fixed production InvalidDataException messages select these codes; genuine observed fingerprint changes and known metadata syntax stages retain precedence. Owner33 unclassified identities have not been established.
