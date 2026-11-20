@@ -208,3 +208,28 @@ chart access/scan request; which owner33 cases reach these throws NOT VERIFIED.
 No original/runtime/GUI/audible/physical/private corpus execution or compatibility
 gain. Next Headquarters assigns independent Work1 new-source diagnostic QA;
 Issue11/C001/subsystemOPEN. Prior fixtures/tests/failure results preserved.
+
+
+## Issue15 verified finite circle-free v5 integration — 2026-11-20
+Starting61e8981, accepted researchd013dc18; exact tested/published functional
+source22a403505f13461477343b9c6a251980716dd90f. Only circle-free Mode0v5 spinner+slider
+positive/default genuine leniency exempts earlier-spinner proximity; earlier-slider
+head/geometric/final endpoints retained. All-object1m pair cap before exemptions,
+entry/outer/inner cancellation retained; no internal spinner height modeled/zeroed.
+New Work2 suite all100immutable fixtures59/41,exactly12new positives individually;
+local1502PASS,Windows1503PASS including clean compiled source stamp. All59 actual
+score/calibrated health/NewCombo/session/samples/WAV resources checked;12exact slider
+geometry and real input/result/recording-hook histories match comparison controls.
+Fresh Windows44774297221/job13641985280052stepsSUCCESS,SDK8.0.428/runtime8.0.34,
+Release0/0,self-contained win-x64 publishPASS. Historical2312PASS; retained C001264/
+P299/C4375/stack43+394/Issue9 801/Issue7 656/Issue11 295/finite106+4PASS.
+Downloaded artifact14648998351 size/digest/source/executable and100fixture hashes
+verified; app not launched. No assertion failures; initial1429run retained before
+strengthening completion/delta/cancellation controls. Full UEP16-issue15-circle-free-v5
+report and issue15-development source/results/dispositions/CI/artifact seals.
+Circle-bearing,other versions/profiles,early actual stacks and general CS behavior
+remain excluded. Modern stack pass,distance primitive,session/audio/classifier and
+R17 unchanged. Prior research1261/independent QA remain historical,not new passes.
+Original runtime/GUI/audible/physical/private owner corpus NOT RUN. No owner31
+recovery forecast or manual action. Next Headquarters review then Work1 independent
+actual-new-source QA; Issue15/C001/subsystemOPEN,Issue4OPEN.
