@@ -220,3 +220,14 @@ No production edit, gameplay gain or owner33 attribution. See verification/14-ro
 audit-diagnostics.md and route-z-audit-qa/. Historical sources/fixtures/results
 preserved. Next Headquarters final acceptance review/potential Issue11 closure;
 no owner action requested. Issue11/C001/subsystem OPEN; Issue4 runtime separate.
+
+
+## Issue #13 — 2026-11-20
+
+Current RouteZ conservatively refuses12 newly specified circle-free v5 spinner-first
+no-ordinary-displacement synthetic positives. This is an ENGINEERING admission gap,
+not a supported-production regression; no code correction made. Geometry-only
+exemption for all earlier spinners is rejected as insufficient: CONFIRMED ORIGINAL
+M0ad9 can consume height for Normal1 selected objects. Whether any private chart
+exhibits a resulting runtime difference is NOT VERIFIED. No original-runtime defect
+or owner31 recoveries asserted. Report13/handoff retains circle-bearing exclusions.

@@ -254,3 +254,16 @@ No production edit, gameplay gain or owner33 attribution. See verification/14-ro
 audit-diagnostics.md and route-z-audit-qa/. Historical sources/fixtures/results
 preserved. Next Headquarters final acceptance review/potential Issue11 closure;
 no owner action requested. Issue11/C001/subsystem OPEN; Issue4 runtime separate.
+
+
+## Issue #13 — VERIFIED RESEARCH CHECKPOINT — 2026-11-20
+
+Starting/exact tested4837e54; gameplay tree identical to9ed9eb5. Research/test only,
+1261/1261 checks on100 new immutable fixtures; current47/53,12 temporary consumer
+controls. Original41 sites plus inherited55+61,15 targeted hashes/four E015 identities
+and complete managed height-field reference census PASS. Finite circle-free v5
+spinner-origin certificate handoff available; general spinner-first circle admission
+not justified by geometry alone. See original report13 and near-spinner/. No production
+change, owner charts, original runtime or new Windows/full regression. Next HQ review,
+then separately authorized Work2 integration and new-source Windows/independent QA.
+Issue13/C001/subsystem OPEN; no owner manual actions requested.

@@ -1,0 +1,20 @@
+osu file format v5
+[General]
+Mode:0
+AudioFilename:../escape.wav
+[Metadata]
+Title:Work1 Issue13 negative-resource-path
+Creator:Project ohno
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+7,11,1000,8,2,1100
+64,64,1200,1,0

@@ -1,0 +1,20 @@
+osu file format v14
+[General]
+Mode:0
+[Metadata]
+Title:Work1 Issue13 v14-even-geometric
+Creator:Project ohno
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+128,128,1000,2,0,L|228:128,2,100
+228,128,2100,1,0
+7,11,4000,8,2,4100

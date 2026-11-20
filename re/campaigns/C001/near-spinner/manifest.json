@@ -1,0 +1,4741 @@
+{
+  "schema": 1,
+  "authority": "Issue13 independent literal geometry expectations; no executable oracle",
+  "conditions": [
+    "ordinary fresh no mods; uncapped host length/source-record compatibility excluded",
+    "nonzero numeric displacement only CS5 AR5; other settings assert zero ordinary displacement",
+    "v5 forward mutations occur before next outer visit; spinner height never means translated center"
+  ],
+  "cases": [
+    {
+      "id": "v05-spinner-circle",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "c205fabf67a060cb535173abf19651bf64bb1b879a12192d04dd578255eeaea3"
+    },
+    {
+      "id": "v05-circle-spinner",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "869935e00d987ab229e34730cdc215f2ad8cfe84215c760c570cdd6b58c4bca3"
+    },
+    {
+      "id": "v05-sandwich",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          2,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            249.59737634658813,
+            185.59737634658813
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "d201532bb06a132a6257254dc2fbcba1f217ad5963083382f775b3daf1b4651b"
+    },
+    {
+      "id": "v05-pair-after",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "673ff46125d80ca5dd2eebcc3a4699a39a8620db6b5ba5a52cec00148d46c5dd"
+    },
+    {
+      "id": "v05-even-geometric",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            231.20131182670593,
+            131.20131182670593
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "7482f8dda7d5ccfcf16c798f3ff639e434170f3191db9d7e2fabfe6ddd04d022"
+    },
+    {
+      "id": "v05-tail-through-spinner",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -2
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            262.40262365341187,
+            198.40262365341187
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "b58eb06b03d8649ea79267885ca90e7ac214902796cf5b99ffd5f580b01e31a0"
+    },
+    {
+      "id": "v05-zero-neighbor",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "1877a89da99562f6d607283ba894661e8af6f1884944c85abef02a29d0fdb3a8"
+    },
+    {
+      "id": "v06-spinner-circle",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "f1a32bdcc3e47ab94c54fe4f4f0957fe3104a9529511a275588d524171dfc33f"
+    },
+    {
+      "id": "v06-circle-spinner",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "7efa9d05d87b237df1dbba11fa0e1862a849928aef3e55fe16699650e11c14d1"
+    },
+    {
+      "id": "v06-sandwich",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "6b5c2f866d46e84c0dd46daac7f3f7893fd7027e9a81320b5e8a2cb2f77ada16"
+    },
+    {
+      "id": "v06-pair-after",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "54ffe8b411e04b96e9ba2322ad263bbc0a33a98f0e4d7196d7e12ff86da886eb"
+    },
+    {
+      "id": "v06-even-geometric",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            228.0,
+            128.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "bc5c21dec887935edbec59cdaf90e5bed03ab9f8b3d0c3173ded8461486c1d66"
+    },
+    {
+      "id": "v06-tail-through-spinner",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "82cd1dabbce92617513b28b840b5b65f6425241608f91115bc84d12a360082d1"
+    },
+    {
+      "id": "v06-zero-neighbor",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "e1764284bdc4a8c6bde44593fe190490c32c97e678b9f6a0a1d85d461a5ca971"
+    },
+    {
+      "id": "v09-spinner-circle",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "787f13e318869f03a0e78851e362461b9e53d9e76c4f71ef9e2b6fd50a4f2627"
+    },
+    {
+      "id": "v09-circle-spinner",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "6736e55ea35b81b7b2b6624b1c68d2efe3d4cd053013ff332ac8409bbc18658c"
+    },
+    {
+      "id": "v09-sandwich",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "e9591a60f0712fad6af31a0d8b679eabe0a8a657b90352f47d4d721988c14d94"
+    },
+    {
+      "id": "v09-pair-after",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "f6fcc58763c4ab88e802264f42998eae19ffdeb9afd1fe30ac0966cb6e3c8e62"
+    },
+    {
+      "id": "v09-even-geometric",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            228.0,
+            128.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "0c1d3125db4b7377572902a6455e2349de809358b3479e6078548966e1dc7ce9"
+    },
+    {
+      "id": "v09-tail-through-spinner",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "3b6a7cf481a50a221ea5a84124623caf05c119431aee8c65d9db31f66c3c53df"
+    },
+    {
+      "id": "v09-zero-neighbor",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "712b57b25deba5da52b9a4234a1d6a265dc94ba83f62a007fb616091e188a483"
+    },
+    {
+      "id": "v12-spinner-circle",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "0e5bf281eea11ca7fb5134fbd9fe9b16fc1385e8153ee85358041458d34b6093"
+    },
+    {
+      "id": "v12-circle-spinner",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "4dd2a437807ebb770bd98663cd21ecbd492418ca543867962d7810c1d6982890"
+    },
+    {
+      "id": "v12-sandwich",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "b98d3e1817e03aeabf1276039d6d747e96104feb64438c8d1520187f1a2fc815"
+    },
+    {
+      "id": "v12-pair-after",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "e8105debf573daadb888e4555d8747fc2cd7ec5474e3f0058d1ad2db79f940e7"
+    },
+    {
+      "id": "v12-even-geometric",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            228.0,
+            128.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "b81ec23f7d6dfefdaab89b682f3b749df21ddc321c8c0e51d6cb28af03352414"
+    },
+    {
+      "id": "v12-tail-through-spinner",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "7c17aeceb4fd65dfb21ef63d04b2deb5050711b0e1c27e834c14ce95da600daf"
+    },
+    {
+      "id": "v12-zero-neighbor",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "a86b0744281ff4b40daf4e237962faee0a0dae0871abc9e86b9439442f43ddcb"
+    },
+    {
+      "id": "v13-spinner-circle",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "bdd2087d62fcc64d8594d88473339771483c9757070573be10fc57c582ad0fe9"
+    },
+    {
+      "id": "v13-circle-spinner",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "fca5b6d6dfe122dc267d2125a632953571ac91415f07be0a4740c5f4bee35caf"
+    },
+    {
+      "id": "v13-sandwich",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "629d3bebc381602717c7b87a1ecc998354dc046f05b74f0c6a335538ff1110f4"
+    },
+    {
+      "id": "v13-pair-after",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "9dd4d4bab8ee309034f91f96ca4e73a93aa1970f0b346e626ea090471a6fd2c0"
+    },
+    {
+      "id": "v13-even-geometric",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            228.0,
+            128.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "5b11bc03141ef5f004d8c80b8f1d6bc25bc222742b0ba2c06988989db9531739"
+    },
+    {
+      "id": "v13-tail-through-spinner",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "62b796cb06879232dfaccc00103fc9faa4a122c349f6376be02cb1455c07bbc1"
+    },
+    {
+      "id": "v13-zero-neighbor",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "92a8f115dae32c13c0bc108613cab7f909e55096d86b2ca26639b4ab24a48617"
+    },
+    {
+      "id": "v14-spinner-circle",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 only spinner height changes; M0603 ret"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "7d11905b08a05b741909a40eadb32b8f35b382bce038892ff70de093a4bfeff9"
+    },
+    {
+      "id": "v14-circle-spinner",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "v5 ordinary displacement; modern spinner skipped"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "4c4e07db2d6c85f0fb1fb62c1337d589a8805c3845bf10796007a0a011d29f23"
+    },
+    {
+      "id": "v14-sandwich",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "6449dd550086f62420175b14f6708d1bdb322d91d0c1c5a3d06b443ec6b18016"
+    },
+    {
+      "id": "v14-pair-after",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,1200,1,0",
+        "128,128,1300,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary pair remains actual stack"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "0e8ceb529fd3bcb40b00dabbff43153a2ff073e4db56a5a170a64c1ee8759826"
+    },
+    {
+      "id": "v14-even-geometric",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,128,1000,2,0,L|228:128,2,100",
+        "228,128,2100,1,0",
+        "7,11,4000,8,2,4100"
+      ],
+      "kinds": [
+        "slider",
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            128.0
+          ],
+          [
+            228.0,
+            128.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "early geometric end228 vs modern even traversal end128"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "9e9ec875c3cc3f23f1560f9c2cc209493909d733042d1f04b376a2a612e257b7"
+    },
+    {
+      "id": "v14-tail-through-spinner",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800",
+        "256,192,1900,1,0"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "149a63395213491e12b8a7acc40d2f2727d22304d221524390148cb3ea6350f0"
+    },
+    {
+      "id": "v14-zero-neighbor",
+      "version": 14,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.0,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "100ms gap exceeds zero temporal threshold"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "a86969a836b59d974e9e6a4b47fd282e84cc2c514d5b68f1deb21bfc2c141a36"
+    },
+    {
+      "id": "v05-cs5-ar5-forward",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "817d5a8cfd190e34f9fbd7998d472d4886e98bbf9fd4db86f188c4041abb5bf0"
+    },
+    {
+      "id": "v06-cs5-ar5-forward",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "77ede60208cb50bc9882ddbadf9e16191563a88889f5848326d0b712ac090839"
+    },
+    {
+      "id": "v09-cs5-ar5-forward",
+      "version": 9,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "64a036f78e2114e1a54ebe1c2ad68faa5bfa4ed2fcda8f9b34368df23db51c2c"
+    },
+    {
+      "id": "v12-cs5-ar5-forward",
+      "version": 12,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "df5048e78d558f3db099ac74dbeb55c07ea24087ec7363737de08025d57343d7"
+    },
+    {
+      "id": "v13-cs5-ar5-forward",
+      "version": 13,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "4f53f85d7bff107651ef6dd5e9bd6fe28842b22c8414eb91c3e9ef9581e46999"
+    },
+    {
+      "id": "v05-cs4-ar8-forward",
+      "version": 5,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "f69816975b63861762dbd25ba8b23f9a463cf00af31d857f66cd23503ba25fd2"
+    },
+    {
+      "id": "v06-cs4-ar8-forward",
+      "version": 6,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "c0de6dd9fe76fdd201dc2c4d7b3482cfe2cb97c02854816a1fad90ded6f60142"
+    },
+    {
+      "id": "v09-cs4-ar8-forward",
+      "version": 9,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "3d56d18ce6c44929457d7325800194756f5dbd352f015a020773c38c43c22b10"
+    },
+    {
+      "id": "v12-cs4-ar8-forward",
+      "version": 12,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "f7f4eacecb9b1ff3017cdb210fc4870a6d1dc399815e5ced88ca216aea382254"
+    },
+    {
+      "id": "v13-cs4-ar8-forward",
+      "version": 13,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "653cf8b5a397d9cc5f02ab4a230c35e392791ef56092e4d2d7b180996a577339"
+    },
+    {
+      "id": "v05-cs7-ar3-forward",
+      "version": 5,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "233f14e9aedbfaf28dcc2bbbaa9c10db0dcf6f8fdf403f94bd3e47a49cb00898"
+    },
+    {
+      "id": "v06-cs7-ar3-forward",
+      "version": 6,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "ea6ff1c5fb36ab75060625e38680a54f3ceb2e5569f61de52676cfbd73a0668c"
+    },
+    {
+      "id": "v09-cs7-ar3-forward",
+      "version": 9,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "bcd531f6489fcdf828e8eac32fc740f946b78cb8c4515c515b31099d8cd0033b"
+    },
+    {
+      "id": "v12-cs7-ar3-forward",
+      "version": 12,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "ea89306160a2ca2d856f7340b2432e9bfb3f111504f54faea19694812f64ec83"
+    },
+    {
+      "id": "v13-cs7-ar3-forward",
+      "version": 13,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,800,1,0",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "circle",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "all ordinary origins distinct; v5 earlier spinner exemption only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "b7e6b05029516f00edfd3db1a3b4c999011a88009c3f02e87ad7a54fb188686b"
+    },
+    {
+      "id": "v05-distance-inside",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "258,194,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            258.0,
+            194.0
+          ]
+        ],
+        "displacement": false,
+        "note": "strict Single distance<3"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "dfb3b8aa81c389aa9fb4a110cc369f081f678bd80f3f78abc779269fd22c9059"
+    },
+    {
+      "id": "v05-distance-equal",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "259,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "strict Single distance<3"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "8f68533580ae2d8e03d217ca42dfe22d4e5c6a68217d2125d3966b7c7132e98f"
+    },
+    {
+      "id": "v05-distance-outside",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "259,193,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            259.0,
+            193.0
+          ]
+        ],
+        "displacement": false,
+        "note": "strict Single distance<3"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "346610f690a111912da1e22758240d5b131783c02be406100ba9dce937c658bb"
+    },
+    {
+      "id": "v05-forward-gap839",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1939,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "later Single start - (1200f*.7f) > tracked end; equality eligible"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "8400f57a0f7fcf97b8a63fb86edd1f197436239cbd5c76e6093834507e8b0b11"
+    },
+    {
+      "id": "v05-reverse-gap839",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,1000,1,0",
+        "7,11,1839,8,2,2000"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "conservative refusal retained even when temporal threshold rules out displacement"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "a84943957fdf4591d6d54a1c190ea26a5b0fe4bf07de9416a20cc2c49ff9aeec"
+    },
+    {
+      "id": "v05-forward-gap840",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1940,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "later Single start - (1200f*.7f) > tracked end; equality eligible"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "371b2b76fba03fb91a860cbe412d4645a362a34d55ac9dd772895b81314c3842"
+    },
+    {
+      "id": "v05-reverse-gap840",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,1000,1,0",
+        "7,11,1840,8,2,2000"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            252.79868817329407,
+            188.79868817329407
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": true,
+        "note": "conservative refusal retained even when temporal threshold rules out displacement"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "40ff1f184a806cb3bfd14269e6dd007df7b327f92f2b32997c0c4cb6699c7932"
+    },
+    {
+      "id": "v05-forward-gap841",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1941,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "later Single start - (1200f*.7f) > tracked end; equality eligible"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "429d69782fc500521efb85c99d831aba35cec75203090f29d9f4a5d0be746c88"
+    },
+    {
+      "id": "v05-reverse-gap841",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,1000,1,0",
+        "7,11,1841,8,2,2000"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "conservative refusal retained even when temporal threshold rules out displacement"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "1bdfda5c1f36c0cddfb8eb23cd10146d595cac9727c987bfdcf45671c0678bc6"
+    },
+    {
+      "id": "v05-spinner-slider",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "spinner head/end coincide; head branch increments own height only"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "5c19bbf3dff38014e4413bb0a865104485c424f62b9cf86a6099d58844c63cce"
+    },
+    {
+      "id": "v05-two-spinners",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "99,88,1200,8,2,1300",
+        "256,192,1400,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          2,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "each spinner can scan later heads but M0603 retains centers"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "2fa272d52abd37aa183c0fc6519eb6cf5802d5d3abf3e0adfc732c4daee2dc07"
+    },
+    {
+      "id": "v05-nonadjacent",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,1200,1,0",
+        "400,300,1300,1,0",
+        "64,64,1400,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            60.79868817329407,
+            60.79868817329407
+          ],
+          [
+            400.0,
+            300.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary all-pairs guard must survive exemption"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "4c743a21427c889b58f730f3b372d22df0d1e7f3bce5748e053d64b3dd7ef3cc"
+    },
+    {
+      "id": "v05-forward-explicit",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "4802bcb6364ed1827105e0f71acd5e609f09fa07d8e7de52d5adc6859cc5df20"
+    },
+    {
+      "id": "v05-no-neighbor",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "5721cb20c6f9d3065ca9cbb8e96f901c6ccb6f34c846ed7d0488c4adaf3fa2b8"
+    },
+    {
+      "id": "v05-file-xy",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "7,11,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            7.0,
+            11.0
+          ]
+        ],
+        "displacement": false,
+        "note": "spinner constructor center ignores row xy"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "fac89f0b6d67c65370b762fb032336ec880e9dfbac217e3b110511774e7380e4"
+    },
+    {
+      "id": "v05-forward-timing6",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "f09f5d484db70a1d89cb4a392c291ef346c1c7c06c7e52fa28247377073065b8"
+    },
+    {
+      "id": "v05-forward-timing7",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false,
+        "reason": "circle-bearing no-displacement alone does not prove input-consumer safety"
+      },
+      "sha256": "3e97cca68736950882e3e00c83444470222be11c474803568692afe1183ab670"
+    },
+    {
+      "id": "v05-slider-only-B",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,B|306:242|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "existing prepared path kind; no new curve algorithm"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "68a68bc54e754e36c647eaee0fd491f09b2ca763191b1ba84f1680416a1fcdd0"
+    },
+    {
+      "id": "v05-slider-only-P",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,P|306:242|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "existing prepared path kind; no new curve algorithm"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "5635d00184afa793ea35bb092cc41a83071d30f0631c27681b80d8c3aba1fd33"
+    },
+    {
+      "id": "v05-slider-only-C",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,C|306:242|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "existing prepared path kind; no new curve algorithm"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "0492e8edfcd0f2e20b33a43ceb5cb744e44d71cfe5f82b73b85003c6f60b76f9"
+    },
+    {
+      "id": "v05-slider-only-cs5-ar5-default",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "c58fa4a37cc131952f14ec0f82ed923b62aa760804e96b704d698c4c4cb0b76e"
+    },
+    {
+      "id": "v05-slider-only-cs5-ar5-explicit",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "a35314f697f869325e43c2d9b2b03a8443df5713b16de6e7cbded655acae48a6"
+    },
+    {
+      "id": "v05-slider-only-cs4-ar8-default",
+      "version": 5,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "244dfd57597a3d006696401adae0cac05c7da57769b17863c215a5144307e50a"
+    },
+    {
+      "id": "v05-slider-only-cs4-ar8-explicit",
+      "version": 5,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "45d6e06a733be87bd89bbc2315618d1329fb58052072f59b6511efe9f6c2db41"
+    },
+    {
+      "id": "v05-slider-only-cs7-ar3-default",
+      "version": 5,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "334702ed43f57b3c5c292f14a340e369314ee2846b81287831d3a21cf0efe75d"
+    },
+    {
+      "id": "v05-slider-only-cs7-ar3-explicit",
+      "version": 5,
+      "cs": 7,
+      "ar": 3,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "circle-free slider candidate bypasses M0ad9 circle-bit height gate"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "f2521ad58986c26615ed91373a3ac3e117a070d21b6feb0cbe9e724119395a91"
+    },
+    {
+      "id": "v05-slider-only-two-spinners",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "7,11,1200,8,2,1300",
+        "256,192,1400,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          2,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "5e3bec5b4896e3f44c950fef89af6a94ce6af29a021616607dd64c978da3990c"
+    },
+    {
+      "id": "v05-slider-only-far-before",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "64,64,100,2,0,L|114:64,1,50",
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100"
+      ],
+      "kinds": [
+        "slider",
+        "spinner",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            64.0,
+            64.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": true
+      },
+      "sha256": "db0f2138325bbc0cbf5112773daa15c2e9fbe645b0b9b7d2d0a097e2490a5f60"
+    },
+    {
+      "id": "v05-slider-only-relation-negative",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,2,0,L|356:192,1,100",
+        "356,192,1800,2,0,L|456:192,1,100"
+      ],
+      "kinds": [
+        "spinner",
+        "slider",
+        "slider"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          1,
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ],
+          [
+            359.20131182670593,
+            195.20131182670593
+          ]
+        ],
+        "displacement": true,
+        "note": "ordinary endpoint relation remains unsupported"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "3bcbfad9d435ed578672c3b523e9b28a799e3d8271652982366b70ff3da3f7f4"
+    },
+    {
+      "id": "v06-other-cs-reverse",
+      "version": 6,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "modern skip means no geometry change; outside bounded v5 extension"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "1ad1cd6f9b255ae638377ac9d9516e36ed577ccd9b8455b59733bdbb7114d370"
+    },
+    {
+      "id": "v09-other-cs-reverse",
+      "version": 9,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "modern skip means no geometry change; outside bounded v5 extension"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "a99edcce36f1a7bbbab37c92f8a86b40b8dc13f23fae4a90c21711aeae2a1877"
+    },
+    {
+      "id": "v12-other-cs-reverse",
+      "version": 12,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "modern skip means no geometry change; outside bounded v5 extension"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "f8b1dbc65b411dac0f2282f1087c1e0e1fe69933305929676461b416041e26b7"
+    },
+    {
+      "id": "v13-other-cs-reverse",
+      "version": 13,
+      "cs": 4,
+      "ar": 8,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,900,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "modern skip means no geometry change; outside bounded v5 extension"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "b609d38b7dd81ec4a4613f0ed9b47f34a569ce605d08fc06aacf45e76aeb92a2"
+    },
+    {
+      "id": "v06-backward-gap839",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,4000,1,0",
+        "128,128,4839,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "modern Int32 gap then Single vs 1200f*.7f; equality eligible"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "273998914f08b2b41d56f00c926b7f4a2da28aeb93d57969aa7f25f6b46e9e79"
+    },
+    {
+      "id": "v06-backward-gap840",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,4000,1,0",
+        "128,128,4840,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          1,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            124.79868817329407,
+            124.79868817329407
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": true,
+        "note": "modern Int32 gap then Single vs 1200f*.7f; equality eligible"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "d3faa44764452afd71fc91aa2d7d1401b50593485833c54585aeca1cf673fff3"
+    },
+    {
+      "id": "v06-backward-gap841",
+      "version": 6,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "M",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "128,128,4000,1,0",
+        "128,128,4841,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          0,
+          0
+        ],
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            128.0,
+            128.0
+          ],
+          [
+            128.0,
+            128.0
+          ]
+        ],
+        "displacement": false,
+        "note": "modern Int32 gap then Single vs 1200f*.7f; equality eligible"
+      },
+      "current": {
+        "prepared": true,
+        "guard": "none"
+      },
+      "handoff": {
+        "prepared": true,
+        "extension": false
+      },
+      "sha256": "6336a5be9ceabf8d090b7e007b5fb38ae35c765f2309585c0e8618c35b2dfe02"
+    },
+    {
+      "id": "v05-tail-spinner-only",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "128,192,1000,2,0,L|256:192,1,128",
+        "7,11,1700,8,2,1800"
+      ],
+      "kinds": [
+        "slider",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": [
+          0,
+          -1
+        ],
+        "preparedHeads": [
+          [
+            128.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": "only negative spinner height; earlier slider pair retained conservatively"
+      },
+      "current": {
+        "prepared": false,
+        "guard": "certificate"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "018a84eac93c8071f24a2de04ef78731a51d339be6033a5c85f83a0932ac76d1"
+    },
+    {
+      "id": "negative-break",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,2000,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "break"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "73b9e2e26c93fcffbc31161ced5149a693fd24e0dcda44d9a744609ff591f819"
+    },
+    {
+      "id": "negative-order",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "256,192,1200,1,0",
+        "7,11,1000,8,2,1100"
+      ],
+      "kinds": [
+        "circle",
+        "spinner"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "order"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "5ed5d5c7600391e824e5e094bd14edcb4c7ac59d93d3d6e4574c9f7126676373"
+    },
+    {
+      "id": "negative-shared-end",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,1100,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "interval"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "c4f8f8c9f16a75d23ce84c4d2bc2a7c09c59ddaf6e5cbeb1eae072743ceee64e"
+    },
+    {
+      "id": "negative-intersection",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,1050,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "interval"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "0aab0daf1dea2ad0b3b6bc7645ed48d505216952ae555df9935fcf65d02acc9c"
+    },
+    {
+      "id": "negative-timing",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "256,192,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            256.0,
+            192.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "timing"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "e5f64fddc41a238ab4fc1b7104e9836fb3a2cb5b46cb0f6719ce6d320c46d5fd"
+    },
+    {
+      "id": "negative-resource-path",
+      "version": 5,
+      "cs": 5,
+      "ar": 5,
+      "setting": 0.7,
+      "route": "Z",
+      "rows": [
+        "7,11,1000,8,2,1100",
+        "64,64,1200,1,0"
+      ],
+      "kinds": [
+        "spinner",
+        "circle"
+      ],
+      "original": {
+        "confidence": "RECONSTRUCTED conditional original-static; not original runtime",
+        "heights": null,
+        "preparedHeads": [
+          [
+            256.0,
+            192.0
+          ],
+          [
+            64.0,
+            64.0
+          ]
+        ],
+        "displacement": false,
+        "note": ""
+      },
+      "current": {
+        "prepared": false,
+        "guard": "resource"
+      },
+      "handoff": {
+        "prepared": false,
+        "extension": false
+      },
+      "sha256": "9b412d9559f3dac9aa7d86941c383053bcf5e7fc764db5a4ab7731c137fd5d6f"
+    }
+  ]
+}

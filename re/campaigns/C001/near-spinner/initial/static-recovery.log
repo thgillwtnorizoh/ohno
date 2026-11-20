@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/near-spinner/recover.py", line 47, in <module>
+    p=recover(sys.argv[1]);Path(sys.argv[2]).write_text(json.dumps(p,indent=2,sort_keys=True)+'\n');print('PASS',p['siteCount'],'new sites; inherited55+61; F252d',p['directHeightUseCensus']['decoded'],'bodies / 6 users / 0 decode errors')
+      ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/2e0dbe3d282c/ohno/re/campaigns/C001/near-spinner/recover.py", line 17, in recover
+    packet=previous(f).recover(archive);assert packet==json.loads((H.parent/f/'static-evidence.json').read_text()),f
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: legacy-spinner-profile

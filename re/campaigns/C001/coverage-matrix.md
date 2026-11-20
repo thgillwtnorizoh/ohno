@@ -268,3 +268,16 @@ No production edit, gameplay gain or owner33 attribution. See verification/14-ro
 audit-diagnostics.md and route-z-audit-qa/. Historical sources/fixtures/results
 preserved. Next Headquarters final acceptance review/potential Issue11 closure;
 no owner action requested. Issue11/C001/subsystem OPEN; Issue4 runtime separate.
+
+
+## Issue #13 near-spinner research checkpoint — 2026-11-20
+
+Original report13/near-spinner adds100 immutable fixtures and1261/1261 actual
+clean4837e54 characterization checks (47 preparations/53 refusals);12 temporary
+zero-setting connected-consumer controls.41 new static sites,15 hashes, inherited
+55+61 and4 E015 identities; complete direct F252d managed-use census identifies
+M0ad9 input height reader. Finite v5 circle-free spinner/slider-only earlier-spinner
+exemption handed off; NOT IMPLEMENTED. Proposed synthetic59/41, not owner31 recovery
+forecast. Modern/ordinary/temporal/endpoint and guard negatives retained. General
+early stacks, circle-bearing input coupling, general CS displacement and runtime
+remain OPEN. See original-behavior/13-near-spinner-discrimination.md.

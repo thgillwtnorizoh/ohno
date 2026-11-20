@@ -1,0 +1,101 @@
+id,version,cs,ar,route,originalHeights,originalOrdinaryDisplacement,currentPrepared,handoffPrepared,reason
+v05-spinner-circle,5,5,5,Z,"[1, 0]",False,False,False,v5 only spinner height changes; M0603 ret
+v05-circle-spinner,5,5,5,Z,"[1, 0]",True,False,False,v5 ordinary displacement; modern spinner skipped
+v05-sandwich,5,5,5,Z,"[2, 1, 0]",True,False,False,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v05-pair-after,5,5,5,Z,"[0, 1, 0]",True,False,False,ordinary pair remains actual stack
+v05-even-geometric,5,5,5,Z,"[0, -1, 0]",True,False,False,early geometric end228 vs modern even traversal end128
+v05-tail-through-spinner,5,5,5,Z,"[0, -1, -2]",True,False,False,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v05-zero-neighbor,5,5,5,Z,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v06-spinner-circle,6,5,5,M,"[0, 0]",False,True,True,v5 only spinner height changes; M0603 ret
+v06-circle-spinner,6,5,5,M,"[0, 0]",False,True,True,v5 ordinary displacement; modern spinner skipped
+v06-sandwich,6,5,5,M,"[1, 0, 0]",True,True,True,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v06-pair-after,6,5,5,M,"[0, 1, 0]",True,True,True,ordinary pair remains actual stack
+v06-even-geometric,6,5,5,M,"[0, 0, 0]",False,True,True,early geometric end228 vs modern even traversal end128
+v06-tail-through-spinner,6,5,5,M,"[0, -1, -1]",True,True,True,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v06-zero-neighbor,6,5,5,M,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v09-spinner-circle,9,5,5,M,"[0, 0]",False,True,True,v5 only spinner height changes; M0603 ret
+v09-circle-spinner,9,5,5,M,"[0, 0]",False,True,True,v5 ordinary displacement; modern spinner skipped
+v09-sandwich,9,5,5,M,"[1, 0, 0]",True,True,True,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v09-pair-after,9,5,5,M,"[0, 1, 0]",True,True,True,ordinary pair remains actual stack
+v09-even-geometric,9,5,5,M,"[0, 0, 0]",False,True,True,early geometric end228 vs modern even traversal end128
+v09-tail-through-spinner,9,5,5,M,"[0, -1, -1]",True,True,True,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v09-zero-neighbor,9,5,5,M,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v12-spinner-circle,12,5,5,M,"[0, 0]",False,True,True,v5 only spinner height changes; M0603 ret
+v12-circle-spinner,12,5,5,M,"[0, 0]",False,True,True,v5 ordinary displacement; modern spinner skipped
+v12-sandwich,12,5,5,M,"[1, 0, 0]",True,True,True,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v12-pair-after,12,5,5,M,"[0, 1, 0]",True,True,True,ordinary pair remains actual stack
+v12-even-geometric,12,5,5,M,"[0, 0, 0]",False,True,True,early geometric end228 vs modern even traversal end128
+v12-tail-through-spinner,12,5,5,M,"[0, -1, -1]",True,True,True,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v12-zero-neighbor,12,5,5,M,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v13-spinner-circle,13,5,5,M,"[0, 0]",False,True,True,v5 only spinner height changes; M0603 ret
+v13-circle-spinner,13,5,5,M,"[0, 0]",False,True,True,v5 ordinary displacement; modern spinner skipped
+v13-sandwich,13,5,5,M,"[1, 0, 0]",True,True,True,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v13-pair-after,13,5,5,M,"[0, 1, 0]",True,True,True,ordinary pair remains actual stack
+v13-even-geometric,13,5,5,M,"[0, 0, 0]",False,True,True,early geometric end228 vs modern even traversal end128
+v13-tail-through-spinner,13,5,5,M,"[0, -1, -1]",True,True,True,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v13-zero-neighbor,13,5,5,M,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v14-spinner-circle,14,5,5,M,"[0, 0]",False,True,True,v5 only spinner height changes; M0603 ret
+v14-circle-spinner,14,5,5,M,"[0, 0]",False,True,True,v5 ordinary displacement; modern spinner skipped
+v14-sandwich,14,5,5,M,"[1, 0, 0]",True,True,True,v5 mutates first circle before spinner outer visit; modern ordinary chain crosses spinner
+v14-pair-after,14,5,5,M,"[0, 1, 0]",True,True,True,ordinary pair remains actual stack
+v14-even-geometric,14,5,5,M,"[0, 0, 0]",False,True,True,early geometric end228 vs modern even traversal end128
+v14-tail-through-spinner,14,5,5,M,"[0, -1, -1]",True,True,True,v5 forward tail counter reaches2; modern correction subtracts1 from spinner and circle
+v14-zero-neighbor,14,5,5,M,"[0, 0]",False,True,True,100ms gap exceeds zero temporal threshold
+v05-cs5-ar5-forward,5,5,5,Z,"[0, 1, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v06-cs5-ar5-forward,6,5,5,M,"[0, 0, 0]",False,True,True,all ordinary origins distinct; v5 earlier spinner exemption only
+v09-cs5-ar5-forward,9,5,5,M,"[0, 0, 0]",False,True,True,all ordinary origins distinct; v5 earlier spinner exemption only
+v12-cs5-ar5-forward,12,5,5,M,"[0, 0, 0]",False,True,True,all ordinary origins distinct; v5 earlier spinner exemption only
+v13-cs5-ar5-forward,13,5,5,M,"[0, 0, 0]",False,True,True,all ordinary origins distinct; v5 earlier spinner exemption only
+v05-cs4-ar8-forward,5,4,8,Z,"[0, 1, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v06-cs4-ar8-forward,6,4,8,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v09-cs4-ar8-forward,9,4,8,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v12-cs4-ar8-forward,12,4,8,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v13-cs4-ar8-forward,13,4,8,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v05-cs7-ar3-forward,5,7,3,Z,"[0, 1, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v06-cs7-ar3-forward,6,7,3,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v09-cs7-ar3-forward,9,7,3,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v12-cs7-ar3-forward,12,7,3,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v13-cs7-ar3-forward,13,7,3,Z,"[0, 0, 0]",False,False,False,all ordinary origins distinct; v5 earlier spinner exemption only
+v05-distance-inside,5,5,5,Z,"[1, 0]",False,False,False,strict Single distance<3
+v05-distance-equal,5,5,5,Z,"[0, 0]",False,True,True,strict Single distance<3
+v05-distance-outside,5,5,5,Z,"[0, 0]",False,True,True,strict Single distance<3
+v05-forward-gap839,5,5,5,Z,"[1, 0]",False,False,False,later Single start - (1200f*.7f) > tracked end; equality eligible
+v05-reverse-gap839,5,5,5,Z,"[1, 0]",True,False,False,conservative refusal retained even when temporal threshold rules out displacement
+v05-forward-gap840,5,5,5,Z,"[1, 0]",False,False,False,later Single start - (1200f*.7f) > tracked end; equality eligible
+v05-reverse-gap840,5,5,5,Z,"[1, 0]",True,False,False,conservative refusal retained even when temporal threshold rules out displacement
+v05-forward-gap841,5,5,5,Z,"[0, 0]",False,False,False,later Single start - (1200f*.7f) > tracked end; equality eligible
+v05-reverse-gap841,5,5,5,Z,"[0, 0]",False,False,False,conservative refusal retained even when temporal threshold rules out displacement
+v05-spinner-slider,5,5,5,Z,"[1, 0]",False,False,True,spinner head/end coincide; head branch increments own height only
+v05-two-spinners,5,5,5,Z,"[2, 1, 0]",False,False,False,each spinner can scan later heads but M0603 retains centers
+v05-nonadjacent,5,5,5,Z,"[0, 1, 0, 0]",True,False,False,ordinary all-pairs guard must survive exemption
+v05-forward-explicit,5,5,5,Z,"[1, 0]",False,False,False,
+v05-no-neighbor,5,5,5,Z,"[0, 0]",False,True,True,
+v05-file-xy,5,5,5,Z,"[0, 0]",False,True,True,spinner constructor center ignores row xy
+v05-forward-timing6,5,5,5,Z,"[1, 0]",False,False,False,
+v05-forward-timing7,5,5,5,Z,"[1, 0]",False,False,False,
+v05-slider-only-B,5,5,5,Z,"[1, 0]",False,False,True,existing prepared path kind; no new curve algorithm
+v05-slider-only-P,5,5,5,Z,"[1, 0]",False,False,True,existing prepared path kind; no new curve algorithm
+v05-slider-only-C,5,5,5,Z,"[1, 0]",False,False,True,existing prepared path kind; no new curve algorithm
+v05-slider-only-cs5-ar5-default,5,5,5,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-cs5-ar5-explicit,5,5,5,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-cs4-ar8-default,5,4,8,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-cs4-ar8-explicit,5,4,8,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-cs7-ar3-default,5,7,3,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-cs7-ar3-explicit,5,7,3,Z,"[1, 0]",False,False,True,circle-free slider candidate bypasses M0ad9 circle-bit height gate
+v05-slider-only-two-spinners,5,5,5,Z,"[2, 1, 0]",False,False,True,
+v05-slider-only-far-before,5,5,5,Z,"[0, 1, 0]",False,False,True,
+v05-slider-only-relation-negative,5,5,5,Z,"[1, 0, -1]",True,False,False,ordinary endpoint relation remains unsupported
+v06-other-cs-reverse,6,4,8,Z,"[0, 0]",False,False,False,modern skip means no geometry change; outside bounded v5 extension
+v09-other-cs-reverse,9,4,8,Z,"[0, 0]",False,False,False,modern skip means no geometry change; outside bounded v5 extension
+v12-other-cs-reverse,12,4,8,Z,"[0, 0]",False,False,False,modern skip means no geometry change; outside bounded v5 extension
+v13-other-cs-reverse,13,4,8,Z,"[0, 0]",False,False,False,modern skip means no geometry change; outside bounded v5 extension
+v06-backward-gap839,6,5,5,M,"[0, 1, 0]",True,True,True,modern Int32 gap then Single vs 1200f*.7f; equality eligible
+v06-backward-gap840,6,5,5,M,"[0, 1, 0]",True,True,True,modern Int32 gap then Single vs 1200f*.7f; equality eligible
+v06-backward-gap841,6,5,5,M,"[0, 0, 0]",False,True,True,modern Int32 gap then Single vs 1200f*.7f; equality eligible
+v05-tail-spinner-only,5,5,5,Z,"[0, -1]",False,False,False,only negative spinner height; earlier slider pair retained conservatively
+negative-break,5,5,5,Z,null,False,False,False,
+negative-order,5,5,5,Z,null,False,False,False,
+negative-shared-end,5,5,5,Z,null,False,False,False,
+negative-intersection,5,5,5,Z,null,False,False,False,
+negative-timing,5,5,5,Z,null,False,False,False,
+negative-resource-path,5,5,5,Z,null,False,False,False,
