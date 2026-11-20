@@ -196,3 +196,14 @@ No production edit, gameplay gain or owner33 attribution. See verification/14-ro
 audit-diagnostics.md and route-z-audit-qa/. Historical sources/fixtures/results
 preserved. Next Headquarters final acceptance review/potential Issue11 closure;
 no owner action requested. Issue11/C001/subsystem OPEN; Issue4 runtime separate.
+
+
+## Issue #13 — 2026-11-20
+
+DEP05 refined: immobile spinner center alone does not close stack/input dependence.
+M0ad9 reads positive predecessor height; ordinary spinner M05f0 is time-dependent.
+E015 registered Slider2 parent bypasses Normal1 gate, supporting only the finite
+v5 circle-free spinner-origin exemption in near-spinner/handoff.md. DEP08 new-source
+Windows2312/current C001 and independent Work1 QA required after Work2 integration;
+no new Windows gate needed for this research-only publication. HQ review first.
+Circle-bearing/general CS/early-displacement extensions remain separate dependencies.

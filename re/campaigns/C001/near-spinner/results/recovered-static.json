@@ -1,0 +1,501 @@
+{
+  "archiveSha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "directHeightUseCensus": {
+    "decoded": 19659,
+    "errors": 0,
+    "uses": [
+      {
+        "method": "M0ad9",
+        "sites": [
+          [
+            50,
+            "ldfld"
+          ]
+        ]
+      },
+      {
+        "method": "M24b0",
+        "sites": [
+          [
+            19,
+            "stfld"
+          ]
+        ]
+      },
+      {
+        "method": "M24b1",
+        "sites": [
+          [
+            15,
+            "stfld"
+          ]
+        ]
+      },
+      {
+        "method": "M28eb",
+        "sites": [
+          [
+            87,
+            "stfld"
+          ],
+          [
+            268,
+            "stfld"
+          ],
+          [
+            355,
+            "ldfld"
+          ],
+          [
+            444,
+            "stfld"
+          ],
+          [
+            485,
+            "ldfld"
+          ],
+          [
+            491,
+            "ldfld"
+          ],
+          [
+            558,
+            "ldfld"
+          ],
+          [
+            566,
+            "stfld"
+          ],
+          [
+            613,
+            "ldfld"
+          ],
+          [
+            620,
+            "stfld"
+          ],
+          [
+            720,
+            "ldfld"
+          ],
+          [
+            727,
+            "stfld"
+          ],
+          [
+            785,
+            "ldfld"
+          ]
+        ]
+      },
+      {
+        "method": "M28ec",
+        "sites": [
+          [
+            67,
+            "ldfld"
+          ],
+          [
+            180,
+            "ldfld"
+          ],
+          [
+            187,
+            "stfld"
+          ],
+          [
+            266,
+            "ldfld"
+          ],
+          [
+            274,
+            "stfld"
+          ],
+          [
+            314,
+            "ldfld"
+          ],
+          [
+            329,
+            "ldfld"
+          ]
+        ]
+      },
+      {
+        "method": "M3e5c",
+        "sites": [
+          [
+            96,
+            "ldflda"
+          ]
+        ]
+      }
+    ],
+    "zeroRva": 1739
+  },
+  "exeSha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "inherited": {
+    "E015": {
+      "matchedMethods": 4,
+      "packetSha256": "87fd9994e58f350f00142796d861d4ffb5784fcdf33037ecd8ee96f1c5436b0b"
+    },
+    "legacy-spinner-profile": {
+      "methods": 13,
+      "packetSha256": "e83d1c2c37a91ec9d46f029733b12e9d0d29c9341ea2d7684a97c3edafddf7f1",
+      "sites": 55
+    },
+    "stacking": {
+      "methods": 14,
+      "packetSha256": "cafcc9914535468fc894c51df0cb03796f370cea821c682b712451aa2e019987",
+      "sites": 61
+    }
+  },
+  "methods": {
+    "M05f0": {
+      "bodySha256": "4f824b41acc23fcdd8624ffea86963e7237e857a84712b40b371c49b50f0aac3",
+      "codeBytes": 38,
+      "rva": 120264,
+      "signature": "200002"
+    },
+    "M0603": {
+      "bodySha256": "538b6f46d0e72d0d0c4f89319ee94e4e14f4589ad0526a750ba1f42517008b16",
+      "codeBytes": 1,
+      "rva": 126792,
+      "signature": "20020111aa0802"
+    },
+    "M0ad9": {
+      "bodySha256": "26cebc0ec147e65ffb53f57e58322149b59d11f1230ce21cfc1707269aa86752",
+      "codeBytes": 247,
+      "rva": 250324,
+      "signature": "200111902c12930c"
+    },
+    "M142d": {
+      "bodySha256": "3d3b42fc8854ce70453ed5f0534a22ff6d46a51eb212328f20ffb7583bff8317",
+      "codeBytes": 764,
+      "rva": 501464,
+      "signature": "200b0112955811aa08080211a61c118eec080d151282c10111aa08151282c10111a61c08"
+    },
+    "M2295": {
+      "bodySha256": "60d78c3ddacdcb3a428ffebb41762b3eac463a05a9bc2f916c55332154e8b681",
+      "codeBytes": 555,
+      "rva": 908920,
+      "signature": "2002021c1285a9"
+    },
+    "M24b0": {
+      "bodySha256": "c1aea555fd64810dcb82a91ec3a7ec201ca7afc8d60fb04f6031668c99323fcb",
+      "codeBytes": 25,
+      "rva": 954548,
+      "signature": "20020111aa0802"
+    },
+    "M24b1": {
+      "bodySha256": "f2abcfb0d079bd031b269b71e5880f1e2fd6dea2df8e236b7fe7132337302b93",
+      "codeBytes": 21,
+      "rva": 954576,
+      "signature": "200001"
+    },
+    "M24b7": {
+      "bodySha256": "bd89d4a6c44aa99a73cb6b4a68e875dba1daf68b64bcca5bc36ad778fb22fa30",
+      "codeBytes": 7,
+      "rva": 954704,
+      "signature": "200011aa08"
+    },
+    "M28c9": {
+      "bodySha256": "0a3b50a3983ae5e2c383acd77b17bf6c61bd8a8526f6343865d0ede6cceff93c",
+      "codeBytes": 99,
+      "rva": 1081608,
+      "signature": "200412930c0c0c020c"
+    },
+    "M28eb": {
+      "bodySha256": "09b23622d69a0297586fb1bc778bef752ca4e817ca5c740e59b8cd473eb4d9aa",
+      "codeBytes": 821,
+      "rva": 1088556,
+      "signature": "2002010808"
+    },
+    "M28ec": {
+      "bodySha256": "dca567b47a012156e0dea0f16c104cdc01f54679fb2d62d4a1f3c84e8b902364",
+      "codeBytes": 370,
+      "rva": 1089392,
+      "signature": "200001"
+    },
+    "M28f0": {
+      "bodySha256": "2d9ed8e79eb0277715e195e272e6fb0fd1d5a330f3a9dbf68b615d2aa9bc721d",
+      "codeBytes": 10,
+      "rva": 1090672,
+      "signature": "2001011299fc"
+    },
+    "M3e4e": {
+      "bodySha256": "be4673045b2b9663acb762b24c7964043e90b9b5ddc2572a45e6a6db5e09268e",
+      "codeBytes": 13,
+      "rva": 1644104,
+      "signature": "200102119d18"
+    },
+    "M3e5c": {
+      "bodySha256": "84c130b25802570ba0528a0a69f4abefa3b2004d0462a8fb052e2e547f652391",
+      "codeBytes": 113,
+      "rva": 1644340,
+      "signature": "20000e"
+    },
+    "M48e0": {
+      "bodySha256": "d428bc5c99ad965076ad2905413bbe06c5ca8c8ab99ba20cca4e93ad90d19602",
+      "codeBytes": 137,
+      "rva": 1890904,
+      "signature": "2011128ce411aa08080211a61c118eec080d151282c10111aa08151282c10111a61c0811ac3c11ac3c151282c10111ac3c151282c10111ac3c118d7c080e"
+    }
+  },
+  "offsetBasis": "CIL code-relative without header",
+  "originalExecuted": false,
+  "siteCount": 41,
+  "sites": [
+    [
+      "M142d",
+      "0191",
+      "ldc.i4.2",
+      null
+    ],
+    [
+      "M142d",
+      "0192",
+      "stfld",
+      67118373
+    ],
+    [
+      "M142d",
+      "01a2",
+      "ldc.i4.4",
+      null
+    ],
+    [
+      "M142d",
+      "01a3",
+      "or",
+      null
+    ],
+    [
+      "M142d",
+      "01a4",
+      "stfld",
+      67118373
+    ],
+    [
+      "M28f0",
+      "0004",
+      "callvirt",
+      100673746
+    ],
+    [
+      "M28c9",
+      "003b",
+      "callvirt",
+      100672711
+    ],
+    [
+      "M28c9",
+      "0042",
+      "ldloc.0",
+      null
+    ],
+    [
+      "M28c9",
+      "0043",
+      "stloc.2",
+      null
+    ],
+    [
+      "M28ec",
+      "0043",
+      "ldfld",
+      67118381
+    ],
+    [
+      "M28ec",
+      "0048",
+      "brfalse.s",
+      86
+    ],
+    [
+      "M28ec",
+      "0051",
+      "brfalse",
+      313
+    ],
+    [
+      "M28ec",
+      "0073",
+      "conv.r4",
+      null
+    ],
+    [
+      "M28ec",
+      "007a",
+      "conv.r4",
+      null
+    ],
+    [
+      "M28ec",
+      "0089",
+      "conv.r4",
+      null
+    ],
+    [
+      "M28ec",
+      "009b",
+      "ldfld",
+      67118380
+    ],
+    [
+      "M28ec",
+      "00a1",
+      "ldfld",
+      67118380
+    ],
+    [
+      "M28ec",
+      "00cc",
+      "ldfld",
+      67118372
+    ],
+    [
+      "M28ec",
+      "00d1",
+      "stloc.3",
+      null
+    ],
+    [
+      "M28ec",
+      "00e6",
+      "callvirt",
+      100672695
+    ],
+    [
+      "M28ec",
+      "010f",
+      "ldloc.s",
+      4
+    ],
+    [
+      "M28ec",
+      "0111",
+      "sub",
+      null
+    ],
+    [
+      "M28ec",
+      "0128",
+      "stloc.3",
+      null
+    ],
+    [
+      "M28ec",
+      "0151",
+      "call",
+      100683521
+    ],
+    [
+      "M28ec",
+      "0156",
+      "call",
+      100683518
+    ],
+    [
+      "M0ad9",
+      "0001",
+      "ldc.i4.1",
+      null
+    ],
+    [
+      "M0ad9",
+      "0002",
+      "callvirt",
+      100679246
+    ],
+    [
+      "M0ad9",
+      "0007",
+      "brfalse.s",
+      112
+    ],
+    [
+      "M0ad9",
+      "0032",
+      "ldfld",
+      67118381
+    ],
+    [
+      "M0ad9",
+      "0038",
+      "ble.s",
+      112
+    ],
+    [
+      "M0ad9",
+      "004d",
+      "callvirt",
+      100672694
+    ],
+    [
+      "M0ad9",
+      "0052",
+      "brfalse.s",
+      112
+    ],
+    [
+      "M0ad9",
+      "0067",
+      "ldfld",
+      67114279
+    ],
+    [
+      "M0ad9",
+      "006e",
+      "ldc.i4.0",
+      null
+    ],
+    [
+      "M05f0",
+      "001e",
+      "cgt",
+      null
+    ],
+    [
+      "M05f0",
+      "0021",
+      "ceq",
+      null
+    ],
+    [
+      "M0603",
+      "0000",
+      "ret",
+      null
+    ],
+    [
+      "M24b7",
+      "0001",
+      "ldfld",
+      67118380
+    ],
+    [
+      "M3e4e",
+      "0001",
+      "ldfld",
+      67118373
+    ],
+    [
+      "M3e5c",
+      "0060",
+      "ldflda",
+      67118381
+    ],
+    [
+      "M2295",
+      "00e0",
+      "callvirt",
+      100666073
+    ]
+  ],
+  "spinnerSlots": {
+    "eligibility": "M05f0 time-dependent; not constant false",
+    "end": "inherited M24b7 F252c",
+    "position": "M0603 ret"
+  }
+}

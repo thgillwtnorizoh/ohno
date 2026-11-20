@@ -2800,3 +2800,55 @@ independent gate. Initial nullable filename-key compile error retained/corrected
 no runtime expectation weakened. NOT RUN: original/GUI/audible/physical/owner corpus,
 host cap, source-record policy or full native regression rerun. No offset/R17 changes
 or authorized exceptions; full UEP checkpoint and reproduction in linked report.
+
+
+## C001 Issue #13 — near-spinner stacking discrimination — 2026-11-20
+
+Work1 original research/independent characterization; verified starting and exact
+compiled clean4837e54d0c45f51401350bd20210b2154fb14ed3. Read AGENTS/Instruction,
+Issue13/dependencies9/11/12, original03/11, E011/E015 and prior81+33 fixtures/QA.
+Gameplay entire tree remains9ed9eb5 authority2075c2a7dd9816e6e330db44da2682bf8b4fe9a8.
+Authenticated supplied archive/EXE;41 new sites/15 targeted bodies, inherited55+61
+assertions and4 E015 bodies PASS; repeated packet byte-identical. Exact direct-height
+reference census19659 managed bodies/6 users/0decode errors closes consumer question:
+M0603 ret leaves spinner center fixed, BUT M0ad9 reads positive predecessor height
+under selected.Normal1, with spinner time-dependent M05f0 eligibility. Geometry-only
+blanket exemption insufficient. E015 registered Slider2/noNormal1 parent bypasses
+that read; embedded head not separately registered.
+
+100 new immutable literal fixtures span v5/6/9/12/13/14, default/.7/0, reverse/spinner
+chains/forward mutation, geometric vs even traversal tails, strict distance/time
+boundaries, CS/AR, L/B/P/C and negative guards. Linux SDK8.0.427/runtime8.0.33 Release
+0warnings/errors;1261/1261 actual-source assertions PASS,47 preparations/53 refusals,
+12 temporary zero-setting consumer controls. Geometry/score/fresh health/NewCombo/
+session/input/sample-resource WAV stubs, fingerprint/resources/cancellation/read-only
+audit checked. Controls are NOT implemented .7 compatibility. Existing81+33 and548
+seals unchanged;1344/89/10/20/Windows2312 historical evidence preserved, not new runs.
+
+One finite Work2 handoff: v5 spinner+slider-only/no circles; exempt earlier-spinner
+pairs ONLY, retain every earlier-slider head/geometric/final endpoint check, count
+ALL pairs before1m cap/cancellation. Future synthetic59/41, not owner31 forecast.
+Circle-bearing/modern-other-CS cases remain conservative exclusions; no generalearly
+stack/timing/mod/R17/host-cap change. Report original-behavior/13-near-spinner-
+discrimination.md; near-spinner/{handoff,manifest,static-evidence,Checks,results,verify}.
+Coverage/dependencies/discrepancies/status appended; no historical/prod/classifier
+changes. Initial1069/1072 draft failures preserved: fractional-coordinate domain and
+misquoted guard; integer probes/message corrected. Collector tuple/list normalization
+fixed; abstract RVA0 exploratory decode resolved through concrete spinner override.
+No authorization exception. Original/runtime/GUI/audible/physical input/owner charts
+NOT RUN; no owner manual action. HQ reviews then Work2 separately authorized integration
+with new-source Windows/current C001 gate then independent Work1 QA. Issue13/C001/
+subsystem OPEN; checkpoint is not acceptance. Reproduce via near-spinner/verify.py
+/path/dotnet /tmp/ohno-i13-exact /tmp/i13 --archive /path/osubackup.zip.
+
+
+### Issue #13 publication recovery — 2026-11-20
+
+Research commit df9d8ce535c97964e615c395d40e8626d73d1fc6 is locally verified.
+Automatic approval review rejected direct main push as a higher-impact mutation
+of the shared/default branch and recommended a review branch/PR. Main rechecked
+unchanged4837e54. A temporary review/issue13-near-spinner branch/draft PR is the
+safer publication route; no force push or indirect main update attempted. Canonical
+main integration is pending review/approval, distinct from the verified research
+result. Exact tested source/results remain unchanged. No technical owner actions
+are needed for the research; the publication approval requirement is external.

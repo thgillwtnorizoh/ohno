@@ -1,0 +1,19 @@
+osu file format v5
+[General]
+Mode:0
+[Metadata]
+Title:Work1 Issue13 v05-distance-equal
+Creator:Project ohno
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+7,11,1000,8,2,1100
+259,192,1200,1,0

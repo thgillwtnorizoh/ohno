@@ -1,0 +1,20 @@
+osu file format v13
+[General]
+Mode:0
+[Metadata]
+Title:Work1 Issue13 v13-tail-through-spinner
+Creator:Project ohno
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[Events]
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+128,192,1000,2,0,L|256:192,1,128
+7,11,1700,8,2,1800
+256,192,1900,1,0
