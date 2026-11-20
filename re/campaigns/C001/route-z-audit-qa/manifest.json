@@ -1,0 +1,96 @@
+{
+  "author": "Work1 independent synthetic RouteZ diagnostic fixtures; engineering outcomes, no owner data",
+  "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+  "cases": [
+    {
+      "name": "isolated",
+      "path": "fixtures/isolated.osu",
+      "sha256": "761b409b4777df0de26536533308e8aec35792c06ed35c936be36a2b58e6f296",
+      "canonicalStatus": "success",
+      "canonicalCode": "canonical-prepared",
+      "index": "success",
+      "exceptionType": null
+    },
+    {
+      "name": "unproven",
+      "path": "fixtures/unproven.osu",
+      "sha256": "642aadac3ca65fe9f53dbeefa4740f2a2d600abe68d281409bebf8994bed2e26",
+      "canonicalStatus": "unsupported-admission",
+      "canonicalCode": "stack-certificate-unproven",
+      "index": "success",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "name": "modern",
+      "path": "fixtures/modern.osu",
+      "sha256": "5a41625c3eb8efaa807c8e2eded6f952894a6eae27c756ea3bc1ef66ffffce74",
+      "canonicalStatus": "success",
+      "canonicalCode": "canonical-prepared",
+      "index": "success",
+      "exceptionType": null
+    },
+    {
+      "name": "pairs1414",
+      "path": "fixtures/pairs1414.osu",
+      "sha256": "db07b3674941cb9cd6490e3c2fa114ea7c20314f47426e51cda0ba543efdb640",
+      "canonicalStatus": "success",
+      "canonicalCode": "canonical-prepared",
+      "index": "success",
+      "exceptionType": null
+    },
+    {
+      "name": "pairs1415",
+      "path": "fixtures/pairs1415.osu",
+      "sha256": "e79c4b32ba4393c52099c4621c0dc06f35781991b312bbb7a7e2df337bd5169c",
+      "canonicalStatus": "unsupported-admission",
+      "canonicalCode": "stack-certificate-work-limit",
+      "index": "success",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "name": "spoof-unproven",
+      "path": "fixtures/spoof-unproven.osu",
+      "sha256": "1733b47c4b29ea20b74c1587086e3013761c9c8d17467649c8bd1b49f3ff1378",
+      "canonicalStatus": "malformed-input",
+      "canonicalCode": "metadata-syntax",
+      "index": "success",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "name": "spoof-work",
+      "path": "fixtures/spoof-work.osu",
+      "sha256": "323b17d1c1c118e87f4287d7d8227f7d69ead7097bd1c84a826168d3a9d2c15d",
+      "canonicalStatus": "malformed-input",
+      "canonicalCode": "metadata-syntax",
+      "index": "success",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "name": "spoof-mutation",
+      "path": "fixtures/spoof-mutation.osu",
+      "sha256": "9a3a2c39e4fbdbd2b4ba8a0a7161f344ff1cb485174fc0c1d6f3b445e2fb34d3",
+      "canonicalStatus": "malformed-input",
+      "canonicalCode": "metadata-syntax",
+      "index": "success",
+      "exceptionType": "InvalidDataException"
+    },
+    {
+      "name": "title-unproven",
+      "path": "fixtures/title-unproven.osu",
+      "sha256": "87df49b0721087372fbb693d63353e0e50bf8633779c6187934eb650d0fcd5d1",
+      "canonicalStatus": "success",
+      "canonicalCode": "canonical-prepared",
+      "index": "success",
+      "exceptionType": null
+    },
+    {
+      "name": "title-work",
+      "path": "fixtures/title-work.osu",
+      "sha256": "869ce50a9f0f1a6e3eb67a961dd81beffdd12c26beea384c4d8951f53f8377cb",
+      "canonicalStatus": "success",
+      "canonicalCode": "canonical-prepared",
+      "index": "success",
+      "exceptionType": null
+    }
+  ]
+}

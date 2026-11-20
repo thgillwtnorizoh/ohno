@@ -1,0 +1,33 @@
+{
+  "baseGameplay": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "newSource": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+  "entireGameplayTree": "2075c2a7dd9816e6e330db44da2682bf8b4fe9a8",
+  "entireGameplayFileCount": 41,
+  "gameplayRawDiffEmpty": true,
+  "onlyTwoFixedMappings": true,
+  "restOfAuditRunnerByteIdentical": true,
+  "toolEntryProjectUnchanged": true,
+  "historicalSourceAndFixturesUnchanged": {
+    "re/campaigns/C001/corpus-audit-qa/.gitattributes": "6c562c56295e7a51e5172bb0f31b95a8ad90583dcc64fb5bc07657b3b898bac8",
+    "re/campaigns/C001/corpus-audit-qa/ci-corroboration.json": "1c86a9b2d19400cab7227ff6487bc7f29feb63d8b934c9c7a9b6cd56df2cb335",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/control.osu": "50f84c7fa6bf005a0b7bfa1d869bfa019b358a5aac1e4c19201aefff554457ac",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/malformed.osu": "f74c5632ccffa799af8de429a3064d33293e7d7a5ef29cafd86655011e45bd1c",
+    "re/campaigns/C001/corpus-audit-qa/fixtures/spoof.osu": "f085cf47ad45063dd152f8a78e23629e7e1d1c93bbf7d31102d103fec195365d",
+    "re/campaigns/C001/corpus-audit-qa/probe.py": "832f4bce70e880a36961dbcdf13147d1cba2afc6dd88a451c56f8867a3c260cc",
+    "re/campaigns/C001/corpus-audit-qa/results.json": "f92ee66bb758810f838c3bbb24df0940f8f79db9ba59e7bf85ff1884023c001b",
+    "re/campaigns/C001/corpus-audit-qa-v2/Checks/.gitignore": "6c5082c7e6de3e350189c67a1aacf757485ecc26e0a3cf96683528565f3e5f12",
+    "re/campaigns/C001/corpus-audit-qa-v2/Checks/Checks.csproj": "1571ff9fd8579a9cbf0ec3418656839b592275f667fc84fba374b943e4115771",
+    "re/campaigns/C001/corpus-audit-qa-v2/Checks/Program.cs": "61822dd2e2a93de2cd12d968f3921575cf5e24772de3a14d415e3a1f985d83bf",
+    "re/campaigns/C001/corpus-audit-qa-v2/README.md": "024666d332cd5e7dfa28c2ea8b5add039577bbf0dc68ae21a0704412ca367fe0",
+    "re/campaigns/C001/corpus-audit-qa-v2/build.log": "97cdb0d63d6a13f7fdea6c279dd65e408a070776fda988a287eec546ec74452a",
+    "re/campaigns/C001/corpus-audit-qa-v2/checks.log": "58c3646ab473da488765771c075bf57e74d84cf6bb2041fbac7096ac6db104a1",
+    "re/campaigns/C001/corpus-audit-qa-v2/ci-corroboration.json": "9f5e19dbf364a1caf436df80132ce701e54cbb11f2baa40d4cd32d8ffe91d461",
+    "re/campaigns/C001/corpus-audit-qa-v2/expected-sources.json": "ec8a2518b34444c9e7b46d7992b82d85d8fa08e21eb79529335458ea63cbba9a",
+    "re/campaigns/C001/corpus-audit-qa-v2/probe_v2.py": "e60523760f47bf0c12209a73f0094e8542314edb6cf924051771c4bda48b87e3",
+    "re/campaigns/C001/corpus-audit-qa-v2/profile-results.json": "76b440fc3a71b09304a9d264d05e5912502be0b1461e4ef7ba3e5c3c2d74bc12",
+    "re/campaigns/C001/corpus-audit-qa-v2/provenance.json": "c3edd88fe15426736a1cd8c629000e958410b754ce4060f4c1a11fc828d04018",
+    "re/campaigns/C001/corpus-audit-qa-v2/scan-initial-results.json": "819aca88dad152aaa8d19cd2977aac0b09839e14991a698bc6e2f7958c24f482",
+    "re/campaigns/C001/corpus-audit-qa-v2/scan-results.json": "2d6780ef97e73ad512554c02c6859030b53ace4f1b64247f923cacd07c3a151d",
+    "re/campaigns/C001/corpus-audit-qa-v2/verify.py": "9386c1715cf1561d67058c41768a141c095f8799253d4a0499e2bd45bc5d59c2"
+  }
+}

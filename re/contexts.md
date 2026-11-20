@@ -2777,3 +2777,26 @@ checks. Original-static research unchanged, no extraction. Initial new harness
 sidecar-property compile error retained/corrected, no failed expectation suppressed.
 No timing offset/R17/unrelated changes or authorized exceptions. Full UEP checkpoint
 and commands in report; owner measurement only after Headquarters accepts independent QA.
+
+
+## Issue #11 independent Route Z diagnostics — 2026-11-20
+
+Work1 starting300d76e, exact testedf6d0411 clean. Entire CircleGame tree41files
+identical to9ed9eb5 (2075c2a7dd9816e6e330db44da2682bf8b4fe9a8); only two exact
+InvalidDataException mappings change tool behavior. Independent89/89 focused
+assertions,10/10 new source/hash profile,20/20 actual CI portable-DLL fixture
+comparisons PASS. Original Issue5 probe unchanged9/10 exit1 solely obsolete8c5 pin;
+not waived or relabeled. Exact real unproven/pair-limit codes/types,1414/1415
+boundaries, accepted M/Z controls, metadata/type/message adversaries, byte/stamp/
+missing-file precedence, privacy/determinism/read-only/stages verified. Three actual
+artifact ZIP/source markers/full EXE/result packets checked; focused native295
+per platform and full Windows2312/2312 from fetched CI corroborated, not rerun.
+No production edit, gameplay gain or owner33 attribution. See verification/14-route-z-
+audit-diagnostics.md and route-z-audit-qa/. Historical sources/fixtures/results
+preserved. Next Headquarters final acceptance review/potential Issue11 closure;
+no owner action requested. Issue11/C001/subsystem OPEN; Issue4 runtime separate.
+Linux SDK8.0.427/runtime8.0.33,Python3.12; source-pinned verify.py reproduces the
+independent gate. Initial nullable filename-key compile error retained/corrected;
+no runtime expectation weakened. NOT RUN: original/GUI/audible/physical/owner corpus,
+host cap, source-record policy or full native regression rerun. No offset/R17 changes
+or authorized exceptions; full UEP checkpoint and reproduction in linked report.

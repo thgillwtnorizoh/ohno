@@ -1,0 +1,147 @@
+{
+  "passed": 20,
+  "failed": 0,
+  "checks": [
+    {
+      "platform": "linux",
+      "fixture": "isolated",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "unproven",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "modern",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "pairs1414",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "pairs1415",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "spoof-unproven",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "spoof-work",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "spoof-mutation",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "title-unproven",
+      "pass_": true
+    },
+    {
+      "platform": "linux",
+      "fixture": "title-work",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "isolated",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "unproven",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "modern",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "pairs1414",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "pairs1415",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "spoof-unproven",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "spoof-work",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "spoof-mutation",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "title-unproven",
+      "pass_": true
+    },
+    {
+      "platform": "windows",
+      "fixture": "title-work",
+      "pass_": true
+    }
+  ],
+  "identities": [
+    {
+      "platform": "linux",
+      "executedOn": "linux",
+      "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+      "sourceState": "clean",
+      "toolSha256": "8e963d023b209d0da87b5148955bb678207b07e571f7302d6eb686bacb7462d0",
+      "sourceHashes": {
+        ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+        "AuditRunner.cs": "C99D20022293DB94736ED996491DC13CC8FDE1ABF86DEFEA89B009A7A370D14D",
+        "Beatmap.cs": "BA73CFF8A8E37C91D7E82E3DE10ADC063C29EAD32E7B4AE44E8310745BEB77FC",
+        "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+        "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+        "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+        "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+        "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C",
+        "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+        "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+      }
+    },
+    {
+      "platform": "windows",
+      "executedOn": "linux",
+      "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+      "sourceState": "clean",
+      "toolSha256": "e7a15e9e27a2cfe113b1b251094452254924ee4c3df3c2d5aa83f56e32b69a76",
+      "sourceHashes": {
+        ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E",
+        "AuditRunner.cs": "9D08638BF194A68BCACFE9673B339E2FD5F26D52EDA3F28D693848A8F63601CA",
+        "Beatmap.cs": "8F1D2E804D7412B0767AEF8BC7935F89AD4B4DE53A536B959E57728539515447",
+        "CircleHitSounds.cs": "BD1095C94BED4718EE0AD3BDD138AA8A056E25AAFF44DDFA71661D5EBECF424C",
+        "CircleSession.cs": "1372CFAE74B69021D70EDFD74D4A183E42F0C0AD9CF80A157F17FD239A5201AB",
+        "CorpusAudit.GlobalUsings.g.cs": "F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC",
+        "CorpusAudit.csproj": "99138F82E65339A44762A88FE76CAB90195211C406009EAD8A8DB98D1DD1E0A6",
+        "LocalChartCatalog.cs": "E8D17AF7AC87619D6C3349B76BE6E3709588F67B9F255253AD18315E2AB33D66",
+        "Program.cs": "B69D5B18B01FCFE9B8AE8B39C8462FAF5AA026614517F1D7781BB2888A00C1CA",
+        "RankResults.cs": "C06EA0AD55655E5D00A124BC7B286CB80590A74BCA2D767BB906C10B247FED6F"
+      }
+    }
+  ],
+  "qualification": "Both portable DLLs executed on Linux; original native Windows/Linux295 gates corroborated, not rerun"
+}

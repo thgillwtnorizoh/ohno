@@ -1,0 +1,41 @@
+{
+  "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+  "state": "clean",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "platform": "linux",
+  "sourceHashes": {
+    "AuditRunner.cs": "C99D20022293DB94736ED996491DC13CC8FDE1ABF86DEFEA89B009A7A370D14D",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "Beatmap.cs": "BA73CFF8A8E37C91D7E82E3DE10ADC063C29EAD32E7B4AE44E8310745BEB77FC",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999",
+    "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C"
+  },
+  "toolDllSha256": "dc9396f223807870739fb4c36222e8cbccf6dbeebb3aa3c209e6685645767e8a",
+  "checksDllSha256": "ccf4ac8234f081ecae11214ea9a314fc808376545a75542779f7cf99db7d13bd",
+  "sourcePacketHashes": {
+    "build_fixtures.py": "16f766890744e0ef3f173f67f821d1c66576973c609dbbcc20f4c75957347f4e",
+    "manifest.json": "d6e362db3915f7cb15bf46f826275e8275def892744c0894d38115e6878099da",
+    "expected-sources.json": "bb930dbedd866bd598ad821b0653343b50c90934c73a30f35d1061511370e591",
+    "review.py": "4a61a503ff88e84e4c45e3ee01d5f80c5ef4e59610b5207a9d79b2d439e1b8e1",
+    "verify.py": "d747ca8de4890caadd2df8dcd4347ff728887562c48c78ee17de120cd74977e7",
+    "probe_current.py": "783849593603b42ead5c00415ae38299a1b73f454ccaebf01a9cc17e91916c19",
+    "Checks/Checks.csproj": "b98a61b17ef81c98e3bbedee51eddc8128c7d5eb7a34545c897cc1dd02c3efed",
+    "Checks/Program.cs": "125dc600dbed7cc38668f8b38f952f1f5b2d9295a74e5b54b40fbf16711053b5"
+  },
+  "resultHashes": {
+    "results.json": "601c9ae6aadc1b0049c8bce4190fdcbf430c0625c511a4429f1f90770c9041b7",
+    "audit.json": "faf07a18debb46270284afd001659912f280af5a4714b4d39be16b629d47ff66",
+    "profile-results.json": "cd4da69be8152673bbf53f8956a5ef830214a2aa4a38bb4653daf2e0dd1aaa53",
+    "historical-probe-replay.json": "1b9c02a032ee548fef5e1a1b65dc29c067ba776228b664f98b349f2126e1f37d"
+  },
+  "focusedPassed": 89,
+  "focusedFailed": 0,
+  "newProfilePassed": 10,
+  "historicalProfile": "9/10, exit1, exact obsolete source pin only; preserved",
+  "originalRuntime": "NOT RUN",
+  "ownerCorpus": "NOT RUN"
+}

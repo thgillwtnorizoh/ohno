@@ -1,0 +1,39 @@
+[
+  {
+    "platform": "windows",
+    "artifact": 14594142724,
+    "bytes": 315746,
+    "sha256": "db53cc6bfc661c39499075b32242de97a2689bab2d517cb453fffa4aa1677790",
+    "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+    "checks": 295,
+    "resultSha256": "9c010e1076d7baeb56a33cdb517b9857ee989eb156c0e14889f61b87914c3547",
+    "toolDllSha256": "e7a15e9e27a2cfe113b1b251094452254924ee4c3df3c2d5aa83f56e32b69a76",
+    "actualPacketStatus": "PASS",
+    "actualNamedChecks": 295,
+    "notRun": []
+  },
+  {
+    "platform": "linux",
+    "artifact": 14593688589,
+    "bytes": 278647,
+    "sha256": "29b9380fdbf9ab8a0e5e3361ee002545e8b2f8f089f24df36313c1dc942f7b37",
+    "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+    "checks": 295,
+    "resultSha256": "94932f5c594889294eaa0c7b7aabe1778cfb3b91201573fe4d9a48989aea464f",
+    "toolDllSha256": "8e963d023b209d0da87b5148955bb678207b07e571f7302d6eb686bacb7462d0",
+    "actualPacketStatus": "PASS",
+    "actualNamedChecks": 295,
+    "notRun": []
+  },
+  {
+    "platform": "full-windows",
+    "artifact": 14594228132,
+    "bytes": 67985273,
+    "sha256": "c03db1ab6476f9c45d5c83845ce5c1971317c56ffb124923157fb23aff64bac7",
+    "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+    "exeSha256": "a2ac04335587b4587689e74212d14a1549e2936eda7c76e2ec06a79e7c005c78",
+    "exeBytes": 154041616,
+    "auditChecks": 295,
+    "exeExecuted": false
+  }
+]
