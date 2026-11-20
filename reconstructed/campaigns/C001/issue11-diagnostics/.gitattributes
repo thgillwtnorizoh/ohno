@@ -1,0 +1,2 @@
+# Preserve raw downloaded Actions logs, including CRLF and timestamp-space lines.
+focused-log*.log -text -whitespace

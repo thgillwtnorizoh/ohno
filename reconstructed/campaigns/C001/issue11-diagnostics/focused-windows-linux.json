@@ -1,0 +1,294 @@
+{
+  "source": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+  "run": 44658294123,
+  "jobs": {
+    "total_count": 2,
+    "jobs": [
+      {
+        "id": 136029876609,
+        "run_id": 44658294123,
+        "workflow_name": "C001 corpus audit focused Release gate",
+        "head_branch": "main",
+        "run_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/runs/44658294123",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOVVAvrs8AAAAfrAMxgQ",
+        "head_sha": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+        "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/jobs/136029876609",
+        "html_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/44658294123/job/136029876609",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-20T02:05:30Z",
+        "started_at": "2026-11-20T02:05:32Z",
+        "completed_at": "2026-11-20T02:05:58Z",
+        "name": "audit (ubuntu-latest)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-20T02:05:33Z",
+            "completed_at": "2026-11-20T02:05:33Z"
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-20T02:05:33Z",
+            "completed_at": "2026-11-20T02:05:36Z"
+          },
+          {
+            "name": "Pin an installed .NET 8 SDK",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-20T02:05:36Z",
+            "completed_at": "2026-11-20T02:05:43Z"
+          },
+          {
+            "name": "Build actual linked production and audit in Release",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-20T02:05:43Z",
+            "completed_at": "2026-11-20T02:05:52Z"
+          },
+          {
+            "name": "Mixed inputs and preserved C001 QA15 L B P C stacking fixtures",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-20T02:05:52Z",
+            "completed_at": "2026-11-20T02:05:54Z"
+          },
+          {
+            "name": "Package locally runnable audit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-20T02:05:54Z",
+            "completed_at": "2026-11-20T02:05:55Z"
+          },
+          {
+            "name": "Preserve synthetic-only focused evidence and tool",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-20T02:05:55Z",
+            "completed_at": "2026-11-20T02:05:56Z"
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-11-20T02:05:56Z",
+            "completed_at": "2026-11-20T02:05:57Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-20T02:05:57Z",
+            "completed_at": "2026-11-20T02:05:57Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/check-runs/136029876609",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 1000000954,
+        "runner_name": "GitHub Actions 1000000954",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      },
+      {
+        "id": 136029877215,
+        "run_id": 44658294123,
+        "workflow_name": "C001 corpus audit focused Release gate",
+        "head_branch": "main",
+        "run_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/runs/44658294123",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOVVAvrs8AAAAfrAMz3w",
+        "head_sha": "f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+        "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/jobs/136029877215",
+        "html_url": "https://github.com/thgillwtnorizoh/ohno/actions/runs/44658294123/job/136029877215",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-20T02:05:30Z",
+        "started_at": "2026-11-20T02:05:32Z",
+        "completed_at": "2026-11-20T02:06:07Z",
+        "name": "audit (windows-2022)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-20T02:05:33Z",
+            "completed_at": "2026-11-20T02:05:33Z"
+          },
+          {
+            "name": "Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-20T02:05:33Z",
+            "completed_at": "2026-11-20T02:05:40Z"
+          },
+          {
+            "name": "Pin an installed .NET 8 SDK",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-20T02:05:40Z",
+            "completed_at": "2026-11-20T02:05:45Z"
+          },
+          {
+            "name": "Build actual linked production and audit in Release",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-20T02:05:45Z",
+            "completed_at": "2026-11-20T02:05:59Z"
+          },
+          {
+            "name": "Mixed inputs and preserved C001 QA15 L B P C stacking fixtures",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-20T02:05:59Z",
+            "completed_at": "2026-11-20T02:06:02Z"
+          },
+          {
+            "name": "Package locally runnable audit",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-20T02:06:02Z",
+            "completed_at": "2026-11-20T02:06:03Z"
+          },
+          {
+            "name": "Preserve synthetic-only focused evidence and tool",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-20T02:06:03Z",
+            "completed_at": "2026-11-20T02:06:04Z"
+          },
+          {
+            "name": "Post Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-11-20T02:06:04Z",
+            "completed_at": "2026-11-20T02:06:05Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-20T02:06:05Z",
+            "completed_at": "2026-11-20T02:06:05Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/check-runs/136029877215",
+        "labels": [
+          "windows-2022"
+        ],
+        "runner_id": 1000000955,
+        "runner_name": "GitHub Actions 1000000955",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      }
+    ]
+  },
+  "sdk": "8.0.428",
+  "artifacts": [
+    {
+      "platform": "windows",
+      "artifact": {
+        "id": 14594142724,
+        "node_id": "MDg6QXJ0aWZhY3QxNDU5NDE0MjcyNA==",
+        "name": "ohno-corpus-audit-windows-2022-f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+        "size_in_bytes": 315746,
+        "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14594142724",
+        "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14594142724/zip",
+        "expired": false,
+        "digest": "sha256:db53cc6bfc661c39499075b32242de97a2689bab2d517cb453fffa4aa1677790",
+        "created_at": "2026-11-20T02:06:04Z",
+        "updated_at": "2026-11-20T02:06:04Z",
+        "expires_at": "2027-02-18T02:05:30Z",
+        "workflow_run": {
+          "id": 44658294123,
+          "repository_id": 1431318446,
+          "head_repository_id": 1431318446,
+          "head_branch": "main",
+          "head_sha": "f6d0411abc865134a1dafb7fb7ef1473b621a84f"
+        }
+      },
+      "runtime": "8.0.34",
+      "checks": 295,
+      "notRun": [],
+      "toolDllSha256": "e7a15e9e27a2cfe113b1b251094452254924ee4c3df3c2d5aa83f56e32b69a76",
+      "resultSha256": "9c010e1076d7baeb56a33cdb517b9857ee989eb156c0e14889f61b87914c3547",
+      "resultPackets": {
+        "corpus-audit-results/C001-49.json": "a003301b20324fb6f9cbace88359228912a1457ddede566f753881c06dbf5f47",
+        "corpus-audit-results/C001-24.json": "c7ea60f0319eacf8dbc099f2a94ce112cafbb78cdcaad895565e916e73abdf25",
+        "corpus-audit-results/C19.json": "773e8f6ab8377447ee4f686069293a991e085dcdd5ef7bf4734ad4ca9044a30f",
+        "corpus-audit-results/cli-report.json": "c4185ff015f7357c266ccb7be242363ad8a20a74ef8cf727df5bb1f71757fa76",
+        "corpus-audit-results/mixed.json": "c4185ff015f7357c266ccb7be242363ad8a20a74ef8cf727df5bb1f71757fa76",
+        "corpus-audit-results/P21.json": "c53fa2eaf24e0b268227fc8d1a143d3fc151f2719d67a428bdecae1ab518d61f",
+        "corpus-audit-results/results.json": "9c010e1076d7baeb56a33cdb517b9857ee989eb156c0e14889f61b87914c3547",
+        "corpus-audit-results/QA15.json": "c94c0147ea851c037cb41440201adae08786864203522499ffe56fd2e7e53c61",
+        "corpus-audit-results/route-z-fixtures.json": "94c1b8d81051a794fd2c01e9b83ee95a5e4773ea74721e068c2d7ccb7986761b",
+        "corpus-audit-results/route-z.json": "667e2dba596a90f4b188ccd5c138e644d5a520304c71be92c5f89df2ca86a0c2",
+        "corpus-audit-results/stacking18.json": "a4fc3862d1ae1e0ff3ae4d7a3b5a09bc4e902d1742eb8c3c4cf100eccaadf584"
+      }
+    },
+    {
+      "platform": "linux",
+      "artifact": {
+        "id": 14593688589,
+        "node_id": "MDg6QXJ0aWZhY3QxNDU5MzY4ODU4OQ==",
+        "name": "ohno-corpus-audit-ubuntu-latest-f6d0411abc865134a1dafb7fb7ef1473b621a84f",
+        "size_in_bytes": 278647,
+        "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14593688589",
+        "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14593688589/zip",
+        "expired": false,
+        "digest": "sha256:29b9380fdbf9ab8a0e5e3361ee002545e8b2f8f089f24df36313c1dc942f7b37",
+        "created_at": "2026-11-20T02:05:56Z",
+        "updated_at": "2026-11-20T02:05:56Z",
+        "expires_at": "2027-02-18T02:05:30Z",
+        "workflow_run": {
+          "id": 44658294123,
+          "repository_id": 1431318446,
+          "head_repository_id": 1431318446,
+          "head_branch": "main",
+          "head_sha": "f6d0411abc865134a1dafb7fb7ef1473b621a84f"
+        }
+      },
+      "runtime": "8.0.34",
+      "checks": 295,
+      "notRun": [],
+      "toolDllSha256": "8e963d023b209d0da87b5148955bb678207b07e571f7302d6eb686bacb7462d0",
+      "resultSha256": "94932f5c594889294eaa0c7b7aabe1778cfb3b91201573fe4d9a48989aea464f",
+      "resultPackets": {
+        "corpus-audit-results/C001-24.json": "9ab3f87f1521e2609b3b33b81c9d962cb191cbb4de76829e2082a7e03dd96852",
+        "corpus-audit-results/C19.json": "18c9fb3192a66f0636b2b5abc2c7e468a855a7eaddf36f48d3e3770de554a7bb",
+        "corpus-audit-results/C001-49.json": "343bcebeea9d3ea8ccb50732162f29857b054e44912fb804bf148329b08a757d",
+        "corpus-audit-results/P21.json": "1e10a32bcdb1583c336434fc5f41f6b56bd036fa811887c450385ac784fea661",
+        "corpus-audit-results/QA15.json": "992f624b3cd6916a0e2fd0bbed199ee99ebca3e881827ebecf82d8a363820062",
+        "corpus-audit-results/mixed.json": "ad318a333f25207f385560ab34f708ace07c0cf5cd823509030e04df509ae406",
+        "corpus-audit-results/cli-report.json": "ad318a333f25207f385560ab34f708ace07c0cf5cd823509030e04df509ae406",
+        "corpus-audit-results/results.json": "94932f5c594889294eaa0c7b7aabe1778cfb3b91201573fe4d9a48989aea464f",
+        "corpus-audit-results/route-z-fixtures.json": "eded3949a32006417b94f89d7bbe73b56b11344a5de514c8f29f548604bcf679",
+        "corpus-audit-results/route-z.json": "ef63460d00c0914c5b30f57f0ef0036198310b9b1c60719f08c38a4769c03cec",
+        "corpus-audit-results/stacking18.json": "9f620046e3b3e7f74b6bf961910d0089e8297860896c85912e9c6f6eaad0974d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+﻿2026-11-20T02:05:33.0278780Z Current runner version: '2.338.2'
+2026-11-20T02:05:33.0297938Z ##[group]Runner Image Provisioner
+2026-11-20T02:05:33.0298481Z Hosted Compute Agent
+2026-11-20T02:05:33.0298823Z Version: 20261111.635
+2026-11-20T02:05:33.0299450Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-20T02:05:33.0299881Z Build Date: 2026-11-11T01:49:01Z
+2026-11-20T02:05:33.0300334Z Worker ID: {a30207a9-167b-4b2a-86e6-27700d4e65ae}
+2026-11-20T02:05:33.0300793Z Region: southcentralus
+2026-11-20T02:05:33.0301128Z Cloud: Azure
+2026-11-20T02:05:33.0301493Z ##[endgroup]
+2026-11-20T02:05:33.0302535Z ##[group]Operating System
+2026-11-20T02:05:33.0302932Z Ubuntu
+2026-11-20T02:05:33.0303262Z 26.04.1
+2026-11-20T02:05:33.0303572Z LTS
+2026-11-20T02:05:33.0303918Z ##[endgroup]
+2026-11-20T02:05:33.0304279Z ##[group]Runner Image
+2026-11-20T02:05:33.0304623Z Image: ubuntu-26.04
+2026-11-20T02:05:33.0305032Z Version: 20261116.202.1
+2026-11-20T02:05:33.0306106Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-20T02:05:33.0307055Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-20T02:05:33.0307626Z ##[endgroup]
+2026-11-20T02:05:33.0308309Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T02:05:33.0309840Z Contents: read
+2026-11-20T02:05:33.0310227Z Metadata: read
+2026-11-20T02:05:33.0310562Z ##[endgroup]
+2026-11-20T02:05:33.0311985Z Secret source: Actions
+2026-11-20T02:05:33.0312547Z Cache mode: write
+2026-11-20T02:05:33.0313074Z Prepare workflow directory
+2026-11-20T02:05:33.0536141Z Prepare all required actions
+2026-11-20T02:05:33.0579842Z Getting action download info
+2026-11-20T02:05:33.3423356Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2026-11-20T02:05:33.4188816Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-20T02:05:33.5619239Z Complete job name: audit (ubuntu-latest)
+2026-11-20T02:05:33.6159431Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2026-11-20T02:05:33.6160001Z with:
+2026-11-20T02:05:33.6160263Z   persist-credentials: false
+2026-11-20T02:05:33.6160561Z   repository: thgillwtnorizoh/ohno
+2026-11-20T02:05:33.6162597Z   token: ***
+2026-11-20T02:05:33.6162840Z   ssh-strict: true
+2026-11-20T02:05:33.6163088Z   ssh-user: git
+2026-11-20T02:05:33.6163327Z   clean: true
+2026-11-20T02:05:33.6163582Z   sparse-checkout-cone-mode: true
+2026-11-20T02:05:33.6163879Z   fetch-depth: 1
+2026-11-20T02:05:33.6164126Z   fetch-tags: false
+2026-11-20T02:05:33.6164384Z   show-progress: true
+2026-11-20T02:05:33.6164640Z   lfs: false
+2026-11-20T02:05:33.6164878Z   submodules: false
+2026-11-20T02:05:33.6165136Z   set-safe-directory: true
+2026-11-20T02:05:33.6165478Z ##[endgroup]
+2026-11-20T02:05:33.8117377Z Syncing repository: thgillwtnorizoh/ohno
+2026-11-20T02:05:33.8119812Z ##[group]Getting Git version info
+2026-11-20T02:05:33.8120546Z Working directory is '/home/runner/work/ohno/ohno'
+2026-11-20T02:05:33.8121474Z [command]/usr/bin/git version
+2026-11-20T02:05:33.8121926Z git version 2.56.1
+2026-11-20T02:05:33.8130922Z ##[endgroup]
+2026-11-20T02:05:33.8142360Z Temporarily overriding HOME='/home/runner/work/_temp/f0271343-2cd3-4552-b106-9e8ab9166d0e' before making global git config changes
+2026-11-20T02:05:33.8143591Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T02:05:33.8146220Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ohno/ohno
+2026-11-20T02:05:33.8201761Z Deleting the contents of '/home/runner/work/ohno/ohno'
+2026-11-20T02:05:33.8209672Z ##[group]Initializing the repository
+2026-11-20T02:05:33.8220973Z [command]/usr/bin/git init /home/runner/work/ohno/ohno
+2026-11-20T02:05:33.8296244Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-20T02:05:33.8298071Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-20T02:05:33.8301711Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-20T02:05:33.8303049Z hint: call:
+2026-11-20T02:05:33.8303404Z hint:
+2026-11-20T02:05:33.8305790Z hint: 	git config --global init.defaultBranch <name>
+2026-11-20T02:05:33.8306574Z hint:
+2026-11-20T02:05:33.8308080Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-20T02:05:33.8310047Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-20T02:05:33.8310650Z hint:
+2026-11-20T02:05:33.8311010Z hint: 	git branch -m <name>
+2026-11-20T02:05:33.8311410Z hint:
+2026-11-20T02:05:33.8311939Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-20T02:05:33.8312943Z Initialized empty Git repository in /home/runner/work/ohno/ohno/.git/
+2026-11-20T02:05:33.8325351Z [command]/usr/bin/git remote add origin https://github.com/thgillwtnorizoh/ohno
+2026-11-20T02:05:33.8375424Z ##[endgroup]
+2026-11-20T02:05:33.8375986Z ##[group]Disabling automatic garbage collection
+2026-11-20T02:05:33.8389542Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T02:05:33.8413334Z ##[endgroup]
+2026-11-20T02:05:33.8413752Z ##[group]Setting up auth
+2026-11-20T02:05:33.8420235Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T02:05:33.8466920Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T02:05:33.9092866Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T02:05:33.9124819Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T02:05:33.9358381Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T02:05:33.9394757Z ##[endgroup]
+2026-11-20T02:05:33.9395492Z ##[group]Fetching the repository
+2026-11-20T02:05:33.9401336Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f6d0411abc865134a1dafb7fb7ef1473b621a84f:refs/remotes/origin/main
+2026-11-20T02:05:35.8854654Z From https://github.com/thgillwtnorizoh/ohno
+2026-11-20T02:05:35.8856276Z  * [new ref]         f6d0411abc865134a1dafb7fb7ef1473b621a84f -> origin/main
+2026-11-20T02:05:35.8860477Z ##[endgroup]
+2026-11-20T02:05:35.8861801Z ##[group]Determining the checkout info
+2026-11-20T02:05:35.8863491Z ##[endgroup]
+2026-11-20T02:05:35.8864658Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T02:05:35.8915141Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T02:05:35.8942185Z ##[group]Checking out the ref
+2026-11-20T02:05:35.8944290Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T02:05:36.2716100Z Switched to a new branch 'main'
+2026-11-20T02:05:36.2719541Z branch 'main' set up to track 'origin/main'.
+2026-11-20T02:05:36.2761244Z ##[endgroup]
+2026-11-20T02:05:36.2808442Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T02:05:36.2833084Z f6d0411abc865134a1dafb7fb7ef1473b621a84f
+2026-11-20T02:05:36.2841499Z ##[group]Removing auth
+2026-11-20T02:05:36.2844552Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T02:05:36.2871664Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T02:05:36.3101218Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T02:05:36.3122272Z http.https://github.com/.extraheader
+2026-11-20T02:05:36.3129942Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-20T02:05:36.3157637Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T02:05:36.3389930Z ##[endgroup]
+2026-11-20T02:05:36.3614845Z ##[group]Run $versions = @(dotnet --list-sdks | ForEach-Object { if ($_ -match '^(8[.]0[.][0-9]+) ') { [version]$Matches[1] } } | Sort-Object -Descending)
+2026-11-20T02:05:36.3615532Z [36;1m$versions = @(dotnet --list-sdks | ForEach-Object { if ($_ -match '^(8[.]0[.][0-9]+) ') { [version]$Matches[1] } } | Sort-Object -Descending)[0m
+2026-11-20T02:05:36.3615976Z [36;1mif ($versions.Count -eq 0) { throw 'No installed .NET 8 SDK; focused gate blocked.' }[0m
+2026-11-20T02:05:36.3616443Z [36;1m@{sdk=@{version=$versions[0].ToString();rollForward='disable';allowPrerelease=$false}} | ConvertTo-Json | Set-Content -Encoding utf8 global.json[0m
+2026-11-20T02:05:36.3616836Z [36;1mdotnet --info[0m
+2026-11-20T02:05:36.3652807Z shell: /usr/bin/pwsh -command ". '{0}'"
+2026-11-20T02:05:36.3653028Z ##[endgroup]
+2026-11-20T02:05:42.4410593Z .NET SDK:
+2026-11-20T02:05:42.4410871Z  Version:           8.0.428
+2026-11-20T02:05:42.4411050Z  Commit:            742a7a66c3
+2026-11-20T02:05:42.7443222Z  Workload version:  8.0.400-manifests.f31e7955
+2026-11-20T02:05:43.1363196Z  MSBuild version:   17.11.71+2613e0705
+2026-11-20T02:05:43.1363467Z 
+2026-11-20T02:05:43.1363560Z Runtime Environment:
+2026-11-20T02:05:43.1370277Z  OS Name:     ubuntu
+2026-11-20T02:05:43.1370499Z  OS Version:  26.04
+2026-11-20T02:05:43.1384092Z  OS Platform: Linux
+2026-11-20T02:05:43.1856014Z  RID:         linux-x64
+2026-11-20T02:05:43.1856363Z  Base Path:   /usr/share/dotnet/sdk/8.0.428/
+2026-11-20T02:05:43.1856580Z 
+2026-11-20T02:05:43.1858281Z .NET workloads installed:
+2026-11-20T02:05:43.1878580Z Configured to use loose manifests when installing new manifests.
+2026-11-20T02:05:43.1879073Z There are no installed workloads to display.
+2026-11-20T02:05:43.1960888Z 
+2026-11-20T02:05:43.1961040Z Host:
+2026-11-20T02:05:43.1961242Z   Version:      11.0.0
+2026-11-20T02:05:43.1961441Z   Architecture: x64
+2026-11-20T02:05:43.1961630Z   Commit:       297acf930f
+2026-11-20T02:05:43.1961763Z 
+2026-11-20T02:05:43.1961894Z .NET SDKs installed:
+2026-11-20T02:05:43.1962104Z   8.0.134 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1962324Z   8.0.206 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1962513Z   8.0.319 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1962661Z   8.0.428 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1962919Z   9.0.124 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963082Z   9.0.205 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963251Z   9.0.321 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963391Z   10.0.115 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963535Z   10.0.204 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963709Z   10.0.303 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1963855Z   10.0.404 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1964026Z   11.0.100 [/usr/share/dotnet/sdk]
+2026-11-20T02:05:43.1964117Z 
+2026-11-20T02:05:43.1964174Z .NET runtimes installed:
+2026-11-20T02:05:43.1964404Z   Microsoft.AspNetCore.App 8.0.6 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1964767Z   Microsoft.AspNetCore.App 8.0.22 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1965076Z   Microsoft.AspNetCore.App 8.0.34 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1965374Z   Microsoft.AspNetCore.App 9.0.6 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1965681Z   Microsoft.AspNetCore.App 9.0.23 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1965981Z   Microsoft.AspNetCore.App 10.0.8 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1966294Z   Microsoft.AspNetCore.App 10.0.11 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1966600Z   Microsoft.AspNetCore.App 10.0.15 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1967274Z   Microsoft.AspNetCore.App 11.0.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+2026-11-20T02:05:43.1967572Z   Microsoft.NETCore.App 8.0.6 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1968019Z   Microsoft.NETCore.App 8.0.22 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1968299Z   Microsoft.NETCore.App 8.0.34 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1968581Z   Microsoft.NETCore.App 9.0.6 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1968860Z   Microsoft.NETCore.App 9.0.23 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1969347Z   Microsoft.NETCore.App 10.0.8 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1969629Z   Microsoft.NETCore.App 10.0.11 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1969910Z   Microsoft.NETCore.App 10.0.15 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1970194Z   Microsoft.NETCore.App 11.0.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+2026-11-20T02:05:43.1970363Z 
+2026-11-20T02:05:43.1970420Z Other architectures found:
+2026-11-20T02:05:43.1970556Z   None
+2026-11-20T02:05:43.1970622Z 
+2026-11-20T02:05:43.1970680Z Environment variables:
+2026-11-20T02:05:43.1970839Z   DOTNET_MULTILEVEL_LOOKUP                 [0]
+2026-11-20T02:05:43.1971012Z   DOTNET_NOLOGO                            [1]
+2026-11-20T02:05:43.1971178Z   DOTNET_SKIP_FIRST_TIME_EXPERIENCE        [1]
+2026-11-20T02:05:43.1971285Z 
+2026-11-20T02:05:43.1971338Z global.json file:
+2026-11-20T02:05:43.1971473Z   /home/runner/work/ohno/ohno/global.json
+2026-11-20T02:05:43.1971579Z 
+2026-11-20T02:05:43.1971624Z Learn more:
+2026-11-20T02:05:43.1971777Z   https://aka.ms/dotnet/info
+2026-11-20T02:05:43.1971875Z 
+2026-11-20T02:05:43.1971922Z Download .NET:
+2026-11-20T02:05:43.1972052Z   https://aka.ms/dotnet/download
+2026-11-20T02:05:43.3670697Z ##[group]Run dotnet build reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --nologo
+2026-11-20T02:05:43.3671173Z [36;1mdotnet build reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --nologo[0m
+2026-11-20T02:05:43.3671446Z [36;1mexit $LASTEXITCODE[0m
+2026-11-20T02:05:43.3702691Z shell: /usr/bin/pwsh -command ". '{0}'"
+2026-11-20T02:05:43.3702859Z ##[endgroup]
+2026-11-20T02:05:46.3652290Z   Determining projects to restore...
+2026-11-20T02:05:47.0299641Z   Restored /home/runner/work/ohno/ohno/reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj (in 68 ms).
+2026-11-20T02:05:47.0300500Z   Restored /home/runner/work/ohno/ohno/reconstructed/CorpusAudit/CorpusAudit.csproj (in 63 ms).
+2026-11-20T02:05:52.3517636Z   CorpusAudit -> /home/runner/work/ohno/ohno/reconstructed/CorpusAudit/bin/Release/net8.0/CorpusAudit.dll
+2026-11-20T02:05:52.5895501Z   CorpusAuditChecks -> /home/runner/work/ohno/ohno/reconstructed/CorpusAuditChecks/bin/Release/net8.0/CorpusAuditChecks.dll
+2026-11-20T02:05:52.5941543Z 
+2026-11-20T02:05:52.5947875Z Build succeeded.
+2026-11-20T02:05:52.5948398Z     0 Warning(s)
+2026-11-20T02:05:52.5948588Z     0 Error(s)
+2026-11-20T02:05:52.5954466Z 
+2026-11-20T02:05:52.5954597Z Time Elapsed 00:00:07.74
+2026-11-20T02:05:52.7625167Z ##[group]Run dotnet run --project reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --no-build -- "$env:GITHUB_WORKSPACE" "/home/runner/work/_temp/corpus-audit-results"
+2026-11-20T02:05:52.7625890Z [36;1mdotnet run --project reconstructed/CorpusAuditChecks/CorpusAuditChecks.csproj -c Release --no-build -- "$env:GITHUB_WORKSPACE" "/home/runner/work/_temp/corpus-audit-results"[0m
+2026-11-20T02:05:52.7626313Z [36;1mexit $LASTEXITCODE[0m
+2026-11-20T02:05:52.7657108Z shell: /usr/bin/pwsh -command ". '{0}'"
+2026-11-20T02:05:52.7657280Z ##[endgroup]
+2026-11-20T02:05:54.4319557Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN
+2026-11-20T02:05:54.4969953Z ##[group]Run dotnet publish reconstructed/CorpusAudit/CorpusAudit.csproj -c Release --no-restore -o "/home/runner/work/_temp/corpus-audit-tool"
+2026-11-20T02:05:54.4971123Z [36;1mdotnet publish reconstructed/CorpusAudit/CorpusAudit.csproj -c Release --no-restore -o "/home/runner/work/_temp/corpus-audit-tool"[0m
+2026-11-20T02:05:54.4971745Z [36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }[0m
+2026-11-20T02:05:54.4972233Z [36;1mCopy-Item reconstructed/CorpusAudit/README.md "/home/runner/work/_temp/corpus-audit-tool/"[0m
+2026-11-20T02:05:54.4972854Z [36;1mgit rev-parse HEAD | Set-Content "/home/runner/work/_temp/corpus-audit-tool/SOURCE-COMMIT.txt"[0m
+2026-11-20T02:05:54.5015295Z shell: /usr/bin/pwsh -command ". '{0}'"
+2026-11-20T02:05:54.5015576Z ##[endgroup]
+2026-11-20T02:05:55.2092209Z   CorpusAudit -> /home/runner/work/ohno/ohno/reconstructed/CorpusAudit/bin/Release/net8.0/CorpusAudit.dll
+2026-11-20T02:05:55.2242759Z   CorpusAudit -> /home/runner/work/_temp/corpus-audit-tool/
+2026-11-20T02:05:55.7189411Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-11-20T02:05:55.7189801Z with:
+2026-11-20T02:05:55.7190142Z   name: ohno-corpus-audit-ubuntu-latest-f6d0411abc865134a1dafb7fb7ef1473b621a84f
+2026-11-20T02:05:55.7190724Z   path: /home/runner/work/_temp/corpus-audit-results/
+/home/runner/work/_temp/corpus-audit-tool/
+
+2026-11-20T02:05:55.7191154Z   if-no-files-found: warn
+2026-11-20T02:05:55.7191373Z   compression-level: 6
+2026-11-20T02:05:55.7191573Z   overwrite: false
+2026-11-20T02:05:55.7191787Z   include-hidden-files: false
+2026-11-20T02:05:55.7192016Z ##[endgroup]
+2026-11-20T02:05:55.8373705Z (node:2507) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-20T02:05:55.8374272Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-20T02:05:55.8429359Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-20T02:05:55.8431092Z The least common ancestor is /home/runner/work/_temp. This will be the root directory of the artifact
+2026-11-20T02:05:55.8431600Z With the provided path, there will be 18 files uploaded
+2026-11-20T02:05:55.8440128Z Artifact name is valid!
+2026-11-20T02:05:55.8440477Z Root directory input is valid!
+2026-11-20T02:05:56.1441388Z Beginning upload of artifact content to blob storage
+2026-11-20T02:05:56.1925344Z (node:2507) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-20T02:05:56.5192885Z Uploaded bytes 278647
+2026-11-20T02:05:56.5658486Z Finished uploading artifact content to blob storage!
+2026-11-20T02:05:56.5659231Z SHA256 digest of uploaded artifact zip is 29b9380fdbf9ab8a0e5e3361ee002545e8b2f8f089f24df36313c1dc942f7b37
+2026-11-20T02:05:56.5660064Z Finalizing artifact upload
+2026-11-20T02:05:56.9246637Z Artifact ohno-corpus-audit-ubuntu-latest-f6d0411abc865134a1dafb7fb7ef1473b621a84f.zip successfully finalized. Artifact ID 14593688589
+2026-11-20T02:05:56.9247496Z Artifact ohno-corpus-audit-ubuntu-latest-f6d0411abc865134a1dafb7fb7ef1473b621a84f has been successfully uploaded! Final size is 278647 bytes. Artifact ID is 14593688589
+2026-11-20T02:05:56.9251584Z Artifact download URL: https://github.com/thgillwtnorizoh/ohno/actions/runs/44658294123/artifacts/14593688589
+2026-11-20T02:05:56.9441875Z Post job cleanup.
+2026-11-20T02:05:57.0014369Z [command]/usr/bin/git version
+2026-11-20T02:05:57.0049758Z git version 2.56.1
+2026-11-20T02:05:57.0073454Z Temporarily overriding HOME='/home/runner/work/_temp/29369818-3741-4f70-888b-b33b249a6993' before making global git config changes
+2026-11-20T02:05:57.0074142Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T02:05:57.0076373Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ohno/ohno
+2026-11-20T02:05:57.0113785Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T02:05:57.0146359Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T02:05:57.0432645Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T02:05:57.0470942Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T02:05:57.0845252Z Cleaning up orphan processes
+2026-11-20T02:05:57.1080446Z Terminate orphan process: pid (2318) (dotnet)
+2026-11-20T02:05:57.1135430Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1861,3 +1861,25 @@ RouteM/RouteZ and six/seven explicit-sample timing now integrated; no owner gain
 No early actual v5/general stacks/short2–5/global defaults/host cap/replay expansion.
 Original/GUI/audible/physical/privatecorpus NOT RUN. Work1 independent exactnewsource
 QA next. C001/Issue9/subsystemOPEN; no additional owner manual action requested.
+
+
+## Issue11 Work2 — RouteZ diagnostic classification — 2026-11-20
+Startingc6447af, exact corrected sourcef6d0411abc865134a1dafb7fb7ef1473b621a84f.
+Actual baseline34checks reproduce unproven=unclassified/generic worklimit; two exact
+ordinal InvalidDataException mappings now yield unsupported-admission/stack-certificate-
+unproven and stack-certificate-work-limit. Gameplay tree identical to independently
+verified9ed9eb5; no admission/geometry/timing/score/health/R17 change. New36+retained259
+=295PASS localSDK8.0.427/runtime8.0.33. Exact-source Windows/Linux focused44658294123
+295PASS EACH,0NOT RUN/0warnings/errors,SDK8.0.428/runtime8.0.34; both downloaded tool
+ZIP/source markers/DLL/report hashes verified. Unchanged historical probe9/10 locally
+and actual Linux package:only obsolete8c5ba835 source pin fails,not new-source QA.
+Campaign-record publication also triggered full Windows44658294130/job136029877254:
+2312historical PASS,retained C001264/P299/C4375/stack43+394/Issue9 801/Issue7 656/
+finite106+4/Audit295PASS;Release0/0,self-contained application publishPASS. App ZIP
+metadata retained,not downloaded/launched; focused tool ZIPs verified.
+Full UEP15-issue11-route-z-diagnostics.md and issue11-diagnostics seals/baseline/
+fixture hashes/adversarial/real-fingerprint-precedence evidence persisted. No owner
+chart access/scan request; which owner33 cases reach these throws NOT VERIFIED.
+No original/runtime/GUI/audible/physical/private corpus execution or compatibility
+gain. Next Headquarters assigns independent Work1 new-source diagnostic QA;
+Issue11/C001/subsystemOPEN. Prior fixtures/tests/failure results preserved.

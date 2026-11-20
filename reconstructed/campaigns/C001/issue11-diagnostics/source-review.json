@@ -1,0 +1,12 @@
+{
+  "gameplayAuthority": "9ed9eb5c58f631f89fb66fc97802cfbf9ca86e44",
+  "gameplayTree": "2075c2a7dd9816e6e330db44da2682bf8b4fe9a8",
+  "currentTree": "2075c2a7dd9816e6e330db44da2682bf8b4fe9a8",
+  "byteIdentical": true,
+  "sourceHashes": {
+    "reconstructed/CorpusAudit/AuditRunner.cs": "c99d20022293db94736ed996491dc13cc8fde1abf86defea89b009a7a370d14d",
+    "reconstructed/CorpusAuditChecks/RouteZ.cs": "b47acdd3e475cea4801ea0141e092cf7c9073066ac7f7117dcdf1889a6194b43"
+  },
+  "reusedEvidence": "Work1 independent1344 and exact gameplay Windows2312; NOT new test runs",
+  "fullGameplayRegression": "FRESH exact-source Windows44658294130:2312PASS; triggered by campaign-record publication"
+}
