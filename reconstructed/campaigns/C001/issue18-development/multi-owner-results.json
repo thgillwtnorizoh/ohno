@@ -1,0 +1,37 @@
+{
+  "source": "6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+  "state": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "C99D20022293DB94736ED996491DC13CC8FDE1ABF86DEFEA89B009A7A370D14D",
+    "Beatmap.cs": "49AE2543590F2E8F2BF3AADC86EAADC32149602FB9005CBFAA7EA0D66CD432C4",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "runtime": "8.0.33",
+  "checks": 4,
+  "passed": 4,
+  "failed": 0,
+  "assertions": [
+    "actual fresh multi-parent score/health/source",
+    "all three actual registered session/resource owners",
+    "actual multi-parent input/results registration",
+    "exact compiled production source"
+  ],
+  "counts": [
+    17,
+    32,
+    24
+  ],
+  "results": [
+    "Hit300",
+    "Hit300",
+    "Hit300"
+  ],
+  "originalRuntime": "NOT RUN"
+}

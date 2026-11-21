@@ -1916,3 +1916,33 @@ actual-new-source QA; Issue15/C001/subsystemOPEN,Issue4OPEN.
 
 ## Issue18 initial canonical traversal integration — 2026-11-21
 Verified127e80a accepted22a4035; readIssue18/original15/traversal-profile handoff/106manifest/README. Shared internal canonical32/legacy16 profile for loader and metadata; old public/string APIs unchanged. Checked Int64 remaining movement budget, remaining segment limit, exact bounded checkpoint plan BEFORE repeated movement allocation; preserve Single/Double math and separate clocks. Deterministic stage cancellation via default-null internal observer and entry/loop/publication checks; no partial parent/resource owner returned on cancellation. Final local3973PASS/106cases86prepared20excluded45additions, real canonical fresh consumers/audio/schedules. Stress actual248376movements/98304checkpoints/97464segments and over-limit rejections; rawP8192 geometry, checked32*8192 preflight, Int64overflow; retained1502/801/656/295/P299/C4375PASS. Initial member-access compile error and Catmull segment-count stress assumptions retained/corrected in test only; no immutable expectations changed. Fresh Windows full gate/package follows source publication, not completed yet. C001/Issue18/Issue4OPEN; no owner action.
+
+
+## Issue18 verified canonical1–32 integration — 2026-11-21
+Starting127e80a, accepted22a4035; final tested/published source6a152648c72773eb33d37f8ac01f18ca35ab1f41
+(gameplay identical to introducing2d6768c). Explicit canonical32/legacy16 profile
+shared by row and sample admission. Historical string/public metadata1–16 and named
+R12S25/QA10M16 refusals preserved. CheckedInt64 remaining movement/segment preflight,
+EXACT bounded checkpoint plan before repeated movement arrays, responsive stage/
+loop cancellation and no partial parent/effects publication. Numeric clocks/parity/
+N/R/pending E17/nonmonotone deadlines remain.106unchanged fixtures86prepared/20refused,
+exactly45new/0losses individually.82real canonical audio-ready consumers,4stored
+sample-error preparations. Local3973PASS,Windows3974PASS(extra clean source stamp).
+Stress248376movements across3parents,98304checkpoints,97464segments andoverbudget/
+Int64/8192geometry/deterministic cancellation checked. Fresh final Windows44892345157/
+job13681068109753stepsSUCCESS,SDK8.0.428/runtime8.0.34,Release0/0,self-contained win-x64
+publishPASS. Historical2312 and retained C001264/P299/C4375/stack43+394/Issue15 1503/
+Issue9 801/Issue7 656/Issue11 295/finite106+4PASS. Downloaded artifact14702004442
+source/ZIP/exe/actualpacket/106fixture hashes verified; app not launched. Initial
+compile/stress failures retained(test-only mistaken member and Catmull-count workload);
+initial full2d6768c gate succeeded, final gate repeats with stronger actual-resource
+resolver assertions. Full UEP17-issue18-canonical-traversals.md andissue18-development
+seals/source hashes/dispositions. No research/old fixture/test rewrite, no classifier/
+R17/near-spinner/score/health/audio algorithm change.32isENGINEERING,not originalmax;
+no9000/9001 execution. Original/GUI/audible/physical/privatecorpus NOT RUN. No owner
+rescan or manual action. Next HQreview then Work1 independently verifies exactnew
+production beforeIssue18closure. C001/Issue18/subsystemOPEN;Issue4OPEN.
+
+Issue18 supplemental exact6a15264 Linux multi-parent source/score/health/session/
+resource/input ownership probe4/4PASS (17/32/24 actual parents). Separate from3974
+Windows denominator; source and result retained in issue18-development/MultiOwner.

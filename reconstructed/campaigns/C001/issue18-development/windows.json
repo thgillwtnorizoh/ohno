@@ -1,0 +1,1025 @@
+{
+  "source": "6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+  "run": 44892345157,
+  "job": 136810681097,
+  "conclusion": "success",
+  "sdk": "8.0.428",
+  "runtime": "8.0.34",
+  "historical": [
+    {
+      "suite": "QA15 HEADLESS",
+      "passed": 95,
+      "failed": 0
+    },
+    {
+      "suite": "QA15 WINDOWS",
+      "passed": 39,
+      "failed": 0
+    },
+    {
+      "suite": "HEADLESS COMPONENT TESTS",
+      "passed": 90,
+      "failed": 0
+    },
+    {
+      "suite": "QA03 SLIDER TESTS",
+      "passed": 56,
+      "failed": 0
+    },
+    {
+      "suite": "QA04 GEOMETRY TESTS",
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "suite": "QA05 SPINNER TESTS",
+      "passed": 66,
+      "failed": 0
+    },
+    {
+      "suite": "QA06 ACCOUNTING TESTS",
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "suite": "QA07 HEALTH TESTS",
+      "passed": 159,
+      "failed": 0
+    },
+    {
+      "suite": "QA08 NEWCOMBO TESTS",
+      "passed": 115,
+      "failed": 0
+    },
+    {
+      "suite": "QA09 HITSOUND TESTS",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "suite": "QA10 SLIDER SOUND TESTS",
+      "passed": 229,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 CONTINUOUS TESTS",
+      "passed": 247,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 WINDOWS EMPTY",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "QA12",
+      "passed": 274,
+      "failed": 0
+    },
+    {
+      "suite": "QA12 WINDOWS",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 HEADLESS",
+      "passed": 257,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 WINDOWS",
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 HEADLESS",
+      "passed": 237,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 WINDOWS",
+      "passed": 30,
+      "failed": 0
+    }
+  ],
+  "historicalPassed": 2312,
+  "historicalFailed": 0,
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-11-21T10:01:50Z",
+      "completed_at": "2026-11-21T10:01:50Z"
+    },
+    {
+      "name": "Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-11-21T10:01:50Z",
+      "completed_at": "2026-11-21T10:01:57Z"
+    },
+    {
+      "name": "Select an already installed .NET 8 SDK",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-11-21T10:01:57Z",
+      "completed_at": "2026-11-21T10:02:00Z"
+    },
+    {
+      "name": "Compile R07 WPF Windows x64",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 4,
+      "started_at": "2026-11-21T10:02:00Z",
+      "completed_at": "2026-11-21T10:02:16Z"
+    },
+    {
+      "name": "Execute independent QA15 corpus and calculator component verification",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-11-21T10:02:16Z",
+      "completed_at": "2026-11-21T10:02:27Z"
+    },
+    {
+      "name": "Execute unchanged QA01 headless suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 6,
+      "started_at": "2026-11-21T10:02:27Z",
+      "completed_at": "2026-11-21T10:02:28Z"
+    },
+    {
+      "name": "Execute QA03 slider component suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7,
+      "started_at": "2026-11-21T10:02:28Z",
+      "completed_at": "2026-11-21T10:02:30Z"
+    },
+    {
+      "name": "Check R06 finite preparation targets and fixture loading",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-11-21T10:02:30Z",
+      "completed_at": "2026-11-21T10:02:31Z"
+    },
+    {
+      "name": "Execute independent QA04 geometry and integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-11-21T10:02:31Z",
+      "completed_at": "2026-11-21T10:02:33Z"
+    },
+    {
+      "name": "Check R07 bounded spinner components",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 10,
+      "started_at": "2026-11-21T10:02:33Z",
+      "completed_at": "2026-11-21T10:02:34Z"
+    },
+    {
+      "name": "Execute independent QA05 spinner suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 11,
+      "started_at": "2026-11-21T10:02:34Z",
+      "completed_at": "2026-11-21T10:02:35Z"
+    },
+    {
+      "name": "Check R08 bounded legacy ledger controls",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 12,
+      "started_at": "2026-11-21T10:02:35Z",
+      "completed_at": "2026-11-21T10:02:37Z"
+    },
+    {
+      "name": "Check R08-C01 spinner presentation and input continuity",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 13,
+      "started_at": "2026-11-21T10:02:37Z",
+      "completed_at": "2026-11-21T10:02:38Z"
+    },
+    {
+      "name": "Check R08-C02 automatic chart score multiplier",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 14,
+      "started_at": "2026-11-21T10:02:38Z",
+      "completed_at": "2026-11-21T10:02:39Z"
+    },
+    {
+      "name": "Execute independent QA06 ledger multiplier and presentation suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 15,
+      "started_at": "2026-11-21T10:02:39Z",
+      "completed_at": "2026-11-21T10:02:40Z"
+    },
+    {
+      "name": "Check R09 bounded health calibration and integration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 16,
+      "started_at": "2026-11-21T10:02:40Z",
+      "completed_at": "2026-11-21T10:02:42Z"
+    },
+    {
+      "name": "Execute independent QA07 health calibration drain and failure suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 17,
+      "started_at": "2026-11-21T10:02:42Z",
+      "completed_at": "2026-11-21T10:02:43Z"
+    },
+    {
+      "name": "Check R10 fresh ordinary NewCombo preparation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 18,
+      "started_at": "2026-11-21T10:02:43Z",
+      "completed_at": "2026-11-21T10:02:44Z"
+    },
+    {
+      "name": "Execute independent QA08 NewCombo and fresh health integration suite",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 19,
+      "started_at": "2026-11-21T10:02:44Z",
+      "completed_at": "2026-11-21T10:02:46Z"
+    },
+    {
+      "name": "Check R11 circle hitsound selection resources and lifecycle",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 20,
+      "started_at": "2026-11-21T10:02:46Z",
+      "completed_at": "2026-11-21T10:02:48Z"
+    },
+    {
+      "name": "Execute independent QA09 circle hitsound suite without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 21,
+      "started_at": "2026-11-21T10:02:48Z",
+      "completed_at": "2026-11-21T10:02:51Z"
+    },
+    {
+      "name": "Check R12 discrete slider hitsounds without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 22,
+      "started_at": "2026-11-21T10:02:51Z",
+      "completed_at": "2026-11-21T10:02:53Z"
+    },
+    {
+      "name": "Execute independent QA10 discrete slider suite without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 23,
+      "started_at": "2026-11-21T10:02:53Z",
+      "completed_at": "2026-11-21T10:02:55Z"
+    },
+    {
+      "name": "Check R13 shared continuing channels without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 24,
+      "started_at": "2026-11-21T10:02:55Z",
+      "completed_at": "2026-11-21T10:02:57Z"
+    },
+    {
+      "name": "Check R13 Windows empty-resource lifecycle without opening media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 25,
+      "started_at": "2026-11-21T10:02:57Z",
+      "completed_at": "2026-11-21T10:02:58Z"
+    },
+    {
+      "name": "Execute independent QA11 shared channels without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 26,
+      "started_at": "2026-11-21T10:02:58Z",
+      "completed_at": "2026-11-21T10:03:02Z"
+    },
+    {
+      "name": "Check R13-C01 captured settings gain without playback",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 27,
+      "started_at": "2026-11-21T10:03:02Z",
+      "completed_at": "2026-11-21T10:03:03Z"
+    },
+    {
+      "name": "Check R14 spinner audio with recording channels and independent assets",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 28,
+      "started_at": "2026-11-21T10:03:03Z",
+      "completed_at": "2026-11-21T10:03:05Z"
+    },
+    {
+      "name": "Check R14 Windows unsupported-frequency capability without media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 29,
+      "started_at": "2026-11-21T10:03:05Z",
+      "completed_at": "2026-11-21T10:03:07Z"
+    },
+    {
+      "name": "Execute independent QA12 spinner audio without media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 30,
+      "started_at": "2026-11-21T10:03:07Z",
+      "completed_at": "2026-11-21T10:03:11Z"
+    },
+    {
+      "name": "Check R14-Q01 routing and diagnostics without opening media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 31,
+      "started_at": "2026-11-21T10:03:11Z",
+      "completed_at": "2026-11-21T10:03:13Z"
+    },
+    {
+      "name": "Check R15 original-derived Rank model without media or windows",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 32,
+      "started_at": "2026-11-21T10:03:13Z",
+      "completed_at": "2026-11-21T10:03:15Z"
+    },
+    {
+      "name": "Check R15 WPF host and widgets without showing a Window",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 33,
+      "started_at": "2026-11-21T10:03:15Z",
+      "completed_at": "2026-11-21T10:03:20Z"
+    },
+    {
+      "name": "Execute independent QA13 Rank results without windows or media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 34,
+      "started_at": "2026-11-21T10:03:20Z",
+      "completed_at": "2026-11-21T10:03:23Z"
+    },
+    {
+      "name": "Check R16 local catalog selection and Play capture without windows/media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 35,
+      "started_at": "2026-11-21T10:03:23Z",
+      "completed_at": "2026-11-21T10:03:25Z"
+    },
+    {
+      "name": "Check R16 unshown SelectPlay widgets and Rank-return host boundaries",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 36,
+      "started_at": "2026-11-21T10:03:25Z",
+      "completed_at": "2026-11-21T10:03:26Z"
+    },
+    {
+      "name": "Execute independent QA14 catalog selection and entry controls without windows/media",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 37,
+      "started_at": "2026-11-21T10:03:26Z",
+      "completed_at": "2026-11-21T10:04:12Z"
+    },
+    {
+      "name": "Check R17 restricted circle mathematics against independent E045 E046 data",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 38,
+      "started_at": "2026-11-21T10:04:12Z",
+      "completed_at": "2026-11-21T10:04:14Z"
+    },
+    {
+      "name": "Check R17 unshown calculated-star browser and Rank boundaries",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 39,
+      "started_at": "2026-11-21T10:04:14Z",
+      "completed_at": "2026-11-21T10:04:16Z"
+    },
+    {
+      "name": "Check C001 canonical syntax and versioned Bezier preparation",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 40,
+      "started_at": "2026-11-21T10:04:16Z",
+      "completed_at": "2026-11-21T10:04:18Z"
+    },
+    {
+      "name": "Check C001 finite Perfect-circle geometry and consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 41,
+      "started_at": "2026-11-21T10:04:18Z",
+      "completed_at": "2026-11-21T10:04:19Z"
+    },
+    {
+      "name": "Preserve independent finite stacking regression",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 42,
+      "started_at": "2026-11-21T10:04:19Z",
+      "completed_at": "2026-11-21T10:04:22Z"
+    },
+    {
+      "name": "Check finite Catmull paths and shared consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 43,
+      "started_at": "2026-11-21T10:04:22Z",
+      "completed_at": "2026-11-21T10:04:24Z"
+    },
+    {
+      "name": "Check Issue18 canonical traversal budgets and actual consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 44,
+      "started_at": "2026-11-21T10:04:24Z",
+      "completed_at": "2026-11-21T10:04:31Z"
+    },
+    {
+      "name": "Check Issue15 circle-free v5 near-spinner integration",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 45,
+      "started_at": "2026-11-21T10:04:31Z",
+      "completed_at": "2026-11-21T10:04:33Z"
+    },
+    {
+      "name": "Check Issue9 finite stacking timing and consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 46,
+      "started_at": "2026-11-21T10:04:33Z",
+      "completed_at": "2026-11-21T10:04:35Z"
+    },
+    {
+      "name": "Check finite versioned spinner admission and real consumers",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 47,
+      "started_at": "2026-11-21T10:04:35Z",
+      "completed_at": "2026-11-21T10:04:37Z"
+    },
+    {
+      "name": "Preserve actual canonical CorpusAudit development checks",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 48,
+      "started_at": "2026-11-21T10:04:37Z",
+      "completed_at": "2026-11-21T10:04:40Z"
+    },
+    {
+      "name": "Publish C001 Windows x64 application for owner qualification",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 49,
+      "started_at": "2026-11-21T10:04:40Z",
+      "completed_at": "2026-11-21T10:04:50Z"
+    },
+    {
+      "name": "Verify independent C001 finite original-contract predictions",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 50,
+      "started_at": "2026-11-21T10:04:50Z",
+      "completed_at": "2026-11-21T10:04:51Z"
+    },
+    {
+      "name": "Preserve C001 development evidence and Windows application",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 51,
+      "started_at": "2026-11-21T10:04:51Z",
+      "completed_at": "2026-11-21T10:04:56Z"
+    },
+    {
+      "name": "Post Checkout exact gate commit",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 102,
+      "started_at": "2026-11-21T10:04:56Z",
+      "completed_at": "2026-11-21T10:04:57Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 103,
+      "started_at": "2026-11-21T10:04:57Z",
+      "completed_at": "2026-11-21T10:04:57Z"
+    }
+  ],
+  "artifact": {
+    "id": 14702004442,
+    "node_id": "MDg6QXJ0aWZhY3QxNDcwMjAwNDQ0Mg==",
+    "name": "ohno-C001-6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+    "size_in_bytes": 68152301,
+    "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14702004442",
+    "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14702004442/zip",
+    "expired": false,
+    "digest": "sha256:d8d6c02ffc8c6ccea92e736cedbaa87df02fb7a3ac018e7e7513806f406b699a",
+    "created_at": "2026-11-21T10:04:56Z",
+    "updated_at": "2026-11-21T10:04:56Z",
+    "expires_at": "2027-02-19T10:01:47Z",
+    "workflow_run": {
+      "id": 44892345157,
+      "repository_id": 1431318446,
+      "head_repository_id": 1431318446,
+      "head_branch": "main",
+      "head_sha": "6a152648c72773eb33d37f8ac01f18ca35ab1f41"
+    }
+  },
+  "zipSha256": "d8d6c02ffc8c6ccea92e736cedbaa87df02fb7a3ac018e7e7513806f406b699a",
+  "exeBytes": 154045712,
+  "exeSha256": "cb85f2950f309154c285bd16a849196496e148c61ea9291efe6917560b1e99d0",
+  "compiledRevisionAsciiPresent": true,
+  "resultsRawSha256": "aadcfadb4334a56a955bc6a39384e377b89f8ce137a93d2ac7a5577b02d44c55",
+  "fixtures": [
+    {
+      "id": "v05-L-r15",
+      "sha256": "e4e040d4569e4b9397dd3358b48c582a3db399c315fbeb183f254282ba1bedd6"
+    },
+    {
+      "id": "v05-L-r16",
+      "sha256": "6b7a4c56afbbce7ae0044ad009db8ea0db18af24a17f185ed2053b90fb603329"
+    },
+    {
+      "id": "v05-L-r17",
+      "sha256": "bb1c6bb5712a20b20591342cadc7f2b950e1ec5a2a0d8d5bf0b42dfc73f675b8"
+    },
+    {
+      "id": "v05-L-r24",
+      "sha256": "003c53e28abb037972a62a11b0dcd0e617a6321aa681372ff48cdc15dc08166b"
+    },
+    {
+      "id": "v05-L-r32",
+      "sha256": "80f7249bd29261bf60d17295b2cfc41b98e390ec046961532fcf8361d9dc8c3a"
+    },
+    {
+      "id": "v05-L-r33",
+      "sha256": "005a72cf0197c7c4102893f9afbd25789d41399bbbbadd575fb849b7c66635a0"
+    },
+    {
+      "id": "v05-B-r15",
+      "sha256": "11883103d8eb6dd99c597d1ff69952529d4ea103c3048f084b78991b0b160971"
+    },
+    {
+      "id": "v05-B-r16",
+      "sha256": "5df0aa79ccad222d4fdcf19adb0c370d533c75d10522c6456cedf7004705137d"
+    },
+    {
+      "id": "v05-B-r17",
+      "sha256": "749d078760f2c091f3f9ccb5532a68b3afaefa7de1e5194d19be32b28870bf8c"
+    },
+    {
+      "id": "v05-B-r24",
+      "sha256": "5c65b6c0f275ff45a65a918e33d1f5cfea25361113943816672f9cc294c6f680"
+    },
+    {
+      "id": "v05-B-r32",
+      "sha256": "3b702a3b8ccc9bcd8d51ad3660f2a01651851401233ffbf91410d239226a17e3"
+    },
+    {
+      "id": "v05-B-r33",
+      "sha256": "a3dc60b09f318b20f3353fb53b81806944dc51de530d9f594170a77c64335999"
+    },
+    {
+      "id": "v05-P-r15",
+      "sha256": "78233f0bfb8010282194090f8b5e582220451cbb392609bdef8ea2a266103909"
+    },
+    {
+      "id": "v05-P-r16",
+      "sha256": "82fc7b1570ec535e469ebc73fb78595ade1865562902632c51a29cafdecd0a1d"
+    },
+    {
+      "id": "v05-P-r17",
+      "sha256": "5e1eb52d0cc49db8e0db22f88be1d16c971dc85087998ae607bd17bb50bec0ba"
+    },
+    {
+      "id": "v05-P-r24",
+      "sha256": "516e99b00f3b88931eb08bf3c473fdc759c698fb52966d3c6aeb355dc176c693"
+    },
+    {
+      "id": "v05-P-r32",
+      "sha256": "f82f0cc1a13078413faa12a9434d1a5f77bf89db93c831027426d279a57aeb59"
+    },
+    {
+      "id": "v05-P-r33",
+      "sha256": "ff15ab6da598b90879b5901de99686ad5f25102f232e903dbfaaada9af5acc26"
+    },
+    {
+      "id": "v05-C-r15",
+      "sha256": "ca190060f4e206581ee9a7d3b926eaec5eb524e3524cf3614b2234574e96410c"
+    },
+    {
+      "id": "v05-C-r16",
+      "sha256": "3427159442ae15c9b774eb19d0cedf4fcc40446f08a62b66805a20f66cf1f729"
+    },
+    {
+      "id": "v05-C-r17",
+      "sha256": "8330974a16ccdd7a9d86514c0e56d5fd1213abdbb3f0225e191241ed1dccaf6f"
+    },
+    {
+      "id": "v05-C-r24",
+      "sha256": "6ebb03d0737b2b37d3371a30995caf6996cbe67474d62a9fad7fae2942673a23"
+    },
+    {
+      "id": "v05-C-r32",
+      "sha256": "24485e01a014244a49516954edd8d2a94f824ffac648acdfac7ff1a17516528e"
+    },
+    {
+      "id": "v05-C-r33",
+      "sha256": "a40d76352c019fc33724e171c9cc5cc79cd84bca05941f441b72d3291662e21d"
+    },
+    {
+      "id": "v06-L-r15",
+      "sha256": "a693945f17ec35d4862e66e733f018ec17b603db1acecfe6426b68727101c27c"
+    },
+    {
+      "id": "v06-L-r16",
+      "sha256": "03884a3a4e826cbec81944c41f2c041c4eb3a96f996b5bc2881aea0890d35f78"
+    },
+    {
+      "id": "v06-L-r17",
+      "sha256": "db05fa58bf20f405a245011fbea5bbe9a47991458b06acc34c1871059aa84463"
+    },
+    {
+      "id": "v06-L-r24",
+      "sha256": "b89b802f64c71cc31facd97d6c0f97c78b02ea612c4d72a839f0ecd0237fdcee"
+    },
+    {
+      "id": "v06-L-r32",
+      "sha256": "cdbaddc83245ba77feb35f7bef472321e72741e6b45210c560e6b3811cfa2fa8"
+    },
+    {
+      "id": "v06-L-r33",
+      "sha256": "26ac0de24c1c598f6088ac9937a05e264c0baa50538bdeebb5926aa814990b91"
+    },
+    {
+      "id": "v06-B-r15",
+      "sha256": "7bc0a666c96ff362abd04fedcba45472d4242b8ea4b0f04c08551110f01c9b37"
+    },
+    {
+      "id": "v06-B-r16",
+      "sha256": "a6cd51a0b7c4c3c558c79c3683b637aff3cf9e4ee277f53449cac1d934c695e2"
+    },
+    {
+      "id": "v06-B-r17",
+      "sha256": "ae20d802d1d8b76627b8d5095a7c39a71910d7a421155a1a2cdcf95da02f5855"
+    },
+    {
+      "id": "v06-B-r24",
+      "sha256": "ba8c4100123b3dd6b0c3eb947e68e8e3d9a2c6fa0db9d2e5b86bea5b905b6de8"
+    },
+    {
+      "id": "v06-B-r32",
+      "sha256": "2dc82a10b70380be50410a6a6c05ab5c94909db465d32a2ee2ee73d7958b89be"
+    },
+    {
+      "id": "v06-B-r33",
+      "sha256": "209e63f3f6d98affd9f5c4906c4d0047794a57374f1f751bdb2a917dcdb387f9"
+    },
+    {
+      "id": "v06-P-r15",
+      "sha256": "c72a506c1e1f32108d635daa91bd4a73d48fbe03be149155d406446fe64d0826"
+    },
+    {
+      "id": "v06-P-r16",
+      "sha256": "5256f4b18e917a8b8b2b66f5e2a8dfb8be5623e7c4eff91515028add045a7403"
+    },
+    {
+      "id": "v06-P-r17",
+      "sha256": "af52d00b3b51e41861c677c3ec629cea594ef2413b668d90634383f4208d057a"
+    },
+    {
+      "id": "v06-P-r24",
+      "sha256": "4cdfd411b83eaa6a9caa96eaeaec633187489628059c4977e241f81e04c561e5"
+    },
+    {
+      "id": "v06-P-r32",
+      "sha256": "c9ebaee6f1e47e9765d35453c0feb5db150a6069f212672a84ce63f9a2a0024c"
+    },
+    {
+      "id": "v06-P-r33",
+      "sha256": "e9f4bae869c471f45e67efc6d37fc37203a05919ddc800b45df93b30079f70ec"
+    },
+    {
+      "id": "v06-C-r15",
+      "sha256": "b7b4b260b1ff4a5c84928d2ef846bd33e07ab979526dcd8a7d1835bcdf278f4f"
+    },
+    {
+      "id": "v06-C-r16",
+      "sha256": "b64e7c14fde4e9a1e7bc9b770d1d4f8711b84e65d2a85e44c128a08f66824851"
+    },
+    {
+      "id": "v06-C-r17",
+      "sha256": "9ebcc08fd080d6bb4bfc76209b95195b10d628af1148f0e7979966c5f52feebb"
+    },
+    {
+      "id": "v06-C-r24",
+      "sha256": "3751ecea9cc3f71f46785e2e88d32d69ed6553c12236ca000027528b49423050"
+    },
+    {
+      "id": "v06-C-r32",
+      "sha256": "9e49d2c46ea241c43f9874a29496c28ede7cd8f5c34496975d1749cc505119af"
+    },
+    {
+      "id": "v06-C-r33",
+      "sha256": "eb5ac09c68f63c43785a4777b2935e7f507af50a9d8cf51f9780da69d7c5deb0"
+    },
+    {
+      "id": "v14-L-r15",
+      "sha256": "38a8572af48bf05e04e4453fb6d283be75f4c149438ec9a8758ecdd2e9f4264e"
+    },
+    {
+      "id": "v14-L-r16",
+      "sha256": "9eb9f40e7be37a585e9d7067e41a8a29883d34065830a8637fbcfe887161b956"
+    },
+    {
+      "id": "v14-L-r17",
+      "sha256": "5f0b7bc9d640af96609eceb6f62cf9a58b99cf50d10d9e2c8ff20b6344ecb463"
+    },
+    {
+      "id": "v14-L-r24",
+      "sha256": "bd1776b596676f558f65271f25b7da77a890eecbc2a8706760071ed456d61d13"
+    },
+    {
+      "id": "v14-L-r32",
+      "sha256": "eebfb7b889ce79108d608e1d2f4f18332e38ca4bf6fb44f17042f4b97727a392"
+    },
+    {
+      "id": "v14-L-r33",
+      "sha256": "1e23ded25b5fcc06268beceb111d9438bb55d166595491df28b073b8a5f6d5bc"
+    },
+    {
+      "id": "v14-B-r15",
+      "sha256": "2fb2cdd726f7ed9ddd9f2eb261d850665708bd8fa748a149c54a82fb0c24e753"
+    },
+    {
+      "id": "v14-B-r16",
+      "sha256": "725a8d850e904434e43c6c2b98ec196184a07442ba10fcd7181ec65f498cb21c"
+    },
+    {
+      "id": "v14-B-r17",
+      "sha256": "4e108908d6dd09eb3856fbabfe6c29289b7621215fefb716e73caf376d9ded21"
+    },
+    {
+      "id": "v14-B-r24",
+      "sha256": "384a90f6b99756b02345556cba9dd38cb222d74bbfbedb0a28f5fdaf7d71f608"
+    },
+    {
+      "id": "v14-B-r32",
+      "sha256": "c658f697133579bd2696f188d0cfb0ba5970975887ec85109dc617f96eb2cf22"
+    },
+    {
+      "id": "v14-B-r33",
+      "sha256": "2407f5fa8eafe85e59e2ca14335e348d73b8a586d0194e0147cf7499d61a3d77"
+    },
+    {
+      "id": "v14-P-r15",
+      "sha256": "d480ddae3a30544a16de1a01a385a44f73edc6d5730be587e6a055a60c41a4dc"
+    },
+    {
+      "id": "v14-P-r16",
+      "sha256": "b63e10cc823dea042d462a841daea552df5c1194b030c5477b2ab297385475ec"
+    },
+    {
+      "id": "v14-P-r17",
+      "sha256": "4b107a9e62af5a32466cb1f9ca276c942c63ca470e691fdd454738cadb516657"
+    },
+    {
+      "id": "v14-P-r24",
+      "sha256": "bcae7de8762dfa3396c0eaf27c07b5f53ca158c1ef2102abc8c25f22bdbff54d"
+    },
+    {
+      "id": "v14-P-r32",
+      "sha256": "911f4e840d4dfc285c3693c8c8e161f9f2c7ce2292fe6f62b91bda993069af21"
+    },
+    {
+      "id": "v14-P-r33",
+      "sha256": "2691a7b9517649261fde9e7e65889317811433a9a573c21e96ab25b9b32d48d7"
+    },
+    {
+      "id": "v14-C-r15",
+      "sha256": "deec1551df21bedc8d2c3ad2b67e5292a3594169c7e4ea34388850aabbe1d105"
+    },
+    {
+      "id": "v14-C-r16",
+      "sha256": "17f146b7b2f6174c6a695902bf02c24818cc6b3a30d91dd030593490c9292928"
+    },
+    {
+      "id": "v14-C-r17",
+      "sha256": "e9f434a1ae44e3fc6afb3cf11d2bca84b567a38c90a9dd02e287c54d92fb5ce8"
+    },
+    {
+      "id": "v14-C-r24",
+      "sha256": "a06c598cf90f0d0ba91f48a4ca4f91a9ea78014efd4765c0171b27ba19da9101"
+    },
+    {
+      "id": "v14-C-r32",
+      "sha256": "43eee0b6b90aeae3043540f302996cfe136342c1fc2a21a176d7daffc8c5be51"
+    },
+    {
+      "id": "v14-C-r33",
+      "sha256": "a2d6e2d77588bec60c79dcba43913dac61663f21b00762dcb173f16366188299"
+    },
+    {
+      "id": "v14-L-r1",
+      "sha256": "a666cf6ccc8e4a28ea97142020f1976802982d87d91af2d42fd2e6fb88752e98"
+    },
+    {
+      "id": "v14-L-r2",
+      "sha256": "bbdf66e8eb26eb1778cdb2a6ef00fc53443045d783dfbb0a7db58f9bdf379507"
+    },
+    {
+      "id": "v14-B-r1",
+      "sha256": "188350f7cc2ca1761187f68ba7d5f0a0c774366a0d613701b7c58eab806d18e4"
+    },
+    {
+      "id": "v14-B-r2",
+      "sha256": "a41aac11c05cf1988f17c427770766b52a30d51e45c25a1cd9242c96ca546f0f"
+    },
+    {
+      "id": "v14-P-r1",
+      "sha256": "a1fc833e4402d151c30274afd4a0b2d0acb2d92bf6fc6e89de5b57af593b2ef0"
+    },
+    {
+      "id": "v14-P-r2",
+      "sha256": "aab97f45e451c9cf2821ffefcf5b31907bbbfd7854582b817b741709e788689b"
+    },
+    {
+      "id": "v14-C-r1",
+      "sha256": "ed7fa92cb60d2a1fa14718ee13fe70e7338ed98dc3eab8c8361a073d914871d9"
+    },
+    {
+      "id": "v14-C-r2",
+      "sha256": "e3557b61f77eff6193dca7894d3ca478e651789416894302c63de4c4b9cbf2b1"
+    },
+    {
+      "id": "raw-1",
+      "sha256": "8b2ec324f25f636717d7e1177e0d9dc09bf4806f961770b9467a6f29418d1f11"
+    },
+    {
+      "id": "raw0",
+      "sha256": "b3c91e4bad613723a1b01516131fa407fc4834b7c8f16d4be5d070b1dc5a3fd2"
+    },
+    {
+      "id": "syntax-fraction",
+      "sha256": "4e910d2847eb008678419c44cd92ce3a571bc6565ae3f53da045e5970fe1219a"
+    },
+    {
+      "id": "syntax-text",
+      "sha256": "cf13438015866f65c722d61d76c416ad3b9a3ec8da831e4d654d9fd3cbc3bd00"
+    },
+    {
+      "id": "syntax-overflow",
+      "sha256": "74782febca2caa3b5e2626a5af83c2787bb858884c8779b3c5e0623a8b1e8d3d"
+    },
+    {
+      "id": "syntax-empty",
+      "sha256": "78ecd0de2026630a3a6c2308a61e951272cbdee87ddd4af2d9efb8c5649cdbed"
+    },
+    {
+      "id": "samples-short-r16",
+      "sha256": "aaad12cc365e40d72dc54f001936595581f6196884eb47aa856c77cb7180d5b4"
+    },
+    {
+      "id": "samples-full-r16",
+      "sha256": "d90788d912d779ebc97e46f5d630ab9e4c9c6f556095702e1b09fefa88fa99a6"
+    },
+    {
+      "id": "samples-long-r16",
+      "sha256": "732c13c1a48b27ae997cca23ae13befbdc56d0473156c4a715ac81fa50191040"
+    },
+    {
+      "id": "samples-bad-set-r16",
+      "sha256": "02e7563ca3f2f5975cf7baad36fe3a24c32e49dd0ef898c8a227339f704b7a94"
+    },
+    {
+      "id": "samples-bad-payload-r16",
+      "sha256": "dd7cb8f8ddabfa61d7eee294b6ae37f85dbcf024d05e1da3b16c53034118840f"
+    },
+    {
+      "id": "samples-short-r17",
+      "sha256": "8ddaaf978c479f82750b3542e1a0cc00f56239eb4448f0f55860704af7378e7e"
+    },
+    {
+      "id": "samples-full-r17",
+      "sha256": "e90d40fddf8020cb25f9f3d27a6978f50af4447caaef64d50762a0eaa5c58a2d"
+    },
+    {
+      "id": "samples-long-r17",
+      "sha256": "062fab7257fc59a836e2f9a77bd6682ce8ede0e5f3247ae08f0260a9527f02b3"
+    },
+    {
+      "id": "samples-bad-set-r17",
+      "sha256": "f2c5a0139835a491accd0a8fe65b75b3a00698c81ce771618dae9def7071ba62"
+    },
+    {
+      "id": "samples-bad-payload-r17",
+      "sha256": "e0b6ecbe8d9742615e8df4063bac315fdbf076ed6a426c3104c0796fe29c2089"
+    },
+    {
+      "id": "inherited-r16",
+      "sha256": "dd89069f2cfc372703ba526307a4c13917a0ed7522adcdedfd1eeacb4febb391"
+    },
+    {
+      "id": "late-timing-r16",
+      "sha256": "3a713ff635d26075f884533dc21c3e8b016dff0a74014f836e5407efa6b71b51"
+    },
+    {
+      "id": "fraction-duration-r16",
+      "sha256": "c1f49d720e610138869fdfd407d680ed940a7ae0ae305339d5b12facc11b5fe4"
+    },
+    {
+      "id": "nonmonotone-final-r16",
+      "sha256": "447d9827ca6f31bd8bccec993c508420d8337400d1c14388d5dc7ee1f016c425"
+    },
+    {
+      "id": "inherited-r32",
+      "sha256": "8d55efcaa63ea92d3de93abaf5070d074d42a12ffaff6115c9943db5db78a33f"
+    },
+    {
+      "id": "late-timing-r32",
+      "sha256": "76a7c22d897a2e3279614901ce0d4c713011980bd7c114afc5e80b49c6d8ab62"
+    },
+    {
+      "id": "fraction-duration-r32",
+      "sha256": "2d7f2ef4a52da0d3684951f734717b65282c80f684e464469ddb418f3bdfad18"
+    },
+    {
+      "id": "nonmonotone-final-r32",
+      "sha256": "b18c748f684f8db4ea15cdbaed135cdf167c316f753b1765ddaa1744e042a8b8"
+    },
+    {
+      "id": "duration-over",
+      "sha256": "cf2b969587b45fa8cdc1dfbc1ece409f03f1e3919fce33af74ca66949b83885f"
+    },
+    {
+      "id": "checkpoints-over",
+      "sha256": "f1e7b23ea773391ea19bb527a21d2570851bf3cc894f7bf1a9f6f5ff57f8898b"
+    }
+  ],
+  "prepared": 86,
+  "excluded": 20,
+  "added": 45,
+  "oldLosses": 0,
+  "actualAudioReadyConsumers": 82,
+  "storedSampleErrors": 4,
+  "stress": [
+    {
+      "kind": "actual canonical aggregate",
+      "segments": 3144,
+      "rawSegments": 3150,
+      "movements": 248376,
+      "sliders": 3,
+      "mapCheckpoints": 98304
+    }
+  ],
+  "selectedLines": [
+    "2026-11-21T10:01:58.1193974Z 8.0.428 [C:\\Program Files\\dotnet\\sdk]",
+    "2026-11-21T10:02:00.8159921Z 8.0.428",
+    "2026-11-21T10:02:16.2395316Z     0 Warning(s)",
+    "2026-11-21T10:02:16.2395507Z     0 Error(s)",
+    "2026-11-21T10:02:52.8322743Z PASS R12 S25 malformed edge/payload retained as unavailable; existing1\u201316 traversal bound unchanged",
+    "2026-11-21T10:02:54.9606125Z PASS M16 bounded traversal0 rejected",
+    "2026-11-21T10:02:54.9610133Z PASS M16 bounded traversal-1 rejected",
+    "2026-11-21T10:02:54.9634779Z PASS M16 bounded traversal17 rejected",
+    "2026-11-21T10:03:13.8024607Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window",
+    "2026-11-21T10:03:15.5349216Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime",
+    "2026-11-21T10:03:25.0026600Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input",
+    "2026-11-21T10:04:14.5247635Z R17 DEVELOPMENT: 82 groups passed; 89878 finite scalar comparisons; last1 source inspection; research controls not added to independent QA",
+    "2026-11-21T10:04:18.2249181Z C001 DEVELOPMENT: 264/264 PASS",
+    "2026-11-21T10:04:19.6369233Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution",
+    "2026-11-21T10:04:21.1035049Z C001 stacking actual production: 18/18 loaded; 43 head checks; 0 gaps",
+    "2026-11-21T10:04:22.4959560Z C001 independent integration: 394/394 PASS; 0 failures",
+    "2026-11-21T10:04:24.0362242Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions",
+    "2026-11-21T10:04:31.2118445Z Issue18 development 3974/3974 PASS;86 prepared/20 excluded;45 additions",
+    "2026-11-21T10:04:33.5865438Z Issue15 development 1503/1503 PASS; 59 prepared; 41 rejected; 12 consumer controls",
+    "2026-11-21T10:04:35.0994090Z Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls",
+    "2026-11-21T10:04:37.2229254Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures",
+    "2026-11-21T10:04:40.0547262Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN",
+    "2026-11-21T10:04:51.5745515Z C001: 106/106 original-contract fields match; 0 gaps; 4/4 engineering controls PASS; 10 diagnostic-only probes; original runtime NOT RUN"
+  ]
+}
