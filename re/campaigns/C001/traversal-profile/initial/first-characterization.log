@@ -1,0 +1,37 @@
+FAIL v05-P-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v05-P-r16 isolated actual input/checkpoints/score/aggregate
+FAIL v05-P-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v05-P-r24 isolated actual input/checkpoints/score/aggregate
+FAIL v05-P-r32 isolated actual input/checkpoints/score/aggregate
+FAIL v05-P-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v05-C-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v05-C-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v05-C-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r16 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r24 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r32 isolated actual input/checkpoints/score/aggregate
+FAIL v06-P-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v06-C-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v06-C-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v06-C-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r16 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r24 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r32 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v14-C-r15 isolated actual input/checkpoints/score/aggregate
+FAIL v14-C-r17 isolated actual input/checkpoints/score/aggregate
+FAIL v14-C-r33 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r1 isolated actual input/checkpoints/score/aggregate
+FAIL v14-P-r2 isolated actual input/checkpoints/score/aggregate
+FAIL v14-C-r1 isolated actual input/checkpoints/score/aggregate
+FAIL samples-bad-set-r16 malformed samples stay unavailable, not invented defaults
+FAIL samples-bad-payload-r16 malformed samples stay unavailable, not invented defaults
+FAIL fraction-duration-r16 isolated actual input/checkpoints/score/aggregate
+FAIL fraction-duration-r32 isolated actual input/checkpoints/score/aggregate
+FAIL checkpoints-over actual canonical disposition
+FAIL checkpoints-over actual audit canonical stage
+Issue17 6477/6513 PASS; 42 preparations/64 refusals; 94 isolated components

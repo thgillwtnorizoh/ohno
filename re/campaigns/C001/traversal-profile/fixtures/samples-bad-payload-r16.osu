@@ -1,0 +1,18 @@
+osu file format v14
+[General]
+Mode:0
+StackLeniency:0
+[Metadata]
+Title:Work1 Issue17 samples-bad-payload-r16
+Creator:Project ohno
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:1
+[TimingPoints]
+0,500,4,1,0,100,1,0
+[HitObjects]
+128,192,2000,2,2,L|428:192,16,300,,,x

@@ -297,3 +297,22 @@ No actionable finite discrepancy; new native Windows/original/runtime/audible/
 physical/owner charts NOT RUN. See verification/15-circle-free-v5-integration.md
 and near-spinner-qa/. Next HQ final review/potential Issue15 closure. Issue15/C001/
 subsystem OPEN; no owner manual action or original-runtime equivalence claim.
+
+
+## 2026-11-21 — Issue17 Work1 traversal research checkpoint
+
+VERIFIED CHECKPOINT, research only; Issue17/C001/subsystem OPEN. Starting main
+6e31cb63a8901ac7522e91dae386afcc2825f571; exact clean tested functional source
+22a403505f13461477343b9c6a251980716dd90f. [Full checkpoint](traversal-profile/README.md),
+[finite handoff](traversal-profile/handoff.md), [original evidence](original-behavior/15-slider-traversal-count.md).
+288 original sites/11 bodies/47 historical matches;106 immutable synthetic fixtures,
+6786/6786 executed checks,41 current preparations/65 refusals,94 isolated components.
+Count16 is engineering;9000/9001 static-only. Canonical1–32 proposal requires
+pre-expansion map work checks,cancellation and explicit metadata opt-in; historical
+1–16 string/metadata contracts retained.86 future candidates/20 exclusions is
+a fixture contract, not current admissions or64-owner-label recovery forecast.
+No production/historical tests changed; original/Windows runtime and full regression
+NOT RUN. Initial36 characterization failures and corrected oracle/fixture assumptions
+preserved. Pending final deadlines, floor N/R and malformed-audio Error remain
+visible. Next Headquarters review, then separately authorized Work2 integration
+and Work1 exact-source independent acceptance. No original-evidence blocker.
