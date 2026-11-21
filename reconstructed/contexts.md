@@ -1912,3 +1912,7 @@ R17 unchanged. Prior research1261/independent QA remain historical,not new passe
 Original runtime/GUI/audible/physical/private owner corpus NOT RUN. No owner31
 recovery forecast or manual action. Next Headquarters review then Work1 independent
 actual-new-source QA; Issue15/C001/subsystemOPEN,Issue4OPEN.
+
+
+## Issue18 initial canonical traversal integration — 2026-11-21
+Verified127e80a accepted22a4035; readIssue18/original15/traversal-profile handoff/106manifest/README. Shared internal canonical32/legacy16 profile for loader and metadata; old public/string APIs unchanged. Checked Int64 remaining movement budget, remaining segment limit, exact bounded checkpoint plan BEFORE repeated movement allocation; preserve Single/Double math and separate clocks. Deterministic stage cancellation via default-null internal observer and entry/loop/publication checks; no partial parent/resource owner returned on cancellation. Final local3973PASS/106cases86prepared20excluded45additions, real canonical fresh consumers/audio/schedules. Stress actual248376movements/98304checkpoints/97464segments and over-limit rejections; rawP8192 geometry, checked32*8192 preflight, Int64overflow; retained1502/801/656/295/P299/C4375PASS. Initial member-access compile error and Catmull segment-count stress assumptions retained/corrected in test only; no immutable expectations changed. Fresh Windows full gate/package follows source publication, not completed yet. C001/Issue18/Issue4OPEN; no owner action.

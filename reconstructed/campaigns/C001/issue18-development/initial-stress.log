@@ -1,0 +1,7 @@
+FAIL actual canonical dense Catmull geometry and repeated work
+Unhandled exception. System.IO.InvalidDataException: Canonical supports 1–32 slider traversals (span count includes the first traversal).
+   at Ohno.CircleGame.Gameplay.Beatmap.LoadCore(String path, CancellationToken token, Boolean extendedPaths) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/CircleGame/Gameplay/Beatmap.cs:line 968
+   at Program.<>c__DisplayClass8_0.<Stress>g__Load|6(String name, String text) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/C001TraversalChecks/Stress.cs:line 17
+   at Program.Stress(String root, String tmp) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/C001TraversalChecks/Stress.cs:line 23
+   at Program.Main(String[] args) in /workspace/scratch/b1ffc6429d98/ohno/reconstructed/C001TraversalChecks/Program.cs:line 73
+   at Program.<Main>(String[] args)

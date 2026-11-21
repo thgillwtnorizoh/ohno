@@ -1,0 +1,5 @@
+DENSE DIAGNOSTIC segments=3144 controls=64 raw=3150 movements=100608
+FAIL actual canonical dense Catmull geometry and repeated work
+FAIL actual multi-slider near250000 movement budget
+FAIL actual multi-slider remaining movement preflight rejects overbudget
+Issue18 development 3964/3967 PASS;86 prepared/20 excluded;45 additions

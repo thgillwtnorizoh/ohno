@@ -1,0 +1,15 @@
+{
+  "starting": "127e80a38a2de076eb37c9e34692194e22d78011",
+  "state": "modified before source publication",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "passed": 3973,
+  "admitted": 86,
+  "excluded": 20,
+  "added": 45,
+  "hashes": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "49ae2543590f2e8f2bf3aadc86eaadc32149602fb9005cbfaa7ea0d66cd432c4",
+    "reconstructed/C001TraversalChecks/Program.cs": "d25916c58d8a31bacc74ee44d9d51a70a9b41fa76bd93270b5087b9f3d67e780",
+    "reconstructed/C001TraversalChecks/Stress.cs": "db8273707ebc5bdd04c8c74cec55878bd4d55e06064ae6fec0ff5e91db3da424"
+  }
+}
