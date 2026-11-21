@@ -1,0 +1,196 @@
+{
+  "source": "6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+  "run": 44892345157,
+  "job": 136810681097,
+  "successfulSteps": 53,
+  "historical": [
+    {
+      "suite": "QA15 HEADLESS",
+      "passed": 95,
+      "failed": 0,
+      "line": "2026-11-21T10:02:22.3263229Z QA15 HEADLESS: 95 passed, 0 failed"
+    },
+    {
+      "suite": "QA15 WINDOWS",
+      "passed": 39,
+      "failed": 0,
+      "line": "2026-11-21T10:02:27.2075496Z QA15 WINDOWS: 39 passed, 0 failed"
+    },
+    {
+      "suite": "HEADLESS COMPONENT TESTS",
+      "passed": 90,
+      "failed": 0,
+      "line": "2026-11-21T10:02:28.9001800Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed"
+    },
+    {
+      "suite": "QA03 SLIDER TESTS",
+      "passed": 56,
+      "failed": 0,
+      "line": "2026-11-21T10:02:30.2893018Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed"
+    },
+    {
+      "suite": "QA04 GEOMETRY TESTS",
+      "passed": 43,
+      "failed": 0,
+      "line": "2026-11-21T10:02:33.0235071Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed"
+    },
+    {
+      "suite": "QA05 SPINNER TESTS",
+      "passed": 66,
+      "failed": 0,
+      "line": "2026-11-21T10:02:35.7825142Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed"
+    },
+    {
+      "suite": "QA06 ACCOUNTING TESTS",
+      "passed": 99,
+      "failed": 0,
+      "line": "2026-11-21T10:02:40.9007676Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed"
+    },
+    {
+      "suite": "QA07 HEALTH TESTS",
+      "passed": 159,
+      "failed": 0,
+      "line": "2026-11-21T10:02:43.5018472Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed"
+    },
+    {
+      "suite": "QA08 NEWCOMBO TESTS",
+      "passed": 115,
+      "failed": 0,
+      "line": "2026-11-21T10:02:46.4533553Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed"
+    },
+    {
+      "suite": "QA09 HITSOUND TESTS",
+      "passed": 234,
+      "failed": 0,
+      "line": "2026-11-21T10:02:51.0702158Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed"
+    },
+    {
+      "suite": "QA10 SLIDER SOUND TESTS",
+      "passed": 229,
+      "failed": 0,
+      "line": "2026-11-21T10:02:55.4981843Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed"
+    },
+    {
+      "suite": "QA11 CONTINUOUS TESTS",
+      "passed": 247,
+      "failed": 0,
+      "line": "2026-11-21T10:03:01.4574106Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed"
+    },
+    {
+      "suite": "QA11 WINDOWS EMPTY",
+      "passed": 6,
+      "failed": 0,
+      "line": "2026-11-21T10:03:02.6384427Z QA11 WINDOWS EMPTY: 6 passed, 0 failed"
+    },
+    {
+      "suite": "QA12",
+      "passed": 274,
+      "failed": 0,
+      "line": "2026-11-21T10:03:10.0095621Z QA12: 274 passed, 0 failed, 274 executed"
+    },
+    {
+      "suite": "QA12 WINDOWS",
+      "passed": 12,
+      "failed": 0,
+      "line": "2026-11-21T10:03:11.3628786Z QA12 WINDOWS: 12 passed, 0 failed"
+    },
+    {
+      "suite": "QA13 HEADLESS",
+      "passed": 257,
+      "failed": 0,
+      "line": "2026-11-21T10:03:21.9850630Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls"
+    },
+    {
+      "suite": "QA13 WINDOWS",
+      "passed": 24,
+      "failed": 0,
+      "line": "2026-11-21T10:03:23.5203782Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls"
+    },
+    {
+      "suite": "QA14 HEADLESS",
+      "passed": 237,
+      "failed": 0,
+      "line": "2026-11-21T10:04:00.8737613Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls"
+    },
+    {
+      "suite": "QA14 WINDOWS",
+      "passed": 30,
+      "failed": 0,
+      "line": "2026-11-21T10:04:12.0296676Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only"
+    }
+  ],
+  "historicalPassed": 2312,
+  "developmentCorroborated": 3974,
+  "artifactSha256": "d8d6c02ffc8c6ccea92e736cedbaa87df02fb7a3ac018e7e7513806f406b699a",
+  "artifactBytes": 68152301,
+  "exeSha256": "cb85f2950f309154c285bd16a849196496e148c61ea9291efe6917560b1e99d0",
+  "exeBytes": 154045712,
+  "fixtureHashes": 106,
+  "individualDispositions": 106,
+  "storedSampleErrors": 4,
+  "windowsCRLFSourceHashes": {
+    "reconstructed/CorpusAudit/AuditRunner.cs": "9d08638bf194a68bcacfe9673b339e2fd5f26d52eda3f28d693848a8f63601ca",
+    "reconstructed/CorpusAudit/Program.cs": "b69d5b18b01fcfe9b8ae8b39c8462faf5aa026614517f1d7781bb2888a00c1ca",
+    "reconstructed/CorpusAudit/CorpusAudit.csproj": "99138f82e65339a44762a88fe76cab90195211c406009ead8a8db98d1dd1e0a6",
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "4aff793a3d92057f30a919cd87a9a3c0945a00db123416750e1b2b08c1593fda",
+    "reconstructed/CircleGame/Gameplay/CircleSession.cs": "1372cfae74b69021d70edfd74d4a183e42f0c0ad9cf80a157f17fd239a5201ab",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "bd1095c94bed4718ee0ad3bdd138aa8a056e25aaff44ddfa71661d5ebecf424c",
+    "reconstructed/CircleGame/Gameplay/RankResults.cs": "c06ea0ad55655e5d00a124bc7b286cb80590a74bca2d767bb906c10b247fed6f",
+    "reconstructed/CircleGame/Selection/LocalChartCatalog.cs": "e8d17af7ac87619d6c3349b76be6e3709588f67b9f255253ad18315e2ab33d66"
+  },
+  "packetSha256": "aadcfadb4334a56a955bc6a39384e377b89f8ce137a93d2ac7a5577b02d44c55",
+  "normalizedDecodedLogSha256": "b617735da4587e7d6c094353f3687239910a64f6da3e8e89bb98fa32045b680c",
+  "bundleEntries": 443,
+  "runtime": {
+    "runtimeOptions": {
+      "tfm": "net8.0",
+      "includedFrameworks": [
+        {
+          "name": "Microsoft.NETCore.App",
+          "version": "8.0.34"
+        },
+        {
+          "name": "Microsoft.WindowsDesktop.App",
+          "version": "8.0.34"
+        }
+      ],
+      "configProperties": {
+        "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+        "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true
+      }
+    }
+  },
+  "wpfMethods": [
+    {
+      "name": "LoadCore",
+      "rva": 105040,
+      "codeSize": 5201,
+      "bodySha256": "a724e1feffe92af3f1a33ed828e8bb9d04aa353d74a75a6da3bec0e3fe68193b",
+      "checkedMultiply": false
+    },
+    {
+      "name": "PreflightSliderMovements",
+      "rva": 112328,
+      "codeSize": 67,
+      "bodySha256": "de44135f3097277946721b090ed04643fb355c756a216b89292a1bca9e899516",
+      "checkedMultiply": true
+    },
+    {
+      "name": "PrepareSliderBounded",
+      "rva": 112424,
+      "codeSize": 397,
+      "bodySha256": "143046b0576e2b885e381a4d150c0fb8a496ed7a5b03c0f1faa443f5d3492672",
+      "checkedMultiply": false
+    },
+    {
+      "name": "PrepareSliderGeometry",
+      "rva": 112836,
+      "codeSize": 1249,
+      "bodySha256": "1bb0256189d9a0f0a6f967b60ced5ee1ac41504b93563006d0003d3982aa4cfd",
+      "checkedMultiply": false
+    }
+  ],
+  "wpfManagedSha256": "f3219f60216072af7b281412a7ccb96483b0434677db8adeb21caf7be0ca2c52",
+  "exeExecuted": false,
+  "independentNewChecks": false
+}

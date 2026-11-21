@@ -242,3 +242,24 @@ NOT RUN. Initial36 characterization failures and corrected oracle/fixture assump
 preserved. Pending final deadlines, floor N/R and malformed-audio Error remain
 visible. Next Headquarters review, then separately authorized Work2 integration
 and Work1 exact-source independent acceptance. No original-evidence blocker.
+
+
+## 2026-11-21 — Issue18 independent canonical1–32 checkpoint
+
+VERIFIED CHECKPOINT. Starting727958c78e4508d746d5e47abea2744f4d4fe3e5; exact
+production6a152648c72773eb33d37f8ac01f18ca35ab1f41. [Full UEP report](verification/18-canonical-traversals.md),
+[QA/source/fixture/binary/package records](traversal-qa/README.md). Fresh independent
+5732/5732 PASS plus separate729/729 old-source baseline. All106 immutable cases
+86prepared/20excluded,45new/0losses;82audio-capable fixture consumers and4stored
+sample errors;43 newly admitted audio-capable fixtures plus real17/32/24 multi-parent
+consumer. Exact old geometry/schedule digests preserved. Checked preflight, actual
+248850 movements/98304 checkpoints/97650 segments aggregates, during-work cancellation
+and allocated-map-byte cleanup verified. Historical string/public metadata17 still
+refuse. Source diff only Beatmap; other connected algorithms/historical tests intact.
+Fresh retained Work2 Linux1502/801/656/295 pass separately; live Windows44892345157
+53steps/3974development/2312historical and ZIP/exe/106fixture/managed-method identities
+independently corroborated, not newly run Windows QA. Interrupted /tmp epoch and
+known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/logs/
+seals authoritative. No finite production blocker. Next Headquarters potential
+Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
+runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.

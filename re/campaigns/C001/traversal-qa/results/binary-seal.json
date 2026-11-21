@@ -1,0 +1,8 @@
+{
+  "productionDllSha256": "0a9008c88a5efd29f793069b7fc13f8a3c7e53b7adf7d408b4037aeb8fc80d57",
+  "linkedDllSha256": "0a9008c88a5efd29f793069b7fc13f8a3c7e53b7adf7d408b4037aeb8fc80d57",
+  "checksDllSha256": "f93b564c7b5d4f6a28d605de9232399ffea6ffcf5ca4f5d897cb194bb625aad0",
+  "resultSha256": "0a0502e900100ec70d1daf792a2206e75dcb2023640fd1ce8008e5f511563d98",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33"
+}

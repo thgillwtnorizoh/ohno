@@ -1,0 +1,359 @@
+{
+  "jobs": [
+    {
+      "id": 136810681097,
+      "name": "build-and-regression",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 44892345157,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Checkout exact gate commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Select an already installed .NET 8 SDK",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Compile R07 WPF Windows x64",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Execute independent QA15 corpus and calculator component verification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Execute unchanged QA01 headless suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Execute QA03 slider component suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Check R06 finite preparation targets and fixture loading",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Execute independent QA04 geometry and integration suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Check R07 bounded spinner components",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Execute independent QA05 spinner suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Check R08 bounded legacy ledger controls",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Check R08-C01 spinner presentation and input continuity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Check R08-C02 automatic chart score multiplier",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14
+        },
+        {
+          "name": "Execute independent QA06 ledger multiplier and presentation suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Check R09 bounded health calibration and integration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Execute independent QA07 health calibration drain and failure suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        },
+        {
+          "name": "Check R10 fresh ordinary NewCombo preparation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18
+        },
+        {
+          "name": "Execute independent QA08 NewCombo and fresh health integration suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        },
+        {
+          "name": "Check R11 circle hitsound selection resources and lifecycle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20
+        },
+        {
+          "name": "Execute independent QA09 circle hitsound suite without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        },
+        {
+          "name": "Check R12 discrete slider hitsounds without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22
+        },
+        {
+          "name": "Execute independent QA10 discrete slider suite without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Check R13 shared continuing channels without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Check R13 Windows empty-resource lifecycle without opening media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        },
+        {
+          "name": "Execute independent QA11 shared channels without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26
+        },
+        {
+          "name": "Check R13-C01 captured settings gain without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27
+        },
+        {
+          "name": "Check R14 spinner audio with recording channels and independent assets",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28
+        },
+        {
+          "name": "Check R14 Windows unsupported-frequency capability without media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29
+        },
+        {
+          "name": "Execute independent QA12 spinner audio without media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30
+        },
+        {
+          "name": "Check R14-Q01 routing and diagnostics without opening media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Check R15 original-derived Rank model without media or windows",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Check R15 WPF host and widgets without showing a Window",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        },
+        {
+          "name": "Execute independent QA13 Rank results without windows or media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 34
+        },
+        {
+          "name": "Check R16 local catalog selection and Play capture without windows/media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 35
+        },
+        {
+          "name": "Check R16 unshown SelectPlay widgets and Rank-return host boundaries",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36
+        },
+        {
+          "name": "Execute independent QA14 catalog selection and entry controls without windows/media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37
+        },
+        {
+          "name": "Check R17 restricted circle mathematics against independent E045 E046 data",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38
+        },
+        {
+          "name": "Check R17 unshown calculated-star browser and Rank boundaries",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39
+        },
+        {
+          "name": "Check C001 canonical syntax and versioned Bezier preparation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40
+        },
+        {
+          "name": "Check C001 finite Perfect-circle geometry and consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41
+        },
+        {
+          "name": "Preserve independent finite stacking regression",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42
+        },
+        {
+          "name": "Check finite Catmull paths and shared consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43
+        },
+        {
+          "name": "Check Issue18 canonical traversal budgets and actual consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44
+        },
+        {
+          "name": "Check Issue15 circle-free v5 near-spinner integration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45
+        },
+        {
+          "name": "Check Issue9 finite stacking timing and consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46
+        },
+        {
+          "name": "Check finite versioned spinner admission and real consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47
+        },
+        {
+          "name": "Preserve actual canonical CorpusAudit development checks",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 48
+        },
+        {
+          "name": "Publish C001 Windows x64 application for owner qualification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 49
+        },
+        {
+          "name": "Verify independent C001 finite original-contract predictions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 50
+        },
+        {
+          "name": "Preserve C001 development evidence and Windows application",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 51
+        },
+        {
+          "name": "Post Checkout exact gate commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 102
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 103
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 14702004442,
+      "name": "ohno-C001-6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+      "size_in_bytes": 68152301,
+      "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14702004442",
+      "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14702004442/zip",
+      "expired": false,
+      "created_at": "2026-11-21T10:04:56Z",
+      "expires_at": "2027-02-19T10:01:47Z",
+      "updated_at": "2026-11-21T10:04:56Z",
+      "digest": "sha256:d8d6c02ffc8c6ccea92e736cedbaa87df02fb7a3ac018e7e7513806f406b699a",
+      "workflow_run": {
+        "id": 44892345157,
+        "repository_id": 1431318446,
+        "head_repository_id": 1431318446,
+        "head_branch": "main",
+        "head_sha": "6a152648c72773eb33d37f8ac01f18ca35ab1f41"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "url": "https://github.com/thgillwtnorizoh/ohno/issues/18#issuecomment-7061674008",
+      "body": "## Headquarters C001 / Issue #18 — Work 2 VERIFIED DEVELOPMENT checkpoint accepted; Work 1 independent new-source QA authorized\n\n**Project / Campaign / Actor / Assignment:** Project ohno / C001 / Headquarters review + new Work 1 Independent Verification authorization / Issue #18. **UEP-001 Revision 2.1.**\n\n**Status:** **ACCEPTED — VERIFIED WORK 2 DEVELOPMENT CHECKPOINT** for the finite canonical 1–32 traversal profile. **Independent Work 1 QA NOT YET RUN on the new production**. Issue #18 remains **OPEN** for that gate; C001/subsystem OPEN, original-runtime Issue #4 OPEN. No owner acceptance/original game equivalence implied.\n\n**Exact commit provenance:** Work2 starting research-integrated `main` `127e80a38a2de076eb37c9e34692194e22d78011` (Issue#17 research accepted). First functional introducing revision `2d6768c5a18d50f5254fd90db4c58cdde294c1b1`; **final exactly Windows-tested functional source** `6a152648c72773eb33d37f8ac01f18ca35ab1f41` (no subsequent gameplay edit, final harness/resource evidence strengthened); **published evidence/current verified `main`** `727958c78e4508d746d5e47abea2744f4d4fe3e5`. GitHub compare confirms evidence publication is a descendant and does not touch gameplay. Accepted old gameplay baseline `22a403505f13461477343b9c6a251980716dd90f` stays separately preserved.\n\n**Reviewed authority:** [original-static research and 106 case handoff](https://github.com/thgillwtnorizoh/ohno/blob/127e80a38a2de076eb37c9e34692194e22d78011/re/campaigns/C001/traversal-profile/handoff.md); [Work2 report](https://github.com/thgillwtnorizoh/ohno/blob/727958c78e4508d746d5e47abea2744f4d4fe3e5/reconstructed/campaigns/C001/17-issue18-canonical-traversals.md); `reconstructed/campaigns/C001/issue18-development/{source-review.json,dispositions.csv,windows.json,windows-results.json,windows-gate.json,multi-owner-results.json}`; current `Beatmap.cs` patch plus workflow and new `C001TraversalChecks` versioned suite. Source hash/provenance packet indicates other session/samples/resources/CorpusAudit/modern geometry unchanged. HQ reviewed records and live run; not rerunning the compiled game or test suite itself.\n\n**Per-case sealed result verification:** `dispositions.csv` contains **106 unique fixture IDs and unique byte hashes**; old41 prepared/current86 prepared, exactly45 old-false→new-true, zero old-true→new-false, 20 retained exclusions and **4 prepared with sampleError**. Stable research manifest/expectations are not rewritten. Actual `windows-results.json`: **3,974 new-source assertions PASS /0 FAIL** (local3973 + clean compiled-source check); 82 canonical audio-capable consumer probes and four retained stored audio Error cases. Supplementary actual three-parent 17/32/24 traversal score/health/session/resources integration **4/4 PASS**, separately counted.\n\n**Live exact Windows evidence:** [Actions run44892345157](https://github.com/thgillwtnorizoh/ohno/actions/runs/44892345157) head SHA exactly `6a152648...`, completed SUCCESS; job136810681097 all **53/53 steps SUCCESS**, 19 fresh historical summary suites total **2,312 PASS/0 FAIL**; retained Issue15/Issue9/Issue7/Issue11/C001/P/C/stacking/R12/QA10 controls reported successful. [Artifact14702004442](https://github.com/thgillwtnorizoh/ohno/actions/runs/44892345157/artifacts/14702004442) GitHub recorded digest SHA256 `d8d6c02ffc8c6ccea92e736cedbaa87df02fb7a3ac018e7e7513806f406b699a`, size **68,152,301** bytes; matches checkpoint. Reported package EXE **154,045,712** bytes, SHA256 `cb85f2950f309154c285bd16a849196496e148c61ea9291efe6917560b1e99d0`; final artifact/fixture/source marker independently sealed by Work2, not downloaded/run by HQ. SDK8.0.428/runtime8.0.34/Release 0 compiler warnings/errors per run/checkpoint. Earlier successful run44892067713 remains separate source/earlier harness evidence, not counted as the final exact gate.\n\n**Observed code contract:** New internal `SliderTraversalProfile` explicitly selects canonical32 or historical16 and is used by loader and internal sample metadata; public metadata `Parse` remains legacy16. Canonical integer positive17–32 enabled while raw count and effective Max(1,raw) remain separate; legacy string input17 still rejected and malformed/33+ controls remain. Actual geometry reused unchanged. Checked Int64 movement work/preflight against remaining250,000 map movements BEFORE large repeated allocations, and exact checkpoint plan built with4096-per-parent/100000-map limits before movements. Cooperative token checks at traversal/segment/tick/movement/publication. Retain velocity/Single/Double accumulation, terminal Max(midpoint,last−36) nonmonotone schedule, floor N/R edge subset, existing component due-prefix/pending and real score/health/NewCombo/session/discrete/continuing channels. Canonical resources/source identity protected. Stress evidences248,376 movements across3 parents,98,304 checkpoints across24,97,464 segments across31 and over-budget rejections; no original high-count runtime simulation. Some stress geometry probes aren't real canonical clients and must be distinguished in independent QA.\n\n**Discrepancies / limitations:** Initial development harness compiler error/incorrect Catmull segment estimate and stress-case assertions retained in evidence and corrected without modifying old fixtures/original research; one earlier recording-channel test used stand-in handles and final source checks actual canonical resource handles. No remaining reproducible development blocker reported. **NOT RUN:** original osu!.exe/CLR/JIT/GUI, Windows application launch, audible decoder/listening, physical input, owner private chart corpus or host-specific original high-repeat behavior. Engineering32 is NOT original max; static original >9000 parser observation NOT verified executable. No owner-corpus scans after this change per owner directive.\n\n### Next bounded execution — Work 1 Independent Verification (fresh chat self-contained)\n**Project:** Project ohno / **Campaign:** C001 / **Actor:** Work 1 — Independent New-Production QA / **Assignment:** Issue #18 `https://github.com/thgillwtnorizoh/ohno/issues/18` / **Starting main SHA to verify:** `727958c78e4508d746d5e47abea2744f4d4fe3e5` / **Exact functional source to independently test:** `6a152648c72773eb33d37f8ac01f18ca35ab1f41` / **Original authority:** accepted Work1 Issue17 288 authenticated sites/11 bodies plus prior E005/E016/E017/E021/E022/E039/E040, immutable `re/campaigns/C001/traversal-profile/{manifest.json,fixtures/,handoff.md,static-evidence.json}`. **UEP-001 Rev2.1**, no memory assumed. Verify repo AGENTS/Instruction/status, HEAD, production/source hashes and audit setup before running.\n1. Build clean exact new production independently, inspect ALL changes relative to `127e80a` and previous `22a4035`, source hashes, linked DLL/Windows-source identities. Independently design a new verifier; do not use Work2 `C001TraversalChecks` as sole behavioral oracle and do not change production, old fixture bytes or prior research expected outcomes.\n2. Individually verify all **106 unchanged SHA-sealed fixtures** against original-derived predictions: **86 prepared /20 excluded; exactly45 new prepared /0 lost**; distinguish the4 canonical-but-audio-error entries, sample owner, error/type/code, and old public metadata/string loader17 refusals. Preserve validated 1–16 geometry, traversal/schedule/grade behavior byte-for-byte and all negative syntax/zero/negative/fraction/overflow/33+/duration/unsuitable format/resource controls.\n3. Verify checked pre-allocation budget enforcement under actual remaining map counts: 250000 movements (including stress near/over edge), segments and checkpoints per-map/per-parent, multi-slider aggregate, 32×8192=262144 overflow-negative, checked Int64 overflow, cancellation before/within traversal/segment/tick/movement loops, errors deterministically before unsafe expansion and no partial owner/resource publication. Source-check exact cancellation and resource ownership; any reflection/private-helper probe must be labeled separately from genuine canonical map execution.\n4. Independently compare original-static signed/SINGLE/DOUBLE timing & direction parity and unchanged path sampling for 1/2/15/16/17/24/32 across v5/v6/v14 L/B/P/C; inherited/late timing and fractional end, nonmonotone terminal checkpoint, count-dependent floor N/R subset, pending checkpoint and aggregate grade (not always Hit300). Directly exercise real newly prepared canonical owners through automatic score, calibrated health/NewCombo, registered session/head input and actual sample resource selection/recording continuing channel. Check missing/malformed audio cases stay distinguishable from readiness.\n5. Corroborate live Windows run44892345157 exact SHA +53 successful steps,3974 dev assertions,2312 historical, current C001/Issue15/Issue9/Issue7/Issue11 gates and actual artifact14702004442 SHA/EXE marker/106 packaged fixture hashes; old Windows dev evidence must not be recounted as independently rerun. Run focused independent .NET8 tests with separate new-source pinned counts. Only fresh full Windows rerun if correction warranted; no original runtime equivalence.\n6. Publish independent QA code, logs, per-case results, command/env/pass/fail counts, source and package seals, exact starting/published/tested commits; append `re/campaigns/C001` coverage/dependency/discrepancy/status and append-only `re/contexts.md` (leave Work2 records alone), preserve all initial failures and historical tests; check remote head before non-force publication. Report BLOCKED with reproduction if a real discrepancy appears; do not silently patch Work2 source.\n\n**Stop condition:** VERIFIED INDEPENDENT FINITE ISSUE#18 CHECKPOINT or reproducible BLOCKED; return to Headquarters for potential Issue#18 closure, not C001 completion. **Next actor:** Headquarters review and disposition; **Issue#18 OPEN, Campaign C001 OPEN, subsystem OPEN, Issue#4 original-runtime OPEN**. **No owner corpus scan, no manual owner qualification requested**.\n**Mandatory UEP-001 Rev2.1 checkpoint:** Project/Campaign/Actor/Assignment; Status VERIFIED CHECKPOINT|BLOCKED|FAILED; Starting/Published/Exact tested SHA; Objective/Supported profile/changes; Evidence/confidence classification; Tests actual commands/platform/pass-fail, CI/artifact and NOT RUN; Coverage gained/remains; discrepancies/limits/blockers; updated records/repro; next actor/dependencies; subsystem OPEN|OWNER-ACCEPTED only with owner evidence."
+    }
+  ]
+}

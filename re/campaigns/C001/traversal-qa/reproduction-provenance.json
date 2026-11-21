@@ -1,0 +1,39 @@
+{
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "pins": [
+    {
+      "label": "baseline",
+      "source": "22a403505f13461477343b9c6a251980716dd90f",
+      "sourceState": "clean",
+      "productionDllSha256": "c201d5af14a50139e84af61572f757905bfcd03aafae97f30e11b07cf6d5513c",
+      "linkedDllSha256": "c201d5af14a50139e84af61572f757905bfcd03aafae97f30e11b07cf6d5513c",
+      "checksDllSha256": "d87ee35b171816257b7881afe32fed5ce6d20aa643d62b2f4082e21f9c558481",
+      "resultSha256": "606293a86040ece720069904628f1726278ebb0bc88f296ea4c5378e9ce95530",
+      "passed": 729,
+      "failed": 0
+    },
+    {
+      "label": "independent",
+      "source": "6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+      "sourceState": "clean",
+      "productionDllSha256": "0a9008c88a5efd29f793069b7fc13f8a3c7e53b7adf7d408b4037aeb8fc80d57",
+      "linkedDllSha256": "0a9008c88a5efd29f793069b7fc13f8a3c7e53b7adf7d408b4037aeb8fc80d57",
+      "checksDllSha256": "f93b564c7b5d4f6a28d605de9232399ffea6ffcf5ca4f5d897cb194bb625aad0",
+      "resultSha256": "0a0502e900100ec70d1daf792a2206e75dcb2023640fd1ce8008e5f511563d98",
+      "passed": 5732,
+      "failed": 0
+    }
+  ],
+  "qaSourceHashes": {
+    "Checks/Program.cs": "6371ec9498ed0932cd16b5f4056720b00da5ad6963bb419f358ffedeb5ca7be6",
+    "Checks/Adversaries.cs": "99853925c400fb3e21cd4f0547f0a943099ce21c38b131ebeafdf73435242870",
+    "Checks/Checks.csproj": "7f9e37c63920b56741982828e601f025191847d4627db5343f2af83bb487f0b2",
+    "verify.py": "4a3275160f3c92a8c88bdd50579744e7d07dd2340e916da66b060bbbd8bc9537",
+    "review.py": "ca815b1924865aa095600ab08f3787e8b8d4c4ccc0375d6ed852721a82420128",
+    "expected-sources.json": "e9407d3a597bb33b90ea642ced729a4ab8d74ae937625452ec023438adbe6276",
+    "old-sources.json": "73d6a1e3819c6d9eac230b4ba9cb45be99568bf82be31e5c888e274dcedd8a23"
+  },
+  "originalRuntime": "NOT RUN",
+  "newWindowsRun": "NOT RUN"
+}

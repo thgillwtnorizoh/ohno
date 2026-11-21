@@ -1,0 +1,107 @@
+id,sha256,previous,prepared,new,sampleError,rejectionCode,message
+v05-L-r15,e4e040d4569e4b9397dd3358b48c582a3db399c315fbeb183f254282ba1bedd6,True,True,False,,canonical-prepared,
+v05-L-r16,6b7a4c56afbbce7ae0044ad009db8ea0db18af24a17f185ed2053b90fb603329,True,True,False,,canonical-prepared,
+v05-L-r17,bb1c6bb5712a20b20591342cadc7f2b950e1ec5a2a0d8d5bf0b42dfc73f675b8,False,True,True,,canonical-prepared,
+v05-L-r24,003c53e28abb037972a62a11b0dcd0e617a6321aa681372ff48cdc15dc08166b,False,True,True,,canonical-prepared,
+v05-L-r32,80f7249bd29261bf60d17295b2cfc41b98e390ec046961532fcf8361d9dc8c3a,False,True,True,,canonical-prepared,
+v05-L-r33,005a72cf0197c7c4102893f9afbd25789d41399bbbbadd575fb849b7c66635a0,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v05-B-r15,11883103d8eb6dd99c597d1ff69952529d4ea103c3048f084b78991b0b160971,True,True,False,,canonical-prepared,
+v05-B-r16,5df0aa79ccad222d4fdcf19adb0c370d533c75d10522c6456cedf7004705137d,True,True,False,,canonical-prepared,
+v05-B-r17,749d078760f2c091f3f9ccb5532a68b3afaefa7de1e5194d19be32b28870bf8c,False,True,True,,canonical-prepared,
+v05-B-r24,5c65b6c0f275ff45a65a918e33d1f5cfea25361113943816672f9cc294c6f680,False,True,True,,canonical-prepared,
+v05-B-r32,3b702a3b8ccc9bcd8d51ad3660f2a01651851401233ffbf91410d239226a17e3,False,True,True,,canonical-prepared,
+v05-B-r33,a3dc60b09f318b20f3353fb53b81806944dc51de530d9f594170a77c64335999,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v05-P-r15,78233f0bfb8010282194090f8b5e582220451cbb392609bdef8ea2a266103909,True,True,False,,canonical-prepared,
+v05-P-r16,82fc7b1570ec535e469ebc73fb78595ade1865562902632c51a29cafdecd0a1d,True,True,False,,canonical-prepared,
+v05-P-r17,5e1eb52d0cc49db8e0db22f88be1d16c971dc85087998ae607bd17bb50bec0ba,False,True,True,,canonical-prepared,
+v05-P-r24,516e99b00f3b88931eb08bf3c473fdc759c698fb52966d3c6aeb355dc176c693,False,True,True,,canonical-prepared,
+v05-P-r32,f82f0cc1a13078413faa12a9434d1a5f77bf89db93c831027426d279a57aeb59,False,True,True,,canonical-prepared,
+v05-P-r33,ff15ab6da598b90879b5901de99686ad5f25102f232e903dbfaaada9af5acc26,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v05-C-r15,ca190060f4e206581ee9a7d3b926eaec5eb524e3524cf3614b2234574e96410c,True,True,False,,canonical-prepared,
+v05-C-r16,3427159442ae15c9b774eb19d0cedf4fcc40446f08a62b66805a20f66cf1f729,True,True,False,,canonical-prepared,
+v05-C-r17,8330974a16ccdd7a9d86514c0e56d5fd1213abdbb3f0225e191241ed1dccaf6f,False,True,True,,canonical-prepared,
+v05-C-r24,6ebb03d0737b2b37d3371a30995caf6996cbe67474d62a9fad7fae2942673a23,False,True,True,,canonical-prepared,
+v05-C-r32,24485e01a014244a49516954edd8d2a94f824ffac648acdfac7ff1a17516528e,False,True,True,,canonical-prepared,
+v05-C-r33,a40d76352c019fc33724e171c9cc5cc79cd84bca05941f441b72d3291662e21d,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v06-L-r15,a693945f17ec35d4862e66e733f018ec17b603db1acecfe6426b68727101c27c,True,True,False,,canonical-prepared,
+v06-L-r16,03884a3a4e826cbec81944c41f2c041c4eb3a96f996b5bc2881aea0890d35f78,True,True,False,,canonical-prepared,
+v06-L-r17,db05fa58bf20f405a245011fbea5bbe9a47991458b06acc34c1871059aa84463,False,True,True,,canonical-prepared,
+v06-L-r24,b89b802f64c71cc31facd97d6c0f97c78b02ea612c4d72a839f0ecd0237fdcee,False,True,True,,canonical-prepared,
+v06-L-r32,cdbaddc83245ba77feb35f7bef472321e72741e6b45210c560e6b3811cfa2fa8,False,True,True,,canonical-prepared,
+v06-L-r33,26ac0de24c1c598f6088ac9937a05e264c0baa50538bdeebb5926aa814990b91,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v06-B-r15,7bc0a666c96ff362abd04fedcba45472d4242b8ea4b0f04c08551110f01c9b37,True,True,False,,canonical-prepared,
+v06-B-r16,a6cd51a0b7c4c3c558c79c3683b637aff3cf9e4ee277f53449cac1d934c695e2,True,True,False,,canonical-prepared,
+v06-B-r17,ae20d802d1d8b76627b8d5095a7c39a71910d7a421155a1a2cdcf95da02f5855,False,True,True,,canonical-prepared,
+v06-B-r24,ba8c4100123b3dd6b0c3eb947e68e8e3d9a2c6fa0db9d2e5b86bea5b905b6de8,False,True,True,,canonical-prepared,
+v06-B-r32,2dc82a10b70380be50410a6a6c05ab5c94909db465d32a2ee2ee73d7958b89be,False,True,True,,canonical-prepared,
+v06-B-r33,209e63f3f6d98affd9f5c4906c4d0047794a57374f1f751bdb2a917dcdb387f9,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v06-P-r15,c72a506c1e1f32108d635daa91bd4a73d48fbe03be149155d406446fe64d0826,True,True,False,,canonical-prepared,
+v06-P-r16,5256f4b18e917a8b8b2b66f5e2a8dfb8be5623e7c4eff91515028add045a7403,True,True,False,,canonical-prepared,
+v06-P-r17,af52d00b3b51e41861c677c3ec629cea594ef2413b668d90634383f4208d057a,False,True,True,,canonical-prepared,
+v06-P-r24,4cdfd411b83eaa6a9caa96eaeaec633187489628059c4977e241f81e04c561e5,False,True,True,,canonical-prepared,
+v06-P-r32,c9ebaee6f1e47e9765d35453c0feb5db150a6069f212672a84ce63f9a2a0024c,False,True,True,,canonical-prepared,
+v06-P-r33,e9f4bae869c471f45e67efc6d37fc37203a05919ddc800b45df93b30079f70ec,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v06-C-r15,b7b4b260b1ff4a5c84928d2ef846bd33e07ab979526dcd8a7d1835bcdf278f4f,True,True,False,,canonical-prepared,
+v06-C-r16,b64e7c14fde4e9a1e7bc9b770d1d4f8711b84e65d2a85e44c128a08f66824851,True,True,False,,canonical-prepared,
+v06-C-r17,9ebcc08fd080d6bb4bfc76209b95195b10d628af1148f0e7979966c5f52feebb,False,True,True,,canonical-prepared,
+v06-C-r24,3751ecea9cc3f71f46785e2e88d32d69ed6553c12236ca000027528b49423050,False,True,True,,canonical-prepared,
+v06-C-r32,9e49d2c46ea241c43f9874a29496c28ede7cd8f5c34496975d1749cc505119af,False,True,True,,canonical-prepared,
+v06-C-r33,eb5ac09c68f63c43785a4777b2935e7f507af50a9d8cf51f9780da69d7c5deb0,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v14-L-r15,38a8572af48bf05e04e4453fb6d283be75f4c149438ec9a8758ecdd2e9f4264e,True,True,False,,canonical-prepared,
+v14-L-r16,9eb9f40e7be37a585e9d7067e41a8a29883d34065830a8637fbcfe887161b956,True,True,False,,canonical-prepared,
+v14-L-r17,5f0b7bc9d640af96609eceb6f62cf9a58b99cf50d10d9e2c8ff20b6344ecb463,False,True,True,,canonical-prepared,
+v14-L-r24,bd1776b596676f558f65271f25b7da77a890eecbc2a8706760071ed456d61d13,False,True,True,,canonical-prepared,
+v14-L-r32,eebfb7b889ce79108d608e1d2f4f18332e38ca4bf6fb44f17042f4b97727a392,False,True,True,,canonical-prepared,
+v14-L-r33,1e23ded25b5fcc06268beceb111d9438bb55d166595491df28b073b8a5f6d5bc,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v14-B-r15,2fb2cdd726f7ed9ddd9f2eb261d850665708bd8fa748a149c54a82fb0c24e753,True,True,False,,canonical-prepared,
+v14-B-r16,725a8d850e904434e43c6c2b98ec196184a07442ba10fcd7181ec65f498cb21c,True,True,False,,canonical-prepared,
+v14-B-r17,4e108908d6dd09eb3856fbabfe6c29289b7621215fefb716e73caf376d9ded21,False,True,True,,canonical-prepared,
+v14-B-r24,384a90f6b99756b02345556cba9dd38cb222d74bbfbedb0a28f5fdaf7d71f608,False,True,True,,canonical-prepared,
+v14-B-r32,c658f697133579bd2696f188d0cfb0ba5970975887ec85109dc617f96eb2cf22,False,True,True,,canonical-prepared,
+v14-B-r33,2407f5fa8eafe85e59e2ca14335e348d73b8a586d0194e0147cf7499d61a3d77,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v14-P-r15,d480ddae3a30544a16de1a01a385a44f73edc6d5730be587e6a055a60c41a4dc,True,True,False,,canonical-prepared,
+v14-P-r16,b63e10cc823dea042d462a841daea552df5c1194b030c5477b2ab297385475ec,True,True,False,,canonical-prepared,
+v14-P-r17,4b107a9e62af5a32466cb1f9ca276c942c63ca470e691fdd454738cadb516657,False,True,True,,canonical-prepared,
+v14-P-r24,bcae7de8762dfa3396c0eaf27c07b5f53ca158c1ef2102abc8c25f22bdbff54d,False,True,True,,canonical-prepared,
+v14-P-r32,911f4e840d4dfc285c3693c8c8e161f9f2c7ce2292fe6f62b91bda993069af21,False,True,True,,canonical-prepared,
+v14-P-r33,2691a7b9517649261fde9e7e65889317811433a9a573c21e96ab25b9b32d48d7,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v14-C-r15,deec1551df21bedc8d2c3ad2b67e5292a3594169c7e4ea34388850aabbe1d105,True,True,False,,canonical-prepared,
+v14-C-r16,17f146b7b2f6174c6a695902bf02c24818cc6b3a30d91dd030593490c9292928,True,True,False,,canonical-prepared,
+v14-C-r17,e9f434a1ae44e3fc6afb3cf11d2bca84b567a38c90a9dd02e287c54d92fb5ce8,False,True,True,,canonical-prepared,
+v14-C-r24,a06c598cf90f0d0ba91f48a4ca4f91a9ea78014efd4765c0171b27ba19da9101,False,True,True,,canonical-prepared,
+v14-C-r32,43eee0b6b90aeae3043540f302996cfe136342c1fc2a21a176d7daffc8c5be51,False,True,True,,canonical-prepared,
+v14-C-r33,a2d6e2d77588bec60c79dcba43913dac61663f21b00762dcb173f16366188299,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+v14-L-r1,a666cf6ccc8e4a28ea97142020f1976802982d87d91af2d42fd2e6fb88752e98,True,True,False,,canonical-prepared,
+v14-L-r2,bbdf66e8eb26eb1778cdb2a6ef00fc53443045d783dfbb0a7db58f9bdf379507,True,True,False,,canonical-prepared,
+v14-B-r1,188350f7cc2ca1761187f68ba7d5f0a0c774366a0d613701b7c58eab806d18e4,True,True,False,,canonical-prepared,
+v14-B-r2,a41aac11c05cf1988f17c427770766b52a30d51e45c25a1cd9242c96ca546f0f,True,True,False,,canonical-prepared,
+v14-P-r1,a1fc833e4402d151c30274afd4a0b2d0acb2d92bf6fc6e89de5b57af593b2ef0,True,True,False,,canonical-prepared,
+v14-P-r2,aab97f45e451c9cf2821ffefcf5b31907bbbfd7854582b817b741709e788689b,True,True,False,,canonical-prepared,
+v14-C-r1,ed7fa92cb60d2a1fa14718ee13fe70e7338ed98dc3eab8c8361a073d914871d9,True,True,False,,canonical-prepared,
+v14-C-r2,e3557b61f77eff6193dca7894d3ca478e651789416894302c63de4c4b9cbf2b1,True,True,False,,canonical-prepared,
+raw-1,8b2ec324f25f636717d7e1177e0d9dc09bf4806f961770b9467a6f29418d1f11,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+raw0,b3c91e4bad613723a1b01516131fa407fc4834b7c8f16d4be5d070b1dc5a3fd2,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+syntax-fraction,4e910d2847eb008678419c44cd92ce3a571bc6565ae3f53da045e5970fe1219a,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+syntax-text,cf13438015866f65c722d61d76c416ad3b9a3ec8da831e4d654d9fd3cbc3bd00,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+syntax-overflow,74782febca2caa3b5e2626a5af83c2787bb858884c8779b3c5e0623a8b1e8d3d,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+syntax-empty,78ecd0de2026630a3a6c2308a61e951272cbdee87ddd4af2d9efb8c5649cdbed,False,False,False,,slider-repeat-profile,Canonical supports 1–32 slider traversals (span count includes the first traversal).
+samples-short-r16,aaad12cc365e40d72dc54f001936595581f6196884eb47aa856c77cb7180d5b4,True,True,False,,canonical-prepared,
+samples-full-r16,d90788d912d779ebc97e46f5d630ab9e4c9c6f556095702e1b09fefa88fa99a6,True,True,False,,canonical-prepared,
+samples-long-r16,732c13c1a48b27ae997cca23ae13befbdc56d0473156c4a715ac81fa50191040,True,True,False,,canonical-prepared,
+samples-bad-set-r16,02e7563ca3f2f5975cf7baad36fe3a24c32e49dd0ef898c8a227339f704b7a94,True,True,False,Slider samples unavailable: malformed edge/payload metadata: Index was outside the bounds of the array.,canonical-prepared,
+samples-bad-payload-r16,dd7cb8f8ddabfa61d7eee294b6ae37f85dbcf024d05e1da3b16c53034118840f,True,True,False,Slider samples unavailable: malformed edge/payload metadata: The input string 'x' was not in a correct format.,canonical-prepared,
+samples-short-r17,8ddaaf978c479f82750b3542e1a0cc00f56239eb4448f0f55860704af7378e7e,False,True,True,,canonical-prepared,
+samples-full-r17,e90d40fddf8020cb25f9f3d27a6978f50af4447caaef64d50762a0eaa5c58a2d,False,True,True,,canonical-prepared,
+samples-long-r17,062fab7257fc59a836e2f9a77bd6682ce8ede0e5f3247ae08f0260a9527f02b3,False,True,True,,canonical-prepared,
+samples-bad-set-r17,f2c5a0139835a491accd0a8fe65b75b3a00698c81ce771618dae9def7071ba62,False,True,True,Slider samples unavailable: malformed edge/payload metadata: Index was outside the bounds of the array.,canonical-prepared,
+samples-bad-payload-r17,e0b6ecbe8d9742615e8df4063bac315fdbf076ed6a426c3104c0796fe29c2089,False,True,True,Slider samples unavailable: malformed edge/payload metadata: The input string 'x' was not in a correct format.,canonical-prepared,
+inherited-r16,dd89069f2cfc372703ba526307a4c13917a0ed7522adcdedfd1eeacb4febb391,True,True,False,,canonical-prepared,
+late-timing-r16,3a713ff635d26075f884533dc21c3e8b016dff0a74014f836e5407efa6b71b51,True,True,False,,canonical-prepared,
+fraction-duration-r16,c1f49d720e610138869fdfd407d680ed940a7ae0ae305339d5b12facc11b5fe4,True,True,False,,canonical-prepared,
+nonmonotone-final-r16,447d9827ca6f31bd8bccec993c508420d8337400d1c14388d5dc7ee1f016c425,True,True,False,,canonical-prepared,
+inherited-r32,8d55efcaa63ea92d3de93abaf5070d074d42a12ffaff6115c9943db5db78a33f,False,True,True,,canonical-prepared,
+late-timing-r32,76a7c22d897a2e3279614901ce0d4c713011980bd7c114afc5e80b49c6d8ab62,False,True,True,,canonical-prepared,
+fraction-duration-r32,2d7f2ef4a52da0d3684951f734717b65282c80f684e464469ddb418f3bdfad18,False,True,True,,canonical-prepared,
+nonmonotone-final-r32,b18c748f684f8db4ea15cdbaed135cdf167c316f753b1765ddaa1744e042a8b8,False,True,True,,canonical-prepared,
+duration-over,cf2b969587b45fa8cdc1dfbc1ece409f03f1e3919fce33af74ca66949b83885f,False,False,False,,slider-repeat-profile,R05 requires each traversal >= 1 ms and parent end <= 3600000 ms.
+checkpoints-over,f1e7b23ea773391ea19bb527a21d2570851bf3cc894f7bf1a9f6f5ff57f8898b,False,False,False,,checkpoint-profile,R05 accepts at most 4096 checkpoints per slider.

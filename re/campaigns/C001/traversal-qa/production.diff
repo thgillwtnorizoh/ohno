@@ -1,0 +1,207 @@
+diff --git a/reconstructed/CircleGame/Gameplay/Beatmap.cs b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+index f12fed3..a34c496 100644
+--- a/reconstructed/CircleGame/Gameplay/Beatmap.cs
++++ b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+@@ -741,6 +741,9 @@ public sealed record CircleSampleMetadata(CircleDefinition Object, int RawSound,
+ }
+ // E041 spinner factory sidecar; raw mask is never circle-constructor normalized.
+ public sealed record SpinnerSampleMetadata(SpinnerDefinition Object, int SourceOrder, CircleSampleMetadata Payload);
++// Explicit opt-in shared by canonical row and sample admission; old public APIs
++// retain their historical bound. Neither bound is the original runtime maximum.
++internal enum SliderTraversalProfile { Legacy16 = 16, Canonical32 = 32 }
+ // E039 parent fields remain distinct from circle-normalized embedded-head fields.
+ public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int EffectiveTraversals,
+     int Format, int SourceOrder, string? RawEdgeSounds, string? RawEdgeSets, string? RawPayload,
+@@ -752,8 +755,15 @@ public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int Ef
+     public bool CustomLoopFlag => Filename.IndexOf("slider") > 0 && Filename.IndexOf("tick") == -1;
+     public static SliderSoundMetadata Parse(int sound, int rawTraversals, int format, int sourceOrder,
+         string? edgeSounds, string? edgeSets, string? payload)
++        => ParseProfile(sound, rawTraversals, format, sourceOrder, edgeSounds, edgeSets, payload, SliderTraversalProfile.Legacy16);
++
++    internal static SliderSoundMetadata ParseProfile(int sound, int rawTraversals, int format, int sourceOrder,
++        string? edgeSounds, string? edgeSets, string? payload, SliderTraversalProfile profile)
+     {
+-        if (rawTraversals is < 1 or > 16) throw new InvalidDataException("R12 retains the ENGINEERING 1–16 traversal admission bound.");
++        if (rawTraversals < 1 || rawTraversals > (int)profile)
++            throw new InvalidDataException(profile == SliderTraversalProfile.Legacy16
++                ? "R12 retains the ENGINEERING 1–16 traversal admission bound."
++                : "Canonical slider metadata supports 1–32 traversals.");
+         var sounds = new List<int>(); var bases = new List<int>(); var additions = new List<int>();
+         int baseSet = 0, addition = 0, index = 0, volume = 0; string filename = ""; string? error = null;
+         bool simple = string.IsNullOrEmpty(edgeSounds);
+@@ -850,6 +860,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+ 
+     private static Beatmap LoadCore(string path, CancellationToken token, bool extendedPaths)
+     {
++        SliderTraversalProfile traversalProfile = extendedPaths ? SliderTraversalProfile.Canonical32 : SliderTraversalProfile.Legacy16;
+         if (new FileInfo(path).Length > 2 * 1024 * 1024)
+             throw new InvalidDataException("R02 accepts beatmaps up to 2 MB.");
+         token.ThrowIfCancellationRequested();
+@@ -954,13 +965,16 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+                     }
+                     // Constructor normalization is exact and preserves duplicate controls.
+                     if (controls.Count == 0 || controls[0] != head.Position) controls.Insert(0, head.Position);
+-                    if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans < 1 || spans > 16)
+-                        throw new InvalidDataException("R05 supports 1–16 slider traversals (span count includes the first traversal).");
++                    if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans < 1 || spans > (int)traversalProfile)
++                        throw new InvalidDataException(extendedPaths
++                            ? "Canonical supports 1–32 slider traversals (span count includes the first traversal)."
++                            : "R05 supports 1–16 slider traversals (span count includes the first traversal).");
+                     double length = DoubleNumber(row[7], "slider pixel length");
+                     if (length <= 0.0001 || length > 4096)
+                         throw new InvalidDataException("R05 slider length must be greater than 0.0001 and at most 4096 pixels.");
+-                    var sliderSamples = SliderSoundMetadata.Parse(hitSound, spans, version, healthRows.Count - 1,
+-                        row.Length > 8 ? row[8] : null, row.Length > 9 ? row[9] : null, row.Length > 10 ? row[10] : null);
++                    var sliderSamples = SliderSoundMetadata.ParseProfile(hitSound, spans, version, healthRows.Count - 1,
++                        row.Length > 8 ? row[8] : null, row.Length > 9 ? row[9] : null, row.Length > 10 ? row[10] : null,
++                        traversalProfile);
+                     sliderRows.Add((head, controls.ToArray(), kind, row[5], length, spans, sliderSamples));
+                 }
+                 if (circles.Count + sliderRows.Count + spinners.Count > 10000) throw new InvalidDataException("R07 accepts at most 10000 objects.");
+@@ -1034,7 +1048,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+             foreach (var slider in sliderRows.OrderBy(s => s.Head.StartTime))
+             {
+                 token.ThrowIfCancellationRequested();
+-                var prepared = PrepareSlider(slider.Head, slider.Controls, slider.Kind, slider.Length, slider.Traversals, version, multiplier, tickRate, timing, token);
++                var prepared = PrepareSliderBounded(slider.Head, slider.Controls, slider.Kind, slider.Length, slider.Traversals, version, multiplier, tickRate, timing, token,
++                    250_000L - totalMovements, 100_000L - totalCheckpoints, 100_000L - totalSegments);
++                token.ThrowIfCancellationRequested();
+                 prepared = prepared with { Samples = slider.Samples.Prepare(prepared), RawPath = slider.RawPath };
+                 int sourceIndex = slider.Samples.SourceOrder;
+                 sampleOperands[sourceIndex] = new(null, slider.Samples.Index, slider.Samples.Filename, slider.Samples.Error) { Slider = prepared };
+@@ -1099,6 +1115,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
+                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
+                     { RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };
++        token.ThrowIfCancellationRequested();
+         map.HealthSource!.BindFreshOwner(map);
+         return map;
+ 
+@@ -1305,7 +1322,25 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+ 
+     private static SliderDefinition PrepareSlider(CircleDefinition head, Vector2[] controls, SliderPathKind kind, double length,
+         int traversals, int version, double multiplier, double tickRate, List<TimingPoint> timing, CancellationToken token)
++        => PrepareSliderBounded(head, controls, kind, length, traversals, version, multiplier, tickRate, timing, token,
++            250_000, 100_000, 100_000);
++
++    internal static int PreflightSliderMovements(long traversals, long segments, long remaining, CancellationToken token)
+     {
++        token.ThrowIfCancellationRequested();
++        long count;
++        try { count = checked(traversals * segments); }
++        catch (OverflowException) { throw new InvalidDataException("Slider Movement work exceeds checked Int64 resource limit."); }
++        if (traversals < 1 || segments < 1 || remaining < 0 || count > remaining || count > 250_000)
++            throw new InvalidDataException("R06 map geometry exceeds 100000 prepared segments / 250000 Movement records.");
++        return checked((int)count);
++    }
++
++    private static SliderDefinition PrepareSliderBounded(CircleDefinition head, Vector2[] controls, SliderPathKind kind, double length,
++        int traversals, int version, double multiplier, double tickRate, List<TimingPoint> timing, CancellationToken token,
++        long remainingMovements, long remainingCheckpoints, long remainingSegments)
++    {
++        token.ThrowIfCancellationRequested();
+         // E05: list order is significant; rate uses truncated time, spacing raw time.
+         double effectiveBeat = 0, spacingFactor = 1;
+         if (timing.Count > 0)
+@@ -1331,8 +1366,27 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+ 
+         double q = Math.Min(version < 8 ? spacing : spacing / spacingFactor, length);
+         if (!double.IsFinite(q) || q <= 0) throw new InvalidDataException("Unsupported slider checkpoint spacing.");
++        return PrepareSliderGeometry(head, geometry, length, traversals, velocity, q, token,
++            remainingMovements, remainingCheckpoints, remainingSegments);
++    }
++
++    // Shared bounded expansion. The optional internal synchronous progress observer
++    // enables deterministic cooperative cancellation at real work boundaries;
++    // canonical/legacy callers leave it null. It never changes numerical policy.
++    private static SliderDefinition PrepareSliderGeometry(CircleDefinition head, SliderGeometry geometry, double length,
++        int traversals, double velocity, double q, CancellationToken token,
++        long remainingMovements, long remainingCheckpoints, long remainingSegments,
++        Action<string, int, int>? progress = null)
++    {
++        void Observe(string stage, int traversal = -1, int step = -1)
++        { progress?.Invoke(stage, traversal, step); token.ThrowIfCancellationRequested(); }
++        Observe("preflight");
++        int movementCount = PreflightSliderMovements(traversals, geometry.Segments.Count, remainingMovements, token);
++        if (geometry.Segments.Count > remainingSegments)
++            throw new InvalidDataException("R06 map geometry exceeds 100000 prepared segments / 250000 Movement records.");
++        // Plan the EXACT checkpoint schedule before expanding any repeated Movement
++        // records. No loose bound may reject an admitted 1–16 suppression case.
+         // E16/E21: movement time and checkpoint distance phase are separate clocks.
+-        var moves = new List<SliderMovement>();
+         var components = new List<SliderCheckpoint>();
+         double absoluteTime = head.StartTime, phase = 0, carry = 0;
+         float[] distances = geometry.CumulativeLengths.Select((v, i) => (float)(v - (i == 0 ? 0 : geometry.CumulativeLengths[i - 1]))).ToArray();
+@@ -1341,20 +1395,20 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+             throw new InvalidDataException("R05 requires each traversal >= 1 ms and parent end <= 3600000 ms.");
+         for (int traversal = 0; traversal < traversals; traversal++)
+         {
++            Observe("traversal", traversal);
+             bool reverse = traversal % 2 == 1;
+             double remaining = geometry.UnadjustedLength; // NOT requested/prepared L.
+             bool suppressed = false;
+             for (int step = 0; step < geometry.Segments.Count; step++)
+             {
++                Observe("segment", traversal, step);
+                 int index = reverse ? geometry.Segments.Count - 1 - step : step;
+-                SliderSegment segment = geometry.Segments[index];
+                 double dt = (double)(1000f * distances[index]) / velocity;
+-                moves.Add(new(reverse ? segment.To : segment.From, reverse ? segment.From : segment.To,
+-                    (int)absoluteTime, (int)(absoluteTime + dt)));
+                 absoluteTime += dt;
+                 carry += distances[index];
+                 while (carry >= q && !suppressed)
+                 {
++                    Observe("tick", traversal, step);
+                     phase += q; carry -= q; remaining -= q;
+                     suppressed = remaining <= 0.01 * velocity;
+                     if (suppressed) break;
+@@ -1369,15 +1423,38 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         int end = (int)absoluteTime;
+         // E22: adjust ONLY the final stored item. Do not sort or repair the list.
+         components[^1] = components[^1] with { Time = Math.Max(head.StartTime + (end - head.StartTime) / 2, components[^1].Time - 36) };
++        Observe("movement-allocation");
++        var moves = new List<SliderMovement>(movementCount);
++        // Preserve the same Single1000 multiplication and Double accumulated
++        // absolute movement clock; checkpoints used a separate phase above.
++        double movementTime = head.StartTime;
++        for (int traversal = 0; traversal < traversals; traversal++)
++        {
++            Observe("movement-traversal", traversal);
++            bool reverse = traversal % 2 == 1;
++            for (int step = 0; step < geometry.Segments.Count; step++)
++            {
++                Observe("movement-segment", traversal, step);
++                int index = reverse ? geometry.Segments.Count - 1 - step : step;
++                SliderSegment segment = geometry.Segments[index];
++                double dt = (double)(1000f * distances[index]) / velocity;
++                moves.Add(new(reverse ? segment.To : segment.From, reverse ? segment.From : segment.To,
++                    (int)movementTime, (int)(movementTime + dt)));
++                movementTime += dt;
++            }
++        }
++        Observe("parent");
+         var definition = new SliderDefinition(head, geometry.Segments[^1].To, end, velocity, length,
+             geometry.Controls, traversals, moves.AsReadOnly(), components.AsReadOnly()) { Geometry = geometry };
+         for (int i = 0; i < components.Count; i++)
+         {
++            Observe("position", -1, i);
+             var c = components[i];
+             // Independent display markers; these positions do not select results.
+             components[i] = c with { Position = c.Kind == SliderCheckpointKind.Interior ?
+                 definition.RequiredPosition(c.Time) : definition.TraversalEndMovement(c.Traversal).To };
+         }
++        Observe("complete");
+         return definition;
+ 
+         int Stamp(double distance)
+@@ -1389,6 +1466,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         }
+         void AddCheckpoint(int time, SliderCheckpointKind kind, int traversal)
+         {
++            token.ThrowIfCancellationRequested();
++            if (components.Count >= remainingCheckpoints)
++                throw new InvalidDataException("R05 accepts at most 100000 scheduled checkpoints per map.");
+             if (components.Count >= 4096) throw new InvalidDataException("R05 accepts at most 4096 checkpoints per slider.");
+             components.Add(new(time, kind, traversal, default));
+         }
