@@ -207,3 +207,19 @@ v5 circle-free spinner-origin exemption in near-spinner/handoff.md. DEP08 new-so
 Windows2312/current C001 and independent Work1 QA required after Work2 integration;
 no new Windows gate needed for this research-only publication. HQ review first.
 Circle-bearing/general CS/early-displacement extensions remain separate dependencies.
+
+
+## Issue15 independent circle-free v5 integration — 2026-11-21
+
+Starting1638dfd9; exact clean compiled22a4035 independently verified1833/1833.
+100 immutable cases59/41,exact12gains/0losses;12full-geometry controls;214old
+fixture hashes/old oracle seals preserved. Actual score/fresh health/NewCombo/
+session/input/path/sample/resource/recording and negative guards exercised. Prior
+81/33contracts and Issue11 exact codes retained. Only Beatmap narrow certificate
+production patch; distance/modern pass/other consumers/R17/classifier unchanged.
+Live exact Windows44774297221 52steps/2312historical/1503development plus801/656/295
+corroborated; actual ZIP/EXE/source/100fixture hashes/Windows packet verified.
+No actionable finite discrepancy; new native Windows/original/runtime/audible/
+physical/owner charts NOT RUN. See verification/15-circle-free-v5-integration.md
+and near-spinner-qa/. Next HQ final review/potential Issue15 closure. Issue15/C001/
+subsystem OPEN; no owner manual action or original-runtime equivalence claim.

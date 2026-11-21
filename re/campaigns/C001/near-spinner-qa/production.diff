@@ -1,0 +1,49 @@
+diff --git a/reconstructed/CircleGame/Gameplay/Beatmap.cs b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+index bad4061..f12fed3 100644
+--- a/reconstructed/CircleGame/Gameplay/Beatmap.cs
++++ b/reconstructed/CircleGame/Gameplay/Beatmap.cs
+@@ -1068,7 +1068,12 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         // reuses the unchanged modern pass; Route Z proves displacement unnecessary.
+         if (extendedPaths && version < 14 && spinners.Count > 0 && settings!.StackLeniency > 0 &&
+             !(version > 5 && settings.Cs == 5f && settings.Ar == 5f))
+-            CertifyLegacySpinnerZeroDisplacement(sampleOperands, token);
++        {
++            bool circleFreeV5 = version == 5 && settings.Mode == 0 &&
++                circles.Count == 0 && sliders.Count > 0 && spinners.Count > 0;
++            if (circleFreeV5) CertifyLegacySpinnerZeroDisplacementCore(sampleOperands, token, true);
++            else CertifyLegacySpinnerZeroDisplacement(sampleOperands, token);
++        }
+         if (extendedPaths) PrepareFiniteStandardStacking(version, settings!, circles, sliders,
+             circleSamples, sampleOperands, token);
+         string title = fields.GetValueOrDefault("[Metadata]Title", Path.GetFileNameWithoutExtension(path));
+@@ -1210,12 +1215,20 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         }
+     }
+ 
+-    // Sufficient fresh zero-height proof, not the unimplemented <=5 forward
++    // Sufficient fresh zero-displacement proof, not the unimplemented <=5 forward
+     // algorithm. Preserve Single subtraction/products/sum -> Double sqrt -> Single
+     // strict <3 via the shared original-derived comparison primitive.
+     private static void CertifyLegacySpinnerZeroDisplacement(
+         List<SamplePreparationOperand> operands, CancellationToken token)
++        => CertifyLegacySpinnerZeroDisplacementCore(operands, token, false);
++
++    // Issue15: only circle-free v5 slider/spinner maps qualify. Internal spinner
++    // height is not reconstructed; no ordinary Slider2 parent uses Normal1's
++    // predecessor-height input branch. All earlier-slider relationships remain.
++    private static void CertifyLegacySpinnerZeroDisplacementCore(
++        List<SamplePreparationOperand> operands, CancellationToken token, bool circleFreeV5)
+     {
++        token.ThrowIfCancellationRequested();
+         var objects = operands.Select(o => new StackingSource(o)).OrderBy(o => o.Start).ToArray();
+         // Engineering work bound: never expose the loader to unbounded pair work.
+         const long maximumPairs = 1_000_000;
+@@ -1225,6 +1238,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
+         {
+             token.ThrowIfCancellationRequested();
+             var earlier = objects[i];
++            // Pair budget above counts every object, including exempt spinners.
++            if (circleFreeV5 && earlier.Spinner is not null) continue;
+             Vector2 geometricEnd = earlier.Slider is { } slider
+                 ? slider.Geometry.Segments[^1].To : earlier.RawHead;
+             for (int j = i + 1; j < objects.Length; j++)

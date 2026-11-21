@@ -1,0 +1,1 @@
+Initial artifact comparison required LF bytes for packaged manifest; Windows checkout uses CRLF for the JSON manifest. Corrected to newline-normalized manifest identity; all100 actual .osu fixture hashes remain exact byte checks. No fixture expectation or source pin changed.

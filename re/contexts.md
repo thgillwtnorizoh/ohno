@@ -2852,3 +2852,34 @@ safer publication route; no force push or indirect main update attempted. Canoni
 main integration is pending review/approval, distinct from the verified research
 result. Exact tested source/results remain unchanged. No technical owner actions
 are needed for the research; the publication approval requirement is external.
+
+
+## Issue15 independent circle-free v5 integration — 2026-11-21
+
+Starting1638dfd9; exact clean compiled22a4035 independently verified1833/1833.
+100 immutable cases59/41,exact12gains/0losses;12full-geometry controls;214old
+fixture hashes/old oracle seals preserved. Actual score/fresh health/NewCombo/
+session/input/path/sample/resource/recording and negative guards exercised. Prior
+81/33contracts and Issue11 exact codes retained. Only Beatmap narrow certificate
+production patch; distance/modern pass/other consumers/R17/classifier unchanged.
+Live exact Windows44774297221 52steps/2312historical/1503development plus801/656/295
+corroborated; actual ZIP/EXE/source/100fixture hashes/Windows packet verified.
+No actionable finite discrepancy; new native Windows/original/runtime/audible/
+physical/owner charts NOT RUN. See verification/15-circle-free-v5-integration.md
+and near-spinner-qa/. Next HQ final review/potential Issue15 closure. Issue15/C001/
+subsystem OPEN; no owner manual action or original-runtime equivalence claim.
+
+Independent suite versions prior Work1 Issue13 consumer verifier and adds separate
+Extra.cs adversaries; no Work2 harness/old oracle/production changes. Literal12set
+and old outcomes derive all per-case expectations. Nine compiled identities/actual
+DLL equality checked. Original M0ad9/Slider2 proof retained; internal spinner height
+is NOT reconstructed or zeroed. Exact all-object1414/1415 budget, far registered
+circle, slider raw/geometric/even final endpoints, arbitrary positive scalar,
+precancel/private inner-scan cancel, actual session parent/head and stored-end
+sample owners verified. Source review initially mistook new .gitattributes for old
+research edits; artifact manifest initially expected LF rather than WindowsCRLF;
+preserved notes/corrected scoped checks, all100.osu hashes still exact. No QA
+assertion failed or authorization exception. Reproduce: python re/campaigns/C001/
+near-spinner-qa/verify.py /path/dotnet /tmp/i15-exact /tmp/independent-i15; then
+check_artifact.py /path/Issue15-Windows.zip. Environment Debian13 SDK8.0.427/
+runtime8.0.33 Python3.12; Release0warnings/errors. Report carries full UEP fields.
