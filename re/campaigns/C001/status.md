@@ -323,3 +323,16 @@ known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/l
 seals authoritative. No finite production blocker. Next Headquarters potential
 Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
 runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.
+
+
+## 2026-11-22 — Issue19 Linear control-count research checkpoint
+
+VERIFIED CHECKPOINT — research only. Starting77b4d582f5d54e3f52018a6b9b6fc593c9742045;
+exact clean production6a152648c72773eb33d37f8ac01f18ca35ab1f41.3324/3324PASS,
+168fixtures38prepared/130refused;38actual canonical consumers;110labeled isolated
+scheduling probes. [Full UEP report](control-count/README.md),
+[finite canonical source-L65–96 handoff](control-count/handoff.md).
+No production/historical test edit, original runtime, Windows rerun, GUI/device
+qualification or owner corpus scan. Initial failures disclosed. Next Headquarters
+acceptance review; potential Work2 implementation needs separate authorization.
+Issue19/C001/subsystem/original-runtime Issue4 OPEN.

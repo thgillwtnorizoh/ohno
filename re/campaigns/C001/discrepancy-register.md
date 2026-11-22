@@ -287,3 +287,16 @@ known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/l
 seals authoritative. No finite production blocker. Next Headquarters potential
 Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
 runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.
+
+
+## 2026-11-22 — Issue19 Linear control-count research checkpoint
+
+Issue19 characterizes an intentional engineering admission gap, not a new proven
+original-runtime bug. Current source has distinct raw64 and post-head helper64
+refusals; audit codes slider-control-limit versus production-profile differ.39
+owner diagnostic labels do not prove39 >64 normalized controls or recoverable
+charts. Raw original Linear sites establish no64/96 maximum. Initial seven oracle
+failures and six compile errors preserved in control-count/attempts/; all153initial
+fixture bytes retained. Corrected168-case suite3324PASS. A requested4096 extension
+with short unadjusted G is NOT a checkpoint-overrun theorem. No earlier discrepancy,
+Issue18 acceptance, R17 question or original-runtime Issue4 is closed here.

@@ -1,0 +1,30 @@
+{
+  "startingMain": "77b4d582f5d54e3f52018a6b9b6fc593c9742045",
+  "exactSource": "6a152648c72773eb33d37f8ac01f18ca35ab1f41",
+  "sourceState": "clean",
+  "sdk": "8.0.427",
+  "runtime": "8.0.33",
+  "productionDllSha256": "1cb0d2a825da66c0a85f89e2885bbade21dfd3b683bf45ccb0d4d785f990ca3f",
+  "linkedProductionDllSha256": "1cb0d2a825da66c0a85f89e2885bbade21dfd3b683bf45ccb0d4d785f990ca3f",
+  "checksDllSha256": "2e7211cc05c8feb621c04eb38ebba30c3de55023268fee518619676ce2e95849",
+  "packetHashes": {
+    "verify.py": "1d83ec57a7726172938966f342543338c0291924a563fbf04609130ac10f8cb9",
+    "recover.py": "df518c2ef23fdb06201a5858fd123fc4594d5a4b90fcfb3a5564c752ef887842",
+    "review.py": "8ea87de59a94d703b2e9dadc278a48b381f46c5bd11cb4d0d7830c8db31361b4",
+    "build_fixtures.py": "43704938766a10b3307226a88cc88ef9d1f88bae7fa91abe7dd83df7ac0c621d",
+    "expected-sources.json": "e9407d3a597bb33b90ea642ced729a4ab8d74ae937625452ec023438adbe6276",
+    "manifest.json": "4f58d5f7e5a402c91b155449b828665ab5b58f4b0833ddee9b5f1d654ceb7b30",
+    "Checks/Budgets.cs": "2a52e1d50fc38035302658cc1d11850f0fff18bc594b4306c4d8d49b69153380",
+    "Checks/Connected.cs": "652e59da86772e6685a436ad6f3be58fea279e59ba3de16d382189753073f7ab",
+    "Checks/Program.cs": "015f371731d87362409a26c7f822b8c151b0d120ec31c7d3bd450b301692fa7c",
+    "Checks/Checks.csproj": "7f9e37c63920b56741982828e601f025191847d4627db5343f2af83bb487f0b2"
+  },
+  "resultsSha256": "9d42969c77ef11c9808c9a8d3f0c2dbe2458d4b751770316e27d3c195a175b8b",
+  "staticSha256": "41fc8072a135b71c6e7cc6f04be78a1e2400195ffdf433d02bf07eb707eed6dc",
+  "passed": 3324,
+  "failed": 0,
+  "originalRuntime": "NOT RUN",
+  "Windows": "NOT RUN",
+  "ownerCorpus": "NOT ACCESSED",
+  "fullRegression": "NOT RUN; production unchanged; historical evidence retained"
+}

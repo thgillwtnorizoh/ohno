@@ -1,0 +1,2 @@
+fixtures/*.osu -text
+attempts/first-compile.log -text whitespace=cr-at-eol

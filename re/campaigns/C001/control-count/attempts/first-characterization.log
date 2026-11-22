@@ -1,0 +1,8 @@
+FAIL n64-insert-duplicates-short scalar oracle versus unchanged actual geometry
+FAIL n64-insert-duplicates-long scalar oracle versus unchanged actual geometry
+FAIL n65-insert-duplicates-short scalar oracle versus unchanged actual geometry
+FAIL n65-insert-duplicates-long scalar oracle versus unchanged actual geometry
+FAIL negative-checkpoints-raw63 exact direct canonical stage checkpoint-plan
+FAIL negative-checkpoints-raw63 direct disposition
+FAIL finite baseline37 prepared116 refused
+Issue19 2695/2702 PASS; 38 actual canonical preparations/115 refusals; 101 isolated scheduling probes; 38 audio-resource consumers

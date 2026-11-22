@@ -337,3 +337,16 @@ known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/l
 seals authoritative. No finite production blocker. Next Headquarters potential
 Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
 runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.
+
+
+## 2026-11-22 — Issue19 Linear control-count research checkpoint
+
+Original parser/head/Single pair/tail/consumer evidence reused and freshly checked:
+18bodies,39historical matches,748sites+15anchors+3branches.168 sealed synthetic
+cases:38actual canonical preparations/130refusals, exact raw versus normalized
+and catalog/direct/audit stages; all v5–v14 represented.3324/3324 independent
+checks,38true consumer owners,110isolated schedules. Finite L65–96 proposal predicts
+74additional synthetic admissions,0old losses; no current expansion or owner-chart
+recovery claim. Full packet [control-count/README.md](control-count/README.md),
+[original report](original-behavior/17-linear-control-count.md),
+[coverage delta](control-count/coverage-delta.json). C001/original runtime OPEN.

@@ -2923,3 +2923,51 @@ known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/l
 seals authoritative. No finite production blocker. Next Headquarters potential
 Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
 runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.
+
+
+## 2026-11-22 — Issue19 Linear control-count research checkpoint
+
+Work1 Original Research/Independent Characterization; narrow objective: finite
+canonical ordinary source-L normalized65–96, preserving historical/B/P/C64.
+Starting77b4d582f5d54e3f52018a6b9b6fc593c9742045; exact clean functional production
+6a152648c72773eb33d37f8ac01f18ca35ab1f41. Same CircleGame/CorpusAudit trees.
+Read AGENTS, identical supplied/re Instruction, campaign registers, live Issue19,
+E005/E006/E032, accepted parser/traversal and source/consumer records. Live actor
+Work1 supersedes attached older Headquarters assignment; no exception used.
+
+CONFIRMED ORIGINAL static archive7089d49f.../exe6e182c10... checked from original
+bytes:18bodies/39historical matches,748sites+15anchors+3branches. Original normalized
+list retains duplicates and emitsN−1 Single-interpolated adjacent pairs. Count64/96
+is engineering, no original maximum recovered. Exact conversion/head insertion,
+row rethrow/loader refusal route, tail tolerance/zero-extension and shared consumers
+are recorded in campaign original-behavior/17-linear-control-count.md and
+control-count/static-evidence.json. No original execution or official build proof.
+
+Independent scalar geometry and full schedules distinguish raw cells/head equality,
+64/65/96/97, retained zero/duplicate/collinear pieces and trim/extension/timing.
+168 immutable .osu fixtures38actual preparations/130refusals,104raw-gate/15helper-
+after-head gates. Real canonical sample/head/session/automatic score/fresh calibrated
+health/NewCombo/resource/recording owners verified for all38.110ENGINEERING isolated
+predicted-geometry scheduling probes are not >64 canonical admissions. Max proposed
+96points/95pieces/3040movements; separate exact4096checkpoint plan, one-over/remaining
+budgets, checked overflow and during-work cancellation/allocated-map-byte cleanup
+pass. Baseline/direct/catalog/audit errors cataloged without broad-family inference.
+
+Linux x64 Python3.12.14 SDK8.0.427/runtime8.0.33 Release3324/3324PASS. Existing E005/
+E006/E032 checkers PASS,106old traversal hashes and all153initial new fixture bytes
+retained. Commands: python re/campaigns/C001/control-count/verify.py /path/dotnet
+/path/clean-6a15264 /private/osubackup.zip /tmp/i19-output; see full UEP report,
+source/binary/result seals and checked manifest under control-count/. Initial
+six-error compile attempt and2695/2702failed-oracle run retained in attempts/;
+corrected converted-equality and short-G suppression expectations, no old byte or
+production edit.15fixtures added. Intermediate2709PASS is not accumulated.
+
+Files changed: only new re/campaigns/C001/control-count/ packet and original-behavior/
+17 mark; append-only coverage/dependency/discrepancy/status and this journal.
+NOT RUN: original game/CLR, Windows/WPF, speaker/native decoder/physical input,
+full historical regression, owner/private corpus. No owner action requested.
+No finite static blocker. [Handoff](campaigns/C001/control-count/handoff.md) proposes
+112synthetic admissions/56exclusions,74new/0old losses conditional on explicit
+canonical source-L96 opt-in and preserved existing budgets/legacy APIs. Next
+Headquarters review, separately authorized Work2 and then independent Work1 QA.
+Issue19/C001/subsystem/original-runtime Issue4 OPEN; checkpoint is not acceptance.

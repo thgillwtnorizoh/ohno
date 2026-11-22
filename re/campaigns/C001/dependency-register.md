@@ -263,3 +263,15 @@ known failed QA assumptions disclosed; lost raw data NOT RECOVERED; fresh code/l
 seals authoritative. No finite production blocker. Next Headquarters potential
 Issue18 closure. Issue18/C001/subsystem/original-runtime Issue4 OPEN. No original
 runtime,GUI/audible/physical qualification,owner maps or rescan. No production edit.
+
+
+## 2026-11-22 — Issue19 Linear control-count research checkpoint
+
+DEP05 bounded source-L control-count evidence has no missing static dependency.
+[Finite handoff](control-count/handoff.md) requires explicit canonical L96 opt-in,
+legacy/B/P/C64 preservation, normalized counting, existing checked movements and
+exact checkpoint planning, genuine consumer ownership and cancellation. Existing
+preparation95segments×32traversals=3040movements fits finite per-parent work;
+map/checkpoint/health/resource budgets remain independent. Next Headquarters review,
+then separately authorized Work2 integration/Windows and independent Work1 QA.
+DEP08/DEP09 and original-runtime Issue4 remain OPEN; no owner scan required.

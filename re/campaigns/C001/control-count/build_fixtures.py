@@ -1,0 +1,152 @@
+#!/usr/bin/env python3
+"""Immutable synthetic Linear boundary cases; --check never writes fixtures."""
+import argparse, hashlib, json, struct, math
+from pathlib import Path
+H=Path(__file__).resolve().parent
+def f(x): return struct.unpack('<f',struct.pack('<f',x))[0]
+def prediction(points, requested):
+    # Independent scalar binary32 oracle. Fixtures deliberately use horizontal
+    # integer steps, so vector normalization has exact direction +/-1.
+    raw=[]
+    for a,b in zip(points,points[1:]):
+        d=[f(b[i]-a[i]) for i in range(2)]
+        raw.append([[f(a[i]+f(d[i]*0)) for i in range(2)],
+                    [f(a[i]+f(d[i]*1)) for i in range(2)]])
+    def length(s):
+        x,y=[f(s[1][i]-s[0][i]) for i in range(2)]
+        return f(math.sqrt(f(f(x*x)+f(y*y))))
+    g=sum(map(length,raw)); out=[[a[:],b[:]] for a,b in raw]; excess=g-requested
+    while out:
+        a,b=out[-1]; d=length(out[-1])
+        if d<=excess+.0001: out.pop(); excess-=d; continue
+        if a!=b:
+            assert a[1]==b[1]
+            out[-1][1]=[f(a[0]+f((1 if b[0]>a[0] else -1)*f(d-f(excess)))),a[1]]
+        break
+    total=0; cumulative=[]
+    for s in out: total+=length(s); cumulative.append(total)
+    return dict(raw=raw,segments=out,unadjusted=g,cumulative=cumulative)
+def schedule(p,spans,rate,q):
+    # E005/E016/E021/E022 static interpretation. Scalar geometry operands above
+    # are independent of the production vector implementation.
+    distances=[f(x-(p['cumulative'][i-1] if i else 0)) for i,x in enumerate(p['cumulative'])]
+    clock=2000.;phase=0.;carry=0.;out=[]
+    stamp=lambda distance:int(2000+f(distance)/rate*1000.)
+    for tr in range(spans):
+        remaining=p['unadjusted'];suppressed=False
+        for d in (reversed(distances) if tr%2 else distances):
+            clock+=f(1000.*d)/rate;carry+=d
+            while carry>=q and not suppressed:
+                phase+=q;carry-=q;remaining-=q
+                suppressed=remaining<=.01*rate
+                if not suppressed: out.append([stamp(phase),'Interior',tr])
+        phase+=carry;out.append([stamp(phase),'Final' if tr==spans-1 else 'Repeat',tr])
+        if suppressed:carry=0
+        else:phase-=q-carry;carry=q-carry
+    end=int(clock);out[-1][0]=max(2000+(end-2000)//2,out[-1][0]-36)
+    return dict(end=end,checkpoints=out)
+def generate():
+    cases=[]; files={}
+    def add(id,raw,equal=True,version=14,pattern='increasing',adjust='exact',kind='L',spans=1,mode=0,bad=None,timing=None,tick=1):
+        points=[]
+        for i in range(raw):
+            k=i+(0 if equal else 1)
+            x=128+2*k
+            if pattern=='alternating': x=128+2*(k%2)
+            if pattern=='duplicates': x=128+2*(k//3)
+            points.append([x,192])
+        if pattern=='zero-final': points[-1]=points[-2][:]
+        if bad=='checkpoint-real': points=[[128+64*(i+1),192] for i in range(raw)]
+        strings=[f'{x}:{y}' for x,y in points]
+        if pattern=='fractional': strings=[f'{x}.9:{y}.9' for x,y in points]
+        normalized=points if points[0]==[128,192] else [[128,192]]+points
+        actual=sum(abs(b[0]-a[0]) for a,b in zip(normalized,normalized[1:]))
+        requested=actual/2+.5 if adjust=='short' else actual+32 if adjust=='long' else actual
+        if bad=='malformed': strings[0]='broken:192'
+        if bad=='arity': strings[0]='128:192:1'
+        if bad=='out-of-range': strings[0]='2147483648:192'
+        if bad=='nonfinite': strings[0]='NaN:192'
+        if bad=='marker': strings.insert(2,'B')
+        if bad=='duration': requested=.125; timing='0,0.01,4,1,0,100,1,0'
+        if bad in ('checkpoints','checkpoint-real'): requested=4096; spans=32; tick=8
+        if bad=='length': requested=4097
+        path=kind+'|'+'|'.join(strings)
+        text=f'''osu file format v{version}
+[General]
+Mode:{mode}
+StackLeniency:0
+[Metadata]
+Title:Work1 control-count synthetic
+Artist:Work1
+Creator:Work1
+Version:{id}
+[Difficulty]
+HPDrainRate:5
+CircleSize:5
+OverallDifficulty:5
+ApproachRate:5
+SliderMultiplier:1
+SliderTickRate:{tick}
+[TimingPoints]
+{timing or '0,500,4,1,0,100,1,0'}
+[HitObjects]
+128,192,2000,2,2,{path},{spans},{requested},2|8,1:0|2:0,0:0:0:100:
+'''
+        error=None; stage='prepared'
+        if version<5 or version>14: error='Use an osu file format v5–v14 supported circle/Linear-slider map.'; stage='version'
+        elif len(strings)>64: error='R06 allows at most 64 normalized controls per slider.'; stage='raw-cell-gate'
+        elif bad in ('arity','marker'): error='Invalid slider control; expected x:y.'; stage='coordinate-syntax'
+        elif bad in ('malformed','nonfinite'): error='Invalid finite number for Bézier control coordinate.'; stage='coordinate-number'
+        elif bad=='out-of-range': error='R06 Bézier controls must fit finite Int32 coordinates.'; stage='coordinate-range'
+        elif bad=='length': error='R05 slider length must be greater than 0.0001 and at most 4096 pixels.'; stage='requested-length'
+        elif mode!=0: error='R02 requires explicit Mode: 0 (osu!standard).'; stage='mode-after-rows'
+        elif len(normalized)>64: error='Path exceeds the 64-control engineering limit.'; stage='helper-supplied-gate-after-head'
+        elif bad=='duration': error='R05 requires each traversal >= 1 ms and parent end <= 3600000 ms.'; stage='duration'
+        elif bad=='checkpoint-real': error='R05 accepts at most 4096 checkpoints per slider.'; stage='checkpoint-plan'
+        future=(5<=version<=14 and mode==0 and kind=='L' and len(normalized)<=96 and bad in (None,'checkpoints'))
+        # Non-L unchanged profiles: positive controls above64 remain excluded.
+        item=dict(id=id,path='fixtures/'+id+'.osu',sha256=hashlib.sha256(text.encode()).hexdigest(),rawCells=len(strings),rawCoordinates=raw,
+                  normalized=len(normalized),firstEqualsHead=points[0]==[128,192],requestedFirstEqualsHead=equal,version=version,kind=kind,pattern=pattern,adjust=adjust,
+                  spans=spans,requested=requested,tick=tick,mode=mode,bad=bad,timing=timing or '0,500,4,1,0,100,1,0',
+                  current=dict(prepared=error is None,error=error,stage=stage),futureCandidate=future)
+        if kind=='L' and bad in (None,'checkpoints'):
+            item['prediction']=prediction(normalized,requested)
+            rate=400 if id=='timing-inherited-r32' else 200
+            q=min(200 if id=='timing-inherited-r32' else 100/tick,requested)
+            item['schedule']=schedule(item['prediction'],spans,rate,q)
+        cases.append(item);files[item['path']]=text.encode()
+    for v in (5,6,14):
+        for raw in (63,64,65,66,95,96):
+            for equal in (True,False): add(f'v{v:02}-raw{raw}-'+('equal' if equal else 'insert'),raw,equal,v)
+    for norm in (64,65,96,97):
+        for eq in (True,False):
+            for pat in ('alternating','duplicates','collinear','zero-final','fractional'):
+                for adj in ('short','long'):
+                    add(f'n{norm}-'+('equal' if eq else 'insert')+f'-{pat}-{adj}',norm if eq else norm-1,eq,pattern=pat,adjust=adj)
+    for kind in ('B','P','C'):
+        for raw,eq in ((63,False),(64,True),(64,False),(65,True),(95,False)):
+            # The <=64 non-L positives are characterized, no Linear scalar oracle.
+            add(f'{kind}-raw{raw}-'+('equal' if eq else 'insert'),raw,eq,kind=kind)
+    for bad in ('malformed','arity','out-of-range','nonfinite','marker','duration','checkpoints','length'):
+        for raw in (63,65): add(f'negative-{bad}-raw{raw}',raw,False,bad=bad)
+    for v in (4,15): add(f'negative-v{v}',65,version=v)
+    for v in range(7,14):
+        add(f'v{v:02}-raw95-insert',95,False,version=v)
+        add(f'v{v:02}-raw96-insert',96,False,version=v)
+    add('negative-checkpoint-real-raw63',63,False,bad='checkpoint-real')
+    for raw in (63,65): add(f'negative-mode1-raw{raw}',raw,mode=1)
+    add('timing-inherited-r32',95,False,spans=32,timing='0,500,4,1,0,100,1,0\n1000,-50,4,2,0,70,0,0\n2100,1000,4,3,0,50,1,0')
+    add('timing-fractional-r17',64,False,spans=17,adjust='short')
+    return files,dict(schema=1,source='6a152648c72773eb33d37f8ac01f18ca35ab1f41',ceiling='ENGINEERING proposal96; not original maximum',cases=cases)
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');a=p.parse_args();files,j=generate()
+    files['manifest.json']=(json.dumps(j,indent=2)+'\n').encode()
+    for name,data in files.items():
+        path=H/name
+        if a.check: assert path.read_bytes()==data,name
+        else: path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data)
+    assert {p.name for p in (H/'fixtures').glob('*.osu')}=={Path(n).name for n in files if n.endswith('.osu')}
+    if (H/'attempts/initial-fixture-hashes.json').exists():
+        for name,digest in json.loads((H/'attempts/initial-fixture-hashes.json').read_text()).items():
+            assert hashlib.sha256((H/'fixtures'/name).read_bytes()).hexdigest()==digest,name
+    print('PASS',len(j['cases']),'immutable cases; baseline',sum(c['current']['prepared'] for c in j['cases']),'preparations; future L candidates',sum(c['futureCandidate'] for c in j['cases']))
