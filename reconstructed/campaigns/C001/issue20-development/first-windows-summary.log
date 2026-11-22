@@ -1,0 +1,23 @@
+2026-11-22T08:15:21.4142365Z QA15 HEADLESS: 95 passed, 0 failed
+2026-11-22T08:15:26.5452776Z QA15 WINDOWS: 39 passed, 0 failed
+2026-11-22T08:15:28.7157205Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-22T08:15:30.5628859Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-22T08:15:33.9899496Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-22T08:15:37.7514671Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-22T08:15:44.0847397Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-22T08:15:47.2892855Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-22T08:15:50.6466958Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-22T08:15:56.2553100Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-22T08:16:01.7693704Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-22T08:16:09.3552170Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-22T08:16:10.8768825Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-22T08:16:20.3707905Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-22T08:16:22.0381051Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-22T08:16:31.2023404Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-22T08:16:33.1422350Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-22T08:17:12.1001428Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls
+2026-11-22T08:17:21.9135628Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only
+2026-11-22T08:17:49.7136474Z Issue20 development 5430/5430 PASS; 112/56; +74 lost0
+2026-11-22T08:17:51.3419942Z FAIL v05-raw63-equal finite nonempty WPF path
+2026-11-22T08:17:51.3726487Z Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.
+2026-11-22T08:17:51.4334493Z ##[error]Process completed with exit code 1.

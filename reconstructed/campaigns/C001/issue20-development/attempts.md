@@ -24,3 +24,20 @@ path was invoked and PATH/DOTNET_HOST_PATH were unset. Rerun with explicit host 
 passed295/295. Original failed log is retained, not a production discrepancy.
 5. Local full modified-source gate5429/5429; exact-source Windows gate still pending
 at this introducing publication. Independent Work1 QA is not claimed.
+
+6. First exact Windows run45001890246 at585c624: new headless5430/5430 PASS,
+all19 historical summaries2312/2312 PASS and other retained suites passed. New
+WPF-only verifier failed on its first unfilled StreamGeometry: native
+GetFlattenedPathGeometry returned no point figures, then verifier indexed an empty
+array. Executable publication was correctly skipped. Failed logs, original Windows
+verifier and headless result packet are retained. No production defect inferred.
+Official WPF sources distinguish native flattening from managed serialized-path
+readback: StreamGeometry.GetAsPathGeometry uses PathStreamGeometryContext and
+ParsePathGeometryData; public PathGeometry.CreateFromGeometry delegates to that
+readback. Verifier now checks the actual retained constructor figures/points,
+unfilled/open flags and stroked segments via that API, with an explicit empty
+check before indexing. Renderer BuildPath remains byte-identical. Windows must
+rerun all gates; this correction is not a successful Windows result.
+Sources inspected (2026-11-22): dotnet/wpf PresentationCore/System/Windows/Media/
+{Geometry.cs,StreamGeometry.cs,PathGeometry.cs}; raw URLs under
+https://github.com/dotnet/wpf/tree/main/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/Media

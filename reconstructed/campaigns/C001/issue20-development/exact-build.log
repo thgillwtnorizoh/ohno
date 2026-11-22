@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  Restored /workspace/scratch/b3faa57f61b2/i20-exact/reconstructed/CorpusAudit/CorpusAudit.csproj (in 97 ms).
+  Restored /workspace/scratch/b3faa57f61b2/i20-exact/reconstructed/C001LinearControlChecks/C001LinearControlChecks.csproj (in 106 ms).
+  CorpusAudit -> /workspace/scratch/b3faa57f61b2/i20-exact/reconstructed/CorpusAudit/bin/Release/net8.0/CorpusAudit.dll
+  C001LinearControlChecks -> /workspace/scratch/b3faa57f61b2/i20-exact/reconstructed/C001LinearControlChecks/bin/Release/net8.0/C001LinearControlChecks.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:08.51
