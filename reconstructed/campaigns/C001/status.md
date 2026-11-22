@@ -254,3 +254,27 @@ Full records18-issue20-linear-controls.md/issue20-development including initial
 failed test assumptions and environment failure. Fresh Windows gates PENDING, not
 substituted by Issue18 CI. No independent new-source QA or original equivalence.
 Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
+
+## 2026-11-22 — Issue20 final development evidence reconciled
+
+**VERIFIED CHECKPOINT.** The earlier Windows-PENDING entry is preserved as the
+initial publication state. Windows gate is now verified at exact source
+`5dda483348e21e79c8354bf6ea322d50b7fb3e72`: run#84/45002466140,
+job137146777470,54/54 successful steps; SDK8.0.428/runtime8.0.34; Release0compiler
+warnings/0errors and self-contained win-x64 publish PASS. Development5430/5430,
+WPF-linked564/564(112owners/13350BuildPath segments), historical QA2312/2312;
+retained264/299/4375/stack43+394/3974/1503/801/656/295 and finite106+4 PASS.
+All168 control dispositions112/56/+74/0losses/112audio and274 packaged fixture
+hashes verified. Artifact14746253714 downloaded:68714855bytes, SHA256
+91c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb;
+EXE409e7fc13a92047e1eff0a56bf681c351f5616eca9e4b8d3be029f5e866238d7.
+Source marker, portable-PDB compiled checksum, bundle/runtime and six method-body
+comparisons PASS using existing artifact verifier. Earlier failures stay retained.
+
+Evidence-only reconciliation starts at that tested SHA; no implementation/test/
+workflow/original-record change or repeated execution/corpus scan. Published SHA
+is the descendant containing this update, pinned in Issue20 final comment.
+Complete UEP checkpoint and all counts: issue20-development/windows84/checkpoint.md;
+seals/logs/results in windows84/. Current next actor: HQ review, then separately
+authorized Work1 independent new-source QA. Original/GUI/audible/physical/private
+corpus NOT RUN. **Issue20/C001/subsystem/Issue4 OPEN**; owner acceptance absent.

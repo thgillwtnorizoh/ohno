@@ -273,3 +273,25 @@ Full records18-issue20-linear-controls.md/issue20-development including initial
 failed test assumptions and environment failure. Fresh Windows gates PENDING, not
 substituted by Issue18 CI. No independent new-source QA or original equivalence.
 Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
+
+## 2026-11-22 — Issue20 final Windows development coverage
+
+This dated append resolves the initial Windows-pending development gate only.
+Exact source5dda483348e21e79c8354bf6ea322d50b7fb3e72, Windows#84/45002466140,
+job137146777470,54successful steps.5430headless+564actualWPF-linked development
+assertions and2312historical QA pass; retained264/299/4375/stack43+394/3974/1503/
+801/656/295 and finite106+4 pass separately.112canonical owners,74newly admitted,
+56exclusions,0losses;13350actualBuildPath segments. All168 dispositions and274
+packaged control/traversal fixture hashes match unchanged manifests. Portable x64
+delivery artifact14746253714 downloaded and verified (source/PDB/bundle/6method
+bodies/ZIP/exe seals). Existing raw/prepared geometry, consumer, exact/one-over
+resource and cooperative cancellation development coverage is retained.
+
+No semantic expansion from this evidence-only task. Source-L96 remains an explicit
+canonical v5–v14 Mode0 ENGINEERING capability; public/legacy/B/P/C64 and traversal
+profiles unchanged. Complete test denominators and measured-work limits are in
+issue20-development/windows84/checkpoint.md. This is Work2 development evidence,
+not separately established Issue20 independent QA. Original runtime, shown GUI,
+audible/physical qualification and private owner corpus NOT RUN. Remaining campaign
+requirements and Issue4 unchanged. HQ review then Work1 new-source QA is next;
+Issue20/C001/subsystem OPEN; no owner acceptance.

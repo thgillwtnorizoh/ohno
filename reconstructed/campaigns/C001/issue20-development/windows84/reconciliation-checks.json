@@ -1,0 +1,85 @@
+{
+  "startingSha": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "scope": "documentation and evidence only",
+  "checks": {
+    "existingModifiedFilesAppendOnly": true,
+    "allPriorPacketFilesPreservedExceptAppendOnlyUpdates": true,
+    "productionTestsWorkflowsResearchUnchanged": true,
+    "gameplayIdentical585c624To5dda483": true,
+    "normalizedDecodedLogRoundTrip": true,
+    "downloadedResultPacketHash": true,
+    "onlyNewWindows84EvidenceFiles": true
+  },
+  "preservedPacketFiles": 48,
+  "modifiedHistoricalPrefixes": [
+    {
+      "path": "reconstructed/campaigns/C001/18-issue20-linear-controls.md",
+      "previousSha256": "1a50b4284cb78a0447f2053c5e9157cc8a2c214212b8088afeb995948f66f577",
+      "currentSha256": "6d54c050a3c413a54edc2763b0693cc9df9e708aeb76b0bb4c5e729513d9ccea",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/coverage.md",
+      "previousSha256": "01fadbde2b71d78d70d801837c2805dfb43ff92d276e49d10b86364beb079cfb",
+      "currentSha256": "7733b38df7a94319b7ab5558a75d3bea93d967c63470b05ac1003ade6ea6c6c1",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/discrepancies.md",
+      "previousSha256": "5f9c63376a3244b46e98f5f20896157c2c298d0d2b9e2f6accc986973b766a02",
+      "currentSha256": "13173c09ef3902453ff8a3b5cab2844a681a3880dc2c2a4422d9acffd0640844",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/issue20-development/README.md",
+      "previousSha256": "1792e4c2ea87be30356c59e10e60a572ba2a4dffec22217910c2e30cdba31d7d",
+      "currentSha256": "0ab54d92e589fe8042a6c62bca752e909f8bb8a65f7fca61f21484c6de88e199",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/issue20-development/attempts.md",
+      "previousSha256": "d5c0182470509d886db6aef3892e630f7a64e365bfb81fff65e67ce3b815f33a",
+      "currentSha256": "54ff112960b84581b87bb6682fda9a80bdbba423b4282c5fc33f5eaf305e4fab",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/issue20-development/dependencies.md",
+      "previousSha256": "0bde395198509780d05c6183b114a55a9a19b9653b18f18665a36734243eca40",
+      "currentSha256": "8ab00fbc0d457e72a6a3cbe5f184a3160f8ae124910c0280a40cfd5e0492a8af",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/campaigns/C001/status.md",
+      "previousSha256": "201ffd1f7e24de1100d56821a638e40963c9196cd3318c6f1ec26d382fa730ef",
+      "currentSha256": "d2cafe0fe4e132d0158befdeb3ffbc8779e3ecf3cab4df7a1828d0c014c95dfc",
+      "historicalPrefixPreserved": true
+    },
+    {
+      "path": "reconstructed/contexts.md",
+      "previousSha256": "a266b8bca2c4b2011b7d1ed9f32786823bc690f7337adaebb0f2f6540b794380",
+      "currentSha256": "5d8199ba51ba61dcf370cb6dfeb86413b695266ae47ce410cb039325be89ca5c",
+      "historicalPrefixPreserved": true
+    }
+  ],
+  "filesAdded": [
+    "reconstructed/campaigns/C001/issue20-development/windows84-ci.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84.log.gz.b64",
+    "reconstructed/campaigns/C001/issue20-development/windows84/all-test-summaries.log",
+    "reconstructed/campaigns/C001/issue20-development/windows84/artifact-seal.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84/c001-independent-results.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84/c001-stacking-heads.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84/c001-stacking-integration.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84/checkpoint.md",
+    "reconstructed/campaigns/C001/issue20-development/windows84/ci-summary.log",
+    "reconstructed/campaigns/C001/issue20-development/windows84/verification.log",
+    "reconstructed/campaigns/C001/issue20-development/windows84/windows-dispositions.csv",
+    "reconstructed/campaigns/C001/issue20-development/windows84/windows-linked.json",
+    "reconstructed/campaigns/C001/issue20-development/windows84/windows-results.json"
+  ],
+  "artifactVerifier": "existing check_artifact.py; PASS; verification.log",
+  "buildsOrRegressionExecutionsThisReconciliation": "NOT RUN; reused exact-source Windows run84 evidence",
+  "corpusScans": "NOT RUN",
+  "independentIssue20QA": "PENDING",
+  "issue20": "OPEN",
+  "campaign": "OPEN"
+}

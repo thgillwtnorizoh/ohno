@@ -1,0 +1,57 @@
+2026-11-22T08:22:35.7671747Z     0 Warning(s)
+2026-11-22T08:22:35.7672013Z     0 Error(s)
+2026-11-22T08:22:45.0645301Z QA15 HEADLESS: 95 passed, 0 failed
+2026-11-22T08:22:50.8291646Z QA15 WINDOWS: 39 passed, 0 failed
+2026-11-22T08:22:53.4365982Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-22T08:22:55.6353793Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-22T08:22:57.8784914Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-22T08:23:00.1365590Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-22T08:23:02.3472643Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-22T08:23:04.4674799Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-22T08:23:06.4528117Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-22T08:23:08.3842834Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-22T08:23:10.5620426Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-22T08:23:12.6844008Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-22T08:23:14.6703926Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-22T08:23:16.7160404Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-22T08:23:18.7737930Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-22T08:23:20.8840252Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-22T08:23:23.1715020Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-22T08:23:26.6649129Z PASS R11 Default named skin bypassed
+2026-11-22T08:23:27.9791639Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-22T08:23:30.9111895Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-22T08:23:34.8913973Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-22T08:23:38.1829261Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-22T08:23:40.1776270Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-22T08:23:44.4658462Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-22T08:23:46.2910825Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-22T08:23:48.3167312Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-22T08:23:51.6675688Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-22T08:23:53.7548188Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-22T08:23:57.8775229Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-22T08:23:59.9380965Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-22T08:24:03.4977728Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-22T08:24:05.8972121Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-22T08:24:08.3203138Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback
+2026-11-22T08:24:11.1221628Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-22T08:24:13.4382693Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-22T08:24:15.9959700Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input
+2026-11-22T08:24:18.3484656Z R16 WINDOWS: 12/12 groups passed; final1 source inspection; unshown components only; no Window/show/render/OS input/nonempty media
+2026-11-22T08:24:59.5668726Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls
+2026-11-22T08:25:10.0849061Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only
+2026-11-22T08:25:13.5380324Z R17 DEVELOPMENT: 82 groups passed; 89878 finite scalar comparisons; last1 source inspection; research controls not added to independent QA
+2026-11-22T08:25:16.5663686Z R17 WINDOWS: 12/12 groups passed; last1 source inspection; other controls unshown components; no Window/show/render/OS input/nonempty media
+2026-11-22T08:25:19.2084824Z C001 DEVELOPMENT: 264/264 PASS
+2026-11-22T08:25:21.4630097Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution
+2026-11-22T08:25:25.7779583Z C001 independent integration: 394/394 PASS; 0 failures
+2026-11-22T08:25:28.2571508Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions
+2026-11-22T08:25:43.1962192Z Issue20 development 5430/5430 PASS; 112/56; +74 lost0
+2026-11-22T08:25:45.3101992Z Issue20 WPF linked 564/564 PASS;112 owners;13350 actual BuildPath segments
+2026-11-22T08:25:55.4544509Z Issue18 development 3974/3974 PASS;86 prepared/20 excluded;45 additions
+2026-11-22T08:25:59.2039929Z Issue15 development 1503/1503 PASS; 59 prepared; 41 rejected; 12 consumer controls
+2026-11-22T08:26:01.5588613Z Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls
+2026-11-22T08:26:04.7985265Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures
+2026-11-22T08:26:09.1901709Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN
+2026-11-22T08:26:21.5667982Z (node:8256) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T08:26:23.0553495Z (node:8256) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-22T08:26:27.9801960Z SHA256 digest of uploaded artifact zip is 91c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb

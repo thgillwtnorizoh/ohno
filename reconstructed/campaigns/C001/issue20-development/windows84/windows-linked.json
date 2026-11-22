@@ -1,0 +1,2277 @@
+{
+  "source": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "actualAssembly": "D:\\a\\ohno\\ohno\\reconstructed\\C001LinearControlWindowsChecks\\bin\\Release\\net8.0-windows\\Ohno.CircleGame.dll",
+  "assemblySha256": "EBB9BA235266FED0438E8BC4506360EB4458CD66A07E521ADD8E6D82D5FC5747",
+  "documents": [
+    {
+      "name": "D:/a/ohno/ohno/reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "sourceHash": "229C2C9251D737E0055733D66727DD11E9F73DEFE035E60EB8E52095745B5347"
+    }
+  ],
+  "prepared": 112,
+  "added": 74,
+  "pathSegments": 13350,
+  "milliseconds": 213.9926,
+  "passed": 564,
+  "failed": 0,
+  "checks": [
+    {
+      "pass": true,
+      "name": "actual linked WPF assembly defines production Beatmap and rendering"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw64-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw65-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw66-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw96-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw96-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw96-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw96-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v05-raw96-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw64-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw65-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw66-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw96-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw96-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw96-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw96-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v06-raw96-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw64-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw65-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw66-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw96-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw96-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw96-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw96-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v14-raw96-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-equal-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n64-insert-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-equal-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n65-insert-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-equal-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-alternating-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-collinear-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-zero-final-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n96-insert-fractional-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-short actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-short finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-short actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-short actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-short actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-long actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-long finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-long actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-long actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "n97-insert-duplicates-long actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "B-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "B-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "B-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "B-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "B-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "B-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "B-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "B-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "B-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "B-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "P-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "P-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "P-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "P-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "P-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "P-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "P-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "P-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "P-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "P-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "C-raw63-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "C-raw63-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "C-raw63-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "C-raw63-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "C-raw63-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "C-raw64-equal actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "C-raw64-equal finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "C-raw64-equal actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "C-raw64-equal actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "C-raw64-equal actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw63 actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw63 finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw63 actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw63 actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw63 actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw65 actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw65 finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw65 actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw65 actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "negative-checkpoints-raw65 actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v07-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v07-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v07-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v07-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v07-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v08-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v08-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v08-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v08-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v08-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v09-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v09-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v09-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v09-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v09-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v10-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v10-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v10-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v10-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v10-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v11-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v11-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v11-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v11-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v11-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v12-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v12-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v12-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v12-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v12-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "v13-raw95-insert actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "v13-raw95-insert finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "v13-raw95-insert actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "v13-raw95-insert actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "v13-raw95-insert actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "timing-inherited-r32 actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "timing-inherited-r32 finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "timing-inherited-r32 actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "timing-inherited-r32 actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "timing-inherited-r32 actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "timing-fractional-r17 actual BuildPath returns frozen geometry"
+    },
+    {
+      "pass": true,
+      "name": "timing-fractional-r17 finite nonempty WPF path"
+    },
+    {
+      "pass": true,
+      "name": "timing-fractional-r17 actual prepared WPF endpoints"
+    },
+    {
+      "pass": true,
+      "name": "timing-fractional-r17 actual unfilled stroked constructor data"
+    },
+    {
+      "pass": true,
+      "name": "timing-fractional-r17 actual WPF-linked registered session score health identity"
+    },
+    {
+      "pass": true,
+      "name": "actual WPF-linked112/74 profile"
+    },
+    {
+      "pass": true,
+      "name": "actual WPF DLL portable PDB compiled Beatmap SHA256 matches checkout"
+    },
+    {
+      "pass": true,
+      "name": "one actual compiled Beatmap PDB identity"
+    }
+  ],
+  "appLaunch": "NOT RUN",
+  "media": "NOT RUN"
+}

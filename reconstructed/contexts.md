@@ -1960,3 +1960,45 @@ Full records18-issue20-linear-controls.md/issue20-development including initial
 failed test assumptions and environment failure. Fresh Windows gates PENDING, not
 substituted by Issue18 CI. No independent new-source QA or original equivalence.
 Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
+
+## 2026-11-22 — C001 Work2 Issue20 final evidence reconciliation
+
+Objective/authority: owner's bounded evidence-only recovery, starting remote main
+5dda483348e21e79c8354bf6ea322d50b7fb3e72 verified. No new implementation, tests,
+workflow, original research/fixture edits, corpus scans or authorized exceptions.
+Introducing585c624, accepted prior6a152648 and Issue19 authority reused. Published
+evidence SHA is the descendant containing this entry, pinned in final Issue20
+comment; exact Windows-tested/package source remains5dda483.
+
+Recovered CI SUCCESS: Windows#84/45002466140/job137146777470,54/54steps,
+WindowsServer2022/SDK8.0.428/runtime8.0.34,Release0compilerwarnings/0errors and
+self-contained win-x64 publish PASS.5430/5430headless,564/564WPF-linked (112owners,
+13350BuildPath segments),2312/2312historical QA, retained264/299/4375/stack43+394/
+3974/1503/801/656/295 and finite106+4 PASS. Historical smoke groups/source-inspection
+counts are preserved separately. Prior local5429 and Linux counts are not relabeled.
+
+Actual reconciliation command: existing issue20-development/check_artifact.py
+downloadedZIP decodedLog windows84-ci.json windows84; PASS source marker/ZIP/exe/
+bundle/runtime/portablePDB/6linked-bundledmethod bodies/274fixture hashes/168individual
+dispositions112prepared56excluded74added0lost112audio. Artifact14746253714,
+68714855bytes, SHA25691c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb;
+EXE409e7fc13a92047e1eff0a56bf681c351f5616eca9e4b8d3be029f5e866238d7. No app
+executed. Two upload-tool Node deprecation notices retained separately from compiler0/0.
+Additional scope/append-only/log/packet integrity checks performed; no regression
+suite/build/corpus rerun. New Windows results/seals/log/retained packets and full
+UEP checkpoint in issue20-development/windows84 and windows84-ci.json/log.gz.b64.
+
+First failed Windows45001890246 native-unfilled-path verifier failure remains
+preserved, along with original verifier/results and early failures.5dda483 changed
+only verifier readback plus failure evidence; production renderer/gameplay stayed
+unchanged. Dated append-only updates reconcile18-issue20-linear-controls.md,
+status.md,coverage.md,discrepancies.md,this journal and packet README/attempts/
+dependencies. Earlier Windows-PENDING statements remain historical.
+
+VERIFIED COMPONENT Windows development/delivery; CONFIRMED ORIGINAL Issue19 static
+authority reused; RECONSTRUCTED arithmetic; ENGINEERING finite96/resource profiles.
+Original executable/17E20cases/GUI/audible/physical/privatecorpus NOT RUN. Full
+original-runtime equivalence and independent Issue20QA are not established. No
+owner rescan/action requested. Next actor HQreview, then separately authorized
+Work1 independent exact-source QA. Stop at published final development checkpoint.
+Issue20/C001/subsystem/Issue4 OPEN; no owner acceptance.

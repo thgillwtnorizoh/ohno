@@ -1,0 +1,44 @@
+2026-11-22T08:22:15.8382741Z 8.0.428 [C:\Program Files\dotnet\sdk]
+2026-11-22T08:22:19.4813599Z 8.0.428
+2026-11-22T08:22:19.5691591Z ##[group]Run dotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo
+2026-11-22T08:22:19.5692557Z [36;1mdotnet build reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained false --nologo[0m
+2026-11-22T08:22:35.7671747Z     0 Warning(s)
+2026-11-22T08:22:35.7672013Z     0 Error(s)
+2026-11-22T08:22:45.0645301Z QA15 HEADLESS: 95 passed, 0 failed
+2026-11-22T08:22:50.8291646Z QA15 WINDOWS: 39 passed, 0 failed
+2026-11-22T08:22:53.4365982Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-22T08:22:55.6353793Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-22T08:23:00.1365590Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-22T08:23:04.4674799Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-22T08:23:12.6844008Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-22T08:23:16.7160404Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-22T08:23:20.8840252Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-22T08:23:27.9791639Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-22T08:23:30.5483694Z PASS R12 S25 malformed edge/payload retained as unavailable; existing1–16 traversal bound unchanged
+2026-11-22T08:23:34.0378954Z PASS M16 bounded traversal0 rejected
+2026-11-22T08:23:34.0388039Z PASS M16 bounded traversal-1 rejected
+2026-11-22T08:23:34.0413317Z PASS M16 bounded traversal17 rejected
+2026-11-22T08:23:34.8913973Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-22T08:23:44.3387516Z PASS W02 independent RIFF walk and PCM16 loop bounds
+2026-11-22T08:23:44.4658462Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-22T08:23:46.2910825Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-22T08:23:57.8775229Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-22T08:23:59.9380965Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-22T08:24:11.1221628Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-22T08:24:13.4382693Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-22T08:24:59.5668726Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls
+2026-11-22T08:25:10.0849061Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only
+2026-11-22T08:25:19.2084824Z C001 DEVELOPMENT: 264/264 PASS
+2026-11-22T08:25:21.4630097Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution
+2026-11-22T08:25:25.7779583Z C001 independent integration: 394/394 PASS; 0 failures
+2026-11-22T08:25:28.2571508Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions
+2026-11-22T08:25:43.1962192Z Issue20 development 5430/5430 PASS; 112/56; +74 lost0
+2026-11-22T08:25:45.3101992Z Issue20 WPF linked 564/564 PASS;112 owners;13350 actual BuildPath segments
+2026-11-22T08:25:55.4544509Z Issue18 development 3974/3974 PASS;86 prepared/20 excluded;45 additions
+2026-11-22T08:25:59.2039929Z Issue15 development 1503/1503 PASS; 59 prepared; 41 rejected; 12 consumer controls
+2026-11-22T08:26:01.5588613Z Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls
+2026-11-22T08:26:04.7985265Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures
+2026-11-22T08:26:09.1901709Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN
+2026-11-22T08:26:09.2771424Z ##[group]Run dotnet publish reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o "D:\a\_temp/ohno-c001-windows"
+2026-11-22T08:26:09.2772790Z [36;1mdotnet publish reconstructed/CircleGame/Ohno.CircleGame.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o "D:\a\_temp/ohno-c001-windows"[0m
+2026-11-22T08:26:27.9801960Z SHA256 digest of uploaded artifact zip is 91c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb

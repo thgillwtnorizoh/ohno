@@ -41,3 +41,14 @@ rerun all gates; this correction is not a successful Windows result.
 Sources inspected (2026-11-22): dotnet/wpf PresentationCore/System/Windows/Media/
 {Geometry.cs,StreamGeometry.cs,PathGeometry.cs}; raw URLs under
 https://github.com/dotnet/wpf/tree/main/src/Microsoft.DotNet.Wpf/src/PresentationCore/System/Windows/Media
+
+7. Final recovery/reconciliation, 2026-11-22: Windows run#84/45002466140 at
+5dda483348e21e79c8354bf6ea322d50b7fb3e72 succeeded, job137146777470 all54steps,
+5430headless/564WPF/2312historical and retained gates PASS. Artifact14746253714
+downloaded and unchanged check_artifact.py passed exact source/ZIP/exe/bundle/PDB/
+6method/274fixture/168disposition seals. No new build or suite/corpus execution in
+this recovery. All earlier attempts remain, including failed Windows45001890246;
+the old pending status describes its original publication time. Two Node upload
+deprecation notices remain in the decoded successful log; compiler warnings/errors
+are0/0. Complete counts/confidence/reproduction in windows84/checkpoint.md.
+Issue20/C001/subsystem OPEN pending HQreview and separately authorized Work1 QA.

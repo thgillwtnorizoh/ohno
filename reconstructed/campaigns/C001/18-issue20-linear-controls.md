@@ -69,3 +69,41 @@ check final prepared map segments, checked movements and exact checkpoint plan
 observe cancellation during parse, geometry, schedule and publication
 publish actual canonical owners and use existing gameplay/sample consumers
 ```
+
+## Final evidence reconciliation — 2026-11-22
+
+**VERIFIED CHECKPOINT — final Work 2 development delivery.** This append-only
+update resolves the initial Windows-PENDING statements above; the earlier report
+and all failed attempts remain historical evidence. Reconciliation starting main
+and exact Windows-tested/package source: `5dda483348e21e79c8354bf6ea322d50b7fb3e72`.
+Introducing implementation: `585c624b2675e534dfaacf9c497120099f61dc6d`.
+Published reconciliation is the evidence-only descendant containing this entry;
+its exact SHA is pinned in the final Issue #20 comment.
+
+Windows run **#84 / 45002466140**, job **137146777470**, **54/54 successful steps**,
+SDK8.0.428/runtime8.0.34, Release0 compiler warnings/0 errors and self-contained
+win-x64 package PASS. New development **5430/5430**, actual WPF-linked **564/564**
+(112 owners, 13350 BuildPath segments), historical QA **2312/2312** PASS. Retained
+C001264/P299/C4375/stack43+394/Issue18 3974/Issue15 1503/Issue9 801/Issue7 656/
+CorpusAudit295 and finite contract106+4 PASS. Ten diagnostic-only probes are not
+semantic passes. Historical development/smoke groups and source-inspection limits
+are enumerated in the final packet, separately from independent historical QA.
+
+Downloaded artifact **14746253714**, 68714855 bytes, ZIP SHA256
+`91c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb`;
+EXE SHA256 `409e7fc13a92047e1eff0a56bf681c351f5616eca9e4b8d3be029f5e866238d7`.
+Unchanged verifier passed source marker, PE/bundle/runtime/PDB, six linked/bundled
+method bodies, 274 fixture hashes and all168 dispositions:112prepared/56excluded/
+74additions/0losses/112audio. No executable was launched. Compiler0/0 is distinct
+from two retained upload-tool Node deprecation notices.
+
+First Windows45001890246 WPF-verifier failure remains sealed in first-* evidence;
+native flattening of an unfilled path produced no figures. The verifier-only
+readback correction in5dda483 passed on run84; no production renderer change.
+This reconciliation changes documentation/evidence only and runs the existing
+artifact verifier, not gameplay suites or a corpus scan. Full UEP fields, every
+applicable test denominator, commands and confidence limits are in
+[the final development checkpoint](issue20-development/windows84/checkpoint.md).
+Original/GUI/audible/physical/private-corpus runtime NOT RUN. Next: HQ review then
+separately authorized Work1 independent exact-source QA. Issue20/C001/subsystem/
+Issue4 remain OPEN; no owner acceptance or authorization exception.

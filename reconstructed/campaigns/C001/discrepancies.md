@@ -202,3 +202,29 @@ Full records18-issue20-linear-controls.md/issue20-development including initial
 failed test assumptions and environment failure. Fresh Windows gates PENDING, not
 substituted by Issue18 CI. No independent new-source QA or original equivalence.
 Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
+
+## 2026-11-22 — Issue20 final evidence reconciliation
+
+Windows-development pending status in the initial entry is resolved by successful
+run#84/45002466140 at5dda483348e21e79c8354bf6ea322d50b7fb3e72,
+job137146777470:54/54steps,5430development,564WPF,2312historical QA and all retained
+gates PASS; artifact14746253714 downloaded and exact source/ZIP/exe/PDB/6method/
+274fixture/168disposition verification PASS. Full details and all counts in
+issue20-development/windows84/checkpoint.md and artifact-seal.json.
+
+Preserved failed run45001890246 at585c624:5430headless/2312historical passed, WPF
+verifier failed when native flattening of an unfilled StreamGeometry returned no
+figures and the verifier indexed an empty array; package publication was skipped.
+The verifier-only managed constructor-readback correction in5dda483 succeeded in
+run84. No production renderer/gameplay discrepancy was established by that failure.
+All initial harness/test-data/host-path failures, first-Windows verifier and logs
+remain intact. Build0compiler warnings/0errors; two upload Node deprecation notices
+are disclosed, not converted into compiler warnings or silently omitted.
+
+No further implementation or original-behavior conclusion in this reconciliation.
+Work2 tests are not independent new-source QA. Original17E20runtime cases and
+original/GUI/audible/physical/privatecorpus qualification remain NOT RUN. Existing
+v5/v6 continuing limits, source/version/profile exclusions, position-work limits,
+historical star differences and other unresolved campaign requirements persist.
+HQ review then separately authorized Work1 QA remains required. Issue20/C001/
+subsystem/Issue4 OPEN. No owner acceptance, corpus-recovery forecast or rescan.
