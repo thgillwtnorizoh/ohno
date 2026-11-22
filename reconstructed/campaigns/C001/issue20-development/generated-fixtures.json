@@ -1,0 +1,135 @@
+{
+  "archiveSha256": "2a8348a9e77dacbac0966f4ecf4f885641cc6839b9aa1b37780ba1e80c5cfb7a",
+  "files": [
+    {
+      "name": "B64.osu",
+      "bytes": 774,
+      "sha256": "ff4db106e3a2af16ed9095510f4ceb24f150c568e8d8882b047ffb594f9500d5"
+    },
+    {
+      "name": "B65.osu",
+      "bytes": 782,
+      "sha256": "8985be0d9e5ebac2b6a7c87adeb6a53e4e29b3c96ca5126b8f46fd43578ce109"
+    },
+    {
+      "name": "B96.osu",
+      "bytes": 1030,
+      "sha256": "b5f8a2a61c286f63496bb171ec7c72064218e4f9ec2198375b4147042534eaf4"
+    },
+    {
+      "name": "C64.osu",
+      "bytes": 774,
+      "sha256": "55d8db02cd6dacb0b027298748a05e1a8c362acfb4c602cb6b606de37db4171b"
+    },
+    {
+      "name": "C65.osu",
+      "bytes": 782,
+      "sha256": "4c1e346379da0f26f1927ce798baebc3432ae1ba7334f6f630fafcd836ac6e42"
+    },
+    {
+      "name": "C96.osu",
+      "bytes": 1030,
+      "sha256": "9889053aab044c6f3e63eefd02cf39247775587c8f82da3b5888180b4671a074"
+    },
+    {
+      "name": "P64.osu",
+      "bytes": 774,
+      "sha256": "75896eb02e49b12d11ccf037c47b9fcc8afb1b9c0fb9d4c6dcf4719a90e272f0"
+    },
+    {
+      "name": "P65.osu",
+      "bytes": 782,
+      "sha256": "140ffe5a836bca5776dfb0704e78e5c6e3a36b20d400a4a1ba8af6fc43d2a74f"
+    },
+    {
+      "name": "P96.osu",
+      "bytes": 1030,
+      "sha256": "a3fba7d1c4e00ec9172671f99939144f7a9748d3ff078a7486654e6800bd59d7"
+    },
+    {
+      "name": "bad-sample-1193604637.osu",
+      "bytes": 1023,
+      "sha256": "f964de752ea7e458781849b49bc9f1d324136a0bc15b6ee02f82232f55f0859e"
+    },
+    {
+      "name": "bad-sample-1951539632.osu",
+      "bytes": 1023,
+      "sha256": "fc7621b47096f57ba5240043cbdba6eeca3f38796adc1e363acea6d5f870cf5a"
+    },
+    {
+      "name": "cp-over.osu",
+      "bytes": 1033,
+      "sha256": "86b8864d518af0ccecf5a13d80ae3fdce7a67092587b871dad06ff70054873d8"
+    },
+    {
+      "name": "edge-1.osu",
+      "bytes": 1021,
+      "sha256": "a6f9e4dd0397a5872bcccba257a24a26a0f101e81604fa9bc155c83342e73843"
+    },
+    {
+      "name": "edge-69.osu",
+      "bytes": 1089,
+      "sha256": "b12bf12b2ea16f554ec4036caa01af75f3a48952c29baf1a382d1a951b8d866d"
+    },
+    {
+      "name": "map-cp-exact.osu",
+      "bytes": 20739,
+      "sha256": "fed4c5068540a69b84139afaa5ca46185e89a0b22318a7d31797dde178934a0a"
+    },
+    {
+      "name": "map-cp-near.osu",
+      "bytes": 19917,
+      "sha256": "4c10acee49490edcf30e31ceb133924d0e75b3634095561097631a6e4d42111f"
+    },
+    {
+      "name": "map-cp-one-over.osu",
+      "bytes": 21548,
+      "sha256": "63b34633d6befd20331f5fbbe47262beae6740680716c8b4a394c5d92f51bd2a"
+    },
+    {
+      "name": "max.osu",
+      "bytes": 1031,
+      "sha256": "4c1f3b117f6a75fe7e92acd34147b924e787a39ebe23e248cc3e561adb3d5aa1"
+    },
+    {
+      "name": "moves-exact.osu",
+      "bytes": 67571,
+      "sha256": "5fe33d8905dab004145678a1ba11279d3c1e6d2019bba35d9a20303afae6b8e4"
+    },
+    {
+      "name": "moves-one-over.osu",
+      "bytes": 68380,
+      "sha256": "b8e233e7fbfd0556cd519ecd92bee1e4fa7034e5875da58fbd640a1e3b0f1ef3"
+    },
+    {
+      "name": "multi-consumer.osu",
+      "bytes": 2643,
+      "sha256": "703263c50f72a089b6b1c6152bd797572a9a11161078ee8bd103bd9c74f95bde"
+    },
+    {
+      "name": "new-resource.osu",
+      "bytes": 1032,
+      "sha256": "e31f6782237addbae5ef9aa5a1eb53c46f84760b20ee54875574d503021f5dc9"
+    },
+    {
+      "name": "segments-exact.osu",
+      "bytes": 853191,
+      "sha256": "60cc9688a6fdea8e7fef29c76067c5cd6d03dc1ec81df89a986aa4df5d1f9fde"
+    },
+    {
+      "name": "segments-one-over.osu",
+      "bytes": 854000,
+      "sha256": "6450810693100e0fa8f566b7e78464f20826b8b1da7627210816e050b77c4e26"
+    },
+    {
+      "name": "stack-source.osu",
+      "bytes": 1830,
+      "sha256": "d7fb280b59959440afeea234f4c0953887496425636e5753a0e8a48c6ef37c04"
+    },
+    {
+      "name": "stack-untranslated.osu",
+      "bytes": 1828,
+      "sha256": "875952521c7452bb56e518f7db6dab92de98636211f046e4b7a6e865f321a3f3"
+    }
+  ]
+}

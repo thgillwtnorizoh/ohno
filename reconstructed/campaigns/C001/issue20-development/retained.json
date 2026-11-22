@@ -1,0 +1,154 @@
+[
+  {
+    "suite": "C001DevelopmentChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001DevelopmentChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001DevelopmentChecks"
+    ],
+    "exit": 0,
+    "seconds": 4.972922124000036,
+    "last": [
+      "C001 DEVELOPMENT: 264/264 PASS"
+    ]
+  },
+  {
+    "suite": "C001PerfectChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001PerfectChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001PerfectChecks.json"
+    ],
+    "exit": 0,
+    "seconds": 4.952153468000006,
+    "last": [
+      "C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution"
+    ]
+  },
+  {
+    "suite": "C001CatmullChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001CatmullChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001CatmullChecks.json"
+    ],
+    "exit": 0,
+    "seconds": 5.285947620000002,
+    "last": [
+      "C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions"
+    ]
+  },
+  {
+    "suite": "C001TraversalChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001TraversalChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001TraversalChecks"
+    ],
+    "exit": 0,
+    "seconds": 13.589773929999978,
+    "last": [
+      "Issue18 development 3973/3973 PASS;86 prepared/20 excluded;45 additions"
+    ]
+  },
+  {
+    "suite": "C001NearSpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001NearSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001NearSpinnerChecks"
+    ],
+    "exit": 0,
+    "seconds": 5.665278349000005,
+    "last": [
+      "Issue15 development 1502/1502 PASS; 59 prepared; 41 rejected; 12 consumer controls"
+    ]
+  },
+  {
+    "suite": "C001LegacySpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001LegacySpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001LegacySpinnerChecks"
+    ],
+    "exit": 0,
+    "seconds": 5.574825424999972,
+    "last": [
+      "Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls"
+    ]
+  },
+  {
+    "suite": "C001VersionedSpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/C001VersionedSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-C001VersionedSpinnerChecks"
+    ],
+    "exit": 0,
+    "seconds": 5.381248368000001,
+    "last": [
+      "VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures"
+    ]
+  },
+  {
+    "suite": "CorpusAuditChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "reconstructed/CorpusAuditChecks",
+      "-c",
+      "Release",
+      "--",
+      ".",
+      "/workspace/scratch/b3faa57f61b2/i20-retained-CorpusAuditChecks"
+    ],
+    "exit": 134,
+    "seconds": 5.463258760000031,
+    "last": [
+      "   at Program.Main(String[] args) in /workspace/scratch/b3faa57f61b2/ohno/reconstructed/CorpusAuditChecks/Program.cs:line 161"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+Unhandled exception. System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'dotnet' with working directory '/workspace/scratch/b3faa57f61b2/ohno'. No such file or directory
+   at System.Diagnostics.Process.ForkAndExecProcess(ProcessStartInfo startInfo, String resolvedFilename, String[] argv, String[] envp, String cwd, Boolean setCredentials, UInt32 userId, UInt32 groupId, UInt32[] groups, Int32& stdinFd, Int32& stdoutFd, Int32& stderrFd, Boolean usesTerminal, Boolean throwOnNoExec)
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at Program.<>c__DisplayClass6_0.<Main>g__Cli|11(String[] arguments) in /workspace/scratch/b3faa57f61b2/ohno/reconstructed/CorpusAuditChecks/Program.cs:line 156
+   at Program.Main(String[] args) in /workspace/scratch/b3faa57f61b2/ohno/reconstructed/CorpusAuditChecks/Program.cs:line 161

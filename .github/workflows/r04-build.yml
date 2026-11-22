@@ -12,6 +12,8 @@ on:
       - reconstructed/C001LegacySpinnerChecks/**
       - reconstructed/C001NearSpinnerChecks/**
       - reconstructed/C001TraversalChecks/**
+      - reconstructed/C001LinearControlChecks/**
+      - reconstructed/C001LinearControlWindowsChecks/**
       - re/campaigns/C001/traversal-profile/**
       - re/campaigns/C001/near-spinner/**
       - re/campaigns/C001/legacy-spinner-profile/**
@@ -441,6 +443,15 @@ jobs:
           dotnet run --project reconstructed/C001CatmullChecks/C001CatmullChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-catmull-results.json"
           exit $LASTEXITCODE
 
+      - name: Check Issue20 canonical Linear control profile and connected consumers
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001LinearControlChecks -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-linear-controls"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet run --project reconstructed/C001LinearControlWindowsChecks -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-linear-controls"
+          exit $LASTEXITCODE
+
       - name: Check Issue18 canonical traversal budgets and actual consumers
         if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
         shell: pwsh
@@ -485,6 +496,8 @@ jobs:
           Copy-Item re/campaigns/C001/perfect-circle/manifest.json "${{ runner.temp }}/ohno-c001-windows/PERFECT-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/perfect-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/PERFECT-QUALIFICATION.md"
           Copy-Item re/campaigns/C001/catmull "${{ runner.temp }}/ohno-c001-windows/CatmullCorpus" -Recurse
+          Copy-Item re/campaigns/C001/control-count/fixtures "${{ runner.temp }}/ohno-c001-windows/LinearControlCorpus" -Recurse
+          Copy-Item re/campaigns/C001/control-count/manifest.json "${{ runner.temp }}/ohno-c001-windows/LINEAR-CONTROL-MANIFEST.json"
           Copy-Item re/campaigns/C001/traversal-profile/fixtures "${{ runner.temp }}/ohno-c001-windows/TraversalCorpus" -Recurse
           Copy-Item re/campaigns/C001/traversal-profile/manifest.json "${{ runner.temp }}/ohno-c001-windows/TRAVERSAL-MANIFEST.json"
           Copy-Item reconstructed/campaigns/C001/issue18-development/HUMAN.md "${{ runner.temp }}/ohno-c001-windows/TRAVERSAL-PROFILE.md"
@@ -520,5 +533,6 @@ jobs:
             ${{ runner.temp }}/c001-legacy-spinner/
             ${{ runner.temp }}/c001-near-spinner/
             ${{ runner.temp }}/c001-traversal/
+            ${{ runner.temp }}/c001-linear-controls/
             ${{ runner.temp }}/corpus-audit-retained/
           if-no-files-found: warn

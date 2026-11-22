@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  Restored /workspace/scratch/b3faa57f61b2/ohno/reconstructed/CircleGame/Ohno.CircleGame.csproj (in 23.78 sec).
+  Restored /workspace/scratch/b3faa57f61b2/ohno/reconstructed/C001LinearControlWindowsChecks/C001LinearControlWindowsChecks.csproj (in 23.79 sec).
+  Ohno.CircleGame -> /workspace/scratch/b3faa57f61b2/ohno/reconstructed/CircleGame/bin/Release/net8.0-windows/Ohno.CircleGame.dll
+  C001LinearControlWindowsChecks -> /workspace/scratch/b3faa57f61b2/ohno/reconstructed/C001LinearControlWindowsChecks/bin/Release/net8.0-windows/C001LinearControlWindowsChecks.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:30.85

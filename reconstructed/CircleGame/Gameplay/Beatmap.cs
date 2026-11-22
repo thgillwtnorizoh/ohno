@@ -193,6 +193,8 @@ public sealed record SliderGeometry(IReadOnlyList<Vector2> Controls, IReadOnlyLi
 
 // E32 finite v14 M144a -> M2d62 -> M2d93. Kept with the shared model so the
 // existing QA projects continue linking the actual implementation unchanged.
+internal enum SliderControlProfile { Historical64 = 64, CanonicalLinear96 = 96 }
+
 public static class SliderGeometryPreparation
 {
     public const int MaxControls = 64, MaxSegments = 8192, MaxSubdivisionWork = 50000;
@@ -202,14 +204,35 @@ public static class SliderGeometryPreparation
 
     public static SliderGeometry Prepare(Vector2 head, IReadOnlyList<Vector2> supplied, SliderPathKind kind,
         double requested, int format = 14, CancellationToken token = default)
+        => PrepareProfile(head, supplied, kind, requested, format, token, SliderControlProfile.Historical64);
+
+    internal static SliderControlProfile ProfileForSource(bool canonical, SliderPathKind sourceKind)
+        => canonical && sourceKind == SliderPathKind.Linear
+            ? SliderControlProfile.CanonicalLinear96 : SliderControlProfile.Historical64;
+
+    internal static SliderGeometry PrepareProfile(Vector2 head, IReadOnlyList<Vector2> supplied, SliderPathKind kind,
+        double requested, int format, CancellationToken token, SliderControlProfile profile,
+        Action<string, int, int>? progress = null)
     {
+        void Observe(string stage, int step = -1)
+        { progress?.Invoke(stage, -1, step); token.ThrowIfCancellationRequested(); }
         token.ThrowIfCancellationRequested();
         if (!Enum.IsDefined(kind)) throw new InvalidDataException("Unsupported slider path kind.");
         if (!double.IsFinite(requested) || requested <= 0) throw new InvalidDataException("Finite positive requested path length required by the engineering profile.");
-        if (supplied.Count > MaxControls) throw new InvalidDataException("Path exceeds the 64-control engineering limit.");
-        var controls = supplied.ToList();
+        if (!Enum.IsDefined(profile) || (profile == SliderControlProfile.CanonicalLinear96 &&
+            (kind != SliderPathKind.Linear || format < 5 || format > 14)))
+            throw new InvalidDataException("Canonical Linear control capability requires source L and format v5–v14.");
+        int maximum = (int)profile;
+        if (supplied.Count > maximum) throw new InvalidDataException(profile == SliderControlProfile.Historical64
+            ? "Path exceeds the 64-control engineering limit."
+            : "Canonical source L exceeds 96 normalized controls after head insertion.");
+        var controls = new List<Vector2>();
+        foreach (var point in supplied) { Observe("normalize", controls.Count); controls.Add(point); }
+        Observe("head-normalization");
         if (controls.Count == 0 || controls[0] != head) controls.Insert(0, head);
-        if (controls.Count > MaxControls) throw new InvalidDataException("R06 allows at most 64 normalized controls per slider.");
+        if (controls.Count > maximum) throw new InvalidDataException(profile == SliderControlProfile.Historical64
+            ? "R06 allows at most 64 normalized controls per slider."
+            : "Canonical source L exceeds 96 normalized controls after head insertion.");
         if (controls.Any(p => !float.IsFinite(p.X) || !float.IsFinite(p.Y))) throw new InvalidDataException("Finite path controls required.");
         var raw = new List<SliderSegment>();
         SliderPathKind preparedKind = kind;
@@ -248,14 +271,14 @@ public static class SliderGeometryPreparation
             }
         }
         double originalLength = 0;
-        foreach (var s in raw) originalLength += Length(s);
+        foreach (var s in raw) { Observe("raw-length"); originalLength += Length(s); }
         if (!double.IsFinite(originalLength) || originalLength <= 0)
             throw new InvalidDataException("R06 requires a finite nonzero raw slider path.");
         var prepared = raw.ToList();
         double excess = originalLength - requested;
         while (prepared.Count > 0)
         {
-            token.ThrowIfCancellationRequested();
+            Observe("trim", prepared.Count);
             var s = prepared[^1];
             float d = Length(s);
             if (d <= excess + 0.0001)
@@ -270,8 +293,9 @@ public static class SliderGeometryPreparation
         if (prepared.Count == 0) throw new InvalidDataException("Slider geometry vanished during requested-length adjustment.");
         var cumulative = new List<double>();
         double total = 0;
-        foreach (var s in prepared) { total += Length(s); cumulative.Add(total); }
+        foreach (var s in prepared) { Observe("cumulative", cumulative.Count); total += Length(s); cumulative.Add(total); }
         if (!double.IsFinite(total) || total <= 0) throw new InvalidDataException("Unsupported adjusted slider geometry.");
+        Observe("geometry-complete");
         return new(controls.AsReadOnly(), raw.AsReadOnly(), prepared.AsReadOnly(), cumulative.AsReadOnly(), originalLength, requested)
             { SourceKind = kind, PreparedKind = preparedKind, SourceControls = controls.AsReadOnly(), SourcePerfectCircle = circle };
 
@@ -279,7 +303,7 @@ public static class SliderGeometryPreparation
         {
             for (int j = 1; j < points.Count; j++)
             {
-                token.ThrowIfCancellationRequested();
+                Observe("piece", j);
                 if (raw.Count >= MaxSegments) throw new InvalidDataException("R06 allows at most 8192 raw segments per slider.");
                 Vector2 a = points[j - 1], b = points[j];
                 raw.Add(linear ? new(a + (b - a) * 0f, a + (b - a) * 1f, true, true) :
@@ -852,13 +876,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     public static Beatmap Load(string path, CancellationToken token = default)
         => LoadCore(path, token, extendedPaths: false);
 
-    // C001 application entry point. Both APIs share syntax and preparation;
-    // only the historical Bezier admission guard differs.
+    // C001 application entry point. Explicit canonical path/control/traversal
+    // capabilities remain separate from historical string callers.
     public static Beatmap LoadCanonical(string path, CancellationToken token = default)
         => LoadCore(path, token, extendedPaths: true);
     public static Beatmap Load(CanonicalBeatmapPath path) => LoadCanonical(path.Value, path.Token);
 
-    private static Beatmap LoadCore(string path, CancellationToken token, bool extendedPaths)
+    private static Beatmap LoadCore(string path, CancellationToken token, bool extendedPaths,
+        Action<string, int, int>? progress = null)
     {
         SliderTraversalProfile traversalProfile = extendedPaths ? SliderTraversalProfile.Canonical32 : SliderTraversalProfile.Legacy16;
         if (new FileInfo(path).Length > 2 * 1024 * 1024)
@@ -953,17 +978,24 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                         _ => throw new InvalidDataException("Use supported L/B paths, or canonical finite P/C paths.")
                     };
                     if (pathPoints.Length < 2) throw new InvalidDataException("Slider path needs explicit controls.");
-                    if (pathPoints.Length - 1 > SliderGeometryPreparation.MaxControls)
-                        throw new InvalidDataException("R06 allows at most 64 normalized controls per slider.");
+                    var controlProfile = SliderGeometryPreparation.ProfileForSource(extendedPaths, kind);
+                    if (pathPoints.Length - 1 > (int)controlProfile)
+                        throw new InvalidDataException(controlProfile == SliderControlProfile.Historical64
+                            ? "R06 allows at most 64 normalized controls per slider."
+                            : "Canonical source L allows at most 96 raw coordinate cells before head insertion.");
                     var controls = new List<Vector2>();
                     foreach (string point in pathPoints.Skip(1))
                     {
+                        progress?.Invoke("coordinate", lineNumber, controls.Count);
+                        token.ThrowIfCancellationRequested();
                         string[] xy = point.Split(':');
                         if (xy.Length != 2) throw new InvalidDataException("Invalid slider control; expected x:y.");
                         // E006/E032: both path families parse Double -> Int32 -> Single.
                         controls.Add(new(ControlCoordinate(xy[0]), ControlCoordinate(xy[1])));
                     }
                     // Constructor normalization is exact and preserves duplicate controls.
+                    progress?.Invoke("row-head-normalization", lineNumber, controls.Count);
+                    token.ThrowIfCancellationRequested();
                     if (controls.Count == 0 || controls[0] != head.Position) controls.Insert(0, head.Position);
                     if (!int.TryParse(row[6], NumberStyles.Integer, CultureInfo.InvariantCulture, out int spans) || spans < 1 || spans > (int)traversalProfile)
                         throw new InvalidDataException(extendedPaths
@@ -1049,7 +1081,8 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             {
                 token.ThrowIfCancellationRequested();
                 var prepared = PrepareSliderBounded(slider.Head, slider.Controls, slider.Kind, slider.Length, slider.Traversals, version, multiplier, tickRate, timing, token,
-                    250_000L - totalMovements, 100_000L - totalCheckpoints, 100_000L - totalSegments);
+                    250_000L - totalMovements, 100_000L - totalCheckpoints, 100_000L - totalSegments,
+                    SliderGeometryPreparation.ProfileForSource(extendedPaths, slider.Kind), progress);
                 token.ThrowIfCancellationRequested();
                 prepared = prepared with { Samples = slider.Samples.Prepare(prepared), RawPath = slider.RawPath };
                 int sourceIndex = slider.Samples.SourceOrder;
@@ -1115,6 +1148,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
                     circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
                     { RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };
+        progress?.Invoke("map-publication", -1, -1);
         token.ThrowIfCancellationRequested();
         map.HealthSource!.BindFreshOwner(map);
         return map;
@@ -1338,7 +1372,9 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
 
     private static SliderDefinition PrepareSliderBounded(CircleDefinition head, Vector2[] controls, SliderPathKind kind, double length,
         int traversals, int version, double multiplier, double tickRate, List<TimingPoint> timing, CancellationToken token,
-        long remainingMovements, long remainingCheckpoints, long remainingSegments)
+        long remainingMovements, long remainingCheckpoints, long remainingSegments,
+        SliderControlProfile controlProfile = SliderControlProfile.Historical64,
+        Action<string, int, int>? progress = null)
     {
         token.ThrowIfCancellationRequested();
         // E05: list order is significant; rate uses truncated time, spacing raw time.
@@ -1360,14 +1396,14 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         double spacing = (100.0 * multiplier) / tickRate;
         double velocity = effectiveBeat > 0 ? (spacing * tickRate) * (1000.0 / effectiveBeat) : spacing * tickRate;
-        SliderGeometry geometry = SliderGeometryPreparation.Prepare(head.Position, controls, kind, length, version, token);
+        SliderGeometry geometry = SliderGeometryPreparation.PrepareProfile(head.Position, controls, kind, length, version, token, controlProfile, progress);
         if (!double.IsFinite(velocity) || velocity <= 0)
             throw new InvalidDataException("Unsupported slider geometry or travel rate.");
 
         double q = Math.Min(version < 8 ? spacing : spacing / spacingFactor, length);
         if (!double.IsFinite(q) || q <= 0) throw new InvalidDataException("Unsupported slider checkpoint spacing.");
         return PrepareSliderGeometry(head, geometry, length, traversals, velocity, q, token,
-            remainingMovements, remainingCheckpoints, remainingSegments);
+            remainingMovements, remainingCheckpoints, remainingSegments, progress);
     }
 
     // Shared bounded expansion. The optional internal synchronous progress observer

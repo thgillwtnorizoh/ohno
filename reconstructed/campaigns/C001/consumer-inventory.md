@@ -173,3 +173,17 @@ R17/near-spinner/score/health/audio algorithm change.32isENGINEERING,not origina
 no9000/9001 execution. Original/GUI/audible/physical/privatecorpus NOT RUN. No owner
 rescan or manual action. Next HQreview then Work1 independently verifies exactnew
 production beforeIssue18closure. C001/Issue18/subsystemOPEN;Issue4OPEN.
+
+
+## 2026-11-22 — Issue20 canonical source-L96 development publication
+Starting131c788; accepted6a152648. Explicit internal canonical Linear96 capability;
+public MaxControls/APIs/legacy and B/P/C64 preserved; canonical32/legacy16 traversals
+unchanged.168immutable cases112prepared/56excluded,+74/0losses; genuine canonical
+consumers and exact250000movement/100000prepared-segment/100000checkpoint maps
+plus one-over, full-loader cooperative cancellation and custom map-byte cleanup.
+Linux development5429PASS, retained264/299/4375/3973/1502/801/656/295PASS.
+Only Beatmap functional source changed; re/ and old expectations read-only.
+Full records18-issue20-linear-controls.md/issue20-development including initial
+failed test assumptions and environment failure. Fresh Windows gates PENDING, not
+substituted by Issue18 CI. No independent new-source QA or original equivalence.
+Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
