@@ -1,0 +1,162 @@
+PASS H01 managed defaults versus live reset
+PASS H02 selective reset retains coefficients and fill operands
+PASS H03 absolute argument -1
+PASS H03 absolute argument 0
+PASS H03 absolute argument 200
+PASS H03 absolute argument 250
+PASS H04 uncapped balance and separately capped target
+PASS H05 negative subtraction has no upper cap
+PASS H06 subtraction floors balance independently
+PASS H07 addition lower clamp does not floor balance
+PASS H08 zero subtraction fill guard False
+PASS H08 zero subtraction fill guard True
+PASS H09 V-only setter does not replace target
+PASS H10 finite extrema assign without normalization
+PASS C01 initial rate and independent HP0 acceptance anchor
+PASS C02 accepted calibration reset is not accepted balance
+PASS C03 pre-threshold equality HP0
+PASS C03 pre-threshold equality HP2.5
+PASS C03 pre-threshold equality HP5
+PASS C03 pre-threshold equality HP7.5
+PASS C03 pre-threshold equality HP10
+PASS C04 HP5 approach consumed before any group
+PASS C05 HP10 balance retry independent arithmetic
+PASS C06 slider subset versus schedule counts
+PASS C07 spinner prepared N notifications not live observed C
+PASS C08 next prepared NewCombo selects1028 False
+PASS C08 next prepared NewCombo selects1028 True
+PASS C09 duration overflow safety occurs after components
+PASS C10 final target retry retains completed snapshot
+PASS C11 third nonconsecutive low group retains rate
+PASS C12 break leading-gap treatment format7
+PASS C12 break leading-gap treatment format8
+PASS C12 break leading-gap treatment format14
+PASS C13 two breaks in one gap are not unioned
+PASS C14 gap measured from preceding end
+PASS C15 rejected unordered objects are not sorted
+PASS C16 explicit retry guard does not assign fallback
+PASS C17 malformed counts and empty chart rejected
+PASS C19 final-target boundary duration960
+PASS C19 final-target boundary duration961
+PASS C20 group equality excludes first low occurrence duration2960
+PASS C20 group equality excludes first low occurrence duration2961
+PASS C21 balance equality approach400
+PASS C21 balance equality approach401
+PASS C18 calibrator cannot silently replace its prepared chart
+PASS J01 raw1024 HP0 independent HP table
+PASS J01 raw1024 HP5 independent HP table
+PASS J01 raw1024 HP10 independent HP table
+PASS J01 raw512 HP0 independent HP table
+PASS J01 raw512 HP5 independent HP table
+PASS J01 raw512 HP10 independent HP table
+PASS J01 raw256 HP0 independent HP table
+PASS J01 raw256 HP5 independent HP table
+PASS J01 raw256 HP10 independent HP table
+PASS J01 raw-131072 HP0 independent HP table
+PASS J01 raw-131072 HP5 independent HP table
+PASS J01 raw-131072 HP10 independent HP table
+PASS J01 raw64 HP0 independent HP table
+PASS J01 raw64 HP5 independent HP table
+PASS J01 raw64 HP10 independent HP table
+PASS J01 raw8 HP0 independent HP table
+PASS J01 raw8 HP5 independent HP table
+PASS J01 raw8 HP10 independent HP table
+PASS J01 raw128 HP0 independent HP table
+PASS J01 raw128 HP5 independent HP table
+PASS J01 raw128 HP10 independent HP table
+PASS J01 raw-262144 HP0 independent HP table
+PASS J01 raw-262144 HP5 independent HP table
+PASS J01 raw-262144 HP10 independent HP table
+PASS J01 raw-524288 HP0 independent HP table
+PASS J01 raw-524288 HP5 independent HP table
+PASS J01 raw-524288 HP10 independent HP table
+PASS J01 raw4096 HP0 independent HP table
+PASS J01 raw4096 HP5 independent HP table
+PASS J01 raw4096 HP10 independent HP table
+PASS J01 raw8192 HP0 independent HP table
+PASS J01 raw8192 HP5 independent HP table
+PASS J01 raw8192 HP10 independent HP table
+PASS J01 raw16384 HP0 independent HP table
+PASS J01 raw16384 HP5 independent HP table
+PASS J01 raw16384 HP10 independent HP table
+PASS J02 intermediate HP2.5 whole losses and gains
+PASS J03 calibration1028 uses independent B and G
+PASS J04 calibration plain1024 excludes B
+PASS J05 raw0 does not clear fill or emit HP event
+PASS J06 unsupported live decoration explicitly rejected
+PASS J07 score suppression does not suppress HP hook
+PASS J08 terminal versus interior miss combo separation
+PASS J09 spinner components and final rewards are separate
+PASS J10 HP exception leaves earlier combo but prevents score continuation
+PASS D01 consumed T1010 prev1000 spinnerFalse
+PASS D01 consumed T1010 prev1000 spinnerTrue
+PASS D01 consumed T1000 prev1000 spinnerFalse
+PASS D01 consumed T900 prev1000 spinnerFalse
+PASS D01 consumed T100000 prev1000 spinnerFalse
+PASS D02 signed subtraction wraps before Double conversion
+PASS D03 late eligibility is not retroactive
+PASS D04 repeated reached pass does not consume delta marker
+PASS D05 zero dt still clears fill on eligible subtract
+PASS D06 pause suppresses drain smoothing and late state writes
+PASS D07 gameplay and host operands remain separate
+PASS D08 eligibility lower before
+PASS D08 eligibility lower equal
+PASS D08 eligibility upper equal
+PASS D08 eligibility upper after
+PASS D08 eligibility queue equal
+PASS D08 eligibility queue after
+PASS D08 eligibility old queue after
+PASS D08 eligibility marker zero
+PASS D08 eligibility clock zero
+PASS D08 eligibility clock two
+PASS D08 eligibility special equality
+PASS D08 eligibility special after
+PASS D08 eligibility recorded equality
+PASS D08 eligibility recorded before
+PASS D09 inclusive break marker and candidate equality
+PASS D10 break entry consumes prior eligible then disables next drain
+PASS V01 ordinary rise independent of milliseconds
+PASS V02 fall clears fill and uses sixth
+PASS V03 fill timestamp equality then normal source
+PASS V04 clock guard versus recovery host elapsed
+PASS V05 exponential rise overshoots target
+PASS V06 fall overshoots target but lower clamps zero
+PASS V07 fill can overshoot H but caps200
+PASS V08 equality does not clear fill
+PASS F01 target zero fails while V positive
+PASS F02 positive target ignores zero V
+PASS F03 suppression HealthFailureGates { NoFail = True, Relax = False, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }
+PASS F03 suppression HealthFailureGates { NoFail = False, Relax = True, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }
+PASS F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = True, Recorded = False, RecordedContinuation = False, Special = False, Suppress = True }
+PASS F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = False, Recorded = True, RecordedContinuation = False, Special = False, Suppress = True }
+PASS F03 suppression HealthFailureGates { NoFail = False, Relax = False, Relax2 = False, Recorded = False, RecordedContinuation = False, Special = True, Suppress = True }
+PASS F04 recorded continuation explicitly permits failure
+PASS F05 result heal before failure read
+PASS F06 result loss before failure read
+PASS F07 passive zero does not invent eager failure
+PASS F08 recovery precedes already-failed gate
+PASS F09 recovery adds160 rather than assigns160
+PASS F10 recovery release uses strict V target margin
+PASS F11 state reset does not reset separate failure latch
+OBS recovery H=160 A=160 fill=False slope=0.03 from=123 recovering=True count=0
+PASS F13 original recovery guard retains fill at H160
+OBS recovery H=200 A=200 fill=False slope=0.03 from=123 recovering=True count=0
+PASS F13 original recovery guard retains fill at H200
+PASS F12 recovery count and missing count reject
+PASS I01 fresh supported map calibration creates no ledger events
+PASS I02 parser-derived slider counts and spinner requirement
+PASS I03 supported first unknown group does not require M2902
+PASS I04 following unresolved NewCombo stays playable and scorable
+PASS I05 unavailable and disabled health preserve identical events
+PASS I06 explicit groups establish different supported admission
+PASS I07 fresh restart isolates HP failure progress and ledger
+PASS I08 supported-unavailable-supported replacement isolates state
+PASS I09 missing health metadata is explicit not fallback
+PASS I10 break metadata and original input order remain separate
+PASS I11 private trials preserve prepared gameplay state
+PASS I12 once-only slider terminal HP without duplicate combo
+PASS I13 full mixed fixture HP enable does not change scoring or judgements
+PASS I14 judgement HP survives caps but never duplicates a press
+PASS I15 unavailable calibration rejects unknown groups directly
+PASS I16 supported calibration validates break domain without repair
+QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed

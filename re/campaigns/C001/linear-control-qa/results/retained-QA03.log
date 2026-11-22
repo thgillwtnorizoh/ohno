@@ -1,0 +1,57 @@
+PASS A01 tick fixture schedule and end
+PASS A02 repeat fixture schedule and end
+PASS A03 three-span carry schedule and end
+PASS A04 producer roles retain ordered traversal identity
+PASS A05 directed movement endpoints and intervals
+PASS A06 three spans preserve nonzero carry and alternate endpoints
+PASS B01 forward literal geometry before reversal
+PASS B02 exact reversal selects first inclusive record
+PASS B03 reverse immediately after boundary
+PASS B04 reverse returns to initial endpoint
+PASS B05 third traversal continues forward
+PASS B06 reversal alone preserves active entry and held side
+PASS C01 no component before due and inclusive equality
+PASS C02 one outstanding component per invocation
+PASS C03 identical-time calls can drain prefix then stop
+PASS C04 delayed interior gets repeat code from due prefix
+PASS C05 delayed repeat can get interior code
+PASS C06 all-due prefix gives earlier item terminal success code
+PASS C07 failed and pending slots remain distinct
+PASS C08 missed head permits later checkpoint success
+PASS D01 entry equality succeeds
+PASS D02 late entry fails while tracking remains active
+PASS D03 held input alone is insufficient
+PASS D04 cursor alone is insufficient
+PASS D05 entry radius equality rejected
+PASS D06 just inside entry radius accepted
+PASS D07 active radius equality rejects and leaves
+PASS D08 active hysteresis accepts outside entry disk
+PASS D09 release and timely re-entry renew entry
+PASS D10 release and late re-entry cannot rescue deadline
+PASS D11 both held retains remembered side and no synthetic edge needed
+PASS D12 replacing logical side follows original history branch
+PASS D13 history veto differs from any-held shortcut
+PASS D14 NaN follow coordinates reject
+PASS E01 head and components credit combo without parent duplicate
+PASS E02 ordinary interior failure resets positive combo
+PASS E03 repeat success increments combo
+PASS E04 repeat failure uses ordinary negative reset
+PASS E05 sequential final success increments combo before completion
+PASS E06 final failure preserves combo and guarded active flag
+PASS E08 terminal entry equality after previous failures succeeds
+PASS E09 terminal entry after deadline fails while active
+PASS E07 all due failure is nonterminal until processed count reaches N
+PASS F01 inclusive parent end distinct from terminal
+PASS F02 delayed parent completion leaves backlog untouched
+PASS F03 evaluated parent suppresses later component processing
+PASS F04 terminal failure still permits positive parent aggregate
+PASS F05 legacy full successes with low positive head still best
+PASS F06 missing head and all components successful gives middle
+PASS F07 all failed including head gives miss
+PASS F08 below half and above half use recorded successes
+PASS F09 pending versus failed equal numerator but different histories
+PASS R04-01 unchanged single-span fixture preparation
+PASS R04-02 head and terminal independently produce best legacy grade
+PASS R04-03 head only exactly half grades middle
+PASS R04-04 timely release and re-entry preserves terminal
+QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed

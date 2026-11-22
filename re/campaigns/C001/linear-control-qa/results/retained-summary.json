@@ -1,0 +1,105 @@
+{
+  "headlessHistorical": [
+    {
+      "suite": "QA01",
+      "passed": 90,
+      "failed": 0,
+      "log": "retained-QA01.log"
+    },
+    {
+      "suite": "QA03",
+      "passed": 56,
+      "failed": 0,
+      "log": "retained-QA03.log"
+    },
+    {
+      "suite": "QA04",
+      "passed": 43,
+      "failed": 0,
+      "log": "retained-QA04.log"
+    },
+    {
+      "suite": "QA05",
+      "passed": 66,
+      "failed": 0,
+      "log": "retained-QA05.log"
+    },
+    {
+      "suite": "QA06",
+      "passed": 99,
+      "failed": 0,
+      "log": "retained-QA06.log"
+    },
+    {
+      "suite": "QA07",
+      "passed": 159,
+      "failed": 0,
+      "log": "retained-QA07.log"
+    },
+    {
+      "suite": "QA08",
+      "passed": 115,
+      "failed": 0,
+      "log": "retained-QA08.log"
+    },
+    {
+      "suite": "QA09",
+      "passed": 234,
+      "failed": 0,
+      "log": "retained-QA09.log"
+    },
+    {
+      "suite": "QA10",
+      "passed": 229,
+      "failed": 0,
+      "log": "retained-QA10.log"
+    },
+    {
+      "suite": "QA11",
+      "passed": 247,
+      "failed": 0,
+      "log": "retained-QA11.log"
+    },
+    {
+      "suite": "QA12",
+      "passed": 274,
+      "failed": 0,
+      "log": "retained-QA12.log"
+    },
+    {
+      "suite": "QA13",
+      "passed": 257,
+      "failed": 0,
+      "log": "retained-QA13.log"
+    },
+    {
+      "suite": "QA14",
+      "passed": 234,
+      "failed": 3,
+      "log": "retained-QA14.log"
+    },
+    {
+      "suite": "QA15",
+      "passed": 95,
+      "failed": 0,
+      "log": "retained-QA15.log"
+    }
+  ],
+  "passed": 2198,
+  "failed": 3,
+  "total": 2201,
+  "platformFailures": [
+    "C/reparse-ancestry",
+    "I/windows-path-case",
+    "I/canonical-unc-rejected"
+  ],
+  "nativeWindows": "NOT RUN",
+  "developmentWindows": {
+    "run": 45002466140,
+    "job": 137146777470,
+    "artifact": 14746253714,
+    "successfulSteps": 54,
+    "passed": 2312,
+    "failed": 0
+  }
+}

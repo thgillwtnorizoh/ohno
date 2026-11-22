@@ -1,0 +1,44 @@
+PASS A01 E32 quadratic exact raw vertices
+PASS A02 E32 cubic weighted vertices rather than uniform t
+PASS A03 exact squared flatness equality accepts leaf
+PASS A04 just above flatness boundary subdivides
+PASS A05 flatness is second difference not chord distance
+PASS A06 asymmetric half split preserves polygon order
+PASS A07 source controls are not mutated
+PASS A08 singleton retains duplicate final endpoint
+PASS B01 repeated control joins two quadratic ranges
+PASS B02 final equal pair is not a separator
+PASS B03 two-control subcurve is a marked straight piece
+PASS B04 leading duplicate retained as zero raw piece
+PASS B05 head insertion and no second head insertion
+PASS C01 unadjusted raw length uses E32 Single lengths
+PASS C02 shorten last piece without changing raw snapshot
+PASS C03 remove trailing piece at exact requested boundary
+PASS C04 removal tolerance can erase tiny requested remainder
+PASS C05 extend nonzero tail direction
+PASS C06 zero final direction blocks requested extension
+PASS C07 entirely erased path rejected by engineering policy
+PASS C08 cumulative lengths recomputed from adjusted endpoints
+PASS D01 joined bend forward and reverse segment times
+PASS D02 inclusive first matching segment and reversal
+PASS D03 path follows pieces instead of whole-curve chord
+PASS D04 true quadratic uses individual segment time conversions
+PASS E01 checkpoint carry across pieces and reversal
+PASS E02 one outstanding entry per delayed call
+PASS E03 curved segment boundary preserves held tracking
+PASS E04 reversal alone preserves entry and tracking
+PASS E05 loss and timely re-entry across pieces
+PASS E06 independent head miss then valid later checkpoint
+PASS E07 parent end separate from checkpoint and no duplicate combo
+PASS E08 late re-entry cannot rescue due checkpoint
+PASS F01 v13 Bezier rejected
+PASS F02 unsupported Perfect and Catmull types rejected
+PASS F03 malformed control rejected
+PASS F04 nonfinite control rejected
+PASS F05 degenerate geometry rejected
+PASS F06 control boundary accepts64 rejects65
+PASS F07 parser normalized controls limit
+PASS F08 empty nonfinite and overflow flatness defensive checks
+PASS F09 declared segment and work limits retained
+PASS F10 parser truncates Double controls before Single storage
+QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed

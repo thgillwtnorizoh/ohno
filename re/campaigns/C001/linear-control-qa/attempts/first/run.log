@@ -1,0 +1,234 @@
+FAIL v05-raw63-equal audit resource readiness and connected structural consumers
+FAIL v05-raw63-equal actual Rank presentation consumes same record
+FAIL v05-raw63-insert audit resource readiness and connected structural consumers
+FAIL v05-raw63-insert actual Rank presentation consumes same record
+FAIL v05-raw64-equal audit resource readiness and connected structural consumers
+FAIL v05-raw64-equal actual Rank presentation consumes same record
+FAIL v05-raw64-insert audit resource readiness and connected structural consumers
+FAIL v05-raw64-insert actual Rank presentation consumes same record
+FAIL v05-raw65-equal audit resource readiness and connected structural consumers
+FAIL v05-raw65-equal actual Rank presentation consumes same record
+FAIL v05-raw65-insert audit resource readiness and connected structural consumers
+FAIL v05-raw65-insert actual Rank presentation consumes same record
+FAIL v05-raw66-equal audit resource readiness and connected structural consumers
+FAIL v05-raw66-equal actual Rank presentation consumes same record
+FAIL v05-raw66-insert audit resource readiness and connected structural consumers
+FAIL v05-raw66-insert actual Rank presentation consumes same record
+FAIL v05-raw95-equal audit resource readiness and connected structural consumers
+FAIL v05-raw95-equal actual Rank presentation consumes same record
+FAIL v05-raw95-insert audit resource readiness and connected structural consumers
+FAIL v05-raw95-insert actual Rank presentation consumes same record
+FAIL v05-raw96-equal audit resource readiness and connected structural consumers
+FAIL v05-raw96-equal actual Rank presentation consumes same record
+FAIL v06-raw63-equal audit resource readiness and connected structural consumers
+FAIL v06-raw63-equal actual Rank presentation consumes same record
+FAIL v06-raw63-insert audit resource readiness and connected structural consumers
+FAIL v06-raw63-insert actual Rank presentation consumes same record
+FAIL v06-raw64-equal audit resource readiness and connected structural consumers
+FAIL v06-raw64-equal actual Rank presentation consumes same record
+FAIL v06-raw64-insert audit resource readiness and connected structural consumers
+FAIL v06-raw64-insert actual Rank presentation consumes same record
+FAIL v06-raw65-equal audit resource readiness and connected structural consumers
+FAIL v06-raw65-equal actual Rank presentation consumes same record
+FAIL v06-raw65-insert audit resource readiness and connected structural consumers
+FAIL v06-raw65-insert actual Rank presentation consumes same record
+FAIL v06-raw66-equal audit resource readiness and connected structural consumers
+FAIL v06-raw66-equal actual Rank presentation consumes same record
+FAIL v06-raw66-insert audit resource readiness and connected structural consumers
+FAIL v06-raw66-insert actual Rank presentation consumes same record
+FAIL v06-raw95-equal audit resource readiness and connected structural consumers
+FAIL v06-raw95-equal actual Rank presentation consumes same record
+FAIL v06-raw95-insert audit resource readiness and connected structural consumers
+FAIL v06-raw95-insert actual Rank presentation consumes same record
+FAIL v06-raw96-equal audit resource readiness and connected structural consumers
+FAIL v06-raw96-equal actual Rank presentation consumes same record
+FAIL v14-raw63-equal audit resource readiness and connected structural consumers
+FAIL v14-raw63-equal actual Rank presentation consumes same record
+FAIL v14-raw63-insert audit resource readiness and connected structural consumers
+FAIL v14-raw63-insert actual Rank presentation consumes same record
+FAIL v14-raw64-equal audit resource readiness and connected structural consumers
+FAIL v14-raw64-equal actual Rank presentation consumes same record
+FAIL v14-raw64-insert audit resource readiness and connected structural consumers
+FAIL v14-raw64-insert actual Rank presentation consumes same record
+FAIL v14-raw65-equal audit resource readiness and connected structural consumers
+FAIL v14-raw65-equal actual Rank presentation consumes same record
+FAIL v14-raw65-insert audit resource readiness and connected structural consumers
+FAIL v14-raw65-insert actual Rank presentation consumes same record
+FAIL v14-raw66-equal audit resource readiness and connected structural consumers
+FAIL v14-raw66-equal actual Rank presentation consumes same record
+FAIL v14-raw66-insert audit resource readiness and connected structural consumers
+FAIL v14-raw66-insert actual Rank presentation consumes same record
+FAIL v14-raw95-equal audit resource readiness and connected structural consumers
+FAIL v14-raw95-equal actual Rank presentation consumes same record
+FAIL v14-raw95-insert audit resource readiness and connected structural consumers
+FAIL v14-raw95-insert actual Rank presentation consumes same record
+FAIL v14-raw96-equal audit resource readiness and connected structural consumers
+FAIL v14-raw96-equal actual Rank presentation consumes same record
+FAIL n64-equal-alternating-short audit resource readiness and connected structural consumers
+FAIL n64-equal-alternating-short actual Rank presentation consumes same record
+FAIL n64-equal-alternating-long audit resource readiness and connected structural consumers
+FAIL n64-equal-alternating-long actual Rank presentation consumes same record
+FAIL n64-equal-duplicates-short audit resource readiness and connected structural consumers
+FAIL n64-equal-duplicates-short actual Rank presentation consumes same record
+FAIL n64-equal-duplicates-long audit resource readiness and connected structural consumers
+FAIL n64-equal-duplicates-long actual Rank presentation consumes same record
+FAIL n64-equal-collinear-short audit resource readiness and connected structural consumers
+FAIL n64-equal-collinear-short actual Rank presentation consumes same record
+FAIL n64-equal-collinear-long audit resource readiness and connected structural consumers
+FAIL n64-equal-collinear-long actual Rank presentation consumes same record
+FAIL n64-equal-zero-final-short audit resource readiness and connected structural consumers
+FAIL n64-equal-zero-final-short actual Rank presentation consumes same record
+FAIL n64-equal-zero-final-long audit resource readiness and connected structural consumers
+FAIL n64-equal-zero-final-long actual Rank presentation consumes same record
+FAIL n64-equal-fractional-short audit resource readiness and connected structural consumers
+FAIL n64-equal-fractional-short actual Rank presentation consumes same record
+FAIL n64-equal-fractional-long audit resource readiness and connected structural consumers
+FAIL n64-equal-fractional-long actual Rank presentation consumes same record
+FAIL n64-insert-alternating-short audit resource readiness and connected structural consumers
+FAIL n64-insert-alternating-short actual Rank presentation consumes same record
+FAIL n64-insert-alternating-long audit resource readiness and connected structural consumers
+FAIL n64-insert-alternating-long actual Rank presentation consumes same record
+FAIL n64-insert-duplicates-short audit resource readiness and connected structural consumers
+FAIL n64-insert-duplicates-short actual Rank presentation consumes same record
+FAIL n64-insert-duplicates-long audit resource readiness and connected structural consumers
+FAIL n64-insert-duplicates-long actual Rank presentation consumes same record
+FAIL n64-insert-collinear-short audit resource readiness and connected structural consumers
+FAIL n64-insert-collinear-short actual Rank presentation consumes same record
+FAIL n64-insert-collinear-long audit resource readiness and connected structural consumers
+FAIL n64-insert-collinear-long actual Rank presentation consumes same record
+FAIL n64-insert-zero-final-short audit resource readiness and connected structural consumers
+FAIL n64-insert-zero-final-short actual Rank presentation consumes same record
+FAIL n64-insert-zero-final-long audit resource readiness and connected structural consumers
+FAIL n64-insert-zero-final-long actual Rank presentation consumes same record
+FAIL n64-insert-fractional-short audit resource readiness and connected structural consumers
+FAIL n64-insert-fractional-short actual Rank presentation consumes same record
+FAIL n64-insert-fractional-long audit resource readiness and connected structural consumers
+FAIL n64-insert-fractional-long actual Rank presentation consumes same record
+FAIL n65-equal-alternating-short audit resource readiness and connected structural consumers
+FAIL n65-equal-alternating-short actual Rank presentation consumes same record
+FAIL n65-equal-alternating-long audit resource readiness and connected structural consumers
+FAIL n65-equal-alternating-long actual Rank presentation consumes same record
+FAIL n65-equal-duplicates-short audit resource readiness and connected structural consumers
+FAIL n65-equal-duplicates-short actual Rank presentation consumes same record
+FAIL n65-equal-duplicates-long audit resource readiness and connected structural consumers
+FAIL n65-equal-duplicates-long actual Rank presentation consumes same record
+FAIL n65-equal-collinear-short audit resource readiness and connected structural consumers
+FAIL n65-equal-collinear-short actual Rank presentation consumes same record
+FAIL n65-equal-collinear-long audit resource readiness and connected structural consumers
+FAIL n65-equal-collinear-long actual Rank presentation consumes same record
+FAIL n65-equal-zero-final-short audit resource readiness and connected structural consumers
+FAIL n65-equal-zero-final-short actual Rank presentation consumes same record
+FAIL n65-equal-zero-final-long audit resource readiness and connected structural consumers
+FAIL n65-equal-zero-final-long actual Rank presentation consumes same record
+FAIL n65-equal-fractional-short audit resource readiness and connected structural consumers
+FAIL n65-equal-fractional-short actual Rank presentation consumes same record
+FAIL n65-equal-fractional-long audit resource readiness and connected structural consumers
+FAIL n65-equal-fractional-long actual Rank presentation consumes same record
+FAIL n65-insert-alternating-short audit resource readiness and connected structural consumers
+FAIL n65-insert-alternating-short actual Rank presentation consumes same record
+FAIL n65-insert-alternating-long audit resource readiness and connected structural consumers
+FAIL n65-insert-alternating-long actual Rank presentation consumes same record
+FAIL n65-insert-duplicates-short audit resource readiness and connected structural consumers
+FAIL n65-insert-duplicates-short actual Rank presentation consumes same record
+FAIL n65-insert-duplicates-long audit resource readiness and connected structural consumers
+FAIL n65-insert-duplicates-long actual Rank presentation consumes same record
+FAIL n65-insert-collinear-short audit resource readiness and connected structural consumers
+FAIL n65-insert-collinear-short actual Rank presentation consumes same record
+FAIL n65-insert-collinear-long audit resource readiness and connected structural consumers
+FAIL n65-insert-collinear-long actual Rank presentation consumes same record
+FAIL n65-insert-zero-final-short audit resource readiness and connected structural consumers
+FAIL n65-insert-zero-final-short actual Rank presentation consumes same record
+FAIL n65-insert-zero-final-long audit resource readiness and connected structural consumers
+FAIL n65-insert-zero-final-long actual Rank presentation consumes same record
+FAIL n65-insert-fractional-short audit resource readiness and connected structural consumers
+FAIL n65-insert-fractional-short actual Rank presentation consumes same record
+FAIL n65-insert-fractional-long audit resource readiness and connected structural consumers
+FAIL n65-insert-fractional-long actual Rank presentation consumes same record
+FAIL n96-equal-alternating-short audit resource readiness and connected structural consumers
+FAIL n96-equal-alternating-short actual Rank presentation consumes same record
+FAIL n96-equal-alternating-long audit resource readiness and connected structural consumers
+FAIL n96-equal-alternating-long actual Rank presentation consumes same record
+FAIL n96-equal-duplicates-short audit resource readiness and connected structural consumers
+FAIL n96-equal-duplicates-short actual Rank presentation consumes same record
+FAIL n96-equal-duplicates-long audit resource readiness and connected structural consumers
+FAIL n96-equal-duplicates-long actual Rank presentation consumes same record
+FAIL n96-equal-collinear-short audit resource readiness and connected structural consumers
+FAIL n96-equal-collinear-short actual Rank presentation consumes same record
+FAIL n96-equal-collinear-long audit resource readiness and connected structural consumers
+FAIL n96-equal-collinear-long actual Rank presentation consumes same record
+FAIL n96-equal-zero-final-short audit resource readiness and connected structural consumers
+FAIL n96-equal-zero-final-short actual Rank presentation consumes same record
+FAIL n96-equal-zero-final-long audit resource readiness and connected structural consumers
+FAIL n96-equal-zero-final-long actual Rank presentation consumes same record
+FAIL n96-equal-fractional-short audit resource readiness and connected structural consumers
+FAIL n96-equal-fractional-short actual Rank presentation consumes same record
+FAIL n96-equal-fractional-long audit resource readiness and connected structural consumers
+FAIL n96-equal-fractional-long actual Rank presentation consumes same record
+FAIL n96-insert-alternating-short audit resource readiness and connected structural consumers
+FAIL n96-insert-alternating-short actual Rank presentation consumes same record
+FAIL n96-insert-alternating-long audit resource readiness and connected structural consumers
+FAIL n96-insert-alternating-long actual Rank presentation consumes same record
+FAIL n96-insert-duplicates-short audit resource readiness and connected structural consumers
+FAIL n96-insert-duplicates-short actual Rank presentation consumes same record
+FAIL n96-insert-duplicates-long audit resource readiness and connected structural consumers
+FAIL n96-insert-duplicates-long actual Rank presentation consumes same record
+FAIL n96-insert-collinear-short audit resource readiness and connected structural consumers
+FAIL n96-insert-collinear-short actual Rank presentation consumes same record
+FAIL n96-insert-collinear-long audit resource readiness and connected structural consumers
+FAIL n96-insert-collinear-long actual Rank presentation consumes same record
+FAIL n96-insert-zero-final-short audit resource readiness and connected structural consumers
+FAIL n96-insert-zero-final-short actual Rank presentation consumes same record
+FAIL n96-insert-zero-final-long audit resource readiness and connected structural consumers
+FAIL n96-insert-zero-final-long actual Rank presentation consumes same record
+FAIL n96-insert-fractional-short audit resource readiness and connected structural consumers
+FAIL n96-insert-fractional-short actual Rank presentation consumes same record
+FAIL n96-insert-fractional-long audit resource readiness and connected structural consumers
+FAIL n96-insert-fractional-long actual Rank presentation consumes same record
+FAIL n97-insert-duplicates-short audit resource readiness and connected structural consumers
+FAIL n97-insert-duplicates-short actual Rank presentation consumes same record
+FAIL n97-insert-duplicates-long audit resource readiness and connected structural consumers
+FAIL n97-insert-duplicates-long actual Rank presentation consumes same record
+FAIL B-raw63-insert audit resource readiness and connected structural consumers
+FAIL B-raw63-insert actual Rank presentation consumes same record
+FAIL B-raw64-equal audit resource readiness and connected structural consumers
+FAIL B-raw64-equal actual Rank presentation consumes same record
+FAIL P-raw63-insert audit resource readiness and connected structural consumers
+FAIL P-raw63-insert actual Rank presentation consumes same record
+FAIL P-raw64-equal audit resource readiness and connected structural consumers
+FAIL P-raw64-equal actual Rank presentation consumes same record
+FAIL C-raw63-insert audit resource readiness and connected structural consumers
+FAIL C-raw63-insert actual Rank presentation consumes same record
+FAIL C-raw64-equal audit resource readiness and connected structural consumers
+FAIL C-raw64-equal actual Rank presentation consumes same record
+FAIL negative-checkpoints-raw63 audit resource readiness and connected structural consumers
+FAIL negative-checkpoints-raw63 actual Rank presentation consumes same record
+FAIL negative-checkpoints-raw65 audit resource readiness and connected structural consumers
+FAIL negative-checkpoints-raw65 actual Rank presentation consumes same record
+FAIL v07-raw95-insert audit resource readiness and connected structural consumers
+FAIL v07-raw95-insert actual Rank presentation consumes same record
+FAIL v08-raw95-insert audit resource readiness and connected structural consumers
+FAIL v08-raw95-insert actual Rank presentation consumes same record
+FAIL v09-raw95-insert audit resource readiness and connected structural consumers
+FAIL v09-raw95-insert actual Rank presentation consumes same record
+FAIL v10-raw95-insert audit resource readiness and connected structural consumers
+FAIL v10-raw95-insert actual Rank presentation consumes same record
+FAIL v11-raw95-insert audit resource readiness and connected structural consumers
+FAIL v11-raw95-insert actual Rank presentation consumes same record
+FAIL v12-raw95-insert audit resource readiness and connected structural consumers
+FAIL v12-raw95-insert actual Rank presentation consumes same record
+FAIL v13-raw95-insert audit resource readiness and connected structural consumers
+FAIL v13-raw95-insert actual Rank presentation consumes same record
+FAIL timing-inherited-r32 audit resource readiness and connected structural consumers
+FAIL timing-inherited-r32 actual input/discrete hooks
+FAIL timing-inherited-r32 actual Rank presentation consumes same record
+FAIL timing-fractional-r17 audit resource readiness and connected structural consumers
+FAIL timing-fractional-r17 actual Rank presentation consumes same record
+FAIL actual P prepared Linear remains source P
+FAIL new three-parent19/27/31 actual Rank presentation consumes same record
+FAIL real valid custom WAV bytes owned
+FAIL in-flight actual resource library frees allocated map bytes before cancelled publication
+FAIL new96 exact CS5 negative stack step
+FAIL new96 exact stacked registered input actual Rank presentation consumes same record
+FAIL new96 original nonmonotone final deadline retained
+FAIL new96 nonmonotone pending result actual Rank presentation consumes same record
+Issue21 independent 5316/5549 PASS; prepared112 excluded56 gained74 lost0; audio112

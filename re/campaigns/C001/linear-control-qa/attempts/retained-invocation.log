@@ -1,0 +1,14 @@
+PASS retained-QA01.log
+PASS retained-QA03.log
+PASS retained-QA04.log
+PASS retained-QA05.log
+PASS retained-QA06.log
+PASS retained-QA07.log
+PASS retained-QA08.log
+Traceback (most recent call last):
+  File "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/verify.py", line 41, in <module>
+    run([D,'run','--project',project,'-c','Release','--',E],f'retained-QA{n:02}.log',E)
+  File "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/verify.py", line 18, in run
+    if r.returncode:raise RuntimeError(f'{name}: exit {r.returncode}')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: retained-QA09.log: exit 134

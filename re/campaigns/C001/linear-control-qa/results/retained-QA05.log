@@ -1,0 +1,67 @@
+PASS A01 atan2 Y X with translated supplied center
+PASS A02 modern first sample establishes reference only
+PASS A03 opposite signed motions give opposite targets
+PASS A04 wrap in negative angular crossing
+PASS A05 wrap in positive angular crossing
+PASS A06 exact positive antipode rejected but reference advances
+PASS A07 exact negative antipode rejected
+PASS A08 just inside antipodal magnitude accepted
+PASS A09 plus pi to minus pi is zero wrapped motion
+PASS A10 radius does not scale angular target
+PASS A11 center atan2 has no invented dead zone
+PASS A12 released movement zeros target and updates reference
+PASS A13 stationary first decay then zero despite release and late time
+PASS A14 sample at exact start and end is eligible
+PASS A15 movement outside live interval updates only reference target zero
+PASS A16 negative sample interval leaves sample history unchanged
+PASS B01 EMA first and second samples use real supplied interval
+PASS B02 zero interval keeps EMA and selects fixed divisor
+PASS B03 adaptive divisor uses sample interval after EMA threshold
+PASS B04 adaptive zero divisor yields zero target
+PASS B05 acceleration and Single progress conversion
+PASS B06 both motion clamps and per-update progress cap
+PASS B07 direction reversal decelerates without resetting progress
+PASS B08 strict integration start end and positive interval
+PASS B09 released target still permits residual progress
+PASS B10 sufficient deceleration can stop immediately
+PASS C01 fractional progress leaves integer cache unchanged
+PASS C02 first exact integer change has no component result
+PASS C03 skipped integers count as one observed event
+PASS C04 ordinary changed observations alternate raw identities
+PASS C05 bonus predicate begins only at qualifying even offset
+PASS C06 unchanged integer never repeats event
+PASS C07 inequality includes artificial downward integer observation
+PASS D01 OD5 duration3000 prepares N15 and acceleration
+PASS D02 OD endpoints prepare distinct truncated requirements
+PASS D03 N15 count 0 threshold
+PASS D03 N15 count 2 threshold
+PASS D03 N15 count 3 threshold
+PASS D03 N15 count 13 threshold
+PASS D03 N15 count 14 threshold
+PASS D03 N15 count 15 threshold
+PASS D03 N15 count 16 threshold
+PASS D04 zero requirement special and small N division
+PASS D05 exact end does not complete and later completion is once
+PASS D06 accepted progress can finish before last observation
+PASS D07 explicit last sample changes C then final grade
+PASS D08 high P with one observation grades from C not P
+PASS D09 evaluated spinner stops later integration
+PASS E01 spinner collection excluded from heads and head press
+PASS E02 live session components do not add combo
+PASS E03 final success increments combo and accuracy only once
+PASS E04 failure resets earlier circle combo
+PASS E05 fresh sessions do not share observation or motion state
+PASS E06 nominal input qualification is separate from integration
+PASS E07 supplied mapped spinner pointer separate from head pointer
+PASS E08 mixed circle slider spinner sequence counted once
+PASS F01 all three R07 fixtures load under current parser
+PASS F02 valid optional hit sample retained
+PASS F03 malformed and empty hitSound reject
+PASS F04 malformed and absent end reject
+PASS F05 spinner unsupported versions reject
+PASS F06 zero negative and overlong durations reject
+PASS F07 duration1 and duration60000 accepted
+PASS F08 maximum end bound equality and rejection
+PASS F09 overlapping and shared endpoint objects reject
+PASS F10 old circle slider fixtures remain admitted
+QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed

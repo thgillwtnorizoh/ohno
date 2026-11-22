@@ -1,0 +1,26 @@
+REUSED successful retained-QA01.log
+REUSED successful retained-QA03.log
+REUSED successful retained-QA04.log
+REUSED successful retained-QA05.log
+REUSED successful retained-QA06.log
+REUSED successful retained-QA07.log
+REUSED successful retained-QA08.log
+REUSED successful retained-QA09.log
+REUSED successful retained-QA10.log
+REUSED successful retained-QA11.log
+REUSED successful retained-QA12.log
+REUSED successful retained-QA13.log
+REUSED QA14:234 passed/3 Windows-specific failures; preserved without relabeling
+REUSED successful retained-QA15.log
+REUSED completed retained-C001DevelopmentChecks.log
+REUSED completed retained-C001PerfectChecks.log
+REUSED completed retained-C001CatmullChecks.log
+REUSED completed retained-C001TraversalChecks.log
+REUSED completed retained-C001NearSpinnerChecks.log
+REUSED completed retained-C001LegacySpinnerChecks.log
+REUSED completed retained-C001VersionedSpinnerChecks.log
+REUSED completed retained-CorpusAuditChecks.log
+REUSED completed retained-C001.Stacking.log
+REUSED completed retained-C001.StackingIntegration.log
+REUSED completed retained-C001.Headless.log
+PASS 5667 independent Issue21 assertions; 168 immutable cases112/56; +74/0; 25 retained suites

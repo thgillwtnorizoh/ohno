@@ -1,0 +1,100 @@
+PASS A01 single object zero seconds
+PASS A02 sparse hundred second span
+PASS A03 positive subsecond span truncates to zero
+PASS A04 exact one second span
+PASS A05 two second span
+PASS A06 unsorted raw first and last are not extrema
+PASS A07 equal starts metadata-only
+PASS A08 first unknown sets first before type dispatch
+PASS A09 last unknown increments N without changing last
+PASS A10 numeric break subtracts from row-start span
+PASS A11 overlapping breaks both count without union
+PASS A12 negative break duration is signed
+PASS A13 out-of-range break not clipped
+PASS A14 negative fractional second truncates toward zero
+PASS A15 fractional time converts before elapsed division
+PASS A16 exact even midpoint 2.5
+PASS A17 dense density caps at sixteen
+PASS A18 unchecked elapsed subtraction overflow
+PASS A19 unchecked break duration overflow
+PASS A20 spinner end independent from start density
+PASS A21 masked new combo bits and independent recognized counts
+PASS A22 hold metadata separate from ordinary gameplay admission
+PASS A23 modern fractional explicit difficulty
+PASS A24 fresh defaults reset independently of previous metadata
+PASS A25 modern clamp vs engineering gameplay rejection
+PASS A26 older format Byte accepted but fractional syntax rejected
+PASS A27 midpoint neighborhood HP4.99999
+PASS A27 midpoint neighborhood HP5
+PASS A27 midpoint neighborhood HP5.00001
+PASS A28 corrected binary32 vector retains every Single operation
+PASS A29 empty zero-over-zero explicitly unsupported
+PASS A30 malformed nonfinite metadata explicitly rejects
+PASS A31 raw metadata order distinct from sorted admitted objects
+PASS A32 equal and unknown types metadata accepted gameplay rejected
+PASS A33 timing metadata and spinner duration do not set seconds
+PASS A35 binary32 4.5 tie differs from Double continuation
+PASS A34 missing source fails automatic configuration without silent K1
+PASS B01 base table circle300
+PASS B01 base table circle100
+PASS B01 base table circle50
+PASS B01 base table wholeMISS
+PASS B01 base table sliderHead
+PASS B01 base table headFail
+PASS B01 base table interior
+PASS B01 base table repeat
+PASS B01 base table terminal
+PASS B01 base table terminalFail
+PASS B01 base table spinner4096
+PASS B01 base table spinner8192
+PASS B01 base table spinner16384
+PASS B02 four quality counters exclusively determine Single accuracy
+PASS B03 previous combo not incremented combo supplies bonus
+PASS B04 maximum combo is not bonus operand after MISS
+PASS B05 integer b25 quotient raw1024
+PASS B05 integer b25 quotient raw512
+PASS B05 integer b25 quotient raw256
+PASS B06 fractional bonus truncates rather than rounds
+PASS B07 zero K retains base scoring and combo
+PASS B08 positive slider parent scales score without duplicate combo
+PASS B09 positive combo resets on parent whole MISS
+PASS B10 terminal failure preserves combo interior failure resets
+PASS B11 positive parent after failed tick counts once
+PASS B12 spinner amounts never scale or change existing combo
+PASS B13 spinner final separately scales and increments combo
+PASS B14 disabled positive accounting still mutates combo
+PASS B15 disabled negative admits zero write not hit counter
+PASS B16 raw zero is no event no mutation
+PASS B17 UInt16 hit counts wrap and empty accuracy getter returns one
+PASS B18 unchecked Int32 score addition wraps finite bonuses
+PASS B19 ScoreV2 unavailable preserves explicit unsupported status
+PASS B20 reject unsupported event 1028/CircleWhole/False/PlainLegacy
+PASS B20 reject unsupported event 1024/CircleWhole/True/PlainLegacy
+PASS B20 reject unsupported event 8/SliderInterior/True/PlainLegacy
+PASS B20 reject unsupported event 1024/CircleWhole/False/ScoreV2
+PASS B21 engineering K and provenance bounds explicit
+PASS B22 overdue interior raw128 scores raw amount with producer preserved
+PASS C01 fresh production factory mixed-r07
+PASS C01 fresh production factory bezier-joined
+PASS C02 explicit Mixed event contract K1
+PASS C02 explicit Mixed event contract K2
+PASS C03 explicit Joined event contract K1
+PASS C03 explicit Joined event contract K3
+PASS C04 Joined actual session events reach automatic ledger once
+PASS C05 Mixed actual lifecycle with explicitly seeded spinner observations
+PASS C06 restart and map replacement own independent K and ledgers
+PASS C07 failed new metadata cannot mutate prior configured session
+PASS C08 delayed slider completion does not fabricate backlog score
+PASS D01 pending presentation at 0
+PASS D01 pending presentation at 1999
+PASS D01 pending presentation at 2000
+PASS D01 pending presentation at 3500
+PASS D01 pending presentation at 5000
+PASS D01 pending presentation at 5001
+PASS D02 completed spinner no longer presented
+PASS D03 queries preserve motion progress input observation and scoring
+PASS D04 prestart spinner never blocks preceding head during old preview
+PASS D05 held slider checkpoints survive old preview with read-only queries
+PASS D06 queries cannot consume pending held-button admission
+PASS D07 presentation does not change strict spinner gameplay boundaries
+QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed

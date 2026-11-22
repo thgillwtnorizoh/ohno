@@ -1,0 +1,20 @@
+{
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "architecture": "x86_64",
+  "dotnetSdk": "8.0.427",
+  "dotnetRuntime": "8.0.33",
+  "powerShell": "7.4.6",
+  "powershellPackageUrl": "https://packages.microsoft.com/repos/microsoft-debian-bookworm-prod/pool/main/p/powershell/powershell_7.4.6-1.deb_amd64.deb",
+  "powershellPackageSha256": "79642721f0bc9baf07dafaab68ece1cbd822f86722492acf9b4031d41029a735",
+  "archiveSha256": "7089d49fe3e91be66e026b1d1a3245503f65580879b20bb81e7d97dd8534b738",
+  "originalExeSha256": "6e182c10d1813209d12753dbc70b3a5bba00fef4ecf64bc42051870e6dfe4b7d",
+  "reusedStaticPacketSha256": "41fc8072a135b71c6e7cc6f04be78a1e2400195ffdf433d02bf07eb707eed6dc",
+  "staticMethods": 18,
+  "staticSites": 748,
+  "historicalBodyMatches": 39,
+  "anchors": 15,
+  "branches": 3,
+  "originalExecuted": false,
+  "privateOwnerChartsAccessed": false
+}

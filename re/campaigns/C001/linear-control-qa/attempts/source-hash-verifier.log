@@ -1,0 +1,12 @@
+PASS control-count-hashes.log
+PASS traversal-profile-hashes.log
+PASS linear-historical.log
+PASS timing-historical.log
+PASS bezier-historical.log
+PASS build.log
+PASS run.log
+Traceback (most recent call last):
+  File "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/verify.py", line 32, in <module>
+    if name in paths:assert sha(paths[name]).upper()==h
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

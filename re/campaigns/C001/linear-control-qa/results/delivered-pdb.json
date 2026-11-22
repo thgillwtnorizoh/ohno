@@ -1,0 +1,17 @@
+{
+  "bundledDllSha256": "972644A78687771287506FB15A99F1DA97A332F66CD4F760F92605D318922299",
+  "publishedPdbSha256": "79A5939DEFFCC129C78A1CC1523AC1C54B2F28C8DBBD1B401A25F0B40F1BA8CB",
+  "Guid": "43ae462e-30c5-445e-9180-65885c83e14e",
+  "Stamp": 2879581630,
+  "Age": 1,
+  "identity": true,
+  "documents": [
+    {
+      "name": "D:/a/ohno/ohno/reconstructed/CircleGame/Gameplay/Beatmap.cs",
+      "sourceSha256": "229C2C9251D737E0055733D66727DD11E9F73DEFE035E60EB8E52095745B5347",
+      "match": true
+    }
+  ],
+  "originalExecuted": false,
+  "WindowsExecuted": false
+}

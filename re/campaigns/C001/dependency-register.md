@@ -275,3 +275,21 @@ preparation95segments×32traversals=3040movements fits finite per-parent work;
 map/checkpoint/health/resource budgets remain independent. Next Headquarters review,
 then separately authorized Work2 integration/Windows and independent Work1 QA.
 DEP08/DEP09 and original-runtime Issue4 remain OPEN; no owner scan required.
+
+
+## 2026-11-22 — Issue21 independent source-L96 QA
+
+Exact production5dda483348e21e79c8354bf6ea322d50b7fb3e72; starting main184ba46.
+Independent5667/5667,168 immutable cases112/56,+74/0 losses; actual connected
+owners/numerics/profile fences/budget/cancellation/resource evidence verified.
+Separate byte-count oracle168raw/158valid converted/10invalid cases. No production
+or historical fixture/test change. Linux historical2198pass/3Windows-specific QA14
+failures(2201total) preserved; native Windows NOT RUN. Retained C001 suites pass;
+fresh Windows run84 artifact/source/PDB/method/274fixture and168disposition audit
+corroborates development5430/564/2312, not independent Windows execution.
+No finite production contradiction reproduced. Initial new QA/setup failures are
+preserved separately. Full UEP checkpoint: verification/19-canonical-linear-controls.md;
+source/results/seals: linear-control-qa/. Prior1876research records/prefixes retained.
+Next Headquarters review/finite disposition; owner/runtime/wider campaign gates
+remain OPEN. Issue21/20/C001/subsystem and original-runtime Issue4 OPEN; no owner
+rescan, original equivalence or acceptance claim.

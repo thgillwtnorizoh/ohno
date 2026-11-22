@@ -1,0 +1,12 @@
+Issue21 final verification checkpoint
+Exact production:5dda483348e21e79c8354bf6ea322d50b7fb3e72 clean detached worktree
+Focused:5667 passed/0 failed;168 fixtures112/56,+74/0
+Historical Linux:2198 passed/3 Windows-specific QA14 failures/2201 total
+Retained C001:264/299/4375/3973/1502/801/656/295, stacking43+394, finite106+4 PASS
+Fresh artifact:54successful steps,5430/564/2312 development results,274fixture seals and168independently derived disposition comparisons PASS
+Direct delivered portable PDB/DLL identity and compiled source SHA256 PASS
+Byte counts:168raw/158valid normalized/10intentionally invalid coordinates PASS
+All1876prior research file bytes/append-only prefixes preserved
+Native Windows/original/GUI/audio-device/physical/private-owner corpus NOT RUN
+Earlier source-hash verifier failure preserved in attempts/source-hash-verifier.log
+Full commands:results/commands.json;source/binary seals:results/provenance.json

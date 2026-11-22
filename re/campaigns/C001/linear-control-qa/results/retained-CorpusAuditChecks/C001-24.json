@@ -1,0 +1,1855 @@
+{
+  "schemaVersion": 1,
+  "tool": "ohno-corpus-audit/1",
+  "sourceCommit": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "sourceState": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "C99D20022293DB94736ED996491DC13CC8FDE1ABF86DEFEA89B009A7A370D14D",
+    "Beatmap.cs": "B96DE5412149666BBDDBE6704284E0EE21EC12EF50242C0BD6D8F30323C199EA",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "limits": {
+    "maxCharts": 10000,
+    "maxDirectories": 4096,
+    "maxEntries": 50000,
+    "maxDepth": 32,
+    "includeRelativePaths": false
+  },
+  "complete": true,
+  "directories": 1,
+  "entries": 24,
+  "nonChartFiles": 0,
+  "noticesOmitted": 0,
+  "notices": [],
+  "charts": [
+    {
+      "entryKey": "6870DAB1CF3F3603A3019A4C0F5E2EFFAF7D65D66B31E8D3D9115FCC84E257FD",
+      "sha256": "C7A3A34E74BFDE1389492738A096AD1872036E84EC8A591D5DBAC93277E4BDF4",
+      "bytes": 481,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "ED3D68C310EB427F746F97E5D54CCD2722AA495A83F83EEC90382270D8095037",
+      "sha256": "9A5AF6882C38D5A5C072D51F2815F4CC6B8DEAE3D0B1F0A09F73CB3843A8251F",
+      "bytes": 481,
+      "cohort": "other-mode",
+      "features": {
+        "format": 14,
+        "mode": 1,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 1,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "989E9A0F077B4E156B0C7B22A0814477514A49AA26B7F81F7AD5C1B0B21A8480",
+      "sha256": "2F36A1E96271CCBCFCAC1D5623B4100EAA50E719409812F881AE2E81F5641009",
+      "bytes": 481,
+      "cohort": "other-mode",
+      "features": {
+        "format": 14,
+        "mode": 2,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 2,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "FB2B8FDCBCCAB80F5433F0060EA755F046F37C12854BC62D5715A43FEEA5DF65",
+      "sha256": "301EC09DBFB776A13F8F51DC698389EFEE7B16E4039E9A84AA88F42F253664DD",
+      "bytes": 508,
+      "cohort": "other-mode",
+      "features": {
+        "format": 14,
+        "mode": 3,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 1,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 3,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "object-factory",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "7F3A2637B47BF7F7F26F9077EEA6E00A05EC127E2D226478089883A29B977564",
+      "sha256": "BB8B5083AC3C79D9B01DE678F753EDFB0401E2EF5C3EE7CC20C63696BA2A4B78",
+      "bytes": 346,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "58EF0E6C3EC9E2F4D99E4F21F19832C2BC102D70C04FE816A4A3F9BFE7BF6563",
+      "sha256": "1A8194D0B491CA1ED912414B28F2999F7EF5852E6B3F19B73CB25FF154C91C69",
+      "bytes": 347,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 5,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 5,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "E4866315089808C58520BBEF58AFB2E0B99973EDD452FAA48F9B6633A00ED6AA",
+      "sha256": "0B26E7B5B2C23D1DCB66DA67207070EDB29EB9F80DD11D821AC6FF9671F30DAF",
+      "bytes": 346,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "86FA5DFE388D35310C727B248EDF9D18065DF62D91B682554D8A6B21D1768782",
+      "sha256": "20BD9D9951F119BC0D0E81A90B71850959E83F204C4B12A72E0D71FDA7433D33",
+      "bytes": 347,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 6,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 6,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "885FF360CCC90D41809A22F98B0178FA4715244F91B62DB8346E7A1E41035A22",
+      "sha256": "2696CB666FB010D23A366EEF54934506F81CCF953A285847A3F212AE8E9DAF65",
+      "bytes": 346,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 7,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 7,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "C6611EEADA8F612A016A96CCF7F8EF4BAE8679F39E39EE93F955147DE2F314B0",
+      "sha256": "B4D9D3883684CBFB11664570D88EFABFC322437323433B17C64F5B8B1B9D04D7",
+      "bytes": 347,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 7,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 7,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "9FB2381D45EF269782F06F0C73D5139F179DB420EE260298E0A386A4013D38D8",
+      "sha256": "421B10792A07291044AB00DCB1E623DF53A0B7358F775231853C618D1C9FE12D",
+      "bytes": 346,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 8,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 8,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "DE842518C78C98E396CAAC63F8B99960C0F5D50D59CFE780475D1D058BAB0CF1",
+      "sha256": "C2D51B0EF0A464181516F6F176CD093D52239F4266BAEF9B5D07F0F5CD74F49B",
+      "bytes": 347,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 8,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 8,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "5372512BB923BE6AA19182745C7FC51091065BA60AC5A62F2EEC97C8C9D9F298",
+      "sha256": "912A68A0ED8952ECE0C80F2D6AD084F049ED82DD8D568399348D761528A30111",
+      "bytes": 346,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 149
+    },
+    {
+      "entryKey": "D763A1715028975451F4AD74A29C36520AEA001A165BA8078D26C84BA5810206",
+      "sha256": "6562A2322C2E8904C8FF3C1FB1BDDD75684C35D25396BF2F3CDF622836030DF3",
+      "bytes": 347,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 9,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 9,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "68F649B5652420320AA1425BACC3CF1FBE8849198D89BA3846B903AB8EE20018",
+      "sha256": "054090744FF1049250A313A71FEB741F6AE9BFCF9D993D82ED573BFA69CF149A",
+      "bytes": 348,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 10,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 10,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "7CEF0AC6AA04918C7AD652CA57D1DC6CE3E0E19A0FF594B351254E87871F5602",
+      "sha256": "52C882280B80F2059046737406E341E5CB1882C0A4325B34C9D00E06B6CEC075",
+      "bytes": 349,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 10,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 10,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "D8EF795AC89D7365AF1E9826AE2265209BF61B79569F9A34EE11FFE4115B8EE8",
+      "sha256": "E53E8C86883CAA53C4AA6BC6FD93A0A79B81D54E67FC47D93C7A11B93D08B396",
+      "bytes": 348,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 11,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 11,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "C607FABF79AEA8CDFBB82686B69F5E9C8D9EDE63E2944DCB0CF45F8D14A17134",
+      "sha256": "35FCE0355E4AEB18A1A3E25544AEC15911F03289F0FD3A577C6E900319F92A53",
+      "bytes": 349,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 11,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 11,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "D1C602056C8C460CAE61E34B8E27D7AEE9CC152D81A5786E6A4A7471224D6247",
+      "sha256": "D9B4A63BB8DFEE52E4D830853E6E0EBF0525A48C8942827121A5B8337EF19DEF",
+      "bytes": 348,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 12,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 12,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "D175B8CAFBAB6259DD8BBB074BA254E058BED7A7E904BD80F250E54DD34B3C1C",
+      "sha256": "2E5D3234665D550A8A2F889D7F30F7201216D217C105B88A962A4509A0FA615B",
+      "bytes": 349,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 12,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 12,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "2067FA98617A51AE81530FC6AFFD9E9C5DC41A661325A5061B196D0D8D701D14",
+      "sha256": "1A38E40E751A116217899B20E2C19EDD593C40A2B30C111E3BC83209395F6E69",
+      "bytes": 348,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "BD251518763B56B7ADFBDBDBE500A32E082B0C3848C7EF18B29D26E163ED103F",
+      "sha256": "18F07B34EC672671D97C6DC8FF0A82F7E63D2F3C81198E3D2A5D60122446D08E",
+      "bytes": 349,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 13,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 13,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "B6CDF1C4783BBC4F0115866ADC625E301DB7179D3F648D3361DB4FF417A0B80C",
+      "sha256": "98A51B2BA73BF2CABD1E6112B046D93E3AAC789F631138EE60CD5D57370BA631",
+      "bytes": 348,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 64
+    },
+    {
+      "entryKey": "8672D060F2A87D2AE01B55EFD09575F616198E6A1506A20ABC35EB1A31401988",
+      "sha256": "E92E3C1A8F870CCB819D7BD6A6B14B615031A470242D65F42D5D3ECF43507E9E",
+      "bytes": 349,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    }
+  ],
+  "cohorts": {
+    "other-mode": {
+      "files": 3,
+      "canonicalAttempts": 3,
+      "canonicalSuccess": 0,
+      "indexed": 0,
+      "consumerReady": 0,
+      "missingAudio": 0,
+      "uniqueHashes": 3
+    },
+    "standard-no-spinner": {
+      "files": 21,
+      "canonicalAttempts": 21,
+      "canonicalSuccess": 21,
+      "indexed": 21,
+      "consumerReady": 21,
+      "missingAudio": 0,
+      "uniqueHashes": 21
+    }
+  },
+  "canonicalOutcomes": {
+    "success": 21,
+    "unsupported-admission": 3
+  },
+  "canonicalFailureFamilies": {
+    "unsupported-admission/mode-profile": 2,
+    "unsupported-admission/object-factory": 1
+  },
+  "stageOutcomes": {
+    "audio": {
+      "not-declared": 21,
+      "unknown": 3
+    },
+    "automatic-score": {
+      "not-run": 3,
+      "success": 21
+    },
+    "canonical": {
+      "success": 21,
+      "unsupported-admission": 3
+    },
+    "feature-projection": {
+      "success": 24
+    },
+    "fresh-health-source": {
+      "not-run": 3,
+      "success": 21
+    },
+    "index": {
+      "success": 21,
+      "unsupported-admission": 3
+    },
+    "read": {
+      "success": 24
+    },
+    "session-without-health-calibration": {
+      "not-run": 3,
+      "success": 21
+    },
+    "structure": {
+      "not-run": 3,
+      "success": 21
+    }
+  },
+  "boundary": "Headless finite indexing/preparation/structural checks only; health calibration, media decoding, original runtime and owner playability NOT VERIFIED."
+}

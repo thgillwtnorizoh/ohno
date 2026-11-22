@@ -1,0 +1,1180 @@
+{
+  "schemaVersion": 1,
+  "tool": "ohno-corpus-audit/1",
+  "sourceCommit": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "sourceState": "clean",
+  "sourceHashes": {
+    ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs": "3509C0134D01417E72DAC88C9162978A33A28868B5B416AA946CABDF0D822198",
+    "AuditRunner.cs": "C99D20022293DB94736ED996491DC13CC8FDE1ABF86DEFEA89B009A7A370D14D",
+    "Beatmap.cs": "B96DE5412149666BBDDBE6704284E0EE21EC12EF50242C0BD6D8F30323C199EA",
+    "CircleHitSounds.cs": "0AD3A11C2D2B77433BE5045122C91EA95BAC4D67226E8217A7614949ED8D702E",
+    "CircleSession.cs": "CBB5A7556C02B73A690E2E17537CB5E0C57C653D0DF10DAB3E5EFF8E45BC77B5",
+    "CorpusAudit.GlobalUsings.g.cs": "ADDB143F8C43B95F1BB73A0CBA7C793281935C4AB8CCABBDF6B04D3E0F809E0E",
+    "CorpusAudit.csproj": "B1F6D38C8E0955740E2D91F38EE2DAC3C5005EFA69BA912DE6F1F798CBB03EBA",
+    "LocalChartCatalog.cs": "4D8FF1EF3C62EED425E09CE116AE6B5ACB1DB805BE0043EEAF46F666603C6D3C",
+    "Program.cs": "6156FB9B825FE827AFB836A99499689BF35B66012DACE8364B871F847EED5012",
+    "RankResults.cs": "22A4066DFCB16F34906B571721548597CAF6EE749CADCC4F64E3BF5611C5A999"
+  },
+  "limits": {
+    "maxCharts": 10000,
+    "maxDirectories": 4096,
+    "maxEntries": 50000,
+    "maxDepth": 32,
+    "includeRelativePaths": false
+  },
+  "complete": true,
+  "directories": 2,
+  "entries": 19,
+  "nonChartFiles": 2,
+  "noticesOmitted": 0,
+  "notices": [],
+  "charts": [
+    {
+      "entryKey": "A6B6B00B5CDD9E33F4F7A6053EA89EFE9961E4D7692F948DCB3C203AC59D0A93",
+      "sha256": "0A89C9FCA742D7A8A9067CDCDA4887C7B492770E741C856B67F16C05570BCB36",
+      "bytes": 314,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "B": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 29
+    },
+    {
+      "entryKey": "F042B8C5C9C2CE2C07EDF6BFB945DF4CBE8FC8B19ACC7D6804E16EC1311ACB1C",
+      "sha256": "CCEE1DD60D0AD929124C2FF104612577D588251D73148613934921B7BB6F46D9",
+      "bytes": 314,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "C": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 98
+    },
+    {
+      "entryKey": "3D010A0FB954FC9752194B15DCA596C4C69A99BD4CF13BC665E96DE0DB109E39",
+      "sha256": "5E613E27AB20053071B303BBB4AF00E6ECD21D7D0A2F0D4B6DD1075CB9A4F380",
+      "bytes": 306,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "L": 1
+        },
+        "minimumRepeats": 2,
+        "maximumRepeats": 2,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 1
+    },
+    {
+      "entryKey": "19E872B7FB0174618675F5496CB3E17D6E7817F62656A8791ABA12F765F0CF22",
+      "sha256": "3FDE3833256280BF9647F31B8BBF011050F8FBFFB7022D49B7870BFC64478838",
+      "bytes": 312,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "P": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 2
+    },
+    {
+      "entryKey": "F6644D6BF2D797BB81D0315A8EB301876C6F28D8105C3D7FEDBB2BE5AA2509DD",
+      "sha256": "CE9B1EE4A6477EE5D848B36575E334ED624439E89EC5A3B00551525EE59C50E3",
+      "bytes": 12,
+      "cohort": "unknown",
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "malformed-input",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "index": {
+        "status": "malformed-input",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "malformed-input",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "BE04457C38EDD22B5A5DFB2F8BD869CEF3E93812D9526867B17B2AFA79E5AA43",
+      "sha256": "9E4D3EBD3587DCD4A9D3CC32FA384B3D7E85291780385CB47333F7A77F5E70AC",
+      "bytes": 288,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "malformed-input",
+        "code": "hitsound-syntax",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "4B804756155A07CCCD33440429734DEEC3D33FD49729B91FE26A46F1D3541DF4",
+      "sha256": "CBCDBFFB019AFFABC216BF650D81B69C4B562425A362FAB6C2C68A2720B7F020",
+      "bytes": 316,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 3,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "C4528165D70F7A9FF9FCB0EC088675EE75B9089A92B68403CA75F168649DD9AB",
+      "sha256": "0C5896A298FB71AFACBD4C7E368AAB6BEC02E53DEA5E5F4ECA83DE4B37E89B2E",
+      "bytes": 298,
+      "cohort": "standard-unclassified-objects",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 1,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "format-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "object-factory",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "141BFB3B11B6020E1F23FA11134BE864C20F5BC17EE2746FF8A1DC93CE1DD181",
+      "sha256": "46A248396863A5E349BC56D3A6BB461A6B94798E1679B13C8FBF943964DC09C7",
+      "bytes": 283,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "malformed-input",
+        "code": "numeric-syntax",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "AC5736FC0098D5E9659F5DA9F27AB8B80B6323AE6B1372F0DF5C69297A380FEB",
+      "sha256": "432ED7E2775A8D29F6AFC11CBECDCCC50219E7D3B8E509C52A170DB5E2BB34B6",
+      "bytes": 332,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 2,
+        "circles": 2,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 2,
+        "circles": 2,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "missing-resource",
+        "code": "file-missing",
+        "exceptionType": "FileNotFoundException"
+      },
+      "preparedObjects": 2,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "6CDF77C4D46C5D384A35DB3397A77A071F102B86ABA9B6463359FC968D83E476",
+      "sha256": "53F8D1DC478E0C3DBF81075EC28D9BF620F592B116E0AC312E3C184701CABAB0",
+      "bytes": 282,
+      "cohort": "other-mode",
+      "features": {
+        "format": 14,
+        "mode": 1,
+        "runtimeRows": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 1,
+        "objects": 1,
+        "circles": 1,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "mode-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    },
+    {
+      "entryKey": "02D7E95A09A6B46F69603D4CBEFB411BCF2FC650BF5B6DCAEE4B7D009299A849",
+      "sha256": "CBCDBFFB019AFFABC216BF650D81B69C4B562425A362FAB6C2C68A2720B7F020",
+      "bytes": 316,
+      "duplicateOfEntryKey": "4B804756155A07CCCD33440429734DEEC3D33FD49729B91FE26A46F1D3541DF4",
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 3,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "F82570E8310BB8E317A4012EC83EA306A8B061D181C274B45A6B56AC956BB244",
+      "sha256": "B19322F0F68E582BE7B47172B9DEDF3B0AB8FCCD9BF7D7DD82CF97FC3AFFE7A0",
+      "bytes": 324,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 2,
+        "circles": 2,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 2,
+        "circles": 2,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "success",
+        "code": "audio-present-not-decoded"
+      },
+      "preparedObjects": 2,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "246D9B96819E93DA6412951CDEB543E3B17A44C2D5500ACA8B88E10254295FBB",
+      "sha256": "CBCDBFFB019AFFABC216BF650D81B69C4B562425A362FAB6C2C68A2720B7F020",
+      "bytes": 316,
+      "duplicateOfEntryKey": "4B804756155A07CCCD33440429734DEEC3D33FD49729B91FE26A46F1D3541DF4",
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 3,
+        "circles": 3,
+        "sliders": 0,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 3,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "6713CD4F0737254F57EB6E72B16D8AA1FE16B296C08DBB6CF8162D131B8E25B6",
+      "sha256": "1C9DDC9A80C920301B6D47E0665D2B7F7A3219E3E2530138D4393B8C51058793",
+      "bytes": 287,
+      "cohort": "standard-with-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {},
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 0,
+        "spinners": 1
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "success",
+        "code": "canonical-prepared"
+      },
+      "consumers": {
+        "automatic-score": {
+          "status": "success",
+          "code": "checked"
+        },
+        "fresh-health-source": {
+          "status": "success",
+          "code": "checked"
+        },
+        "session-without-health-calibration": {
+          "status": "success",
+          "code": "checked"
+        },
+        "structure": {
+          "status": "success",
+          "code": "checked"
+        }
+      },
+      "audio": {
+        "status": "not-declared",
+        "code": "audio-not-declared"
+      },
+      "preparedObjects": 1,
+      "preparedSegments": 0
+    },
+    {
+      "entryKey": "2552A0543536E4BFB51494DDDA1EA14EB80A1F0B1EEEA61C3384CD382C2671E8",
+      "sha256": "6A87D5658395ADDA52730786952F03C558E14B2CA682B615862B4EE0AE028529",
+      "bytes": 306,
+      "cohort": "standard-no-spinner",
+      "features": {
+        "format": 14,
+        "mode": 0,
+        "runtimeRows": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0,
+        "otherObjects": 0,
+        "unclassifiedRows": 0,
+        "sliderPaths": {
+          "unknown-or-other": 1
+        },
+        "minimumRepeats": 1,
+        "maximumRepeats": 1,
+        "unknownRepeats": 0,
+        "timingRows": 1,
+        "distinctBeatLengths": 1,
+        "explicitBaseTimingRows": 1,
+        "explicitInheritedTimingRows": 0,
+        "unparsedBeatLengthRows": 0,
+        "stackingProfile": "disabled"
+      },
+      "indexedFeatures": {
+        "format": 14,
+        "mode": 0,
+        "objects": 1,
+        "circles": 0,
+        "sliders": 1,
+        "spinners": 0
+      },
+      "read": {
+        "status": "success",
+        "code": "exact-bytes-sha256"
+      },
+      "featureProjection": {
+        "status": "success",
+        "code": "production-document-runtime-stage"
+      },
+      "index": {
+        "status": "success",
+        "code": "catalog-indexed"
+      },
+      "canonical": {
+        "status": "unsupported-admission",
+        "code": "slider-kind-profile",
+        "exceptionType": "InvalidDataException"
+      },
+      "consumers": {},
+      "audio": {
+        "status": "unknown",
+        "code": "canonical-not-prepared"
+      }
+    }
+  ],
+  "cohorts": {
+    "other-mode": {
+      "files": 1,
+      "canonicalAttempts": 1,
+      "canonicalSuccess": 0,
+      "indexed": 0,
+      "consumerReady": 0,
+      "missingAudio": 0,
+      "uniqueHashes": 1
+    },
+    "standard-no-spinner": {
+      "files": 12,
+      "canonicalAttempts": 12,
+      "canonicalSuccess": 9,
+      "indexed": 12,
+      "consumerReady": 9,
+      "missingAudio": 1,
+      "uniqueHashes": 10
+    },
+    "standard-unclassified-objects": {
+      "files": 1,
+      "canonicalAttempts": 1,
+      "canonicalSuccess": 0,
+      "indexed": 0,
+      "consumerReady": 0,
+      "missingAudio": 0,
+      "uniqueHashes": 1
+    },
+    "standard-with-spinner": {
+      "files": 1,
+      "canonicalAttempts": 1,
+      "canonicalSuccess": 1,
+      "indexed": 1,
+      "consumerReady": 1,
+      "missingAudio": 0,
+      "uniqueHashes": 1
+    },
+    "unknown": {
+      "files": 1,
+      "canonicalAttempts": 1,
+      "canonicalSuccess": 0,
+      "indexed": 0,
+      "consumerReady": 0,
+      "missingAudio": 0,
+      "uniqueHashes": 1
+    }
+  },
+  "canonicalOutcomes": {
+    "malformed-input": 3,
+    "success": 10,
+    "unsupported-admission": 3
+  },
+  "canonicalFailureFamilies": {
+    "malformed-input/format-profile": 1,
+    "malformed-input/hitsound-syntax": 1,
+    "malformed-input/numeric-syntax": 1,
+    "unsupported-admission/mode-profile": 1,
+    "unsupported-admission/object-factory": 1,
+    "unsupported-admission/slider-kind-profile": 1
+  },
+  "stageOutcomes": {
+    "audio": {
+      "missing-resource": 1,
+      "not-declared": 8,
+      "success": 1,
+      "unknown": 6
+    },
+    "automatic-score": {
+      "not-run": 6,
+      "success": 10
+    },
+    "canonical": {
+      "malformed-input": 3,
+      "success": 10,
+      "unsupported-admission": 3
+    },
+    "feature-projection": {
+      "malformed-input": 1,
+      "success": 15
+    },
+    "fresh-health-source": {
+      "not-run": 6,
+      "success": 10
+    },
+    "index": {
+      "malformed-input": 1,
+      "success": 13,
+      "unsupported-admission": 2
+    },
+    "read": {
+      "success": 16
+    },
+    "session-without-health-calibration": {
+      "not-run": 6,
+      "success": 10
+    },
+    "structure": {
+      "not-run": 6,
+      "success": 10
+    }
+  },
+  "boundary": "Headless finite indexing/preparation/structural checks only; health calibration, media decoding, original runtime and owner playability NOT VERIFIED."
+}

@@ -1,0 +1,449 @@
+[
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/control-count/build_fixtures.py",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "control-count-hashes.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/traversal-profile/build_fixtures.py",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "traversal-profile-hashes.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/tools/check_linear_geometry.py",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/evidence/06/linear-geometry.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "linear-historical.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/tools/check_slider_timing.py",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/evidence/05/slider-timing.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "timing-historical.log"
+  },
+  {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/tools/check_bezier_geometry.py",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/evidence/32/bezier-geometry.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "bezier-historical.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "build",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/Checks",
+      "-c",
+      "Release",
+      "-p:ExactRoot=/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "--no-incremental",
+      "--nologo"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "build.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/Checks/bin/Release/net8.0/Checks.dll",
+      "/workspace/scratch/4a3d263ce4fc/ohno",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/ohno",
+    "log": "run.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa01/Headless/QA01.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA01.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa03/Headless/QA03.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA03.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa04/Headless/QA04.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA04.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa05/Headless/QA05.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA05.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa06/Headless/QA06.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA06.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa07/Headless/QA07.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA07.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa08/Headless/QA08.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA08.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa09/Headless/QA09.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA09.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa09/Run-QA09.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA09.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA09.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa10/Run-QA10.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA10.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA10.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa11/Run-QA11.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA11.json",
+      "-SkipWindows"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA11.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa12/Run-QA12.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA12.json",
+      "-SkipWindows"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA12.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa13/Run-QA13.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA13.json",
+      "-SkipWindows"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA13.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa14/Run-QA14.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA14.json",
+      "-SkipWindows"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA14.log"
+  },
+  {
+    "command": [
+      "/workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh",
+      "-NoProfile",
+      "-File",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/qa/qa15/Run-QA15.ps1",
+      "-ResultPath",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/QA15.json",
+      "-SkipWindows"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-QA15.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001DevelopmentChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001DevelopmentChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001DevelopmentChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001PerfectChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001PerfectChecks/results.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001PerfectChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001CatmullChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001CatmullChecks/results.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001CatmullChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001TraversalChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001TraversalChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001TraversalChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001NearSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001NearSpinnerChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001NearSpinnerChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001LegacySpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001LegacySpinnerChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001LegacySpinnerChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/C001VersionedSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-C001VersionedSpinnerChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001VersionedSpinnerChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/reconstructed/CorpusAuditChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/retained-CorpusAuditChecks"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-CorpusAuditChecks.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/campaigns/C001/stacking/Headless/C001.Stacking.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/C001.Stacking.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001.Stacking.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/campaigns/C001/stacking/Integration/C001.StackingIntegration.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/C001.StackingIntegration.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001.StackingIntegration.log",
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483/re/campaigns/C001/verification/Headless/C001.Headless.csproj",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+      "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/results/C001.Headless.json"
+    ],
+    "cwd": "/workspace/scratch/4a3d263ce4fc/exact-5dda483",
+    "log": "retained-C001.Headless.log",
+    "exitCode": 0
+  }
+]

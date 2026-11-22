@@ -1,0 +1,360 @@
+{
+  "source": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "jobs": [
+    {
+      "id": 137146777470,
+      "name": "build-and-regression",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 45002466140,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Checkout exact gate commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Select an already installed .NET 8 SDK",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Compile R07 WPF Windows x64",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Execute independent QA15 corpus and calculator component verification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Execute unchanged QA01 headless suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Execute QA03 slider component suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Check R06 finite preparation targets and fixture loading",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Execute independent QA04 geometry and integration suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Check R07 bounded spinner components",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Execute independent QA05 spinner suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Check R08 bounded legacy ledger controls",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Check R08-C01 spinner presentation and input continuity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Check R08-C02 automatic chart score multiplier",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14
+        },
+        {
+          "name": "Execute independent QA06 ledger multiplier and presentation suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Check R09 bounded health calibration and integration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Execute independent QA07 health calibration drain and failure suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        },
+        {
+          "name": "Check R10 fresh ordinary NewCombo preparation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18
+        },
+        {
+          "name": "Execute independent QA08 NewCombo and fresh health integration suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        },
+        {
+          "name": "Check R11 circle hitsound selection resources and lifecycle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20
+        },
+        {
+          "name": "Execute independent QA09 circle hitsound suite without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        },
+        {
+          "name": "Check R12 discrete slider hitsounds without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22
+        },
+        {
+          "name": "Execute independent QA10 discrete slider suite without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Check R13 shared continuing channels without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Check R13 Windows empty-resource lifecycle without opening media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        },
+        {
+          "name": "Execute independent QA11 shared channels without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26
+        },
+        {
+          "name": "Check R13-C01 captured settings gain without playback",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27
+        },
+        {
+          "name": "Check R14 spinner audio with recording channels and independent assets",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28
+        },
+        {
+          "name": "Check R14 Windows unsupported-frequency capability without media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29
+        },
+        {
+          "name": "Execute independent QA12 spinner audio without media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30
+        },
+        {
+          "name": "Check R14-Q01 routing and diagnostics without opening media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Check R15 original-derived Rank model without media or windows",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Check R15 WPF host and widgets without showing a Window",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        },
+        {
+          "name": "Execute independent QA13 Rank results without windows or media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 34
+        },
+        {
+          "name": "Check R16 local catalog selection and Play capture without windows/media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 35
+        },
+        {
+          "name": "Check R16 unshown SelectPlay widgets and Rank-return host boundaries",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36
+        },
+        {
+          "name": "Execute independent QA14 catalog selection and entry controls without windows/media",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37
+        },
+        {
+          "name": "Check R17 restricted circle mathematics against independent E045 E046 data",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38
+        },
+        {
+          "name": "Check R17 unshown calculated-star browser and Rank boundaries",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39
+        },
+        {
+          "name": "Check C001 canonical syntax and versioned Bezier preparation",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40
+        },
+        {
+          "name": "Check C001 finite Perfect-circle geometry and consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41
+        },
+        {
+          "name": "Preserve independent finite stacking regression",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42
+        },
+        {
+          "name": "Check finite Catmull paths and shared consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43
+        },
+        {
+          "name": "Check Issue20 canonical Linear control profile and connected consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44
+        },
+        {
+          "name": "Check Issue18 canonical traversal budgets and actual consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45
+        },
+        {
+          "name": "Check Issue15 circle-free v5 near-spinner integration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46
+        },
+        {
+          "name": "Check Issue9 finite stacking timing and consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47
+        },
+        {
+          "name": "Check finite versioned spinner admission and real consumers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 48
+        },
+        {
+          "name": "Preserve actual canonical CorpusAudit development checks",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 49
+        },
+        {
+          "name": "Publish C001 Windows x64 application for owner qualification",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 50
+        },
+        {
+          "name": "Verify independent C001 finite original-contract predictions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 51
+        },
+        {
+          "name": "Preserve C001 development evidence and Windows application",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 52
+        },
+        {
+          "name": "Post Checkout exact gate commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 104
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 105
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 14746253714,
+      "name": "ohno-C001-5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+      "size_in_bytes": 68714855,
+      "url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14746253714",
+      "archive_download_url": "https://api.github.com/repos/thgillwtnorizoh/ohno/actions/artifacts/14746253714/zip",
+      "expired": false,
+      "created_at": "2026-11-22T08:26:28Z",
+      "expires_at": "2027-02-20T08:21:58Z",
+      "updated_at": "2026-11-22T08:26:28Z",
+      "digest": "sha256:91c41682aaeab1ba18e311bbebbeeb4307752098dd33bf1059c71a11205348cb",
+      "workflow_run": {
+        "id": 45002466140,
+        "repository_id": 1431318446,
+        "head_repository_id": 1431318446,
+        "head_branch": "main",
+        "head_sha": "5dda483348e21e79c8354bf6ea322d50b7fb3e72"
+      }
+    }
+  ]
+}

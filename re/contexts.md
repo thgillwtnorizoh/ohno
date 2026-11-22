@@ -2971,3 +2971,51 @@ No finite static blocker. [Handoff](campaigns/C001/control-count/handoff.md) pro
 canonical source-L96 opt-in and preserved existing budgets/legacy APIs. Next
 Headquarters review, separately authorized Work2 and then independent Work1 QA.
 Issue19/C001/subsystem/original-runtime Issue4 OPEN; checkpoint is not acceptance.
+
+
+## 2026-11-22 — Issue21 independent canonical source-L96 checkpoint
+
+Work1 / C001 / independent verification of Issue20, UEP-001 Revision2.1.
+VERIFIED CHECKPOINT within finite component scope; subsystem/C001/Issue20/21 and
+original-runtime Issue4 OPEN, no owner acceptance. Starting verified remote main
+184ba46fc02a1339b37a0b842c1e903f98430f00; exact clean compiled/tested production
+5dda483348e21e79c8354bf6ea322d50b7fb3e72. No production/old fixture/oracle/test edits.
+Full mandatory report: re/campaigns/C001/verification/19-canonical-linear-controls.md;
+new QA/source/provenance: re/campaigns/C001/linear-control-qa/. Published evidence
+SHA and remote-head readback are in the final Issue21 comment.
+
+Fresh5667/5667 independent assertions;168 immutable cases112prepared/56excluded,
++74/0losses of38,112 actual document/session/input/automatic score/accuracy/results/
+fresh calibrated health/NewCombo/sample/resource consumers.83 real continuing
+owners;29 retain old-version limitations. Counts derive from bytes and accepted
+Work1 numeric/schedule predictions, not Work2 outputs/names. Separate byte oracle
+checks168 raw counts,158 valid converted/equality counts including early-refused
+inputs,10 intentionally invalid coordinate cases. Exact new96 stack translation,
+nonmonotone final deadlines/pending aggregates,19/27/31 multi-parent callbacks,
+valid custom WAV ownership/disposal and allocated-byte cancellation verified.
+Genuine250000 movements/100000 final prepared segments/100000 map checkpoints/
+4096 parent checkpoints plus overlimits, raw95→prepared60 budget semantics,
+Int64 overflow,20 cooperative full-loader cancellation stages,2MiB/object guards
+pass. Source B/P/C/default/public/legacy64 and canonical32/public16 fences retained.
+
+Full applicable Linux historical run:2198PASS/3Windows-platform failures of2201;
+QA14 specifically234/237, failures C/reparse-ancestry(cmd.exe), I/windows-path-case,
+I/canonical-unc-rejected. Preserved unchanged result, not relabeled PASS. Other
+retained C001264/P299/C4375/Issue18 3973/Issue15 1502/Issue9 801/Issue7 656/
+Issue11 295, stack43+394 and finite106+4 pass. SDK8.0.427/runtime8.0.33,
+Python3.12.14, PowerShell7.4.6, Debian13 x64. Fresh normalized CI joblog/ZIP metadata
+and actual downloaded run84 artifact14746253714 independently inspected:
+54successful steps,5430headless/564WPF/2312historical development evidence,
+274 packaged fixture hashes and168 dispositions agree. New direct portable-PDB
+inspector matches bundled DLL GUID/stamp and compiled Beatmap source checksum.
+Earlier failed Windows45001890246/verifier source remain untouched.
+
+CONFIRMED ORIGINAL reused Issue19 static18methods/39matches/748sites/15anchors/
+3branches; fresh supplied archive/exe hashes match. RECONSTRUCTED arithmetic/
+chronology and ENGINEERING resource profiles remain distinguished. All1876 prior
+research files/append-only prefixes checked. First QA5316/5549 and second5665/5667
+failures and Python/invocation corrections are preserved in attempts/; final5667
+stands alone. Native Windows/original execution, shownGUI/rasterization/audible/
+physical input/owner-private corpus NOT RUN. No production contradiction reproduced,
+no broad compatibility/performance claim. Next Headquarters review/finite issue
+disposition; correction goes to Work2 only if demonstrated. No owner rescan.

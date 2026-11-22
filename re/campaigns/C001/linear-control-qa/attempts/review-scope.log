@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/4a3d263ce4fc/ohno/re/campaigns/C001/linear-control-qa/review.py", line 12, in <module>
+    assert not git('diff',BASE,TARGET,'--','reconstructed/CorpusAudit','re/qa','re/evidence','re/tools','re/campaigns')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
