@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_hitsound_resources.py", line 180, in <module>
+    if __name__=='__main__':check(json.loads(pathlib.Path(sys.argv[1]).read_text(encoding='utf-8')),sys.argv[2] if len(sys.argv)>2 else None)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_hitsound_resources.py", line 133, in check
+    for token,method in old.get('methods',{}).items():
+                        ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'

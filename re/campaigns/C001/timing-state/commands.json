@@ -1,0 +1,28 @@
+[
+  {
+    "command": "python3 re/campaigns/C001/timing-state/build_fixtures.py",
+    "exit": 0
+  },
+  {
+    "command": "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet run --project re/campaigns/C001/timing-state/Checks -c Release -- re/campaigns/C001/timing-state re/campaigns/C001/timing-state/results.json",
+    "exit": 0,
+    "counts": "2180/2180"
+  },
+  {
+    "command": "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet run --project reconstructed/C001DevelopmentChecks -c Release -- /workspace/scratch/b8464481b75d/ohno",
+    "exit": 0,
+    "counts": "264/264"
+  },
+  {
+    "command": "PATH=/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet:$PATH /workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh -NoProfile -File re/qa/qa10/Run-QA10.ps1 -ResultPath /workspace/scratch/b8464481b75d/ohno/re/campaigns/C001/timing-state/retained-qa10.json",
+    "exit": 0
+  },
+  {
+    "command": "PATH=/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet:$PATH /workspace/scratch/4a3d263ce4fc/issue21-downloads/powershell/opt/microsoft/powershell/7/pwsh -NoProfile -File re/qa/qa11/Run-QA11.ps1 -SkipWindows -ResultPath /workspace/scratch/b8464481b75d/ohno/re/campaigns/C001/timing-state/retained-qa11.json",
+    "exit": 0
+  },
+  {
+    "command": "Historical E005/E037/E038/E039/E040 checkers: direct original source and temporary compatible-schema evidence tree; algorithm and exclusions reproduced by verify.py",
+    "details": "static-checks.json"
+  }
+]

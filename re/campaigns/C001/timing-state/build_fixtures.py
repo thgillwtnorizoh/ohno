@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""Author-owned tiny charts and independent one-straight-span predictions.
+
+Oracle provenance: E005 selectors/rate, E016/E021/E022 checkpoints, E037/039
+raw-time samples. No production import or executable surrogate of the client.
+Run only to reproduce in a new directory: existing immutable bytes must agree.
+"""
+import hashlib, io, json, math, pathlib, struct, wave
+
+ROOT = pathlib.Path(__file__).resolve().parent
+def single(x): return struct.unpack('<f', struct.pack('<f', x))[0]
+def factor(u): return single(single(max(10., min(1000., single(-u)))) / 100.) if u < 0 else 1.
+def row(t=0, b=500, flag=1, bank=1, index=1, volume=40): return f'{t},{b},4,{bank},{index},{volume},{flag},0'
+BASE = row()
+CASES = []
+def add(name, rows, version=14, start=1000, spans=1, reject=None, uncertain=None, second=False):
+    CASES.append(dict(id=name, rows=rows, version=version, start=start, spans=spans,
+                      reject=reject, uncertainty=uncertain, second=second))
+add('base', [BASE])
+add('before-first-point-fallback', [row(2000),row(2500,-50,0,2,2,70)])
+add('inherited-only-no-base', [row(0,-50,0,2,2,70)], uncertain='M1be3 index0 fallback is inherited; effective beat is negative, so ordinary travel fallback applies. No invented positive base.')
+add('finish-plus-five-boundary', [BASE,row(3005,-100,0,2,2,70),row(3005.1,-100,0,3,1,60)])
+add('equal-base-inherited', [BASE,row(1000,500),row(1000,-50,0,2,2,70)])
+add('equal-inherited-base', [BASE,row(1000,-50,0,2,2,70),row(1000,600,1,3,1,60)])
+add('equal-two-bases', [BASE,row(1000,600,1,2,2,70),row(1000,250,1,3,1,60)])
+add('equal-two-inherited', [BASE,row(1000,-50,0,2,2,70),row(1000,-200,0,3,1,60)])
+add('reverse-base-times', [BASE,row(900,250,1,2,2,70),row(200,1000,1,3,1,60)])
+add('reverse-inherited-times', [BASE,row(900,-50,0,2,2,70),row(200,-200,0,3,1,60)])
+add('future-does-not-stop-scan', [BASE,row(2000,-50,0,2,2,70),row(500,-200,0,3,1,60)])
+add('base-index-resets-factor', [BASE,row(900,-50,0,2,2,70),row(500,600,1,3,1,60)])
+add('fraction-after-start', [BASE,row(1000.9,-50,0,2,2,70)])
+add('exact-start', [BASE,row(1000,-50,0,2,2,70)])
+add('fraction-before-start', [BASE,row(999.9,-50,0,2,2,70)])
+add('negative-fraction-before-zero', [row(-10),row(-.9,-50,0,2,2,70)], start=0)
+add('positive-fraction-after-zero', [row(-10),row(.9,-50,0,2,2,70)], start=0)
+add('inherited-positive-normalizes', [BASE,row(500,50,0,2,2,70)])
+add('inherited-zero-normalizes', [BASE,row(500,0,0,2,2,70)])
+add('factor-lower-clamp', [BASE,row(500,-1,0,2,2,70)])
+add('factor-upper-clamp', [BASE,row(500,-5000,0,2,2,70)])
+add('factor-single-conversion', [BASE,row(500,-33.3333333,0,2,2,70)])
+add('later-point-changes-samples-only', [BASE,row(1200,-50,0,2,2,70)])
+add('head-plus-five-boundary', [BASE,row(1005,-100,0,2,2,70),row(1005.1,-100,0,3,1,60)])
+add('tick-plus-two-boundary', [BASE,row(1502,-100,0,2,2,70),row(1502.1,-100,0,3,1,60)])
+add('empty-timing', [], uncertain='Original discrete query returns null; tick request requires a point. No invented sample defaults.')
+add('short-two-columns', ['0,500'], uncertain='Original two-column bank/index depend on unreconstructed global state; production timing succeeds, sound error expected.')
+add('short-four-columns', ['0,500,4,1'], uncertain='Original omitted volume uses caller operand; production sound error expected.')
+add('invalid-sample-bank', ['0,500,4,x,1,40,1,0'], uncertain='Original metadata reader drops malformed row; production retains travel row and reports sound error. Original full-load consequence unresolved.')
+add('zero-bank-volume-clamp', [row(bank=0,volume=150)])
+add('unusual-sample-fields', [row(bank=-1,index=-2,volume=-20)], uncertain='Discrete enum fallback and negative index clamping; continuing admission explicitly unsupported.')
+add('zero-base-rejected', [row(b=0)], reject='positive base beat lengths', uncertain='ENGINEERING exclusion; no original nonpositive base runtime oracle.')
+add('negative-base-rejected', [row(b=-500)], reject='positive base beat lengths', uncertain='ENGINEERING exclusion; no original nonpositive base runtime oracle.')
+add('nonfinite-base-rejected', [row(b='NaN')], reject='finite', uncertain='ENGINEERING finite guard; original CLR exceptional conversions NOT VERIFIED.')
+add('invalid-flag-rejected', ['0,500,4,1,1,40,2,0'], reject='uninherited', uncertain='ENGINEERING strict flag; original first-character rule differs in metadata stage.')
+add('missing-beat-rejected', ['0'], reject='time and beat length', uncertain='Malformed original metadata row returns null; whole original load NOT VERIFIED.')
+add('two-traversal-control', [BASE], spans=2)
+add('multi-parent-registration', [BASE,row(3500,-50,0,2,2,70)], second=True)
+for version in range(5,14):
+    add(f'version-{version}', [BASE,row(500,-50,0,2,2,70)], version=version)
+
+def parse(rows):
+    points=[]; error=False
+    for text in rows:
+        cells=text.split(','); t,u=map(float,cells[:2]); base=len(cells)<7 or cells[6]=='1'
+        if not base and u>=0: u=-100.
+        try:
+            bank,index,vol=int(cells[3]),int(cells[4]),int(cells[5]); bank=2 if bank==0 else bank
+            sample=[bank,index,max(0,min(100,vol))]
+        except (ValueError,IndexError): sample=None;error=True
+        points.append(dict(time=t,beat=u,base=base,sample=sample))
+    return points,error
+def at(points,time):
+    matches=[i for i,p in enumerate(points) if p['time']<=time]
+    return matches[-1] if matches else (0 if points else -1)
+def predict(points,version,start,spans):
+    base=[i for i,p in enumerate(points) if p['base'] and math.trunc(p['time'])<=start]
+    inherited=[i for i,p in enumerate(points) if not p['base'] and math.trunc(p['time'])<=start]
+    bi=base[-1] if base else 0; ii=inherited[-1] if inherited else 0
+    effective=points[bi]['beat']*(factor(points[ii]['beat']) if ii>bi else 1.) if points else 0.
+    # Preserve E005 M28ab's documented divide-then-multiply chronology.
+    # Collapsing to 100000/E changes the last bit at E=600 and the int end.
+    speed=100.*(1000./effective) if effective>0 else 100.
+    raw=at(points,start); f=factor(points[raw]['beat']) if raw>=0 else 1.
+    q=min(400.,100. if version<8 else 100./f)
+    duration=400000./speed; end=math.trunc(start+duration*spans)
+    # Uniform distance lattice on one exact length400 straight segment. The only
+    # repeated control has q=100, exact endpoint suppression and zero phase carry.
+    assert spans==1 or q==100.
+    dates=[]; kinds=[]
+    for traversal in range(spans):
+        k=1
+        while k*q<=400.:
+            d=k*q
+            if 400.-d<=.01*speed: break
+            dates.append(math.trunc(start+((single(traversal*400.+d)/speed)*1000.)))
+            kinds.append('Interior'); k+=1
+        dates.append(math.trunc(start+((single((traversal+1)*400.)/speed)*1000.)))
+        kinds.append('Final' if traversal==spans-1 else 'Repeat')
+    dates[-1]=max(start+(end-start)//2,dates[-1]-36)
+    sample_queries=[start+5]+[t+2 for t in dates]+[end+5]
+    return dict(start=start,base_index=bi,inherited_index=ii,raw_index=raw,effective_beat=effective,
+                speed=speed,q=q,end=end,dates=dates,kinds=kinds,sample_queries=sample_queries,
+                sample_positions=[at(points,t) for t in sample_queries])
+
+def save(path,data):
+    path.parent.mkdir(parents=True,exist_ok=True)
+    if path.exists(): assert path.read_bytes()==data, f'Immutable mismatch: {path}'
+    else: path.write_bytes(data)
+manifest=[]
+for case in CASES:
+    hit=[f"56,192,{case['start']},2,0,L|456:192,{case['spans']},400"]
+    if case['second']: hit += ['56,192,5000,2,0,L|456:192,1,400','256,192,8000,1,0,0:0:0:0:']
+    text=f"osu file format v{case['version']}\n[General]\nMode:0\nAudioFilename:control.wav\n[Metadata]\nTitle:Issue22 {case['id']}\nVersion:Control\n[Difficulty]\nHPDrainRate:5\nCircleSize:4\nOverallDifficulty:5\nApproachRate:5\nSliderMultiplier:1\nSliderTickRate:1\nStackLeniency:0\n[TimingPoints]\n"+'\n'.join(case['rows'])+'\n[HitObjects]\n'+'\n'.join(hit)+'\n'
+    path=ROOT/'fixtures'/case['id']/'control.osu'; data=text.encode();save(path,data)
+    result={**case,'path':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(data).hexdigest(),
+            'provenance':'E005 M1be3/M1be4/M28ff/M0b75; E016/E021/E022; E037 M1be6; E039; finite Mode0 only'}
+    if not case['reject']:
+        points,error=parse(case['rows']);result.update(points=points,sample_error=error,
+          expected=[predict(points,case['version'],case['start'],case['spans'])])
+        if case['second']: result['expected'].append(predict(points,case['version'],5000,1))
+    manifest.append(result)
+# Author-owned PCM16 sine; deliberately larger than original short-map threshold.
+buf=io.BytesIO()
+with wave.open(buf,'wb') as w:
+    w.setparams((1,2,44100,0,'NONE','not compressed'))
+    w.writeframes(b''.join(struct.pack('<h',int(8000*math.sin(2*math.pi*440*i/44100))) for i in range(8820)))
+wav=buf.getvalue();save(ROOT/'resources'/'tone.wav',wav)
+save(ROOT/'manifest.json',(json.dumps(dict(schema='issue22-v1',cases=manifest,
+  resource_sha256=hashlib.sha256(wav).hexdigest(),confidence='RECONSTRUCTED original-static predictions; not original runtime'),indent=2)+'\n').encode())
+print(f'Sealed {len(manifest)} charts; {sum(c["reject"] is not None for c in manifest)} engineering rejections; one original synthetic PCM WAV')

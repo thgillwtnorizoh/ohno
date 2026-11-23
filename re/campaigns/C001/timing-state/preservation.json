@@ -1,0 +1,12 @@
+{
+  "existing_files_changed": [
+    "re/campaigns/C001/coverage-matrix.md",
+    "re/campaigns/C001/dependency-register.md",
+    "re/campaigns/C001/discrepancy-register.md",
+    "re/campaigns/C001/status.md",
+    "re/contexts.md"
+  ],
+  "all_append_only_prefixes_verified": true,
+  "production_diff": "",
+  "existing47_inputs_match_manifest": true
+}

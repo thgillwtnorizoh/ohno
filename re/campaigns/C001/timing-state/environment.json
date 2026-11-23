@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "dotnet": "8.0.427",
+  "production_build_hashes": {
+    "Checks/bin/Release/net8.0/Checks.pdb": "8a35a787cb3c062b665aecc72c545df7a3e7dd999f8ed03f0bd020bcf224252b",
+    "Checks/bin/Release/net8.0/Checks.dll": "049e1b8e8160ecc975375228314f3bfd156fb4dde4ce9021a66f2ead389e201d"
+  },
+  "date": "2026-11-23",
+  "client_timezone": "Asia/Bangkok"
+}

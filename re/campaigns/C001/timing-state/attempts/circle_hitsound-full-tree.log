@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_circle_hitsound.py", line 83, in <module>
+    if __name__=='__main__':check(json.loads(pathlib.Path(sys.argv[1]).read_text(encoding='utf-8')))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_circle_hitsound.py", line 77, in check
+    for token,v in old.get('methods',{}).items():
+                   ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'

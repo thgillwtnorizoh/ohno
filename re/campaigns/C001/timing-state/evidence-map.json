@@ -1,0 +1,102 @@
+{
+  "methods": {
+    "0x60028ff": {
+      "body_sha256": "889671c34d509d972016346ffe872fc8f008f937e999ed0f9a2b62c96101f29f",
+      "authority": [
+        "05/slider-timing.json",
+        "37/circle-hitsound.json"
+      ]
+    },
+    "0x6000b73": {
+      "body_sha256": "2e2cd8063cb1520dd8f6bcae6fbb6da5dfcd1153a3f9f5d6bed1a2e6c768e2cc",
+      "authority": [
+        "05/slider-timing.json",
+        "37/circle-hitsound.json",
+        "39/slider-hitsounds.json",
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x6000b75": {
+      "body_sha256": "55caf22cfadfa476d1c0597a8087280e01aac7de3dcd913ad1b1b48eaef9e8d4",
+      "authority": [
+        "05/slider-timing.json",
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x6000b78": {
+      "body_sha256": "0764601d767205f0a2791b92afe363b8b54462e9c5cec94a87bcd5937208fcb2",
+      "authority": [
+        "05/slider-timing.json"
+      ]
+    },
+    "0x6001be3": {
+      "body_sha256": "c73e952338744c6b6a9c9d82baef4e3614f74d72e15e619efbb80c55d77ff192",
+      "authority": [
+        "05/slider-timing.json"
+      ]
+    },
+    "0x6001be4": {
+      "body_sha256": "e492dc74ed78dea50eebc98025cab87e3a0c71da6c60c6602bd5d612a52f4184",
+      "authority": [
+        "05/slider-timing.json"
+      ]
+    },
+    "0x6001be6": {
+      "body_sha256": "64ebe05ef4ffa08d0818b1396eef417f2e2dc0457d23901bdaffa2276832d7cc",
+      "authority": [
+        "05/slider-timing.json",
+        "37/circle-hitsound.json",
+        "39/slider-hitsounds.json",
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x60028ab": {
+      "body_sha256": "23c19093455aa7b4a080901dacd532b8e53be8f8ce9d17dcbde724467e3b6d56",
+      "authority": [
+        "05/slider-timing.json"
+      ]
+    },
+    "0x600144a": {
+      "body_sha256": "d58260ebed39834edc228b1b21995da8481e87bbc342223db2b812c7c9b7ceef",
+      "authority": [
+        "05/slider-timing.json",
+        "39/slider-hitsounds.json"
+      ]
+    },
+    "0x60024bb": {
+      "body_sha256": "562e53e79e1e025eb14ef07c0bb7065d481eae11ba91e55f2f4c85b7a50bc734",
+      "authority": [
+        "37/circle-hitsound.json",
+        "38/hitsound-resources.json",
+        "39/slider-hitsounds.json",
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x6003b66": {
+      "body_sha256": "0e50d3e151f5d094c10b7b66b938ebef770df7865781a40134faa24438c9527f",
+      "authority": [
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x6000b7e": {
+      "body_sha256": "32bea7c4a797722f0cbea9e2918d9fb9da0eb6784cb8c5632b6cef354b1f2e7a",
+      "authority": [
+        "40/slider-continuous-audio.json"
+      ]
+    },
+    "0x600224d": {
+      "body_sha256": "1b258f08543eb9f9a372468c7debd5def1af9f9b0975684d1c469e6d7de2932d",
+      "authority": [
+        "40/slider-continuous-audio.json"
+      ]
+    }
+  },
+  "authority_sha256": {
+    "05/slider-timing.json": "fd57d35c5405d0b50a6fb4e3696aac3e779eef517d79e4e568646d6ed1fad399",
+    "37/circle-hitsound.json": "7fc63d473be5f30bb39714b0b726f449abb9765a8fe25adbcea3282f71ce536c",
+    "38/hitsound-resources.json": "f61b5e16baa403731488953301085e1a456b3bceceb8db7d86bd9c9f3b1fd659",
+    "39/slider-hitsounds.json": "2a45c9a2d6565246cfe9a627f6ef96929f7c36cd81fd4c9780e8d5375ad58a6e",
+    "40/slider-continuous-audio.json": "c4f5219a5f3ab36ec184335135fa9f233f7bc3b340905aeef2f4e555344b387b"
+  },
+  "boundary": "Selector behavior for supplied list state; E040 initialization sort/alias reachability is a separate original lifecycle dependency."
+}

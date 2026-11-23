@@ -354,3 +354,28 @@ source/results/seals: linear-control-qa/. Prior1876research records/prefixes ret
 Next Headquarters review/finite disposition; owner/runtime/wider campaign gates
 remain OPEN. Issue21/20/C001/subsystem and original-runtime Issue4 OPEN; no owner
 rescan, original equivalence or acceptance claim.
+
+
+## 2026-11-23 — Issue22 timing-point/sample-state characterization
+
+Work1 VERIFIED CHECKPOINT; starting main e4fbf88d7512420add0afb1ba02e4dd7a9f993b8;
+exact functional source5dda483348e21e79c8354bf6ea322d50b7fb3e72, all CircleGame/
+CorpusAudit source bytes identical.47 sealed synthetic charts;2180/2180 independent
+actual-production assertions PASS,42 loader admissions (38 connected sound/4 explicit
+sound limitations),5 ENGINEERING exclusions. Retained development264/264, QA10
+229/229 and QA11 247/247 PASS; five inherited static semantic envelopes PASS. Four
+full-tree historical checker schema failures retained separately, not relabeled.
+See original-behavior/20-timing-point-state.md and timing-state/ for complete UEP
+report, immutable inputs, independent scalar/date/query oracles, source/archive/exe
+identities, real PCM/request ownership, exact commands, initial failures and seals.
+CONFIRMED ORIGINAL selectors distinguish truncated-time last-base/inherited-index
+speed from raw-time last-position spacing/samples and separately sorted global
+rescan/forward cursor. RECONSTRUCTED finite predictions VERIFIED COMPONENT only;
+original/native/x86/Windows/GUI/audible/device/owner corpus NOT RUN. Initial E600
+algebraic oracle chronology error2040/2042 and corrected44-case2042/2042 preserved;
+final47 cases2180/2180. No production/historical fixture change or new supported
+production fix. Original initialization's shared-list sort/alias visibility and
+short-row caller/global defaults remain research dependencies, not invented fixes.
+Next bounded actor Work1 traces M224d/same-map identity/list mutation into M1be6
+before any Work2 ordering change. No corpus scan or full Windows/historical rerun;
+C001/subsystem and original-runtime Issue4 remain OPEN; owner acceptance not claimed.

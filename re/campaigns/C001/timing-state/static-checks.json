@@ -1,0 +1,67 @@
+[
+  {
+    "check": "slider_timing",
+    "full_tree_exit": 0,
+    "isolated_exit": 0,
+    "stdout": "PASS: 57 methods, ruleset correction, virtual slots, timing/length/arithmetic sites, versions, separate writer; 19 E04 body hashes agree\n",
+    "excluded_envelopes": [
+      "re/evidence/45/execution.json",
+      "re/evidence/45/historical-checks.json",
+      "re/evidence/44/historical-checks.json",
+      "re/evidence/46/focused-methods.json",
+      "re/evidence/46/trace-reassessment.json"
+    ]
+  },
+  {
+    "check": "circle_hitsound",
+    "full_tree_exit": 1,
+    "isolated_exit": 0,
+    "stdout": "PASS E037: 82 methods;19659 bodies;241 historical body hashes; trigger/selection/queue/native relationships; no audio execution\n",
+    "excluded_envelopes": [
+      "re/evidence/45/execution.json",
+      "re/evidence/45/historical-checks.json",
+      "re/evidence/44/historical-checks.json",
+      "re/evidence/46/focused-methods.json",
+      "re/evidence/46/trace-reassessment.json"
+    ]
+  },
+  {
+    "check": "hitsound_resources",
+    "full_tree_exit": 1,
+    "isolated_exit": 0,
+    "stdout": "PASS E038: 112 methods; 56 strings; 0 independently decoded from archive; 12 embedded keys; 196 historical body hashes; no audio execution\n",
+    "excluded_envelopes": [
+      "re/evidence/45/execution.json",
+      "re/evidence/45/historical-checks.json",
+      "re/evidence/44/historical-checks.json",
+      "re/evidence/46/focused-methods.json",
+      "re/evidence/46/trace-reassessment.json"
+    ]
+  },
+  {
+    "check": "slider_hitsounds",
+    "full_tree_exit": 1,
+    "isolated_exit": 0,
+    "stdout": "PASS E039:92 methods;19659 bodies;530 historical body hashes;head/audio-index/edge/tick/loop/resource relationships;48 conditional cases;no runtime/audio execution\n",
+    "excluded_envelopes": [
+      "re/evidence/45/execution.json",
+      "re/evidence/45/historical-checks.json",
+      "re/evidence/44/historical-checks.json",
+      "re/evidence/46/focused-methods.json",
+      "re/evidence/46/trace-reassessment.json"
+    ]
+  },
+  {
+    "check": "slider_continuous_audio",
+    "full_tree_exit": 1,
+    "isolated_exit": 0,
+    "stdout": "PASS E040: 119 methods;26 direct channel accesses;501 historical body hashes;56 conditional controls;archive audit=False;no runtime/native/audio execution\n",
+    "excluded_envelopes": [
+      "re/evidence/45/execution.json",
+      "re/evidence/45/historical-checks.json",
+      "re/evidence/44/historical-checks.json",
+      "re/evidence/46/focused-methods.json",
+      "re/evidence/46/trace-reassessment.json"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_slider_hitsounds.py", line 239, in <module>
+    check(json.loads(Path(sys.argv[1]).read_text(encoding='utf-8')),sys.argv[2] if len(sys.argv)>2 else None)
+  File "/workspace/scratch/b8464481b75d/ohno/re/tools/check_slider_hitsounds.py", line 194, in check
+    for token,value in old.get('methods',{}).items():
+                       ^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
