@@ -1,0 +1,29 @@
+2026-11-24T17:03:45.4950942Z     0 Warning(s)
+2026-11-24T17:03:45.4951385Z     0 Error(s)
+2026-11-24T17:03:55.3266953Z QA15 HEADLESS: 95 passed, 0 failed
+2026-11-24T17:04:05.0819083Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-24T17:04:07.6694837Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-24T17:04:12.3941390Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-24T17:04:16.9910189Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-24T17:04:26.0790661Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-24T17:04:30.5428533Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-24T17:04:35.0729033Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-24T17:04:42.6338752Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-24T17:04:56.2047534Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-24T17:05:06.8099494Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-24T17:05:27.6565353Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-24T17:05:30.2356618Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-24T17:05:35.8651589Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-24T17:05:40.6699758Z PASS R16 43 bundled existing development fixtures discover without rewriting source files
+2026-11-24T17:05:40.8486983Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input
+2026-11-24T17:06:34.5980936Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls
+2026-11-24T17:06:51.8497841Z R17 DEVELOPMENT: 82 groups passed; 89878 finite scalar comparisons; last1 source inspection; research controls not added to independent QA
+2026-11-24T17:06:57.7005346Z C001 DEVELOPMENT: 264/264 PASS
+2026-11-24T17:07:02.5196844Z C001 TIMING INITIALIZATION: 536/550 PASS, 14 FAIL;12 exact controls/2 conditional domains;55 recorded requests
+2026-11-24T17:07:04.9858419Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution
+2026-11-24T17:07:12.1005177Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions
+2026-11-24T17:07:25.9235543Z Issue20 development 5430/5430 PASS; 112/56; +74 lost0
+2026-11-24T17:07:37.9145606Z Issue18 development 3974/3974 PASS;86 prepared/20 excluded;45 additions
+2026-11-24T17:07:41.8201835Z Issue15 development 1503/1503 PASS; 59 prepared; 41 rejected; 12 consumer controls
+2026-11-24T17:07:45.3675897Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures
+2026-11-24T17:07:50.1580666Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN

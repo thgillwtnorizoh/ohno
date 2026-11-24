@@ -1,0 +1,20 @@
+{
+  "run": 45444179661,
+  "number": 85,
+  "job": 138623260456,
+  "source": "f76c26a05ae88587bb44440fbe078ac75b59fb41",
+  "status": "FAILED exact-byte fixture gate; production behavior checks pass",
+  "windows_passed": 536,
+  "windows_failed": 14,
+  "executed": 550,
+  "recorded_requests": 55,
+  "artifact": 14943674638,
+  "artifact_zip_sha256": "6f7b86ef35a61f19f91595a77451897110c65cc0eebbc245bc8c5f0dcd890a9c",
+  "self_contained_publish": "SKIPPED due failed gate; partial evidence artifact only",
+  "reproduction": "git -c core.autocrlf=true worktree add --detach /tmp/issue24-crlf f76c26a05ae88587bb44440fbe078ac75b59fb41; dotnet run --project <copy>/reconstructed/C001TimingInitializationChecks -c Release -- <copy> <output>",
+  "reproduced_exact_failure_set": true,
+  "original_lf_sha256": "5290087b7b14d5ce6a0b37633d3fde5f3e8bb56a31661b3001ba83dcab073b0c",
+  "crlf_sha256": "c9308a85fdef20e2561b5019357d8f824a650d1d514b0bfedca7526c3cb67027",
+  "normalized_matches_original": true,
+  "correction": "Set core.autocrlf=false BEFORE actions/checkout; no production/original-fixture/oracle change"
+}

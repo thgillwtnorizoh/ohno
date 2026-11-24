@@ -318,3 +318,24 @@ exact new-source Windows run/artifact still required, old run84 not substituted.
 Development is not independent Work1 QA. Original/native/x86/GUI/audible/input/
 owner corpus NOT RUN; campaign/Issue4/subsystem OPEN, no owner acceptance.
 Next Work2 exact-source Windows gate then Headquarters/Work1 independent QA.
+
+
+## 2026-11-24 — Windows85 exact-byte checkout blocker and CI-only correction
+
+Run85/45444179661,job138623260456, exact functionalf76c26a05ae88587bb44440fbe078ac75b59fb41
+completed FAILURE:52 steps succeeded, new timing suite536/550PASS/14FAIL, self-contained
+publish SKIPPED. All14 failures are immutable fixture SHA checks; all536 other
+assertions and55 real sample requests pass. Partial evidence artifact14943674638
+downloaded and SHA2566f7b86ef35a61f19f91595a77451897110c65cc0eebbc245bc8c5f0dcd890a9c
+verified. It contains NO delivered application. Full failed job/log/results preserved
+in issue24-development/windows85-failure/.
+
+A separate git -c core.autocrlf=true worktree of the exact source reproduces the
+identical536PASS/14FAIL IDs, with LF fixtures converted to CRLF; normalizing that
+copy recovers original fixture hashes. Original primary/remote Work1 files and
+expectations unchanged. CI correction sets core.autocrlf=false BEFORE checkout.
+No production/harness/oracle changes. A corrected exact-source Windows gate is
+necessary; failed85 is not relabeled success and old84 is not substituted.
+Initial verify.py intentionally pins the first workflow; verify_delivery.py checks
+the CI-only descendant plus unchanged production/Work1/initial evidence.
+C001/subsystem/Issue4 OPEN, independent Work1 QA and owner acceptance pending.

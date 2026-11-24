@@ -1,0 +1,15 @@
+FAIL base: immutable original fixture null
+FAIL equal-base-inherited: immutable original fixture null
+FAIL equal-inherited-base: immutable original fixture null
+FAIL reverse-base-times: immutable original fixture null
+FAIL reverse-inherited-times: immutable original fixture null
+FAIL base-index-resets-factor: immutable original fixture null
+FAIL future-does-not-stop-scan: immutable original fixture null
+FAIL fraction-after-start: immutable original fixture null
+FAIL fraction-before-start: immutable original fixture null
+FAIL positive-fraction-after-zero: immutable original fixture null
+FAIL negative-fraction-before-zero: immutable original fixture null
+FAIL multi-parent-registration: immutable original fixture null
+FAIL equal-two-bases: immutable original fixture null
+FAIL equal-two-inherited: immutable original fixture null
+C001 TIMING INITIALIZATION: 536/550 PASS, 14 FAIL;12 exact controls/2 conditional domains;55 recorded requests

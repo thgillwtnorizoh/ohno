@@ -85,6 +85,10 @@ jobs:
     runs-on: windows-2022
     timeout-minutes: 12
     steps:
+      - name: Preserve exact source and immutable fixture bytes
+        shell: pwsh
+        run: git config --global core.autocrlf false
+
       - name: Checkout exact gate commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
