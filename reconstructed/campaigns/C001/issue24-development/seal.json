@@ -1,0 +1,32 @@
+{
+  "files": {
+    "C001CatmullChecks": "e343758bd5438b8bbec97addf4d5c8f2eff1c656b6fe8a31df48bb0ce9a30362",
+    "C001PerfectChecks": "f893f452c98e63086c4408a6e2f36808c4b444225418150016ad4f016d8d5f16",
+    "README.md": "0443b7d3e5c4ba2397c8028633c66b3e26cc51d6cc45dd197f7c30028bf96ed3",
+    "commands.json": "c214da54bb85556880c8730c771c3ec495cf585c296f4f45addad6b4a43d490f",
+    "environment.json": "e5051816d413205f53895d97eab6968ba92e63a13e8e767239c51caa73b9bc66",
+    "first-build.log.gz.b64": "cf3333ebdf2097f5a9cefb5ef0b4c2b179fb0babd7d3849cb74962610456eaf6",
+    "local/results.json": "3a929137b7f92df646af65a3c0cf4a14d956f82687f1f6262bf7b5376a1a93e7",
+    "local-run.log": "90484b4ace722862fa7512b07bad396514fb9a63356bdc089ab9c635af19d074",
+    "packed-evidence.json": "f97e0025522ba0db0ea8ec87ca03b24dc53de1d01c7a8454877439383024e87f",
+    "provenance.json": "eba42ef2939a845fa03517a81c9f7703961c2514708d5593d4aa5a6026421fb7",
+    "qa10.json.gz.b64": "85636a058b07fa234dfb7ebc99b0547ac3b96eb6df37f4a5b7b0c528f7937e52",
+    "qa10.log.gz.b64": "d9785491087bccb381cb7d22c4b2e907850b7c94dfcc39ecfcfe365e566e11b2",
+    "qa11.json.gz.b64": "82da810a82e5369e559fc9dc5f72fe00db4312e4aab79c4c734e1dca6a7ff645",
+    "qa11.log.gz.b64": "8062188c8f672ea27520e2cce521a158618462dcf8588df6fa1b93b3ddb70e19",
+    "retained-C001CatmullChecks.log": "155f480a067d397bb789305c924824423d3de457f85a68d7df543f3a7fec3335",
+    "retained-C001DevelopmentChecks.log.gz.b64": "9d06eb111aa22ee453c751203fd904bfc8d750f06846005da5f4e930689b9fc6",
+    "retained-C001LegacySpinnerChecks.log": "49787b5037ee865cf603e3ada198cb700b3b172628f21ea467c46f37113dd8d0",
+    "retained-C001LinearControlChecks.log": "3b951cd7c4dd035fc4cd721b33fd26175b508bdb59c32dac7aa4ca7c96cf28d6",
+    "retained-C001NearSpinnerChecks.log": "5811c81f41a4d23a495f1319dbb10a9ab8e1879e268ffd33f1f20ef07f8d6862",
+    "retained-C001PerfectChecks.log": "58db28c2b39f5efbcf13240aa386e545382c298f5cc1deb52731fb09a99e54ed",
+    "retained-C001TraversalChecks.log": "a5775474e7459294b38a1377c40e41ca3b9e51df54e8817e7c24f04958ce4921",
+    "retained-C001VersionedSpinnerChecks.log": "b6de00395a274d4953b5320e1ac90d2d60645eccc0626f38f4cfe2fc2a3bd659",
+    "retained-commands.json": "16c55786025e95de8f49dac2b43208e5bb7120a97e0fe8cb87574aaae487ca60",
+    "retained-development-results.json": "ed71e9f1b6220eccd6c260b14c29a611adc966616b10af6f3212ea5605e6708b",
+    "retained-output-hashes.json": "097eabe7b531b71a4d6b909e15f434eb4a5b34e55f5d55cc65aba7f4752ee3d9",
+    "retained-outputs.zip.b64": "819b0dfe0b46e5391793b8164edda38318762fc409af0e77938c74bb87bb1252",
+    "retained-summary.json": "05049568d1c2637210818c5fceb850e67fd86d6ef78c9aa751c5f38a7f12e0e0",
+    "verify.py": "8ad061269a504d1aec5874541550b6e44f3a0393dace745843009628daf5a19a"
+  }
+}

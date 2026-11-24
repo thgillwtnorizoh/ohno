@@ -835,6 +835,44 @@ public sealed record SliderSoundMetadata(int RawSound, int RawTraversals, int Ef
     }
 }
 public sealed record SampleTiming(double Time, int Set, int Index, int Volume, bool Uninherited, int SourceOrder);
+// C001/Issue24: raw provenance and initialized ordinary state are distinct owners.
+// Original M28f5->M28be(false,true,true)->M3b66 sorts BEFORE object preparation.
+// ENGINEERING owned snapshot; equal time/equal flag has no claimed stable order.
+public sealed class OrdinaryTimingInitialization
+{
+    public IReadOnlyList<TimingPoint> RawPoints { get; }
+    public IReadOnlyList<SampleTiming> RawSamples { get; }
+    public IReadOnlyList<TimingPoint> Points { get; }
+    public IReadOnlyList<SampleTiming> Samples { get; }
+    public IReadOnlyList<int> SourcePositions { get; }
+    public bool HasAmbiguousKeys { get; }
+    internal List<TimingPoint> TravelPoints { get; }
+    internal List<SampleTiming> SampleRecords { get; }
+    private OrdinaryTimingInitialization(List<TimingPoint> points, List<SampleTiming> samples, CancellationToken token)
+    {
+        RawPoints = Array.AsReadOnly(points.ToArray());
+        RawSamples = Array.AsReadOnly(samples.ToArray());
+        int[] order = Enumerable.Range(0, points.Count).ToArray();
+        token.ThrowIfCancellationRequested();
+        Array.Sort(order, (a, b) => points[a].Time != points[b].Time ? points[a].Time.CompareTo(points[b].Time) :
+            points[b].IsBase.CompareTo(points[a].IsBase)); // No SourceOrder tie-breaker.
+        token.ThrowIfCancellationRequested();
+        TravelPoints = new(points.Count); SampleRecords = new(samples.Count);
+        var byPosition = samples.ToDictionary(s => s.SourceOrder);
+        for (int i = 0; i < order.Length; i++)
+        {
+            token.ThrowIfCancellationRequested();
+            int source = order[i]; TravelPoints.Add(points[source]);
+            if (byPosition.TryGetValue(source, out var sample)) SampleRecords.Add(sample);
+            if (i > 0 && points[order[i - 1]].Time == points[source].Time &&
+                points[order[i - 1]].IsBase == points[source].IsBase) HasAmbiguousKeys = true;
+        }
+        Points = TravelPoints.AsReadOnly(); Samples = SampleRecords.AsReadOnly();
+        SourcePositions = Array.AsReadOnly(order);
+    }
+    internal static OrdinaryTimingInitialization Prepare(List<TimingPoint> points, List<SampleTiming> samples, CancellationToken token)
+        => new(points, samples, token);
+}
 public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Index, string Filename, string? Error)
 {
     public SpinnerDefinition? Spinner { get; init; }
@@ -843,6 +881,8 @@ public sealed record SamplePreparationOperand(CircleDefinition? Circle, int Inde
 public sealed record CircleSoundMap(string Directory, int Format, IReadOnlyList<CircleSampleMetadata> Circles,
     IReadOnlyList<SampleTiming> Timing, string? TimingError)
 {
+    public OrdinaryTimingInitialization? Initialization { get; init; }
+    public IReadOnlyList<SampleTiming> RawTiming => Initialization?.RawSamples ?? Timing;
     public IReadOnlyList<SpinnerSampleMetadata> Spinners { get; init; } = Array.Empty<SpinnerSampleMetadata>();
     // Shared resource preloading only. No slider/spinner playback hook is added.
     public IReadOnlyList<SamplePreparationOperand> RegisteredOverrides { get; init; } = Array.Empty<SamplePreparationOperand>();
@@ -866,6 +906,7 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
     public MapDisplayMetadata? DisplayMetadata { get; init; }
     public HealthMapSource? HealthSource { get; init; }
     public CircleSoundMap? CircleSounds { get; init; }
+    public OrdinaryTimingInitialization? TimingInitialization { get; init; }
 
     // Optional local media reference; the gameplay model remains independent of WPF.
     public string? AudioPath { get; init; }
@@ -1065,6 +1106,19 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
             if (healthRows.Zip(healthRows.Skip(1)).Any(p => p.First.Start >= p.Second.Start))
                 throw new InvalidDataException("Versioned spinner requires strictly increasing registered source order.");
         }
+        // Raw definitions above have not selected timing/sample banks. Establish
+        // the shared initialized state before any slider/head sample preparation.
+        OrdinaryTimingInitialization? initializedTiming = null;
+        if (extendedPaths)
+        {
+            progress?.Invoke("timing-initialization", -1, -1);
+            token.ThrowIfCancellationRequested();
+            initializedTiming = OrdinaryTimingInitialization.Prepare(timing, sampleTiming, token);
+            timing = initializedTiming.TravelPoints;
+            sampleTiming = initializedTiming.SampleRecords;
+            progress?.Invoke("timing-initialized", -1, -1);
+            token.ThrowIfCancellationRequested();
+        }
         circles.Sort((a, b) => a.StartTime.CompareTo(b.StartTime));
         var starts = circles.Select(c => c.StartTime).Concat(sliderRows.Select(s => s.Head.StartTime))
             .Concat(spinners.Select(s => s.StartTime)).Order().ToArray();
@@ -1143,11 +1197,12 @@ public sealed record Beatmap(string Title, float CircleSize, float OverallDiffic
         }
         var map = new Beatmap(title, Difficulty("CircleSize"), Difficulty("OverallDifficulty"),
             Difficulty("ApproachRate"), circles.AsReadOnly()) { Document = document, MetadataSettings = settings, AudioPath = audioPath, Sliders = sliders.AsReadOnly(),
+                TimingInitialization = initializedTiming,
                 Spinners = spinners.OrderBy(s => s.StartTime).ToArray(), DisplayMetadata = new(fields.GetValueOrDefault("[Metadata]Version"), fields.GetValueOrDefault("[Metadata]Artist")), ScoreMetadata = LegacyScoreMetadata.ReadFresh(document, extendedPaths),
                 HealthSource = new(version, healthRows.AsReadOnly(), healthBreaks.AsReadOnly()) { OriginalFactoryPriority = extendedPaths },
                 CircleSounds = new(Path.GetDirectoryName(Path.GetFullPath(path))!, version,
-                    circleSamples.AsReadOnly(), sampleTiming.AsReadOnly(), sampleTimingError)
-                    { RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };
+                    circleSamples.AsReadOnly(), initializedTiming?.Samples ?? sampleTiming.AsReadOnly(), sampleTimingError)
+                    { Initialization = initializedTiming, RegisteredOverrides = sampleOperands.AsReadOnly(), Spinners = spinnerSamples.AsReadOnly() } };
         progress?.Invoke("map-publication", -1, -1);
         token.ThrowIfCancellationRequested();
         map.HealthSource!.BindFreshOwner(map);

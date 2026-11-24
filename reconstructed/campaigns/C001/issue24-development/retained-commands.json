@@ -1,0 +1,122 @@
+[
+  {
+    "project": "C001DevelopmentChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001DevelopmentChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001DevelopmentChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001PerfectChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001PerfectChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001PerfectChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001CatmullChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001CatmullChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001CatmullChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001VersionedSpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001VersionedSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001VersionedSpinnerChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001LegacySpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001LegacySpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001LegacySpinnerChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001NearSpinnerChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001NearSpinnerChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001NearSpinnerChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001TraversalChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001TraversalChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001TraversalChecks"
+    ],
+    "exit": 0
+  },
+  {
+    "project": "C001LinearControlChecks",
+    "command": [
+      "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet",
+      "run",
+      "--project",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/C001LinearControlChecks",
+      "-c",
+      "Release",
+      "--",
+      "/workspace/scratch/b8464481b75d/ohno",
+      "/workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/C001LinearControlChecks"
+    ],
+    "exit": 0
+  }
+]

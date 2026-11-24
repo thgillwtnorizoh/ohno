@@ -6,6 +6,7 @@ on:
     paths:
       - reconstructed/campaigns/C001/**
       - reconstructed/C001DevelopmentChecks/**
+      - reconstructed/C001TimingInitializationChecks/**
       - reconstructed/C001PerfectChecks/**
       - reconstructed/C001CatmullChecks/**
       - reconstructed/C001VersionedSpinnerChecks/**
@@ -420,6 +421,13 @@ jobs:
           dotnet run --project reconstructed/C001DevelopmentChecks/C001DevelopmentChecks.csproj -c Release -- "$env:GITHUB_WORKSPACE"
           exit $LASTEXITCODE
 
+      - name: Check Issue24 original-initialized timing and real sample consumers
+        if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          dotnet run --project reconstructed/C001TimingInitializationChecks -c Release -- "$env:GITHUB_WORKSPACE" "${{ runner.temp }}/c001-timing-initialization"
+          exit $LASTEXITCODE
+
       - name: Check C001 finite Perfect-circle geometry and consumers
         if: ${{ !cancelled() && steps.sdk.outcome == 'success' }}
         shell: pwsh
@@ -525,6 +533,7 @@ jobs:
             ${{ runner.temp }}/ohno-c001-windows/
             reconstructed/campaigns/C001/development-results.json
             ${{ runner.temp }}/c001-independent-results.json
+            ${{ runner.temp }}/c001-timing-initialization/
             ${{ runner.temp }}/c001-perfect-results.json
             ${{ runner.temp }}/c001-catmull-results.json
             ${{ runner.temp }}/c001-stacking-heads.json

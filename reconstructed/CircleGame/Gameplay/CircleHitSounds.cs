@@ -388,20 +388,25 @@ public static class SliderSampleSelection
 public sealed class GlobalSampleTiming
 {
     private readonly List<SampleTiming> points;
+    private bool initializationRescan;
     public IReadOnlyList<SampleTiming> Points => points;
     public int BaseCursor { get; private set; } = -1;
     public int AllCursor { get; private set; } = -1;
     public int Sentinel { get; private set; } = -999;
     public SampleTiming? Current => AllCursor >= 0 && AllCursor < points.Count ? points[AllCursor] : null;
-    public GlobalSampleTiming(IEnumerable<SampleTiming> timing)
+    public GlobalSampleTiming(IEnumerable<SampleTiming> timing) : this(timing, false) { }
+    public GlobalSampleTiming(IEnumerable<SampleTiming> timing, bool initializeAtFirstClock)
     {
         points = timing.ToList();
+        initializationRescan = initializeAtFirstClock;
         if (points.Any(p => !double.IsFinite(p.Time) || p.Set is < 0 or > 3 || p.Index < 0 || p.Volume is < 0 or > 100))
             throw new InvalidDataException("Unsupported continuing timing operands.");
     }
     public void Reset() { BaseCursor = AllCursor = -1; Sentinel = -999; }
     public void Advance(int time, bool rescan = false, int audioState = 1)
     {
+        rescan |= initializationRescan;
+        initializationRescan = false;
         int query = unchecked(time + 5);
         if (points.Count == 0) { Reset(); return; }
         if (rescan) points.Sort((a, b) => a.Time != b.Time ? a.Time.CompareTo(b.Time) : b.Uninherited.CompareTo(a.Uninherited));

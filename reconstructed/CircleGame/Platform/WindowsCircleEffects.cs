@@ -121,7 +121,7 @@ public sealed class WindowsCircleEffects : IDisposable
             }));
             await result.loops.PrepareAsync(data.Samples, result.cache, token);
             if (data.ContinuousLimitation is null || (data.SpinnerLimitation is null && data.Spinners.Count > 0))
-                result.continuing = new(new GlobalSampleTiming(data.Source.Timing), result.loops, data.Resources.ResolveContinuing)
+                result.continuing = new(new GlobalSampleTiming(data.Source.Timing, initializeAtFirstClock: data.Source.Initialization is not null), result.loops, data.Resources.ResolveContinuing)
                 { SelectedFormat = data.Source.Format, SongFormat = data.Source.Format,
                   EffectVolume = library.Settings.VolumeEffect, UniversalVolume = library.Settings.VolumeUniversal };
             if (result.continuing is not null && data.SpinnerLimitation is null && data.Spinners.Count > 0)

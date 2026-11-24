@@ -1,0 +1,15 @@
+{
+  "starting_main": "22fedbf8f1ee7074d3f637e2a568eb66e566e81c",
+  "prior_functional": "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+  "source_sha256": {
+    "reconstructed/CircleGame/Gameplay/Beatmap.cs": "b57358af1759b016357f72bcae4cbee48ee83ab945ac627c40665c1f4bac3cbf",
+    "reconstructed/CircleGame/Gameplay/CircleHitSounds.cs": "8ba8d40e7d1a1461b952310723863d103db26b150cc2b3a9b3d49e9e50d333cb",
+    "reconstructed/CircleGame/Platform/LocalHitSoundAssets.cs": "355c456cd1c9da4306a7961d981df1080c20ee1af958051c378d795bf203d58d",
+    "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs": "142afa01781b618bbdb583131b2d3e09d83733764e30a671e4f12ce62878813b",
+    "reconstructed/C001TimingInitializationChecks/Program.cs": "47129fa2b5832d3a7faa4d7a00ab998f7f4eb70c28d43e7e743ca6a0296b0b2f",
+    "reconstructed/C001TimingInitializationChecks/C001TimingInitializationChecks.csproj": "d82ead6988453b8f886b4cf0e501402c482b2d5b280e5178a51c018fe8c75ed0",
+    ".github/workflows/r04-build.yml": "5757cdf3cdc8326ee5a2bca7bf8e2e2ef086e9041c19b230e7a2690d5da3e593"
+  },
+  "oracle_sha256": "257ec2f076ae26fb22797840acaaacf1cfab6f1e5badf19b15ec9440e1032168",
+  "work1_changes": []
+}

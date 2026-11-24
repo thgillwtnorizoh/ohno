@@ -228,3 +228,26 @@ v5/v6 continuing limits, source/version/profile exclusions, position-work limits
 historical star differences and other unresolved campaign requirements persist.
 HQ review then separately authorized Work1 QA remains required. Issue20/C001/
 subsystem/Issue4 OPEN. No owner acceptance, corpus-recovery forecast or rescan.
+
+
+## 2026-11-24 — Issue24 functional initialized-timing checkpoint
+
+Work2 functional development VERIFIED CHECKPOINT; Windows gate PENDING at this
+publication. Starting main22fedbf8f1ee7074d3f637e2a568eb66e566e81c; prior functional
+5dda483348e21e79c8354bf6ea322d50b7fb3e72. Canonical fresh Mode0 initialization now
+owns raw/provenance and prepared timing views, ordered by Double time/base-first
+before slider/head/sample preparation. Selectors and public/legacy behavior stay
+separate; raw out-of-order continuing guard remains active. Explicit first-clock
+rescan uses the initialized source without recomputing geometry. Equal-key order
+is only conditional; no SourceOrder tie-breaker/original stability claim.
+New550/550 development checks PASS,12 exact/2 conditional controls,55 actual PCM
+requests; minimal rate333.33333333333337/end2200/checkpoints1600,2164 and expected
+head/tick/finish identities/volumes verified. Retained264/299/4375/656/801/1502/3973/
+5429 and QA10 229/QA11 247 all PASS locally. Readonly Work1 evidence and old tests
+preserved. See19-issue24-timing-initialization.md and issue24-development/ for
+commands/source/input seals/environment/full traces. Windows workflow adds focused
+checks and artifact evidence to full historical Release/self-contained gate;
+exact new-source Windows run/artifact still required, old run84 not substituted.
+Development is not independent Work1 QA. Original/native/x86/GUI/audible/input/
+owner corpus NOT RUN; campaign/Issue4/subsystem OPEN, no owner acceptance.
+Next Work2 exact-source Windows gate then Headquarters/Work1 independent QA.

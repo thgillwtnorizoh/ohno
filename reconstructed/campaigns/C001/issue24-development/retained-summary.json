@@ -1,0 +1,44 @@
+{
+  "QA10": {
+    "passed": 229,
+    "failed": 0,
+    "executed": 229
+  },
+  "QA11": {
+    "passed": 247,
+    "failed": 0,
+    "executed": 247
+  },
+  "C001DevelopmentChecks": {
+    "exit": 0,
+    "summary": "C001 DEVELOPMENT: 264/264 PASS"
+  },
+  "C001PerfectChecks": {
+    "exit": 0,
+    "summary": "C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution"
+  },
+  "C001CatmullChecks": {
+    "exit": 0,
+    "summary": "C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions"
+  },
+  "C001VersionedSpinnerChecks": {
+    "exit": 0,
+    "summary": "VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures"
+  },
+  "C001LegacySpinnerChecks": {
+    "exit": 0,
+    "summary": "Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls"
+  },
+  "C001NearSpinnerChecks": {
+    "exit": 0,
+    "summary": "Issue15 development 1502/1502 PASS; 59 prepared; 41 rejected; 12 consumer controls"
+  },
+  "C001TraversalChecks": {
+    "exit": 0,
+    "summary": "Issue18 development 3973/3973 PASS;86 prepared/20 excluded;45 additions"
+  },
+  "C001LinearControlChecks": {
+    "exit": 0,
+    "summary": "Issue20 development 5429/5429 PASS; 112/56; +74 lost0"
+  }
+}

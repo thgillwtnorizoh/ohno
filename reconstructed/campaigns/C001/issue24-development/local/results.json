@@ -1,0 +1,3813 @@
+{
+  "schema": "issue24-development-v1",
+  "actor": "Work2 development; NOT independent Work1 QA",
+  "passed": 550,
+  "failed": 0,
+  "executed": 550,
+  "runtime": ".NET 8.0.33",
+  "os": "Debian GNU/Linux 13 (trixie)",
+  "sourceCommit": "local-hashed-candidate",
+  "sourceHashes": {
+    "Gameplay/Beatmap.cs": "b57358af1759b016357f72bcae4cbee48ee83ab945ac627c40665c1f4bac3cbf",
+    "Gameplay/CircleHitSounds.cs": "8ba8d40e7d1a1461b952310723863d103db26b150cc2b3a9b3d49e9e50d333cb",
+    "Platform/LocalHitSoundAssets.cs": "355c456cd1c9da4306a7961d981df1080c20ee1af958051c378d795bf203d58d",
+    "Platform/WindowsCircleEffects.cs": "142afa01781b618bbdb583131b2d3e09d83733764e30a671e4f12ce62878813b"
+  },
+  "authorityHash": "257ec2f076ae26fb22797840acaaacf1cfab6f1e5badf19b15ec9440e1032168",
+  "checks": [
+    {
+      "id": "base",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0
+      ]
+    },
+    {
+      "id": "base",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 200
+    },
+    {
+      "id": "base",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 3000
+    },
+    {
+      "id": "base",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        2000,
+        2500,
+        2964
+      ]
+    },
+    {
+      "id": "base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2000
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        1964
+      ]
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-base-inherited",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 333.33333333333337
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2200
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1600,
+        2164
+      ]
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "mandatory minimal PCM bank/index/volume",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "mandatory minimal PCM bank/index/volume",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "mandatory minimal PCM bank/index/volume",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "catalog selection commits",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "real selected chart captured for play",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "catalog captured canonical timing",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "stale catalog revision rejected",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "new revision initialized separately",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "pre-cancelled canonical load",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "cooperative initialization cancellation",
+      "passed": true,
+      "actual": "timing-initialization"
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "cooperative initialization cancellation",
+      "passed": true,
+      "actual": "timing-initialized"
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "cancelled candidate cannot mutate previous owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "2MiB preflight retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "canonical32 traversal fence retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "legacy16 traversal fence retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-inherited-base",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": "out-of-order continuing timing (model supports conditional controls only)"
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2000
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1250,
+        1500,
+        1750,
+        1964
+      ]
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-base-times",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": "out-of-order continuing timing (model supports conditional controls only)"
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2000
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        1964
+      ]
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "reverse-inherited-times",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": "out-of-order continuing timing (model supports conditional controls only)"
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 333.33333333333337
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2200
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1600,
+        2164
+      ]
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "base-index-resets-factor",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": "out-of-order continuing timing (model supports conditional controls only)"
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 100
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 5000
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        4964
+      ]
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2000
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1250,
+        1500,
+        1750,
+        1964
+      ]
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-after-start",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 2000
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        1964
+      ]
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "fraction-before-start",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 1000
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        250,
+        500,
+        750,
+        964
+      ]
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 1000
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        500,
+        964
+      ]
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "resource owner is fresh canonical map",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 200
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 3000
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        1500,
+        2000,
+        2500,
+        2964
+      ]
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized rate",
+      "passed": true,
+      "actual": 400
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized end",
+      "passed": true,
+      "actual": 6000
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent initialized checkpoint dates",
+      "passed": true,
+      "actual": [
+        5500,
+        5964
+      ]
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "independent head/tick/finish selection",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session retains canonical map owner",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "session produces real resource request",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "tagged sample parent identity",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "sample handle resolves real PCM",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "every parent head and aggregate finish exercised",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "disposed candidate clears map cache",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "multi-parent-registration",
+      "name": "fresh resource generation after disposal",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-bases",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "immutable original fixture",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "fresh initialized owner shared with samples",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "lossless raw document",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "raw encounter source positions",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "raw point time and flag provenance",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "sample record identity follows raw SourceOrder",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "raw view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "initialized view read-only",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "initialized comparator domain",
+      "passed": true,
+      "actual": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "equal-key ambiguity explicitly recorded",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "legacy supplied encounter profile retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "legacy prior rate/end retained",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "raw out-of-order continuing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "late rescan never recomputes geometry",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "equal-two-inherited",
+      "name": "late rescan leaves raw owner unchanged",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version fresh initialized state",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version continuing exclusion",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version fresh initialized state",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version continuing exclusion",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version fresh initialized state",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version continuing exclusion",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version fresh initialized state",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "old-version continuing exclusion",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "raw Double sample offset boundary",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "raw Double sample offset boundary",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "later event changes sample not prepared speed",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "sample error remains explicit",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "sample error remains explicit",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "sample error remains explicit",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "historical malformed timing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "historical malformed timing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "historical malformed timing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "historical malformed timing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "historical malformed timing fence",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "global initial rescan remains strict",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "global forward consumes equality",
+      "passed": true,
+      "actual": null
+    },
+    {
+      "id": "boundaries",
+      "name": "adapter source enables initialized clock route",
+      "passed": true,
+      "actual": null
+    }
+  ],
+  "recordedRequests": [
+    {
+      "fixture": "base",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 32,
+      "name": "normal-hitnormal"
+    },
+    {
+      "fixture": "base",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "base",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "base",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "base",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 32,
+      "name": "normal-hitnormal"
+    },
+    {
+      "fixture": "equal-base-inherited",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "equal-base-inherited",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "equal-base-inherited",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "equal-inherited-base",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "equal-inherited-base",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "equal-inherited-base",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "reverse-base-times",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "reverse-base-times",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "reverse-base-times",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "reverse-base-times",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "reverse-base-times",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "reverse-inherited-times",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "reverse-inherited-times",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "reverse-inherited-times",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "base-index-resets-factor",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "base-index-resets-factor",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "base-index-resets-factor",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 48,
+      "name": "drum-hitnormal"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 60,
+      "name": "drum-slidertick"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "future-does-not-stop-scan",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "fraction-after-start",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "fraction-after-start",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "fraction-after-start",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "fraction-after-start",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "fraction-after-start",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "fraction-before-start",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "fraction-before-start",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "fraction-before-start",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "positive-fraction-after-zero",
+      "parent": 0,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "positive-fraction-after-zero",
+      "parent": 0,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "positive-fraction-after-zero",
+      "parent": 0,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "positive-fraction-after-zero",
+      "parent": 0,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "positive-fraction-after-zero",
+      "parent": 0,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "negative-fraction-before-zero",
+      "parent": 0,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "negative-fraction-before-zero",
+      "parent": 0,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "negative-fraction-before-zero",
+      "parent": 0,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 1000,
+      "kind": "Head",
+      "Volume": 32,
+      "name": "normal-hitnormal"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 1000,
+      "kind": "Tick",
+      "Volume": 40,
+      "name": "normal-slidertick"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 1000,
+      "kind": "AggregateEdge",
+      "Volume": 32,
+      "name": "normal-hitnormal"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 5000,
+      "kind": "Head",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 5000,
+      "kind": "Tick",
+      "Volume": 70,
+      "name": "soft-slidertick2"
+    },
+    {
+      "fixture": "multi-parent-registration",
+      "parent": 5000,
+      "kind": "AggregateEdge",
+      "Volume": 56,
+      "name": "soft-hitnormal2"
+    }
+  ],
+  "unambiguousControls": 12,
+  "ambiguousDomains": 2,
+  "limits": "Original runtime, audible/physical input and shown GUI NOT RUN; recording sinks and adapter source inspection. Equal-key domains do not establish original stable sort."
+}

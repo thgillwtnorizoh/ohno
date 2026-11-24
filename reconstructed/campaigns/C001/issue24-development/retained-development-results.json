@@ -1,0 +1,1062 @@
+{
+  "classification": "Work 2 production development checks; not independent QA or original runtime",
+  "groups": 264,
+  "results": [
+    {
+      "label": "version and raw object registration count",
+      "passed": true
+    },
+    {
+      "label": "duplicates remain ordered and observable",
+      "passed": true
+    },
+    {
+      "label": "unused and unknown sections retained",
+      "passed": true
+    },
+    {
+      "label": "entry provenance points to exact source line",
+      "passed": true
+    },
+    {
+      "label": "encoding and exact byte hash utf-8",
+      "passed": true
+    },
+    {
+      "label": "encoding and exact byte hash utf-16",
+      "passed": true
+    },
+    {
+      "label": "encoding and exact byte hash utf-16BE",
+      "passed": true
+    },
+    {
+      "label": "document owns immutable byte snapshot and returns defensive copies",
+      "passed": true
+    },
+    {
+      "label": "text input does not invent byte provenance",
+      "passed": true
+    },
+    {
+      "label": "line ending \u0022\\n\u0022",
+      "passed": true
+    },
+    {
+      "label": "line ending \u0022\\r\\n\u0022",
+      "passed": true
+    },
+    {
+      "label": "line ending \u0022\\r\u0022",
+      "passed": true
+    },
+    {
+      "label": "missing header rejects",
+      "passed": true
+    },
+    {
+      "label": "syntax cancellation",
+      "passed": true
+    },
+    {
+      "label": "gameplay cancellation propagates",
+      "passed": true
+    },
+    {
+      "label": "catalog and prepared gameplay byte provenance",
+      "passed": true
+    },
+    {
+      "label": "star and gameplay consume consistent circle syntax",
+      "passed": true
+    },
+    {
+      "label": "star duplicate admission retained",
+      "passed": true
+    },
+    {
+      "label": "star strict first-line profile retained",
+      "passed": true
+    },
+    {
+      "label": "stale revision cannot load",
+      "passed": true
+    },
+    {
+      "label": "new revision receives fresh document",
+      "passed": true
+    },
+    {
+      "label": "E032 v5 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v5 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v5 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v6 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v6 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v6 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v7 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v7 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v7 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v8 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v8 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v8 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v9 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v9 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v9 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v10 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v10 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v10 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v11 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v11 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v11 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v12 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v12 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v12 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v13 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "historical loader v13 admission retained",
+      "passed": true
+    },
+    {
+      "label": "v13 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "E032 v14 raw sampler branch",
+      "passed": true
+    },
+    {
+      "label": "v14 Bezier reaches gameplay and score preparation",
+      "passed": true
+    },
+    {
+      "label": "v6 versus modern duplicate-boundary geometry differs",
+      "passed": true
+    },
+    {
+      "label": "two-control linear bypass only after v8",
+      "passed": true
+    },
+    {
+      "label": "E006 v5 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v6 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v7 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v8 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v9 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v10 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v11 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v12 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v13 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 v14 polyline extension and end time",
+      "passed": true
+    },
+    {
+      "label": "E006 L16 control truncation before Single storage",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document slider-repeat.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document spinner-practice.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document circle-spinner.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document first-circles.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document health-r09.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document bezier-quadratic.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document audible-circles.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document mixed-sliders.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document discrete-slider-r12.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document bezier-mixed.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document first-slider.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document bezier-cubic.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document slider-ticks.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document mixed-r07.osu",
+      "passed": true
+    },
+    {
+      "label": "bundled fixture document bezier-joined.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v05-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v05-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v05-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v05-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v06-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v06-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v06-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v06-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v07-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v07-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v07-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v07-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v08-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v08-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v08-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v08-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v09-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v09-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v09-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v09-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v10-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v10-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v10-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v10-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v11-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v11-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v11-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v11-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v12-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v12-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v12-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v12-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v13-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v13-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v13-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v13-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v14-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay v14-bezier.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash v14-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus polyline prepared v14-polyline.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash mode0-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus gameplay mode0-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash mode1-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "raw retained but unsupported gameplay mode1-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash mode2-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "raw retained but unsupported gameplay mode2-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "corpus hash mode3-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "raw retained but unsupported gameplay mode3-raw.osu",
+      "passed": true
+    },
+    {
+      "label": "metadata first-colon value and unknown-section retention",
+      "passed": true
+    },
+    {
+      "label": "runtime key projection keeps only first two colon cells",
+      "passed": true
+    },
+    {
+      "label": "runtime raw SPACE and underscore prefix filtering differs from metadata",
+      "passed": true
+    },
+    {
+      "label": "Variables section retained and recognized",
+      "passed": true
+    },
+    {
+      "label": "CLR numeric enum names and unknown-section state",
+      "passed": true
+    },
+    {
+      "label": "M1387 and M1bc1 fresh defaults",
+      "passed": true
+    },
+    {
+      "label": "v12 explicit AR prevents later OD inheritance",
+      "passed": true
+    },
+    {
+      "label": "v13 explicit AR prevents later OD inheritance",
+      "passed": true
+    },
+    {
+      "label": "v14 explicit AR prevents later OD inheritance",
+      "passed": true
+    },
+    {
+      "label": "OD inherits to AR until explicit AR",
+      "passed": true
+    },
+    {
+      "label": "mode at CS parse time True",
+      "passed": true
+    },
+    {
+      "label": "mode at CS parse time False",
+      "passed": true
+    },
+    {
+      "label": "pre-v13 Byte syntax error retains prior field writes and stops refresh",
+      "passed": true
+    },
+    {
+      "label": "finite original metadata clamps",
+      "passed": true
+    },
+    {
+      "label": "canonical application request integrates default Mode CS and inherited AR",
+      "passed": true
+    },
+    {
+      "label": "historical explicit-field admission remains separate",
+      "passed": true
+    },
+    {
+      "label": "typed application request carries cancellation",
+      "passed": true
+    },
+    {
+      "label": "metadata count and runtime registration remain distinct original stages",
+      "passed": true
+    },
+    {
+      "label": "catalog exposes prepared settings alongside raw display scalars",
+      "passed": true
+    },
+    {
+      "label": "combined bit circle priority and raw identity 3",
+      "passed": true
+    },
+    {
+      "label": "exact metadata category counts differ from runtime priority 3",
+      "passed": true
+    },
+    {
+      "label": "combined bits retain real factory provenance through NewCombo health 3",
+      "passed": true
+    },
+    {
+      "label": "legacy combined type admission retained 3",
+      "passed": true
+    },
+    {
+      "label": "combined bit circle priority and raw identity 9",
+      "passed": true
+    },
+    {
+      "label": "exact metadata category counts differ from runtime priority 9",
+      "passed": true
+    },
+    {
+      "label": "combined bits retain real factory provenance through NewCombo health 9",
+      "passed": true
+    },
+    {
+      "label": "legacy combined type admission retained 9",
+      "passed": true
+    },
+    {
+      "label": "combined bit circle priority and raw identity 11",
+      "passed": true
+    },
+    {
+      "label": "exact metadata category counts differ from runtime priority 11",
+      "passed": true
+    },
+    {
+      "label": "combined bits retain real factory provenance through NewCombo health 11",
+      "passed": true
+    },
+    {
+      "label": "legacy combined type admission retained 11",
+      "passed": true
+    },
+    {
+      "label": "combined bit circle priority and raw identity 129",
+      "passed": true
+    },
+    {
+      "label": "exact metadata category counts differ from runtime priority 129",
+      "passed": true
+    },
+    {
+      "label": "combined bits retain real factory provenance through NewCombo health 129",
+      "passed": true
+    },
+    {
+      "label": "legacy combined type admission retained 129",
+      "passed": true
+    },
+    {
+      "label": "canonical head Double clamp truncate precedes Single rounding",
+      "passed": true
+    },
+    {
+      "label": "M1bbb undefined mode fallback 99",
+      "passed": true
+    },
+    {
+      "label": "M1bbb undefined mode fallback -2",
+      "passed": true
+    },
+    {
+      "label": "canonical score refresh retains prior rows at partial error while runtime skips comment",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash circle-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count circle-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position circle-chain#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position circle-chain#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position circle-chain#2",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash distance-equal-three",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count distance-equal-three",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-equal-three#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-equal-three#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash distance-inside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count distance-inside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-inside#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-inside#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash distance-diagonal-outside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count distance-diagonal-outside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-diagonal-outside#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position distance-diagonal-outside#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash time-equal",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count time-equal",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position time-equal#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position time-equal#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash time-outside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count time-outside",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position time-outside#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position time-outside#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash moving-anchor",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count moving-anchor",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position moving-anchor#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position moving-anchor#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position moving-anchor#2",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash zero-leniency",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count zero-leniency",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position zero-leniency#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position zero-leniency#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash tail-negative",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count tail-negative",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-negative#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-negative#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-negative#2",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement tail-negative",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement tail-negative",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash tail-selective",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count tail-selective",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-selective#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-selective#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-selective#2",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-selective#3",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement tail-selective",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement tail-selective",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash circle-before-slider",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count circle-before-slider",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position circle-before-slider#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position circle-before-slider#1",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement circle-before-slider",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement circle-before-slider",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash slider-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count slider-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position slider-chain#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position slider-chain#1",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement slider-chain",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement slider-chain",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement slider-chain",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement slider-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position slider-start-boundary#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position slider-start-boundary#1",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement slider-start-boundary",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash tail-even-repeat",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count tail-even-repeat",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-even-repeat#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position tail-even-repeat#1",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement tail-even-repeat",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement tail-even-repeat",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash early-time-break",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count early-time-break",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position early-time-break#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position early-time-break#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position early-time-break#2",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement early-time-break",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement early-time-break",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash bezier-tail",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count bezier-tail",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position bezier-tail#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position bezier-tail#1",
+      "passed": true
+    },
+    {
+      "label": "stacked slider first movement bezier-tail",
+      "passed": true
+    },
+    {
+      "label": "stacked slider checkpoint/consumer agreement bezier-tail",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash v6-circle-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count v6-circle-chain",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position v6-circle-chain#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position v6-circle-chain#1",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position v6-circle-chain#2",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking fixture hash spinner-skip",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking count spinner-skip",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position spinner-skip#0",
+      "passed": true
+    },
+    {
+      "label": "Work1 stacking prepared position spinner-skip#2",
+      "passed": true
+    }
+  ]
+}

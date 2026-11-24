@@ -1,0 +1,14 @@
+[
+  {
+    "command": "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet run --project reconstructed/C001TimingInitializationChecks -c Release -- /workspace/scratch/b8464481b75d/ohno /workspace/scratch/b8464481b75d/ohno/reconstructed/campaigns/C001/issue24-development/local",
+    "exit": 0
+  },
+  {
+    "command": "Unchanged Run-QA10.ps1 and Run-QA11.ps1 -SkipWindows via local PowerShell7.4.6; PATH includes SDK8.0.427",
+    "exit": 0
+  },
+  {
+    "command": "See retained-commands.json for eight exact C001 suite commands",
+    "exit": 0
+  }
+]

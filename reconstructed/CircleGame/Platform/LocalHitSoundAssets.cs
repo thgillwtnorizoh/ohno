@@ -349,7 +349,9 @@ public sealed class HitSoundLibrary : IDisposable
         if (source.TimingError is not null) return source.TimingError;
         if (source.Timing.Count == 0) return "continuing audio requires timing records";
         if (source.Timing.Any(t => !double.IsFinite(t.Time) || t.Set is < 0 or > 3 || t.Index < 0 || t.Volume is < 0 or > 100)) return "unsupported continuing timing operands";
-        if (source.Timing.Zip(source.Timing.Skip(1)).Any(p => p.First.Time > p.Second.Time)) return "out-of-order continuing timing (model supports conditional controls only)";
+        if (source.RawTiming.Zip(source.RawTiming.Skip(1)).Any(p => p.First.Time > p.Second.Time) ||
+            source.Timing.Zip(source.Timing.Skip(1)).Any(p => p.First.Time > p.Second.Time))
+            return "out-of-order continuing timing (model supports conditional controls only)";
         if (source.RegisteredOverrides.Any(o => System.Text.RegularExpressions.Regex.IsMatch(CustomStem(o.Filename),
             @"^(normal|soft|drum)-(sliderslide|sliderwhistle)\d*$"))) return "ambiguous continuing/custom cache collision";
         var sliders = map.Sliders.OrderBy(s => s.Head.StartTime).ToArray();
