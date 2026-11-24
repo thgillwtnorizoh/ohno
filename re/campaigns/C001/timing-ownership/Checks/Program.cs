@@ -1,0 +1,161 @@
+using System.Globalization;
+using System.Numerics;
+using System.Security.Cryptography;
+using System.Text.Json;
+using Ohno.CircleGame.Gameplay;
+using Ohno.CircleGame.Platform;
+using Ohno.CircleGame.Selection;
+
+class Program
+{
+    static readonly List<object> checks = [], comparisons = [], requests = [];
+    static int failed, mismatches;
+    static string current = "";
+    static readonly CircleSoundPolicy Policy = new(true, false, true, 0, 100, false, 100, 100);
+    static void Check(string name, bool pass, object? observed = null)
+    { checks.Add(new { fixture = current, name, passed = pass, observed }); if (!pass) { failed++; Console.WriteLine($"FAIL {current} {name}"); } }
+    static string Values(SelectedCircleSample s) => $"{s.BaseSet}/{s.Index}/{s.Volume}";
+    static string Want(JsonElement e) => $"{e.GetProperty("bank").GetInt32()}/{e.GetProperty("index").GetInt32()}/{e.GetProperty("volume").GetInt32()}";
+    static void Compare(string kind, int start, string actual, string expected)
+    {
+        bool matches = actual == expected;
+        comparisons.Add(new { fixture = current, start, kind, actual, originalDerivedAfterInitialization = expected, matches,
+            classification = "PRODUCTION versus RECONSTRUCTED ORIGINAL-STATIC; original runtime NOT RUN" });
+        if (!matches) mismatches++;
+    }
+    static SelectedCircleSample Select(SliderDefinition s, PreparedSliderSamples prepared, IReadOnlyList<SampleTiming> timing, int kind) => kind switch
+    {
+        0 => CircleSampleSelection.Select(prepared.Head, CircleSampleSelection.Timing(timing, s.Head.StartTime)!, Policy),
+        1 => SliderSampleSelection.Tick(prepared.Metadata, timing, 0),
+        _ => SliderSampleSelection.Edge(s, prepared.Metadata, timing, Policy, s.Traversals)
+    };
+    static string Hash(byte[] data) => Convert.ToHexString(SHA256.HashData(data)).ToLowerInvariant();
+    static async Task<int> Main(string[] args)
+    {
+        CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+        string packet = Path.GetFullPath(args[0]), root = Path.GetFullPath(Path.Combine(packet, "../../../.."));
+        string parent = Path.Combine(packet, "../timing-state"), temp = Path.Combine(Path.GetTempPath(), "ohno-issue23-" + Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(temp);
+        using var doc = JsonDocument.Parse(File.ReadAllBytes(Path.Combine(packet, "conditional-oracle.json")));
+        try
+        {
+            foreach (var c in doc.RootElement.GetProperty("cases").EnumerateArray())
+            {
+                current = c.GetProperty("id").GetString()!;
+                string file = Path.Combine(parent, c.GetProperty("path").GetString()!);
+                Check("reused immutable fixture hash", Hash(File.ReadAllBytes(file)) == c.GetProperty("sha256").GetString());
+                var map = Beatmap.LoadCanonical(file); var timing = map.CircleSounds!.Timing;
+                int[] source = timing.Select(p => p.SourceOrder).ToArray();
+                var global = new GlobalSampleTiming(timing);
+                Check("global owns distinct list", !ReferenceEquals(global.Points, timing));
+                Check("copied elements retain point identity", global.Points.Zip(timing).All(p => ReferenceEquals(p.First, p.Second)));
+                var rates = map.Sliders.Select(s => (s.TravelRate, s.EndTime)).ToArray();
+                global.Advance(map.Sliders[0].Head.StartTime - 6, rescan: true);
+                var order = global.Points.Select(p => p.SourceOrder).ToArray();
+                var domain = c.GetProperty("after_order_domain").EnumerateArray().Select(v => v.EnumerateArray().Select(n => n.GetInt32()).ToArray()).ToArray();
+                Check("explicit component rescan uses comparator order domain", domain.Any(v => v.SequenceEqual(order)), order);
+                Check("component rescan leaves canonical sample order unchanged", source.SequenceEqual(timing.Select(p => p.SourceOrder)));
+                Check("component rescan leaves prepared rate/end unchanged", rates.SequenceEqual(map.Sliders.Select(s => (s.TravelRate, s.EndTime))));
+                using var catalog = new LocalChartCatalog([Path.GetDirectoryName(file)!]);
+                var snap = await catalog.RefreshAsync(); var loaded = snap!.Charts.Single().LoadCanonicalGameplay();
+                Check("catalog canonical owner retains encounter timing", source.SequenceEqual(loaded.CircleSounds!.Timing.Select(p => p.SourceOrder)));
+                bool ambiguous = c.GetProperty("equal_key_order_unresolved").GetBoolean();
+                Beatmap? initializedControl = null;
+                if (!ambiguous)
+                {
+                    // Explicit transformed-input control, preserving the archived chart.
+                    // This validates prepared consequences of the original early sort;
+                    // it is not a patch to production or original-client execution.
+                    string[] lines = File.ReadAllLines(file);
+                    int first = Array.FindIndex(lines, s => s == "[TimingPoints]");
+                    int last = Array.FindIndex(lines, first + 1, s => s.StartsWith('['));
+                    string[] rawRows = c.GetProperty("raw_timing_rows").EnumerateArray().Select(s => s.GetString()!).ToArray();
+                    int[] intendedOrder = domain[0];
+                    string shadow = Path.Combine(temp, current + ".osu");
+                    File.WriteAllLines(shadow, lines.Take(first + 1).Concat(intendedOrder.Select(i => rawRows[i])).Concat(lines.Skip(last)));
+                    initializedControl = Beatmap.LoadCanonical(shadow);
+                    Check("transformed control preserves source fixture bytes", Hash(File.ReadAllBytes(file)) == c.GetProperty("sha256").GetString());
+                }
+                for (int n = 0; n < map.Sliders.Count; n++)
+                {
+                    var s = map.Sliders[n]; var e = c.GetProperty("parents")[n];
+                    Check("pre-sort rate preserved from Issue22 oracle", s.TravelRate == e.GetProperty("prepared_rate").GetDouble());
+                    Check("pre-sort movement end preserved", s.EndTime == e.GetProperty("prepared_end").GetInt32());
+                    var prepared = PreparedSliderSamples.Create(s, timing, Policy, -1);
+                    Check("head bank is pre-sort factory snapshot", prepared.Head.BaseSet == e.GetProperty("prepared_head_bank").GetInt32());
+                    if (ambiguous) continue; // No stability claim for original equal-key sort.
+                    var variant = e.GetProperty("after_sort_variants")[0];
+                    var shadowSlider = initializedControl!.Sliders[n];
+                    var controlTiming = initializedControl.CircleSounds!.Timing;
+                    var controlPrepared = PreparedSliderSamples.Create(shadowSlider, controlTiming, Policy, -1);
+                    int[] expectedDates = variant.GetProperty("dates").EnumerateArray().Select(d => d.GetInt32()).ToArray();
+                    Check("early-sort independent rate control", shadowSlider.TravelRate == variant.GetProperty("prepared_rate").GetDouble());
+                    Check("early-sort independent end/date control", shadowSlider.EndTime == variant.GetProperty("prepared_end").GetInt32() && shadowSlider.Checkpoints.Select(d => d.Time).SequenceEqual(expectedDates));
+                    Compare("PreparedRateEndDates", s.Head.StartTime,
+                        $"{s.TravelRate:R}/{s.EndTime}/" + string.Join(',', s.Checkpoints.Select(d => d.Time)),
+                        $"{variant.GetProperty("prepared_rate").GetDouble():R}/{variant.GetProperty("prepared_end").GetInt32()}/" + string.Join(',', expectedDates));
+                    for (int k = 0; k < 3; k++)
+                    {
+                        var expected = variant.GetProperty("samples")[k];
+                        var actual = Select(s, prepared, timing, k);
+                        var sortedControl = Select(shadowSlider, controlPrepared, controlTiming, k);
+                        Check("independent original-after-sort oracle on explicit view", Values(sortedControl) == Want(expected));
+                        Compare(expected.GetProperty("kind").GetString()!, s.Head.StartTime, Values(actual), Want(expected));
+                    }
+                }
+            }
+            current = "adapter-source-inspection";
+            string adapter = File.ReadAllText(Path.Combine(root, "reconstructed/CircleGame/Platform/WindowsCircleEffects.cs"));
+            Check("Windows source constructs copied global timing", adapter.Contains("new GlobalSampleTiming(data.Source.Timing)", StringComparison.Ordinal));
+            Check("Windows source clock route has no rescan argument", adapter.Contains("continuing!.Clock(time)", StringComparison.Ordinal) && !adapter.Contains("rescan:", StringComparison.Ordinal));
+            // Minimal connected discrepancy: a monotone v14 chart already admitted
+            // for continuing audio; genuine PCM loaded by production resource library.
+            current = "equal-inherited-base-recorded-requests";
+            string control = Path.Combine(parent, "fixtures/equal-inherited-base/control.osu"), dir = Path.Combine(temp, "map"), pack = Path.Combine(temp, "pack");
+            Directory.CreateDirectory(dir); Directory.CreateDirectory(pack);
+            File.Copy(control, Path.Combine(dir, "control.osu"));
+            byte[] wave = File.ReadAllBytes(Path.Combine(parent, "resources/tone.wav"));
+            foreach (string bank in new[] { "normal", "soft", "drum" }) foreach (string family in new[] { "hitnormal", "hitwhistle", "hitfinish", "hitclap", "slidertick", "sliderslide", "sliderwhistle" })
+                File.WriteAllBytes(Path.Combine(pack, $"{bank}-{family}.wav"), wave);
+            foreach (string bank in new[] { "normal", "soft", "drum" }) foreach (string family in new[] { "hitnormal", "slidertick" }) foreach (string suffix in new[] { "", "2" })
+                File.WriteAllBytes(Path.Combine(dir, $"{bank}-{family}{suffix}.wav"), wave);
+            var minimal = Beatmap.LoadCanonical(Path.Combine(dir, "control.osu"));
+            Check("minimal monotone v14 continuing profile admitted", HitSoundLibrary.ContinuousAdmission(minimal) is null);
+            using var library = new HitSoundLibrary(new() { DefaultPackDirectory = pack });
+            using var resources = await library.PrepareAsync(minimal, CancellationToken.None);
+            var slider = minimal.Sliders.Single();
+            var oracle = doc.RootElement.GetProperty("cases").EnumerateArray().Single(c => c.GetProperty("id").GetString() == "equal-inherited-base").GetProperty("parents")[0].GetProperty("after_sort_variants")[0];
+            var events = new[] { new SliderSoundEvent(slider, SliderSoundKind.Head, 0, -1, slider.Head.StartTime, 56),
+                new SliderSoundEvent(slider, SliderSoundKind.Tick, 0, 0, slider.Checkpoints[0].Time, 156),
+                new SliderSoundEvent(slider, SliderSoundKind.AggregateEdge, slider.Traversals, slider.Checkpoints.Count - 1, slider.EndTime, 456) };
+            for (int k = 0; k < events.Length; k++)
+            {
+                var sink = new Sink(); SliderSampleSelection.Request(events[k], resources.Sliders[slider], resources.Source.Timing, resources.Resources, Policy, sink);
+                Check("real resource request count", sink.Items.Count == 1);
+                foreach (var request in sink.Items)
+                {
+                    var bytes = resources.Samples[request.Handle];
+                    Check("real PCM handle and parent ownership", Hash(bytes.Bytes) == Hash(wave) && ReferenceEquals(request.Event?.Parent, slider));
+                    var want = oracle.GetProperty("samples")[k];
+                    string bank = want.GetProperty("bank").GetInt32() == 2 ? "soft" : "drum";
+                    string expectedName = bank + "-" + (k == 1 ? "slidertick" : "hitnormal") + "2";
+                    bool matches = Path.GetFileNameWithoutExtension(bytes.Name) == expectedName && request.Volume == want.GetProperty("request_volume").GetInt32();
+                    requests.Add(new { kind = want.GetProperty("kind").GetString(), actualResource = Path.GetFileNameWithoutExtension(bytes.Name), actualVolume = request.Volume,
+                        originalDerivedResource = expectedName, originalDerivedVolume = want.GetProperty("request_volume").GetInt32(), matches });
+                    Check("minimal admitted resource discrepancy reproduced", !matches);
+                }
+            }
+            Check("known connected comparison discrepancy reproduced", mismatches > 0);
+            var result = new { schema = "issue23-production-v1", exactFunctionalSource = "5dda483348e21e79c8354bf6ea322d50b7fb3e72",
+                runtime = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription, os = System.Runtime.InteropServices.RuntimeInformation.OSDescription,
+                characterizationChecks = checks.Count, passed = checks.Count - failed, failed,
+                originalDerivedComparisons = comparisons.Count, matching = comparisons.Count - mismatches, mismatches,
+                checks, comparisons, recordedRequests = requests, limits = "Real production components/PCM, recording sink only. Windows adapter source inspection; no original or Windows runtime. Mismatches are reported separately and are NOT relabeled passing equivalence tests." };
+            File.WriteAllText(Path.Combine(packet, "production-results.json"), JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true }) + "\n");
+            Console.WriteLine($"CHARACTERIZATION {checks.Count - failed}/{checks.Count} PASS; ORIGINAL-DERIVED COMPARISONS {comparisons.Count - mismatches} MATCH/{mismatches} MISMATCH; recorded requests {requests.Count}");
+            return failed == 0 && mismatches > 0 ? 0 : 1;
+        }
+        finally { Directory.Delete(temp, true); }
+    }
+    sealed class Sink : ISamplePlaybackSink { public List<SamplePlaybackRequest> Items { get; } = []; public void Enqueue(SamplePlaybackRequest r) => Items.Add(r); }
+}

@@ -1,0 +1,2118 @@
+{
+  "schema": "issue23-conditional-oracle-v1",
+  "classification": "RECONSTRUCTED from CONFIRMED ORIGINAL static ownership/chronology; original runtime NOT RUN",
+  "parent_manifest_sha256": "4a67fb6125248535aa2143524db67db233cdacdef8a6ae76fba17253cafbe9c6",
+  "chronology": "Audio binds map; M28f5->M28be(false,true,true) sorts before objects/preparation; M224d sorts again afterward. Ambiguous equal-key cases are conditional same-order variants only: early/late sorts may choose different domain members.",
+  "cases": [
+    {
+      "id": "base",
+      "path": "fixtures/base/control.osu",
+      "sha256": "bdc5d7fc42c3acba082881b210c2c9fffd9523cd12277b8682152452c2b1fb04",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0"
+      ],
+      "source_order": [
+        0
+      ],
+      "after_order_domain": [
+        [
+          0
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 200.0,
+          "prepared_end": 3000,
+          "prepared_head_bank": 1,
+          "queries": [
+            1005,
+            1502,
+            3005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0
+              ],
+              "prepared_rate": 200.0,
+              "prepared_end": 3000,
+              "dates": [
+                1500,
+                2000,
+                2500,
+                2964
+              ],
+              "prepared_head_bank": 1,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 32
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 40
+                },
+                {
+                  "kind": "Finish",
+                  "query": 3005,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equal-base-inherited",
+      "path": "fixtures/equal-base-inherited/control.osu",
+      "sha256": "e8d77c929b3c35f7de2200b2fa9b4e6a3ee5863c93acd2c355e2143f22e14c41",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "1000,500,4,1,1,40,1,0",
+        "1000,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 400.0,
+          "prepared_end": 2000,
+          "prepared_head_bank": 2,
+          "queries": [
+            1005,
+            1502,
+            2005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1,
+                2
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1500,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 2,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 2,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 2,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equal-inherited-base",
+      "path": "fixtures/equal-inherited-base/control.osu",
+      "sha256": "5290087b7b14d5ce6a0b37633d3fde5f3e8bb56a31661b3001ba83dcab073b0c",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": 600.0,
+          "base": true,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "1000,-50,4,2,2,70,0,0",
+        "1000,600,4,3,1,60,1,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 166.66666666666669,
+          "prepared_end": 3399,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1602,
+            3404
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 333.33333333333337,
+              "prepared_end": 2200,
+              "dates": [
+                1600,
+                2164
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1602,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2205,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-base-times",
+      "path": "fixtures/reverse-base-times/control.osu",
+      "sha256": "fd8ee6478fbde79e194a53ce0528989fc274788c2ed386100283455c1e0bf2a8",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 900.0,
+          "beat": 250.0,
+          "base": true,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 200.0,
+          "beat": 1000.0,
+          "base": true,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "900,250,4,2,2,70,1,0",
+        "200,1000,4,3,1,60,1,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 100.0,
+          "prepared_end": 5000,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            2002,
+            5005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1250,
+                1500,
+                1750,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1252,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reverse-inherited-times",
+      "path": "fixtures/reverse-inherited-times/control.osu",
+      "sha256": "c08f11244148660a24a45908d380f35769652c857afa5b54c8bb491f0f95a9f4",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 900.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 200.0,
+          "beat": -200.0,
+          "base": false,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "900,-50,4,2,2,70,0,0",
+        "200,-200,4,3,1,60,0,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 100.0,
+          "prepared_end": 5000,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1502,
+            5005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1500,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "base-index-resets-factor",
+      "path": "fixtures/base-index-resets-factor/control.osu",
+      "sha256": "d78541fa76751840d70d39c1e9238151875a630bd355def7854ff85f0159f3b7",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 900.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 500.0,
+          "beat": 600.0,
+          "base": true,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "900,-50,4,2,2,70,0,0",
+        "500,600,4,3,1,60,1,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 166.66666666666669,
+          "prepared_end": 3399,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1602,
+            3404
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 333.33333333333337,
+              "prepared_end": 2200,
+              "dates": [
+                1600,
+                2164
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1602,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2205,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "future-does-not-stop-scan",
+      "path": "fixtures/future-does-not-stop-scan/control.osu",
+      "sha256": "a2c0a55d758d035126181788ba2658c75a3b80dee5ff0d39c6f464890f6dabbc",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 2000.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 500.0,
+          "beat": -200.0,
+          "base": false,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "2000,-50,4,2,2,70,0,0",
+        "500,-200,4,3,1,60,0,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 100.0,
+          "prepared_end": 5000,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1502,
+            5005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 100.0,
+              "prepared_end": 5000,
+              "dates": [
+                1500,
+                2000,
+                2500,
+                3000,
+                3500,
+                4000,
+                4500,
+                4964
+              ],
+              "prepared_head_bank": 3,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 48
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 60
+                },
+                {
+                  "kind": "Finish",
+                  "query": 5005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fraction-after-start",
+      "path": "fixtures/fraction-after-start/control.osu",
+      "sha256": "c329eb8935cd2674a4906e4b63ca16f775be317002eb3903aedff3d475b6cdd5",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.9,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "1000.9,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 400.0,
+          "prepared_end": 2000,
+          "prepared_head_bank": 2,
+          "queries": [
+            1005,
+            1252,
+            2005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1250,
+                1500,
+                1750,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1252,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fraction-before-start",
+      "path": "fixtures/fraction-before-start/control.osu",
+      "sha256": "5b27e21002674162d6717f41edef5d452c9cb6e929ee8f436385e6b22c392fcd",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 999.9,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "999.9,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 400.0,
+          "prepared_end": 2000,
+          "prepared_head_bank": 2,
+          "queries": [
+            1005,
+            1502,
+            2005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1500,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "positive-fraction-after-zero",
+      "path": "fixtures/positive-fraction-after-zero/control.osu",
+      "sha256": "b4ba715f4798bc238617eebf04ef7b1679a3b692c14159f3354d701656b7cd26",
+      "format": 14,
+      "points": [
+        {
+          "time": -10.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 0.9,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "-10,500,4,1,1,40,1,0",
+        "0.9,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 0,
+          "prepared_rate": 400.0,
+          "prepared_end": 1000,
+          "prepared_head_bank": 2,
+          "queries": [
+            5,
+            252,
+            1005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 1000,
+              "dates": [
+                250,
+                500,
+                750,
+                964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 5,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 252,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negative-fraction-before-zero",
+      "path": "fixtures/negative-fraction-before-zero/control.osu",
+      "sha256": "adbd983e851fbcb63b2716dc57f80b004fcfa33bdb406b1bb088f97a3d92ae80",
+      "format": 14,
+      "points": [
+        {
+          "time": -10.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": -0.9,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "-10,500,4,1,1,40,1,0",
+        "-0.9,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 0,
+          "prepared_rate": 400.0,
+          "prepared_end": 1000,
+          "prepared_head_bank": 2,
+          "queries": [
+            5,
+            502,
+            1005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 1000,
+              "dates": [
+                500,
+                964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 5,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 502,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multi-parent-registration",
+      "path": "fixtures/multi-parent-registration/control.osu",
+      "sha256": "6c61b1147ba6b93bb7b546bf62599b2f80d08ac4825b76094428a26d4c5ac879",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 3500.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "3500,-50,4,2,2,70,0,0"
+      ],
+      "source_order": [
+        0,
+        1
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": false,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 200.0,
+          "prepared_end": 3000,
+          "prepared_head_bank": 1,
+          "queries": [
+            1005,
+            1502,
+            3005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 0,
+              "values": [
+                1,
+                1,
+                40
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 200.0,
+              "prepared_end": 3000,
+              "dates": [
+                1500,
+                2000,
+                2500,
+                2964
+              ],
+              "prepared_head_bank": 1,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 32
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 40
+                },
+                {
+                  "kind": "Finish",
+                  "query": 3005,
+                  "source_order": 0,
+                  "bank": 1,
+                  "index": 1,
+                  "volume": 40,
+                  "request_volume": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "start": 5000,
+          "prepared_rate": 400.0,
+          "prepared_end": 6000,
+          "prepared_head_bank": 2,
+          "queries": [
+            5005,
+            5502,
+            6005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 1,
+              "values": [
+                2,
+                2,
+                70
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 6000,
+              "dates": [
+                5500,
+                5964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 5005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 5502,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 6005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equal-two-bases",
+      "path": "fixtures/equal-two-bases/control.osu",
+      "sha256": "fde9b9f6e8934cadb324e14a008b81701d94daea8055faa8bc5b7acee08a0089",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": 600.0,
+          "base": true,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": 250.0,
+          "base": true,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "1000,600,4,2,2,70,1,0",
+        "1000,250,4,3,1,60,1,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": true,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 400.0,
+          "prepared_end": 2000,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1252,
+            2005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1,
+                2
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1250,
+                1500,
+                1750,
+                1964
+              ],
+              "prepared_head_bank": 3,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 48
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1252,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 60
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 48
+                }
+              ]
+            },
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 166.66666666666669,
+              "prepared_end": 3399,
+              "dates": [
+                1600,
+                2200,
+                2800,
+                3364
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1602,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 3404,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equal-two-inherited",
+      "path": "fixtures/equal-two-inherited/control.osu",
+      "sha256": "bc0a07231f66110045b9e1941569708b2ee4fa12ed586b791408acc0fb58276f",
+      "format": 14,
+      "points": [
+        {
+          "time": 0.0,
+          "beat": 500.0,
+          "base": true,
+          "sample": [
+            1,
+            1,
+            40
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": -50.0,
+          "base": false,
+          "sample": [
+            2,
+            2,
+            70
+          ]
+        },
+        {
+          "time": 1000.0,
+          "beat": -200.0,
+          "base": false,
+          "sample": [
+            3,
+            1,
+            60
+          ]
+        }
+      ],
+      "raw_timing_rows": [
+        "0,500,4,1,1,40,1,0",
+        "1000,-50,4,2,2,70,0,0",
+        "1000,-200,4,3,1,60,0,0"
+      ],
+      "source_order": [
+        0,
+        1,
+        2
+      ],
+      "after_order_domain": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "equal_key_order_unresolved": true,
+      "parents": [
+        {
+          "start": 1000,
+          "prepared_rate": 100.0,
+          "prepared_end": 5000,
+          "prepared_head_bank": 3,
+          "queries": [
+            1005,
+            1502,
+            5005
+          ],
+          "before_samples": [
+            {
+              "kind": "Head",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Tick",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            },
+            {
+              "kind": "Finish",
+              "source_order": 2,
+              "values": [
+                3,
+                1,
+                60
+              ]
+            }
+          ],
+          "after_sort_variants": [
+            {
+              "order": [
+                0,
+                1,
+                2
+              ],
+              "prepared_rate": 100.0,
+              "prepared_end": 5000,
+              "dates": [
+                1500,
+                2000,
+                2500,
+                3000,
+                3500,
+                4000,
+                4500,
+                4964
+              ],
+              "prepared_head_bank": 3,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 48
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 60
+                },
+                {
+                  "kind": "Finish",
+                  "query": 5005,
+                  "source_order": 2,
+                  "bank": 3,
+                  "index": 1,
+                  "volume": 60,
+                  "request_volume": 48
+                }
+              ]
+            },
+            {
+              "order": [
+                0,
+                2,
+                1
+              ],
+              "prepared_rate": 400.0,
+              "prepared_end": 2000,
+              "dates": [
+                1500,
+                1964
+              ],
+              "prepared_head_bank": 2,
+              "samples": [
+                {
+                  "kind": "Head",
+                  "query": 1005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                },
+                {
+                  "kind": "Tick",
+                  "query": 1502,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 70
+                },
+                {
+                  "kind": "Finish",
+                  "query": 2005,
+                  "source_order": 1,
+                  "bank": 2,
+                  "index": 2,
+                  "volume": 70,
+                  "request_volume": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

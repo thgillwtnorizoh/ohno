@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "dotnet_sdk": "8.0.427",
+  "runtime": ".NET 8.0.33",
+  "tools": {
+    "dnfile": "0.18.0",
+    "dncil": "1.0.2",
+    "pefile": "2024.8.26"
+  },
+  "build_sha256": {
+    "Checks/bin/Release/net8.0/Checks.pdb": "86e0ccdf77ca0dee5c9f61871ff6d5fb7aa4d067e224b6ad36df23989bc5ccdb",
+    "Checks/bin/Release/net8.0/Checks.dll": "83275ab292884d2e9a85ae27e3c3c8d7d1e9bb8d2380eebc3c9d94d101636ceb"
+  }
+}

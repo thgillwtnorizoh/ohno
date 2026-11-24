@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b8464481b75d/ohno/re/campaigns/C001/timing-ownership/check.py", line 18, in <module>
+    (0x1bc1,0x366,'call',0x60028ff),(0x1bc1,0x10ce,'stfld',0x400100f)]:site(rid,off,op,t)
+                                                                       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b8464481b75d/ohno/re/campaigns/C001/timing-ownership/check.py", line 8, in site
+    assert [off,op,hex(token)] in m[hex(0x6000000+rid)]['token_sites'],(hex(rid),hex(off));checks.append((hex(rid),hex(off)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('0x28f5', '0xd4')

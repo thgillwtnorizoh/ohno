@@ -318,3 +318,34 @@ short-row caller/global defaults remain research dependencies, not invented fixe
 Next bounded actor Work1 traces M224d/same-map identity/list mutation into M1be6
 before any Work2 ordering change. No corpus scan or full Windows/historical rerun;
 C001/subsystem and original-runtime Issue4 remain OPEN; owner acceptance not claimed.
+
+
+## 2026-11-24 — Issue23 original initialization/ownership handoff
+
+Work1 VERIFIED CHECKPOINT; starting eddb26540d2889bb5294b2630f279e136bed7230;
+exact unchanged functional source5dda483348e21e79c8354bf6ea322d50b7fb3e72.
+Original successful audio reuse/new creation stores selected map by identity;
+M3b72 returns that map.F100f; M3b66 sorts the same list. Crucial EARLY edge:
+M28f5:007f->M28be(false,true,true)->M3b66(true), BEFORE object construction,
+head sample-bank snapshot and slider preparation. Ordinary T00e8 inherits slot;
+special T0680 excluded. M224d sorts again later. This resolves Issue22's original
+initialization dependency without editing its valid supplied-list component record.
+New40selected bodies/17sites/12relations/64inherited hashes PASS.14 prior charts
+reused unchanged,12 exact comparator orders/2 ambiguous equal-key domains. New
+233/233 ownership/characterization PASS;52 original-derived production comparisons
+35MATCH/17MISMATCH, not relabeled equivalence passes. Minimal admitted v14 control
+actual166.66666666666669/end3399 vs original-static333.33333333333337/end2200;
+checkpoint/sample/head-bank/resource differences reproduced with3 genuine PCM
+recorded requests. C001-I23-ORDER-01 remains a production discrepancy pending Work2.
+See original-behavior/21-timing-ownership.md, timing-ownership/graph.md and handoff.md.
+Provisional late-only-sort195/39 analysis and tooling/compile failures preserved;
+final corrected233/52 evidence stands alone. Parent47 fixtures/manifest/2180 results
+unchanged; integrity audited,2180 NOT rerun. CONFIRMED ORIGINAL static chain,
+RECONSTRUCTED finite outputs, independently VERIFIED COMPONENT execution and
+ENGINEERING controls distinguished. Original/x86/native/Windows/GUI/audible/input/
+private corpus/full historical regression NOT RUN; equal-key sort stability and
+excluded lifecycle/special-manager profiles remain NOT VERIFIED. No production,
+profile, short-column defaults or R17 changes. Next Work2 under Headquarters
+assignment implements prepared timing ordering before geometry/head construction
+with raw provenance/admission fences retained; then independent Work1/Windows/owner
+gates. C001/subsystem/Issue4 OPEN, no owner acceptance or runtime equivalence.

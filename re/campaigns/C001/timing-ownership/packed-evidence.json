@@ -1,0 +1,26 @@
+[
+  {
+    "original": "attempts/provisional-late-sort-conditional-oracle.json",
+    "sha256": "d86c5dea7ff8d7abe91bfda8dfed8b7ffb856d6328e3a6559d9f5fa2b8f2e713",
+    "packed": "attempts/provisional-late-sort-conditional-oracle.json.gz.b64",
+    "packed_sha256": "23fb6e7a6cd673886f38f816c4bc261162193aebfae372d197da44824489aa12"
+  },
+  {
+    "original": "attempts/provisional-late-sort-production-results.json",
+    "sha256": "a8335837f8a5284bcd9e4fc96f00dfa3fdaf91e28941934cdc8cebe2fb16554e",
+    "packed": "attempts/provisional-late-sort-production-results.json.gz.b64",
+    "packed_sha256": "ac5588fae3d78e9c220339b712afe2f94132a7a1ecaf6ac12cf88a724589f9e8"
+  },
+  {
+    "original": "attempts/provisional-late-sort-production-run.log",
+    "sha256": "37fcf71368eb8edd5a4b4886ccb17ffe8953a17c0a3f49eb34ba7ebca73d6dad",
+    "packed": "attempts/provisional-late-sort-production-run.log.gz.b64",
+    "packed_sha256": "885e488f19abeffc2920c725f5cf5b85ba44b7943a0981fd1d254c28ff1ff82e"
+  },
+  {
+    "original": "attempts/provisional-late-sort-static-evidence.json",
+    "sha256": "89920fe43133834b3fd6a134a2521ee465fb051ea938a7a83fdbc94a38439e58",
+    "packed": "attempts/provisional-late-sort-static-evidence.json.gz.b64",
+    "packed_sha256": "065e96f22c685a437c476ee63dc9021abbd4638e96a0cef9ad6e923651c502b7"
+  }
+]

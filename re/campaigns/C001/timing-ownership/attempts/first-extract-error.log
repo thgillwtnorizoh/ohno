@@ -1,0 +1,4 @@
+  File "/workspace/scratch/b8464481b75d/ohno/re/campaigns/C001/timing-ownership/extract.py", line 38
+    relation('global-song-getter',0x3b0e,[(0,'ldsfld','0x4002367'),(0xb,'ldfld','0x40024ad')],'Getter returns current audio object's map, null when audio object is null.')
+                                                                                                                                                                         ^
+SyntaxError: unterminated string literal (detected at line 38)

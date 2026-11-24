@@ -1,0 +1,24 @@
+[
+  {
+    "command": "python3 re/campaigns/C001/timing-state/verify.py --output /tmp/issue23-parent-audit --audit-only",
+    "exit": 0,
+    "meaning": "integrity only, no2180 rerun"
+  },
+  {
+    "command": "PYTHONPATH=/workspace/scratch/4a3d263ce4fc/qa-python python3 re/campaigns/C001/timing-ownership/extract.py ../project_sources/01-osubackup.zip > re/campaigns/C001/timing-ownership/static-evidence.json",
+    "exit": 0
+  },
+  {
+    "command": "python3 re/campaigns/C001/timing-ownership/check.py re/campaigns/C001/timing-ownership/static-evidence.json",
+    "exit": 0
+  },
+  {
+    "command": "python3 re/campaigns/C001/timing-ownership/oracle.py",
+    "exit": 0
+  },
+  {
+    "command": "/workspace/scratch/2e0dbe3d282c/i18-evidence/dotnet/dotnet run --project re/campaigns/C001/timing-ownership/Checks -c Release -- re/campaigns/C001/timing-ownership",
+    "exit": 0,
+    "meaning": "233/233 characterization;35match17mismatch;NOT all-original-equivalence-pass"
+  }
+]
