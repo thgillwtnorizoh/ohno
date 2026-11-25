@@ -34,3 +34,7 @@ environment and an appropriate assigned task; do not assume those capabilities.
 
 Migration M00 authorizes repository consolidation only. It starts no new
 expedition or implementation milestone. See `MIGRATION-M00.md` for provenance.
+
+## Universal engineering protocol (mandatory)
+
+Read [UEP-001 Revision 2.2](UEP-001.md) before any engineering execution. Follow its context economy, durable recovery, continuation and publication rules alongside existing project-specific requirements and COMMS-01 where applicable. Do not begin unrelated work until its P0 adoption gate is verified. Continue existing authorized assignments from their latest durable checkpoint; preserve independent QA and owner acceptance.
