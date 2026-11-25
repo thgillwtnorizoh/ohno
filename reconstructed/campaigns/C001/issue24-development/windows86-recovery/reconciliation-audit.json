@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "old_git_blobs_verified": 7,
+  "append_only_prefixes_verified": 7,
+  "evidence_files_before_seal": 8,
+  "successful_existing_ci_steps": 56,
+  "recovered_historical_qa": 2312,
+  "scope": "Documentation/evidence only; no implementation/test/workflow/Work1 changes",
+  "artifact_bytes": "NOT VERIFIED",
+  "verify_delivery_py": "NOT RUN: exact full checkout/artifact materialization unavailable",
+  "command": "python issue24-reconcile/audit_publication.py",
+  "limitations": "Read-only evidence consistency audit; not a gameplay regression or independent Work1 QA."
+}

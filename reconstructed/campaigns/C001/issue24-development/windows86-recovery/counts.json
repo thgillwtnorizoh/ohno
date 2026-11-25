@@ -1,0 +1,267 @@
+{
+  "historical_qa": [
+    {
+      "suite": "QA15 headless",
+      "passed": 95,
+      "failed": 0
+    },
+    {
+      "suite": "QA15 Windows",
+      "passed": 39,
+      "failed": 0
+    },
+    {
+      "suite": "QA01",
+      "passed": 90,
+      "failed": 0
+    },
+    {
+      "suite": "QA03",
+      "passed": 56,
+      "failed": 0
+    },
+    {
+      "suite": "QA04",
+      "passed": 43,
+      "failed": 0
+    },
+    {
+      "suite": "QA05",
+      "passed": 66,
+      "failed": 0
+    },
+    {
+      "suite": "QA06",
+      "passed": 99,
+      "failed": 0
+    },
+    {
+      "suite": "QA07",
+      "passed": 159,
+      "failed": 0
+    },
+    {
+      "suite": "QA08",
+      "passed": 115,
+      "failed": 0
+    },
+    {
+      "suite": "QA09",
+      "passed": 234,
+      "failed": 0
+    },
+    {
+      "suite": "QA10",
+      "passed": 229,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 headless",
+      "passed": 247,
+      "failed": 0
+    },
+    {
+      "suite": "QA11 Windows",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "QA12 headless",
+      "passed": 274,
+      "failed": 0
+    },
+    {
+      "suite": "QA12 Windows",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 headless",
+      "passed": 257,
+      "failed": 0
+    },
+    {
+      "suite": "QA13 Windows",
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 headless",
+      "passed": 237,
+      "failed": 0
+    },
+    {
+      "suite": "QA14 Windows",
+      "passed": 30,
+      "failed": 0
+    }
+  ],
+  "historical_qa_total": 2312,
+  "c001": [
+    {
+      "suite": "Foundational C001",
+      "passed": 264,
+      "failed": 0
+    },
+    {
+      "suite": "Issue24 timing initialization",
+      "passed": 550,
+      "failed": 0
+    },
+    {
+      "suite": "Perfect circle",
+      "passed": 299,
+      "failed": 0
+    },
+    {
+      "suite": "Catmull",
+      "passed": 4375,
+      "failed": 0
+    },
+    {
+      "suite": "Stacking integration",
+      "passed": 394,
+      "failed": 0
+    },
+    {
+      "suite": "Issue20 Linear controls",
+      "passed": 5430,
+      "failed": 0
+    },
+    {
+      "suite": "Issue20 WPF linked",
+      "passed": 564,
+      "failed": 0
+    },
+    {
+      "suite": "Issue18 traversals",
+      "passed": 3974,
+      "failed": 0
+    },
+    {
+      "suite": "Issue15 near-spinner",
+      "passed": 1503,
+      "failed": 0
+    },
+    {
+      "suite": "Issue9 legacy spinner",
+      "passed": 801,
+      "failed": 0
+    },
+    {
+      "suite": "Issue7 versioned spinner",
+      "passed": 656,
+      "failed": 0
+    },
+    {
+      "suite": "CorpusAudit",
+      "passed": 295,
+      "failed": 0
+    }
+  ],
+  "retained_development_groups": [
+    {
+      "suite": "R06",
+      "passed": 4
+    },
+    {
+      "suite": "R07",
+      "passed": 8
+    },
+    {
+      "suite": "R08",
+      "passed": 13
+    },
+    {
+      "suite": "R08-C01",
+      "passed": 4
+    },
+    {
+      "suite": "R08-C02",
+      "passed": 14
+    },
+    {
+      "suite": "R09",
+      "passed": 15
+    },
+    {
+      "suite": "R10",
+      "passed": 23
+    },
+    {
+      "suite": "R11",
+      "passed": 32
+    },
+    {
+      "suite": "R12",
+      "passed": 40
+    },
+    {
+      "suite": "R13",
+      "passed": 54
+    },
+    {
+      "suite": "R13 Windows empty-resource",
+      "passed": 1
+    },
+    {
+      "suite": "R13-C01",
+      "passed": 6
+    },
+    {
+      "suite": "R14",
+      "passed": 58
+    },
+    {
+      "suite": "R14 Windows empty capability",
+      "passed": 1
+    },
+    {
+      "suite": "R14-Q01",
+      "passed": 23
+    },
+    {
+      "suite": "R15",
+      "passed": 79
+    },
+    {
+      "suite": "R15 Windows",
+      "passed": 8
+    },
+    {
+      "suite": "R16",
+      "passed": 52
+    },
+    {
+      "suite": "R16 Windows",
+      "passed": 12
+    },
+    {
+      "suite": "R17",
+      "passed": 82
+    },
+    {
+      "suite": "R17 Windows",
+      "passed": 12
+    }
+  ],
+  "stacking": {
+    "loaded": 18,
+    "total": 18,
+    "heads": 43,
+    "gaps": 0
+  },
+  "finite_original_contract": {
+    "matched": 106,
+    "total": 106,
+    "gaps": 0,
+    "engineering_controls": 4,
+    "diagnostic_only": 10
+  },
+  "issue24": {
+    "exact_controls": 12,
+    "conditional_domains": 2,
+    "recorded_requests": 55
+  },
+  "notes": "Counts recovered from existing Windows CI log, not rerun. Source inspections remain included only as explicitly labelled in the log. Do not sum heterogeneous groups/scalar/diagnostic checks into independent QA."
+}

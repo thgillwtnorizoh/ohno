@@ -1,0 +1,70 @@
+2026-11-24T17:13:51.0690604Z Microsoft Windows Server 2022
+2026-11-24T17:13:51.0691109Z 10.0.20348
+2026-11-24T17:13:51.0692832Z Image: windows-2022
+2026-11-24T17:13:51.0693298Z Version: 20261116.370.1
+2026-11-24T17:14:02.4858929Z 8.0.428 [C:\Program Files\dotnet\sdk]
+2026-11-24T17:14:13.7096066Z 8.0.428
+2026-11-24T17:15:16.2262395Z   Ohno.CircleGame -> D:\a\ohno\ohno\reconstructed\CircleGame\bin\Release\net8.0-windows\win-x64\Ohno.CircleGame.dll
+2026-11-24T17:15:16.2430416Z     0 Warning(s)
+2026-11-24T17:15:16.2430712Z     0 Error(s)
+2026-11-24T17:15:24.6681599Z QA15 HEADLESS: 95 passed, 0 failed
+2026-11-24T17:15:44.4495360Z QA15 WINDOWS: 39 passed, 0 failed
+2026-11-24T17:15:46.6865025Z HEADLESS COMPONENT TESTS: 90 passed, 0 failed, 90 executed
+2026-11-24T17:15:48.6149638Z QA03 SLIDER TESTS: 56 passed, 0 failed, 56 executed
+2026-11-24T17:15:50.3670754Z R06 PREPARATION TARGETS: 4 passed (static research oracle, not original runtime)
+2026-11-24T17:15:52.3337208Z QA04 GEOMETRY TESTS: 43 passed, 0 failed, 43 executed
+2026-11-24T17:15:54.0825759Z R07 DEVELOPMENT CHECKS: 8 passed (finite static-oracle/component checks; no human gameplay)
+2026-11-24T17:15:55.8066569Z QA05 SPINNER TESTS: 66 passed, 0 failed, 66 executed
+2026-11-24T17:15:57.4728423Z R08 DEVELOPMENT CHECKS: 13 passed (E33 finite controls; no original runtime/human play)
+2026-11-24T17:15:59.1342946Z R08-C01 DEVELOPMENT CHECKS: 4 passed (component calls only; no game window or OS input)
+2026-11-24T17:16:00.9318906Z R08-C02 MULTIPLIER CHECKS: 14 passed (finite static predictions, no original runtime/human gameplay)
+2026-11-24T17:16:02.7620734Z QA06 ACCOUNTING TESTS: 99 passed, 0 failed, 99 executed
+2026-11-24T17:16:04.4638189Z R09 HEALTH CHECKS: 15 passed (E035 finite component controls; no original runtime or physical gameplay)
+2026-11-24T17:16:06.2418785Z QA07 HEALTH TESTS: 159 passed, 0 failed, 159 executed
+2026-11-24T17:16:07.9948107Z R10 NEWCOMBO CHECKS: 23 passed (E036 finite controls, separate from independent QA; no game window or OS input)
+2026-11-24T17:16:09.7963539Z QA08 NEWCOMBO TESTS: 115 passed, 0 failed, 115 executed
+2026-11-24T17:16:11.9314680Z R11 HITSOUND CHECKS: 32 passed (E037/E038 finite production-component controls; no native playback, listening or game window)
+2026-11-24T17:16:16.1524110Z QA09 HITSOUND TESTS: 234 passed, 0 failed, 234 executed
+2026-11-24T17:16:18.7515793Z R12 SLIDER SOUND CHECKS: 40 passed (bounded E039 discrete controls; no continuous audio, native playback or game window)
+2026-11-24T17:16:21.9754155Z QA10 SLIDER SOUND TESTS: 229 passed, 0 failed, 229 executed
+2026-11-24T17:16:24.4750692Z R13 CONTINUING CHECKS: 54 passed; two explicitly source-inspected groups; no audio/window/original runtime
+2026-11-24T17:16:26.2127564Z R13 WINDOWS BACKEND: 1 empty-resource lifecycle group passed; no media opened or played
+2026-11-24T17:16:29.8485982Z QA11 CONTINUOUS TESTS: 247 passed, 0 failed, 247 executed
+2026-11-24T17:16:31.4899147Z QA11 WINDOWS EMPTY: 6 passed, 0 failed
+2026-11-24T17:16:33.3021826Z R13-C01 DEVELOPMENT CHECKS: 6 passed; actual production model; no media, window or original runtime
+2026-11-24T17:16:36.0409853Z R14 SPINNER AUDIO CHECKS: 58 passed; source inspections explicitly labelled; no media/window/original execution
+2026-11-24T17:16:37.7844406Z R14 WINDOWS EMPTY: 1 capability/lifecycle group passed; no media constructed/opened/played
+2026-11-24T17:16:41.6875674Z QA12: 274 passed, 0 failed, 274 executed
+2026-11-24T17:16:43.4652676Z QA12 WINDOWS: 12 passed, 0 failed
+2026-11-24T17:16:46.7901846Z R14-Q01 DEVELOPMENT: 23/23 groups passed (22 executed component, 1 source inspection); no media opened/played, no gameplay window
+2026-11-24T17:16:48.8261221Z R15 DEVELOPMENT: 79 groups passed; last2 source-inspected; other groups executed production components; no media/window/original runtime
+2026-11-24T17:16:51.6216717Z R15 WINDOWS: 8/8 groups passed; actual host/widget construction only, no Window/show/render/input/media playback
+2026-11-24T17:16:55.2948889Z QA13 HEADLESS: 257 passed, 0 failed, 257 named controls
+2026-11-24T17:16:57.4918817Z QA13 WINDOWS: 24 passed, 0 failed, 24 named controls
+2026-11-24T17:16:59.8368158Z R16 DEVELOPMENT: 52 groups passed; final2 source inspections; other groups actual production components; no game Window/media/physical input
+2026-11-24T17:17:01.9858623Z R16 WINDOWS: 12/12 groups passed; final1 source inspection; unshown components only; no Window/show/render/OS input/nonempty media
+2026-11-24T17:17:46.1206698Z QA14 HEADLESS: 237 passed, 0 failed, 237 named controls
+2026-11-24T17:17:56.6182013Z QA14 WINDOWS: 30 passed, 0 failed, 30 named controls; unshown components only
+2026-11-24T17:17:59.7137565Z R17 DEVELOPMENT: 82 groups passed; 89878 finite scalar comparisons; last1 source inspection; research controls not added to independent QA
+2026-11-24T17:18:02.3519392Z R17 WINDOWS: 12/12 groups passed; last1 source inspection; other controls unshown components; no Window/show/render/OS input/nonempty media
+2026-11-24T17:18:04.5715913Z C001 DEVELOPMENT: 264/264 PASS
+2026-11-24T17:18:08.0372981Z C001 TIMING INITIALIZATION: 550/550 PASS, 0 FAIL;12 exact controls/2 conditional domains;55 recorded requests
+2026-11-24T17:18:09.9750258Z C001 PERFECT DEVELOPMENT: 299/299 PASS; 21 fixture dispositions; no original/GUI/audio execution
+2026-11-24T17:18:13.6555314Z C001 independent integration: 394/394 PASS; 0 failures
+2026-11-24T17:18:15.6242380Z C001 CATMULL DEVELOPMENT: 4375/4375 PASS; 19 dispositions
+2026-11-24T17:18:29.3947129Z Issue20 development 5430/5430 PASS; 112/56; +74 lost0
+2026-11-24T17:18:31.3478998Z Issue20 WPF linked 564/564 PASS;112 owners;13350 actual BuildPath segments
+2026-11-24T17:18:41.0416387Z Issue18 development 3974/3974 PASS;86 prepared/20 excluded;45 additions
+2026-11-24T17:18:44.2185791Z Issue15 development 1503/1503 PASS; 59 prepared; 41 rejected; 12 consumer controls
+2026-11-24T17:18:46.2301459Z Issue9 new development: 801/801 PASS; 66 prepared; 0 isolated scalar controls
+2026-11-24T17:18:48.8475032Z VERSIONED SPINNER DEVELOPMENT: 656/656 PASS;23 admissions/10 exclusions;33 immutable fixtures
+2026-11-24T17:18:52.6492463Z CORPUS AUDIT DEVELOPMENT: 295/295 PASS; 6 historical fixture roots + mixed synthetic; 0 platform controls NOT RUN
+2026-11-24T17:19:03.1211847Z   Ohno.CircleGame -> D:\a\ohno\ohno\reconstructed\CircleGame\bin\Release\net8.0-windows\win-x64\Ohno.CircleGame.dll
+2026-11-24T17:19:04.4973878Z   Ohno.CircleGame -> D:\a\_temp\ohno-c001-windows\
+2026-11-24T17:19:06.8985186Z C001: 106/106 original-contract fields match; 0 gaps; 4/4 engineering controls PASS; 10 diagnostic-only probes; original runtime NOT RUN
+2026-11-24T17:19:07.1394617Z (node:7192) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-24T17:19:08.5348223Z (node:7192) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-24T17:19:13.4244876Z SHA256 digest of uploaded artifact zip is 3d75daac31252feaaba931eae37fea185e7b1d25da57b9ff2c2b1589824ecbdb
+2026-11-24T17:19:13.9252319Z Artifact ohno-C001-346638cec4548023dbb480710327cd8efa31ce69.zip successfully finalized. Artifact ID 14945414784
+2026-11-24T17:19:13.9253191Z Artifact ohno-C001-346638cec4548023dbb480710327cd8efa31ce69 has been successfully uploaded! Final size is 68704166 bytes. Artifact ID is 14945414784
+2026-11-24T17:19:15.2103404Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

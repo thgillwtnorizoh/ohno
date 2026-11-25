@@ -187,3 +187,17 @@ Full records18-issue20-linear-controls.md/issue20-development including initial
 failed test assumptions and environment failure. Fresh Windows gates PENDING, not
 substituted by Issue18 CI. No independent new-source QA or original equivalence.
 Issue20/C001/subsystem/Issue4OPEN; next Work2 Windows gate then HQ and Work1.
+
+
+## 2026-11-25 — Issue24 delivery dependency reconciliation
+
+Canonical timing initialization has existing Work2 Windows86 timing550/550 and
+connected consumer regression evidence at346638cec4548023dbb480710327cd8efa31ce69
+(functional f76c26a). Source comparison shows no production/harness difference
+between those commits. Artifact retrieval/inspection is BLOCKED on the current
+host; ZIP bytes, bundled source/application seals and delivery remain NOT VERIFIED.
+See issue24-development/windows86-recovery/checkpoint.md for exact CI counts,
+commands, reproduction and dependencies. Work2 must inspect the existing artifact
+and run unchanged verify_delivery.py on a complete exact source checkout; no new
+build/regression/corpus scan. HQ then assigns independent Work1 QA. No Work1
+dependency-register or original evidence change. C001/Issue24/Issue4 OPEN.

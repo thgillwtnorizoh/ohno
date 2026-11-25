@@ -1,0 +1,68 @@
+{
+  "scope": "Only newly recovered Windows86 CI metadata/log evidence, not artifact byte verification",
+  "exact_tested_sha": "346638cec4548023dbb480710327cd8efa31ce69",
+  "files": {
+    "ci.json": {
+      "bytes": 12191,
+      "sha256": "d14241bc7ce2cfad7ca9c37c7c7a258b453b2b2c485138f2fb86cc5ebc9bc01c"
+    },
+    "counts.json": {
+      "bytes": 4468,
+      "sha256": "b5d8d938f6194c73ce87ff5193b4b3a6a3fbe6a6ac79e4787d2be9fba9bafac3"
+    },
+    "counts.md": {
+      "bytes": 2543,
+      "sha256": "630063c7ab92afcb60688d7d6afa3fabd70650ae749ff54c148a17c5477502f2"
+    },
+    "source-delta.json": {
+      "bytes": 4684,
+      "sha256": "02339cc1fcb0d552393b3a531af0325890855e1b8a5f9bc05467b2f4bbedc529"
+    },
+    "summaries.log": {
+      "bytes": 7937,
+      "sha256": "51ad2aacfd293728ce64458bcc4075392e156dd22d77f7fac0dbd986961e64ca"
+    },
+    "job.log": {
+      "bytes": 2512225,
+      "sha256": "f204311b8ebbbd99a8e58ac1c1d28020564e7a17d3e12ffaea921b5bf9deb061"
+    },
+    "commands.yml": {
+      "bytes": 28607,
+      "sha256": "d54922fe24be55c16056b5b09cf26a8d11e5dbf7e2e522d2f47ae0bf977acda8"
+    },
+    "checkpoint.md": {
+      "bytes": 5909,
+      "sha256": "6666477a63803c7fc150a5ac792f17374acd5bf273736ba9ebe5c12a12c670ce"
+    }
+  },
+  "existing_prefixes": {
+    "reconstructed/campaigns/C001/19-issue24-timing-initialization.md": {
+      "git_blob_sha": "982e051da910a7e07cebad061e77233d5748e0ce",
+      "sha256": "134e64e8c4d21e5446fedd2a02ee7b6e00e228da5b6bbdca28bd69d5c99c465b"
+    },
+    "reconstructed/campaigns/C001/status.md": {
+      "git_blob_sha": "b7abf3d3879f0eb8e6fdbd6976744629f5c80eb1",
+      "sha256": "cc9c81d6d0925359a994f2e278a5b2462fd3783bea4f34c8f8bdcf18a7e31900"
+    },
+    "reconstructed/campaigns/C001/coverage.md": {
+      "git_blob_sha": "e8a65769b19af536c9674fbac2323a44a0e7d78c",
+      "sha256": "593e2643369e792d78e2e1529568ce4e308d7f1b7bb481225d5f153613a42a11"
+    },
+    "reconstructed/campaigns/C001/discrepancies.md": {
+      "git_blob_sha": "01fb71cbf7b07e280f43084e14cbe452a57ce997",
+      "sha256": "eae41280e8e69d24b6a06581fa55f85e661b1ff6115beb28ee427215f67d2edd"
+    },
+    "reconstructed/campaigns/C001/issue24-development/README.md": {
+      "git_blob_sha": "056dc5378c21d641273cb7081039eaaca6f3d35f",
+      "sha256": "b1f3446aa31cb86b08810f9a2aeb70a3ca2d878cdd6fb15b746fbd43cf2e7e8e"
+    },
+    "reconstructed/contexts.md": {
+      "git_blob_sha": "580715ef0437079c3c06857d8b34b985ea815b5c",
+      "sha256": "d24b5c3615ad9efaa5b15979e26ba4692d50b98d023ed68ab17c19b950023da5"
+    },
+    "reconstructed/campaigns/C001/consumer-inventory.md": {
+      "git_blob_sha": "387aa47703206462f145cb07931f36bc276526fb",
+      "sha256": "c6a34aa523e1b0b3d87a2863a690b820c4b053116bfbf1aac0a136043ae5310e"
+    }
+  }
+}
